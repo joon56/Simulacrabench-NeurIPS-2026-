@@ -2,7 +2,8 @@
 
 Distilled from `external/starter-kit/` (pre-launch draft, pushed 2026-08-10) —
 README, tutorial.ipynb, score.py, config.yml, and repo commit history.
-Re-verify after the Aug 17 launch pull.
+Re-verify after the Aug 17 launch pull. Literature backing the modelling
+choices referenced here lives in [[domain]]; day-by-day findings in [[log]].
 
 ## The submission contract, exactly
 

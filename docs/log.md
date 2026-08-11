@@ -1,5 +1,7 @@
 # Experiment log
 
+Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-notes]].
+
 ## 2026-08-11 (later)
 
 - **Launch postponed to Aug 17** (website commit 2026-08-11 04:12 UTC, "Update launch date to August 17, 2026"; timeline heading changed "Eight months" → "Four months"). Registration opens with launch — no registration or leaderboard submission possible until then.
