@@ -1,8 +1,10 @@
-"""Provisional synthetic sandbox for pipeline development.
+"""Small in-process synthetic fixture for unit tests.
 
-Placeholder until the official schema + synthetic sandbox ship (launch
-2026-08-10); mimics the announced item types, including a skip-logic
-gated item where "not shown" is its own response level.
+The official sandbox now exists (`external/starter-kit/make_sandbox.py`)
+and is the source of truth for integration testing; this module stays
+only because it is fast and dependency-free for the test suite. It mimics
+the item types, including a skip-logic gated item where "not shown" is
+its own response level.
 
 A single latent factor induces cross-item correlation so that
 structure-aware models (IRT, low-rank) can beat the marginal baseline.

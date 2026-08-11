@@ -8,7 +8,8 @@ import numpy as np
 
 
 class MarginalBaseline:
-    def __init__(self, alpha=1.0):
+    # alpha=0.5 matches the official baseline/marginal_counts smoothing.
+    def __init__(self, alpha=0.5):
         self.alpha = alpha
         self.probs_ = {}
 

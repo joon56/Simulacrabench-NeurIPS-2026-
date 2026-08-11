@@ -1,7 +1,10 @@
-"""Masking utilities for local validation, mirroring the two tracks.
+"""Masking utilities for local validation.
 
-Track A: MCAR masking of individual cells within each respondent.
-Track B: hold out whole respondents; only demographic items stay visible.
+The official task (per the starter kit README — the earlier Track A/B
+framing is obsolete) holds out whole respondents: their GIVEN block stays
+visible and every PREDICT cell is blanked. `holdout_respondents` mirrors
+that. `mcar_mask` is kept as an extra, cheaper validation signal for
+within-respondent structure; it does not correspond to the official split.
 """
 
 import numpy as np
@@ -9,7 +12,8 @@ import pandas as pd
 
 
 def mcar_mask(df, frac, rng):
-    """Track A style: mask a random `frac` of observed cells, MCAR.
+    """Mask a random `frac` of observed cells, MCAR (auxiliary validation
+    only — not the official test structure).
 
     Returns a boolean DataFrame (True = masked / to be predicted).
     """
@@ -19,8 +23,9 @@ def mcar_mask(df, frac, rng):
 
 
 def holdout_respondents(df, demo_cols, frac, rng):
-    """Track B style: pick `frac` of respondents, mask all their
-    non-demographic observed cells.
+    """Official test structure: pick `frac` of respondents, mask all their
+    observed cells outside the always-visible block (`demo_cols` = the
+    GIVEN items).
 
     Returns (mask, holdout_index). mask is a boolean DataFrame
     (True = masked / to be predicted).

@@ -49,7 +49,7 @@ def test_evaluate_pools_cells_not_items():
     assert per_item["a"][1] == 3 and per_item["b"][1] == 1
 
 
-def test_marginal_beats_uniform_on_synthetic_track_a():
+def test_marginal_beats_uniform_under_mcar_masking():
     df, n_levels, _ = generate(n=2000, seed=1)
     rng = np.random.default_rng(2)
     mask = mcar_mask(df, frac=0.2, rng=rng)
@@ -67,7 +67,7 @@ def test_marginal_beats_uniform_on_synthetic_track_a():
     assert marginal_loss < uniform_loss
 
 
-def test_track_b_mask_keeps_demographics_visible():
+def test_respondent_holdout_keeps_given_block_visible():
     df, n_levels, demo_cols = generate(n=500, seed=3)
     rng = np.random.default_rng(4)
     mask, holdout = holdout_respondents(df, demo_cols, frac=0.3, rng=rng)

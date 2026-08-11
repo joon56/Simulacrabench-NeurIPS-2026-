@@ -11,3 +11,4 @@
 ## Operations
 
 - [[log]] — daily experiment log: launch tracking, pipeline verification, harness alignment, baseline numbers.
+- [[method-4p]] — template for the 4-page method description required with the phase-2 submission.
