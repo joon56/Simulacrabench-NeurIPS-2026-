@@ -38,9 +38,11 @@ Sandbox has the real shape (same columns/options/skip logic) but invented margin
 
 ## Key dates (2026)
 
-- **Aug 10**: launched. Register via Google Form / Codabench immediately.
-- Aug 10 – Oct 31: phase 1 (dev). Nov 1–14: phase 2 (final), single submission.
+- **Aug 17: public launch (postponed from Aug 10 on 2026-08-11).** Registration opens with launch.
+- Aug 17 – Oct 31: phase 1 (dev). Nov 1–14: phase 2 (final), single submission.
 - Dec: NeurIPS Sydney session. Top-3 = proceedings co-authorship.
+
+**Pre-launch caveat:** the cloned starter kit is a pre-launch draft (last push 2026-08-10, before the postponement). On Aug 17: `git pull` the kit, re-verify README/config.yml facts above (metric, floor, timeouts, submission caps, schemas), and diff against this file. Known draft inconsistencies in kit commit history: rules doc v0.8 says 92 submissions vs config.yml `max_submissions_per_participant: 20`; contact address neurips-un-benchmark@stanford.edu vs h4upt@stanford.edu; stale phase dates.
 
 ## Folder structure (keep to this)
 
