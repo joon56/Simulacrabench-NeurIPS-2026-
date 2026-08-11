@@ -1,8 +1,11 @@
-"""Local reproduction of the official metric: mean test log-loss.
+"""Local reproduction of the official metric.
 
-Assumption (to verify against the official starter kit once released):
-the mean is taken over all masked cells pooled together, not per-item
-then averaged. Documented here so it is easy to swap.
+Verified against the official grader (external/starter-kit/score.py,
+2026-08-11): the log score is pooled over all blank cells (not per-item
+averaged), vectors are floored by mixing with a flat vector
+(scoring.floor = 1e-3), and the leaderboard metric is
+skill = 1 + log_score / U with U the schema-only mean of log K over
+scored items (K includes the gate sentinel).
 
 Data conventions used across this repo:
 - Response matrix: pandas DataFrame, one row per respondent, one column
@@ -64,3 +67,25 @@ def evaluate(truth, mask, proba):
     if count == 0:
         raise ValueError("mask selects no cells")
     return total / count, per_item
+
+
+def floor_mix(proba, floor=1e-3):
+    """Official flooring: renormalize, then mix with a flat vector so every
+    entry is at least `floor` and the vector still sums to 1 (score.py's
+    `floored`). Clip-then-renormalize would not keep both properties."""
+    proba = np.asarray(proba, dtype=float)
+    p = proba / proba.sum(axis=-1, keepdims=True)
+    k = p.shape[-1]
+    return floor + (1.0 - k * floor) * p
+
+
+def uniform_reference(n_levels, scored_items):
+    """U: mean surprisal of a uniform guess over scored items, in nats.
+    Schema-only; n_levels counts must include the gate sentinel level."""
+    return float(np.mean([np.log(n_levels[item]) for item in scored_items]))
+
+
+def skill(mean_loss, u):
+    """Leaderboard metric: 1 + log_score / U, where log_score = -mean_loss.
+    0 = uniform guess, 1 = perfect, negative = worse than guessing."""
+    return 1.0 - mean_loss / u

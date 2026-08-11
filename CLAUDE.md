@@ -1,30 +1,46 @@
-# CLAUDE.md — SimulacraBench (NeurIPS 2026 Competition)
+# CLAUDE.md — SimulacraBench / HSCC (NeurIPS 2026 Competition)
 
-Working folder for the SimulacraBench competition. Full briefing: `SIMULACRABENCH.md` (Korean). Official site: <http://situatedevals.org/simulacrabench> · Contact: h4upt@stanford.edu
+Working folder for SimulacraBench, officially the Humanitarian Survey Completion Competition (HSCC). Original briefing: `SIMULACRABENCH.md` (Korean, partially outdated — this file wins on conflicts). Official site: <http://situatedevals.org/simulacrabench> · Starter kit: <https://github.com/SituatedEvals/notebooks> (cloned at `external/starter-kit/`, gitignored) · Leaderboard/rules/forum: Codabench org 4076 · Contact: h4upt@stanford.edu
 
-## Task summary
+## Task summary (per official starter kit README)
 
-Probabilistic completion of a survey response matrix: unreleased UN microdata (21 countries, ~61k respondents, ~150 items). For each masked cell, predict a probability distribution over response levels.
+Three unpublished survey instruments (UNICEF 19 items/12 scored, World Bank 82/73, UNHCR ERPIS 230/213 with 142 gated). Train respondents arrive complete; **test respondents show only their `GIVEN` block — every `PREDICT` cell is blank and scored** (cross-respondent generalization; there are no separate Track A/B).
 
-- **Metric: mean test log-loss** (strictly proper, calibration-sensitive). Accuracy is NOT the metric — calibration IS the score. Well-calibrated simple models beat overfit complex ones.
-- Item types: binary, nominal, ordered Likert, multi-select, binned continuous. **Skip-logic gating is treated as a separate response level** — mishandling it in preprocessing loses points; handling it correctly is likely free score over baselines.
-- **Track A**: within-respondent imputation (MCAR-masked items per training respondent).
-- **Track B**: cross-respondent generalization (held-out respondents, only sociodemographics given).
+- Item classes: `GIVEN` (visible, never scored), `PREDICT` (held out, scored), `EXCLUDE` (never shown).
+- **`NaN` means exactly one thing: held out, predict it.** Genuine non-response ("Prefer not to answer", "Refused") is an ordinary level.
+- **Gated items get one extra final slot for `schema["gated_value"]` (`NA_GATED`)** — "never asked" is a real scored answer. Predicting who gets skipped is worth as much as predicting what they say. Option order comes from the schema, never from the data.
+
+## Metric (leaderboard = skill)
+
+- Per cell: log(p) of the realized answer, averaged over all blank cells (pooled, not per-item).
+- **`skill = 1 + log_score / U`**, U = mean over scored items of log K (K includes gate sentinel; schema-only). 0 = uniform guess, 1 = perfect. Leaderboard = plain mean of the three instruments' skills.
+- Vectors are renormalized and mixed with a flat vector so no probability falls below `scoring.floor` = 1e-3 — no need to floor your own numbers, but a confidently wrong cell still costs log(1e-3). Hedge where evidence is thin.
+- **Phase-1 scores are noised** (Laplace, ε=10, rounded to 0.01) and pooled — no per-item breakdown. Local harness is the only precise signal.
 
 ## Submission constraints
 
-- Docker image or Python script + environment file, implementing the specified API. Run in an offline sandbox — **no outbound network**. Training inside submission code on unmasked matrix parts is allowed.
-- Compute: 1× A100. Wall-clock: **10 min/submission (dev phase)**, **100 min (test phase)**. Maintain a light 10-min version and a separate extended test-phase version.
-- Dev phase: 1 leaderboard submission per day (daily rotating 10% shard). Test phase (Nov 1–14): single final submission.
-- External pretrained weights allowed only if publicly downloadable + pinned commit hash + declared before test phase.
-- Every submission needs a 4-page method description (`docs/method-4p.md`).
-- Data exfiltration attempts = disqualification.
+- Zip with `main.py` + pinned `requirements.txt` **at top level**. `predict(frame, schema)` returns one probability vector per blank cell — row-major over test rows, items in `schema["items"]` key order (not `frame.columns` order), no zeros/negatives, each summing to 1.
+- `predict()` must be pure: no files, sockets, processes, or imports outside `requirements.txt`. Network is removed before import.
+- Compute: **1× H100, 16 GB RAM. Phase 1: 900 s per instrument; Phase 2: 3600 s.** Same `predict()` must PASS all three schemas.
+- Phase 1: 1 leaderboard submission/day, **max 20 total per participant**. Phase 2: single final submission + 4-page method description (`docs/method-4p.md`).
+- External pretrained weights: publicly downloadable, pinned commit hash, declared before phase 2, packaged in the image (no network).
+- Data exfiltration / re-identification attempts = disqualification (contractual, third-party enforceable).
+
+## Local pipeline (verified end-to-end)
+
+```
+# from external/starter-kit/
+python make_sandbox.py --schema data/sample.json --out _sandbox/sample
+python score.py --submission baseline/marginal_counts --data _sandbox/sample --schema data/sample.json --phase 1
+```
+
+Sandbox has the real shape (same columns/options/skip logic) but invented marginals/dependencies: **a model tuned to the sandbox will not transfer; a pipeline debugged against it will.**
 
 ## Key dates (2026)
 
-- **Aug 10**: public launch + registration (Google Form) — register immediately.
-- Aug 10 – Oct 31: dev phase. Nov 1–14: test phase, leaderboard frozen.
-- Dec: NeurIPS Sydney session. Top-3 per track = proceedings co-authorship.
+- **Aug 10**: launched. Register via Google Form / Codabench immediately.
+- Aug 10 – Oct 31: phase 1 (dev). Nov 1–14: phase 2 (final), single submission.
+- Dec: NeurIPS Sydney session. Top-3 = proceedings co-authorship.
 
 ## Folder structure (keep to this)
 
@@ -46,3 +62,4 @@ docs/            # method-4p.md, log.md (daily experiment log)
 - Local validation harness is the source of truth between daily submissions; don't waste the 1/day leaderboard submission on unverified changes.
 - Log every experiment in `docs/log.md`; snapshot every submission in `submissions/`.
 - Strategy priority: exact skip-logic handling → calibrated simple models (IRT + low-rank + smoothing) → hybrids. LLM persona-prompting is log-loss-unfavorable without calibration post-processing.
+- `external/starter-kit/score.py` is the official grader — use it for final validation of any submission; keep `src/eval/` for fast in-process iteration and mirror its skill metric exactly.

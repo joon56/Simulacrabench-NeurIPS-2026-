@@ -1,5 +1,19 @@
 # Experiment log
 
+## 2026-08-11
+
+- **Competition launched.** Starter kit found: <https://github.com/SituatedEvals/notebooks>, cloned at `external/starter-kit/` (gitignored). Official name: Humanitarian Survey Completion Competition (HSCC). Leaderboard/rules/registration on Codabench (org 4076).
+- Pipeline verified end-to-end on all four schemas with the official grader (`score.py`, marginal_counts baseline, phase 1, noised skill scores): sample PASS 0.45, unicef PASS 0.19, world_bank PASS 0.25, unhcr PASS 0.32. Run times ~25 s each, far under the 900 s limit.
+- Major corrections vs the original briefing (CLAUDE.md updated accordingly):
+  - No Track A/B. Single task: held-out respondents, `GIVEN` visible, all `PREDICT` cells scored.
+  - Leaderboard metric is **skill** = 1 + log_score/U (0 = uniform, 1 = perfect), plain mean over three instruments; log score pooled over cells.
+  - Grader floors vectors by mixing with flat vector, floor 1e-3 — no self-flooring needed.
+  - Compute: 1× **H100**, 16 GB RAM; **900 s/instrument (phase 1)**, 3600 s (phase 2) — not A100 10/100 min.
+  - Phase-1 scores noised (Laplace ε=10, rounded 0.01); **max 20 submissions total** per participant on top of 1/day.
+  - Gated items: extra final option slot for sentinel `NA_GATED`; predicting who gets skipped scores like any answer.
+- Local harness updated to mirror official metric exactly (`floor_mix`, `uniform_reference`, `skill` in `src/eval/logloss.py`); pooling-over-cells assumption confirmed against `score.py`. 10 tests pass.
+- Next: register (Google Form + Codabench, user action), first leaderboard submission with marginal baseline to validate the official pipeline, then start on structure-aware models (respondent-trait / low-rank on GIVEN block).
+
 ## 2026-08-09
 
 - Repo scaffolded per SIMULACRABENCH.md §8, git initialized, CLAUDE.md added.

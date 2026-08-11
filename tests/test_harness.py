@@ -1,7 +1,13 @@
 import numpy as np
 import pytest
 
-from src.eval.logloss import mean_log_loss, evaluate
+from src.eval.logloss import (
+    mean_log_loss,
+    evaluate,
+    floor_mix,
+    uniform_reference,
+    skill,
+)
 from src.eval.masking import mcar_mask, holdout_respondents, apply_mask
 from src.eval.synthetic import generate
 from src.models.marginal import MarginalBaseline
@@ -84,6 +90,23 @@ def test_gated_item_not_shown_is_a_scored_level():
     model = MarginalBaseline().fit(train, n_levels)
     p_child = model.probs_["q_child"]
     assert len(p_child) == 4 and p_child[3] > 0
+
+
+def test_floor_mix_keeps_floor_and_sum():
+    p = np.array([[1.0, 0.0, 0.0], [0.4, 0.35, 0.25]])
+    out = floor_mix(p, floor=1e-3)
+    assert (out >= 1e-3).all()
+    assert np.allclose(out.sum(axis=1), 1.0)
+
+
+def test_skill_scale_matches_official_definition():
+    # Uniform guess scores 0, perfection scores 1.
+    n_levels = {"a": 4, "b": 2}
+    u = uniform_reference(n_levels, ["a", "b"])
+    assert u == pytest.approx((np.log(4) + np.log(2)) / 2)
+    uniform_loss = u  # pooled mean over one cell each is the same mean here
+    assert skill(uniform_loss, u) == pytest.approx(0.0)
+    assert skill(0.0, u) == pytest.approx(1.0)
 
 
 def test_masking_is_deterministic_with_seed():
