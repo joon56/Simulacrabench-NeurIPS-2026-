@@ -57,6 +57,15 @@ docker/          # submission image definitions
 docs/            # method-4p.md, log.md (daily experiment log)
 ```
 
+## Operating discipline (how every modelling decision is made)
+
+1. **No claim without a number.** Every modelling change is justified only by held-out skill on the local harness. No merge without measured improvement.
+2. **Structure before parameters.** Exhaust deterministic structure (skip-logic gate coupling, chain closure) before adding learned components — the organizers measured gating alone at 0.98 → 0.76 log score.
+3. **Overconfidence is the cardinal sin.** A confident wrong cell costs log(1e-3) ≈ −6.9 nats vs ≈ −1.4 for an honest hedge. When uncertain, shrink toward the marginal; check calibration before any submission.
+4. **Submissions are ammunition** — 20 total. Never spend a leaderboard submission on unverified changes; record expected score before submitting, compare after.
+5. **Complexity must pay rent.** A complex model is adopted only after beating the calibrated simple stack on the local harness, within the wall-clock budget (profile it).
+6. **Everything is logged** — hypothesis → result → conclusion in docs/log.md. An unreproducible experiment didn't happen.
+
 ## Rules for working here
 
 - **All code, comments, and commit messages in English.**
