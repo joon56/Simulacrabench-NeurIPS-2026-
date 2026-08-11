@@ -109,6 +109,36 @@ def test_skill_scale_matches_official_definition():
     assert skill(0.0, u) == pytest.approx(1.0)
 
 
+def test_gated_marginal_couples_child_to_parent():
+    import pandas as pd
+    from src.models.gated_marginal import predict
+
+    schema = {
+        "gated_value": "NA_GATED",
+        "items": {
+            "p": {"question": "?", "class": "PREDICT",
+                  "values": ["Yes", "No"], "gate": None},
+            "c": {"question": "?", "class": "PREDICT",
+                  "values": ["A", "B"],
+                  "gate": {"parent": "p", "observed_if": ["Yes"]}},
+        },
+    }
+    frame = pd.DataFrame({
+        "respondent_id": ["R1", "R2", "R3", "R4"],
+        "p": ["Yes", "No", "Yes", np.nan],
+        "c": ["A", "NA_GATED", "B", np.nan],
+    })
+    vectors = predict(frame, schema)
+    assert len(vectors) == 2  # two blank cells, R4's p and c
+    p_vec, c_vec = vectors
+    # Child's NA_GATED mass must equal 1 - predicted P(parent = Yes).
+    assert c_vec[-1] == pytest.approx(1.0 - p_vec[0])
+    assert sum(c_vec) == pytest.approx(1.0)
+    # Substantive child mass splits by the asked-only conditional (A:B
+    # counts 1:1 smoothed), scaled by P(asked).
+    assert c_vec[0] == pytest.approx(p_vec[0] * 0.5)
+
+
 def test_masking_is_deterministic_with_seed():
     df, _, _ = generate(n=300, seed=7)
     m1 = mcar_mask(df, 0.1, np.random.default_rng(8))

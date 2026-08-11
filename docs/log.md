@@ -2,6 +2,23 @@
 
 Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-notes]].
 
+## 2026-08-12
+
+- **Experiment runner** (`src/eval/runner.py`): scores any `predict(frame, schema)` in-process with the kit's own modules — exact un-noised skill + wall-clock, all four schemas. Kit marginal baseline reproduces the noised scores exactly (0.1902/0.2468/0.3208).
+- **Metric noise baseline** (10 phase-sampling seeds, crowd marginal): per-instrument skill std 0.002–0.004; 3-instrument-mean std **0.0016**. Decision rule: an improvement is real only if > +0.005 on the 3-instrument mean (~3σ). `sample` is ±0.06 (144 cells) — debugging only, never for judging.
+- **Gate-aware marginal** (`src/models/gated_marginal.py`): per respondent, P(child=NA_GATED) = 1 − P(parent ∈ observed_if) using the respondent's own parent belief (one-hot if visible, predicted otherwise); substantive mass = P(asked) × asked-only conditional. Chain closure automatic (NA never in observed_if).
+- Results vs plain marginal (seed 0, phase 1, exact skill):
+
+  | Schema | marginal | gated | Δ | why |
+  |---|---|---|---|---|
+  | unicef | 0.1902 | 0.3653 | **+0.1751** | 5/7 gates have GIVEN parents → deterministic for test rows |
+  | world_bank | 0.2468 | 0.2516 | +0.0048 (~3σ, borderline) | only 6/19 gates on GIVEN parents |
+  | unhcr | 0.3208 | 0.3208 | +0.0000 | all 143 gates on PREDICT parents → parent belief falls back to crowd → algebraically identical to marginal |
+  | 3-inst mean | 0.2526 | 0.3126 | **+0.0600** | |
+
+- **Structural conclusion:** gate coupling is a *multiplier on parent predictability*. unhcr's 143 gates yield nothing until a model predicts parents respondent-specifically — which is exactly what GIVEN-conditioning (MRP-lite) and latent-factor models add. Their value estimates should include the unlocked gate cascade, not just their direct item gains.
+- Caveat: sandbox gains transfer qualitatively (the gate mechanism is identical on real data), magnitudes don't (invented marginals; unicef's +0.175 depends on how often invented parents fall outside observed_if).
+
 ## 2026-08-11 (later)
 
 - **Launch postponed to Aug 17** (website commit 2026-08-11 04:12 UTC, "Update launch date to August 17, 2026"; timeline heading changed "Eight months" → "Four months"). Registration opens with launch — no registration or leaderboard submission possible until then.
