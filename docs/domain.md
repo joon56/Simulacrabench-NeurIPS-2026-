@@ -185,6 +185,35 @@ The competition's hybrid angle: can LLM priors about "what a person like X answe
 
 8. **Further recent work (2025–2026), verified but lower priority:** Huang, C., Wu, Y., & Wang, K. (2025), "How Many Human Survey Respondents is a Large Language Model Worth? An Uncertainty Quantification Perspective" (<https://arxiv.org/abs/2502.17773>) — a statistical framework quantifying the effective sample size of LLM-simulated respondents under model–human misalignment; useful for deciding how much weight an LLM prior deserves in an ensemble. Choi, E. C., Kim, Y., Pugalenthi, P., Chen, H.-E., & Huang, B.-R. (2026), "Beyond the Mean: Three-Axis Fidelity for Aligning LLM-Based Survey Simulators from Small Pilot Data," *Pluralistic Alignment @ ICML 2026* (<https://arxiv.org/abs/2606.28963>) — separates structural/marginal/individual fidelity and finds fine-tuning on small pilot data gives the best balance, mirroring this competition's "train on the unmasked shard" opportunity. Park, J. S., et al. (2024, rev. 2026), "LLM Agents Grounded in Self-Reports Enable General-Purpose Simulation of Individuals" (<https://arxiv.org/abs/2411.10109>) — interview/self-report-grounded agents simulating 1,000+ real individuals' survey responses; the maximalist version of respondent-level simulation. Kim, J., & Lee, B. (2023), "AI-Augmented Surveys: Leveraging Large Language Models and Surveys for Opinion Prediction" (<https://arxiv.org/abs/2305.09620>) — fine-tuned LLM + question/respondent embeddings for missing-data imputation in the GSS (AUC ≈ 0.87), essentially an LLM-flavored version of this competition's Track A, and a template for injecting item *text* semantics into the matrix model.
 
+## 7. Gaps filled on review (2026-08-11): cross-respondent machinery the six areas skip
+
+The original six areas under-covered the specific *shape* of this competition's inference problem: predict a full categorical distribution for a respondent you have never seen, given only a demographic block, across countries of very different sizes. That is (a) exactly what survey statistics calls MRP, (b) exactly what recommender systems call cold-start with side information, and (c) a setting where per-item discriminative models and tabular foundation models are strong practical baselines the literature above never names.
+
+1. **Park, D. K., Gelman, A., & Bafumi, J. (2004). "Bayesian Multilevel Estimation with Poststratification: State-Level Estimates from National Polls." *Political Analysis* 12(4), 375–385.** (Precursor: Gelman, A., & Little, T. C. (1997). "Poststratification into many categories using hierarchical logistic regression." *Survey Methodology* 23(2), 127–135, <http://www.stat.columbia.edu/~gelman/research/published/poststrat3.pdf>.)
+   Link: <https://sites.stat.columbia.edu/gelman/research/published/parkgelmanbafumi.pdf>
+   Multilevel regression and poststratification (MRP): fit a hierarchical logistic model of a response given demographic cells, with partial pooling across sparse cells, then aggregate over the population's cell structure. The survey field's standard machinery for "demographics → opinion estimate" in groups too small to estimate directly.
+   Relevance: the closest statistical ancestor of this competition's core task — held-out respondents are exactly "cells" defined by the GIVEN block. Partial pooling across country × demographic cells is the principled answer to small-country instruments (and to the organizers' observed empty-support fallback problem: hierarchical shrinkage interpolates between cell-conditional and crowd marginal automatically, instead of hard-switching).
+
+2. **Rendle, S. (2010). "Factorization Machines." *ICDM 2010*.** (Companion for theory: Jain, P., & Dhillon, I. S. (2013). "Provable Inductive Matrix Completion," <https://arxiv.org/abs/1306.0626>.)
+   Link: <https://doi.org/10.1109/ICDM.2010.127>
+   Factorization machines model all pairwise feature interactions through learned latent factors, unifying matrix factorization with feature-based regression — usable when a "user" is described only by features. Inductive matrix completion gives the recovery theory for completion with side information.
+   Relevance: test respondents are cold-start users — no observed responses, only side features (the GIVEN block). FM-style "latent factors from features" is the standard bridge from the low-rank machinery of §2 (which alone cannot score a never-seen respondent) to this competition's actual setting.
+
+3. **Niculescu-Mizil, A., & Caruana, R. (2005). "Predicting Good Probabilities with Supervised Learning." *ICML 2005*.**
+   Link: <https://doi.org/10.1145/1102351.1102430>
+   Compares ten learning methods by the quality of their predicted probabilities: boosting, SVMs, and naive Bayes are systematically distorted (each in a characteristic way), while bagged trees/random forests and neural nets are closer to calibrated; Platt scaling and isotonic regression repair most of the damage.
+   Relevance: the missing practical baseline in §1–§4 is the obvious one — per-item gradient-boosted or forest classifiers conditioned on the GIVEN block (plus observed items where present). This paper says exactly which of those emit usable probabilities raw and which must pass through §3's recalibration before the log score sees them.
+
+4. **Hollmann, N., Müller, S., Purucker, L., Krishnakumar, A., Körfer, M., Hoo, S. B., Schirrmeister, R. T., & Hutter, F. (2025). "Accurate predictions on small data with a tabular foundation model." *Nature* 637, 319–326.**
+   Link: <https://www.nature.com/articles/s41586-024-08328-6> · Code/weights: <https://github.com/PriorLabs/TabPFN>
+   TabPFN v2: a transformer pre-trained on millions of synthetic tabular tasks that performs in-context Bayesian-like prediction on a new table in seconds, outputting full class-probability distributions; outperforms tuned GBDT ensembles on datasets up to ~10k rows without any training.
+   Relevance: a potential shortcut to a strong, *calibrated* per-item conditional model within the 900 s budget (fit is a forward pass), and the weights are publicly downloadable at a pinnable commit — compatible with Rule 9 if declared before phase 2. Constraints to test on the sandbox: row limits vs 5–15k training respondents, many-class items, and how it treats the NA_GATED level.
+
+5. **Böckenholt, U. (2012). "Modeling Multiple Response Processes in Judgment and Choice." *Psychological Methods* 17(4), 665–678.**
+   Link: <https://doi.org/10.1037/a0028111>
+   IRTree models: decompose a categorical survey response into a tree of binary pseudo-decisions (e.g. respond vs refuse → direction → intensity), each with its own IRT model, separating content traits from response-style/nonresponse processes.
+   Relevance: the competition scores "Prefer not to answer" / "Don't know" / "Refused" as ordinary levels, and NA_GATED adds a structural branch on top. An IRTree factorization — P(gated) × P(refuse | asked) × P(substantive answer | responded) — matches the data-generating process exactly and lets each branch borrow strength separately; likely the cleanest way to model the sentinel-augmented option vectors.
+
 ---
 
 ## Suggested reading order
@@ -198,8 +227,10 @@ The competition's hybrid angle: can LLM priors about "what a person like X answe
 6. Skim Jäger et al. 2021 (§4.4) and Dominguez-Olmedo et al. (§6.1) now — they set expectations and prevent wasted weeks on deep/LLM detours.
 
 **Later (weeks 2+, in support of model upgrades and the hybrid):**
-7. Bergner et al. 2012 (§1.5), Davenport et al. (§2.1), Lafond et al. (§2.2) — unify IRT and low-rank completion; pick latent rank by held-out log-loss.
-8. Candès & Recht (§2.3), softImpute (§2.4), mice (§2.5), missForest (§2.6) — completion theory background and the classical baselines to beat.
-9. Kull et al. 2019 (§3.3), Muraki 1992 (§1.6) — second-order calibration and likelihood refinements once the pipeline is stable.
-10. MIWAE (§4.2) then TabDDPM (§4.1), with GAIN (§4.3) as background — only pursue if they beat the calibrated IRT/low-rank stack locally.
+7. Park, Gelman & Bafumi (§7.1) + Böckenholt IRTrees (§7.5) — the two structural upgrades that match this task's actual shape: partial pooling over demographic × country cells, and tree-factorized handling of gated/nonresponse levels.
+8. Niculescu-Mizil & Caruana (§7.3) + TabPFN (§7.4) — the practical per-item conditional baselines; benchmark both against the IRT stack on the sandbox before investing further.
+9. Bergner et al. 2012 (§1.5), Davenport et al. (§2.1), Lafond et al. (§2.2), Rendle FM (§7.2) — unify IRT, low-rank completion, and feature-based factorization; pick latent rank by held-out log-loss.
+10. Candès & Recht (§2.3), softImpute (§2.4), mice (§2.5), missForest (§2.6) — completion theory background and the classical baselines to beat.
+11. Kull et al. 2019 (§3.3), Muraki 1992 (§1.6) — second-order calibration and likelihood refinements once the pipeline is stable.
+12. MIWAE (§4.2) then TabDDPM (§4.1), with GAIN (§4.3) as background — only pursue if they beat the calibrated IRT/low-rank stack locally.
 11. Area 6 in order 6.1 → 6.2 → 6.3/6.4 → 6.5 → 6.6/6.7 → 6.8, plus Little & Rubin (§5.2) and de Leeuw (§5.4) as reference — the LLM hybrid is a test-phase (100-min) differentiator, and the recent fine-tuning line (Cao, Suh) defines what a viable version looks like.
