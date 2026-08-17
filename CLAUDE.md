@@ -1,12 +1,13 @@
 # CLAUDE.md — SimulacraBench / HSCC (NeurIPS 2026 Competition)
 
-Working folder for SimulacraBench, officially the Humanitarian Survey Completion Competition (HSCC). Original briefing: `SIMULACRABENCH.md` (Korean, partially outdated — this file wins on conflicts). Official site: <http://situatedevals.org/simulacrabench> · Starter kit: <https://github.com/SituatedEvals/notebooks> (cloned at `external/starter-kit/`, gitignored) · Leaderboard/rules/forum: Codabench org 4076 · Contact: h4upt@stanford.edu
+Working folder for SimulacraBench, officially the Humanitarian Survey Completion Competition (HSCC). Original briefing: `SIMULACRABENCH.md` (Korean, partially outdated — this file wins on conflicts). Official site: <https://simulacrabench.org> · Starter kit: <https://github.com/SituatedEvals/public> (cloned at `external/starter-kit/`, gitignored) · Leaderboard: <https://www.codabench.org/competitions/17822/> · Terms/forum: Codabench org 4076 · Contact: team@simulacrabench.org. (Pre-launch URLs situatedevals.org and the `notebooks` repo are dead; archived pre-launch clone at `external/starter-kit-notebooks-archived/`.)
 
 ## Task summary (per official starter kit README)
 
-Three unpublished survey instruments (UNICEF 19 items/12 scored, World Bank 82/73, UNHCR ERPIS 230/213 with 142 gated). Train respondents arrive complete; **test respondents show only their `GIVEN` block — every `PREDICT` cell is blank and scored** (cross-respondent generalization; there are no separate Track A/B).
+Three unpublished survey instruments (schema v1.0 at launch): UNICEF 19 items / 12 scored / 7 gated (19,847 rows); World Bank 106 / 76 scored / 19 gated (6,927 rows); UNHCR ERPIS 285 / 213 scored / 143 gated (10,349 rows). Visible respondents arrive complete; **held-out respondents show only their `GIVEN` block — every `PREDICT` cell is blank and scored** (cross-respondent generalization; there are no separate Track A/B).
 
-- Item classes: `GIVEN` (visible, never scored), `PREDICT` (held out, scored), `EXCLUDE` (never shown).
+- Item classes: `GIVEN` (visible, never scored), `PREDICT` (held out, scored), `EXCLUDE` (never shown, stays in schema — filter on `class`, don't assume columns line up).
+- **Respondent roles, fixed at dataset build:** one `respondents.parquet` with a `role` column ∈ {`TRAIN`, `DEV`, `FINAL`}. Phase 1: `TRAIN` visible (thinned to `data_fraction` 0.30 — visible rows only, scored cells never thinned), `DEV` masked and scored. Phase 2: `TRAIN`+`DEV` visible with answers, `FINAL` scored. `FINAL` rows are not shipped at all in phase 1, so the phase-1 leaderboard can't leak the final answer key. Scored set is fixed within a phase → leaderboard entries directly comparable.
 - **`NaN` means exactly one thing: held out, predict it.** Genuine non-response ("Prefer not to answer", "Refused") is an ordinary level.
 - **Gated items get one extra final slot for `schema["gated_value"]` (`NA_GATED`)** — "never asked" is a real scored answer. Predicting who gets skipped is worth as much as predicting what they say. Option order comes from the schema, never from the data.
 
@@ -15,34 +16,40 @@ Three unpublished survey instruments (UNICEF 19 items/12 scored, World Bank 82/7
 - Per cell: log(p) of the realized answer, averaged over all blank cells (pooled, not per-item).
 - **`skill = 1 + log_score / U`**, U = mean over scored items of log K (K includes gate sentinel; schema-only). 0 = uniform guess, 1 = perfect. Leaderboard = plain mean of the three instruments' skills.
 - Vectors are renormalized and mixed with a flat vector so no probability falls below `scoring.floor` = 1e-3 — no need to floor your own numbers, but a confidently wrong cell still costs log(1e-3). Hedge where evidence is thin.
-- **Phase-1 scores are noised** (Laplace, ε=10, rounded to 0.01) and pooled — no per-item breakdown. Local harness is the only precise signal.
+- **Phase-1 scores are noised** (Laplace, ε=10, rounded to 0.01). Leaderboard shows per-instrument skill and the mean, but never per-item detail. Local harness is the only precise signal.
 
 ## Submission constraints
 
-- Zip with `main.py` + pinned `requirements.txt` **at top level**. `predict(frame, schema)` returns one probability vector per blank cell — row-major over test rows, items in `schema["items"]` key order (not `frame.columns` order), no zeros/negatives, each summing to 1.
-- `predict()` must be pure: no files, sockets, processes, or imports outside `requirements.txt`. Network is removed before import.
-- Compute: **1× H100, 16 GB RAM. Phase 1: 900 s per instrument; Phase 2: 3600 s.** Same `predict()` must PASS all three schemas.
-- Phase 1: 1 leaderboard submission/day, **max 20 total per participant**. Phase 2: single final submission + 4-page method description (`docs/method-4p.md`).
-- External pretrained weights: publicly downloadable, pinned commit hash, declared before phase 2, packaged in the image (no network).
+- Zip (≤ 1 GB, no zip-inside-zip, no folder wrapping) with `main.py` **at the archive root**; build with `cd my_submission && zip -r ../sub.zip .`. Validate the archive with `python tools/check_submission_zip.py sub.zip` before spending a submission.
+- `requirements.txt` is **optional** — the hosted image (Python 3.13) pre-installs numpy, pandas, pyarrow, scipy, scikit-learn, torch, torchvision, Pillow, transformers, sentence-transformers, tokenizers, sentencepiece, tiktoken, huggingface_hub, accelerate, safetensors, bitsandbytes, autoawq, protobuf, and `torch_measure` (organizer IRT/latent-trait lib). Only declare what the image lacks, **pinned exact versions** (unpinned → `HSCC-BUILD-002`). Installed at image build, off the clock.
+- **HF models via `models.txt`** (one repo id per line, e.g. `Qwen/Qwen2.5-1.5B-Instruct`): downloaded into the image cache at build time, `from_pretrained()` finds them offline. Other fitted artifacts (`.pt`, `.safetensors`, `.joblib`, …) must be bundled in the zip and loaded from a local path. FAQ: disclose external models/data used.
+- `predict(frame, schema)` is called **once per instrument**, returns one probability vector per blank cell — rows top-to-bottom, items in `schema["items"]` key order (not `frame.columns` order), each vector finite, non-negative, sum > 0 (grader renormalizes+floors). Load weights at **module import**, not inside `predict()`.
+- Network removed before import; no downloads at runtime (`HSCC-NETWORK-*` / `HSCC-HF-CACHE`).
+- Compute: **1× H100, 16 GB RAM (hard limit), 8 CPUs. Phase 1: 900 s; Phase 2: 3600 s — the budget covers the whole run: import + model load + all three instruments together, NOT per instrument.** Same `predict()` must PASS all three schemas.
+- Phase 1: 1 leaderboard submission/day, **max 20 total per participant** (confirmed in launch config.yml). Phase 2: single final submission + 4-page method description (`docs/method-4p.md`).
+- Failures come back as sanitized `HSCC-*` codes only — no stdout, no tracebacks (exception *type* survives, message dropped). Debug locally; the platform will not tell you more.
 - Data exfiltration / re-identification attempts = disqualification (contractual, third-party enforceable).
 
 ## Local pipeline (verified end-to-end)
 
 ```
 # from external/starter-kit/
-python make_sandbox.py --schema data/sample.json --out _sandbox/sample
+python make_sandbox.py --schema data/sample.json --out _sandbox/sample   # writes respondents.parquet + schema.json
 python score.py --submission baseline/marginal_counts --data _sandbox/sample --schema data/sample.json --phase 1
+python tools/check_submission_zip.py sub.zip                             # archive contract, says nothing about score
 ```
 
-Sandbox has the real shape (same columns/options/skip logic) but invented marginals/dependencies: **a model tuned to the sandbox will not transfer; a pipeline debugged against it will.**
+Fast iteration: `src/eval/runner.py` scores any `predict()` in-process on all four sandboxes with exact (un-noised) skill, using the kit's own scoring functions.
+
+Sandbox has the real shape (same columns/options/skip logic/roles) but invented marginals: **a model tuned to sandbox content will not transfer; a pipeline debugged against it will.** Since launch, `sandbox.trait_scale` = 2.0 (was 0.6 in the draft) — respondent-level dependence is now strong enough locally to test conditional models, not just column-marginal ones. An LLM world-knowledge prior is *by construction* useless on the sandbox (answers are random) — don't read a sandbox non-gain as the prior failing (organizers' own warning in `baseline/external_model`).
 
 ## Key dates (2026)
 
-- **Aug 17: public launch (postponed from Aug 10 on 2026-08-11).** Registration opens with launch.
-- Aug 17 – Oct 31: phase 1 (dev). Nov 1–14: phase 2 (final), single submission.
+- **Aug 17: public launch (done).** Registration open.
+- Aug 17 – Oct 30: phase 1 (dev). Nov 1–14: phase 2 (final), single submission.
 - Dec: NeurIPS Sydney session. Top-3 = proceedings co-authorship.
 
-**Pre-launch caveat:** the cloned starter kit is a pre-launch draft (last push 2026-08-10, before the postponement). On Aug 17: `git pull` the kit, re-verify README/config.yml facts above (metric, floor, timeouts, submission caps, schemas), and diff against this file. Known draft inconsistencies in kit commit history: rules doc v0.8 says 92 submissions vs config.yml `max_submissions_per_participant: 20`; contact address neurips-un-benchmark@stanford.edu vs h4upt@stanford.edu; stale phase dates.
+**Launch-day verification (2026-08-17):** kit re-cloned from the new `public` repo and diffed against the draft; all facts above re-verified against launch README/config.yml. Draft ambiguities resolved: submission cap **20** stands; contact is team@simulacrabench.org. Baselines now three: `marginal_counts` (unchanged), `bundled_artifact` (bundled-CSV prior — the shape to copy for offline-fitted artifacts), `external_model` (HF LLM prior via `models.txt` + gate recursion + Dirichlet backoff).
 
 ## Folder structure (keep to this)
 

@@ -23,7 +23,7 @@ def ensure_sandbox(name, config, seed=0):
     """Build the sandbox for a schema if it does not exist yet."""
     schema = load_schema(str(KIT / "data" / f"{name}.json"), config)
     out = KIT / "_sandbox" / name
-    if not (out / "train.parquet").exists():
+    if not (out / "respondents.parquet").exists():
         write_sandbox(schema, config, str(out), seed=seed)
     return schema, out
 
@@ -35,8 +35,8 @@ def run(predict_fn, schemas=SCHEMAS, phase=1, seed=0):
     results = {}
     for name in schemas:
         schema, data_dir = ensure_sandbox(name, config)
-        train, test = load_frames(str(data_dir), schema)
-        frame, cells, truth = sample_rows(schema, train, test, config, phase,
+        respondents = load_frames(str(data_dir), schema)
+        frame, cells, truth = sample_rows(schema, respondents, config, phase,
                                           seed=seed)
         t0 = time.perf_counter()
         vectors = predict_fn(frame, schema)

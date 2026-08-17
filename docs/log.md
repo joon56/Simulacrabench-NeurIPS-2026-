@@ -2,6 +2,20 @@
 
 Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-notes]].
 
+## 2026-08-17 — public launch, kit migration
+
+- **Competition launched.** Old URLs dead (situatedevals.org/simulacrabench, `SituatedEvals/notebooks` both 404). New: site **simulacrabench.org**, kit repo **SituatedEvals/public**, leaderboard **codabench.org/competitions/17822**, contact **team@simulacrabench.org**. Cloned the new kit to `external/starter-kit/`; draft archived at `external/starter-kit-notebooks-archived/`.
+- **Full diff draft → launch kit.** Structural change: no more `train/test.parquet` — one `respondents.parquet` with `role` ∈ TRAIN/DEV/FINAL assigned at build; phase 1 scores DEV, phase 2 scores FINAL with DEV turned visible; FINAL rows not shipped in phase 1. `load_frames`/`sample_rows` signatures changed accordingly.
+- **Fact corrections vs our notes (CLAUDE.md + starter-kit-notes updated):**
+  - Wall-clock budget is for the **whole run, all three instruments together** (900 s / 3600 s) — not per instrument.
+  - Runtime: +8 CPUs, Python 3.13, `requirements.txt` now optional (large pre-install list incl. torch, transformers, and organizer lib `torch_measure`); HF models via `models.txt` fetched at image build.
+  - Schemas: world_bank now 106 items/76 scored (was 82/73, cognitive items re-classed, numeric options now strings); unhcr 285/213/143 gated; sample rebuilt (12,000 rows, 11 items). Splits now train/dev/final fractions.
+  - Submission cap 20 confirmed; phase 1 ends **Oct 30** (site); zip ≤ 1 GB; failures return sanitized `HSCC-*` codes only.
+  - Sandbox `trait_scale` 0.6 → **2.0**: conditional models are now testable locally. All draft-era reference scores obsolete.
+- New kit pieces: `FAQ.md`, `tools/check_submission_zip.py` (mirrors hosted ingestion), baselines `bundled_artifact` (bundled-CSV prior) and `external_model` (LLM prior + gate recursion + Dirichlet backoff; organizers warn it cannot beat marginal on the sandbox by construction), 6-language tutorials.
+- **Harness re-verified on launch kit** (`runner.py` updated to the role API; 11 tests pass). Exact skills, seed 0, phase 1: marginal 0.3198/0.1486/0.2469/0.2988 (mean 0.2535); gated_marginal 0.3198/0.3267/0.2568/0.2988 (mean **0.3005**). Official `score.py` on sample: `PASS 0.3200 (27 s)` — matches. Gate-gain pattern shifted with the new sandbox: unicef +0.178, world_bank +0.010, sample/unhcr ±0 (parents PREDICT → falls back to marginal, consistent with the 08-12 structural conclusion).
+- Next: register on Codabench (user action — site may go live with the Aug 17 UTC day), then first leaderboard submission = gated_marginal as pipeline validation candidate; start GIVEN-conditioning to unlock unhcr's 143 gates.
+
 ## 2026-08-12
 
 - **Experiment runner** (`src/eval/runner.py`): scores any `predict(frame, schema)` in-process with the kit's own modules — exact un-noised skill + wall-clock, all four schemas. Kit marginal baseline reproduces the noised scores exactly (0.1902/0.2468/0.3208).

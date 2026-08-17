@@ -34,11 +34,13 @@ where fitted and on what held-out cells. Show reliability evidence.]
 
 ## 5. Training and compute budget
 
-- Runs inside `predict()` on the delivered frame (no external state).
+- Fitted state loaded at module import; `predict()` runs on the delivered
+  frame only (no external state, no network).
 - Wall-clock per instrument (measured on sandbox, hardware): [table].
-  Phase-2 limit 3600 s/instrument.
-- Dependencies (pinned): [list]. External weights + commit hashes: [list or
-  "none"], declared before phase 2.
+  Phase-2 limit 3600 s for the whole run — import + all three instruments.
+- Dependencies (pinned, beyond the hosted image's pre-installs): [list].
+  External models: [models.txt HF repo ids and/or bundled artifacts, or
+  "none"]; external resources disclosed per FAQ.
 
 ## 6. Results
 

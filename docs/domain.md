@@ -21,7 +21,7 @@ IRT models the probability of each response level of item *j* by respondent *i* 
 3. **Wu, M., Davis, R. L., Domingue, B. W., Piech, C., & Goodman, N. (2020). "Variational Item Response Theory: Fast, Accurate, and Expressive." *Proc. Educational Data Mining (EDM) 2020*.**
    Link: <https://arxiv.org/abs/2002.00276> · Code: <https://github.com/mhw32/variational-item-response-theory-public>
    Derives VIBO, an amortized variational lower bound for IRT: an inference network maps a respondent's observed responses to a posterior over ability, trained jointly with item parameters. Matches HMC accuracy while being orders of magnitude faster (e.g. 1.56M respondents: 217 h HMC vs ~800 s VIBO) and extends cleanly to deep/nonlinear response functions.
-   Relevance: the template for both tracks — for Track A, amortized inference imputes masked items from a respondent's unmasked ones in one forward pass; for Track B, the encoder can be conditioned on the demographic block only. Fits comfortably inside the 900 s/instrument budget.
+   Relevance: the template for both tracks — for Track A, amortized inference imputes masked items from a respondent's unmasked ones in one forward pass; for Track B, the encoder can be conditioned on the demographic block only. Fits comfortably inside the 900 s whole-run budget.
 
 4. **Lalor, J. P., & Rodriguez, P. (2023). "py-irt: A Scalable Item Response Theory Library for Python." *INFORMS Journal on Computing* 35(1).**
    Link: <https://arxiv.org/abs/2203.01282> · Code: <https://github.com/nd-ball/py-irt>
