@@ -1,6 +1,6 @@
 # CLAUDE.md — SimulacraBench / HSCC (NeurIPS 2026 Competition)
 
-Working folder for SimulacraBench, officially the Humanitarian Survey Completion Competition (HSCC). Original briefing: `SIMULACRABENCH.md` (Korean, partially outdated — this file wins on conflicts). Official site: <https://simulacrabench.org> · Starter kit: <https://github.com/SituatedEvals/public> (cloned at `external/starter-kit/`, gitignored) · Leaderboard: <https://www.codabench.org/competitions/17822/> · Terms/forum: Codabench org 4076 · Contact: team@simulacrabench.org. (Pre-launch URLs situatedevals.org and the `notebooks` repo are dead; archived pre-launch clone at `external/starter-kit-notebooks-archived/`.)
+Working folder for SimulacraBench, officially the Humanitarian Survey Completion Competition (HSCC). Original briefing: `SIMULACRABENCH.md` (Korean, partially outdated — this file wins on conflicts). Official site: <https://simulacrabench.org> · Starter kit: <https://github.com/SituatedEvals/public> (cloned at `external/starter-kit/`, gitignored) · Leaderboard: <https://www.codabench.org/competitions/17822/> · Terms/forum: Codabench org 4076 · Contact: team@simulacrabench.org. (Pre-launch URLs situatedevals.org and the `notebooks` repo are dead.)
 
 ## Task summary (per official starter kit README)
 

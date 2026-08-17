@@ -2,8 +2,8 @@
 
 Distilled from `external/starter-kit/` — the **launch release** of
 <https://github.com/SituatedEvals/public>, cloned and verified 2026-08-17
-(pre-launch `notebooks` draft archived at
-`external/starter-kit-notebooks-archived/`). Literature backing the modelling
+(the pre-launch `notebooks` draft clone has been deleted; its differences
+are recorded here and in [[log]]). Literature backing the modelling
 choices referenced here lives in [[domain]]; day-by-day findings in [[log]].
 
 ## The submission contract, exactly

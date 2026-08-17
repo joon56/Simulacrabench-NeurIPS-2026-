@@ -1,6 +1,6 @@
 # Domain reading list — SimulacraBench
 
-Study document for the six technical areas underlying this competition: probabilistic completion of a categorical/ordinal survey response matrix, scored by mean log-loss (skill = 1 + log_score/U). The metric makes this a *calibration* contest, not an accuracy contest, so the reading list is weighted toward (1) psychometric response models that give per-item categorical likelihoods, (2) low-rank structure across respondents and items, (3) proper scoring rules and probability calibration, (4) deep generative imputers and the evidence on when they beat simple baselines, (5) survey methodology — especially skip-logic/structural missingness, since NA_GATED is a scored answer level here — and (6) LLM survey simulation, whose known calibration failures define the competition's hybrid differentiation angle. All links verified against primary sources (arXiv, publisher pages, official proceedings); entries within each section are ranked by importance for this competition. Competition mechanics and the exact submission contract live in [[starter-kit-notes]]; experiment history in [[log]]. (Terminology note: some "Relevance" lines below say "Track A"/"Track B" from the original briefing. The official task has no tracks — read "Track B" as the actual task (held-out respondents, GIVEN block visible) and "Track A" as auxiliary within-respondent MCAR validation.)
+Study document for the six technical areas underlying this competition: probabilistic completion of a categorical/ordinal survey response matrix, scored by mean log-loss (skill = 1 + log_score/U). The metric makes this a *calibration* contest, not an accuracy contest, so the reading list is weighted toward (1) psychometric response models that give per-item categorical likelihoods, (2) low-rank structure across respondents and items, (3) proper scoring rules and probability calibration, (4) deep generative imputers and the evidence on when they beat simple baselines, (5) survey methodology — especially skip-logic/structural missingness, since NA_GATED is a scored answer level here — and (6) LLM survey simulation, whose known calibration failures define the competition's hybrid differentiation angle. All links verified against primary sources (arXiv, publisher pages, official proceedings); entries within each section are ranked by importance for this competition. Competition mechanics and the exact submission contract live in [[starter-kit-notes]]; experiment history in [[log]]. §8 (2026-08-17) adds the areas the launch kit made load-bearing: prediction-powered inference as the official downstream framing, adaptive-analysis limits of the noised leaderboard, cognitive-test norm priors for the re-classed World Bank items, the organizer-sanctioned LLM-prior recipe, and `torch_measure`. (Terminology note: some "Relevance" lines below say "Track A"/"Track B" from the original briefing. The official task has no tracks — read "Track B" as the actual task (held-out respondents, GIVEN block visible) and "Track A" as auxiliary within-respondent MCAR validation.)
 
 ---
 
@@ -216,6 +216,36 @@ The original six areas under-covered the specific *shape* of this competition's 
 
 ---
 
+## 8. Launch addendum (2026-08-17): domains the launch kit makes newly load-bearing
+
+The launch kit re-verification (see [[starter-kit-notes]]) changed not just facts but priorities. Five areas that were peripheral or absent above are now directly load-bearing.
+
+1. **Prediction-powered inference — the official downstream framing.**
+   **Angelopoulos, A. N., Bates, S., Fannjiang, C., Jordan, M. I., & Zrnic, T. (2023). "Prediction-Powered Inference." *Science* 382(6671), 669–674.** Link: <https://arxiv.org/abs/2301.09633>. Sequel with strictly better estimators: **PPI++** (<https://arxiv.org/abs/2311.01453>). Classical ancestor: model-assisted survey estimation / GREG (Särndal, Swensson & Wretman 1992, *Model Assisted Survey Sampling*).
+   Use model predictions on the whole frame, then use the labeled subsample to measure and subtract the model's error: valid whether the model is good or bad, narrower than interview-only exactly when the model is good. Tutorial part 2 builds this estimator explicitly ("a better skill on the leaderboard is a narrower confidence interval in the field"), and the sample schema's GIVEN block is now framed as *sampling-frame variables* (roster/admin data) against the *expensive interviewed* PREDICT block.
+   Relevance: this is what the organizers say the benchmark is *for* — it does not change the scored objective (still per-cell log score), but it is the frame for the 4-page method description, the NeurIPS session, and any "why this matters" argument. It also sharpens the modelling target: the value of skill is monotone in CI width, so calibrated probabilities matter more than argmax accuracy — consistent with everything in §3.
+
+2. **Adaptive data analysis under a noised leaderboard.**
+   **Dwork, C., Feldman, V., Hardt, M., Pitassi, T., Reingold, O., & Roth, A. (2015). "The reusable holdout: preserving validity in adaptive data analysis." *Science* 349(6248).** Link: <https://doi.org/10.1126/science.aaa9375>. Companion: **Blum, A., & Hardt, M. (2015). "The Ladder: A Reliable Leaderboard for Machine Learning Competitions."** Link: <https://arxiv.org/abs/1502.04585>.
+   Phase 1 is literally this mechanism: a *fixed* DEV set queried by every submission, defended by Laplace ε=10 noise, 0.01 rounding, and a 20-query cap (`privatize()` in `score.py` says so in as many words).
+   Relevance: quantifies what a leaderboard query is worth — with skill-scale noise σ≈0.14/ε per query and 20 queries max, the leaderboard can *confirm* a large local improvement but cannot *rank* close variants. Operational consequence (already discipline rule 4): model selection happens entirely on the local harness; leaderboard submissions only validate pipeline health and large, pre-registered deltas.
+
+3. **Cognitive-test norms — real-world priors for the new World Bank items.**
+   The launch schema re-classed the *raw* cognitive scores as PREDICT: Digit Span forward/backward maximal length (options "1"–"14") and Corsi block span ("1"–"7"), citing Woods 2011 in the item text itself. **Woods, D. L., et al. (2011). "Improving digit span assessment of short-term verbal memory." *J. Clinical & Experimental Neuropsychology* 33(1), 101–111** (norms: forward ML ≈ 6.8±1.1, backward shorter by ≈1). **Kessels, R. P. C., et al. (2000). "The Corsi Block-Tapping Task: Standardization and Normative Data." *Applied Neuropsychology* 7(4), 252–258** (span ≈ 6.2±1.3 in adults, education-sensitive).
+   Relevance: published norm distributions are legitimate offline priors for exactly these option lists — an informed marginal over "1"–"14" (unimodal near 6–7, backward shifted down, adjusted for the youth-jobseeker population) beats both uniform and thin visible counts on long option lists, at zero runtime cost. Same logic applies to the occupation items (SOC-style major groups): occupational distribution priors for young job-seekers exist in ILO/LFS statistics. This is the organizer-sanctioned "world knowledge" lever (`external_model` docstring), and it survives on real data precisely where the sandbox cannot measure it.
+
+4. **The organizer-sanctioned LLM recipe: prior + backoff, not persona-prompting.**
+   `baseline/external_model/main.py` is itself the key reference — read it as a design document. The ladder: stratum counts (GIVEN columns chosen by mutual information with the item) → coarser counts → base measure from LLM next-token logits over *option text*, combined as `(counts + ALPHA·coarser)/(total + ALPHA)` with ALPHA in units of respondents.
+   Relevance: this reframes §6 — the viable LLM use here is not simulating respondents but supplying a *base measure* worth a fixed number of pseudo-respondents, diluted automatically by real data. It composes with hierarchical shrinkage (§7.1) and calibration (§3), runs in one forward pass per item (fits the whole-run budget), and ships via `models.txt` with no bundling. The organizers' own warning: its value is invisible on the sandbox by construction — judge it on structure (does backoff hurt anywhere?) locally, and on real data only via a deliberate leaderboard submission.
+
+5. **`torch_measure` — the organizer-provided psychometrics library in the runtime image.**
+   Stanford AIMS lab, PyPI `torch-measure`: PyTorch-native IRT (Rasch/2PL/3PL, ML + Bayesian estimation), factor models, adaptive testing, reliability/information diagnostics, GPU throughout. Docs: <https://aimslab.stanford.edu/torch_measure/>.
+   Relevance: pre-installed, so an IRT component costs nothing in `requirements.txt`. Caveat before relying on it: public docs describe *binary* response matrices; the graded/nominal likelihoods this competition needs (§1.1, §1.2) may need a hand-rolled softmax/GRM head on top of torch anyway. Verify polytomous support against the actual package before designing around it; py-irt (§1.4) remains the fallback.
+
+Also newly relevant, no literature needed: the whole-run budget (900 s covers import + model load + all three instruments) favors **one shared backbone** over three per-instrument models, and makes module-import time a first-class measured quantity in every profile.
+
+---
+
 ## Suggested reading order
 
 **First week (foundations the first submissions are built on):**
@@ -233,4 +263,9 @@ The original six areas under-covered the specific *shape* of this competition's 
 10. Candès & Recht (§2.3), softImpute (§2.4), mice (§2.5), missForest (§2.6) — completion theory background and the classical baselines to beat.
 11. Kull et al. 2019 (§3.3), Muraki 1992 (§1.6) — second-order calibration and likelihood refinements once the pipeline is stable.
 12. MIWAE (§4.2) then TabDDPM (§4.1), with GAIN (§4.3) as background — only pursue if they beat the calibrated IRT/low-rank stack locally.
-11. Area 6 in order 6.1 → 6.2 → 6.3/6.4 → 6.5 → 6.6/6.7 → 6.8, plus Little & Rubin (§5.2) and de Leeuw (§5.4) as reference — the LLM hybrid is a test-phase (100-min) differentiator, and the recent fine-tuning line (Cao, Suh) defines what a viable version looks like.
+11. Area 6 in order 6.1 → 6.2 → 6.3/6.4 → 6.5 → 6.6/6.7 → 6.8, plus Little & Rubin (§5.2) and de Leeuw (§5.4) as reference — the LLM hybrid is a test-phase differentiator, and the recent fine-tuning line (Cao, Suh) defines what a viable version looks like.
+
+**Launch additions (slot in early — see §8):**
+13. Angelopoulos et al. PPI (§8.1) — read before drafting any of `docs/method-4p.md`; it is the organizers' own framing of what skill buys.
+14. Dwork et al. reusable holdout (§8.2) — before the *first* leaderboard submission; it sets the submission-spending policy.
+15. Woods 2011 + Kessels 2000 norms (§8.3) and the `external_model` docstring (§8.4) — before building the World Bank informed-prior component; cheapest expected real-data gains after gate closure.
