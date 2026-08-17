@@ -73,6 +73,16 @@ docs/            # method-4p.md, log.md (daily experiment log)
 5. **Complexity must pay rent.** A complex model is adopted only after beating the calibrated simple stack on the local harness, within the wall-clock budget (profile it).
 6. **Everything is logged** — hypothesis → result → conclusion in docs/log.md. An unreproducible experiment didn't happen.
 
+## Experiment tree (how approaches are recorded)
+
+- **One experiment = one file** in `docs/experiments/E0XX-slug.md` (copy `TEMPLATE.md`): `parent:` header is the tree edge (which model it branches from), `status:` ∈ adopted / rejected / parked / superseded-by:E0YY. `docs/log.md` stays a daily journal and refers to experiments by ID.
+- **Rejected model code is never deleted** — only its status changes. Approaches get revived and combined; deleting code falsifies the tree.
+- **Commit messages carry the experiment ID** (`E003: given-stratum backoff`) so git history maps onto the tree.
+- **Adoption threshold is fixed**: Δ(3-instrument mean, sample excluded) > +0.005 (~3σ of phase-sampling noise, measured 2026-08-12). The experiment file's Decision section is the only place verdicts are rendered.
+- `python scripts/render_tree.py` regenerates `docs/tree.md` (mermaid) from the headers — run it whenever an experiment file is added or its status changes.
+- Leaderboard submissions snapshot into `submissions/` with the experiment ID and expected-vs-actual score pair.
+- **End of each working day: push to `origin` (private GitHub repo).**
+
 ## Rules for working here
 
 - **All code, comments, and commit messages in English.**
