@@ -2,6 +2,18 @@
 
 Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-notes]].
 
+## 2026-08-19 — Codabench live, registered; kit update audit
+
+- **Codabench competition 17822 is live; user registered (auto-approve).** Leaderboard columns: Grand Prize + per-instrument skills. Phase config: Dev to Oct 31 / 1 per day, Test Nov 1–14 / 1 total. Site says launch Aug 18, dev ends Oct 30 → treat Oct 30 as deadline. New site item: "Roots of the Data Prize" (teams based in the 14 data-collection countries).
+- **Kit: 8 new commits pulled.** The big ones:
+  - **Submission cap removed** — `max_submissions_per_participant: 20` deleted from config.yml; 1/day is the only limit (~70+ possible submissions). Discipline unchanged: local harness decides, leaderboard validates.
+  - **`FINAL` → `TEST` rename; split now exact counts** (`n_train/n_dev/n_test`), roles assigned deterministically, **`data_fraction` removed** — phase 1 shows ALL TRAIN rows. Exact phase-1 scored cells: unicef 17,856 / wb 39,520 / unhcr 132,273. `sample_rows` signature changed again → runner.py updated, sandboxes regenerated, 11 tests pass.
+  - **Real instrument metadata published in schema descriptions**: unicef v1.1 = Faith & Immunisation, 10 named countries, Q01 gated on country; unhcr v1.3 = Syrian refugees in Egypt/Iraq/Jordan/Lebanon, 2 CATI rounds (6,316+4,033) as independent cross-sections; wb = youth job-seekers, 3 countries. Gated counts: unicef 8, wb 19→40, unhcr 143→156.
+  - **unhcr gates are approximate on real data** (agreement median 0.83, range 0.29–0.98; s3_11 branches overlap; 59 multi-select items sentinel-marked in round 2 only; `GATE_CORRECTIONS.md` referenced but missing from kit → forum question). Hard gate coupling unsafe on unhcr; sandbox can't show it. E002 caveat recorded; softened gating is the successor experiment.
+- **Re-measured on updated kit** (seed 0, exact): marginal mean 0.2877; gated_marginal 0.3412 (Δ +0.0535; unicef +0.161, wb +0.052, unhcr +0.001). E001/E002 files updated.
+- Minor: Codabench API reports docker python:3.12-slim vs kit 3.13-slim — flagged in notes, likely stale platform field.
+- Next: E003 = soft/agreement-weighted gate coupling design (needs a way to estimate per-item gate agreement from visible rows); first leaderboard submission once E002 zip passes check_submission_zip + all three schemas.
+
 ## 2026-08-17 — public launch, kit migration
 
 - **Competition launched.** Old URLs dead (situatedevals.org/simulacrabench, `SituatedEvals/notebooks` both 404). New: site **simulacrabench.org**, kit repo **SituatedEvals/public**, leaderboard **codabench.org/competitions/17822**, contact **team@simulacrabench.org**. Cloned the new kit to `external/starter-kit/`; draft archived at `external/starter-kit-notebooks-archived/`.

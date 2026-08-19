@@ -4,10 +4,11 @@ Working folder for SimulacraBench, officially the Humanitarian Survey Completion
 
 ## Task summary (per official starter kit README)
 
-Three unpublished survey instruments (schema v1.0 at launch): UNICEF 19 items / 12 scored / 7 gated (19,847 rows); World Bank 106 / 76 scored / 19 gated (6,927 rows); UNHCR ERPIS 285 / 213 scored / 143 gated (10,349 rows). Visible respondents arrive complete; **held-out respondents show only their `GIVEN` block — every `PREDICT` cell is blank and scored** (cross-respondent generalization; there are no separate Track A/B).
+Three unpublished survey instruments (post-launch schema update 2026-08-19): UNICEF v1.1 "Faith & Immunisation" 19 items / 12 scored / 8 gated (19,846 rows, 10 countries); World Bank "Skills Assessment" 106 / 76 scored / 40 gated (6,927 rows, 3 countries, youth job-seekers); UNHCR ERPIS v1.3 285 / 213 scored / 156 gated (10,349 rows — Syrian refugees in Egypt/Iraq/Jordan/Lebanon, 2 CATI rounds treated as independent cross-sections). Schema `description` fields now carry real instrument metadata — read them, they are modelling input. Visible respondents arrive complete; **held-out respondents show only their `GIVEN` block — every `PREDICT` cell is blank and scored** (cross-respondent generalization; there are no separate Track A/B).
 
 - Item classes: `GIVEN` (visible, never scored), `PREDICT` (held out, scored), `EXCLUDE` (never shown, stays in schema — filter on `class`, don't assume columns line up).
-- **Respondent roles, fixed at dataset build:** one `respondents.parquet` with a `role` column ∈ {`TRAIN`, `DEV`, `FINAL`}. Phase 1: `TRAIN` visible (thinned to `data_fraction` 0.30 — visible rows only, scored cells never thinned), `DEV` masked and scored. Phase 2: `TRAIN`+`DEV` visible with answers, `FINAL` scored. `FINAL` rows are not shipped at all in phase 1, so the phase-1 leaderboard can't leak the final answer key. Scored set is fixed within a phase → leaderboard entries directly comparable.
+- **Respondent roles, fixed at dataset build:** one `respondents.parquet` with a `role` column ∈ {`TRAIN`, `DEV`, `TEST`} (renamed from FINAL), counts published in `schema["split"]`: unicef 14,885/1,488/3,473 · world_bank 5,195/520/1,212 · unhcr 8,279/621/1,449. **Nothing is subsampled** (`data_fraction` removed): phase 1 = all TRAIN visible, all DEV scored (exact scored cells: unicef 17,856 · wb 39,520 · unhcr 132,273); phase 2 = TRAIN+DEV visible, TEST scored. TEST rows not shipped in phase 1. Scored set fixed within a phase → leaderboard entries directly comparable.
+- **Gates are approximate on real UNHCR data**: schema states gate-vs-data agreement has median 0.83, range 0.29–0.98; the three s3_11 return-intention branches overlap in the file; five multi-select families mark the sentinel in round 2 only; five gates approximate conditions the one-parent format can't express (referenced `GATE_CORRECTIONS.md` is NOT in the kit — ask on forum). **Hard gate coupling (P=1) is unsafe on unhcr — soften toward observed sentinel rates.** Sandbox gates remain exact, so this failure mode is invisible locally.
 - **`NaN` means exactly one thing: held out, predict it.** Genuine non-response ("Prefer not to answer", "Refused") is an ordinary level.
 - **Gated items get one extra final slot for `schema["gated_value"]` (`NA_GATED`)** — "never asked" is a real scored answer. Predicting who gets skipped is worth as much as predicting what they say. Option order comes from the schema, never from the data.
 
@@ -26,7 +27,7 @@ Three unpublished survey instruments (schema v1.0 at launch): UNICEF 19 items / 
 - `predict(frame, schema)` is called **once per instrument**, returns one probability vector per blank cell — rows top-to-bottom, items in `schema["items"]` key order (not `frame.columns` order), each vector finite, non-negative, sum > 0 (grader renormalizes+floors). Load weights at **module import**, not inside `predict()`.
 - Network removed before import; no downloads at runtime (`HSCC-NETWORK-*` / `HSCC-HF-CACHE`).
 - Compute: **1× H100, 16 GB RAM (hard limit), 8 CPUs. Phase 1: 900 s; Phase 2: 3600 s — the budget covers the whole run: import + model load + all three instruments together, NOT per instrument.** Same `predict()` must PASS all three schemas.
-- Phase 1: 1 leaderboard submission/day, **max 20 total per participant** (confirmed in launch config.yml). Phase 2: single final submission + 4-page method description (`docs/method-4p.md`).
+- Phase 1: **1 leaderboard submission/day — the 20-total cap was removed 2026-08-18** (config.yml commit "Removed max per participant submission number"; Codabench shows 1/day only). Phase 2: single final submission + 4-page method description (`docs/method-4p.md`). Submissions stay disciplined regardless: local-harness verification first, expected-vs-actual logged.
 - Failures come back as sanitized `HSCC-*` codes only — no stdout, no tracebacks (exception *type* survives, message dropped). Debug locally; the platform will not tell you more.
 - Data exfiltration / re-identification attempts = disqualification (contractual, third-party enforceable).
 
@@ -45,11 +46,12 @@ Sandbox has the real shape (same columns/options/skip logic/roles) but invented 
 
 ## Key dates (2026)
 
-- **Aug 17: public launch (done).** Registration open.
-- Aug 17 – Oct 30: phase 1 (dev). Nov 1–14: phase 2 (final), single submission.
-- Dec: NeurIPS Sydney session. Top-3 = proceedings co-authorship.
+- **Launched (Codabench live 2026-08-19, site says launch Aug 18). Registered — auto-approve.**
+- Phase 1 (dev): now – **Oct 30 (site) / Oct 31 (Codabench phase config)** — treat Oct 30 as the safe deadline. Phase 2: Nov 1–14, single submission.
+- Dec: NeurIPS Sydney session. Top-3 = proceedings co-authorship. New: **"Roots of the Data Prize"** for top teams based in the 14 data-collection countries (not us).
+- Codabench leaderboard columns: Grand Prize (mean skill) + per-instrument UNICEF / World Bank / UNHCR.
 
-**Launch-day verification (2026-08-17):** kit re-cloned from the new `public` repo and diffed against the draft; all facts above re-verified against launch README/config.yml. Draft ambiguities resolved: submission cap **20** stands; contact is team@simulacrabench.org. Baselines now three: `marginal_counts` (unchanged), `bundled_artifact` (bundled-CSV prior — the shape to copy for offline-fitted artifacts), `external_model` (HF LLM prior via `models.txt` + gate recursion + Dirichlet backoff).
+**Verification history:** launch kit audited 2026-08-17; post-launch kit update pulled 2026-08-19 (8 commits: FINAL→TEST rename, split counts, cap removal, real instrument metadata in schema descriptions, unhcr/wb gating rework, disjunctional-gating documentation). Baselines three: `marginal_counts`, `bundled_artifact` (bundled-CSV prior shape), `external_model` (HF LLM prior via `models.txt` + gate recursion + Dirichlet backoff).
 
 ## Folder structure (keep to this)
 
@@ -69,7 +71,7 @@ docs/            # method-4p.md, log.md (daily experiment log)
 1. **No claim without a number.** Every modelling change is justified only by held-out skill on the local harness. No merge without measured improvement.
 2. **Structure before parameters.** Exhaust deterministic structure (skip-logic gate coupling, chain closure) before adding learned components — the organizers measured gating alone at 0.98 → 0.76 log score.
 3. **Overconfidence is the cardinal sin.** A confident wrong cell costs log(1e-3) ≈ −6.9 nats vs ≈ −1.4 for an honest hedge. When uncertain, shrink toward the marginal; check calibration before any submission.
-4. **Submissions are ammunition** — 20 total. Never spend a leaderboard submission on unverified changes; record expected score before submitting, compare after.
+4. **Submissions are ammunition** — 1/day (total cap removed 2026-08-18, but the noised leaderboard still can't rank close variants). Never spend a submission on unverified changes; record expected score before submitting, compare after.
 5. **Complexity must pay rent.** A complex model is adopted only after beating the calibrated simple stack on the local harness, within the wall-clock budget (profile it).
 6. **Everything is logged** — hypothesis → result → conclusion in docs/log.md. An unreproducible experiment didn't happen.
 

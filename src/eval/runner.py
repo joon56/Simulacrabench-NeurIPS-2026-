@@ -36,8 +36,7 @@ def run(predict_fn, schemas=SCHEMAS, phase=1, seed=0):
     for name in schemas:
         schema, data_dir = ensure_sandbox(name, config)
         respondents = load_frames(str(data_dir), schema)
-        frame, cells, truth = sample_rows(schema, respondents, config, phase,
-                                          seed=seed)
+        frame, cells, truth = sample_rows(schema, respondents, phase)
         t0 = time.perf_counter()
         vectors = predict_fn(frame, schema)
         elapsed = time.perf_counter() - t0

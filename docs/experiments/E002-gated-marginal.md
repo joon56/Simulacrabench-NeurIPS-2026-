@@ -20,8 +20,10 @@ P(asked) × asked-only conditional, chain closure automatic.
 
 | | sample | unicef | world_bank | unhcr | mean | Δ vs parent |
 |---|---|---|---|---|---|---|
-| gated_marginal | 0.3198 | 0.3267 | 0.2568 | 0.2988 | 0.3005 | **+0.0470** |
+| 08-17 kit | 0.3198 | 0.3267 | 0.2568 | 0.2988 | 0.3005 | **+0.0470** |
+| 08-19 kit (schemas v1.1/v1.3, count roles) | 0.3210 | 0.3232 | 0.2909 | 0.4297 | 0.3412 | **+0.0535** |
 
+Parent (E001 marginal) on 08-19 kit: 0.3210/0.1623/0.2387/0.4287, mean 0.2877.
 Reproduce: `.venv/Scripts/python src/eval/runner.py src/models/gated_marginal.py`
 
 ## Decision
@@ -35,3 +37,11 @@ model predicts parents respondent-specifically — that is the branch to grow
 next (GIVEN-conditioning / backoff).
 
 First-leaderboard-submission candidate.
+
+**Caveat added 2026-08-19 (unhcr v1.3):** real unhcr gates are approximate
+(gate-vs-data agreement median 0.83, min 0.29, per the schema description).
+This model's hard coupling is exact-gate-optimal and sandbox-safe, but on
+real unhcr data a gate-violating cell costs log(1e-3). Successor experiment
+must soften the coupling toward observed sentinel rates before this
+mechanism is trusted on unhcr. Sandbox cannot measure this (generator
+enforces gates exactly).

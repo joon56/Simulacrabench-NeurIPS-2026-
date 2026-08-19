@@ -24,35 +24,74 @@ choices referenced here lives in [[domain]]; day-by-day findings in [[log]].
 
 ## Delivered data = one file with roles
 
-`respondents.parquet` + `role` column, assigned once at dataset build
-(`assign_roles`, schema `split` fractions), never redrawn:
+`respondents.parquet` + `role` column, assigned once at dataset build,
+never redrawn. Since the 2026-08-19 kit update roles are **counts, not
+fractions** (`n_train`/`n_dev`/`n_test`, summing to `n_rows`; sandbox
+assigns them deterministically: first `n_train` rows TRAIN, etc.), the
+`FINAL` role is renamed **`TEST`**, and **nothing is subsampled** —
+`data_fraction` is gone; a phase takes every row of every role it is
+entitled to.
 
-| Role | Phase 1 | Phase 2 | split fraction (unicef/wb = .75/.075/.175, unhcr = .8/.06/.14) |
-|---|---|---|---|
-| `TRAIN` | visible | visible | `train_fraction` |
-| `DEV` | masked, scored | visible with answers | `dev_fraction` |
-| `FINAL` | **not shipped** | masked, scored | `final_fraction` |
+| Role | Phase 1 | Phase 2 |
+|---|---|---|
+| `TRAIN` | visible, answers included | visible, answers included |
+| `DEV` | GIVEN only, PREDICT scored | visible, answers included |
+| `TEST` | **not shipped** | GIVEN only, PREDICT scored |
 
-Phase 1 `data_fraction` 0.30 thins the *visible* rows only — the scored
-cells are identical for every submission in a phase, so leaderboard entries
-are directly comparable. Whole respondents go one way (cell-splitting would
-leak gated parents via visible children).
+Whole respondents go one way (cell-splitting would leak gated parents via
+visible children).
 
-## Instrument shapes (launch schemas, v1.0)
+## Instrument shapes (schemas as of 2026-08-19)
 
-| Schema | rows | items | GIVEN | PREDICT | EXCLUDE | gated |
-|---|---|---|---|---|---|---|
-| sample (v2.0) | 12,000 | 11 | 6 | 4 | 1 | 2 |
-| unicef | 19,847 | 19 | 7 | 12 | 0 | 7 |
-| world_bank | 6,927 | 106 | 9 | 76 | 21 | 19 |
-| unhcr | 10,349 | 285 | 17 | 213 | 55 | 143 |
+| Schema | rows | items | GIVEN | PREDICT | EXCLUDE | gated | n_train/n_dev/n_test | phase-1 cells |
+|---|---|---|---|---|---|---|---|---|
+| sample (v2.0) | 12,000 | 11 | 6 | 4 | 1 | 2 | 8,000/1,900/2,100 | 7,600 |
+| unicef (v1.1) | 19,846 | 19 | 7 | 12 | 0 | 8 | 14,885/1,488/3,473 | 17,856 |
+| world_bank (v1.0) | 6,927 | 106 | 9 | 76 | 21 | 40 | 5,195/520/1,212 | 39,520 |
+| unhcr (v1.3) | 10,349 | 285 | 17 | 213 | 55 | 156 | 8,279/621/1,449 | 132,273 |
 
-Changes vs the draft: sample grew 400 → 12,000 rows and 7 → 11 items (GIVEN
-block now deliberately "the cheap half of a questionnaire" — frame/roster
-variables); world_bank re-classed several cognitive items PREDICT↔EXCLUDE
-and re-binned spans (76 scored now, was 73); unhcr unchanged in scored count
-(213) but 143 gated (was 142); all numeric option values are now strings
-("1"…"5"), and `split` gained `dev_fraction`/`final_fraction`.
+Phase-1 scored cell counts are now exact (`n_dev` × PREDICT items). Phase 2:
+`n_test` × PREDICT = 41,676 / 92,112 / 308,637.
+
+**Schema `description` fields now carry real instrument metadata** (added
+2026-08-19 — read them as modelling input): unicef = Faith & Immunisation
+COVID/childhood-vaccination survey, 10 named countries, Q01 age gated on
+country (not fielded in Egypt); unhcr = ERPIS, Syrian refugee households in
+Egypt/Iraq/Jordan/Lebanon (46 governorates, origins in 15 Syrian
+governorates), two CATI rounds (6,316 + 4,033 rows) treated as independent
+cross-sections, fieldwork May–June 2025, ages/counts/years cut into closed
+bands; world_bank = youth job-seeker skills assessment, 3 countries.
+
+## Real-data gating is APPROXIMATE (unhcr) — the big modelling warning
+
+From the unhcr v1.3 description, verbatim facts:
+
+- "Gates state the instrument's routing… They are **not a constraint the
+  delivered rows satisfy**: agreement between a gate and who actually holds
+  a value has a **median of 0.83 and ranges from 0.29 to 0.98**."
+- The three return-intention branches off `s3_11` (return / not-return /
+  undecided, s7a/s7b/s7c) are mutually exclusive in the instrument but
+  **overlap in the file**.
+- Five gates approximate conditions the one-parent `{parent, observed_if}`
+  format cannot express (disjunctions); one is inferred from skip rates.
+  All six are "set out in `GATE_CORRECTIONS.md`" — **file not present in
+  the kit** (forum question).
+- Five multi-select families (6.4, 6.6, 6.11, 7A.7, 7B.1 — 59 items):
+  round 1 wrote `0` for skipped respondents, so the sentinel appears on
+  round-2 rows only → sentinel rate is confounded with round membership.
+- 156 of 230 GIVEN+PREDICT items carry the sentinel somewhere; the rest
+  never do.
+
+Consequence: **hard gate coupling (P(child=NA_GATED) = 1 − P(parent asked),
+enforced with probability 1) is unsafe on real unhcr** — a gate-violating
+cell costs log(1e-3). The coupling must be softened toward observed
+per-item sentinel rates (e.g. mixture weight = per-item gate agreement
+estimated from visible rows). The sandbox generator still enforces gates
+exactly, so the local harness CANNOT measure this failure mode — sandbox
+gate gains are an upper bound for unhcr.
+
+unicef/world_bank descriptions state routing without an agreement caveat —
+treat their gates as clean until visible real data says otherwise.
 
 ## Skip logic is deterministic structure, not statistics
 
@@ -74,19 +113,23 @@ The gate rule: an item is asked iff its parent's answer is in
   item, everyone gets the same parent belief and gate-aware ≈ plain marginal
   (measured 2026-08-17: unicef +0.18 skill, unhcr/sample ±0.000).
 
-## Reference numbers (launch sandbox, seed 0, phase 1, local harness exact skill)
+## Reference numbers (2026-08-19 kit, seed 0, phase 1, local harness exact skill)
 
-| Schema | marginal_counts | gated_marginal (ours) | bundled_artifact | cells |
-|---|---|---|---|---|
-| sample | 0.3198 | 0.3198 | 0.3195 | 3,628 |
-| unicef | 0.1486 | 0.3267 | 0.1486 | 17,868 |
-| world_bank | 0.2469 | 0.2568 | 0.2469 | 40,508 |
-| unhcr | 0.2988 | 0.2988 | 0.2988 | 132,699 |
-| **mean** | **0.2535** | **0.3005** | 0.2534 | |
+| Schema | marginal_counts | gated_marginal (ours) | cells |
+|---|---|---|---|
+| sample | 0.3210 | 0.3210 | 7,600 |
+| unicef | 0.1623 | 0.3232 | 17,856 |
+| world_bank | 0.2387 | 0.2909 | 39,520 |
+| unhcr | 0.4287 | 0.4297 | 132,273 |
+| **mean** | **0.2877** | **0.3412** | |
 
-Official `score.py` on sample, phase 1: `PASS 0.3200 (27 s)` — matches the
-harness to noise. (Draft-era reference numbers are obsolete: sandbox
-`trait_scale` went 0.6 → 2.0, so all draft scores moved.)
+Gate-gain pattern on the updated schemas: unicef +0.161, world_bank +0.052
+(gated items went 19 → 40, more with GIVEN parents), unhcr +0.001 (gates
+sit on PREDICT parents → falls back to crowd → nearly identical). All
+numbers moved vs 08-17 (roles now deterministic counts, schemas updated) —
+earlier tables are obsolete. Official `score.py` cross-check on the 08-17
+kit gave `PASS 0.3200` vs harness 0.3198 on sample; harness mirrors the
+kit's own functions, so no re-check needed per kit pull.
 
 Sandbox marginals/dependencies are invented (Dirichlet α=0.9, one latent
 trait per respondent, loading scale **2.0** since launch — strong enough to
@@ -131,13 +174,20 @@ world-knowledge prior is by construction uninformative on the sandbox
   LLM next-token prior over option text), ALPHA in units of respondents so
   data drowns a bad prior.
 
-## Draft-era open questions — resolved at launch
+## Open/resolved questions ledger
 
-- Submission cap: **20 total** stands (config.yml); the "92 submissions"
-  rules-doc number is gone.
+- Submission cap: launch config said 20 total; **removed 2026-08-18** —
+  now 1/day only (Codabench phase config agrees).
 - Contact: **team@simulacrabench.org** (both stanford.edu addresses gone).
 - Site moved to **simulacrabench.org**; kit repo moved from `notebooks` to
-  `public`. Leaderboard: codabench.org/competitions/17822.
+  `public`. Leaderboard: codabench.org/competitions/17822 (registration
+  auto-approve; columns: Grand Prize + per-instrument skills).
 - Schema key naming settled on `class` (`GIVEN`/`PREDICT`/`EXCLUDE`) and
-  `role` (`TRAIN`/`DEV`/`FINAL`).
-- Phase 1 window per site: Aug 17 – **Oct 30** (draft said Oct 31).
+  `role` (`TRAIN`/`DEV`/`TEST` — `FINAL` renamed 08-19).
+- Phase 1 end: site says **Oct 30**, Codabench phase config **Oct 31** —
+  treat Oct 30 as the deadline.
+- Codabench API lists `docker_image: python:3.12-slim` vs kit config
+  `python:3.13-slim` — likely a stale Codabench field; kit README says the
+  hosted image is Python 3.13. Watch for a `HSCC-BUILD-*` surprise.
+- **`GATE_CORRECTIONS.md` referenced by unhcr v1.3 but absent from the
+  kit** — forum question before building unhcr gate softening.
