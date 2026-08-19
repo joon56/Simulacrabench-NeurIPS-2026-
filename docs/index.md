@@ -3,6 +3,7 @@
 ## Domain literature
 
 - [[domain]] — reading list across the six literatures underlying the competition: IRT, low-rank matrix completion, proper scoring rules and calibration, deep generative tabular imputation, survey methodology, LLM survey simulation.
+- [[domain-study-guide.ko]] — Korean study companion to [[domain]]: per-entry study method (tier, depth, deliverable, time box) and the week-by-week plan tied to the experiment queue.
 
 ## Starter kit and competition mechanics
 
