@@ -79,6 +79,8 @@ From the unhcr v1.3 description, verbatim facts:
 - Five multi-select families (6.4, 6.6, 6.11, 7A.7, 7B.1 — 59 items):
   round 1 wrote `0` for skipped respondents, so the sentinel appears on
   round-2 rows only → sentinel rate is confounded with round membership.
+  **The round is directly conditionable: `wave` ("Survey round.") is a
+  GIVEN item** (round 1 = 6,316 rows, round 2 = 4,033).
 - 156 of 230 GIVEN+PREDICT items carry the sentinel somewhere; the rest
   never do.
 
