@@ -1,11 +1,13 @@
 """Local reproduction of the official metric.
 
-Verified against the official grader (external/starter-kit/score.py,
-2026-08-11): the log score is pooled over all blank cells (not per-item
-averaged), vectors are floored by mixing with a flat vector
-(scoring.floor = 1e-3), and the leaderboard metric is
-skill = 1 + log_score / U with U the schema-only mean of log K over
-scored items (K includes the gate sentinel).
+Verified against the official grader (external/starter-kit/score.py;
+last re-checked 2026-08-19 after the post-launch kit update): the log
+score is pooled over all blank cells (not per-item averaged), vectors are
+floored by mixing with a flat vector (scoring.floor = 1e-3), and the
+leaderboard metric is skill = 1 + log_score / U with U the schema-only
+mean of log K over scored items (K includes the gate sentinel). The
+grader's `item_normalized` and `brier` outputs are diagnostics only, not
+the leaderboard metric.
 
 Data conventions used across this repo:
 - Response matrix: pandas DataFrame, one row per respondent, one column

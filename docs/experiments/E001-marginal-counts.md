@@ -19,9 +19,10 @@ launch kit (trait_scale 2.0 sandboxes — all draft-era numbers obsolete).
 
 | | sample | unicef | world_bank | unhcr | mean | Δ vs parent |
 |---|---|---|---|---|---|---|
-| marginal_counts | 0.3198 | 0.1486 | 0.2469 | 0.2988 | 0.2535 | — |
+| 08-17 kit | 0.3198 | 0.1486 | 0.2469 | 0.2988 | 0.2535 | — |
+| 08-19 kit (schemas v1.1/v1.3, count roles) | 0.3210 | 0.1623 | 0.2387 | 0.4287 | 0.2877 | — |
 
-Official grader cross-check: `score.py` on sample, phase 1 → `PASS 0.3200 (27 s)`.
+Official grader cross-check (08-17 kit): `score.py` on sample, phase 1 → `PASS 0.3200 (27 s)`.
 Reproduce: `.venv/Scripts/python src/eval/runner.py external/starter-kit/baseline/marginal_counts/main.py`
 
 ## Decision

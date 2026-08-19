@@ -6,7 +6,7 @@ Study document for the six technical areas underlying this competition: probabil
 
 ## 1. Item Response Theory for imputation
 
-IRT models the probability of each response level of item *j* by respondent *i* through a low-dimensional latent trait — exactly the generative story of a survey matrix. The classical family (2PL for binary; Samejima's graded model for ordered Likert; Bock's nominal model for unordered categories; Muraki's generalized partial credit in between) supplies per-item-type categorical likelihoods; modern amortized/variational inference makes them fit in minutes on 61k×150 matrices, and the matrix-factorization view connects them directly to Section 2. (The 2PL itself originates in Birnbaum's chapters of Lord & Novick's 1968 *Statistical Theories of Mental Test Scores*; the modern references below cover it operationally.)
+IRT models the probability of each response level of item *j* by respondent *i* through a low-dimensional latent trait — exactly the generative story of a survey matrix. The classical family (2PL for binary; Samejima's graded model for ordered Likert; Bock's nominal model for unordered categories; Muraki's generalized partial credit in between) supplies per-item-type categorical likelihoods; modern amortized/variational inference makes them fit in minutes on this competition's ~37k respondents × up to 285 items, and the matrix-factorization view connects them directly to Section 2. (The 2PL itself originates in Birnbaum's chapters of Lord & Novick's 1968 *Statistical Theories of Mental Test Scores*; the modern references below cover it operationally.)
 
 1. **Samejima, F. (1969). "Estimation of latent ability using a response pattern of graded scores." *Psychometrika Monograph Supplement No. 17*.**
    Link: <https://doi.org/10.1007/BF03372160>
@@ -55,7 +55,7 @@ The alternative (and complementary) framing: the response matrix is approximatel
 3. **Candès, E. J., & Recht, B. (2009). "Exact Matrix Completion via Convex Optimization." *Foundations of Computational Mathematics* 9, 717–772.**
    Link: <https://arxiv.org/abs/0805.4471>
    The foundational result: an n×n rank-r incoherent matrix can be exactly recovered from O(n^1.2 · r log n) uniformly sampled entries by nuclear-norm minimization.
-   Relevance: background theory — explains why ~150 items × 61k respondents with MCAR masking (Track A) is a benign completion regime, and why incoherence/sampling assumptions matter when masking is not uniform.
+   Relevance: background theory — explains when a survey-scale response matrix is a benign completion regime, and why incoherence/sampling assumptions matter here, where masking is whole-respondent (structured), not uniform.
 
 4. **Mazumder, R., Hastie, T., & Tibshirani, R. (2010). "Spectral Regularization Algorithms for Learning Large Incomplete Matrices." *JMLR* 11, 2287–2322.**
    Link: <https://jmlr.org/papers/v11/mazumder10a.html>
@@ -207,7 +207,7 @@ The original six areas under-covered the specific *shape* of this competition's 
 4. **Hollmann, N., Müller, S., Purucker, L., Krishnakumar, A., Körfer, M., Hoo, S. B., Schirrmeister, R. T., & Hutter, F. (2025). "Accurate predictions on small data with a tabular foundation model." *Nature* 637, 319–326.**
    Link: <https://www.nature.com/articles/s41586-024-08328-6> · Code/weights: <https://github.com/PriorLabs/TabPFN>
    TabPFN v2: a transformer pre-trained on millions of synthetic tabular tasks that performs in-context Bayesian-like prediction on a new table in seconds, outputting full class-probability distributions; outperforms tuned GBDT ensembles on datasets up to ~10k rows without any training.
-   Relevance: a potential shortcut to a strong, *calibrated* per-item conditional model within the 900 s budget (fit is a forward pass), and the weights are publicly downloadable at a pinnable commit — compatible with Rule 9 if declared before phase 2. Constraints to test on the sandbox: row limits vs 5–15k training respondents, many-class items, and how it treats the NA_GATED level.
+   Relevance: a potential shortcut to a strong, *calibrated* per-item conditional model within the 900 s budget (fit is a forward pass), and the weights ship via `models.txt` (HF repo id) or bundled in the zip, with external resources disclosed per the FAQ. Constraints to test on the sandbox: row limits vs 5–15k TRAIN respondents per instrument, many-class items, and how it treats the NA_GATED level.
 
 5. **Böckenholt, U. (2012). "Modeling Multiple Response Processes in Judgment and Choice." *Psychological Methods* 17(4), 665–678.**
    Link: <https://doi.org/10.1037/a0028111>

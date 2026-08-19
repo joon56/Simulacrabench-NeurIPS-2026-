@@ -1,8 +1,8 @@
 # Method description (4-page) — template
 
-> Required with every phase-2 submission (Rule 7). Keep to 4 pages when
-> rendered. Fill sections as the final model solidifies; keep numbers in
-> sync with docs/log.md and submissions/.
+> Required with the phase-2 submission (per competition terms on
+> Codabench). Keep to 4 pages when rendered. Fill sections as the final
+> model solidifies; keep numbers in sync with docs/log.md and submissions/.
 
 ## 1. Problem framing
 
@@ -16,8 +16,10 @@
 
 - Schema-driven option vectors (values + NA_GATED slot for gated items);
   option order from schema, never from data.
-- Gate handling: deterministic coupling P(child = NA_GATED) =
-  1 − P(parent ∈ observed_if); chain closure. [Describe exact implementation.]
+- Gate handling: coupling P(child = NA_GATED) = 1 − P(parent ∈ observed_if);
+  chain closure; softened toward observed sentinel rates where gates are
+  approximate (unhcr: schema-documented agreement median 0.83).
+  [Describe exact implementation.]
 - Treatment of nonresponse levels ("Prefer not to answer", "Don't know") as
   ordinary levels. [IRTree factorization if used.]
 
@@ -55,4 +57,5 @@ submissions, from submissions/README.md log.]
 ## 7. Reproducibility
 
 - Repo layout, seed policy, one-command rerun of the local evaluation.
-- License note (top-3: non-commercial research reproduction).
+- License note [verify exact obligations against the Codabench terms the
+  team accepted at registration].

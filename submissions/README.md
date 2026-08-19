@@ -1,7 +1,9 @@
 # Submission protocol and score log
 
-Submissions are ammunition: 20 total in phase 1, 1/day (CLAUDE.md
-discipline rule 4). Every leaderboard submission follows this protocol:
+Submissions are ammunition: 1/day in phase 1 (the 20-total cap was removed
+2026-08-18; the noised leaderboard still can't rank close variants —
+CLAUDE.md discipline rule 4). Every leaderboard submission follows this
+protocol:
 
 1. **Before submitting** — the candidate must PASS `score.py` locally on all
    three real schemas, beat the current best on the local harness, and have
