@@ -85,6 +85,10 @@ docs/            # method-4p.md, log.md (daily experiment log)
 - Leaderboard submissions snapshot into `submissions/` with the experiment ID and expected-vs-actual score pair.
 - **End of each working day: push to `origin` (private GitHub repo).**
 
+## Study sessions
+
+Domain study runs as one-paper-per-session via the `paper-session` skill (`.claude/skills/paper-session/`): reading map from the paper's own sections → 3 self-check questions → tier-bound deliverable ([구현] = running code, [설계] = design note, [스킴] = 3-line summary) → ✅ + summary recorded in `docs/domain-study-guide.ko.md` → `study:` commit. Tiers and deliverables are defined per entry in that guide.
+
 ## Rules for working here
 
 - **All code, comments, and commit messages in English.**
