@@ -64,6 +64,7 @@ src/eval/        # local log-loss harness (reproduces official metric)
 submissions/     # dated submission snapshots + leaderboard score log
 docker/          # submission image definitions
 docs/            # method-4p.md, log.md (daily experiment log)
+docs/analysis/   # A-series process records (EDA, domain research): append-only attempt logs, every method/version/dead end — see TEMPLATE.md there
 ```
 
 ## Operating discipline (how every modelling decision is made)
