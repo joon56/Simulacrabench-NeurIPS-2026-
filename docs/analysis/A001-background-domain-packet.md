@@ -34,17 +34,68 @@ Starting knowledge (from docs/domain.md §9, recorded 2026-08-19):
   Wellcome Global Monitor, UNICEF/faith-leader vaccine-confidence surveys);
   (3) identify World Bank youth skills program (candidate space: STEP Skills
   Measurement, S4YE surveys) and plausible country triple.
-- Output: pending.
+- Method actually used by the agent: web search + full-PDF text extraction of
+  four primary documents (Flash RPIS Feb 2025, eRPIS report Sep 2025, Wellcome
+  Global Monitor 2018 full report, STEP 2014 methodology paper); percentages
+  transcribed from the PDFs, not secondary write-ups; unverifiable claims
+  explicitly flagged.
+- Output: `A001-sources/findings.md` (per-thread program ID + confidence,
+  report URL catalogue, transcribed marginal tables, 5 pre-registrable
+  expectations each = 15 total).
+- Verdict: kept. Thread 1 near-certain; threads 2–3 partially identified with
+  honest mismatch flags (see findings 4–5 below).
 
 ## Findings
 
-(pending v1)
+1. **unhcr = UNHCR×World Bank eRPIS, near-certain.** Wave 1 = exactly 6,316
+   CATI interviews, 25 May–5 Jul 2025 (report 11 Sep 2025); wave 2 fielded
+   Oct–Nov 2025 (n=4,033 plausible, unverified). Real survey is a two-wave
+   PANEL; the competition treats rounds as independent cross-sections —
+   real wave-2 marginals will correlate strongly with wave 1. [consistent]
+2. **The Assad-fall discontinuity is BEFORE the competition's data window.**
+   12-month return intention: 1.7% (Apr 2024) → 27% (Jan 2025) → 18%
+   (Jun 2025); both competition rounds are post-fall. Between-round movement
+   is a DECAY (Jordan 40%→22%), not a jump. Without this check we would
+   plausibly have encoded a huge round-2 jump — exactly the numbers-without-
+   domain failure rule 7 exists for. [surprising vs naive assumption →
+   evidence: primary UNHCR tables, adopted]
+3. **Real per-country per-round marginals for the exact gated Q1→Q2→Q3
+   return-intention chain are published** (transcribed in findings.md):
+   country ordering Egypt ≥ Jordan > Lebanon > Iraq stable; "hope one day"
+   ~80% stable while 12-month moves; socio-economic marginals extreme
+   (main-earner employed 96%, host debt 77–86%). No microdata/Excel — PDF
+   tables only. Direct Dirichlet-prior material. [consistent]
+4. **unicef ≈ Wellcome Global Monitor 2018 item content** (VCI wording,
+   heard-of-vaccine screener gate, religious-leader trust option,
+   religion-vs-science module) — MEDIUM-HIGH on content, LOW on framing;
+   10-country list unverifiable, possibly synthetic. **WGM 2018 microdata is
+   free CSV (CC-BY) — best machine-readable prior of all three.** Global
+   marginals: important 92 > effective 84 > safe 79 (ordering holds in every
+   region); religious-leader trust ~2%. [consistent]
+5. **world_bank = STEP-shaped composite, no exact real survey.** STEP matches
+   ownership/length/skip-logic (public microdata per country), but STEP's
+   cognitive test is PIAAC reading literacy, NOT digit span/Corsi — those
+   live in WB impact-evaluation batteries (Laajaj & Macours JHR 2021:
+   cognitive items internally consistent, self-reports acquiescence-skewed).
+   Country triple unverified — do not assume. [surprising (no single source
+   study) → treat as composite, priors per component]
+6. 15 pre-registrable expectations catalogued in findings.md §(d) of each
+   thread — these become the Domain check pre-registrations for A002 EDA and
+   E004.
 
 ## Artifacts
 
-(pending)
+- `docs/analysis/A001-sources/findings.md` — full cited findings, transcribed
+  marginal tables, URL catalogue.
 
 ## Feeds into
 
-- A002 schema EDA (domain lens), E004 Domain check pre-registration,
-  RPIS-prior experiment design, FAQ disclosure list.
+- A002 schema EDA (planned): the 15 expectations are the domain lens.
+- E004 Domain check pre-registration (country-first conditioning is now
+  domain-backed for all three instruments: RPIS country ordering, WGM
+  screener-gate asymmetry, STEP country-dominant cognitive scores).
+- RPIS-prior experiment: transcribed PDF tables → bundled CSV priors.
+  WGM 2018 / STEP microdata downloads are candidate follow-ups (v2).
+- FAQ disclosure list (external data used): eRPIS/Flash RPIS reports,
+  WGM 2018 (CC-BY), STEP public-use microdata, Laajaj & Macours replication
+  data — disclose whichever actually enter the model.

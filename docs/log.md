@@ -18,6 +18,27 @@ Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-note
   E003 soft gating, since predictable unhcr parents + hard coupling + approximate
   gates (agreement 0.29–0.98) = invisible-on-sandbox log(1e-3) risk.
 - Still open: GATE_CORRECTIONS.md forum question not yet posted.
+- **Process discipline upgrades (user-driven, same day):** rule 7 added to
+  CLAUDE.md — every empirical conclusion validated against BACKGROUND domain
+  (vs technical domain); domain surprise raises the evidence bar (artifact
+  check + replication) but never auto-rejects — survivors are adopted and
+  logged as potential discoveries. Experiment TEMPLATE gains a pre-registered
+  "Domain check" section. New A-series (`docs/analysis/A0XX`) records every
+  analysis attempt/method/version append-only, dead ends included, so the
+  full process is reconstructible for the method description and talks.
+- **A001 (background domain packet) v1 done** — delegated primary-source
+  research, findings in `docs/analysis/A001-sources/findings.md`. Headlines:
+  unhcr = real eRPIS (wave 1 = exactly 6,316 CATI, May–Jul 2025; real design
+  is a PANEL, competition flattens to cross-sections); **the Assad-fall
+  return-intention discontinuity (1.7%→27%) predates the competition window —
+  between-round movement is a decay (Jordan 40%→22%), not a jump** — a wrong
+  jump-prior averted purely by domain check; per-country marginals for the
+  gated Q1→Q2→Q3 chain transcribed from PDFs (no microdata exists); unicef ≈
+  WGM 2018 item content (free CC-BY microdata = best machine-readable prior;
+  importance>effectiveness>safety ordering universal); world_bank = STEP-shaped
+  composite, digit-span/Corsi from impact-evaluation batteries (Laajaj &
+  Macours), country triple unverifiable. 15 pre-registrable expectations
+  catalogued → A002 EDA lens + E004 Domain check.
 - **Submitted; result same day: Grand Prize 0.43 — unicef 0.45 / wb 0.43 /
   unhcr 0.41.** Pipeline validated end-to-end on the hosted stack. Readings:
   (1) unhcr 0.41 is the real-data crowd-marginal skill itself (E002 ≡ marginal
