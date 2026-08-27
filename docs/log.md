@@ -18,6 +18,13 @@ Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-note
   E003 soft gating, since predictable unhcr parents + hard coupling + approximate
   gates (agreement 0.29–0.98) = invisible-on-sandbox log(1e-3) risk.
 - Still open: GATE_CORRECTIONS.md forum question not yet posted.
+- **Submitted; result same day: Grand Prize 0.43 — unicef 0.45 / wb 0.43 /
+  unhcr 0.41.** Pipeline validated end-to-end on the hosted stack. Readings:
+  (1) unhcr 0.41 is the real-data crowd-marginal skill itself (E002 ≡ marginal
+  there) — largest instrument sits fully unconditioned, biggest headroom;
+  (2) real-data skills ≫ sandbox skills (real marginals much sharper than
+  invented ones) — sandbox-vs-LB comparisons are meaningless, gap tracking is
+  LB-vs-LB from here; (3) all numbers ±0.01–0.02 (Laplace ε=10, rounded).
 
 ## 2026-08-21 — trip pack (4 days away)
 
