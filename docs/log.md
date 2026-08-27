@@ -2,6 +2,28 @@
 
 Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-notes]].
 
+## 2026-08-27 — first submission packaged (E002)
+
+- **Submission #1 packaged: `submissions/2026-08-27-E002/`** (exact copy of
+  `src/models/gated_marginal.py` as `main.py`, no requirements.txt). Zip passes
+  `check_submission_zip.py`; official `score.py` PASS on all three real schemas
+  (unicef 0.3200 / wb 0.2900 / unhcr 0.4300 noised, ~15 s total ≪ 900 s).
+  Runner exact skills reproduce the 08-19 numbers bit-for-bit (mean 0.3412 incl
+  sample, 0.3479 excl) — no drift since the kit update.
+- Purpose: pipeline validation + first REAL-data baseline; sandbox skills are
+  not LB predictions (see SCORES.md for qualitative expectations). Reported LB
+  triple becomes the reference for all future local-vs-LB gap tracking.
+- Submission cadence decided: submit only changes that clear +0.005 locally;
+  E004 (stratum backoff) next but **never alone** — must ship together with
+  E003 soft gating, since predictable unhcr parents + hard coupling + approximate
+  gates (agreement 0.29–0.98) = invisible-on-sandbox log(1e-3) risk.
+- Still open: GATE_CORRECTIONS.md forum question not yet posted.
+
+## 2026-08-21 — trip pack (4 days away)
+
+- Built `trip/` pack for a 4-day trip: `trip/README.ko.md` (day plan: AM paper via `/paper-session`, PM implementation), `trip/tasks/T1–T4` (temperature scaling, E003 soft gating, E004 stratum backoff, hierarchical backoff / first-submission prep), skeleton experiment files E003/E004 (status parked, hypotheses fixed), open-access PDFs under `trip/papers/` (gitignored, zip only). Zip includes the working copy with `.git` and `external/starter-kit/` (+ sandboxes) so the runner works offline after `pip install -r requirements.txt`.
+- Nothing measured today; expectations written into E003/E004 Decision sections before any code exists.
+
 ## 2026-08-19 — Codabench live, registered; kit update audit
 
 - **Codabench competition 17822 is live; user registered (auto-approve).** Leaderboard columns: Grand Prize + per-instrument skills. Phase config: Dev to Oct 31 / 1 per day, Test Nov 1–14 / 1 total. Site says launch Aug 18, dev ends Oct 30 → treat Oct 30 as deadline. New site item: "Roots of the Data Prize" (teams based in the 14 data-collection countries).

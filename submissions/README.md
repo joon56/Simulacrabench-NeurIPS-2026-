@@ -20,4 +20,4 @@ protocol:
 
 | # | Date | Snapshot | Local skill (sample/unicef/wb/unhcr) | Expected LB | Reported LB | Notes |
 |---|------|----------|--------------------------------------|-------------|-------------|-------|
-| — | — | — | — | — | — | none submitted yet; launch 2026-08-17 |
+| 1 | 2026-08-27 | 2026-08-27-E002 | 0.3210 / 0.3232 / 0.2909 / 0.4297 | n/a — first real-data measurement (sandbox skills don't transfer; qualitative expectations in SCORES.md) | | E002 gated marginal; pipeline validation + real-data baseline; zip OK, score.py PASS ×3, ~15 s |
