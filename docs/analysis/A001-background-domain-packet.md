@@ -45,6 +45,25 @@ Starting knowledge (from docs/domain.md §9, recorded 2026-08-19):
 - Verdict: kept. Thread 1 near-certain; threads 2–3 partially identified with
   honest mismatch flags (see findings 4–5 below).
 
+### v2 — 2026-08-27: cross-check against schema descriptions (with A002)
+- The 08-19 kit's dataset.description fields are primary evidence the v1 web
+  research did not use. Cross-checking revised three v1 conclusions:
+  - **Expectation 1 (between-round decay) WITHDRAWN**: both competition
+    rounds sit inside the single May–June 2025 eRPIS wave-1 window (round 2
+    n=4,033 is NOT the Oct–Nov wave 2). Replacement expectation: round
+    marginals near-identical; eRPIS Sept-2025 published tables are direct
+    priors for BOTH rounds. (A002 finding 1.)
+  - **Thread 2 reframed**: instrument is a COVID-era vaccine/faith survey
+    with a named 10-country list (Brazil, Egypt, Guatemala, Iraq, Kenya,
+    Mali, Nepal, Nigeria, Pakistan, Zambia); WGM 2018 demoted to wording
+    ancestor. v3 research target: UNICEF/partner COVID vaccine-demand faith
+    study with exactly these countries. (A002 finding 4.)
+  - **Thread 3 expectation 5 (country-first) revised for wb**: country is
+    recorded for only 38.8% of rows; stratum candidates are
+    employmentStatus / group (RCT arm) / hadJob instead. (A002 finding 5.)
+- Verdict: kept; demonstrates why rule 7 cuts both ways — the domain packet
+  itself must be validated against the instrument evidence.
+
 ## Findings
 
 1. **unhcr = UNHCR×World Bank eRPIS, near-certain.** Wave 1 = exactly 6,316

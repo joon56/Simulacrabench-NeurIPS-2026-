@@ -39,6 +39,23 @@ Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-note
   composite, digit-span/Corsi from impact-evaluation batteries (Laajaj &
   Macours), country triple unverifiable. 15 pre-registrable expectations
   catalogued → A002 EDA lens + E004 Domain check.
+- **A002 (schema EDA) v1–v3 done** — `docs/analysis/A002-schema-eda.md`,
+  report in `A002-outputs/`. Headlines: (1) **both unhcr rounds sit inside
+  the single May–June 2025 eRPIS wave-1 window** (round 2 ≠ Oct–Nov wave 2)
+  → A001's between-round-decay expectation WITHDRAWN, replaced with
+  "rounds near-identical; eRPIS Sept-2025 tables are direct priors for
+  both"; (2) s3_11 = eRPIS Q1 verbatim, ungated root with 73 direct
+  children, 155/156 unhcr gate parents PREDICT → E004's target is
+  literally "predict s3_11 per country×wave"; (3) unicef gating nearly
+  deterministic (6/8 GIVEN parents) — explains its LB lead; COVID-era
+  faith survey, 10 countries named, WGM demoted to wording ancestor;
+  (4) wb country recorded for only 38.8% → stratum = employmentStatus /
+  RCT arm / hadJob, NOT country; full psychometric battery as banded
+  scores, EXCLUDE = raw duplicates (leak prevention); (5) sandbox gates
+  verified EXACT (0 violations / 2.57M pairs) — unhcr approximate-gate
+  risk invisible locally, E003 violation sim is the only probe;
+  (6) U: unicef 1.5620 / wb 2.0184 / unhcr 1.2618 — unhcr cheapest-U +
+  132k cells + 144 binaries = calibration leverage concentrated there.
 - **Submitted; result same day: Grand Prize 0.43 — unicef 0.45 / wb 0.43 /
   unhcr 0.41.** Pipeline validated end-to-end on the hosted stack. Readings:
   (1) unhcr 0.41 is the real-data crowd-marginal skill itself (E002 ≡ marginal
