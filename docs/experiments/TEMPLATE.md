@@ -7,6 +7,13 @@ date: 2026-MM-DD
 
 One falsifiable sentence: what should improve, where, and why.
 
+## Domain check
+
+Pre-registered BEFORE running: what background domain knowledge (docs/domain.md,
+published survey reports — not methods literature) predicts about this result,
+one sentence with source. Filled in AFTER: consistent / surprising. A surprising
+result is flagged and not built upon until the contradiction is explained.
+
 ## Change
 
 What was built/modified (file paths). Small enough to attribute the delta to.

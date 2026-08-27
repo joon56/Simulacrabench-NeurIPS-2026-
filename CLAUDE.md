@@ -74,6 +74,7 @@ docs/            # method-4p.md, log.md (daily experiment log)
 4. **Submissions are ammunition** — 1/day (total cap removed 2026-08-18, but the noised leaderboard still can't rank close variants). Never spend a submission on unverified changes; record expected score before submitting, compare after.
 5. **Complexity must pay rent.** A complex model is adopted only after beating the calibrated simple stack on the local harness, within the wall-clock budget (profile it).
 6. **Everything is logged** — hypothesis → result → conclusion in docs/log.md. An unreproducible experiment didn't happen.
+7. **Every empirical conclusion is validated against background domain.** Two domain types, tracked separately: *technical* (methods — which technique, how implemented) and *background* (what the data means — populations, instruments, humanitarian context; independent of AI/statistics). An EDA finding or measured gain becomes a claim only after checking consistency with background domain knowledge (docs/domain.md, published survey reports). A finding that contradicts domain expectations is flagged and NOT built upon until explained — numbers-only correlation chains produce contradictory hypotheses (lesson from prior work). Experiment files carry a "Domain check" section: expectation pre-registered before the run, verdict after.
 
 ## Experiment tree (how approaches are recorded)
 
