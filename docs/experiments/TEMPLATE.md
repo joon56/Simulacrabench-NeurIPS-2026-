@@ -11,8 +11,10 @@ One falsifiable sentence: what should improve, where, and why.
 
 Pre-registered BEFORE running: what background domain knowledge (docs/domain.md,
 published survey reports — not methods literature) predicts about this result,
-one sentence with source. Filled in AFTER: consistent / surprising. A surprising
-result is flagged and not built upon until the contradiction is explained.
+one sentence with source. Filled in AFTER: consistent / surprising. Surprising
+raises the evidence bar, never auto-rejects: rule out artifacts (leakage, coding
+error, confound), replicate on a different seed/split/slice; if it survives,
+adopt AND record as a potential genuine discovery.
 
 ## Change
 
