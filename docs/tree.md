@@ -7,6 +7,12 @@ flowchart TD
     E001["E001 marginal_counts (kit baseline, reference root)<br/><i>adopted · 2026-08-17</i>"]
     E002["E002 gate-aware marginal<br/><i>adopted · 2026-08-17</i>"]
     E001 --> E002
+    E003["E003 soft (agreement-weighted) gate coupling<br/><i>adopted · 2026-08-28</i>"]
+    E002 --> E003
+    E004["E004 GIVEN-stratum backoff with interpolated smoothing<br/><i>adopted · 2026-08-28</i>"]
+    E002 --> E004
+    E005["E005 soft gating on stratum-backoff tables (E003 + E004)<br/><i>adopted · 2026-08-28</i>"]
+    E003, --> E005
     classDef adopted fill:#d4edda,stroke:#28a745
-    class E001,E002 adopted
+    class E001,E002,E003,E004,E005 adopted
 ```

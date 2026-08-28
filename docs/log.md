@@ -2,6 +2,31 @@
 
 Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-notes]].
 
+## 2026-08-28 — E003/E004/E005 implemented; submission #2 packaged
+
+- **E004 (stratum backoff) implemented and adopted**: data-driven stratum
+  selection (GIVEN card ≤ 12; best single by 20%-holdout log score, then
+  best pair; κ ∈ {1,3,10,30,100} joint) — deviation from the T3
+  smallest-cardinality rule, justified by A002 finding 5 (wb country only
+  38.8% recorded). Runner: mean 0.3412 → 0.4595, **unhcr moved for the
+  first time** (0.4297 → 0.5347) — gate cascade over 155 PREDICT parents
+  confirmed as the multiplier E001/E002 predicted. 3-inst Δ +0.1202.
+- **E003 (soft gating) implemented and adopted (real-data motivated)**:
+  ã_i beta-binomial-shrunk gate agreement (α=20 fixed — untunable locally),
+  pred = ã·hard + (1−ã)·marginal. Clean sandbox bit-identical to E002
+  (pre-registered: sandbox gates exact). Violation sim (17% flipped):
+  unhcr +0.0289 log over hard; on stratum tables +0.0422 log — insurance
+  grows exactly when E004 activates the cascade.
+- **E005 = E003∘E004 composed, adopted, packaged as submission #2**
+  (`submissions/2026-08-28-E005/`, self-contained main.py, zip OK,
+  score.py PASS ×3, ~101 s total, 19/19 tests). Clean sandbox ≡ E004.
+  LB expectations pre-registered in SCORES.md (unhcr largest gain; unhcr
+  below 0.41 ⇒ softening insufficient → raise α / cap ã on the 59
+  round-2-only multi-select items).
+- Process note: Domain check sections pre-registered in E003/E004 BEFORE
+  implementation (first full use of rule 7 + A-series flow: A001 → A002 →
+  experiment design).
+
 ## 2026-08-27 — first submission packaged (E002)
 
 - **Submission #1 packaged: `submissions/2026-08-27-E002/`** (exact copy of
