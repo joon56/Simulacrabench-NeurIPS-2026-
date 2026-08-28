@@ -26,6 +26,14 @@ Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-note
 - Process note: Domain check sections pre-registered in E003/E004 BEFORE
   implementation (first full use of rule 7 + A-series flow: A001 → A002 →
   experiment design).
+- **Submitted; result: Grand Prize 0.53 — unicef 0.49 / wb 0.48 /
+  unhcr 0.63** (E002 was 0.43 — 0.45/0.43/0.41). All three pre-registered
+  expectations hit: every instrument up, unhcr largest (+0.22, the
+  country×wave + cascade fingerprint), no softening-failure signal.
+  unhcr's real gain (+0.22) doubles the sandbox prediction (+0.105):
+  real GIVEN-answer coupling is stronger than the sandbox trait — supports
+  investing next in richer conditioning (hierarchical backoff T4) and the
+  eRPIS published-marginal priors (A001) rather than exotic models.
 
 ## 2026-08-27 — first submission packaged (E002)
 
