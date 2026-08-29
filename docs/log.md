@@ -20,6 +20,19 @@ Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-note
 - Next in queue: eRPIS published-marginal priors as bundled CSV (A001
   transcriptions), T1 temperature scaling as calibration guard, A001 v3
   (unicef exact source study with the named 10-country list).
+- **A003 done (same day): eRPIS Sep-2025 tables → `data/priors/erpis_2025.csv`**
+  (49 rows, basis-tagged verbatim/derived/mapped-medium, mapped onto real
+  item names; intention chain s3_11→s3_12→s3_13 matches published
+  conditionals 1:1 including gate directions). Flash Jan-2025 excluded
+  (wrong time point per A002 finding 1). Feeds E007.
+- **E006 submitted; result: Grand 0.55 — unicef 0.50 / wb 0.48 /
+  unhcr 0.66** (E005: 0.49/0.48/0.63). Pre-registration scorecard:
+  across-board gain ✓, no >0.02 drops ✓, wb flat (explicitly allowed).
+  One miss: unhcr gained most (+0.03, above noise), not unicef —
+  consistent with country_asylum/wave entering the real-data ladder
+  (the A001/A002 domain prediction); sandbox magnitude ordering again
+  didn't transfer. unhcr remains the paying vein → E007 (eRPIS prior
+  blend) is the right next spend.
 
 ## 2026-08-28 — E003/E004/E005 implemented; submission #2 packaged
 
