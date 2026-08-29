@@ -1,0 +1,48 @@
+instrument,item,scope,option,share_pct,basis,source
+unhcr,s3_11_intent_return_12m_lbl,regional,1. Yes,18,verbatim,eRPIS Sep2025 p.8
+unhcr,s3_11_intent_return_12m_lbl,regional,0. No,76,verbatim,eRPIS Sep2025 p.8
+unhcr,s3_11_intent_return_12m_lbl,regional,98. I don't know,6,verbatim,eRPIS Sep2025 p.8
+unhcr,s3_11_intent_return_12m_lbl,Egypt,1. Yes,29,verbatim,eRPIS Sep2025 p.8
+unhcr,s3_11_intent_return_12m_lbl,Iraq,1. Yes,4,verbatim,eRPIS Sep2025 p.8
+unhcr,s3_11_intent_return_12m_lbl,Jordan,1. Yes,22,verbatim,eRPIS Sep2025 p.8
+unhcr,s3_11_intent_return_12m_lbl,Lebanon,1. Yes,14,verbatim,eRPIS Sep2025 p.8
+unhcr,s3_11_intent_return_12m_lbl,Egypt,0. No,65.8,derived-residual-regional-ratio,eRPIS Sep2025 p.8 (No:DK = 76:6 regional split applied to 71)
+unhcr,s3_11_intent_return_12m_lbl,Egypt,98. I don't know,5.2,derived-residual-regional-ratio,eRPIS Sep2025 p.8
+unhcr,s3_11_intent_return_12m_lbl,Iraq,0. No,88.9,derived-residual-regional-ratio,eRPIS Sep2025 p.8
+unhcr,s3_11_intent_return_12m_lbl,Iraq,98. I don't know,7.1,derived-residual-regional-ratio,eRPIS Sep2025 p.8
+unhcr,s3_11_intent_return_12m_lbl,Jordan,0. No,72.3,derived-residual-regional-ratio,eRPIS Sep2025 p.8
+unhcr,s3_11_intent_return_12m_lbl,Jordan,98. I don't know,5.7,derived-residual-regional-ratio,eRPIS Sep2025 p.8
+unhcr,s3_11_intent_return_12m_lbl,Lebanon,0. No,79.7,derived-residual-regional-ratio,eRPIS Sep2025 p.8
+unhcr,s3_11_intent_return_12m_lbl,Lebanon,98. I don't know,6.3,derived-residual-regional-ratio,eRPIS Sep2025 p.8
+unhcr,s3_12_hope_return_someday_lbl,regional,1. Yes,75,verbatim-asked-only,eRPIS Sep2025 p.9 (conditional on s3_11 in {No,DK})
+unhcr,s3_12_hope_return_someday_lbl,regional,0. No,21,verbatim-asked-only,eRPIS Sep2025 p.9
+unhcr,s3_12_hope_return_someday_lbl,regional,98. I don't know,4,verbatim-asked-only,eRPIS Sep2025 p.9
+unhcr,s3_13_hope_return_5yr_lbl,regional,1. Yes,83,verbatim-asked-only,eRPIS Sep2025 p.9 (conditional on s3_12 in {Yes,DK})
+unhcr,s3_13_hope_return_5yr_lbl,regional,0. No,8,verbatim-asked-only,eRPIS Sep2025 p.9
+unhcr,s3_13_hope_return_5yr_lbl,regional,98. I don't know,9,verbatim-asked-only,eRPIS Sep2025 p.9
+unhcr,s7b_1_no_return_housing_lbl,regional,1,36,verbatim-asked-only,eRPIS Sep2025 p.10 (share selecting reason among asked)
+unhcr,s7b_1_no_return_housing_lbl,Egypt,1,24,verbatim-asked-only,eRPIS Sep2025 p.10
+unhcr,s7b_1_no_return_housing_lbl,Iraq,1,31,verbatim-asked-only,eRPIS Sep2025 p.10
+unhcr,s7b_1_no_return_housing_lbl,Jordan,1,36,verbatim-asked-only,eRPIS Sep2025 p.10
+unhcr,s7b_1_no_return_housing_lbl,Lebanon,1,37,verbatim-asked-only,eRPIS Sep2025 p.10
+unhcr,s7b_1_no_return_livelihood_lbl,regional,1,28,mapped-medium (report 'employment'),eRPIS Sep2025 p.10
+unhcr,s7b_1_no_return_livelihood_lbl,Egypt,1,29,mapped-medium,eRPIS Sep2025 p.10
+unhcr,s7b_1_no_return_livelihood_lbl,Iraq,1,32,mapped-medium,eRPIS Sep2025 p.10
+unhcr,s7b_1_no_return_livelihood_lbl,Jordan,1,23,mapped-medium,eRPIS Sep2025 p.10
+unhcr,s7b_1_no_return_livelihood_lbl,Lebanon,1,30,mapped-medium,eRPIS Sep2025 p.10
+unhcr,s7b_1_no_return_safety_concerns_lbl,regional,1,12,verbatim-asked-only,eRPIS Sep2025 p.10
+unhcr,s7b_1_no_return_safety_concerns_lbl,Egypt,1,25,verbatim-asked-only,eRPIS Sep2025 p.10
+unhcr,s7b_1_no_return_safety_concerns_lbl,Iraq,1,12,verbatim-asked-only,eRPIS Sep2025 p.10
+unhcr,s7b_1_no_return_safety_concerns_lbl,Jordan,1,12,verbatim-asked-only,eRPIS Sep2025 p.10
+unhcr,s7b_1_no_return_safety_concerns_lbl,Lebanon,1,11,verbatim-asked-only,eRPIS Sep2025 p.10
+unhcr,s7b_1_no_return_no_resources_lbl,regional,1,7,mapped-medium (report 'money'),eRPIS Sep2025 p.10
+unhcr,s7b_1_no_return_no_resources_lbl,Egypt,1,2,mapped-medium,eRPIS Sep2025 p.10
+unhcr,s7b_1_no_return_no_resources_lbl,Iraq,1,9,mapped-medium,eRPIS Sep2025 p.10
+unhcr,s7b_1_no_return_no_resources_lbl,Jordan,1,9,mapped-medium,eRPIS Sep2025 p.10
+unhcr,s7b_1_no_return_no_resources_lbl,Lebanon,1,6,mapped-medium,eRPIS Sep2025 p.10
+unhcr,s7b_1_no_return_services_lbl,regional,1,6,verbatim-asked-only,eRPIS Sep2025 p.10
+unhcr,s7b_1_no_return_services_lbl,Egypt,1,8,verbatim-asked-only,eRPIS Sep2025 p.10
+unhcr,s7b_1_no_return_services_lbl,Iraq,1,8,verbatim-asked-only,eRPIS Sep2025 p.10
+unhcr,s7b_1_no_return_services_lbl,Jordan,1,7,verbatim-asked-only,eRPIS Sep2025 p.10
+unhcr,s7b_1_no_return_services_lbl,Lebanon,1,5,verbatim-asked-only,eRPIS Sep2025 p.10
+unhcr,s4_7_has_work_permit_lbl,regional,1. Yes,29,verbatim-partial (other options' split unpublished),eRPIS Sep2025 p.14
