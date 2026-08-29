@@ -13,6 +13,8 @@ flowchart TD
     E002 --> E004
     E005["E005 soft gating on stratum-backoff tables (E003 + E004)<br/><i>adopted · 2026-08-28</i>"]
     E003, --> E005
+    E006["E006 hierarchical backoff ladder (MRP-lite) + soft gating<br/><i>adopted · 2026-08-29</i>"]
+    E005 --> E006
     classDef adopted fill:#d4edda,stroke:#28a745
-    class E001,E002,E003,E004,E005 adopted
+    class E001,E002,E003,E004,E005,E006 adopted
 ```

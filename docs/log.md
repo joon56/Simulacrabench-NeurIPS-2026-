@@ -2,6 +2,25 @@
 
 Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-notes]].
 
+## 2026-08-29 — E006 hierarchical backoff; submission #3 packaged
+
+- **E006 (MRP-lite ladder) implemented and adopted**: greedy forward
+  selection of ≤ 3 GIVEN columns, per-level κ, each level's prior = level
+  above (p_L = (count + κ_L·p_{L-1})/(n + κ_L)); E003 softening and gate
+  recursion unchanged. Runner: 3-inst mean 0.4682 → 0.4783 (Δ +0.0101).
+  Depth 3 selected on all four schemas with shrinking gains and rising κ —
+  the MRP empty-cell prediction measured (pre-registered watch point).
+  Selection vectorized (groupby + κ batching + prefix caching): unhcr
+  selection 75 s, total ~95 s.
+- **Submission #3 packaged** (`submissions/2026-08-29-E006/`, zip OK,
+  score.py PASS 0.48/0.42/0.54, 23/23 tests). LB expectations
+  pre-registered in SCORES.md (modest gain; unicef largest; flat result
+  not falsifying at ±0.01–0.02 noise; >0.02 drop ⇒ greedy instability
+  diagnostic).
+- Next in queue: eRPIS published-marginal priors as bundled CSV (A001
+  transcriptions), T1 temperature scaling as calibration guard, A001 v3
+  (unicef exact source study with the named 10-country list).
+
 ## 2026-08-28 — E003/E004/E005 implemented; submission #2 packaged
 
 - **E004 (stratum backoff) implemented and adopted**: data-driven stratum

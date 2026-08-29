@@ -20,5 +20,6 @@ protocol:
 
 | # | Date | Snapshot | Local skill (sample/unicef/wb/unhcr) | Expected LB | Reported LB | Notes |
 |---|------|----------|--------------------------------------|-------------|-------------|-------|
+| 3 | 2026-08-29 | 2026-08-29-E006 | 0.4385 / 0.4772 / 0.4196 / 0.5382 | modest gain over E005 LB (0.49/0.48/0.63); unicef largest; flat ≠ falsified (noise ±0.01–0.02); any drop > 0.02 ⇒ check greedy-selection stability | | E006 hierarchical ladder; zip OK, score.py PASS ×3, ~95 s; 23 tests |
 | 2 | 2026-08-28 | 2026-08-28-E005 | 0.4333 / 0.4593 / 0.4105 / 0.5347 | all three > E002's LB (0.45/0.43/0.41); unhcr largest gain expected (cascade + low U); drop below 0.41 on unhcr ⇒ softening insufficient | **0.53** (unicef 0.49 / wb 0.48 / unhcr 0.63) | All three pre-registered expectations hit. unhcr +0.22 ≫ sandbox +0.105 — real GIVEN coupling stronger than sandbox trait; softening did not hurt (α=20 kept). |
 | 1 | 2026-08-27 | 2026-08-27-E002 | 0.3210 / 0.3232 / 0.2909 / 0.4297 | n/a — first real-data measurement (sandbox skills don't transfer; qualitative expectations in SCORES.md) | **0.43** (unicef 0.45 / wb 0.43 / unhcr 0.41) | E002 gated marginal; pipeline validated end-to-end. unhcr 0.41 = real-data marginal (E002 ≡ marginal there) → largest headroom. Real marginals far sharper than sandbox; noise ±0.01–0.02. |
