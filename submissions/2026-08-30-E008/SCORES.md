@@ -40,3 +40,20 @@ Pre-registered 2026-08-30 BEFORE submission:
   weight is the guard. Any instrument dropping > 0.02 ⇒ suspect
   overconfident logits → re-tune with C grid {0.1, 0.3, 1.0} and/or
   per-item w before the next submission.
+
+## Actual leaderboard result (2026-08-30)
+
+**Grand 0.58 — unicef 0.51 / world_bank 0.49 / unhcr 0.74**
+(E006: 0.50 / 0.48 / 0.66). Scorecard vs pre-registration:
+
+- Grand 0.57–0.59 ✓ (0.58, center of the band).
+- unhcr largest absolute gain ✓ — +0.08, ~4–5× the sandbox Δ (+0.015);
+  third consecutive submission where real GIVEN-answer coupling beats
+  the sandbox trait, now the strongest instance.
+- unicef smallest ✓ (+0.01).
+- world_bank +0.01: NOT falsified (condition was flat at 0.48) but NOT
+  confirmed either — +0.01 sits inside the ±0.01–0.02 noise. The
+  psychometric many-weak-predictors claim stays OPEN; needs a second
+  data point (a wb-targeted change) before believing or dropping it.
+- No instrument down ⇒ no overconfidence signal; C=1.0 and single-w
+  guard held.

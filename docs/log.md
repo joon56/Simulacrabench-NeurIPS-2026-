@@ -36,6 +36,19 @@ Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-note
   sees); unhcr largest absolute gain; any instrument −0.02 ⇒ overconfident
   logits ⇒ C-grid / per-item w before next spend.
 
+- **E008 submitted; result: Grand 0.58 — unicef 0.51 / wb 0.49 /
+  unhcr 0.74** (E006: 0.50/0.48/0.66). Scorecard: Grand in the 0.57–0.59
+  pre-registered band ✓; unhcr largest ✓ (+0.08, ~4–5× sandbox Δ — third
+  straight submission where real GIVEN coupling beats the sandbox trait);
+  unicef smallest ✓; no drops ⇒ no overconfidence ✓. One OPEN item: wb
+  +0.01 is inside noise — the psychometric many-weak-predictors claim is
+  neither confirmed nor falsified; resolve with a wb-targeted change
+  before investing further in that story. Reading: unhcr headroom still
+  live (0.74 with cheapest U and 155-parent cascade); next capacity step
+  is E009 = more capacity where the logistic paid (per-item blend
+  weights + C grid, then GIVEN interactions via boosted trees on the
+  holdout), all locally verifiable before the next slot.
+
 ## 2026-08-29 — E006 hierarchical backoff; submission #3 packaged
 
 - **E006 (MRP-lite ladder) implemented and adopted**: greedy forward
