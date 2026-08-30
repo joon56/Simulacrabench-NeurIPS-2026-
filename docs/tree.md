@@ -15,6 +15,12 @@ flowchart TD
     E003, --> E005
     E006["E006 hierarchical backoff ladder (MRP-lite) + soft gating<br/><i>adopted · 2026-08-29</i>"]
     E005 --> E006
+    E007["E007 eRPIS published-marginal prior blend (unhcr)<br/><i>parked · 2026-08-30</i>"]
+    E006 --> E007
+    E008["E008 full-GIVEN logistic conditionals blended with the E006 ladder<br/><i>adopted · 2026-08-30</i>"]
+    E006 --> E008
     classDef adopted fill:#d4edda,stroke:#28a745
-    class E001,E002,E003,E004,E005,E006 adopted
+    class E001,E002,E003,E004,E005,E006,E008 adopted
+    classDef parked fill:#fff3cd,stroke:#ffc107
+    class E007 parked
 ```

@@ -2,6 +2,40 @@
 
 Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-notes]].
 
+## 2026-08-30 — E007 parked on the numbers; E008 logistic blend adopted, submission #4
+
+- **E007 (eRPIS prior blend) PARKED without implementation** — quantitative
+  pre-check killed it: phase 1 exposes all 8,279 unhcr TRAIN rows, so
+  country×wave cells hold n ≈ 1–2k real answers and a W-pseudo-count prior
+  shifts the posterior by ≤ W/(n+W) of a difference that has no systematic
+  sign (TRAIN and DEV are the same build). Expected Δ ≈ 0; rule 5 blocks
+  the spend. The A003 CSV is repurposed as a standing sanity anchor
+  (models should reproduce the published s3_11 country tables). Revive
+  conditions recorded in the experiment file.
+- **E008 (full-GIVEN logistic blend) implemented and adopted**: per
+  PREDICT item, multinomial logistic on the one-hot full GIVEN block
+  (7/30/72 columns vs the ladder's 3), mixed in probability space with
+  the E006 ladder; one blend weight per instrument tuned on the internal
+  20% holdout. Gate recursion + E003 softening unchanged. Runner: 3-inst
+  mean 0.4783 → 0.4991 (**Δ +0.0208**, largest since E004; every schema
+  up). Tuned w interior everywhere (0.6/0.9/0.8/0.6) with smooth concave
+  curves — ladder and logistic are complements, not substitutes.
+  max_iter probe: 1000 reproduces all skills to 4 decimals (cap
+  immaterial, kept 200). Wall-clock ~182 s ≪ 900 s. Tests 27/27.
+- **Smoke-check regression caught by check_submission_zip**: the kit's
+  3-row smoke frame makes the tuning holdout empty → sklearn raised on a
+  0-sample matrix. Guards added (empty split ⇒ w=0 ladder-only; w=0 skips
+  all encoding/fits; gated items with zero asked rows fall back to
+  ladder). Local harness never hits these paths — the zip checker is the
+  only pre-submission probe that does; keep running it BEFORE spending
+  the daily slot.
+- **Submission #4 packaged** (`submissions/2026-08-30-E008/`, zip OK).
+  LB expectations pre-registered in SCORES.md: Grand ≈ 0.57–0.59; the
+  falsifiable claim is world_bank moving off 0.48 for the first time
+  (psychometric GIVEN block = many weak predictors only the logistic
+  sees); unhcr largest absolute gain; any instrument −0.02 ⇒ overconfident
+  logits ⇒ C-grid / per-item w before next spend.
+
 ## 2026-08-29 — E006 hierarchical backoff; submission #3 packaged
 
 - **E006 (MRP-lite ladder) implemented and adopted**: greedy forward
