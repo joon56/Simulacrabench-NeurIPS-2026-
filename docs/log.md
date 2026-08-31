@@ -49,6 +49,36 @@ Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-note
   weights + C grid, then GIVEN interactions via boosted trees on the
   holdout), all locally verifiable before the next slot.
 
+## 2026-09-01 — E009 rejected; E010 conditional agreement adopted, submission #5
+
+- **E009 (per-item C+w blend) implemented and REJECTED**: per-PREDICT-item
+  (C, w) grid on the internal holdout. Runner Δ +0.0013 < +0.005 (wb
+  +0.0016, unhcr +0.0022, unicef flat). Pre-registered winner's-curse arm
+  fired. Deeper lesson recorded in the experiment file: the sandbox
+  generator is single-trait with uniform coupling, so the main-effects
+  logistic is locally near-optimal — capacity-axis experiments (per-item
+  tuning, boosted interactions) are locally capped BY CONSTRUCTION; the
+  next locally-measurable lever must be structural. HGB probe: 0.5–3.6 s
+  per unhcr item ⇒ per-item boosting would risk the 900 s budget anyway.
+- **E010 (conditional gate-agreement softening) implemented and adopted
+  (real-data motivated, E003 precedent)**: scalar ã_i → ã_i(v) conditioned
+  on ONE data-selected GIVEN column per gated item (held-out Bernoulli LL
+  vs scalar baseline; β-shrunk α=20 to the item scalar; degenerates to
+  E008 when nothing wins). Evidence triple, all pre-registered: clean
+  sandbox ≡ E008 to 4 decimals ✓; group-dependent violation sim (35%/2%
+  by column value) **+0.0352 log over scalar** — and the sim's group
+  column was the sandbox `wave` item, precisely the column the A002/E003
+  domain analysis predicts real unhcr data will select for the 59
+  round-2-only multi-select items ✓; uniform-violation sim +0.0000
+  (shrinkage no-loss) ✓. Tests 35/35.
+- **Submission #5 packaged** (`submissions/2026-09-01-E010/`, zip OK,
+  parity exact, ~240 s ≪ 900 s). LB pre-registration: unicef/wb must stay
+  flat (their gates are near-exact — any >0.02 move means something
+  unintended engaged); unhcr is the entire bet (+0.01–0.03 if the
+  wave-heterogeneity thesis holds; flat does NOT falsify — E008's
+  logistic soft path may already absorb it; −0.02 ⇒ conditional layer
+  overfit ⇒ raise its α or revert).
+
 ## 2026-08-29 — E006 hierarchical backoff; submission #3 packaged
 
 - **E006 (MRP-lite ladder) implemented and adopted**: greedy forward

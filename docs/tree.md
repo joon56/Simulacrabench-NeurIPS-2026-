@@ -19,8 +19,14 @@ flowchart TD
     E006 --> E007
     E008["E008 full-GIVEN logistic conditionals blended with the E006 ladder<br/><i>adopted · 2026-08-30</i>"]
     E006 --> E008
+    E009["E009 per-item blend weight + regularization grid on the E008 logistic<br/><i>rejected · 2026-09-01</i>"]
+    E008 --> E009
+    E010["E010 conditional gate-agreement softening (data-selected, per item)<br/><i>adopted · 2026-09-01</i>"]
+    E008 --> E010
     classDef adopted fill:#d4edda,stroke:#28a745
-    class E001,E002,E003,E004,E005,E006,E008 adopted
+    class E001,E002,E003,E004,E005,E006,E008,E010 adopted
+    classDef rejected fill:#f8d7da,stroke:#dc3545
+    class E009 rejected
     classDef parked fill:#fff3cd,stroke:#ffc107
     class E007 parked
 ```
