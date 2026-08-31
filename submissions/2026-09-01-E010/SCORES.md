@@ -42,3 +42,23 @@ Pre-registered 2026-09-01 BEFORE submission:
   > 0.02 ⇒ the conditional estimator overfit visible-row agreement —
   raise ALPHA for the conditional layer / revert to E008.
 - No wall-clock concern: ~270 s local ≪ 900 s.
+
+## Actual leaderboard result (2026-09-01)
+
+**Grand 0.59 — unicef 0.51 / world_bank 0.49 / unhcr 0.77**
+(E008: 0.51 / 0.49 / 0.74). Scorecard vs pre-registration — 4/4:
+
+- unicef flat ✓ (0.51, unchanged) — no unintended engagement.
+- world_bank flat ✓ (0.49, unchanged) — same.
+- unhcr +0.03 ✓ — at the TOP of the pre-registered +0.01–0.03 band.
+  The wave-heterogeneity thesis is confirmed on real data: the
+  conditional-ã layer found real agreement structure the scalar pooled
+  away, and E008's logistic soft path had NOT already absorbed it.
+- Grand in the 0.58–0.59 band ✓.
+
+Interpretation: a locally-invisible structural change (clean sandbox
+identical to E008) moved the leaderboard +0.01 Grand purely on
+domain-anchored evidence — the E003-precedent adoption path is now
+validated twice. unhcr 0.77 with U = 1.2618: remaining unhcr headroom is
+thinner; unicef (0.51, U 1.5620) and wb (0.49, U 2.0184, 39.5k cells)
+are now the widest gaps to perfect.

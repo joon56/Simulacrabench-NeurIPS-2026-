@@ -79,6 +79,22 @@ Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-note
   logistic soft path may already absorb it; −0.02 ⇒ conditional layer
   overfit ⇒ raise its α or revert).
 
+- **E010 submitted; result: Grand 0.59 — unicef 0.51 / wb 0.49 /
+  unhcr 0.77** (E008: 0.51/0.49/0.74). Scorecard 4/4: unicef flat ✓,
+  wb flat ✓, unhcr +0.03 at the top of the pre-registered band ✓, Grand
+  in band ✓. The wave-heterogeneity thesis is REAL-DATA CONFIRMED — a
+  change invisible on the clean sandbox (bit-identical to E008) moved
+  the leaderboard on domain evidence alone; the E003-precedent adoption
+  path is validated twice now. Strategic readout: unhcr at 0.77 has
+  thinning headroom; the widest skill gaps are now wb (0.49, highest U
+  2.0184) and unicef (0.51). Next-session queue: (1) wb structural pass
+  — its 40 gates / 'Not answered'-heavy GIVEN columns / banded-score
+  handling have had NO wb-specific experiment yet (every gain so far was
+  generic); (2) unicef 10-country structure (Q01 gated on country,
+  near-deterministic gating already handled — look at the 4 non-GIVEN
+  gate parents); (3) revisit E009's per-item idea only after a real-data
+  diagnostic justifies it.
+
 ## 2026-08-29 — E006 hierarchical backoff; submission #3 packaged
 
 - **E006 (MRP-lite ladder) implemented and adopted**: greedy forward
