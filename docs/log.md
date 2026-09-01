@@ -84,6 +84,29 @@ Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-note
   multi-factor thesis); unicef ~flat; any −0.02 ⇒ net memorization ⇒
   lower w cap or revert to E010.
 
+- **E012 submitted; result: Grand 0.60 — unicef 0.52 / wb 0.49 /
+  unhcr 0.78** (E010: 0.51/0.49/0.77). Grand in band (bottom edge) ✓,
+  unhcr +0.01 ✓, unicef +0.01 ✓ — but **wb flat, the falsifiable core
+  FAILED**: fifth straight wb submission at 0.48–0.49; sandbox +0.0102
+  did not transfer.
+- **User leaderboard observation (same day, strategic)**: teams ranked
+  ABOVE us have ~identical unicef and wb — the entire gap is unhcr.
+  Combined with our own wb null series, conclusion upgraded: wb (9
+  GIVEN cols) and unicef (7 GIVEN, deterministic gates) are near their
+  INFORMATION CEILINGS for every serious team — they no longer rank
+  anyone. The competition is decided on unhcr (70% of scored cells,
+  cheapest U 1.2618, 72 GIVEN, 156 approximate gates, 2 waves).
+  All future spend goes to unhcr until shown otherwise. Candidate
+  unhcr edges the leaders may hold, in evidence order: (1) capacity —
+  the established real>sandbox coupling amplification means our
+  64-64 trunk is likely undersized for the real 72-column signal
+  (locally near-invisible, real gain — the E008 pattern); (2) joint /
+  consistent decoding of the three overlapping s3_11 branches
+  (schema-documented overlap, unexploited); (3) cross-wave record
+  linkage of the flattened panel (A001: real design is a panel) —
+  legality UNCLEAR under the re-identification clause: forum question
+  FIRST, never unilateral.
+
 ## 2026-09-01 — E009 rejected; E010 conditional agreement adopted, submission #5
 
 - **E009 (per-item C+w blend) implemented and REJECTED**: per-PREDICT-item

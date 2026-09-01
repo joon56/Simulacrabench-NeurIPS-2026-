@@ -42,3 +42,20 @@ Pre-registered 2026-09-02 BEFORE submission:
   data is not the issue (not observable) — mitigate by lowering w grid
   cap or reverting to E010, and treat as evidence the net memorized
   visible-row idiosyncrasies.
+
+## Actual leaderboard result (2026-09-02)
+
+**Grand 0.60 — unicef 0.52 / world_bank 0.49 / unhcr 0.78**
+(E010: 0.51 / 0.49 / 0.77). Scorecard vs pre-registration:
+
+- Grand 0.60 ✓ — at the bottom edge of the 0.60–0.62 band.
+- unhcr +0.01 ✓, unicef +0.01 (predicted ~flat; within noise).
+- **wb FLAT at 0.49 — the falsifiable core FAILED.** Sandbox +0.0102
+  did not transfer. Fifth consecutive wb-flat submission
+  (0.48/0.48/0.49/0.49/0.49). Combined with the same-day leaderboard
+  observation that HIGHER-ranked teams also sit at ≈ our wb (and
+  unicef) while differing on unhcr, the reading is stronger than the
+  pre-registered "redirect wb work": **wb ≈ information ceiling for
+  everyone at ~0.49** — 9 GIVEN columns simply bound the conditional
+  information. Deprioritize wb; the competition is decided on unhcr.
+- No drops — net memorization risk did not materialize; w guard held.
