@@ -49,6 +49,41 @@ Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-note
   weights + C grid, then GIVEN interactions via boosted trees on the
   holdout), all locally verifiable before the next slot.
 
+## 2026-09-02 — three nulls measured cheap; E012 shared-trunk net adopted, submission #6
+
+- **A004 (wb structural pass) done**: corrected our own notes — wb GIVEN
+  is 9 columns (21 of the non-PREDICT items are EXCLUDE), gates are
+  near-exhausted (27/30 GIVEN-parented, 19 on the tracer `group` arms),
+  so E008's "many weak predictors" story was mis-premised. 24 PREDICT
+  items strict-parse numeric (spans K=15, counts K=12–13) → ordinal
+  lever identified; sandbox provably cannot show it (random per-option
+  loadings in make_sandbox).
+- **E011 (ordinal kernel smoothing) REJECTED on its own sim channel**:
+  clean sandbox ≡ E010 (off-by-default works), but sim v1 (+0.0003) and
+  a deliberately favorable thin-cell sim v2 (+0.0000) measured the
+  option-axis pooling headroom at ~0 — κ-ladder + logistic already
+  exhaust it at n≈5k. Honest null, mirrors E007. Sim assertion kept as a
+  strict xfail (the recorded null).
+- **Seed-bagging probe killed before implementation**: E010 with holdout
+  seeds 0/1/2 → 3-inst mean 0.4991/0.4988/0.4989 (spread 0.0003).
+  Selection is stable; bagging would buy ~nothing at 2–3× runtime.
+- **E012 (shared-trunk multi-head net) implemented and ADOPTED**: per
+  instrument, one-hot GIVEN → 64-64 ReLU trunk → per-item softmax heads
+  + masked asked-only conditional heads (torch, early stopping, fixed
+  seed); replaces the 76–213 independent logistics; ladder blend w and
+  E010 conditional agreement unchanged. Runner 3-inst 0.4991 → 0.5061
+  (**Δ +0.0070**): wb +0.0102 (first wb movement anywhere), unhcr
+  +0.0097, unicef +0.0012 — exactly the heads-count ordering
+  pre-registered. The day's pattern in one line: per-item knobs, option
+  smoothing, priors, bagging all ≈ 0 — the paying move was the
+  model-CLASS change (nonlinearity + cross-item sharing).
+- **Submission #6 packaged** (`submissions/2026-09-02-E012/`,
+  script-assembled from verified src modules, parity exact, zip OK,
+  score.py PASS 0.50/0.45/0.56, ~200 s ≪ 900 s). LB pre-registration:
+  Grand 0.60–0.62; wb 0.49 → 0.50+ is the falsifiable core (sectioned
+  multi-factor thesis); unicef ~flat; any −0.02 ⇒ net memorization ⇒
+  lower w cap or revert to E010.
+
 ## 2026-09-01 — E009 rejected; E010 conditional agreement adopted, submission #5
 
 - **E009 (per-item C+w blend) implemented and REJECTED**: per-PREDICT-item
