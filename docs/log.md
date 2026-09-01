@@ -107,6 +107,30 @@ Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-note
   legality UNCLEAR under the re-identification clause: forum question
   FIRST, never unilateral.
 
+- **Leaderboard intelligence (same day, decisive): teams above us show
+  unhcr ≈ 0.92.** Arithmetic: skill 0.92 ⇒ (0.92−1)×1.2618 ≈ −0.101
+  nats/cell ⇒ average 90% probability on the realized answer across all
+  132k cells INCLUDING attitude items (we: −0.278 ⇒ 76%). GIVEN-only
+  conditioning cannot plausibly reach that; the one mechanism that can
+  is **cross-round panel linkage** (A001: real design is a panel,
+  flattened; A002: both rounds inside one fieldwork window ⇒ same
+  person's answers nearly identical across rounds; 72 GIVEN roster
+  columns = a fingerprint). Classic DEV-probing overfitting is ruled
+  out by the reusable-holdout arithmetic (ε=10 + 0.01 rounding + 1/day
+  cannot yield +0.14 skill). Their phase-2 risks: (1) the
+  re-identification/disqualification clause — legality of within-
+  dataset record linkage is THE open question; (2) organizers may have
+  built TEST from twin-less respondents (roles fixed at build) — the
+  precise sense in which 0.92 could be "DEV overfitting"; (3) mandatory
+  4-page method disclosure in phase 2.
+- **Decisions**: (a) forum question on linkage legality FIRST (bundled
+  with the GATE_CORRECTIONS.md question, still unposted); (b) prepare a
+  conditional linkage module — runtime detection of duplicate roster
+  signatures on visible real data, used only if found; harmless/inert
+  on the sandbox (independent rows by construction) — but SUBMIT ONLY
+  after an organizer ruling; (c) meanwhile continue the legitimate
+  axis: E013 = unhcr-targeted capacity scale-up.
+
 ## 2026-09-01 — E009 rejected; E010 conditional agreement adopted, submission #5
 
 - **E009 (per-item C+w blend) implemented and REJECTED**: per-PREDICT-item
