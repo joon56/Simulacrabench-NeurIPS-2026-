@@ -80,7 +80,7 @@ def test_no_round_col_is_inert():
 
 
 def panel_sim(frame, schema, link_frac, perturb, seed,
-              given_perturb=0.3):
+              given_perturb=0.3, drift_lambda=None):
     """Round-2 rows replaced by perturbed copies of sampled round-1
     rows; twin roles drawn TRAIN(0.8)/DEV(0.2) so pairs straddle the
     visible/held-out boundary. `given_perturb` of twins get ONE GIVEN
@@ -99,12 +99,19 @@ def panel_sim(frame, schema, link_frac, perturb, seed,
     given_cols = [n for n, r in records.items()
                   if r["class"] == "GIVEN" and n != "wave"
                   and n in twins.columns]
-    drift = rng.random(len(twins)) < given_perturb
-    for i in np.flatnonzero(drift):
-        col = given_cols[rng.integers(len(given_cols))]
-        vals = list(records[col]["values"])
-        twins.iloc[i, twins.columns.get_loc(col)] = \
-            vals[rng.integers(len(vals))]
+    if drift_lambda is None:
+        n_drift = (rng.random(len(twins)) < given_perturb).astype(int)
+    else:
+        n_drift = rng.poisson(drift_lambda, len(twins))
+    for i in np.flatnonzero(n_drift):
+        picks = rng.choice(len(given_cols),
+                           size=min(n_drift[i], len(given_cols)),
+                           replace=False)
+        for p in picks:
+            col = given_cols[p]
+            vals = list(records[col]["values"])
+            twins.iloc[i, twins.columns.get_loc(col)] = \
+                vals[rng.integers(len(vals))]
     for item, r in records.items():
         if r["class"] != "PREDICT" or item not in twins.columns:
             continue

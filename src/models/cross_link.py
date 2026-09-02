@@ -170,7 +170,9 @@ def stability(frame, records, items, vis_pairs):
             for item, (k, n) in counts.items()}
 
 
-def predict(frame, schema, cols=None, kappas=None):
+def predict(frame, schema, cols=None, kappas=None, link_fn=None):
+    if link_fn is None:
+        link_fn = build_links
     records, items, options = _layout(frame, schema)
     if cols is None:
         cols, kappas, _ = select_ladder(frame, schema)
@@ -204,7 +206,7 @@ def predict(frame, schema, cols=None, kappas=None):
 
     round_col = find_round_col(records, items)
     if round_col is not None:
-        twin_of, vis_pairs = build_links(frame, records, items, round_col)
+        twin_of, vis_pairs = link_fn(frame, records, items, round_col)
         stab = stability(frame, records, items, vis_pairs)
         if not stab:
             twin_of = {}

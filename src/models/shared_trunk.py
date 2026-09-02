@@ -35,16 +35,24 @@ PATIENCE = 30
 TORCH_SEED = 0
 
 
+DEFAULT_CONFIG = (HIDDEN, 2, 0.0)  # (width, depth, dropout) == E012
+
+
 class _Net(nn.Module):
-    def __init__(self, d_in, full_dims, cond_dims):
+    def __init__(self, d_in, full_dims, cond_dims, config=DEFAULT_CONFIG):
         super().__init__()
-        self.trunk = nn.Sequential(
-            nn.Linear(d_in, HIDDEN), nn.ReLU(),
-            nn.Linear(HIDDEN, HIDDEN), nn.ReLU())
+        width, depth, dropout = config
+        layers, d = [], d_in
+        for _ in range(depth):
+            layers += [nn.Linear(d, width), nn.ReLU()]
+            if dropout > 0:
+                layers.append(nn.Dropout(dropout))
+            d = width
+        self.trunk = nn.Sequential(*layers)
         self.full_heads = nn.ModuleList(
-            [nn.Linear(HIDDEN, k) for k in full_dims])
+            [nn.Linear(width, k) for k in full_dims])
         self.cond_heads = nn.ModuleList(
-            [nn.Linear(HIDDEN, k) for k in cond_dims])
+            [nn.Linear(width, k) for k in cond_dims])
 
     def forward(self, x):
         z = self.trunk(x)
@@ -87,9 +95,10 @@ def _pooled_ce(full_logits, cond_logits, full_t, cond_t):
 
 
 def _train(X_fit, full_fit, cond_fit, X_val, full_val, cond_val,
-           full_dims, cond_dims, max_epochs=MAX_EPOCHS):
+           full_dims, cond_dims, max_epochs=MAX_EPOCHS,
+           config=DEFAULT_CONFIG):
     torch.manual_seed(TORCH_SEED)
-    net = _Net(X_fit.shape[1], full_dims, cond_dims)
+    net = _Net(X_fit.shape[1], full_dims, cond_dims, config)
     opt = torch.optim.Adam(net.parameters(), lr=LR,
                            weight_decay=WEIGHT_DECAY)
     best_val, best_epoch, best_state = np.inf, 0, None
@@ -132,8 +141,13 @@ def _tensor(X):
     return torch.from_numpy(np.asarray(X.todense(), dtype=np.float32))
 
 
-def tune_and_train(frame, schema, cols, kappas):
-    """Returns (w, net trained on all complete rows, layout helpers)."""
+def tune_and_train(frame, schema, cols, kappas, configs=None):
+    """Returns (w, net trained on all complete rows, layout helpers).
+
+    configs: optional tuple of (width, depth, dropout) architectures —
+    each is trained on the inner split and the one with the best pooled
+    CE on the OUTER eval split wins before w tuning. None keeps the
+    single DEFAULT_CONFIG (bit-identical to E012)."""
     records, items, options = _layout(frame, schema)
     predict_items = [n for n in items if records[n]["class"] == "PREDICT"]
     gated_items = [n for n in predict_items if records[n].get("gate")]
@@ -160,11 +174,23 @@ def tune_and_train(frame, schema, cols, kappas):
 
     X_tr, f_tr, c_tr = prep(train_rows)
     X_va, f_va, c_va = prep(val_rows)
-    net, best_epoch = _train(X_tr, f_tr, c_tr, X_va, f_va, c_va,
-                             full_dims, cond_dims)
+    X_ev, f_ev, c_ev = prep(eval_rows)
+    if configs is None:
+        configs = (DEFAULT_CONFIG,)
+    net, best_epoch, config = None, 0, DEFAULT_CONFIG
+    best_ce = np.inf
+    for cand in configs:
+        cand_net, cand_epoch = _train(X_tr, f_tr, c_tr, X_va, f_va,
+                                      c_va, full_dims, cond_dims,
+                                      config=cand)
+        with torch.no_grad():
+            fl, cl = cand_net(X_ev)
+            ce = float(_pooled_ce(fl, cl, f_ev, c_ev))
+        if ce < best_ce:
+            best_ce, net, best_epoch, config = ce, cand_net, \
+                cand_epoch, cand
 
     # blend weight on the outer eval split, net fit on the fit portion
-    X_ev = _tensor(_given_matrix(eval_rows, records, items, options))
     nn_full, _ = _proba_maps(net, X_ev, predict_items, gated_items)
     totals = {w: 0.0 for w in W_GRID}
     cells = 0
@@ -191,16 +217,16 @@ def tune_and_train(frame, schema, cols, kappas):
     X_all_fit, f_all, c_all = prep(complete)
     final_net, _ = _train(X_all_fit, f_all, c_all, None, None, None,
                           full_dims, cond_dims,
-                          max_epochs=max(best_epoch, 1))
+                          max_epochs=max(best_epoch, 1), config=config)
     return w, final_net, (predict_items, gated_items)
 
 
-def predict(frame, schema, cols=None, kappas=None):
+def predict(frame, schema, cols=None, kappas=None, configs=None):
     records, items, options = _layout(frame, schema)
     if cols is None:
         cols, kappas, _ = select_ladder(frame, schema)
     w, net, (predict_items, gated_items) = tune_and_train(
-        frame, schema, cols, kappas)
+        frame, schema, cols, kappas, configs=configs)
 
     complete = _complete_rows(frame, items)
     if net is not None and w > 0:

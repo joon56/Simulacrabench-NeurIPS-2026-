@@ -184,6 +184,33 @@ Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-note
   falsify overlap conclusively; (3) kit watch unchanged ("<5 gating
   changes" still unshipped as of the E013 upload).
 
+- **Parallel session (same day): E015 parked, E014 v2 adopted,
+  submission #8 packaged.**
+  - **E015 (trunk capacity grid)**: shared_trunk parameterized (default
+    bit-identical to E012, verified); per-instrument selection over
+    {64,128,256}×{2,3}+dropout. Runner Δ +0.0001 → parked per the
+    pre-registered fallback; third confirmation that the 1-factor
+    sandbox caps capacity gains; no leaderboard-loophole adoption.
+  - **E014 v1 (hard Fellegi–Sunter) discarded by its own diagnostics**:
+    the unhcr signature is ~16 GIVEN columns, not 72 (EXCLUDE counted —
+    same error A004 caught on wb); seed-vs-random score gap 1.3 ⇒ hard
+    matching unseparable under drift, and E013's real-data flat re-read
+    as COLLISIONS (uniqueness margin rejected concentrated cells).
+  - **E014 v2 (soft posterior evidence mixing) ADOPTED**: rarity-
+    weighted (−log u_j) agreement scores = log-LR ⇒ softmax posterior
+    over top-10 other-round candidates ⇒ posterior-mixed answers as
+    evidence ⇒ per-item λ calibrated by replaying on visible rows. No
+    uniqueness, no hard guards — collisions share mass, no signal ⇒
+    λ→0. Discovered en route: vs a weak model the layer acts as k-NN
+    conditioning (trait-similar neighbours) — kept, documented; vs the
+    full net on clean sandbox it is redundant (unhcr −0.0002, in
+    bound). Heavy-drift scored sim **+0.1556 log**; collision sim
+    213/213 items stay armed. Suite 51+1 xfail; zip OK; score.py PASS
+    0.50/0.45/0.56. The submission IS the overlap experiment: unhcr
+    ≥+0.02 ⇒ overlap real (E013 died on collisions); flat ⇒ overlap
+    dead, linkage abandoned, 0.92 question re-opens; +0.01 ambiguous
+    (k-NN residual) — thresholds pre-registered in SCORES.md.
+
 ## 2026-09-01 — E009 rejected; E010 conditional agreement adopted, submission #5
 
 - **E009 (per-item C+w blend) implemented and REJECTED**: per-PREDICT-item
