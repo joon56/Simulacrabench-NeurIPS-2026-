@@ -131,6 +131,37 @@ Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-note
   after an organizer ruling; (c) meanwhile continue the legitimate
   axis: E013 = unhcr-targeted capacity scale-up.
 
+- **ORGANIZER RULING (email, Andy, same day)**: "Matching rows within
+  the dataset — which does not extract identities outside of the
+  enclave — is permitted." Cross-round linkage is LEGAL. Also disclosed:
+  (1) "a few (<5) changes to gating in UNHCR that we still need to
+  ship" — a kit/schema update is coming, re-audit on arrival (gate
+  structure our E010 conditional-agreement layer depends on may move);
+  (2) the dangling GATE_CORRECTIONS.md reference is removed for now;
+  (3) prize-money announcement pending. Strategy consequence: E013 =
+  cross-round respondent linkage (runtime-detected, stability-
+  calibrated) is now the top-priority experiment; capacity scale-up
+  moves to E014.
+
+- **E013 (cross-round linkage) implemented and ADOPTED, submission #7
+  packaged** (`submissions/2026-09-03-E013/`, upload tomorrow). Layer:
+  round column from schema (2-valued wave/round GIVEN); FUZZY 1:1
+  matching on the remaining GIVEN signature (≤2 mismatches, 90%
+  relative floor, runner-up margin ≥2, claim resolution); per-item
+  cross-round stability from visible-visible pairs (β-shrunk α=20)
+  mixes the twin's answer into the E012 belief BEFORE the gate cascade;
+  MIN_PAIRS=30 guard (added after the clean sandbox produced exactly 1
+  spurious collision). Evidence: clean runner bit-identical to E012
+  (isolated rerun; a contended run exposed torch CPU reduction
+  nondeterminism worth ±0.0006 — noted); panel sim +0.2293 log
+  (exact twins), +0.2003 (30% GIVEN-drift twins — fuzzy recall);
+  zip OK, parity exact, suite 47 passed + 1 xfail. LB pre-registration
+  in SCORES.md: unicef/wb structurally inert; unhcr 0.85–0.92 if the
+  panel hypothesis holds; 0.80–0.84 ⇒ recall-bound (widen fuzz);
+  flat ⇒ hypothesis wrong, re-open the 0.92 analysis; down ⇒ false
+  matches (raise margins). Kit watch: "<5 gating changes" unshipped —
+  full harness re-run required if an update lands before upload.
+
 ## 2026-09-01 — E009 rejected; E010 conditional agreement adopted, submission #5
 
 - **E009 (per-item C+w blend) implemented and REJECTED**: per-PREDICT-item
