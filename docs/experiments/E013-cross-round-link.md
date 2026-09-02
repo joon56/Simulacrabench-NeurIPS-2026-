@@ -114,3 +114,11 @@ expected unhcr LB ≈ 0.85–0.92 — are tested by the next submission.
 Disclosure per FAQ: linkage motivated by public eRPIS panel
 documentation; organizer email quoted in log.md. Submission:
 `submissions/2026-09-03-E013/`.
+
+**Update 2026-09-03 — PARKED after the leaderboard test.** Result
+identical to E012 (0.52/0.49/0.78): the layer armed nothing on real
+data; the pre-registered flat arm fired. Zero damage (guards held).
+Cause ambiguous between (a) rounds disjoint in the competition build
+and (b) real cross-round GIVEN drift > MAX_MISMATCH — see SCORES.md.
+Revive conditions: organizer confirms respondent overlap, or E014's
+looser probabilistic matcher finds visible-visible pairs on real data.
