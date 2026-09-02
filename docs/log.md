@@ -162,6 +162,28 @@ Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-note
   matches (raise margins). Kit watch: "<5 gating changes" unshipped —
   full harness re-run required if an update lands before upload.
 
+## 2026-09-03 — E013 result: flat; linkage hypothesis unresolved, cheap diagnostics queued
+
+- **E013 submitted; result: Grand 0.60 — 0.52/0.49/0.78, identical to
+  E012.** unicef/wb inert ✓ (as designed); **unhcr flat = the
+  pre-registered flat arm**. Zero damage (guards worked) but zero gain:
+  the fuzzy matcher armed nothing on real data. Two candidate causes,
+  outside-indistinguishable: (a) rounds genuinely disjoint (organizers
+  built the flattening that way) — then the 0.92 mechanism is NOT
+  simple linkage, re-open that analysis; (b) real cross-round GIVEN
+  drift > 2 of 71 columns (age-band shifts move paired roster columns;
+  a different household respondent moves many), so MIN_PAIRS never
+  armed. E013 experiment status updated: adopted → parked (no harm, no
+  evidence of real-data function; revive on overlap confirmation).
+- Decisions: (1) ask Andy directly whether the two CATI rounds share
+  respondents — zero-cost, resolves (a) instantly; (2) E014 designed =
+  two-stage probabilistic linkage (loose blocking on a data-selected
+  stable column subset → per-column entropy-weighted similarity →
+  margin + absolute acceptance, column stability re-estimated from
+  confident seed pairs), same inert-by-guard safety — flat again would
+  falsify overlap conclusively; (3) kit watch unchanged ("<5 gating
+  changes" still unshipped as of the E013 upload).
+
 ## 2026-09-01 — E009 rejected; E010 conditional agreement adopted, submission #5
 
 - **E009 (per-item C+w blend) implemented and REJECTED**: per-PREDICT-item

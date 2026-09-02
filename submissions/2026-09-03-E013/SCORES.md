@@ -48,3 +48,27 @@ Pre-registered 2026-09-02 BEFORE submission:
 - Kit watch: organizer announced "<5 gating changes" to unhcr still
   unshipped — if a kit update lands before this submission, re-run the
   full harness first.
+
+## Actual leaderboard result (2026-09-03)
+
+**Grand 0.60 — unicef 0.52 / world_bank 0.49 / unhcr 0.78** — identical
+to E012 (leaderboard keeps E012's entry as best). Pre-registered
+readings:
+
+- unicef/wb flat ✓ — the layer is structurally inert there; no damage
+  anywhere (the safety design worked: wrong hypothesis cost zero skill).
+- **unhcr FLAT ⇒ the pre-registered flat arm fired.** Ambiguous between
+  its two sub-readings, and the MIN_PAIRS guard makes them
+  indistinguishable from outside: (a) the two rounds share few/no
+  respondents (competition build deliberately disjoint — then the
+  0.92 leaders use something else and that analysis re-opens), or
+  (b) real cross-round GIVEN drift exceeds MAX_MISMATCH=2 (a child
+  crossing an age band moves 2 roster columns at once; a different
+  household member answering moves more), so the matcher never found
+  the ≥30 visible-visible pairs needed to arm.
+- Follow-ups decided: (1) zero-cost diagnostic — ask the organizer
+  directly whether rounds share respondents (channel already warm);
+  (2) E014 = looser two-stage probabilistic matching with runtime
+  column-stability weighting, inert-by-guard as before — resolves the
+  (a)/(b) ambiguity by construction: if E014 is also flat, overlap is
+  dead and linkage is abandoned.

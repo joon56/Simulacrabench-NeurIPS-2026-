@@ -1,6 +1,6 @@
 # E013 — cross-round respondent linkage (runtime-detected, stability-calibrated)
 parent: E012
-status: adopted
+status: parked
 date: 2026-09-02
 
 ## Hypothesis

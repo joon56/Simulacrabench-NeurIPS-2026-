@@ -27,12 +27,12 @@ flowchart TD
     E010 --> E011
     E012["E012 shared-trunk multi-head network replacing the per-item logistic<br/><i>adopted · 2026-09-02</i>"]
     E010 --> E012
-    E013["E013 cross-round respondent linkage (runtime-detected, stability-calibrated)<br/><i>adopted · 2026-09-02</i>"]
+    E013["E013 cross-round respondent linkage (runtime-detected, stability-calibrated)<br/><i>parked · 2026-09-02</i>"]
     E012 --> E013
     classDef adopted fill:#d4edda,stroke:#28a745
-    class E001,E002,E003,E004,E005,E006,E008,E010,E012,E013 adopted
+    class E001,E002,E003,E004,E005,E006,E008,E010,E012 adopted
     classDef rejected fill:#f8d7da,stroke:#dc3545
     class E009,E011 rejected
     classDef parked fill:#fff3cd,stroke:#ffc107
-    class E007 parked
+    class E007,E013 parked
 ```
