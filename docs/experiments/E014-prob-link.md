@@ -1,6 +1,6 @@
 # E014 — two-stage probabilistic cross-round linkage (Fellegi–Sunter-style)
 parent: E013
-status: adopted
+status: parked
 date: 2026-09-03
 
 ## Hypothesis

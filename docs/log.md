@@ -211,6 +211,28 @@ Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-note
     dead, linkage abandoned, 0.92 question re-opens; +0.01 ambiguous
     (k-NN residual) — thresholds pre-registered in SCORES.md.
 
+## 2026-09-04 — E014 result: no leaderboard update (≤ E012); linkage line provisionally closed
+
+- **E014 submitted; leaderboard did not update — E012 (0.60,
+  0.52/0.49/0.78) remains best.** Exact E014 triple pending from the
+  Codabench My Submissions page (leaderboard only shows the best
+  entry). Provisional reading per the pre-registered table: no update ⇒
+  unhcr gain < +0.02 ⇒ the FLAT arm — with BOTH the hard 1:1 matcher
+  (E013) and the soft posterior + self-calibrated λ layer (E014)
+  finding nothing, the round-overlap hypothesis is effectively dead
+  unless the exact triple or an organizer answer says otherwise.
+- Consequences queued: (1) get the exact E014 triple (user, My
+  Submissions); (2) the overlap question to Andy is now the cheapest
+  decisive bit — if "no overlap", linkage is closed for good and the
+  0.92 mechanism question re-opens with linkage eliminated; (3) next
+  experiment direction if closed: the 0.92 gap must then come from
+  modelling — E015's capacity grid as a pre-registered leaderboard A/B
+  (sandbox provably cannot measure it), and/or unhcr-specific
+  structures not yet exploited (round-2-only sentinel families beyond
+  E010, joint decoding of the overlapping s3_11 branches).
+- E014 status: adopted → parked pending the exact triple (no harm
+  anywhere — the inert-by-calibration design held on real data too).
+
 ## 2026-09-01 — E009 rejected; E010 conditional agreement adopted, submission #5
 
 - **E009 (per-item C+w blend) implemented and REJECTED**: per-PREDICT-item
