@@ -211,6 +211,32 @@ Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-note
     dead, linkage abandoned, 0.92 question re-opens; +0.01 ambiguous
     (k-NN residual) — thresholds pre-registered in SCORES.md.
 
+## 2026-09-05 — E013/E014 grand confirmed 0.60 each; linkage line CLOSED
+
+- **User confirmed from the submissions panel: E013 and E014 both
+  scored Grand 0.60** — identical to E012, no failures. Platform
+  behavior also confirmed (Codabench organizer settings hide individual
+  submission score detail; Force_Best-style leaderboard keeps E012's
+  row). The "no update" mystery = tie at 0.60, not crashes.
+- **Linkage line CLOSED, definitively**: two independent designs — hard
+  1:1 fuzzy (E013) and soft posterior with self-calibrating λ (E014) —
+  both inert on real data. Best remaining explanation of the whole
+  arc: the organizers ROLE-ALIGNED panel twins when flattening (both
+  rows of a person land in the same TRAIN/DEV/TEST bucket), which (a)
+  makes cross-round matching harmless by construction, (b) explains why
+  Andy permitted it so casually, and (c) means NOBODY's 0.92 comes from
+  linkage. The overlap question to Andy remains worth sending as
+  confirmation, not as a decision input.
+- **0.92 question re-opened with linkage eliminated.** Ranked remaining
+  hypotheses: (1) real-data capacity/conditioning gains the 1-factor
+  sandbox provably cannot measure (E015 grid parked at +0.0001 local —
+  a pre-registered leaderboard A/B is the only instrument); (2)
+  unexploited unhcr specifics — note MAX_CARD=12 excludes
+  governorate_col (K=46) and origin_governorate (K=16) from the LADDER
+  (the net sees them one-hot, cell tables never did) — cheap, locally
+  measurable; (3) sharper round-2 sentinel handling beyond E010.
+  Next session: (2) first (local, free), then design the (1) A/B.
+
 ## 2026-09-04 — E014 result: no leaderboard update (≤ E012); linkage line provisionally closed
 
 - **E014 submitted; leaderboard did not update — E012 (0.60,
