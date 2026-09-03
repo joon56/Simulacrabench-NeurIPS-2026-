@@ -237,6 +237,27 @@ Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-note
   measurable; (3) sharper round-2 sentinel handling beyond E010.
   Next session: (2) first (local, free), then design the (1) A/B.
 
+- **Same-day session: E016 rejected; E017 (capacity A/B) packaged as
+  submission #9.**
+  - Score-equality analysis for the user's question recorded: scenario
+    (c) (unhcr down, others up) is structurally impossible — the
+    linkage layers cannot touch unicef/wb; (b) bit-inert is the
+    dominant read (guards/λ verified to degenerate); display noise
+    (fresh Laplace per submission) is the fourth possibility — equal
+    displays ⇒ (near-)identical outputs.
+  - **E016 (ladder MAX_CARD 12→64) REJECTED at +0.0002** — but the
+    watch point paid: the unhcr ladder DID swap country_asylum for
+    governorate_col at depth 3; the mechanism works, the uniform-trait
+    sandbox just can't value geography. Claim moved to the A/B pool.
+  - **E017 = pre-registered leaderboard A/B of the E015 capacity grid**
+    (the park verdict's named revive path; rule-4 audit in the file:
+    verified-no-harm change spent as measurement on the one axis three
+    local nulls prove the sandbox cannot see). Parity exact, zip OK,
+    score.py PASS 0.50/0.46/0.56, ~465 s ≪ 900 s. Readings
+    pre-registered: ≥+0.02 on unhcr/wb reopens capacity as main line;
+    flat kills architecture spending for good; ≤−0.02 pins the default
+    config; unicef is the control.
+
 ## 2026-09-04 — E014 result: no leaderboard update (≤ E012); linkage line provisionally closed
 
 - **E014 submitted; leaderboard did not update — E012 (0.60,
