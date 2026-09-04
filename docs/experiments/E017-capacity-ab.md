@@ -1,6 +1,6 @@
 # E017 — pre-registered leaderboard A/B: trunk capacity on real data
 parent: E015
-status: in-progress
+status: rejected
 date: 2026-09-05
 
 ## Hypothesis
@@ -51,9 +51,22 @@ E012 stack (assembled self-contained). Local scores (2026-09-03 run):
 
 ## Result
 
-(to fill after the leaderboard returns)
+(v1 upload failed on the platform — first hosted failure; v3, the grid
+cut to the full grid's winners at ~340 s local, ran.) **Leaderboard:
+Grand 0.60 — unicef 0.52 / wb 0.49 / unhcr 0.79** (E012: 0.52/0.49/0.78).
 
 ## Decision
 
-(to fill — this experiment adopts/rejects the capacity DIRECTION, not
-just the model)
+**Capacity direction CLOSED (the flat arm, taken strictly).** Scored
+against the pre-registered readings: unicef control clean ✓ (0.52,
+selector stayed small); wb flat — the instrument whose 128×2 config got
+its chance moved nothing; unhcr +0.01 sits INSIDE the pre-registered
+flat band (±0.01) and below the +0.02 bar that was defined in advance
+as the minimum evidence of real capacity gains. Reading: architecture
+is not where the 0.92 gap lives; stop spending slots and development on
+model size. The +0.01 whisper is noted but not actionable — the
+pre-registration explicitly anticipated and discounted it (noise scale
+±0.01–0.02). Residual suspects for the gap, carried forward:
+within-round duplicate rows (a linkage axis E013/E014 never tested —
+their candidate pools were strictly cross-round), joint decoding of the
+overlapping s3_11 branches, and per-item calibration.

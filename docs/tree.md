@@ -35,12 +35,12 @@ flowchart TD
     E012 --> E015
     E016["E016 lift the ladder's cardinality cap (governorate into the cells)<br/><i>rejected · 2026-09-05</i>"]
     E012 --> E016
-    E017["E017 pre-registered leaderboard A/B: trunk capacity on real data<br/><i>in-progress · 2026-09-05</i>"]
+    E017["E017 pre-registered leaderboard A/B: trunk capacity on real data<br/><i>rejected · 2026-09-05</i>"]
     E015 --> E017
     classDef adopted fill:#d4edda,stroke:#28a745
     class E001,E002,E003,E004,E005,E006,E008,E010,E012 adopted
     classDef rejected fill:#f8d7da,stroke:#dc3545
-    class E009,E011,E016 rejected
+    class E009,E011,E016,E017 rejected
     classDef parked fill:#fff3cd,stroke:#ffc107
     class E007,E013,E014,E015 parked
 ```
