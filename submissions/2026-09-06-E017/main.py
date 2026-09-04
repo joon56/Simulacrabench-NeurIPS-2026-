@@ -587,11 +587,15 @@ def predict(frame, schema, cols=None, kappas=None, configs=None):
 # ---------------------------------------------------- E017 entry point
 
 _E012_PREDICT = predict
+# v3 (after a hosted failure, suspected timeout): grid cut 4 -> 2,
+# keeping exactly the configs the full grid selected on the sandbox
+# (baseline for unicef; 128x2+dropout for wb and unhcr) -- the A/B
+# question is preserved at roughly half the selection cost. v2's
+# {64, 256} cut was discarded: with it the unhcr selector fell back to
+# the baseline, which would have made the A/B blind on its main target.
 CONFIGS = (
     (64, 2, 0.0),    # E012 baseline
-    (128, 2, 0.1),
-    (256, 2, 0.1),
-    (128, 3, 0.1),
+    (128, 2, 0.1),   # the full grid's winner on wb and unhcr
 )
 
 

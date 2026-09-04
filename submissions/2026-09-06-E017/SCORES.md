@@ -16,9 +16,24 @@ spent to read the one axis the 1-factor sandbox provably cannot measure
 | E012 (LB 0.60) | 0.4429 | 0.5006 | 0.4549 | 0.5629 | 0.5061 |
 
 Parity exact. Official score.py PASS ×3: 0.5000 / 0.4600 / 0.5600
-(noised sandbox, consistent with exact). Wall-clock ~465 s
-local (4 configs trained per instrument) — under the 900 s budget with
-~2× margin; E012-family precedent says hosted ≈ local.
+(noised sandbox, consistent with exact).
+
+## v3 revision after hosted failure (2026-09-06)
+
+The v1 upload (4-config grid, ~465 s local) came back **submission
+failed** — the campaign's first hosted failure. Sanitized error code
+pending from the submissions panel; leading suspect is TIMEOUT (we have
+never observed hosted wall-clock; E012-family at ~200–250 s local
+passed, 465 s local may exceed 900 s hosted if the worker is ~2×
+slower). v2 ({64, 256} extremes) was built and DISCARDED: with it the
+unhcr selector fell back to the baseline — blind A/B on the main
+target. **v3 (shipped)**: grid {64×2, 128×2+dropout} — exactly the
+configs the full grid selected (unicef baseline = control, wb/unhcr
+128×2), reproducing v1's selections bit-for-bit at ~340 s local
+(−27%). Same pre-registered readings apply. If v3 also fails with a
+timeout-class code, the emergency fallback is pinned per-instrument
+configs (zero selection cost, ~E012 runtime) — prepared but not
+preferred, since it would let the sandbox choose for real data.
 
 ## Leaderboard expectation (real data) — the readings ARE the experiment
 
