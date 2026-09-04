@@ -211,6 +211,31 @@ Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-note
     dead, linkage abandoned, 0.92 question re-opens; +0.01 ambiguous
     (k-NN residual) — thresholds pre-registered in SCORES.md.
 
+## 2026-09-06 — E017 v3 ran (after v1 hosted failure); capacity direction closed
+
+- **E017 v1 FAILED on the platform** (first hosted failure; code
+  unretrieved, timeout suspected — 465 s local vs the passing family's
+  200–250 s). v2 ({64,256}) discarded on measurement (unhcr selector
+  fell back to baseline — blind A/B); **v3** kept exactly the full
+  grid's winners {64×2, 128×2+dropout}, reproducing v1's selections at
+  340 s local. Lesson recorded: hosted wall-clock has never been
+  observed — treat ~350 s local as the working ceiling until an
+  organizer answer or a timing probe says otherwise.
+- **E017 v3 result: Grand 0.60 — 0.52 / 0.49 / 0.79** (unhcr +0.01).
+  Scored strictly against the pre-registration: unicef control clean,
+  wb flat, unhcr inside the ±0.01 flat band, below the +0.02 evidence
+  bar. **Capacity direction CLOSED** — the 0.92 gap is not
+  architecture. Eliminated to date: priors, per-item tuning, ordinal
+  smoothing, seed bagging, cross-round linkage (hard+soft), geography
+  cells (locally), capacity (locally ×3 and now on the leaderboard).
+- Carried-forward suspects, next session's queue: (1) **within-round
+  duplicate rows** — E013/E014 candidate pools were strictly
+  cross-round; same-round near-duplicates (household co-respondents,
+  re-dials) straddling TRAIN/DEV would be an answer key our design
+  never looked at; one-line pool extension, same self-calibrating λ
+  safety; (2) joint decoding of the overlapping s3_11 branches;
+  (3) per-item temperature calibration.
+
 ## 2026-09-05 — E013/E014 grand confirmed 0.60 each; linkage line CLOSED
 
 - **User confirmed from the submissions panel: E013 and E014 both
