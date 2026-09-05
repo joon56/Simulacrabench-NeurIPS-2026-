@@ -37,8 +37,10 @@ flowchart TD
     E012 --> E016
     E017["E017 pre-registered leaderboard A/B: trunk capacity on real data<br/><i>rejected · 2026-09-05</i>"]
     E015 --> E017
+    E018["E018 full-pool visible-row evidence (within-round duplicates + k-NN)<br/><i>adopted · 2026-09-05</i>"]
+    E014 --> E018
     classDef adopted fill:#d4edda,stroke:#28a745
-    class E001,E002,E003,E004,E005,E006,E008,E010,E012 adopted
+    class E001,E002,E003,E004,E005,E006,E008,E010,E012,E018 adopted
     classDef rejected fill:#f8d7da,stroke:#dc3545
     class E009,E011,E016,E017 rejected
     classDef parked fill:#fff3cd,stroke:#ffc107

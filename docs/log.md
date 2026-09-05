@@ -211,6 +211,32 @@ Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-note
     dead, linkage abandoned, 0.92 question re-opens; +0.01 ambiguous
     (k-NN residual) — thresholds pre-registered in SCORES.md.
 
+## 2026-09-05 (session 2) — EXCLUDE leak ruled out; E018 full-pool evidence adopted, submission #10
+
+- **EXCLUDE answer-key hypothesis closed in 10 minutes, locally**: the
+  kit's `generated_items()` provably never generates or ships EXCLUDE
+  items ("never generated, never shown") — no leak path in the file.
+- **E018 (full-pool visible-row evidence) implemented and ADOPTED
+  (E003 route)**: E014's evidence layer generalized — candidates = ALL
+  visible rows, self excluded (unit-tested), no round-column gate, so
+  within-round near-duplicates (household co-respondents, re-dials,
+  double entries) are finally in scope; per-item λ replay unchanged
+  (its in-sample bias is conservative — errs toward λ low). Runtime
+  guard: calibration replay capped at 6,000 queries; 250 s local =
+  worst-case ~650 s hosted under the E017 bracket. Evidence: clean
+  runner unhcr −0.0003 (in bound), others identical; within-round dup
+  sim +0.0588 log scored, layer arms 159 items where E014's
+  cross-round pools arm 40. Scope honesty pre-registered: the 0.92
+  arithmetic needs ~71% twin coverage — this hunts a partial gain,
+  not the gap.
+- **Submission #10 packaged** (`submissions/2026-09-06-E018/`, parity
+  exact, zip OK, score.py PASS 0.50/0.45/0.56). Readings in SCORES.md:
+  any instrument ≥+0.02 ⇒ duplicates real, tighten; all flat ⇒ the
+  ENTIRE row-matching family (E013/E014/E018) closes and the 0.92
+  question narrows to joint branch decoding, calibration, or something
+  unconceived; unicef/wb carry the layer for the first time — live
+  readings now, not controls.
+
 ## 2026-09-06 — E017 v3 ran (after v1 hosted failure); capacity direction closed
 
 - **E017 v1 FAILED on the platform** (first hosted failure; code
