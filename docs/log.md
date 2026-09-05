@@ -211,6 +211,28 @@ Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-note
     dead, linkage abandoned, 0.92 question re-opens; +0.01 ambiguous
     (k-NN residual) — thresholds pre-registered in SCORES.md.
 
+## 2026-09-06 — E018 result: BREAKTHROUGH — Grand 0.63, unhcr 0.87
+
+- **E018 submitted; result: Grand 0.63 — unicef 0.52 / wb 0.49 /
+  unhcr 0.87** (+0.09 unhcr, largest jump of the campaign alongside
+  E008). The ≥+0.02 pre-registered arm fired at 4.5× its bar:
+  **within-round near-duplicates are real and abundant** — the axis
+  E013/E014's cross-round-only pools were structurally blind to.
+  unicef/wb flat = their λ self-calibrated to ~0 (no duplicate
+  structure), the layer behaving exactly as designed. Rough inversion
+  says a third to half of unhcr DEV rows have a usable visible twin —
+  structural in the build, not accidental. **The leaders' 0.92 is now
+  essentially explained: same axis, tighter tuning.** Gap to close:
+  0.05.
+- Known headroom for E019 (tighten the layer, locally verifiable on
+  the dup sim + replay): (1) LAMBDA_GRID caps at 0.9 — a near-exact
+  twin wants 0.95–0.98; (2) TOP_K=10 softmax posterior may dilute a
+  dominant twin — tune K / posterior sharpness on the replay;
+  (3) agreement weights are first-pass rarity (−log u_j) — an m_j
+  iteration from high-λ matched pairs could sharpen matching;
+  (4) evidence currently mixes at item level — a per-(item, posterior-
+  concentration) λ could trust exact twins more than diffuse ones.
+
 ## 2026-09-05 (session 2) — EXCLUDE leak ruled out; E018 full-pool evidence adopted, submission #10
 
 - **EXCLUDE answer-key hypothesis closed in 10 minutes, locally**: the

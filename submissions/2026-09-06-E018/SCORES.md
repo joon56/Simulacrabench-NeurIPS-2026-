@@ -42,3 +42,26 @@ Pre-registered 2026-09-05 BEFORE submission:
   expectations — cap λ grid and diagnose before further layer work.
 - unicef/wb now ALSO carry the layer (first time) — their flatness is
   no longer structural; watch them as live readings, not controls.
+
+## Actual leaderboard result (2026-09-06)
+
+**Grand 0.63 — unicef 0.52 / world_bank 0.49 / unhcr 0.87**
+(reference: 0.52 / 0.49 / 0.78). Scorecard:
+
+- **unhcr +0.09 — the ≥+0.02 arm fired at 4.5× its bar.** The largest
+  single-submission jump of the campaign (E008's +0.08 matched).
+  Within-round near-duplicates are REAL and abundant; the evidence
+  layer's λ calibration priced them on visible rows and it transferred.
+  Rough inversion: at λ≈0.9 mixing and our −0.278 base, +0.09 skill
+  (−0.278→−0.164 nats) is consistent with roughly a third to half of
+  DEV rows having a usable visible twin — a duplication rate far above
+  the "accidental" range, i.e. plausibly structural in the build
+  (households / re-contacts sharing a round).
+- unicef/wb flat — live readings now: their λ tuned ≈ 0 on real data
+  (no duplicate structure there), exactly as the self-calibration
+  should behave.
+- **The 0.92 mechanism is now essentially identified**: same axis,
+  better tuned. Remaining gap 0.05. Known headroom in OUR layer:
+  LAMBDA_GRID caps at 0.9 (a near-exact twin wants λ→0.97+), TOP_K=10
+  posterior may be blunter than needed, weights are first-pass
+  (−log u_j, no m_j iteration). Tightening = E019.
