@@ -1,6 +1,6 @@
 # E019 — sharpen the evidence layer (λ ceiling + concentration buckets)
 parent: E018
-status: adopted
+status: parked
 date: 2026-09-06
 
 ## Hypothesis

@@ -39,12 +39,12 @@ flowchart TD
     E015 --> E017
     E018["E018 full-pool visible-row evidence (within-round duplicates + k-NN)<br/><i>adopted · 2026-09-05</i>"]
     E014 --> E018
-    E019["E019 sharpen the evidence layer (λ ceiling + concentration buckets)<br/><i>adopted · 2026-09-06</i>"]
+    E019["E019 sharpen the evidence layer (λ ceiling + concentration buckets)<br/><i>parked · 2026-09-06</i>"]
     E018 --> E019
     classDef adopted fill:#d4edda,stroke:#28a745
-    class E001,E002,E003,E004,E005,E006,E008,E010,E012,E018,E019 adopted
+    class E001,E002,E003,E004,E005,E006,E008,E010,E012,E018 adopted
     classDef rejected fill:#f8d7da,stroke:#dc3545
     class E009,E011,E016,E017 rejected
     classDef parked fill:#fff3cd,stroke:#ffc107
-    class E007,E013,E014,E015 parked
+    class E007,E013,E014,E015,E019 parked
 ```

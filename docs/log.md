@@ -211,6 +211,30 @@ Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-note
     dead, linkage abandoned, 0.92 question re-opens; +0.01 ambiguous
     (k-NN residual) — thresholds pre-registered in SCORES.md.
 
+## 2026-09-07 — E019: hosted timeout then flat; runtime pass in progress
+
+- **E019 first upload: time limit exceeded.** Same zip re-uploaded the
+  next day RAN → the failure was hosted worker-speed variance (E017 v1
+  most likely the same). Timing model corrected: hosted/local ratio is
+  not 1.94–2.6× but fluctuates past ~3.75× on bad days; new working
+  ceiling **≤ ~130 s local**.
+- **E019 result: Grand 0.63, no update** — ≤ E018, unhcr within noise of
+  0.87. Flat arm: real twins noisier than the sim's 10%-perturbed
+  copies; λ ceiling / concentration buckets bought nothing real. E019
+  status → parked (harmless, no gain). Instrument lesson: the dup sim
+  predicted E018's direction and roughly its size, but over-predicted
+  E019 — re-calibrate the sim's perturbation before trusting it for
+  further layer tuning.
+- **Runtime pass (model-neutral) underway**: `hier_backoff._eval_candidate`
+  vectorized (cells factorized once, [cells,K] count matrices, numpy
+  scoring over all κ; ladder selections identical, history scores equal
+  to 1e-15; unhcr selection 73 s → ~15 s with per-item code caching),
+  `prob_link._evidence` vectorized (np.add.at accumulation), and
+  `shared_trunk` training moved to the hosted H100 when available with
+  CPU fallback on any GPU exception. E019 runner after the first two
+  edits: identical scores, 240 s → 145 s. Parity of the GPU-path edit
+  (CPU no-op) and full-suite run still pending before commit.
+
 ## 2026-09-06 (session 2) — E019 sharpened evidence layer adopted, submission #11
 
 - **E019 implemented and ADOPTED**: two calibration refinements over

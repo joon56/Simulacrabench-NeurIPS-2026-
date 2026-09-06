@@ -38,3 +38,17 @@ Pre-registered 2026-09-06 BEFORE submission:
   exact risk pre-registered; response: raise CONC_SPLIT (0.5→0.8) or
   cap the concentrated grid at 0.95.
 - unicef/wb flat (λ≈0 there on real data per E018).
+
+## Actual leaderboard result (2026-09-07)
+
+First upload: **time limit exceeded** (same zip re-uploaded the next
+day RAN — hosted worker speed varies day to day; ~240 s local is not
+safe). Result of the run: **Grand 0.63, no update** — E019 ≤ E018,
+i.e. unhcr within noise of 0.87. **The flat arm fired.** Reading per
+pre-registration: real twins are noisier than the sim's 10%-perturbed
+copies, so the real λ optimum already sat ≤ 0.9 and/or max-posterior
+concentration does not separate an exact-twin regime on real data.
+Consequence for the instrument: the within-round dup sim must be
+re-calibrated with heavier answer perturbation before it is trusted
+for further layer tuning — its +0.031 prediction did not transfer,
+whereas E018's +0.06 prediction did (direction right, magnitude not).
