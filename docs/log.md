@@ -211,6 +211,26 @@ Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-note
     dead, linkage abandoned, 0.92 question re-opens; +0.01 ambiguous
     (k-NN residual) — thresholds pre-registered in SCORES.md.
 
+## 2026-09-06 (session 2) — E019 sharpened evidence layer adopted, submission #11
+
+- **E019 implemented and ADOPTED**: two calibration refinements over
+  E018 — λ grid extended to {…, 0.95, 0.98} (the 0.9 ceiling forced
+  10% model mass onto every exact-twin cell), and per-item λ split into
+  (diffuse, concentrated) buckets at max posterior weight ≥ 0.5, each
+  replay-calibrated (exact twins want λ≈0.98, diffuse k-NN rows want
+  it low; one λ was a compromise; the bucket is also the guard against
+  the higher ceiling since false matches are diffuse). Evidence: clean
+  runner identical to E018; on the within-round dup sim — now a
+  LEADERBOARD-VALIDATED instrument (its ≥+0.02 arm fired at +0.09) —
+  **E018 −0.4849 → E019 −0.4537, +0.0312 log** (6× the bar);
+  concentrated-bucket λ exceeds 0.9 on twins, concentrated ≥ diffuse on
+  average. ~240 s local. Suite additions 2/2.
+- **Submission #11 packaged** (`submissions/2026-09-07-E019/`, parity
+  exact, zip OK, score.py PASS 0.50/0.45/0.56). Pre-registered: unhcr
+  ≥+0.02 expected (0.89–0.91, Grand ≈ 0.64); flat ⇒ real twins noisier
+  than the sim's 10% perturbation; DOWN ⇒ λ=0.98 on false-but-
+  concentrated matches ⇒ raise CONC_SPLIT to 0.8 / cap at 0.95.
+
 ## 2026-09-06 — E018 result: BREAKTHROUGH — Grand 0.63, unhcr 0.87
 
 - **E018 submitted; result: Grand 0.63 — unicef 0.52 / wb 0.49 /
