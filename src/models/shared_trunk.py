@@ -94,11 +94,37 @@ def _pooled_ce(full_logits, cond_logits, full_t, cond_t):
     return loss / max(count, 1)
 
 
+def _device():
+    """Hosted runner has an H100; locally this is the CPU. The CPU path is
+    unchanged bit-for-bit (all .to() calls are no-ops there)."""
+    return torch.device("cuda" if torch.cuda.is_available() else "cpu")
+
+
 def _train(X_fit, full_fit, cond_fit, X_val, full_val, cond_val,
            full_dims, cond_dims, max_epochs=MAX_EPOCHS,
            config=DEFAULT_CONFIG):
+    dev = _device()
+    try:
+        return _train_on(dev, X_fit, full_fit, cond_fit, X_val, full_val,
+                         cond_val, full_dims, cond_dims, max_epochs, config)
+    except Exception:
+        if dev.type != "cuda":
+            raise
+        # any GPU-side trouble (driver, memory, dtype) -> retrain on CPU
+        return _train_on(torch.device("cpu"), X_fit, full_fit, cond_fit,
+                         X_val, full_val, cond_val, full_dims, cond_dims,
+                         max_epochs, config)
+
+
+def _train_on(dev, X_fit, full_fit, cond_fit, X_val, full_val, cond_val,
+              full_dims, cond_dims, max_epochs, config):
     torch.manual_seed(TORCH_SEED)
-    net = _Net(X_fit.shape[1], full_dims, cond_dims, config)
+    net = _Net(X_fit.shape[1], full_dims, cond_dims, config).to(dev)
+    X_fit, full_fit, cond_fit = (X_fit.to(dev), full_fit.to(dev),
+                                 cond_fit.to(dev))
+    if X_val is not None:
+        X_val, full_val, cond_val = (X_val.to(dev), full_val.to(dev),
+                                     cond_val.to(dev))
     opt = torch.optim.Adam(net.parameters(), lr=LR,
                            weight_decay=WEIGHT_DECAY)
     best_val, best_epoch, best_state = np.inf, 0, None
@@ -127,12 +153,16 @@ def _train(X_fit, full_fit, cond_fit, X_val, full_val, cond_val,
     return net, (best_epoch if X_val is not None else max_epochs)
 
 
+def _net_device(net):
+    return next(net.parameters()).device
+
+
 def _proba_maps(net, X_all, predict_items, gated_items):
     with torch.no_grad():
-        fl, cl = net(X_all)
-    full = {item: torch.softmax(logits, dim=1).numpy()
+        fl, cl = net(X_all.to(_net_device(net)))
+    full = {item: torch.softmax(logits, dim=1).cpu().numpy()
             for item, logits in zip(predict_items, fl)}
-    cond = {item: torch.softmax(logits, dim=1).numpy()
+    cond = {item: torch.softmax(logits, dim=1).cpu().numpy()
             for item, logits in zip(gated_items, cl)}
     return full, cond
 
@@ -141,7 +171,7 @@ def _tensor(X):
     return torch.from_numpy(np.asarray(X.todense(), dtype=np.float32))
 
 
-def tune_and_train(frame, schema, cols, kappas, configs=None):
+def tune_and_train(frame, schema, cols, kappas, configs=None, extra=None):
     """Returns (w, net trained on all complete rows, layout helpers).
 
     configs: optional tuple of (width, depth, dropout) architectures —
@@ -169,6 +199,10 @@ def tune_and_train(frame, schema, cols, kappas, configs=None):
 
     def prep(rows):
         X = _tensor(_given_matrix(rows, records, items, options))
+        if extra is not None:  # extra: [len(frame), D] aligned to frame
+            pos = frame.index.get_indexer(rows.index)
+            X = torch.cat([X, torch.from_numpy(
+                np.asarray(extra[pos], dtype=np.float32))], dim=1)
         f, c = _targets(rows, predict_items, options, records, gated_value)
         return X, torch.from_numpy(f), torch.from_numpy(c)
 
@@ -184,8 +218,9 @@ def tune_and_train(frame, schema, cols, kappas, configs=None):
                                       c_va, full_dims, cond_dims,
                                       config=cand)
         with torch.no_grad():
-            fl, cl = cand_net(X_ev)
-            ce = float(_pooled_ce(fl, cl, f_ev, c_ev))
+            dev = _net_device(cand_net)
+            fl, cl = cand_net(X_ev.to(dev))
+            ce = float(_pooled_ce(fl, cl, f_ev.to(dev), c_ev.to(dev)))
         if ce < best_ce:
             best_ce, net, best_epoch, config = ce, cand_net, \
                 cand_epoch, cand

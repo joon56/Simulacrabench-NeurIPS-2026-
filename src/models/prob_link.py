@@ -75,23 +75,36 @@ def _topk_posteriors(codes, weights, query_pos, cand_pos, k=TOP_K,
 
 
 def _evidence(frame, items, records, options, posteriors, query_pos):
-    """{item: dist matrix aligned to query_pos} from candidate answers."""
+    """{item: dist matrix aligned to query_pos} from candidate answers.
+
+    Vectorized (2026-09-07, hosted-timeout response): candidates and
+    posterior weights are packed into [n_query, K] matrices once, each
+    item's answer column is coded once, and the weighted accumulation
+    is a single np.add.at per item. Same numbers as the row loop."""
     predict_items = [n for n in items if records[n]["class"] == "PREDICT"]
-    values = frame[items].to_numpy(dtype=object)
-    col_of = {n: i for i, n in enumerate(items)}
-    ev = {item: np.zeros((len(query_pos), len(options[item])))
-          for item in predict_items}
-    opt_index = {item: {o: i for i, o in enumerate(options[item])}
-                 for item in predict_items}
-    for row_i, (cands, q) in enumerate(posteriors):
-        for item in predict_items:
-            col = col_of[item]
-            idx = opt_index[item]
-            vec = ev[item][row_i]
-            for c, qc in zip(cands, q):
-                code = idx.get(values[c, col])
-                if code is not None:
-                    vec[code] += qc
+    n_q = len(query_pos)
+    k_max = max((len(c) for c, _ in posteriors), default=0)
+    cand_mat = np.full((n_q, k_max), -1, dtype=np.int64)
+    q_mat = np.zeros((n_q, k_max))
+    for i, (cands, q) in enumerate(posteriors):
+        cand_mat[i, :len(cands)] = cands
+        q_mat[i, :len(q)] = q
+    row_idx = np.repeat(np.arange(n_q), k_max)
+    cand_flat = cand_mat.ravel()
+    q_flat = q_mat.ravel()
+    live = cand_flat >= 0
+
+    ev = {}
+    for item in predict_items:
+        opt_index = {o: i for i, o in enumerate(options[item])}
+        code_col = frame[item].map(opt_index).fillna(-1) \
+            .to_numpy(dtype=np.int64)
+        codes = np.full(len(cand_flat), -1, dtype=np.int64)
+        codes[live] = code_col[cand_flat[live]]
+        ok = codes >= 0
+        mat = np.zeros((n_q, len(options[item])))
+        np.add.at(mat, (row_idx[ok], codes[ok]), q_flat[ok])
+        ev[item] = mat
     return ev
 
 

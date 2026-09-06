@@ -107,36 +107,67 @@ def ladder_lookup(p0, levels, key):
 
 
 def _eval_candidate(fit_rows, eval_rows, predict_items, options,
-                    prev_ladders, prefix_cols, cand, kappa_grid):
+                    prev_ladders, prefix_cols, cand, kappa_grid,
+                    code_cache=None):
     """Held-out log score per kappa for extending the ladder by `cand`.
 
     prev_ladders: {item: (p0, levels)} for the fixed prefix — built once
     per depth, reused across candidates and kappas.
+
+    Vectorized (2026-09-07, hosted-timeout response): cells are
+    factorized once per candidate, per-item counts become a
+    [cells, K] matrix, and every kappa is scored with numpy on the
+    truth column. Same numbers as the original row loop — an unseen
+    eval cell (or a cell with no valid fit answers, whose smoothed
+    vector equals its parent) falls back to the prefix ladder exactly
+    as before.
     """
     cols = prefix_cols + [cand]
+    fit_keys = list(map(tuple, fit_rows[cols].to_numpy()))
     eval_keys = list(map(tuple, eval_rows[cols].to_numpy()))
+    cell_id = {}
+    fit_cell = np.empty(len(fit_keys), dtype=np.int64)
+    for i, key in enumerate(fit_keys):
+        fit_cell[i] = cell_id.setdefault(key, len(cell_id))
+    eval_cell = np.array([cell_id.get(key, -1) for key in eval_keys],
+                         dtype=np.int64)
+    cell_keys = list(cell_id)
+    n_cells = len(cell_keys)
+
+    if code_cache is None:
+        code_cache = {item: (_codes(fit_rows, item, options[item]),
+                             _codes(eval_rows, item, options[item]))
+                      for item in predict_items}
     totals = {kappa: 0.0 for kappa in kappa_grid}
     cells = 0
     for item in predict_items:
         opts = options[item]
+        k = len(opts)
         p0, prev_levels = prev_ladders[item]
-        counts = _level_counts(fit_rows, item, opts, cols)
-        codes, valid = _codes(eval_rows, item, opts)
-        keys = [k for k, ok in zip(eval_keys, valid) if ok]
+        (codes_fit, valid_fit), (codes, valid) = code_cache[item]
+        M = np.zeros((n_cells, k))
+        np.add.at(M, (fit_cell[np.asarray(valid_fit)], codes_fit), 1.0)
+        n_cell = M.sum(axis=1)
+        Pm = np.stack([ladder_lookup(p0, prev_levels, key[:-1])
+                       for key in cell_keys]) if n_cells else \
+            np.zeros((0, k))
+
+        ce = eval_cell[np.asarray(valid)]
         cells += len(codes)
-        parent_of = {key: ladder_lookup(p0, prev_levels, key[:-1])
-                     for key in counts}
+        seen = ce >= 0
+        c_t = M[ce[seen], codes[seen]]
+        n_t = n_cell[ce[seen]]
+        p_t = Pm[ce[seen], codes[seen]]
+        valid_keys = [key for key, ok in zip(eval_keys, np.asarray(valid))
+                      if ok]
+        fb_keys = [key[:-1] for key, s in zip(valid_keys, seen) if not s]
+        fb_codes = codes[~seen]
+        fb = np.array([ladder_lookup(p0, prev_levels, fk)[c]
+                       for fk, c in zip(fb_keys, fb_codes)])
+        fb_log = np.log(np.maximum(fb, 1e-12)).sum() if len(fb) else 0.0
         for kappa in kappa_grid:
-            table = {key: (vec + kappa * parent_of[key]) /
-                     (vec.sum() + kappa)
-                     for key, vec in counts.items()}
-            logp = 0.0
-            for key, code in zip(keys, codes):
-                vec = table.get(key)
-                if vec is None:
-                    vec = ladder_lookup(p0, prev_levels, key[:-1])
-                logp += np.log(max(vec[code], 1e-12))
-            totals[kappa] += logp
+            p = (c_t + kappa * p_t) / (n_t + kappa)
+            totals[kappa] += np.log(np.maximum(p, 1e-12)).sum() + fb_log
     return {kappa: totals[kappa] / max(cells, 1) for kappa in kappa_grid}
 
 
@@ -168,6 +199,9 @@ def select_ladder(frame, schema):
         base_cells += len(codes)
     best_score = base_total / max(base_cells, 1)
 
+    code_cache = {item: (_codes(fit_rows, item, options[item]),
+                         _codes(eval_rows, item, options[item]))
+                  for item in predict_items}
     cols, kappas = [], []
     history = [(list(cols), list(kappas), best_score)]
     while len(cols) < MAX_DEPTH:
@@ -180,7 +214,7 @@ def select_ladder(frame, schema):
                 continue
             scores = _eval_candidate(fit_rows, eval_rows, predict_items,
                                      options, prev_ladders, cols, cand,
-                                     KAPPA_GRID)
+                                     KAPPA_GRID, code_cache=code_cache)
             kappa = max(scores, key=scores.get)
             if scores[kappa] > best_score and (
                     best_step is None or scores[kappa] > best_step[2]):
