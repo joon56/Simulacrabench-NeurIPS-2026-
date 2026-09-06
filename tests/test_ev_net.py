@@ -47,6 +47,8 @@ def test_evidence_block_shape():
         off += k
 
 
+@pytest.mark.xfail(
+    reason="E020 rejected: on the noisy dup sim the copy-mixture (E018) beats the evidence-input net, and the sim itself over-credits E019 — kept as the recorded null (see E020 attempt log)", strict=True)
 def test_recalibrated_sim_reproduces_e019_flat(noisy_sim):
     e018 = noisy_sim["e018"]
     e019 = noisy_sim["scored"](link_sharp)
@@ -57,6 +59,8 @@ def test_recalibrated_sim_reproduces_e019_flat(noisy_sim):
     assert abs(e019 - e018) < 0.012
 
 
+@pytest.mark.xfail(
+    reason="E020 rejected: on the noisy dup sim the copy-mixture (E018) beats the evidence-input net, and the sim itself over-credits E019 — kept as the recorded null (see E020 attempt log)", strict=True)
 def test_ev_net_beats_e018_on_noisy_sim(noisy_sim):
     e018 = noisy_sim["e018"]
     e020 = noisy_sim["scored"](ev_net)
