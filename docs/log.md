@@ -211,6 +211,33 @@ Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-note
     dead, linkage abandoned, 0.92 question re-opens; +0.01 ambiguous
     (k-NN residual) — thresholds pre-registered in SCORES.md.
 
+## 2026-09-07 (session 2) — perf pass committed; E020 rejected; E021/E022 household matching, submission #12
+
+- **Runtime pass committed** (`8066055`): ladder candidate scoring and
+  evidence accumulation vectorized (outputs identical to 1e-15 / 4
+  decimals), GPU training with CPU fallback; E018 240 → 146 s local;
+  suite 57 passed + 1 xfail.
+- **E020 (twin evidence as net input) REJECTED on sim**: the 40%-
+  perturbed dup sim still credits E019 +0.0187 (real was flat) and E020
+  scores −0.0211 vs E018. Re-diagnosis of the E018/E019/E020 trio: real
+  matches are **household co-respondents** — roster columns shared,
+  person-level GIVEN columns differ, answers correlate per item rather
+  than copy.
+- **Household sim built** (roster copied, person columns resampled,
+  per-item copy rate ρ): the first instrument whose structure matches
+  that diagnosis. **E021 (data-estimated signature weights, one
+  Fellegi–Sunter iteration)**: learned weights roster 3.08 vs person
+  1.39; +0.0100 log (ρ≤0.95), +0.0068 (ρ≤0.8). E019 on the same sims
+  +0.0097 / +0.0053 — i.e. the real "flat" is what a +0.005–0.01
+  gain looks like under 0.01 rounding + noise; the sims are not
+  contradicted, the leaderboard just cannot resolve single refinements.
+- **E022 = E021 ∘ E019 ADOPTED**: hard sim +0.0116 log (near-additive),
+  clean sandbox in bound (unhcr +0.0001), 154 s local. **Submission #12
+  packaged** (`submissions/2026-09-08-E022/`, parity exact, zip OK,
+  score.py PASS 0.50/0.45/0.56). Readings: ≥+0.02 ⇒ family stackable;
+  +0.01 ⇒ consistent, repeat; flat ⇒ close layer tuning for phase 1;
+  down ⇒ raise PAIR_MASS/CONC_SPLIT.
+
 ## 2026-09-07 — E019: hosted timeout then flat; runtime pass in progress
 
 - **E019 first upload: time limit exceeded.** Same zip re-uploaded the

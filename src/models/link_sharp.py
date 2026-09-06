@@ -109,7 +109,9 @@ def sharp_layer(frame, schema, model_dists):
     return ev_rows, lam
 
 
-def predict(frame, schema, cols=None, kappas=None):
+def predict(frame, schema, cols=None, kappas=None, layer_fn=None):
+    if layer_fn is None:
+        layer_fn = sharp_layer
     records, items, options = _layout(frame, schema)
     if cols is None:
         cols, kappas, _ = select_ladder(frame, schema)
@@ -164,7 +166,7 @@ def predict(frame, schema, cols=None, kappas=None):
 
     model_dists = {item: model_dist_matrix(item)
                    for item in predict_items}
-    ev_rows, lam = sharp_layer(frame, schema, model_dists)
+    ev_rows, lam = layer_fn(frame, schema, model_dists)
 
     out = []
     for row in range(values.shape[0]):

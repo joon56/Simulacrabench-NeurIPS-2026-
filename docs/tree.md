@@ -41,10 +41,18 @@ flowchart TD
     E014 --> E018
     E019["E019 sharpen the evidence layer (λ ceiling + concentration buckets)<br/><i>parked · 2026-09-06</i>"]
     E018 --> E019
+    E020["E020 twin evidence as network INPUT (learned combination)<br/><i>rejected · 2026-09-07</i>"]
+    E018 --> E020
+    E021["E021 data-estimated signature weights (household-aware matching)<br/><i>superseded · 2026-09-07</i>"]
+    E018 --> E021
+    E022["E022 composition: household weights ∘ sharpened λ (E021 ∘ E019)<br/><i>adopted · 2026-09-07</i>"]
+    E021 --> E022
     classDef adopted fill:#d4edda,stroke:#28a745
-    class E001,E002,E003,E004,E005,E006,E008,E010,E012,E018 adopted
+    class E001,E002,E003,E004,E005,E006,E008,E010,E012,E018,E022 adopted
     classDef rejected fill:#f8d7da,stroke:#dc3545
-    class E009,E011,E016,E017 rejected
+    class E009,E011,E016,E017,E020 rejected
     classDef parked fill:#fff3cd,stroke:#ffc107
     class E007,E013,E014,E015,E019 parked
+    classDef superseded fill:#e2e3e5,stroke:#6c757d
+    class E021 superseded
 ```
