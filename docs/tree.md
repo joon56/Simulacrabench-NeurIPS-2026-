@@ -47,12 +47,18 @@ flowchart TD
     E018 --> E021
     E022["E022 composition: household weights ∘ sharpened λ (E021 ∘ E019)<br/><i>adopted · 2026-09-07</i>"]
     E021 --> E022
+    E023["E023 evidence layer stack 2: replay-selected K + second weight iteration<br/><i>rejected · 2026-09-08</i>"]
+    E022 --> E023
+    E024["E024 evidence-input net as the base inside E022's mixture<br/><i>parked · 2026-09-08</i>"]
+    E022 --> E024
+    E025["E025 composition: E022 layer ∘ E017 capacity grid<br/><i>adopted · 2026-09-08</i>"]
+    E022 --> E025
     classDef adopted fill:#d4edda,stroke:#28a745
-    class E001,E002,E003,E004,E005,E006,E008,E010,E012,E018,E022 adopted
+    class E001,E002,E003,E004,E005,E006,E008,E010,E012,E018,E022,E025 adopted
     classDef rejected fill:#f8d7da,stroke:#dc3545
-    class E009,E011,E016,E017,E020 rejected
+    class E009,E011,E016,E017,E020,E023 rejected
     classDef parked fill:#fff3cd,stroke:#ffc107
-    class E007,E013,E014,E015,E019 parked
+    class E007,E013,E014,E015,E019,E024 parked
     classDef superseded fill:#e2e3e5,stroke:#6c757d
     class E021 superseded
 ```

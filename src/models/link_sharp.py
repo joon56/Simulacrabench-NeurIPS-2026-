@@ -20,6 +20,7 @@ E018's, unchanged.
 
 import numpy as np
 import pandas as pd
+import torch
 
 from src.models.hier_backoff import (
     _layout, _complete_rows, build_ladder, ladder_lookup, select_ladder,
@@ -109,18 +110,24 @@ def sharp_layer(frame, schema, model_dists):
     return ev_rows, lam
 
 
-def predict(frame, schema, cols=None, kappas=None, layer_fn=None):
+def predict(frame, schema, cols=None, kappas=None, layer_fn=None,
+            extra_fn=None, configs=None):
     if layer_fn is None:
         layer_fn = sharp_layer
+    frame = frame.reset_index(drop=True)
     records, items, options = _layout(frame, schema)
     if cols is None:
         cols, kappas, _ = select_ladder(frame, schema)
+    extra = extra_fn(frame, schema) if extra_fn is not None else None
     w, net, (predict_items, gated_items) = tune_and_train(
-        frame, schema, cols, kappas)
+        frame, schema, cols, kappas, configs=configs, extra=extra)
 
     complete = _complete_rows(frame, items)
     if net is not None and w > 0:
         X_all = _tensor(_given_matrix(frame, records, items, options))
+        if extra is not None:
+            X_all = torch.cat([X_all, torch.from_numpy(
+                np.asarray(extra, dtype=np.float32))], dim=1)
         full_proba, cond_proba = _proba_maps(net, X_all, predict_items,
                                              gated_items)
     else:

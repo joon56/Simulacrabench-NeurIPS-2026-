@@ -211,6 +211,30 @@ Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-note
     dead, linkage abandoned, 0.92 question re-opens; +0.01 ambiguous
     (k-NN residual) — thresholds pre-registered in SCORES.md.
 
+## 2026-09-08 (session 2) — E023/E024 null, E025 composition packaged as submission #13
+
+- **E023 (replay-selected K + second EM iteration) REJECTED**: K-select
+  +0.0000, EM2 −0.0001, both −0.0001 on the hard household sim. The
+  matching layer is saturated at E022 on this sim family (weights
+  converge in one pass; the posterior already ignores random
+  neighbours). Same-wave weighting was dropped before running — `wave`
+  is a signature column, so its weight is already learned.
+- **E024 (evidence-input net as E022's base) PARKED**: household sim
+  +0.0004 (no cross-item structure to learn there), but the clean
+  sandbox is DOWN on all three instruments (3-inst −0.0011, wb −0.0016)
+  — on duplicate-free data the evidence block is a noise feature —
+  and runtime 216 s. Not worth a slot ahead of leaderboard-backed
+  compositions; revive with the block restricted to concentrated rows.
+- **E025 = E022 ∘ E017 capacity grid ADOPTED for submission #13**:
+  re-reading E017's unhcr +0.01 by the standard E022 just validated
+  (+0.01 = a real ~+0.009 skill gain), the two independent gains should
+  stack. Clean runner: layer parity held (0.5006 / 0.4548 / 0.5629).
+  Runtime 297 s local on CPU — above the observed hosted failure point;
+  the worker's H100 (kit baseline uses the same `cuda if available`
+  pattern) removes the ~140 s of training cost; timeout fallback
+  pre-registered (pin configs). Readings in SCORES.md: unhcr ≥ 0.89 ⇒
+  stack real; 0.88 ⇒ capacity closed for good; ≤ 0.87 ⇒ revert.
+
 ## 2026-09-08 — E022 result: unhcr 0.88 (+0.01), sim instrument validated quantitatively
 
 - **E022 submitted; result: Grand 0.63 — 0.52 / 0.49 / unhcr 0.88**
