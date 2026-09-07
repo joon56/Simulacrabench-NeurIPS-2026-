@@ -211,6 +211,25 @@ Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-note
     dead, linkage abandoned, 0.92 question re-opens; +0.01 ambiguous
     (k-NN residual) — thresholds pre-registered in SCORES.md.
 
+## 2026-09-08 — E022 result: unhcr 0.88 (+0.01), sim instrument validated quantitatively
+
+- **E022 submitted; result: Grand 0.63 — 0.52 / 0.49 / unhcr 0.88**
+  (+0.01, the pre-registered +0.01 arm; Grand stayed on the 0.63 side
+  of rounding). The household sim's +0.0116 log (≈ +0.009 skill)
+  transferred essentially exactly — after E018 (direction and rough
+  size) and E019 (below resolution) this is the third consistent
+  reading: the sim is now a QUANTITATIVE instrument for the evidence
+  layer. Strategic reading: the tuning family stacks at ~+0.005–0.01
+  skill per sim-verified refinement; unhcr 0.88 → 0.92 = 3–4 more.
+  Grand gap to the ~10 teams above is 0.01–0.02 (unicef/wb equal for
+  everyone), i.e. one or two stacked steps.
+- Queue for E023 (all household-sim measurable): (1) TOP_K selected by
+  replay (households have 1–3 co-respondents; K=10 dilutes with random
+  neighbours); (2) second weight-estimation iteration on the purer
+  pairs pass 1 produces; (3) same-wave candidate weighting (household
+  composition drifts across rounds); (4) per-item λ split by
+  household-level vs person-level items if (1)–(3) leave headroom.
+
 ## 2026-09-07 (session 2) — perf pass committed; E020 rejected; E021/E022 household matching, submission #12
 
 - **Runtime pass committed** (`8066055`): ladder candidate scoring and

@@ -38,3 +38,17 @@ E019 flat at 0.63. Pre-registered 2026-09-07 BEFORE submission:
 - **down** ⇒ learned weights concentrated posteriors on false pairs
   and λ=0.98 amplified them — raise PAIR_MASS / CONC_SPLIT to 0.8.
 - unicef/wb: layer present; λ≈0 on real data expected (flat).
+
+## Actual leaderboard result (2026-09-08)
+
+**Grand 0.63 — unicef 0.52 / world_bank 0.49 / unhcr 0.88**
+(E018/E019: 0.87). Scorecard: the pre-registered **+0.01 arm** — exactly
+the sim's prediction (+0.0116 log ≈ +0.009 skill → 0.88; Grand +0.003
+landed on the 0.63 side of the rounding boundary). Two consequences:
+(1) the household sim now predicts real unhcr movements quantitatively
+(E018 direction+size, E019 below-resolution, E022 +0.01) — it is a
+trusted instrument for this layer; (2) the tuning family is real and
+STACKABLE: each sim-verified refinement is worth ~+0.005–0.01 skill,
+so the route to the 0.92 leaders is 3–4 more stacked refinements, not
+one trick. Next composition (E023): TOP_K chosen by replay + a second
+weight-estimation iteration + same-wave candidate weighting.
