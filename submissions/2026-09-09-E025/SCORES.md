@@ -40,3 +40,14 @@ over its base. Pre-registered 2026-09-08 BEFORE submission:
   revert to E022.
 - unicef/wb flat expected (selector keeps unicef small; wb's 128×2 read
   flat in E017).
+
+## Actual leaderboard result (2026-09-09)
+
+**Grand 0.63 — unicef 0.52 / world_bank 0.49 / unhcr 0.89** (E022:
+0.88). The pre-registered **≥ 0.89 arm**: E017's +0.01 was real and the
+two gains added. Grand = (0.52+0.49+0.89)/3 = 0.633 → still 0.63; one
+more unhcr +0.01 crosses 0.635 → 0.64. No timeout at 297–331 s local
+CPU ⇒ the hosted GPU training path is alive (training cost absorbed).
+Consequences: capacity is back in the toolbox as a leaderboard-backed
+refinement; E017's remaining grid points (256×2+do, 128×3+do) are the
+next stack candidates, now affordable under the GPU budget.

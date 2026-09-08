@@ -211,6 +211,24 @@ Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-note
     dead, linkage abandoned, 0.92 question re-opens; +0.01 ambiguous
     (k-NN residual) — thresholds pre-registered in SCORES.md.
 
+## 2026-09-09 — E025 result: unhcr 0.89 (+0.01); capacity axis re-opened; GPU path confirmed
+
+- **E025 submitted; result: Grand 0.63 — 0.52 / 0.49 / unhcr 0.89**
+  (+0.01 over E022). The ≥0.89 pre-registered arm: E017's +0.01 was a
+  real gain hidden in the ±0.01 band, and it stacks with the evidence
+  layer. Grand 0.633 still rounds to 0.63 — the next unhcr +0.01 tips
+  it to 0.64. Ran without timeout at ~300 s local CPU ⇒ **hosted H100
+  training path confirmed alive**; the effective budget for
+  CPU-side work stays ~130 s local, training is now nearly free.
+- Score path: 0.43 → 0.53 → 0.55 → 0.58 → 0.60 → 0.63 (unhcr 0.78 →
+  0.87 → 0.88 → 0.89). Two stacked +0.01 refinements in two days —
+  the "3–4 more" estimate to 0.92 now reads 3 more.
+- Next (E026): the rest of E017's grid — {256×2+do, 128×3+do} added
+  to the selection — is the cheapest leaderboard-backed step (GPU
+  absorbs the extra trainings); after that, phase-2 planning (DEV
+  visible ⇒ household coverage rises for TEST rows; the layer
+  self-calibrates, but the runtime budget doubles to 3600 s).
+
 ## 2026-09-08 (session 2) — E023/E024 null, E025 composition packaged as submission #13
 
 - **E023 (replay-selected K + second EM iteration) REJECTED**: K-select
