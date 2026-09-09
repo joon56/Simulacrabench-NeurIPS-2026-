@@ -32,3 +32,13 @@ Reference: E025 LB = 0.63 (0.52 / 0.49 / 0.89). Pre-registered
 - **unhcr ≤ 0.88** ⇒ selection instability on real data; pin E025's
   two configs.
 - unicef/wb: flat expected (unicef control stays small; wb at ceiling).
+
+## Actual leaderboard result (2026-09-10)
+
+**Grand 0.63, no leaderboard update** — E026 ≤ E025 (unhcr ≤ 0.89).
+The pre-registered **0.89 arm**: the wider/deeper configs did not beat
+128×2 on real data; **capacity axis complete** (E015 local null →
+E017 +0.01 → E025 +0.01 stacked → E026 flat). Ran without timeout with
+four trainings per instrument — the hosted GPU path is robust.
+E026 parked; E025 remains the best submission (0.63 / 0.52 / 0.49 /
+0.89).

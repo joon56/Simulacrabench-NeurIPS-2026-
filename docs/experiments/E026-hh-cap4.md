@@ -1,6 +1,6 @@
 # E026 — E022 layer ∘ full E017 capacity grid (4 configs)
 parent: E025
-status: adopted
+status: parked
 date: 2026-09-09
 
 ## Hypothesis

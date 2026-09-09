@@ -211,6 +211,23 @@ Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-note
     dead, linkage abandoned, 0.92 question re-opens; +0.01 ambiguous
     (k-NN residual) — thresholds pre-registered in SCORES.md.
 
+## 2026-09-10 — E026 result: flat at 0.63; capacity axis complete
+
+- **E026 submitted; Grand 0.63, no update (≤ E025).** Pre-registered
+  0.89 arm: 128×2 is the real optimum, wider/deeper trunks add nothing
+  — the capacity axis is now fully characterized (E015 local null,
+  E017 +0.01, E025 +0.01 stacked, E026 flat). Four trainings per
+  instrument ran without timeout: the hosted GPU path is robust.
+  E026 parked; **E025 stays best: 0.63 (0.52 / 0.49 / 0.89).**
+- State of the search: matching layer saturated on its sim (E023),
+  capacity complete (E026). Remaining levers, ranked: (1) E024-variant
+  A/B — evidence block as net input restricted to rows with a
+  concentrated posterior (removes E024's duplicate-free harm; tests
+  cross-item household structure the sim cannot model); (2) joint
+  decoding of the overlapping s3_11 branches (structural, needs its own
+  sim); (3) phase-2 preparation (3600 s budget ⇒ lift CAL_QUERIES cap,
+  DEV visible ⇒ larger pool; the layer self-calibrates).
+
 ## 2026-09-09 (session 2) — E026 (full capacity grid) packaged as submission #14
 
 - **E026 = E025 with E017's full 4-config grid** restored (256×2+do,
