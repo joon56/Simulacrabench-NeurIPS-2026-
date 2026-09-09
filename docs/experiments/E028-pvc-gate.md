@@ -1,6 +1,6 @@
 # E028 — parent-value-conditional gate decoding (joint branches)
 parent: E025
-status: in-progress
+status: adopted
 date: 2026-09-10
 
 ## Hypothesis
@@ -47,8 +47,24 @@ built per gated item from complete visible rows.
 
 ## Result
 
-(to fill)
+Attempt log: v1 shrank r_v toward the item's pooled sentinel rate —
+clean sandbox leaked ~0.5% sentinel mass on asked rows (wb −0.0010).
+v2 shrinks toward the hard-gate prior (0 asked / 1 not asked): clean
+sandbox **identical to E025** (0.5006 / 0.4548 / 0.5629), exact gates
+reproduce the hard gate (unit-tested: r ≈ 0 asked, ≈ 1 not asked).
+
+Branch-overlap sims (Yes-branch children of s3_11 answered by
+non-Yes respondents from a skewed distribution): light regime (30% of
+round-2 No) **+0.0017**; heavy regime (70% of No+DK, both waves —
+inside the schema's documented agreement range 0.29–0.98)
+**+0.0121 log** over E025. The gain scales with overlap magnitude;
+the real magnitude is what the leaderboard reads. Tests 2/2.
 
 ## Decision
 
-(to fill)
+**Adopted (E003 route).** Exact no-regression + a schema-anchored sim
+gain above threshold in the documented overlap regime. Submission
+`submissions/2026-09-12-E028/` (queued after E027 for attribution).
+Readings: unhcr up ⇒ real overlap is heavy and E010's scalar/column
+agreement was leaving the No/DK-branch answer distributions on the
+table; flat ⇒ real overlap is light or E010 already captured it.

@@ -3,7 +3,7 @@
 For a gated child with parent p, every parent value v gets its own
 table T_v = (1 - r_v) * A_v + r_v * sentinel, where
   r_v  = sentinel rate among visible rows with parent = v, shrunk
-         (alpha) toward the item's pooled rate and optionally split by
+         (alpha) toward the hard-gate prior and optionally split by
          E010's selected conditioning column (shrunk toward r_v);
   A_v  = the answer distribution given parent = v: for asked values the
          GIVEN-conditioned cond blend (net cond head + cond ladder), for
@@ -46,7 +46,6 @@ def build_pvc(frame, schema, complete, sel_cols):
         child = complete[item].to_numpy(dtype=object)
         par = complete[parent].to_numpy(dtype=object)
         is_sent = child == gated_value
-        pooled = (is_sent.sum() + ALPHA * 0.5) / (len(child) + ALPHA)
         asked_mask = np.isin(par, gate["observed_if"]) & ~is_sent
         marg = np.full(len(values), 0.5)
         for val in child[asked_mask]:
@@ -62,7 +61,10 @@ def build_pvc(frame, schema, complete, sel_cols):
             m = par == v
             n = int(m.sum())
             k = int(is_sent[m].sum())
-            r_v = (k + ALPHA * pooled) / (n + ALPHA)
+            # shrink toward the hard-gate prior (0 asked / 1 not asked):
+            # exact gates leak nothing, overlap counts dominate quickly
+            prior = 0.0 if v in gate["observed_if"] else 1.0
+            r_v = (k + ALPHA * prior) / (n + ALPHA)
             r_vc = {}
             if colvals is not None and n:
                 for c in pd.unique(colvals[m]):

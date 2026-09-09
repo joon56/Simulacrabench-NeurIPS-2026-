@@ -211,6 +211,19 @@ Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-note
     dead, linkage abandoned, 0.92 question re-opens; +0.01 ambiguous
     (k-NN residual) — thresholds pre-registered in SCORES.md.
 
+## 2026-09-10 (session 3) — E028 adopted and packaged as submission #16
+
+- **E028 (parent-value-conditional gate decoding)**: v1 leaked ~0.5%
+  sentinel mass on exact gates (shrink target = pooled rate); v2
+  shrinks r_v toward the hard-gate prior — clean sandbox identical to
+  E025. Branch-overlap sims: light (30% of round-2 No → Yes-branch)
+  +0.0017; **heavy (70% of No+DK, both waves — inside the schema's
+  documented 0.29–0.98 agreement range) +0.0121 log**. Adopted (E003
+  route); parity exact, zip OK, score.py PASS 0.50/0.45/0.56.
+  Queue: E027 (#15) first, then E028 (#16) — one change per reading.
+  Readings: unhcr 0.90+ ⇒ real overlap heavy, condition A_v further;
+  0.89 ⇒ E010 already had it; ≤0.88 ⇒ thin tables, revert.
+
 ## 2026-09-10 (session 2) — E027 packaged as submission #15; E028 (PVC gate decoding) built
 
 - **E027 (concentrated-row evidence as net input, over E025)**: E024's

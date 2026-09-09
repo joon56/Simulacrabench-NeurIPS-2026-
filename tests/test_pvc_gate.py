@@ -15,10 +15,15 @@ from score import floored, sample_rows, score as grade  # noqa: E402
 PARENT = "s3_11_intent_return_12m_lbl"
 
 
-def overlap_inject(frame, schema, frac, seed):
-    """Round-2 respondents with parent == '0. No' answer the Yes-branch
-    children with probability `frac`, drawing from a skewed distribution
-    (weights 0.6**k over the child's values)."""
+def overlap_inject(frame, schema, frac, seed,
+                   parents=("0. No", "98. I don't know"),
+                   waves=("1", "2")):
+    """Respondents with parent in `parents` (and wave in `waves`) answer
+    the Yes-branch children with probability `frac`, drawing from a
+    skewed distribution (weights 0.6**k over the child's values). The
+    default is the HEAVY regime: schema-documented agreement ranges
+    down to 0.29, so a 30%-of-round-2-No light regime (which gave
+    +0.0017) under-represents the real overlap."""
     rng = np.random.default_rng(seed)
     records = schema["items"]
     gated_value = schema["gated_value"]
@@ -27,7 +32,7 @@ def overlap_inject(frame, schema, frac, seed):
                     if r["class"] == "PREDICT" and r.get("gate")
                     and r["gate"]["parent"] == PARENT
                     and r["gate"]["observed_if"] == ["1. Yes"]]
-    target = (out[PARENT] == "0. No") & (out["wave"] == "2")
+    target = out[PARENT].isin(parents) & out["wave"].isin(waves)
     idx = out.index[target]
     for item in yes_children:
         vals = list(records[item]["values"])
@@ -63,7 +68,7 @@ def test_pvc_tables_exact_gates():
 
 def test_overlap_sim_gain():
     frame, schema = load("unhcr")
-    sim, yes_children = overlap_inject(frame, schema, frac=0.3, seed=21)
+    sim, yes_children = overlap_inject(frame, schema, frac=0.7, seed=23)
     assert len(yes_children) > 10
     merged, cells, truth = sample_rows(schema, sim, 1)
     config = load_config(str(KIT / "config.yml"))
