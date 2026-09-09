@@ -211,6 +211,15 @@ Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-note
     dead, linkage abandoned, 0.92 question re-opens; +0.01 ambiguous
     (k-NN residual) — thresholds pre-registered in SCORES.md.
 
+## 2026-09-09 (session 2) — E026 (full capacity grid) packaged as submission #14
+
+- **E026 = E025 with E017's full 4-config grid** restored (256×2+do,
+  128×3+do added). Sandbox picks 128×2 again (blind to capacity):
+  0.5006 / 0.4548 / 0.5629 — layer parity held. ~420 s local CPU; the
+  hosted H100 absorbs training (E025 precedent); GPU-failure fallback =
+  E025. Readings pre-registered: unhcr 0.90 ⇒ wider trunk real, push
+  further; 0.89 ⇒ capacity complete at 128×2; ≤0.88 ⇒ pin E025.
+
 ## 2026-09-09 — E025 result: unhcr 0.89 (+0.01); capacity axis re-opened; GPU path confirmed
 
 - **E025 submitted; result: Grand 0.63 — 0.52 / 0.49 / unhcr 0.89**

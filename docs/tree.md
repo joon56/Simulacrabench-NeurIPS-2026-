@@ -53,8 +53,10 @@ flowchart TD
     E022 --> E024
     E025["E025 composition: E022 layer ∘ E017 capacity grid<br/><i>adopted · 2026-09-08</i>"]
     E022 --> E025
+    E026["E026 E022 layer ∘ full E017 capacity grid (4 configs)<br/><i>adopted · 2026-09-09</i>"]
+    E025 --> E026
     classDef adopted fill:#d4edda,stroke:#28a745
-    class E001,E002,E003,E004,E005,E006,E008,E010,E012,E018,E022,E025 adopted
+    class E001,E002,E003,E004,E005,E006,E008,E010,E012,E018,E022,E025,E026 adopted
     classDef rejected fill:#f8d7da,stroke:#dc3545
     class E009,E011,E016,E017,E020,E023 rejected
     classDef parked fill:#fff3cd,stroke:#ffc107
