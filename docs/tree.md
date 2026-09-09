@@ -55,8 +55,12 @@ flowchart TD
     E022 --> E025
     E026["E026 E022 layer ∘ full E017 capacity grid (4 configs)<br/><i>parked · 2026-09-09</i>"]
     E025 --> E026
+    E027["E027 concentrated-row evidence as net input, over E025<br/><i>adopted · 2026-09-10</i>"]
+    E025 --> E027
+    E028["E028 parent-value-conditional gate decoding (joint branches)<br/><i>in-progress · 2026-09-10</i>"]
+    E025 --> E028
     classDef adopted fill:#d4edda,stroke:#28a745
-    class E001,E002,E003,E004,E005,E006,E008,E010,E012,E018,E022,E025 adopted
+    class E001,E002,E003,E004,E005,E006,E008,E010,E012,E018,E022,E025,E027 adopted
     classDef rejected fill:#f8d7da,stroke:#dc3545
     class E009,E011,E016,E017,E020,E023 rejected
     classDef parked fill:#fff3cd,stroke:#ffc107

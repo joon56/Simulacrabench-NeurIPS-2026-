@@ -211,6 +211,24 @@ Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-note
     dead, linkage abandoned, 0.92 question re-opens; +0.01 ambiguous
     (k-NN residual) — thresholds pre-registered in SCORES.md.
 
+## 2026-09-10 (session 2) — E027 packaged as submission #15; E028 (PVC gate decoding) built
+
+- **E027 (concentrated-row evidence as net input, over E025)**: E024's
+  harm removed by restricting the block to rows with max posterior
+  ≥ 0.5 — household sim +0.0011, clean sandbox within ±0.002 (3-inst
+  −0.0006), ~330 s local CPU (GPU absorbs training). Adopted as a
+  pre-registered A/B on real cross-item household structure; parity
+  exact, zip OK, score.py PASS. Readings: unhcr 0.90 ⇒ extend; 0.89 ⇒
+  close the evidence-input idea; ≤0.88 ⇒ pin E025.
+- **E028 (parent-value-conditional gate decoding) built**: the s3_11
+  parent has three single-value branches (Yes 21 / No 40 / DK 11
+  children); the hard/soft/agreement gate math is replaced by
+  Σ_v b_parent[v]·[(1−r_v)·A_v + r_v·sentinel] with r_v, A_v estimated
+  per parent value from visible rows (E010's selected column splits
+  r_v; κ-smoothing). Exact gates reproduce the hard gate. Branch-overlap
+  sim (round-2 No-respondents answering Yes-branch children from a
+  skewed distribution) is the positive-evidence channel — running.
+
 ## 2026-09-10 — E026 result: flat at 0.63; capacity axis complete
 
 - **E026 submitted; Grand 0.63, no update (≤ E025).** Pre-registered
