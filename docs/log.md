@@ -211,6 +211,24 @@ Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-note
     dead, linkage abandoned, 0.92 question re-opens; +0.01 ambiguous
     (k-NN residual) — thresholds pre-registered in SCORES.md.
 
+## 2026-09-12 (intel) — the field above us, exactly
+
+- User shared the full table of teams above us (12): Grand 0.65 ×2
+  (unhcr 0.92 + wb 0.50; unhcr 0.93), Grand 0.64 ×10 (unhcr 0.90–0.92,
+  unicef 0.51–0.52, wb 0.49). We sit at 0.63 with unhcr 0.89 — one
+  +0.01 unhcr step from the 0.64 pack (0.52+0.49+0.90 = 0.637 → 0.64),
+  where rank inside the pack is noise. 0.65 needs unhcr 0.93, or 0.92
+  with wb 0.50; the single wb-0.50 team among 12 is within noise, not a
+  wb lever. The first 0.65 appeared today.
+- E027 and E028 both ran to Finished (GPU path 4/4 since E025); per-
+  submission detail is hidden, only Grand is visible on failure to
+  update.
+- Plan: (1) next session — net seed ensemble + per-instrument output
+  temperature, both runner-measurable, composed if they clear;
+  (2) phase 2 is where the 0.65 tier is decided (DEV visible ⇒ larger
+  household pool for TEST; 3600 s ⇒ lift the calibration cap) — from
+  mid-October the effort shifts there.
+
 ## 2026-09-12 — E027 and E028 both flat at 0.63; two more axes closed
 
 - **E027 (concentrated-row evidence as net input): flat** — the
