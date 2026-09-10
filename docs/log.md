@@ -211,6 +211,19 @@ Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-note
     dead, linkage abandoned, 0.92 question re-opens; +0.01 ambiguous
     (k-NN residual) — thresholds pre-registered in SCORES.md.
 
+## 2026-09-12 (audit) — competition update check
+
+- Starter kit upstream: one commit since our snapshot (2026-09-01,
+  "Wording change in unhcr.json text description [non-breaking]") —
+  the dangling GATE_CORRECTIONS.md sentence removed, nothing else;
+  pulled (fast-forward, sandbox unaffected). **The "<5 gating
+  changes" Andy mentioned are still unshipped** — watch continues.
+- simulacrabench.org: no rule/schedule change; "Prize details will be
+  announced soon". Phase 2 = Nov 1–14, single submission, 60-minute
+  budget (as known). Codabench forum not readable without login —
+  user to glance at the Forum tab.
+- CLAUDE.md gate bullet updated accordingly.
+
 ## 2026-09-12 (intel) — the field above us, exactly
 
 - User shared the full table of teams above us (12): Grand 0.65 ×2
