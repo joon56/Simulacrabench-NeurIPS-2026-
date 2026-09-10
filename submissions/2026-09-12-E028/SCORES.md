@@ -31,3 +31,11 @@ alone):
 - **≤ 0.88** ⇒ per-parent-value tables too thin somewhere (raise
   PVC_KAPPA / ALPHA) — revert to E025.
 - unicef/wb: identical math on near-exact gates ⇒ flat.
+
+## Actual leaderboard result (2026-09-12)
+
+**Grand 0.63, no update (≤ E025; unhcr ≤ 0.89).** Pre-registered 0.89
+arm: real branch overlap is light enough that E010's column-conditioned
+agreement already captured it; the No/DK-branch answer distributions
+add nothing visible. Gate math complete. Parked (harmless — exact on
+clean gates).

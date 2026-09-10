@@ -1,6 +1,6 @@
 # E027 — concentrated-row evidence as net input, over E025
 parent: E025
-status: adopted
+status: parked
 date: 2026-09-10
 
 ## Hypothesis

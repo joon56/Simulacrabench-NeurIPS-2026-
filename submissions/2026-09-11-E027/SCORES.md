@@ -27,3 +27,9 @@ Reference: E025 LB = 0.63 (0.52 / 0.49 / 0.89). Pre-registered
   the evidence-input idea for good.
 - **unhcr ≤ 0.88** ⇒ the block hurt on real data; pin E025.
 - unicef/wb: flat expected (block ~zero there).
+
+## Actual leaderboard result (2026-09-11)
+
+**Grand 0.63, no update (≤ E025; unhcr ≤ 0.89).** Pre-registered 0.89
+arm: nothing beyond per-item copying is exploitable from concentrated
+matches — the evidence-input idea (E020/E024/E027) is closed. Parked.

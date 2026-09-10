@@ -211,6 +211,24 @@ Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-note
     dead, linkage abandoned, 0.92 question re-opens; +0.01 ambiguous
     (k-NN residual) — thresholds pre-registered in SCORES.md.
 
+## 2026-09-12 — E027 and E028 both flat at 0.63; two more axes closed
+
+- **E027 (concentrated-row evidence as net input): flat** — the
+  evidence-input family (E020/E024/E027) is closed: co-respondent
+  answers pay only through the per-item mixture.
+- **E028 (parent-value-conditional gates): flat** — E010's
+  column-conditioned agreement already captures the real overlap; the
+  No/DK-branch answer distributions add nothing visible. Gate math is
+  complete. Both parked; **E025 remains best (0.63 / 0.52 / 0.49 /
+  0.89).**
+- Closed axes to date: priors, ordinal smoothing, bagging of
+  selection, cross-round linkage, matching-weight/K refinements
+  (saturated), capacity (complete at 128×2), evidence-as-input, gate
+  decoding. Still untested and locally measurable: (1) net seed
+  ensembling (3 seeds averaged — GPU makes it free hosted); (2) output
+  temperature per instrument on the holdout replay; (3) phase-2
+  preparation (CAL_QUERIES cap lifted under 3600 s, DEV visible).
+
 ## 2026-09-10 (session 3) — E028 adopted and packaged as submission #16
 
 - **E028 (parent-value-conditional gate decoding)**: v1 leaked ~0.5%
