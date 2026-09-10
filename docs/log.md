@@ -211,6 +211,42 @@ Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-note
     dead, linkage abandoned, 0.92 question re-opens; +0.01 ambiguous
     (k-NN residual) — thresholds pre-registered in SCORES.md.
 
+## 2026-09-12 (session 2) — phase-2 runner profiled; E029 (seed ensemble + temperature) null, parked
+
+- **Phase-2 runner switch done** (`runner.run(..., phase=2)` — the kit
+  sandboxes already carry TEST rows, `sample_rows(phase=2)` needs no
+  change). E025 under phase-2 conditions (TRAIN+DEV visible, TEST
+  scored): 0.4902 / 0.4620 / 0.5652, cells 41,676 / 92,112 / 308,637,
+  **254 s local CPU** (phase 1: 0.5006 / 0.4548 / 0.5629, 241 s). Skills
+  are not comparable across phases (different scored set); runtime
+  barely moves — the 3,600 s phase-2 budget leaves ~14× headroom on
+  CPU alone.
+- **E029 (net seed ensemble N=3 + per-instrument output temperature,
+  both decided on the outer holdout jointly with w) built and measured
+  — PARKED.** Parity at (N=1, T=1) reproduces E025 to 1e-10. Clean
+  runner: seeds-only 0.5009 / 0.4551 / 0.5634 (**+0.0004**), temp-only
+  identical to E025 (T = 1.0 selected on all three instruments, N=1 and
+  N=3 alike), composed = seeds-only. Below the pre-registered +0.002
+  "stack it" bar; local runtime doubles (528 s, 7 trainings per
+  instrument). Reading: CE early stopping already leaves the net
+  calibrated (T=1 is the holdout argmax) and between-seed disagreement
+  is at the E010 seed-probe level (0.0003). Net stage is
+  variance-saturated. Kept as a no-risk ride-along candidate for a
+  phase-2 stack (self-tuning, exact no-regression) — not worth a slot
+  alone. `link_sharp.predict` gained a `tune_fn` hook (default
+  bit-identical). Tests: `tests/test_seed_temp.py` 2/2.
+- **`docs/method-4p.md` drafted** from the tree (problem framing, gate
+  math E002/E003/E010, ladder E006, shared trunk E012/E025, evidence
+  layer E018/E022, calibration policy, compute table with the phase-1
+  and phase-2 profiles, adopted-chain results table, reproducibility).
+  [P2] markers where phase-2 numbers go.
+- Closed today: seed ensembling, output temperature. Remaining locally
+  measurable levers: (1) phase-2 household sim (twins landing in TEST,
+  DEV visible) + CAL_QUERIES cap lift measured under phase 2; (2)
+  signature recall — near-agreement on ordinal signature columns
+  (adjacent age/size bands score partial weight), the one matching-layer
+  axis E023 did not cover, measurable on the household sim.
+
 ## 2026-09-12 (audit) — competition update check
 
 - Starter kit upstream: one commit since our snapshot (2026-09-01,

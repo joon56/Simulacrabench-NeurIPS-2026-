@@ -111,15 +111,17 @@ def sharp_layer(frame, schema, model_dists):
 
 
 def predict(frame, schema, cols=None, kappas=None, layer_fn=None,
-            extra_fn=None, configs=None):
+            extra_fn=None, configs=None, tune_fn=None):
     if layer_fn is None:
         layer_fn = sharp_layer
+    if tune_fn is None:
+        tune_fn = tune_and_train
     frame = frame.reset_index(drop=True)
     records, items, options = _layout(frame, schema)
     if cols is None:
         cols, kappas, _ = select_ladder(frame, schema)
     extra = extra_fn(frame, schema) if extra_fn is not None else None
-    w, net, (predict_items, gated_items) = tune_and_train(
+    w, net, (predict_items, gated_items) = tune_fn(
         frame, schema, cols, kappas, configs=configs, extra=extra)
 
     complete = _complete_rows(frame, items)

@@ -1,6 +1,6 @@
 # STATUS — read this first in a new session (kept current at every commit)
 
-Updated: 2026-09-12. Newest log entries are inserted ABOVE the previous
+Updated: 2026-09-12 (session 2). Newest log entries are inserted ABOVE the previous
 newest header inside docs/log.md (not appended at the end) — search the
 latest date.
 
@@ -17,13 +17,16 @@ latest date.
   Fellegi–Sunter weights, softmax posterior, replay-calibrated λ with
   concentration buckets) → hh_cap per-instrument config {64×2, 128×2+do} (E025).
 - Instruments: clean sandbox runner (`src/eval/runner.py`, no household
-  structure, blind to capacity); **household sim** (`tests/test_hh_sharp.py::
+  structure, blind to capacity; `phase=2` works as-is — E025 phase-2
+  profile 0.4902/0.4620/0.5652, 254 s local CPU); **household sim** (`tests/test_hh_sharp.py::
   hh_inject_rho`, ρ∈[0.2,0.8]) — quantitatively validated against E018/E019/E022
   leaderboard readings; branch-overlap sim (`tests/test_pvc_gate.py`).
 - Closed axes (do not re-spend): priors (E007), per-item tuning (E009), ordinal
   smoothing (E011), seed-bagging of selection, cross-round linkage (E013/E014),
   matching K / 2nd EM iteration (E023), capacity beyond 128×2 (E026),
-  evidence-as-net-input (E020/E024/E027), parent-value gate decoding (E028).
+  evidence-as-net-input (E020/E024/E027), parent-value gate decoding (E028),
+  net seed ensemble / output temperature (E029: +0.0004, T=1 everywhere —
+  ride-along candidate for a phase-2 stack only).
 
 ## Standing rules learned the hard way
 
@@ -40,11 +43,15 @@ latest date.
 
 ## Next session plan
 
-1. Phase-2 runner switch (kit `sample_rows(phase=2)`), profile the stack under
-   phase-2 conditions (TRAIN+DEV visible, TEST scored, 3600 s).
-2. E029: net seed ensemble (3 seeds averaged) + per-instrument output
-   temperature via the holdout replay — runner-measured, composed if they clear;
-   tomorrow's submission if > +0.005.
-3. Draft `docs/method-4p.md` (phase-2 deliverable) from the experiment tree.
-4. Phase 2 (Nov 1–14, single submission, no retries): lift CAL_QUERIES cap,
-   zero-failure hardening, final-model selection from the phase-2 runner only.
+1. Phase-2 household sim: extend `hh_inject_rho` so twins land in
+   TRAIN/DEV/TEST and score with `phase=2`; measure the CAL_QUERIES cap
+   lift (6,000 → all visible) there — the first phase-2-specific number.
+2. Signature recall lever (new experiment, parent E025): partial
+   agreement weight for adjacent levels of ordinal signature columns
+   (age/household-size bands) in the Fellegi–Sunter score — the one
+   matching-layer axis E023 did not cover; household sim is the channel,
+   > +0.005 log ⇒ stack with the E029 ensemble into one submission.
+3. `docs/method-4p.md` is drafted (adopted chain, both phase profiles);
+   keep [P2] markers in sync as the final model settles.
+4. Phase 2 (Nov 1–14, single submission, no retries): zero-failure
+   hardening, final-model selection from the phase-2 runner only.
