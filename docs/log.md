@@ -211,6 +211,34 @@ Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-note
     dead, linkage abandoned, 0.92 question re-opens; +0.01 ambiguous
     (k-NN residual) — thresholds pre-registered in SCORES.md.
 
+## 2026-09-13 — E030 (ordinal near-agreement in the signature) null, parked; no submission
+
+- **E030 built and measured — PARKED, matching-recall axis closed.**
+  Ordinal signature columns (unhcr age + 8 roster counts, wb age/pay
+  bands, unicef age; parsed from schema values, 'N. label' prefixes
+  excluded) get a data-estimated adjacency weight in the Fellegi–Sunter
+  score. New sim channel: household sim + one-level drift on twins
+  (roster ±1 p=0.15, age +1 p=0.10) — drift costs E025 0.0091 log.
+  v1 (adjacency vs non-exact) +0.0011; v2 (third FS outcome, adjacency
+  vs "other", capped at the exact weight) **+0.0013**; no-drift parity
+  −0.0002; clean sandbox identical to E025. **Ceiling probe** with the
+  credit forced to φ·w: φ=0.5 **+0.0025**, φ=1.0 −0.0021 (false matches
+  promoted). Pre-computed domain ceiling confirmed: random disagreements
+  on 0/1/2-concentrated counts are adjacent ~65% of the time, so
+  adjacency is weak evidence by construction; the estimator's
+  provisional pairs are mostly false pairs on top of that. Below every
+  pre-registered bar ⇒ parked, drift assertion kept as strict xfail.
+- **No submission today** (rule 4: nothing cleared the local bar).
+  Two sessions in a row the locally measurable levers came in at
+  +0.0004 / +0.0013 — the E025 stack is saturated on everything the
+  sandbox + household sim can see. Remaining unhcr +0.03 to the 0.92
+  pack is either (a) real-data structure our sims don't model (what
+  the E027/E028 A/Bs already probed and found flat), or (b) phase-2
+  pool effects (DEV visible ⇒ ~7% more candidates). Next: phase-2
+  household sim + CAL_QUERIES lift (the one untested phase-2 number),
+  then method write-up; stop spending phase-1 slots on sub-threshold
+  variants.
+
 ## 2026-09-12 (session 2) — phase-2 runner profiled; E029 (seed ensemble + temperature) null, parked
 
 - **Phase-2 runner switch done** (`runner.run(..., phase=2)` — the kit

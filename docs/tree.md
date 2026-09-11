@@ -61,12 +61,14 @@ flowchart TD
     E025 --> E028
     E029["E029 net seed ensemble + per-instrument output temperature<br/><i>parked · 2026-09-12</i>"]
     E025 --> E029
+    E030["E030 ordinal near-agreement in the matching signature<br/><i>parked · 2026-09-13</i>"]
+    E025 --> E030
     classDef adopted fill:#d4edda,stroke:#28a745
     class E001,E002,E003,E004,E005,E006,E008,E010,E012,E018,E022,E025 adopted
     classDef rejected fill:#f8d7da,stroke:#dc3545
     class E009,E011,E016,E017,E020,E023 rejected
     classDef parked fill:#fff3cd,stroke:#ffc107
-    class E007,E013,E014,E015,E019,E024,E026,E027,E028,E029 parked
+    class E007,E013,E014,E015,E019,E024,E026,E027,E028,E029,E030 parked
     classDef superseded fill:#e2e3e5,stroke:#6c757d
     class E021 superseded
 ```

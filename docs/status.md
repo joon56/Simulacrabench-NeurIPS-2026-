@@ -1,6 +1,6 @@
 # STATUS — read this first in a new session (kept current at every commit)
 
-Updated: 2026-09-12 (session 2). Newest log entries are inserted ABOVE the previous
+Updated: 2026-09-13. Newest log entries are inserted ABOVE the previous
 newest header inside docs/log.md (not appended at the end) — search the
 latest date.
 
@@ -26,7 +26,9 @@ latest date.
   matching K / 2nd EM iteration (E023), capacity beyond 128×2 (E026),
   evidence-as-net-input (E020/E024/E027), parent-value gate decoding (E028),
   net seed ensemble / output temperature (E029: +0.0004, T=1 everywhere —
-  ride-along candidate for a phase-2 stack only).
+  ride-along candidate for a phase-2 stack only), ordinal near-agreement in
+  the signature (E030: drift sim +0.0013, ceiling +0.0025 — matching recall
+  closed).
 
 ## Standing rules learned the hard way
 
@@ -45,13 +47,11 @@ latest date.
 
 1. Phase-2 household sim: extend `hh_inject_rho` so twins land in
    TRAIN/DEV/TEST and score with `phase=2`; measure the CAL_QUERIES cap
-   lift (6,000 → all visible) there — the first phase-2-specific number.
-2. Signature recall lever (new experiment, parent E025): partial
-   agreement weight for adjacent levels of ordinal signature columns
-   (age/household-size bands) in the Fellegi–Sunter score — the one
-   matching-layer axis E023 did not cover; household sim is the channel,
-   > +0.005 log ⇒ stack with the E029 ensemble into one submission.
-3. `docs/method-4p.md` is drafted (adopted chain, both phase profiles);
-   keep [P2] markers in sync as the final model settles.
+   lift (6,000 → all visible) there — the last untested phase-2 number.
+   If it clears +0.005, that plus the E029 ensemble is the phase-2 stack.
+2. Stop spending phase-1 slots on sub-threshold variants (E026–E030 all
+   flat/null). A phase-1 submission needs a NEW structural hypothesis
+   with a sim channel, not another refinement of the E025 stack.
+3. `docs/method-4p.md` drafted; keep [P2] markers in sync.
 4. Phase 2 (Nov 1–14, single submission, no retries): zero-failure
    hardening, final-model selection from the phase-2 runner only.
