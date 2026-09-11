@@ -221,6 +221,14 @@ Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-note
   fallback (ensemble forward moved every member's input to one device).
   Hardened the ensemble forward (input moved per member, sums kept on
   one device) in src and the E031 file regardless.
+- Follow-up: the ? button showed NO HSCC code — only Codabench's generic
+  banner. Exception ⇒ PREDICT-001 (type survives) and timeout ⇒
+  TIMEOUT-* (E019 precedent) would both have shown a code; memory ruled
+  out locally (peak working set on unhcr: E025 1.82 GB, E031 2.40 GB,
+  CPU path). Undetermined — platform-side or a hard container kill.
+  Decision: next slot = E031b (runtime and memory = E025's, cap lift
+  only); if it passes, the 7-training ensemble is the suspect for a
+  no-GPU worker day and returns only under the phase-2 3600 s budget.
 - **E031b packaged** (`submissions/2026-09-14-E031b/`): E025 assembly +
   cap lift only — diff vs E025 is the CAL_QUERIES line; runtime = E025's
   (cap lift costs nothing locally); zip OK. Reads the cap lift alone.

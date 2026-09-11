@@ -45,8 +45,14 @@ GIVEN coupling is 3–5× the sandbox's) and real λ estimation noise on
 
 ## Actual leaderboard result
 
-**FAILED on the hosted worker (2026-09-13); HSCC code: [pending from the
-user].** Local: zip OK, score.py PASS ×3, 528 s CPU-only. Contingency
+**FAILED on the hosted worker (2026-09-13) with NO HSCC code** — only
+Codabench's generic "submission failed, check your code for errors"
+(the ? button that carried a full HSCC-TIMEOUT block for E019 showed
+nothing else this time). Diagnosis: a predict() exception would have
+produced HSCC-PREDICT-001 (type survives), a timeout HSCC-TIMEOUT-*
+(E019 precedent); memory ruled out locally — peak working set on unhcr
+E025 1.82 GB vs E031 2.40 GB (CPU path, 16 GB limit). Undetermined:
+platform-side or a hard container kill that left no diagnostic.** Local: zip OK, score.py PASS ×3, 528 s CPU-only. Contingency
 packaged the same day: `submissions/2026-09-14-E031b/` = E025 + cap lift
 only (no ensemble; runtime = E025's), and the ensemble wrapper hardened
 against mixed member devices (GPU fallback mid-run) in both src and the
