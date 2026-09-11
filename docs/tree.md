@@ -63,8 +63,10 @@ flowchart TD
     E025 --> E029
     E030["E030 ordinal near-agreement in the matching signature<br/><i>parked · 2026-09-13</i>"]
     E025 --> E030
+    E031["E031 phase-2 ingredients read on real data (replay cap lift + E029 ensemble)<br/><i>adopted · 2026-09-13</i>"]
+    E025 --> E031
     classDef adopted fill:#d4edda,stroke:#28a745
-    class E001,E002,E003,E004,E005,E006,E008,E010,E012,E018,E022,E025 adopted
+    class E001,E002,E003,E004,E005,E006,E008,E010,E012,E018,E022,E025,E031 adopted
     classDef rejected fill:#f8d7da,stroke:#dc3545
     class E009,E011,E016,E017,E020,E023 rejected
     classDef parked fill:#fff3cd,stroke:#ffc107

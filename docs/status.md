@@ -1,13 +1,16 @@
 # STATUS — read this first in a new session (kept current at every commit)
 
-Updated: 2026-09-13. Newest log entries are inserted ABOVE the previous
+Updated: 2026-09-13 (session 2). Newest log entries are inserted ABOVE the previous
 newest header inside docs/log.md (not appended at the end) — search the
 latest date.
 
 ## Where we are
 
 - Leaderboard best: **E025 — Grand 0.63 (unicef 0.52 / wb 0.49 / unhcr 0.89)**,
-  `submissions/2026-09-09-E025/`. 12 teams above: 0.65 ×2 (unhcr 0.92+wb 0.50;
+  `submissions/2026-09-09-E025/`. **Submission #17 = E031** (E025 + replay cap
+  lift + E029 ensemble; phase-2 ingredients read on real data, expected flat)
+  packaged in `submissions/2026-09-13-E031/` — record the LB result in its
+  SCORES.md. 12 teams above: 0.65 ×2 (unhcr 0.92+wb 0.50;
   unhcr 0.93), 0.64 ×10 (unhcr 0.90–0.92). unhcr 0.90 alone → Grand 0.64 (joins
   the pack; rank inside it is noise). unicef/wb are at everyone's ceiling.
 - Adopted stack (all in `src/models/`, assembled self-contained per submission by
@@ -45,13 +48,15 @@ latest date.
 
 ## Next session plan
 
-1. Phase-2 household sim: extend `hh_inject_rho` so twins land in
-   TRAIN/DEV/TEST and score with `phase=2`; measure the CAL_QUERIES cap
-   lift (6,000 → all visible) there — the last untested phase-2 number.
-   If it clears +0.005, that plus the E029 ensemble is the phase-2 stack.
-2. Stop spending phase-1 slots on sub-threshold variants (E026–E030 all
-   flat/null). A phase-1 submission needs a NEW structural hypothesis
-   with a sim channel, not another refinement of the E025 stack.
-3. `docs/method-4p.md` drafted; keep [P2] markers in sync.
-4. Phase 2 (Nov 1–14, single submission, no retries): zero-failure
-   hardening, final-model selection from the phase-2 runner only.
+1. Record E031's leaderboard result (SCORES.md + log); if unhcr ≥ 0.90,
+   seed count / replay size become phase-2 knobs; if flat, both stay as
+   no-risk phase-2 defaults.
+2. Phase-2 hardening: run the E031 file under `phase=2` on all three
+   sandboxes (runner + score.py --phase 2), check the 3600 s budget with
+   CPU-only training as the worst case, smoke-frame guards.
+3. Phase-1 slots only for a NEW structural hypothesis with a sim channel
+   (E026–E031 refinements all ≤ +0.0013 locally). Candidate: evidence
+   transition table (twin answer → learned per-item transition row instead
+   of one-hot) — needs a structured-disagreement sim; probe the ceiling
+   first (oracle table on the sim) before implementing the estimator.
+4. `docs/method-4p.md`: fill [P2] once the final phase-2 model is fixed.

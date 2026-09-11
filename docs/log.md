@@ -211,6 +211,32 @@ Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-note
     dead, linkage abandoned, 0.92 question re-opens; +0.01 ambiguous
     (k-NN residual) — thresholds pre-registered in SCORES.md.
 
+## 2026-09-13 (session 2) — E031 packaged as submission #17: phase-2 ingredients read on real data
+
+- User decision: spend the slot on real-data verification of the
+  phase-2 ingredients rather than wait for a new hypothesis. E031 =
+  E025 assembly + `CAL_QUERIES` 6000 → all visible rows + E029 3-seed
+  ensemble (T/w on the outer holdout).
+- **Cap lift measured on household sims (E025, unhcr log score)**:
+  phase 1 (9,271 visible) +0.0000; phase 2 (new `hh_inject_rho_p2`,
+  twins in TRAIN/DEV/TEST, 9,965 visible) **+0.0005**. Runtime
+  unchanged (replay is not the dominant cost). "λ on 6k rows is plenty"
+  confirmed on the sim; the real-data reading is what the slot buys.
+- Assembled file: parity vs src composition exact (unicef 0.500934
+  both); clean runner 0.5009 / 0.4551 / 0.5634 (= E029, cap lift inert
+  on the clean sandbox); zip OK (smoke frame exercises the ensemble
+  guards); official score.py PASS ×3 (SCORES.md). 711 s local CPU under
+  3-way contention, 528 s alone — hosted H100 absorbs the 7 trainings
+  per instrument; CPU-side ≈ E025 + 38% more replay queries on unhcr.
+- Readings pre-registered in `submissions/2026-09-13-E031/SCORES.md`:
+  unhcr 0.90+ ⇒ real variance larger than the sims', seed count becomes
+  a phase-2 knob; 0.89 ⇒ flat, both stay as no-risk phase-2 defaults;
+  ≤ 0.88 / timeout ⇒ budget, revert both for phase 1.
+- `tests/test_phase2.py` added (phase-2 sim helper + recorded cap-lift
+  null). Phase-2 checklist item 1 (cap lift) is now measured: null on
+  the sim. Remaining phase-2 items: hardening, method [P2] fill, final
+  selection from the phase-2 runner.
+
 ## 2026-09-13 — E030 (ordinal near-agreement in the signature) null, parked; no submission
 
 - **E030 built and measured — PARKED, matching-recall axis closed.**
