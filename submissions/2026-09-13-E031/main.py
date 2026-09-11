@@ -964,14 +964,14 @@ class _Ensemble(nn.Module):
     def forward(self, x):
         fulls, conds = None, None
         for m in self.members:
-            fl, cl = m(x)
+            fl, cl = m(x.to(next(m.parameters()).device))
             fl = [torch.softmax(l / self.temperature, dim=1) for l in fl]
             cl = [torch.softmax(l / self.temperature, dim=1) for l in cl]
             if fulls is None:
                 fulls, conds = fl, cl
             else:
-                fulls = [a + b for a, b in zip(fulls, fl)]
-                conds = [a + b for a, b in zip(conds, cl)]
+                fulls = [a + b.to(a.device) for a, b in zip(fulls, fl)]
+                conds = [a + b.to(a.device) for a, b in zip(conds, cl)]
         n = len(self.members)
         return ([torch.log(f / n) for f in fulls],
                 [torch.log(c / n) for c in conds])

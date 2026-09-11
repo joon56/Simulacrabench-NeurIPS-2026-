@@ -211,6 +211,21 @@ Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-note
     dead, linkage abandoned, 0.92 question re-opens; +0.01 ambiguous
     (k-NN residual) — thresholds pre-registered in SCORES.md.
 
+## 2026-09-13 (session 3) — E031 FAILED on the hosted worker; contingency E031b packaged
+
+- Submission #17 (E031) came back **failed** — HSCC code pending from
+  the user's Codabench view. Local: zip OK, score.py PASS ×3, 528 s
+  CPU-only. Suspects by code: TIMEOUT ⇒ a CPU-only worker day (E019
+  precedent: ~240 s local timed out) × 7 trainings per instrument;
+  PREDICT-001 RuntimeError ⇒ mixed member devices after a mid-run GPU
+  fallback (ensemble forward moved every member's input to one device).
+  Hardened the ensemble forward (input moved per member, sums kept on
+  one device) in src and the E031 file regardless.
+- **E031b packaged** (`submissions/2026-09-14-E031b/`): E025 assembly +
+  cap lift only — diff vs E025 is the CAL_QUERIES line; runtime = E025's
+  (cap lift costs nothing locally); zip OK. Reads the cap lift alone.
+  The ensemble goes back in only once the failure code is known.
+
 ## 2026-09-13 (session 2) — E031 packaged as submission #17: phase-2 ingredients read on real data
 
 - User decision: spend the slot on real-data verification of the

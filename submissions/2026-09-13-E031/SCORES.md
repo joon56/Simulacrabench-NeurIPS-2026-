@@ -45,4 +45,9 @@ GIVEN coupling is 3–5× the sandbox's) and real λ estimation noise on
 
 ## Actual leaderboard result
 
-(pending)
+**FAILED on the hosted worker (2026-09-13); HSCC code: [pending from the
+user].** Local: zip OK, score.py PASS ×3, 528 s CPU-only. Contingency
+packaged the same day: `submissions/2026-09-14-E031b/` = E025 + cap lift
+only (no ensemble; runtime = E025's), and the ensemble wrapper hardened
+against mixed member devices (GPU fallback mid-run) in both src and the
+E031 file.
