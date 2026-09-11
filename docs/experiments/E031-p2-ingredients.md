@@ -1,6 +1,6 @@
 # E031 — phase-2 ingredients read on real data (replay cap lift + E029 ensemble)
 parent: E025
-status: adopted
+status: rejected
 date: 2026-09-13
 
 ## Hypothesis
@@ -52,8 +52,15 @@ SCORES.md). Local runtime 711 s CPU under 3-way contention (528 s alone).
 
 ## Decision
 
-**Adopted as a pre-registered real-data A/B** (user's call to spend the
-slot on real-data verification of phase-2 ingredients; local Δ +0.0004
-is below the adoption threshold, so the phase-1 model of record stays
-E025 unless the leaderboard reads unhcr ≥ 0.90). Verdict after the
-reading, recorded in `submissions/2026-09-13-E031/SCORES.md`.
+**Rejected (flat).** E031 (both ingredients) failed on the hosted worker
+with no HSCC code (memory ruled out locally: 1.82 vs 2.40 GB peak);
+E031b (cap lift only, submitted the same day — failed submissions do
+not consume the slot) read **Grand 0.63, no update (unhcr ≤ 0.89)**:
+the replay cap lift is null on real data, as on both sims. The seed
+ensemble is unread on real data; given its +0.0004 local ceiling and
+the unexplained E031 failure, it is not resubmitted in phase 1 — it
+stays a no-risk default for phase 2 only if the 3600 s run proves clean
+locally. Phase-1 model of record stays E025. With E029–E031 this closes
+the parameter/variance axis of the E025 stack on real data too; the
+next slots go to probe submissions that map where unhcr's remaining
+loss sits.

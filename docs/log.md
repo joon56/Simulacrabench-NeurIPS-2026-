@@ -211,6 +211,24 @@ Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-note
     dead, linkage abandoned, 0.92 question re-opens; +0.01 ambiguous
     (k-NN residual) — thresholds pre-registered in SCORES.md.
 
+## 2026-09-13 (session 4) — E031b result: flat at 0.63; cap lift null on real data; variance axis closed
+
+- **E031b submitted the same day (failed submissions do not consume the
+  1/day slot — new standing fact); result: Grand 0.63, no update
+  (unhcr ≤ 0.89).** Pre-registered flat arm: 6,000 replay rows already
+  estimate λ per (item, bucket) to within the metric's resolution;
+  lifting the cap is pointless in phase 2 as well. E031 (ensemble)
+  stays unread; not resubmitted in phase 1 (+0.0004 local ceiling,
+  unexplained failure). E025 remains the model of record.
+- Three sessions of E025-stack refinement (E029 seeds/temperature,
+  E030 signature adjacency, E031 replay size) all ≤ +0.0013 locally
+  and flat on real data where read. The stack is saturated on every
+  axis the sandbox, the household sim, and cheap real-data reads can
+  see. Next: probe submissions (evidence off on round-2 queries;
+  same-country candidates only; gated items uniform; ladder-only) to
+  map where the remaining unhcr loss sits, then hypotheses from the
+  map.
+
 ## 2026-09-13 (session 3) — E031 FAILED on the hosted worker; contingency E031b packaged
 
 - Submission #17 (E031) came back **failed** — HSCC code pending from
