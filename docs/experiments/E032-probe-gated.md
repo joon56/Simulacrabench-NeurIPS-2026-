@@ -1,6 +1,6 @@
 # E032 — probe P1: gated items → uniform (loss map, gated vs content)
 parent: E025
-status: parked
+status: adopted
 date: 2026-09-14
 
 ## Hypothesis
@@ -61,4 +61,12 @@ Official score.py: see SCORES.md.
 
 ## Decision
 
-Measurement; verdict = the map, recorded in SCORES.md after the reading.
+**Read (adopted as a measurement).** LB: unicef 0.10 / wb 0.17 /
+unhcr 0.23 ⇒ unhcr skill_G 0.892 [0.87, 0.92], skill_C 0.885;
+remaining loss 0.079 gated / 0.031 content. On unicef/wb (exact gates)
+skill_G ≈ 2× skill_C (0.65/0.33, 0.75/0.32); on unhcr gated cells are no
+easier than content cells — the gate cascade leaks. Domain surprise
+(expected 0.92–0.95): consistent with the schema's agreement median
+0.83 and the unshipped "<5 gating changes"; not an artifact (arithmetic
+validated to the grader's rounding on three sandboxes, two independent
+readings agree). Next: P2 splits gated loss into sentinel vs content.

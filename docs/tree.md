@@ -65,14 +65,16 @@ flowchart TD
     E025 --> E030
     E031["E031 phase-2 ingredients read on real data (replay cap lift + E029 ensemble)<br/><i>rejected · 2026-09-13</i>"]
     E025 --> E031
-    E032["E032 probe P1: gated items → uniform (loss map, gated vs content)<br/><i>parked · 2026-09-14</i>"]
+    E032["E032 probe P1: gated items → uniform (loss map, gated vs content)<br/><i>adopted · 2026-09-14</i>"]
     E025 --> E032
+    E033["E033 probe P2: gated items keep the sentinel mass, content uniform<br/><i>parked · 2026-09-15</i>"]
+    E032 --> E033
     classDef adopted fill:#d4edda,stroke:#28a745
-    class E001,E002,E003,E004,E005,E006,E008,E010,E012,E018,E022,E025 adopted
+    class E001,E002,E003,E004,E005,E006,E008,E010,E012,E018,E022,E025,E032 adopted
     classDef rejected fill:#f8d7da,stroke:#dc3545
     class E009,E011,E016,E017,E020,E023,E031 rejected
     classDef parked fill:#fff3cd,stroke:#ffc107
-    class E007,E013,E014,E015,E019,E024,E026,E027,E028,E029,E030,E032 parked
+    class E007,E013,E014,E015,E019,E024,E026,E027,E028,E029,E030,E033 parked
     classDef superseded fill:#e2e3e5,stroke:#6c757d
     class E021 superseded
 ```

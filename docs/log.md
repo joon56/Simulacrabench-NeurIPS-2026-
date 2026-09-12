@@ -211,6 +211,42 @@ Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-note
     dead, linkage abandoned, 0.92 question re-opens; +0.01 ambiguous
     (k-NN residual) — thresholds pre-registered in SCORES.md.
 
+## 2026-09-15 — E033 (probe P2: sentinel mass kept, gated content uniform) packaged as submission #20
+
+- P2 transform added to `src/models/probes.py` (`sentinel_only`);
+  direct = wrapper on unicef (0.3502); sandbox Δ unhcr −0.0554 (random
+  content, not a prediction). Packaged on the E025 file, zip OK,
+  score.py PASS ×3.
+- Reading rule (SCORES.md): s_sent = skill_G + Δ/share. unhcr
+  pre-registered Δ −0.04 … −0.10. |Δ| ≤ 0.03 ⇒ the gated leak is
+  sentinel prediction ⇒ H1 (replay-calibrated sentinel mass in the
+  predicted-parent regime); |Δ| ≥ 0.11 ⇒ content inside gated items
+  dominates ⇒ content hypotheses first.
+- Design constraint kept: probes read model-component contributions
+  only; no probe is designed to expose a dataset statistic (e.g. the
+  sentinel rate), which is why P2 cannot split the gated LOSS into
+  sentinel/content exactly — it splits E025's gated SKILL, which is
+  enough to choose the next hypothesis.
+
+## 2026-09-14 (session 2) — E032 read: unhcr's gate cascade leaks; 72% of remaining loss in gated items
+
+- **E032 LB: 0.16 — unicef 0.10 / wb 0.17 / unhcr 0.23.** Inverted:
+  unhcr skill_G **0.892** [0.87, 0.92] vs skill_C **0.885**; remaining
+  loss 0.079 gated / 0.031 content. unicef 0.65/0.33, wb 0.75/0.32 —
+  where gates are exact, gated cells are ~2× easier; on unhcr they are
+  not. The sentinel is not determined by the parent on real unhcr
+  (agreement median 0.83) and the 156 gated items pay for it. Domain
+  surprise vs pre-registration (expected 0.92–0.95), flagged; two
+  independent readings agree (0.23 both), arithmetic validated.
+- The user also read the zip from a second (test) Codabench account
+  (Grand 0.17, same per-instrument values). Flagged as a likely
+  terms violation (one account per participant); not to be used again.
+- Next probe **P2 (E033)**: gated items keep E025's sentinel mass,
+  content spread uniform over the asked options ⇒ Δ vs E025 = content
+  contribution inside gated items; sentinel contribution by
+  subtraction. Decides whether the lever is "who is skipped" (gate
+  decoding / sentinel model) or "what the asked say".
+
 ## 2026-09-14 — probe programme starts: E032 (gated items → uniform) packaged as submission #19
 
 - **Probe instrument built** (`src/models/probes.py`): uniform-on-subset

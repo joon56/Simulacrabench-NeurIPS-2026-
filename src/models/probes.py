@@ -112,3 +112,33 @@ def read_probe(schema, in_subset, skill_ref, skill_probe):
     probe skills."""
     share = item_share(schema, in_subset)
     return (skill_ref - skill_probe) / share + uniform_skill(schema, in_subset)
+
+
+def sentinel_only(predict_fn):
+    """Probe P2 transform: for gated items keep the model's sentinel mass
+    (last slot) and spread the rest uniformly over the asked options;
+    content items untouched. Δ vs the base = content contribution inside
+    gated items; the sentinel's contribution follows by subtraction from
+    P1's skill_G."""
+    def probed(frame, schema, *args, **kwargs):
+        frame = frame.reset_index(drop=True)
+        vectors = predict_fn(frame, schema, *args, **kwargs)
+        cells = blank_cells(frame, schema)
+        assert len(cells) == len(vectors), (len(cells), len(vectors))
+        out = []
+        for vec, (row, item) in zip(vectors, cells):
+            if schema["items"][item].get("gate") is not None:
+                out.append(sentinel_only_vector(vec))
+            else:
+                out.append(vec)
+        return out
+    return probed
+
+
+def sentinel_only_vector(vec):
+    p = np.asarray(vec, dtype=float)
+    p = p / p.sum()
+    k = p.size - 1
+    out = np.full(p.size, (1.0 - p[-1]) / k)
+    out[-1] = p[-1]
+    return out

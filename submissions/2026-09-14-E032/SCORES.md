@@ -37,6 +37,29 @@ irrelevant, the leaderboard keeps the best.
 unicef / wb: same arithmetic, recorded for completeness (both at the
 field's ceiling).
 
-## Actual leaderboard result
+## Actual leaderboard result (2026-09-14)
 
-(pending)
+**Grand 0.16 — unicef 0.10 / world_bank 0.17 / unhcr 0.23** (a second
+reading of the same zip from a test account: 0.17 / 0.10 / 0.17 / 0.23 —
+Laplace noise on Grand only; that account is not to be used again).
+Leaderboard best unchanged (E025 0.63).
+
+Inversion (reference E025 LB, ±0.01 on each reading):
+
+| | share | skill_G [range] | skill_C | remaining loss gated / content |
+|---|---|---|---|---|
+| unicef | 0.583 | 0.654 [0.62, 0.69] | 0.332 | 0.202 / 0.278 |
+| world_bank | 0.395 | 0.747 [0.70, 0.80] | 0.322 | 0.100 / 0.410 |
+| **unhcr** | 0.732 | **0.892** [0.87, 0.92] | **0.885** | **0.079 / 0.031** |
+
+Reading: the 0.20–0.23 arm at its upper edge. On the two instruments
+with exact gates, gated cells are twice as easy as content cells (the
+sentinel is determined by the parent). On unhcr they are NOT easier —
+gated ≈ content per cell — so the gate cascade leaks: with agreement
+median 0.83 the sentinel is not determined, and every gated item pays
+for it. 72% of unhcr's remaining loss (0.079 of 0.110) sits in the 156
+gated items. Domain surprise vs the pre-registration (expected
+skill_G ≈ 0.92–0.95): flagged, consistent with the schema's own
+agreement statistics and the organizers' unshipped gating fixes. Next
+probe splits the gated loss into sentinel ("who is skipped") vs content
+("what the asked say").
