@@ -1,6 +1,6 @@
 # STATUS — read this first in a new session (kept current at every commit)
 
-Updated: 2026-09-13 (session 4). Newest log entries are inserted ABOVE the previous
+Updated: 2026-09-14. Newest log entries are inserted ABOVE the previous
 newest header inside docs/log.md (not appended at the end) — search the
 latest date.
 
@@ -48,14 +48,15 @@ latest date.
 
 ## Next session plan
 
-1. **Probe submissions** (slots as measurement, not rank): design 4 probes on
-   the E025 file, each switching one component off for a defined subset —
-   (P1) evidence disabled for round-2 queries, (P2) candidates restricted to
-   the same country, (P3) gated items uniform, (P4) ladder only (w=0). Local
-   check = the intended cells changed and nothing else. Each LB delta maps a
-   chunk of the remaining unhcr loss (resolution ±0.01).
-2. Hypotheses from the map; sim channel + oracle ceiling probe BEFORE
-   implementing an estimator (E030 lesson).
-3. Phase-2 hardening (E025 under phase=2 on all sandboxes, 3600 s worst case
-   CPU-only); ensemble only if the phase-2 run is clean locally.
-4. `docs/method-4p.md`: fill [P2] once the final model is fixed.
+1. **Record E032's reading** (probe P1, gated items → uniform) in
+   `submissions/2026-09-14-E032/SCORES.md` via the table there
+   (skill_G / skill_C / remaining-loss split) and in the log.
+2. Next probe by P1's arm: content-heavy ⇒ P3 (evidence off entirely)
+   to see how much of content skill is evidence vs model; gated-heavy ⇒
+   P2 (gated cells split by parent visibility). Build with
+   `src/models/probes.py` (`uniform_on` for cell subsets; model-side
+   switches for component-off probes), validate predicted = direct =
+   wrapper locally, pre-register, package.
+3. From the map: hypotheses with a sim channel + oracle ceiling probe
+   before any estimator (E030 lesson).
+4. Phase-2 hardening + method [P2] fill once the final model is fixed.

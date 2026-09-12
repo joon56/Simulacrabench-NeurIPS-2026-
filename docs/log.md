@@ -211,6 +211,28 @@ Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-note
     dead, linkage abandoned, 0.92 question re-opens; +0.01 ambiguous
     (k-NN residual) — thresholds pre-registered in SCORES.md.
 
+## 2026-09-14 — probe programme starts: E032 (gated items → uniform) packaged as submission #19
+
+- **Probe instrument built** (`src/models/probes.py`): uniform-on-subset
+  wrapper + local decomposition. Arithmetic: skill' = skill −
+  share·(skill_S − u_S), share and u_S (the uniform vector's own
+  per-cell skill on S — nonzero because K varies across items) exact
+  from the schema. Validated on all three sandboxes: predicted probe
+  skill = direct replacement = wrapper (unhcr 0.5629 → 0.1067),
+  inversion exact. Interpretation uses only schema item counts — no
+  dataset statistic is read off the leaderboard.
+- **E032 = P1: gated items uniform.** One LB reading ⇒ E025's per-cell
+  skill on gated (156/213) vs content (57) items on real unhcr — the
+  first real-data loss map. Pre-registered (SCORES.md): unhcr reads
+  0.20–0.22 if gated skill is 0.92–0.95; ≤ 0.19 ⇒ content items hold
+  the missing +0.03; ≥ 0.24 ⇒ the gate cascade leaks and sentinel
+  prediction is the lever (would overrule E028's sim null). Resolution
+  ±0.014 in gated skill. Zip OK; score.py PASS ×3.
+- Probe queue after P1 (each a slot, each on the E025 file): P2 gated
+  cells split by parent visibility (visible parent vs predicted parent);
+  P3 evidence layer off entirely (real contribution now, vs the 0.09 of
+  E012→E018); P4 ladder-only (w = 0). Order decided by P1's reading.
+
 ## 2026-09-13 (session 4) — E031b result: flat at 0.63; cap lift null on real data; variance axis closed
 
 - **E031b submitted the same day (failed submissions do not consume the
