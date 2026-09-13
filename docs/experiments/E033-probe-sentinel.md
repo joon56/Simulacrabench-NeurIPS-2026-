@@ -11,7 +11,9 @@ exact-gate instruments — so 72% of the remaining unhcr loss sits in the
 156 gated items. P2 asks what E025 gets from CONTENT inside those
 cells: for every gated item the model's sentinel mass is kept and the
 remaining mass is spread uniformly over the asked options; content
-items are untouched. Then
+items are untouched; the transform is applied to the UNHCR schema only
+(per-instrument scores are hidden unless the best improves, so the
+Grand reading must isolate one instrument: Δ_unhcr = 3·Δ_Grand). Then
 
     Δ_P2 = skill_E033 − skill_E025 = −share · (skill_G − s_sent)
 
@@ -57,7 +59,7 @@ real Δ on unhcr: −0.04 to −0.10 (content inside gated items worth
 | | unicef | world_bank | unhcr |
 |---|---|---|---|
 | E025 | 0.5006 | 0.4548 | 0.5629 |
-| E033 (direct = wrapper) | 0.3502 | 0.3613 | 0.5076 |
+| E033 (unhcr-only; direct = wrapper) | 0.5006 | 0.4548 | 0.5076 |
 
 Official score.py: see SCORES.md.
 

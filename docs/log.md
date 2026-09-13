@@ -211,6 +211,19 @@ Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-note
     dead, linkage abandoned, 0.92 question re-opens; +0.01 ambiguous
     (k-NN residual) — thresholds pre-registered in SCORES.md.
 
+## 2026-09-15 (session 2) — probes go Grand-only: E033 repackaged as unhcr-only
+
+- Per-instrument scores are visible on the main account only when the
+  best improves; E032's per-instrument reading (0.10/0.17/0.23) came
+  from the test account, which is retired. From now every probe must
+  touch ONE instrument so Grand isolates it: Δ_unhcr = 3·Δ_Grand,
+  resolution ±0.015–0.03 in Δ_unhcr (vs ±0.01 before).
+- E033 repackaged: P2 transform applied only when the schema is unhcr
+  (public item names: `wave` present, ≥ 100 gated PREDICT items);
+  unicef / wb outputs = E025 exactly. Reading table re-expressed in
+  Grand (SCORES.md): ≥ 0.63 ⇒ sentinel arm (H1); 0.60–0.62 ⇒ both;
+  ≤ 0.59 ⇒ content arm. Zip OK; score.py PASS ×3.
+
 ## 2026-09-15 — E033 (probe P2: sentinel mass kept, gated content uniform) packaged as submission #20
 
 - P2 transform added to `src/models/probes.py` (`sentinel_only`);

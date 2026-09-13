@@ -65,6 +65,8 @@ latest date.
 3. Probe tooling: `src/models/probes.py` (`uniform_on`, `sentinel_only`,
    `decompose`, `read_probe`); always validate predicted = direct =
    wrapper before spending the slot. Never design a probe to expose a
-   dataset statistic.
+   dataset statistic. **Grand-only readings**: per-instrument scores are
+   hidden unless the best improves ⇒ every probe touches ONE instrument
+   (unhcr, detected by public schema item names) so Δ_unhcr = 3·Δ_Grand.
 4. Second Codabench account exists (user-created, one reading of E032
    from it) — flagged as a likely terms violation; do not use.

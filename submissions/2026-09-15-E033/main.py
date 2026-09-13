@@ -4,7 +4,9 @@ mass and spread the remaining mass uniformly over the asked options. A
 measurement submission: the drop vs E025 is the content contribution
 inside gated items; with P1 (E032) it splits the gated-item skill into
 "who is skipped" and "what the asked say". Base model unchanged on
-every other cell. Base: household-aware full-pool evidence layer
+every other cell; applied to the UNHCR schema only so the Grand
+reading isolates it (per-instrument scores are hidden unless the best
+improves). Base: household-aware full-pool evidence layer
 (E022) over the shared-trunk model with the trunk architecture selected
 per instrument from {64x2, 128x2+dropout} on the internal holdout (E017).
 
@@ -983,9 +985,21 @@ def _sentinel_only(vec):
     return out
 
 
+def _is_probe_target(schema):
+    """The probe applies to the UNHCR schema only (identified by its
+    public item names), so the Grand reading isolates one instrument:
+    delta_unhcr = 3 * delta_grand. Other schemas get E025 unchanged."""
+    items = schema["items"]
+    gated = sum(1 for r in items.values()
+                if r["class"] == "PREDICT" and r.get("gate"))
+    return "wave" in items and gated >= 100
+
+
 def predict(frame, schema):
     frame = frame.reset_index(drop=True)
     vectors = predict_e025(frame, schema)
+    if not _is_probe_target(schema):
+        return vectors
     cells = _blank_cells(frame, schema)
     assert len(cells) == len(vectors), (len(cells), len(vectors))
     out = []
