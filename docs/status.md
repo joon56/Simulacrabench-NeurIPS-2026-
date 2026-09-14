@@ -1,6 +1,6 @@
 # STATUS — read this first in a new session (kept current at every commit)
 
-Updated: 2026-09-15. Newest log entries are inserted ABOVE the previous
+Updated: 2026-09-16. Newest log entries are inserted ABOVE the previous
 newest header inside docs/log.md (not appended at the end) — search the
 latest date.
 
@@ -48,25 +48,21 @@ latest date.
 
 ## Next session plan
 
-1. **Record E033's reading** (probe P2) via the table in
-   `submissions/2026-09-15-E033/SCORES.md`; log it.
-2. **Loss map so far (E032)**: unhcr gated cells 0.892/cell ≈ content
-   0.885 — the gate cascade leaks on real unhcr (exact-gate instruments
-   show gated ≈ 2× content); 0.079 of the 0.110 remaining loss is in the
-   156 gated items. Hypotheses queued by P2's arm:
-   - **H1 replay-calibrated sentinel mass**: blank visible rows' PREDICT
-     block, run the model, fit per-item calibration of the sentinel
-     probability (features: parent-based P(asked), net sentinel prob,
-     evidence sentinel prob, E010 agreement) against the realized
-     sentinel indicator. Channel: E028 branch-overlap sim + a new
-     approximate-gate sim (random 17% disagreement, GIVEN-dependent).
-     Oracle ceiling probe first.
-   - content hypotheses (evidence transition tables) if P2 says content.
-3. Probe tooling: `src/models/probes.py` (`uniform_on`, `sentinel_only`,
-   `decompose`, `read_probe`); always validate predicted = direct =
-   wrapper before spending the slot. Never design a probe to expose a
-   dataset statistic. **Grand-only readings**: per-instrument scores are
-   hidden unless the best improves ⇒ every probe touches ONE instrument
-   (unhcr, detected by public schema item names) so Δ_unhcr = 3·Δ_Grand.
-4. Second Codabench account exists (user-created, one reading of E032
-   from it) — flagged as a likely terms violation; do not use.
+1. **Record E034's reading** (probe P3, evidence off on unhcr) via
+   `submissions/2026-09-16-E034/SCORES.md` (Grand-only: Δ_unhcr =
+   3·(Grand − 0.633)); log it.
+2. **Loss map so far**: E032 — unhcr gated cells 0.892/cell ≈ content
+   0.885 (remaining loss 0.079 gated / 0.031 content); E033 — sentinel
+   knowledge alone leaves gated cells at 0.56/cell, so E025's unhcr skill
+   is mostly CONTENT prediction on both item groups. E034 decides whether
+   that content skill is evidence-driven or base-model-driven.
+3. Hypotheses queued by E034's arm:
+   - evidence-driven ⇒ **H2 evidence transition tables**: replace the
+     twin's one-hot answer by a per-item transition row estimated from
+     provisional pairs (structured disagreement); oracle ceiling on a
+     structured-disagreement sim before any estimator.
+   - model-driven ⇒ base-model levers on unmatched rows (cross-item
+     structure the shared trunk misses; per-country heads) — each needs
+     a sim channel first.
+4. Probe discipline unchanged: one instrument per probe, validate
+   predicted = direct = wrapper, never expose a dataset statistic.

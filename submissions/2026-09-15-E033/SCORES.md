@@ -41,6 +41,30 @@ Pre-registered expectation (unhcr): **Δ_unhcr −0.04 to −0.10 ⇒ Grand
 The 0.62/0.63 boundary is within rounding — a 0.62 or 0.63 reading is
 "content adds little or modestly"; only ≤ 0.60 is a clear content arm.
 
-## Actual leaderboard result
+## Actual leaderboard result (2026-09-15)
 
-(pending)
+**Grand 0.55** (best unchanged at 0.63). Δ_grand = −0.08 (exact
+reference 0.633 ⇒ −0.083) ⇒ **Δ_unhcr ≈ −0.24 to −0.25, unhcr ≈ 0.64–0.65,
+s_sent = 0.892 − 0.24/0.732 ≈ 0.56** (±0.04). Far below the pre-registered
+0.60–0.62 band: the clear CONTENT arm.
+
+Reading. With gated content flattened, gated cells keep only 0.56 of
+their 0.892 per-cell skill — E025 earns ~0.33 per gated cell from
+predicting what the asked respondents say. Since a sentinel cell is
+untouched by the transform, s_sent ≈ 0.56 also bounds the sentinel-cell
+fraction from below (perfect sentinel prediction on a fraction f of
+cells gives at most ≈ f): asked cells are a substantial minority of
+gated cells and E025 predicts their content well (≥ 0.75 per asked
+cell). Revision of the E032 narrative: gated ≈ content per cell is not
+proof that sentinel prediction is bad — gated cells are a mix of easy
+sentinel cells and asked-content cells that behave like content items.
+The loss split sentinel/content inside gated items is NOT identifiable
+from P1+P2 (needs the sentinel fraction, a dataset statistic we do not
+probe for). What IS established: content prediction carries most of
+E025's unhcr skill on both item groups, so the largest addressable pool
+is content — the 57 content items (loss 0.031) plus the asked cells of
+gated items (part of 0.079).
+
+Next: P3 (E034) switches the evidence layer off on unhcr — is the
+content skill evidence-driven (⇒ lever = match coverage, helped by the
+phase-2 pool) or base-model-driven (⇒ lever = P(item | GIVEN))?

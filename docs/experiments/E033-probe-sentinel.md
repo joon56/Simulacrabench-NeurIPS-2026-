@@ -1,6 +1,6 @@
 # E033 — probe P2: gated items keep the sentinel mass, content uniform
 parent: E032
-status: parked
+status: adopted
 date: 2026-09-15
 
 ## Hypothesis
@@ -65,4 +65,11 @@ Official score.py: see SCORES.md.
 
 ## Decision
 
-Measurement; verdict = the reading, recorded in SCORES.md.
+**Read.** Grand 0.55 ⇒ Δ_unhcr ≈ −0.24, s_sent ≈ 0.56 — the content
+arm, well outside the pre-registered −0.04…−0.10. E025's gated skill is
+mostly content prediction on asked cells; sentinel knowledge alone
+leaves gated cells at 0.56/cell. The "gate cascade leaks" reading of
+E032 is downgraded to "gated cells mix easy sentinel cells with
+content-like asked cells"; the sentinel/content loss split is not
+identifiable without the sentinel fraction. Content hypotheses go
+first; P3 (evidence off) decides evidence-driven vs model-driven.

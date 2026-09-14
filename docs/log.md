@@ -211,6 +211,28 @@ Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-note
     dead, linkage abandoned, 0.92 question re-opens; +0.01 ambiguous
     (k-NN residual) — thresholds pre-registered in SCORES.md.
 
+## 2026-09-16 — E033 read: content arm (s_sent ≈ 0.56); E034 (P3: evidence off on unhcr) packaged as submission #21
+
+- **E033 LB Grand 0.55** ⇒ Δ_unhcr ≈ −0.24, unhcr ≈ 0.65, **s_sent ≈ 0.56**
+  (±0.04) — far below the pre-registered 0.60–0.62 band, the clear
+  content arm. Inside gated items E025 earns ~0.33 per cell from
+  predicting what the asked say; sentinel knowledge alone leaves gated
+  cells at 0.56. Revision of E032's narrative: gated ≈ content per cell
+  is a MIX of easy sentinel cells and content-like asked cells, not
+  proof of a bad sentinel model. The sentinel/content loss split inside
+  gated items is not identifiable from P1+P2 without the sentinel
+  fraction (a dataset statistic — not probed). Established: content
+  prediction carries most of unhcr's skill on both item groups ⇒ the
+  addressable pool is content (57 content items + asked cells of the
+  156 gated ones).
+- **E034 = P3: evidence layer off on unhcr only** (λ = 0; net + ladder +
+  gates + E010 stand alone). Parity src = assembled (0.563271); clean
+  sandbox ≈ E025 (no twins); household sim: layer worth 0.0233 log.
+  Zip OK; score.py PASS ×3. Pre-registered: Δ_unhcr −0.09…−0.12 ⇒
+  **Grand 0.59–0.60**. ≥ 0.61 ⇒ content skill is model-driven (base
+  model on unmatched rows is the lever); ≤ 0.58 ⇒ mostly evidence
+  (recall / sharper λ / transition tables).
+
 ## 2026-09-15 (session 2) — probes go Grand-only: E033 repackaged as unhcr-only
 
 - Per-instrument scores are visible on the main account only when the
