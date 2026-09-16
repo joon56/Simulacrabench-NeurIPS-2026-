@@ -211,6 +211,27 @@ Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-note
     dead, linkage abandoned, 0.92 question re-opens; +0.01 ambiguous
     (k-NN residual) — thresholds pre-registered in SCORES.md.
 
+## 2026-09-16 (session 3) — E035: transition-table ceiling +0.0032, rejected; local harness fully closed
+
+- **H2 ceiling measured** (`tests/test_transition_ceiling.py`, recorded
+  null): structured-disagreement household sim (s = 0.7) with the TRUE
+  per-item transition table from known pairs: **+0.0032** over E025;
+  unstructured sim **−0.0013**. Below the +0.005 bar at the oracle
+  setting ⇒ no estimator built (E030 lesson). E035 rejected.
+- State of the search: A005 (base model within +0.0024 of the sandbox
+  Bayes ceiling), E030 (signature recall ceiling +0.0025), E035
+  (transition ceiling +0.0032), E023 (λ/K saturated), E029 (variance
+  +0.0004) — every axis the sandbox and household sim can measure is
+  closed. Phase-1 gains from here are real-data-only hypotheses read as
+  LB A/Bs; a real +0.01 unhcr is readable (Grand 0.633 → 0.637 rounds to
+  0.64, best updates, per-instrument scores become visible).
+- Remaining real-data-only, no-regression candidates (each one slot):
+  H4 λ per (item, bucket, twin relation same-wave / cross-wave) —
+  replay-calibrated, cheap; H1 sentinel recalibration in the
+  predicted-parent regime via a held-out replay (branch-overlap sim
+  as the local channel); E029 ensemble (unread). Effort otherwise
+  shifts to phase-2 hardening and the method write-up.
+
 ## 2026-09-16 (session 2) — E034 read (evidence +0.10); A005 sandbox oracle: base model at the local ceiling
 
 - **E034 LB Grand 0.60** ⇒ Δ_unhcr ≈ −0.10: base model alone ≈ 0.79,

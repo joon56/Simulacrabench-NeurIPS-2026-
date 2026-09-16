@@ -1,6 +1,6 @@
 # STATUS — read this first in a new session (kept current at every commit)
 
-Updated: 2026-09-16. Newest log entries are inserted ABOVE the previous
+Updated: 2026-09-16 (session 3). Newest log entries are inserted ABOVE the previous
 newest header inside docs/log.md (not appended at the end) — search the
 latest date.
 
@@ -51,21 +51,20 @@ latest date.
 
 ## Next session plan
 
-1. **Record E034's reading** (probe P3, evidence off on unhcr) via
-   `submissions/2026-09-16-E034/SCORES.md` (Grand-only: Δ_unhcr =
-   3·(Grand − 0.633)); log it.
-2. **Loss map so far**: E032 — unhcr gated cells 0.892/cell ≈ content
-   0.885 (remaining loss 0.079 gated / 0.031 content); E033 — sentinel
-   knowledge alone leaves gated cells at 0.56/cell, so E025's unhcr skill
-   is mostly CONTENT prediction on both item groups. E034 decides whether
-   that content skill is evidence-driven or base-model-driven.
-3. Hypotheses queued by E034's arm:
-   - evidence-driven ⇒ **H2 evidence transition tables**: replace the
-     twin's one-hot answer by a per-item transition row estimated from
-     provisional pairs (structured disagreement); oracle ceiling on a
-     structured-disagreement sim before any estimator.
-   - model-driven ⇒ base-model levers on unmatched rows (cross-item
-     structure the shared trunk misses; per-country heads) — each needs
-     a sim channel first.
-4. Probe discipline unchanged: one instrument per probe, validate
-   predicted = direct = wrapper, never expose a dataset statistic.
+1. **Local harness is closed** (A005 oracle +0.0024, E030 +0.0025,
+   E035 +0.0032, E023, E029): no local-validated phase-1 gain remains.
+   Do not spend sessions on new sim-measured refinements of E025.
+2. **Real-data-only A/Bs** (one per slot, no-regression checked locally,
+   readable iff unhcr ≥ +0.01 ⇒ Grand 0.64 ⇒ best updates):
+   - H4: λ per (item, concentration bucket, twin relation same-wave vs
+     cross-wave) in the replay — panel drift vs co-respondent
+     disagreement differ by item; cheapest, build first.
+   - H1: sentinel-mass recalibration in the predicted-parent regime
+     (held-out replay on visible rows); E028 branch-overlap sim as the
+     local no-regression / directional channel.
+   - E029 ensemble as a ride-along only if the hosted run is clean.
+3. **Phase-2 preparation** takes priority from now: run E025 under
+   `phase=2` on all sandboxes with `score.py --phase 2`, 3600 s worst
+   case CPU-only, smoke-frame guards; fill `docs/method-4p.md` [P2].
+4. Probe map for the write-up (unhcr): 0.89 = base 0.79 + evidence
+   0.10; gated 0.892 / content 0.885 per cell; sentinel-only 0.56.
