@@ -18,7 +18,10 @@ latest date.
   concentration buckets) → hh_cap per-instrument config {64×2, 128×2+do} (E025).
 - Instruments: clean sandbox runner (`src/eval/runner.py`, no household
   structure, blind to capacity; `phase=2` works as-is — E025 phase-2
-  profile 0.4902/0.4620/0.5652, 254 s local CPU); **household sim** (`tests/test_hh_sharp.py::
+  profile 0.4902/0.4620/0.5652, 254 s local CPU); **sandbox oracle**
+  (`src/eval/oracle.py`, A005): Bayes ceiling for GIVEN-only models is
+  +0.0024 above E025's base — base-model changes cannot be validated
+  locally; only the evidence layer has local headroom (household sim); **household sim** (`tests/test_hh_sharp.py::
   hh_inject_rho`, ρ∈[0.2,0.8]) — quantitatively validated against E018/E019/E022
   leaderboard readings; branch-overlap sim (`tests/test_pvc_gate.py`).
 - Closed axes (do not re-spend): priors (E007), per-item tuning (E009), ordinal

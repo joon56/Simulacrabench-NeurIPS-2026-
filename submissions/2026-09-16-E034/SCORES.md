@@ -29,6 +29,15 @@ Pre-registered expectation: **Δ_unhcr −0.09 to −0.12 ⇒ Grand 0.59–0.60*
 | 0.59–0.60 | −0.08 … −0.13 | as history; both matter | transition tables (matched) + base-model work |
 | ≤ 0.58 | ≤ −0.15 | content skill is mostly evidence | evidence-layer levers: recall, sharper λ, transition tables |
 
-## Actual leaderboard result
+## Actual leaderboard result (2026-09-16)
 
-(pending)
+**Grand 0.60** (best unchanged). Δ_unhcr = 3·(0.60 − 0.633) ≈ **−0.10**
+(±0.03) ⇒ unhcr without the evidence layer ≈ **0.79**; the layer is
+worth ≈ +0.10 inside E025 — the pre-registered middle arm, exactly the
+E012→E025 history (0.78 → 0.89). Content skill is carried by BOTH the
+base model (0.79 alone) and the evidence layer (+0.10).
+
+Map after P1–P3 (unhcr): total 0.89; gated cells 0.892/cell, content
+cells 0.885; sentinel knowledge alone leaves gated cells at 0.56; base
+model alone 0.79; evidence +0.10. Remaining 0.11 has no single owner:
+each component's next +0.01 is a separate piece of work.

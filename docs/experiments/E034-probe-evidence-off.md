@@ -1,6 +1,6 @@
 # E034 — probe P3: evidence layer off on unhcr (component contribution)
 parent: E033
-status: parked
+status: adopted
 date: 2026-09-16
 
 ## Hypothesis
@@ -52,4 +52,8 @@ see SCORES.md.
 
 ## Decision
 
-Measurement; verdict = the reading, recorded in SCORES.md.
+**Read.** Grand 0.60 ⇒ Δ_unhcr ≈ −0.10: base model alone ≈ 0.79, the
+evidence layer ≈ +0.10 inside E025 (as history). Middle arm — both
+components carry content skill; neither is a single lever for +0.03.
+Probe programme closes here (P1–P3 mapped item groups, sentinel vs
+content, and evidence vs base); hypotheses now need their own channel.

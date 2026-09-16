@@ -211,6 +211,28 @@ Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-note
     dead, linkage abandoned, 0.92 question re-opens; +0.01 ambiguous
     (k-NN residual) — thresholds pre-registered in SCORES.md.
 
+## 2026-09-16 (session 2) — E034 read (evidence +0.10); A005 sandbox oracle: base model at the local ceiling
+
+- **E034 LB Grand 0.60** ⇒ Δ_unhcr ≈ −0.10: base model alone ≈ 0.79,
+  evidence layer ≈ +0.10 inside E025 — the middle arm, as history.
+  Probe programme closed: unhcr 0.89 = base 0.79 + evidence 0.10;
+  gated 0.892 / content 0.885 per cell; sentinel-only 0.56 on gated.
+- **A005 — sandbox oracle** (`src/eval/oracle.py`): replaying the
+  generator's rng recovers its base logits and trait loadings exactly
+  (regenerated frames identical to the parquet on all three sandboxes);
+  the Bayes-optimal GIVEN-only predictor (trait marginalised on a grid,
+  gates row-wise) scores 0.5014 / 0.4585 / 0.5655 vs E025 base 0.5006 /
+  0.4548 / 0.5633 — **headroom +0.0024 (3-inst)**, below the +0.005
+  bar. No base-model class change can clear the local threshold, by
+  construction; base-model hypotheses are LB A/Bs only. v1 of the
+  oracle marginalised visible parents (impossible sub-E025 numbers on
+  wb's tracer items) — fixed; `tests/test_oracle.py` pins the bound.
+- Launched the **H2 ceiling probe** (evidence transition tables): a
+  structured-disagreement household sim (non-copied twin answers map to
+  a fixed item-specific alternative with prob 0.7) and the oracle T from
+  known pairs — E025 vs E025 with ev → ev·T; the unstructured sim
+  (s = 0) must stay ≈ 0. Result decides whether an estimator is built.
+
 ## 2026-09-16 — E033 read: content arm (s_sent ≈ 0.56); E034 (P3: evidence off on unhcr) packaged as submission #21
 
 - **E033 LB Grand 0.55** ⇒ Δ_unhcr ≈ −0.24, unhcr ≈ 0.65, **s_sent ≈ 0.56**
