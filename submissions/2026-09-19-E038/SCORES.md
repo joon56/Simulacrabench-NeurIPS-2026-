@@ -22,7 +22,8 @@ alone cannot find them): key column weight 7.87 > GIVEN max 4.56,
 **+0.0108 log** over E025. Parity assembled vs src exact (unhcr 0.562963 both).
 Official score.py PASS ×3: 0.5000 / 0.4600 / 0.5600 (= E025 within grader
 noise). Runtime ≈ E025 (+ ~10 signature columns in the
-kernel).
+kernel). Phase-2 hardening done in advance: `score.py --phase 2` PASS ×3
+= 0.4902 / 0.4620 / 0.5652 (= E025; sandbox ids are sequential).
 
 ## Leaderboard expectation (real data)
 

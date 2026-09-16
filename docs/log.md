@@ -211,6 +211,20 @@ Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-note
     dead, linkage abandoned, 0.92 question re-opens; +0.01 ambiguous
     (k-NN residual) — thresholds pre-registered in SCORES.md.
 
+## 2026-09-19 (session 2) — E038 phase-2 hardened; E039 tree blend parked on runtime
+
+- E038 `score.py --phase 2` PASS ×3 = E025 values (sandbox ids
+  sequential) — ready as the phase-2 file if it lifts the best.
+- **E039 (per-item HistGradientBoosting blended on the holdout)**:
+  sandbox v = 0 (holdout log score monotone worse with v, as A005
+  predicts), skill = E025; **+140 s local CPU-side** (213 fits) ⇒ over
+  the phase-1 timeout precedent on a slow worker ⇒ cannot be read as an
+  A/B. Parked; a 57-content-item variant would fit but tests only the
+  0.031 content pool.
+- Queue after E038 is now empty of runtime-feasible, map-supported
+  A/Bs; the E038 reading decides the next move (≥ 0.64 ⇒ tune the id
+  layer; 0.63 ⇒ nothing left that our instruments can vet).
+
 ## 2026-09-19 — E038 (respondent-id structure as matching signature) adopted on the recall sim, packaged as submission #23
 
 - Leaderboard intel: five teams at unhcr 0.93 with identical unicef/wb
