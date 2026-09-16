@@ -1,6 +1,6 @@
 # STATUS — read this first in a new session (kept current at every commit)
 
-Updated: 2026-09-16 (session 3). Newest log entries are inserted ABOVE the previous
+Updated: 2026-09-17. Newest log entries are inserted ABOVE the previous
 newest header inside docs/log.md (not appended at the end) — search the
 latest date.
 
@@ -51,20 +51,17 @@ latest date.
 
 ## Next session plan
 
-1. **Local harness is closed** (A005 oracle +0.0024, E030 +0.0025,
-   E035 +0.0032, E023, E029): no local-validated phase-1 gain remains.
-   Do not spend sessions on new sim-measured refinements of E025.
-2. **Real-data-only A/Bs** (one per slot, no-regression checked locally,
-   readable iff unhcr ≥ +0.01 ⇒ Grand 0.64 ⇒ best updates):
-   - H4: λ per (item, concentration bucket, twin relation same-wave vs
-     cross-wave) in the replay — panel drift vs co-respondent
-     disagreement differ by item; cheapest, build first.
-   - H1: sentinel-mass recalibration in the predicted-parent regime
-     (held-out replay on visible rows); E028 branch-overlap sim as the
-     local no-regression / directional channel.
-   - E029 ensemble as a ride-along only if the hosted run is clean.
-3. **Phase-2 preparation** takes priority from now: run E025 under
-   `phase=2` on all sandboxes with `score.py --phase 2`, 3600 s worst
-   case CPU-only, smoke-frame guards; fill `docs/method-4p.md` [P2].
+1. **Record E036's reading** (`submissions/2026-09-17-E036/SCORES.md`):
+   Grand 0.64 ⇒ per-instrument scores visible, relation-specific λ real
+   ⇒ next: relation × direction (round-1 twin for a round-2 query vs
+   the reverse) and the E029 ensemble as ride-along; 0.63 ⇒ park.
+2. **Local harness is closed** for E025 refinements (A005, E030, E035,
+   E023, E029). Only real-data-only A/Bs remain, one per slot, each with
+   an exact no-regression check and a directional sim: after E036, H1
+   (sentinel recalibration in the predicted-parent regime; E028
+   branch-overlap sim as the channel).
+3. **Phase-2 preparation** in parallel: E036/E025 under `phase=2` on all
+   sandboxes with `score.py --phase 2`, 3600 s worst case CPU-only,
+   smoke-frame guards; fill `docs/method-4p.md` [P2].
 4. Probe map for the write-up (unhcr): 0.89 = base 0.79 + evidence
    0.10; gated 0.892 / content 0.885 per cell; sentinel-only 0.56.

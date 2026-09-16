@@ -73,8 +73,10 @@ flowchart TD
     E033 --> E034
     E035["E035 H2 ceiling: evidence transition tables (oracle T on a structured sim)<br/><i>rejected · 2026-09-16</i>"]
     E034 --> E035
+    E036["E036 λ per twin relation (same-round vs cross-round top candidate)<br/><i>adopted · 2026-09-17</i>"]
+    E025 --> E036
     classDef adopted fill:#d4edda,stroke:#28a745
-    class E001,E002,E003,E004,E005,E006,E008,E010,E012,E018,E022,E025,E032,E033,E034 adopted
+    class E001,E002,E003,E004,E005,E006,E008,E010,E012,E018,E022,E025,E032,E033,E034,E036 adopted
     classDef rejected fill:#f8d7da,stroke:#dc3545
     class E009,E011,E016,E017,E020,E023,E031,E035 rejected
     classDef parked fill:#fff3cd,stroke:#ffc107

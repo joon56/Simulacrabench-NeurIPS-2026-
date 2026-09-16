@@ -211,6 +211,23 @@ Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-note
     dead, linkage abandoned, 0.92 question re-opens; +0.01 ambiguous
     (k-NN residual) — thresholds pre-registered in SCORES.md.
 
+## 2026-09-17 — E036 (λ per twin relation) adopted on the panel sim, packaged as submission #22
+
+- **E036 = E025 with λ per (item, concentration bucket, same-round vs
+  cross-round top candidate)**, replay-calibrated, < 30-row buckets fall
+  back to the pooled λ (`src/models/wave_lam.py`; `link_sharp` λ
+  consumer now indexes integer buckets, bool callers unchanged).
+- Local: clean sandbox identical to E025 on all three instruments;
+  same-round household sim +0.0010 (cross buckets engage on random
+  k-NN candidates — harmless); **panel sim** (new `panel_inject`: half
+  the twins in the other round with copy rates 0.7–0.95 vs 0.2–0.5)
+  **+0.0105 log** over E025 ⇒ adopted (E003 route). Parity assembled =
+  src exact; zip OK; score.py PASS ×3. Tests 2/2.
+- First real-data-only A/B after the probe map: the relation split
+  acts exactly where E034 said the value is (evidence +0.10 on unhcr).
+  Readings pre-registered in SCORES.md: Grand 0.64 (best updates) ⇒
+  real; 0.63 ⇒ pooled λ adequate, park; ≤ 0.62 ⇒ thin buckets, revert.
+
 ## 2026-09-16 (session 3) — E035: transition-table ceiling +0.0032, rejected; local harness fully closed
 
 - **H2 ceiling measured** (`tests/test_transition_ceiling.py`, recorded

@@ -218,7 +218,7 @@ def predict(frame, schema, cols=None, kappas=None, layer_fn=None,
                 pair = lam.get(item)
                 e = ev.get(item)
                 if pair is not None and e is not None and e.sum() > 0:
-                    l = pair[1] if conc else pair[0]
+                    l = pair[int(conc)]   # bool -> 0/1; int buckets (E036)
                     if l > 0:
                         base = (1.0 - l) * base + l * e
             belief[item] = base
