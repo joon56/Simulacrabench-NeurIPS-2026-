@@ -1,6 +1,6 @@
 # STATUS — read this first in a new session (kept current at every commit)
 
-Updated: 2026-09-18. Newest log entries are inserted ABOVE the previous
+Updated: 2026-09-19. Newest log entries are inserted ABOVE the previous
 newest header inside docs/log.md (not appended at the end) — search the
 latest date.
 
@@ -51,20 +51,18 @@ latest date.
 
 ## Next session plan
 
-1. **Phase-1 modelling is closed** (E037 was the last map-supported
-   hypothesis; A005/E030/E035/E037 ceilings, E027/E028/E031b/E036 flat
-   A/Bs). Do not open new E025 refinements. Phase-1 slots: only a
-   re-run of the E025 zip if the kit ships the pending gating changes
-   (`git fetch` in external/starter-kit; if make_sandbox / schema gates
-   change, re-run runner + score.py and resubmit `2026-09-09-E025.zip`).
-2. **Phase-2 submission = `submissions/2026-09-09-E025/main.py`
-   unchanged** — hardened: `score.py --phase 2` PASS ×3 (0.4902 /
-   0.4620 / 0.5652), runner phase 2 = 291 s local CPU, worst case no-GPU
-   ≈ 1,000–1,200 s hosted ≪ 3,600 s, smoke frame OK, 7 clean hosted
-   runs of this file. Measured-zero ride-alongs stay out. In the
-   phase-2 window (Nov 1–14): re-zip from the snapshot, run
-   check_submission_zip, submit once, attach `docs/method-4p.md`.
-3. `docs/method-4p.md`: §5/§6 now carry the phase-2 settings, the probe
-   map and the oracle; remaining work is trimming to 4 pages and the
-   license/disclosure check against the Codabench terms.
-4. Weekly: kit update check (gating changes), leaderboard intel.
+1. **Record E038's reading** (`submissions/2026-09-19-E038/SCORES.md`):
+   ≥ 0.64 ⇒ identifier structure real — retune MIN_AGREE / BLOCKS, add
+   the E029 ensemble ride-along, write the disclosure paragraph; 0.63 ⇒
+   park; ≤ 0.62 ⇒ raise MIN_AGREE, drop block columns, retest.
+2. Dev-rank programme (user decision 2026-09-18: keep working the rank):
+   real-data A/Bs one per slot, each with exact local no-regression and a
+   directional sim. Queue after E038: (a) base-model tree blend (sklearn
+   HistGradientBoosting per item on unhcr, probability blend with the
+   net, w on the holdout; LB-only per A005; CPU-side ≲ 150 s local);
+   (b) evidence top-K / posterior temperature retune conditional on E038
+   arming (only if E038 reads ≥ 0.64).
+3. Phase-2 submission = E025 assembly unless a phase-1 A/B lifts the
+   best; then the lifted file after the same hardening (score.py
+   --phase 2, worst-case CPU-only timing, smoke frame).
+4. Weekly kit / leaderboard check; method-4p trimming.

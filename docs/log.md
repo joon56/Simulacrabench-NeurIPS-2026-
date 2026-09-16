@@ -211,6 +211,32 @@ Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-note
     dead, linkage abandoned, 0.92 question re-opens; +0.01 ambiguous
     (k-NN residual) — thresholds pre-registered in SCORES.md.
 
+## 2026-09-19 — E038 (respondent-id structure as matching signature) adopted on the recall sim, packaged as submission #23
+
+- Leaderboard intel: five teams at unhcr 0.93 with identical unicef/wb
+  (0.52 / 0.50 or 0.49), several at 0.92 — a shared plateau. Our map
+  (base 0.79 + evidence 0.10) makes twin RECALL the likeliest source of
+  their +0.04, and `respondent_id` is the one column the evidence
+  layer never used (sequential in the sandbox, not necessarily in a
+  CATI household file).
+- **E038**: signature columns derived from the identifier (tokens,
+  truncated digit runs, numeric-rank blocks), weighted by the E021
+  Fellegi–Sunter step from the GIVEN-only provisional pairs, evidence
+  guard ≥ 5 observed agreements, and a third λ bucket for matches
+  confirmed by an armed id column. Attempt log in the experiment file
+  (v1 smoothing artifact; v2 −0.0044 on a sim without a recall
+  problem; v3 with the id bucket and a recall sim). Results: clean
+  sandbox 0.5006 / 0.4548 / 0.5630 (= E025 ±0.0001); plain household
+  sim −0.0004; **keyed recall sim +0.0108** (key weight 7.87 > GIVEN
+  4.56). Parity assembled = src exact; zip OK; score.py PASS ×3.
+- Pre-registered (SCORES.md): Grand ≥ 0.64 ⇒ identifier structure is
+  real; 0.63 ⇒ opaque, park; ≤ 0.62 ⇒ spurious regularity, raise the
+  guard. Disclosure: within-dataset matching via the record identifier
+  (organizer-permitted 2026-09-02) goes into the method description.
+- Next A/B in the queue if E038 is flat: base-model tree blend (HGB per
+  item on unhcr, w tuned on the holdout) — not locally validatable
+  (A005), LB-only; runtime must stay ≲ 150 s local CPU-side.
+
 ## 2026-09-18 — phase-2 hardening pass; H1 ceiling probe
 
 - **Phase-2 hardening of the E025 assembly** (`submissions/2026-09-09-E025/`):
