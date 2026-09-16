@@ -41,6 +41,13 @@ relation split recalibrates λ where it is currently averaged.
   MIN_BUCKET) — revert to E025.
 - unicef / wb: identical to E025 by construction.
 
-## Actual leaderboard result
+## Actual leaderboard result (2026-09-17)
 
-(pending)
+**Grand 0.63, no update (≤ E025; unhcr ≤ 0.89).** Pre-registered
+"park" arm: on real unhcr the pooled λ per (item, bucket) is already
+adequate — either same-round and cross-round matches agree at similar
+per-item rates, or one relation dominates the concentrated matches so
+the split changes little. (Upload hit a Codabench 500 first; retry
+succeeded, no slot lost.) The panel-sim gain (+0.0105) did not
+transfer: the sim's relation-specific copy rates were an assumption,
+not a measurement. E036 parked; E025 remains the model of record.

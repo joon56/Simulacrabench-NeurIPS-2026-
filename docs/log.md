@@ -211,6 +211,20 @@ Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-note
     dead, linkage abandoned, 0.92 question re-opens; +0.01 ambiguous
     (k-NN residual) — thresholds pre-registered in SCORES.md.
 
+## 2026-09-17 (session 2) — E036 result: flat at 0.63; relation-split λ parked
+
+- **E036 LB Grand 0.63, no update** (after a Codabench upload 500 that
+  cleared on retry). Pre-registered park arm: pooled λ per (item,
+  bucket) already adequate on real unhcr. E036 parked; E025 stays the
+  model of record. Lesson (second time, after E028): a sim that injects
+  an assumed real-data structure is a directional channel, not
+  evidence; only the slot reads it.
+- Real-data-only A/Bs tried since the probe map: E036 (flat). Left:
+  H1 (sentinel recalibration in the predicted-parent regime). After
+  that, phase-1 effort has no locally or map-supported lever left; the
+  remaining +0.03 to the 0.92 pack is unexplained by any component we
+  can switch or refine. Phase-2 preparation becomes the main line.
+
 ## 2026-09-17 — E036 (λ per twin relation) adopted on the panel sim, packaged as submission #22
 
 - **E036 = E025 with λ per (item, concentration bucket, same-round vs

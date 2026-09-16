@@ -1,6 +1,6 @@
 # E036 — λ per twin relation (same-round vs cross-round top candidate)
 parent: E025
-status: adopted
+status: parked
 date: 2026-09-17
 
 ## Hypothesis
@@ -65,3 +65,10 @@ instruments, CPU training). Tests 2/2.
 Readings pre-registered in its SCORES.md: Grand 0.64 ⇒ relation-specific
 agreement real; 0.63 ⇒ pooled λ adequate, park; ≤ 0.62 ⇒ thin buckets,
 revert.
+
+**LB 2026-09-17: Grand 0.63, no update ⇒ PARKED.** Pooled λ is adequate
+on real unhcr; the relation-specific agreement the panel sim assumed
+is not there at a readable size (≥ +0.01 unhcr). Second sim-only gain
+(after E028) that did not transfer: sims that inject an assumed real-data
+structure are directional channels, not evidence — a real-data A/B is
+the only test, and it costs a slot.

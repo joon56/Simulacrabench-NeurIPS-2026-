@@ -1,6 +1,6 @@
 # STATUS — read this first in a new session (kept current at every commit)
 
-Updated: 2026-09-17. Newest log entries are inserted ABOVE the previous
+Updated: 2026-09-17 (session 2). Newest log entries are inserted ABOVE the previous
 newest header inside docs/log.md (not appended at the end) — search the
 latest date.
 
@@ -51,17 +51,18 @@ latest date.
 
 ## Next session plan
 
-1. **Record E036's reading** (`submissions/2026-09-17-E036/SCORES.md`):
-   Grand 0.64 ⇒ per-instrument scores visible, relation-specific λ real
-   ⇒ next: relation × direction (round-1 twin for a round-2 query vs
-   the reverse) and the E029 ensemble as ride-along; 0.63 ⇒ park.
-2. **Local harness is closed** for E025 refinements (A005, E030, E035,
-   E023, E029). Only real-data-only A/Bs remain, one per slot, each with
-   an exact no-regression check and a directional sim: after E036, H1
-   (sentinel recalibration in the predicted-parent regime; E028
-   branch-overlap sim as the channel).
-3. **Phase-2 preparation** in parallel: E036/E025 under `phase=2` on all
-   sandboxes with `score.py --phase 2`, 3600 s worst case CPU-only,
-   smoke-frame guards; fill `docs/method-4p.md` [P2].
-4. Probe map for the write-up (unhcr): 0.89 = base 0.79 + evidence
-   0.10; gated 0.892 / content 0.885 per cell; sentinel-only 0.56.
+1. **E036 read flat (0.63)** — relation-split λ parked. Real-data A/Bs
+   so far: E027, E028, E031b, E036 all flat. One candidate left with a
+   mechanism the map supports: **H1** sentinel-mass recalibration in
+   the predicted-parent regime (held-out replay on visible rows; E028's
+   branch-overlap sim as the no-regression/directional channel). Build
+   only if a cheap ceiling probe on that sim clears +0.005; otherwise
+   stop phase-1 modelling.
+2. **Phase-2 preparation is now the main line**: E025 under `phase=2`
+   on all sandboxes with `score.py --phase 2`; 3600 s worst-case
+   CPU-only run; smoke-frame guards; decide the phase-2 stack (E025 +
+   no-risk ride-alongs: E029 ensemble, E036 relation split, cap lift —
+   all sim-neutral, all harmless); fill `docs/method-4p.md` [P2].
+3. Probe map for the write-up (unhcr): 0.89 = base 0.79 + evidence
+   0.10; gated 0.892 / content 0.885 per cell; sentinel-only 0.56;
+   sandbox oracle says the base model is at the GIVEN-only ceiling.
