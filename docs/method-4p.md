@@ -168,8 +168,15 @@ hosted GPU with an automatic CPU fallback. Wall-clock on the sandbox
 | 1 (TRAIN visible, DEV scored) | 26 s | 60 s | 151 s | 241 s | 900 s |
 | 2 (TRAIN+DEV visible, TEST scored) | 30 s | 64 s | 149 s | 254 s | 3600 s |
 
-Phase-2 settings: [P2 — calibration replay cap lifted from 6,000 rows;
-seed count].
+Phase-2 settings: the phase-1 model of record unchanged. Three
+phase-2-motivated additions were measured and left out — a lifted
+calibration-replay cap (6,000 → all visible rows: +0.0000 / +0.0005 on
+the phase-1 / phase-2 household sims, flat on the leaderboard), a
+3-seed net ensemble (+0.0004 locally) and a relation-split evidence
+weight (flat on the leaderboard) — because a single no-retry
+submission is not the place for components whose measured value is
+zero. Worst case (no GPU): ≈ 250 s local CPU × the observed hosted
+slowdown (≤ 4×) ≈ 1,000 s, inside 3,600 s.
 
 ## 6. Results
 
@@ -187,7 +194,23 @@ leaderboard (Laplace-noised, rounded to 0.01) for the adopted chain:
 | E018 full-pool evidence | 0.501 / 0.455 / 0.563 | 0.63 | 0.52 / 0.49 / 0.87 |
 | E022 household weights ∘ sharp λ | 0.501 / 0.455 / 0.563 | 0.63 | 0.52 / 0.49 / 0.88 |
 | E025 + trunk capacity selection | 0.501 / 0.455 / 0.563 | 0.63 | 0.52 / 0.49 / 0.89 |
-| [P2 final] | | | |
+| phase-2 submission = E025 | 0.490 / 0.462 / 0.565 (phase-2 cells) | — | — |
+
+**Where the remaining loss sits (probe submissions, unhcr).** Four
+phase-1 slots were spent on measurement rather than rank: replacing a
+defined cell subset with the uniform vector removes exactly its
+contribution (share and the uniform vector's own skill are exact from
+the schema), and switching a component off reads its contribution.
+Results: gated items 0.892 per cell vs content items 0.885 (on the
+exact-gate instruments gated cells are twice as easy — on UNHCR the
+approximate gates make them no easier); with the model's sentinel mass
+kept and content flattened, gated cells fall to 0.56, so most gated
+skill is content prediction on asked cells; with the evidence layer
+off, UNHCR falls to 0.79 — the layer is worth +0.10. A Bayes-optimal
+oracle for the sandbox generator (replaying its random stream) puts
+the base model within 0.004 skill of the GIVEN-only ceiling on every
+sandbox, which is why base-model changes could not be validated
+locally and only the evidence layer had local headroom.
 
 The sandbox is blind to two of the adopted gains by construction
 (random marginals carry no household structure and no capacity

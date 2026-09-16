@@ -75,10 +75,12 @@ flowchart TD
     E034 --> E035
     E036["E036 λ per twin relation (same-round vs cross-round top candidate)<br/><i>parked · 2026-09-17</i>"]
     E025 --> E036
+    E037["E037 H1 ceiling: sentinel-mass recalibration in the predicted-parent regime<br/><i>rejected · 2026-09-18</i>"]
+    E028 --> E037
     classDef adopted fill:#d4edda,stroke:#28a745
     class E001,E002,E003,E004,E005,E006,E008,E010,E012,E018,E022,E025,E032,E033,E034 adopted
     classDef rejected fill:#f8d7da,stroke:#dc3545
-    class E009,E011,E016,E017,E020,E023,E031,E035 rejected
+    class E009,E011,E016,E017,E020,E023,E031,E035,E037 rejected
     classDef parked fill:#fff3cd,stroke:#ffc107
     class E007,E013,E014,E015,E019,E024,E026,E027,E028,E029,E030,E036 parked
     classDef superseded fill:#e2e3e5,stroke:#6c757d

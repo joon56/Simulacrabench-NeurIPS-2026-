@@ -211,6 +211,34 @@ Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-note
     dead, linkage abandoned, 0.92 question re-opens; +0.01 ambiguous
     (k-NN residual) — thresholds pre-registered in SCORES.md.
 
+## 2026-09-18 — phase-2 hardening pass; H1 ceiling probe
+
+- **Phase-2 hardening of the E025 assembly** (`submissions/2026-09-09-E025/`):
+  official `score.py --phase 2` PASS ×3 = 0.4902 / 0.4620 / 0.5652
+  (41,676 / 92,112 / 308,637 cells), identical to the phase-2 runner
+  (291 s local CPU incl. training, 3 instruments). Worst case without a
+  GPU: ≈ 250–290 s local × ≤ 4× hosted slowdown ≈ 1,000–1,200 s, inside
+  3,600 s. Smoke frame passes (zip checker). Decision: **the phase-2
+  submission is the E025 assembly unchanged** — 7 clean hosted runs
+  (E025 + the three probes built on it + E031b); the measured-zero
+  ride-alongs (cap lift, ensemble, relation split) stay out of a
+  no-retry submission. `docs/method-4p.md` §5/§6 updated (phase-2
+  settings, probe map, oracle).
+- **H1 ceiling probe** (sentinel-mass recalibration): per-item isotonic
+  recalibration of E025's sentinel mass against the held-out truth on
+  the E028 branch-overlap sim. In-sample: clean +0.0124, light +0.0133,
+  heavy +0.0243 — the clean number exceeds the A005 GIVEN-only bound
+  (≈ +0.0035 log), so it is isotonic optimism. **Cross-fitted (2-fold
+  by row): clean −0.0150, light −0.0143, heavy −0.0035** — even the
+  truth-fitted recalibration loses out of sample. E025's sentinel mass
+  is already calibrated; **E037 rejected at the ceiling**
+  (`tests/test_sentinel_ceiling.py`, strict xfail). Last map-supported
+  phase-1 hypothesis closed.
+- **Phase-1 modelling stops here.** Remaining phase-1 slots are kept
+  for (a) a re-run of E025 if the organizers ship the pending "<5
+  gating changes" (gate definitions change scores), (b) nothing else.
+  Effort: phase-2 packaging discipline + method write-up.
+
 ## 2026-09-17 (session 2) — E036 result: flat at 0.63; relation-split λ parked
 
 - **E036 LB Grand 0.63, no update** (after a Codabench upload 500 that

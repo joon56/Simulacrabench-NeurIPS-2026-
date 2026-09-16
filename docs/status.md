@@ -1,6 +1,6 @@
 # STATUS — read this first in a new session (kept current at every commit)
 
-Updated: 2026-09-17 (session 2). Newest log entries are inserted ABOVE the previous
+Updated: 2026-09-18. Newest log entries are inserted ABOVE the previous
 newest header inside docs/log.md (not appended at the end) — search the
 latest date.
 
@@ -51,18 +51,20 @@ latest date.
 
 ## Next session plan
 
-1. **E036 read flat (0.63)** — relation-split λ parked. Real-data A/Bs
-   so far: E027, E028, E031b, E036 all flat. One candidate left with a
-   mechanism the map supports: **H1** sentinel-mass recalibration in
-   the predicted-parent regime (held-out replay on visible rows; E028's
-   branch-overlap sim as the no-regression/directional channel). Build
-   only if a cheap ceiling probe on that sim clears +0.005; otherwise
-   stop phase-1 modelling.
-2. **Phase-2 preparation is now the main line**: E025 under `phase=2`
-   on all sandboxes with `score.py --phase 2`; 3600 s worst-case
-   CPU-only run; smoke-frame guards; decide the phase-2 stack (E025 +
-   no-risk ride-alongs: E029 ensemble, E036 relation split, cap lift —
-   all sim-neutral, all harmless); fill `docs/method-4p.md` [P2].
-3. Probe map for the write-up (unhcr): 0.89 = base 0.79 + evidence
-   0.10; gated 0.892 / content 0.885 per cell; sentinel-only 0.56;
-   sandbox oracle says the base model is at the GIVEN-only ceiling.
+1. **Phase-1 modelling is closed** (E037 was the last map-supported
+   hypothesis; A005/E030/E035/E037 ceilings, E027/E028/E031b/E036 flat
+   A/Bs). Do not open new E025 refinements. Phase-1 slots: only a
+   re-run of the E025 zip if the kit ships the pending gating changes
+   (`git fetch` in external/starter-kit; if make_sandbox / schema gates
+   change, re-run runner + score.py and resubmit `2026-09-09-E025.zip`).
+2. **Phase-2 submission = `submissions/2026-09-09-E025/main.py`
+   unchanged** — hardened: `score.py --phase 2` PASS ×3 (0.4902 /
+   0.4620 / 0.5652), runner phase 2 = 291 s local CPU, worst case no-GPU
+   ≈ 1,000–1,200 s hosted ≪ 3,600 s, smoke frame OK, 7 clean hosted
+   runs of this file. Measured-zero ride-alongs stay out. In the
+   phase-2 window (Nov 1–14): re-zip from the snapshot, run
+   check_submission_zip, submit once, attach `docs/method-4p.md`.
+3. `docs/method-4p.md`: §5/§6 now carry the phase-2 settings, the probe
+   map and the oracle; remaining work is trimming to 4 pages and the
+   license/disclosure check against the Codabench terms.
+4. Weekly: kit update check (gating changes), leaderboard intel.
