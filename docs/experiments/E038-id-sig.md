@@ -1,6 +1,6 @@
 # E038 — respondent-id structure as matching signature
 parent: E025
-status: adopted
+status: parked
 date: 2026-09-18
 
 ## Hypothesis
@@ -75,3 +75,8 @@ household key that GIVEN cannot recover. Real-data A/B:
 regularity, raise the guard). Disclosure: identifier-derived matching
 is listed in the method description as "within-dataset row matching
 using the record identifier" (organizer-permitted 2026-09-02).
+
+**LB 2026-09-19: Grand 0.63, no update ⇒ PARKED.** Real identifiers are
+opaque to the derived columns (tokens, truncations, rank blocks) or the
+matching structure they could expose is already found by GIVEN. Fifth
+flat real-data A/B (E027, E028, E031b, E036, E038).

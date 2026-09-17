@@ -45,6 +45,10 @@ one column the evidence layer never used.
   concentrated bucket — raise MIN_AGREE, drop the block columns, retest.
 - unicef / wb: identifiers sequential there too ⇒ flat.
 
-## Actual leaderboard result
+## Actual leaderboard result (2026-09-19)
 
-(pending)
+**Grand 0.63, no update (≤ E025; unhcr ≤ 0.89).** Pre-registered park
+arm: the real identifiers carry no household key / block structure that
+the derived columns can arm on (or roles were assigned so that keyed
+twins are not visible). The 0.93 cluster's +0.04 is not identifier
+recall. E038 parked; E025 stays the model of record.
