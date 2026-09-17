@@ -1,6 +1,6 @@
 # STATUS — read this first in a new session (kept current at every commit)
 
-Updated: 2026-09-19. Newest log entries are inserted ABOVE the previous
+Updated: 2026-09-20. Newest log entries are inserted ABOVE the previous
 newest header inside docs/log.md (not appended at the end) — search the
 latest date.
 
@@ -51,18 +51,20 @@ latest date.
 
 ## Next session plan
 
-1. **Record E038's reading** (`submissions/2026-09-19-E038/SCORES.md`):
-   ≥ 0.64 ⇒ identifier structure real — retune MIN_AGREE / BLOCKS, add
-   the E029 ensemble ride-along, write the disclosure paragraph; 0.63 ⇒
-   park; ≤ 0.62 ⇒ raise MIN_AGREE, drop block columns, retest.
-2. Dev-rank programme (user decision 2026-09-18: keep working the rank):
-   real-data A/Bs one per slot, each with exact local no-regression and a
-   directional sim. Queue after E038: (a) base-model tree blend (sklearn
-   HistGradientBoosting per item on unhcr, probability blend with the
-   net, w on the holdout; LB-only per A005; CPU-side ≲ 150 s local);
-   (b) evidence top-K / posterior temperature retune conditional on E038
-   arming (only if E038 reads ≥ 0.64).
-3. Phase-2 submission = E025 assembly unless a phase-1 A/B lifts the
-   best; then the lifted file after the same hardening (score.py
+1. **Submit `submissions/2026-09-20-E040.zip`** (ready: parity exact,
+   zip OK, score.py PASS ×3, runtime margin) and record the reading in
+   its SCORES.md: 0.64 ⇒ the real base model is under-fit, phase-2 file
+   gets the full E039 tree blend (all 213 items, 3,600 s); 0.63 ⇒ base
+   axis closed on real data too, E025 stays for phase 2; ≤ 0.62 or a
+   timeout ⇒ revert.
+2. **Real-data A/B scoreboard so far**: E027, E028, E031b, E036, E038
+   all flat at 0.63. E040 is the last queued candidate with a named
+   mechanism. If it is flat, no vetted lever remains — phase-1
+   modelling stops and the remaining slots are reserved for a kit
+   gating update.
+3. **Phase-2 submission = E025 assembly** unless E040 lifts the best
+   (then the E040/E039 file after the same hardening: score.py
    --phase 2, worst-case CPU-only timing, smoke frame).
-4. Weekly kit / leaderboard check; method-4p trimming.
+4. `docs/method-4p.md`: trim to 4 pages, license/disclosure check.
+   Weekly: kit update check (`git fetch` in external/starter-kit),
+   leaderboard intel.

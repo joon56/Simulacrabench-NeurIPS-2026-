@@ -34,6 +34,8 @@ V_GRID = (0.0, 0.1, 0.2, 0.3, 0.4, 0.5)
 MAX_ITER = 40
 MAX_LEAF = 15
 MIN_ROWS = 4000        # instruments smaller than this keep E025 (v = 0)
+MIN_PREDICT = 150      # only the large instrument (unhcr) gets trees
+CONTENT_ONLY = True    # E040: ungated PREDICT items only (runtime)
 LAST_V = {}            # diagnostics: instrument size -> chosen v
 
 
@@ -93,7 +95,7 @@ def predict(frame, schema, cols=None, kappas=None):
     records, items, options = _layout(frame, schema)
     predict_items = [n for n in items if records[n]["class"] == "PREDICT"]
     complete = _complete_rows(frame, items)
-    if len(complete) < MIN_ROWS:
+    if len(complete) < MIN_ROWS or len(predict_items) < MIN_PREDICT:
         return link_sharp.predict(frame, schema, cols=cols, kappas=kappas,
                                   layer_fn=hh_sharp_layer, configs=CONFIGS)
 
@@ -104,7 +106,9 @@ def predict(frame, schema, cols=None, kappas=None):
     X = _given_codes(frame, records, items)
     fit_pos = frame.index.get_indexer(fit_rows.index)
     eval_pos = frame.index.get_indexer(eval_rows.index)
-    trees = _fit_trees(X, fit_pos, predict_items, options, frame)
+    tree_items = ([n for n in predict_items if not records[n].get("gate")]
+                  if CONTENT_ONLY else predict_items)
+    trees = _fit_trees(X, fit_pos, tree_items, options, frame)
     tree_eval = _tree_proba(trees, X[eval_pos], predict_items)
 
     # E025's own net + blend on the same split, to tune v against the

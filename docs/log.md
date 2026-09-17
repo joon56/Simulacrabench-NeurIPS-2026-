@@ -211,6 +211,27 @@ Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-note
     dead, linkage abandoned, 0.92 question re-opens; +0.01 ambiguous
     (k-NN residual) — thresholds pre-registered in SCORES.md.
 
+## 2026-09-20 — E038 read flat; E040 (tree blend on unhcr content items) packaged as submission #24
+
+- **E038 LB Grand 0.63, no update** ⇒ pre-registered park arm: the real
+  identifiers carry no household key or block structure the derived
+  columns can arm on (or such twins are not visible across roles). The
+  0.93 cluster's +0.04 is NOT identifier recall. Fifth flat real-data
+  A/B (E027, E028, E031b, E036, E038); E025 stays the model of record.
+- Checked the kit's own baselines for a shared strong method that could
+  explain five teams at identical 0.52 / 0.50 / 0.93: `external_model`
+  is an LLM prior (Qwen2.5-1.5B) + gate recursion + Dirichlet backoff —
+  a weaker stack than ours, and the organizers state it cannot be read
+  on the sandbox. Nothing in the kit explains the plateau.
+- **E040 built and packaged**: E039's tree blend restricted to the 57
+  ungated items of unhcr (MIN_PREDICT 150 ⇒ unhcr only, CONTENT_ONLY).
+  Sandbox: v = 0 chosen on the holdout (log score monotone worse with
+  v), skill = E025 exactly; runtime +≈ 50 s CPU-side (170 s total),
+  inside the phase-1 budget. Parity assembled = src (0.562949); zip OK;
+  score.py PASS ×3. Readings pre-registered: 0.64 ⇒ real base model
+  under-fit ⇒ phase-2 file gets the full E039 blend; 0.63 ⇒ base model
+  at its real ceiling too, base axis closed; ≤ 0.62 or timeout ⇒ revert.
+
 ## 2026-09-19 (session 2) — E038 phase-2 hardened; E039 tree blend parked on runtime
 
 - E038 `score.py --phase 2` PASS ×3 = E025 values (sandbox ids
