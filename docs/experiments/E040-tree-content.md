@@ -1,6 +1,6 @@
 # E040 — tree blend on unhcr content items (base-model A/B within the phase-1 budget)
 parent: E039
-status: parked
+status: rejected
 date: 2026-09-20
 
 ## Hypothesis
@@ -45,3 +45,9 @@ with margin (≈ 170 s local CPU-side total vs the ~240 s timeout
 precedent). Readings pre-registered in SCORES.md: 0.64 ⇒ the phase-2
 file gets the full E039 tree blend; 0.63 ⇒ base model at its real
 ceiling, E025 stays and the base axis is closed on real data too.
+
+**LB 2026-09-20: Grand 0.63, no update ⇒ REJECTED.** The base-model
+axis is now closed on real data as well as locally (A005): neither a
+different model class (trees) nor more capacity (E015/E017/E026) nor
+variance reduction (E029) moves real unhcr. Sixth consecutive flat
+real-data A/B (E027, E028, E031b, E036, E038, E040).

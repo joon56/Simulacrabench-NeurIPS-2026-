@@ -81,14 +81,14 @@ flowchart TD
     E025 --> E038
     E039["E039 gradient-boosted trees as a second base model (blend on the holdout)<br/><i>parked · 2026-09-19</i>"]
     E025 --> E039
-    E040["E040 tree blend on unhcr content items (base-model A/B within the phase-1 budget)<br/><i>parked · 2026-09-20</i>"]
+    E040["E040 tree blend on unhcr content items (base-model A/B within the phase-1 budget)<br/><i>rejected · 2026-09-20</i>"]
     E039 --> E040
     classDef adopted fill:#d4edda,stroke:#28a745
     class E001,E002,E003,E004,E005,E006,E008,E010,E012,E018,E022,E025,E032,E033,E034 adopted
     classDef rejected fill:#f8d7da,stroke:#dc3545
-    class E009,E011,E016,E017,E020,E023,E031,E035,E037 rejected
+    class E009,E011,E016,E017,E020,E023,E031,E035,E037,E040 rejected
     classDef parked fill:#fff3cd,stroke:#ffc107
-    class E007,E013,E014,E015,E019,E024,E026,E027,E028,E029,E030,E036,E038,E039,E040 parked
+    class E007,E013,E014,E015,E019,E024,E026,E027,E028,E029,E030,E036,E038,E039 parked
     classDef superseded fill:#e2e3e5,stroke:#6c757d
     class E021 superseded
 ```

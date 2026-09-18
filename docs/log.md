@@ -211,6 +211,25 @@ Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-note
     dead, linkage abandoned, 0.92 question re-opens; +0.01 ambiguous
     (k-NN residual) — thresholds pre-registered in SCORES.md.
 
+## 2026-09-21 — E040 read flat: the base-model axis closes on real data; phase-1 search exhausted
+
+- **E040 LB Grand 0.63, no update.** Trees on the GIVEN block add
+  nothing to the net+ladder base on real unhcr content items. With
+  A005 (sandbox Bayes ceiling) this closes the base-model axis on both
+  channels. **Sixth consecutive flat real-data A/B**: E027 (evidence as
+  net input), E028 (parent-value gate decoding), E031b (replay cap),
+  E036 (relation-split λ), E038 (identifier signature), E040 (trees).
+- **Phase-1 search is exhausted by our instruments.** Every named
+  mechanism we can switch, refine or measure reads flat on real data;
+  every local channel (sandbox, household sim, ceilings A005/E030/E035/
+  E037) is closed. The 0.92–0.93 cluster's +0.03–0.04 is not explained
+  by any component in our map (base 0.79 + evidence 0.10 = 0.89).
+- Remaining phase-1 posture: hold the slots. Resubmit only if the kit
+  ships the pending "<5 gating changes" (re-run the harness first) or a
+  genuinely new hypothesis appears with a mechanism and a channel.
+  Main line: phase-2 packaging (E025 assembly, already hardened) and
+  `docs/method-4p.md`.
+
 ## 2026-09-20 — E038 read flat; E040 (tree blend on unhcr content items) packaged as submission #24
 
 - **E038 LB Grand 0.63, no update** ⇒ pre-registered park arm: the real

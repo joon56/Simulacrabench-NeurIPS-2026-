@@ -41,6 +41,11 @@ remaining loss.
 - Timeout ⇒ the +50 s CPU-side crossed the budget on a slow worker;
   revert (no diagnostic value).
 
-## Actual leaderboard result
+## Actual leaderboard result (2026-09-20)
 
-(pending)
+**Grand 0.63, no update (≤ E025; unhcr ≤ 0.89).** Pre-registered
+"base model at its real ceiling" arm: gradient-boosted trees on the
+GIVEN block add nothing to the net+ladder base on real unhcr content
+items either. Sixth flat real-data A/B. E040 parked; E025 stays the
+model of record and the phase-2 file; the full E039 blend is NOT
+carried into phase 2 (no reading justifies its runtime).
