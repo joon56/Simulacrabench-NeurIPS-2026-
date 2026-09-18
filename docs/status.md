@@ -9,16 +9,19 @@ inserted at the TOP of docs/log.md; historical dated entries are newest-first.
 - Leaderboard best: **E025 — Grand 0.63 (unicef 0.52 / wb 0.49 / unhcr 0.89)**,
   `submissions/2026-09-09-E025/`, unchanged since 2026-09-09. Field above us:
   a plateau at Grand 0.65 (unhcr 0.93) and 0.64 (unhcr 0.91–0.92), several
-  teams each, with identical unicef/wb — unexplained by anything in our map.
+  teams each, with near-identical unicef/wb — unexplained by anything in our map.
 - Adopted stack (all in `src/models/`, assembled self-contained per submission):
   hier_backoff ladder (E006) → E010 conditional gate agreement → shared_trunk
   net (E012, GPU with CPU fallback) → dup_link/hh_sharp household evidence
   layer (E018/E022: full visible pool, Fellegi–Sunter weights, softmax
   posterior, replay-calibrated λ with concentration buckets) → hh_cap
   per-instrument config {64×2, 128×2+do} (E025).
-- **Phase-1 search is exhausted by our instruments** (see "What is closed").
-  Phase-2 file = the E025 assembly, already hardened. Main line now:
-  phase-2 release preparation. `docs/method-4p.md` now renders to four verified
+- **User priority: improve DEV rank.** A006 reopens validation auditing:
+  E040 compares an out-of-sample tree with an in-sample refitted net, and
+  tuning/deployment mixture formulas differ. Historical flat scores remain;
+  the claim that all real-data base-model headroom is exhausted is withdrawn.
+  E025 stays incumbent; no improvement from these findings is measured yet.
+  Phase-2 fallback is prepared. `docs/method-4p.md` renders to four verified
   pages in `output/pdf/method-4p.pdf`; runbook: `docs/phase2-preparation.md`.
 
 ## Real-data loss map (probe submissions E032–E034, unhcr)
@@ -32,20 +35,25 @@ inserted at the TOP of docs/log.md; historical dated entries are newest-first.
 - Arithmetic and tooling: `src/models/probes.py`, `tests/test_probes.py`.
   Probes read model-component contributions only, never a dataset statistic.
 
-## What is closed (do not re-spend a session on these)
+## What has tested null (respect the scope; see A006)
 
-Local ceilings (measured, cannot clear the +0.005 bar even with oracle
-settings): base model at the sandbox Bayes ceiling (A005, `src/eval/oracle.py`,
+Local results (not universal real-data ceilings): base model at the
+sandbox Bayes ceiling (A005, `src/eval/oracle.py`,
 +0.0024); signature recall / ordinal adjacency (E030, +0.0025); evidence
 transition tables (E035, +0.0032); sentinel recalibration (E037, negative
 cross-fitted); λ/K matching refinements (E023); net variance (E029, +0.0004).
 
-Flat real-data A/Bs (six consecutive, each locally no-regression and
-sim-supported): E027 evidence-as-net-input, E028 parent-value gate decoding,
+Flat real-data A/Bs (six recorded; limited resolution and scope):
+E027 evidence-as-net-input, E028 parent-value gate decoding,
 E031b replay cap lift, E036 relation-split λ, E038 identifier signature,
 E040 tree blend. Also closed earlier: priors (E007), per-item tuning (E009),
 ordinal smoothing (E011), cross-round linkage (E013/E014), capacity beyond
 128×2 (E026).
+
+A006: E040 has validation defects and only tests 57 ungated items. E023
+tested K/weight iterations, not out-of-sample evidence calibration. E037's
+cross-fitted isotonic null is not a bound on every calibrator. Do not repeat
+unchanged experiments; first repair the evidence behind their interpretation.
 
 ## Standing rules learned the hard way
 
@@ -71,7 +79,13 @@ ordinal smoothing (E011), cross-round linkage (E013/E014), capacity beyond
 
 ## Next session plan
 
-1. **Phase-2 packaging is the main line.** The file is
+1. **DEV validation audit is the main line.** Follow
+   `docs/analysis/A006-dev-validation-audit.md`: reproduce E040's training-row
+   contamination and mixture inconsistency; then assess E025's non-cross-fitted,
+   pre-gate evidence replay. Use identical held-out and final-output objectives,
+   measure the specified candidate family's local oracle bound first, and
+   profile runtime. No new gain or real-data ceiling is asserted.
+2. **Keep the phase-2 fallback ready.** The file is
    `submissions/2026-09-09-E025/main.py` (hardened: `score.py --phase 2`
    PASS ×3 = 0.4902 / 0.4620 / 0.5652, 291 s local CPU, worst case no-GPU
    ≈ 1,000–1,200 s ≪ 3,600 s, smoke frame OK, 8 clean hosted runs). In the
@@ -81,17 +95,18 @@ ordinal smoothing (E011), cross-round linkage (E013/E014), capacity beyond
    readings: `submissions/phase2-E025-preparation/SCORES.md`. Fresh local
    rehearsal: ZIP OK, official phase-2 PASS x3 (same scores, 310.0 s),
    src parity exact x3 (268.1 s); hashes/results in adjacent `verification.json`.
-2. **Method complete; keep it synchronized.** Four rendered pages, corrected
+3. **Method complete; keep it synchronized.** Four rendered pages, corrected
    agreement prior and replay limitations, six flat A/Bs, probe precision and
    oracle. Codabench terms §7 checked: method required for every Test entry;
    top three provide research-reproduction-licensed source at award stage.
    Choose our release license before that delivery; no new license applied.
-3. **Phase-1 slots: hold.** Resubmit only if (a) the kit ships the pending
+4. **No unverified phase-1 submission.** Resume only if (a) the kit ships pending
    gating changes — then `git fetch`, re-run runner + score.py, resubmit the
    E025 zip; or (b) a genuinely new hypothesis appears with a named mechanism
    AND a channel that is not an assumed-structure sim. Six flat A/Bs say the
-   prior on any further refinement of this stack is low.
-4. Weekly: kit update check, leaderboard intel (who moved, by how much).
+   prior on blind refinements is low. A006 supplies a concrete independent
+   correctness channel for auditing failed selection, not proof of score gain.
+5. Weekly: kit update check, leaderboard intel (who moved, by how much).
    Continuation fetch: HEAD = origin/main = ee427a9; no gating update.
    Public leaderboard snapshot: six entries at unhcr 0.93 / Grand 0.65
    (two share a team name); unicef 0.52, wb 0.49–0.50. No new mechanism.

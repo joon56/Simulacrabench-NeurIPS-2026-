@@ -2,6 +2,27 @@
 
 Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-notes]].
 
+## DEV-priority continuation — A006 finds invalid closure evidence in E040
+
+- User clarified the immediate objective: improve DEV ranking. Phase-2
+  preparation remains a fallback, not the main work stream.
+- Static audit of source AND the E040 snapshot: tree blend selection evaluates
+  a tree trained without eval_rows against the final net refitted including
+  eval_rows. Tuning also mixes the whole base with trees, whereas deployment
+  mixes only the net component. These are confirmed implementation mismatches;
+  their score impact is not measured. E040's raw Grand 0.63 result is retained,
+  but its inference that the entire base-model axis is closed is withdrawn.
+- Subset sensitivity: +0.01 average skill on 57/213 items means only +0.002676
+  UNHCR, +0.000892 Grand. E040 did not test the 156 gated items.
+- E025's lambda replay compares self-excluded evidence against in-sample,
+  unconditional base predictions; deployment uses a gate-adjusted base.
+  This is a named validation mismatch worth auditing, not a demonstrated gain.
+- A005's Bayes reference is synthetic-specific; E030/E035 parameterized sim
+  bounds and E037's finite-sample isotonic fit do not close all real-data
+  matching/calibration possibilities. A006 records scoped findings, loss-map
+  relevance, candidate-family bounds, and the limits of pre-submission access.
+- No model edits, new experiment adoption, training run, or leaderboard slot.
+
 ## Handoff continuation — E025 phase-2 package rehearsal and four-page method
 
 - Continued the supplied September 21 record; the execution environment's
