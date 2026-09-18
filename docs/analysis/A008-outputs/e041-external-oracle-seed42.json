@@ -1,0 +1,347 @@
+{
+  "source": {
+    "url": "https://archive.ics.uci.edu/dataset/2/adult",
+    "download_url": "https://archive.ics.uci.edu/static/public/2/adult.zip",
+    "license": "CC BY 4.0",
+    "citation": "Becker, B. & Kohavi, R. (1996). Adult. doi:10.24432/C5XW20",
+    "sha256": "5b00264637dbfec36bdeaab5676b0b309ff9eb788d63554ca0a249491c86603d"
+  },
+  "seed": 42,
+  "rows": 5000,
+  "candidate_k": 32,
+  "source_counts": {
+    "source_rows": 32561,
+    "unique_modeled_rows": 19561
+  },
+  "split": {
+    "train_reference": 3000,
+    "selection": 1000,
+    "evaluation": 1000
+  },
+  "source_line_ids_sha256": "db0bfc391a7c49755fe72528a25678013b183bc204f6ba13c0714b5f1e69ae61",
+  "schema": {
+    "name": "observed_adult_external",
+    "scoring": {
+      "floor": 0.001
+    },
+    "items": {
+      "age_band": {
+        "class": "GIVEN",
+        "options": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ]
+      },
+      "education": {
+        "class": "GIVEN",
+        "options": [
+          "10th",
+          "11th",
+          "12th",
+          "1st-4th",
+          "5th-6th",
+          "7th-8th",
+          "9th",
+          "Assoc-acdm",
+          "Assoc-voc",
+          "Bachelors",
+          "Doctorate",
+          "HS-grad",
+          "Masters",
+          "Preschool",
+          "Prof-school",
+          "Some-college"
+        ]
+      },
+      "race": {
+        "class": "GIVEN",
+        "options": [
+          "Amer-Indian-Eskimo",
+          "Asian-Pac-Islander",
+          "Black",
+          "Other",
+          "White"
+        ]
+      },
+      "sex": {
+        "class": "GIVEN",
+        "options": [
+          "Female",
+          "Male"
+        ]
+      },
+      "native-country": {
+        "class": "GIVEN",
+        "options": [
+          "?",
+          "Cambodia",
+          "Canada",
+          "China",
+          "Columbia",
+          "Cuba",
+          "Dominican-Republic",
+          "Ecuador",
+          "El-Salvador",
+          "England",
+          "France",
+          "Germany",
+          "Greece",
+          "Guatemala",
+          "Haiti",
+          "Honduras",
+          "Hong",
+          "Hungary",
+          "India",
+          "Iran",
+          "Ireland",
+          "Italy",
+          "Jamaica",
+          "Japan",
+          "Laos",
+          "Mexico",
+          "Nicaragua",
+          "Outlying-US(Guam-USVI-etc)",
+          "Peru",
+          "Philippines",
+          "Poland",
+          "Portugal",
+          "Puerto-Rico",
+          "Scotland",
+          "South",
+          "Taiwan",
+          "Thailand",
+          "Trinadad&Tobago",
+          "United-States",
+          "Vietnam",
+          "Yugoslavia"
+        ]
+      },
+      "marital-status": {
+        "class": "PREDICT",
+        "options": [
+          "Divorced",
+          "Married-AF-spouse",
+          "Married-civ-spouse",
+          "Married-spouse-absent",
+          "Never-married",
+          "Separated",
+          "Widowed"
+        ]
+      },
+      "relationship": {
+        "class": "PREDICT",
+        "options": [
+          "Husband",
+          "Not-in-family",
+          "Other-relative",
+          "Own-child",
+          "Unmarried",
+          "Wife"
+        ]
+      },
+      "workclass": {
+        "class": "PREDICT",
+        "options": [
+          "?",
+          "Federal-gov",
+          "Local-gov",
+          "Never-worked",
+          "Private",
+          "Self-emp-inc",
+          "Self-emp-not-inc",
+          "State-gov",
+          "Without-pay"
+        ]
+      },
+      "occupation": {
+        "class": "PREDICT",
+        "options": [
+          "?",
+          "Adm-clerical",
+          "Armed-Forces",
+          "Craft-repair",
+          "Exec-managerial",
+          "Farming-fishing",
+          "Handlers-cleaners",
+          "Machine-op-inspct",
+          "Other-service",
+          "Priv-house-serv",
+          "Prof-specialty",
+          "Protective-serv",
+          "Sales",
+          "Tech-support",
+          "Transport-moving"
+        ]
+      },
+      "hours_band": {
+        "class": "PREDICT",
+        "options": [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      },
+      "income": {
+        "class": "PREDICT",
+        "options": [
+          "<=50K",
+          ">50K"
+        ]
+      },
+      "capital_gain_positive": {
+        "class": "PREDICT",
+        "options": [
+          "False",
+          "True"
+        ]
+      },
+      "capital_loss_positive": {
+        "class": "PREDICT",
+        "options": [
+          "False",
+          "True"
+        ]
+      }
+    },
+    "sections": {
+      "family": [
+        "marital-status",
+        "relationship"
+      ],
+      "employment": [
+        "workclass",
+        "occupation",
+        "hours_band"
+      ],
+      "finances": [
+        "income",
+        "capital_gain_positive",
+        "capital_loss_positive"
+      ]
+    },
+    "excluded_raw_fields": [
+      "age",
+      "education-num",
+      "fnlwgt",
+      "hours-per-week",
+      "capital-gain",
+      "capital-loss"
+    ]
+  },
+  "selected_global_policy": {
+    "k": 8,
+    "temperature": 0.5,
+    "retrieval_weight": 0.0
+  },
+  "selected_pure_retrieval_policy": {
+    "k": 32,
+    "temperature": 8.0,
+    "retrieval_weight": 1.0
+  },
+  "selection_global_log_score": -0.9985559627485666,
+  "methods": {
+    "categorical_logistic": {
+      "log_score": -1.027552729860917,
+      "skill": 0.32111331412291333,
+      "uniform_reference": 1.5135850374401905,
+      "delta_log_vs_fixed": 0.0,
+      "delta_skill_vs_fixed": 0.0,
+      "delta_skill_div3_proxy": 0.0
+    },
+    "fixed_global_retrieval": {
+      "log_score": -1.145159986651122,
+      "skill": 0.2434121913706001,
+      "uniform_reference": 1.5135850374401905,
+      "delta_log_vs_fixed": -0.1176072567902049,
+      "delta_skill_vs_fixed": -0.07770112275231322,
+      "delta_skill_div3_proxy": -0.025900374250771074
+    },
+    "fixed_global_retrieval_blend": {
+      "log_score": -1.027552729860917,
+      "skill": 0.32111331412291333,
+      "uniform_reference": 1.5135850374401905,
+      "delta_log_vs_fixed": 0.0,
+      "delta_skill_vs_fixed": 0.0,
+      "delta_skill_div3_proxy": 0.0
+    },
+    "section_policy_oracle": {
+      "log_score": -0.8942038599020228,
+      "skill": 0.40921465409414937,
+      "uniform_reference": 1.5135850374401905,
+      "delta_log_vs_fixed": 0.13334886995889428,
+      "delta_skill_vs_fixed": 0.08810133997123604,
+      "delta_skill_div3_proxy": 0.029367113323745347
+    },
+    "section_convex_oracle": {
+      "log_score": -0.23419668550770673,
+      "skill": 0.8452702162649642,
+      "uniform_reference": 1.5135850374401905,
+      "delta_log_vs_fixed": 0.7933560443532104,
+      "delta_skill_vs_fixed": 0.5241569021420509,
+      "delta_skill_div3_proxy": 0.17471896738068363
+    }
+  },
+  "sections": {
+    "family": {
+      "items": [
+        "marital-status",
+        "relationship"
+      ],
+      "mean_convex_dual_gap_nats": 2.606305726793323e-09,
+      "max_convex_dual_gap_nats": 9.957519275793913e-07,
+      "iterations": 345,
+      "base_log_score": -1.2161932040738288,
+      "fixed_log_score": -1.2161932040738288,
+      "policy_oracle_log_score": -1.0354642300419434,
+      "convex_oracle_log_score": -0.18666384638948755
+    },
+    "employment": {
+      "items": [
+        "workclass",
+        "occupation",
+        "hours_band"
+      ],
+      "mean_convex_dual_gap_nats": 1.2487186169529707e-09,
+      "max_convex_dual_gap_nats": 9.993597693824796e-07,
+      "iterations": 1363,
+      "base_log_score": -1.5632713438142585,
+      "fixed_log_score": -1.5632713438142585,
+      "policy_oracle_log_score": -1.3971910169902961,
+      "convex_oracle_log_score": -0.47139749598483954
+    },
+    "finances": {
+      "items": [
+        "income",
+        "capital_gain_positive",
+        "capital_loss_positive"
+      ],
+      "mean_convex_dual_gap_nats": 5.585177597617896e-07,
+      "max_convex_dual_gap_nats": 0.0005581919029684634,
+      "iterations": 2000,
+      "base_log_score": -0.36607379976563403,
+      "fixed_log_score": -0.36607379976563403,
+      "policy_oracle_log_score": -0.29704312272046896,
+      "convex_oracle_log_score": -0.028684434442719977
+    }
+  },
+  "convex_mean_dual_gap_nats": 2.105640058237268e-07,
+  "oracle_labels_used": true,
+  "per_cell_oracle": false,
+  "leakage_checks": {
+    "train_selection_evaluation_disjoint": true,
+    "all_query_rows_excluded_from_reference_bank": true,
+    "all_query_rows_excluded_from_baseline_fit": true,
+    "modeled_full_row_duplicates_removed_before_split": true,
+    "raw_target_fields_absent_from_given": true,
+    "candidate_rarity_fitted_on_train_only": true,
+    "query_target_masking_preserves_candidates_scores_and_baseline": true,
+    "global_policy_selected_on_selection_only": true
+  },
+  "interpretation": "External observed-data candidate-family headroom, not HSCC forecast. Oracle reads evaluation answers; no claim those choices are learnable from GIVEN.",
+  "elapsed_seconds": 3.795531200001278
+}

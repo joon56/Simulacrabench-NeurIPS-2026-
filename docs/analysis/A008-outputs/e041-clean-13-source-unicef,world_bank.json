@@ -1,0 +1,28 @@
+{
+  "case": "clean",
+  "seed": 13,
+  "assembly": "None",
+  "incumbent_sha256": "00793cf9d720d6f7511ffd738935206b3a5401f2454255409429db8d55e991b9",
+  "instruments": {
+    "unicef": {
+      "baseline_skill": 0.5006484230707156,
+      "candidate_skill": 0.5006484230707156,
+      "delta_skill": 0.0,
+      "delta_log": 0.0,
+      "baseline_seconds": 32.63978869999846,
+      "candidate_seconds": 29.791680500002258,
+      "max_probability_delta": 0.0,
+      "diagnostics": {}
+    },
+    "world_bank": {
+      "baseline_skill": 0.45471730736298255,
+      "candidate_skill": 0.45471730736298255,
+      "delta_skill": 0.0,
+      "delta_log": 0.0,
+      "baseline_seconds": 86.4857219000005,
+      "candidate_seconds": 87.94073229999776,
+      "max_probability_delta": 0.0,
+      "diagnostics": {}
+    }
+  }
+}

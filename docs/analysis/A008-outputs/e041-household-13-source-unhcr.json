@@ -1,0 +1,98 @@
+{
+  "case": "household",
+  "seed": 13,
+  "assembly": "None",
+  "incumbent_sha256": "00793cf9d720d6f7511ffd738935206b3a5401f2454255409429db8d55e991b9",
+  "instruments": {
+    "unhcr": {
+      "baseline_skill": 0.5540383426541866,
+      "candidate_skill": 0.5520125312404893,
+      "delta_skill": -0.002025811413697287,
+      "delta_log": -0.0025560720134449877,
+      "baseline_seconds": 283.66183420000016,
+      "candidate_seconds": 280.64553700000033,
+      "max_probability_delta": 0.4727569672266741,
+      "diagnostics": {
+        "sections": [
+          {
+            "selected": true,
+            "gain_log": 0.08297148723868272,
+            "standard_error": 0.007203676073961591,
+            "old_share": 0.5,
+            "new_share": 0.8084994075717634,
+            "iterations": 16
+          },
+          {
+            "selected": true,
+            "gain_log": 0.04040879717103287,
+            "standard_error": 0.002361068618206837,
+            "old_share": 0.5,
+            "new_share": 0.789040248004071,
+            "iterations": 15
+          },
+          {
+            "selected": false,
+            "gain_log": 0.001872078485083559,
+            "standard_error": 0.004133909931246342,
+            "old_share": 0.25,
+            "new_share": 0.5474693165335118,
+            "iterations": 24
+          },
+          {
+            "selected": true,
+            "gain_log": 0.05078861011327923,
+            "standard_error": 0.009706250096895333,
+            "old_share": 0.5,
+            "new_share": 0.8367247414751978,
+            "iterations": 17
+          },
+          {
+            "selected": true,
+            "gain_log": 0.0717394978152644,
+            "standard_error": 0.00955188720434365,
+            "old_share": 0.5,
+            "new_share": 0.8370266490496604,
+            "iterations": 17
+          },
+          {
+            "selected": true,
+            "gain_log": 0.0704971672562794,
+            "standard_error": 0.007663515649439318,
+            "old_share": 0.5,
+            "new_share": 0.8180315152439993,
+            "iterations": 15
+          },
+          {
+            "selected": true,
+            "gain_log": 0.11629458983980925,
+            "standard_error": 0.005832080644384665,
+            "old_share": 0.5,
+            "new_share": 0.7976451528647873,
+            "iterations": 20
+          },
+          {
+            "selected": true,
+            "gain_log": 0.04369019967145613,
+            "standard_error": 0.003096221060100116,
+            "old_share": 0.5,
+            "new_share": 0.8021038229016572,
+            "iterations": 13
+          }
+        ],
+        "active": [
+          0,
+          1,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "fit_rows": 1200,
+        "selection_rows": 800,
+        "reference_rows": 6471,
+        "replay_rows": 800
+      }
+    }
+  }
+}

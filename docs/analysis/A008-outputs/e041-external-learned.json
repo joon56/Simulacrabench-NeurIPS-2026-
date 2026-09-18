@@ -1,0 +1,343 @@
+{
+  "revision": "v2: reviewed core selector compares incumbent top10 to new top32; external protocol unchanged, including its fixed top32 comparator. v1 outputs preserved. Correction was not audit-driven tuning.",
+  "protocol": "Fixed before audit: top32 bank-only collision rarity; production fit_sections defaults and active section selection; same honest logistic base for both retrieval arms; per-section alpha in [0,.1,.25,.5,.75,1] chosen on selection only. No audit-driven parameter changes.",
+  "limitations": "External distinct Adult profiles, not HSCC forecast. This tests fit_sections with honest held-out logistic probabilities. Production retains E025 legacy lambda replay; that separate limitation is not exercised here.",
+  "model_sha256": "c374daff2dd4972a384b164743011831c824bc757762baf24ef3192c2a53701e",
+  "runs": [
+    {
+      "seed": 41,
+      "source_counts": {
+        "source_rows": 32561,
+        "unique_modeled_rows": 19561
+      },
+      "source_line_ids_sha256": "45143b68f2e83b6853345d603bd0aaec78f3cbc33cc840a4c720f2bad5c3d5fd",
+      "split": {
+        "bank": 2000,
+        "metric_fit": 1000,
+        "selection": 1000,
+        "audit": 1000
+      },
+      "initial_given_weights": {
+        "age_band": 1.6156924312219914,
+        "education": 1.8708578728969922,
+        "race": 0.48333773461201,
+        "sex": 0.6227819178993819,
+        "native-country": 0.39157847526091566
+      },
+      "learned_given_weights": {
+        "family": {
+          "age_band": 2.0688071581399825,
+          "education": 0.7790593631318995,
+          "race": 1.3145097789823892,
+          "sex": 2.8783416924117966,
+          "native-country": 0.09968289623507691
+        },
+        "employment": {
+          "age_band": 0.7251674660679807,
+          "education": 1.5659582334601065,
+          "race": 0.0,
+          "sex": 1.5241451107818382,
+          "native-country": 0.08488607355555465
+        },
+        "finances": {
+          "age_band": 0.848782623437322,
+          "education": 2.662813920881749,
+          "race": 1.1159259139462068,
+          "sex": 1.3184104286875875,
+          "native-country": 0.0
+        }
+      },
+      "active_sections": [
+        "family",
+        "employment",
+        "finances"
+      ],
+      "core_selection_diagnostics": {
+        "family": {
+          "selected": true,
+          "gain_log": 0.0845022938288107,
+          "standard_error": 0.009058771244528363,
+          "old_share": 0.5,
+          "new_share": 0.8177175123727327,
+          "iterations": 9
+        },
+        "employment": {
+          "selected": true,
+          "gain_log": 0.02704890574817709,
+          "standard_error": 0.005048574174688698,
+          "old_share": 0.25,
+          "new_share": 0.5737414514092053,
+          "iterations": 9
+        },
+        "finances": {
+          "selected": true,
+          "gain_log": 0.004843120832898372,
+          "standard_error": 0.0021243194920446376,
+          "old_share": 0.5,
+          "new_share": 0.6429955380068028,
+          "iterations": 6
+        }
+      },
+      "fixed_retrieval_alpha": {
+        "family": 0.1,
+        "employment": 0.1,
+        "finances": 0.1
+      },
+      "supervised_retrieval_alpha": {
+        "family": 0.25,
+        "employment": 0.1,
+        "finances": 0.1
+      },
+      "audit_methods": {
+        "categorical_logistic": {
+          "log_score": -1.0099833887790723,
+          "skill": 0.332721080219464,
+          "uniform_reference": 1.5135850374401905
+        },
+        "fixed_retrieval_base": {
+          "log_score": -1.0093714018467954,
+          "skill": 0.33312540962094384,
+          "uniform_reference": 1.5135850374401905
+        },
+        "supervised_section_retrieval_base": {
+          "log_score": -1.0084710688683929,
+          "skill": 0.3337202443716396,
+          "uniform_reference": 1.5135850374401905
+        }
+      },
+      "audit_deltas": {
+        "categorical_logistic_vs_base": {
+          "delta_log": 0.0,
+          "delta_skill": 0.0,
+          "delta_skill_div3_proxy": 0.0,
+          "paired_log_standard_error": 0.0,
+          "skill_95pct_normal_interval": [
+            0.0,
+            0.0
+          ]
+        },
+        "fixed_retrieval_base_vs_base": {
+          "delta_log": 0.0006119869322768512,
+          "delta_skill": 0.0004043294014797196,
+          "delta_skill_div3_proxy": 0.00013477646715990654,
+          "paired_log_standard_error": 0.0005655360165733805,
+          "skill_95pct_normal_interval": [
+            -0.000328005132137541,
+            0.0011366639350969803
+          ]
+        },
+        "supervised_section_retrieval_base_vs_base": {
+          "delta_log": 0.0015123199106792625,
+          "delta_skill": 0.000999164152175376,
+          "delta_skill_div3_proxy": 0.00033305471739179197,
+          "paired_log_standard_error": 0.0008829782833118915,
+          "skill_95pct_normal_interval": [
+            -0.0001442386910624251,
+            0.002142566995413177
+          ]
+        },
+        "supervised_vs_fixed": {
+          "delta_log": 0.000900332978402411,
+          "delta_skill": 0.0005948347506956561,
+          "delta_skill_div3_proxy": 0.00019827825023188534,
+          "paired_log_standard_error": 0.0005017388333713402,
+          "skill_95pct_normal_interval": [
+            -5.488633472878037e-05,
+            0.0012445558361200925
+          ]
+        }
+      },
+      "sections": {
+        "family": {
+          "categorical_logistic": -1.2007854371604565,
+          "fixed_retrieval_base": -1.2000164385095178,
+          "supervised_section_retrieval_base": -1.1972355741396576
+        },
+        "employment": {
+          "categorical_logistic": -1.5297091156494524,
+          "fixed_retrieval_base": -1.5288991640321885,
+          "supervised_section_retrieval_base": -1.5282882247781575
+        },
+        "finances": {
+          "categorical_logistic": -0.3630562963211023,
+          "fixed_retrieval_base": -0.36274694855292056,
+          "supervised_section_retrieval_base": -0.36281090944445227
+        }
+      },
+      "leakage_checks": {
+        "all_partitions_disjoint": true,
+        "audit_label_mask_preserves_metric_and_active_sections": true,
+        "selection_label_change_preserves_fitted_metric": true,
+        "query_label_mask_preserves_base_and_evidence_predictions": true
+      },
+      "elapsed_seconds": 2.198664399998961
+    },
+    {
+      "seed": 42,
+      "source_counts": {
+        "source_rows": 32561,
+        "unique_modeled_rows": 19561
+      },
+      "source_line_ids_sha256": "db0bfc391a7c49755fe72528a25678013b183bc204f6ba13c0714b5f1e69ae61",
+      "split": {
+        "bank": 2000,
+        "metric_fit": 1000,
+        "selection": 1000,
+        "audit": 1000
+      },
+      "initial_given_weights": {
+        "age_band": 1.5998960808469815,
+        "education": 1.901683716217143,
+        "race": 0.43094062083488577,
+        "sex": 0.589778647582912,
+        "native-country": 0.3783218422863236
+      },
+      "learned_given_weights": {
+        "family": {
+          "age_band": 2.293953697431239,
+          "education": 0.878737026814132,
+          "race": 0.4912708328541159,
+          "sex": 3.118882325739114,
+          "native-country": 0.0
+        },
+        "employment": {
+          "age_band": 0.9387407841455346,
+          "education": 2.537014860560826,
+          "race": 0.0,
+          "sex": 2.2020698634287252,
+          "native-country": 0.0
+        },
+        "finances": {
+          "age_band": 0.22104035359804997,
+          "education": 1.9828064334759075,
+          "race": 1.2275840047847344,
+          "sex": 1.109740399842264,
+          "native-country": 0.4649379697941001
+        }
+      },
+      "active_sections": [
+        "family",
+        "employment"
+      ],
+      "core_selection_diagnostics": {
+        "family": {
+          "selected": true,
+          "gain_log": 0.08014258368628092,
+          "standard_error": 0.00835263073500554,
+          "old_share": 0.5,
+          "new_share": 0.8079019752433507,
+          "iterations": 10
+        },
+        "employment": {
+          "selected": true,
+          "gain_log": 0.0352517158868879,
+          "standard_error": 0.005123385479285233,
+          "old_share": 0.25,
+          "new_share": 0.5561747960498884,
+          "iterations": 9
+        },
+        "finances": {
+          "selected": false,
+          "gain_log": -0.0014911467445072875,
+          "standard_error": 0.0027039324794959677,
+          "old_share": 0.5,
+          "new_share": 0.78440117636701,
+          "iterations": 7
+        }
+      },
+      "fixed_retrieval_alpha": {
+        "family": 0.0,
+        "employment": 0.1,
+        "finances": 0.1
+      },
+      "supervised_retrieval_alpha": {
+        "family": 0.1,
+        "employment": 0.1,
+        "finances": 0.1
+      },
+      "audit_methods": {
+        "categorical_logistic": {
+          "log_score": -1.027552729860917,
+          "skill": 0.32111331412291333,
+          "uniform_reference": 1.5135850374401905
+        },
+        "fixed_retrieval_base": {
+          "log_score": -1.027159322170534,
+          "skill": 0.3213732319211551,
+          "uniform_reference": 1.5135850374401905
+        },
+        "supervised_section_retrieval_base": {
+          "log_score": -1.0265129163141486,
+          "skill": 0.32180030132287074,
+          "uniform_reference": 1.5135850374401905
+        }
+      },
+      "audit_deltas": {
+        "categorical_logistic_vs_base": {
+          "delta_log": 0.0,
+          "delta_skill": 0.0,
+          "delta_skill_div3_proxy": 0.0,
+          "paired_log_standard_error": 0.0,
+          "skill_95pct_normal_interval": [
+            0.0,
+            0.0
+          ]
+        },
+        "fixed_retrieval_base_vs_base": {
+          "delta_log": 0.000393407690383048,
+          "delta_skill": 0.00025991779824170833,
+          "delta_skill_div3_proxy": 8.663926608056944e-05,
+          "paired_log_standard_error": 0.0004440216372322505,
+          "skill_95pct_normal_interval": [
+            -0.0003150630501730278,
+            0.0008348986466564445
+          ]
+        },
+        "supervised_section_retrieval_base_vs_base": {
+          "delta_log": 0.0010398135467680407,
+          "delta_skill": 0.0006869871999571277,
+          "delta_skill_div3_proxy": 0.00022899573331904257,
+          "paired_log_standard_error": 0.0005735593911820046,
+          "skill_95pct_normal_interval": [
+            -5.573711278975429e-05,
+            0.0014297115127040096
+          ]
+        },
+        "supervised_vs_fixed": {
+          "delta_log": 0.000646405856384993,
+          "delta_skill": 0.00042706940171541953,
+          "delta_skill_div3_proxy": 0.00014235646723847318,
+          "paired_log_standard_error": 0.0003515856157919284,
+          "skill_95pct_normal_interval": [
+            -2.8212455534976172e-05,
+            0.0008823512589658152
+          ]
+        }
+      },
+      "sections": {
+        "family": {
+          "categorical_logistic": -1.2161932040738288,
+          "fixed_retrieval_base": -1.2161932040738288,
+          "supervised_section_retrieval_base": -1.2146860043633692
+        },
+        "employment": {
+          "categorical_logistic": -1.5632713438142585,
+          "fixed_retrieval_base": -1.5627859439805343,
+          "supervised_section_retrieval_base": -1.5620669948371473
+        },
+        "finances": {
+          "categorical_logistic": -0.36607379976563403,
+          "fixed_retrieval_base": -0.36551011242500353,
+          "supervised_section_retrieval_base": -0.36551011242500353
+        }
+      },
+      "leakage_checks": {
+        "all_partitions_disjoint": true,
+        "audit_label_mask_preserves_metric_and_active_sections": true,
+        "selection_label_change_preserves_fitted_metric": true,
+        "query_label_mask_preserves_base_and_evidence_predictions": true
+      },
+      "elapsed_seconds": 2.2434111000002304
+    }
+  ]
+}

@@ -169,3 +169,48 @@ With UNICEF .52 and WB .50, H .93/.94/.95 gives Grand arithmetic
 .6500/.6533/.6567. Thus H .95 with WB .50 is a .66 display scenario, whereas
 WB .49 requires H .96 for the same mean. Neither target is a forecast;
 even achieving it would not guarantee winning a moving leaderboard.
+
+## v3 - Actual E041 implementation and next-day artifact decision
+
+The user's request to build the next-day artifact authorized implementation.
+E041 is the bounded section-specific diagonal agreement metric, not neural
+TabR. Its initial donor bank is frozen to 32 candidates per query. Pre-estimator
+clean and observed-data oracle screens cleared their scope-specific gates,
+but these permissive headroom checks did not establish learnable improvement.
+
+Actual production comparison: clean UNHCR -.000486145 skill, UNICEF and WB
+exactly unchanged; existing household sim UNHCR -.002025811. On observed UCI
+Adult census profiles, the metric in an honest logistic-base wrapper improved
+only +.000594835 / +.000427069 skill over fixed retrieval on seeds 41 / 42,
+with both paired 95% intervals including zero. Adult is an accessible external
+channel, not humanitarian microdata or an HSCC score estimator. Its protocol
+deduplicates coarsened profiles and lacks approximate UNHCR gates. Full
+source attribution, split definitions, source hashes and versioned results
+are retained in `A008-outputs/e041-external-*`.
+
+Review found and corrected target reuse between metric fitting and lambda
+replay, top10 incumbent proxy construction and bank-order ties. The final
+implementation retains in-sample incumbent base replay and a marginal-base
+section selector; it does not claim to implement the broader honest
+final-pipeline calibration design. These limits need materially different
+experiments, not a post-hoc assertion that fixing them would yield .65.
+
+E041's self-contained E025-based archive passes ZIP checking, official phase-1
+score.py on all three schemas, and exact every-vector source parity. CPU
+score time sums to 320.605 seconds. Eleven invariant tests pass. Nevertheless
+the experiment is rejected and the archive marked DO NOT SUBMIT because
+performance qualification failed. E025 remains incumbent; no slot was spent.
+
+E042 then screened a narrower final-output evidence-blend family with an
+oracle before any estimator: one fixed extra share per item over unchanged
+E025 donor evidence, no descendant propagation. Existing sim finite-grid
+optimum +.004569680 log (+.003621694 UNHCR skill) missed its registered .005
+log gate. Parked without fitting or packaging an estimator. This does not
+close all out-of-sample calibrators.
+
+The independent pretrained tabular-base proposal remains unimplemented and
+unmeasured. It is a separate next research branch, conditional on offline
+availability, licensing, runtime and honest validation, not a ready next-day
+submission. No measured evidence from this continuation supports a .65
+forecast. Actual E041/E042 experiment assignments supersede A007's earlier
+provisional names; historical proposals remain unchanged for traceability.

@@ -36,7 +36,7 @@ def hh_inject_rho(frame, schema, frac, seed, lo, hi):
             continue
         rho = rng.uniform(lo, hi)
         vals = list(r["values"])
-        cur = twins[item].to_numpy(dtype=object)
+        cur = twins[item].to_numpy(dtype=object, copy=True)
         keep = rng.random(len(twins)) < rho
         for i in np.flatnonzero(~keep):
             if pd.isna(cur[i]) or cur[i] == gated_value:

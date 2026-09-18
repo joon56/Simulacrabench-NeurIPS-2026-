@@ -1,0 +1,53 @@
+{
+  "channel": "unchanged official clean sandbox; not real-data ceiling",
+  "family": "query-specific section-shared simplex over frozen E025 + 32 donors",
+  "baseline_skill": 0.5629488737050165,
+  "baseline_seconds": 184.61763799999972,
+  "oracle_feasible_skill": 0.7974477865289854,
+  "oracle_upper_skill": 0.7975644646651161,
+  "delta_unhcr": 0.23449891282396898,
+  "delta_grand": 0.07816630427465633,
+  "section_results": {
+    "2": {
+      "items": 6,
+      "oracle_log": -0.21761665365115462,
+      "upper_log": -0.21761621247136612
+    },
+    "3": {
+      "items": 61,
+      "oracle_log": -0.3482205968003338,
+      "upper_log": -0.3479511827178908
+    },
+    "7a": {
+      "items": 24,
+      "oracle_log": -0.10533661057553614,
+      "upper_log": -0.10533374220844686
+    },
+    "7b": {
+      "items": 39,
+      "oracle_log": -0.08014806997487718,
+      "upper_log": -0.08011228981295025
+    },
+    "7c": {
+      "items": 11,
+      "oracle_log": -0.09853875902337592,
+      "upper_log": -0.09852685796185721
+    },
+    "4": {
+      "items": 12,
+      "oracle_log": -0.38923892120431075,
+      "upper_log": -0.3892267510050748
+    },
+    "5": {
+      "items": 10,
+      "oracle_log": -0.6015912502777893,
+      "upper_log": -0.6015389704210177
+    },
+    "6": {
+      "items": 50,
+      "oracle_log": -0.2892968760885756,
+      "upper_log": -0.28904374211210226
+    }
+  },
+  "seconds": 191.02293719999943
+}

@@ -25,11 +25,14 @@ inserted at the TOP of docs/log.md; historical dated entries are newest-first.
   E025 stays incumbent; no improvement from these findings is measured yet.
   Phase-2 fallback is prepared. `docs/method-4p.md` renders to four verified
   pages in `output/pdf/method-4p.pdf`; runbook: `docs/phase2-preparation.md`.
-- **Latest objective: win, with new methods allowed.** A008 proposes supervised
-  section-specific retrieval as the main research hypothesis and an independent
-  pretrained tabular base as a challenger. Neither is implemented or scored.
-  Grand .65 is not a guarantee of first place; H .94-.96 is a target scenario,
-  not a forecast. A007's repairs remain validation infrastructure.
+- **Latest candidate E041 rejected locally.** Supervised section-specific
+  diagonal retrieval: clean UNHCR -.000486 skill, existing household sim
+  -.002026. Observed Adult audit gains +.000595 / +.000427 are inconclusive.
+  `output/dev/E041.zip` passes checker, official phase-1 x3 and exact source
+  parity (320.6 s CPU total), but **is not qualified for tomorrow's slot**.
+  E042 final-evidence blend stopped at its oracle: +.004570 log < .005.
+  No upload or new hosted score. A008's independent pretrained base remains
+  unimplemented; the broader retrieval family is not universally ruled out.
 - **WB is a secondary research target, not a demonstrated ceiling at .49.**
   Screen the independent tabular base on WB locally as well. With controls
   .52/.50, H .95 gives mean .6567 (about Grand .66); with WB .49 it needs
@@ -72,7 +75,8 @@ unchanged experiments; first repair the evidence behind their interpretation.
 
 - Hosted worker speed varies day to day; ~240 s local CPU has timed out. Net
   training runs on the worker's H100 (confirmed E025–E028), so CPU-side work
-  should stay ≲ 150 s local; training count is free.
+  should stay ≲ 150 s local as a historical heuristic. Training is not free:
+  profile import, fitting and all instruments against the shared time budget.
 - Phase-1 leaderboard shows **Grand only** unless the best improves. Every probe
   or A/B must therefore touch ONE instrument (unhcr, detected by public schema
   item names) so Δ_unhcr = 3·Δ_Grand; resolution ±0.015–0.03.
@@ -92,16 +96,17 @@ unchanged experiments; first repair the evidence behind their interpretation.
 
 ## Next session plan
 
-1. **Winning-strategy research is the main line.** Follow
-   `docs/analysis/A008-winning-strategy-hypotheses.md`: establish a non-injected
-   screening channel and scoped retrieval oracle before building a supervised
-   matcher; independently screen a pretrained tabular base within runtime.
-   No new score claim or ready submission. Preserve validation requirements in
-   `docs/analysis/A007-submission-history-and-dev-plan.md` (all 24 submission
-   scorecards and full log reviewed). Its E041/E042 IDs remain provisional and
-   unimplemented; register actual experiments only when execution begins.
-   Separate selection/evaluation, all packaging checks, UNHCR only, no
-   automatic daily upload. E025 remains the measured fallback.
+1. **Winning-strategy research is the main line; no qualified new submission.**
+   Read A008 v3 and E041/E042 results before more work. UCI Adult now supplies
+   an observed, non-injected screening channel; its domain and profile-sampling
+   limits preclude an HSCC forecast. Do not repeat diagonal-weight or fixed
+   final-share tuning. Next independent family: screen the pretrained tabular
+   base's offline/runtime feasibility and held-out complementarity, with an
+   oracle before estimator work. Preserve the A007 validation requirements.
+   Its provisional experiment names were superseded: actual E041 is retrieval,
+   actual E042 is the final-evidence blend oracle. New work needs a new ID.
+   UNHCR-only initial hosted test, separate selection/evaluation, no automatic
+   daily upload. E025 remains the measured fallback.
 2. **Keep the phase-2 fallback ready.** The file is
    `submissions/2026-09-09-E025/main.py` (hardened: `score.py --phase 2`
    PASS ×3 = 0.4902 / 0.4620 / 0.5652, 291 s local CPU, worst case no-GPU

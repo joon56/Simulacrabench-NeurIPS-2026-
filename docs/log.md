@@ -2,6 +2,40 @@
 
 Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-notes]].
 
+## Next-day artifact continuation - E041 verified but rejected; E042 oracle stopped
+
+- User requested tomorrow's artifact. Registered E041 before execution, then
+  built supervised section-specific diagonal retrieval, UNHCR only. Oracle
+  headroom cleared the screen; actual learned gains did not. The historical
+  A007 provisional E041/E042 assignments are superseded by these real records.
+- Clean: UNICEF .500648423 and WB .454717307 exactly equal E025, all vectors;
+  UNHCR .562948874 to .562462729 (-.000486145). Mean delta -.000162048.
+  Existing household sim seed13: .554038343 to .552012531 (-.002025811 skill,
+  -.002556072 log). No favourable new simulator or post-audit weight tuning.
+- Observed UCI Adult census, CC BY 4.0, independent four-way split: actual
+  learned-minus-fixed audit skill +.000594835 / +.000427069 on seeds 41 / 42;
+  both paired 95% intervals include zero. Clean and external oracle gaps were
+  permissive headroom, not learnability evidence. No external rows or weights
+  in the archive. Source/protocol and every version are in A008-outputs.
+- Review fixed new-metric fitting/replay label reuse, incumbent top10 proxy,
+  and bank-order ties. Eleven invariant tests pass. The old base replay and
+  proxy/full-pipeline selector mismatch remain explicit limitations, not a
+  proven explanation of failure. Pandas helper now copies its writable array;
+  existing household simulator semantics and old model modules are unchanged.
+- `output/dev/E041.zip`: checker PASS; isolated official phase-1 scorer PASS
+  x3; source/extracted snapshot every-probability parity exact x3. Total CPU
+  scoring 320.605 s at two threads. SHA256
+  1502ebad20e85ae57db617fa6d202b9e199594c1c043acd6d0d1d52102362a50.
+  **Technical validity is not adoption: E041 rejected, archive DO NOT SUBMIT.**
+  Preregistered arms and full checks: submissions/2026-09-19-E041/SCORES.md.
+- Registered E042 fallback oracle over one fixed final evidence share per
+  item, no parent propagation. Existing sim: +.004569680 log / +.003621694
+  UNHCR skill / +.001207231 mean equivalent. Below .005 registered log gate;
+  parked without estimator. This finite family does not bound all calibration.
+- E025 stays incumbent, no hosted result and no daily slot used. Execution
+  clock Sep18; snapshot Sep19 means the requested next-day preparation, not
+  relabeling the supplied historical Sep21 handoff. No supported .65 forecast.
+
 ## Leaderboard screenshot continuation - WB .50 is part of the winning target
 
 - User supplied a leaderboard screenshot: three leading rows at
