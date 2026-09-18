@@ -93,3 +93,20 @@ route passes. Preserve code and `output/dev/E041.zip` as a technically checked
 research artifact; do not submit it as a qualified improvement. E025 remains
 incumbent. No hosted score or daily slot used. Snapshot, preregistered reading
 arms and machine-readable verification are in `submissions/2026-09-19-E041/`.
+
+### Subsequent user direction: one exploratory slot
+
+The user challenged leaving expiring daily slots unused and asked to use them
+for verification. Local adoption stays rejected; the earlier no-submission
+recommendation is superseded. The unchanged, technically verified E041 archive
+is now the next-day exploratory candidate. This separates adoption evidence
+from the value of measuring an untested pipeline on actual DEV data.
+
+Broad evidence ablation is already measured (E034); supervised section metric
+transfer is not. Clean no-regression passes, the independent observed-data
+screen exists but is inconclusive, and negative household simulation evidence
+does not establish real-data failure. One hosted reading tests this complete
+configuration, not the metric in isolation. A flat result can be uninformative;
+the operational decision is to park this configuration rather than repeatedly
+tune against a rounded score. No .65 forecast or automatic upload. Updated
+pre-upload arms and the unchanged archive hash are in the scorecard.

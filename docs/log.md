@@ -2,6 +2,28 @@
 
 Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-notes]].
 
+## Slot-use correction - E041 ready for one exploratory DEV reading
+
+- User challenged withholding an expiring daily slot and preferred using it
+  for verification. Corrected the decision rule: failed local model adoption
+  does not automatically imply zero value from a hosted exploratory test.
+- E041's ZIP, source, measured outcomes and performance_qualified=false stay
+  unchanged. Technical checks and clean no-regression passed. The household
+  simulation loss and weak Adult audit remain negative/inconclusive evidence,
+  not proof of failure on real DEV. E041 remains rejected for local adoption.
+- Selected the already verified E041 pipeline for one next-day exploratory
+  UNHCR-only A/B. E034 measured evidence OFF; no hosted experiment has measured
+  this supervised section metric. Repeating broad ablations is less useful,
+  and the independent pretrained base is not yet prepared. This is an
+  exploration judgment, not a claim of optimal information value.
+- Updated SCORES.md before upload: .64 tentative positive, .65+ large positive,
+  .63 requires checking a best update and is otherwise inconclusive, .62 adverse
+  but near resolution, <=.61 more clearly adverse. No result identifies the
+  metric separately from bank/selector/replay changes. A flat result parks
+  this configuration; no daily small-weight grid. No supported .65 forecast.
+- Earlier DO NOT SUBMIT notices superseded in the current scorecard and archive
+  README. No automatic upload or daily slot used; awaiting the actual reading.
+
 ## Next-day artifact continuation - E041 verified but rejected; E042 oracle stopped
 
 - User requested tomorrow's artifact. Registered E041 before execution, then

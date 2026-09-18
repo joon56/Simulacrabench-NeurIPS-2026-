@@ -214,3 +214,20 @@ availability, licensing, runtime and honest validation, not a ready next-day
 submission. No measured evidence from this continuation supports a .65
 forecast. Actual E041/E042 experiment assignments supersede A007's earlier
 provisional names; historical proposals remain unchanged for traceability.
+
+## v4 - User prioritizes using expiring slots for exploratory validation
+
+The subsequent user direction corrects v3's slot decision, not its measurements.
+E041 failed local adoption but passed clean no-regression and technical checks.
+Its real-data supervised-retrieval transfer remains unmeasured. The unchanged
+archive is therefore selected for one exploratory UNHCR-only DEV reading;
+E025 remains incumbent until an actual result warrants replacement.
+
+The older broad evidence-off probe is already read, and the independent base
+is not ready. E041 offers a new pipeline-level comparison at no additional
+implementation risk. It does not promise a detectable effect or isolate the
+retrieval metric from its bank/selector/replay changes. An unchanged Grand can
+remain inconclusive. Updated preregistered arms in its scorecard determine
+the next research action; no repeated fine weight tuning after a flat result.
+Archive bytes and performance_qualified=false remain unchanged. No upload
+has been performed. A forecast of .65 is still unsupported.

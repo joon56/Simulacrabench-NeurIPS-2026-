@@ -29,7 +29,9 @@ inserted at the TOP of docs/log.md; historical dated entries are newest-first.
   diagonal retrieval: clean UNHCR -.000486 skill, existing household sim
   -.002026. Observed Adult audit gains +.000595 / +.000427 are inconclusive.
   `output/dev/E041.zip` passes checker, official phase-1 x3 and exact source
-  parity (320.6 s CPU total), but **is not qualified for tomorrow's slot**.
+  parity (320.6 s CPU total). **User subsequently prioritized expiring-slot
+  exploration: the unchanged E041 ZIP is ready for one exploratory DEV test,
+  despite failed local adoption.** See its updated SCORES.md reading arms.
   E042 final-evidence blend stopped at its oracle: +.004570 log < .005.
   No upload or new hosted score. A008's independent pretrained base remains
   unimplemented; the broader retrieval family is not universally ruled out.
@@ -96,8 +98,13 @@ unchanged experiments; first repair the evidence behind their interpretation.
 
 ## Next session plan
 
-1. **Winning-strategy research is the main line; no qualified new submission.**
-   Read A008 v3 and E041/E042 results before more work. UCI Adult now supplies
+1. **Next-day exploratory candidate: output/dev/E041.zip.** Local adoption
+   remains rejected; the user requested using expiring slots for verification.
+   Technical checks and clean no-regression passed. Test the unchanged pipeline
+   once on UNHCR only; inspect any best update. A flat Grand is inconclusive,
+   and triggers moving to a different family, not repeated small-weight tests.
+   No actual upload yet and no supported improvement forecast.
+   Read A008 v3/v4 and E041/E042 results before more work. UCI Adult now supplies
    an observed, non-injected screening channel; its domain and profile-sampling
    limits preclude an HSCC forecast. Do not repeat diagonal-weight or fixed
    final-share tuning. Next independent family: screen the pretrained tabular
@@ -122,7 +129,12 @@ unchanged experiments; first repair the evidence behind their interpretation.
    oracle. Codabench terms §7 checked: method required for every Test entry;
    top three provide research-reproduction-licensed source at award stage.
    Choose our release license before that delivery; no new license applied.
-4. **No unverified phase-1 submission.** Resume only if (a) the kit ships pending
+4. **Separate adoption from exploration; retain technical verification.**
+   The user's latest direction permits a technically validated, preregistered
+   exploratory candidate without a positive local adoption result. This
+   supersedes the earlier blanket hold; it does not permit arbitrary changes,
+   fabricated gain claims or skipping the three submission checks. Other
+   opportunities: (a) the kit ships pending
    gating changes — then `git fetch`, re-run runner + score.py, resubmit the
    E025 zip; or (b) a genuinely new hypothesis appears with a named mechanism
    AND a channel that is not an assumed-structure sim. Six flat A/Bs say the

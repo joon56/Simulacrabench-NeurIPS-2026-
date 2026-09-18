@@ -1,7 +1,10 @@
 # E041 - Supervised section-specific retrieval (UNHCR only)
 
-Status: **DO NOT SUBMIT: performance qualification failed.** Technical archive
-validation completed. Preserved for review; not uploaded, not an adopted model.
+Status: **READY FOR ONE EXPLORATORY DEV SUBMISSION, per the user's subsequent
+slot-use direction.** Technical validation and clean no-regression passed;
+local performance adoption failed and remains failed. Not uploaded or adopted.
+The previous DO NOT SUBMIT recommendation is superseded by the exploration
+decision below; no code, archive bytes or measured results changed.
 Prepared on execution date 2026-09-18 for the next day. The repository's
 supplied historical handoff extends beyond this clock; this directory name
 does not assert a new hosted result or alter historical submission dates.
@@ -31,13 +34,19 @@ and e041-external-learned.md. It is not a humanitarian survey or DEV forecast.
 
 Written before upload; there is no hosted E041 outcome yet.
 
+The subsequent user requested using expiring slots for verification even when
+an improvement candidate is unavailable. These arms now govern one exploratory
+test. They are operational decisions under rounding/noise, not significance
+tests or proof of a particular causal mechanism.
+
 | Returned Grand / update | Interpretation | Next action |
 |---|---|---|
 | .65 or higher, controls stable | Large positive candidate reading; not proof of the matching mechanism or winning | Inspect newly visible instrument triple, freeze best, examine complementarity |
-| .64, controls stable | Positive transfer evidence at this resolution | Retain candidate pending full record; do not claim exact delta from rounded scores |
+| .64, controls stable | Tentative positive reading; noise/rounding still matter | Inspect best-update triple; retain snapshot if it becomes best, do not claim exact delta |
 | .63 with a best update | Possible within-rounding improvement, as E022/E025 showed | Record actual triple before deciding |
 | .63 without update | Unresolved or too small to read, not exact zero | Park this metric configuration; do not spend slots on small weight-grid changes |
-| .62 or lower | Adverse reading | Keep E025 incumbent and inspect calibration/selection mismatch |
+| .62 | Adverse but near the reading resolution | Keep E025; stop this configuration without diagnosing the mechanism from this result |
+| .61 or lower | More clearly adverse at the recorded resolution | Keep E025; deprioritize this retrieval implementation |
 | FAILED | No score, no daily slot consumed under the recorded rule | Diagnose locally; never interpret as a null model result |
 
 Planning anchor: Grand .63. A .64/.65 reading is a success scenario, not a
@@ -62,8 +71,32 @@ measured prediction. Do not infer hidden instrument scores as exact values.
 
 Local synthetic and external scores are not leaderboard predictions. Runtime
 is a local measurement, not a hosted guarantee. E025 remains the best measured
-submission. Do not use the pre-registered hosted arms as a reason to upload
-after failing the local gate.
+submission. Local adoption failure is unchanged. The user's subsequent
+direction permits one exploratory submission to measure real-data transfer;
+it does not convert these local results into positive evidence.
+
+## Exploration decision after user feedback
+
+Question: does this exact supervised section-retrieval pipeline produce a
+readable DEV improvement over E025, despite weak local transfer evidence?
+E034 measured evidence OFF, not learned section relevance. E023 changed
+fixed matching settings; it did not train the supervised section metric.
+The .79 base plus .10 evidence loss map makes the evidence path relevant but
+does not imply .04 recoverable gain. E041 tests the complete pipeline, including
+its bank split, selector and replay changes; it cannot identify which change
+causes a result.
+
+Alternatives considered: repeat broad component ablations (already measured),
+or wait for the independent pretrained base (not implemented/validated).
+For the already prepared next-day artifact, choose one E041 exploratory A/B
+over leaving the slot unused. This is a judgment under the user's preference
+for exploration, not a measured claim of optimal information gain.
+
+UNHCR only, frozen E025 controls, unchanged ZIP. Grand .63 without a best
+update is inconclusive, not proof that retrieval is exhausted. Operationally
+park this exact configuration and move to a materially different family;
+do not follow with a daily weight grid. .64/.65 are favourable scenarios,
+not forecasts; .63 is only the incumbent planning anchor. No upload performed.
 
 Archive: `output/dev/E041.zip`.
 SHA256: `1502ebad20e85ae57db617fa6d202b9e199594c1c043acd6d0d1d52102362a50`.
