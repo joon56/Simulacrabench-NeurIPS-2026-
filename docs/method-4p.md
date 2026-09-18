@@ -1,234 +1,248 @@
-# Method description (4-page draft) — HSCC phase-2 submission
+# Calibrated survey completion with visible-row evidence
 
-> Draft 2026-09-12 from the experiment tree (docs/tree.md, E001–E029).
-> Required with the phase-2 submission. Sections marked [P2] are filled
-> from the phase-2 runner and the final packaged model; every number
-> here must match docs/log.md and the snapshot in submissions/.
+HSCC / SimulacraBench 2026 | E025 method for phase 2
 
-## 1. Problem framing
+## 1. Task and evidence
 
-Each held-out respondent shows only its GIVEN block; every PREDICT cell
-is blank and scored by log probability of the realized answer, pooled
-over cells, expressed as skill = 1 + log_score / U (U = mean log K over
-scored items, gate sentinel included). Three things follow and shaped
-every decision below. (i) The gate sentinel ("never asked") is an
-ordinary scored answer, so predicting *who is skipped* is worth as much
-as predicting *what they say*; on UNHCR ERPIS 156 of 213 scored items
-are gated, so the gate structure alone carries a large share of the
-score. (ii) The grader floors every probability at 1e-3: a confident
-wrong cell costs ≈ 6.9 nats against ≈ 1.4 for an honest hedge, so
-calibration dominates sharpness. (iii) The leaderboard is a plain mean
-of the three instruments' skills, so UNHCR (largest item count, lowest
-U, deepest gate cascades) is where the headroom is.
+We predict categorical survey answers from each held-out respondent's GIVEN
+block. Every PREDICT cell is hidden; EXCLUDE items are omitted. The three
+instruments are UNICEF Faith & Immunisation, World Bank Skills Assessment,
+and UNHCR ERPIS. We submit one self-contained predictor that learns separately
+on each instrument's visible respondents, combining hierarchical count
+smoothing, a shared neural network, approximate skip logic, and evidence from
+similar visible rows.
 
-We optimized exact held-out skill on locally built sandboxes (the kit's
-`make_sandbox`, real schema, invented marginals) and on simulations
-layered on top of them, and used the noised phase-1 leaderboard only as
-a pre-registered A/B channel. Every model change is one experiment file
-with a parent, a pre-registered domain check, a measured Δ and a verdict
-(adoption threshold Δ mean skill > +0.005 on the three instruments).
+The official score is skill = 1 + log_score / U, where log_score averages
+log probabilities over scored cells and U averages log K over those cells;
+K includes the gate sentinel when applicable. Grand is the unweighted mean
+of the three instrument skills. Instruments therefore have equal weight
+despite different item counts. The grader normalizes predictions and mixes
+them with uniform probabilities to enforce a 0.001 floor. A confidently
+wrong answer can cost about 6.9 nats. Probability calibration matters more
+than modal accuracy.
 
-## 2. Preprocessing and skip logic
+Our model of record is E025: phase-1 Grand 0.63, with UNICEF 0.52, World Bank
+0.49, and UNHCR 0.89. These are noised, rounded leaderboard readings, not
+exact estimates. No phase-2 real-data score is available. Local results use
+the public kit's synthetic data and official scorer [1]. Synthetic gains
+establish implementation behavior; they do not establish real-data structure.
+Household simulations test named mechanisms under injected assumptions.
+Separate leaderboard comparisons assess transfer at limited resolution.
 
-**Option vectors.** Every item's option list comes from the schema
-(`values` plus the `gated_value` slot for gated items); data order is
-never used. EXCLUDE items are dropped by class, not by position. NaN
-means "held out" and nothing else; refusals and "don't know" are
-ordinary levels.
+## 2. Schema handling and approximate gates
 
-**Gate recursion (E002).** Items are decoded in schema order so a gated
-child sees its parent's belief. With b_parent the parent's vector
-(one-hot if visible, a predicted distribution if not),
+Answer vectors follow schema option order, with an extra final NA_GATED slot
+for gated items. NaN marks a prediction target; refusals remain ordinary
+answers. The predictor decodes items in schema order, propagating each
+parent's belief, including any evidence update, to downstream children.
+A visible parent has a one-hot belief. For gated item i:
 
-    P(asked) = Σ_{v ∈ observed_if} b_parent[v]
-    hard_i   = [ P(asked) · cond_i ,  1 − P(asked) ]
+    r_i = sum of parent probability over observed_if values
+    hard_i = [r_i * conditional_i, 1 - r_i]
+    base_i = a_i(x) * hard_i + (1 - a_i(x)) * full_i
 
-where cond_i is the child's distribution *given asked* (its own model,
-trained on asked rows only). Chains close automatically because each
-parent's sentinel mass propagates to its children.
+Here conditional_i is trained on asked rows only; full_i includes the
+sentinel. UNHCR's published schema reports approximate gates (agreement
+median 0.83, range 0.29-0.98). Consequently, forcing the schema gate can be
+wrong even when its parent is known. The agreement coefficient a_i(x)
+softens this constraint using observed parent-child agreement.
 
-**Softened coupling (E003/E005).** Gates are approximate on the real
-UNHCR data (schema: agreement median 0.83, range 0.29–0.98). Hard
-coupling is therefore mixed with the child's unconditional model:
+The scalar rate is (k_i + 20 * m) / (n_i + 20), where m is the median
+observed agreement across gated items. This is shrinkage toward the
+instrument's agreement level, not necessarily toward one. For each child,
+at most one GIVEN column with cardinality at most 12 is selected by
+Bernoulli log likelihood on a 20% internal split. Its value-specific rates
+shrink toward the scalar. If no column improves the split score, the scalar
+remains. Exact gates recover hard coupling. This handles varying sentinel
+coding without asserting that an approximate survey gate is deterministic.
 
-    belief_i = a_i · hard_i + (1 − a_i) · soft_i
+<!-- pagebreak -->
 
-with a_i the child's gate-agreement rate on visible rows, beta-binomial
-shrunk toward 1 (α = 20). On exact gates a_i → 1 and the mixture is the
-hard gate.
+## 3. Predictive stack
 
-**Conditional agreement (E010).** Because agreement is heterogeneous
-across rows (e.g. five multi-select families mark the sentinel in one
-CATI round only), a_i becomes a function of at most one GIVEN column
-(cardinality ≤ 12), chosen per gated item by held-out Bernoulli
-log-likelihood of the agree indicator on a 20% split; the per-value
-rates are shrunk toward the item's scalar. If no column beats the
-scalar, the scalar stays.
+**Hierarchical backoff (E006).** Starting from a smoothed global marginal,
+each level conditions on one additional GIVEN column. The previous level
+supplies the prior:
 
-Two structural extensions were built and measured null on the
-leaderboard — parent-value-conditional decoding of the overlapping
-return-intention branches (E028) — or rejected locally, and are kept in
-the tree for the record.
+    p_L(v | cell) = (n_L(v) + kappa_L * p_(L-1)(v)) / (n_L + kappa_L)
 
-## 3. Model
+Column order, depth up to three, and kappa in {1, 3, 10, 30, 100} are
+selected greedily by held-out log score on 20% of complete visible rows.
+Candidate columns have at most 12 levels. Asked-only distributions use the
+same ladder. Sparse cells borrow strength from broader cells; unseen cells
+back off naturally.
 
-The stack has three stages, each adopted on a measured gain and each
-inert when its signal is absent.
+**Shared-trunk network (E012/E025).** One-hot GIVEN inputs feed a
+Linear-ReLU trunk and a softmax head for each PREDICT item. Gated items
+also have asked-only heads, trained with masked cross-entropy. Loss pools
+cells across the full and conditional heads. Training uses full-batch Adam
+(learning rate 0.003, weight decay 0.0001), at most 500 epochs, and early
+stopping with patience 30 on an inner split. An outer split selects between
+two 64-unit layers without dropout and two 128-unit layers with dropout 0.1.
+The selected epoch count is used to retrain on all complete visible rows.
 
-**3.1 Hierarchical backoff ladder (E004–E006).** Partial pooling over
-GIVEN cells approximated by count smoothing: with an ordered list of
-GIVEN columns c_1..c_D, level L conditions on (c_1..c_L) and uses level
-L−1 as its prior,
+One network/ladder mixture weight w per instrument is selected on the outer
+split from {0, 0.1, ..., 1}. Both full and conditional distributions use
+w * network + (1 - w) * ladder. Shared nonlinear features pool signal across
+items, while probability mixing limits reliance on unsupported sharpness.
 
-    p_L(v | cell) = (n_L(v) + κ_L · p_{L−1}(v | parent cell)) / (n_L + κ_L).
+**Visible-row evidence (E018/E022).** Every visible respondent is a
+candidate, without a cross-round restriction. Matching uses only schema
+GIVEN columns; E025 does not derive features from respondent identifiers.
+Initial agreement weights are -log(u_j), where u_j is random agreement
+computed from available GIVEN frequencies, including held-out GIVEN values.
+No held-out PREDICT answer enters fitting or candidate evidence.
 
-Column order, depth (≤ 3) and κ_L ∈ {1, 3, 10, 30, 100} are selected
-greedily at run time by held-out log score on a 20% split of the
-complete visible rows; nothing is hard-coded to any instrument. Gated
-children ride the same ladder for their asked-only conditionals.
-Leaderboard: 0.43 (marginal) → 0.53 (gated marginal + softening) → 0.55
-(ladder).
+A first matching pass identifies provisional top candidates with posterior
+mass at least 0.5. If at least 30 pairs exist, one Fellegi-Sunter-style update
+estimates their per-column agreement m_j and sets weights to:
 
-**3.2 Shared-trunk multi-head network (E008 → E012, E017/E025).** The
-ladder sees at most three columns. The full one-hot GIVEN block feeds
-one network per instrument: Linear–ReLU trunk → a softmax head per
-PREDICT item (full distribution, sentinel included) plus a masked
-asked-only conditional head per gated item; pooled cross-entropy, Adam,
-full batch, early stopping on an inner split, final retrain on all
-complete rows for the selected epoch count. The trunk architecture is
-chosen per instrument from {64×2, 128×2 + dropout 0.1} on the outer
-holdout. The net replaced 76–213 independent multinomial logistics
-(E008) because marginalizing a latent respondent factor makes
-P(item | GIVEN) nonlinear and shared across items; the gain ordering
-across instruments followed the number of heads exactly as
-pre-registered. The net and the ladder are mixed in probability space,
+    weight_j = max(0, log(m_j/u_j) - log((1-m_j)/(1-u_j)))
 
-    model_i = w · net_i + (1 − w) · ladder_i,
+Otherwise rarity weights remain. Weighted agreement scores are normalized
+by softmax over the top ten candidates. Their answer vectors, averaged
+with these weights, form evidence_i. This soft neighborhood can help through
+near-duplicate structure or ordinary similarity; it does not identify the
+social relationship between respondents.
 
-with one w per instrument from a 0.1 grid on the outer holdout — the
-calibration guard that keeps an over-sharp net from paying the floor
-penalty. Leaderboard: 0.55 → 0.58 (logistics) → 0.60 (shared trunk).
-(A 3-seed ensemble and an output temperature tuned jointly with w
-were measured at +0.0004 and exactly zero, E029: the early-stopped net
-is already calibrated.)
+For each item, replay on up to 6,000 visible query rows selects lambda from
+{0, 0.1, ..., 0.9, 0.95, 0.98}, separately for diffuse and concentrated
+posteriors (maximum mass at least 0.5). A bucket needs 30 valid observations.
+The query itself is always excluded from candidates. The final belief is
+(1 - lambda) * base_i + lambda * evidence_i, applied after the item's gate
+mixture and before its children are decoded. Lambda = 0 disables evidence;
+clean sandbox evaluations found negligible changes from this layer.
 
-**3.3 Visible-row evidence layer (E014 → E018 → E022).** The organizers
-confirmed that matching rows within a dataset is permitted. Household
-co-respondents, re-dials and double entries share most of their GIVEN
-signature and much of their answers, and the datasets contain them.
-For every held-out row, every visible row is a candidate (self excluded
-in the calibration replay). A Fellegi–Sunter score sums per-column
-agreement weights log(m_j/u_j) − log((1−m_j)/(1−u_j)) (clipped at 0);
-u_j is the random-agreement probability from value frequencies, m_j the
-agreement rate among provisional top-1 pairs with concentrated posterior
-— one iteration, so household-defining columns keep their weight while
-person-level columns (age, education, relationship) lose it. A softmax
-over the top-10 candidates gives a posterior q(c); the evidence vector
-for item i is Σ_c q(c) · onehot(answer_c,i). It enters the belief before
-gated children consume parent beliefs:
+<!-- pagebreak -->
 
-    belief_i = (1 − λ_{i,b}) · model_i + λ_{i,b} · ev_i,
+## 4. Calibration and limitations
 
-with λ chosen per (item, concentration bucket b ∈ {diffuse,
-concentrated: max q ≥ 0.5}) from a grid up to 0.98 by replaying the
-identical construction on visible rows against their realized answers.
-Data without duplicate structure drives m_j → u_j, the posteriors flat,
-and every λ to 0: the layer is bit-inert on the clean sandbox and was
-validated on a household simulation (co-respondent twins injected with
-per-item copy rates ρ ∈ [0.2, 0.8]) whose predicted gains matched the
-leaderboard readings quantitatively. Leaderboard: 0.60 → 0.63
-(unhcr 0.78 → 0.87 → 0.88 → 0.89).
+Fitted parameters use only information visible in the evaluation frame.
+Ladder selection, gate conditioning, architecture selection, and network
+mixing use internal validation splits. Evidence replay excludes self-matches,
+but its base predictions come from a model refitted on all visible rows:
+the replay is not a fully cross-fitted estimate of generalization. We
+therefore report held-out evaluations separately from replay optimization
+and do not claim that every calibration stage is unbiased.
 
-## 4. Calibration
+Algorithm choices and search grids were developed using synthetic tests,
+public instrument descriptions, and phase-1 feedback. Their fitted values
+are selected at run time. This distinguishes runtime estimation from the
+development process: leaderboard feedback did influence which method was
+retained. Fixed split and network seeds are zero; CPU/GPU execution and
+floating-point reductions can cause small differences.
 
-All calibration is decided on visible rows only, at run time, per
-instrument: the ladder's κ and depth, the net's early-stop epoch and
-architecture, the net/ladder weight w, the gate-agreement rates a_i and
-their conditioning column, and the evidence weights λ_{i,b}. No
-parameter is set from the sandbox or from the leaderboard. Where the
-holdout has too little data (the kit's smoke frame) every knob falls
-back to its inert value (w = 0, λ = 0, scalar a_i), which the zip
-checker exercises before each submission. Sharpness beyond what the
-holdout supports was rejected repeatedly: per-item blend weights and
-regularization grids (E009), ordinal option smoothing (E011), published
-marginal priors (E007), and further matching refinements (E023) all
-measured ≈ 0.
+The evidence mechanism is consistent with repeated or household-related
+responses, but the closed evaluation does not establish their prevalence
+or identities. Similarity-based prediction is another possible explanation.
+An organizer email recorded on September 2 permits matching rows within the
+dataset without extracting identities outside the enclave. We use no
+external record linkage. The method's aggregate gains must not be read as
+reconstruction of individual records or evidence that survey respondents
+can be replaced.
 
-## 5. Training and compute budget
+Six later real-data comparisons were flat at the displayed resolution:
+evidence as network input (E027), parent-value gate decoding (E028), a larger
+replay cap (E031b), relation-specific evidence weights (E036), identifier
+signatures (E038), and a tree blend (E040). Some gained under injected
+simulation assumptions. These null transfers prevent treating simulation
+success as confirmation. Separately, sentinel recalibration (E037) gained
+0.024 in-sample on its heavy-overlap simulation but lost about 0.004 under
+cross-fitting, so it was rejected.
 
-Nothing is fitted offline: `predict()` receives the frame, fits every
-stage on its visible rows, and returns the vectors. No bundled
-artifacts, no `models.txt`, no external data; dependencies are the
-hosted image's numpy/pandas/torch/scikit-learn. Training runs on the
-hosted GPU with an automatic CPU fallback. Wall-clock on the sandbox
-(8-core CPU, no GPU):
+## 5. Phase-2 settings and compute
 
-| phase | unicef | world_bank | unhcr | total | budget |
-|---|---|---|---|---|---|
-| 1 (TRAIN visible, DEV scored) | 26 s | 60 s | 151 s | 241 s | 900 s |
-| 2 (TRAIN+DEV visible, TEST scored) | 30 s | 64 s | 149 s | 254 s | 3600 s |
+Phase 2 uses the unchanged E025 assembly at
+`submissions/2026-09-09-E025/main.py`. TRAIN and DEV are visible, TEST is
+scored. The two-architecture choice, top-ten candidate pool, replay cap of
+6,000, and concentration-specific lambda grid remain unchanged. Larger
+replay, ensembles, relation splits, identifier features, and trees are not
+included. No phase-2 fitting occurs before the evaluation frame arrives.
 
-Phase-2 settings: the phase-1 model of record unchanged. Three
-phase-2-motivated additions were measured and left out — a lifted
-calibration-replay cap (6,000 → all visible rows: +0.0000 / +0.0005 on
-the phase-1 / phase-2 household sims, flat on the leaderboard), a
-3-seed net ensemble (+0.0004 locally) and a relation-split evidence
-weight (flat on the leaderboard) — because a single no-retry
-submission is not the place for components whose measured value is
-zero. Worst case (no GPU): ≈ 250 s local CPU × the observed hosted
-slowdown (≤ 4×) ≈ 1,000 s, inside 3,600 s.
+Historical phase-2 hardening with the official scorer passed all three
+schemas. These are synthetic scores on TEST-role cells, not final leaderboard
+results:
 
-## 6. Results
+| Instrument | Exact skill | Scored cells |
+|---|---|---|
+| UNICEF | 0.4902 | 41,676 |
+| World Bank | 0.4620 | 92,112 |
+| UNHCR | 0.5652 | 308,637 |
 
-Local exact skill (kit sandbox, seed 0, phase 1) and the phase-1
-leaderboard (Laplace-noised, rounded to 0.01) for the adopted chain:
+The historical local CPU runner took 291 seconds across the three instruments;
+a fresh continuation took 268.1 seconds in-process and 310.0 seconds through
+the official scorer including driver overhead. Source/assembly skills matched
+exactly on all three instruments in that continuation.
+The hosted budget is 3,600 seconds for import, fitting, and prediction
+together. Neural training uses CUDA when available, with CPU fallback.
+Applying the historical approximately fourfold worker slowdown to local
+250-290 second runs gives a planning estimate of 1,000-1,200 seconds without
+a GPU. This is a margin estimate, not a hosted phase-2 measurement or a
+guaranteed upper bound; model runtime depends on the visible data.
 
-| stage | local unicef / wb / unhcr | LB Grand | LB unicef / wb / unhcr |
+<!-- pagebreak -->
+
+## 6. Results and diagnostic map
+
+The table summarizes selected development milestones. Local entries use the
+seed-zero phase-1 sandbox; leaderboard entries are rounded, noised observations.
+Small leaderboard differences are not independently significant effects.
+
+| Stage | Local UNICEF / WB / UNHCR | Grand | LB UNICEF / WB / UNHCR |
 |---|---|---|---|
-| E002 gated marginal | 0.323 / 0.291 / 0.430 | 0.43 | 0.45 / 0.43 / 0.41 |
-| E005 + softened gates + strata | 0.459 / 0.411 / 0.535 | 0.53 | 0.49 / 0.48 / 0.63 |
-| E006 backoff ladder | 0.477 / 0.420 / 0.538 | 0.55 | 0.50 / 0.48 / 0.66 |
-| E008 + full-GIVEN logistics | 0.499 / 0.445 / 0.553 | 0.58 | 0.51 / 0.49 / 0.74 |
-| E010 + conditional agreement | 0.499 / 0.445 / 0.553 | 0.59 | 0.51 / 0.49 / 0.77 |
-| E012 shared-trunk net | 0.501 / 0.455 / 0.563 | 0.60 | 0.52 / 0.49 / 0.78 |
-| E018 full-pool evidence | 0.501 / 0.455 / 0.563 | 0.63 | 0.52 / 0.49 / 0.87 |
-| E022 household weights ∘ sharp λ | 0.501 / 0.455 / 0.563 | 0.63 | 0.52 / 0.49 / 0.88 |
-| E025 + trunk capacity selection | 0.501 / 0.455 / 0.563 | 0.63 | 0.52 / 0.49 / 0.89 |
-| phase-2 submission = E025 | 0.490 / 0.462 / 0.565 (phase-2 cells) | — | — |
+| E006: backoff | .477 / .420 / .538 | .55 | .50 / .48 / .66 |
+| E008: logistics | .499 / .445 / .553 | .58 | .51 / .49 / .74 |
+| E010: gate agreement | .499 / .445 / .553 | .59 | .51 / .49 / .77 |
+| E012: shared trunk | .501 / .455 / .563 | .60 | .52 / .49 / .78 |
+| E018: full-pool evidence | .501 / .455 / .563 | .63 | .52 / .49 / .87 |
+| E022: evidence weights | .501 / .455 / .563 | .63 | .52 / .49 / .88 |
+| E025: capacity selection | .501 / .455 / .563 | .63 | .52 / .49 / .89 |
 
-**Where the remaining loss sits (probe submissions, unhcr).** Four
-phase-1 slots were spent on measurement rather than rank: replacing a
-defined cell subset with the uniform vector removes exactly its
-contribution (share and the uniform vector's own skill are exact from
-the schema), and switching a component off reads its contribution.
-Results: gated items 0.892 per cell vs content items 0.885 (on the
-exact-gate instruments gated cells are twice as easy — on UNHCR the
-approximate gates make them no easier); with the model's sentinel mass
-kept and content flattened, gated cells fall to 0.56, so most gated
-skill is content prediction on asked cells; with the evidence layer
-off, UNHCR falls to 0.79 — the layer is worth +0.10. A Bayes-optimal
-oracle for the sandbox generator (replaying its random stream) puts
-the base model within 0.004 skill of the GIVEN-only ceiling on every
-sandbox, which is why base-model changes could not be validated
-locally and only the evidence layer had local headroom.
+**UNHCR component ablations (E032-E034).** Aggregate readings attribute
+approximately 0.79 skill to the base and an additional 0.10 to evidence,
+giving 0.89. Gated-item and ungated-item skill are approximately 0.892 and
+0.885. Their contributions to remaining loss are 0.079 and 0.031. Keeping
+sentinel mass while flattening asked-answer probabilities reduces gated-item
+skill to about 0.56: successful gated predictions require content as well as
+sentinel prediction. These are derived model-performance estimates, not
+direct measurements of hidden dataset statistics.
 
-The sandbox is blind to two of the adopted gains by construction
-(random marginals carry no household structure and no capacity
-signal), which is why the household simulation and pre-registered
-leaderboard A/Bs exist. Local-vs-leaderboard agreement: every
-pre-registered direction held; magnitudes on real data exceeded the
-sandbox by 3–5× because real GIVEN coupling is stronger than the
-sandbox trait.
+The platform generally reveals instrument scores only when the best improves.
+For comparisons affecting UNHCR alone, delta_UNHCR = 3 * delta_Grand, with
+practical resolution about 0.015-0.03. Derived three-decimal map values are
+arithmetic summaries, not three-decimal measurement precision. E032's initial
+per-instrument reading came from a second account; this is recorded in the
+experiment log, that account was retired, and its reading should not be
+treated as independently replicated evidence. Subsequent probes used the
+main account and changed UNHCR only.
 
-## 7. Reproducibility
+**Synthetic oracle (A005).** Replaying the public generator's random stream
+recovers its parameters; numerical integration over the latent trait gives
+a GIVEN-only Bayes reference. Its three-instrument mean is 0.5085 versus
+0.5062 for the base (unrounded gap about 0.0024). Each instrument is within
+0.004 of that synthetic reference, below our 0.005 mean-gain screening bar.
+This limits what that sandbox can validate, not what real data could support.
+The remaining leaderboard gap to UNHCR 0.92-0.93 is unexplained by our map.
 
-Repository: `src/models/` (one module per experiment, rejected code
-kept), `src/eval/runner.py` (in-process scorer using the kit's own
-`score()`), `tests/` (simulations), `docs/experiments/E0XX-*.md`
-(hypothesis → domain check → result → verdict), `docs/tree.md`. All
-seeds fixed (holdout 0, torch 0); one command reproduces every local
-number: `python src/eval/runner.py <main.py>`. The submission is a
-single self-contained `main.py` assembled from the verified modules and
-checked for parity against them before packaging. License and
-disclosure obligations: [verify against the Codabench terms accepted at
-registration; no external models or data were used].
+## 7. Reproducibility and disclosure
+
+The archive contains a self-contained `main.py`; all learning happens at run
+time. No external training data, pretrained weights, bundled fitted artifacts,
+`models.txt`, or network API calls enter the predictor. Public survey material
+informed development hypotheses, not fitted priors. Runtime uses the hosted
+NumPy, pandas, PyTorch, and scikit-learn environment. Source modules, experiment
+records, tests, and the official-score wrapper are retained in the repository.
+Archive checks, source/assembly parity, and three-schema official scoring
+precede release; the phase-2 preparation record holds exact commands and hashes.
+
+Codabench's participation agreement [2], clause 7, requires a four-page method
+with every Test submission and research-reproduction licensing of source code
+for the top three at the award stage. It does not expressly require publication
+of the entire development repository. The public starter kit is MIT-licensed;
+its copyright notice must accompany redistributed substantial portions [1].
+The team's release license is to be selected before any award-stage source
+delivery; this document itself does not grant a new license.
+
+**References.** [1] SituatedEvals, public starter kit (MIT), revision ee427a9:
+https://github.com/SituatedEvals/public. [2] SimulacraBench participation
+agreement, Submissions clause 7: https://www.codabench.org/competitions/17822/.

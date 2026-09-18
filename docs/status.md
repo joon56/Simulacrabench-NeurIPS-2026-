@@ -1,8 +1,8 @@
 # STATUS — read this first in a new session (kept current at every commit)
 
-Updated: 2026-09-21. Newest log entries are inserted ABOVE the previous
-newest header inside docs/log.md (not appended at the end) — search the
-latest date.
+Updated: continuation of the 2026-09-21 handoff. The audit environment reports
+2026-09-18; see `docs/phase2-preparation.md` for provenance. Newest work is
+inserted at the TOP of docs/log.md; historical dated entries are newest-first.
 
 ## Where we are
 
@@ -18,7 +18,8 @@ latest date.
   per-instrument config {64×2, 128×2+do} (E025).
 - **Phase-1 search is exhausted by our instruments** (see "What is closed").
   Phase-2 file = the E025 assembly, already hardened. Main line now:
-  `docs/method-4p.md` and the phase-2 window (Nov 1–14).
+  phase-2 release preparation. `docs/method-4p.md` now renders to four verified
+  pages in `output/pdf/method-4p.pdf`; runbook: `docs/phase2-preparation.md`.
 
 ## Real-data loss map (probe submissions E032–E034, unhcr)
 
@@ -74,14 +75,23 @@ ordinal smoothing (E011), cross-round linkage (E013/E014), capacity beyond
    `submissions/2026-09-09-E025/main.py` (hardened: `score.py --phase 2`
    PASS ×3 = 0.4902 / 0.4620 / 0.5652, 291 s local CPU, worst case no-GPU
    ≈ 1,000–1,200 s ≪ 3,600 s, smoke frame OK, 8 clean hosted runs). In the
-   window (Nov 1–14): re-zip from the snapshot, `check_submission_zip`,
-   submit once, attach the method description.
-2. **`docs/method-4p.md`**: trim to 4 rendered pages; license / disclosure
-   check against the Codabench terms; keep §5 (phase-2 settings) and §6
-   (probe map, oracle) in sync with docs/log.md.
+   window: re-zip from the snapshot, repeat the three required checks,
+   submit once, attach the method. API dates: Nov 1 00:00 UTC through
+   **Nov 14 00:00 UTC (09:00 KST)**; plan upload by Nov 13. Preparation
+   readings: `submissions/phase2-E025-preparation/SCORES.md`. Fresh local
+   rehearsal: ZIP OK, official phase-2 PASS x3 (same scores, 310.0 s),
+   src parity exact x3 (268.1 s); hashes/results in adjacent `verification.json`.
+2. **Method complete; keep it synchronized.** Four rendered pages, corrected
+   agreement prior and replay limitations, six flat A/Bs, probe precision and
+   oracle. Codabench terms §7 checked: method required for every Test entry;
+   top three provide research-reproduction-licensed source at award stage.
+   Choose our release license before that delivery; no new license applied.
 3. **Phase-1 slots: hold.** Resubmit only if (a) the kit ships the pending
    gating changes — then `git fetch`, re-run runner + score.py, resubmit the
    E025 zip; or (b) a genuinely new hypothesis appears with a named mechanism
    AND a channel that is not an assumed-structure sim. Six flat A/Bs say the
    prior on any further refinement of this stack is low.
 4. Weekly: kit update check, leaderboard intel (who moved, by how much).
+   Continuation fetch: HEAD = origin/main = ee427a9; no gating update.
+   Public leaderboard snapshot: six entries at unhcr 0.93 / Grand 0.65
+   (two share a team name); unicef 0.52, wb 0.49–0.50. No new mechanism.

@@ -2,214 +2,36 @@
 
 Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-notes]].
 
-## 2026-08-30 — E007 parked on the numbers; E008 logistic blend adopted, submission #4
+## Handoff continuation — E025 phase-2 package rehearsal and four-page method
 
-- **E007 (eRPIS prior blend) PARKED without implementation** — quantitative
-  pre-check killed it: phase 1 exposes all 8,279 unhcr TRAIN rows, so
-  country×wave cells hold n ≈ 1–2k real answers and a W-pseudo-count prior
-  shifts the posterior by ≤ W/(n+W) of a difference that has no systematic
-  sign (TRAIN and DEV are the same build). Expected Δ ≈ 0; rule 5 blocks
-  the spend. The A003 CSV is repurposed as a standing sanity anchor
-  (models should reproduce the published s3_11 country tables). Revive
-  conditions recorded in the experiment file.
-- **E008 (full-GIVEN logistic blend) implemented and adopted**: per
-  PREDICT item, multinomial logistic on the one-hot full GIVEN block
-  (7/30/72 columns vs the ladder's 3), mixed in probability space with
-  the E006 ladder; one blend weight per instrument tuned on the internal
-  20% holdout. Gate recursion + E003 softening unchanged. Runner: 3-inst
-  mean 0.4783 → 0.4991 (**Δ +0.0208**, largest since E004; every schema
-  up). Tuned w interior everywhere (0.6/0.9/0.8/0.6) with smooth concave
-  curves — ladder and logistic are complements, not substitutes.
-  max_iter probe: 1000 reproduces all skills to 4 decimals (cap
-  immaterial, kept 200). Wall-clock ~182 s ≪ 900 s. Tests 27/27.
-- **Smoke-check regression caught by check_submission_zip**: the kit's
-  3-row smoke frame makes the tuning holdout empty → sklearn raised on a
-  0-sample matrix. Guards added (empty split ⇒ w=0 ladder-only; w=0 skips
-  all encoding/fits; gated items with zero asked rows fall back to
-  ladder). Local harness never hits these paths — the zip checker is the
-  only pre-submission probe that does; keep running it BEFORE spending
-  the daily slot.
-- **Submission #4 packaged** (`submissions/2026-08-30-E008/`, zip OK).
-  LB expectations pre-registered in SCORES.md: Grand ≈ 0.57–0.59; the
-  falsifiable claim is world_bank moving off 0.48 for the first time
-  (psychometric GIVEN block = many weak predictors only the logistic
-  sees); unhcr largest absolute gain; any instrument −0.02 ⇒ overconfident
-  logits ⇒ C-grid / per-item w before next spend.
-
-- **E008 submitted; result: Grand 0.58 — unicef 0.51 / wb 0.49 /
-  unhcr 0.74** (E006: 0.50/0.48/0.66). Scorecard: Grand in the 0.57–0.59
-  pre-registered band ✓; unhcr largest ✓ (+0.08, ~4–5× sandbox Δ — third
-  straight submission where real GIVEN coupling beats the sandbox trait);
-  unicef smallest ✓; no drops ⇒ no overconfidence ✓. One OPEN item: wb
-  +0.01 is inside noise — the psychometric many-weak-predictors claim is
-  neither confirmed nor falsified; resolve with a wb-targeted change
-  before investing further in that story. Reading: unhcr headroom still
-  live (0.74 with cheapest U and 155-parent cascade); next capacity step
-  is E009 = more capacity where the logistic paid (per-item blend
-  weights + C grid, then GIVEN interactions via boosted trees on the
-  holdout), all locally verifiable before the next slot.
-
-## 2026-09-02 — three nulls measured cheap; E012 shared-trunk net adopted, submission #6
-
-- **A004 (wb structural pass) done**: corrected our own notes — wb GIVEN
-  is 9 columns (21 of the non-PREDICT items are EXCLUDE), gates are
-  near-exhausted (27/30 GIVEN-parented, 19 on the tracer `group` arms),
-  so E008's "many weak predictors" story was mis-premised. 24 PREDICT
-  items strict-parse numeric (spans K=15, counts K=12–13) → ordinal
-  lever identified; sandbox provably cannot show it (random per-option
-  loadings in make_sandbox).
-- **E011 (ordinal kernel smoothing) REJECTED on its own sim channel**:
-  clean sandbox ≡ E010 (off-by-default works), but sim v1 (+0.0003) and
-  a deliberately favorable thin-cell sim v2 (+0.0000) measured the
-  option-axis pooling headroom at ~0 — κ-ladder + logistic already
-  exhaust it at n≈5k. Honest null, mirrors E007. Sim assertion kept as a
-  strict xfail (the recorded null).
-- **Seed-bagging probe killed before implementation**: E010 with holdout
-  seeds 0/1/2 → 3-inst mean 0.4991/0.4988/0.4989 (spread 0.0003).
-  Selection is stable; bagging would buy ~nothing at 2–3× runtime.
-- **E012 (shared-trunk multi-head net) implemented and ADOPTED**: per
-  instrument, one-hot GIVEN → 64-64 ReLU trunk → per-item softmax heads
-  + masked asked-only conditional heads (torch, early stopping, fixed
-  seed); replaces the 76–213 independent logistics; ladder blend w and
-  E010 conditional agreement unchanged. Runner 3-inst 0.4991 → 0.5061
-  (**Δ +0.0070**): wb +0.0102 (first wb movement anywhere), unhcr
-  +0.0097, unicef +0.0012 — exactly the heads-count ordering
-  pre-registered. The day's pattern in one line: per-item knobs, option
-  smoothing, priors, bagging all ≈ 0 — the paying move was the
-  model-CLASS change (nonlinearity + cross-item sharing).
-- **Submission #6 packaged** (`submissions/2026-09-02-E012/`,
-  script-assembled from verified src modules, parity exact, zip OK,
-  score.py PASS 0.50/0.45/0.56, ~200 s ≪ 900 s). LB pre-registration:
-  Grand 0.60–0.62; wb 0.49 → 0.50+ is the falsifiable core (sectioned
-  multi-factor thesis); unicef ~flat; any −0.02 ⇒ net memorization ⇒
-  lower w cap or revert to E010.
-
-- **E012 submitted; result: Grand 0.60 — unicef 0.52 / wb 0.49 /
-  unhcr 0.78** (E010: 0.51/0.49/0.77). Grand in band (bottom edge) ✓,
-  unhcr +0.01 ✓, unicef +0.01 ✓ — but **wb flat, the falsifiable core
-  FAILED**: fifth straight wb submission at 0.48–0.49; sandbox +0.0102
-  did not transfer.
-- **User leaderboard observation (same day, strategic)**: teams ranked
-  ABOVE us have ~identical unicef and wb — the entire gap is unhcr.
-  Combined with our own wb null series, conclusion upgraded: wb (9
-  GIVEN cols) and unicef (7 GIVEN, deterministic gates) are near their
-  INFORMATION CEILINGS for every serious team — they no longer rank
-  anyone. The competition is decided on unhcr (70% of scored cells,
-  cheapest U 1.2618, 72 GIVEN, 156 approximate gates, 2 waves).
-  All future spend goes to unhcr until shown otherwise. Candidate
-  unhcr edges the leaders may hold, in evidence order: (1) capacity —
-  the established real>sandbox coupling amplification means our
-  64-64 trunk is likely undersized for the real 72-column signal
-  (locally near-invisible, real gain — the E008 pattern); (2) joint /
-  consistent decoding of the three overlapping s3_11 branches
-  (schema-documented overlap, unexploited); (3) cross-wave record
-  linkage of the flattened panel (A001: real design is a panel) —
-  legality UNCLEAR under the re-identification clause: forum question
-  FIRST, never unilateral.
-
-- **Leaderboard intelligence (same day, decisive): teams above us show
-  unhcr ≈ 0.92.** Arithmetic: skill 0.92 ⇒ (0.92−1)×1.2618 ≈ −0.101
-  nats/cell ⇒ average 90% probability on the realized answer across all
-  132k cells INCLUDING attitude items (we: −0.278 ⇒ 76%). GIVEN-only
-  conditioning cannot plausibly reach that; the one mechanism that can
-  is **cross-round panel linkage** (A001: real design is a panel,
-  flattened; A002: both rounds inside one fieldwork window ⇒ same
-  person's answers nearly identical across rounds; 72 GIVEN roster
-  columns = a fingerprint). Classic DEV-probing overfitting is ruled
-  out by the reusable-holdout arithmetic (ε=10 + 0.01 rounding + 1/day
-  cannot yield +0.14 skill). Their phase-2 risks: (1) the
-  re-identification/disqualification clause — legality of within-
-  dataset record linkage is THE open question; (2) organizers may have
-  built TEST from twin-less respondents (roles fixed at build) — the
-  precise sense in which 0.92 could be "DEV overfitting"; (3) mandatory
-  4-page method disclosure in phase 2.
-- **Decisions**: (a) forum question on linkage legality FIRST (bundled
-  with the GATE_CORRECTIONS.md question, still unposted); (b) prepare a
-  conditional linkage module — runtime detection of duplicate roster
-  signatures on visible real data, used only if found; harmless/inert
-  on the sandbox (independent rows by construction) — but SUBMIT ONLY
-  after an organizer ruling; (c) meanwhile continue the legitimate
-  axis: E013 = unhcr-targeted capacity scale-up.
-
-- **ORGANIZER RULING (email, Andy, same day)**: "Matching rows within
-  the dataset — which does not extract identities outside of the
-  enclave — is permitted." Cross-round linkage is LEGAL. Also disclosed:
-  (1) "a few (<5) changes to gating in UNHCR that we still need to
-  ship" — a kit/schema update is coming, re-audit on arrival (gate
-  structure our E010 conditional-agreement layer depends on may move);
-  (2) the dangling GATE_CORRECTIONS.md reference is removed for now;
-  (3) prize-money announcement pending. Strategy consequence: E013 =
-  cross-round respondent linkage (runtime-detected, stability-
-  calibrated) is now the top-priority experiment; capacity scale-up
-  moves to E014.
-
-- **E013 (cross-round linkage) implemented and ADOPTED, submission #7
-  packaged** (`submissions/2026-09-03-E013/`, upload tomorrow). Layer:
-  round column from schema (2-valued wave/round GIVEN); FUZZY 1:1
-  matching on the remaining GIVEN signature (≤2 mismatches, 90%
-  relative floor, runner-up margin ≥2, claim resolution); per-item
-  cross-round stability from visible-visible pairs (β-shrunk α=20)
-  mixes the twin's answer into the E012 belief BEFORE the gate cascade;
-  MIN_PAIRS=30 guard (added after the clean sandbox produced exactly 1
-  spurious collision). Evidence: clean runner bit-identical to E012
-  (isolated rerun; a contended run exposed torch CPU reduction
-  nondeterminism worth ±0.0006 — noted); panel sim +0.2293 log
-  (exact twins), +0.2003 (30% GIVEN-drift twins — fuzzy recall);
-  zip OK, parity exact, suite 47 passed + 1 xfail. LB pre-registration
-  in SCORES.md: unicef/wb structurally inert; unhcr 0.85–0.92 if the
-  panel hypothesis holds; 0.80–0.84 ⇒ recall-bound (widen fuzz);
-  flat ⇒ hypothesis wrong, re-open the 0.92 analysis; down ⇒ false
-  matches (raise margins). Kit watch: "<5 gating changes" unshipped —
-  full harness re-run required if an update lands before upload.
-
-## 2026-09-03 — E013 result: flat; linkage hypothesis unresolved, cheap diagnostics queued
-
-- **E013 submitted; result: Grand 0.60 — 0.52/0.49/0.78, identical to
-  E012.** unicef/wb inert ✓ (as designed); **unhcr flat = the
-  pre-registered flat arm**. Zero damage (guards worked) but zero gain:
-  the fuzzy matcher armed nothing on real data. Two candidate causes,
-  outside-indistinguishable: (a) rounds genuinely disjoint (organizers
-  built the flattening that way) — then the 0.92 mechanism is NOT
-  simple linkage, re-open that analysis; (b) real cross-round GIVEN
-  drift > 2 of 71 columns (age-band shifts move paired roster columns;
-  a different household respondent moves many), so MIN_PAIRS never
-  armed. E013 experiment status updated: adopted → parked (no harm, no
-  evidence of real-data function; revive on overlap confirmation).
-- Decisions: (1) ask Andy directly whether the two CATI rounds share
-  respondents — zero-cost, resolves (a) instantly; (2) E014 designed =
-  two-stage probabilistic linkage (loose blocking on a data-selected
-  stable column subset → per-column entropy-weighted similarity →
-  margin + absolute acceptance, column stability re-estimated from
-  confident seed pairs), same inert-by-guard safety — flat again would
-  falsify overlap conclusively; (3) kit watch unchanged ("<5 gating
-  changes" still unshipped as of the E013 upload).
-
-- **Parallel session (same day): E015 parked, E014 v2 adopted,
-  submission #8 packaged.**
-  - **E015 (trunk capacity grid)**: shared_trunk parameterized (default
-    bit-identical to E012, verified); per-instrument selection over
-    {64,128,256}×{2,3}+dropout. Runner Δ +0.0001 → parked per the
-    pre-registered fallback; third confirmation that the 1-factor
-    sandbox caps capacity gains; no leaderboard-loophole adoption.
-  - **E014 v1 (hard Fellegi–Sunter) discarded by its own diagnostics**:
-    the unhcr signature is ~16 GIVEN columns, not 72 (EXCLUDE counted —
-    same error A004 caught on wb); seed-vs-random score gap 1.3 ⇒ hard
-    matching unseparable under drift, and E013's real-data flat re-read
-    as COLLISIONS (uniqueness margin rejected concentrated cells).
-  - **E014 v2 (soft posterior evidence mixing) ADOPTED**: rarity-
-    weighted (−log u_j) agreement scores = log-LR ⇒ softmax posterior
-    over top-10 other-round candidates ⇒ posterior-mixed answers as
-    evidence ⇒ per-item λ calibrated by replaying on visible rows. No
-    uniqueness, no hard guards — collisions share mass, no signal ⇒
-    λ→0. Discovered en route: vs a weak model the layer acts as k-NN
-    conditioning (trait-similar neighbours) — kept, documented; vs the
-    full net on clean sandbox it is redundant (unhcr −0.0002, in
-    bound). Heavy-drift scored sim **+0.1556 log**; collision sim
-    213/213 items stay armed. Suite 51+1 xfail; zip OK; score.py PASS
-    0.50/0.45/0.56. The submission IS the overlap experiment: unhcr
-    ≥+0.02 ⇒ overlap real (E013 died on collisions); flat ⇒ overlap
-    dead, linkage abandoned, 0.92 question re-opens; +0.01 ambiguous
-    (k-NN residual) — thresholds pre-registered in SCORES.md.
+- Continued the supplied September 21 record; the execution environment's
+  clock is September 18. External checks are labeled accordingly in
+  `docs/phase2-preparation.md`; inherited future-dated results are not relabeled.
+- **Method rendered to four pages**, `output/pdf/method-4p.pdf`, with all pages
+  visually inspected and text bounds checked. Source: `docs/method-4p.md`;
+  reproducible renderer: `scripts/render_method.py`. Corrected the gate prior
+  (instrument median, not one), distinguished replay from cross-fit, removed
+  unsupported household/transfer claims, and synchronized the six flat A/Bs,
+  E037, phase-2 settings, probe precision, and A005's synthetic ceiling.
+- **E025 model unchanged**, SHA-256 recorded in the preparation document.
+  Fresh local ZIP checker passed; official `score.py --phase 2` PASS x3:
+  **0.490205754 / 0.462016752 / 0.565173814**, 310.0 seconds summed official
+  wall time. This agrees with the historical scores; the historical 291-second
+  in-process runner timing is a different measurement. Fresh source runner:
+  **268.1 seconds; source/assembly skill differences exactly 0 on all three**.
+  Full verification and artifact hashes are retained with the preparation SCORES.
+- **Codabench terms checked directly**: every Test entry needs the four-page
+  method; top three additionally provide research-reproduction-licensed source
+  at award stage. Release license selection remains an award-stage action.
+  API Test end is **November 14 00:00 UTC / 09:00 KST**, not end of that day.
+  Final reading arms are pre-registered in
+  `submissions/phase2-E025-preparation/SCORES.md`; no Test entry was submitted.
+- **Weekly watch**: kit fetch succeeded, HEAD = origin/main = ee427a9, no
+  gating update. Public leaderboard has six entries at UNHCR 0.93 / displayed
+  Grand 0.65 (including two with the same team name), with WB 0.49-0.50.
+  No new mechanism or phase-1 submission; E025 remains the model of record.
+- Fixed log ordering: all 51 previous sections preserved verbatim and sorted
+  newest-date first. Regenerated the experiment tree; it is unchanged.
 
 ## 2026-09-21 — E040 read flat: the base-model axis closes on real data; phase-1 search exhausted
 
@@ -877,6 +699,31 @@ Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-note
   (4) evidence currently mixes at item level — a per-(item, posterior-
   concentration) λ could trust exact twins more than diffuse ones.
 
+## 2026-09-06 — E017 v3 ran (after v1 hosted failure); capacity direction closed
+
+- **E017 v1 FAILED on the platform** (first hosted failure; code
+  unretrieved, timeout suspected — 465 s local vs the passing family's
+  200–250 s). v2 ({64,256}) discarded on measurement (unhcr selector
+  fell back to baseline — blind A/B); **v3** kept exactly the full
+  grid's winners {64×2, 128×2+dropout}, reproducing v1's selections at
+  340 s local. Lesson recorded: hosted wall-clock has never been
+  observed — treat ~350 s local as the working ceiling until an
+  organizer answer or a timing probe says otherwise.
+- **E017 v3 result: Grand 0.60 — 0.52 / 0.49 / 0.79** (unhcr +0.01).
+  Scored strictly against the pre-registration: unicef control clean,
+  wb flat, unhcr inside the ±0.01 flat band, below the +0.02 evidence
+  bar. **Capacity direction CLOSED** — the 0.92 gap is not
+  architecture. Eliminated to date: priors, per-item tuning, ordinal
+  smoothing, seed bagging, cross-round linkage (hard+soft), geography
+  cells (locally), capacity (locally ×3 and now on the leaderboard).
+- Carried-forward suspects, next session's queue: (1) **within-round
+  duplicate rows** — E013/E014 candidate pools were strictly
+  cross-round; same-round near-duplicates (household co-respondents,
+  re-dials) straddling TRAIN/DEV would be an answer key our design
+  never looked at; one-line pool extension, same self-calibrating λ
+  safety; (2) joint decoding of the overlapping s3_11 branches;
+  (3) per-item temperature calibration.
+
 ## 2026-09-05 (session 2) — EXCLUDE leak ruled out; E018 full-pool evidence adopted, submission #10
 
 - **EXCLUDE answer-key hypothesis closed in 10 minutes, locally**: the
@@ -902,31 +749,6 @@ Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-note
   question narrows to joint branch decoding, calibration, or something
   unconceived; unicef/wb carry the layer for the first time — live
   readings now, not controls.
-
-## 2026-09-06 — E017 v3 ran (after v1 hosted failure); capacity direction closed
-
-- **E017 v1 FAILED on the platform** (first hosted failure; code
-  unretrieved, timeout suspected — 465 s local vs the passing family's
-  200–250 s). v2 ({64,256}) discarded on measurement (unhcr selector
-  fell back to baseline — blind A/B); **v3** kept exactly the full
-  grid's winners {64×2, 128×2+dropout}, reproducing v1's selections at
-  340 s local. Lesson recorded: hosted wall-clock has never been
-  observed — treat ~350 s local as the working ceiling until an
-  organizer answer or a timing probe says otherwise.
-- **E017 v3 result: Grand 0.60 — 0.52 / 0.49 / 0.79** (unhcr +0.01).
-  Scored strictly against the pre-registration: unicef control clean,
-  wb flat, unhcr inside the ±0.01 flat band, below the +0.02 evidence
-  bar. **Capacity direction CLOSED** — the 0.92 gap is not
-  architecture. Eliminated to date: priors, per-item tuning, ordinal
-  smoothing, seed bagging, cross-round linkage (hard+soft), geography
-  cells (locally), capacity (locally ×3 and now on the leaderboard).
-- Carried-forward suspects, next session's queue: (1) **within-round
-  duplicate rows** — E013/E014 candidate pools were strictly
-  cross-round; same-round near-duplicates (household co-respondents,
-  re-dials) straddling TRAIN/DEV would be an answer key our design
-  never looked at; one-line pool extension, same self-calibrating λ
-  safety; (2) joint decoding of the overlapping s3_11 branches;
-  (3) per-item temperature calibration.
 
 ## 2026-09-05 — E013/E014 grand confirmed 0.60 each; linkage line CLOSED
 
@@ -997,6 +819,168 @@ Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-note
 - E014 status: adopted → parked pending the exact triple (no harm
   anywhere — the inert-by-calibration design held on real data too).
 
+## 2026-09-03 — E013 result: flat; linkage hypothesis unresolved, cheap diagnostics queued
+
+- **E013 submitted; result: Grand 0.60 — 0.52/0.49/0.78, identical to
+  E012.** unicef/wb inert ✓ (as designed); **unhcr flat = the
+  pre-registered flat arm**. Zero damage (guards worked) but zero gain:
+  the fuzzy matcher armed nothing on real data. Two candidate causes,
+  outside-indistinguishable: (a) rounds genuinely disjoint (organizers
+  built the flattening that way) — then the 0.92 mechanism is NOT
+  simple linkage, re-open that analysis; (b) real cross-round GIVEN
+  drift > 2 of 71 columns (age-band shifts move paired roster columns;
+  a different household respondent moves many), so MIN_PAIRS never
+  armed. E013 experiment status updated: adopted → parked (no harm, no
+  evidence of real-data function; revive on overlap confirmation).
+- Decisions: (1) ask Andy directly whether the two CATI rounds share
+  respondents — zero-cost, resolves (a) instantly; (2) E014 designed =
+  two-stage probabilistic linkage (loose blocking on a data-selected
+  stable column subset → per-column entropy-weighted similarity →
+  margin + absolute acceptance, column stability re-estimated from
+  confident seed pairs), same inert-by-guard safety — flat again would
+  falsify overlap conclusively; (3) kit watch unchanged ("<5 gating
+  changes" still unshipped as of the E013 upload).
+
+- **Parallel session (same day): E015 parked, E014 v2 adopted,
+  submission #8 packaged.**
+  - **E015 (trunk capacity grid)**: shared_trunk parameterized (default
+    bit-identical to E012, verified); per-instrument selection over
+    {64,128,256}×{2,3}+dropout. Runner Δ +0.0001 → parked per the
+    pre-registered fallback; third confirmation that the 1-factor
+    sandbox caps capacity gains; no leaderboard-loophole adoption.
+  - **E014 v1 (hard Fellegi–Sunter) discarded by its own diagnostics**:
+    the unhcr signature is ~16 GIVEN columns, not 72 (EXCLUDE counted —
+    same error A004 caught on wb); seed-vs-random score gap 1.3 ⇒ hard
+    matching unseparable under drift, and E013's real-data flat re-read
+    as COLLISIONS (uniqueness margin rejected concentrated cells).
+  - **E014 v2 (soft posterior evidence mixing) ADOPTED**: rarity-
+    weighted (−log u_j) agreement scores = log-LR ⇒ softmax posterior
+    over top-10 other-round candidates ⇒ posterior-mixed answers as
+    evidence ⇒ per-item λ calibrated by replaying on visible rows. No
+    uniqueness, no hard guards — collisions share mass, no signal ⇒
+    λ→0. Discovered en route: vs a weak model the layer acts as k-NN
+    conditioning (trait-similar neighbours) — kept, documented; vs the
+    full net on clean sandbox it is redundant (unhcr −0.0002, in
+    bound). Heavy-drift scored sim **+0.1556 log**; collision sim
+    213/213 items stay armed. Suite 51+1 xfail; zip OK; score.py PASS
+    0.50/0.45/0.56. The submission IS the overlap experiment: unhcr
+    ≥+0.02 ⇒ overlap real (E013 died on collisions); flat ⇒ overlap
+    dead, linkage abandoned, 0.92 question re-opens; +0.01 ambiguous
+    (k-NN residual) — thresholds pre-registered in SCORES.md.
+
+## 2026-09-02 — three nulls measured cheap; E012 shared-trunk net adopted, submission #6
+
+- **A004 (wb structural pass) done**: corrected our own notes — wb GIVEN
+  is 9 columns (21 of the non-PREDICT items are EXCLUDE), gates are
+  near-exhausted (27/30 GIVEN-parented, 19 on the tracer `group` arms),
+  so E008's "many weak predictors" story was mis-premised. 24 PREDICT
+  items strict-parse numeric (spans K=15, counts K=12–13) → ordinal
+  lever identified; sandbox provably cannot show it (random per-option
+  loadings in make_sandbox).
+- **E011 (ordinal kernel smoothing) REJECTED on its own sim channel**:
+  clean sandbox ≡ E010 (off-by-default works), but sim v1 (+0.0003) and
+  a deliberately favorable thin-cell sim v2 (+0.0000) measured the
+  option-axis pooling headroom at ~0 — κ-ladder + logistic already
+  exhaust it at n≈5k. Honest null, mirrors E007. Sim assertion kept as a
+  strict xfail (the recorded null).
+- **Seed-bagging probe killed before implementation**: E010 with holdout
+  seeds 0/1/2 → 3-inst mean 0.4991/0.4988/0.4989 (spread 0.0003).
+  Selection is stable; bagging would buy ~nothing at 2–3× runtime.
+- **E012 (shared-trunk multi-head net) implemented and ADOPTED**: per
+  instrument, one-hot GIVEN → 64-64 ReLU trunk → per-item softmax heads
+  + masked asked-only conditional heads (torch, early stopping, fixed
+  seed); replaces the 76–213 independent logistics; ladder blend w and
+  E010 conditional agreement unchanged. Runner 3-inst 0.4991 → 0.5061
+  (**Δ +0.0070**): wb +0.0102 (first wb movement anywhere), unhcr
+  +0.0097, unicef +0.0012 — exactly the heads-count ordering
+  pre-registered. The day's pattern in one line: per-item knobs, option
+  smoothing, priors, bagging all ≈ 0 — the paying move was the
+  model-CLASS change (nonlinearity + cross-item sharing).
+- **Submission #6 packaged** (`submissions/2026-09-02-E012/`,
+  script-assembled from verified src modules, parity exact, zip OK,
+  score.py PASS 0.50/0.45/0.56, ~200 s ≪ 900 s). LB pre-registration:
+  Grand 0.60–0.62; wb 0.49 → 0.50+ is the falsifiable core (sectioned
+  multi-factor thesis); unicef ~flat; any −0.02 ⇒ net memorization ⇒
+  lower w cap or revert to E010.
+
+- **E012 submitted; result: Grand 0.60 — unicef 0.52 / wb 0.49 /
+  unhcr 0.78** (E010: 0.51/0.49/0.77). Grand in band (bottom edge) ✓,
+  unhcr +0.01 ✓, unicef +0.01 ✓ — but **wb flat, the falsifiable core
+  FAILED**: fifth straight wb submission at 0.48–0.49; sandbox +0.0102
+  did not transfer.
+- **User leaderboard observation (same day, strategic)**: teams ranked
+  ABOVE us have ~identical unicef and wb — the entire gap is unhcr.
+  Combined with our own wb null series, conclusion upgraded: wb (9
+  GIVEN cols) and unicef (7 GIVEN, deterministic gates) are near their
+  INFORMATION CEILINGS for every serious team — they no longer rank
+  anyone. The competition is decided on unhcr (70% of scored cells,
+  cheapest U 1.2618, 72 GIVEN, 156 approximate gates, 2 waves).
+  All future spend goes to unhcr until shown otherwise. Candidate
+  unhcr edges the leaders may hold, in evidence order: (1) capacity —
+  the established real>sandbox coupling amplification means our
+  64-64 trunk is likely undersized for the real 72-column signal
+  (locally near-invisible, real gain — the E008 pattern); (2) joint /
+  consistent decoding of the three overlapping s3_11 branches
+  (schema-documented overlap, unexploited); (3) cross-wave record
+  linkage of the flattened panel (A001: real design is a panel) —
+  legality UNCLEAR under the re-identification clause: forum question
+  FIRST, never unilateral.
+
+- **Leaderboard intelligence (same day, decisive): teams above us show
+  unhcr ≈ 0.92.** Arithmetic: skill 0.92 ⇒ (0.92−1)×1.2618 ≈ −0.101
+  nats/cell ⇒ average 90% probability on the realized answer across all
+  132k cells INCLUDING attitude items (we: −0.278 ⇒ 76%). GIVEN-only
+  conditioning cannot plausibly reach that; the one mechanism that can
+  is **cross-round panel linkage** (A001: real design is a panel,
+  flattened; A002: both rounds inside one fieldwork window ⇒ same
+  person's answers nearly identical across rounds; 72 GIVEN roster
+  columns = a fingerprint). Classic DEV-probing overfitting is ruled
+  out by the reusable-holdout arithmetic (ε=10 + 0.01 rounding + 1/day
+  cannot yield +0.14 skill). Their phase-2 risks: (1) the
+  re-identification/disqualification clause — legality of within-
+  dataset record linkage is THE open question; (2) organizers may have
+  built TEST from twin-less respondents (roles fixed at build) — the
+  precise sense in which 0.92 could be "DEV overfitting"; (3) mandatory
+  4-page method disclosure in phase 2.
+- **Decisions**: (a) forum question on linkage legality FIRST (bundled
+  with the GATE_CORRECTIONS.md question, still unposted); (b) prepare a
+  conditional linkage module — runtime detection of duplicate roster
+  signatures on visible real data, used only if found; harmless/inert
+  on the sandbox (independent rows by construction) — but SUBMIT ONLY
+  after an organizer ruling; (c) meanwhile continue the legitimate
+  axis: E013 = unhcr-targeted capacity scale-up.
+
+- **ORGANIZER RULING (email, Andy, same day)**: "Matching rows within
+  the dataset — which does not extract identities outside of the
+  enclave — is permitted." Cross-round linkage is LEGAL. Also disclosed:
+  (1) "a few (<5) changes to gating in UNHCR that we still need to
+  ship" — a kit/schema update is coming, re-audit on arrival (gate
+  structure our E010 conditional-agreement layer depends on may move);
+  (2) the dangling GATE_CORRECTIONS.md reference is removed for now;
+  (3) prize-money announcement pending. Strategy consequence: E013 =
+  cross-round respondent linkage (runtime-detected, stability-
+  calibrated) is now the top-priority experiment; capacity scale-up
+  moves to E014.
+
+- **E013 (cross-round linkage) implemented and ADOPTED, submission #7
+  packaged** (`submissions/2026-09-03-E013/`, upload tomorrow). Layer:
+  round column from schema (2-valued wave/round GIVEN); FUZZY 1:1
+  matching on the remaining GIVEN signature (≤2 mismatches, 90%
+  relative floor, runner-up margin ≥2, claim resolution); per-item
+  cross-round stability from visible-visible pairs (β-shrunk α=20)
+  mixes the twin's answer into the E012 belief BEFORE the gate cascade;
+  MIN_PAIRS=30 guard (added after the clean sandbox produced exactly 1
+  spurious collision). Evidence: clean runner bit-identical to E012
+  (isolated rerun; a contended run exposed torch CPU reduction
+  nondeterminism worth ±0.0006 — noted); panel sim +0.2293 log
+  (exact twins), +0.2003 (30% GIVEN-drift twins — fuzzy recall);
+  zip OK, parity exact, suite 47 passed + 1 xfail. LB pre-registration
+  in SCORES.md: unicef/wb structurally inert; unhcr 0.85–0.92 if the
+  panel hypothesis holds; 0.80–0.84 ⇒ recall-bound (widen fuzz);
+  flat ⇒ hypothesis wrong, re-open the 0.92 analysis; down ⇒ false
+  matches (raise margins). Kit watch: "<5 gating changes" unshipped —
+  full harness re-run required if an update lands before upload.
+
 ## 2026-09-01 — E009 rejected; E010 conditional agreement adopted, submission #5
 
 - **E009 (per-item C+w blend) implemented and REJECTED**: per-PREDICT-item
@@ -1042,6 +1026,53 @@ Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-note
   near-deterministic gating already handled — look at the 4 non-GIVEN
   gate parents); (3) revisit E009's per-item idea only after a real-data
   diagnostic justifies it.
+
+## 2026-08-30 — E007 parked on the numbers; E008 logistic blend adopted, submission #4
+
+- **E007 (eRPIS prior blend) PARKED without implementation** — quantitative
+  pre-check killed it: phase 1 exposes all 8,279 unhcr TRAIN rows, so
+  country×wave cells hold n ≈ 1–2k real answers and a W-pseudo-count prior
+  shifts the posterior by ≤ W/(n+W) of a difference that has no systematic
+  sign (TRAIN and DEV are the same build). Expected Δ ≈ 0; rule 5 blocks
+  the spend. The A003 CSV is repurposed as a standing sanity anchor
+  (models should reproduce the published s3_11 country tables). Revive
+  conditions recorded in the experiment file.
+- **E008 (full-GIVEN logistic blend) implemented and adopted**: per
+  PREDICT item, multinomial logistic on the one-hot full GIVEN block
+  (7/30/72 columns vs the ladder's 3), mixed in probability space with
+  the E006 ladder; one blend weight per instrument tuned on the internal
+  20% holdout. Gate recursion + E003 softening unchanged. Runner: 3-inst
+  mean 0.4783 → 0.4991 (**Δ +0.0208**, largest since E004; every schema
+  up). Tuned w interior everywhere (0.6/0.9/0.8/0.6) with smooth concave
+  curves — ladder and logistic are complements, not substitutes.
+  max_iter probe: 1000 reproduces all skills to 4 decimals (cap
+  immaterial, kept 200). Wall-clock ~182 s ≪ 900 s. Tests 27/27.
+- **Smoke-check regression caught by check_submission_zip**: the kit's
+  3-row smoke frame makes the tuning holdout empty → sklearn raised on a
+  0-sample matrix. Guards added (empty split ⇒ w=0 ladder-only; w=0 skips
+  all encoding/fits; gated items with zero asked rows fall back to
+  ladder). Local harness never hits these paths — the zip checker is the
+  only pre-submission probe that does; keep running it BEFORE spending
+  the daily slot.
+- **Submission #4 packaged** (`submissions/2026-08-30-E008/`, zip OK).
+  LB expectations pre-registered in SCORES.md: Grand ≈ 0.57–0.59; the
+  falsifiable claim is world_bank moving off 0.48 for the first time
+  (psychometric GIVEN block = many weak predictors only the logistic
+  sees); unhcr largest absolute gain; any instrument −0.02 ⇒ overconfident
+  logits ⇒ C-grid / per-item w before next spend.
+
+- **E008 submitted; result: Grand 0.58 — unicef 0.51 / wb 0.49 /
+  unhcr 0.74** (E006: 0.50/0.48/0.66). Scorecard: Grand in the 0.57–0.59
+  pre-registered band ✓; unhcr largest ✓ (+0.08, ~4–5× sandbox Δ — third
+  straight submission where real GIVEN coupling beats the sandbox trait);
+  unicef smallest ✓; no drops ⇒ no overconfidence ✓. One OPEN item: wb
+  +0.01 is inside noise — the psychometric many-weak-predictors claim is
+  neither confirmed nor falsified; resolve with a wb-targeted change
+  before investing further in that story. Reading: unhcr headroom still
+  live (0.74 with cheapest U and 155-parent cascade); next capacity step
+  is E009 = more capacity where the logistic paid (per-item blend
+  weights + C grid, then GIVEN interactions via boosted trees on the
+  holdout), all locally verifiable before the next slot.
 
 ## 2026-08-29 — E006 hierarchical backoff; submission #3 packaged
 

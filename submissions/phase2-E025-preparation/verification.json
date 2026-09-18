@@ -1,0 +1,91 @@
+{
+  "checked_at_utc": "2026-09-18T10:32:37.859078+00:00",
+  "inherited_handoff_date": "2026-09-21",
+  "scope": "Local synthetic phase-2 preparation only; no hosted submission",
+  "baseline_commit": "a6ea2173780b0b85efeec7f5f0829af055c63af0",
+  "starter_kit_commit": "ee427a94f6cc6a0d9d653b6be68c835a032e7552",
+  "python": "3.13.14 (tags/v3.13.14:fd17997, Jun 10 2026, 13:03:48) [MSC v.1944 64 bit (AMD64)]",
+  "packages": {
+    "numpy": "2.5.1",
+    "pandas": "3.0.5",
+    "torch": "2.13.0+cpu",
+    "scikit-learn": "1.9.0",
+    "pyarrow": "25.0.1"
+  },
+  "sha256": {
+    "submissions/2026-09-09-E025/main.py": "00793cf9d720d6f7511ffd738935206b3a5401f2454255409429db8d55e991b9",
+    "docs/method-4p.md": "3573c018507c1e7a716ce645fcfcb51b5e680e1bc211b7b13d09798b387c10fb",
+    "scripts/render_method.py": "81f4361cdc9d7f4ee06d2069dc985f6efabca4c134d1bcc65966f67a46338ea6",
+    "output/pdf/method-4p.pdf": "6eb5fa7907ef5647aa98c433fed01a3f7273ace7dd05f3d50a293b47b67437bc",
+    "output/phase2/E025-phase2.zip": "67189b600c2c7a423dfe9620c42bb4b4349cb2355f17ee4c7a68f1da0f4e8305"
+  },
+  "archive": {
+    "members": [
+      "main.py"
+    ],
+    "payload_equals_original_E025": true,
+    "official_checker": "PASS"
+  },
+  "pdf": {
+    "pages": 4,
+    "text_bounds": "PASS",
+    "visual_review": "PASS"
+  },
+  "baseline_no_regression": "Unchanged original main.py bytes; fresh phase-2 skills match historical rounded values",
+  "checks": {
+    "unicef": {
+      "official": {
+        "status": "PASS",
+        "phase": 2,
+        "skill": 0.4902057540035809,
+        "n_cells": 41676,
+        "seconds": 42.34882712364197
+      },
+      "source": {
+        "skill": 0.4902057540035809,
+        "log_score": -0.7963199328197301,
+        "cells": 41676,
+        "seconds": 32.16
+      },
+      "source_minus_assembly_skill": 0.0
+    },
+    "world_bank": {
+      "official": {
+        "status": "PASS",
+        "phase": 2,
+        "skill": 0.4620167517538747,
+        "n_cells": 92112,
+        "seconds": 81.09249329566956
+      },
+      "source": {
+        "skill": 0.4620167517538747,
+        "log_score": -1.0858447099189652,
+        "cells": 92112,
+        "seconds": 69.57
+      },
+      "source_minus_assembly_skill": 0.0
+    },
+    "unhcr": {
+      "official": {
+        "status": "PASS",
+        "phase": 2,
+        "skill": 0.5651738139421264,
+        "n_cells": 308637,
+        "seconds": 186.57267665863037
+      },
+      "source": {
+        "skill": 0.5651738139421264,
+        "log_score": -0.548642898041078,
+        "cells": 308637,
+        "seconds": 166.38
+      },
+      "source_minus_assembly_skill": 0.0
+    }
+  },
+  "source_total_seconds": 268.11,
+  "official_total_seconds": 310.01,
+  "history_preservation": {
+    "existing_log_sections_preserved": 51
+  },
+  "submission_made": false
+}
