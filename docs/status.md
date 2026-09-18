@@ -23,6 +23,11 @@ inserted at the TOP of docs/log.md; historical dated entries are newest-first.
   E025 stays incumbent; no improvement from these findings is measured yet.
   Phase-2 fallback is prepared. `docs/method-4p.md` renders to four verified
   pages in `output/pdf/method-4p.pdf`; runbook: `docs/phase2-preparation.md`.
+- **Latest objective: win, with new methods allowed.** A008 proposes supervised
+  section-specific retrieval as the main research hypothesis and an independent
+  pretrained tabular base as a challenger. Neither is implemented or scored.
+  Grand .65 is not a guarantee of first place; H .94-.96 is a target scenario,
+  not a forecast. A007's repairs remain validation infrastructure.
 
 ## Real-data loss map (probe submissions E032–E034, unhcr)
 
@@ -80,14 +85,16 @@ unchanged experiments; first repair the evidence behind their interpretation.
 
 ## Next session plan
 
-1. **DEV validation audit is the main line.** Follow
+1. **Winning-strategy research is the main line.** Follow
+   `docs/analysis/A008-winning-strategy-hypotheses.md`: establish a non-injected
+   screening channel and scoped retrieval oracle before building a supervised
+   matcher; independently screen a pretrained tabular base within runtime.
+   No new score claim or ready submission. Preserve validation requirements in
    `docs/analysis/A007-submission-history-and-dev-plan.md` (all 24 submission
-   scorecards and full log reviewed). First assess honest final-output evidence
-   calibration over E025; then independently repair E040's unfair comparison
-   and different blend formulas. Provisional E041/E042, neither implemented.
-   Oracle first, separate selection/evaluation, all packaging checks, UNHCR
-   only, no automatic daily upload. Grand .63 is the planning anchor; .64 is
-   a success scenario and .65 a stretch target, not measured forecasts.
+   scorecards and full log reviewed). Its E041/E042 IDs remain provisional and
+   unimplemented; register actual experiments only when execution begins.
+   Separate selection/evaluation, all packaging checks, UNHCR only, no
+   automatic daily upload. E025 remains the measured fallback.
 2. **Keep the phase-2 fallback ready.** The file is
    `submissions/2026-09-09-E025/main.py` (hardened: `score.py --phase 2`
    PASS ×3 = 0.4902 / 0.4620 / 0.5652, 291 s local CPU, worst case no-GPU

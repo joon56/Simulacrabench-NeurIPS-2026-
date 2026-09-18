@@ -2,6 +2,26 @@
 
 Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-notes]].
 
+## Winning-objective continuation - A008 proposes new predictor families
+
+- User clarified the goal is winning, not merely improving E025, and permits
+  independent methods. Reframed A007's repairs as validation infrastructure.
+- Audited matching code: one GIVEN-agreement kernel supplies every item's
+  candidates; answer loss does not train that kernel. Proposed supervised,
+  section-specific retrieval with a base option. This differs from E023's K,
+  E030's adjacency credit and E027's fixed evidence input. No duplicate or
+  household-recurrence assumption is required.
+- Researched primary TabR/TabPFN sources. Independent challenger: pretrained
+  tabular prediction on a bounded gate-parent/content head set, evaluated
+  through final descendant probabilities. Offline/version/license/runtime
+  checks remain prerequisites, not completed findings.
+- A008 specifies constrained oracle screening and honest respondent-level
+  validation. Found UNHCR VAF as a possible external real-survey channel;
+  access is unverified, endpoint failed, no microdata acquired. Real TRAIN
+  validation inside the runner is not externally observable before submitting.
+- H .94-.96 / Grand about .65-.66 is a target scenario, not a forecast. No
+  model code, training, submission artifact, measured gain or slot used.
+
 ## DEV-history continuation - A007 full submission review and next-candidate plan
 
 - Read all 24 dated submission SCORES.md files and the complete historical
