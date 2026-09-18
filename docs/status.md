@@ -50,7 +50,8 @@ E040 tree blend. Also closed earlier: priors (E007), per-item tuning (E009),
 ordinal smoothing (E011), cross-round linkage (E013/E014), capacity beyond
 128×2 (E026).
 
-A006: E040 has validation defects and only tests 57 ungated items. E023
+A006/A007: E040 has validation defects and fits trees for 57 ungated heads,
+whose beliefs can propagate to 155 gated descendants. E023
 tested K/weight iterations, not out-of-sample evidence calibration. E037's
 cross-fitted isotonic null is not a bound on every calibrator. Do not repeat
 unchanged experiments; first repair the evidence behind their interpretation.
@@ -80,11 +81,13 @@ unchanged experiments; first repair the evidence behind their interpretation.
 ## Next session plan
 
 1. **DEV validation audit is the main line.** Follow
-   `docs/analysis/A006-dev-validation-audit.md`: reproduce E040's training-row
-   contamination and mixture inconsistency; then assess E025's non-cross-fitted,
-   pre-gate evidence replay. Use identical held-out and final-output objectives,
-   measure the specified candidate family's local oracle bound first, and
-   profile runtime. No new gain or real-data ceiling is asserted.
+   `docs/analysis/A007-submission-history-and-dev-plan.md` (all 24 submission
+   scorecards and full log reviewed). First assess honest final-output evidence
+   calibration over E025; then independently repair E040's unfair comparison
+   and different blend formulas. Provisional E041/E042, neither implemented.
+   Oracle first, separate selection/evaluation, all packaging checks, UNHCR
+   only, no automatic daily upload. Grand .63 is the planning anchor; .64 is
+   a success scenario and .65 a stretch target, not measured forecasts.
 2. **Keep the phase-2 fallback ready.** The file is
    `submissions/2026-09-09-E025/main.py` (hardened: `score.py --phase 2`
    PASS ×3 = 0.4902 / 0.4620 / 0.5652, 291 s local CPU, worst case no-GPU

@@ -26,6 +26,20 @@ examines the files and historical outcomes as supplied, not new hosted results.
 - Verdict: retain the historical flat score; withdraw the claim that it
   establishes a ceiling for trees or for every real-data base model.
 
+### v2 - Full-history review corrects the item-scope interpretation
+
+- See A007 for the complete submission ledger and conditional next-submission
+  plan. The v1 statement below that E040 leaves 156 gated items untested is
+  withdrawn: it fits trees for 57 ungated heads, but link_sharp propagates
+  parent beliefs into gated predictions. Schema traversal finds 155 gated
+  descendants reachable from those 57 roots, including 73 direct children of
+  s3_11_intent_return_12m_lbl. Reachability is not measured score improvement.
+- The 57/213 arithmetic is valid only for an isolated direct effect with
+  downstream predictions fixed, not as a bound on E040's total effect.
+- E018 already documented in-sample replay bias. The new proposal tests that
+  known tradeoff and the final-output objective; it is not a newly discovered
+  source of signal. Removing conservative bias can also increase variance.
+
 ## Findings
 
 1. [consistent: statistical validation; no population assumption required]

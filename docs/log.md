@@ -2,6 +2,26 @@
 
 Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-notes]].
 
+## DEV-history continuation - A007 full submission review and next-candidate plan
+
+- Read all 24 dated submission SCORES.md files and the complete historical
+  log; cross-checked relevant experiment records and model code. A007 records
+  every submission outcome, distinguishing failed E031, probe E032-E034,
+  missing instrument readings, and same-Grand best updates E018/E022/E025.
+- Corrected our own A006 scope error: E040 trains 57 ungated heads, but their
+  beliefs can propagate to 155 gated descendants. Schema traversal confirms
+  73 direct children of s3_11_intent_return_12m_lbl. Direct-cell arithmetic
+  does not bound the entire pipeline effect. Appended v2 to A006.
+- E018 already acknowledged in-sample replay bias; testing it is not a new
+  discovery of household structure. E019's simulated gain and confident
+  forecast failed to transfer visibly, reinforcing conservative expectations.
+- Proposed order: E041 honest final-output evidence calibration, then E042
+  fair tree comparison, each UNHCR-only and oracle-first. IDs are provisional;
+  no model implemented or submission prepared. Qualification, not the date,
+  determines upload. Grand .63 planning anchor; .64 success / .65 stretch.
+- No training, score change or slot used. Details and conditional decision
+  arms: docs/analysis/A007-submission-history-and-dev-plan.md.
+
 ## DEV-priority continuation — A006 finds invalid closure evidence in E040
 
 - User clarified the immediate objective: improve DEV ranking. Phase-2
