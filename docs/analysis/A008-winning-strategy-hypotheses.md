@@ -146,3 +146,26 @@ research target needed to move beyond the recorded leading .93, not a claim
 that either proposal will achieve it. Flat or worse remains plausible.
 The next deliverable is a go/no-go measurement, not another synthetic story
 chosen to make a preferred architecture look successful.
+
+## v2 - User-provided leaderboard screenshot
+
+The subsequent screenshot shows three rows at Grand .65 with
+UNICEF/WB/UNHCR .52/.50/.93, three at .52/.49/.93, and two at .52/.49/.92.
+Team identities and capture date are not shown. Treat this as a user-supplied
+snapshot, not an independently refreshed leaderboard or a controlled A/B.
+
+Relative to our displayed .52/.49/.89, the leading displayed component gap
+is .01 WB plus .04 UNHCR. Their Grand contributions are .00333 and .01333;
+80% of this arithmetic gap is UNHCR and 20% WB. Rounding/noise means these
+are approximate planning figures, not exact causal gains.
+
+Retain supervised retrieval on UNHCR as the main hypothesis. Add WB to local
+screening of the independent pretrained tabular base; agreement among earlier
+leaders was not a WB Bayes bound. No method or mechanism can be identified
+from these displayed scores. Initial hosted tests stay UNHCR-only under the
+standing rule; this update does not schedule a mixed-instrument submission.
+
+With UNICEF .52 and WB .50, H .93/.94/.95 gives Grand arithmetic
+.6500/.6533/.6567. Thus H .95 with WB .50 is a .66 display scenario, whereas
+WB .49 requires H .96 for the same mean. Neither target is a forecast;
+even achieving it would not guarantee winning a moving leaderboard.

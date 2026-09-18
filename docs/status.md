@@ -8,8 +8,10 @@ inserted at the TOP of docs/log.md; historical dated entries are newest-first.
 
 - Leaderboard best: **E025 — Grand 0.63 (unicef 0.52 / wb 0.49 / unhcr 0.89)**,
   `submissions/2026-09-09-E025/`, unchanged since 2026-09-09. Field above us:
-  a plateau at Grand 0.65 (unhcr 0.93) and 0.64 (unhcr 0.91–0.92), several
-  teams each, with near-identical unicef/wb — unexplained by anything in our map.
+  latest user-provided screenshot shows three leading rows at
+  **0.52 / 0.50 / 0.93 (Grand 0.65)** and three more at
+  0.52 / 0.49 / 0.93. Displayed gap: WB +0.01, UNHCR +0.04.
+  Screenshot date/team identities are not visible; no new submission by us.
 - Adopted stack (all in `src/models/`, assembled self-contained per submission):
   hier_backoff ladder (E006) → E010 conditional gate agreement → shared_trunk
   net (E012, GPU with CPU fallback) → dup_link/hh_sharp household evidence
@@ -28,6 +30,11 @@ inserted at the TOP of docs/log.md; historical dated entries are newest-first.
   pretrained tabular base as a challenger. Neither is implemented or scored.
   Grand .65 is not a guarantee of first place; H .94-.96 is a target scenario,
   not a forecast. A007's repairs remain validation infrastructure.
+- **WB is a secondary research target, not a demonstrated ceiling at .49.**
+  Screen the independent tabular base on WB locally as well. With controls
+  .52/.50, H .95 gives mean .6567 (about Grand .66); with WB .49 it needs
+  H .96. These are arithmetic scenarios, not forecasts or guaranteed ranks.
+  Keep initial hosted tests UNHCR-only under the standing attribution rule.
 
 ## Real-data loss map (probe submissions E032–E034, unhcr)
 

@@ -2,6 +2,19 @@
 
 Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-notes]].
 
+## Leaderboard screenshot continuation - WB .50 is part of the winning target
+
+- User supplied a leaderboard screenshot: three leading rows at
+  .52/.50/.93 (Grand .65), three at .52/.49/.93, two at .52/.49/.92.
+  No visible team identities or timestamp; our E025 score is unchanged.
+- Displayed component gap to the leading triple is .01 WB and .04 UNHCR,
+  approximately .00333 and .01333 Grand respectively. Keep UNHCR primary;
+  include WB in local screening of the independent tabular base. No claim
+  that repeated .50 scores prove a particular method or an unnoised gain.
+- Appended A008 v2 and updated status. With .52/.50 controls, H .95 gives
+  arithmetic Grand .6567; WB .49 needs H .96. These are targets, not forecasts.
+  Initial hosted tests remain UNHCR-only. No model change or submission.
+
 ## Winning-objective continuation - A008 proposes new predictor families
 
 - User clarified the goal is winning, not merely improving E025, and permits
