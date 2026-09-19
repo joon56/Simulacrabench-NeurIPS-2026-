@@ -1,21 +1,21 @@
-# DEV research archive
+# E041 DEV best archive
 
-**2026-09-19-E041.zip is ready for one exploratory DEV submission under the user's
-subsequent slot-use direction. It failed local performance adoption and is
-not a demonstrated improvement.** It changes UNHCR only; E025 remains
-incumbent. No leaderboard upload has been made.
+**User-reported DEV result on 2026-09-19: Grand .64 / UNICEF .52 / WB .49 /
+UNHCR .92. E041 is the new DEV incumbent.** Displayed gain over E025: Grand
++.01, UNHCR +.03; controls unchanged. This is one rounded/noised hosted result,
+not an exact unnoised gain estimate. Archive bytes remain frozen.
 
 The official phase-1 scorer passes all three schemas, extracted archive and
 source predictions match exactly, and clean regression stays within .002.
 However, the existing household simulation loses .002025811 UNHCR skill;
-external observed-data gains are small and uncertain. No .64/.65 forecast
-is supported by these measurements.
+external observed-data gains are small and uncertain. These local outcomes
+remain unchanged; the subsequent positive evidence comes from the hosted
+reading. No .65 forecast is established.
 
-The earlier DO NOT SUBMIT recommendation is superseded: the user values an
-expiring slot's real-data measurement separately from local model adoption.
-Use the preregistered scorecard to interpret one result; a flat reading is
-inconclusive and does not justify successive small weight changes. Archive
-bytes and technical verification are unchanged.
+The earlier local rejection and exploratory-slot decision are preserved in
+the scorecard and experiment record. The actual result selects the .64 arm:
+retain the snapshot as DEV best. E025 remains the separately validated phase-2
+fallback; E041 has not received that phase's validation or method update.
 
 Archive: [2026-09-19-E041.zip](../2026-09-19-E041.zip).
 Relocated from `output/dev/E041.zip` on 2026-09-19 without byte changes.

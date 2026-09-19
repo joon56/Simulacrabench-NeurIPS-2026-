@@ -1,6 +1,6 @@
 # E041 — Supervised section-specific retrieval
 parent: E025
-status: rejected
+status: adopted
 date: 2026-09-18
 
 ## Hypothesis
@@ -54,6 +54,10 @@ Implementation is conditional on the pre-estimator oracle result.
 Registration above preceded all measurements. The bounded diagonal metric
 was implemented; this is not the larger neural retrieval family in A008.
 
+- Hosted result reported by the user on 2026-09-19: Grand **.64**, UNICEF
+  **.52**, World Bank **.49**, UNHCR **.92**. New DEV best; displayed gains
+  over E025 +.01 Grand / +.03 UNHCR. See Decision for scope and interpretation.
+
 - Clean UNHCR section-mixture oracle: feasible skill gain +.234499, mean
   equivalent +.078166. Its query-specific optimal mixtures are an optimistic
   information screen, not learnable weights or a forecast.
@@ -88,7 +92,24 @@ ceiling. No external dataset or fitted external weights enter the archive.
 
 ## Decision
 
-Rejected for adoption: neither the +.005 mean bar nor the directional-sim
+**Current decision: adopted as the leaderboard-backed DEV incumbent** after
+the user-reported Grand .64 / UNICEF .52 / WB .49 / UNHCR .92 result on
+2026-09-19. This applies the preregistered .64 arm with a best update and
+stable controls. Displayed gains over E025: Grand +.01, UNHCR +.03. Preserve
+the frozen archive. Local adoption criteria still failed; the decision is
+based on the new hosted evidence, not relabeling synthetic performance.
+E025 remains the phase-2 fallback until E041 receives separate validation.
+
+Domain verdict after hosted reading: positive transfer is consistent with
+section-dependent relevance of GIVEN features, but one noised reading cannot
+isolate this explanation from bank, selector or replay changes. The direction
+differs from the household sim; do not treat that sim as a real-data veto or
+infer new population structure. Source: user report; no independent platform
+lookup, submission ID or hosted runtime. Full result is in the scorecard.
+
+### Initial local decision (preserved)
+
+Rejected for local adoption: neither the +.005 mean bar nor the directional-sim
 route passes. Preserve code and `submissions/2026-09-19-E041.zip` as a technically checked
 research artifact; do not submit it as a qualified improvement. E025 remains
 incumbent. No hosted score or daily slot used. Snapshot, preregistered reading

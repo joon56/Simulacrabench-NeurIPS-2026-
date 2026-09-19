@@ -2,6 +2,27 @@
 
 Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-notes]].
 
+## 2026-09-19 - E041 hosted result: Grand .64, UNHCR .92; new DEV best
+
+- User supplied E041 in Grand / UNICEF / World Bank / UNHCR order:
+  **.64 / .52 / .49 / .92**. Previous E025: .63 / .52 / .49 / .89.
+  Displayed differences: Grand +.01, UNHCR +.03, controls unchanged.
+  Source is the user report; no independent platform fetch, submission ID,
+  exact upload time or hosted runtime was supplied.
+- Applied the preregistered .64 positive arm with a best update: retain E041
+  as the leaderboard-backed DEV incumbent. Experiment status now adopted;
+  its initial local rejection and exploratory-slot rationale are preserved.
+- Clean UNHCR -.000486, household sim -.002026 and weak Adult audit results
+  remain unchanged. These channels did not predict the hosted direction.
+  One rounded/noised reading does not establish exact unnoised gain, isolate
+  learned weights from bank/selector/replay changes, or prove .65 is next.
+- The .79 base + .10 evidence loss map belongs to E025. E041 has no measured
+  decomposition. Keep E025's separately validated phase-2 fallback and method
+  until E041 receives phase-2 validation and documentation.
+- Updated E041 SCORES.md, verification metadata, README, experiment Decision,
+  status and A008; regenerate tree. Frozen source/ZIP hashes unchanged. This
+  task records a successful reported submission; it performs no new upload.
+
 ## 2026-09-19 - E041 archive follows the established submissions layout
 
 - User requested all future submission deliverables under `submissions/`,

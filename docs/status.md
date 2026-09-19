@@ -1,39 +1,43 @@
 # STATUS — read this first in a new session (kept current at every commit)
 
-Updated: continuation of the 2026-09-21 handoff. The audit environment reports
-2026-09-18; see `docs/phase2-preparation.md` for provenance. Newest work is
+Updated: E041 result reported by the user on 2026-09-19, continuing the supplied
+2026-09-21 handoff; see `docs/phase2-preparation.md` for date provenance. Newest work is
 inserted at the TOP of docs/log.md; historical dated entries are newest-first.
 
 ## Where we are
 
-- Leaderboard best: **E025 — Grand 0.63 (unicef 0.52 / wb 0.49 / unhcr 0.89)**,
-  `submissions/2026-09-09-E025/`, unchanged since 2026-09-09. Field above us:
+- Leaderboard best: **E041 — Grand 0.64 (unicef 0.52 / wb 0.49 / unhcr 0.92)**,
+  user-reported on 2026-09-19; `submissions/2026-09-19-E041.zip` and matching
+  snapshot directory. Previous E025: .63 / .52 / .49 / .89. Displayed gains:
+  Grand +.01, UNHCR +.03, controls unchanged. Field above us:
   latest user-provided screenshot shows three leading rows at
   **0.52 / 0.50 / 0.93 (Grand 0.65)** and three more at
-  0.52 / 0.49 / 0.93. Displayed gap: WB +0.01, UNHCR +0.04.
-  Screenshot date/team identities are not visible; no new submission by us.
+  0.52 / 0.49 / 0.93. Displayed gap to that snapshot: WB +0.01, UNHCR +0.01.
+  Screenshot date/team identities are not visible; no new leaderboard fetch.
 - Adopted stack (all in `src/models/`, assembled self-contained per submission):
   hier_backoff ladder (E006) → E010 conditional gate agreement → shared_trunk
   net (E012, GPU with CPU fallback) → dup_link/hh_sharp household evidence
   layer (E018/E022: full visible pool, Fellegi–Sunter weights, softmax
   posterior, replay-calibrated λ with concentration buckets) → hh_cap
-  per-instrument config {64×2, 128×2+do} (E025).
+  per-instrument config {64×2, 128×2+do} (E025), then supervised section
+  retrieval on UNHCR only (E041, `supervised_retrieval.py`).
 - **User priority: improve DEV rank.** A006 reopens validation auditing:
   E040 compares an out-of-sample tree with an in-sample refitted net, and
   tuning/deployment mixture formulas differ. Historical flat scores remain;
   the claim that all real-data base-model headroom is exhausted is withdrawn.
-  E025 stays incumbent; no improvement from these findings is measured yet.
+  E041 is now DEV incumbent; the specific E040 audit repairs remain untested.
   Phase-2 fallback is prepared. `docs/method-4p.md` renders to four verified
   pages in `output/pdf/method-4p.pdf`; runbook: `docs/phase2-preparation.md`.
-- **Latest candidate E041 rejected locally.** Supervised section-specific
+- **E041 adopted as DEV best after a positive hosted reading.** Section-specific
   diagonal retrieval: clean UNHCR -.000486 skill, existing household sim
   -.002026. Observed Adult audit gains +.000595 / +.000427 are inconclusive.
   `submissions/2026-09-19-E041.zip` passes checker, official phase-1 x3 and exact source
-  parity (320.6 s CPU total). **User subsequently prioritized expiring-slot
-  exploration: the unchanged E041 ZIP is ready for one exploratory DEV test,
-  despite failed local adoption.** See its updated SCORES.md reading arms.
+  parity (320.6 s CPU total). User-reported hosted .64/.52/.49/.92 selects the
+  preregistered .64 positive arm. Local rejection remains historical evidence;
+  the new decision follows the hosted best update, not revised local scores.
   E042 final-evidence blend stopped at its oracle: +.004570 log < .005.
-  No upload or new hosted score. A008's independent pretrained base remains
+  One result does not identify the causal component or exact unnoised gain.
+  A008's independent pretrained base remains
   unimplemented; the broader retrieval family is not universally ruled out.
 - **WB is a secondary research target, not a demonstrated ceiling at .49.**
   Screen the independent tabular base on WB locally as well. With controls
@@ -41,7 +45,10 @@ inserted at the TOP of docs/log.md; historical dated entries are newest-first.
   H .96. These are arithmetic scenarios, not forecasts or guaranteed ranks.
   Keep initial hosted tests UNHCR-only under the standing attribution rule.
 
-## Real-data loss map (probe submissions E032–E034, unhcr)
+## Historical E025 loss map (probe submissions E032–E034, unhcr)
+
+These measurements describe E025, not E041. E041's .92 has not been decomposed;
+do not automatically relabel the old evidence contribution as .13.
 
 - unhcr 0.89 = base model 0.79 + evidence layer +0.10.
 - Per-cell skill: gated items 0.892, content items 0.885 (on unicef/wb, where
@@ -98,22 +105,20 @@ unchanged experiments; first repair the evidence behind their interpretation.
 
 ## Next session plan
 
-1. **Exploratory candidate: submissions/2026-09-19-E041.zip.** Local adoption
-   remains rejected; the user requested using expiring slots for verification.
-   Technical checks and clean no-regression passed. Test the unchanged pipeline
-   once on UNHCR only; inspect any best update. A flat Grand is inconclusive,
-   and triggers moving to a different family, not repeated small-weight tests.
-   No actual upload yet and no supported improvement forecast.
-   Read A008 v3/v4 and E041/E042 results before more work. UCI Adult now supplies
-   an observed, non-injected screening channel; its domain and profile-sampling
-   limits preclude an HSCC forecast. Do not repeat diagonal-weight or fixed
-   final-share tuning. Next independent family: screen the pretrained tabular
-   base's offline/runtime feasibility and held-out complementarity, with an
-   oracle before estimator work. Preserve the A007 validation requirements.
+1. **Freeze E041 as the DEV comparison baseline.** The user reported
+   .64/.52/.49/.92; preserve the exact ZIP and interpret this as the registered
+   positive arm. Next experiments need a named incremental mechanism, a scoped
+   oracle and honest selection/evaluation; no blind daily weight grid. Positive
+   transfer justifies further study but does not isolate weights, donor bank,
+   selector or replay. The old E025 loss map cannot decompose E041.
+   Read A008 v5 and E041/E042 results before more work. The observed Adult
+   screen's domain/profile limits and negative household sim did not predict
+   the hosted gain. An independent pretrained base remains a possible separate
+   family, subject to feasibility and oracle screening. Preserve A007 checks.
    Its provisional experiment names were superseded: actual E041 is retrieval,
    actual E042 is the final-evidence blend oracle. New work needs a new ID.
    UNHCR-only initial hosted test, separate selection/evaluation, no automatic
-   daily upload. E025 remains the measured fallback.
+   daily upload. E025 remains the fallback; E041 is the new DEV incumbent.
 2. **Keep the phase-2 fallback ready.** The file is
    `submissions/2026-09-09-E025/main.py` (hardened: `score.py --phase 2`
    PASS ×3 = 0.4902 / 0.4620 / 0.5652, 291 s local CPU, worst case no-GPU
@@ -124,11 +129,13 @@ unchanged experiments; first repair the evidence behind their interpretation.
    readings: `submissions/phase2-E025-preparation/SCORES.md`. Fresh local
    rehearsal: ZIP OK, official phase-2 PASS x3 (same scores, 310.0 s),
    src parity exact x3 (268.1 s); hashes/results in adjacent `verification.json`.
-3. **Method complete; keep it synchronized.** Four rendered pages, corrected
+3. **E025 phase-2 method complete; E041 coverage pending.** Four rendered pages, corrected
    agreement prior and replay limitations, six flat A/Bs, probe precision and
    oracle. Codabench terms §7 checked: method required for every Test entry;
    top three provide research-reproduction-licensed source at award stage.
    Choose our release license before that delivery; no new license applied.
+   This document/PDF still describes the E025 fallback, not E041. Validate
+   E041 on phase 2 and update/render its method before changing that package.
 4. **Separate adoption from exploration; retain technical verification.**
    The user's latest direction permits a technically validated, preregistered
    exploratory candidate without a positive local adoption result. This

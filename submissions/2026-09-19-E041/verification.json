@@ -9,7 +9,19 @@
   "local_threads": 2,
   "local_cuda": false,
   "performance_qualified": false,
-  "hosted_result": null,
+  "performance_qualification_scope": "local_adoption",
+  "hosted_result": {
+    "source": "user_report",
+    "reported_on": "2026-09-19",
+    "grand": 0.64,
+    "unicef": 0.52,
+    "world_bank": 0.49,
+    "unhcr": 0.92,
+    "new_dev_best": true,
+    "submission_id": null,
+    "uploaded_at": null,
+    "hosted_seconds": null
+  },
   "instruments": {
     "unicef": {
       "status": "PASS",

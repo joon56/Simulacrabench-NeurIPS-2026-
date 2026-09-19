@@ -231,3 +231,24 @@ remain inconclusive. Updated preregistered arms in its scorecard determine
 the next research action; no repeated fine weight tuning after a flat result.
 Archive bytes and performance_qualified=false remain unchanged. No upload
 has been performed. A forecast of .65 is still unsupported.
+
+## v5 - E041 hosted result reported: new DEV incumbent
+
+On 2026-09-19 the user reported E041 Grand .64 / UNICEF .52 / World Bank .49 /
+UNHCR .92, compared with E025 .63/.52/.49/.89. Displayed Grand gain +.01 and
+UNHCR gain +.03, unchanged controls, select the preregistered .64 positive arm.
+E041 is retained as the new leaderboard-backed DEV incumbent. This is a
+user-reported reading, not a fetched platform record; submission ID, exact
+upload time and runtime were not provided. The frozen archive is unchanged.
+
+The original local failure and exploratory decision remain above. The negative
+household sim and inconclusive Adult screen did not predict hosted transfer.
+This result supports continuing research on the complete retrieval pipeline;
+it does not identify a causal gain from learned weights separately from the
+bank, selector and replay changes, or establish the exact unnoised effect.
+The historical E025 .79+.10 loss map cannot be reused as an E041 decomposition.
+
+Use E041 as the next DEV comparison baseline, preserve E025 as the separately
+validated phase-2 fallback, and require scoped oracle/validation for new changes.
+E041 phase-2 packaging and matching method documentation are not completed by
+this result-recording task. No additional experiment, model edit or upload.
