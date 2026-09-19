@@ -85,6 +85,7 @@ docs/analysis/   # A-series process records (EDA, domain research): append-only 
 - **Adoption threshold is fixed**: Δ(3-instrument mean, sample excluded) > +0.005 (~3σ of phase-sampling noise, measured 2026-08-12). The experiment file's Decision section is the only place verdicts are rendered.
 - `python scripts/render_tree.py` regenerates `docs/tree.md` (mermaid) from the headers — run it whenever an experiment file is added or its status changes.
 - Leaderboard submissions snapshot into `submissions/` with the experiment ID and expected-vs-actual score pair.
+- Submission ZIPs use `submissions/YYYY-MM-DD-E0XX.zip`; matching source and scorecards use `submissions/YYYY-MM-DD-E0XX/`. Keep future deliverables in this established layout, not `output/dev/` (user preference, 2026-09-19).
 - **End of each working day: push to `origin` (private GitHub repo).**
 
 ## Study sessions

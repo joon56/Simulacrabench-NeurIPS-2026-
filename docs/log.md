@@ -2,6 +2,18 @@
 
 Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-notes]].
 
+## 2026-09-19 - E041 archive follows the established submissions layout
+
+- User requested all future submission deliverables under `submissions/`,
+  with names matching earlier entries. Recorded the persistent convention
+  `submissions/YYYY-MM-DD-E0XX.zip`, plus its matching snapshot directory.
+- Moved E041 to `submissions/2026-09-19-E041.zip` and its README into the
+  existing snapshot directory. Updated assembly/verification defaults and
+  current references. Historical log paths remain as originally recorded.
+- Default builder recreated the identical ZIP/main.py hashes; checker PASS
+  at the new path. Original scoring timings remain valid for the identical
+  bytes. No new model, score or upload.
+
 ## Slot-use correction - E041 ready for one exploratory DEV reading
 
 - User challenged withholding an expiring daily slot and preferred using it

@@ -48,7 +48,7 @@ def build_source():
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--out", type=Path, default=ROOT / "submissions/2026-09-19-E041")
-    parser.add_argument("--zip", type=Path)
+    parser.add_argument("--zip", type=Path, default=ROOT / "submissions/2026-09-19-E041.zip")
     args = parser.parse_args()
     args.out.mkdir(parents=True, exist_ok=True)
     source = build_source().encode("utf-8")

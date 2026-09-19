@@ -18,7 +18,7 @@ KIT = ROOT / "external/starter-kit"
 
 
 def main():
-    archive = ROOT / "output/dev/E041.zip"
+    archive = ROOT / "submissions/2026-09-19-E041.zip"
     snapshot = ROOT / "submissions/2026-09-19-E041"
     temp_root = ROOT / "tmp/e041-grader"
     extracted = temp_root / "submission"

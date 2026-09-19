@@ -28,7 +28,7 @@ inserted at the TOP of docs/log.md; historical dated entries are newest-first.
 - **Latest candidate E041 rejected locally.** Supervised section-specific
   diagonal retrieval: clean UNHCR -.000486 skill, existing household sim
   -.002026. Observed Adult audit gains +.000595 / +.000427 are inconclusive.
-  `output/dev/E041.zip` passes checker, official phase-1 x3 and exact source
+  `submissions/2026-09-19-E041.zip` passes checker, official phase-1 x3 and exact source
   parity (320.6 s CPU total). **User subsequently prioritized expiring-slot
   exploration: the unchanged E041 ZIP is ready for one exploratory DEV test,
   despite failed local adoption.** See its updated SCORES.md reading arms.
@@ -98,7 +98,7 @@ unchanged experiments; first repair the evidence behind their interpretation.
 
 ## Next session plan
 
-1. **Next-day exploratory candidate: output/dev/E041.zip.** Local adoption
+1. **Exploratory candidate: submissions/2026-09-19-E041.zip.** Local adoption
    remains rejected; the user requested using expiring slots for verification.
    Technical checks and clean no-regression passed. Test the unchanged pipeline
    once on UNHCR only; inspect any best update. A flat Grand is inconclusive,

@@ -98,7 +98,7 @@ park this exact configuration and move to a materially different family;
 do not follow with a daily weight grid. .64/.65 are favourable scenarios,
 not forecasts; .63 is only the incumbent planning anchor. No upload performed.
 
-Archive: `output/dev/E041.zip`.
+Archive: `submissions/2026-09-19-E041.zip` (relocated without byte changes).
 SHA256: `1502ebad20e85ae57db617fa6d202b9e199594c1c043acd6d0d1d52102362a50`.
 Main SHA256: `22c911806ea91234ae350341adfb9c0df2ce4be41cc88e73be304e4bb1023073`.
 Exact checks/times: adjacent `verification.json`. Experiment decision:

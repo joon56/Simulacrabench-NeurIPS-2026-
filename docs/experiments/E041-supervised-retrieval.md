@@ -89,7 +89,7 @@ ceiling. No external dataset or fitted external weights enter the archive.
 ## Decision
 
 Rejected for adoption: neither the +.005 mean bar nor the directional-sim
-route passes. Preserve code and `output/dev/E041.zip` as a technically checked
+route passes. Preserve code and `submissions/2026-09-19-E041.zip` as a technically checked
 research artifact; do not submit it as a qualified improvement. E025 remains
 incumbent. No hosted score or daily slot used. Snapshot, preregistered reading
 arms and machine-readable verification are in `submissions/2026-09-19-E041/`.

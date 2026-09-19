@@ -1,6 +1,6 @@
 # DEV research archive
 
-**E041.zip is ready for one exploratory DEV submission under the user's
+**2026-09-19-E041.zip is ready for one exploratory DEV submission under the user's
 subsequent slot-use direction. It failed local performance adoption and is
 not a demonstrated improvement.** It changes UNHCR only; E025 remains
 incumbent. No leaderboard upload has been made.
@@ -17,8 +17,12 @@ Use the preregistered scorecard to interpret one result; a flat reading is
 inconclusive and does not justify successive small weight changes. Archive
 bytes and technical verification are unchanged.
 
-See [scorecard](../../submissions/2026-09-19-E041/SCORES.md),
-[verification](../../submissions/2026-09-19-E041/verification.json), and
+Archive: [2026-09-19-E041.zip](../2026-09-19-E041.zip).
+Relocated from `output/dev/E041.zip` on 2026-09-19 without byte changes.
+Future ZIPs follow `submissions/YYYY-MM-DD-E0XX.zip`.
+
+See [scorecard](SCORES.md),
+[verification](verification.json), and
 [experiment decision](../../docs/experiments/E041-supervised-retrieval.md).
 
 Rebuild: `.venv/Scripts/python.exe scripts/assemble_e041.py`.
