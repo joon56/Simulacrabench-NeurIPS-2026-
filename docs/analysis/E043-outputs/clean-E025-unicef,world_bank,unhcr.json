@@ -1,0 +1,36 @@
+{
+  "label": "E025",
+  "case": "clean",
+  "seed": 13,
+  "source": "submissions\\2026-09-09-E025\\main.py",
+  "source_sha256": "00793cf9d720d6f7511ffd738935206b3a5401f2454255409429db8d55e991b9",
+  "instruments": {
+    "unicef": {
+      "source_sha256": "00793cf9d720d6f7511ffd738935206b3a5401f2454255409429db8d55e991b9",
+      "frame_sha256": "96a081fd7880bf0e06399d4a4e6fdfb332436b19ea08d754bacf87d377178a24",
+      "seconds": 33.45795220000002,
+      "skill": 0.5006484230707156,
+      "log_score": -0.780008047004413,
+      "cells": 17856,
+      "comparisons": {}
+    },
+    "world_bank": {
+      "source_sha256": "00793cf9d720d6f7511ffd738935206b3a5401f2454255409429db8d55e991b9",
+      "frame_sha256": "4c8da49f0d35b7ebfe49739a1619681ae998c2e0fd1cfd79fe7472606366a139",
+      "seconds": 91.03887330000009,
+      "skill": 0.45471730736298255,
+      "log_score": -1.1005776279104411,
+      "cells": 39520,
+      "comparisons": {}
+    },
+    "unhcr": {
+      "source_sha256": "00793cf9d720d6f7511ffd738935206b3a5401f2454255409429db8d55e991b9",
+      "frame_sha256": "0e6f1361d9e3d5a85fc8bad561cd486dc64fb7970ad07fd7f0074b629beaf836",
+      "seconds": 228.99846259999993,
+      "skill": 0.5629488737050165,
+      "log_score": -0.5514502212860809,
+      "cells": 132273,
+      "comparisons": {}
+    }
+  }
+}

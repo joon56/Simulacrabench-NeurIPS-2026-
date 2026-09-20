@@ -1,0 +1,25 @@
+{
+  "label": "E044",
+  "case": "household",
+  "seed": 13,
+  "source": "src\\models\\retrieval_weight_control.py",
+  "source_sha256": "cc16692e2bb07e4711cedd6f9054bcfb8b55757b0c4434f6b79dd671e9d5624b",
+  "instruments": {
+    "unhcr": {
+      "source_sha256": "cc16692e2bb07e4711cedd6f9054bcfb8b55757b0c4434f6b79dd671e9d5624b",
+      "frame_sha256": "7c0c39da48327136bf61ffd90f7d19eb0696e798fa8a19f3946610d05123e1e9",
+      "seconds": 323.0810205,
+      "skill": 0.5551025561785493,
+      "log_score": -0.5613503297080205,
+      "cells": 180411,
+      "comparisons": {
+        "E041": {
+          "baseline_skill": 0.5520125312404893,
+          "delta_skill": 0.0030900249380599876,
+          "delta_log": 0.003898845771930559,
+          "probability_max_abs": 0.6013150669951872
+        }
+      }
+    }
+  }
+}

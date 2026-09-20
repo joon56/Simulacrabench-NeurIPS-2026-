@@ -2,6 +2,42 @@
 
 Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-notes]].
 
+## 2026-09-20 - E043 oracle stopped; E044 weight-use control packaged as #26
+
+- User requested today's submission work, authorizing the previously presented
+  candidate-search design and informational fallback. Registered E043 before
+  the oracle: use learned section weights to choose K32 donors, not only rerank
+  a shared shortlist. Observed Adult, unchanged seeds/splits: new-pool feasible
+  minus old-pool upper skill /3 +.000962822 and -.000392472. Primary >.005 and
+  replication >0 gates failed. Parked without production implementation.
+  Union-of-pools was a separately reported larger family, not this candidate.
+- Registered E044 control before implementation/scoring: keep E041 fitting,
+  learned activation, K32, candidates and replay algorithm, replace learned
+  weights with initial common weights in active-section evidence for replay
+  AND inference. Lambda is refitted by the unchanged procedure. This measures
+  conditional weight use and downstream effects, not all supervision or a
+  fixed-lambda intervention. New module only; prior models/snapshots unchanged.
+- Clean source/official E044 .500648423 / .454717307 / .562294713. Every
+  UNICEF/WB probability matches E041/E025. UNHCR delta -.000168016 vs E041,
+  -.000654161 vs E025, both within .002. Clean mean delta vs E041 -.000056005.
+  Existing household sim seed13: .552012531 to .555102556 (+.003090025 skill,
+  +.003898846 log; mean equivalent +.001030008). No local adoption; no forecast.
+- Fifteen invariant tests passed, independent scope/assembly/oracle review
+  passed. Harness review fixed stale-baseline hash and missing-comparison
+  acceptance. Fresh references bind frame and frozen source hashes. ZIP checker
+  PASS; isolated official phase-1 score.py PASS x3; every-vector source/archive
+  parity exact x3. Local official time 371.022 s (two threads, simulation partly
+  overlapped), verification wall 384.159 s; not a hosted speed guarantee.
+- Ready archive `submissions/2026-09-20-E044.zip`, SHA256
+  310dd524b9c237f9d5e47c886a00e3105814a4f47cdcc906e9e5a8bce0e62936.
+  SCORES.md pre-registers >=.65 favourable, .64 inspect update/inconclusive,
+  .63 adverse near resolution, <=.62 larger adverse, FAILED no inference.
+  E041 remains best .64/.52/.49/.92. No upload or new hosted score. Recorded
+  as prepared #26 in submissions/README.md; preserved restored rows #1-#25.
+- Raw outputs: docs/analysis/E043-outputs/. E044 stays parked pending its
+  measurement. This follows the user's expiring-slot exploration preference;
+  it is not an adopted improvement. Phase-2 E025 fallback remains unchanged.
+
 ## 2026-09-19 - E041 hosted result: Grand .64, UNHCR .92; new DEV best
 
 - User supplied E041 in Grand / UNICEF / World Bank / UNHCR order:

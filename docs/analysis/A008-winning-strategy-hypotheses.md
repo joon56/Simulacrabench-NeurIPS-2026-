@@ -252,3 +252,27 @@ Use E041 as the next DEV comparison baseline, preserve E025 as the separately
 validated phase-2 fallback, and require scoped oracle/validation for new changes.
 E041 phase-2 packaging and matching method documentation are not completed by
 this result-recording task. No additional experiment, model edit or upload.
+
+## v6 - E043 screen and E044 conditional weight-use control, 2026-09-20
+
+E043 tested the named bottleneck in E041: common-metric top32 candidates are
+only reranked with section metrics. The preregistered observed-data oracle
+measured NEW versus OLD pool headroom under identical section-shared simplex
+constraints, rather than reusing E041's large total oracle. Certified marginal
+skill /3 +.000962822 / -.000392472 failed its primary/replication gates. Parked
+without production code. The union of old/new pools is a larger diagnostic
+family, not an approved post-hoc switch to a winning oracle family.
+
+The agreed fallback E044 removes learned weight use from evidence conditional
+on unchanged E041 activation. Fitting, candidate K32/search, splits and replay
+algorithm remain; recalibrated lambda and descendant changes are downstream
+effects. This measures one pipeline intervention, not all supervision. Clean
+UNHCR -.000168016 vs E041, controls identical; existing household sim +.003090025.
+The local adoption bar still fails. E041's earlier sim/DEV direction disagreement
+is why this technically validated control is an informational hosted test.
+
+E044 checker and official phase-1 x3 PASS, exact source/archive probability
+parity, 371.022 s combined local scoring, 15 invariant tests. Ready as prepared
+submission #26 under the user's slot-use preference, no upload performed.
+Read its preregistered scorecard before choosing the next intervention. E041
+remains DEV incumbent; E025 remains the verified phase-2 fallback.

@@ -1,0 +1,492 @@
+{
+  "seed": 41,
+  "source_counts": {
+    "source_rows": 32561,
+    "unique_modeled_rows": 19561
+  },
+  "source_sha256": "5b00264637dbfec36bdeaab5676b0b309ff9eb788d63554ca0a249491c86603d",
+  "source_line_ids_sha256": "45143b68f2e83b6853345d603bd0aaec78f3cbc33cc840a4c720f2bad5c3d5fd",
+  "schema": {
+    "name": "observed_adult_external",
+    "scoring": {
+      "floor": 0.001
+    },
+    "items": {
+      "age_band": {
+        "class": "GIVEN",
+        "options": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ]
+      },
+      "education": {
+        "class": "GIVEN",
+        "options": [
+          "10th",
+          "11th",
+          "12th",
+          "1st-4th",
+          "5th-6th",
+          "7th-8th",
+          "9th",
+          "Assoc-acdm",
+          "Assoc-voc",
+          "Bachelors",
+          "Doctorate",
+          "HS-grad",
+          "Masters",
+          "Preschool",
+          "Prof-school",
+          "Some-college"
+        ]
+      },
+      "race": {
+        "class": "GIVEN",
+        "options": [
+          "Amer-Indian-Eskimo",
+          "Asian-Pac-Islander",
+          "Black",
+          "Other",
+          "White"
+        ]
+      },
+      "sex": {
+        "class": "GIVEN",
+        "options": [
+          "Female",
+          "Male"
+        ]
+      },
+      "native-country": {
+        "class": "GIVEN",
+        "options": [
+          "?",
+          "Cambodia",
+          "Canada",
+          "China",
+          "Columbia",
+          "Cuba",
+          "Dominican-Republic",
+          "Ecuador",
+          "El-Salvador",
+          "England",
+          "France",
+          "Germany",
+          "Greece",
+          "Guatemala",
+          "Haiti",
+          "Honduras",
+          "Hong",
+          "Hungary",
+          "India",
+          "Iran",
+          "Ireland",
+          "Italy",
+          "Jamaica",
+          "Japan",
+          "Laos",
+          "Mexico",
+          "Nicaragua",
+          "Outlying-US(Guam-USVI-etc)",
+          "Peru",
+          "Philippines",
+          "Poland",
+          "Portugal",
+          "Puerto-Rico",
+          "Scotland",
+          "South",
+          "Taiwan",
+          "Thailand",
+          "Trinadad&Tobago",
+          "United-States",
+          "Vietnam",
+          "Yugoslavia"
+        ]
+      },
+      "marital-status": {
+        "class": "PREDICT",
+        "options": [
+          "Divorced",
+          "Married-AF-spouse",
+          "Married-civ-spouse",
+          "Married-spouse-absent",
+          "Never-married",
+          "Separated",
+          "Widowed"
+        ]
+      },
+      "relationship": {
+        "class": "PREDICT",
+        "options": [
+          "Husband",
+          "Not-in-family",
+          "Other-relative",
+          "Own-child",
+          "Unmarried",
+          "Wife"
+        ]
+      },
+      "workclass": {
+        "class": "PREDICT",
+        "options": [
+          "?",
+          "Federal-gov",
+          "Local-gov",
+          "Never-worked",
+          "Private",
+          "Self-emp-inc",
+          "Self-emp-not-inc",
+          "State-gov",
+          "Without-pay"
+        ]
+      },
+      "occupation": {
+        "class": "PREDICT",
+        "options": [
+          "?",
+          "Adm-clerical",
+          "Armed-Forces",
+          "Craft-repair",
+          "Exec-managerial",
+          "Farming-fishing",
+          "Handlers-cleaners",
+          "Machine-op-inspct",
+          "Other-service",
+          "Priv-house-serv",
+          "Prof-specialty",
+          "Protective-serv",
+          "Sales",
+          "Tech-support",
+          "Transport-moving"
+        ]
+      },
+      "hours_band": {
+        "class": "PREDICT",
+        "options": [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      },
+      "income": {
+        "class": "PREDICT",
+        "options": [
+          "<=50K",
+          ">50K"
+        ]
+      },
+      "capital_gain_positive": {
+        "class": "PREDICT",
+        "options": [
+          "False",
+          "True"
+        ]
+      },
+      "capital_loss_positive": {
+        "class": "PREDICT",
+        "options": [
+          "False",
+          "True"
+        ]
+      }
+    },
+    "sections": {
+      "family": [
+        "marital-status",
+        "relationship"
+      ],
+      "employment": [
+        "workclass",
+        "occupation",
+        "hours_band"
+      ],
+      "finances": [
+        "income",
+        "capital_gain_positive",
+        "capital_loss_positive"
+      ]
+    },
+    "excluded_raw_fields": [
+      "age",
+      "education-num",
+      "fnlwgt",
+      "hours-per-week",
+      "capital-gain",
+      "capital-loss"
+    ]
+  },
+  "split": {
+    "bank": 2000,
+    "metric_fit": 1000,
+    "selection": 1000,
+    "audit": 1000
+  },
+  "split_source_ids_sha256": {
+    "bank": "5b8883e82d06a826411a2de0696ac1132783a4e5b42162132ef60f40513aa703",
+    "fit": "8d6acd1b63941823a3352d1b35e34610278c029e6a29462e9e61ed715d9494c1",
+    "selection": "3f5af46fd1724f5edd2567fd001a2a3bff91bf34c54564802acd985ecfb8f200",
+    "audit": "458288f4b945cb889f1dd221cd6d128d9beb82362eefe13f51f2fd20ab394399"
+  },
+  "baseline_training_rows": 3000,
+  "uniform_reference": 1.5135850374401905,
+  "baseline_log_score": -1.0099833887790723,
+  "initial_given_weights": {
+    "age_band": 1.6156924312219914,
+    "education": 1.8708578728969922,
+    "race": 0.48333773461201,
+    "sex": 0.6227819178993819,
+    "native-country": 0.39157847526091566
+  },
+  "learned_given_weights": {
+    "family": {
+      "age_band": 2.0688071581399825,
+      "education": 0.7790593631318995,
+      "race": 1.3145097789823892,
+      "sex": 2.8783416924117966,
+      "native-country": 0.09968289623507691
+    },
+    "employment": {
+      "age_band": 0.7251674660679807,
+      "education": 1.5659582334601065,
+      "race": 0.0,
+      "sex": 1.5241451107818382,
+      "native-country": 0.08488607355555465
+    },
+    "finances": {
+      "age_band": 0.848782623437322,
+      "education": 2.662813920881749,
+      "race": 1.1159259139462068,
+      "sex": 1.3184104286875875,
+      "native-country": 0.0
+    }
+  },
+  "active_sections": [
+    "family",
+    "employment",
+    "finances"
+  ],
+  "core_selection_diagnostics": {
+    "family": {
+      "selected": true,
+      "gain_log": 0.0845022938288107,
+      "standard_error": 0.009058771244528363,
+      "old_share": 0.5,
+      "new_share": 0.8177175123727327,
+      "iterations": 9
+    },
+    "employment": {
+      "selected": true,
+      "gain_log": 0.02704890574817709,
+      "standard_error": 0.005048574174688698,
+      "old_share": 0.25,
+      "new_share": 0.5737414514092053,
+      "iterations": 9
+    },
+    "finances": {
+      "selected": true,
+      "gain_log": 0.004843120832898372,
+      "standard_error": 0.0021243194920446376,
+      "old_share": 0.5,
+      "new_share": 0.6429955380068028,
+      "iterations": 6
+    }
+  },
+  "bounds": {
+    "old_pool": {
+      "feasible_log_score": -0.1996408570046657,
+      "upper_log_score": -0.19964085700208994,
+      "feasible_skill": 0.8681006669157467,
+      "upper_skill": 0.8681006669174485,
+      "mean_bound_gap_nats": 2.575745172705979e-12,
+      "max_query_bound_gap_nats": 1.4800216052712756e-09
+    },
+    "new_pool": {
+      "feasible_log_score": -0.19526891998409604,
+      "upper_log_score": -0.19526891994542786,
+      "feasible_skill": 0.8709891316616479,
+      "upper_skill": 0.8709891316871954,
+      "mean_bound_gap_nats": 3.86681797692745e-11,
+      "max_query_bound_gap_nats": 3.7350776693756416e-08
+    },
+    "union_larger_family": {
+      "feasible_log_score": -0.1465438190521852,
+      "upper_log_score": -0.14654381901421415,
+      "feasible_skill": 0.903180980633884,
+      "upper_skill": 0.9031809806589708,
+      "mean_bound_gap_nats": 3.797104297653675e-11,
+      "max_query_bound_gap_nats": 3.695638395306844e-08
+    }
+  },
+  "new_minus_old": {
+    "feasible_minus_upper_log": 0.004371937017993849,
+    "upper_minus_feasible_log": 0.004371937059237825,
+    "skill_lower": 0.0028884647441994858,
+    "skill_upper": 0.002888464771448682,
+    "skill_div3_lower": 0.0009628215813998286,
+    "skill_div3_upper": 0.000962821590482894
+  },
+  "seed_gate_pass": false,
+  "sections": {
+    "family": {
+      "items": [
+        "marital-status",
+        "relationship"
+      ],
+      "active": true,
+      "candidate_overlap": {
+        "mean_shared_donors": 17.19,
+        "min_shared_donors": 2,
+        "max_shared_donors": 32,
+        "mean_shared_fraction": 0.5371875,
+        "mean_jaccard": 0.41531717019441167,
+        "fraction_identical_sets": 0.03,
+        "mean_union_size": 46.81,
+        "max_union_size": 62
+      },
+      "candidate_sha256": {
+        "old": "c3ad2433ba9cc427ce1eda0624ba8e8ff69012e3f40055a5dfec1c6ecd9a8dec",
+        "new": "2edd16e74c7ac01f4e7fd248767f4fe8be6e35dd1d3e426660e45405130894d5",
+        "union_padded": "ba3ff4af12564cc7b02902f04f8cd6e57954bf0b83b6e1f8925cd7d658c0b765"
+      },
+      "bounds": {
+        "old_pool": {
+          "feasible_log_score": -0.13202275245313888,
+          "upper_log_score": -0.13202275245011735,
+          "feasible_skill": 0.9127748034055498,
+          "upper_skill": 0.912774803407546,
+          "mean_bound_gap_nats": 3.0215274726685948e-12,
+          "max_query_bound_gap_nats": 3.0161353414825953e-09
+        },
+        "new_pool": {
+          "feasible_log_score": -0.13397358078694482,
+          "upper_log_score": -0.13397358078392319,
+          "feasible_skill": 0.9114859241648398,
+          "upper_skill": 0.9114859241668362,
+          "mean_bound_gap_nats": 3.0216384949710573e-12,
+          "max_query_bound_gap_nats": 3.0216227298041076e-09
+        },
+        "union_larger_family": {
+          "feasible_log_score": -0.08894655469493833,
+          "upper_log_score": -0.0889465546915447,
+          "feasible_skill": 0.9412345177213388,
+          "upper_skill": 0.9412345177235809,
+          "mean_bound_gap_nats": 3.393632597159524e-12,
+          "max_query_bound_gap_nats": 3.393587966193934e-09
+        }
+      }
+    },
+    "employment": {
+      "items": [
+        "workclass",
+        "occupation",
+        "hours_band"
+      ],
+      "active": true,
+      "candidate_overlap": {
+        "mean_shared_donors": 20.426,
+        "min_shared_donors": 6,
+        "max_shared_donors": 32,
+        "mean_shared_fraction": 0.6383125,
+        "mean_jaccard": 0.4930742578771756,
+        "fraction_identical_sets": 0.001,
+        "mean_union_size": 43.574,
+        "max_union_size": 58
+      },
+      "candidate_sha256": {
+        "old": "c3ad2433ba9cc427ce1eda0624ba8e8ff69012e3f40055a5dfec1c6ecd9a8dec",
+        "new": "254f9ab57187726e003429141f8c2908770c9a84eae570ce7dcec42a8e40f370",
+        "union_padded": "3e073668bf84e11d4b9440f18c97ba2fa70b1ab34834141c227d54e30cccb94e"
+      },
+      "bounds": {
+        "old_pool": {
+          "feasible_log_score": -0.4168778958203687,
+          "upper_log_score": -0.4168778958194733,
+          "feasible_skill": 0.7245758345197426,
+          "upper_skill": 0.7245758345203341,
+          "mean_bound_gap_nats": 8.953948693601887e-13,
+          "max_query_bound_gap_nats": 8.763716419224465e-10
+        },
+        "new_pool": {
+          "feasible_log_score": -0.4070305708860321,
+          "upper_log_score": -0.4070305707860039,
+          "feasible_skill": 0.7310817953285191,
+          "upper_skill": 0.731081795394606,
+          "mean_bound_gap_nats": 1.0002820793886258e-10,
+          "max_query_bound_gap_nats": 9.960207125736531e-08
+        },
+        "union_larger_family": {
+          "feasible_log_score": -0.31926841761514924,
+          "upper_log_score": -0.3192684175161554,
+          "feasible_skill": 0.7890647636454551,
+          "upper_skill": 0.7890647637108587,
+          "mean_bound_gap_nats": 9.899381314681932e-11,
+          "max_query_bound_gap_nats": 9.85503572081825e-08
+        }
+      }
+    },
+    "finances": {
+      "items": [
+        "income",
+        "capital_gain_positive",
+        "capital_loss_positive"
+      ],
+      "active": true,
+      "candidate_overlap": {
+        "mean_shared_donors": 19.508,
+        "min_shared_donors": 2,
+        "max_shared_donors": 32,
+        "mean_shared_fraction": 0.609625,
+        "mean_jaccard": 0.46830346188492145,
+        "fraction_identical_sets": 0.009,
+        "mean_union_size": 44.492,
+        "max_union_size": 62
+      },
+      "candidate_sha256": {
+        "old": "c3ad2433ba9cc427ce1eda0624ba8e8ff69012e3f40055a5dfec1c6ecd9a8dec",
+        "new": "7102d8fe492ef0154406460b7c291b6e1a21173381b1da73aa5109ac953cef48",
+        "union_padded": "6dbcf124f75d3c7b1cb24c8c4e30e20a58136024b0ff176ff46de4f387b84a8a"
+      },
+      "bounds": {
+        "old_pool": {
+          "feasible_log_score": -0.027482554556647117,
+          "upper_log_score": -0.02748255455268816,
+          "feasible_skill": 0.9818427416518822,
+          "upper_skill": 0.9818427416544978,
+          "mean_bound_gap_nats": 3.9589581612986535e-12,
+          "max_query_bound_gap_nats": 3.946724058678797e-09
+        },
+        "new_pool": {
+          "feasible_log_score": -0.02437082854692745,
+          "upper_log_score": -0.024370828545854872,
+          "feasible_skill": 0.9838986063259823,
+          "upper_skill": 0.9838986063266909,
+          "mean_bound_gap_nats": 1.0725760557495079e-12,
+          "max_query_bound_gap_nats": 1.0725000887390479e-09
+        },
+        "union_larger_family": {
+          "feasible_log_score": -0.012217396727385775,
+          "upper_log_score": -0.01221739672738574,
+          "feasible_skill": 0.991928172897343,
+          "upper_skill": 0.991928172897343,
+          "mean_bound_gap_nats": 3.469446951953614e-17,
+          "max_query_bound_gap_nats": 3.214095656289828e-14
+        }
+      }
+    }
+  },
+  "leakage_checks": {
+    "all_partitions_disjoint": true,
+    "audit_excluded_from_reference_and_baseline_fit": true,
+    "audit_label_mask_preserves_fitted_weights": true,
+    "audit_label_mask_preserves_activation_and_diagnostics": true,
+    "audit_label_mask_preserves_all_candidate_identities": true,
+    "audit_label_mask_preserves_baseline_predictions": true,
+    "modeled_full_row_duplicates_removed_before_split": true
+  },
+  "elapsed_seconds": 3.862915199999975
+}

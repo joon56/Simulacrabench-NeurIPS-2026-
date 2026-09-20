@@ -2,3 +2,4 @@ output/pdf/*.pdf binary
 output/phase2/*.zip binary
 submissions/*.zip binary
 submissions/2026-09-19-E041/main.py -text
+submissions/2026-09-20-E044/main.py -text

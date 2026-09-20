@@ -1,0 +1,75 @@
+{
+  "label": "E044",
+  "case": "clean",
+  "seed": 13,
+  "source": "src\\models\\retrieval_weight_control.py",
+  "source_sha256": "cc16692e2bb07e4711cedd6f9054bcfb8b55757b0c4434f6b79dd671e9d5624b",
+  "instruments": {
+    "unicef": {
+      "source_sha256": "cc16692e2bb07e4711cedd6f9054bcfb8b55757b0c4434f6b79dd671e9d5624b",
+      "frame_sha256": "96a081fd7880bf0e06399d4a4e6fdfb332436b19ea08d754bacf87d377178a24",
+      "seconds": 32.808737000000065,
+      "skill": 0.5006484230707156,
+      "log_score": -0.780008047004413,
+      "cells": 17856,
+      "comparisons": {
+        "E041": {
+          "baseline_skill": 0.5006484230707156,
+          "delta_skill": 0.0,
+          "delta_log": 0.0,
+          "probability_max_abs": 0.0
+        },
+        "E025": {
+          "baseline_skill": 0.5006484230707156,
+          "delta_skill": 0.0,
+          "delta_log": 0.0,
+          "probability_max_abs": 0.0
+        }
+      }
+    },
+    "world_bank": {
+      "source_sha256": "cc16692e2bb07e4711cedd6f9054bcfb8b55757b0c4434f6b79dd671e9d5624b",
+      "frame_sha256": "4c8da49f0d35b7ebfe49739a1619681ae998c2e0fd1cfd79fe7472606366a139",
+      "seconds": 90.93828859999996,
+      "skill": 0.45471730736298255,
+      "log_score": -1.1005776279104411,
+      "cells": 39520,
+      "comparisons": {
+        "E041": {
+          "baseline_skill": 0.45471730736298255,
+          "delta_skill": 0.0,
+          "delta_log": 0.0,
+          "probability_max_abs": 0.0
+        },
+        "E025": {
+          "baseline_skill": 0.45471730736298255,
+          "delta_skill": 0.0,
+          "delta_log": 0.0,
+          "probability_max_abs": 0.0
+        }
+      }
+    },
+    "unhcr": {
+      "source_sha256": "cc16692e2bb07e4711cedd6f9054bcfb8b55757b0c4434f6b79dd671e9d5624b",
+      "frame_sha256": "0e6f1361d9e3d5a85fc8bad561cd486dc64fb7970ad07fd7f0074b629beaf836",
+      "seconds": 237.8668558999999,
+      "skill": 0.5622947125751045,
+      "log_score": -0.5522756105326543,
+      "cells": 132273,
+      "comparisons": {
+        "E041": {
+          "baseline_skill": 0.5624627288576414,
+          "delta_skill": -0.00016801628253682033,
+          "delta_log": -0.0002119949145767963,
+          "probability_max_abs": 0.3731941969218794
+        },
+        "E025": {
+          "baseline_skill": 0.5629488737050165,
+          "delta_skill": -0.000654161129911901,
+          "delta_log": -0.0008253892465733825,
+          "probability_max_abs": 0.2907310317597569
+        }
+      }
+    }
+  }
+}

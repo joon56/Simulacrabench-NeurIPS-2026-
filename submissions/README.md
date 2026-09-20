@@ -6,8 +6,11 @@ CLAUDE.md discipline rule 4). Every leaderboard submission follows this
 protocol:
 
 1. **Before submitting** — the candidate must PASS `score.py` locally on all
-   three real schemas, beat the current best on the local harness, and have
-   its wall-clock measured. Snapshot the exact code into
+   three real schemas and have its wall-clock measured. Improvement adoption
+   requires the recorded performance bar; the user's subsequent exploration
+   policy also permits a preregistered measurement without positive local
+   gain, provided clean no-regression and every-vector assembly parity pass.
+   Snapshot the exact code into
    `submissions/YYYY-MM-DD-<name>/` (copy of main.py + requirements.txt +
    the local scores).
 2. **Record the expectation** — add a row to the log below with the local
@@ -39,6 +42,7 @@ protocol:
 
 | # | Date | Snapshot | Local skill (sample/unicef/wb/unhcr) | Expected LB | Reported LB | Notes |
 |---|------|----------|--------------------------------------|-------------|-------------|-------|
+| 26 | 2026-09-20 | 2026-09-20-E044 | — / 0.5006 / 0.4547 / 0.5623 | .63-.64 planning scenario only; conditional metric-use ablation | Pending; not uploaded | E041 with initial common weights used in replay/final evidence, keeping learned activation, K32 and lambda procedure. UNHCR clean delta -.000168 vs E041 / -.000654 vs E025; controls exact; household sim +.003090. Informational slot, not adoption. E043 candidate-search oracle stopped beforehand. ZIP/official x3/exact parity PASS, 371.022 s total; see snapshot SCORES.md. |
 | 25 | 2026-09-19 | 2026-09-19-E041 | — / 0.5006 / 0.4547 / 0.5625 | .64/.65 arms = favourable scenarios, not forecasts; planning anchor 0.63 (local qualification FAILED — spent as an exploratory slot) | **0.64** (unicef 0.52 / wb 0.49 / **unhcr 0.92**) | Supervised section-specific retrieval on UNHCR (neighbour metric learned per schema question section; separate donor-bank / fitting-query / selector / replay partitions); unicef/wb = frozen E025. **New DEV best, +0.01 Grand / +0.03 unhcr.** Hosted result user-reported, not independently fetched. Local clean unhcr was −0.0005 and the household sim −0.0020 — neither predicted this. One noised reading does not isolate which of the bank/selector/replay changes paid. E025 stays the verified phase-2 fallback. |
 | 24 | 2026-09-20 | 2026-09-20-E040 | — / 0.5006 / 0.4548 / 0.5629 | 0.64 (unhcr ≥ 0.90) if the real base model is under-fit | 0.63, no update (result 2026-09-21) | HistGradientBoosting per ungated unhcr PREDICT item, blended at a holdout-chosen weight v (sandbox picks v = 0). Pre-registered "base model at its real ceiling" arm; sixth flat real-data A/B. Parked; the full E039 blend is NOT carried into phase 2. |
 | 23 | 2026-09-19 | 2026-09-19-E038 | — / 0.5006 / 0.4548 / 0.5630 | ≥ 0.64 (unhcr ≥ 0.91) if identifiers carry household keys | 0.63, no update | `respondent_id`-derived signature columns (string tokens, digit runs, rank blocks) with Fellegi–Sunter weights and an evidence guard. Keyed-id recall sim gave +0.0108 log; the real identifiers arm nothing. The 0.93 cluster's +0.04 is NOT identifier recall. Parked. |
