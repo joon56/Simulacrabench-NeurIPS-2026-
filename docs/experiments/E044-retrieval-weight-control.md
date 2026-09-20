@@ -1,6 +1,6 @@
 # E044 — Conditional retrieval weight-use control
 parent: E041
-status: parked
+status: rejected
 date: 2026-09-20
 
 ## Hypothesis
@@ -75,7 +75,12 @@ source/archive parity on each schema. Combined official local times 371.022 s
 overlap. This is not a hosted timing guarantee. Independent review confirmed
 the one intervention, immutable E041 prefix and oracle interpretation; both
 baseline SHA pins and mandatory comparison checks were added to the harness.
-No hosted E044 reading yet.
+Hosted result, user-reported in this session: **Grand .63, no best update**.
+Individual UNICEF/WB/UNHCR scores are unavailable. No independent platform
+fetch, submission ID, exact upload time or hosted runtime was supplied.
+Displayed Grand delta vs E041 is -.01. The UNHCR-only effect translation
+3 * (-.01) = -.03 is approximate, not an observed instrument delta; rounding
+and noise prevent reconstructing the hidden UNHCR score.
 
 Reproduce from the repository root (existing dependencies and sandbox):
 
@@ -91,12 +96,18 @@ Reproduce from the repository root (existing dependencies and sandbox):
 
 ## Decision
 
-Parked pending the hosted reading; technically ready as a preregistered
-measurement, packaged as submission #26. Neither clean mean -.000056005 nor
-household-sim mean +.001030008 clears the +.005 adoption bar. Preparing the
-probe under the user's exploration policy is not adopting an improved model.
+Rejected for adoption after submission #26 selected the preregistered .63
+adverse arm. Retain E041 .64/.52/.49/.92 and its learned weights. Local clean
+mean -.000056005 and household-sim mean +.001030008 remain unchanged; neither
+cleared the +.005 adoption bar. The positive sim direction did not transfer
+to the displayed hosted result.
 
-Domain verdict: the fixed initial metric helps the injected-household channel
-but is slightly worse on clean data. This is consistent with the earlier E041
-simulation loss, not evidence about the direction on actual UNHCR. Read only
-the pre-registered arms after upload. Keep E041 .64/.52/.49/.92 as incumbent.
+Domain verdict: the reading is consistent with section-dependent GIVEN
+relevance making learned weight use useful, conditional on E041 activation.
+It is not proof of a household/domain mechanism or that weights explain all
+of E041's gain. Lambda recalibration and parent effects are included in the
+intervention. One rounded/noised result cannot estimate its exact effect.
+Prioritize honest metric/selector validation while retaining learned weights;
+do not launch a blind daily removal/weight grid. E043's scoped oracle verdict
+is unchanged. E025 remains the validated phase-2 fallback; E041 still needs
+phase-2 validation and matching method documentation.

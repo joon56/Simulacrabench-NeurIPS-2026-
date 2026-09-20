@@ -276,3 +276,21 @@ parity, 371.022 s combined local scoring, 15 invariant tests. Ready as prepared
 submission #26 under the user's slot-use preference, no upload performed.
 Read its preregistered scorecard before choosing the next intervention. E041
 remains DEV incumbent; E025 remains the verified phase-2 fallback.
+
+## v7 - E044 adverse hosted reading; retain learned weight use
+
+The user subsequently reported E044 Grand .63, no best update. All individual
+instrument scores are unavailable. Apply the preregistered .63 adverse arm:
+reject this configuration for adoption and retain E041 .64/.52/.49/.92.
+Displayed Grand delta -.01 gives an approximate UNHCR effect translation of
+-.03 because only UNHCR changes, not an observed instrument delta or a hidden
+UNHCR score. One rounded/noised reading is near the recorded resolution.
+
+The control supports useful learned weight use conditional on unchanged E041
+activation, including downstream lambda and parent effects. It does not prove
+that weights alone explain the entire E041 gain or identify a domain mechanism.
+The positive household-sim direction did not transfer to displayed DEV.
+Retain learned weights for subsequent metric/selector validation; no blind
+daily weight-removal grid. E043 remains parked at its scoped oracle gate.
+This result supplies no new .65 forecast and no phase-2 validation: E025 stays
+the verified phase-2 fallback until E041's checks and method are completed.

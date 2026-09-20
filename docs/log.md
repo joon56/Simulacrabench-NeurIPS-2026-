@@ -2,6 +2,30 @@
 
 Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-notes]].
 
+## 2026-09-20 - E044 hosted Grand .63, no update; retain E041 learned weights
+
+- User reported submission #26 Grand **.63**, with no best update. Individual
+  UNICEF/WB/UNHCR scores are unavailable. This is a scored submission, not a
+  failed attempt. No platform fetch, upload timestamp, submission ID or hosted
+  runtime was provided. Snapshot dates and historical preparation entries stay
+  unchanged; this entry records the subsequent result.
+- Applied the preregistered .63 adverse arm: reject E044 for adoption, retain
+  E041 .64/.52/.49/.92. Displayed Grand delta -.01 translates approximately to
+  -.03 on UNHCR for this single-instrument intervention, not an observed delta.
+  Rounding/noise at the recorded .015-.03 instrument-scale resolution prevents
+  an exact attribution or filling a hidden UNHCR score such as .89.
+- Conditional learned weight use has a favourable signal relative to its
+  removal. Activation still uses the learned metric, and lambda/parent effects
+  are downstream; this does not isolate weights from all of E041's changes.
+  Household sim +.003090 did not transfer to the displayed DEV direction.
+- Next: retain learned weights, prioritize honest metric/selector validation,
+  no blind daily weight-removal grid. E043 remains parked at its scoped oracle
+  gate. E025 remains the validated phase-2 fallback; E041 phase-2 validation
+  and method coverage remain pending. No new model, archive or upload.
+- Updated scorecard, snapshot README/verification metadata, submission log,
+  experiment Decision, status and A008; regenerated tree. Archive and main.py
+  bytes remain unchanged.
+
 ## 2026-09-20 - E043 oracle stopped; E044 weight-use control packaged as #26
 
 - User requested today's submission work, authorizing the previously presented

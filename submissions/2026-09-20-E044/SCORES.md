@@ -1,8 +1,8 @@
 # E044 - Conditional retrieval weight-use control (UNHCR only)
 
-Status: **READY FOR ONE EXPLORATORY DEV SUBMISSION.** All technical checks
-passed; this is a conditional ablation, not an adopted improvement. No upload
-or hosted result.
+Status: **HOSTED RESULT REPORTED: Grand .63, no best update.** The .63 adverse
+arm applies; reject this configuration for adoption and retain E041.
+All technical checks passed. Individual instrument scores were not disclosed.
 Baseline E041: Grand .64 / UNICEF .52 / WB .49 / UNHCR .92, user-reported.
 
 ## Intervention and purpose
@@ -67,4 +67,24 @@ No code change follows these readings. Exact technical evidence is in adjacent
 
 ## Actual hosted result
 
-Not submitted. No daily slot used.
+User reported Grand **0.63**, with **no best update**. UNICEF, World Bank and
+UNHCR scores are unavailable; do not fill them from earlier submissions or
+from arithmetic. Source: user report in this session, not an independent
+platform fetch. Exact upload time, submission ID and hosted runtime were not
+provided. This is a completed scored submission, not a failed attempt.
+
+The preregistered **.63 adverse arm** applies. Relative to E041's displayed
+.64, Grand is -.01. Because the intervention is UNHCR-only and local controls
+were probability-identical, 3 * (-.01) = -.03 is an approximate UNHCR effect
+translation, NOT an observed instrument delta. Rounded/noised scores and the
+recorded instrument-scale resolution of about .015-.03 prevent an exact
+effect claim or reconstructing a hidden UNHCR score such as .89.
+
+Decision: reject E044 for adoption; keep E041 and its learned weights. The
+result supports useful conditional learned weight use plus downstream lambda
+and parent effects. It does not isolate fixed-lambda effects, remove learned
+activation, or prove that all of E041's improvement came from its weights.
+The positive household-sim direction did not transfer to the displayed DEV
+reading. Next research should retain learned weights and prioritize honest
+metric/selector validation; no repeated weight-removal grid. E041 remains
+DEV best .64/.52/.49/.92; E025 remains the validated phase-2 fallback.

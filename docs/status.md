@@ -1,6 +1,6 @@
 # STATUS — read this first in a new session (kept current at every commit)
 
-Updated: 2026-09-20 E043/E044 preparation; E041 result reported on 2026-09-19, continuing the supplied
+Updated: 2026-09-20 E044 result recorded; E041 result reported on 2026-09-19, continuing the supplied
 2026-09-21 handoff; see `docs/phase2-preparation.md` for date provenance. Newest work is
 inserted at the TOP of docs/log.md; historical dated entries are newest-first.
 
@@ -44,7 +44,10 @@ inserted at the TOP of docs/log.md; historical dated entries are newest-first.
   .52/.50, H .95 gives mean .6567 (about Grand .66); with WB .49 it needs
   H .96. These are arithmetic scenarios, not forecasts or guaranteed ranks.
   Keep initial hosted tests UNHCR-only under the standing attribution rule.
-- **Today's artifact: E044, ready for one exploratory slot, not uploaded.**
+- **E044 reported Grand .63, no best update; rejected for adoption.**
+  Individual instrument scores are unavailable. The preregistered .63 adverse
+  arm supports retaining learned weight use, conditional on E041 activation
+  and downstream recalibration; no exact hidden UNHCR score is inferred.
   `submissions/2026-09-20-E044.zip` replaces learned weights only in active
   section evidence, retaining E041's learned activation/K32/replay procedure.
   Clean UNHCR delta -.000168 vs E041 / -.000654 vs E025; controls exact;
@@ -113,11 +116,13 @@ unchanged experiments; first repair the evidence behind their interpretation.
 
 ## Next session plan
 
-1. **Read the E044 slot before choosing the next intervention.** Archive and
-   preregistered scorecard are ready; no hosted result yet. >=.65 positive for
-   removing weight use; .64 inspect best update, otherwise inconclusive;
-   .63 or lower adverse at the recorded precision. The experiment is conditional
-   on E041's learned activation; it does not remove all supervision. E043's
+1. **Retain E041 learned weights after E044's adverse reading.** User reported
+   Grand .63 without best update; individual scores are unavailable. Apply the
+   preregistered .63 arm: reject E044 for adoption, prioritize honest metric/
+   selector validation, and avoid a blind daily removal/weight grid. The
+   displayed -.01 Grand gives only an approximate -.03 UNHCR effect translation,
+   not a measured instrument delta or hidden score. The experiment is conditional
+   on E041's learned activation and includes downstream recalibration. E043's
    new-pool replacement failed its observed-data oracle gate; the larger union
    family was diagnostic only and requires a distinct preregistered experiment.
    **Freeze E041 as the DEV comparison baseline.** The user reported
