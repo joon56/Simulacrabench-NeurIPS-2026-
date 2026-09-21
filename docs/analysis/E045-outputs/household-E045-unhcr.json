@@ -1,0 +1,141 @@
+{
+  "label": "E045",
+  "case": "household",
+  "seed": 13,
+  "source": "src\\models\\union_retrieval.py",
+  "source_sha256": "cf65c6413368133ba1f5955503e2cf85963ec186b8f90b0eb5976a1b7eeedd0f",
+  "instruments": {
+    "unhcr": {
+      "source_sha256": "cf65c6413368133ba1f5955503e2cf85963ec186b8f90b0eb5976a1b7eeedd0f",
+      "frame_sha256": "7c0c39da48327136bf61ffd90f7d19eb0696e798fa8a19f3946610d05123e1e9",
+      "seconds": 364.00435990000005,
+      "skill": 0.5519452604415125,
+      "log_score": -0.565334054558736,
+      "diagnostics": {
+        "sections": [
+          {
+            "selected": true,
+            "gain_log": 0.08297148723868272,
+            "standard_error": 0.007203676073961591,
+            "old_share": 0.5,
+            "new_share": 0.8332209273833049,
+            "iterations": 16,
+            "use_union": true,
+            "union_gain_log": 0.0047054429779601545,
+            "union_standard_error": 0.002170411901628102,
+            "original_share": 0.8084994075717634,
+            "union_iterations": 8
+          },
+          {
+            "selected": true,
+            "gain_log": 0.04040879717103287,
+            "standard_error": 0.002361068618206837,
+            "old_share": 0.5,
+            "new_share": 0.8118886919730377,
+            "iterations": 15,
+            "use_union": false,
+            "union_gain_log": 0.0018063851607051811,
+            "union_standard_error": 0.00041080888667322554,
+            "original_share": 0.789040248004071,
+            "union_iterations": 6
+          },
+          {
+            "selected": false,
+            "gain_log": 0.001872078485083559,
+            "standard_error": 0.004133909931246342,
+            "old_share": 0.25,
+            "new_share": 0.5474693165335118,
+            "iterations": 24
+          },
+          {
+            "selected": true,
+            "gain_log": 0.05078861011327923,
+            "standard_error": 0.009706250096895333,
+            "old_share": 0.5,
+            "new_share": 0.8757076129834941,
+            "iterations": 17,
+            "use_union": false,
+            "union_gain_log": 0.007458416217871458,
+            "union_standard_error": 0.0038032301868140923,
+            "original_share": 0.8367247414751978,
+            "union_iterations": 10
+          },
+          {
+            "selected": true,
+            "gain_log": 0.0717394978152644,
+            "standard_error": 0.00955188720434365,
+            "old_share": 0.5,
+            "new_share": 0.8621176428109985,
+            "iterations": 17,
+            "use_union": false,
+            "union_gain_log": 0.005340874122574744,
+            "union_standard_error": 0.002825356814237825,
+            "original_share": 0.8370266490496604,
+            "union_iterations": 9
+          },
+          {
+            "selected": true,
+            "gain_log": 0.0704971672562794,
+            "standard_error": 0.007663515649439318,
+            "old_share": 0.5,
+            "new_share": 0.8481679873281636,
+            "iterations": 15,
+            "use_union": false,
+            "union_gain_log": 0.002241944134331359,
+            "union_standard_error": 0.001865816839111332,
+            "original_share": 0.8180315152439993,
+            "union_iterations": 8
+          },
+          {
+            "selected": true,
+            "gain_log": 0.11629458983980925,
+            "standard_error": 0.005832080644384665,
+            "old_share": 0.5,
+            "new_share": 0.8171070056918557,
+            "iterations": 20,
+            "use_union": true,
+            "union_gain_log": 0.00708748028625797,
+            "union_standard_error": 0.001247611927072363,
+            "original_share": 0.7976451528647873,
+            "union_iterations": 7
+          },
+          {
+            "selected": true,
+            "gain_log": 0.04369019967145613,
+            "standard_error": 0.003096221060100116,
+            "old_share": 0.5,
+            "new_share": 0.832401404723614,
+            "iterations": 13,
+            "use_union": false,
+            "union_gain_log": 0.0029038247264714322,
+            "union_standard_error": 0.000847510928998281,
+            "original_share": 0.8021038229016572,
+            "union_iterations": 7
+          }
+        ],
+        "active": [
+          0,
+          1,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "fit_rows": 1200,
+        "selection_rows": 800,
+        "reference_rows": 6471,
+        "replay_rows": 800
+      },
+      "cells": 180411,
+      "comparisons": {
+        "E041": {
+          "baseline_skill": 0.5520125312404893,
+          "delta_skill": -6.72707989768373e-05,
+          "delta_log": -8.48790787849607e-05,
+          "probability_max_abs": 0.09632573781371018
+        }
+      }
+    }
+  }
+}

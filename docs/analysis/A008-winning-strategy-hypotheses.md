@@ -294,3 +294,30 @@ Retain learned weights for subsequent metric/selector validation; no blind
 daily weight-removal grid. E043 remains parked at its scoped oracle gate.
 This result supplies no new .65 forecast and no phase-2 validation: E025 stays
 the verified phase-2 fallback until E041's checks and method are completed.
+
+## v8 - E045 preserve-and-expand retrieval, 2026-09-21
+
+Today's score-seeking candidate preserves E041 learned weight use after E044's
+adverse reading. E043 replaced an original32 candidate pool; E045 explicitly
+tests the distinct original32 + learned32 union. Its earlier union observation
+was exploratory motivation, not retroactive success for E043. New preregistered
+random splits43/44 of the same observed Adult source yield certified marginal
+oracle skill/3 +.007834132 / +.009196164, passing the >.005 / >0 gates before
+any production estimator. These are candidate headroom, not learnable gains.
+
+E045 fits an expanded diagonal metric only on fit rows, then compares with
+the E041 K32 learned metric on separate selection rows. Require section gain
+>max(.003, 2 paired respondent standard errors); otherwise preserve E041.
+The search metric remains frozen at E041 even after expanded weights are
+fitted. Original donors are retained, padding has zero mass, self excluded.
+The activation proxy and inherited in-sample base replay remain limitations.
+No external records or fitted parameters enter the archive.
+
+Actual observed audit gains +.000426 / +.000495 skill have paired intervals
+including zero. Clean UNHCR delta -.000064867 versus E041 / -.000551012 versus
+E025, controls exact. Existing household sim delta -.000067271. Neither local
+channel qualifies for model adoption. E045 is a named, screened exploration
+targeting the established evidence contribution, not a proven .65 model.
+No audit-driven parameter tuning; preserve E041 as incumbent pending its slot.
+Technical assembly/official verification results are recorded in the E045
+experiment and scorecard. E025's phase-2 fallback remains unchanged.

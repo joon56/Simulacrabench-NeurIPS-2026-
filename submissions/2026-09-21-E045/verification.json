@@ -1,0 +1,79 @@
+{
+  "archive_path": "submissions\\2026-09-21-E045.zip",
+  "archive_sha256": "215da373111e8109db908b7568906d6c6b39a1962265a2ecd47a9f2f3362fba3",
+  "main_sha256": "fb2daa757e8503a8846e528165f855fd94dde1c454aab79065f8b290c55c61f4",
+  "source_sha256": "cf65c6413368133ba1f5955503e2cf85963ec186b8f90b0eb5976a1b7eeedd0f",
+  "zip_checker": "OK: C:\\Users\\USER\\Desktop\\SimulacraBench\\submissions\\2026-09-21-E045.zip looks like a valid submission ZIP.",
+  "phase": 1,
+  "local_threads": 2,
+  "hosted_result": null,
+  "instruments": {
+    "unicef": {
+      "status": "PASS",
+      "skill": 0.5006484230707156,
+      "reported_skill": 0.5,
+      "seconds": 37.67073345184326,
+      "source_parity_max_abs": 0.0,
+      "comparisons": {
+        "E041": {
+          "baseline_skill": 0.5006484230707156,
+          "delta_skill": 0.0,
+          "delta_log": 0.0,
+          "probability_max_abs": 0.0
+        },
+        "E025": {
+          "baseline_skill": 0.5006484230707156,
+          "delta_skill": 0.0,
+          "delta_log": 0.0,
+          "probability_max_abs": 0.0
+        }
+      }
+    },
+    "world_bank": {
+      "status": "PASS",
+      "skill": 0.45471730736298255,
+      "reported_skill": 0.46,
+      "seconds": 93.26857113838196,
+      "source_parity_max_abs": 0.0,
+      "comparisons": {
+        "E041": {
+          "baseline_skill": 0.45471730736298255,
+          "delta_skill": 0.0,
+          "delta_log": 0.0,
+          "probability_max_abs": 0.0
+        },
+        "E025": {
+          "baseline_skill": 0.45471730736298255,
+          "delta_skill": 0.0,
+          "delta_log": 0.0,
+          "probability_max_abs": 0.0
+        }
+      }
+    },
+    "unhcr": {
+      "status": "PASS",
+      "skill": 0.5623978616683685,
+      "reported_skill": 0.56,
+      "seconds": 264.9128189086914,
+      "source_parity_max_abs": 0.0,
+      "comparisons": {
+        "E041": {
+          "baseline_skill": 0.5624627288576414,
+          "delta_skill": -6.486718927289914e-05,
+          "delta_log": -8.184631894669891e-05,
+          "probability_max_abs": 0.2647363908759034
+        },
+        "E025": {
+          "baseline_skill": 0.5629488737050165,
+          "delta_skill": -0.0005510120366479798,
+          "delta_log": -0.0006952406509432851,
+          "probability_max_abs": 0.40931578040702815
+        }
+      }
+    }
+  },
+  "official_seconds_sum": 395.8521234989166,
+  "verification_wall_seconds": 406.7298399000001,
+  "technical_checks_passed": true,
+  "local_no_regression_passed": true
+}

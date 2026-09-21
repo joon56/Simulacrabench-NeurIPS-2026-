@@ -18,9 +18,12 @@ from check_daily_retrieval import (ROOT, KIT, CACHE, OUTPUT, BASELINE_HASHES,
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--experiment", required=True)
+    parser.add_argument("--date", default="2026-09-20")
+    parser.add_argument("--output-dir", type=Path, default=OUTPUT)
     args = parser.parse_args()
+    args.output_dir = args.output_dir.resolve()
     label = args.experiment
-    snapshot = ROOT / f"submissions/2026-09-20-{label}"
+    snapshot = ROOT / f"submissions/{args.date}-{label}"
     archive = snapshot.with_suffix(".zip")
     temporary = ROOT / f"tmp/{label.lower()}-official"
     extracted = temporary / "submission"
@@ -36,7 +39,7 @@ def main():
     env.pop("PYTHONPATH", None)
     checker = subprocess.run([sys.executable, str(KIT / "tools/check_submission_zip.py"), str(archive)],
                              capture_output=True, text=True, encoding="utf-8", env=env, check=True)
-    source_record = json.loads((OUTPUT / f"clean-{label}-unicef,world_bank,unhcr.json").read_text(encoding="utf-8"))
+    source_record = json.loads((args.output_dir / f"clean-{label}-unicef,world_bank,unhcr.json").read_text(encoding="utf-8"))
     assert source_digest(ROOT / source_record["source"]) == source_record["source_sha256"]
     manifest = {"archive_path": str(archive.relative_to(ROOT)), "archive_sha256": digest(archive),
                 "main_sha256": digest(snapshot / "main.py"),
@@ -49,7 +52,7 @@ def main():
         expected = pickle.loads((CACHE / f"clean-{name}-{label}.pkl").read_bytes())
         assert expected["frame_sha256"] == frame_hash
         assert expected["source_sha256"] == source_record["source_sha256"]
-        log = OUTPUT / f"official-{label}-{name}.json"
+        log = args.output_dir / f"official-{label}-{name}.json"
         done = subprocess.run([sys.executable, str(KIT / "score.py"), "--submission", str(extracted),
                                "--data", str(KIT / "_sandbox" / name),
                                "--schema", str(KIT / "data" / f"{name}.json"),

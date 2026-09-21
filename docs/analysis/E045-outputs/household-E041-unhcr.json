@@ -1,0 +1,18 @@
+{
+  "label": "E041",
+  "case": "household",
+  "seed": 13,
+  "source": "submissions\\2026-09-19-E041\\main.py",
+  "source_sha256": "22c911806ea91234ae350341adfb9c0df2ce4be41cc88e73be304e4bb1023073",
+  "instruments": {
+    "unhcr": {
+      "source_sha256": "22c911806ea91234ae350341adfb9c0df2ce4be41cc88e73be304e4bb1023073",
+      "frame_sha256": "7c0c39da48327136bf61ffd90f7d19eb0696e798fa8a19f3946610d05123e1e9",
+      "seconds": 311.13782430000003,
+      "skill": 0.5520125312404893,
+      "log_score": -0.565249175479951,
+      "cells": 180411,
+      "comparisons": {}
+    }
+  }
+}

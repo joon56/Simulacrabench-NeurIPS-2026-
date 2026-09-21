@@ -1,0 +1,193 @@
+{
+  "label": "E045",
+  "case": "clean",
+  "seed": 13,
+  "source": "src\\models\\union_retrieval.py",
+  "source_sha256": "cf65c6413368133ba1f5955503e2cf85963ec186b8f90b0eb5976a1b7eeedd0f",
+  "instruments": {
+    "unicef": {
+      "source_sha256": "cf65c6413368133ba1f5955503e2cf85963ec186b8f90b0eb5976a1b7eeedd0f",
+      "frame_sha256": "96a081fd7880bf0e06399d4a4e6fdfb332436b19ea08d754bacf87d377178a24",
+      "seconds": 34.31349230000001,
+      "skill": 0.5006484230707156,
+      "log_score": -0.780008047004413,
+      "diagnostics": {},
+      "cells": 17856,
+      "comparisons": {
+        "E041": {
+          "baseline_skill": 0.5006484230707156,
+          "delta_skill": 0.0,
+          "delta_log": 0.0,
+          "probability_max_abs": 0.0
+        },
+        "E025": {
+          "baseline_skill": 0.5006484230707156,
+          "delta_skill": 0.0,
+          "delta_log": 0.0,
+          "probability_max_abs": 0.0
+        }
+      }
+    },
+    "world_bank": {
+      "source_sha256": "cf65c6413368133ba1f5955503e2cf85963ec186b8f90b0eb5976a1b7eeedd0f",
+      "frame_sha256": "4c8da49f0d35b7ebfe49739a1619681ae998c2e0fd1cfd79fe7472606366a139",
+      "seconds": 84.24517549999996,
+      "skill": 0.45471730736298255,
+      "log_score": -1.1005776279104411,
+      "diagnostics": {},
+      "cells": 39520,
+      "comparisons": {
+        "E041": {
+          "baseline_skill": 0.45471730736298255,
+          "delta_skill": 0.0,
+          "delta_log": 0.0,
+          "probability_max_abs": 0.0
+        },
+        "E025": {
+          "baseline_skill": 0.45471730736298255,
+          "delta_skill": 0.0,
+          "delta_log": 0.0,
+          "probability_max_abs": 0.0
+        }
+      }
+    },
+    "unhcr": {
+      "source_sha256": "cf65c6413368133ba1f5955503e2cf85963ec186b8f90b0eb5976a1b7eeedd0f",
+      "frame_sha256": "0e6f1361d9e3d5a85fc8bad561cd486dc64fb7970ad07fd7f0074b629beaf836",
+      "seconds": 283.36200669999994,
+      "skill": 0.5623978616683685,
+      "log_score": -0.5521454619370242,
+      "diagnostics": {
+        "sections": [
+          {
+            "selected": true,
+            "gain_log": 0.0854271920867702,
+            "standard_error": 0.00713097572973496,
+            "old_share": 0.5,
+            "new_share": 0.8802006809632907,
+            "iterations": 16,
+            "use_union": false,
+            "union_gain_log": 0.004675925716840215,
+            "union_standard_error": 0.0030707445074577102,
+            "original_share": 0.8329203752745584,
+            "union_iterations": 10
+          },
+          {
+            "selected": true,
+            "gain_log": 0.051959848857493024,
+            "standard_error": 0.002406694917906263,
+            "old_share": 0.5,
+            "new_share": 0.8355256099155008,
+            "iterations": 14,
+            "use_union": true,
+            "union_gain_log": 0.004455137231566494,
+            "union_standard_error": 0.0008432643599759914,
+            "original_share": 0.8056829338572193,
+            "union_iterations": 9
+          },
+          {
+            "selected": false,
+            "gain_log": 0.005206396246154011,
+            "standard_error": 0.004351807603775746,
+            "old_share": 0.0,
+            "new_share": 0.48677039045999015,
+            "iterations": 25
+          },
+          {
+            "selected": true,
+            "gain_log": 0.03820712835936749,
+            "standard_error": 0.008287199336008822,
+            "old_share": 0.5,
+            "new_share": 0.8541863915909548,
+            "iterations": 17,
+            "use_union": false,
+            "union_gain_log": 0.007039115006894891,
+            "union_standard_error": 0.004645567488871832,
+            "original_share": 0.7669381049476066,
+            "union_iterations": 8
+          },
+          {
+            "selected": true,
+            "gain_log": 0.07657709757662869,
+            "standard_error": 0.010323100691838073,
+            "old_share": 0.5,
+            "new_share": 0.8782508118610785,
+            "iterations": 15,
+            "use_union": false,
+            "union_gain_log": 0.006293151154526781,
+            "union_standard_error": 0.004759233359574062,
+            "original_share": 0.8351129307074066,
+            "union_iterations": 12
+          },
+          {
+            "selected": true,
+            "gain_log": 0.08557107058810151,
+            "standard_error": 0.007759126361384812,
+            "old_share": 0.5,
+            "new_share": 0.8454415546426785,
+            "iterations": 13,
+            "use_union": true,
+            "union_gain_log": 0.007068482604560987,
+            "union_standard_error": 0.0032798304737874455,
+            "original_share": 0.7951362625815863,
+            "union_iterations": 10
+          },
+          {
+            "selected": true,
+            "gain_log": 0.11584510844590792,
+            "standard_error": 0.0061421993101079255,
+            "old_share": 0.5,
+            "new_share": 0.866063708900292,
+            "iterations": 14,
+            "use_union": true,
+            "union_gain_log": 0.015985443400328907,
+            "union_standard_error": 0.002313620609914984,
+            "original_share": 0.8185266702135178,
+            "union_iterations": 9
+          },
+          {
+            "selected": true,
+            "gain_log": 0.04935543780832889,
+            "standard_error": 0.0035391861296247243,
+            "old_share": 0.5,
+            "new_share": 0.8667434191540793,
+            "iterations": 11,
+            "use_union": true,
+            "union_gain_log": 0.011035953146657755,
+            "union_standard_error": 0.001600615209110248,
+            "original_share": 0.8113753078910769,
+            "union_iterations": 9
+          }
+        ],
+        "active": [
+          0,
+          1,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "fit_rows": 1200,
+        "selection_rows": 800,
+        "reference_rows": 5479,
+        "replay_rows": 800
+      },
+      "cells": 132273,
+      "comparisons": {
+        "E041": {
+          "baseline_skill": 0.5624627288576414,
+          "delta_skill": -6.486718927289914e-05,
+          "delta_log": -8.184631894669891e-05,
+          "probability_max_abs": 0.2647363908759034
+        },
+        "E025": {
+          "baseline_skill": 0.5629488737050165,
+          "delta_skill": -0.0005510120366479798,
+          "delta_log": -0.0006952406509432851,
+          "probability_max_abs": 0.40931578040702815
+        }
+      }
+    }
+  }
+}

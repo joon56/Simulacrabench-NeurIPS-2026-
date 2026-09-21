@@ -70,10 +70,11 @@ def main():
     parser.add_argument("--case", choices=("clean", "household"), default="clean")
     parser.add_argument("--schemas", default="unicef,world_bank,unhcr")
     parser.add_argument("--compare", default="")
+    parser.add_argument("--output-dir", type=Path, default=OUTPUT)
     args = parser.parse_args()
     torch.set_num_threads(2)
     CACHE.mkdir(parents=True, exist_ok=True)
-    OUTPUT.mkdir(parents=True, exist_ok=True)
+    args.output_dir.mkdir(parents=True, exist_ok=True)
     module = importlib.import_module(args.module) if args.module else None
     path = Path(module.__file__) if module else args.snapshot.resolve()
     predict = module.predict if module else load_predict(path)
@@ -95,6 +96,8 @@ def main():
             cached = {"source_sha256": code_hash, "frame_sha256": frame_hash,
                       "vectors": vectors, "seconds": seconds,
                       "skill": measured["skill"], "log_score": measured["log_score"]}
+            if module is not None and hasattr(module, "LAST_DIAGNOSTICS"):
+                cached["diagnostics"] = dict(module.LAST_DIAGNOSTICS)
             cache_path.write_bytes(pickle.dumps(cached, protocol=5))
         row = {k: v for k, v in cached.items() if k != "vectors"}
         row["cells"] = len(cells)
@@ -109,7 +112,7 @@ def main():
                 "delta_log": cached["log_score"] - other["log_score"],
                 "probability_max_abs": difference(cached["vectors"], other["vectors"])}
         result["instruments"][name] = row
-        (OUTPUT / f"{args.case}-{args.label}-{args.schemas}.json").write_text(
+        (args.output_dir / f"{args.case}-{args.label}-{args.schemas}.json").write_text(
             json.dumps(result, indent=2) + "\n", encoding="utf-8")
         print(name, json.dumps(row), flush=True)
 

@@ -1,6 +1,6 @@
 # STATUS — read this first in a new session (kept current at every commit)
 
-Updated: 2026-09-20 E044 result recorded; E041 result reported on 2026-09-19, continuing the supplied
+Updated: 2026-09-21 E045 preparation; E041 result reported on 2026-09-19, continuing the supplied
 2026-09-21 handoff; see `docs/phase2-preparation.md` for date provenance. Newest work is
 inserted at the TOP of docs/log.md; historical dated entries are newest-first.
 
@@ -55,6 +55,17 @@ inserted at the TOP of docs/log.md; historical dated entries are newest-first.
   371.022 s local total. E043 candidate-search oracle stopped first: marginal
   mean equivalents +.000963 / -.000392 on observed Adult seeds 41 / 42.
   Neither local model adoption nor a .65 forecast is claimed. E041 stays best.
+- **Today's candidate E045 preserves and expands E041 retrieval.**
+  `submissions/2026-09-21-E045.zip` keeps original 32 donors and may add up to 32
+  learned-search donors; fit/selection labels are separate, rejected sections
+  retain E041, and learned activation/replay remain. Observed Adult oracle on
+  prespecified splits 43/44 passes: certified marginal skill/3 +.007834/+.009196.
+  Actual observed gains +.000426/+.000495 skill have intervals including zero.
+  Clean UNHCR delta -.000064867 vs E041 / -.000551012 vs E025; controls exact.
+  Existing household sim -.000067271. No local adoption or .65 forecast.
+  23 tests/checker/official x3 PASS; every source/archive probability matches,
+  395.852 s local total. Ready for exploratory submission #27, parked for adoption.
+  E041 remains incumbent; no E045 hosted upload or result.
 
 ## Historical E025 loss map (probe submissions E032–E034, unhcr)
 
@@ -116,15 +127,21 @@ unchanged experiments; first repair the evidence behind their interpretation.
 
 ## Next session plan
 
-1. **Retain E041 learned weights after E044's adverse reading.** User reported
+1. **Read E045 before choosing the next DEV intervention.** This is a distinct
+   candidate-union family motivated by E043's diagnostic union, now screened
+   on prespecified splits 43/44 before estimator implementation. Read its
+   scorecard: >=.65 favourable; .64 inspect best update, otherwise unresolved;
+   .63 adverse; <=.62 larger adverse. Technical verification and exploratory
+   eligibility are separate from adoption; no measured .65 forecast.
+   **Retain E041 learned weights after E044's adverse reading.** User reported
    Grand .63 without best update; individual scores are unavailable. Apply the
    preregistered .63 arm: reject E044 for adoption, prioritize honest metric/
    selector validation, and avoid a blind daily removal/weight grid. The
    displayed -.01 Grand gives only an approximate -.03 UNHCR effect translation,
    not a measured instrument delta or hidden score. The experiment is conditional
    on E041's learned activation and includes downstream recalibration. E043's
-   new-pool replacement failed its observed-data oracle gate; the larger union
-   family was diagnostic only and requires a distinct preregistered experiment.
+   new-pool replacement failed its observed-data oracle gate; E045 separately
+   preregistered and screened the larger union family, without rewriting E043.
    **Freeze E041 as the DEV comparison baseline.** The user reported
    .64/.52/.49/.92; preserve the exact ZIP and interpret this as the registered
    positive arm. Next experiments need a named incremental mechanism, a scoped

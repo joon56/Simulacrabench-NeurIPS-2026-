@@ -2,6 +2,42 @@
 
 Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-notes]].
 
+## 2026-09-21 - E045 union retrieval prepared as #27; E041 remains incumbent
+
+- User requested today's score-seeking artifact. Registered E045 before its
+  oracle: preserve E041 original 32 and add distinct learned 32 candidates,
+  instead of E043's replacement. Retain learned weight use after E044's
+  adverse result. Historical .79 base + .10 evidence motivates the target;
+  this is not an E041 loss decomposition or a .65 forecast.
+- Observed Adult, prespecified new splits 43/44 of the same dataset: certified
+  marginal oracle skill/3 +.007834132 / +.009196164 clears >.005 / >0 gates.
+  Only then fitted expanded diagonal metrics, anchored at frozen E041 weights,
+  with separate selection and unchanged replay. Masked duplicates get zero
+  posterior mass; original donors retained; search metric stays E041.
+- Actual observed audit skill gains +.000426 / +.000495, paired intervals
+  include zero. Family/employment selected on both splits. No audit-driven
+  tuning. Review renamed retrieval-share output keys; numbers unchanged.
+- Clean E045 .500648423/.454717307/.562397862. Every UNICEF/WB probability
+  equals E041/E025; UNHCR delta -.000064867 vs E041 / -.000551012 vs E025,
+  both within .002. Clean mean -.000021622; unions active in sections 3/4/5/6.
+  Existing household sim .551945260 vs E041 .552012531, delta -.000067271,
+  unions sections 2/5. No local adoption; E041 remains .64/.52/.49/.92.
+- 23 tests PASS, independent oracle/implementation review PASS. ZIP checker
+  PASS; isolated official phase-1 PASS x3; every source/archive probability
+  identical. Official local 395.852 s, verification wall 406.730 s, two threads,
+  within shared 900 s; not a hosted timing guarantee. Frozen reference caches
+  revalidated by current frame and pinned code hashes; baseline times historical.
+- Initial assembler check falsely matched old local parent variables; limited
+  module-reference check to appended tree. First official verification failed
+  while saving a relative log path under kit cwd; absolute path fixed and
+  complete rerun passed. Neither correction changes candidate predictions.
+- Ready archive submissions/2026-09-21-E045.zip, SHA256
+  215da373111e8109db908b7568906d6c6b39a1962265a2ecd47a9f2f3362fba3.
+  SCORES.md pre-registers >=.65 favourable, .64 inspect update/unresolved,
+  .63 adverse, <=.62 larger adverse, FAILED no inference. Technically eligible
+  daily exploration, parked pending hosted reading; no upload or slot used.
+  Raw results: docs/analysis/E045-outputs/. Prior models/archives unchanged.
+
 ## 2026-09-20 - E044 hosted Grand .63, no update; retain E041 learned weights
 
 - User reported submission #26 Grand **.63**, with no best update. Individual

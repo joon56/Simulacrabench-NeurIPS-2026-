@@ -1,0 +1,95 @@
+{
+  "seed": 43,
+  "source_counts": {
+    "source_rows": 32561,
+    "unique_modeled_rows": 19561
+  },
+  "source_sha256": "5b00264637dbfec36bdeaab5676b0b309ff9eb788d63554ca0a249491c86603d",
+  "source_ids_sha256": "8928b90e64fd3d94576139a63d0f9e03a896cd841a4e2b7b1312e72675ef8878",
+  "split": {
+    "bank": 2000,
+    "metric_fit": 1000,
+    "selection": 1000,
+    "audit": 1000
+  },
+  "active_E041_sections": [
+    "family",
+    "employment"
+  ],
+  "union_sections": [
+    "family",
+    "employment"
+  ],
+  "selection_diagnostics": {
+    "family": {
+      "selected": true,
+      "gain_log": 0.07619812236420435,
+      "standard_error": 0.009289942874057874,
+      "old_share": 0.5,
+      "new_share": 0.8894536408358087,
+      "iterations": 10,
+      "use_union": true,
+      "union_gain_log": 0.028258942467357016,
+      "union_standard_error": 0.0069680164194577555,
+      "original_share": 0.8291378870178893,
+      "union_iterations": 11
+    },
+    "employment": {
+      "selected": true,
+      "gain_log": 0.038483526449482934,
+      "standard_error": 0.004440014922115361,
+      "old_share": 0.25,
+      "new_share": 0.5963814478495937,
+      "iterations": 9,
+      "use_union": true,
+      "union_gain_log": 0.007602000801207897,
+      "union_standard_error": 0.002511986622134247,
+      "original_share": 0.5207405469112804,
+      "union_iterations": 8
+    },
+    "finances": {
+      "selected": false,
+      "gain_log": 0.0012184135156168994,
+      "standard_error": 0.0018850573688021983,
+      "old_share": 0.5,
+      "new_share": 0.6497152886225047,
+      "iterations": 6
+    }
+  },
+  "audit_E041": {
+    "log_score": -1.001177384152685,
+    "skill": 0.33204172323633707,
+    "uniform_reference": 1.4988621579831425
+  },
+  "audit_E045": {
+    "log_score": -1.000538869561847,
+    "skill": 0.3324677227770134,
+    "uniform_reference": 1.4988621579831425
+  },
+  "audit_delta": {
+    "delta_log": 0.0006385145908380748,
+    "delta_skill": 0.0004259995406764123,
+    "delta_skill_div3_proxy": 0.00014199984689213744,
+    "paired_log_standard_error": 0.0005010383732181332,
+    "skill_95pct_normal_interval": [
+      -0.00022918759996696763,
+      0.0010811866813197923
+    ]
+  },
+  "audit_probability_max_abs": 0.1058901506749221,
+  "leakage_checks": {
+    "audit_mask_preserves_fit_and_selection": true,
+    "masked_query_labels_preserve_base_and_evidence": true
+  },
+  "elapsed_seconds": 4.720964500000036,
+  "retrieval_shares_E041": {
+    "family": 0.1,
+    "employment": 0.1,
+    "finances": 0.0
+  },
+  "retrieval_shares_E045": {
+    "family": 0.25,
+    "employment": 0.1,
+    "finances": 0.0
+  }
+}
