@@ -2,6 +2,27 @@
 
 Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-notes]].
 
+## 2026-09-21 - E045 hosted Grand .64, no update; unresolved arm, keep E041
+
+- User reported submission #27 Grand **.64**, no best update. UNICEF/WB/UNHCR
+  scores unavailable. Completed scored submission, not a failed attempt.
+  Source is the user report; no platform fetch, exact upload time, submission
+  ID or hosted runtime supplied. Earlier preparation record remains historical.
+- Applied the preregistered .64-without-update arm: E045 stays parked, E041
+  remains .64/.52/.49/.92. No demonstrated best improvement. Equal displayed
+  Grand does not identify an exact zero effect or hidden UNHCR .92; small
+  effects, no effect and inactive hosted selection remain indistinguishable.
+- Observed union oracle headroom did not establish a learnable HSCC gain.
+  Actual Adult improvements were already small with intervals including zero.
+  Local union activation cannot identify hosted activation. This does not
+  close the whole retrieval family or reverse E044's weight-use reading.
+- Next: retain E041 learned weights, no blind candidate-count grid; prioritize
+  auditing selection against final predictions or another separately screened
+  mechanism. E025 remains the validated phase-2 fallback. No new model/upload.
+- Updated E045 scorecard, README/verification metadata, experiment Decision,
+  submission row, status and A008. Status remains parked; archive/main.py and
+  all local/oracle measurements unchanged.
+
 ## 2026-09-21 - E045 union retrieval prepared as #27; E041 remains incumbent
 
 - User requested today's score-seeking artifact. Registered E045 before its

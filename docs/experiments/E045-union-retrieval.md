@@ -108,10 +108,16 @@ First official run stopped at a relative log-path error in the verifier;
 resolved the path before the subprocess and reran all three. Submission unchanged.
 Independent oracle and implementation reviews found no important blocker.
 
+Hosted result, user-reported 2026-09-21: **Grand .64, no best update**. All
+individual instrument scores are unavailable. No platform fetch, submission
+ID, exact upload time or hosted runtime was provided. This is a scored result,
+not a failed submission. The displayed Grand equals E041; it does not identify
+the exact underlying difference, hidden UNHCR score or hosted selector activity.
+
 ## Decision
 
-Parked pending hosted reading; **technically ready as submission #27** under
-the user's daily exploration policy. Clean mean delta -.000021622, household
+**Parked after submission #27 selected the preregistered .64-without-update
+arm.** E041 remains incumbent; E045 did not establish a new best. Clean mean delta -.000021622, household
 mean equivalent -.000022424 and observed audit mean equivalents +.000142000 /
 +.000165039 do not clear the +.005 adoption bar. Neither oracle headroom nor
 these small estimator readings warrant adopting E045 or forecasting .65.
@@ -123,9 +129,14 @@ E025's validated phase-2 fallback. This is a new evidence-coverage intervention
 with measurable candidate headroom, not a daily parameter grid or an E043
 replacement-search revival. The positive but inconclusive observed direction
 is compatible with the domain hypothesis; the tiny local losses do not verify
-transfer. Domain mechanism and magnitude remain unresolved until the slot.
+transfer. The hosted reading also leaves the domain mechanism and magnitude
+unresolved: small effects, no effect and selector inactivity cannot be separated
+at this resolution. Local activation is not evidence of hosted activation.
 
 SCORES.md registered >=.65 favourable; .64 with best update inspect/preserve;
 .64 without update unresolved; .63 adverse; <=.62 larger adverse; FAILED no
 statistical reading. Only UNHCR changes, so Grand deltas translate approximately
-x3; never fabricate hidden scores. No upload performed by this preparation.
+x3; never fabricate hidden scores. The actual .64-without-update arm supports
+keeping E041, not declaring a universal retrieval ceiling. Retain learned
+weight use; avoid a blind K grid and prioritize final-output selection auditing
+or a separately screened mechanism. Model and archive bytes remain unchanged.

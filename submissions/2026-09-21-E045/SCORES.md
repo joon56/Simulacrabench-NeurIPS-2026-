@@ -1,7 +1,8 @@
 # E045 - Candidate union with guarded learned reranking (UNHCR only)
 
-Status: **READY FOR ONE EXPLORATORY DEV SUBMISSION.** All required technical
-checks pass; no local adoption claim. No hosted upload or result. Incumbent E041 Grand .64 /
+Status: **HOSTED RESULT REPORTED: Grand .64, no best update.** The preregistered
+unresolved arm applies; E045 stays parked and E041 remains incumbent. Individual
+instrument scores are unavailable. Incumbent E041 Grand .64 /
 UNICEF .52 / World Bank .49 / UNHCR .92. E044 removal control read Grand .63.
 
 ## Preregistered intervention
@@ -71,8 +72,25 @@ verification attempt failed only while writing a relative log path under the
 kit's working directory; the verifier resolved the path and its full rerun
 passed. Two numerical threads; 406.730 s verification wall time. This local
 measurement is not a hosted worker speed guarantee. E041 stays DEV incumbent;
-E045 remains parked for adoption pending its preregistered hosted reading.
+E045 remains parked after the unresolved hosted reading recorded below.
 
 ## Actual hosted result
 
-Not submitted. No result or daily slot used by this preparation.
+User reported **Grand 0.64, no best update** on 2026-09-21. UNICEF, World Bank
+and UNHCR scores are unavailable. This is a completed scored submission, not
+a failed attempt. Source: user report, not an independent platform fetch.
+Exact upload time, submission ID and hosted runtime were not provided.
+
+Apply the preregistered **.64 without update** arm: keep E041 and park this
+E045 configuration. Candidate expansion did not produce a best update. Equal
+displayed Grand does not establish equal underlying scores, zero UNHCR effect,
+or an E045 UNHCR score of .92. Rounding/noise and possible selector inactivity
+remain indistinguishable; local activation does not establish hosted activation.
+
+The observed Adult oracle showed permissive candidate headroom, not a learned
+HSCC gain. Actual observed gains were small and inconclusive before submission;
+this result does not justify a universal retrieval ceiling. Keep learned weight
+use supported by the E044 comparison. Do not spend subsequent slots on a blind
+candidate-count grid; prioritize auditing selection against final predictions
+or a separately screened mechanism. E041 remains DEV best .64/.52/.49/.92;
+E025 remains the validated phase-2 fallback. Archive/model bytes unchanged.

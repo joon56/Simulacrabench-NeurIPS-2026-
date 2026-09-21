@@ -321,3 +321,18 @@ targeting the established evidence contribution, not a proven .65 model.
 No audit-driven parameter tuning; preserve E041 as incumbent pending its slot.
 Technical assembly/official verification results are recorded in the E045
 experiment and scorecard. E025's phase-2 fallback remains unchanged.
+
+## v9 - E045 reported .64 without update, 2026-09-21
+
+User reported Grand .64 and no best update; individual instrument scores are
+unavailable. The preregistered unresolved arm applies: park this configuration,
+retain E041 .64/.52/.49/.92. No exact hidden UNHCR value or underlying zero
+effect follows from equal rounded/noised Grand. Hosted selector inactivity is
+one possibility, not an observed fact; local activation cannot identify it.
+
+E045 did not demonstrate a new best. Observed candidate-union oracle headroom
+and weak learned Adult gains were insufficient to establish HSCC improvement.
+This is not a universal retrieval ceiling or a reason to remove E041 learned
+weights. Avoid a blind daily K/weight grid; prioritize final-output selector
+auditing or a separately screened mechanism. No new method or forecast is
+validated by this result. E025 remains the separately validated phase-2 fallback.

@@ -1,7 +1,8 @@
 # E045 - Candidate union with guarded supervised reranking
 
-Status: **READY FOR ONE EXPLORATORY DEV SUBMISSION.** Archive:
-[2026-09-21-E045.zip](../2026-09-21-E045.zip). No hosted upload or result.
+Status: **Grand .64, no best update (user-reported 2026-09-21).** Individual
+instrument scores unavailable. E045 parked; E041 remains incumbent. Archive:
+[2026-09-21-E045.zip](../2026-09-21-E045.zip).
 Checker and official phase-1 x3 PASS; every source/archive probability exactly
 matches. Clean no-regression versus E041/E025 passes, controls identical,
 23 tests pass. Combined official local time 395.852 s against 900 s shared budget.
@@ -21,6 +22,11 @@ are included in the archive. Actual observed audit gains are small and their
 intervals include zero; clean and household changes are slightly negative.
 No local adoption or expected .65 score is claimed. See [SCORES.md](SCORES.md)
 for preregistered readings and all measured results.
+
+The preregistered .64-without-update arm is unresolved: no demonstrated best
+improvement, but no proof of zero effect or inactive selection. Do not fill
+hidden instrument values from the E041 triple. Preserve learned weight use;
+avoid a blind candidate-count grid. No new model or upload in this record update.
 
 Reproduce from repository root:
 

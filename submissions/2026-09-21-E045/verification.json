@@ -6,7 +6,22 @@
   "zip_checker": "OK: C:\\Users\\USER\\Desktop\\SimulacraBench\\submissions\\2026-09-21-E045.zip looks like a valid submission ZIP.",
   "phase": 1,
   "local_threads": 2,
-  "hosted_result": null,
+  "hosted_result": {
+    "source": "user_report",
+    "recorded_date": "2026-09-21",
+    "grand": 0.64,
+    "best_update": false,
+    "unicef": null,
+    "world_bank": null,
+    "unhcr": null,
+    "instrument_scores_available": false,
+    "submission_id": null,
+    "submitted_at": null,
+    "hosted_seconds": null,
+    "preregistered_arm": "0.64 without update: unresolved at displayed precision or selector inactive",
+    "decision": "park_E045_keep_E041",
+    "notes": "Equal displayed Grand does not imply zero underlying effect, hidden UNHCR .92, or inactive selection. No new best; all local validation values unchanged."
+  },
   "instruments": {
     "unicef": {
       "status": "PASS",
