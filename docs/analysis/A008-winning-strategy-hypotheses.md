@@ -336,3 +336,47 @@ This is not a universal retrieval ceiling or a reason to remove E041 learned
 weights. Avoid a blind daily K/weight grid; prioritize final-output selector
 auditing or a separately screened mechanism. No new method or forecast is
 validated by this result. E025 remains the separately validated phase-2 fallback.
+
+## v10 - E046 screen stopped; E047 adaptive final correction, 2026-09-22
+
+The next direction was honest final-output selection, keeping E041 learned
+retrieval after E044's adverse and E045's unresolved readings. First registered
+E046's repaired tree comparison, motivated by A006's contaminated selection
+and inconsistent formula. Observed Adult seeds45/46 constant-headwise mixture
+oracles gave skill/3 +.000145139 / +.000017564. Seed45 failed the registered
+.005 gate. No production tree estimator or E046 submission was built. This
+does not validate the old broad real-data ceiling claim.
+
+Registered E047 separately: keep E041 first-stage predictions and donor
+evidence, then predict an extra evidence share <=.5 from section-average
+confidence/agreement features for each respondent. Apply after final gate
+propagation. This differs from E042's constant-per-item family; its permissive
+query/section oracle allows variation across respondents. Observed seeds47/48
+feasible oracle skill/3 +.008792002 / +.008430994 passed before implementation.
+This headroom is not learnability or a forecast. E025's .79 base + .10 evidence
+motivates allocation of existing evidence; it does not decompose E041's .92.
+
+Production masks separate correction-fit/selection/audit respondents before
+all first-stage fits. Fit one regularized seven-feature logistic share model
+per section; select against unchanged E041 at >max(.001,2 respondent SE), then
+accept the complete policy only if independent internal audit gain >1SE.
+Rejected correction returns exact E041. Final full-data E041 refit can shift
+the confidence features; this remains a transfer risk. First-stage E041's
+legacy in-sample replay is retained, not silently relabeled as repaired.
+
+Actual observed estimator: seed47 finances selected, audit +.000273604 skill,
+descriptive interval [-.000162282,.000709490]; seed48 no section selected,
+exact fallback0. The observed audit was also used for oracle family screening,
+and the estimator's audit guard selects acceptance. These are exploratory
+measurements, not an untouched overall research holdout or a demonstrated
+HSCC gain. No settings retuned from these readings. Sixteen functional,
+isolation and active-assembly tests passed; technical submission checks are
+recorded in E047's experiment and scorecard as they finish. E041 stays DEV
+incumbent and E025 stays the validated phase2 fallback. No hosted upload.
+
+Final technical outcome: clean all3 exactly E041, household UNHCR+.002324510
+with sections7b/7c active; no adoption threshold met. Checker/official all3/
+raw source parity PASS, combined CPU515.180s <900. Actual active-household
+assembly parity also0 across180411 cells. E047 is technically ready as #28,
+still parked pending the preregistered hosted reading. No automatic phase2
+promotion. Historical code and incumbent snapshots remain unchanged.

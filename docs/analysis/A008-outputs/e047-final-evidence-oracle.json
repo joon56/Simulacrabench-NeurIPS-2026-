@@ -1,0 +1,325 @@
+{
+  "experiment": "E047",
+  "oracle_shares": [
+    0.0,
+    0.25,
+    0.5
+  ],
+  "protocol": "docs/experiments/E047-adaptive-final-evidence.md",
+  "interpretation": "Feasible per-query section-shared extra-evidence headroom, not learnability, not a continuous optimum and not an HSCC forecast. Oracle sees audit answers.",
+  "limitations": "Initial logistic base fits 3800 rows, including metric-selection rows; initial alpha selection is therefore in-sample for that base, mirroring inherited E041 replay limitation. Correction-fit, correction-selection and audit remain excluded from all first-stage fits and initial mixture selection. Adult proxy lacks HSCC gates.",
+  "source": {
+    "url": "https://archive.ics.uci.edu/dataset/2/adult",
+    "download_url": "https://archive.ics.uci.edu/static/public/2/adult.zip",
+    "license": "CC BY 4.0",
+    "sha256": "5b00264637dbfec36bdeaab5676b0b309ff9eb788d63554ca0a249491c86603d"
+  },
+  "code_sha256": {
+    "scripts/oracle_e047.py": "d4a278a774fb45c4831f67ca8dec998975a3d4122d3757f54704e8669844617e",
+    "tests/e041_external.py": "e487e03638b485de73850de1f47273b81e48758ad0516cbd221baf64e7fe07d8",
+    "tests/e041_external_learned.py": "89c56c7a7c8704a811e8edc57d09b9537f351555115d02d26e1402688b5b4d99",
+    "src/models/supervised_retrieval.py": "2940338c5378de03303befb74e3834fbad631c0eb18f4ecb55d2cc39a471f879"
+  },
+  "runs": [
+    {
+      "seed": 47,
+      "rows": 6000,
+      "source_counts": {
+        "source_rows": 32561,
+        "unique_modeled_rows": 19561
+      },
+      "source_line_ids_sha256": "5838292478eedc210e131bc87363e14d7a796aac35cf7d35b2876aa2ada8b30c",
+      "split": {
+        "bank": 2000,
+        "metric_fit": 1000,
+        "metric_selection": 800,
+        "correction_fit": 1000,
+        "correction_selection": 600,
+        "audit": 600
+      },
+      "baseline_fit_rows": 3800,
+      "initial_mixture_grid": [
+        0.0,
+        0.1,
+        0.25,
+        0.5,
+        0.75,
+        1.0
+      ],
+      "active_sections": [
+        "family",
+        "employment",
+        "finances"
+      ],
+      "core_selection_diagnostics": {
+        "family": {
+          "selected": true,
+          "gain_log": 0.09238918398429309,
+          "standard_error": 0.012062313602152742,
+          "old_share": 0.75,
+          "new_share": 0.8223560586756833,
+          "iterations": 11
+        },
+        "employment": {
+          "selected": true,
+          "gain_log": 0.031455615817937266,
+          "standard_error": 0.005240503796315731,
+          "old_share": 0.25,
+          "new_share": 0.5482157516030801,
+          "iterations": 9
+        },
+        "finances": {
+          "selected": true,
+          "gain_log": 0.008300558485730816,
+          "standard_error": 0.002574590069579062,
+          "old_share": 0.5,
+          "new_share": 0.742080281328405,
+          "iterations": 6
+        }
+      },
+      "initial_given_weights": {
+        "age_band": 1.636100213587993,
+        "education": 1.9304492865347427,
+        "race": 0.4429388081778542,
+        "sex": 0.6454614355607188,
+        "native-country": 0.33902589443161824
+      },
+      "learned_given_weights": {
+        "family": {
+          "age_band": 2.0706873604174083,
+          "education": 0.3906230858406974,
+          "race": 0.48018830956839725,
+          "sex": 3.1829320844049596,
+          "native-country": 1.0537672327474794
+        },
+        "employment": {
+          "age_band": 0.7027503362955095,
+          "education": 2.520449645501059,
+          "race": 0.634514167658539,
+          "sex": 1.294277258206302,
+          "native-country": 0.0
+        },
+        "finances": {
+          "age_band": 1.4252187730124384,
+          "education": 2.2137325684132434,
+          "race": 0.0,
+          "sex": 0.6890832130160904,
+          "native-country": 0.14460929579661072
+        }
+      },
+      "sections": {
+        "family": {
+          "initial_alpha": 0.0,
+          "oracle_share_counts": {
+            "0.0": 312,
+            "0.25": 3,
+            "0.5": 285
+          },
+          "delta_log": 0.05847268499178265
+        },
+        "employment": {
+          "initial_alpha": 0.0,
+          "oracle_share_counts": {
+            "0.0": 339,
+            "0.25": 28,
+            "0.5": 233
+          },
+          "delta_log": 0.04952479007065318
+        },
+        "finances": {
+          "initial_alpha": 0.0,
+          "oracle_share_counts": {
+            "0.0": 313,
+            "0.25": 5,
+            "0.5": 282
+          },
+          "delta_log": 0.017952960705595662
+        }
+      },
+      "audit_methods": {
+        "initial": {
+          "log_score": -1.0053697757638171,
+          "skill": 0.33576921620200384,
+          "uniform_reference": 1.5135850374401905
+        },
+        "feasible_oracle": {
+          "log_score": -0.9654474479747783,
+          "skill": 0.3621452220434439,
+          "uniform_reference": 1.5135850374401905
+        }
+      },
+      "oracle_vs_initial": {
+        "delta_log": 0.039922327789038974,
+        "delta_skill": 0.026376005841440217,
+        "delta_skill_div3_proxy": 0.008792001947146738,
+        "paired_log_standard_error": 0.002119728835845868,
+        "skill_95pct_normal_interval": [
+          0.023631086715333916,
+          0.029120924967546518
+        ]
+      },
+      "gate_threshold_skill_div3": 0.005,
+      "gate_passed": true,
+      "leakage_checks": {
+        "all_partitions_disjoint": true,
+        "correction_rows_excluded_from_every_first_stage_fit_and_selection": true,
+        "correction_label_mask_preserves_metrics_activation_base_evidence_initial_mixture": true,
+        "distinct_modeled_profiles_before_split": true,
+        "audit_labels_used_only_for_oracle_scoring": true
+      },
+      "cache_path": "tmp\\e047\\oracle-seed47.npz",
+      "cache_sha256": "48423e4792f1254bd0c887b4cbc8b76e0ea35c696d50eb7cb5e95bb57e83a40d",
+      "elapsed_seconds": 1.6351842999999917
+    },
+    {
+      "seed": 48,
+      "rows": 6000,
+      "source_counts": {
+        "source_rows": 32561,
+        "unique_modeled_rows": 19561
+      },
+      "source_line_ids_sha256": "d17accf318e47be324f4e189e1e1d864907787128e03643f5dd09b5e0e74674c",
+      "split": {
+        "bank": 2000,
+        "metric_fit": 1000,
+        "metric_selection": 800,
+        "correction_fit": 1000,
+        "correction_selection": 600,
+        "audit": 600
+      },
+      "baseline_fit_rows": 3800,
+      "initial_mixture_grid": [
+        0.0,
+        0.1,
+        0.25,
+        0.5,
+        0.75,
+        1.0
+      ],
+      "active_sections": [
+        "family",
+        "employment"
+      ],
+      "core_selection_diagnostics": {
+        "family": {
+          "selected": true,
+          "gain_log": 0.09886393024094535,
+          "standard_error": 0.011695230959227766,
+          "old_share": 0.5,
+          "new_share": 0.8362900441002462,
+          "iterations": 11
+        },
+        "employment": {
+          "selected": true,
+          "gain_log": 0.03322580216442583,
+          "standard_error": 0.006397236361841059,
+          "old_share": 0.25,
+          "new_share": 0.624840784596029,
+          "iterations": 10
+        },
+        "finances": {
+          "selected": false,
+          "gain_log": 0.004291103055681628,
+          "standard_error": 0.0025540392529855038,
+          "old_share": 0.5,
+          "new_share": 0.7016997924480438,
+          "iterations": 7
+        }
+      },
+      "initial_given_weights": {
+        "age_band": 1.6098705059892013,
+        "education": 1.8700042940619535,
+        "race": 0.4626316690401239,
+        "sex": 0.61505252295058,
+        "native-country": 0.38135632444932693
+      },
+      "learned_given_weights": {
+        "family": {
+          "age_band": 2.452061649242812,
+          "education": 0.21144784150884557,
+          "race": 0.0,
+          "sex": 3.2486798576882983,
+          "native-country": 0.0
+        },
+        "employment": {
+          "age_band": 0.5485987010899136,
+          "education": 2.698817636313225,
+          "race": 0.11433776786078428,
+          "sex": 0.9825008020366452,
+          "native-country": 0.12263460268898889
+        },
+        "finances": {
+          "age_band": 1.2242792945396552,
+          "education": 2.7983705858005123,
+          "race": 0.5986251090556071,
+          "sex": 0.5356827539528956,
+          "native-country": 0.24317427098495228
+        }
+      },
+      "sections": {
+        "family": {
+          "initial_alpha": 0.0,
+          "oracle_share_counts": {
+            "0.0": 330,
+            "0.25": 4,
+            "0.5": 266
+          },
+          "delta_log": 0.05403774712072694
+        },
+        "employment": {
+          "initial_alpha": 0.0,
+          "oracle_share_counts": {
+            "0.0": 326,
+            "0.25": 21,
+            "0.5": 253
+          },
+          "delta_log": 0.048746808018742455
+        },
+        "finances": {
+          "initial_alpha": 0.0,
+          "oracle_share_counts": {
+            "0.0": 305,
+            "0.25": 5,
+            "0.5": 290
+          },
+          "delta_log": 0.017316243690027093
+        }
+      },
+      "audit_methods": {
+        "initial": {
+          "log_score": -1.0025699880734775,
+          "skill": 0.33761898851150984,
+          "uniform_reference": 1.5135850374401905
+        },
+        "feasible_oracle": {
+          "log_score": -0.9642869069025072,
+          "skill": 0.3629119718748468,
+          "uniform_reference": 1.5135850374401905
+        }
+      },
+      "oracle_vs_initial": {
+        "delta_log": 0.03828308117097032,
+        "delta_skill": 0.025292983363336848,
+        "delta_skill_div3_proxy": 0.008430994454445616,
+        "paired_log_standard_error": 0.001810864198405784,
+        "skill_95pct_normal_interval": [
+          0.022948025041815655,
+          0.02763794168485804
+        ]
+      },
+      "gate_threshold_skill_div3": 0.0,
+      "gate_passed": true,
+      "leakage_checks": {
+        "all_partitions_disjoint": true,
+        "correction_rows_excluded_from_every_first_stage_fit_and_selection": true,
+        "correction_label_mask_preserves_metrics_activation_base_evidence_initial_mixture": true,
+        "distinct_modeled_profiles_before_split": true,
+        "audit_labels_used_only_for_oracle_scoring": true
+      },
+      "cache_path": "tmp\\e047\\oracle-seed48.npz",
+      "cache_sha256": "75603741fe94519257a229dc9f13a624d2f13d9c77a3d84122cc3cae6bf658f3",
+      "elapsed_seconds": 1.6238645999999335
+    }
+  ],
+  "proceed_to_estimator": true
+}

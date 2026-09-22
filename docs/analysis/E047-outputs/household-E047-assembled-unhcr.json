@@ -1,0 +1,25 @@
+{
+  "label": "E047-assembled",
+  "case": "household",
+  "seed": 13,
+  "source": "submissions\\2026-09-22-E047\\main.py",
+  "source_sha256": "2ffe07a845a42197aed61eafffde7af52746cd99f7f9f957f43693ed576cb57e",
+  "instruments": {
+    "unhcr": {
+      "source_sha256": "2ffe07a845a42197aed61eafffde7af52746cd99f7f9f957f43693ed576cb57e",
+      "frame_sha256": "7c0c39da48327136bf61ffd90f7d19eb0696e798fa8a19f3946610d05123e1e9",
+      "seconds": 529.2693297000001,
+      "skill": 0.554337041587049,
+      "log_score": -0.5623162194300291,
+      "cells": 180411,
+      "comparisons": {
+        "E041": {
+          "baseline_skill": 0.5520125312404893,
+          "delta_skill": 0.0023245103465596717,
+          "delta_log": 0.002932956049921942,
+          "probability_max_abs": 0.21947669242698425
+        }
+      }
+    }
+  }
+}

@@ -2,6 +2,42 @@
 
 Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-notes]].
 
+## 2026-09-22 - E046 oracle stopped; E047 adaptive final evidence prepared as #28
+
+- User requested today's submission following E045's .64 without update.
+  Prioritized honest final-output selection while retaining E041 learned
+  retrieval. Registered E046's repaired tree family first; observed Adult
+  seeds45/46 constant-headwise oracle skill/3 +.000145139/+.000017564 failed
+  the first split's .005 gate. No production estimator or E046 submission.
+  Preserve this scoped failure; it does not establish a UNHCR tree ceiling.
+- Separately registered E047: E041 final predictions plus a <=.5 extra-evidence
+  share learned from section-average confidence/agreement per respondent.
+  Correction fit/selection/audit rows are hidden before every shadow first-stage
+  fit; final refit uses all visible rows. Output correction is after gates,
+  with separate section selection and overall audit guards; rejection returns
+  exact E041. UNICEF/WB unchanged. No old source/snapshot edited.
+- Feasible query/section oracle on observed Adult seeds47/48 +.008792002/
+  +.008430994 skill/3 passed before implementation. Learned seed47 gain only
+  +.000273604 skill (descriptive interval includes zero), seed48 fallback0.
+  The observed audit was also used for oracle screening and acceptance, so
+  these are exploratory readings, not an untouched research holdout. No
+  audit-driven settings changes or .65 forecast. No external data/weights in ZIP.
+- Clean source .500648423/.454717307/.562462729 exactly E041 in every vector;
+  UNHCR delta -.000486145 versus E025, no-regression PASS. All clean corrections
+  reject. Existing household sim .554337042 vs E041 .552012531, +.002324510;
+  sections7b/7c active. Assumption-injected direction only; mean equivalent
+  +.000774837 is below adoption bar. Source times491.134/529.728s with parallel
+  diagnostic work; cached baseline times remain historical.
+- Sixteen objective, partition, fallback and active assembly tests PASS;
+  independent oracle/code review found no important blocker. ZIP checker PASS.
+  Official all3 PASS, raw source/archive parity0,515.179513693s <900 CPU total
+  (verification wall526.767s). Actual active-household assembly also exactly
+  matches all180411 vectors,529.269s. Hashes/results bound in verification.json
+  and the separate active-parity record; local timing is not a hosted guarantee.
+- E047 stays parked pending hosted reading. E041 remains DEV best, E025 the
+  verified phase2 fallback. Scorecard arms registered before upload; no hosted
+  upload performed. Branch work/e047-submission; next new experiment E048.
+
 ## 2026-09-21 - E045 hosted Grand .64, no update; unresolved arm, keep E041
 
 - User reported submission #27 Grand **.64**, no best update. UNICEF/WB/UNHCR

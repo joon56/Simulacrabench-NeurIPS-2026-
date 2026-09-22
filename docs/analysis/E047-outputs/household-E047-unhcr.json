@@ -1,0 +1,98 @@
+{
+  "label": "E047",
+  "case": "household",
+  "seed": 13,
+  "source": "src\\models\\adaptive_final_evidence.py",
+  "source_sha256": "4673a4d3f3817b0a1b7b1795f0c60b8ad50b2766301c963762463457054970c8",
+  "instruments": {
+    "unhcr": {
+      "source_sha256": "4673a4d3f3817b0a1b7b1795f0c60b8ad50b2766301c963762463457054970c8",
+      "frame_sha256": "7c0c39da48327136bf61ffd90f7d19eb0696e798fa8a19f3946610d05123e1e9",
+      "seconds": 529.7275002999997,
+      "skill": 0.554337041587049,
+      "log_score": -0.5623162194300291,
+      "diagnostics": {
+        "sections": [
+          {
+            "selected": false,
+            "gain_log": 0.001520065792557438,
+            "standard_error": 0.0018184373672852278,
+            "threshold": 0.0036368747345704557,
+            "accepted": false
+          },
+          {
+            "selected": false,
+            "gain_log": 0.0001546642613906631,
+            "standard_error": 0.0002488147502246421,
+            "threshold": 0.001,
+            "accepted": false
+          },
+          {
+            "selected": false,
+            "gain_log": 0.0032841789847659884,
+            "standard_error": 0.0031734694550131,
+            "threshold": 0.0063469389100262,
+            "accepted": false
+          },
+          {
+            "selected": true,
+            "gain_log": 0.006181242560117008,
+            "standard_error": 0.0020823001865403583,
+            "threshold": 0.004164600373080717,
+            "accepted": true
+          },
+          {
+            "selected": true,
+            "gain_log": 0.006289275951671269,
+            "standard_error": 0.0026917860229480283,
+            "threshold": 0.005383572045896057,
+            "accepted": true
+          },
+          {
+            "selected": false,
+            "gain_log": -0.0004934057628288117,
+            "standard_error": 0.0018106039486160224,
+            "threshold": 0.0036212078972320447,
+            "accepted": false
+          },
+          {
+            "selected": false,
+            "gain_log": 0.00031284596040941277,
+            "standard_error": 0.0005437908241170044,
+            "threshold": 0.0010875816482340088,
+            "accepted": false
+          },
+          {
+            "selected": false,
+            "gain_log": 0.00031750256753070694,
+            "standard_error": 0.00047363603170009507,
+            "threshold": 0.001,
+            "accepted": false
+          }
+        ],
+        "selected": [
+          3,
+          4
+        ],
+        "audit": {
+          "gain_log": 0.0006973257678246147,
+          "standard_error": 0.0005173504910713259,
+          "threshold": 0.0005173504910713259,
+          "accepted": true
+        },
+        "fit_rows": 927,
+        "selection_rows": 600,
+        "audit_rows": 400
+      },
+      "cells": 180411,
+      "comparisons": {
+        "E041": {
+          "baseline_skill": 0.5520125312404893,
+          "delta_skill": 0.0023245103465596717,
+          "delta_log": 0.002932956049921942,
+          "probability_max_abs": 0.21947669242698425
+        }
+      }
+    }
+  }
+}

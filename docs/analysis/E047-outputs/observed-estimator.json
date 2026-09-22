@@ -1,0 +1,140 @@
+{
+  "experiment": "E047",
+  "model_sha256": "1b232ee4a182df5b30bda2b138951bebb8450474a699f607aa1f6ba75840f6d9",
+  "oracle_report_sha256": "36565fa83fc49a6dedda8bcb64efbb0e25854082edb2c83e8aba2dc7579db746",
+  "runs": [
+    {
+      "seed": 47,
+      "diagnostics": {
+        "sections": [
+          {
+            "selected": false,
+            "gain_log": 0.0031307884008309993,
+            "standard_error": 0.0020049726230738684,
+            "threshold": 0.004009945246147737,
+            "accepted": false
+          },
+          {
+            "selected": false,
+            "gain_log": -0.0003687811742404734,
+            "standard_error": 0.0015426968839391223,
+            "threshold": 0.0030853937678782446,
+            "accepted": false
+          },
+          {
+            "selected": true,
+            "gain_log": 0.001833510281762319,
+            "standard_error": 0.0008191410898605405,
+            "threshold": 0.001638282179721081,
+            "accepted": true
+          }
+        ],
+        "selected": [
+          2
+        ],
+        "audit": {
+          "gain_log": 0.00041412306134631157,
+          "standard_error": 0.00033660753669517793,
+          "threshold": 0.00033660753669517793,
+          "accepted": true
+        },
+        "fit_rows": 1000,
+        "selection_rows": 600,
+        "audit_rows": 600
+      },
+      "policies": {
+        "2": {
+          "center": [
+            0.0,
+            0.4853115327561212,
+            0.4947879654321057,
+            0.8710571961647512,
+            0.8598480784537754,
+            0.7905440238270595,
+            0.9783333333333322
+          ],
+          "scale": [
+            1.0,
+            0.17191390240001939,
+            0.1910197177810389,
+            0.06825160898890772,
+            0.08011012096512958,
+            0.0909700604348406,
+            0.08217528690414079
+          ],
+          "beta": [
+            -0.7470425502638532,
+            0.11587848189041944,
+            0.05204380649093814,
+            -0.08774737695158515,
+            0.00810562393874445,
+            -0.061949405233640675,
+            0.013488832670187835
+          ]
+        }
+      },
+      "audit_guarded_delta": {
+        "delta_log": 0.0004141230613463117,
+        "delta_skill": 0.0002736040929994168,
+        "delta_skill_div3_proxy": 9.120136433313893e-05,
+        "paired_log_standard_error": 0.00033660753669517793,
+        "skill_95pct_normal_interval": [
+          -0.00016228206840076078,
+          0.0007094902543995945
+        ]
+      },
+      "interpretation": "Audit-guarded result includes acceptance selection; pre-guard audit diagnostics must be read alongside it. The same audit labels previously screened the family oracle, so this is not an untouched end-to-end research holdout. Intervals are descriptive and do not adjust for that selection. Observed Adult proxy, not an HSCC forecast."
+    },
+    {
+      "seed": 48,
+      "diagnostics": {
+        "sections": [
+          {
+            "selected": false,
+            "gain_log": -0.0005856819556776778,
+            "standard_error": 0.001547018939903265,
+            "threshold": 0.00309403787980653,
+            "accepted": false
+          },
+          {
+            "selected": false,
+            "gain_log": 0.0009978238151335502,
+            "standard_error": 0.0012827559178247548,
+            "threshold": 0.0025655118356495096,
+            "accepted": false
+          },
+          {
+            "selected": false,
+            "gain_log": -0.00021473505974003323,
+            "standard_error": 0.00015751409284654023,
+            "threshold": 0.001,
+            "accepted": false
+          }
+        ],
+        "selected": [],
+        "audit": {
+          "gain_log": 0.0,
+          "standard_error": 0.0,
+          "threshold": 0.0,
+          "accepted": false
+        },
+        "fit_rows": 1000,
+        "selection_rows": 600,
+        "audit_rows": 600
+      },
+      "policies": {},
+      "audit_guarded_delta": {
+        "delta_log": 0.0,
+        "delta_skill": 0.0,
+        "delta_skill_div3_proxy": 0.0,
+        "paired_log_standard_error": 0.0,
+        "skill_95pct_normal_interval": [
+          0.0,
+          0.0
+        ]
+      },
+      "interpretation": "Audit-guarded result includes acceptance selection; pre-guard audit diagnostics must be read alongside it. The same audit labels previously screened the family oracle, so this is not an untouched end-to-end research holdout. Intervals are descriptive and do not adjust for that selection. Observed Adult proxy, not an HSCC forecast."
+    }
+  ],
+  "audit_retuning": false
+}

@@ -1,0 +1,474 @@
+{
+  "experiment": "E046",
+  "seed": 45,
+  "source": {
+    "url": "https://archive.ics.uci.edu/dataset/2/adult",
+    "license": "CC BY 4.0",
+    "sha256": "5b00264637dbfec36bdeaab5676b0b309ff9eb788d63554ca0a249491c86603d"
+  },
+  "source_counts": {
+    "source_rows": 32561,
+    "unique_modeled_rows": 19561
+  },
+  "source_line_ids_sha256": "1aea0ebcc4b5bb488dee3276b785b22b8e356996889d84a7e79b2db6dab916e9",
+  "split": {
+    "fit": 3000,
+    "selection": 1000,
+    "audit": 1000
+  },
+  "split_source_ids_sha256": {
+    "fit": "ff79f90b868a74f95d9face9c4c76bc6f7d44556ef6c46a6fb82f5c23c3c6131",
+    "selection": "8276cc844aeffe747268418a1be5d6c5bc1e87b3c38fd5fcf7ac52cab704f707",
+    "audit": "62c36d6a7f75bf732db0a877b44bbf76bb085f501cbfdef410fc37f40a813fdf"
+  },
+  "encoded_given_sha256": "a84ecd5ff78f3bdfc5cc21c360f95f64fea2dfd936f32bd4404d5b467df0ad2b",
+  "encoded_target_sha256": "8f200e2b216ae2cf388b52d1cdef3a658c4233e16f2ce58c0951b1d61d9490fb",
+  "source_files_sha256": {
+    "scripts/oracle_e046.py": "8c1a81ed2c65a8c9b657a0a95f77e8f96962f2bd6bee43ba91c2ef6e01d214c3",
+    "tests/e041_external.py": "e487e03638b485de73850de1f47273b81e48758ad0516cbd221baf64e7fe07d8",
+    "src/eval/logloss.py": "272aae939a2587b7197569ff84733a1d3b51050e4090ed903a7c8f4e1c88ca18",
+    "docs/experiments/E046-honest-tree-selector.md": "b799c8d8d1696915fd54be6626ef5207496622af9dc9566acb17f48924ab0f96"
+  },
+  "runtime_versions": {
+    "python": "3.13.14 (tags/v3.13.14:fd17997, Jun 10 2026, 13:03:48) [MSC v.1944 64 bit (AMD64)]",
+    "numpy": "2.5.1",
+    "scikit_learn": "1.9.0"
+  },
+  "schema": {
+    "name": "observed_adult_external",
+    "scoring": {
+      "floor": 0.001
+    },
+    "items": {
+      "age_band": {
+        "class": "GIVEN",
+        "options": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ]
+      },
+      "education": {
+        "class": "GIVEN",
+        "options": [
+          "10th",
+          "11th",
+          "12th",
+          "1st-4th",
+          "5th-6th",
+          "7th-8th",
+          "9th",
+          "Assoc-acdm",
+          "Assoc-voc",
+          "Bachelors",
+          "Doctorate",
+          "HS-grad",
+          "Masters",
+          "Preschool",
+          "Prof-school",
+          "Some-college"
+        ]
+      },
+      "race": {
+        "class": "GIVEN",
+        "options": [
+          "Amer-Indian-Eskimo",
+          "Asian-Pac-Islander",
+          "Black",
+          "Other",
+          "White"
+        ]
+      },
+      "sex": {
+        "class": "GIVEN",
+        "options": [
+          "Female",
+          "Male"
+        ]
+      },
+      "native-country": {
+        "class": "GIVEN",
+        "options": [
+          "?",
+          "Cambodia",
+          "Canada",
+          "China",
+          "Columbia",
+          "Cuba",
+          "Dominican-Republic",
+          "Ecuador",
+          "El-Salvador",
+          "England",
+          "France",
+          "Germany",
+          "Greece",
+          "Guatemala",
+          "Haiti",
+          "Honduras",
+          "Hong",
+          "Hungary",
+          "India",
+          "Iran",
+          "Ireland",
+          "Italy",
+          "Jamaica",
+          "Japan",
+          "Laos",
+          "Mexico",
+          "Nicaragua",
+          "Outlying-US(Guam-USVI-etc)",
+          "Peru",
+          "Philippines",
+          "Poland",
+          "Portugal",
+          "Puerto-Rico",
+          "Scotland",
+          "South",
+          "Taiwan",
+          "Thailand",
+          "Trinadad&Tobago",
+          "United-States",
+          "Vietnam",
+          "Yugoslavia"
+        ]
+      },
+      "marital-status": {
+        "class": "PREDICT",
+        "options": [
+          "Divorced",
+          "Married-AF-spouse",
+          "Married-civ-spouse",
+          "Married-spouse-absent",
+          "Never-married",
+          "Separated",
+          "Widowed"
+        ]
+      },
+      "relationship": {
+        "class": "PREDICT",
+        "options": [
+          "Husband",
+          "Not-in-family",
+          "Other-relative",
+          "Own-child",
+          "Unmarried",
+          "Wife"
+        ]
+      },
+      "workclass": {
+        "class": "PREDICT",
+        "options": [
+          "?",
+          "Federal-gov",
+          "Local-gov",
+          "Never-worked",
+          "Private",
+          "Self-emp-inc",
+          "Self-emp-not-inc",
+          "State-gov",
+          "Without-pay"
+        ]
+      },
+      "occupation": {
+        "class": "PREDICT",
+        "options": [
+          "?",
+          "Adm-clerical",
+          "Armed-Forces",
+          "Craft-repair",
+          "Exec-managerial",
+          "Farming-fishing",
+          "Handlers-cleaners",
+          "Machine-op-inspct",
+          "Other-service",
+          "Priv-house-serv",
+          "Prof-specialty",
+          "Protective-serv",
+          "Sales",
+          "Tech-support",
+          "Transport-moving"
+        ]
+      },
+      "hours_band": {
+        "class": "PREDICT",
+        "options": [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      },
+      "income": {
+        "class": "PREDICT",
+        "options": [
+          "<=50K",
+          ">50K"
+        ]
+      },
+      "capital_gain_positive": {
+        "class": "PREDICT",
+        "options": [
+          "False",
+          "True"
+        ]
+      },
+      "capital_loss_positive": {
+        "class": "PREDICT",
+        "options": [
+          "False",
+          "True"
+        ]
+      }
+    },
+    "sections": {
+      "family": [
+        "marital-status",
+        "relationship"
+      ],
+      "employment": [
+        "workclass",
+        "occupation",
+        "hours_band"
+      ],
+      "finances": [
+        "income",
+        "capital_gain_positive",
+        "capital_loss_positive"
+      ]
+    },
+    "excluded_raw_fields": [
+      "age",
+      "education-num",
+      "fnlwgt",
+      "hours-per-week",
+      "capital-gain",
+      "capital-loss"
+    ]
+  },
+  "tree_parameters": {
+    "max_iter": 40,
+    "max_leaf_nodes": 15,
+    "learning_rate": 0.1,
+    "early_stopping": false,
+    "random_state": 0,
+    "categorical_features": [
+      "age_band",
+      "education",
+      "race",
+      "sex",
+      "native-country"
+    ]
+  },
+  "baseline": "Unchanged e041_external.baseline_probabilities, fit rows only.",
+  "weight_grid": [
+    0.0,
+    0.25,
+    0.5
+  ],
+  "threshold_units": "Paired respondent mean log-score gain, nats per scored cell.",
+  "methods": {
+    "categorical_logistic": {
+      "log_score": -0.9757128282772084,
+      "skill": 0.355363059133198,
+      "uniform_reference": 1.5135850374401905,
+      "delta_log_vs_baseline": 0.0,
+      "delta_skill_vs_baseline": 0.0,
+      "delta_skill_div3_proxy": 0.0
+    },
+    "categorical_tree": {
+      "log_score": -1.003462783061608,
+      "skill": 0.3370291339833227,
+      "uniform_reference": 1.5135850374401905,
+      "delta_log_vs_baseline": -0.027749954784399677,
+      "delta_skill_vs_baseline": -0.018333925149875308,
+      "delta_skill_div3_proxy": -0.006111308383291769
+    },
+    "constant_headwise_oracle": {
+      "log_score": -0.9750537855658572,
+      "skill": 0.3557984774909705,
+      "uniform_reference": 1.5135850374401905,
+      "delta_log_vs_baseline": 0.0006590427113511987,
+      "delta_skill_vs_baseline": 0.00043541835777249904,
+      "delta_skill_div3_proxy": 0.00014513945259083302
+    },
+    "selection_only_section_policy": {
+      "log_score": -0.9757128282772084,
+      "skill": 0.355363059133198,
+      "uniform_reference": 1.5135850374401905,
+      "delta_log_vs_baseline": 0.0,
+      "delta_skill_vs_baseline": 0.0,
+      "delta_skill_div3_proxy": 0.0
+    },
+    "audit_guarded_section_policy": {
+      "log_score": -0.9757128282772084,
+      "skill": 0.355363059133198,
+      "uniform_reference": 1.5135850374401905,
+      "delta_log_vs_baseline": 0.0,
+      "delta_skill_vs_baseline": 0.0,
+      "delta_skill_div3_proxy": 0.0
+    }
+  },
+  "oracle": {
+    "family": "One constant weight per head across every audit respondent.",
+    "finite_policy_count": 6561,
+    "optimization": "Exact separable enumeration; no numerical optimization gap.",
+    "uses_audit_labels": true,
+    "per_respondent_or_cell_choices": false,
+    "head_weights": {
+      "marital-status": 0.25,
+      "relationship": 0.0,
+      "workclass": 0.0,
+      "occupation": 0.0,
+      "hours_band": 0.25,
+      "income": 0.25,
+      "capital_gain_positive": 0.0,
+      "capital_loss_positive": 0.0
+    },
+    "head_audit_log_scores": {
+      "marital-status": {
+        "0.0": -1.1018608987021967,
+        "0.25": -1.1016800171117398,
+        "0.5": -1.107587935555449
+      },
+      "relationship": {
+        "0.0": -1.1537679171712352,
+        "0.25": -1.154071132821068,
+        "0.5": -1.1589576559658668
+      },
+      "workclass": {
+        "0.0": -1.1896523123882161,
+        "0.25": -1.1912823159012826,
+        "0.5": -1.1973590799568674
+      },
+      "occupation": {
+        "0.0": -2.2058258384683547,
+        "0.25": -2.206562223614861,
+        "0.5": -2.218309373850878
+      },
+      "hours_band": {
+        "0.0": -1.135713831753171,
+        "0.25": -1.1311719694481266,
+        "0.5": -1.1313062761793313
+      },
+      "income": {
+        "0.0": -0.4556605082081585,
+        "0.25": -0.4551109104128505,
+        "0.5": -0.45536477006618903
+      },
+      "capital_gain_positive": {
+        "0.0": -0.31322792988423803,
+        "0.25": -0.3141598347801998,
+        "0.5": -0.31594391825976176
+      },
+      "capital_loss_positive": {
+        "0.0": -0.24999338964209566,
+        "0.25": -0.25017408444222666,
+        "0.5": -0.25110961729784786
+      }
+    },
+    "bound_scope": "Upper bound on the finite section-shared mixture family on these Adult audit rows only."
+  },
+  "honest_selection": {
+    "family": {
+      "items": [
+        "marital-status",
+        "relationship"
+      ],
+      "best_weight": 0.0,
+      "selected_weight": 0.0,
+      "selection_log_scores": {
+        "0.0": -1.1938404587731235,
+        "0.25": -1.1939071721254013,
+        "0.5": -1.2004105251103574
+      },
+      "mean_log_gain_nats": 0.0,
+      "respondent_se_nats": 0.0,
+      "respondents": 1000,
+      "acceptance_threshold_nats": 0.001,
+      "selection_accepted": false
+    },
+    "employment": {
+      "items": [
+        "workclass",
+        "occupation",
+        "hours_band"
+      ],
+      "best_weight": 0.0,
+      "selected_weight": 0.0,
+      "selection_log_scores": {
+        "0.0": -1.5574345678300712,
+        "0.25": -1.5591333120306499,
+        "0.5": -1.5679399727632568
+      },
+      "mean_log_gain_nats": 0.0,
+      "respondent_se_nats": 0.0,
+      "respondents": 1000,
+      "acceptance_threshold_nats": 0.001,
+      "selection_accepted": false
+    },
+    "finances": {
+      "items": [
+        "income",
+        "capital_gain_positive",
+        "capital_loss_positive"
+      ],
+      "best_weight": 0.0,
+      "selected_weight": 0.0,
+      "selection_log_scores": {
+        "0.0": -0.3554529623308978,
+        "0.25": -0.35618299328223124,
+        "0.5": -0.3577808468693362
+      },
+      "mean_log_gain_nats": 0.0,
+      "respondent_se_nats": 0.0,
+      "respondents": 1000,
+      "acceptance_threshold_nats": 0.001,
+      "selection_accepted": false
+    }
+  },
+  "honest_audit": {
+    "mean_log_gain_nats": 0.0,
+    "respondent_se_nats": 0.0,
+    "respondents": 1000,
+    "acceptance_threshold_nats": 0.0,
+    "audit_guard_pass": false,
+    "fallback_to_baseline": true,
+    "audit_retuning": false,
+    "section_diagnostics": {
+      "family": {
+        "mean_log_gain_nats": 0.0,
+        "respondent_se_nats": 0.0,
+        "respondents": 1000
+      },
+      "employment": {
+        "mean_log_gain_nats": 0.0,
+        "respondent_se_nats": 0.0,
+        "respondents": 1000
+      },
+      "finances": {
+        "mean_log_gain_nats": 0.0,
+        "respondent_se_nats": 0.0,
+        "respondents": 1000
+      }
+    }
+  },
+  "gate_threshold_skill_div3_proxy": 0.005,
+  "seed_gate_pass": false,
+  "leakage_checks": {
+    "fit_selection_audit_disjoint": true,
+    "identical_3000_fit_rows_for_both_models": true,
+    "all_query_targets_masked_in_actual_fit_path": true,
+    "query_label_mask_preserves_baseline_predictions_after_refit": true,
+    "query_label_mask_preserves_tree_predictions_after_refit": true,
+    "model_predict_inputs_contain_given_only": true,
+    "section_choice_function_receives_selection_only": true,
+    "modeled_full_row_duplicates_removed_before_split": true,
+    "raw_target_fields_absent_from_given": true,
+    "schema_option_vocabulary_only_uses_all_rows_as_in_E041": true
+  },
+  "interpretation": "Observed Adult proxy bound only. Oracle reads audit labels; not a learnability claim, survey-gating replica, or HSCC forecast. The all-row option vocabulary follows the unchanged E041 schema proxy.",
+  "elapsed_seconds": 3.6158229999999776
+}

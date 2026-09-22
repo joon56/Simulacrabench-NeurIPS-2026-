@@ -1,0 +1,21 @@
+{
+  "experiment": "E047",
+  "case": "household",
+  "seed": 13,
+  "frame_sha256": "7c0c39da48327136bf61ffd90f7d19eb0696e798fa8a19f3946610d05123e1e9",
+  "source_sha256": "4673a4d3f3817b0a1b7b1795f0c60b8ad50b2766301c963762463457054970c8",
+  "main_sha256": "2ffe07a845a42197aed61eafffde7af52746cd99f7f9f957f43693ed576cb57e",
+  "selected_section_indices": [
+    3,
+    4
+  ],
+  "source_skill": 0.554337041587049,
+  "assembled_skill": 0.554337041587049,
+  "source_parity_max_abs": 0.0,
+  "parent_probability_max_abs": 0.21947669242698425,
+  "delta_skill_vs_E041": 0.0023245103465596717,
+  "source_seconds": 529.7275002999997,
+  "assembled_seconds": 529.2693297000001,
+  "active_assembly_parity_passed": true,
+  "interpretation": "Actual active-path parity on a fixed assumption-injected diagnostic, not evidence of hosted gain. Concurrent local runs; official clean all-three timing is recorded separately."
+}

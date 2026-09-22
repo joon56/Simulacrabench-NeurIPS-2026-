@@ -1,6 +1,6 @@
 # STATUS — read this first in a new session (kept current at every commit)
 
-Updated: 2026-09-21 E045 result recorded; E041 result reported on 2026-09-19, continuing the supplied
+Updated: 2026-09-22 E046 screen stopped; E047 submission #28 technically ready. E041 result reported on 2026-09-19, continuing the supplied
 2026-09-21 handoff; see `docs/phase2-preparation.md` for date provenance. Newest work is
 inserted at the TOP of docs/log.md; historical dated entries are newest-first.
 
@@ -69,6 +69,18 @@ inserted at the TOP of docs/log.md; historical dated entries are newest-first.
   23 tests/checker/official x3 PASS; every source/archive probability matches,
   395.852 s local total. Submission #27 completed, user-reported result.
   E041 remains incumbent; avoid a blind candidate-count grid.
+- **E047 technically ready for exploratory submission #28.**
+  `submissions/2026-09-22-E047.zip`: E041 plus a query-adaptive final evidence
+  correction on UNHCR only, fitted/selected/audited outside shadow first-stage
+  training. Final E041 refit includes all visible rows. Clean outputs exactly
+  E041, all sections reject; household sim +.002324510 UNHCR with sections7b/7c
+  active. Observed learned gain +.000273604/0 is inconclusive; oracle headroom
+  is not a forecast. Sixteen tests/checker/official all3 PASS; source/archive
+  parity0 in clean and actual active-household cases. Official515.180s <900.
+  Not locally adopted; see scorecard for preregistered readings. E041 stays best,
+  E025 stays phase2 fallback. No hosted upload or result yet.
+  E046's fair-tree proposal stopped before production: observed oracle skill/3
+  +.000145139/+.000017564 failed its .005 first-split gate. No E046 ZIP.
 
 ## Historical E025 loss map (probe submissions E032–E034, unhcr)
 
@@ -130,36 +142,19 @@ unchanged experiments; first repair the evidence behind their interpretation.
 
 ## Next session plan
 
-1. **E045 read .64 without update: keep E041, park this configuration.**
-   No individual scores or hosted activation diagnostics are available. Equal
-   rounded Grand does not prove zero effect or a retrieval ceiling. Do not
-   repeat a blind K/weight grid; prioritize final-output selector validation
-   or a separately screened mechanism before another UNHCR-only candidate.
-   E045's observed union oracle passed on splits43/44, but actual learned gains
-   were small/inconclusive and did not yield a hosted best update. No .65 forecast.
-   **Retain E041 learned weights after E044's adverse reading.** User reported
-   Grand .63 without best update; individual scores are unavailable. Apply the
-   preregistered .63 arm: reject E044 for adoption, prioritize honest metric/
-   selector validation, and avoid a blind daily removal/weight grid. The
-   displayed -.01 Grand gives only an approximate -.03 UNHCR effect translation,
-   not a measured instrument delta or hidden score. The experiment is conditional
-   on E041's learned activation and includes downstream recalibration. E043's
-   new-pool replacement failed its observed-data oracle gate; E045 separately
-   preregistered and screened the larger union family, without rewriting E043.
-   **Freeze E041 as the DEV comparison baseline.** The user reported
-   .64/.52/.49/.92; preserve the exact ZIP and interpret this as the registered
-   positive arm. Next experiments need a named incremental mechanism, a scoped
-   oracle and honest selection/evaluation; no blind daily weight grid. Positive
-   transfer justifies further study but does not isolate weights, donor bank,
-   selector or replay. The old E025 loss map cannot decompose E041.
-   Read A008 v5 and E041/E042 results before more work. The observed Adult
-   screen's domain/profile limits and negative household sim did not predict
-   the hosted gain. An independent pretrained base remains a possible separate
-   family, subject to feasibility and oracle screening. Preserve A007 checks.
-   Its provisional experiment names were superseded: actual E041 is retrieval,
-   actual E042 is the final-evidence blend oracle. New work needs a new ID.
-   UNHCR-only initial hosted test, separate selection/evaluation, no automatic
-   daily upload. E025 remains the fallback; E041 is the new DEV incumbent.
+1. **Read E047's registered result arm; retain E041 until a best update.**
+   E047 passed mandatory checks and is today's exploratory artifact, not
+   locally adopted. Its query-adaptive final correction differs
+   from E042's fixed item coefficients and E046's stopped tree family. Read
+   A008 v10, E046/E047 experiments and the new scorecard before further work.
+   Grand .65+ with update is favourable transfer; .64 without update remains
+   unresolved; <=.63 is adverse. Never invent unavailable instrument values or
+   hosted activation. No blind coefficient/threshold grid after the result.
+   New experiments start at E048, require a named mechanism, scoped oracle and
+   honest evaluation. Keep E041 learned retrieval after E044's adverse reading;
+   E045 .64 without update remains parked. An independent pretrained base is a
+   separate possible family, subject to feasibility/screening. The historical
+   .79+.10 loss map describes E025, not E041. No automatic hosted upload.
 2. **Keep the phase-2 fallback ready.** The file is
    `submissions/2026-09-09-E025/main.py` (hardened: `score.py --phase 2`
    PASS ×3 = 0.4902 / 0.4620 / 0.5652, 291 s local CPU, worst case no-GPU
