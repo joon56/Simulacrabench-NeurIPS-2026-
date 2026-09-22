@@ -380,3 +380,21 @@ raw source parity PASS, combined CPU515.180s <900. Actual active-household
 assembly parity also0 across180411 cells. E047 is technically ready as #28,
 still parked pending the preregistered hosted reading. No automatic phase2
 promotion. Historical code and incumbent snapshots remain unchanged.
+
+## v11 - E047 reported .64 without update, 2026-09-22
+
+User reported Grand .64, no best update; individual instrument scores are
+unavailable. The preregistered unresolved arm applies: park this configuration,
+retain E041 .64/.52/.49/.92. No exact underlying delta, hidden UNHCR value or
+hosted correction activation can be recovered from equal rounded/noised Grand.
+Clean selection rejected every section and the household diagnostic activated
+7b/7c; neither identifies selection on the real hosted TRAIN data.
+
+E047 did not demonstrate a new best. Its positive assumed-structure sim and
+permissive query-wise oracle were insufficient to establish transfer; learned
+observed gains had already been small/inconclusive. Together with E045's
+unresolved reading, this supports avoiding blind continuation of these specific
+configurations, not a universal retrieval/calibration ceiling. Preserve E041
+learned weights after E044's adverse reading. Require a separately screened
+mechanism before another submission, not an audit-driven threshold relaxation.
+E025 remains the independently validated phase2 fallback. No new code or upload.

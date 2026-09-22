@@ -79,7 +79,23 @@ sim mean equivalent+.000774837 below+.005. Technically ready for exploration.
 
 ## Actual hosted result
 
-Pending. No hosted submission performed by this agent.
+User reported on 2026-09-22: **Grand .64, no best update.** Individual UNICEF,
+WB and UNHCR scores are unavailable. This was a completed scored submission,
+not a technical failure. Source: user report; no platform fetch, submission
+ID, exact upload time or hosted runtime was provided.
+
+Applied the preregistered **Grand .64 without update** arm: no demonstrated
+best improvement; keep E041 and park this configuration. Equal rounded/noised
+Grand cannot distinguish a small gain, a small loss, zero effect or inactive
+hosted selection. Do not infer hidden UNHCR .92 or claim the correction was
+disabled merely because clean sandbox selection rejected it.
+
+The household sim gain and permissive observed oracle did not establish a
+hosted improvement. This result neither closes every calibration method nor
+justifies relaxing the selector threshold blindly. Retain E041's learned
+retrieval; require a separately screened mechanism before another candidate.
+E025 remains the validated phase2 fallback. Archive, code and local results
+are unchanged.
 
 ## External data disclosure
 

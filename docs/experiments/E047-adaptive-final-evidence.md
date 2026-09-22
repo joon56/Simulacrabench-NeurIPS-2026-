@@ -114,10 +114,18 @@ docs/analysis/E047-outputs/active-assembly-parity.json.
 
 ## Decision
 
-PARKED, packaged as exploratory submission #28 at
-submissions/2026-09-22-E047.zip, not locally adopted. Clean mean delta0 vs
+**Hosted result, user-reported 2026-09-22: Grand .64, no best update.** Individual
+instrument scores unavailable; no submission ID, upload timestamp or hosted
+runtime supplied. Apply the preregistered .64-without-update arm.
+
+PARKED after submission #28 at submissions/2026-09-22-E047.zip: no demonstrated
+best improvement, not locally or hosted adopted. Clean mean delta0 vs
 E041, directional sim mean equivalent+.000774837 below+.005. All mandatory
 technical gates and active-path parity pass. Observed learned benefit remains
 small/inconclusive; do not turn oracle headroom into a forecast. E041 stays
-DEV incumbent, E025 stays the validated phase2 fallback. No hosted upload or
-result yet. Read the preregistered SCORES.md arms; no blind threshold grid.
+DEV incumbent, E025 stays the validated phase2 fallback. Rounded/noised equality
+does not establish zero effect, hidden UNHCR .92 or inactive hosted selection.
+Clean fallback and sim activation do not reveal hosted behavior. The positive
+sim direction did not establish a best improvement; this is not a universal
+calibration ceiling. No blind coefficient/threshold grid; require a separately
+screened mechanism for further work. Preserve the archive and all local readings.

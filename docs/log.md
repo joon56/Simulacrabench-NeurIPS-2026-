@@ -2,6 +2,24 @@
 
 Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-notes]].
 
+## 2026-09-22 - E047 hosted Grand .64, no update; keep E041
+
+- User reported submission #28 Grand **.64**, no best update. UNICEF/WB/UNHCR
+  scores unavailable. Completed scored submission, not a failed attempt.
+  No platform fetch, submission ID, exact upload time or hosted runtime supplied.
+- Applied the preregistered .64-without-update arm: E047 remains parked and
+  E041 remains .64/.52/.49/.92. No demonstrated best improvement. Equal rounded/
+  noised Grand cannot distinguish small gains/losses, zero or inactive selection;
+  do not infer hidden UNHCR .92. Local fallback does not identify hosted behavior.
+- Existing household sim +.002324510 and observed oracle headroom did not
+  establish a hosted improvement. Actual learned observed gains were already
+  small/inconclusive. This is not a universal calibration ceiling and does not
+  justify a blind coefficient/threshold grid or selector relaxation.
+- Updated scorecard, snapshot README/hosted metadata, experiment Decision,
+  submission row, status and A008. E047 archive/main.py and every local/oracle
+  measurement unchanged. E025 stays the validated phase2 fallback. No new
+  model or submission in this result-recording turn; next experiment E048.
+
 ## 2026-09-22 - E046 oracle stopped; E047 adaptive final evidence prepared as #28
 
 - User requested today's submission following E045's .64 without update.

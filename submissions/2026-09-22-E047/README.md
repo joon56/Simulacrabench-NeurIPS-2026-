@@ -1,6 +1,7 @@
 # E047 - Query-adaptive final evidence
 
-Status: **technically ready for exploratory submission #28; no hosted upload.** Archive:
+Status: **Grand .64, no best update (user-reported 2026-09-22).** Individual
+instrument scores unavailable. E047 parked; E041 remains incumbent. Archive:
 [2026-09-22-E047.zip](../2026-09-22-E047.zip).
 
 Sixteen tests, ZIP checker and official phase1 all3 PASS. Clean probabilities
@@ -26,6 +27,12 @@ No external records, fitted external parameters or extra dependencies are
 bundled. The existing UCI Adult data is used only for offline screening and
 disclosed in [SCORES.md](SCORES.md). E041 stays DEV incumbent at
 .64/.52/.49/.92; E025 stays the separately validated phase2 fallback.
+
+The preregistered .64-without-update arm is unresolved: no demonstrated best
+improvement, but no proof of zero effect or inactive hosted correction. Local
+activation does not identify hosted activation. Preserve this configuration;
+do not run a blind coefficient/threshold grid. See the actual result in the
+scorecard. No new submission was made while recording the result.
 
 Reproduce from the repository root:
 

@@ -1,6 +1,6 @@
 # STATUS — read this first in a new session (kept current at every commit)
 
-Updated: 2026-09-22 E046 screen stopped; E047 submission #28 technically ready. E041 result reported on 2026-09-19, continuing the supplied
+Updated: 2026-09-22 E047 Grand .64 without update recorded; E041 remains best. E041 result reported on 2026-09-19, continuing the supplied
 2026-09-21 handoff; see `docs/phase2-preparation.md` for date provenance. Newest work is
 inserted at the TOP of docs/log.md; historical dated entries are newest-first.
 
@@ -69,7 +69,10 @@ inserted at the TOP of docs/log.md; historical dated entries are newest-first.
   23 tests/checker/official x3 PASS; every source/archive probability matches,
   395.852 s local total. Submission #27 completed, user-reported result.
   E041 remains incumbent; avoid a blind candidate-count grid.
-- **E047 technically ready for exploratory submission #28.**
+- **E047 reported Grand .64 without best update; parked, effect unresolved.**
+  Individual instrument scores and hosted activation are unavailable. Apply
+  the preregistered .64-without-update arm: no demonstrated best improvement,
+  not proof of zero effect or inactive correction. Submission #28 completed.
   `submissions/2026-09-22-E047.zip`: E041 plus a query-adaptive final evidence
   correction on UNHCR only, fitted/selected/audited outside shadow first-stage
   training. Final E041 refit includes all visible rows. Clean outputs exactly
@@ -77,8 +80,8 @@ inserted at the TOP of docs/log.md; historical dated entries are newest-first.
   active. Observed learned gain +.000273604/0 is inconclusive; oracle headroom
   is not a forecast. Sixteen tests/checker/official all3 PASS; source/archive
   parity0 in clean and actual active-household cases. Official515.180s <900.
-  Not locally adopted; see scorecard for preregistered readings. E041 stays best,
-  E025 stays phase2 fallback. No hosted upload or result yet.
+  Not adopted; no best improvement demonstrated. E041 stays best and E025
+  stays phase2 fallback. User-reported result; no platform fetch or runtime.
   E046's fair-tree proposal stopped before production: observed oracle skill/3
   +.000145139/+.000017564 failed its .005 first-split gate. No E046 ZIP.
 
@@ -142,14 +145,13 @@ unchanged experiments; first repair the evidence behind their interpretation.
 
 ## Next session plan
 
-1. **Read E047's registered result arm; retain E041 until a best update.**
-   E047 passed mandatory checks and is today's exploratory artifact, not
-   locally adopted. Its query-adaptive final correction differs
-   from E042's fixed item coefficients and E046's stopped tree family. Read
-   A008 v10, E046/E047 experiments and the new scorecard before further work.
-   Grand .65+ with update is favourable transfer; .64 without update remains
-   unresolved; <=.63 is adverse. Never invent unavailable instrument values or
-   hosted activation. No blind coefficient/threshold grid after the result.
+1. **E047 read .64 without update: keep E041, park this configuration.**
+   The registered unresolved arm applies. E045 candidate expansion and E047
+   adaptive final correction have not demonstrated a new best; do not infer
+   exact zero effects, hidden instrument scores or inactive hosted selection.
+   E047's sim gain and permissive observed oracle did not establish transfer.
+   Read A008 v11, E046/E047 experiments and the completed scorecard before work.
+   No blind coefficient/threshold grid or automatic threshold relaxation.
    New experiments start at E048, require a named mechanism, scoped oracle and
    honest evaluation. Keep E041 learned retrieval after E044's adverse reading;
    E045 .64 without update remains parked. An independent pretrained base is a
