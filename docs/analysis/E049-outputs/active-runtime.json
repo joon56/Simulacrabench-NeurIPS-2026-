@@ -1,0 +1,127 @@
+{
+  "experiment": "E049",
+  "case": "clean UNHCR, forced all-four active policies",
+  "forced_selection": true,
+  "honest_policy_fit_executed": true,
+  "real_pretrained_inference": true,
+  "forced_alpha": 0.25,
+  "forced_section_indices": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "root_names": [
+    "s3_11_intent_return_12m_lbl",
+    "s3_15_friend_return_likely_lbl",
+    "s6_10_face_challenges_lbl",
+    "s6_3_income_adequacy_lbl"
+  ],
+  "rows": 8900,
+  "visible_rows": 8279,
+  "held_rows": 621,
+  "predicted_items": 213,
+  "vectors": 132273,
+  "probability_values": 517914,
+  "main_sha256": "a15e497d90e9cd26ae16ce55901ead704d5457163047c4d090574f9641a56cb8",
+  "checkpoint_sha256": "f65a35685aeef42e31b796d9bfa34e68d6fc780bc98e7bff7763802964cf435f",
+  "archive_sha256": "8490852563a3b621346b8ab6633da4e593139cc3e418b2d5723cfcbf5feff19b",
+  "frame_sha256": "0e6f1361d9e3d5a85fc8bad561cd486dc64fb7970ad07fd7f0074b629beaf836",
+  "script_sha256": "8e2e7c96fdeed97f5a999b013a75fbff326ae8f65d4883e989453e81543a6769",
+  "official_score_sha256": "7049e99a48acef2a74f37cb49bb66b5a9af8d05d2ed8fcf530287b5e81c5042f",
+  "cpu_threads": 2,
+  "device": "cpu",
+  "main_import_seconds": 3.5153659000006883,
+  "predict_seconds": 575.9591552000002,
+  "main_import_plus_predict_seconds": 579.4750503000014,
+  "total_seconds_through_predict_including_setup_imports": 590.0357625999986,
+  "total_seconds_including_validation": 594.3348814000001,
+  "real_pfn_fit_count": 8,
+  "real_pfn_fits": [
+    {
+      "reference_rows": 512,
+      "classes": 3
+    },
+    {
+      "reference_rows": 512,
+      "classes": 4
+    },
+    {
+      "reference_rows": 512,
+      "classes": 4
+    },
+    {
+      "reference_rows": 512,
+      "classes": 4
+    },
+    {
+      "reference_rows": 512,
+      "classes": 3
+    },
+    {
+      "reference_rows": 512,
+      "classes": 4
+    },
+    {
+      "reference_rows": 512,
+      "classes": 4
+    },
+    {
+      "reference_rows": 512,
+      "classes": 4
+    }
+  ],
+  "honest_policy_result": {
+    "policies": {},
+    "diagnostics": {
+      "sections": [
+        {
+          "selected": false,
+          "gain_log": 0.00030144787108430884,
+          "standard_error": 0.0005328456066741229,
+          "threshold": 0.0010656912133482459,
+          "accepted": false
+        },
+        {
+          "selected": false,
+          "gain_log": -0.0003389340914094641,
+          "standard_error": 0.0007207726981383331,
+          "threshold": 0.0014415453962766662,
+          "accepted": false
+        },
+        {
+          "selected": false,
+          "gain_log": 0.0016354222129146521,
+          "standard_error": 0.0008848782213806142,
+          "threshold": 0.0017697564427612284,
+          "accepted": false
+        },
+        {
+          "selected": false,
+          "gain_log": 2.6655008076518963e-06,
+          "standard_error": 9.395685735726002e-06,
+          "threshold": 0.001,
+          "accepted": false
+        }
+      ],
+      "selected": [],
+      "audit": {
+        "gain_log": 0.0,
+        "standard_error": 0.0,
+        "threshold": 0.0,
+        "accepted": false
+      },
+      "fit_rows": 800,
+      "selection_rows": 600,
+      "audit_rows": 400
+    },
+    "fit_seconds": 0.18714410000029602
+  },
+  "official_raw_check_passed": true,
+  "official_floor_check_passed": true,
+  "official_grade_finite": true,
+  "all_floored_values_positive": true,
+  "unhcr_active_under_900_seconds": true,
+  "all_three_budget_status": "Combine this full-path UNHCR time with separately measured official control times.",
+  "interpretation": "Forced-path runtime/format contract only; no measured activation or efficacy claim. Concurrent local CPU workloads and profiler overhead make this a conservative observation for this run, not a hosted runtime guarantee. Main import plus predict includes the original honest confidence-policy fitting cost and all final PFN fits."
+}

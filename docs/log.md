@@ -2,6 +2,49 @@
 
 Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-notes]].
 
+## 2026-09-23 - E048 constant PFN stopped; E049 adaptive parent candidate #29
+
+- User requested today's submission. E041 stays DEV best .64/.52/.49/.92;
+  E045/E047 .64 without update remain unresolved. Chose a distinct pretrained
+  GIVEN predictor rather than another retrieval weight/candidate/guard grid.
+- E048 public original TabPFN-v2 forward library, observed Adult seeds49/50,
+ 512 references. Permissive query/section oracle passes, but tighter
+  constant-section skill/3 .001362/.001415 fails .005. Stopped its registered
+  common-alpha policy before production/ZIP; preserved original outputs and
+  superseding decision record. Isolated package installation preserves baseline
+  versions. Original29MB checkpoint/hash/license checked; no runtime downloads.
+- E049 separately registered an adaptive policy: four high-fanout UNHCR roots,
+  private cached E041 rerender with PFN parent alternatives, disjoint descendant
+  closures mixed using unchanged E047 confidence guards. Outer correction
+  fit/selection/audit labels hidden before every first-stage fit/reference.
+  Final policies frozen before visible refit; controls exact. Model name
+  TabPFN-HSCC E049; Built with PriorLabs-TabPFN, license/NOTICE in ZIP.
+- Reused observed frozen queries400/400/400. Finite oracle .008298/.007548
+  skill/3; continuous .008301/.007549, numerical tangent gap<1e-15. Learned
+  skill+.001739/0; first descriptive95% interval includes zero. Reused audit
+  and acceptance selection disclosed, no HSCC forecast or adoption claim.
+- Fifteen E049 and14 existing confidence-helper tests PASS. Independent review
+  found no remaining static blocker after oracle scope/provenance corrections.
+  Actual forced-active source/ZIP inference:16 PFN fits,34 vectors,error0;
+  inactive vectors exactE041. Forced engineering check, not learned efficacy.
+- Clean all3 raw-exact E041: .500648423/.454717307/.562462729; UNHCR difference
+  -.000486145 vsE025. Total source predict639.268s with concurrent diagnostics.
+  Household .552012531, raw-exact E041,699.527s; all local selectors reject.
+  Missing E025 household cache affected comparison reporting only; reused
+  hash-matched completed predictions with E041, without refitting.
+- ZIP checker and official all3 PASS; every raw source/archive vector matches.
+  Official offline execution 639.517s <900s, installations off clock.
+  Full-size forced-active UNHCR:8 real PFN fits,132273 vectors, official format
+  checks PASS; main import+predict579.475s, setup/validation included594.335s.
+  Combined with official controls: 753.797s <900s. Local observation,
+  not a hosted runtime guarantee or evidence of natural policy activation.
+- One premature local official invocation was stopped because its incremental
+  source report had only2 instruments; added an all3-complete precondition,
+  then completed all3. No competition upload or scored submission.
+- Packaged submissions/2026-09-23-E049.zip, submission #29; readings registered
+  before upload. E049 parked for adoption, E041 stays best, E025 phase2 unchanged.
+  Records/tree/review included on work/e049-submission; next experiment E050.
+
 ## 2026-09-22 - E047 hosted Grand .64, no update; keep E041
 
 - User reported submission #28 Grand **.64**, no best update. UNICEF/WB/UNHCR

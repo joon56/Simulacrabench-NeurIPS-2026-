@@ -1,0 +1,13 @@
+{
+  "experiment": "E048",
+  "status": "parked",
+  "supersedes": "oracle-summary.json decision only; historical computations unchanged",
+  "permissive_query_section_gate_passed": true,
+  "tighter_constant_section_oracle_skill_div3": [0.0013620323512177162, 0.0014148445940438403],
+  "required_skill_div3": 0.005,
+  "decision": "stop_registered_constant_mixture_before_production_estimator",
+  "reason": "The tighter finite constant-section family contains the registered common-alpha policy and fails the gate on both observed splits.",
+  "production_estimator_built": false,
+  "submission_built": false,
+  "followup": "Separately preregistered E049 adaptive policy; reused observations disclosed"
+}

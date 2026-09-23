@@ -1,0 +1,736 @@
+{
+  "experiment": "E048",
+  "seed": 49,
+  "source": {
+    "url": "https://archive.ics.uci.edu/dataset/2/adult",
+    "license": "CC BY 4.0",
+    "sha256": "5b00264637dbfec36bdeaab5676b0b309ff9eb788d63554ca0a249491c86603d"
+  },
+  "source_counts": {
+    "source_rows": 32561,
+    "unique_modeled_rows": 19561
+  },
+  "source_line_ids_sha256": "17db57ed0e360404f54aff1c115ef731b56338b0386b8f276f58d95a3962f5bd",
+  "split": {
+    "fit": 1800,
+    "selection": 600,
+    "audit": 600
+  },
+  "split_source_ids_sha256": {
+    "fit": "72c6ebf5dc67a141f65523a7fedece60b1ef2ffa909f358a29bab2dca3d53097",
+    "selection": "d79a5c0d8d278635a38dbd626b434c1111b08c0854ad53e486c65f558853852f",
+    "audit": "c9b0168a25341fa58ab1110f60d7f32c16930ac3cc1e2a1aa089a4b977880e84"
+  },
+  "reference_source_ids_sha256": "f5a44da59104ad259eb6cbf8bfe99a3871acd99b0882ec013c2fc00c610c11d9",
+  "encoded_given_sha256": "2da9dd63fdd92a58368f9cc800d16cfdff1b70742072c5b2910242d76e2ec4ff",
+  "encoded_target_sha256": "3a14b27cf914a529df272241810cb289547955d0ce91833bc7974bb2ab355637",
+  "source_files_sha256": {
+    "scripts/oracle_e048.py": "fc4d96368499852974ab39b62ca21bfecc9206211703d2f9664cc481dae1079c",
+    "scripts/oracle_e046.py": "8c1a81ed2c65a8c9b657a0a95f77e8f96962f2bd6bee43ba91c2ef6e01d214c3",
+    "tests/e041_external.py": "e487e03638b485de73850de1f47273b81e48758ad0516cbd221baf64e7fe07d8",
+    "src/eval/logloss.py": "272aae939a2587b7197569ff84733a1d3b51050e4090ed903a7c8f4e1c88ca18",
+    "docs/experiments/E048-tabpfn-gate-parents.md": "c2a242cafa167bb1a63c1b7255c51f2c56cb481544841a83a0494b1c3fd1bf24"
+  },
+  "runtime_versions": {
+    "python": "3.13.14 (tags/v3.13.14:fd17997, Jun 10 2026, 13:03:48) [MSC v.1944 64 bit (AMD64)]",
+    "numpy": "2.5.1",
+    "scikit_learn": "1.9.0",
+    "torch": "2.13.0+cpu",
+    "tabpfn": "8.0.8"
+  },
+  "dependencies": {
+    "sha256": "1eba936d7b9395a3a3f51ad8f4802e83d57f494ef99d0f301c4d99a305bdb4ad",
+    "versions": {
+      "annotated-types": "0.8.0",
+      "anyio": "4.15.1",
+      "backoff": "2.2.1",
+      "certifi": "2026.7.22",
+      "charset-normalizer": "3.5.1",
+      "click": "8.5.0",
+      "distro": "1.9.0",
+      "einops": "0.8.2",
+      "h11": "0.16.0",
+      "hf-xet": "1.6.0",
+      "httpcore": "1.0.9",
+      "httpx": "0.28.1",
+      "huggingface_hub": "1.32.0",
+      "idna": "3.20",
+      "lightgbm": "4.7.0",
+      "nvidia-ml-py": "13.610.43",
+      "platformdirs": "4.11.12",
+      "posthog": "7.59.0",
+      "pydantic": "2.13.5",
+      "pydantic_core": "2.46.5",
+      "pydantic-settings": "2.15.0",
+      "python-dotenv": "1.2.3",
+      "requests": "2.34.2",
+      "safetensors": "0.8.0",
+      "tabpfn": "8.0.8",
+      "tabpfn-common-utils": "0.2.23",
+      "tqdm": "4.70.1",
+      "typing-inspection": "0.4.4",
+      "urllib3": "2.8.0"
+    },
+    "distributions": {
+      "annotated_types-0.8.0.dist-info": {
+        "METADATA": "614985b278f601b8ef863f82783b991cc3ada4b89f592eb71c7c48c5f2ef2298",
+        "RECORD": "2b5e93f24aff361ca5cfab15ce1c56b4127675728f11c3eab1e97b113a6250bd"
+      },
+      "anyio-4.15.1.dist-info": {
+        "METADATA": "043aecb571af7189e8a6c528f5d8e32545f1b2cdfaaf761d51e6d5b67ea3ca81",
+        "RECORD": "d6f6ce205631352dc5a1185f3fa9f8f80f857a83a695bd4ff89b9d2a65d46270"
+      },
+      "backoff-2.2.1.dist-info": {
+        "METADATA": "5a07df92ccbe75c0c9e066a8a97ca373c5f1ac4d03433dc56d6c26ac3aa8fba5",
+        "RECORD": "ddd8d5af00ac868ab8d820e84438d4839cefb0ca5dc1b2c3017cc2aede0f53ef"
+      },
+      "certifi-2026.7.22.dist-info": {
+        "METADATA": "ef5af1638fbb23676ac3c5777dfcfc2cd9c348fe4172ed5ba3d277655b248090",
+        "RECORD": "a66892ab63fc36a91c7f9271af5cc9ea9d737bc67dc9d303907dcf11919e0f9b"
+      },
+      "charset_normalizer-3.5.1.dist-info": {
+        "METADATA": "f00192aad9979ce50bdab2bfd471ad0705aee5a33f4bf6d27c1bd24417c873e5",
+        "RECORD": "6d231cfe9635006cd2599d7a3ee5776118705b998394a336ad3d3a86e6f431a3"
+      },
+      "click-8.5.0.dist-info": {
+        "METADATA": "e87bce0bd194de70dfb8e708e0a6b0483009f25611804eaf87bfeb63e6c20501",
+        "RECORD": "101ec7096b90ff8e449b54f10c387a7f6fb8de2849603c87a2099c28d2d975b5"
+      },
+      "distro-1.9.0.dist-info": {
+        "METADATA": "31632ab2de5591131091b3397bdcdf797718579d85a75186f06839dd0c09e81d",
+        "RECORD": "e742141fb824877f26304be2a7bcfc5f0be5dc15991cfec959ecd5a2f81f3347"
+      },
+      "einops-0.8.2.dist-info": {
+        "METADATA": "0bd65db043688a44f4a29608c1cba521c932f7ff76f238bbd869441e15012653",
+        "RECORD": "7906eebc439d70382266f3e7d410e5cfd7f2c563d2dabc065b059c2169d42960"
+      },
+      "h11-0.16.0.dist-info": {
+        "METADATA": "28f326098ac09fcba79b8f180f96087c841fe2456215cb7b872a9c7d5cd19d64",
+        "RECORD": "bc57fd5ca20507218b26ef9bf46bf03aab2c81e2e53e055741ae9b9f58145751"
+      },
+      "hf_xet-1.6.0.dist-info": {
+        "METADATA": "b1226620631e4512909f182698f1b8a8f89c5d868bac3c6cebe30a8d0f0a0cd0",
+        "RECORD": "7aae07df3526ea1984bfbea0c9923c4c406e47e440fbb3d98b474eb7073a3350"
+      },
+      "httpcore-1.0.9.dist-info": {
+        "METADATA": "fe2d4fda6199128978779e0cf27f3c045c531863fcdd987eacc74f3a18d41c21",
+        "RECORD": "79ef50ac72b51859d312e75c977aca54f780ad4b7495c72ad5df0c9b81c07a0d"
+      },
+      "httpx-0.28.1.dist-info": {
+        "METADATA": "febb9b0f8f3e80d57c8199c304f35c4336e8581d1d18d7983c92766b82793b25",
+        "RECORD": "02dd3bbcd218bcbc4127ee05f8ea8415d96ad1899ccbaf883159d405f68eff74"
+      },
+      "huggingface_hub-1.32.0.dist-info": {
+        "METADATA": "8633187f5ddb9006af3b60195bc60942d5ef3a689e6312a39bb415e0d8910e92",
+        "RECORD": "0398f543c168741b7c60cf8217a892c170178ae3aefada155129bc98e2050192"
+      },
+      "idna-3.20.dist-info": {
+        "METADATA": "dbd8c14c1e4ca1e0c9824a6dbc7cbbf78884f38eb52d91148cd3025f671e4b85",
+        "RECORD": "487610f2b28caa5253b7fc2aa9cd07f6d81e89482655c3a840b956809c586869"
+      },
+      "lightgbm-4.7.0.dist-info": {
+        "METADATA": "5d4c523f458fa8998bff7dfccc81d5a163bac9c626281c2816c8bc446681a0c9",
+        "RECORD": "88008e5bea39483802c76f4648aecccfb2d5ed12cedfb873638decdfe51dca27"
+      },
+      "nvidia_ml_py-13.610.43.dist-info": {
+        "METADATA": "4b681b648e302800c83919435504193df847cb7229fecb4e0d6471aa6847f063",
+        "RECORD": "929c07ba9d90f17ff9ef8f08c99b2013ecccad51b1b69de9f7d6d6201199c5d9"
+      },
+      "platformdirs-4.11.12.dist-info": {
+        "METADATA": "b056db328e61f0dd222ad8576b4c10fc395037bbe4c54f4e12ee452c28688ddf",
+        "RECORD": "2ba1d5194a7887d3904576994caa0b3a58edca517e5db20105972a67bb6c757e"
+      },
+      "posthog-7.59.0.dist-info": {
+        "METADATA": "4ba1c572f4fb44c4faca3f4bd4dd56a6bf7dfceaf97d59780f784eae531fbbb1",
+        "RECORD": "3898eddbb211dbe528250166e11518e56871991d1a995eb39b2c513e47f6d5a9"
+      },
+      "pydantic-2.13.5.dist-info": {
+        "METADATA": "0685830d13647bd6f3f05526043d32a8b2a221d86b53773053d6c52bb17a9c07",
+        "RECORD": "dcf65c1e765628ff73717b4541b375dabd004f0a8729abf435d2ce4987eb3fc8"
+      },
+      "pydantic_core-2.46.5.dist-info": {
+        "METADATA": "a193d0a16e9372c99b84b9216e274e28521fe5e5bf7be7b8b11be1c3c50cd9ca",
+        "RECORD": "9ab57fd8a9834df005b745dafbdc1bade047978f5dd1f1982bce9edf0aa85a31"
+      },
+      "pydantic_settings-2.15.0.dist-info": {
+        "METADATA": "5ac12e408df62f1d4c7643146d9df04ace749f1fe5cf28b3b794be0b2834ca6d",
+        "RECORD": "aabce2b307faf5e3cb9ac4d1a39f8a56a0acb8226d02b9b96520e2d863e00f6f"
+      },
+      "python_dotenv-1.2.3.dist-info": {
+        "METADATA": "2380ea9700796b7398fd8156e22f9028afe5eebf918eb84a6bd5ebb0a8fdd3b5",
+        "RECORD": "1d1d15269942361545ca962b3dc001a3af5d772a2ffdbe1c88972745609f4a17"
+      },
+      "requests-2.34.2.dist-info": {
+        "METADATA": "8c384ba3e979480faae2859d3c5e6c1276dd2c3616e322e124d52c8cfc556f27",
+        "RECORD": "f42aa23184c1dd2fea4bf5192736725ca02cdbe733cb2541b3fafeb83734c468"
+      },
+      "safetensors-0.8.0.dist-info": {
+        "METADATA": "597731d1baf7a94219753fa0a74abd1a8a18562d50d98b2e25d91e11e3224d36",
+        "RECORD": "754fd615c189f0b29151eb4bf030cd5be7a3bc82d7765f0445d7cf713d68c203"
+      },
+      "tabpfn-8.0.8.dist-info": {
+        "METADATA": "1c659daabaa4a2c6e07f67eff5becb395aa1c5bca21432b73359de045806f44c",
+        "RECORD": "7a398116eb04de36decfcbaeed1d99e7b320d918b197a7e57175632acfd47ce1"
+      },
+      "tabpfn_common_utils-0.2.23.dist-info": {
+        "METADATA": "742af3fd7ba74a4402bd261acf9f2e3d09771221df8a00605980ef54f13c56be",
+        "RECORD": "10b2b884ec1cba88d747ee822ee41e4c0b8efb99b9eab61223c62f99b3b63fb1"
+      },
+      "tqdm-4.70.1.dist-info": {
+        "METADATA": "a5da70b966afea3a759716041bad7187f2ece02c22348cf9e7c0a512bbf15f57",
+        "RECORD": "5337ca6013be1a93e1a45b09539a00f89d211674a3c8d6abf1ad1c174042b34e"
+      },
+      "typing_inspection-0.4.4.dist-info": {
+        "METADATA": "bad3d9e6342ef6750cf5128ec942327b8bebdce0b6e4d6f67cb15b27ae5118da",
+        "RECORD": "fba45e7650026ac463e436c30ea22f2d6d9d2a03e151a15e60702329d9714460"
+      },
+      "urllib3-2.8.0.dist-info": {
+        "METADATA": "10898c620e8007c030e07fa5622b68358a43010025dfbd78a1cb797699de2bb4",
+        "RECORD": "7d7b845da38d03175f51c3952e53815fd4390d0961b81867e9b82d1fd23986cd"
+      }
+    }
+  },
+  "checkpoint": {
+    "file": "tabpfn-v2-classifier.ckpt",
+    "sha256": "f65a35685aeef42e31b796d9bfa34e68d6fc780bc98e7bff7763802964cf435f",
+    "size_bytes": 29016968,
+    "hf_revision": "f851f2a3c941544733b712d8c0f96dfae9b28862",
+    "import_load_seconds": 0.18941819999963627
+  },
+  "schema": {
+    "name": "observed_adult_external",
+    "scoring": {
+      "floor": 0.001
+    },
+    "items": {
+      "age_band": {
+        "class": "GIVEN",
+        "options": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ]
+      },
+      "education": {
+        "class": "GIVEN",
+        "options": [
+          "10th",
+          "11th",
+          "12th",
+          "1st-4th",
+          "5th-6th",
+          "7th-8th",
+          "9th",
+          "Assoc-acdm",
+          "Assoc-voc",
+          "Bachelors",
+          "Doctorate",
+          "HS-grad",
+          "Masters",
+          "Preschool",
+          "Prof-school",
+          "Some-college"
+        ]
+      },
+      "race": {
+        "class": "GIVEN",
+        "options": [
+          "Amer-Indian-Eskimo",
+          "Asian-Pac-Islander",
+          "Black",
+          "Other",
+          "White"
+        ]
+      },
+      "sex": {
+        "class": "GIVEN",
+        "options": [
+          "Female",
+          "Male"
+        ]
+      },
+      "native-country": {
+        "class": "GIVEN",
+        "options": [
+          "?",
+          "Cambodia",
+          "Canada",
+          "China",
+          "Columbia",
+          "Cuba",
+          "Dominican-Republic",
+          "Ecuador",
+          "El-Salvador",
+          "England",
+          "France",
+          "Germany",
+          "Greece",
+          "Guatemala",
+          "Haiti",
+          "Honduras",
+          "Hong",
+          "India",
+          "Iran",
+          "Ireland",
+          "Italy",
+          "Jamaica",
+          "Japan",
+          "Laos",
+          "Mexico",
+          "Nicaragua",
+          "Outlying-US(Guam-USVI-etc)",
+          "Peru",
+          "Philippines",
+          "Poland",
+          "Portugal",
+          "Puerto-Rico",
+          "Scotland",
+          "South",
+          "Taiwan",
+          "Thailand",
+          "Trinadad&Tobago",
+          "United-States",
+          "Vietnam",
+          "Yugoslavia"
+        ]
+      },
+      "marital-status": {
+        "class": "PREDICT",
+        "options": [
+          "Divorced",
+          "Married-AF-spouse",
+          "Married-civ-spouse",
+          "Married-spouse-absent",
+          "Never-married",
+          "Separated",
+          "Widowed"
+        ]
+      },
+      "relationship": {
+        "class": "PREDICT",
+        "options": [
+          "Husband",
+          "Not-in-family",
+          "Other-relative",
+          "Own-child",
+          "Unmarried",
+          "Wife"
+        ]
+      },
+      "workclass": {
+        "class": "PREDICT",
+        "options": [
+          "?",
+          "Federal-gov",
+          "Local-gov",
+          "Private",
+          "Self-emp-inc",
+          "Self-emp-not-inc",
+          "State-gov",
+          "Without-pay"
+        ]
+      },
+      "occupation": {
+        "class": "PREDICT",
+        "options": [
+          "?",
+          "Adm-clerical",
+          "Armed-Forces",
+          "Craft-repair",
+          "Exec-managerial",
+          "Farming-fishing",
+          "Handlers-cleaners",
+          "Machine-op-inspct",
+          "Other-service",
+          "Priv-house-serv",
+          "Prof-specialty",
+          "Protective-serv",
+          "Sales",
+          "Tech-support",
+          "Transport-moving"
+        ]
+      },
+      "hours_band": {
+        "class": "PREDICT",
+        "options": [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      },
+      "income": {
+        "class": "PREDICT",
+        "options": [
+          "<=50K",
+          ">50K"
+        ]
+      },
+      "capital_gain_positive": {
+        "class": "PREDICT",
+        "options": [
+          "False",
+          "True"
+        ]
+      },
+      "capital_loss_positive": {
+        "class": "PREDICT",
+        "options": [
+          "False",
+          "True"
+        ]
+      }
+    },
+    "sections": {
+      "family": [
+        "marital-status",
+        "relationship"
+      ],
+      "employment": [
+        "workclass",
+        "occupation",
+        "hours_band"
+      ],
+      "finances": [
+        "income",
+        "capital_gain_positive",
+        "capital_loss_positive"
+      ]
+    },
+    "excluded_raw_fields": [
+      "age",
+      "education-num",
+      "fnlwgt",
+      "hours-per-week",
+      "capital-gain",
+      "capital-loss"
+    ]
+  },
+  "parameters": {
+    "version": "v2",
+    "n_estimators": 1,
+    "device": "cpu",
+    "fit_mode": "fit_preprocessors",
+    "n_jobs": 1,
+    "random_state": 0,
+    "categorical_features_indices": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "reference_rows": 512,
+    "torch_threads": 2,
+    "threadpool_threads": 2
+  },
+  "weight_grid": [
+    0.0,
+    0.25,
+    0.5
+  ],
+  "frozen_predictions": {
+    "file": "docs\\analysis\\E048-outputs\\frozen-seed49.npz",
+    "sha256": "76869b895ae20ae2b7fbf5a1ac3c565ad59d5f10dee339454469388988046db4"
+  },
+  "head_diagnostics": {
+    "marital-status": {
+      "schema_classes": 7,
+      "reference_classes": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "intervened": true,
+      "elapsed_seconds": 2.3418431000000055,
+      "probabilities_sha256": "87a104cee473fcd0acf76e72757a441c956663016b7f64fe20beed120351b53a"
+    },
+    "relationship": {
+      "schema_classes": 6,
+      "reference_classes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "intervened": true,
+      "elapsed_seconds": 1.6863228000001982,
+      "probabilities_sha256": "f5193b9e3ed221837493d4784dc0e9cea486d64916aaa078dc5e5d6c41f24149"
+    },
+    "workclass": {
+      "schema_classes": 8,
+      "reference_classes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "intervened": true,
+      "elapsed_seconds": 1.6844732999998087,
+      "probabilities_sha256": "989b922c3e47c4d98aab1df09fd708e4263420cd071206082557a4cafa78c3f1"
+    },
+    "occupation": {
+      "schema_classes": 15,
+      "reference_classes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "intervened": false,
+      "fallback_reason": "schema_classes_gt_10"
+    },
+    "hours_band": {
+      "schema_classes": 4,
+      "reference_classes": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "intervened": true,
+      "elapsed_seconds": 1.7142469999998866,
+      "probabilities_sha256": "08a92b2e4fb8866d0b6390018ac600363339f02d17d9fbaa185fcc1ff9bc7a62"
+    },
+    "income": {
+      "schema_classes": 2,
+      "reference_classes": [
+        0,
+        1
+      ],
+      "intervened": true,
+      "elapsed_seconds": 1.6868807999999262,
+      "probabilities_sha256": "95d55339c2dd647c4830e59b4da8224a46519e9184665adc31bf03071ab99b95"
+    },
+    "capital_gain_positive": {
+      "schema_classes": 2,
+      "reference_classes": [
+        0,
+        1
+      ],
+      "intervened": true,
+      "elapsed_seconds": 1.6558077999998204,
+      "probabilities_sha256": "c83e7ddf435bb3ae3a3f0b66f79bb9527bf19f5c8d70f4e72663bbbffc0bb833"
+    },
+    "capital_loss_positive": {
+      "schema_classes": 2,
+      "reference_classes": [
+        0,
+        1
+      ],
+      "intervened": true,
+      "elapsed_seconds": 1.6729193999999552,
+      "probabilities_sha256": "a663452dade824d9c94be08eebaa23d3c768a40d98a8784ca7d8c4e6c3a8cbfc"
+    }
+  },
+  "methods": {
+    "categorical_logistic": {
+      "log_score": -1.0235220742962898,
+      "skill": 0.3171339546836426,
+      "uniform_reference": 1.4988621579831425,
+      "mean_log_gain_nats": 0.0,
+      "respondent_se_nats": 0.0,
+      "respondents": 600,
+      "delta_skill_vs_baseline": 0.0,
+      "delta_skill_div3_proxy": 0.0,
+      "respondent_se_skill_div3_proxy": 0.0
+    },
+    "tabpfn_supported_heads": {
+      "log_score": -1.0380571754597767,
+      "skill": 0.3074365311506839,
+      "uniform_reference": 1.4988621579831425,
+      "mean_log_gain_nats": -0.014535101163486915,
+      "respondent_se_nats": 0.004648590570179075,
+      "respondents": 600,
+      "delta_skill_vs_baseline": -0.00969742353295866,
+      "delta_skill_div3_proxy": -0.00323247451098622,
+      "respondent_se_skill_div3_proxy": 0.0010338043307095881
+    },
+    "query_section_oracle": {
+      "log_score": -0.9862633960271963,
+      "skill": 0.34199192982875437,
+      "uniform_reference": 1.4988621579831425,
+      "mean_log_gain_nats": 0.03725867826909359,
+      "respondent_se_nats": 0.0014704889754823531,
+      "respondents": 600,
+      "delta_skill_vs_baseline": 0.024857975145111788,
+      "delta_skill_div3_proxy": 0.008285991715037263,
+      "respondent_se_skill_div3_proxy": 0.0003270233951913301
+    },
+    "constant_section_oracle": {
+      "log_score": -1.0173975780487228,
+      "skill": 0.32122005173729573,
+      "uniform_reference": 1.4988621579831425,
+      "mean_log_gain_nats": 0.006124496247566989,
+      "respondent_se_nats": 0.0018447139576017269,
+      "respondents": 600,
+      "delta_skill_vs_baseline": 0.004086097053653148,
+      "delta_skill_div3_proxy": 0.0013620323512177162,
+      "respondent_se_skill_div3_proxy": 0.00041024763301871604
+    },
+    "selection_only_section_policy": {
+      "log_score": -1.021788942850079,
+      "skill": 0.3182902527708148,
+      "uniform_reference": 1.4988621579831425,
+      "mean_log_gain_nats": 0.0017331314462106636,
+      "respondent_se_nats": 0.0008071476385389314,
+      "respondents": 600,
+      "delta_skill_vs_baseline": 0.001156298087172214,
+      "delta_skill_div3_proxy": 0.0003854326957240713,
+      "respondent_se_skill_div3_proxy": 0.00017950230540768406
+    }
+  },
+  "oracle": {
+    "family": "One weight per audit respondent and section, shared across section items.",
+    "optimization": "Exact separable maximum over three frozen mixtures.",
+    "uses_audit_labels": true,
+    "section_diagnostics": {
+      "family": {
+        "items": [
+          "marital-status",
+          "relationship"
+        ],
+        "weight_counts": {
+          "0.0": 267,
+          "0.25": 12,
+          "0.5": 321
+        },
+        "mean_log_gain_nats": 0.06037961252819713,
+        "respondent_se_nats": 0.0038161958838931346,
+        "respondents": 600
+      },
+      "employment": {
+        "items": [
+          "workclass",
+          "occupation",
+          "hours_band"
+        ],
+        "weight_counts": {
+          "0.0": 296,
+          "0.25": 13,
+          "0.5": 291
+        },
+        "mean_log_gain_nats": 0.040191449399136575,
+        "respondent_se_nats": 0.002823865700899926,
+        "respondents": 600
+      },
+      "finances": {
+        "items": [
+          "income",
+          "capital_gain_positive",
+          "capital_loss_positive"
+        ],
+        "weight_counts": {
+          "0.0": 295,
+          "0.25": 1,
+          "0.5": 304
+        },
+        "mean_log_gain_nats": 0.018911950966314938,
+        "respondent_se_nats": 0.0012459901202326725,
+        "respondents": 600
+      }
+    },
+    "constant_section_weights": {
+      "family": 0.25,
+      "employment": 0.5,
+      "finances": 0.5
+    },
+    "bound_scope": "Finite frozen mixture library on Adult audit rows only."
+  },
+  "honest_selection": {
+    "family": {
+      "items": [
+        "marital-status",
+        "relationship"
+      ],
+      "best_weight": 0.25,
+      "selected_weight": 0.25,
+      "selection_log_scores": {
+        "0.0": -1.215030887227053,
+        "0.25": -1.2066143684548127,
+        "0.5": -1.2080078572959103
+      },
+      "mean_log_gain_nats": 0.00841651877224013,
+      "respondent_se_nats": 0.003163163848512299,
+      "respondents": 600,
+      "acceptance_threshold_nats": 0.006326327697024598,
+      "selection_accepted": true
+    },
+    "employment": {
+      "items": [
+        "workclass",
+        "occupation",
+        "hours_band"
+      ],
+      "best_weight": 0.5,
+      "selected_weight": 0.0,
+      "selection_log_scores": {
+        "0.0": -1.5538236812401844,
+        "0.25": -1.5466998462038195,
+        "0.5": -1.546269749025904
+      },
+      "mean_log_gain_nats": 0.007553932214280284,
+      "respondent_se_nats": 0.0038061900013520887,
+      "respondents": 600,
+      "acceptance_threshold_nats": 0.007612380002704177,
+      "selection_accepted": false
+    },
+    "finances": {
+      "items": [
+        "income",
+        "capital_gain_positive",
+        "capital_loss_positive"
+      ],
+      "best_weight": 0.0,
+      "selected_weight": 0.0,
+      "selection_log_scores": {
+        "0.0": -0.36124965115725616,
+        "0.25": -0.36280541415886847,
+        "0.5": -0.36610044323193597
+      },
+      "mean_log_gain_nats": 0.0,
+      "respondent_se_nats": 0.0,
+      "respondents": 600,
+      "acceptance_threshold_nats": 0.001,
+      "selection_accepted": false
+    }
+  },
+  "gate_threshold_skill_div3_proxy": 0.005,
+  "seed_gate_pass": true,
+  "leakage_checks": {
+    "fit_selection_audit_disjoint": true,
+    "tabpfn_first_512_fit_rows_only": true,
+    "baseline_all_1800_fit_rows_only": true,
+    "all_query_targets_masked_in_actual_fit_path": true,
+    "predictor_query_input_given_only": true,
+    "section_selection_receives_selection_only": true,
+    "full_profile_duplicates_removed_before_split": true,
+    "frozen_predictions_saved_before_truth_based_mixture_scoring": true,
+    "all_row_option_vocabulary_matches_existing_E041_protocol": true
+  },
+  "interpretation": "Exploratory observed Adult bound. Audit truth screens a frozen library, not an untouched confirmatory set, learnability claim, survey gate replica, or HSCC ceiling/forecast.",
+  "elapsed_seconds": 12.991556799999671
+}

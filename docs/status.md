@@ -1,6 +1,6 @@
 # STATUS — read this first in a new session (kept current at every commit)
 
-Updated: 2026-09-22 E047 Grand .64 without update recorded; E041 remains best. E041 result reported on 2026-09-19, continuing the supplied
+Updated: 2026-09-23 E048 stopped; E049 adaptive TabPFN verified and packaged (#29), not uploaded. E041 remains best. E041 result reported on 2026-09-19, continuing the supplied
 2026-09-21 handoff; see `docs/phase2-preparation.md` for date provenance. Newest work is
 inserted at the TOP of docs/log.md; historical dated entries are newest-first.
 
@@ -37,8 +37,8 @@ inserted at the TOP of docs/log.md; historical dated entries are newest-first.
   the new decision follows the hosted best update, not revised local scores.
   E042 final-evidence blend stopped at its oracle: +.004570 log < .005.
   One result does not identify the causal component or exact unnoised gain.
-  A008's independent pretrained base remains
-  unimplemented; the broader retrieval family is not universally ruled out.
+  A008's independent pretrained family is now screened in E048/E049;
+  no hosted improvement from it is established. Retrieval is not universally closed.
 - **WB is a secondary research target, not a demonstrated ceiling at .49.**
   Screen the independent tabular base on WB locally as well. With controls
   .52/.50, H .95 gives mean .6567 (about Grand .66); with WB .49 it needs
@@ -84,6 +84,23 @@ inserted at the TOP of docs/log.md; historical dated entries are newest-first.
   stays phase2 fallback. User-reported result; no platform fetch or runtime.
   E046's fair-tree proposal stopped before production: observed oracle skill/3
   +.000145139/+.000017564 failed its .005 first-split gate. No E046 ZIP.
+
+- **E049 is today's verified exploratory candidate (#29), not uploaded.**
+  TabPFN-HSCC E049. Built with PriorLabs-TabPFN. Original public V2 predicts
+  four high-fanout UNHCR gate parents from512 visible references. E047's
+  unchanged guarded confidence algorithm mixes final descendant closures;
+  no retrieval/threshold grid. Outer labels excluded before shadow fitting.
+  E048 constant mixture stopped at tighter oracle skill/3 .001362/.001415;
+  no E048 ZIP. E049 continuous oracle .008301/.007549 only bounds reused Adult
+  rows; learned skill +.001739/0, inconclusive and below adoption bar.
+  Clean all3 exactly E041 (.500648423/.454717307/.562462729); UNHCR delta
+  -.000486145 vs E025. Household also exact E041; all natural local selectors
+  reject. Forced-active real inference verifies assembly, not efficacy.
+  Fifteen E049+fourteen helper tests, ZIP checker, official all3 and raw
+  source/archive parity PASS. Official offline 639.517s; conservative
+  forced-active all3 753.797s, both <900s locally. Hosted speed not guaranteed.
+  Artifact: submissions/2026-09-23-E049.zip.
+  No hosted upload, no .65 forecast, no phase2 promotion. Next experiment E050.
 
 ## Historical E025 loss map (probe submissions E032–E034, unhcr)
 
@@ -150,12 +167,13 @@ unchanged experiments; first repair the evidence behind their interpretation.
    adaptive final correction have not demonstrated a new best; do not infer
    exact zero effects, hidden instrument scores or inactive hosted selection.
    E047's sim gain and permissive observed oracle did not establish transfer.
-   Read A008 v11, E046/E047 experiments and the completed scorecard before work.
+   Read A008 v12, E048/E049 experiments and the latest scorecard before work.
    No blind coefficient/threshold grid or automatic threshold relaxation.
-   New experiments start at E048, require a named mechanism, scoped oracle and
+   New experiments start at E050, require a named mechanism, scoped oracle and
    honest evaluation. Keep E041 learned retrieval after E044's adverse reading;
-   E045 .64 without update remains parked. An independent pretrained base is a
-   separate possible family, subject to feasibility/screening. The historical
+   E045 .64 without update remains parked. E049 now screens the independent
+   pretrained family; use its preregistered hosted arms before another variant.
+   Do not infer hosted activation from clean/household fallback. The historical
    .79+.10 loss map describes E025, not E041. No automatic hosted upload.
 2. **Keep the phase-2 fallback ready.** The file is
    `submissions/2026-09-09-E025/main.py` (hardened: `score.py --phase 2`

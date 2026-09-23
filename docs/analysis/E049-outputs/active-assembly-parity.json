@@ -1,0 +1,204 @@
+{
+  "experiment": "E049",
+  "case": "deterministic engineering fixture",
+  "forced_selection": true,
+  "real_pretrained_inference": true,
+  "forced_alpha": 0.25,
+  "forced_section_indices": [
+    0
+  ],
+  "frame_sha256": "737b22a0d5fd9deee33fb4d90320f1f44cba5670da41c577fda6970e96ede620",
+  "source_sha256": "5ea710593814ea93cc86d7fd4c5f83bdb1bc3d89a7759decffeeb5ec1362bc77",
+  "source_tree_sha256": "3ec4607e9086634c31997da1bc382a38249e522579eade233118e7033ffa86d0",
+  "main_sha256": "a15e497d90e9cd26ae16ce55901ead704d5457163047c4d090574f9641a56cb8",
+  "archive_sha256": "8490852563a3b621346b8ab6633da4e593139cc3e418b2d5723cfcbf5feff19b",
+  "checkpoint_sha256": "f65a35685aeef42e31b796d9bfa34e68d6fc780bc98e7bff7763802964cf435f",
+  "fixture_helper_sha256": "8e7ad7340d505d470c4ae49eadd2c72975a54a135b083c8b3c2ee71588b12e0e",
+  "script_sha256": "9d5d823c26fa11ab96f2738ed35004dba102b4217565530bf8e571e285fcacd9",
+  "visible_rows": 800,
+  "held_rows": 2,
+  "predicted_items": 17,
+  "vectors": 34,
+  "probability_values": 100,
+  "active_vectors": 8,
+  "unchanged_vectors": 26,
+  "root_names": [
+    "s3_11_intent_return_12m_lbl",
+    "root_b",
+    "root_c",
+    "root_d"
+  ],
+  "reference_class_counts": {
+    "shadow": {
+      "s3_11_intent_return_12m_lbl": 2,
+      "root_b": 2,
+      "root_c": 2,
+      "root_d": 2
+    },
+    "final": {
+      "s3_11_intent_return_12m_lbl": 2,
+      "root_b": 2,
+      "root_c": 2,
+      "root_d": 2
+    }
+  },
+  "real_pfn_fit_count": 16,
+  "reference_rows_per_pfn_fit": 512,
+  "source_archive_max_abs": 0.0,
+  "source_E041_max_abs": 3.878835867107361e-06,
+  "inactive_E041_max_abs": 0.0,
+  "source_seconds": 18.500557699999263,
+  "archive_seconds": 13.589074900000924,
+  "baseline_seconds": 4.452265799998713,
+  "total_seconds_including_imports": 44.256565699999555,
+  "source_diagnostics": {
+    "forced_selection": true,
+    "selected": [
+      0
+    ],
+    "audit": {
+      "accepted": true,
+      "forced": true
+    },
+    "roots": [
+      "s3_11_intent_return_12m_lbl",
+      "root_b",
+      "root_c",
+      "root_d"
+    ],
+    "groups": [
+      [
+        "s3_11_intent_return_12m_lbl",
+        "s3_11_intent_return_12m_lbl_child",
+        "s3_11_intent_return_12m_lbl_grandchild",
+        "s3_11_intent_return_12m_lbl_extra"
+      ],
+      [
+        "root_b",
+        "root_b_child",
+        "root_b_grandchild",
+        "root_b_extra"
+      ],
+      [
+        "root_c",
+        "root_c_child",
+        "root_c_grandchild",
+        "root_c_extra"
+      ],
+      [
+        "root_d",
+        "root_d_child",
+        "root_d_grandchild",
+        "root_d_extra"
+      ]
+    ],
+    "policies": {
+      "0": {
+        "center": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "beta": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "reference_rows": 512
+  },
+  "archive_diagnostics": {
+    "forced_selection": true,
+    "selected": [
+      0
+    ],
+    "audit": {
+      "accepted": true,
+      "forced": true
+    },
+    "roots": [
+      "s3_11_intent_return_12m_lbl",
+      "root_b",
+      "root_c",
+      "root_d"
+    ],
+    "groups": [
+      [
+        "s3_11_intent_return_12m_lbl",
+        "s3_11_intent_return_12m_lbl_child",
+        "s3_11_intent_return_12m_lbl_grandchild",
+        "s3_11_intent_return_12m_lbl_extra"
+      ],
+      [
+        "root_b",
+        "root_b_child",
+        "root_b_grandchild",
+        "root_b_extra"
+      ],
+      [
+        "root_c",
+        "root_c_child",
+        "root_c_grandchild",
+        "root_c_extra"
+      ],
+      [
+        "root_d",
+        "root_d_child",
+        "root_d_grandchild",
+        "root_d_extra"
+      ]
+    ],
+    "policies": {
+      "0": {
+        "center": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "beta": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "reference_rows": 512
+  },
+  "active_assembly_parity_passed": true,
+  "interpretation": "Engineering contract test with forced policy selection only. Actual E041 fits, actual checkpoint inference and actual rendering. No measured policy acceptance, gain, efficacy or runtime-budget claim."
+}

@@ -1,0 +1,88 @@
+{
+  "passed": true,
+  "runs": [
+    {
+      "seed": 49,
+      "frozen_sha256": "76869b895ae20ae2b7fbf5a1ac3c565ad59d5f10dee339454469388988046db4",
+      "oracle": {
+        "log_score": -0.9945953848996706,
+        "skill": 0.33643305383198774,
+        "uniform_reference": 1.4988621579831425
+      },
+      "baseline": {
+        "log_score": -1.031908757263813,
+        "skill": 0.3115385882766287,
+        "uniform_reference": 1.4988621579831425
+      },
+      "oracle_skill_div3": 0.008298155185119671,
+      "oracle_gate_pass": true,
+      "continuous_oracle": {
+        "log_score": -0.9945839933456384,
+        "skill": 0.3364406539665108,
+        "uniform_reference": 1.4988621579831425
+      },
+      "continuous_oracle_skill_div3": 0.008300688563294023,
+      "continuous_max_tangent_gap_nats": 7.739819164042167e-16,
+      "finite_grid_is_continuous_feasible_lower_bound": true,
+      "endpoint_normalization_audit": {
+        "reason": "Normalize endpoints before mixing to match unchanged E047 policy; same alpha grid.",
+        "max_raw_endpoint_row_mass_error": 1.62515789270401e-07,
+        "max_floored_probability_abs_change_all_vectors": 1.1929834491775093e-08,
+        "max_truth_log_abs_change": 4.0262052358741585e-08,
+        "legacy_finite_grid_skill_div3": 0.008298155213547709,
+        "finite_grid_skill_div3_change": -2.842803770164437e-11,
+        "changed_audit_section_choices": 0
+      },
+      "oracle_paired": {
+        "mean_log_gain_nats": 0.03731337236414225,
+        "respondent_se_nats": 0.0017303513985633602,
+        "respondents": 400
+      },
+      "audit_previously_screened": true
+    },
+    {
+      "seed": 50,
+      "frozen_sha256": "75e6a7f3834a2dc2cf365e8843850d974f79b197f05d49eee4ca9286ce5c25f7",
+      "oracle": {
+        "log_score": -0.9710756726789563,
+        "skill": 0.35212476510473223,
+        "uniform_reference": 1.4988621579831425
+      },
+      "baseline": {
+        "log_score": -1.0050151444073843,
+        "skill": 0.3294812741421633,
+        "uniform_reference": 1.4988621579831425
+      },
+      "oracle_skill_div3": 0.007547830320856301,
+      "oracle_gate_pass": true,
+      "continuous_oracle": {
+        "log_score": -0.9710693893966869,
+        "skill": 0.3521289571394941,
+        "uniform_reference": 1.4988621579831425
+      },
+      "continuous_oracle_skill_div3": 0.007549227665776925,
+      "continuous_max_tangent_gap_nats": 9.72962843225574e-16,
+      "finite_grid_is_continuous_feasible_lower_bound": true,
+      "endpoint_normalization_audit": {
+        "reason": "Normalize endpoints before mixing to match unchanged E047 policy; same alpha grid.",
+        "max_raw_endpoint_row_mass_error": 1.3993121683597565e-07,
+        "max_floored_probability_abs_change_all_vectors": 9.767346896616402e-09,
+        "max_truth_log_abs_change": 4.459078839502695e-08,
+        "legacy_finite_grid_skill_div3": 0.007547830355401223,
+        "finite_grid_skill_div3_change": -3.4544922478119133e-11,
+        "changed_audit_section_choices": 0
+      },
+      "oracle_paired": {
+        "mean_log_gain_nats": 0.033939471728427845,
+        "respondent_se_nats": 0.0020116806686174627,
+        "respondents": 400
+      },
+      "audit_previously_screened": true
+    }
+  ],
+  "source_sha256": {
+    "scripts/oracle_e049.py": "ba7b1c42eef41129c40914f6bfa1940a63c6d520dcdaf49bac9ec7f5c21fead0",
+    "src/models/adaptive_final_evidence.py": "1b232ee4a182df5b30bda2b138951bebb8450474a699f607aa1f6ba75840f6d9",
+    "docs/experiments/E049-adaptive-tabpfn-parents.md": "d6d193159812882c305f098ab036adbb68858395ea5afb273a4925e0e6b375f8"
+  }
+}

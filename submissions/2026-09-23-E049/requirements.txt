@@ -1,0 +1,2 @@
+tabpfn==8.0.8
+tabpfn-common-utils==0.2.23

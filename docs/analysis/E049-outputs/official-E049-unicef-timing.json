@@ -1,0 +1,8 @@
+{
+  "official_score_sha256": "7049e99a48acef2a74f37cb49bb66b5a9af8d05d2ed8fcf530287b5e81c5042f",
+  "seconds": {
+    "prepare_environment": 128.39912829999957,
+    "run_submission": 47.32652340000095
+  },
+  "method": "sys.setprofile entry/return wall times; untouched official script. run_submission includes child process launch, import, model load, predict, output serialization and collection; excludes environment build."
+}

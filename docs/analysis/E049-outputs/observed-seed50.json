@@ -1,0 +1,85 @@
+{
+  "seed": 50,
+  "frozen_sha256": "75e6a7f3834a2dc2cf365e8843850d974f79b197f05d49eee4ca9286ce5c25f7",
+  "oracle": {
+    "log_score": -0.9710756726789563,
+    "skill": 0.35212476510473223,
+    "uniform_reference": 1.4988621579831425
+  },
+  "baseline": {
+    "log_score": -1.0050151444073843,
+    "skill": 0.3294812741421633,
+    "uniform_reference": 1.4988621579831425
+  },
+  "oracle_skill_div3": 0.007547830320856301,
+  "oracle_gate_pass": true,
+  "continuous_oracle": {
+    "log_score": -0.9710693893966869,
+    "skill": 0.3521289571394941,
+    "uniform_reference": 1.4988621579831425
+  },
+  "continuous_oracle_skill_div3": 0.007549227665776925,
+  "continuous_max_tangent_gap_nats": 9.72962843225574e-16,
+  "finite_grid_is_continuous_feasible_lower_bound": true,
+  "endpoint_normalization_audit": {
+    "reason": "Normalize endpoints before mixing to match unchanged E047 policy; same alpha grid.",
+    "max_raw_endpoint_row_mass_error": 1.3993121683597565e-07,
+    "max_floored_probability_abs_change_all_vectors": 9.767346896616402e-09,
+    "max_truth_log_abs_change": 4.459078839502695e-08,
+    "legacy_finite_grid_skill_div3": 0.007547830355401223,
+    "finite_grid_skill_div3_change": -3.4544922478119133e-11,
+    "changed_audit_section_choices": 0
+  },
+  "oracle_paired": {
+    "mean_log_gain_nats": 0.033939471728427845,
+    "respondent_se_nats": 0.0020116806686174627,
+    "respondents": 400
+  },
+  "audit_previously_screened": true,
+  "learned": {
+    "log_score": -1.0050151444073843,
+    "skill": 0.3294812741421633,
+    "uniform_reference": 1.4988621579831425,
+    "delta_skill": 0.0,
+    "mean_log_gain_nats": 0.0,
+    "respondent_se_nats": 0.0,
+    "respondents": 400
+  },
+  "diagnostics": {
+    "sections": [
+      {
+        "selected": false,
+        "gain_log": 0.007498719598417192,
+        "standard_error": 0.005521806827125828,
+        "threshold": 0.011043613654251655,
+        "accepted": false
+      },
+      {
+        "selected": false,
+        "gain_log": 0.0025174945493459324,
+        "standard_error": 0.001348185789890787,
+        "threshold": 0.002696371579781574,
+        "accepted": false
+      },
+      {
+        "selected": false,
+        "gain_log": 6.494306391757973e-06,
+        "standard_error": 6.467871906233732e-06,
+        "threshold": 0.001,
+        "accepted": false
+      }
+    ],
+    "selected": [],
+    "audit": {
+      "gain_log": 0.0,
+      "standard_error": 0.0,
+      "threshold": 0.0,
+      "accepted": false
+    },
+    "fit_rows": 400,
+    "selection_rows": 400,
+    "audit_rows": 400
+  },
+  "policies": {},
+  "interpretation": "Exploratory reused Adult rows; not an HSCC forecast."
+}

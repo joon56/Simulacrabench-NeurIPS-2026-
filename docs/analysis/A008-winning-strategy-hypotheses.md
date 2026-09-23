@@ -398,3 +398,49 @@ configurations, not a universal retrieval/calibration ceiling. Preserve E041
 learned weights after E044's adverse reading. Require a separately screened
 mechanism before another submission, not an audit-driven threshold relaxation.
 E025 remains the independently validated phase2 fallback. No new code or upload.
+
+## v12 - Independent pretrained gate-parent screen and E049, 2026-09-23
+
+E048 screened the previously unimplemented independent pretrained family.
+Modern tabpfn8.0.8/common-utils0.2.23 accepts the existing environment; original
+V2 checkpoint is publicly available,29,016,968 bytes, hash pinned. Old2.x pins
+conflict with current pandas/sklearn and were not installed. Dependencies were
+isolated under tmp; the baseline environment was preserved. Socket-blocked
+import succeeds. License/NOTICE are bundled and the product is named
+TabPFN-HSCC E049. Built with PriorLabs-TabPFN.
+
+E048 used 512 references and observed deduplicated Adult rows, seeds49/50.
+Unconditional PFN was worse than logistic. Permissive query/section oracle
+skill/3 +.008286/+.007462 did not rescue the registered constant-mixture plan:
+its tighter constant-section upper bounds +.001362/+.001415 both fail .005.
+E048 stopped before a production estimator/ZIP. The original run summary is
+preserved; E048-outputs/decision.json explicitly supersedes its permissive
+proceed recommendation. Never cherry-pick the looser bound to build a policy
+already excluded by a tighter applicable ceiling.
+
+E049 was registered separately after those readings. Four schema-selected,
+high-fanout UNHCR parents get frozen PFN alternatives, propagated through the
+unchanged E041 soft gates and retrieval. Four disjoint descendant closures
+use the existing E047 bounded confidence algorithm, with its original guards,
+not a threshold relaxation. Outer correction-fit/selection/audit respondents
+are excluded from every shadow fit and reference bank. Policies freeze before
+visible-data refitting; UNICEF/WB exact E041. Final singleton roots preserve
+the exact raw baseline, including floating-point row sums.
+
+E049 reuses frozen observed predictions, splitting their1200 query rows into
+400/400/400 fit/selection/audit. Those rows were screened before, explicitly
+exploratory rather than untouched research confirmation. Both preregistered
+finite-grid oracle gates pass. Supplemental continuous-alpha oracle contains
+the actual sigmoid family, skill/3 +.008301/+.007549, tangent gap<1e-15. Actual
+learned skill only +.001739/0; the first descriptive interval includes zero.
+This is no HSCC forecast or adoption result. The independent pretrained signal
+is distinct from E047's reweighting of existing retrieval, but transfer remains
+unproved. Tests and actual forced-active source/archive inference agree exactly;
+the forced fixture is only an implementation check. Official checks and hosted
+arms live in E049's experiment and submission scorecard. Keep E041 incumbent
+and E025 phase2 fallback until a qualifying real result changes that decision.
+
+E049 release qualification:29 tests, ZIP checker, official all3 and raw source/archive
+parity PASS. Offline execution639.517s; full-size forced-active UNHCR plus
+official controls753.797s <900s. All natural clean/household selectors reject.
+Candidate #29 is exploratory and parked for adoption; no hosted result yet.

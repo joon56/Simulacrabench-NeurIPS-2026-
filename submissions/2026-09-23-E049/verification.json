@@ -1,0 +1,105 @@
+{
+  "package_files_sha256": {
+    "LICENSE-TabPFN.txt": "08b1851b4b6136b5fb0cb124d3258e0d91e3e1623f1be5904b77e4d270d112d8",
+    "NOTICE.txt": "51ebbc411e355f0110611de6aa253bdd0fa7ac819769c7eafb06cfb5eab66c97",
+    "main.py": "a15e497d90e9cd26ae16ce55901ead704d5457163047c4d090574f9641a56cb8",
+    "requirements.txt": "14b0d27857714c0ed63ff9da26e25c99c75162b3e29a186d7c64edebcddfdb8b",
+    "tabpfn-v2-classifier.ckpt": "f65a35685aeef42e31b796d9bfa34e68d6fc780bc98e7bff7763802964cf435f"
+  },
+  "local_constraints_sha256": "42fe65be5e29b32071f2f599a7cb15fc3b10029402cafdf8491227446b1c6f5b",
+  "archive_path": "submissions\\2026-09-23-E049.zip",
+  "archive_sha256": "8490852563a3b621346b8ab6633da4e593139cc3e418b2d5723cfcbf5feff19b",
+  "main_sha256": "a15e497d90e9cd26ae16ce55901ead704d5457163047c4d090574f9641a56cb8",
+  "source_sha256": "9e5cce1907ea4e2712bdee91fa4be0f6a4b34f2492755c732b7931372632c18b",
+  "zip_checker": "OK: C:\\Users\\USER\\Desktop\\SimulacraBench\\submissions\\2026-09-23-E049.zip looks like a valid submission ZIP.",
+  "phase": 1,
+  "local_threads": 2,
+  "hosted_result": null,
+  "instruments": {
+    "unicef": {
+      "status": "PASS",
+      "skill": 0.5006484230707156,
+      "reported_skill": 0.5,
+      "seconds": 178.64200258255005,
+      "offline_execution_seconds": 47.32652340000095,
+      "environment_build_seconds": 128.39912829999957,
+      "source_parity_max_abs": 0.0,
+      "comparisons": {
+        "E041": {
+          "baseline_skill": 0.5006484230707156,
+          "delta_skill": 0.0,
+          "delta_log": 0.0,
+          "probability_max_abs": 0.0
+        },
+        "E025": {
+          "baseline_skill": 0.5006484230707156,
+          "delta_skill": 0.0,
+          "delta_log": 0.0,
+          "probability_max_abs": 0.0
+        }
+      }
+    },
+    "world_bank": {
+      "status": "PASS",
+      "skill": 0.45471730736298255,
+      "reported_skill": 0.45,
+      "seconds": 245.34745144844055,
+      "offline_execution_seconds": 112.13575479999963,
+      "environment_build_seconds": 127.12809809999999,
+      "source_parity_max_abs": 0.0,
+      "comparisons": {
+        "E041": {
+          "baseline_skill": 0.45471730736298255,
+          "delta_skill": 0.0,
+          "delta_log": 0.0,
+          "probability_max_abs": 0.0
+        },
+        "E025": {
+          "baseline_skill": 0.45471730736298255,
+          "delta_skill": 0.0,
+          "delta_log": 0.0,
+          "probability_max_abs": 0.0
+        }
+      }
+    },
+    "unhcr": {
+      "status": "PASS",
+      "skill": 0.5624627288576414,
+      "reported_skill": 0.56,
+      "seconds": 635.8600718975067,
+      "offline_execution_seconds": 480.0544195000002,
+      "environment_build_seconds": 134.14388979999967,
+      "source_parity_max_abs": 0.0,
+      "comparisons": {
+        "E041": {
+          "baseline_skill": 0.5624627288576414,
+          "delta_skill": 0.0,
+          "delta_log": 0.0,
+          "probability_max_abs": 0.0
+        },
+        "E025": {
+          "baseline_skill": 0.5629488737050165,
+          "delta_skill": -0.0004861448473750807,
+          "delta_log": -0.0006133943319965862,
+          "probability_max_abs": 0.3597398473795115
+        }
+      }
+    }
+  },
+  "official_seconds_sum": 1059.8495259284973,
+  "verification_wall_seconds": 1073.9828069999985,
+  "offline_execution_seconds_sum": 639.5166977000008,
+  "technical_checks_passed": true,
+  "local_no_regression_passed": true,
+  "active_path_budget": {
+    "artifact": "docs/analysis/E049-outputs/active-runtime.json",
+    "artifact_sha256": "1d8b0c739272e8b5bb5010d6364fc8ea42be98703d78fd26d5c319dc0de778a2",
+    "forced_activation_for_engineering_only": true,
+    "controls_official_execution_seconds": 159.46227820000058,
+    "unhcr_including_profile_setup_and_validation_seconds": 594.3348814000001,
+    "combined_seconds": 753.7971596000007,
+    "budget_seconds": 900,
+    "passed": true,
+    "limitation": "Local CPU observation, not a hosted runtime guarantee or efficacy evidence."
+  }
+}
