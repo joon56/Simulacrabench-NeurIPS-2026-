@@ -79,7 +79,16 @@ Technically qualified exploratory candidate; not adopted before hosted evidence.
 
 ## Actual hosted result
 
-Not submitted by this agent. No hosted result or submission ID supplied.
+User reported on 2026-09-24: **Grand .64, no best update**. Individual
+instrument scores unavailable. Completed scored submission #29, not a failed
+attempt. Submission ID, exact upload time and hosted runtime not supplied;
+no independent platform fetch.
+
+Apply the preregistered .64-without-update arm: no demonstrated best gain;
+park this exact configuration and keep E041 .64/.52/.49/.92. Small gains,
+losses, zero and inactive hosted selection remain unresolved. Do not infer
+hidden UNHCR .92 or hosted inactivity from local fallback. Archive bytes and
+all local measurements unchanged. Strategy review: docs/analysis/A009-post-E049-strategy-review.md.
 
 ## External model/data disclosure
 

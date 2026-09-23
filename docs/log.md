@@ -2,6 +2,28 @@
 
 Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-notes]].
 
+## 2026-09-24 - E049 hosted .64 without update; review the stalled search
+
+- User reported submission #29 Grand .64, no best update. Individual instrument
+  scores, submission ID, upload time and hosted runtime unavailable. Completed
+  scored submission, not a failed attempt; no independent platform fetch.
+- Applied the preregistered unresolved arm: park E049, keep E041 .64/.52/.49/.92
+  and E025 phase2 fallback. Exact effect and hosted activation remain unknown.
+  No fabricated UNHCR score or claim that local fallback identifies hosted use.
+- A009 reviews E045/E047/E049: actual learned observed gains were small or
+  inconclusive despite permissive oracle headroom. Adult/sandbox transfer is
+  not established. E049 tests512 references/four parent heads, not every PFN
+  configuration. Packaging correctness is not predictive evidence.
+- Rechecked A006's known inner replay issue in current E041 source: in-sample
+  base predictions and pre-recursion distributions still select lambda.
+  E047/E049 mask outer rows honestly but retain this inner procedure. Proposed
+  next research is scoped whole-renderer held-out calibration; improvement
+  remains unmeasured, and conservative replay could be protective.
+- Updated scorecard, hosted metadata, experiment Decision, submission index,
+  status and A008; added A009. Model, main, ZIP and every local measurement
+  unchanged. No new experiment, model training, submission or upload this turn.
+  Next available experiment ID remains E050.
+
 ## 2026-09-23 - E048 constant PFN stopped; E049 adaptive parent candidate #29
 
 - User requested today's submission. E041 stays DEV best .64/.52/.49/.92;

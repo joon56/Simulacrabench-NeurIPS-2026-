@@ -444,3 +444,21 @@ E049 release qualification:29 tests, ZIP checker, official all3 and raw source/a
 parity PASS. Offline execution639.517s; full-size forced-active UNHCR plus
 official controls753.797s <900s. All natural clean/household selectors reject.
 Candidate #29 is exploratory and parked for adoption; no hosted result yet.
+
+## v13 - E049 reported .64 without update; strategy audit, 2026-09-24
+
+User reported Grand .64, no best update. Individual scores and hosted policy
+activation are unavailable. Apply the preregistered unresolved arm: park E049,
+retain E041 .64/.52/.49/.92 and E025 phase2 fallback. Submission #29 completed.
+Equal displayed Grand cannot recover the hidden UNHCR score or exact effect.
+All archive bytes and local measurements remain unchanged.
+
+A009 compares the actual learned evidence across E045/E047/E049. Permissive
+oracle headroom repeatedly exceeds small/inconclusive learned gains; Adult
+surrogate transfer and policy activation on hosted data remain unmeasured.
+E049's four-root/512-reference guarded V2 result is not a universal PFN ceiling.
+Rechecking source confirms the known A006 inner replay mismatch survives the
+honest outer correction wrappers. Prioritize a separately registered scoped
+oracle for full recursive held-out calibration, then actual learned validation,
+before another expensive package. This is a proposed research direction, not
+an implemented E050 method, completed oracle or forecast of improved score.

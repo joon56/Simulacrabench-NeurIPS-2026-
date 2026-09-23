@@ -1,6 +1,6 @@
 # STATUS — read this first in a new session (kept current at every commit)
 
-Updated: 2026-09-23 E048 stopped; E049 adaptive TabPFN verified and packaged (#29), not uploaded. E041 remains best. E041 result reported on 2026-09-19, continuing the supplied
+Updated: 2026-09-24 E049 reported Grand .64 without update; parked. A009 reviews the stalled search. E041 remains best. E041 result reported on 2026-09-19, continuing the supplied
 2026-09-21 handoff; see `docs/phase2-preparation.md` for date provenance. Newest work is
 inserted at the TOP of docs/log.md; historical dated entries are newest-first.
 
@@ -85,7 +85,9 @@ inserted at the TOP of docs/log.md; historical dated entries are newest-first.
   E046's fair-tree proposal stopped before production: observed oracle skill/3
   +.000145139/+.000017564 failed its .005 first-split gate. No E046 ZIP.
 
-- **E049 is today's verified exploratory candidate (#29), not uploaded.**
+- **E049 reported Grand .64 without best update; parked, effect unresolved.**
+  User report2026-09-24, submission #29 completed. Individual scores and hosted
+  activation unavailable; apply the registered .64-without-update arm.
   TabPFN-HSCC E049. Built with PriorLabs-TabPFN. Original public V2 predicts
   four high-fanout UNHCR gate parents from512 visible references. E047's
   unchanged guarded confidence algorithm mixes final descendant closures;
@@ -100,7 +102,9 @@ inserted at the TOP of docs/log.md; historical dated entries are newest-first.
   source/archive parity PASS. Official offline 639.517s; conservative
   forced-active all3 753.797s, both <900s locally. Hosted speed not guaranteed.
   Artifact: submissions/2026-09-23-E049.zip.
-  No hosted upload, no .65 forecast, no phase2 promotion. Next experiment E050.
+  No best improvement demonstrated, no .65 forecast, no phase2 promotion.
+  A009: oracle-to-learner gap, surrogate transfer and unchanged inner replay
+  are the research priorities. No new E050 experiment executed or registered.
 
 ## Historical E025 loss map (probe submissions E032–E034, unhcr)
 
@@ -162,17 +166,20 @@ unchanged experiments; first repair the evidence behind their interpretation.
 
 ## Next session plan
 
-1. **E047 read .64 without update: keep E041, park this configuration.**
-   The registered unresolved arm applies. E045 candidate expansion and E047
-   adaptive final correction have not demonstrated a new best; do not infer
+1. **E045/E047/E049 read .64 without update: keep E041, park these configurations.**
+   Their registered unresolved arms apply. Candidate expansion, adaptive final
+   correction and guarded PFN parents have not demonstrated a new best; do not infer
    exact zero effects, hidden instrument scores or inactive hosted selection.
    E047's sim gain and permissive observed oracle did not establish transfer.
-   Read A008 v12, E048/E049 experiments and the latest scorecard before work.
+   Read A009, A008 v13, E049's result and the latest scorecard before work.
    No blind coefficient/threshold grid or automatic threshold relaxation.
    New experiments start at E050, require a named mechanism, scoped oracle and
    honest evaluation. Keep E041 learned retrieval after E044's adverse reading;
-   E045 .64 without update remains parked. E049 now screens the independent
-   pretrained family; use its preregistered hosted arms before another variant.
+   E045 .64 without update remains parked. E049 is a scoped pretrained-family
+   test, not a universal model ceiling. Prioritize the unchanged inner E041
+   replay validation and actual learned gain before another costly package.
+   A009 proposes whole-pipeline held-out calibration with its own scoped oracle;
+   E042's postblend and Adult screens do not bound that full recursive family.
    Do not infer hosted activation from clean/household fallback. The historical
    .79+.10 loss map describes E025, not E041. No automatic hosted upload.
 2. **Keep the phase-2 fallback ready.** The file is

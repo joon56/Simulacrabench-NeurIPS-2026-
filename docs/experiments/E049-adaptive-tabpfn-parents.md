@@ -110,8 +110,12 @@ This numerical alignment changes neither policy, grid nor screening threshold.
 
 ## Decision
 
-Parked; technically qualified as submission #29, not uploaded. Adoption
-requires three-instrument mean skill gain >.005. Exploratory
-packaging requires clean <=.002 regression vs E041/E025, exact control parity,
-source/archive parity, ZIP checker, score.py all3 PASS, total <900s. Hosted
-score arms must be registered before upload. No .65 forecast is justified.
+Parked after user-reported Grand .64 without best update, recorded2026-09-24.
+Individual instrument scores and hosted selector activation are unavailable.
+Submission #29 completed; the preregistered unresolved arm applies. No
+demonstrated improvement; keep E041 .64/.52/.49/.92 and E025 phase2 fallback.
+Do not infer a hidden UNHCR value, zero effect or inactive hosted selection.
+The observed oracle and weak learned audit did not establish hosted transfer.
+Archive and local results unchanged. No blind guard/reference-size grid.
+See A009 for the validation-gap diagnosis and proposed research priorities;
+no new production method or score forecast is established by this result.

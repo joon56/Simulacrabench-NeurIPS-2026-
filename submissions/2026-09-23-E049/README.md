@@ -12,7 +12,10 @@ all3/checker/raw assembly parity PASS; 29 tests pass. Official offline runtime
 639.517s; conservative forced-active all3 profile 753.797s, both <900s.
 Clean and household outputs equal E041; no local gain or .65 forecast claimed.
 E041 remains the DEV incumbent; E025 remains the validated phase2 fallback.
-No competition upload is performed by the preparation workflow.
+User reported Grand .64 without a best update on 2026-09-24; individual
+instrument scores unavailable. E049 remains parked, with no demonstrated
+best improvement. Exact effect and hosted policy activation are unresolved.
+The preparation agent did not upload; this records the user's completed run.
 
 Rebuild with `tmp/e049-env/Scripts/python scripts/assemble_e049.py` after
 installing the pinned dependencies. Source weights used in this session are
