@@ -2,6 +2,45 @@
 
 Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-notes]].
 
+## 2026-09-24 - A013 complete: E054 measurement qualified; E041 method ready
+
+- User authorized immediately feasible probe/method work. Registrationa29fa9f,
+  analysis implementationb57ec24 and intervention286ca28 precede their results.
+  Existing model/main/ZIP bytes preserved. E041 remains incumbent; no final
+  promotion or hosted upload. E054 prepared as#31 only, statusparked.
+- Schema-only LP accounts for noisy rounded baseline, shared controls, floor
+  bounds and two unverified Grand reporting orders. L_G=A-H+P,L_C=1-A-P;
+  group losses are not recoverable gain or gate/content causes. Frozen93-draw
+  implementation passes only Grand.38 with D=L_G-L_C below-.015 under both
+  orders. .39-.43 unresolved;.44 paths disagree. No common arm under6draws.
+  Preregistration prose left conjunction ambiguous; strict conjunction would
+  STOP. Disclosed without result-driven relaxation. Tail feasibility gives no
+  probability or expected information guarantee: limited practical value.
+- E054 runs E041 then uniformizes only final gated UNHCR vectors. Official
+  skills .500648423071/.454717307363/.106532340789; checker/official all3 PASS,
+ 338.472499s inclusive total<900. All189649 source/ZIP vectors exact;96876
+  replaced,92773 untouched. Unchanged base exactE041, delta0/0/-.000486144847
+  vsE025 meets .002. Deliberate score decrease matches loss decomposition;
+  it is a measurement, not an adopted replacement or a score-gain forecast.
+- Nine math and four intervention tests PASS. Independent math review21checks
+  agrees within5e-16. Artifact verifier758740checks PASS without refits,
+  covering source/archive/frame/cache hashes, all vectors, scores and timing.
+  First artifact run stopped on method JSON UTF-8 BOM after model checks;
+  only verifier JSON reading changed to utf-8-sig before successful rerun.
+- E041 four-page method source/PDF complete and visually reviewed. Actual
+  section retrieval/replay, A011 mismatch, scopedE053 stop, A012 engineering,
+  synthetic-only A005 and E025-only probe history included. Adult/TabPFN
+  development and historical second-account use disclosed. Original E025
+  markdown/PDF byte-preserved; six method/copy hashes checked. Current kit,
+  UCI and weights licenses checked; Codabench inaccessible, clause7 explicitly
+  attributed to earlier API audit. No release license or final selection made.
+- Bounded official2023 SIPP source scout recorded. No respondent download,
+  adapter or fit. Next audit: natural question universes, public missing
+  encoding, repeated-person/household copies, recodes and imputation before
+  any coupled oracle. Not a humanitarian-data ceiling or gain claim.
+  Next experiment E055. Read A013/E054/scorecard before any optional upload;
+  limited information value should weigh against spending a slot.
+
 ## 2026-09-24 - A012 phase2 reference complete; E053 oracle STOP
 
 - User authorized three final-TEST decision deliverables: E041 phase2

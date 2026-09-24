@@ -60,8 +60,35 @@ Actual hosted submission always remains with the user; no automatic upload.
 
 ## Result
 
-Pending schema-only resolution analysis. No score forecast.
+Schema-only analysis completed after registrationa29fa9f and implementation
+b57ec24, with9focused tests PASS. No model fits/response rows in this stage.
+Primary implementation93-draw rule passes at Grand.38 only. D=L_G-L_C ranges
+[-.088235649658,-.078083464399] before rounding and
+[-.088235649658,-.048083464399] after-rounding outer envelope. Literal reporting
+witnesses and independent closed-form calculations agree within5e-16.
+Grand.39-.43 unresolved across reporting models;.44 infeasible before rounding.
+No arm passes both reporting orders under6draws. See A013 and full JSON output.
+
+The prose "including93" left conjunction across draw counts ambiguous; the
+archived pre-result implementation used93 as primary. That implementation
+passes, whereas requiring feasibility in BOTH draw envelopes would stop.
+This ambiguity and tail-heavy witness are disclosed in SCORES.md. No claim of
+likely useful information, model gain, or score forecast follows. The public
+mechanism, aggregation alternatives and identical true control predictions
+remain conditional assumptions. Larger uncertainty can create a feasible
+extreme arm without making ordinary readings informative.
+
+E054 exploratory package/intervention registered286ca28. Checker and official
+all3 PASS: .500648423071/.454717307363/.106532340789,338.472499s inclusive total.
+All189649 source/archive vectors exact;96876 gated UNHCR replacements and
+92773 untouched vectors verified. Unchanged base exact E041 and delta0/0/
+-.000486144847 vsE025 meets .002 gate; intentional probe loss agrees with
+decomposition. Four intervention tests PASS. No hosted submission. Existing
+E041 model and ZIP remain unchanged. Details in verification.json and A013.
 
 ## Decision
 
-Parked pending information gate. E041 remains incumbent; no final promotion.
+Parked as a conditional measurement under the frozen93-draw implementation,
+not adopted as a score-improving model. Limited information value explicitly
+retained; no noise/threshold relaxation or repeat-noise averaging. Hosted
+result pending. E041 remains incumbent; no final promotion.

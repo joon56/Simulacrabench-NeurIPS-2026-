@@ -1,0 +1,614 @@
+{
+  "protocol": "E054-schema-resolution-v1",
+  "model_fits": 0,
+  "respondent_data_read": false,
+  "summaries": {
+    "unicef": {
+      "items": 12,
+      "gated_items": 7,
+      "U": 1.5620418219183347,
+      "n_dev": 1488,
+      "share": 0.5833333333333334,
+      "A": 0.6217516534934594,
+      "gated_min_loss": 0.0016578066276081624,
+      "ungated_min_loss": 0.0009625841683152472,
+      "gated_max_loss": 2.57965174568178,
+      "ungated_max_loss": 1.8426083897727,
+      "min_skill": -3.4222601354544793,
+      "max_skill": 0.9973796092040766
+    },
+    "world_bank": {
+      "items": 76,
+      "gated_items": 30,
+      "U": 2.0183615632250977,
+      "n_dev": 520,
+      "share": 0.39473684210526316,
+      "A": 0.4197949196350153,
+      "gated_min_loss": 0.0017917557491630644,
+      "ungated_min_loss": 0.002004002904577495,
+      "gated_max_loss": 1.3509697937887604,
+      "ungated_max_loss": 2.0714870171427657,
+      "min_skill": -2.4224568109315254,
+      "max_skill": 0.9962042413462594
+    },
+    "unhcr": {
+      "items": 213,
+      "gated_items": 156,
+      "U": 1.2617522026791088,
+      "n_dev": 621,
+      "share": 0.7323943661971831,
+      "A": 0.73911827982636,
+      "gated_min_loss": 0.001700661446389479,
+      "ungated_min_loss": 0.0006152509889461439,
+      "gated_max_loss": 4.009662942258427,
+      "ungated_max_loss": 1.4650691519790409,
+      "min_skill": -4.474732094237469,
+      "max_skill": 0.9976840875646644
+    }
+  },
+  "baseline_display": [
+    0.52,
+    0.49,
+    0.92
+  ],
+  "baseline_grand": 0.64,
+  "floor": 0.001,
+  "epsilon": 10.0,
+  "round_step": 0.01,
+  "alpha": 0.05,
+  "loss_priority_margin": 0.015,
+  "scenarios": {
+    "6": {
+      "laplace_tail_bounds": [
+        0.001422818137293181,
+        0.0031509584081467028,
+        0.004220649709356802
+      ],
+      "readings": [
+        {
+          "grand": 0.38,
+          "orders": {
+            "before": null,
+            "after": {
+              "gated_loss": [
+                0.0017006614463894731,
+                0.01170713233595344
+              ],
+              "ungated_loss": [
+                0.07751351737340334,
+                0.08751998826296725
+              ],
+              "difference": [
+                -0.08581932681657778,
+                -0.06580638503744995
+              ],
+              "priority": "ungated",
+              "interval_kind": "outer envelope; not point estimate",
+              "literal_rounding_witness": null
+            }
+          },
+          "robust_informative": false
+        },
+        {
+          "grand": 0.39,
+          "orders": {
+            "before": {
+              "gated_loss": [
+                0.0017006614463894731,
+                0.026707132335953343
+              ],
+              "ungated_loss": [
+                0.06251351737340333,
+                0.08751998826296725
+              ],
+              "difference": [
+                -0.08581932681657778,
+                -0.03580638503744993
+              ],
+              "priority": "ungated",
+              "interval_kind": "outer envelope; not point estimate"
+            },
+            "after": {
+              "gated_loss": [
+                0.0017006614463894731,
+                0.04170713233595347
+              ],
+              "ungated_loss": [
+                0.04751351737340331,
+                0.08751998826296725
+              ],
+              "difference": [
+                -0.08581932681657778,
+                -0.0058063850374499015
+              ],
+              "priority": "unresolved",
+              "interval_kind": "outer envelope; not point estimate"
+            }
+          },
+          "robust_informative": false
+        },
+        {
+          "grand": 0.4,
+          "orders": {
+            "before": {
+              "gated_loss": [
+                0.0017006614463894731,
+                0.05670713233595337
+              ],
+              "ungated_loss": [
+                0.0325135173734033,
+                0.08751998826296725
+              ],
+              "difference": [
+                -0.08581932681657778,
+                0.024193614962550125
+              ],
+              "priority": "unresolved",
+              "interval_kind": "outer envelope; not point estimate"
+            },
+            "after": {
+              "gated_loss": [
+                0.0017006614463894731,
+                0.0717071323359535
+              ],
+              "ungated_loss": [
+                0.017513517373403287,
+                0.08751998826296725
+              ],
+              "difference": [
+                -0.08581932681657778,
+                0.05419361496255015
+              ],
+              "priority": "unresolved",
+              "interval_kind": "outer envelope; not point estimate"
+            }
+          },
+          "robust_informative": false
+        },
+        {
+          "grand": 0.41,
+          "orders": {
+            "before": {
+              "gated_loss": [
+                0.0017006614463894731,
+                0.0867071323359534
+              ],
+              "ungated_loss": [
+                0.0025135173734033844,
+                0.07924992297387662
+              ],
+              "difference": [
+                -0.0775492615274872,
+                0.08419361496254996
+              ],
+              "priority": "unresolved",
+              "interval_kind": "outer envelope; not point estimate"
+            },
+            "after": {
+              "gated_loss": [
+                0.0017006614463894731,
+                0.08860539872041051
+              ],
+              "ungated_loss": [
+                0.0006152509889461588,
+                0.08751998826296725
+              ],
+              "difference": [
+                -0.08581932681657778,
+                0.08799014773146441
+              ],
+              "priority": "unresolved",
+              "interval_kind": "outer envelope; not point estimate"
+            }
+          },
+          "robust_informative": false
+        },
+        {
+          "grand": 0.42,
+          "orders": {
+            "before": {
+              "gated_loss": [
+                0.031529427316766556,
+                0.08860539872041051
+              ],
+              "ungated_loss": [
+                0.0006152509889461588,
+                0.04924992297387659
+              ],
+              "difference": [
+                -0.01772049565711009,
+                0.08799014773146441
+              ],
+              "priority": "unresolved",
+              "interval_kind": "outer envelope; not point estimate"
+            },
+            "after": {
+              "gated_loss": [
+                0.006529427316766645,
+                0.08860539872041051
+              ],
+              "ungated_loss": [
+                0.0006152509889461588,
+                0.0642499229738766
+              ],
+              "difference": [
+                -0.057720495657110016,
+                0.08799014773146441
+              ],
+              "priority": "unresolved",
+              "interval_kind": "outer envelope; not point estimate"
+            }
+          },
+          "robust_informative": false
+        },
+        {
+          "grand": 0.43,
+          "orders": {
+            "before": {
+              "gated_loss": [
+                0.06152942731676658,
+                0.08860539872041051
+              ],
+              "ungated_loss": [
+                0.0006152509889461588,
+                0.019249922973876565
+              ],
+              "difference": [
+                0.04227950434288996,
+                0.08799014773146441
+              ],
+              "priority": "gated",
+              "interval_kind": "outer envelope; not point estimate"
+            },
+            "after": {
+              "gated_loss": [
+                0.03652942731676667,
+                0.08860539872041051
+              ],
+              "ungated_loss": [
+                0.0006152509889461588,
+                0.03424992297387658
+              ],
+              "difference": [
+                0.0022795043428900374,
+                0.08799014773146441
+              ],
+              "priority": "unresolved",
+              "interval_kind": "outer envelope; not point estimate"
+            }
+          },
+          "robust_informative": false
+        },
+        {
+          "grand": 0.44,
+          "orders": {
+            "before": null,
+            "after": {
+              "gated_loss": [
+                0.0665294273167667,
+                0.08860539872041051
+              ],
+              "ungated_loss": [
+                0.0006152509889461588,
+                0.004249922973876552
+              ],
+              "difference": [
+                0.06227950434289009,
+                0.08799014773146441
+              ],
+              "priority": "gated",
+              "interval_kind": "outer envelope; not point estimate",
+              "literal_rounding_witness": null
+            }
+          },
+          "robust_informative": false
+        }
+      ]
+    },
+    "93": {
+      "laplace_tail_bounds": [
+        0.0022373818184398555,
+        0.004954882755753728,
+        0.006636972550605415
+      ],
+      "readings": [
+        {
+          "grand": 0.38,
+          "orders": {
+            "before": {
+              "gated_loss": [
+                0.0017006614463894731,
+                0.006776754075958236
+              ],
+              "ungated_loss": [
+                0.0848602184746472,
+                0.08993631110421596
+              ],
+              "difference": [
+                -0.08823564965782649,
+                -0.07808346439868896
+              ],
+              "priority": "ungated",
+              "interval_kind": "outer envelope; not point estimate"
+            },
+            "after": {
+              "gated_loss": [
+                0.0017006614463894731,
+                0.02177675407595825
+              ],
+              "ungated_loss": [
+                0.06986021847464718,
+                0.08993631110421596
+              ],
+              "difference": [
+                -0.08823564965782649,
+                -0.048083464398688935
+              ],
+              "priority": "ungated",
+              "interval_kind": "outer envelope; not point estimate",
+              "literal_rounding_witness": {
+                "true_skills": [
+                  0.5127636181815601,
+                  0.48004611724424623,
+                  0.9083640274493946,
+                  0.17163597255060542
+                ],
+                "baseline_noised": [
+                  0.515001,
+                  0.48500099999999996,
+                  0.9150010000000001
+                ],
+                "probe_noised": [
+                  0.514999,
+                  0.484999,
+                  0.164999
+                ],
+                "probe_published": [
+                  0.51,
+                  0.48,
+                  0.16
+                ],
+                "grand": 0.38
+              }
+            }
+          },
+          "robust_informative": true
+        },
+        {
+          "grand": 0.39,
+          "orders": {
+            "before": {
+              "gated_loss": [
+                0.0017006614463894731,
+                0.03677675407595826
+              ],
+              "ungated_loss": [
+                0.05486021847464717,
+                0.08993631110421596
+              ],
+              "difference": [
+                -0.08823564965782649,
+                -0.01808346439868891
+              ],
+              "priority": "ungated",
+              "interval_kind": "outer envelope; not point estimate"
+            },
+            "after": {
+              "gated_loss": [
+                0.0017006614463894731,
+                0.051776754075958276
+              ],
+              "ungated_loss": [
+                0.03986021847464716,
+                0.08993631110421596
+              ],
+              "difference": [
+                -0.08823564965782649,
+                0.011916535601311118
+              ],
+              "priority": "unresolved",
+              "interval_kind": "outer envelope; not point estimate"
+            }
+          },
+          "robust_informative": false
+        },
+        {
+          "grand": 0.4,
+          "orders": {
+            "before": {
+              "gated_loss": [
+                0.0017006614463894731,
+                0.06677675407595829
+              ],
+              "ungated_loss": [
+                0.024860218474647144,
+                0.08993631110421596
+              ],
+              "difference": [
+                -0.08823564965782649,
+                0.041916535601311145
+              ],
+              "priority": "unresolved",
+              "interval_kind": "outer envelope; not point estimate"
+            },
+            "after": {
+              "gated_loss": [
+                0.0017006614463894731,
+                0.0817767540759583
+              ],
+              "ungated_loss": [
+                0.009860218474647131,
+                0.08993631110421596
+              ],
+              "difference": [
+                -0.08823564965782649,
+                0.07191653560131117
+              ],
+              "priority": "unresolved",
+              "interval_kind": "outer envelope; not point estimate"
+            }
+          },
+          "robust_informative": false
+        },
+        {
+          "grand": 0.41,
+          "orders": {
+            "before": {
+              "gated_loss": [
+                0.0017006614463894731,
+                0.09102172156165933
+              ],
+              "ungated_loss": [
+                0.0006152509889461588,
+                0.08690322187263275
+              ],
+              "difference": [
+                -0.08520256042624319,
+                0.09040647057271312
+              ],
+              "priority": "unresolved",
+              "interval_kind": "outer envelope; not point estimate"
+            },
+            "after": {
+              "gated_loss": [
+                0.0017006614463894731,
+                0.09102172156165933
+              ],
+              "ungated_loss": [
+                0.0006152509889461588,
+                0.08993631110421596
+              ],
+              "difference": [
+                -0.08823564965782649,
+                0.09040647057271312
+              ],
+              "priority": "unresolved",
+              "interval_kind": "outer envelope; not point estimate"
+            }
+          },
+          "robust_informative": false
+        },
+        {
+          "grand": 0.42,
+          "orders": {
+            "before": {
+              "gated_loss": [
+                0.021459805576761748,
+                0.09102172156165933
+              ],
+              "ungated_loss": [
+                0.0006152509889461588,
+                0.05690322187263272
+              ],
+              "difference": [
+                -0.035443416295871,
+                0.09040647057271312
+              ],
+              "priority": "unresolved",
+              "interval_kind": "outer envelope; not point estimate"
+            },
+            "after": {
+              "gated_loss": [
+                0.0017006614463894731,
+                0.09102172156165933
+              ],
+              "ungated_loss": [
+                0.0006152509889461588,
+                0.07190322187263273
+              ],
+              "difference": [
+                -0.07020256042624329,
+                0.09040647057271312
+              ],
+              "priority": "unresolved",
+              "interval_kind": "outer envelope; not point estimate"
+            }
+          },
+          "robust_informative": false
+        },
+        {
+          "grand": 0.43,
+          "orders": {
+            "before": {
+              "gated_loss": [
+                0.051459805576761775,
+                0.09102172156165933
+              ],
+              "ungated_loss": [
+                0.0006152509889461588,
+                0.026903221872632693
+              ],
+              "difference": [
+                0.024556583704128998,
+                0.09040647057271312
+              ],
+              "priority": "gated",
+              "interval_kind": "outer envelope; not point estimate"
+            },
+            "after": {
+              "gated_loss": [
+                0.026459805576761752,
+                0.09102172156165933
+              ],
+              "ungated_loss": [
+                0.0006152509889461588,
+                0.04190322187263271
+              ],
+              "difference": [
+                -0.015443416295870926,
+                0.09040647057271312
+              ],
+              "priority": "unresolved",
+              "interval_kind": "outer envelope; not point estimate"
+            }
+          },
+          "robust_informative": false
+        },
+        {
+          "grand": 0.44,
+          "orders": {
+            "before": null,
+            "after": {
+              "gated_loss": [
+                0.05645980557676178,
+                0.09102172156165933
+              ],
+              "ungated_loss": [
+                0.0006152509889461588,
+                0.011903221872632763
+              ],
+              "difference": [
+                0.04455658370412896,
+                0.09040647057271312
+              ],
+              "priority": "gated",
+              "interval_kind": "outer envelope; not point estimate",
+              "literal_rounding_witness": null
+            }
+          },
+          "robust_informative": false
+        }
+      ]
+    }
+  },
+  "informative_grand_readings": [
+    0.38
+  ],
+  "decision": "PASS",
+  "interpretation": "Conditional public-mechanism sensitivity envelope; 93 draws cover at most30 prior submissions plus one probe. Reporting order unverified; outside-envelope events and unknown extra noise are not excluded. Feasible arms are not probable-arm forecasts.",
+  "source_hashes": {
+    "scripts/analyze_e054_resolution.py": "3850750849680e1357eb939ad86fde60f3ba7d50ecc1ba2352f2c80184ee9c4e",
+    "tests/test_e054_resolution.py": "db9cd25669b3e9b910f286970e49a009055a7aa28c97c76383d0a06f1cc48c92",
+    "external/starter-kit/score.py": "7049e99a48acef2a74f37cb49bb66b5a9af8d05d2ed8fcf530287b5e81c5042f",
+    "external/starter-kit/config.yml": "f22f8e4faa62b6af0ee8e7e887e35980511e4517655479fefeeef4519fc52c15",
+    "external/starter-kit/make_sandbox.py": "8cf628cbb4771ed6e91ad74ebb4f75b22667af39d8f48e01c956c675b1b1586b",
+    "external/starter-kit/data/unicef.json": "0bce08036cc563ee2a369dcee316ff8a5f89045d86991756d72c266927674396",
+    "external/starter-kit/data/world_bank.json": "6b3760742c6e864eb8d0bb2f9ec523a19a486b73282d79432dbcca16e3664125",
+    "external/starter-kit/data/unhcr.json": "b1175b6bdbd96e90a4defd83af20a38d711c6eca9fe3ce880109ff244abe80d9"
+  },
+  "registration_sha256": "2ff18a4848904af749b6d8a3e9ceae16e9f5ff578c0f5ae6eaa6d484baf092df",
+  "versions": {
+    "numpy": "2.5.1",
+    "scipy": "1.18.1"
+  }
+}

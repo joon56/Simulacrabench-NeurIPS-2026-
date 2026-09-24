@@ -64,7 +64,14 @@ tests/test_e054_probe.py -text
 docs/analysis/E054-outputs/*.json -text whitespace=cr-at-eol
 docs/analysis/E054-outputs/*.gz binary
 docs/analysis/E054-outputs/*.log -text
+docs/analysis/E054-outputs/*.py -text whitespace=cr-at-eol
+docs/analysis/E054-outputs/package-review.md -text whitespace=cr-at-eol
 docs/analysis/E054-outputs/*-prerun.md -text whitespace=cr-at-eol
 docs/analysis/E054-outputs/extracted/main.py -text
 submissions/2026-09-24-E054/main.py -text
 submissions/2026-09-24-E054/*.json -text whitespace=cr-at-eol
+docs/method-4p.md -text whitespace=cr-at-eol
+submissions/phase2-E025-preparation/method-4p-E025.md -text whitespace=cr-at-eol
+submissions/phase2-E041-preparation/method-4p-E041.md -text whitespace=cr-at-eol
+submissions/phase2-E025-preparation/method-4p-E025.pdf binary
+submissions/phase2-E041-preparation/method-4p-E041.pdf binary

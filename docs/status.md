@@ -1,11 +1,25 @@
 # STATUS — read this first in a new session (kept current at every commit)
 
-Updated: 2026-09-24 A012 complete: E041 phase2 locally qualified; E053 oracle STOP on both splits. E041 remains best. E041 result reported on 2026-09-19, continuing the supplied
+Updated: 2026-09-24 A013 complete: E054 exploratory probe qualified, limited information value; E041 four-page method complete. E041 remains best. E041 result reported on 2026-09-19, continuing the supplied
 2026-09-21 handoff; see `docs/phase2-preparation.md` for date provenance. Newest work is
 inserted at the TOP of docs/log.md; historical dated entries are newest-first.
 
 ## Where we are
 
+- **A013 complete: E054 measurement prepared; E041 method complete.** E054
+  uniformizes only final gated UNHCR vectors after unchanged E041 computation.
+  Formal93-draw information gate passes only at Grand.38; .39-.43 unresolved
+  across reporting orders. No arm passes both orders under6draws. Preregistration
+  prose ambiguity disclosed; no likely-useful-information or gain forecast.
+  Gated-item loss cannot distinguish gate logic from asked-content error.
+  ZIP checker/official all3 PASS,189649 vectors source/archive exact,
+ 338.472499s locally. Deliberate ablation lower score; unchanged base exactE041
+  and within .002 ofE025. Prepared#31, NOT submitted, NOT adopted. Read A013,
+  E054 and its SCORES.md before spending a slot. E041 four-page candidate
+  method rendered/reviewed; E025 originals preserved. No final promotion.
+  New research channel scout: official2023 SIPP documentation; no microdata
+  downloaded, no adapter/oracle/gain. Audit natural universes, public missing
+  encoding, repeated-person/copy/recoding leakage before any model. Next ID E055.
 - **A012 complete: E041 phase2 qualified locally; E053 oracle STOP.** E041
   official phase2 PASSx3, exact source/assembled vectors442,425cells, original
   ZIP checker PASS. Fresh E025 deltas0/0/-.000508449 meet absolute .002 gate;
@@ -226,7 +240,7 @@ unchanged experiments; first repair the evidence behind their interpretation.
    E052's registered .64/no-update arm now applies: park this fixed control
    without a blind routing-intensity grid. E050/E051
    oracle failures remain scoped stops, not universal real-data ceilings.
-   New IDs start at E054 and require
+   New IDs start at E055 and require
    a named mechanism, scoped oracle and
    honest evaluation. Keep E041 learned retrieval after E044's adverse reading;
    E045 .64 without update remains parked. E049 is a scoped pretrained-family
@@ -242,9 +256,11 @@ unchanged experiments; first repair the evidence behind their interpretation.
    A009 proposes whole-pipeline held-out calibration with its own scoped oracle;
    E042's postblend and Adult screens do not bound that full recursive family.
    Do not infer hosted activation from clean/household fallback. The historical
-   .79+.10 loss map describes E025, not E041. An E041 component probe can
-   separately guide real-data priorities; preregister its single-instrument
-   intervention and reading arms before building a package. No automatic upload.
+   .79+.10 loss map describes E025, not E041. E054 is now packaged, but A013
+   shows limited reading value; do not treat it as a strong next-slot choice.
+   No automatic upload. Next bounded work: audit the SIPP observed channel
+   described in A013-outputs/observed-channel-scout.md before defining a
+   recursive family/oracle. No fabricated gates or repeated-person leakage.
 2. **E041 phase2 engineering check complete; retain E025 fallback.** A012:
    E041 official skills .490197771/.462029505/.564665365,367.177s local inclusive
    official time, exact source/archive vectors, original ZIP checker PASS.
@@ -260,14 +276,15 @@ unchanged experiments; first repair the evidence behind their interpretation.
    readings: `submissions/phase2-E025-preparation/SCORES.md`. Fresh local
    rehearsal: ZIP OK, official phase-2 PASS x3 (same scores, 310.0 s),
    src parity exact x3 (268.1 s); hashes/results in adjacent `verification.json`.
-3. **E025 phase-2 method complete; E041 coverage pending.** Four rendered pages, corrected
-   agreement prior and replay limitations, six flat A/Bs, probe precision and
-   oracle. Codabench terms §7 checked: method required for every Test entry;
-   top three provide research-reproduction-licensed source at award stage.
-   Choose our release license before that delivery; no new license applied.
-   This document/PDF still describes the E025 fallback, not E041.
-   E041 phase2 qualification is complete (A012); update/render its method and
-   make the final choice before changing that package.
+3. **E041 four-page candidate method complete; E025 original preserved.**
+   docs/method-4p.md and output/pdf/method-4p.pdf now describe E041; candidate
+   copies and six-file hash manifest in phase2-E041-preparation. E025 original
+   source/PDF preserved in phase2-E025-preparation. A005/A011/E053/A012 scope,
+   actual retrieval/replay, Adult/TabPFN development and history disclosed.
+   All4 pages visually reviewed. Current kit/UCI/weight-license references
+   checked; Codabench current terms inaccessible. Clause7 is the earlier API
+   audit, not fresh verification. Choose release license before award delivery;
+   no license applied. Final model choice remains open.
 4. **Separate adoption from exploration; retain technical verification.**
    The user's latest direction permits a technically validated, preregistered
    exploratory candidate without a positive local adoption result. This

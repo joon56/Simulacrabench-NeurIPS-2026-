@@ -1,0 +1,21 @@
+{
+  "instrument": "unicef",
+  "phase": 1,
+  "cells": 17856,
+  "skill": 0.5006484230707156,
+  "base_skill": 0.5006484230707156,
+  "base_delta_e025": 0.0,
+  "base_raw_parity_e041": 0,
+  "untouched_vectors": 17856,
+  "uniform_replacements": 0,
+  "seconds": 35.24144069999966,
+  "decomposition": null,
+  "frame_sha256": "96a081fd7880bf0e06399d4a4e6fdfb332436b19ea08d754bacf87d377178a24",
+  "schema_sha256": "0bce08036cc563ee2a369dcee316ff8a5f89045d86991756d72c266927674396",
+  "data_sha256": "8e7c659d277c5145c7a8a6d055ac59a7dd3c35699317741239b6b1969bce1488",
+  "baseline_cache_hashes": {
+    "tmp/e043-eval/clean-unicef-E025.pkl": "15233fca155526c5a0606ebfbbd27558e57dc31b2b2bfe627beeecdcc248c620",
+    "tmp/e043-eval/clean-unicef-E041.pkl": "0a05cc024a5a37dd62ab19525c63c5f58b06431234ae69ae34378e128c61ad58"
+  },
+  "predictions_sha256": "4f8d7b5907bd5e1f09389f4330b973bdfe0c14dc7a2417d12dc2d58dd5352d95"
+}

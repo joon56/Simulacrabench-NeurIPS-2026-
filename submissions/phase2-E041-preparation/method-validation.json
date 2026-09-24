@@ -1,0 +1,56 @@
+﻿{
+    "candidate":  "E041 method draft; no final promotion",
+    "rendered_pages":  4,
+    "font_sizes_pt":  {
+                          "body":  10.5,
+                          "heading":  12,
+                          "title":  17,
+                          "table":  9,
+                          "formula":  8.2
+                      },
+    "visual_review":  "All four page images inspected; page 4 reinspected after E032/E033/E034 correction; no overflow, clipping or footer collision",
+    "checks":  {
+                   "e025_markdown_backup_identical":  true,
+                   "e025_pdf_backup_identical":  true,
+                   "e041_markdown_copy_identical":  true,
+                   "e041_pdf_copy_identical":  true
+               },
+    "files":  [
+                  {
+                      "path":  "docs/method-4p.md",
+                      "bytes":  11813,
+                      "sha256":  "b6346b682f77300b3ed758641047c26e372ff35072da746549bb75a0c388b8d4"
+                  },
+                  {
+                      "path":  "output/pdf/method-4p.pdf",
+                      "bytes":  13333,
+                      "sha256":  "1e76420052b5d523c46d477d875a54ccb5a49f2812109ec3333dcdae72fb27cd"
+                  },
+                  {
+                      "path":  "submissions/phase2-E041-preparation/method-4p-E041.md",
+                      "bytes":  11813,
+                      "sha256":  "b6346b682f77300b3ed758641047c26e372ff35072da746549bb75a0c388b8d4"
+                  },
+                  {
+                      "path":  "submissions/phase2-E041-preparation/method-4p-E041.pdf",
+                      "bytes":  13333,
+                      "sha256":  "1e76420052b5d523c46d477d875a54ccb5a49f2812109ec3333dcdae72fb27cd"
+                  },
+                  {
+                      "path":  "submissions/phase2-E025-preparation/method-4p-E025.md",
+                      "bytes":  13703,
+                      "sha256":  "3573c018507c1e7a716ce645fcfcb51b5e680e1bc211b7b13d09798b387c10fb"
+                  },
+                  {
+                      "path":  "submissions/phase2-E025-preparation/method-4p-E025.pdf",
+                      "bytes":  14941,
+                      "sha256":  "6eb5fa7907ef5647aa98c433fed01a3f7273ace7dd05f3d50a293b47b67437bc"
+                  }
+              ],
+    "sources":  [
+                    "https://github.com/SituatedEvals/public/blob/main/LICENSE",
+                    "https://archive.ics.uci.edu/dataset/2/adult",
+                    "https://huggingface.co/Prior-Labs/TabPFN-v2-clf/blob/main/LICENSE.txt",
+                    "https://www.codabench.org/competitions/17822/"
+                ]
+}

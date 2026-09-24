@@ -83,13 +83,13 @@ def render():
         canvas.line(margin, 36, width - margin, 36)
         canvas.setFont("Helvetica", 8)
         canvas.setFillColor(colors.HexColor("#505860"))
-        canvas.drawString(margin, 24, "HSCC 2026 | E025 | Method description")
+        canvas.drawString(margin, 24, "HSCC 2026 | E041 | Method candidate")
         canvas.drawRightString(width - margin, 24, str(doc.page))
 
     document = SimpleDocTemplate(str(OUTPUT), pagesize=A4, leftMargin=margin,
                                  rightMargin=margin, topMargin=40, bottomMargin=48,
-                                 title="Calibrated survey completion with visible-row evidence",
-                                 author="HSCC E025 submission")
+                                 title="Calibrated survey completion with section-specific retrieval",
+                                 author="HSCC E041 method candidate")
     document.build(story, onFirstPage=footer, onLaterPages=footer)
     pages = PdfReader(OUTPUT).pages
     if len(pages) != 4:

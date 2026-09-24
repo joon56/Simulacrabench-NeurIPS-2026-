@@ -1,0 +1,21 @@
+{
+  "instrument": "world_bank",
+  "phase": 1,
+  "cells": 39520,
+  "skill": 0.45471730736298255,
+  "base_skill": 0.45471730736298255,
+  "base_delta_e025": 0.0,
+  "base_raw_parity_e041": 0,
+  "untouched_vectors": 39520,
+  "uniform_replacements": 0,
+  "seconds": 87.36727880000035,
+  "decomposition": null,
+  "frame_sha256": "4c8da49f0d35b7ebfe49739a1619681ae998c2e0fd1cfd79fe7472606366a139",
+  "schema_sha256": "6b3760742c6e864eb8d0bb2f9ec523a19a486b73282d79432dbcca16e3664125",
+  "data_sha256": "4592bed873410c5248edf1205e5cab41dd30494926e3b49f8da598e266758c8a",
+  "baseline_cache_hashes": {
+    "tmp/e043-eval/clean-world_bank-E025.pkl": "1990723d414dcbfd7868dcaf408816cdef7c5c639615dec8195cef72298cd0cc",
+    "tmp/e043-eval/clean-world_bank-E041.pkl": "4744c074072c2420cd9b6616aa888e6ac89b992474a58a26c17a02a9ec458d58"
+  },
+  "predictions_sha256": "40f6d9544277b889fd5ac39a12ecd99065241d8263b7fd0316e51fc5213c66fb"
+}

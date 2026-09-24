@@ -45,4 +45,18 @@ combined local official time<900s. No production promotion from passing these.
 
 ## Results
 
-Pending local verification. Hosted result: not submitted.
+Hosted result: **not submitted**. Local technical qualification complete.
+
+| Instrument | Unchanged E041 base | E054 source and official | Official seconds |
+|---|---|---|---|
+| UNICEF | .5006484230707156 | .5006484230707156 | 38.848312 |
+| World Bank | .45471730736298255 | .45471730736298255 | 92.757984 |
+| UNHCR | .5624627288576414 | .10653234078927465 | 206.866203 |
+
+Checker PASS; all189649 raw vectors source/archive exact.96876 final gated
+UNHCR vectors replaced;92773 other vectors unchanged. Original base exact
+frozen E041; delta0/0/-.000486144847 vsE025 meets .002 unchanged-base gate.
+UNHCR decomposition predicts .10653234078927432, error3.3e-16. Combined local
+inclusive official time338.472499s<900. No hosted runtime claim or expected
+Grand inferred from these synthetic scores. Four intervention tests PASS.
+See verification.json and docs/analysis/E054-outputs/ for raw evidence.

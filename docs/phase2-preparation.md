@@ -1,16 +1,19 @@
-# E025 phase-2 preparation
+# Phase-2 preparation: E041 candidate and E025 fallback
 
 Update2026-09-24: E041 also completed local phase2 engineering qualification
 (A012): official PASSx3, exact source/assembly vectors,367.177s inclusive local
 time, paired UNHCR delta-.000508449 versus fresh E025, controls exact.
 See [E041 comparison](../submissions/phase2-E041-preparation/SCORES.md).
-This historical E025 runbook and its method remain the fallback; E041 method
-coverage and final-model choice are still pending. No hosted TEST upload.
+The E041 four-page candidate method is now prepared and visually checked
+(A013): `submissions/phase2-E041-preparation/method-4p-E041.pdf`, generated
+from `docs/method-4p.md`. Final-model choice remains open. No hosted TEST upload.
 
-The model of record remains `submissions/2026-09-09-E025/main.py`.
+The fallback remains `submissions/2026-09-09-E025/main.py`.
 Preparation is local only; no new leaderboard or Test submission was made.
-The four-page attachment is `output/pdf/method-4p.pdf`, generated from
-`docs/method-4p.md` by `scripts/render_method.py`.
+Its original method is preserved byte-for-byte at
+`submissions/phase2-E025-preparation/method-4p-E025.pdf` and adjacent Markdown.
+`output/pdf/method-4p.pdf` now describes E041. Pair any final archive with the
+matching method; the historical E025 commands and audit below remain unchanged.
 
 ## Provenance and clock
 
@@ -64,7 +67,7 @@ record in `docs/log.md`, not a new permission inferred from the API.
 The historical E032 second-account reading remains disclosed in the method
 and log; that account stays retired.
 
-## Method audit
+## Historical E025 method audit
 
 - Corrected gate shrinkage: toward the median observed agreement, not one.
 - Described held-out GIVEN frequencies used in matching without suggesting
