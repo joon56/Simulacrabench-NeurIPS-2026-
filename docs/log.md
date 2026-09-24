@@ -2,6 +2,27 @@
 
 Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-notes]].
 
+## 2026-09-24 - A014 observed channel accepted; E055 oracle registered
+
+- User approved sequential channel audit, scoped oracle, then conditional
+  learned calibration. Protocolce097c5 precedes public response inspection.
+  Official109036604-byte SIPP2023 ZIP cached outside Git. Streamed476744
+  person-month records, one month12/person,39513 total,39131 eligible.
+- Hospitalized3593;35538 not-in-universe reason blanks independently identified
+  by AHREASON0. Flags1/2/3 contain only valid1/2 answers; imputed responses
+  retained. Zero ambiguous/invalid outputs, duplicate keys or gate contradictions.
+  Six usable demographic inputs, no exact target copies. EEDUC/EMS5598 blanks
+  exactly age<15. SSUID group roles have zero overlap. Six focused tests PASS;
+  independent metadata/code/cached-data review accepts exact-gate proxy only.
+- E055 registered2a52f18 before model fitting/scoring. Same12000 label-independent
+  hash sample across two A014 role views; views overlap, not independent trials.
+  Existing12-point per-item/bucket shares, full star recursion and actual floor;
+  exact finite maximum via parent enumeration and conditional child optimization.
+  Original E041 endpoint preserved, dormant evidence uses unchanged recipe.
+  Both oracle skill/3 gains must exceed+.005+1e-10 before learning any repair.
+  Selection/audit remain unscored. Implementation and oracle execution pending.
+  This does not reopen E053's ungated stop or establish hidden-survey headroom.
+
 ## 2026-09-24 - Post-E054 next-action triage: concrete observed block
 
 - User asked what to do without a replacement candidate. E054 stays parked;

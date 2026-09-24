@@ -1,17 +1,20 @@
 # STATUS — read this first in a new session (kept current at every commit)
 
-Updated: 2026-09-24 A013 complete: E054 exploratory probe qualified, limited information value; E041 four-page method complete. E041 remains best. E041 result reported on 2026-09-19, continuing the supplied
+Updated: 2026-09-24 A014 observed channel accepted; E055 coupled-star oracle registered, execution pending. E041 remains best. E041 result reported on 2026-09-19, continuing the supplied
 2026-09-21 handoff; see `docs/phase2-preparation.md` for date provenance. Newest work is
 inserted at the TOP of docs/log.md; historical dated entries are newest-first.
 
 ## Where we are
 
-- **Post-E054 next action:** one-session public-extract suitability audit.
-  SIPP metadata triage found person-level EHREAS_* gated by THOSPNIT>=1;
-  public encoding/duplication/input suitability remain unverified. Household
-  food/housing copies are unsuitable as primary respondent-calibration evidence.
-  Read A013-outputs/observed-channel-scout.md follow-up. No model/data fit,
-  accepted channel or replacement submission yet; E054 remains parked.
+- **A014 channel ACCEPTED; E055 oracle registered, not yet scored.** Official
+  SIPP2023:39131 eligible month12 persons,3593 hospitalized,35538 flag0 blanks,
+  no invalid/ambiguous outputs or gate contradictions. Six GIVEN fields;
+  EEDUC/EMS missing5598 exactly age<15. IDs/flags excluded from model inputs.
+  Six audit tests and independent source/data review PASS. Processed US exact-
+  gate proxy only, not approximate UNHCR or a gain forecast. Data stays external/.
+  E055 fixes12000 ID-hash-selected persons, existing12-point share grid and
+  full parent-child recursion; both role views must pass oracle skill/3>.005
+  before learned calibration. Next ID E056. E054 remains parked/unsubmitted.
 - **A013 complete: E054 measurement prepared; E041 method complete.** E054
   uniformizes only final gated UNHCR vectors after unchanged E041 computation.
   Formal93-draw information gate passes only at Grand.38; .39-.43 unresolved

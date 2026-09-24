@@ -1,4 +1,4 @@
-# E055 - Coupled star replay oracle on observed SIPP
+# E055 — Coupled star replay oracle on observed SIPP
 parent: E041
 status: parked
 date: 2026-09-24
