@@ -1,0 +1,83 @@
+# A014 observed gated-channel audit implementation plan
+
+User approved sequential execution of the prior A013 follow-up design.
+Use subagent-driven-development for independent source/interpretation review;
+root owns data acquisition, protocol, integration and final commit/push.
+
+**Goal:** Accept or reject a bounded SIPP person-level hospital channel before
+model selection, then define a scoped recursive oracle only if accepted.
+
+**Architecture:** Immutable official release cache under external/sipp-2023/;
+new audit script/tests only. No production modules or incumbent files changed.
+Keep response extracts local and ignored; commit aggregate provenance/results.
+Metadata reviewers work independently while acquisition proceeds.
+
+**Tech stack:** Python stdlib, pandas, official Census dictionary and pipe data.
+
+## Fixed scope and preregistered gate
+
+- Official2023 primary release only, acquisition at most1GiB and30minutes.
+  Select reference month12 before any response inspection; one row per person.
+  Downloaded release SHA256, metadata SHA256, selected columns and source URLs
+  recorded. No competition respondent data, identity lookup or matching outside
+  the public release. No row-level records in Git or user-facing output.
+- Audit THOSPNIT and EHREAS_DT/BIR/OS/NST/OTH/COR. THHLDSTATUS, month12 age,
+  AHOSPNIT/AHREASON determine eligibility/encoding checks, never model inputs.
+  Primary population: new/returning persons, month12 age at least1, as specified
+  for THOSPNIT. Keep imputed answers; report their flags, do not select favorable
+  cases. Genuine ambiguous missing stays ambiguous; never infer a sentinel
+  solely to force consistency with a parent rule.
+- Proposed GIVEN candidates TAGE,ESEX,ERACE,EORIGIN,EEDUC,EMS only, pending
+  metadata availability and semantic check. Exclude all keys, household-copied
+  outcomes, target recodes, flags, health summaries and hospital parent as input.
+- Proposed PREDICT parent is fixed THOSPNIT coarsening0 versus>=1, plus six
+  natural reason fields. Coarsening loses duration information; it is disclosed
+  and exactly preserves this gate. No metadata-derived artificial answer.
+- PASS requires unique person-month keys, verified public missing semantics,
+  all eligible output values encodable without inventing missing answers,
+  at least5000 eligible persons and200 hospitalized persons, at least4 usable
+  candidate GIVEN fields and no direct target copies among them. Report all
+  gate contradictions without dropping them. Reject unsupported mapping.
+- Freeze deterministic respondent and conservative sample-unit SSUID group
+  splits before model scoring. Group-held-out split keeps spawned households
+  together. Roles fit/calibration/oracle/selection/audit use fixed50/15/15/10/10
+  hash-percent buckets with distinct namespace A014-person-v1/A014-household-v1.
+  Inspection of aggregate label counts means no untouched-population claim;
+  no model output or score may be used to change partitions.
+- Passing means usable observed structural proxy only, not UNHCR similarity,
+  calibration headroom, concentrated-donor activation or expected DEV score.
+
+## Task1: source and extraction audit
+
+- [ ] Cache official metadata and release; inspect archive/schema before reading
+  selected columns. Refuse overwrite; bound download and parsing resources.
+- [ ] Test key invariants first: duplicate person-month rejection, nonrandom
+  person/group splits deterministic under row reorder, ambiguous missing not
+  silently gated, whole output block hidden for future held-out respondents.
+- [ ] Implement scripts/audit_a014_sipp.py and tests/test_a014_sipp.py; record
+  counts/flags/parent-child cross-tabs, month duplication, feature provenance,
+  partition sizes and overlap checks in docs/analysis/A014-outputs/.
+- [ ] Independent metadata and code/result review; accept/reject channel with
+  all deviations and uncertainty disclosed. Stop dependent modeling if rejected.
+
+## Task2: conditional next experiment
+
+- [ ] If PASS, register a distinct finite recursive family including E041's
+  unchanged endpoint, donor/base outputs from equally held-out fits, official
+  floor and parent propagation. Specify what oracle bounds and what it does not.
+  Existing E053 ungated bucket stop is not silently reopened. Oracle skill/3
+  must exceed+.005 in both fixed structural splits before a learned estimator.
+- [ ] Execute oracle only if the family and adapter actually exercise the
+  proposed correction; log donor activity and occupancy without cherry-picking.
+  Selection/audit labels remain unscored until the appropriate later gate.
+- [ ] If oracle passes, implement learned calibration with separate roles and
+  verify gain/no-regression/runtime before submission packaging. If it fails,
+  record scoped STOP; no ZIP merely to fill a daily slot.
+
+## Task3: delivery
+
+- [ ] Update A014/status/log, applicable experiment/tree records, preserve
+  source/submission hashes, commit only task files, push private origin.
+
+Initial suitability audit limited to this work session. Acquisition failure
+is an unavailable-channel result, not statistical rejection or a model ceiling.
