@@ -58,3 +58,13 @@ docs/analysis/A013-outputs/*.json -text whitespace=cr-at-eol
 docs/analysis/A013-outputs/*-registration.md -text whitespace=cr-at-eol
 docs/analysis/A013-outputs/*.py -text whitespace=cr-at-eol
 docs/analysis/A013-outputs/*.log -text
+src/models/e041_gated_probe.py -text
+scripts/prepare_e054.py -text
+tests/test_e054_probe.py -text
+docs/analysis/E054-outputs/*.json -text whitespace=cr-at-eol
+docs/analysis/E054-outputs/*.gz binary
+docs/analysis/E054-outputs/*.log -text
+docs/analysis/E054-outputs/*-prerun.md -text whitespace=cr-at-eol
+docs/analysis/E054-outputs/extracted/main.py -text
+submissions/2026-09-24-E054/main.py -text
+submissions/2026-09-24-E054/*.json -text whitespace=cr-at-eol
