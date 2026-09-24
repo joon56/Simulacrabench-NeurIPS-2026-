@@ -6,6 +6,12 @@ inserted at the TOP of docs/log.md; historical dated entries are newest-first.
 
 ## Where we are
 
+- **Post-E054 next action:** one-session public-extract suitability audit.
+  SIPP metadata triage found person-level EHREAS_* gated by THOSPNIT>=1;
+  public encoding/duplication/input suitability remain unverified. Household
+  food/housing copies are unsuitable as primary respondent-calibration evidence.
+  Read A013-outputs/observed-channel-scout.md follow-up. No model/data fit,
+  accepted channel or replacement submission yet; E054 remains parked.
 - **A013 complete: E054 measurement prepared; E041 method complete.** E054
   uniformizes only final gated UNHCR vectors after unchanged E041 computation.
   Formal93-draw information gate passes only at Grand.38; .39-.43 unresolved

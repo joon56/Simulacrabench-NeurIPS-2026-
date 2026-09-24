@@ -55,3 +55,29 @@ The immediate deliverable of that audit is an accepted/rejected channel with
 its encoding/partition provenance, not another submission. No new experiment
 ID or score expectation is assigned here. This provides a concrete alternative
 to more Adult seeds or reliance on E054's weak reporting resolution.
+
+## Follow-up: concrete metadata triage, 2026-09-24
+
+Official dictionary checked again, printed pages20,35-41,1135-1141:
+EAWBRENT depends on EAWBMORT; EFOOD4 on EFOOD3; EFOOD5/6 use several food
+answers. These are household fields. Decision: do not use their person-row
+copies as the primary evidence for a respondent-level calibration improvement.
+A separate household-unit analysis could be valid but tests a different task.
+
+The person-level EHREAS_DT/BIR/OS/NST/OTH/COR block is restricted to THOSPNIT
+at least1. This is a concrete candidate for auditing a naturally gated block.
+AHREASON and topcoding summaries are audit metadata, not proposed predictors.
+This is dictionary-level suitability only: public missing encoding, counts,
+recoding, temporal duplication and usable GIVEN inputs are still unverified.
+No data extract, accepted validation channel, oracle or candidate exists yet.
+[Dictionary](https://www2.census.gov/programs-surveys/sipp/tech-documentation/data-dictionaries/2023/2023_SIPP_Data_Dictionary.pdf).
+
+Immediate sequence: inspect a bounded public extract without scoring models;
+freeze one reference month, whole-person and household split keys, inputs and
+all natural output levels; decide whether the block can test coupled routing
+without fabricated sentinels. If it cannot, reject this channel rather than
+construct favorable gates. If it can, preregister the exact recursive family
+and its oracle before estimator fitting. Restrict the initial suitability
+audit to one work session; do not make open-ended dataset hunting a prerequisite
+for every future candidate. Metadata screening is now complete; data audit
+remains the next executable deliverable.

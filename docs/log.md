@@ -2,6 +2,24 @@
 
 Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-notes]].
 
+## 2026-09-24 - Post-E054 next-action triage: concrete observed block
+
+- User asked what to do without a replacement candidate. E054 stays parked;
+  prioritize testing A011's inner replay/deployment mismatch, not packaging
+  an unmeasured repair. Historical E025 evidence contribution motivates the
+  operation but does not quantify E041's recoverable loss.
+- Followed up official2023 SIPP dictionary: household food/housing gates
+  identified, but reject their person-row copies as primary calibration-gain
+  evidence. Person-level EHREAS_* with THOSPNIT>=1 is a concrete candidate
+  block for a bounded encoding/duplication audit. This is metadata suitability,
+  not accepted microdata validation. No download, model, oracle or new ZIP.
+- Next executable deliverable: one-session bounded public-extract audit;
+  freeze mapping/splits without model scoring, then accept/reject the channel.
+  Only an accepted channel permits preregistering a scoped coupled oracle,
+  followed by separately held-out learned calibration if its gate passes.
+  Detailed findings appended to A013-outputs/observed-channel-scout.md.
+  No new score expectation or experiment ID; E055 remains next available.
+
 ## 2026-09-24 - A013 complete: E054 measurement qualified; E041 method ready
 
 - User authorized immediately feasible probe/method work. Registrationa29fa9f,
