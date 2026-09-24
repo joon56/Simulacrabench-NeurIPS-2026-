@@ -52,3 +52,9 @@ docs/analysis/A012-outputs/*.json -text whitespace=cr-at-eol
 docs/analysis/A012-outputs/*.py -text whitespace=cr-at-eol
 docs/analysis/A012-outputs/*.log -text
 submissions/phase2-E041-preparation/*.json -text whitespace=cr-at-eol
+scripts/analyze_e054_resolution.py -text
+tests/test_e054_resolution.py -text
+docs/analysis/A013-outputs/*.json -text whitespace=cr-at-eol
+docs/analysis/A013-outputs/*-registration.md -text whitespace=cr-at-eol
+docs/analysis/A013-outputs/*.py -text whitespace=cr-at-eol
+docs/analysis/A013-outputs/*.log -text
