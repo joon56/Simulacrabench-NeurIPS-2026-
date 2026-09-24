@@ -1,0 +1,256 @@
+{
+  "protocol": "E050-E051-2600fit-800oracle-800selection-800audit-v1",
+  "case": "adult",
+  "seed": 51,
+  "library_sha256": "ad7d767a94dcc7b3d624a2b512f1a3be8840d2a536ff80f68fa668e14fc4dd14",
+  "scored_partition": "oracle",
+  "selection_or_audit_evaluated": false,
+  "families": {
+    "E050": {
+      "base_log_score": -1.0137190039114992,
+      "oracle_log_score": -1.0137190039114992,
+      "uniform_reference": 1.5135850374401905,
+      "delta_log": 0.0,
+      "delta_skill": 0.0,
+      "delta_skill_over_3": 0.0,
+      "choices": [
+        "identity",
+        "identity",
+        "identity",
+        "identity",
+        "identity",
+        "identity",
+        "identity",
+        "identity"
+      ],
+      "components": [
+        {
+          "items": [
+            "marital-status"
+          ],
+          "choice": "identity",
+          "arm_log_scores": {
+            "identity": -1.1557424324370298,
+            "zero": -1.1557424324370298,
+            "half": -1.1557424324370298,
+            "toward_one": -1.1557424324370298,
+            "one": -1.1557424324370298
+          }
+        },
+        {
+          "items": [
+            "relationship"
+          ],
+          "choice": "identity",
+          "arm_log_scores": {
+            "identity": -1.2297429576539949,
+            "zero": -1.2297429576539949,
+            "half": -1.2297429576539949,
+            "toward_one": -1.2297429576539949,
+            "one": -1.2297429576539949
+          }
+        },
+        {
+          "items": [
+            "workclass"
+          ],
+          "choice": "identity",
+          "arm_log_scores": {
+            "identity": -1.3454695320231793,
+            "zero": -1.3454695320231793,
+            "half": -1.3454695320231793,
+            "toward_one": -1.3454695320231793,
+            "one": -1.3454695320231793
+          }
+        },
+        {
+          "items": [
+            "occupation"
+          ],
+          "choice": "identity",
+          "arm_log_scores": {
+            "identity": -2.1829427368977137,
+            "zero": -2.1829427368977137,
+            "half": -2.1829427368977137,
+            "toward_one": -2.1829427368977137,
+            "one": -2.1829427368977137
+          }
+        },
+        {
+          "items": [
+            "hours_band"
+          ],
+          "choice": "identity",
+          "arm_log_scores": {
+            "identity": -1.1217504000525218,
+            "zero": -1.1217504000525218,
+            "half": -1.1217504000525218,
+            "toward_one": -1.1217504000525218,
+            "one": -1.1217504000525218
+          }
+        },
+        {
+          "items": [
+            "income"
+          ],
+          "choice": "identity",
+          "arm_log_scores": {
+            "identity": -0.4698728717623337,
+            "zero": -0.4698728717623337,
+            "half": -0.4698728717623337,
+            "toward_one": -0.4698728717623337,
+            "one": -0.4698728717623337
+          }
+        },
+        {
+          "items": [
+            "capital_gain_positive"
+          ],
+          "choice": "identity",
+          "arm_log_scores": {
+            "identity": -0.36690414920987463,
+            "zero": -0.36690414920987463,
+            "half": -0.36690414920987463,
+            "toward_one": -0.36690414920987463,
+            "one": -0.36690414920987463
+          }
+        },
+        {
+          "items": [
+            "capital_loss_positive"
+          ],
+          "choice": "identity",
+          "arm_log_scores": {
+            "identity": -0.23732695125534495,
+            "zero": -0.23732695125534495,
+            "half": -0.23732695125534495,
+            "toward_one": -0.23732695125534495,
+            "one": -0.23732695125534495
+          }
+        }
+      ],
+      "rows": 800,
+      "whole_arm_delta_skill": {
+        "identity": 0.0,
+        "zero": 0.0,
+        "half": 0.0,
+        "toward_one": 0.0,
+        "one": 0.0
+      }
+    },
+    "E051": {
+      "base_log_score": -1.0137190039114992,
+      "oracle_log_score": -1.0118218566559625,
+      "uniform_reference": 1.5135850374401905,
+      "delta_log": 0.0018971472555366908,
+      "delta_skill": 0.0012534130614459493,
+      "delta_skill_over_3": 0.00041780435381531643,
+      "choices": [
+        "tree_0",
+        "tree_0.25",
+        "tree_0.25",
+        "tree_0.25",
+        "tree_0.25",
+        "tree_0",
+        "tree_0",
+        "tree_0.25"
+      ],
+      "components": [
+        {
+          "items": [
+            "marital-status"
+          ],
+          "choice": "tree_0",
+          "arm_log_scores": {
+            "tree_0": -1.1557424324370298,
+            "tree_0.25": -1.1587283102447643,
+            "tree_0.5": -1.16765150831636
+          }
+        },
+        {
+          "items": [
+            "relationship"
+          ],
+          "choice": "tree_0.25",
+          "arm_log_scores": {
+            "tree_0": -1.2297429576539949,
+            "tree_0.25": -1.2283146977583248,
+            "tree_0.5": -1.233511940794743
+          }
+        },
+        {
+          "items": [
+            "workclass"
+          ],
+          "choice": "tree_0.25",
+          "arm_log_scores": {
+            "tree_0": -1.3454695320231793,
+            "tree_0.25": -1.3415008828224881,
+            "tree_0.5": -1.3453902826184894
+          }
+        },
+        {
+          "items": [
+            "occupation"
+          ],
+          "choice": "tree_0.25",
+          "arm_log_scores": {
+            "tree_0": -2.1829427368977137,
+            "tree_0.25": -2.173631734323948,
+            "tree_0.5": -2.180139990748838
+          }
+        },
+        {
+          "items": [
+            "hours_band"
+          ],
+          "choice": "tree_0.25",
+          "arm_log_scores": {
+            "tree_0": -1.1217504000525218,
+            "tree_0.25": -1.1213155491986282,
+            "tree_0.5": -1.1256700122390917
+          }
+        },
+        {
+          "items": [
+            "income"
+          ],
+          "choice": "tree_0",
+          "arm_log_scores": {
+            "tree_0": -0.4698728717623337,
+            "tree_0.25": -0.4713037535764175,
+            "tree_0.5": -0.4739197258446906
+          }
+        },
+        {
+          "items": [
+            "capital_gain_positive"
+          ],
+          "choice": "tree_0",
+          "arm_log_scores": {
+            "tree_0": -0.36690414920987463,
+            "tree_0.25": -0.3669145012417859,
+            "tree_0.5": -0.3679500406020889
+          }
+        },
+        {
+          "items": [
+            "capital_loss_positive"
+          ],
+          "choice": "tree_0.25",
+          "arm_log_scores": {
+            "tree_0": -0.23732695125534495,
+            "tree_0.25": -0.2372925357350713,
+            "tree_0.5": -0.23827349900282654
+          }
+        }
+      ],
+      "rows": 800,
+      "whole_arm_delta_skill": {
+        "tree_0": 0.0,
+        "tree_0.25": 0.0008877983499976263,
+        "tree_0.5": -0.0018792278194044634
+      }
+    }
+  }
+}

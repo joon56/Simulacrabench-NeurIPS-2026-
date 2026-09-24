@@ -24,28 +24,30 @@ Choose only after preregistered oracle and actual learned evaluation.
 ## Tasks and progress ledger
 
 - [x] Read history/A009; register E050/E051 before execution. Branch work/e050-submission.
-- [ ] Build diagnostic library in src/eval/recursive_candidates.py with focused
+- [x] Build diagnostic library in src/eval/recursive_candidates.py with focused
   tests tests/test_recursive_candidates.py. e050_library(frame,schema) returns
   raw original vectors plus five mapped arm arrays and predicted components;
   identity must match E041 exactly. Cache private renderer globals; no imports
   from E049 and no original module mutation. e051_library uses same base and
   masked frame, fitting direct trees on visible rows only.
-- [ ] scripts/screen_e050_e051.py runs actual E041 on observed Adult schema
+- [x] scripts/screen_e050_e051.py runs actual E041 on observed Adult schema
   adapter and optionally clean/household. Save source/frame hashes, frozen
   library arrays and exact oracle results under docs/analysis/E050-outputs/.
   Adult5000 uses2600fit/800oracle/800selection/800audit; screen only oracle
   labels, leaving the learned-policy audit unread until its policy freezes.
   Do not fit selection policies before oracle passes. Use native schema values
   and GIVEN names; explicit generic stack invocation for observed schema only.
-- [ ] Independently review component separability, caching, label isolation,
+- [x] Independently review component separability, caching, label isolation,
   class mapping and bound scope. Compare candidate evidence in one ledger.
-- [ ] Register production details for the eligible winner, add new model module
+- [x] STOP: neither candidate qualified; no production details or selector.
+  Original conditional task: register production details for the eligible winner, add new model module
   with meaningful masking/fallback/active tests, and measure actual learned
   selection and untouched audit gain. If both gates fail, record stops before
   designing any distinct alternative; do not relabel a failed family as success.
-- [ ] Assemble winner from immutable E041/E025; clean all3 and active parity,
+- [x] Continued in the separately registered E052 plan: assemble fixed control
+  from immutable E041/E025; clean all3 and active parity,
   official checker/score all3, full active budget if clean falls back.
-- [ ] Record scorecard, experiment Result/Decision, submission index, status,
+- [x] Record scorecard, experiment Result/Decision, submission index, status,
   log top, analysis, tree; review final artifacts, commit experiment IDs, push.
 
 ## Validation commands

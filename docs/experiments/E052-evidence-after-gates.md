@@ -1,4 +1,4 @@
-# E052 - Fixed evidence-routing interaction control
+# E052 — Fixed evidence-routing interaction control
 parent: E041
 status: parked
 date: 2026-09-24
@@ -80,10 +80,52 @@ never fabricate hidden instrument values or activation from a flat reading.
 
 ## Result
 
-Not run at registration. Static algebra/history review found no blocker for
-this scoped exploratory control; no measured improvement or hosted forecast.
+Registration commit9be2d50 preceded implementation and all E052 runs. Both
+fixed endpoints match frozen E041 raw predictions exactly before intervention.
+
+| Channel | E041 skill | E052 skill | Delta skill | Changed vectors | Two-arm oracle skill/3 |
+| --- | --- | --- | --- | --- | --- |
+| Official clean UNHCR | .562462728858 | .562630019881 | +.000167291023 | 25,911/132,273 (19.589%) | .000055763674 |
+| Unchanged household seed13 | .552012531240 | .550932252799 | -.001080278441 | 58,506/180,411 (32.429%) | 0 |
+
+Clean delta against E025 is -.000318853824, within .002. Endpoint construction
+took192.339s clean and267.364s household with concurrent two-thread runs.
+Depth0 heads unchanged in both. Household mean log effects were negative at
+each gated depth; clean depths1-3 positive, depth4 negative. Descriptive slices
+are not selection rules. No settings changed in response. Frozen outputs,
+full item/depth/section effects and manifests: docs/analysis/E052-outputs/.
+
+Both optional selector oracle gates fail .005; no selector built. The unchanged
+household simulation favors retaining parent evidence, not this intervention.
+This is not evidence of useful double-counting removal or expected HSCC gain.
+Domain consistency: exact or copied gates can benefit from parent evidence;
+approximate real UNHCR gates remain an unmeasured transfer question.
+
+Sixteen initial library/helper tests PASS; independent24 randomized boundary
+and immutability probes PASS. Review found no endpoint semantic blocker. A
+screen-overwrite tooling issue was fixed after preserving executed bytes;
+20tests PASS after fix. Both current runs began in empty case outputs, so no
+result was lost. Executed screen is retained as screen-executed.py; manifests
+bind its pre-fix hash.
+
+Final combined34tests PASS12.03s; source all3 no-regression PASS against both
+frozen baselines. Controls raw-exact. Source skills .500648423071/.454717307363/
+.562630019881; predict total388.3703556s. Main-only ZIP checker and official
+phase1 all3 PASS with every raw probability exactly matching source.
+Official times43.794317007/108.333282232/250.667208672s, total402.794807911s
+<900 (wall416.2904894s), local CPU2threads. Hosted timing remains unmeasured.
+Natural active-path verifier matches all132,273 UNHCR vectors to the original
+diagnostic endpoint and source;25,911 changed versus E041. Ungated/GIVEN-parent
+boundaries raw-exact. Both diagnostic provenance manifests verified.
 
 ## Decision
 
-Parked, not adopted. No estimator is authorized by a failed oracle. Fixed
-exploratory packaging remains conditional on all required technical checks.
+Parked, not adopted. No estimator is authorized by a failed oracle. Proceed
+with the SAME fixed endpoint as a technically qualified exploratory control
+under the user's standing daily-submission preference; all required technical
+checks passed. Prepared as submission#30, submissions/2026-09-24-E052.zip;
+SCORES.md hosted arms were registered before any upload. No hosted result or
+agent upload. Clean activation is natural, so official clean source/archive
+parity also exercises the active path. E041 stays best.
+This choice tests a distinct interaction; it is not the winner of a demonstrated
+positive local candidate comparison and carries no .65 forecast.

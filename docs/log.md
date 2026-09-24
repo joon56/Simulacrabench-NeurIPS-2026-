@@ -2,6 +2,54 @@
 
 Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-notes]].
 
+## 2026-09-24 - E050/E051 oracle stops; E052 fixed routing control prepared
+
+- User authorized candidate-first experiments and today's submission artifact.
+  E041 remains DEV best .64/.52/.49/.92; E049 .64 without update remains parked.
+  No platform upload by agent. Work branch work/e050-submission.
+- E050/E051 preregistration8d4ccac preceded library fitting. Actual generic E041
+  stack on deduplicated observed Adult seeds51/52;2600fit/800oracle/800selection/
+  800audit. Whole2400 query PREDICT blocks masked before all first-stage fits.
+  The initial three-part outline was corrected before any fit/result. Public
+  vocabulary adapter and overlapping source populations are disclosed.
+- E050's five recursive evidence-strength arms: exact constant-component
+  oracle skill/3 0/.000013901722. E051 direct complete-answer tree mixtures:
+  .000417804354/.000380218507. Both fail .005; stopped before selectors or ZIPs.
+  Selection/audit remain unscored. Seed51 E050 exposed no evidence, so that
+  proxy reading cannot bound a survey with useful donors. No universal ceiling.
+- E051 runtime-only profile: eight largest-class heads .215-.794s/head;
+  sample-max extrapolation169.144s/full pass, not a measured full-run budget.
+  Fixed parameters/library outputs/source hashes and independent reviews saved.
+- Distinct E052 fixed structural control registered9be2d50 before execution.
+  Preserve E041 own-item evidence/lambdas and fits; suppress ancestor evidence
+  inside gate routing. No new selector or estimator, no favorable new simulator.
+  Original inner in-sample replay remains. Algebra/history review found no
+  equivalent prior test; removing correlated evidence is a hypothesis, not a
+  demonstrated defect. Historical E025 loss map is not E041's decomposition.
+- Exact original E041 endpoint parity0 on clean/unchanged household13. Fixed
+  E052 clean UNHCR .562630019881, delta+.000167291023 vsE041 and-.000318853824
+  vsE025. Household .550932252799, delta-.001080278441. Changed25,911/132,273
+  and58,506/180,411 vectors; depth0 exact. Optional componentoracle skill/3
+  .000055763674/0 fails; no selector built and no post-result tuning.
+- Household direction is adverse; no locally adopted improvement or .65
+  forecast. E052 is packaged only as the separately preregistered fixed
+  exploratory intervention under the standing daily-slot preference, subject
+  to technical qualification. E041 incumbent and E025 phase2 fallback retained.
+- Diagnostic review:16initial tests and24 independent randomized boundary/
+  immutability probes PASS. Rerun-overwrite risk fixed after original runs;
+ 20tests PASS and4guard tests independently PASS. No overwritten results or
+  refit. Executed screen bytes preserved with original manifest hashes.
+- Final34tests PASS12.03s; source all3 .500648423071/.454717307363/.562630019881,
+  controls raw-exact E041/E025, UNHCR within .002 of both. Source388.370s.
+  ZIP checker and official all3 PASS, every raw source/archive vector exact.
+  Official402.794807911s <900, wall416.2904894s, local CPU2threads. Hosted speed
+  unmeasured. Natural active verifier matches all132,273 UNHCR vectors to both
+  source and original diagnostic endpoint;25,911 changed, boundaries exact.
+  Both diagnostic provenance manifests rehashed; no additional fitting.
+- Prepared submissions/2026-09-24-E052.zip as #30, main-only15,436bytes.
+  SCORES.md reading arms precede any hosted result. Hashes/checks beside source;
+  records/tree updated. No platform upload, .65 forecast or phase2 promotion.
+
 ## 2026-09-24 - E049 hosted .64 without update; review the stalled search
 
 - User reported submission #29 Grand .64, no best update. Individual instrument

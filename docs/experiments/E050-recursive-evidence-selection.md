@@ -1,4 +1,4 @@
-# E050 - Held-out selection of recursive evidence strength
+# E050 — Held-out selection of recursive evidence strength
 parent: E041
 status: parked
 date: 2026-09-24
@@ -69,6 +69,8 @@ uninformative about a survey with useful donor evidence; it still fails the
 registered gate for this observed channel. Selection/audit remain unscored.
 Frozen libraries, manifests and oracle readings: docs/analysis/E050-outputs/.
 Eleven library tests PASS; independent spec/quality review found no blocker.
+Additional clean/household E050 libraries were not run after the observed
+gate failed; no simulation result is claimed for this family.
 
 Pre-execution clarification: the initial3000/1000/1000 outline was changed to
 2600/800/800/800 before any library fit or result, explicitly separating oracle

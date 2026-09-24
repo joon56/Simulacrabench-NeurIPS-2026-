@@ -1,4 +1,4 @@
-# E051 - Independent direct content trees against the actual E041 stack
+# E051 — Independent direct content trees against the actual E041 stack
 parent: E041
 status: parked
 date: 2026-09-24
@@ -59,6 +59,8 @@ no ensemble selector fitted. Frozen shared results: docs/analysis/E050-outputs/.
 Runtime-only eight-largest-class-head profile on clean UNHCR .215-.794s/head;
 this is feasibility, not efficacy or a measured complete-run budget.
 Eleven shared library tests PASS; independent spec/quality review clean.
+Additional clean/household E051 accuracy libraries were not run after this
+gate failed; the separate clean head profile measures runtime only.
 
 Pre-execution clarification: four disjoint partitions replace the initial
 three-part outline before any fit/result; oracle labels never serve as the

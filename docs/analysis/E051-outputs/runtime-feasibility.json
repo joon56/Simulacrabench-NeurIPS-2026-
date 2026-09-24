@@ -1,0 +1,60 @@
+{
+    "purpose":  "Eight largest-schema-class heads; runtime feasibility only, no gain reading",
+    "frame_sha256":  "0e6f1361d9e3d5a85fc8bad561cd486dc64fb7970ad07fd7f0074b629beaf836",
+    "fit_rows":  8279,
+    "query_rows":  621,
+    "rows":  [
+                 {
+                     "head":  "s3_4b_visit_month",
+                     "classes":  15,
+                     "observed_classes":  15,
+                     "seconds":  0.7941039999996065
+                 },
+                 {
+                     "head":  "s3_8b_return_month",
+                     "classes":  15,
+                     "observed_classes":  11,
+                     "seconds":  0.2985650999999052
+                 },
+                 {
+                     "head":  "s3_23a_safety_rank1_lbl",
+                     "classes":  11,
+                     "observed_classes":  11,
+                     "seconds":  0.5490502999991804
+                 },
+                 {
+                     "head":  "s3_23b_safety_rank2_lbl",
+                     "classes":  11,
+                     "observed_classes":  11,
+                     "seconds":  0.565093600000182
+                 },
+                 {
+                     "head":  "s3_4a_visit_year",
+                     "classes":  10,
+                     "observed_classes":  10,
+                     "seconds":  0.4909733000004053
+                 },
+                 {
+                     "head":  "s3_8a_return_year",
+                     "classes":  10,
+                     "observed_classes":  6,
+                     "seconds":  0.21492849999958707
+                 },
+                 {
+                     "head":  "s4_5_main_earner_relation_lbl",
+                     "classes":  10,
+                     "observed_classes":  10,
+                     "seconds":  0.561341500000708
+                 },
+                 {
+                     "head":  "s4_16_employment_type_lbl",
+                     "classes":  10,
+                     "observed_classes":  9,
+                     "seconds":  0.47002450000036333
+                 }
+             ],
+    "rough_all_head_seconds_using_sample_max":  169.14415199991618,
+    "warning":  "Extrapolation, not a measured all-head or shared-run budget.",
+    "script_sha256":  "f66b3ad39f09bf1a64c2ac9255ad11d0f2e0405a4910374157ae2fcac5638985",
+    "script_path":  "scripts/profile_e051_budget.py"
+}

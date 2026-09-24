@@ -16,3 +16,18 @@ scripts/oracle_e048.py -text
 scripts/*e049*.py -text
 scripts/time_official_score.py -text
 docs/analysis/E049-outputs/local-validation-constraints.txt -text whitespace=cr-at-eol
+src/eval/recursive_candidates.py -text
+src/eval/evidence_routing.py -text
+src/models/evidence_after_gates.py -text
+tests/test_recursive_candidates.py -text
+tests/test_evidence_routing.py -text
+tests/test_e052_submission.py -text
+scripts/*e050*.py -text
+scripts/*e051*.py -text
+scripts/*e052*.py -text
+submissions/2026-09-24-E052/main.py -text
+docs/analysis/E050-outputs/*.pkl binary
+docs/analysis/E050-outputs/*.npz binary
+docs/analysis/E052-outputs/*.pkl binary
+docs/analysis/E052-outputs/*.npz binary
+docs/analysis/E052-outputs/*.py -text

@@ -1,11 +1,25 @@
 # STATUS — read this first in a new session (kept current at every commit)
 
-Updated: 2026-09-24 E049 reported Grand .64 without update; parked. A009 reviews the stalled search. E041 remains best. E041 result reported on 2026-09-19, continuing the supplied
+Updated: 2026-09-24 E050/E051 stopped at observed oracle gates; E052 fixed routing control packaged as #30, all checks PASS. E041 remains best. E041 result reported on 2026-09-19, continuing the supplied
 2026-09-21 handoff; see `docs/phase2-preparation.md` for date provenance. Newest work is
 inserted at the TOP of docs/log.md; historical dated entries are newest-first.
 
 ## Where we are
 
+- **Today's work: E050/E051 stopped; E052 technically ready for exploration.** Actual E041
+  observed Adult seeds51/52, disjoint2600fit/800oracle/800selection/800audit.
+  E050 oracle skill/3 0/.000013902; E051 .000417804/.000380219, both fail. No
+  selectors or ZIPs; selection/audit unscored. These are proxy-family limits,
+  not UNHCR ceilings. E052 separately preregistered fixed structural control:
+  preserve own-item evidence/lambdas, remove ancestor-evidence gate propagation.
+  No new estimator. Clean UNHCR +.000167291 vsE041, -.000318854 vsE025;
+  household-.001080278, adverse. Optional selector oracle skill/3 .000055764/0
+  fails; no selector built. Neither proxy gain nor a .65 forecast is claimed.
+  Main-only submissions/2026-09-24-E052.zip (#30), preregistered SCORES.md.
+ 34tests/checker/official all3 PASS; source/archive/diagnostic endpoint raw
+  parity0,25,911 natural active vectors, unaffected boundaries exact. Official
+ 402.795s <900 locally. E052 parked, E041 incumbent, E025 phase2 unchanged.
+  Follow A010 and scorecard; no hosted upload or result yet.
 - Leaderboard best: **E041 — Grand 0.64 (unicef 0.52 / wb 0.49 / unhcr 0.92)**,
   user-reported on 2026-09-19; `submissions/2026-09-19-E041.zip` and matching
   snapshot directory. Previous E025: .63 / .52 / .49 / .89. Displayed gains:
@@ -104,7 +118,7 @@ inserted at the TOP of docs/log.md; historical dated entries are newest-first.
   Artifact: submissions/2026-09-23-E049.zip.
   No best improvement demonstrated, no .65 forecast, no phase2 promotion.
   A009: oracle-to-learner gap, surrogate transfer and unchanged inner replay
-  are the research priorities. No new E050 experiment executed or registered.
+  are the research priorities. Today's subsequent work is tracked above/A010.
 
 ## Historical E025 loss map (probe submissions E032–E034, unhcr)
 
@@ -173,7 +187,11 @@ unchanged experiments; first repair the evidence behind their interpretation.
    E047's sim gain and permissive observed oracle did not establish transfer.
    Read A009, A008 v13, E049's result and the latest scorecard before work.
    No blind coefficient/threshold grid or automatic threshold relaxation.
-   New experiments start at E050, require a named mechanism, scoped oracle and
+   Read E052's hosted result against its registered arms first; .64/no update
+   parks this fixed control without a blind routing-intensity grid. E050/E051
+   oracle failures remain scoped stops, not universal real-data ceilings.
+   New IDs start at E053 and require
+   a named mechanism, scoped oracle and
    honest evaluation. Keep E041 learned retrieval after E044's adverse reading;
    E045 .64 without update remains parked. E049 is a scoped pretrained-family
    test, not a universal model ceiling. Prioritize the unchanged inner E041
