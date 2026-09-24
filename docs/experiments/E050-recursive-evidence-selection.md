@@ -62,7 +62,13 @@ Pre-estimator candidate-library tooling only until the oracle gate is read.
 
 ## Result
 
-Not run at registration.
+Observed oracle seed51 skill/3 =0; seed52=.0000139017224502304, both below
+.005. Both runs completed natively with exit0. Seed51's retained E041 layer
+exposed no evidence, making every arm identical. The bound is therefore
+uninformative about a survey with useful donor evidence; it still fails the
+registered gate for this observed channel. Selection/audit remain unscored.
+Frozen libraries, manifests and oracle readings: docs/analysis/E050-outputs/.
+Eleven library tests PASS; independent spec/quality review found no blocker.
 
 Pre-execution clarification: the initial3000/1000/1000 outline was changed to
 2600/800/800/800 before any library fit or result, explicitly separating oracle
@@ -70,5 +76,7 @@ screening from the later learned-policy audit. No outputs existed at this change
 
 ## Decision
 
-Parked pending screening. Adoption requires >.005 three-instrument mean gain;
-technical qualification and exploratory submission are separate decisions.
+Parked at the registered oracle gate. No E050 selector, production model or
+ZIP. Do not relax the gate or claim a UNHCR recursive-calibration ceiling.
+The distinct E052 fixed structural control is separately registered after
+this stop; it does not retroactively make E050 pass.

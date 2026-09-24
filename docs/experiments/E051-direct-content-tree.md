@@ -53,7 +53,12 @@ Only a fixed predictor library for oracle screening at registration.
 
 ## Result
 
-Not run at registration.
+Actual-E041 observed oracle skill/3: seed51=.00041780435381531643;
+seed52=.00038021850656629557. Both fail .005. Selection/audit remain unscored;
+no ensemble selector fitted. Frozen shared results: docs/analysis/E050-outputs/.
+Runtime-only eight-largest-class-head profile on clean UNHCR .215-.794s/head;
+this is feasibility, not efficacy or a measured complete-run budget.
+Eleven shared library tests PASS; independent spec/quality review clean.
 
 Pre-execution clarification: four disjoint partitions replace the initial
 three-part outline before any fit/result; oracle labels never serve as the
@@ -61,4 +66,6 @@ learned-policy audit. See E050 for the complete correction provenance.
 
 ## Decision
 
-Parked pending screening; no adoption or score forecast. No E051 ZIP yet.
+Parked at the registered oracle gate; no production selector or E051 ZIP.
+This bounds only the fixed mixtures on the observed proxy, not every tree
+model or real survey headroom. No post-result tree/share/threshold grid.
