@@ -1,0 +1,340 @@
+{
+  "protocol": "E053-uncensored-buckets-2600-800-800-800-v1",
+  "seed": 54,
+  "scored_partition": "oracle",
+  "selection_or_audit_evaluated": false,
+  "capture_sha256": "b9e608a63763e5478a193b86c1ed1e0fa5a03120233887d4c04e1f76ed93a2af",
+  "original_five_arm": {
+    "base_log_score": -1.008211687831951,
+    "oracle_log_score": -1.0062384907506199,
+    "uniform_reference": 1.5135850374401905,
+    "delta_log": 0.001973197081331035,
+    "delta_skill": 0.0013036578933603566,
+    "delta_skill_over_3": 0.00043455263112011884,
+    "choices": [
+      "identity",
+      "identity",
+      "identity",
+      "identity",
+      "identity",
+      "toward_one",
+      "zero",
+      "identity"
+    ],
+    "components": [
+      {
+        "items": [
+          "marital-status"
+        ],
+        "choice": "identity",
+        "arm_log_scores": {
+          "identity": -1.1705107959474446,
+          "zero": -1.1705107959474446,
+          "half": -1.1705107959474446,
+          "toward_one": -1.1897606445375568,
+          "one": -1.2954058444295324
+        }
+      },
+      {
+        "items": [
+          "relationship"
+        ],
+        "choice": "identity",
+        "arm_log_scores": {
+          "identity": -1.236761299202181,
+          "zero": -1.236761299202181,
+          "half": -1.236761299202181,
+          "toward_one": -1.2615278732754625,
+          "one": -1.3918974019182537
+        }
+      },
+      {
+        "items": [
+          "workclass"
+        ],
+        "choice": "identity",
+        "arm_log_scores": {
+          "identity": -1.2762816697549022,
+          "zero": -1.2762816697549022,
+          "half": -1.2762816697549022,
+          "toward_one": -1.2909069378972666,
+          "one": -1.4315217211134523
+        }
+      },
+      {
+        "items": [
+          "occupation"
+        ],
+        "choice": "identity",
+        "arm_log_scores": {
+          "identity": -2.2608729365754656,
+          "zero": -2.2608729365754656,
+          "half": -2.2608729365754656,
+          "toward_one": -2.2994611232424957,
+          "one": -2.6098516576122823
+        }
+      },
+      {
+        "items": [
+          "hours_band"
+        ],
+        "choice": "identity",
+        "arm_log_scores": {
+          "identity": -1.1425389587363695,
+          "zero": -1.1425389587363695,
+          "half": -1.1425389587363695,
+          "toward_one": -1.1541024386363705,
+          "one": -1.2130502077218153
+        }
+      },
+      {
+        "items": [
+          "income"
+        ],
+        "choice": "toward_one",
+        "arm_log_scores": {
+          "identity": -0.4503574560966808,
+          "zero": -0.453859507240342,
+          "half": -0.45189725413616183,
+          "toward_one": -0.4480355974903937,
+          "one": -0.45270301948342767
+        }
+      },
+      {
+        "items": [
+          "capital_gain_positive"
+        ],
+        "choice": "zero",
+        "arm_log_scores": {
+          "identity": -0.32264626905658406,
+          "zero": -0.3091825510122224,
+          "half": -0.31355577541320434,
+          "toward_one": -0.32924020449192787,
+          "one": -0.34589318330830976
+        }
+      },
+      {
+        "items": [
+          "capital_loss_positive"
+        ],
+        "choice": "identity",
+        "arm_log_scores": {
+          "identity": -0.20572411728597953,
+          "zero": -0.20572411728597953,
+          "half": -0.20572411728597953,
+          "toward_one": -0.20726210107197804,
+          "one": -0.2172023759110732
+        }
+      }
+    ],
+    "rows": 800,
+    "whole_arm_delta_skill": {
+      "identity": 0.0,
+      "zero": 0.0008226880761807037,
+      "half": 0.0006235770882642407,
+      "toward_one": -0.009464567166115757,
+      "one": -0.07365227975155818
+    }
+  },
+  "returned_bucket": {
+    "delta_skill": 0.0015693647601242758,
+    "delta_skill_over_3": 0.0005231215867080919,
+    "upper_skill_over_3": 0.0005231215867080293,
+    "log_optimality_gap": 0.0,
+    "baseline_skill": 0.3338916130295122,
+    "oracle_skill": 0.33546097778963635,
+    "cells": 6400,
+    "changed_vectors": 5600,
+    "buckets": [
+      {
+        "item": "marital-status",
+        "bucket": 0,
+        "rows": 800,
+        "identity_log": -1.1705107959474446,
+        "selected": "optimized",
+        "lambda": 0.029708120335923544,
+        "log_score": -1.1704220486052588,
+        "log_upper": -1.1704220486052588,
+        "tangent_gap": 1.0550359249173763e-18
+      },
+      {
+        "item": "relationship",
+        "bucket": 0,
+        "rows": 800,
+        "identity_log": -1.236761299202181,
+        "selected": "identity",
+        "lambda": 0.0,
+        "log_score": -1.236761299202181,
+        "log_upper": -1.236761299202181,
+        "tangent_gap": 0.0
+      },
+      {
+        "item": "workclass",
+        "bucket": 0,
+        "rows": 800,
+        "identity_log": -1.2762816697549022,
+        "selected": "optimized",
+        "lambda": 0.11600075089890874,
+        "log_score": -1.2745687955483647,
+        "log_upper": -1.2745687955483647,
+        "tangent_gap": 1.287867045217758e-19
+      },
+      {
+        "item": "occupation",
+        "bucket": 0,
+        "rows": 800,
+        "identity_log": -2.2608729365754656,
+        "selected": "optimized",
+        "lambda": 0.06736610166697982,
+        "log_score": -2.259819206654596,
+        "log_upper": -2.259819206654596,
+        "tangent_gap": 1.21587260037928e-17
+      },
+      {
+        "item": "hours_band",
+        "bucket": 0,
+        "rows": 800,
+        "identity_log": -1.1425389587363695,
+        "selected": "optimized",
+        "lambda": 0.04078190976881531,
+        "log_score": -1.142446919321605,
+        "log_upper": -1.142446919321605,
+        "tangent_gap": 2.085483097838258e-18
+      },
+      {
+        "item": "income",
+        "bucket": 0,
+        "rows": 800,
+        "identity_log": -0.4503574560966808,
+        "selected": "optimized",
+        "lambda": 0.5532281962281449,
+        "log_score": -0.4479925315188868,
+        "log_upper": -0.4479925315188868,
+        "tangent_gap": 6.142066813243306e-19
+      },
+      {
+        "item": "capital_gain_positive",
+        "bucket": 0,
+        "rows": 800,
+        "identity_log": -0.32264626905658406,
+        "selected": "optimized",
+        "lambda": 0.0,
+        "log_score": -0.3091825510122224,
+        "log_upper": -0.3091825510122224,
+        "tangent_gap": 0.0
+      },
+      {
+        "item": "capital_loss_positive",
+        "bucket": 0,
+        "rows": 800,
+        "identity_log": -0.20572411728597953,
+        "selected": "optimized",
+        "lambda": 0.125560085494705,
+        "log_score": -0.2054972146388117,
+        "log_upper": -0.2054972146388117,
+        "tangent_gap": 0.0
+      }
+    ]
+  },
+  "uncensored_bucket": {
+    "delta_skill": 0.0015693647601242758,
+    "delta_skill_over_3": 0.0005231215867080919,
+    "upper_skill_over_3": 0.0005231215867080293,
+    "log_optimality_gap": 0.0,
+    "baseline_skill": 0.3338916130295122,
+    "oracle_skill": 0.33546097778963635,
+    "cells": 6400,
+    "changed_vectors": 5600,
+    "buckets": [
+      {
+        "item": "marital-status",
+        "bucket": 0,
+        "rows": 800,
+        "identity_log": -1.1705107959474446,
+        "selected": "optimized",
+        "lambda": 0.029708120335923544,
+        "log_score": -1.1704220486052588,
+        "log_upper": -1.1704220486052588,
+        "tangent_gap": 1.0550359249173763e-18
+      },
+      {
+        "item": "relationship",
+        "bucket": 0,
+        "rows": 800,
+        "identity_log": -1.236761299202181,
+        "selected": "identity",
+        "lambda": 0.0,
+        "log_score": -1.236761299202181,
+        "log_upper": -1.236761299202181,
+        "tangent_gap": 0.0
+      },
+      {
+        "item": "workclass",
+        "bucket": 0,
+        "rows": 800,
+        "identity_log": -1.2762816697549022,
+        "selected": "optimized",
+        "lambda": 0.11600075089890874,
+        "log_score": -1.2745687955483647,
+        "log_upper": -1.2745687955483647,
+        "tangent_gap": 1.287867045217758e-19
+      },
+      {
+        "item": "occupation",
+        "bucket": 0,
+        "rows": 800,
+        "identity_log": -2.2608729365754656,
+        "selected": "optimized",
+        "lambda": 0.06736610166697982,
+        "log_score": -2.259819206654596,
+        "log_upper": -2.259819206654596,
+        "tangent_gap": 1.21587260037928e-17
+      },
+      {
+        "item": "hours_band",
+        "bucket": 0,
+        "rows": 800,
+        "identity_log": -1.1425389587363695,
+        "selected": "optimized",
+        "lambda": 0.04078190976881531,
+        "log_score": -1.142446919321605,
+        "log_upper": -1.142446919321605,
+        "tangent_gap": 2.085483097838258e-18
+      },
+      {
+        "item": "income",
+        "bucket": 0,
+        "rows": 800,
+        "identity_log": -0.4503574560966808,
+        "selected": "optimized",
+        "lambda": 0.5532281962281449,
+        "log_score": -0.4479925315188868,
+        "log_upper": -0.4479925315188868,
+        "tangent_gap": 6.142066813243306e-19
+      },
+      {
+        "item": "capital_gain_positive",
+        "bucket": 0,
+        "rows": 800,
+        "identity_log": -0.32264626905658406,
+        "selected": "optimized",
+        "lambda": 0.0,
+        "log_score": -0.3091825510122224,
+        "log_upper": -0.3091825510122224,
+        "tangent_gap": 0.0
+      },
+      {
+        "item": "capital_loss_positive",
+        "bucket": 0,
+        "rows": 800,
+        "identity_log": -0.20572411728597953,
+        "selected": "optimized",
+        "lambda": 0.125560085494705,
+        "log_score": -0.2054972146388117,
+        "log_upper": -0.2054972146388117,
+        "tangent_gap": 0.0
+      }
+    ]
+  },
+  "gate": "STOP"
+}

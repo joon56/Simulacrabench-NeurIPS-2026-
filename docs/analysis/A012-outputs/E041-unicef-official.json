@@ -1,0 +1,74 @@
+{
+  "data": "C:\\Users\\USER\\Desktop\\SimulacraBench\\external\\starter-kit\\_sandbox\\unicef",
+  "schema": "C:\\Users\\USER\\Desktop\\SimulacraBench\\external\\starter-kit\\data\\unicef.json",
+  "phase": 2,
+  "seed": 0,
+  "n_respondents": 19846,
+  "n_held_out": 3473,
+  "n_cells": 41676,
+  "status": "PASS",
+  "skill": 0.49019777070093806,
+  "reported_skill": 0.49019777070093806,
+  "log_score": -0.7963324030723354,
+  "uniform_reference": 1.5620418219183347,
+  "privacy": {
+    "noised": false,
+    "round_to": null
+  },
+  "std_error": 0.007032363680095077,
+  "item_normalized": -0.7963324030723355,
+  "brier": 0.41904766413485006,
+  "baseline_uniform": -1.5620418219183347,
+  "baseline_crowd": -1.3178241707646756,
+  "seconds": 43.335707902908325,
+  "by_item": {
+    "Q06": {
+      "log_score": -1.1374309541711611,
+      "n_cells": 3473
+    },
+    "Q07": {
+      "log_score": -0.6514422497466703,
+      "n_cells": 3473
+    },
+    "Q08": {
+      "log_score": -0.4070264086688206,
+      "n_cells": 3473
+    },
+    "Q09": {
+      "log_score": -0.6769836605841545,
+      "n_cells": 3473
+    },
+    "Q10": {
+      "log_score": -1.172451892469411,
+      "n_cells": 3473
+    },
+    "Q11": {
+      "log_score": -1.1528604382240843,
+      "n_cells": 3473
+    },
+    "Q12": {
+      "log_score": -1.285407819389785,
+      "n_cells": 3473
+    },
+    "Q14": {
+      "log_score": -0.5168519904470487,
+      "n_cells": 3473
+    },
+    "Q15": {
+      "log_score": -0.4866938290109851,
+      "n_cells": 3473
+    },
+    "Q16": {
+      "log_score": -0.5693750301695817,
+      "n_cells": 3473
+    },
+    "Q17": {
+      "log_score": -0.7912036812264954,
+      "n_cells": 3473
+    },
+    "Q18": {
+      "log_score": -0.7082608827598283,
+      "n_cells": 3473
+    }
+  }
+}

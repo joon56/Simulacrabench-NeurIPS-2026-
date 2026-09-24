@@ -1,6 +1,6 @@
 # E053 — Uncensored donor evidence with absolute bucket calibration
 parent: E041
-status: parked
+status: rejected
 date: 2026-09-24
 
 ## Hypothesis
@@ -98,13 +98,59 @@ Use2threads; wait for A012 phase2 timing to finish before any full fits.
 
 ## Result
 
-Not run at registration. No expected score or positive-transfer claim.
+Both registered splits completed, exit0, after A012 phase2 timing finished.
+Registration commit a452465 and implementation commit 570738f preceded fits.
+The identical preregistration bytes are archived beside each capture; SHA256
+08c2f15d49a6934dcc9976834823479ea70c229dd52ffaa4435e567d24d74a5d.
+Executed script SHA256
+6fcf6a1511ca267616d146a79a193e8bb932f08dccc55e69b7c6e47c2aa194bf.
+
+All values below are Adult oracle skill/3, an arithmetic mean-equivalent scale,
+not predicted Grand gains. Each split scores800oracle rows/6400cells only.
+
+| Seed | Legacy five-arm | Returned continuous buckets | Uncensored primary | Certified upper | Gate |
+|---|---:|---:|---:|---:|---|
+|54|+.000434552631|+.000523121587|+.000523121587|+.000523121587|STOP|
+|55|+.000003739795|+.000172892178|+.000172892178|+.000172892178|STOP|
+
+Baseline/oracle Adult skills are .333891613030/.335460977790 and
+.346976208156/.347494884689. Fit-and-capture times7.956/7.760s. Both numerical
+pooled log gaps are0 at recorded precision; upper/attained skill arithmetic
+differs by less than7e-17 due to rounding, far from the .005 decision boundary.
+Frozen endpoint raw parity and lambda reconstruction passed before scoring.
+Captures, arrays, metadata and registration were persisted before oracle labels
+were mapped. Selection/audit were not scored. Known prior-role overlaps are
+archived explicitly; these are not untouched public populations.
+
+Both fits naturally returned donor evidence: dormant materialization was NOT
+activated. Returned and uncensored results are therefore identical. This run
+does not isolate the benefit of recovering suppressed evidence. The sole
+learned section was active in each fit; all2400queries had evidence on all
+eight heads and were in concentration bucket0 (800oracle rows likewise).
+Thus second-bucket freedom was not naturally exercised either. Raw endpoint
+and reconstruction maximum errors were0. Changed-vector counts5600/6400 can
+include normalization-only changes; they are not counts of substantive gains.
+The five-arm
+comparison includes lambda1 while the primary stops at.98, so these families
+are not strictly nested despite the primary's greater bucket freedom.
+Complete bucket optima, diagnostics, evidence availability, donor records and
+exposure inventory are in docs/analysis/E053-outputs/. Pre-fit validation:
+13focused tests PASS; independent reviewer-authored scalar probe80checks PASS,
+max difference1.78e-15 versus independent numerical optimization.
+
+Domain verdict: a small allocation gain on an ungated public proxy is compatible
+with A011's optimism diagnostic, but neither proves a deployable repair nor
+transfers to household evidence and approximate survey gates. No new simulated
+structure or positive subset was used to rescue a failed threshold.
 
 ## Decision
 
-Parked pending primary oracle. A failed split stops this candidate before a
-learned calibrator, production module or ZIP. Passing both authorizes only a
-separately specified learned calibration/selection/audit study and a valid
-gated-family assessment; it does not authorize adoption or final submission.
+Rejected for further estimator work under the registered gate: both certified
+proxy bounds are below.005. No learned calibrator, production module or ZIP.
+Do not lower the threshold, search more seeds or relabel this family to reopen
+it. This is a resource-allocation stop on these ungated proxy channels, not a
+bound on nonlinear UNHCR recursion or proof that honest calibration cannot help.
+Any future recursive family needs a distinct specification and a valid oracle;
+the scalar bound here cannot be reused for coupled parent/descendant changes.
 The standing adoption bar remains actual mean skill improvement>.005, with
 required no-regression/parity/official/runtime checks. No threshold relaxation.

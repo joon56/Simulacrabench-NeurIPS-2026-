@@ -1,11 +1,24 @@
 # STATUS — read this first in a new session (kept current at every commit)
 
-Updated: 2026-09-24 E052 reported Grand .64 without best update; parked, effect unresolved. A011 complete; E041 remains best. E041 result reported on 2026-09-19, continuing the supplied
+Updated: 2026-09-24 A012 complete: E041 phase2 locally qualified; E053 oracle STOP on both splits. E041 remains best. E041 result reported on 2026-09-19, continuing the supplied
 2026-09-21 handoff; see `docs/phase2-preparation.md` for date provenance. Newest work is
 inserted at the TOP of docs/log.md; historical dated entries are newest-first.
 
 ## Where we are
 
+- **A012 complete: E041 phase2 qualified locally; E053 oracle STOP.** E041
+  official phase2 PASSx3, exact source/assembled vectors442,425cells, original
+  ZIP checker PASS. Fresh E025 deltas0/0/-.000508449 meet absolute .002 gate;
+ 367.177s inclusive local official time<3600. No hosted runtime/memory guarantee,
+  final promotion or upload. Comparison: submissions/phase2-E041-preparation/.
+  E053 preregistered before fits: unchanged donor recipe plus absolute bucket
+  weights on ungated Adult54/55. Oracle skill/3 upper+.000523122/+.000172892
+  both fail+.005; no calibrator or ZIP. Both fits already returned evidence;
+  all queries diffuse, so dormancy/second-bucket extensions were not naturally
+  exercised. This stops the registered proxy study, not nonlinear UNHCR
+  calibration. Selection/audit unscored; prior-population overlap disclosed.
+ 13oracle+5phase2 focused tests and independent frozen-artifact checks PASS.
+  Read A012, E053 and docs/plans/2026-09-24-A012.md for results/deviations.
 - **E052 reported Grand .64 without best update; keep E041, park E052.**
   Submission #30 completed; user report recorded2026-09-24. Instrument scores,
   exact upload time and hosted runtime unavailable. Registered unresolved arm:
@@ -58,7 +71,7 @@ inserted at the TOP of docs/log.md; historical dated entries are newest-first.
   posterior, replay-calibrated λ with concentration buckets) → hh_cap
   per-instrument config {64×2, 128×2+do} (E025), then supervised section
   retrieval on UNHCR only (E041, `supervised_retrieval.py`).
-- **User priority: improve DEV rank.** A006 reopens validation auditing:
+- **User priority: win final TEST; use DEV to assess real-data candidates.** A006 reopens validation auditing:
   E040 compares an out-of-sample tree with an in-sample refitted net, and
   tuning/deployment mixture formulas differ. Historical flat scores remain;
   the claim that all real-data base-model headroom is exhausted is withdrawn.
@@ -213,7 +226,7 @@ unchanged experiments; first repair the evidence behind their interpretation.
    E052's registered .64/no-update arm now applies: park this fixed control
    without a blind routing-intensity grid. E050/E051
    oracle failures remain scoped stops, not universal real-data ceilings.
-   New IDs start at E053 and require
+   New IDs start at E054 and require
    a named mechanism, scoped oracle and
    honest evaluation. Keep E041 learned retrieval after E044's adverse reading;
    E045 .64 without update remains parked. E049 is a scoped pretrained-family
@@ -221,14 +234,23 @@ unchanged experiments; first repair the evidence behind their interpretation.
    replay validation and actual learned gain before another costly package.
    A011 now measures membership and deployment-objective mismatch in three
    fixed channels; it establishes no recoverable skill. Read its complete
-   findings before E053. Already inspected A011 rows cannot be relabeled an
-   untouched audit set. Define a distinct recursive family and its scoped
-   oracle before building a repair; do not reopen E050 with a new name.
+   findings with the completed E053 stop. Already inspected A011/E053 rows
+   cannot be relabeled an untouched audit set. E053's ungated absolute-weight
+   oracle failed both splits; no more seeds or lowered threshold for that
+   family. Define a distinct recursive family and a valid coupled oracle
+   before building a repair; do not reopen E050/E053 with a new name.
    A009 proposes whole-pipeline held-out calibration with its own scoped oracle;
    E042's postblend and Adult screens do not bound that full recursive family.
    Do not infer hosted activation from clean/household fallback. The historical
-   .79+.10 loss map describes E025, not E041. No automatic hosted upload.
-2. **Keep the phase-2 fallback ready.** The file is
+   .79+.10 loss map describes E025, not E041. An E041 component probe can
+   separately guide real-data priorities; preregister its single-instrument
+   intervention and reading arms before building a package. No automatic upload.
+2. **E041 phase2 engineering check complete; retain E025 fallback.** A012:
+   E041 official skills .490197771/.462029505/.564665365,367.177s local inclusive
+   official time, exact source/archive vectors, original ZIP checker PASS.
+   Fresh paired E025 delta0/0/-.000508449 meets absolute .002 per instrument.
+   This is local qualification, not final selection or TEST gain evidence.
+   Comparison/provenance: submissions/phase2-E041-preparation/. Fallback file:
    `submissions/2026-09-09-E025/main.py` (hardened: `score.py --phase 2`
    PASS ×3 = 0.4902 / 0.4620 / 0.5652, 291 s local CPU, worst case no-GPU
    ≈ 1,000–1,200 s ≪ 3,600 s, smoke frame OK, 8 clean hosted runs). In the
@@ -243,8 +265,9 @@ unchanged experiments; first repair the evidence behind their interpretation.
    oracle. Codabench terms §7 checked: method required for every Test entry;
    top three provide research-reproduction-licensed source at award stage.
    Choose our release license before that delivery; no new license applied.
-   This document/PDF still describes the E025 fallback, not E041. Validate
-   E041 on phase 2 and update/render its method before changing that package.
+   This document/PDF still describes the E025 fallback, not E041.
+   E041 phase2 qualification is complete (A012); update/render its method and
+   make the final choice before changing that package.
 4. **Separate adoption from exploration; retain technical verification.**
    The user's latest direction permits a technically validated, preregistered
    exploratory candidate without a positive local adoption result. This

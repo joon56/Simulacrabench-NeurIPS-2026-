@@ -44,7 +44,11 @@ scripts/verify_e041_phase2.py -text
 tests/test_e041_phase2.py -text
 docs/analysis/E053-outputs/*.gz binary
 docs/analysis/E053-outputs/*.npz binary
+docs/analysis/E053-outputs/*.py -text whitespace=cr-at-eol
+docs/analysis/E053-outputs/*.log -text
 docs/analysis/E053-outputs/*.json -text whitespace=cr-at-eol
 docs/analysis/E053-outputs/*-registration.md -text whitespace=cr-at-eol
 docs/analysis/A012-outputs/*.json -text whitespace=cr-at-eol
-docs/analysis/A012-outputs/*.py -text
+docs/analysis/A012-outputs/*.py -text whitespace=cr-at-eol
+docs/analysis/A012-outputs/*.log -text
+submissions/phase2-E041-preparation/*.json -text whitespace=cr-at-eol

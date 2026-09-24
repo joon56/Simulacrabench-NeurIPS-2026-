@@ -1,5 +1,12 @@
 # E025 phase-2 preparation
 
+Update2026-09-24: E041 also completed local phase2 engineering qualification
+(A012): official PASSx3, exact source/assembly vectors,367.177s inclusive local
+time, paired UNHCR delta-.000508449 versus fresh E025, controls exact.
+See [E041 comparison](../submissions/phase2-E041-preparation/SCORES.md).
+This historical E025 runbook and its method remain the fallback; E041 method
+coverage and final-model choice are still pending. No hosted TEST upload.
+
 The model of record remains `submissions/2026-09-09-E025/main.py`.
 Preparation is local only; no new leaderboard or Test submission was made.
 The four-page attachment is `output/pdf/method-4p.pdf`, generated from

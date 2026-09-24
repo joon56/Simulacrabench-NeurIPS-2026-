@@ -2,6 +2,51 @@
 
 Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-notes]].
 
+## 2026-09-24 - A012 phase2 reference complete; E053 oracle STOP
+
+- User authorized three final-TEST decision deliverables: E041 phase2
+  comparison, calibration preregistration and oracle pass/stop. Protocol146eb7f,
+  E053 registrationa452465, diagnostic570738f precede their respective runs.
+  No production model changes, new ZIP or hosted upload. E041 stays DEV best;
+  E025 stays fallback and E052 remains parked after its .64/no-update reading.
+- Fresh phase2 E025 versus E041: UNICEF .490197770701/.490197770701,
+  WB .462029504790/.462029504790, UNHCR .565173813942/.564665364947.
+  Delta0/0/-.000508448996 meets registered absolute .002 per-instrument gate.
+  Original E041 ZIP checker and official phase2 PASSx3;442425 source/assembled
+  raw vectors exactly equal. Sequential2thread inclusive official time367.177s
+  <3600; no competing fits. Local engineering qualification only, not a hosted
+  runtime/memory measurement or confidential TEST gain. E041 method still pending.
+- Archive sequencing deviations disclosed: fixed baseline source workers scored
+  before saving vectors; supplementary provenance gathered post-run. Original
+  executed verifier preserved; one-sided delta flag corrected in a separate
+  absolute-threshold assessment without refits/overwrites. Reusable preflight
+  fixed to refuse existing outputs before fits. Fresh E025 historical score
+  drift on UNICEF/WB is tiny, cause unassigned; fresh paired values used.
+- E053: unchanged donor recipe, dormant evidence materialization, independent
+  absolute item/bucket lambda[0,.98], actual generic E041 on observed Adult54/55.
+  Fixed2600fit/800oracle/800selection/800audit, whole outer answer blocks hidden
+  before fitting; captures/arrays/preregistration persisted before oracle labels.
+  Known prior-row overlaps archived; no untouched-population claim. Selection
+  and audit remain unscored; oracle is exact only on the ungated proxy.
+- Primary oracle skill/3 bounds+.000523121587/+.000172892178 both fail+.005.
+  STOP before estimator/production/ZIP; no threshold or seed search. Five-arm
+  descriptive gains+.000434552631/+.000003739795. Returned and uncensored
+  continuous families coincide: both fits already return evidence, all2400query
+  rows are diffuse bucket0, and one learned section is active. Dormancy and
+  second-bucket freedom were not naturally exercised. This is a scoped study
+  stop, not a nonlinear UNHCR ceiling or proof A011's mismatch cannot matter.
+- Thirteen E053 tests and five corrected phase2 tests PASS. Independent scalar
+  probe80checks agrees within1.78e-15; independent artifact checks verify phase2
+ 89hashes/all442425vectors and E053 captures, donors, registration, partition
+  hashes, exact endpoint and oracle arithmetic. No additional fits in review.
+  Results/reviews: A012, E053, docs/analysis/{A012,E053}-outputs/ and
+  submissions/phase2-E041-preparation/SCORES.md. Existing src/main/ZIP preserved.
+- Next: update E041 four-page method; final-model decision remains open. Any
+  new calibration method needs a distinct recursive family and a valid coupled
+  oracle/channel first. Separately, a preregistered E041 component probe could
+  update the real-data loss map (current .79+.10 map belongs to E025). No probe
+  built in this task. New experiment ID E054.
+
 ## 2026-09-24 - E052 hosted Grand .64 without update; keep E041
 
 - User reported submission #30 Grand .64, no best update. Instrument scores,
