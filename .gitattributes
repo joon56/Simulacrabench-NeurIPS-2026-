@@ -38,3 +38,13 @@ docs/analysis/A011-outputs/*.pkl binary
 docs/analysis/A011-outputs/*.npz binary
 docs/analysis/A011-outputs/*.gz binary
 docs/analysis/A011-outputs/*.json -text whitespace=cr-at-eol
+scripts/screen_e053.py -text
+tests/test_e053_oracle.py -text
+scripts/verify_e041_phase2.py -text
+tests/test_e041_phase2.py -text
+docs/analysis/E053-outputs/*.gz binary
+docs/analysis/E053-outputs/*.npz binary
+docs/analysis/E053-outputs/*.json -text whitespace=cr-at-eol
+docs/analysis/E053-outputs/*-registration.md -text whitespace=cr-at-eol
+docs/analysis/A012-outputs/*.json -text whitespace=cr-at-eol
+docs/analysis/A012-outputs/*.py -text
