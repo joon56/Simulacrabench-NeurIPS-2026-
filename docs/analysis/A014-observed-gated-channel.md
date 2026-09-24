@@ -1,6 +1,6 @@
 # A014 - Observed person-level gated channel
 date-started: 2026-09-24
-status: in-progress
+status: complete
 relates-to: A011 / A013 / E053 / E041
 
 ## Goal
@@ -56,3 +56,18 @@ selected by fixed ID hash, not response values, before model fitting. The two
 A014 role views overlap and serve structural robustness, not replication.
 Only oracle-role model scores will be opened first. Both skill/3 gains must
 exceed+.005+1e-10 before any learned calibrator. See E055 for complete scope.
+
+### v4 - Coupled oracle executed; conditional learner stopped
+
+Reviewed implementation df10864 preceded both fits. Same fixed12000 people,
+person/group oracle1850/1872. E055 full-star finite maxima yield skill/3
++.000113126178/+.000102390016, both STOP against+.005. Exact original and
+selected renderer parity; all144 root scenarios frozen before oracle scores.
+Natural concentrated counts5/517 and changed child vectors confirm recursion
+was exercised; legacy evidence returned in both fits, no dormant materialization.
+Independent frozen-artifact recomputation verifies results and data boundaries.
+
+A014 channel acceptance remains valid. E055 rejects only its registered family
+on this observed proxy; not a hidden UNHCR ceiling or proof calibration cannot
+help elsewhere. No calibrator, source model or submission ZIP built. Calibration,
+selection and audit model scores remain unopened. E041 retained, E054 parked.

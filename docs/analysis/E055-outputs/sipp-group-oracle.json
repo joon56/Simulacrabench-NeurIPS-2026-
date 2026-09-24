@@ -1,0 +1,85 @@
+{
+  "best_log_sum": -4513.333636868138,
+  "identity_log_sum": -4517.52257157847,
+  "uniform_reference": 1.0406887017955149,
+  "baseline_skill": 0.6687349585014456,
+  "oracle_skill": 0.6690421285506631,
+  "delta_skill_over_3": 0.00010239001640583943,
+  "shares": {
+    "HOSPITALIZED": [
+      0.0,
+      0.1
+    ],
+    "EHREAS_DT": [
+      0.0,
+      0.0
+    ],
+    "EHREAS_BIR": [
+      0.1,
+      0.1
+    ],
+    "EHREAS_OS": [
+      0.0,
+      0.0
+    ],
+    "EHREAS_NST": [
+      0.0,
+      0.0
+    ],
+    "EHREAS_OTH": [
+      0.1,
+      0.0
+    ],
+    "EHREAS_COR": [
+      0.0,
+      0.0
+    ]
+  },
+  "per_head_gain": {
+    "HOSPITALIZED": 0.5383725797912575,
+    "EHREAS_DT": 3.7390590698288406,
+    "EHREAS_BIR": -1.880009361807538,
+    "EHREAS_OS": 0.545997584390193,
+    "EHREAS_NST": 0.5421639435270436,
+    "EHREAS_OTH": 0.12661587712614164,
+    "EHREAS_COR": 0.5767350174772901
+  },
+  "renderer_parity_max_abs": 0.0,
+  "gate": "STOP",
+  "view": "group",
+  "oracle_rows": 1872,
+  "capture_sha256": "bb592404e701f23df6d5ce83f0d230b7fde47bd0de17965b3c8182d45dc00b88",
+  "buckets": {
+    "0": 1355,
+    "1": 517
+  },
+  "available": {
+    "HOSPITALIZED": 1872,
+    "EHREAS_DT": 1872,
+    "EHREAS_BIR": 1872,
+    "EHREAS_OS": 1872,
+    "EHREAS_NST": 1872,
+    "EHREAS_OTH": 1872,
+    "EHREAS_COR": 1872
+  },
+  "original_active": {
+    "HOSPITALIZED": 0,
+    "EHREAS_DT": 1355,
+    "EHREAS_BIR": 1872,
+    "EHREAS_OS": 0,
+    "EHREAS_NST": 0,
+    "EHREAS_OTH": 517,
+    "EHREAS_COR": 0
+  },
+  "selected_active": {
+    "HOSPITALIZED": 517,
+    "EHREAS_DT": 0,
+    "EHREAS_BIR": 1872,
+    "EHREAS_OS": 0,
+    "EHREAS_NST": 0,
+    "EHREAS_OTH": 1355,
+    "EHREAS_COR": 0
+  },
+  "legacy_returned": true,
+  "materialized_dormant": false
+}

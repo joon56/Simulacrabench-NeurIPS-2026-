@@ -1,0 +1,33 @@
+{
+  "view": "group",
+  "verified": true,
+  "oracle_rows": 1872,
+  "gate": "STOP",
+  "delta_skill_over_3": 0.0001023900164058839,
+  "best_log_sum_recomputed": -4513.333636868137,
+  "reported_log_sum_abs_error": 9.094947017729282e-13,
+  "selected_composition_log_sum_abs_error": 0.0,
+  "source_dependency_files_verified": 56,
+  "fit_only_donor_records_verified": 1,
+  "masked_archive_payload_matches_prefit_pickle_hash": true,
+  "all_144_raw_root_scenarios_valid": true,
+  "only_oracle_labels_scored": true,
+  "selected_changed_vectors_by_head": {
+    "HOSPITALIZED": 517,
+    "EHREAS_DT": 1872,
+    "EHREAS_BIR": 517,
+    "EHREAS_OS": 517,
+    "EHREAS_NST": 517,
+    "EHREAS_OTH": 1810,
+    "EHREAS_COR": 517
+  },
+  "root_endpoint_changed_child_vectors": {
+    "EHREAS_DT": 1872,
+    "EHREAS_BIR": 1872,
+    "EHREAS_OS": 1872,
+    "EHREAS_NST": 1872,
+    "EHREAS_OTH": 1872,
+    "EHREAS_COR": 1872
+  },
+  "verifier_sha256": "d06e6d78fe60b3c76f69eacedaa4be3dd5880590fae0879462d0562413e7a593"
+}

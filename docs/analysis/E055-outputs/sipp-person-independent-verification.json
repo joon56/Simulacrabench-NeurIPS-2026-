@@ -1,0 +1,33 @@
+{
+  "view": "person",
+  "verified": true,
+  "oracle_rows": 1850,
+  "gate": "STOP",
+  "delta_skill_over_3": 0.00011312617812220527,
+  "best_log_sum_recomputed": -4381.7237853352,
+  "reported_log_sum_abs_error": 0.0,
+  "selected_composition_log_sum_abs_error": 0.0,
+  "source_dependency_files_verified": 56,
+  "fit_only_donor_records_verified": 1,
+  "masked_archive_payload_matches_prefit_pickle_hash": true,
+  "all_144_raw_root_scenarios_valid": true,
+  "only_oracle_labels_scored": true,
+  "selected_changed_vectors_by_head": {
+    "HOSPITALIZED": 5,
+    "EHREAS_DT": 5,
+    "EHREAS_BIR": 5,
+    "EHREAS_OS": 5,
+    "EHREAS_NST": 1850,
+    "EHREAS_OTH": 1850,
+    "EHREAS_COR": 5
+  },
+  "root_endpoint_changed_child_vectors": {
+    "EHREAS_DT": 1850,
+    "EHREAS_BIR": 1850,
+    "EHREAS_OS": 1850,
+    "EHREAS_NST": 1850,
+    "EHREAS_OTH": 1850,
+    "EHREAS_COR": 1850
+  },
+  "verifier_sha256": "d06e6d78fe60b3c76f69eacedaa4be3dd5880590fae0879462d0562413e7a593"
+}

@@ -1,6 +1,6 @@
 # E055 — Coupled star replay oracle on observed SIPP
 parent: E041
-status: parked
+status: rejected
 date: 2026-09-24
 
 ## Hypothesis
@@ -95,8 +95,49 @@ revision after scores. E041 remains incumbent; E054 stays parked and unsubmitted
 
 ## Result
 
-Not run. A014 channel acceptance and implementation verification precede fits.
+Protocol committed in 2a52f18; title delimiter corrected for tree rendering and
+reviewed implementation committed in df10864 before either fit. Original run
+registration bytes retained separately for each view. A014 accepted the source;
+10 focused adapter/oracle/audit tests passed. No production model changed.
+
+| View | Fit / oracle rows | E041 proxy skill | Oracle skill | Delta skill / 3 | Gate |
+| --- | ---: | ---: | ---: | ---: | --- |
+| Person | 5939 / 1850 | .674532609 | .674871988 | +.000113126178 | STOP |
+| SSUID group | 5922 / 1872 | .668734959 | .669042129 | +.000102390016 | STOP |
+
+Both gains fall far below the fixed +.005 threshold. Uniform reference
+U=1.0406887018; complete seven-head pooled log score used. Parent log-sum gain
+is .267721231 / .538372580; six-child total is 4.306055682 / 3.650562130.
+Group EHREAS_BIR loses 1.880009362 while the joint star improves; selecting
+parents independently would not represent this objective.
+
+Oracle diffuse/concentrated counts are 1845/5 and 1355/517. Every oracle row
+has evidence for all seven heads; both first-stage fits returned legacy evidence
+without dormant materialization. Original and selected active counts are in
+the JSON artifacts. Root endpoint changes alter every child's predictions,
+so the natural recursive path was exercised. The group view also exercises
+both concentration buckets substantially; this is not an all-diffuse fallback.
+
+All 144 parent scenarios per view were saved before oracle labels were scored.
+Original raw endpoint equality and selected composition/renderer parity are
+exact. Library fit plus scenario generation took 138.754s / 141.474s locally;
+these are diagnostic timings, not submission runtime. Frozen-artifact review
+independently recomputes the finite optimum, verifies source/data/registration
+hashes, whole-block masks, roles and fit-only donors without model refits.
+Calibration, selection and audit scores remain unopened.
+
+Domain verdict: small gains are compatible with weak additional retrieval
+information from these demographic inputs and edited exact gates; that is an
+interpretation, not a causal explanation or a claim about refugee responses.
+SIPP domain, imputation, one-star topology and overlapping robustness views
+limit transfer. This finite sample/family maximum does not bound continuous,
+respondent-specific, refitted-donor or hidden-UNHCR policies.
 
 ## Decision
 
-Parked pending the registered oracle. No candidate or score expectation yet.
+REJECT this registered finite observed-family study. Do not train its proposed
+calibrator, expand the grid/sample, lower the threshold or package a ZIP after
+the STOP. A011's descriptive mismatch still exists, but this oracle supplies
+no adequate measured headroom for the proposed repair. No hosted score forecast.
+E041 remains incumbent; E054 remains parked and unsubmitted. A new experiment
+needs a distinct mechanism and a valid pre-implementation ceiling channel.

@@ -1,20 +1,25 @@
 # STATUS — read this first in a new session (kept current at every commit)
 
-Updated: 2026-09-24 A014 observed channel accepted; E055 coupled-star oracle registered, execution pending. E041 remains best. E041 result reported on 2026-09-19, continuing the supplied
+Updated: 2026-09-24 A014 complete; E055 coupled-star oracle STOP in both views. E041 remains best. E041 result reported on 2026-09-19, continuing the supplied
 2026-09-21 handoff; see `docs/phase2-preparation.md` for date provenance. Newest work is
 inserted at the TOP of docs/log.md; historical dated entries are newest-first.
 
 ## Where we are
 
-- **A014 channel ACCEPTED; E055 oracle registered, not yet scored.** Official
+- **A014 channel ACCEPTED; E055 oracle STOP, no learner or ZIP.** Official
   SIPP2023:39131 eligible month12 persons,3593 hospitalized,35538 flag0 blanks,
   no invalid/ambiguous outputs or gate contradictions. Six GIVEN fields;
   EEDUC/EMS missing5598 exactly age<15. IDs/flags excluded from model inputs.
   Six audit tests and independent source/data review PASS. Processed US exact-
   gate proxy only, not approximate UNHCR or a gain forecast. Data stays external/.
-  E055 fixes12000 ID-hash-selected persons, existing12-point share grid and
-  full parent-child recursion; both role views must pass oracle skill/3>.005
-  before learned calibration. Next ID E056. E054 remains parked/unsubmitted.
+  E055 used12000 ID-hash-selected persons, existing12-point share grid and
+  full parent-child recursion. Person/group oracle skill/3 gains
+ +.000113126178/+.000102390016 both fail+.005. Concentrated oracle rows5/517;
+  recursion exercised, original evidence returned in both, no dormant route.
+  Exact original/selected renderer parity; independent frozen-artifact maxima,
+  hashes, roles/masks and fit-only donors verified.10 focused tests PASS.
+  Calibration/selection/audit scores unopened. Scoped finite proxy stop, not
+  hidden UNHCR ceiling. Next ID E056. E054 remains parked/unsubmitted.
 - **A013 complete: E054 measurement prepared; E041 method complete.** E054
   uniformizes only final gated UNHCR vectors after unchanged E041 computation.
   Formal93-draw information gate passes only at Grand.38; .39-.43 unresolved
@@ -26,9 +31,8 @@ inserted at the TOP of docs/log.md; historical dated entries are newest-first.
   and within .002 ofE025. Prepared#31, NOT submitted, NOT adopted. Read A013,
   E054 and its SCORES.md before spending a slot. E041 four-page candidate
   method rendered/reviewed; E025 originals preserved. No final promotion.
-  New research channel scout: official2023 SIPP documentation; no microdata
-  downloaded, no adapter/oracle/gain. Audit natural universes, public missing
-  encoding, repeated-person/copy/recoding leakage before any model. Next ID E055.
+  Its SIPP channel scout was subsequently audited in A014 and used in E055;
+  see the newer result above. E054 supplies no measured improvement candidate.
 - **A012 complete: E041 phase2 qualified locally; E053 oracle STOP.** E041
   official phase2 PASSx3, exact source/assembled vectors442,425cells, original
   ZIP checker PASS. Fresh E025 deltas0/0/-.000508449 meet absolute .002 gate;
@@ -249,27 +253,30 @@ unchanged experiments; first repair the evidence behind their interpretation.
    E052's registered .64/no-update arm now applies: park this fixed control
    without a blind routing-intensity grid. E050/E051
    oracle failures remain scoped stops, not universal real-data ceilings.
-   New IDs start at E055 and require
+   New IDs start at E056 and require
    a named mechanism, scoped oracle and
    honest evaluation. Keep E041 learned retrieval after E044's adverse reading;
    E045 .64 without update remains parked. E049 is a scoped pretrained-family
-   test, not a universal model ceiling. Prioritize the unchanged inner E041
-   replay validation and actual learned gain before another costly package.
+   test, not a universal model ceiling. Require measured headroom and actual
+   learned gain before another costly package.
    A011 now measures membership and deployment-objective mismatch in three
    fixed channels; it establishes no recoverable skill. Read its complete
    findings with the completed E053 stop. Already inspected A011/E053 rows
    cannot be relabeled an untouched audit set. E053's ungated absolute-weight
    oracle failed both splits; no more seeds or lowered threshold for that
-   family. Define a distinct recursive family and a valid coupled oracle
-   before building a repair; do not reopen E050/E053 with a new name.
+   family. E055 subsequently tested full recursion on observed SIPP and stopped
+   in both role views: +.000113126178/+.000102390016 skill/3. Do not reopen
+   these fixed studies with more seeds, a larger grid or relaxed thresholds.
    A009 proposes whole-pipeline held-out calibration with its own scoped oracle;
    E042's postblend and Adult screens do not bound that full recursive family.
    Do not infer hosted activation from clean/household fallback. The historical
    .79+.10 loss map describes E025, not E041. E054 is now packaged, but A013
    shows limited reading value; do not treat it as a strong next-slot choice.
-   No automatic upload. Next bounded work: audit the SIPP observed channel
-   described in A013-outputs/observed-channel-scout.md before defining a
-   recursive family/oracle. No fabricated gates or repeated-person leakage.
+   No automatic upload. A014 channel audit is complete; its conditional learner
+   branch ended at E055's STOP. Next E056 must name a distinct information or
+   modeling mechanism, explain its relation to the historical E025 loss map
+   without substituting it for E041, and register a valid ceiling channel first.
+   No concrete replacement candidate or hosted gain forecast is established.
 2. **E041 phase2 engineering check complete; retain E025 fallback.** A012:
    E041 official skills .490197771/.462029505/.564665365,367.177s local inclusive
    official time, exact source/archive vectors, original ZIP checker PASS.

@@ -2,6 +2,28 @@
 
 Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-notes]].
 
+## 2026-09-24 - E055 coupled oracle STOP; A014 sequence complete
+
+- Protocol2a52f18 and reviewed code df10864 preceded both actual fits. Fixed
+ 12000-person SIPP sample, seven-head natural star, whole non-fit target blocks
+  masked. All144 root scenarios per view frozen before oracle score access.
+- Person1850/group1872 oracle rows: baseline skill .674532609/.668734959;
+  finite oracle .674871988/.669042129. Delta skill/3
+ +.000113126178/+.000102390016, both STOP versus fixed+.005.
+- Concentrated rows5/517; all heads have evidence on all oracle rows, legacy
+  layer returned in both fits, no dormant materialization. Parent endpoint
+  changes propagate to every child row. Group BIR loses1.88000936 log sum
+  while pooled score improves, demonstrating the coupled objective tradeoff.
+- Original/selected raw renderer parity exact.10 focused tests PASS;
+  independent frozen-artifact verification confirms both maxima, source and
+  archive hashes, roles/masking and fit-only donor references. Library plus
+  scenario-generation time138.754/141.474s; not submission runtime.
+- E055 rejected within registered finite proxy scope. No calibrator, model
+  modification or ZIP. Calibration/selection/audit scores unopened. This is
+  not a hidden UNHCR ceiling or proof that all calibration fails. A014 remains
+  an accepted observed exact-gate channel; E041 incumbent, E054 parked.
+  New experiments start E056 and require a distinct named mechanism/ceiling.
+
 ## 2026-09-24 - A014 observed channel accepted; E055 oracle registered
 
 - User approved sequential channel audit, scoped oracle, then conditional

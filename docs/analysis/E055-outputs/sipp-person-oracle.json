@@ -1,0 +1,85 @@
+{
+  "best_log_sum": -4381.7237853352,
+  "identity_log_sum": -4386.297562247396,
+  "uniform_reference": 1.0406887017955149,
+  "baseline_skill": 0.6745326091437345,
+  "oracle_skill": 0.6748719876781011,
+  "delta_skill_over_3": 0.00011312617812218278,
+  "shares": {
+    "HOSPITALIZED": [
+      0.1,
+      0.98
+    ],
+    "EHREAS_DT": [
+      0.0,
+      0.98
+    ],
+    "EHREAS_BIR": [
+      0.2,
+      0.98
+    ],
+    "EHREAS_OS": [
+      0.0,
+      0.98
+    ],
+    "EHREAS_NST": [
+      0.1,
+      0.98
+    ],
+    "EHREAS_OTH": [
+      0.0,
+      0.98
+    ],
+    "EHREAS_COR": [
+      0.1,
+      0.98
+    ]
+  },
+  "per_head_gain": {
+    "HOSPITALIZED": 0.26772123054536223,
+    "EHREAS_DT": 0.2728715091615186,
+    "EHREAS_BIR": 0.27287150324718823,
+    "EHREAS_OS": 0.27287150466690946,
+    "EHREAS_NST": 0.702995731156193,
+    "EHREAS_OTH": 2.5115739294565174,
+    "EHREAS_COR": 0.2728715039627332
+  },
+  "renderer_parity_max_abs": 0.0,
+  "gate": "STOP",
+  "view": "person",
+  "oracle_rows": 1850,
+  "capture_sha256": "4764291f01895d3d8adb65e503f80fbe4083badc5989fd21c61e1e6c0798b1fd",
+  "buckets": {
+    "0": 1845,
+    "1": 5
+  },
+  "available": {
+    "HOSPITALIZED": 1850,
+    "EHREAS_DT": 1850,
+    "EHREAS_BIR": 1850,
+    "EHREAS_OS": 1850,
+    "EHREAS_NST": 1850,
+    "EHREAS_OTH": 1850,
+    "EHREAS_COR": 1850
+  },
+  "original_active": {
+    "HOSPITALIZED": 1845,
+    "EHREAS_DT": 0,
+    "EHREAS_BIR": 1845,
+    "EHREAS_OS": 0,
+    "EHREAS_NST": 0,
+    "EHREAS_OTH": 1845,
+    "EHREAS_COR": 1845
+  },
+  "selected_active": {
+    "HOSPITALIZED": 1850,
+    "EHREAS_DT": 5,
+    "EHREAS_BIR": 1850,
+    "EHREAS_OS": 5,
+    "EHREAS_NST": 1850,
+    "EHREAS_OTH": 5,
+    "EHREAS_COR": 1850
+  },
+  "legacy_returned": true,
+  "materialized_dormant": false
+}
