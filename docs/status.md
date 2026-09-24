@@ -1,11 +1,27 @@
 # STATUS — read this first in a new session (kept current at every commit)
 
-Updated: 2026-09-24 E050/E051 stopped at observed oracle gates; E052 fixed routing control packaged as #30, all checks PASS. E041 remains best. E041 result reported on 2026-09-19, continuing the supplied
+Updated: 2026-09-24 A011 replay diagnostics complete; E052 preserved for tomorrow, all release checks remain bound to unchanged bytes. E041 remains best. E041 result reported on 2026-09-19, continuing the supplied
 2026-09-21 handoff; see `docs/phase2-preparation.md` for date provenance. Newest work is
 inserted at the TOP of docs/log.md; historical dated entries are newest-first.
 
 ## Where we are
 
+- **Continuation: E052 upload deferred by user until tomorrow; A011 complete.**
+  Three fixed paired fits measured membership-associated optimism: CAL-minus-
+  CTRL log/cell +.004495501 clean,+.004700150 household,+.016079228 Adult.
+  Official CAL own-item derivative sign flips from membership36/426,21/426,
+  0/8; gate-base flips13/426,37/426,0/8. These are descriptive, not gains.
+  Included fits have400 more training rows; control contrast is not causal.
+  Gate mismatch moves pressure in opposite directions across UNHCR sims;
+  no blanket evidence increase or gate-removal prescription follows.
+  Preserve E052 source/main/ZIP. No organizer update after fresh
+  fetch (HEAD=origin/main ee427a9). Fixed E052 respondent bootstrap1000draws:
+  clean95% interval[-.000008922,.000342004], household[-.001457195,-.000701348].
+  Descriptive conditional simulator intervals; donor/family dependence and
+  training variability ignored. No positive-transfer claim.11focused tests
+  PASS; independent artifact/arithmetic review. No new calibration estimator,
+  production change or oracle-gate relaxation. Original DEV not scored.
+  Follow docs/analysis/A011-replay-bias-diagnostics.md and its plan.
 - **Today's work: E050/E051 stopped; E052 technically ready for exploration.** Actual E041
   observed Adult seeds51/52, disjoint2600fit/800oracle/800selection/800audit.
   E050 oracle skill/3 0/.000013902; E051 .000417804/.000380219, both fail. No
@@ -196,6 +212,11 @@ unchanged experiments; first repair the evidence behind their interpretation.
    E045 .64 without update remains parked. E049 is a scoped pretrained-family
    test, not a universal model ceiling. Prioritize the unchanged inner E041
    replay validation and actual learned gain before another costly package.
+   A011 now measures membership and deployment-objective mismatch in three
+   fixed channels; it establishes no recoverable skill. Read its complete
+   findings before E053. Already inspected A011 rows cannot be relabeled an
+   untouched audit set. Define a distinct recursive family and its scoped
+   oracle before building a repair; do not reopen E050 with a new name.
    A009 proposes whole-pipeline held-out calibration with its own scoped oracle;
    E042's postblend and Adult screens do not bound that full recursive family.
    Do not infer hosted activation from clean/household fallback. The historical

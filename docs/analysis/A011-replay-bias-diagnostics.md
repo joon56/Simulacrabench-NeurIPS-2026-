@@ -1,6 +1,6 @@
 # A011 — Paired replay-bias and E052 uncertainty diagnostics
 date-started: 2026-09-24
-status: in-progress
+status: complete
 relates-to: A006 / A009 / E041 / E050 / E052
 
 ## Goal and authorization
@@ -95,12 +95,126 @@ Read CLAUDE/status/latest3 log entries and A006/A009. Starter-kit fetch succeeds
 HEAD and origin/main remain ee427a94f6cc6a0d9d653b6be68c835a032e7552. No new
 gating release and no kit worktree change. E052 remains the prepared submission.
 
+### v2 — Frozen E052 uncertainty, no fitting
+
+Executed scripts/audit_e052_uncertainty.py, exit0. Existing frame/endpoint hashes
+and E052 main/ZIP/source dependency hashes match. Clean621respondents: paired
+delta+.000167291023, descriptive95% respondent interval[-.000008922,.000342004].
+Household847respondents: delta-.001080278441, interval[-.001457195,-.000701348].
+All respondents have at least one changed prediction; improved/worsened counts
+289/332 clean and339/508 household. Positive bootstrap fractions .966/0 are
+resampling summaries, not posterior probabilities of a beneficial model.
+
+Clean gain remains uncertain even within this simulator. Household adverse
+direction is stable under respondent resampling; shared-donor/family dependence
+is not preserved, so this interval can be too narrow. Neither interval models
+training variability, post-hoc selection or humanitarian transfer. Keep E052's
+original exploratory designation and hosted arms; no tuning or replacement.
+
+### v3 — Replay implementation clarification, before fitting
+
+Derivatives are of log score: positive means local pressure toward more donor
+evidence. Legacy objective clips base truth probability at EV_FLOOR, then clips
+the mixture; official objective normalizes full vectors before uniform flooring.
+At lambda0 or a clipping kink, report the right derivative. Item/bucket reports
+cover CAL, CTRL and pooled groups with>=30rows; all descriptive, no fitted policy.
+Gate-base derivatives hold the captured parent beliefs fixed; they are own-item
+partial derivatives, not total derivatives through descendants. Bootstrap also
+ignores shared-donor/family dependence. Neither limitation changes the protocol.
+Before fits, archival format is deterministic gzip pickle for full captures
+and compressed NPZ for dense diagnostic views (partitions/full-heads/derived
+arrays), avoiding hundreds of thousands of redundant per-vector NPZ members.
+Both file hashes are frozen before scoring; no scientific family change.
+
+### v4 — Observed Adult53 paired run
+
+Completed exit0; honest4200fit versus included4600fit,400CAL/400CTRL scored.
+Full-head included-minus-honest mean log/cell: CAL+.014893901655
+(95% interval[.011365883,.018483769]); CTRL-.001185326726
+([-.003997693,.001714797]); contrast+.016079228381
+([.011554718,.020506471]). This is measured membership-associated optimism,
+conditional on these fits and the imperfect common-control adjustment.
+
+Honest captured evidence exists for all800rows and8targets; the absent-evidence
+contingency does not fire. Official objective CAL mean own-item lambda slope:
+honest full+.030191168, included full+.013457460. Every eligible CAL item/bucket
+slope declines in the included arm, but none of the8 signs flips. Thus this
+run shows weaker pressure for evidence, not proof a different grid weight
+would be selected or improve held-out skill. Existing lambda is .1 for income,
+zero for other heads. Gate mismatch is numerical zero, as expected with no gates.
+Fits14.153s/8.953s with concurrent diagnostic work. No new weights fitted.
+Source/arrays/provenance: docs/analysis/A011-outputs/adult-*.
+
 ## Findings
 
-Pending fixed-protocol runs. No measured improvement claimed.
+All three registered runs completed, exit0. Each scores400CAL/400CTRL;
+original DEV answers remain unscored. Honest/included fit counts are7479/7879
+clean,8471/8871 household,4200/4600 Adult. Fit times272.149/227.790s,
+366.401/320.732s and14.153/8.953s respectively, with concurrent work.
+
+Membership-associated optimism, official mean log probability per cell:
+
+| Channel | CAL included minus honest | CTRL included minus honest | CAL minus CTRL | Descriptive95% interval of contrast |
+| --- | --- | --- | --- | --- |
+| Clean UNHCR | +.004386031 | -.000109470 | +.004495501 | [.003609352,.005398042] |
+| Household13 | +.004522387 | -.000177763 | +.004700150 | [.003656624,.005863511] |
+| Observed Adult53 | +.014893902 | -.001185327 | +.016079228 | [.011554718,.020506471] |
+
+All three contrasts are positive. This quantifies an existing mismatch; it
+does not identify the cause of hosted plateaus or measure recoverable skill.
+The included arm has400 extra training rows and may select different training
+parameters. The control contrast does not eliminate that confounding.
+
+Official own-item lambda slopes on CAL, averaged across captured evidence:
+
+| Channel | Honest full head | Included full head | Honest deployment gate base | Eligible item/buckets | Membership sign flips | Gate-base sign flips |
+| --- | --- | --- | --- | --- | --- | --- |
+| Clean UNHCR | -.007994228 | -.011952149 | -.010714615 | 426 | 36 | 13 |
+| Household13 | -.004219451 | -.008138004 | -.001793717 | 426 | 21 | 37 |
+| Observed Adult53 | +.030191168 | +.013457460 | +.030191168 | 8 | 0 | 0 |
+
+Signs are descriptive local derivatives at the existing weights, not tests of
+a fitted policy. All three CAL averages decline under label inclusion, but
+gate-base adjustments move pressure in opposite directions in the two UNHCR
+simulations. Hence neither globally increasing evidence nor globally removing
+gates follows from this audit. Some individual slopes are near zero; counts
+are not significance-filtered. CTRL and pooled results, both signs, all items
+and intervals remain in the full JSON; no favorable subset was selected.
+
+The honest deployment gate base versus full head improves gated CAL log/cell
+by+.002818418 in clean but worsens it by-.004268412 in household. CTRL effects
+are+.002416525/-.002039824. Nongated and Adult differences are numerical zero.
+The reconstructed base already includes ancestors' original evidence through
+their beliefs. These are not E052 comparisons or a gate-removal oracle.
+
+Legacy versus official flooring also changes some local signs. Across CAL
+honest/included/gate bases, sign differences are12/10/10 of426 clean,
+5/9/6 of426 household,0/0/0 of8 Adult. The full legacy CAL membership/gate
+flip counts are36/11 clean,25/34 household,0/0 Adult. No floor-only estimator
+or selected lambda grid was fitted, and these counts do not establish gains.
+
+E052's frozen uncertainty remains as recorded in v2: clean interval includes
+zero and household is adverse under respondent resampling. No new result
+justifies tuning E052, promoting it to phase2 or forecasting Grand .65.
+
+Verification: root's11 focused tests PASS6.51s; implementer's combined22
+replay/recursive tests PASS6.82s. Independent code, artifact and arithmetic
+review is archived alongside the outputs. Preserve original captures, dense
+arrays, pre-score manifests, run logs and review. Hash verification binds
+unchanged E052 main/ZIP and complete source tree to its original release.
 
 ## Artifacts and next decision
 
 New diagnostics live only in scripts/, tests/ and docs/analysis/A011-outputs/.
-No src or submission file changes. Record results, tests, review and private
-origin push. New model experiment ID remains E053.
+No src or submission file changes. E052 remains tomorrow's fixed exploratory
+artifact; E041 remains incumbent and E025 remains phase2 fallback.
+
+Next model ID remains E053. The next justified research target is a separately
+preregistered, whole-pipeline held-out replay family using actual deployment
+probabilities and official scoring. First define its finite recursive family
+and measure a scoped oracle on frozen, honest outputs; E050's failed family
+must not be silently reopened. Only a passed gate permits a learned correction,
+with calibration, selection and audit rows separated before first-stage fits.
+Budget the extra fit and measure refit distribution shift. Today's captures
+are already inspected and cannot become a new untouched selection/audit set.
+If a distinct family lacks measured headroom, stop before another package.

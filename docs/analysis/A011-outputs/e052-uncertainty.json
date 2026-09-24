@@ -1,0 +1,48 @@
+{
+  "analysis": "A011",
+  "post_hoc": true,
+  "model_fits": 0,
+  "bootstrap_draws": 1000,
+  "bootstrap_seed": 5302,
+  "main_sha256": "a77e6529012d7539ce6d519d7eb33adca99b46bc71585c79771d8d2f8a05aa2c",
+  "archive_sha256": "158f2fa1d0f153b54cdab2e8c3ae33c02de6172b0079c471f5f34c2d8014cbaa",
+  "source_sha256": "062d32a74adf47746c0111bc64132655c9024f82e8b0c57f1640a4ead0237822",
+  "script_sha256": "83024f4bd3c31dd3c88b1154a59da296f2beae043babee5a73443398335cd7ea",
+  "cases": {
+    "clean": {
+      "frame_sha256": "0e6f1361d9e3d5a85fc8bad561cd486dc64fb7970ad07fd7f0074b629beaf836",
+      "endpoints_sha256": "bf3fb259d0ac4a9c42e4adb41a95a0b1c5f58bec50f29ae9c10595bff21b4ddb",
+      "rows": 621,
+      "cells": 132273,
+      "delta_skill": 0.00016729102297658157,
+      "respondent_bootstrap_95_interval": [
+        -8.921583892962356e-06,
+        0.0003420040960581324
+      ],
+      "bootstrap_fraction_positive": 0.966,
+      "affected_rows": 621,
+      "affected_row_fraction": 1.0,
+      "improved_rows": 289,
+      "worsened_rows": 332,
+      "changed_vectors": 25911
+    },
+    "household": {
+      "frame_sha256": "7c0c39da48327136bf61ffd90f7d19eb0696e798fa8a19f3946610d05123e1e9",
+      "endpoints_sha256": "e1d129073ca555285552e74c0fc18d580735e46d8c6a2f5556f2f55ada08ba84",
+      "rows": 847,
+      "cells": 180411,
+      "delta_skill": -0.0010802784411779798,
+      "respondent_bootstrap_95_interval": [
+        -0.0014571945375368366,
+        -0.0007013481599939328
+      ],
+      "bootstrap_fraction_positive": 0.0,
+      "affected_rows": 847,
+      "affected_row_fraction": 1.0,
+      "improved_rows": 339,
+      "worsened_rows": 508,
+      "changed_vectors": 58506
+    }
+  },
+  "limits": "Conditional on fixed models and simulations, not hosted transfer or a calibrated success probability. Respondent resampling ignores family/donor dependence, training variability and post-hoc selection."
+}

@@ -2,6 +2,38 @@
 
 Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-notes]].
 
+## 2026-09-24 - A011 paired replay diagnostics; E052 preserved for tomorrow
+
+- User deferred E052 submission and authorized further experiments. Registration
+  21931ab preceded fits. No upload, new candidate, estimator or src change.
+  Starter-kit fetch succeeds; HEAD=origin/main ee427a9, no gating update.
+- Fixed clean UNHCR, unchanged household13 and observed Adult53:400CAL/400CTRL,
+  whole-PREDICT masking, same generic E041 stack. Deliberately included-label
+  fit has400 extra rows; common-control adjustment is imperfect. Original DEV
+  is never scored. Predictions/provenance frozen before CAL/CTRL scoring.
+- Membership CAL-minus-CTRL log/cell contrasts: +.004495501 clean95% interval
+  [.003609352,.005398042],+.004700150 household[.003656624,.005863511],
+  +.016079228 Adult[.011554718,.020506471]. Conditional membership-associated
+  optimism measured; not an explanation of hosted plateaus or a gain estimate.
+- Official CAL derivative signs change in36/426,21/426,0/8 item/buckets with
+  fitting membership and13/426,37/426,0/8 with deployment gate base. Gate-base
+  pressure shifts opposite ways across UNHCR sims. No blanket lambda increase,
+  new selector, optimized weight or favorable-subset claim. All item results
+  and both floor objectives archived. Parent beliefs held fixed in derivatives.
+- Frozen E052 respondent-bootstrap analysis: delta+.000167291,95% interval
+  [-.000008922,.000342004] clean;-.001080278[-.001457195,-.000701348] household.
+  Post-hoc, fixed-model intervals ignore family/donor dependence and training
+  variability. No humanitarian transfer or .65 forecast. No E052 retuning.
+- All three runs exit0.11focused tests PASS6.51s; implementer22combined tests
+  PASS6.82s. Independent review checks source/capture/array/frame/partition
+  hashes, masking, reconstruction, aggregate arithmetic and finite differences.
+  Artifacts/logs/review: docs/analysis/A011-outputs/; interpretation and limits:
+  docs/analysis/A011-replay-bias-diagnostics.md. E052 release hashes unchanged.
+- Next ID E053: separately define full-pipeline held-out replay family and
+  scoped oracle before fitting any correction. E050/E051 stops unchanged;
+  inspected A011 rows are not a new untouched audit. E041 incumbent, E025
+  phase2 fallback, E052 remains tomorrow's fixed exploratory ZIP #30.
+
 ## 2026-09-24 - E050/E051 oracle stops; E052 fixed routing control prepared
 
 - User authorized candidate-first experiments and today's submission artifact.

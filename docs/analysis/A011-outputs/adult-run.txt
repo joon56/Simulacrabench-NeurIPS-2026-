@@ -1,0 +1,3 @@
+adult: fitting honest
+adult: fitting included
+{"case": "adult", "results": "C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A011-outputs\\adult-results.json", "membership": {"CAL": {"rows": 400, "cells": 3200, "mean": 0.014893901654720402, "interval95": [0.01136588290291449, 0.018483769231746546]}, "CTRL": {"rows": 400, "cells": 3200, "mean": -0.001185326726123241, "interval95": [-0.003997693369201174, 0.0017147971026437458]}, "CAL_minus_CTRL": {"mean": 0.016079228380843642, "interval95": [0.011554717775877908, 0.020506471240137]}}}

@@ -1,0 +1,3 @@
+household: fitting honest
+household: fitting included
+{"case": "household", "results": "C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A011-outputs\\household-results.json", "membership": {"CAL": {"rows": 400, "cells": 85200, "mean": 0.0045223866364069235, "interval95": [0.003703267108784899, 0.005412789187692946]}, "CTRL": {"rows": 400, "cells": 85200, "mean": -0.00017776327481269522, "interval95": [-0.001004907976259639, 0.0005657863332015644]}, "CAL_minus_CTRL": {"mean": 0.004700149911219619, "interval95": [0.003656624283506289, 0.005863511152087004]}}}

@@ -31,3 +31,10 @@ docs/analysis/E050-outputs/*.npz binary
 docs/analysis/E052-outputs/*.pkl binary
 docs/analysis/E052-outputs/*.npz binary
 docs/analysis/E052-outputs/*.py -text
+scripts/audit_replay_bias.py -text
+scripts/audit_e052_uncertainty.py -text
+tests/test_replay_bias.py -text
+docs/analysis/A011-outputs/*.pkl binary
+docs/analysis/A011-outputs/*.npz binary
+docs/analysis/A011-outputs/*.gz binary
+docs/analysis/A011-outputs/*.json -text whitespace=cr-at-eol

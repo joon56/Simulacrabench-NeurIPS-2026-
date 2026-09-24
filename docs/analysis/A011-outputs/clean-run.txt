@@ -1,0 +1,3 @@
+clean: fitting honest
+clean: fitting included
+{"case": "clean", "results": "C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A011-outputs\\clean-results.json", "membership": {"CAL": {"rows": 400, "cells": 85200, "mean": 0.004386030938752297, "interval95": [0.003611503546356009, 0.005241808193780776]}, "CTRL": {"rows": 400, "cells": 85200, "mean": -0.00010946979290021343, "interval95": [-0.0006090060783498051, 0.0003887807542103608]}, "CAL_minus_CTRL": {"mean": 0.004495500731652511, "interval95": [0.003609351760066613, 0.005398041550537956]}}}
