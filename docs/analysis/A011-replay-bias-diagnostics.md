@@ -202,6 +202,10 @@ replay/recursive tests PASS6.82s. Independent code, artifact and arithmetic
 review is archived alongside the outputs. Preserve original captures, dense
 arrays, pre-score manifests, run logs and review. Hash verification binds
 unchanged E052 main/ZIP and complete source tree to its original release.
+Archival checks caught duplicated CR characters in copied text logs and Git
+normalization of already-staged JSON. Logs were normalized; hash-bound JSON
+was restaged with exact-byte attributes. All17 bound scripts/data files match
+Git index bytes after correction; no prediction or diagnostic value changed.
 
 ## Artifacts and next decision
 
