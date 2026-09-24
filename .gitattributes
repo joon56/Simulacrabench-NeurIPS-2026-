@@ -75,3 +75,13 @@ submissions/phase2-E025-preparation/method-4p-E025.md -text whitespace=cr-at-eol
 submissions/phase2-E041-preparation/method-4p-E041.md -text whitespace=cr-at-eol
 submissions/phase2-E025-preparation/method-4p-E025.pdf binary
 submissions/phase2-E041-preparation/method-4p-E041.pdf binary
+scripts/audit_a014_sipp.py -text
+tests/test_a014_sipp.py -text
+docs/analysis/A014-outputs/*.json -text whitespace=cr-at-eol
+docs/analysis/A014-outputs/*-registration.md -text whitespace=cr-at-eol
+docs/analysis/A014-outputs/*.log -text
+scripts/screen_e055.py -text
+tests/test_e055_star.py -text
+docs/analysis/E055-outputs/*.json -text whitespace=cr-at-eol
+docs/analysis/E055-outputs/*-registration.md -text whitespace=cr-at-eol
+docs/analysis/E055-outputs/*.log -text

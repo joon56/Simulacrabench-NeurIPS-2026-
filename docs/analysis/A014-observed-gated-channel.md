@@ -20,3 +20,39 @@ A011 documents replay/deployment mismatch, not a demonstrated beneficial repair.
 E053's ungated Adult stop does not test this natural parent-child channel.
 
 No model fits, candidate scoring or new experiment registration at this point.
+
+### v2 - Observed extraction and independent acceptance
+
+Protocol ce097c5 preceded response inspection. Official ZIP109036604bytes,
+SHA2569c5363d56aca2041db20d46d17b81e9be931eb5b18bd5f5238b367d2dd7fb74b;
+one3,726,010,471-byte CSV streamed using21 selected fields.476744 person-month
+rows,39513 month12 persons,39131 eligible,3593 hospitalized. No duplicate
+person-month keys, invalid eligible parent/reason, ambiguous reason blank or
+parent-child gate contradiction.35538 AHREASON0 rows have all six reasons
+blank; flags1/2/3 have only1/2 answers. Imputed responses retained.
+
+All six demographic candidates usable; no exact target copies. EEDUC/EMS
+5598 blanks exactly match TAGE<15;33533 age>=15 rows have no such blanks,
+confirmed independently. One reference month prevents
+repeated annual responses appearing in different roles. SSUID groups do not
+cross roles;17643 eligible monthly households,11404 with multiple persons.
+Restricted response extract and keys remain ignored under external/sipp-2023/.
+
+Six behavioral tests PASS after RED; independent metadata and cached-data/code
+reviews PASS. Source hashes and original registration bytes retained before
+the streaming run. See A014-outputs/data-audit.json, pre-run.json,
+audit-registration.md, metadata-review.md and audit-review.md.
+
+Decision: ACCEPT as an observed exact-gate structural proxy only. Processed US
+annual hospital data do not reproduce approximate refugee-survey gates, prove
+concentrated donor activity, or establish calibration headroom. Aggregates were
+inspected before modeling; no untouched-population claim. No model scored yet.
+
+### v3 - Conditional oracle registration
+
+E055 registers the finite existing12-point E041 share domain with full star
+recursion, distinct from E053 ungated separation. Resource cap12000 persons
+selected by fixed ID hash, not response values, before model fitting. The two
+A014 role views overlap and serve structural robustness, not replication.
+Only oracle-role model scores will be opened first. Both skill/3 gains must
+exceed+.005+1e-10 before any learned calibrator. See E055 for complete scope.

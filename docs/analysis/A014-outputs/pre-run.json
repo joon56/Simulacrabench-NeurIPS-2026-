@@ -1,0 +1,33 @@
+{
+  "source": "https://www.census.gov/data/datasets/2023/demo/sipp/2023-data.html",
+  "metadata": "https://www2.census.gov/programs-surveys/sipp/tech-documentation/data-dictionaries/2023/2023_SIPP_Data_Dictionary.pdf",
+  "selected_columns": [
+    "SSUID",
+    "PNUM",
+    "MONTHCODE",
+    "ERESIDENCEID",
+    "THHLDSTATUS",
+    "TAGE_EHC",
+    "TAGE",
+    "ESEX",
+    "ERACE",
+    "EORIGIN",
+    "EEDUC",
+    "EMS",
+    "THOSPNIT",
+    "AHOSPNIT",
+    "AHREASON",
+    "EHREAS_DT",
+    "EHREAS_BIR",
+    "EHREAS_OS",
+    "EHREAS_NST",
+    "EHREAS_OTH",
+    "EHREAS_COR"
+  ],
+  "hashes": {
+    "zip_sha256": "9c5363d56aca2041db20d46d17b81e9be931eb5b18bd5f5238b367d2dd7fb74b",
+    "schema_sha256": "a1985e1a6dcc8006521bdf22c7ffd36f37f752921b59972f2dbdeb6cd6328113",
+    "script_sha256": "d703a360a4be6456ceabdc807aa2d142e3fa2f9e764f9c87d34fdb949c4f5a38",
+    "plan_sha256": "cde00ab074746b00f86934d361cfd94dbc6601f7d1f1b9d2fffa4079ecdd6dae"
+  }
+}
