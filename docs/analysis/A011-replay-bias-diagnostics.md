@@ -222,3 +222,12 @@ with calibration, selection and audit rows separated before first-stage fits.
 Budget the extra fit and measure refit distribution shift. Today's captures
 are already inspected and cannot become a new untouched selection/audit set.
 If a distinct family lacks measured headroom, stop before another package.
+
+## Follow-up - E052 hosted report recorded2026-09-24
+
+User subsequently reported Grand .64 without best update. The registered
+unresolved arm applies: park E052, keep E041; instrument scores unavailable.
+This supersedes the pending-upload state above, not the frozen A011 findings.
+E052 preserved the inner replay procedure, so its reading neither validates nor
+rules out a future honest calibration repair. The next-family oracle and
+untouched-evaluation requirements remain; no new estimator or gain is claimed.

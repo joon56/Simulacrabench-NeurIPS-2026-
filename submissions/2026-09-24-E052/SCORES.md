@@ -90,7 +90,24 @@ stays phase2 fallback. No external fitted data or new runtime packages bundled.
 
 ## Actual hosted result
 
-Not submitted by this agent; no hosted result available.
+User reported Grand **0.64**, **no best update**, recorded2026-09-24.
+UNICEF/WB/UNHCR scores are unavailable. Submission #30 completed with a score;
+this was not a failed attempt. Platform submission ID, upload time and hosted
+runtime were not supplied; no independent platform fetch or agent upload.
+The recording date does not infer the exact upload date from the earlier
+plan to submit tomorrow.
+
+Selected preregistered arm: **Grand .64 without update**. No demonstrated best
+improvement. Small gains, losses and zero remain unresolved at display/noise
+resolution; do not infer hidden UNHCR .92 or whether the intervention was active.
+Keep E041 as incumbent and park E052. No blind routing-intensity grid and no
+phase2 promotion; E025 remains the phase2 fallback.
+
+This tests the fixed ancestor-evidence routing control only. It neither proves
+the original routing universally optimal nor resolves A011's replay-validation
+mismatch, which E052 did not change. Next research remains separately scoped
+whole-pipeline held-out calibration, with its own oracle and learned validation.
+All pre-registered arms, local measurements, main.py and ZIP bytes are unchanged.
 
 ## External data disclosure
 

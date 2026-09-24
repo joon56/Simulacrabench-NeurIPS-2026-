@@ -2,6 +2,25 @@
 
 Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-notes]].
 
+## 2026-09-24 - E052 hosted Grand .64 without update; keep E041
+
+- User reported submission #30 Grand .64, no best update. Instrument scores,
+  platform ID, exact upload date/time and hosted runtime unavailable. Recording
+  date is the session date; do not infer upload timing from the prior tomorrow
+  plan. Completed scored submission, not a failed attempt; no platform fetch.
+- Applied the preregistered .64-without-update arm: park E052, retain E041
+  .64/.52/.49/.92 and E025 phase2 fallback. No demonstrated best gain; small
+  gains/losses and zero remain unresolved. No invented hidden instrument score
+  or inference of hosted inactivity from a flat displayed Grand.
+- Close this fixed routing control to blind intensity grids. The result does
+  not prove incumbent routing universally optimal. E052 leaves inner replay
+  unchanged; A011's measured validation mismatch is a separate research target.
+  Next ID remains E053, requiring a distinct scoped oracle and honest learned
+  validation. Existing E050/E051 stops remain; no relaxed oracle threshold.
+- Updated scorecard, hosted metadata, experiment Decision, submission index,
+  status and A011 follow-up. Main, ZIP, model source and local measurements
+  unchanged. Documentation/hash checks only; no refit or new submission.
+
 ## 2026-09-24 - A011 paired replay diagnostics; E052 preserved for tomorrow
 
 - User deferred E052 submission and authorized further experiments. Registration

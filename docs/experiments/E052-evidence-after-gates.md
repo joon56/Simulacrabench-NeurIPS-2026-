@@ -120,12 +120,21 @@ boundaries raw-exact. Both diagnostic provenance manifests verified.
 
 ## Decision
 
-Parked, not adopted. No estimator is authorized by a failed oracle. Proceed
-with the SAME fixed endpoint as a technically qualified exploratory control
-under the user's standing daily-submission preference; all required technical
-checks passed. Prepared as submission#30, submissions/2026-09-24-E052.zip;
-SCORES.md hosted arms were registered before any upload. No hosted result or
-agent upload. Clean activation is natural, so official clean source/archive
-parity also exercises the active path. E041 stays best.
-This choice tests a distinct interaction; it is not the winner of a demonstrated
-positive local candidate comparison and carries no .65 forecast.
+**Parked after hosted Grand .64 without best update**, user report recorded
+2026-09-24. Submission#30 completed with a score. Instrument scores, platform
+ID, exact upload time and hosted runtime unavailable; no independent fetch.
+SCORES.md's registered unresolved arm applies: no demonstrated best gain;
+small gains/losses and zero remain unresolved. Do not infer hidden UNHCR .92,
+hosted activation or universal optimality of the incumbent routing.
+
+Retain E041 as DEV best and E025 as phase2 fallback. Park this fixed routing
+control without a blind routing-intensity grid or another identical upload.
+No estimator is authorized by the failed optional selector oracle. Preserve
+main/ZIP bytes and all local results. Natural clean activation validated the
+implementation, not hosted efficacy. No phase2 promotion or .65 forecast.
+
+Domain verdict: the result does not demonstrate a useful gain from removing
+ancestor-evidence routing on approximate ERPIS gates; it does not falsify all
+interaction mechanisms. E052 retained the inner replay procedure. A011's
+measured validation mismatch remains a distinct research target, requiring a
+new scoped oracle and separately held-out learned improvement before adoption.

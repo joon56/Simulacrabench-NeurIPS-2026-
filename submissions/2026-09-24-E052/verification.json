@@ -6,7 +6,22 @@
   "zip_checker": "OK: C:\\Users\\USER\\Desktop\\SimulacraBench\\submissions\\2026-09-24-E052.zip looks like a valid submission ZIP.",
   "phase": 1,
   "local_threads": 2,
-  "hosted_result": null,
+  "hosted_result": {
+    "source": "user_report",
+    "recorded_date": "2026-09-24",
+    "grand": 0.64,
+    "best_update": false,
+    "unicef": null,
+    "world_bank": null,
+    "unhcr": null,
+    "instrument_scores_available": false,
+    "submission_id": null,
+    "submitted_at": null,
+    "hosted_seconds": null,
+    "preregistered_arm": "0.64 without update: no demonstrated best improvement; small gains/losses and zero unresolved",
+    "decision": "park_E052_keep_E041",
+    "notes": "Recording date is not an inferred upload date. Hidden scores and hosted activation remain unknown. No blind routing-intensity grid; E025 remains phase2 fallback. Archive bytes and all local measurements unchanged."
+  },
   "instruments": {
     "unicef": {
       "status": "PASS",

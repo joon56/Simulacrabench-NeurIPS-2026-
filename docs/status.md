@@ -1,12 +1,19 @@
 # STATUS — read this first in a new session (kept current at every commit)
 
-Updated: 2026-09-24 A011 replay diagnostics complete; E052 preserved for tomorrow, all release checks remain bound to unchanged bytes. E041 remains best. E041 result reported on 2026-09-19, continuing the supplied
+Updated: 2026-09-24 E052 reported Grand .64 without best update; parked, effect unresolved. A011 complete; E041 remains best. E041 result reported on 2026-09-19, continuing the supplied
 2026-09-21 handoff; see `docs/phase2-preparation.md` for date provenance. Newest work is
 inserted at the TOP of docs/log.md; historical dated entries are newest-first.
 
 ## Where we are
 
-- **Continuation: E052 upload deferred by user until tomorrow; A011 complete.**
+- **E052 reported Grand .64 without best update; keep E041, park E052.**
+  Submission #30 completed; user report recorded2026-09-24. Instrument scores,
+  exact upload time and hosted runtime unavailable. Registered unresolved arm:
+  no demonstrated best gain, not proof of zero effect or hidden UNHCR .92.
+  No hosted activation inferred; no blind routing-intensity grid. E052 did
+  not change inner replay, so A011 remains a distinct research priority.
+  E025 stays phase2 fallback; source/main/ZIP and local results unchanged.
+- **A011 complete; findings retained after E052's hosted reading.**
   Three fixed paired fits measured membership-associated optimism: CAL-minus-
   CTRL log/cell +.004495501 clean,+.004700150 household,+.016079228 Adult.
   Official CAL own-item derivative sign flips from membership36/426,21/426,
@@ -22,7 +29,7 @@ inserted at the TOP of docs/log.md; historical dated entries are newest-first.
   PASS; independent artifact/arithmetic review. No new calibration estimator,
   production change or oracle-gate relaxation. Original DEV not scored.
   Follow docs/analysis/A011-replay-bias-diagnostics.md and its plan.
-- **Today's work: E050/E051 stopped; E052 technically ready for exploration.** Actual E041
+- **Preparation history: E050/E051 stopped; E052 passed release checks.** Actual E041
   observed Adult seeds51/52, disjoint2600fit/800oracle/800selection/800audit.
   E050 oracle skill/3 0/.000013902; E051 .000417804/.000380219, both fail. No
   selectors or ZIPs; selection/audit unscored. These are proxy-family limits,
@@ -35,7 +42,7 @@ inserted at the TOP of docs/log.md; historical dated entries are newest-first.
  34tests/checker/official all3 PASS; source/archive/diagnostic endpoint raw
   parity0,25,911 natural active vectors, unaffected boundaries exact. Official
  402.795s <900 locally. E052 parked, E041 incumbent, E025 phase2 unchanged.
-  Follow A010 and scorecard; no hosted upload or result yet.
+  Follow A010 and scorecard; hosted .64/no update is recorded above.
 - Leaderboard best: **E041 — Grand 0.64 (unicef 0.52 / wb 0.49 / unhcr 0.92)**,
   user-reported on 2026-09-19; `submissions/2026-09-19-E041.zip` and matching
   snapshot directory. Previous E025: .63 / .52 / .49 / .89. Displayed gains:
@@ -196,15 +203,15 @@ unchanged experiments; first repair the evidence behind their interpretation.
 
 ## Next session plan
 
-1. **E045/E047/E049 read .64 without update: keep E041, park these configurations.**
+1. **E045/E047/E049/E052 read .64 without update: keep E041, park these configurations.**
    Their registered unresolved arms apply. Candidate expansion, adaptive final
    correction and guarded PFN parents have not demonstrated a new best; do not infer
    exact zero effects, hidden instrument scores or inactive hosted selection.
    E047's sim gain and permissive observed oracle did not establish transfer.
    Read A009, A008 v13, E049's result and the latest scorecard before work.
    No blind coefficient/threshold grid or automatic threshold relaxation.
-   Read E052's hosted result against its registered arms first; .64/no update
-   parks this fixed control without a blind routing-intensity grid. E050/E051
+   E052's registered .64/no-update arm now applies: park this fixed control
+   without a blind routing-intensity grid. E050/E051
    oracle failures remain scoped stops, not universal real-data ceilings.
    New IDs start at E053 and require
    a named mechanism, scoped oracle and

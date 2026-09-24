@@ -1,7 +1,9 @@
 # E052 - Fixed evidence after base-only gate routing
 
 Phase1 exploratory candidate, submission #30. Parent E041 remains the incumbent
-(.64/.52/.49/.92); this configuration is not adopted. No hosted result yet.
+(.64/.52/.49/.92); this configuration is not adopted. User reported Grand .64
+without a best update, recorded2026-09-24. Instrument scores unavailable.
+Apply the registered unresolved arm: park E052, keep E041; no routing grid.
 
 UNHCR only: keep E041 fitting, retrieval and original item/bucket lambdas. Route
 gates with evidence-free parent beliefs; then mix the same own-item evidence
