@@ -1,11 +1,17 @@
 # STATUS — read this first in a new session (kept current at every commit)
 
-Updated: 2026-09-24 A014 complete; E055 coupled-star oracle STOP in both views. E041 remains best. E041 result reported on 2026-09-19, continuing the supplied
+Updated: 2026-09-25 A015 workflow self-audit complete; prospective flow documented. E055 scoped STOP retained; E041 remains best. E041 result reported on 2026-09-19, continuing the supplied
 2026-09-21 handoff; see `docs/phase2-preparation.md` for date provenance. Newest work is
 inserted at the TOP of docs/log.md; historical dated entries are newest-first.
 
 ## Where we are
 
+- **A015 workflow audit complete; recommendations are prospective.** Read
+  docs/analysis/A015-workflow-self-audit.md for evidence, outcome-specific flow
+  and reusable prompts. Separate technical qualification, DEV exploration and
+  TEST selection. Old+.005 is not a universal significance/transfer cutoff.
+  E041 is a local-negative/hosted-positive counterexample. No CLAUDE rule,
+  historical verdict, source model or submission changed by this audit.
 - **A014 channel ACCEPTED; E055 oracle STOP, no learner or ZIP.** Official
   SIPP2023:39131 eligible month12 persons,3593 hospitalized,35538 flag0 blanks,
   no invalid/ambiguous outputs or gate contradictions. Six GIVEN fields;

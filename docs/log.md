@@ -2,6 +2,26 @@
 
 Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-notes]].
 
+## 2026-09-25 - A015 workflow self-audit and proposed session contract
+
+- User requested self-diagnosis, outcome-specific research flow and reusable
+  prompts. Audited operating rules, E041 hosted counterexample, E055's scoped
+  stop and earlier slot/threshold corrections. Status had318 lines at audit
+  start, inconsistent with its intended one-page handoff role.
+- Strengths: reproducibility, masking, source/archive parity, official checks
+  and phase-2 fallback. Weaknesses: unvalidated transfer of the old+.005 bar,
+  conflating proxy futility with target futility, fragmented policy corrections,
+  and ending branches without a bounded executable continuation.
+- Proposed bounded local research plus technically qualified DEV exploration,
+  separate TEST selection, decision-relevant hypothesis cards, explicit stop
+  scopes and main/backup tasks. Three-hypothesis default is a scheduling aid,
+  not a statistical rule. Primary ASA/JMLR references support inference and
+  selection cautions, not a claimed optimal policy or replacement cutoff.
+- Complete guide: docs/analysis/A015-workflow-self-audit.md. Recommendations
+  are prospective; no CLAUDE/template rewrite, retrospective threshold change,
+  model fit, new score, archive or upload. E041 incumbent, E054 parked and
+  E055's original registered STOP retained. Next experiment remains E056.
+
 ## 2026-09-24 - E055 coupled oracle STOP; A014 sequence complete
 
 - Protocol2a52f18 and reviewed code df10864 preceded both actual fits. Fixed
