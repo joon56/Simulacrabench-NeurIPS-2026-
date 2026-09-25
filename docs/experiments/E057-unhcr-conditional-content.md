@@ -295,5 +295,6 @@ a scoped development precedent, not a transferable effect-size oracle.
 - **Actual UNHCR improvement / final adoption unestablished.** E041 DEV incumbent,
   E025 fallback. S3 stopped; A018 remains unconfirmed by the user. Existing STOPs
   preserved; no new backup study, ZIP, method or TEST artifact. All owned jobs
-  complete; user dirty files preserved. Commit owned records only. Push remains
-  subject to the previously rejected named-destination approval, never bypassed.
+  complete; user dirty files preserved. Commit owned records only. The user
+  subsequently explicitly authorized push to the named origin; the earlier
+  approval blocker is resolved for these E057 commits. Hosted upload is separate.

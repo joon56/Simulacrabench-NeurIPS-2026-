@@ -2,6 +2,17 @@
 
 Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-notes]].
 
+## 2026-09-25 - E057 origin push authorized; S2 validation handoff confirmed
+
+- User explicitly approved pushing the completed E057 commits to configured
+  origin https://github.com/joon56/Simulacrabench-NeurIPS-2026-.git and asked
+  whether S2 handoff is next. Earlier named-destination approval blocker is
+  resolved. Push branch work/e050-submission; verify remote HEAD after transfer.
+- Next scope remains E057 S2 validation: default/assembly parity, ZIP checker,
+  official all3, runtime and SCORES preregistration. No new fit or package in
+  this closeout; no hosted upload or S3/TEST-selection authorization implied.
+  Existing user changes remain excluded. Handoff records updated accordingly.
+
 ## 2026-09-25 - E057 honest UNHCR selection/refit procedure and full cost verified
 
 - User clarification governs prior A018 entry: S3 stopped; TEST selected/frozen
