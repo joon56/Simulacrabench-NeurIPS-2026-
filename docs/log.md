@@ -2,6 +2,18 @@
 
 Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-notes]].
 
+## 2026-09-25 - E057 origin push explicitly approved and completed
+
+- User instructed "push 진행해" after the named-destination/payload blocker
+  explanation. This explicitly authorizes E057 S2 release/ZIP/verification and
+  hosted-result records to the existing GitHub origin,
+  https://github.com/joon56/Simulacrabench-NeurIPS-2026-.git,
+  branch work/e050-submission.
+- Non-force push succeeded:949884b..25e0b33. Updated current status and S0
+  handoff to resolve the earlier approval blocker; prior log/report entries
+  remain historical. No model or ZIP change, new fit, platform submission,
+  TEST selection or S3 resumption. User-owned uncommitted changes preserved.
+
 ## 2026-09-25 - E057 hosted Grand .64 without update; retain E041
 
 - User reports E057 Grand.64, no best update. Individual scores, exact platform
