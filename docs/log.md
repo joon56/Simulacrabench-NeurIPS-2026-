@@ -2,6 +2,38 @@
 
 Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-notes]].
 
+## 2026-09-25 - A018 selects E041 TEST artifact; separate E025 fallback frozen
+
+- Fixed E025/E041/E044/E045/E047/E049/E052 and qualitative selection/gates before
+  evaluation (protocol SHA df627f4d, preflight07:48:22UTC). E041 chosen from
+  target evidence, refit/activation/leakage and deployment burden, not DEV rank
+  alone. Later flat/adverse candidates have no established transfer advantage.
+  E054 diagnostic and non-release-qualified E056 excluded prospectively.
+- Final notice-preserving E041 ZIP official phase2 PASSx3, skills
+  .490197770701/.462029504790/.564665364947, all442425 raw vectors exact to source;
+  E025 deltas0/0/-.000508448996 within absolute.002. Official359.448694s,
+  inclusive364.340160s. Both final ZIP checkers PASS. No TEST upload.
+- Single-process all3 E041336.554468s, peakWS1.493GB/commit1.605GB;
+  E025332.782386s,1.470GB/1.557GB. Both exact to A012 references; E025 reference
+  is frozen assembly, and historical official raw/scorer/data provenance is
+  incomplete with tiny score drift. CPU synthetic resources are no H100 promise.
+- Two four-page methods visually checked; Adult/SIPP/TabPFN development,
+  TRAIN+DEV changes, in-sample base replay, historical account concern and
+  disclosure scope aligned. Starter-kit MIT notice included; scoped team MIT
+  proposal is non-effective pending owner choice before award-stage release.
+- API dates/terms and unchanged kit ee427a9 reverified. Engineering cutoff
+  Nov12 00:00UTC; preferred user upload Nov13; official end Nov14 00:00UTC/
+  09:00KST. Frozen main/ZIP/PDF/source/check hashes in A018 freeze-manifest.json.
+- Independent review:3medium issues corrected (future all-run/tree timeout,
+  live memory watchdog, E025 provenance claim),8guard tests PASS. Executed
+  scripts retained. One E025 start stopped without a result for concurrent
+  E056 work, then resumed after it ended; aborted log/scheduling deviation kept.
+  E056 aggregate status was incidentally seen after exclusion, never used to
+  change selection. S1/S2 commits/user changes preserved; no proxy label access.
+- Final paths: submissions/2026-09-25-E041.zip (bd5d2b7d...) and distinct
+  2026-09-25-E025.zip (142921c3...), matching method-4p.pdf in each directory.
+  Residual uncertainty and pre-upload fallback/failure arms in A018/scorecards.
+
 ## 2026-09-25 - E056 conditional-content audit positive; follow-up research only
 
 - S0 A016 scope executed. Registration18ab9e6 and diagnostic527ddd2/dbb0ac6

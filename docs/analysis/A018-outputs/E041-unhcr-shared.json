@@ -1,0 +1,93 @@
+{
+  "cells": 308637,
+  "frame_sha256": "55c88b60a5fab8195ce8d48af5403e6392c1846fef2afda44afe1ec4da145390",
+  "skill": 0.5646653649465259,
+  "predict_seconds": 191.5937711000006,
+  "a012_source_raw_max_abs": 0.0,
+  "memory": {
+    "peak_working_set_bytes": 1493135360,
+    "peak_pagefile_bytes": 1604792320,
+    "private_bytes_now": 1022992384
+  },
+  "activation": {
+    "sections": [
+      {
+        "selected": true,
+        "gain_log": 0.09439321604313537,
+        "standard_error": 0.008067040077574425,
+        "old_share": 0.5,
+        "new_share": 0.8647456989219896,
+        "iterations": 15
+      },
+      {
+        "selected": true,
+        "gain_log": 0.05224305108177021,
+        "standard_error": 0.002406336497883912,
+        "old_share": 0.5,
+        "new_share": 0.8058556238832342,
+        "iterations": 13
+      },
+      {
+        "selected": false,
+        "gain_log": 0.00015136033853092062,
+        "standard_error": 0.0034837559277809205,
+        "old_share": 0.0,
+        "new_share": 0.37877088949998367,
+        "iterations": 28
+      },
+      {
+        "selected": true,
+        "gain_log": 0.039780207316640157,
+        "standard_error": 0.011063782725480288,
+        "old_share": 0.5,
+        "new_share": 0.8647629896605925,
+        "iterations": 16
+      },
+      {
+        "selected": true,
+        "gain_log": 0.10441341680863075,
+        "standard_error": 0.010637251573094805,
+        "old_share": 0.5,
+        "new_share": 0.8356897073731613,
+        "iterations": 18
+      },
+      {
+        "selected": true,
+        "gain_log": 0.08304095920420647,
+        "standard_error": 0.008213842246206686,
+        "old_share": 0.5,
+        "new_share": 0.791544717717923,
+        "iterations": 12
+      },
+      {
+        "selected": true,
+        "gain_log": 0.12706675787709415,
+        "standard_error": 0.0062965454795217615,
+        "old_share": 0.5,
+        "new_share": 0.8243886201711769,
+        "iterations": 15
+      },
+      {
+        "selected": true,
+        "gain_log": 0.05589415925043335,
+        "standard_error": 0.0036048538515486366,
+        "old_share": 0.5,
+        "new_share": 0.8206904837628362,
+        "iterations": 14
+      }
+    ],
+    "active": [
+      0,
+      1,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "fit_rows": 1200,
+    "selection_rows": 800,
+    "reference_rows": 6100,
+    "replay_rows": 800
+  }
+}

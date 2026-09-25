@@ -1,5 +1,39 @@
 # Phase-2 preparation: E041 candidate and E025 fallback
 
+## Current A018 frozen delivery — 2026-09-25
+
+This section supersedes the historical candidate choice and window-day commands
+below. [A018](analysis/A018-test-selection.md) fixes comparison and selection:
+**E041 selected**, E025 separately preserved, no TEST upload.
+
+- Selected ZIP: `submissions/2026-09-25-E041.zip`, SHA256
+  `bd5d2b7df3c39338f68cb08f125f85695073f37c9f4be3f6adcb8961941cd132`.
+  Attach `submissions/2026-09-25-E041/method-4p.pdf` separately.
+- Fallback ZIP: `submissions/2026-09-25-E025.zip`, SHA256
+  `142921c3ea843c653821cf06a8b3fab89e8e6c96592581590f7e970064d90c6f`.
+  Attach `submissions/2026-09-25-E025/method-4p.pdf` if fallback is chosen.
+- Full [freeze manifest](analysis/A018-outputs/freeze-manifest.json) includes
+  PDF hashes, executed check provenance and exact freeze UTC. Predictors retain
+  original bytes; each new ZIP adds the complete starter-kit MIT notice only.
+- E041 fresh final-ZIP official phase2 PASSx3, exact442425-vector source parity,
+  official359.45s / inclusive364.34s. Single-process all3 E041336.55s,
+  peak commitment1.60GB; E025332.78s/1.56GB. Local CPU limits and E025 historical
+  official raw/provenance gap are documented; no hosted resource guarantee.
+- Live official API rechecked2026-09-25: TEST Nov1 00:00UTC to **Nov14 00:00UTC
+  (09:00KST)**, one submission/team; four-page method for every Test entry.
+  Source license for non-commercial research reproduction required from top3
+  at award stage. Scoped MIT proposal awaits owner choice; it is not a grant.
+- Engineering change cutoff **Nov12 00:00UTC / 09:00KST**; preferred user upload
+  by Nov13 00:00UTC. Any prior reopening needs new registered justification and
+  full checks. After cutoff only organizer-required contract fixes with logs.
+- Before user upload: recheck live rules and kit revision, verify manifest and
+  chosen ZIP/PDF hashes, confirm the original authorized account and single
+  unused TEST slot. New kit/schema invalidates affected certification and needs
+  revalidation. No autonomous upload. E025 fallback is a pre-upload choice,
+  never an assumed second attempt after a participant-side failure.
+
+## Historical preparation records (preserved)
+
 Update2026-09-24: E041 also completed local phase2 engineering qualification
 (A012): official PASSx3, exact source/assembly vectors,367.177s inclusive local
 time, paired UNHCR delta-.000508449 versus fresh E025, controls exact.

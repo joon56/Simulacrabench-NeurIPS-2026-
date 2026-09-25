@@ -11,9 +11,10 @@ in [session-prompts.ko.md](session-prompts.ko.md). Details belong in linked reco
   [Scorecard](../submissions/2026-09-19-E041/SCORES.md),
   [ZIP](../submissions/2026-09-19-E041.zip). Local performance qualification failed
   before the hosted improvement; do not use proxy failure as a universal veto.
-- TEST selection remains open. E041 passed A012 phase-2 engineering qualification;
-  E025 remains the prepared fallback. [E041 preparation](../submissions/phase2-E041-preparation/SCORES.md),
-  [E025 preparation](../submissions/phase2-E025-preparation/SCORES.md).
+- **TEST selected: E041; E025 separate fallback.** [A018 decision](analysis/A018-test-selection.md)
+  freezes seven eligible candidates and criteria before new evaluation.
+  [E041 final files](../submissions/2026-09-25-E041/SCORES.md),
+  [E025 fallback](../submissions/2026-09-25-E025/SCORES.md). No TEST upload.
 - Latest user-reported submission: E052 Grand .64, no best update; individual
   scores unavailable. E045/E047/E049 also read .64 without an update; effects
   remain unresolved. E044 .63 was adverse under its registered arm. Keep E041.
@@ -61,9 +62,15 @@ in [session-prompts.ko.md](session-prompts.ko.md). Details belong in linked reco
 - **Next S1:** [UNHCR implementation/runtime research prompt](analysis/E056-outputs/next-session.ko.md).
   Positive proxy evidence permits investigation, not automatic packaging or
   TEST adoption. Backup trigger did not occur. E057 next available; recheck IDs.
-- Concurrent S3 owns A018 and its release files; this S1 does not supersede
-  that owner's decisions. All E056 workers finished. Recheck shared jobs and
-  files before further work; user changes and other sessions' artifacts retained.
+- **S3 A018 delivery frozen:** E041 final ZIP official phase2 PASSx3, raw
+  source parity442425, all3 shared-process336.55s/peak commitment1.60GB.
+  E025332.78s/1.56GB; its historical official provenance limits are disclosed.
+  [Manifest](analysis/A018-outputs/freeze-manifest.json) binds files and methods.
+  Next release action: owner chooses scoped code license (draft only so far),
+  then window-day rule/kit recheck. Model change cutoff Nov12 00:00UTC;
+  preferred user upload Nov13, official end Nov14 00:00UTC/09:00KST.
+  Further S1 research cannot replace this frozen choice without separate review.
+  S1/S2 workers finished; S3 checks owned jobs at close. Preserve user changes.
 - Keep E055's STOP; do not add favorable seeds or silently lower its threshold.
   New exploration may have different justified criteria registered beforehand.
 
@@ -90,9 +97,11 @@ in [session-prompts.ko.md](session-prompts.ko.md). Details belong in linked reco
 - A012 E041 official phase-2 skills .490197771/.462029505/.564665365;367.177s local;
   exact source/archive vectors442425. Paired E025 deltas0/0/-.000508449. Engineering
   qualification is not a hosted performance or runtime guarantee.
-- E041 four-page method is prepared; E025 originals retained. Reconcile any new
-  development/disclosure and release license before final delivery. Use
-  [phase-2 runbook](phase2-preparation.md); reverify official dates before finalization.
+- Both final methods have four visually checked pages, including Adult/SIPP/
+  TabPFN development and replay limitations. Starter-kit notice preserved.
+  Effective team source-license grant awaits owner choice before award-stage
+  delivery; no whole-repository release. [Current runbook](phase2-preparation.md)
+  records fresh official dates and exact selected/fallback delivery paths.
 - [A015 diagnosis and adoption record](analysis/A015-workflow-self-audit.md).
   [Full pre-setup status archive](analysis/A015-outputs/status-before-workflow.md)
   preserves all previous loss maps, closed axes, results, timing and date caveats.

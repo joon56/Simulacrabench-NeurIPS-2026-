@@ -1,6 +1,6 @@
 # Calibrated survey completion with section-specific retrieval
 
-HSCC / SimulacraBench 2026 | E041 phase-2 method candidate
+HSCC / SimulacraBench 2026 | E041 TEST selection, 25 September 2026
 
 ## 1. Task, score, and evidence
 
@@ -24,7 +24,9 @@ E025 previously read 0.63 / 0.52 / 0.49 / 0.89. This compares complete
 pipelines, not an isolated effect of learned retrieval weights. No phase-2
 real-data score exists. Synthetic sandboxes and public Adult experiments
 test behavior and limited transfer channels, not confidential TEST gain.
-E041 is locally qualified for phase 2; the final choice remains open.
+The A018 selection compares E025/E041/E044/E045/E047/E049/E052 using
+target evidence, refit behavior, leakage, resources and release obligations.
+E041 is selected on this evidence and phase-2 engineering; E025 is preserved.
 
 ## 2. Schema handling and approximate gates
 
@@ -134,19 +136,24 @@ has no UNHCR gate structure and was sampled with distinct-profile constraints.
 The hosted E041 best update overrode local rejection for DEV selection; one
 noised reading cannot isolate metric, bank, selector or replay effects.
 
-A011 measured replay membership-associated log/cell contrasts +0.00450
-clean, +0.00470 household, +0.01608 Adult. Included fits had 400 more rows;
-these associations are not recoverable gains. Gate-base pressure shifted
-oppositely in two UNHCR simulations. E053's ungated Adult absolute-weight
-oracle stopped at mean-equivalent bounds +0.000523 and +0.000173, below
-its +0.005 gate. It does not bound coupled UNHCR calibration, and no E053
-calibrator enters E041.
+A011 found replay membership-associated contrasts, not recoverable gains;
+included fits also had 400 more rows. E053's ungated Adult oracle stopped
+at mean-equivalent bounds +0.000523/+0.000173. E055's coupled exact-gate
+SIPP oracle stopped at +0.000113/+0.000102. These scoped proxy stops do not
+bound approximate UNHCR calibration. No resulting calibrator enters E041.
+E045/E047/E049/E052 later read Grand .64 without a best update: small effects
+remain unresolved. Their complexity and weak transfer evidence do not justify
+replacement. No new predictor is selected by the clean synthetic ranking.
 
 <!-- pagebreak -->
 
 ## 6. Phase-2 engineering and historical diagnostic map
 
-Phase 2 makes TRAIN and DEV visible and scores TEST. Frozen E041 source
+Phase 2 makes TRAIN and DEV visible and scores TEST. Visible row counts grow
+to 16,373/5,715/8,900. All fitted components and internal row memberships may
+change; UNHCR's metric reference bank grows from 5,479 to 6,100 while
+fit/selection/replay caps remain 1,200/800/800. No pretrained fit is frozen.
+Frozen E041 source
 and its original archive passed the official phase-2 scorer on all three
 synthetic schemas. Every source/assembled raw vector matched exactly
 (442,425 cells). Fresh paired E025 comparisons were:
@@ -158,12 +165,15 @@ synthetic schemas. Every source/assembled raw vector matched exactly
 | UNHCR | 0.565173814 | 0.564665365 / -0.000508449 |
 
 Absolute differences met the preregistered 0.002 per-instrument gate.
-The original archive passed the ZIP checker. Inclusive local official
-scoring totaled 367.177 seconds, below the shared 3,600-second phase-2
-budget. Three local runs each used a separate process; neither hosted
-speed nor 16 GB peak memory nor real TEST gain was measured. E041 is a
-prepared candidate, not an automatically chosen final submission. E025
-remains a separate fallback.
+The original archive passed the ZIP checker; A012's separate-process official
+total was 367.177 seconds. A018 freshly reproduced every vector in one process
+across all three instruments: 336.55 seconds including imports, scoring and
+parity, with peak working set 1.49 GB and peak commitment 1.60 GB. Seven of
+eight UNHCR sections activated. These Windows CPU, two-thread measurements
+fit 3,600 seconds/16 GB locally, but do not certify hosted H100 resources or
+hidden-data behavior. The final notice-preserving ZIP also passed fresh official
+phase-2 scoring on all three schemas with exact raw parity (359.45 seconds
+official total; 364.34 seconds orchestration). E025 is a pre-upload fallback.
 
 E032-E034 component probes describe **E025 only**: reported UNHCR skill
 0.89 decomposed approximately into base 0.79 plus evidence 0.10.
@@ -193,19 +203,21 @@ phase-2 scores and timing are in the preparation record. Internal splits
 and phase-1 feedback influenced method selection; not all development
 choices were prospectively fixed.
 
-Development used public UCI Adult census data, licensed CC BY 4.0 [3],
-to screen retrieval and calibration methods. Separate TabPFN V2 experiments
-used Prior Labs' externally pretrained classifier weights [4], but E041
-does not include TabPFN, its outputs or fitted artifacts at inference.
-Neither Adult rows nor TabPFN weights are in the E041 archive. Public survey
-descriptions informed hypotheses, not fitted response priors.
+Development used UCI Adult (Becker and Kohavi, 1996), CC BY 4.0 [3], with
+recoded profile-constrained splits, and Census 2023 SIPP public-use data [5]
+with one reference month and audited hospital gates. Separate TabPFN V2
+experiments used Prior Labs weights [4]. These are development disclosures:
+no Adult/SIPP row, TabPFN weight/output or proxy-fitted artifact enters E041.
+Public survey descriptions informed hypotheses, not fitted response priors.
 
-The competition agreement's Submissions clause 7, checked in the earlier
-preparation audit [2], requires a four-page method for each Test entry and
+The competition agreement's clause 7, rechecked 25 September 2026 [2],
+requires a four-page method for each Test entry and
 research-reproduction-licensed source from top-three teams at award stage.
 The public starter kit is MIT-licensed [1]; substantial copied portions
 must retain its notice. A team release license remains to be selected
-before award-stage delivery. This document grants no new license.
+before award-stage delivery; A018 contains a scoped MIT proposal. This
+document grants no new license. TEST closes 14 November 00:00 UTC; one
+submission per team. Participant-side failures have no assumed retry.
 
 **References.** [1] SituatedEvals, public starter kit and MIT license:
 https://github.com/SituatedEvals/public. [2] SimulacraBench agreement:
@@ -214,3 +226,5 @@ https://www.codabench.org/competitions/17822/.
 https://archive.ics.uci.edu/dataset/2/adult.
 [4] Prior Labs, TabPFN V2 classifier weight license:
 https://huggingface.co/Prior-Labs/TabPFN-v2-clf/blob/main/LICENSE.txt.
+[5] US Census Bureau, 2023 SIPP public-use data:
+https://www.census.gov/data/datasets/2023/demo/sipp/2023-data.html.

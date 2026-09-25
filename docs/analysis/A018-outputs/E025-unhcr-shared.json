@@ -1,0 +1,13 @@
+{
+  "cells": 308637,
+  "frame_sha256": "55c88b60a5fab8195ce8d48af5403e6392c1846fef2afda44afe1ec4da145390",
+  "skill": 0.5651738139421264,
+  "predict_seconds": 188.19952990000093,
+  "a012_source_raw_max_abs": 0.0,
+  "memory": {
+    "peak_working_set_bytes": 1469911040,
+    "peak_pagefile_bytes": 1557315584,
+    "private_bytes_now": 988192768
+  },
+  "activation": {}
+}

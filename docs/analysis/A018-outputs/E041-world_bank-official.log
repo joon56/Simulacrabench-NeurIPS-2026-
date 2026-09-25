@@ -1,0 +1,8 @@
+[phase] 2 (Final): TRAIN+DEV visible, TEST scored, 3600s for predict()
+[data] C:\Users\USER\Desktop\SimulacraBench\external\starter-kit\_sandbox\world_bank against C:\Users\USER\Desktop\SimulacraBench\external\starter-kit\data\world_bank.json: 6927 respondents, 1212 held out, 92112 cells
+[install] nothing declared; running in this environment, which stands in for the hosted image
+[run] sockets disabled in-process, network off
+[work] C:\Users\USER\AppData\Local\Temp\sbench-kpb2127r
+[log] C:\Users\USER\Desktop\SimulacraBench\docs\analysis\A018-outputs\E041-world_bank-official.json
+
+PASS  0.4620  (97.6s)

@@ -1,0 +1,60 @@
+{
+  "E041": {
+    "pages": [
+      {
+        "page": 1,
+        "words": 421,
+        "bottom": 820.2817993164062,
+        "png": "E041-page-1.png"
+      },
+      {
+        "page": 2,
+        "words": 385,
+        "bottom": 820.2817993164062,
+        "png": "E041-page-2.png"
+      },
+      {
+        "page": 3,
+        "words": 427,
+        "bottom": 820.2817993164062,
+        "png": "E041-page-3.png"
+      },
+      {
+        "page": 4,
+        "words": 619,
+        "bottom": 820.2817993164062,
+        "png": "E041-page-4.png"
+      }
+    ],
+    "text_bounds": "PASS"
+  },
+  "E025": {
+    "pages": [
+      {
+        "page": 1,
+        "words": 478,
+        "bottom": 820.2817993164062,
+        "png": "E025-page-1.png"
+      },
+      {
+        "page": 2,
+        "words": 460,
+        "bottom": 820.2817993164062,
+        "png": "E025-page-2.png"
+      },
+      {
+        "page": 3,
+        "words": 485,
+        "bottom": 820.2817993164062,
+        "png": "E025-page-3.png"
+      },
+      {
+        "page": 4,
+        "words": 471,
+        "bottom": 820.2817993164062,
+        "png": "E025-page-4.png"
+      }
+    ],
+    "text_bounds": "PASS"
+  }
+}

@@ -92,3 +92,15 @@ tests/test_e056_conditional_content.py -text
 docs/analysis/E056-outputs/*.py -text whitespace=cr-at-eol
 docs/analysis/E056-outputs/*.json -text whitespace=cr-at-eol
 docs/analysis/E056-outputs/registration.md -text whitespace=cr-at-eol
+docs/analysis/A018-outputs/*.py -text
+docs/analysis/A018-test-selection.md -text
+docs/analysis/A018-outputs/*.json -text whitespace=cr-at-eol
+docs/analysis/A018-outputs/*.md -text whitespace=cr-at-eol
+docs/analysis/A018-outputs/*.txt -text whitespace=cr-at-eol
+docs/analysis/A018-outputs/*.log -text whitespace=cr-at-eol
+docs/analysis/A018-outputs/*.png binary
+docs/analysis/A018-outputs/E041-extracted/* -text whitespace=cr-at-eol
+submissions/2026-09-25-E041/* -text whitespace=cr-at-eol
+submissions/2026-09-25-E041/*.pdf binary
+submissions/2026-09-25-E025/* -text whitespace=cr-at-eol
+submissions/2026-09-25-E025/*.pdf binary

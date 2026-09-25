@@ -1,0 +1,41 @@
+{
+  "archive_sha256": "bd5d2b7df3c39338f68cb08f125f85695073f37c9f4be3f6adcb8961941cd132",
+  "instruments": {
+    "unicef": {
+      "status": "PASS",
+      "skill": 0.49019777070093806,
+      "e025_delta": 0.0,
+      "cells": 41676,
+      "raw_max_abs": 0.0,
+      "inclusive_wall_seconds": 43.55203160000019,
+      "official_seconds": 42.57949709892273,
+      "kept_work": "C:\\Users\\USER\\AppData\\Local\\Temp\\sbench-ni7x4ovx",
+      "raw_sha256": "d895e2c7bd86258a96ea775866a83a1f7ad5741ca480360b5bef893af4499fce"
+    },
+    "world_bank": {
+      "status": "PASS",
+      "skill": 0.4620295047897023,
+      "e025_delta": 0.0,
+      "cells": 92112,
+      "raw_max_abs": 0.0,
+      "inclusive_wall_seconds": 98.50848269999915,
+      "official_seconds": 97.636873960495,
+      "kept_work": "C:\\Users\\USER\\AppData\\Local\\Temp\\sbench-kpb2127r",
+      "raw_sha256": "8ff6d023bfe34ca87232a98fb38657f49e0889dd70b864ae2fa2b9477ce5e402"
+    },
+    "unhcr": {
+      "status": "PASS",
+      "skill": 0.5646653649465259,
+      "e025_delta": -0.0005084489956005411,
+      "cells": 308637,
+      "raw_max_abs": 0.0,
+      "inclusive_wall_seconds": 220.17339899999934,
+      "official_seconds": 219.23232340812683,
+      "kept_work": "C:\\Users\\USER\\AppData\\Local\\Temp\\sbench-9es0cn38",
+      "raw_sha256": "2c39c68bb163faaee19582b533b329c1f4f496add152ae12bc2206c8eb5217f0"
+    }
+  },
+  "inclusive_wall_seconds": 364.34016040000097,
+  "cells_exact": 442425,
+  "official_seconds_sum": 359.44869446754456
+}

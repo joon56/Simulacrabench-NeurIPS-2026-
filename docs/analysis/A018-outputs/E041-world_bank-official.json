@@ -1,0 +1,330 @@
+{
+  "data": "C:\\Users\\USER\\Desktop\\SimulacraBench\\external\\starter-kit\\_sandbox\\world_bank",
+  "schema": "C:\\Users\\USER\\Desktop\\SimulacraBench\\external\\starter-kit\\data\\world_bank.json",
+  "phase": 2,
+  "seed": 0,
+  "n_respondents": 6927,
+  "n_held_out": 1212,
+  "n_cells": 92112,
+  "status": "PASS",
+  "skill": 0.4620295047897023,
+  "reported_skill": 0.4620295047897023,
+  "log_score": -1.0858189696816365,
+  "uniform_reference": 2.0183615632250977,
+  "privacy": {
+    "noised": false,
+    "round_to": null
+  },
+  "std_error": 0.008787838460578694,
+  "item_normalized": -1.0858189696816365,
+  "brier": 0.5121570807311824,
+  "baseline_uniform": -2.0183615632250973,
+  "baseline_crowd": -1.5253834425319763,
+  "seconds": 97.636873960495,
+  "by_item": {
+    "sc_nstd_agree": {
+      "log_score": -1.0915875667909107,
+      "n_cells": 1212
+    },
+    "sc_nstd_artistic": {
+      "log_score": -1.0483614601294167,
+      "n_cells": 1212
+    },
+    "sc_nstd_bret_prop": {
+      "log_score": -0.955258060745925,
+      "n_cells": 1212
+    },
+    "sc_nstd_consc": {
+      "log_score": -1.279899871321349,
+      "n_cells": 1212
+    },
+    "sc_nstd_convent": {
+      "log_score": -0.9975600703574672,
+      "n_cells": 1212
+    },
+    "sc_nstd_corsi_1": {
+      "log_score": -1.5081731892987162,
+      "n_cells": 1212
+    },
+    "sc_nstd_cpt_corrected": {
+      "log_score": -1.3805566533958313,
+      "n_cells": 1212
+    },
+    "sc_nstd_ds_b_2": {
+      "log_score": -1.9270792182146823,
+      "n_cells": 1212
+    },
+    "sc_nstd_ds_f_2": {
+      "log_score": -1.9779621254383668,
+      "n_cells": 1212
+    },
+    "sc_nstd_enterp": {
+      "log_score": -1.2970923868090733,
+      "n_cells": 1212
+    },
+    "sc_nstd_extra": {
+      "log_score": -1.3124563466427817,
+      "n_cells": 1212
+    },
+    "sc_nstd_gm": {
+      "log_score": -1.2460276714346181,
+      "n_cells": 1212
+    },
+    "sc_nstd_hmt_1": {
+      "log_score": -1.1823613426526423,
+      "n_cells": 1212
+    },
+    "sc_nstd_invest": {
+      "log_score": -0.8461685647511152,
+      "n_cells": 1212
+    },
+    "sc_nstd_mtpt_err_per_s": {
+      "log_score": -0.9951937262969915,
+      "n_cells": 1212
+    },
+    "sc_nstd_mtpt_quit_1": {
+      "log_score": -0.8619230674903617,
+      "n_cells": 1212
+    },
+    "sc_nstd_open": {
+      "log_score": -1.656285730315554,
+      "n_cells": 1212
+    },
+    "sc_nstd_pp": {
+      "log_score": -1.076168972631054,
+      "n_cells": 1212
+    },
+    "sc_nstd_realistic": {
+      "log_score": -0.8600606110171343,
+      "n_cells": 1212
+    },
+    "sc_nstd_s_aware": {
+      "log_score": -1.0326754174829644,
+      "n_cells": 1212
+    },
+    "sc_nstd_s_manage": {
+      "log_score": -1.2742283349069383,
+      "n_cells": 1212
+    },
+    "sc_nstd_soc_aware": {
+      "log_score": -1.2648958042416643,
+      "n_cells": 1212
+    },
+    "sc_nstd_social": {
+      "log_score": -0.9576446964943682,
+      "n_cells": 1212
+    },
+    "sc_nstd_stability": {
+      "log_score": -1.0370482456736818,
+      "n_cells": 1212
+    },
+    "sc_nstd_tmt_err_a": {
+      "log_score": -0.9936315775754255,
+      "n_cells": 1212
+    },
+    "sc_nstd_tmt_err_b": {
+      "log_score": -1.0307517665763486,
+      "n_cells": 1212
+    },
+    "sc_nstd_tmt_log_a": {
+      "log_score": -0.8789087033850318,
+      "n_cells": 1212
+    },
+    "sc_nstd_tmt_log_b": {
+      "log_score": -1.1450856131944755,
+      "n_cells": 1212
+    },
+    "tr_applications_next_1m": {
+      "log_score": -1.728280141244391,
+      "n_cells": 1212
+    },
+    "tr_attach_skills_report_full": {
+      "log_score": -0.5399309305610194,
+      "n_cells": 1212
+    },
+    "tr_did_full": {
+      "log_score": -0.8989613584033682,
+      "n_cells": 1212
+    },
+    "tr_employment_status": {
+      "log_score": -1.427484479472507,
+      "n_cells": 1212
+    },
+    "tr_feedback_full": {
+      "log_score": -0.7707721341141628,
+      "n_cells": 1212
+    },
+    "tr_feedback_increase_job": {
+      "log_score": -1.02075417165372,
+      "n_cells": 1212
+    },
+    "tr_feel_work": {
+      "log_score": -1.0256458490473113,
+      "n_cells": 1212
+    },
+    "tr_help_get_job_full": {
+      "log_score": -0.8173284056076232,
+      "n_cells": 1212
+    },
+    "tr_help_job_search_full": {
+      "log_score": -0.40473530881546843,
+      "n_cells": 1212
+    },
+    "tr_job_full": {
+      "log_score": -0.5768335239154389,
+      "n_cells": 1212
+    },
+    "tr_job_number": {
+      "log_score": -0.6664420176277416,
+      "n_cells": 1212
+    },
+    "tr_job_offers": {
+      "log_score": -0.865591300750238,
+      "n_cells": 1212
+    },
+    "tr_low_pay_after": {
+      "log_score": -1.3202244385396353,
+      "n_cells": 1212
+    },
+    "tr_recommend_full": {
+      "log_score": -0.6271193116512275,
+      "n_cells": 1212
+    },
+    "tr_report_help_interview_full": {
+      "log_score": -0.837328655507908,
+      "n_cells": 1212
+    },
+    "tr_riasec_target_sector": {
+      "log_score": -0.8216733409822256,
+      "n_cells": 1212
+    },
+    "tr_search_hours_after": {
+      "log_score": -1.487838306340291,
+      "n_cells": 1212
+    },
+    "tr_self_efficacy": {
+      "log_score": -0.9778096739831509,
+      "n_cells": 1212
+    },
+    "tr_similar_wage_after": {
+      "log_score": -1.0701255936503755,
+      "n_cells": 1212
+    },
+    "tr_target_sector": {
+      "log_score": -2.0717199256088703,
+      "n_cells": 1212
+    },
+    "tr_upskill_hours_week": {
+      "log_score": -1.6187532256918606,
+      "n_cells": 1212
+    },
+    "user.accessedLearningLinks": {
+      "log_score": -0.6402377483663222,
+      "n_cells": 1212
+    },
+    "user.appliedInThePastSector": {
+      "log_score": -1.8343120695954256,
+      "n_cells": 1212
+    },
+    "user.expectedToFindJobInSixMonths": {
+      "log_score": -0.008942227307898067,
+      "n_cells": 1212
+    },
+    "user.expectsToFindJobInSixMonths": {
+      "log_score": -0.5498694756466556,
+      "n_cells": 1212
+    },
+    "user.helpGetInterview": {
+      "log_score": -0.8221032813113969,
+      "n_cells": 1212
+    },
+    "user.helpGetJobInDesiredSector": {
+      "log_score": -1.1034338778301573,
+      "n_cells": 1212
+    },
+    "user.helpGettingJob": {
+      "log_score": -1.137263790623835,
+      "n_cells": 1212
+    },
+    "user.helpJobSearch": {
+      "log_score": -0.6951852326849447,
+      "n_cells": 1212
+    },
+    "user.howLongInCurrentPosition": {
+      "log_score": -1.2859906300472679,
+      "n_cells": 1212
+    },
+    "user.howLongSearchingForJob": {
+      "log_score": -0.01680110942861108,
+      "n_cells": 1212
+    },
+    "user.howLongUnemployed": {
+      "log_score": -0.0498809996868684,
+      "n_cells": 1212
+    },
+    "user.howManyApplicationsLastMonth": {
+      "log_score": -0.023745448751191407,
+      "n_cells": 1212
+    },
+    "user.howManyApplicationsNextMonth": {
+      "log_score": -1.6122880116337563,
+      "n_cells": 1212
+    },
+    "user.howManyHoursSearchedPerWeek": {
+      "log_score": -0.023305702242903993,
+      "n_cells": 1212
+    },
+    "user.howManyHoursToUpskillPerWeek": {
+      "log_score": -0.915468649687344,
+      "n_cells": 1212
+    },
+    "user.howManyHoursWillSearchPerWeek": {
+      "log_score": -1.5355582564016974,
+      "n_cells": 1212
+    },
+    "user.jobStrengthsAndWeaknesses": {
+      "log_score": -1.2511400573975089,
+      "n_cells": 1212
+    },
+    "user.likelyToRecommend": {
+      "log_score": -1.3314496701487801,
+      "n_cells": 1212
+    },
+    "user.lowestAcceptablePayAfter": {
+      "log_score": -1.3411956715622828,
+      "n_cells": 1212
+    },
+    "user.planToIncreaseJobSearch": {
+      "log_score": -1.0074852774337673,
+      "n_cells": 1212
+    },
+    "user.plannedCourses": {
+      "log_score": -1.6822645664460683,
+      "n_cells": 1212
+    },
+    "user.plansToAttachSkillsReport": {
+      "log_score": -0.6955273317200906,
+      "n_cells": 1212
+    },
+    "user.preferredSector": {
+      "log_score": -1.9237209975662666,
+      "n_cells": 1212
+    },
+    "user.reportUsefullness": {
+      "log_score": -1.0614196166176186,
+      "n_cells": 1212
+    },
+    "user.targetSector": {
+      "log_score": -2.3785708876931877,
+      "n_cells": 1212
+    },
+    "user.wageOfSimilarEmployeesAfter": {
+      "log_score": -1.8742504199071486,
+      "n_cells": 1212
+    },
+    "user.willSkillsAttachHelpGetInterview": {
+      "log_score": -1.0304317996319603,
+      "n_cells": 1212
+    }
+  }
+}
