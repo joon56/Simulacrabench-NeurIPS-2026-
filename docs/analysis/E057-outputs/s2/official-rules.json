@@ -1,0 +1,21 @@
+﻿{
+    "checked_utc":  "2026-09-25T09:49:48.4904299Z",
+    "source":  "https://www.codabench.org/api/competitions/17822/",
+    "authenticated":  false,
+    "docker_image":  "python:3.12-slim",
+    "dev":  {
+                "name":  "Development",
+                "start":  "2026-08-17T00:00:00Z",
+                "end":  "2026-10-31T00:00:00Z",
+                "status":  "Current",
+                "execution_time_limit":  900,
+                "max_submissions_per_day":  1,
+                "max_submissions_per_person":  null
+            },
+    "account_slot_available":  null,
+    "slot_limitation":  "Anonymous used_submissions counters do not establish the authorized account slot",
+    "starter_kit_local_and_remote":  "ee427a94f6cc6a0d9d653b6be68c835a032e7552",
+    "website":  "https://simulacrabench.org/",
+    "website_dev_close":  "2026-10-30",
+    "scope":  "DEV preparation only; no upload or TEST decision"
+}

@@ -2,6 +2,36 @@
 
 Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-notes]].
 
+## 2026-09-25 - E057 S2 local release qualification PASS; no upload
+
+- User authorized E057 remaining release checks only. Input949884b, execution
+  freeze3f0f6ad after plan/scorecard/assembly and eight release tests. Existing
+  source/model/S1/proxy/prior submission files preserved. No S3 or TEST choice.
+- Preflight97 hashes, same versions/frames/cells/splits and six E025/E041 caches.
+  Actual default path without injected base and extracted assembly both exact
+  to S1 including shadow/refit, selection, validation and all189649 vectors.
+  Unscored active source/assembly fixture124heads/77004vectors,21sparse fallback;
+  raw sentinel exact, mass4.44e-16/postfloor sentinel2.22e-16, parents unchanged.
+- New ZIP checker and official phase1 all3 PASS. Skills.500648423071/
+  .454717307363/.562462728858, E025 deltas0/0/-.000486144847 within absolute.002;
+  E041 deltas all0. Natural zero policy is synthetic-only, not hidden inactivity.
+- Default527.669855s; shared assembly540.508477s/peak tree RSS1,820,712,960bytes;
+  official scorer sum546.082929s, inclusive556.545433s/RSS2,483,646,464bytes.
+  Total1624.723765s<2700, each<900s/memory<8GiB; no successful suite repeated.
+- Independent static review found no blocking model/parity defect. Clarified
+  overlapping missing-update scorecard arms before hosted result; original
+  preregistration retained. Future monitor-constructor cleanup limitation
+  disclosed; all current monitors initialized and jobs completed successfully.
+- ZIP submissions/2026-09-25-E057.zip SHA256
+  21bce8672ce3b3b659c9e8dfae551737c994ff64d4f57d54411c59ba77d0cba4.
+  SCORES/verification and E057-outputs/s2/report.md bind results and provenance.
+  Official public API/kit rechecked; account slot remains unknown, runtime
+  metadata distinction documented. No intended upload date or hosted result.
+- Technical/release-policy PASS permits bounded DEV exploration; E057 stays
+  parked, E041 incumbent/E025 fallback, S3 stopped. No new target gain claim,
+  proxy/TEST access, baseline refit or upload. All owned workers finished;
+  unrelated user changes excluded from task-only recording/commit/push.
+
 ## 2026-09-25 - E057 origin push authorized; S2 validation handoff confirmed
 
 - User explicitly approved pushing the completed E057 commits to configured

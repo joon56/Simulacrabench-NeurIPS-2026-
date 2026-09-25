@@ -3,6 +3,27 @@ parent: E056
 status: parked
 date: 2026-09-25
 
+## S2 release addendum — 2026-09-25
+
+User authorized remaining release checks only. Execution freeze3f0f6ad follows
+S1 close949884b; original S1 decisions below remain unchanged. Default source
+and standalone assembly now have exact all189649-vector parity, including
+UNHCR shadow/refit libraries and unscored active fixtures. Fresh ZIP checker
+and official phase1 all3 PASS. E025 deltas0/0/-.000486144847 pass absolute.002;
+E041 deltas all0. Eight new release tests PASS, no production-source changes.
+
+Shared assembly540.508477s/peak tree RSS1,820,712,960 bytes; official suite
+556.545433s/2,483,646,464 bytes. Fixed three-suite total1624.723765s<2700;
+no successful suite repeated or baseline independently refitted. Natural policy
+remains inactive on this synthetic fixture; hidden activation/gain unknown.
+
+Technical qualification and release-policy PASS; eligible for bounded DEV
+exploration under [SCORES](../../submissions/2026-09-25-E057/SCORES.md), still
+parked/unsubmitted. E041 incumbent/E025 fallback; no TEST selection or S3 resume.
+No upload date assigned; account slot unknown. [Full S2 report](../analysis/E057-outputs/s2/report.md)
+binds hashes, provenance, environment limits and pre-hosted reading clarification.
+ZIP SHA25621bce8672ce3b3b659c9e8dfae551737c994ff64d4f57d54411c59ba77d0cba4.
+
 ## Session contract and user authority
 
 Input/current HEAD9284bf4d277e339a9ae4a334d6cf7ee7bde2c6ba, branch

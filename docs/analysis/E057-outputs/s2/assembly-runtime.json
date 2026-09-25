@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "reason": "COMPLETE",
+  "exit_code": 0,
+  "parent_inclusive_seconds": 540.5084768999986,
+  "peak_process_tree_bytes": {
+    "rss": 1820712960,
+    "commitment": 1715068928
+  },
+  "memory_scope": "sum of live owned processes lifetime peak counters; includes launcher/harness",
+  "total_suite_seconds_so_far": 1068.1783321999974
+}

@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "instruments": {
+    "unicef": {
+      "status": "PASS",
+      "skill": 0.5006484230707156,
+      "seconds": 40.253764152526855,
+      "cells": 17856,
+      "assembly_raw_exact": true
+    },
+    "world_bank": {
+      "status": "PASS",
+      "skill": 0.45471730736298255,
+      "seconds": 100.86812233924866,
+      "cells": 39520,
+      "assembly_raw_exact": true
+    },
+    "unhcr": {
+      "status": "PASS",
+      "skill": 0.5624627288576414,
+      "seconds": 404.9610424041748,
+      "cells": 132273,
+      "assembly_raw_exact": true
+    }
+  }
+}

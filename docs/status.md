@@ -32,9 +32,13 @@ in [session-prompts.ko.md](session-prompts.ko.md). Details belong in linked reco
   Full run564.662s, conservative fit544.353s, aggregate peak RSS1.703GiB;
   13 focused tests and frozen verification PASS. E025 absolute.002 all3 PASS.
   Forced-active invariants PASS, no forced-policy score. Synthetic data cannot
-  establish or refute real UNHCR benefit. [S2 validation handoff](analysis/E057-outputs/s2-handoff.ko.md):
-  fresh default/assembly parity, ZIP checker, official all3 and SCORES remain.
-  No release qualification, new DEV incumbent, ZIP, method, TEST choice or upload.
+  establish or refute real UNHCR benefit. **S2 local release qualification PASS:**
+  [report](analysis/E057-outputs/s2/report.md), [scorecard](../submissions/2026-09-25-E057/SCORES.md).
+  Default/assembly/official189649 vectors exact, active fixture PASS, official
+  all3/checker/E025 absolute.002 PASS. Shared assembly540.508s/1.696GiB RSS;
+  official suite556.545s/2.313GiB. ZIP21bce867... frozen, candidate still parked.
+  Eligible for bounded user-controlled DEV exploration; no target gain,
+  new incumbent, TEST choice, method change or upload. Account slot unknown.
 - [E056](experiments/E056-conditional-leaf-content.md) positive conditional-content
   research screen: SIPP group audit delta skill +.000651952785,
   95% SSUID interval [+.000202805542,+.001195519933]. Only BIR alpha=.5 selected;
@@ -70,8 +74,10 @@ in [session-prompts.ko.md](session-prompts.ko.md). Details belong in linked reco
   E041 fits; six trees .216s, four worker stages44.897s excluding imports,
   peak RSS.401GiB. Frozen arithmetic verified without new labels or fits.
 - **S1 E057 complete.** Registration592da4c, executed codee51b29f. All owned jobs
-  complete. Next scope: [S2 validation handoff](analysis/E057-outputs/s2-handoff.ko.md),
-  not automatic packaging/upload or a new S1 study. No backup or S3 resumption.
+  complete. **S2 complete:** freeze3f0f6ad, all remaining local release checks
+  PASS; three suites1624.724s total, no repeated successful fit. Next is a
+  user-controlled DEV decision/result loop using the frozen scorecard, not
+  more identical local fitting. No automatic upload, backup or S3 resumption.
   E058 is only the expected next number; recheck collisions before reserving.
 - **S3 A018 unconfirmed review artifacts:** E041 ZIP official phase2 PASSx3, raw
   source parity442425, all3 shared-process336.55s/peak commitment1.60GB.
