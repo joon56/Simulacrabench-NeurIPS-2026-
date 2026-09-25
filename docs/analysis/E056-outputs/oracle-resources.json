@@ -1,0 +1,8 @@
+{
+  "stage": "oracle",
+  "worker_wall_seconds": 12.152228299999479,
+  "fit_seconds": 0.0,
+  "peak_rss_bytes": 395522048,
+  "reason": "COMPLETE",
+  "scope": "Worker plus descendants; .25s summed RSS samples, including worker OS lifetime peak."
+}

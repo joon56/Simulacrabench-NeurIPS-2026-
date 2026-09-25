@@ -131,11 +131,73 @@ nonpositive/inconclusive STOP. No seed, threshold, predictor or selector revisio
 
 ## Result
 
-Pending; this section contains no empirical outcome at preregistration.
+Registration18ab9e6 preceded fitting/scoring; tested library527ddd2 and final
+score-persistence revisiondbb0ac6 preceded all actual runs. Original registration
+bytes are retained in docs/analysis/E056-outputs/registration.md. No original
+E041/E055 model, threshold, grid or snapshot was changed. Existing group cache
+passed code/data/role/masking/coverage checks; zero additional E041 fits.
+
+Six fixed trees fitted on564 asked fit rows each; observed class counts in
+schema order: DT148/416, BIR38/526, OS199/365, NST106/458, OTH101/463, COR29/535.
+All6078 non-fit rows' candidate predictions were frozen before any new score.
+
+| Stage | Persons / SSUID groups | Result |
+| --- | ---: | --- |
+| Oracle |1872 /1395|Baseline skill .668734958501; finite optimum .669613180434; delta +.000878221932, skill/3 +.000292740644. Feasibility PASS only.|
+| Selection |1148 /869|Only BIR retains alpha=.5. Paired log mean .002826004258 > cluster SE .001210878893. DT/OS best arms fail their one-SE guards; other heads choose zero.|
+| Audit |1192 /872|Baseline .676908504136; selected .677560456922; delta +.000651952785, skill/3 +.000217317595. Bootstrap95% [.000202805542,.001195519933]. Follow-up research criterion PASS.|
+
+Audit changes1192/8344 vectors (14.2857%), all on the one selected leaf;
+parent and other five leaves remain exact E041. The114 actually asked audit
+respondents have BIR conditional loss .227919199841 -> .178259232573.
+This is secondary descriptive evidence, not an additional selection test.
+Raw sentinel difference0; max total-mass and post-floor sentinel differences
+2.220446049250313e-16. Under this fixed linear floor, the latter is roundoff,
+not a material gate-probability intervention.
+
+All nine E056 tests passed; nineteen tests including A014/E055 boundaries
+passed before the final score-persistence addition, then nine E056 tests passed
+again. A separate frozen-array verifier confirms56 source hashes,42546 cached
+identity vectors, the full729-way finite optimum, selection SE/choices and
+the2000-draw audit interval. No response-label re-access or additional fit in
+verification. This is independent arithmetic code, not an independent sample
+or separate human/subagent review.
+
+Additional real-data fit wall .215791100s (six trees); all four monitored
+worker stages total44.897293s, peak process-tree RSS430350336bytes (~.401GiB).
+Worker clocks start after module imports; they exclude interpreter/import,
+tool scheduling and development/wait time. These are diagnostic costs, not a
+complete hosted predictor runtime. Root remained inside the registered90-minute
+research cap. All E056 workers exited successfully; no background E056 job.
+The separate A018 verification was observed and allowed to finish before fits.
+
+Domain verdict: complementary conditional errors exist for one leaf on this
+fixed US hospital proxy. The effect is narrow and small in seven-head pooled
+units. It supports investigating the operation, not inferring refugee content
+signal, gate repair or a readable Grand increase. Six targets from one star,
+only114 asked audit persons, prior shared-source oracle exposure, edited exact
+gates and unweighted sampling limit transfer. The conditional bootstrap omits
+training/selection variability, survey-design weights and domain shift.
+
+Artifacts: docs/analysis/E056-outputs/{manifest,oracle,selection,audit,
+frozen-verification}.json, resource records, exact executed script/registration,
+exposure-ledger.md and next-session.ko.md. Restricted rows/arrays remain only
+in ignored external/e056/. Library SHA256
+db6dd6fbe32bc6e53073541b576bb2fda175877ec475d93a8adfe87734b33534.
 
 ## Decision
 
-Technical diagnostic qualification pending. No production/release qualification,
-DEV candidate or TEST adoption follows from this protocol. E041 incumbent,
-E025 fallback, E054 parked. A positive research screen requires a separate
-UNHCR implementation/runtime/no-regression session, not S2-ready packaging.
+**Positive research screen; parked pending distinct UNHCR implementation.**
+Technical diagnostic checks PASS; production technical qualification and release
+no-regression are NOT RUN. DEV exploration is not package-ready; no S2 handoff
+or new ZIP. TEST adoption is not supported by this proxy alone. E041 incumbent,
+E025 fallback and E054 parked remain this study's dispositions; separate S3
+decisions, if made, belong to their owner and are not overwritten here.
+
+The positive branch exhausts this S1 handoff's allowed work. Backup trigger
+(invalid/STOP/inconclusive/over-cap) did not occur; no backup report, refit or
+rebuild. Next: register UNHCR leaf scope, honest selection/refit behavior and
+runtime gate before implementing any production candidate. Do not transplant
+BIR's .5 or select humanitarian items by this proxy's winning head. Current
+audit is now development evidence for future work, never an untouched audit
+again. Preserve every prior STOP, including E055's +.005 failure.

@@ -24,12 +24,20 @@ in [session-prompts.ko.md](session-prompts.ko.md). Details belong in linked reco
 
 ## Latest research decision
 
+- [E056](experiments/E056-conditional-leaf-content.md) positive conditional-content
+  research screen: SIPP group audit delta skill +.000651952785,
+  95% SSUID interval [+.000202805542,+.001195519933]. Only BIR alpha=.5 selected;
+  parent/raw sentinel preserved. Diagnostic checks PASS; no production model,
+  release qualification or S2-ready candidate. No humanitarian gain forecast.
+  Oracle/selection/audit now exposed; calibration remains unscored. See
+  [exposure ledger](analysis/E056-outputs/exposure-ledger.md).
 - [A014](analysis/A014-observed-gated-channel.md) accepted SIPP as an observed
   exact-gate structural proxy: 39,131 eligible people; not approximate UNHCR.
 - [E055](experiments/E055-coupled-star-replay.md) finite coupled oracle STOP:
   person/group delta skill/3 +.000113126178 / +.000102390016, below its registered
   +.005. Recursion and both buckets exercised; frozen results independently
-  verified. Calibration/selection/audit scores unopened. No calibrator or ZIP.
+  verified. Those scores were unopened at E055 close; E056 exposure is above.
+  No E055 calibrator or ZIP.
   This closes that registered proxy study, not all target-domain calibration.
 - [A011](analysis/A011-replay-bias-diagnostics.md) measured replay/deployment
   mismatch, not its causal effect or a repair gain. E050/E051/E053 stops likewise
@@ -47,17 +55,15 @@ in [session-prompts.ko.md](session-prompts.ko.md). Details belong in linked reco
   new candidate. Frozen hashes96/96 match; E041/E054 ZIP checker freshly PASS,
   kit remote unchanged. Existing official/parity evidence retained without fits.
   No new archive, upload date or result; E054 remains parked.
-- **S1 conditional leaf content in progress.** [A016 decision](analysis/A016-next-research-decision.md)
-  selects independent asked-only trees with E041 raw sentinel mass preserved;
-  E046/E051 already tested other tree families. No replacement candidate exists.
-  [Copy-ready prompt](plans/2026-09-25-S1-conditional-content.ko.md) fixes one
-  SIPP group view, oracle/selection/audit boundaries and compute/stop caps.
-- Backup on invalid/STOP/inconclusive/over-cap: existing E041/E025 TEST evidence
-  and readiness-gap review, no fits or packages. S0 changed documents only.
-- **E056 registered at18ab9e6** during S2; no production candidate observed.
-  Concurrent S3 owns A018; recheck IDs and coordinate shared writes. S2 owns
-  A017 only and launches no fits. Input code HEAD7f712e1; S2 input4166130.
-  Entry Get-Process showed no python/wsl; command lines unavailable. Recheck jobs.
+- **S1 E056 complete.** Registration18ab9e6, executed codedbb0ac6. Zero new
+  E041 fits; six trees .216s, four worker stages44.897s excluding imports,
+  peak RSS.401GiB. Frozen arithmetic verified without new labels or fits.
+- **Next S1:** [UNHCR implementation/runtime research prompt](analysis/E056-outputs/next-session.ko.md).
+  Positive proxy evidence permits investigation, not automatic packaging or
+  TEST adoption. Backup trigger did not occur. E057 next available; recheck IDs.
+- Concurrent S3 owns A018 and its release files; this S1 does not supersede
+  that owner's decisions. All E056 workers finished. Recheck shared jobs and
+  files before further work; user changes and other sessions' artifacts retained.
 - Keep E055's STOP; do not add favorable seeds or silently lower its threshold.
   New exploration may have different justified criteria registered beforehand.
 

@@ -87,3 +87,8 @@ docs/analysis/E055-outputs/*-registration.md -text whitespace=cr-at-eol
 docs/analysis/E055-outputs/*.log -text
 docs/analysis/E055-outputs/*.py -text whitespace=cr-at-eol
 docs/analysis/A015-outputs/status-before-workflow.md -text whitespace=cr-at-eol
+scripts/screen_e056.py -text
+tests/test_e056_conditional_content.py -text
+docs/analysis/E056-outputs/*.py -text whitespace=cr-at-eol
+docs/analysis/E056-outputs/*.json -text whitespace=cr-at-eol
+docs/analysis/E056-outputs/registration.md -text whitespace=cr-at-eol

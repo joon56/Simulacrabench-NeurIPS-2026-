@@ -1,0 +1,38 @@
+{
+  "shares": {
+    "HOSPITALIZED": 0,
+    "EHREAS_DT": 2,
+    "EHREAS_BIR": 2,
+    "EHREAS_OS": 2,
+    "EHREAS_NST": 0,
+    "EHREAS_OTH": 2,
+    "EHREAS_COR": 0
+  },
+  "identity_log_sum": -4517.52257157847,
+  "best_log_sum": -4505.546096838007,
+  "uniform_reference": 1.0406887017955149,
+  "baseline_skill": 0.6687349585014456,
+  "oracle_skill": 0.6696131804337202,
+  "delta_skill": 0.0008782219322746476,
+  "delta_skill_over_3": 0.0002927406440915492,
+  "gate": "PASS",
+  "per_head_gain_log_sum": {
+    "HOSPITALIZED": 0.0,
+    "EHREAS_DT": 0.8464095218895409,
+    "EHREAS_BIR": 6.859133899954031,
+    "EHREAS_OS": 2.2771021280419745,
+    "EHREAS_NST": 0.0,
+    "EHREAS_OTH": 1.993829190578822,
+    "EHREAS_COR": 0.0
+  },
+  "role": "oracle",
+  "rows": 1872,
+  "ssuid_groups": 1395,
+  "library_sha256": "db6dd6fbe32bc6e53073541b576bb2fda175877ec475d93a8adfe87734b33534",
+  "share_values": [
+    0.0,
+    0.25,
+    0.5
+  ],
+  "scores_sha256": "0c446cba0caef900143c15fad3d9a0562cebdabfb0722c15d9684a0e411b2926"
+}

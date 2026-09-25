@@ -1,0 +1,13 @@
+{
+  "source_hashes": 56,
+  "cache_identity_vectors": 42546,
+  "roles": [
+    "oracle",
+    "selection",
+    "audit"
+  ],
+  "oracle_assignments": 729,
+  "result": "PASS",
+  "new_response_label_access": false,
+  "new_fits": 0
+}

@@ -1,0 +1,8 @@
+{
+  "stage": "library",
+  "worker_wall_seconds": 12.218454500000007,
+  "fit_seconds": 0.21579109999947832,
+  "peak_rss_bytes": 430350336,
+  "reason": "COMPLETE",
+  "scope": "Worker plus descendants; .25s summed RSS samples, including worker OS lifetime peak."
+}

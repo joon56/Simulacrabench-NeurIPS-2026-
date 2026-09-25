@@ -1,0 +1,53 @@
+{
+  "shares": {
+    "EHREAS_DT": 0,
+    "EHREAS_BIR": 2,
+    "EHREAS_OS": 0,
+    "EHREAS_NST": 0,
+    "EHREAS_OTH": 0,
+    "EHREAS_COR": 0
+  },
+  "detail": {
+    "EHREAS_DT": {
+      "proposed_index": 2,
+      "paired_mean_log": 0.00039629649970832894,
+      "cluster_se": 0.0008899332321212555
+    },
+    "EHREAS_BIR": {
+      "proposed_index": 2,
+      "paired_mean_log": 0.0028260042580004283,
+      "cluster_se": 0.0012108788933289532
+    },
+    "EHREAS_OS": {
+      "proposed_index": 2,
+      "paired_mean_log": 0.001006128238470848,
+      "cluster_se": 0.0012887396519417893
+    },
+    "EHREAS_NST": {
+      "proposed_index": 0,
+      "paired_mean_log": 0.0,
+      "cluster_se": 0.0
+    },
+    "EHREAS_OTH": {
+      "proposed_index": 0,
+      "paired_mean_log": 0.0,
+      "cluster_se": 0.0
+    },
+    "EHREAS_COR": {
+      "proposed_index": 0,
+      "paired_mean_log": 0.0,
+      "cluster_se": 0.0
+    }
+  },
+  "gate": "AUDIT",
+  "role": "selection",
+  "rows": 1148,
+  "ssuid_groups": 869,
+  "library_sha256": "db6dd6fbe32bc6e53073541b576bb2fda175877ec475d93a8adfe87734b33534",
+  "share_values": [
+    0.0,
+    0.25,
+    0.5
+  ],
+  "scores_sha256": "1d8efca99c96724ca38080b63c9a6c4a3d9a748e3493ed3758ff7a249c7a990a"
+}
