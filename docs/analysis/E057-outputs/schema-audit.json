@@ -1,0 +1,755 @@
+{
+  "schema_sha256": "b1175b6bdbd96e90a4defd83af20a38d711c6eca9fe3ce880109ff244abe80d9",
+  "predict_count": 213,
+  "leaf_count": 145,
+  "max_answer_classes": 14,
+  "given": {
+    "wave": 2,
+    "s1_2_country_asylum_lbl": 4,
+    "s2_1_hh_relationship_lbl": 9,
+    "s2_1b_age": 7,
+    "s2_1c_education_level_lbl": 8,
+    "s2_1d_marital_status_lbl": 7,
+    "s2_2_single_parent_lbl": 2,
+    "s2_3_boys_0_5": 8,
+    "s2_3_girls_0_5": 8,
+    "s2_3_boys_6_17": 8,
+    "s2_3_girls_6_17": 8,
+    "s2_3_men_18_59": 8,
+    "s2_3_women_18_59": 8,
+    "s2_3_men_60plus": 4,
+    "s2_3_women_60plus": 6,
+    "governorate_col": 46,
+    "s2_4a_origin_governorate_lbl": 16
+  },
+  "targets": [
+    {
+      "name": "s2_9_property_docs_lbl",
+      "parent": "s2_7_own_house_syria_lbl",
+      "answer_classes": 4
+    },
+    {
+      "name": "s2_11_house_occupancy_lbl",
+      "parent": "s2_10_house_condition_lbl",
+      "answer_classes": 6
+    },
+    {
+      "name": "s3_3_who_visited_lbl",
+      "parent": "s3_2_visited_syria_lbl",
+      "answer_classes": 3
+    },
+    {
+      "name": "s3_4a_visit_year",
+      "parent": "s3_2_visited_syria_lbl",
+      "answer_classes": 9
+    },
+    {
+      "name": "s3_4b_visit_month",
+      "parent": "s3_2_visited_syria_lbl",
+      "answer_classes": 14
+    },
+    {
+      "name": "s3_7_num_permanent_returns_lbl",
+      "parent": "s3_6_permanent_returns_lbl",
+      "answer_classes": 8
+    },
+    {
+      "name": "s3_9a_recent_returns_count_lbl",
+      "parent": "s3_6_permanent_returns_lbl",
+      "answer_classes": 8
+    },
+    {
+      "name": "s3_8a_return_year",
+      "parent": "s3_6_permanent_returns_lbl",
+      "answer_classes": 9
+    },
+    {
+      "name": "s3_8b_return_month",
+      "parent": "s3_6_permanent_returns_lbl",
+      "answer_classes": 14
+    },
+    {
+      "name": "s3_9b_returned_children",
+      "parent": "s3_6_permanent_returns_lbl",
+      "answer_classes": 8
+    },
+    {
+      "name": "s3_10a_returnee_is_head_lbl",
+      "parent": "s3_9c_returnee_working_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s3_10b_returnee_gender_lbl",
+      "parent": "s3_9c_returnee_working_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s3_10d_employ_before_return_lbl",
+      "parent": "s3_10c_returnee_age",
+      "answer_classes": 5
+    },
+    {
+      "name": "s3_10g_employ_syria_lbl",
+      "parent": "s3_9c_returnee_working_lbl",
+      "answer_classes": 5
+    },
+    {
+      "name": "s7a_2_location_known_lbl",
+      "parent": "s7a_1_return_destination_lbl",
+      "answer_classes": 3
+    },
+    {
+      "name": "s7a_5_alone_reason_lbl",
+      "parent": "s7a_4_return_alone_lbl",
+      "answer_classes": 5
+    },
+    {
+      "name": "s7a_6_return_companions_lbl",
+      "parent": "s7a_4_return_alone_lbl",
+      "answer_classes": 4
+    },
+    {
+      "name": "s7a_7_reason_safety_improved_lbl",
+      "parent": "s3_11_intent_return_12m_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s7a_7_reason_family_reunite_lbl",
+      "parent": "s3_11_intent_return_12m_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s7a_7_reason_sufficient_resources_lbl",
+      "parent": "s3_11_intent_return_12m_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s7a_7_reason_livelihood_found_lbl",
+      "parent": "s3_11_intent_return_12m_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s7a_7_reason_services_adequate_lbl",
+      "parent": "s3_11_intent_return_12m_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s7a_7_reason_property_access_lbl",
+      "parent": "s3_11_intent_return_12m_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s7a_7_reason_movement_freedom_lbl",
+      "parent": "s3_11_intent_return_12m_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s7a_7_reason_sufficient_info_lbl",
+      "parent": "s3_11_intent_return_12m_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s7a_7_reason_positive_feedback_lbl",
+      "parent": "s3_11_intent_return_12m_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s7a_7_reason_problems_host_lbl",
+      "parent": "s3_11_intent_return_12m_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s7a_7_reason_residency_delays_lbl",
+      "parent": "s3_11_intent_return_12m_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s7a_7_reason_residency_other",
+      "parent": "s3_11_intent_return_12m_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s7a_7_reason_high_cost_living_lbl",
+      "parent": "s3_11_intent_return_12m_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s7a_7_reason_limited_jobs_lbl",
+      "parent": "s3_11_intent_return_12m_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s7a_7_reason_work_permit_lbl",
+      "parent": "s3_11_intent_return_12m_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s7a_7_reason_homeland_lbl",
+      "parent": "s3_11_intent_return_12m_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s7a_7_reason_education_opps_lbl",
+      "parent": "s3_11_intent_return_12m_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s7a_7_reason_other",
+      "parent": "s3_11_intent_return_12m_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s7a_7_reason_pna_lbl",
+      "parent": "s3_11_intent_return_12m_lbl",
+      "answer_classes": 1
+    },
+    {
+      "name": "s7b_1_no_return_safety_concerns_lbl",
+      "parent": "s3_11_intent_return_12m_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s7b_1_no_return_economic_syria_lbl",
+      "parent": "s3_11_intent_return_12m_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s7b_1_no_return_legal_docs_lbl",
+      "parent": "s3_11_intent_return_12m_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s7b_1_no_return_debt_host_lbl",
+      "parent": "s3_11_intent_return_12m_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s7b_1_no_return_livelihood_lbl",
+      "parent": "s3_11_intent_return_12m_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s7b_1_no_return_services_lbl",
+      "parent": "s3_11_intent_return_12m_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s7b_1_no_return_family_needs_lbl",
+      "parent": "s3_11_intent_return_12m_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s7b_1_no_return_housing_lbl",
+      "parent": "s3_11_intent_return_12m_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s7b_1_no_return_social_tensions_lbl",
+      "parent": "s3_11_intent_return_12m_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s7b_1_no_return_debt_syria_lbl",
+      "parent": "s3_11_intent_return_12m_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s7b_1_no_return_advised_against_lbl",
+      "parent": "s3_11_intent_return_12m_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s7b_1_no_return_better_assistance_lbl",
+      "parent": "s3_11_intent_return_12m_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s7b_1_no_return_no_family_lbl",
+      "parent": "s3_11_intent_return_12m_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s7b_1_no_return_no_resources_lbl",
+      "parent": "s3_11_intent_return_12m_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s7b_1_no_return_adapted_host_lbl",
+      "parent": "s3_11_intent_return_12m_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s7b_1_no_return_home_damaged_lbl",
+      "parent": "s3_11_intent_return_12m_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s7b_1_no_return_have_citizenship_lbl",
+      "parent": "s3_11_intent_return_12m_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s7b_1_no_return_health_travel_lbl",
+      "parent": "s3_11_intent_return_12m_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s7b_1_no_return_other",
+      "parent": "s3_11_intent_return_12m_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s7b_1_no_return_dont_know_lbl",
+      "parent": "s3_11_intent_return_12m_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s7b_1_no_return_PNA_lbl",
+      "parent": "s3_11_intent_return_12m_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s7b_2_recon_safety_improved_lbl",
+      "parent": "s3_11_intent_return_12m_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s7b_2_recon_legal_access_lbl",
+      "parent": "s3_11_intent_return_12m_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s7b_2_recon_sufficient_resources_lbl",
+      "parent": "s3_11_intent_return_12m_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s7b_2_recon_livelihood_opps_lbl",
+      "parent": "s3_11_intent_return_12m_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s7b_2_recon_basic_services_lbl",
+      "parent": "s3_11_intent_return_12m_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s7b_2_recon_special_services_lbl",
+      "parent": "s3_11_intent_return_12m_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s7b_2_recon_housing_access_lbl",
+      "parent": "s3_11_intent_return_12m_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s7b_2_recon_debt_paid_host_lbl",
+      "parent": "s3_11_intent_return_12m_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s7b_2_recon_family_together_lbl",
+      "parent": "s3_11_intent_return_12m_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s7b_2_recon_reentry_possible_lbl",
+      "parent": "s3_11_intent_return_12m_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s7b_2_recon_asylum_negative_lbl",
+      "parent": "s3_11_intent_return_12m_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s7b_2_recon_debt_paid_syria_lbl",
+      "parent": "s3_11_intent_return_12m_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s7b_2_recon_others_returning_lbl",
+      "parent": "s3_11_intent_return_12m_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s7b_2_recon_host_worse_lbl",
+      "parent": "s3_11_intent_return_12m_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s7b_2_recon_war_host_lbl",
+      "parent": "s3_11_intent_return_12m_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s7b_2_recon_never_lbl",
+      "parent": "s3_11_intent_return_12m_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s7b_2_recon_other",
+      "parent": "s3_11_intent_return_12m_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s7b_2_recon_PNA_lbl",
+      "parent": "s3_11_intent_return_12m_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s7c_1_cond_safety_improved_lbl",
+      "parent": "s3_11_intent_return_12m_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s7c_1_cond_sufficient_resources_lbl",
+      "parent": "s3_11_intent_return_12m_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s7c_1_cond_livelihood_opps_lbl",
+      "parent": "s3_11_intent_return_12m_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s7c_1_cond_basic_services_lbl",
+      "parent": "s3_11_intent_return_12m_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s7c_1_cond_special_services_lbl",
+      "parent": "s3_11_intent_return_12m_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s7c_1_cond_housing_access_lbl",
+      "parent": "s3_11_intent_return_12m_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s7c_1_cond_reentry_possible_lbl",
+      "parent": "s3_11_intent_return_12m_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s7c_1_cond_debt_paid_host_lbl",
+      "parent": "s3_11_intent_return_12m_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s7c_1_cond_debt_paid_syria_lbl",
+      "parent": "s3_11_intent_return_12m_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s7c_1_cond_host_worse_lbl",
+      "parent": "s3_11_intent_return_12m_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s7c_1_cond_other",
+      "parent": "s3_11_intent_return_12m_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s3_13_hope_return_5yr_lbl",
+      "parent": "s3_12_hope_return_someday_lbl",
+      "answer_classes": 3
+    },
+    {
+      "name": "s3_14_visit_importance_lbl",
+      "parent": "s3_11_intent_return_12m_lbl",
+      "answer_classes": 7
+    },
+    {
+      "name": "s3_16_friend_ret_family_lbl",
+      "parent": "s3_15_friend_return_likely_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s3_16_friend_ret_safety_lbl",
+      "parent": "s3_15_friend_return_likely_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s3_16_friend_ret_econ_syria_lbl",
+      "parent": "s3_15_friend_return_likely_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s3_16_friend_ret_no_legal_lbl",
+      "parent": "s3_15_friend_return_likely_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s3_16_friend_ret_no_econ_host_lbl",
+      "parent": "s3_15_friend_return_likely_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s3_16_friend_ret_no_services_lbl",
+      "parent": "s3_15_friend_return_likely_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s3_16_friend_ret_high_cost_lbl",
+      "parent": "s3_15_friend_return_likely_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s3_16_friend_ret_homeland_lbl",
+      "parent": "s3_15_friend_return_likely_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s3_16_friend_ret_has_property_lbl",
+      "parent": "s3_15_friend_return_likely_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s3_16_friend_ret_has_resources_lbl",
+      "parent": "s3_15_friend_return_likely_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s3_16_friend_ret_other",
+      "parent": "s3_15_friend_return_likely_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s3_17_friend_no_ret_safety_lbl",
+      "parent": "s3_15_friend_return_likely_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s3_17_friend_no_ret_no_econ_lbl",
+      "parent": "s3_15_friend_return_likely_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s3_17_friend_no_ret_no_education_lbl",
+      "parent": "s3_15_friend_return_likely_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s3_17_friend_no_ret_no_health_lbl",
+      "parent": "s3_15_friend_return_likely_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s3_17_friend_no_ret_no_water_lbl",
+      "parent": "s3_15_friend_return_likely_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s3_17_friend_no_ret_no_electricity_lbl",
+      "parent": "s3_15_friend_return_likely_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s3_17_friend_no_ret_food_insecurity_lbl",
+      "parent": "s3_15_friend_return_likely_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s3_17_friend_no_ret_other",
+      "parent": "s3_15_friend_return_likely_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s3_23a_safety_rank1_lbl",
+      "parent": "s3_23_safety_no_concerns_lbl",
+      "answer_classes": 10
+    },
+    {
+      "name": "s3_23b_safety_rank2_lbl",
+      "parent": "s3_23_safety_no_concerns_lbl",
+      "answer_classes": 10
+    },
+    {
+      "name": "s4_3_main_earner_gender",
+      "parent": "s4_1_is_main_earner_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s4_4_main_earner_age",
+      "parent": "s4_1_is_main_earner_lbl",
+      "answer_classes": 7
+    },
+    {
+      "name": "s4_5_main_earner_relation_lbl",
+      "parent": "s4_1_is_main_earner_lbl",
+      "answer_classes": 9
+    },
+    {
+      "name": "s4_6_main_earner_education_lbl",
+      "parent": "s4_1_is_main_earner_lbl",
+      "answer_classes": 7
+    },
+    {
+      "name": "s4_7_has_work_permit_lbl",
+      "parent": "s4_0_hh_anyone_working_lbl",
+      "answer_classes": 4
+    },
+    {
+      "name": "s4_11_job_but_absent_lbl",
+      "parent": "s4_10_family_biz_lastweek_lbl",
+      "answer_classes": 4
+    },
+    {
+      "name": "s4_16_employment_type_lbl",
+      "parent": "s4_0_hh_anyone_working_lbl",
+      "answer_classes": 9
+    },
+    {
+      "name": "s6_4_need_housing_lbl",
+      "parent": "s6_3_income_adequacy_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s6_4_need_food_lbl",
+      "parent": "s6_3_income_adequacy_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s6_4_need_commodities_lbl",
+      "parent": "s6_3_income_adequacy_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s6_4_need_education_lbl",
+      "parent": "s6_3_income_adequacy_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s6_4_need_health_lbl",
+      "parent": "s6_3_income_adequacy_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s6_4_need_electricity_lbl",
+      "parent": "s6_3_income_adequacy_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s6_4_need_water_lbl",
+      "parent": "s6_3_income_adequacy_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s6_4_need_other",
+      "parent": "s6_3_income_adequacy_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s6_6_assist_unhcr_lbl",
+      "parent": "s6_5_assistance_received_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s6_6_assist_wfp_lbl",
+      "parent": "s6_5_assistance_received_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s6_6_assist_intl_orgs_lbl",
+      "parent": "s6_5_assistance_received_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s6_6_assist_government_lbl",
+      "parent": "s6_5_assistance_received_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s6_6_assist_religious_lbl",
+      "parent": "s6_5_assistance_received_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s6_6_assist_ngo_lbl",
+      "parent": "s6_5_assistance_received_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s6_6_assist_other",
+      "parent": "s6_5_assistance_received_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s6_11_challenge_movement_lbl",
+      "parent": "s6_10_face_challenges_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s6_11_challenge_eviction_lbl",
+      "parent": "s6_10_face_challenges_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s6_11_challenge_safety_lbl",
+      "parent": "s6_10_face_challenges_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s6_11_challenge_legal_lbl",
+      "parent": "s6_10_face_challenges_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s6_11_challenge_employment_lbl",
+      "parent": "s6_10_face_challenges_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s6_11_challenge_no_assistance_lbl",
+      "parent": "s6_10_face_challenges_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s6_11_challenge_debt_lbl",
+      "parent": "s6_10_face_challenges_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s6_11_challenge_health_access_lbl",
+      "parent": "s6_10_face_challenges_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s6_11_challenge_education_access_lbl",
+      "parent": "s6_10_face_challenges_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s6_11_challenge_separation_lbl",
+      "parent": "s6_10_face_challenges_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s6_11_challenge_tensions_lbl",
+      "parent": "s6_10_face_challenges_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s6_11_challenge_forced_return_lbl",
+      "parent": "s6_10_face_challenges_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s6_11_challenge_other",
+      "parent": "s6_10_face_challenges_lbl",
+      "answer_classes": 2
+    },
+    {
+      "name": "s6_12_children_schooling_lbl",
+      "parent": "s2_3_boys_6_17",
+      "answer_classes": 4
+    }
+  ],
+  "max_tree_fits": 290,
+  "boosting_class_tree_iterations_upper": 23840,
+  "actual_asked_fit_counts": "Unknown from schema; no responses inspected"
+}

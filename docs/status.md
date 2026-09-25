@@ -11,10 +11,10 @@ in [session-prompts.ko.md](session-prompts.ko.md). Details belong in linked reco
   [Scorecard](../submissions/2026-09-19-E041/SCORES.md),
   [ZIP](../submissions/2026-09-19-E041.zip). Local performance qualification failed
   before the hosted improvement; do not use proxy failure as a universal veto.
-- **TEST selected: E041; E025 separate fallback.** [A018 decision](analysis/A018-test-selection.md)
-  freezes seven eligible candidates and criteria before new evaluation.
-  [E041 final files](../submissions/2026-09-25-E041/SCORES.md),
-  [E025 fallback](../submissions/2026-09-25-E025/SCORES.md). No TEST upload.
+- **TEST choice is NOT user-confirmed.** User explicitly stopped S3 and clarified
+  that [A018](analysis/A018-test-selection.md) is an unconfirmed review proposal,
+  including its selected/frozen wording. E041 remains DEV incumbent; E025 is the
+  existing fallback. Preserve A018 files; no S3 resumption in this S1 session.
 - Latest user-reported submission: E052 Grand .64, no best update; individual
   scores unavailable. E045/E047/E049 also read .64 without an update; effects
   remain unresolved. E044 .63 was adverse under its registered arm. Keep E041.
@@ -62,14 +62,14 @@ in [session-prompts.ko.md](session-prompts.ko.md). Details belong in linked reco
 - **Next S1:** [UNHCR implementation/runtime research prompt](analysis/E056-outputs/next-session.ko.md).
   Positive proxy evidence permits investigation, not automatic packaging or
   TEST adoption. Backup trigger did not occur. E057 next available; recheck IDs.
-- **S3 A018 delivery frozen:** E041 final ZIP official phase2 PASSx3, raw
+- **S3 A018 unconfirmed review artifacts:** E041 ZIP official phase2 PASSx3, raw
   source parity442425, all3 shared-process336.55s/peak commitment1.60GB.
   E025332.78s/1.56GB; its historical official provenance limits are disclosed.
   [Manifest](analysis/A018-outputs/freeze-manifest.json) binds files and methods.
   Next release action: owner chooses scoped code license (draft only so far),
   then window-day rule/kit recheck. Model change cutoff Nov12 00:00UTC;
   preferred user upload Nov13, official end Nov14 00:00UTC/09:00KST.
-  Further S1 research cannot replace this frozen choice without separate review.
+  These engineering records do not establish a user-confirmed TEST choice.
   S1/S2 workers finished; S3 checks owned jobs at close. Preserve user changes.
 - Keep E055's STOP; do not add favorable seeds or silently lower its threshold.
   New exploration may have different justified criteria registered beforehand.
