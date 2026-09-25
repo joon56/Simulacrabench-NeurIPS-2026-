@@ -1,0 +1,42 @@
+{
+  "status": "PASS",
+  "checked_source_hashes": 60,
+  "local_hashes": {
+    "external/e057/unicef-vectors.pkl": "7570f71882233a9319a6b3c31d2d0ee99fcc1a61d1d3a3cd1bbbb55905de3936",
+    "external/e057/world_bank-vectors.pkl": "33ac369f714b21bb54f2577c513fb9fc6342af1b85b176024b2a1b37494b3fe0",
+    "external/e057/unhcr-vectors.pkl": "a4cffcc1c75c8b63b1d2c0e1e0d24a20a202a3361603c80160c19d6d42b400e1",
+    "external/e057/split.json": "033a4939112860864e607048054610e4fbb7d881b1af2f20289fc7192ec74f8d",
+    "external/e057/masked-shadow.pkl": "6f96895f3d1372ae021e140bc02215fe2088365022d32e25dad3ba9c4bd04d86",
+    "external/e057/shadow-library.pkl": "a7ddb26e42d037da7335cb7fafecd59fc657ee423cfee020772958fc036f6157",
+    "external/e057/refit-library.pkl": "ccbd5a2452b98753b20837152c8ed9859a0bac1db695ffb3b02399874d89abe8",
+    "external/e057/forced-vectors.pkl": "43eee1974a8c46a5372a5d6eea553024d95c2a0ee2043781244973e6af96d2bd",
+    "external/e057/validation-differences.pkl": "f0b709b773f9fbffbca8d1378d32aec1e1853c94d21da4937facf4d5501019b0"
+  },
+  "schema_targets": 145,
+  "split_counts": {
+    "fit": 5879,
+    "selection": 1200,
+    "validation": 1200,
+    "query": 621,
+    "shadow_query": 3021
+  },
+  "frozen_refit_vectors_exact": 132273,
+  "protected_paths_unchanged": true,
+  "new_fits": 0,
+  "new_label_scores": 0,
+  "verifier_sha256": "bb14a12c9a7802649c09ae1cc32d176e3971abffdd77054b73a6d74faf4285f9",
+  "aggregate_hashes": {
+    "aggregate-memory.json": "37a9e532a8d1053ad3a53c1c0409b05dce34e22085836461d5b4529b30037a5b",
+    "policy.json": "f0852180eef1d46472a23c3ac5764846cd5790e250f5c03f2392c1bf28116499",
+    "preflight.json": "5f1c639a7a5ca9678c2a8233b10aac4b464887140926921260149751e108f44d",
+    "result.json": "f96b78374842711ba47f5a618e8759af5c0b1fd886b2b370bed7eb5decac02d5",
+    "runtime.json": "6b119c2cd263ec7d89c66c442216d7674379712e117ae00c9e2cc2ebc41df2b3",
+    "schema-audit.json": "f21b7ef02cf17cb369c22e655022f415570f408ac71aa63485666a75a1a588e5",
+    "selection.json": "e8bb7439a1f4c39e8d401cdf51d614135f9089fc359e5c2702c97cba98e5ac48",
+    "unhcr-execution.json": "11d0b5abfd8e18a39a9b937fc381072fad1974a4acb3e47c4b94027b1700e351",
+    "unicef-execution.json": "b23ab6a2f7bb530c5792073775616aba67b808cfae53c75f53a842fc703d30a3",
+    "validation.json": "4a89a3e1795a13aa2707e88c9eb1f081a72d233789f7500ad76490d24962afd0",
+    "world_bank-execution.json": "e8fd70caed1e4fcd710022c2c949354ab244d76ee1ec229a1a58f2a9bc0b118d"
+  },
+  "scope": "Frozen arithmetic, role masking, hashes and limits; no independent efficacy audit."
+}

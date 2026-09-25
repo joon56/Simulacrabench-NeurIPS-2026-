@@ -1,0 +1,23 @@
+{
+  "events": [
+    {
+      "event": "fallback",
+      "seconds_since_import_start": 9.566389600000548
+    },
+    {
+      "event": "fit_start",
+      "seconds_since_import_start": 9.567465200001607
+    },
+    {
+      "event": "fit_end",
+      "seconds_since_import_start": 46.737468600000284
+    }
+  ],
+  "phase_seconds": {
+    "final_base": 37.16999670000041
+  },
+  "frame_sha256": "96a081fd7880bf0e06399d4a4e6fdfb332436b19ea08d754bacf87d377178a24",
+  "fallback": "other_instrument",
+  "predict_seconds": 37.172648100000515,
+  "predictions_sha256": "7570f71882233a9319a6b3c31d2d0ee99fcc1a61d1d3a3cd1bbbb55905de3936"
+}

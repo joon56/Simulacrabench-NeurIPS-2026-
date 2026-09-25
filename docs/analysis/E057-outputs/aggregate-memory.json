@@ -1,0 +1,13 @@
+﻿{
+    "owned_pids":  [
+                       4360,
+                       13300,
+                       41892,
+                       42424
+                   ],
+    "peak_sum_lifetime_rss_bytes":  1828978688,
+    "peak_sum_lifetime_commitment_bytes":  1705742336,
+    "samples":  1893,
+    "reason":  "COMPLETE",
+    "scope":  "Main worker, Python launchers and parent harness; OS lifetime peaks include time before supplemental monitor started; worker descendants monitored separately by frozen driver."
+}

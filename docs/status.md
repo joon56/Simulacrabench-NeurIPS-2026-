@@ -25,6 +25,16 @@ in [session-prompts.ko.md](session-prompts.ko.md). Details belong in linked reco
 
 ## Latest research decision
 
+- [E057](experiments/E057-unhcr-conditional-content.md) UNHCR procedure/runtime
+  engineering PASS, research candidate parked. All145 schema leaves considered;
+  124 shadow+124 refit trees. Selection3 leaves; independent validation fails
+  preregistered2SE, so all shares0 and final all3 output exact E041. No retuning.
+  Full run564.662s, conservative fit544.353s, aggregate peak RSS1.703GiB;
+  13 focused tests and frozen verification PASS. E025 absolute.002 all3 PASS.
+  Forced-active invariants PASS, no forced-policy score. Synthetic data cannot
+  establish or refute real UNHCR benefit. [S2 validation handoff](analysis/E057-outputs/s2-handoff.ko.md):
+  fresh default/assembly parity, ZIP checker, official all3 and SCORES remain.
+  No release qualification, new DEV incumbent, ZIP, method, TEST choice or upload.
 - [E056](experiments/E056-conditional-leaf-content.md) positive conditional-content
   research screen: SIPP group audit delta skill +.000651952785,
   95% SSUID interval [+.000202805542,+.001195519933]. Only BIR alpha=.5 selected;
@@ -59,18 +69,18 @@ in [session-prompts.ko.md](session-prompts.ko.md). Details belong in linked reco
 - **S1 E056 complete.** Registration18ab9e6, executed codedbb0ac6. Zero new
   E041 fits; six trees .216s, four worker stages44.897s excluding imports,
   peak RSS.401GiB. Frozen arithmetic verified without new labels or fits.
-- **Next S1:** [UNHCR implementation/runtime research prompt](analysis/E056-outputs/next-session.ko.md).
-  Positive proxy evidence permits investigation, not automatic packaging or
-  TEST adoption. Backup trigger did not occur. E057 next available; recheck IDs.
+- **S1 E057 complete.** Registration592da4c, executed codee51b29f. All owned jobs
+  complete. Next scope: [S2 validation handoff](analysis/E057-outputs/s2-handoff.ko.md),
+  not automatic packaging/upload or a new S1 study. No backup or S3 resumption.
+  E058 is only the expected next number; recheck collisions before reserving.
 - **S3 A018 unconfirmed review artifacts:** E041 ZIP official phase2 PASSx3, raw
   source parity442425, all3 shared-process336.55s/peak commitment1.60GB.
   E025332.78s/1.56GB; its historical official provenance limits are disclosed.
   [Manifest](analysis/A018-outputs/freeze-manifest.json) binds files and methods.
-  Next release action: owner chooses scoped code license (draft only so far),
-  then window-day rule/kit recheck. Model change cutoff Nov12 00:00UTC;
-  preferred user upload Nov13, official end Nov14 00:00UTC/09:00KST.
+  Its historical proposed release actions/dates remain in A018; they are not
+  active instructions or a user-confirmed TEST schedule in this S1 handoff.
   These engineering records do not establish a user-confirmed TEST choice.
-  S1/S2 workers finished; S3 checks owned jobs at close. Preserve user changes.
+  Those archived jobs finished; E057 also closed with no active job. Preserve user changes.
 - Keep E055's STOP; do not add favorable seeds or silently lower its threshold.
   New exploration may have different justified criteria registered beforehand.
 

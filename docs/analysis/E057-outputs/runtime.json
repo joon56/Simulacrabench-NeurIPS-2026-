@@ -1,0 +1,14 @@
+{
+  "parent_inclusive_seconds": 564.661591,
+  "peak_tree_memory_bytes": {
+    "rss": 1783631872,
+    "commitment": 1692868608
+  },
+  "exit_code": 0,
+  "reason": "COMPLETE",
+  "limits": {
+    "seconds": 900,
+    "fit_seconds": 1200,
+    "memory_bytes": 8589934592
+  }
+}

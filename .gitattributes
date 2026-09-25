@@ -106,7 +106,8 @@ submissions/2026-09-25-E025/* -text whitespace=cr-at-eol
 submissions/2026-09-25-E025/*.pdf binary
 src/models/conditional_leaf_content.py -text
 scripts/check_e057.py -text
+scripts/verify_e057.py -text
 tests/test_e057_conditional_content.py -text
 docs/analysis/E057-outputs/*.json -text whitespace=cr-at-eol
 docs/analysis/E057-outputs/registration.md -text whitespace=cr-at-eol
-docs/analysis/E057-outputs/*.log -text
+docs/analysis/E057-outputs/*.log -text whitespace=cr-at-eol

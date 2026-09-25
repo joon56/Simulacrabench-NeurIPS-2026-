@@ -1,0 +1,1690 @@
+{
+  "events": [
+    {
+      "event": "split",
+      "seconds_since_import_start": 145.97968850000143
+    },
+    {
+      "event": "fit_start",
+      "seconds_since_import_start": 146.2699614000012
+    },
+    {
+      "event": "fit_end",
+      "seconds_since_import_start": 295.82331630000044
+    },
+    {
+      "event": "fit_start",
+      "seconds_since_import_start": 296.05829630000153
+    },
+    {
+      "event": "fit_end",
+      "seconds_since_import_start": 312.8836949000015
+    },
+    {
+      "event": "shadow_frozen",
+      "seconds_since_import_start": 313.30184010000085
+    },
+    {
+      "event": "selection_frozen",
+      "seconds_since_import_start": 314.72246370000175
+    },
+    {
+      "event": "validation_scored",
+      "seconds_since_import_start": 314.75749390000055
+    },
+    {
+      "event": "policy_frozen",
+      "seconds_since_import_start": 314.7600702
+    },
+    {
+      "event": "fit_start",
+      "seconds_since_import_start": 314.7621099000007
+    },
+    {
+      "event": "fit_end",
+      "seconds_since_import_start": 539.8576312000005
+    },
+    {
+      "event": "fit_start",
+      "seconds_since_import_start": 539.9100888000012
+    },
+    {
+      "event": "fit_end",
+      "seconds_since_import_start": 556.9504877000018
+    },
+    {
+      "event": "refit_frozen",
+      "seconds_since_import_start": 556.951602000001
+    },
+    {
+      "event": "final",
+      "seconds_since_import_start": 558.5192208000008
+    }
+  ],
+  "phase_seconds": {
+    "shadow_base": 149.55335109999942,
+    "shadow_trees": 16.825403699998787,
+    "final_base": 225.09551620000093,
+    "refit_trees": 17.040398500001174
+  },
+  "frame_sha256": "0e6f1361d9e3d5a85fc8bad561cd486dc64fb7970ad07fd7f0074b629beaf836",
+  "split_sha256": "033a4939112860864e607048054610e4fbb7d881b1af2f20289fc7192ec74f8d",
+  "role_counts": {
+    "fit": 5879,
+    "selection": 1200,
+    "validation": 1200,
+    "query": 621,
+    "shadow_query": 3021
+  },
+  "masked_shadow_sha256": "6f96895f3d1372ae021e140bc02215fe2088365022d32e25dad3ba9c4bd04d86",
+  "shadow_library_sha256": "a7ddb26e42d037da7335cb7fafecd59fc657ee423cfee020772958fc036f6157",
+  "shadow_head_details": {
+    "s2_9_property_docs_lbl": {
+      "asked_rows": 2242,
+      "observed_classes": 4,
+      "trained": true
+    },
+    "s2_11_house_occupancy_lbl": {
+      "asked_rows": 633,
+      "observed_classes": 5,
+      "trained": true
+    },
+    "s3_3_who_visited_lbl": {
+      "asked_rows": 2734,
+      "observed_classes": 3,
+      "trained": true
+    },
+    "s3_4a_visit_year": {
+      "asked_rows": 2734,
+      "observed_classes": 9,
+      "trained": true
+    },
+    "s3_4b_visit_month": {
+      "asked_rows": 2734,
+      "observed_classes": 14,
+      "trained": true
+    },
+    "s3_7_num_permanent_returns_lbl": {
+      "asked_rows": 27,
+      "observed_classes": 7,
+      "trained": false
+    },
+    "s3_9a_recent_returns_count_lbl": {
+      "asked_rows": 27,
+      "observed_classes": 6,
+      "trained": false
+    },
+    "s3_8a_return_year": {
+      "asked_rows": 27,
+      "observed_classes": 5,
+      "trained": false
+    },
+    "s3_8b_return_month": {
+      "asked_rows": 27,
+      "observed_classes": 10,
+      "trained": false
+    },
+    "s3_9b_returned_children": {
+      "asked_rows": 27,
+      "observed_classes": 4,
+      "trained": false
+    },
+    "s3_10a_returnee_is_head_lbl": {
+      "asked_rows": 8,
+      "observed_classes": 2,
+      "trained": false
+    },
+    "s3_10b_returnee_gender_lbl": {
+      "asked_rows": 8,
+      "observed_classes": 2,
+      "trained": false
+    },
+    "s3_10d_employ_before_return_lbl": {
+      "asked_rows": 8,
+      "observed_classes": 2,
+      "trained": false
+    },
+    "s3_10g_employ_syria_lbl": {
+      "asked_rows": 8,
+      "observed_classes": 3,
+      "trained": false
+    },
+    "s7a_2_location_known_lbl": {
+      "asked_rows": 237,
+      "observed_classes": 3,
+      "trained": true
+    },
+    "s7a_5_alone_reason_lbl": {
+      "asked_rows": 386,
+      "observed_classes": 5,
+      "trained": true
+    },
+    "s7a_6_return_companions_lbl": {
+      "asked_rows": 363,
+      "observed_classes": 3,
+      "trained": true
+    },
+    "s7a_7_reason_safety_improved_lbl": {
+      "asked_rows": 749,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7a_7_reason_family_reunite_lbl": {
+      "asked_rows": 749,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7a_7_reason_sufficient_resources_lbl": {
+      "asked_rows": 749,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7a_7_reason_livelihood_found_lbl": {
+      "asked_rows": 749,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7a_7_reason_services_adequate_lbl": {
+      "asked_rows": 749,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7a_7_reason_property_access_lbl": {
+      "asked_rows": 749,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7a_7_reason_movement_freedom_lbl": {
+      "asked_rows": 749,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7a_7_reason_sufficient_info_lbl": {
+      "asked_rows": 749,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7a_7_reason_positive_feedback_lbl": {
+      "asked_rows": 749,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7a_7_reason_problems_host_lbl": {
+      "asked_rows": 749,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7a_7_reason_residency_delays_lbl": {
+      "asked_rows": 749,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7a_7_reason_residency_other": {
+      "asked_rows": 749,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7a_7_reason_high_cost_living_lbl": {
+      "asked_rows": 749,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7a_7_reason_limited_jobs_lbl": {
+      "asked_rows": 749,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7a_7_reason_work_permit_lbl": {
+      "asked_rows": 749,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7a_7_reason_homeland_lbl": {
+      "asked_rows": 749,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7a_7_reason_education_opps_lbl": {
+      "asked_rows": 749,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7a_7_reason_other": {
+      "asked_rows": 749,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7a_7_reason_pna_lbl": {
+      "asked_rows": 749,
+      "observed_classes": 1,
+      "trained": false
+    },
+    "s7b_1_no_return_safety_concerns_lbl": {
+      "asked_rows": 1297,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7b_1_no_return_economic_syria_lbl": {
+      "asked_rows": 1297,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7b_1_no_return_legal_docs_lbl": {
+      "asked_rows": 1297,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7b_1_no_return_debt_host_lbl": {
+      "asked_rows": 1297,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7b_1_no_return_livelihood_lbl": {
+      "asked_rows": 1297,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7b_1_no_return_services_lbl": {
+      "asked_rows": 1297,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7b_1_no_return_family_needs_lbl": {
+      "asked_rows": 1297,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7b_1_no_return_housing_lbl": {
+      "asked_rows": 1297,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7b_1_no_return_social_tensions_lbl": {
+      "asked_rows": 1297,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7b_1_no_return_debt_syria_lbl": {
+      "asked_rows": 1297,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7b_1_no_return_advised_against_lbl": {
+      "asked_rows": 1297,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7b_1_no_return_better_assistance_lbl": {
+      "asked_rows": 1297,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7b_1_no_return_no_family_lbl": {
+      "asked_rows": 1297,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7b_1_no_return_no_resources_lbl": {
+      "asked_rows": 1297,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7b_1_no_return_adapted_host_lbl": {
+      "asked_rows": 1297,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7b_1_no_return_home_damaged_lbl": {
+      "asked_rows": 1297,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7b_1_no_return_have_citizenship_lbl": {
+      "asked_rows": 1297,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7b_1_no_return_health_travel_lbl": {
+      "asked_rows": 1297,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7b_1_no_return_other": {
+      "asked_rows": 1297,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7b_1_no_return_dont_know_lbl": {
+      "asked_rows": 1297,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7b_1_no_return_PNA_lbl": {
+      "asked_rows": 1297,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7b_2_recon_safety_improved_lbl": {
+      "asked_rows": 1297,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7b_2_recon_legal_access_lbl": {
+      "asked_rows": 1297,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7b_2_recon_sufficient_resources_lbl": {
+      "asked_rows": 1297,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7b_2_recon_livelihood_opps_lbl": {
+      "asked_rows": 1297,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7b_2_recon_basic_services_lbl": {
+      "asked_rows": 1297,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7b_2_recon_special_services_lbl": {
+      "asked_rows": 1297,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7b_2_recon_housing_access_lbl": {
+      "asked_rows": 1297,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7b_2_recon_debt_paid_host_lbl": {
+      "asked_rows": 1297,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7b_2_recon_family_together_lbl": {
+      "asked_rows": 1297,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7b_2_recon_reentry_possible_lbl": {
+      "asked_rows": 1297,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7b_2_recon_asylum_negative_lbl": {
+      "asked_rows": 1297,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7b_2_recon_debt_paid_syria_lbl": {
+      "asked_rows": 1297,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7b_2_recon_others_returning_lbl": {
+      "asked_rows": 1297,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7b_2_recon_host_worse_lbl": {
+      "asked_rows": 1297,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7b_2_recon_war_host_lbl": {
+      "asked_rows": 1297,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7b_2_recon_never_lbl": {
+      "asked_rows": 1297,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7b_2_recon_other": {
+      "asked_rows": 1297,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7b_2_recon_PNA_lbl": {
+      "asked_rows": 1297,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7c_1_cond_safety_improved_lbl": {
+      "asked_rows": 3833,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7c_1_cond_sufficient_resources_lbl": {
+      "asked_rows": 3833,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7c_1_cond_livelihood_opps_lbl": {
+      "asked_rows": 3833,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7c_1_cond_basic_services_lbl": {
+      "asked_rows": 3833,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7c_1_cond_special_services_lbl": {
+      "asked_rows": 3833,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7c_1_cond_housing_access_lbl": {
+      "asked_rows": 3833,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7c_1_cond_reentry_possible_lbl": {
+      "asked_rows": 3833,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7c_1_cond_debt_paid_host_lbl": {
+      "asked_rows": 3833,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7c_1_cond_debt_paid_syria_lbl": {
+      "asked_rows": 3833,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7c_1_cond_host_worse_lbl": {
+      "asked_rows": 3833,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7c_1_cond_other": {
+      "asked_rows": 3833,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s3_13_hope_return_5yr_lbl": {
+      "asked_rows": 2428,
+      "observed_classes": 3,
+      "trained": true
+    },
+    "s3_14_visit_importance_lbl": {
+      "asked_rows": 1297,
+      "observed_classes": 7,
+      "trained": true
+    },
+    "s3_16_friend_ret_family_lbl": {
+      "asked_rows": 53,
+      "observed_classes": 2,
+      "trained": false
+    },
+    "s3_16_friend_ret_safety_lbl": {
+      "asked_rows": 53,
+      "observed_classes": 2,
+      "trained": false
+    },
+    "s3_16_friend_ret_econ_syria_lbl": {
+      "asked_rows": 53,
+      "observed_classes": 2,
+      "trained": false
+    },
+    "s3_16_friend_ret_no_legal_lbl": {
+      "asked_rows": 53,
+      "observed_classes": 2,
+      "trained": false
+    },
+    "s3_16_friend_ret_no_econ_host_lbl": {
+      "asked_rows": 53,
+      "observed_classes": 1,
+      "trained": false
+    },
+    "s3_16_friend_ret_no_services_lbl": {
+      "asked_rows": 53,
+      "observed_classes": 2,
+      "trained": false
+    },
+    "s3_16_friend_ret_high_cost_lbl": {
+      "asked_rows": 53,
+      "observed_classes": 2,
+      "trained": false
+    },
+    "s3_16_friend_ret_homeland_lbl": {
+      "asked_rows": 53,
+      "observed_classes": 2,
+      "trained": false
+    },
+    "s3_16_friend_ret_has_property_lbl": {
+      "asked_rows": 53,
+      "observed_classes": 2,
+      "trained": false
+    },
+    "s3_16_friend_ret_has_resources_lbl": {
+      "asked_rows": 53,
+      "observed_classes": 2,
+      "trained": false
+    },
+    "s3_16_friend_ret_other": {
+      "asked_rows": 53,
+      "observed_classes": 2,
+      "trained": false
+    },
+    "s3_17_friend_no_ret_safety_lbl": {
+      "asked_rows": 1458,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s3_17_friend_no_ret_no_econ_lbl": {
+      "asked_rows": 1458,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s3_17_friend_no_ret_no_education_lbl": {
+      "asked_rows": 1458,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s3_17_friend_no_ret_no_health_lbl": {
+      "asked_rows": 1458,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s3_17_friend_no_ret_no_water_lbl": {
+      "asked_rows": 1458,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s3_17_friend_no_ret_no_electricity_lbl": {
+      "asked_rows": 1458,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s3_17_friend_no_ret_food_insecurity_lbl": {
+      "asked_rows": 1458,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s3_17_friend_no_ret_other": {
+      "asked_rows": 1458,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s3_23a_safety_rank1_lbl": {
+      "asked_rows": 2986,
+      "observed_classes": 10,
+      "trained": true
+    },
+    "s3_23b_safety_rank2_lbl": {
+      "asked_rows": 2986,
+      "observed_classes": 10,
+      "trained": true
+    },
+    "s4_3_main_earner_gender": {
+      "asked_rows": 3740,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s4_4_main_earner_age": {
+      "asked_rows": 3740,
+      "observed_classes": 7,
+      "trained": true
+    },
+    "s4_5_main_earner_relation_lbl": {
+      "asked_rows": 3740,
+      "observed_classes": 9,
+      "trained": true
+    },
+    "s4_6_main_earner_education_lbl": {
+      "asked_rows": 3740,
+      "observed_classes": 7,
+      "trained": true
+    },
+    "s4_7_has_work_permit_lbl": {
+      "asked_rows": 3943,
+      "observed_classes": 4,
+      "trained": true
+    },
+    "s4_11_job_but_absent_lbl": {
+      "asked_rows": 139,
+      "observed_classes": 4,
+      "trained": true
+    },
+    "s4_16_employment_type_lbl": {
+      "asked_rows": 3943,
+      "observed_classes": 8,
+      "trained": true
+    },
+    "s6_4_need_housing_lbl": {
+      "asked_rows": 772,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s6_4_need_food_lbl": {
+      "asked_rows": 772,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s6_4_need_commodities_lbl": {
+      "asked_rows": 772,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s6_4_need_education_lbl": {
+      "asked_rows": 772,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s6_4_need_health_lbl": {
+      "asked_rows": 772,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s6_4_need_electricity_lbl": {
+      "asked_rows": 772,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s6_4_need_water_lbl": {
+      "asked_rows": 772,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s6_4_need_other": {
+      "asked_rows": 772,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s6_6_assist_unhcr_lbl": {
+      "asked_rows": 915,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s6_6_assist_wfp_lbl": {
+      "asked_rows": 915,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s6_6_assist_intl_orgs_lbl": {
+      "asked_rows": 915,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s6_6_assist_government_lbl": {
+      "asked_rows": 915,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s6_6_assist_religious_lbl": {
+      "asked_rows": 915,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s6_6_assist_ngo_lbl": {
+      "asked_rows": 915,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s6_6_assist_other": {
+      "asked_rows": 915,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s6_11_challenge_movement_lbl": {
+      "asked_rows": 1152,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s6_11_challenge_eviction_lbl": {
+      "asked_rows": 1152,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s6_11_challenge_safety_lbl": {
+      "asked_rows": 1152,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s6_11_challenge_legal_lbl": {
+      "asked_rows": 1152,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s6_11_challenge_employment_lbl": {
+      "asked_rows": 1152,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s6_11_challenge_no_assistance_lbl": {
+      "asked_rows": 1152,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s6_11_challenge_debt_lbl": {
+      "asked_rows": 1152,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s6_11_challenge_health_access_lbl": {
+      "asked_rows": 1152,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s6_11_challenge_education_access_lbl": {
+      "asked_rows": 1152,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s6_11_challenge_separation_lbl": {
+      "asked_rows": 1152,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s6_11_challenge_tensions_lbl": {
+      "asked_rows": 1152,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s6_11_challenge_forced_return_lbl": {
+      "asked_rows": 1152,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s6_11_challenge_other": {
+      "asked_rows": 1152,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s6_12_children_schooling_lbl": {
+      "asked_rows": 5276,
+      "observed_classes": 4,
+      "trained": true
+    }
+  },
+  "selection_sha256": "e8bb7439a1f4c39e8d401cdf51d614135f9089fc359e5c2702c97cba98e5ac48",
+  "policy_sha256": "f0852180eef1d46472a23c3ac5764846cd5790e250f5c03f2392c1bf28116499",
+  "refit_library_sha256": "ccbd5a2452b98753b20837152c8ed9859a0bac1db695ffb3b02399874d89abe8",
+  "refit_head_details": {
+    "s2_9_property_docs_lbl": {
+      "asked_rows": 3135,
+      "observed_classes": 4,
+      "trained": true
+    },
+    "s2_11_house_occupancy_lbl": {
+      "asked_rows": 876,
+      "observed_classes": 5,
+      "trained": true
+    },
+    "s3_3_who_visited_lbl": {
+      "asked_rows": 3798,
+      "observed_classes": 3,
+      "trained": true
+    },
+    "s3_4a_visit_year": {
+      "asked_rows": 3798,
+      "observed_classes": 9,
+      "trained": true
+    },
+    "s3_4b_visit_month": {
+      "asked_rows": 3798,
+      "observed_classes": 14,
+      "trained": true
+    },
+    "s3_7_num_permanent_returns_lbl": {
+      "asked_rows": 33,
+      "observed_classes": 7,
+      "trained": false
+    },
+    "s3_9a_recent_returns_count_lbl": {
+      "asked_rows": 33,
+      "observed_classes": 6,
+      "trained": false
+    },
+    "s3_8a_return_year": {
+      "asked_rows": 33,
+      "observed_classes": 5,
+      "trained": false
+    },
+    "s3_8b_return_month": {
+      "asked_rows": 33,
+      "observed_classes": 10,
+      "trained": false
+    },
+    "s3_9b_returned_children": {
+      "asked_rows": 33,
+      "observed_classes": 5,
+      "trained": false
+    },
+    "s3_10a_returnee_is_head_lbl": {
+      "asked_rows": 8,
+      "observed_classes": 2,
+      "trained": false
+    },
+    "s3_10b_returnee_gender_lbl": {
+      "asked_rows": 8,
+      "observed_classes": 2,
+      "trained": false
+    },
+    "s3_10d_employ_before_return_lbl": {
+      "asked_rows": 8,
+      "observed_classes": 2,
+      "trained": false
+    },
+    "s3_10g_employ_syria_lbl": {
+      "asked_rows": 8,
+      "observed_classes": 3,
+      "trained": false
+    },
+    "s7a_2_location_known_lbl": {
+      "asked_rows": 326,
+      "observed_classes": 3,
+      "trained": true
+    },
+    "s7a_5_alone_reason_lbl": {
+      "asked_rows": 541,
+      "observed_classes": 5,
+      "trained": true
+    },
+    "s7a_6_return_companions_lbl": {
+      "asked_rows": 507,
+      "observed_classes": 3,
+      "trained": true
+    },
+    "s7a_7_reason_safety_improved_lbl": {
+      "asked_rows": 1048,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7a_7_reason_family_reunite_lbl": {
+      "asked_rows": 1048,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7a_7_reason_sufficient_resources_lbl": {
+      "asked_rows": 1048,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7a_7_reason_livelihood_found_lbl": {
+      "asked_rows": 1048,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7a_7_reason_services_adequate_lbl": {
+      "asked_rows": 1048,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7a_7_reason_property_access_lbl": {
+      "asked_rows": 1048,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7a_7_reason_movement_freedom_lbl": {
+      "asked_rows": 1048,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7a_7_reason_sufficient_info_lbl": {
+      "asked_rows": 1048,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7a_7_reason_positive_feedback_lbl": {
+      "asked_rows": 1048,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7a_7_reason_problems_host_lbl": {
+      "asked_rows": 1048,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7a_7_reason_residency_delays_lbl": {
+      "asked_rows": 1048,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7a_7_reason_residency_other": {
+      "asked_rows": 1048,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7a_7_reason_high_cost_living_lbl": {
+      "asked_rows": 1048,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7a_7_reason_limited_jobs_lbl": {
+      "asked_rows": 1048,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7a_7_reason_work_permit_lbl": {
+      "asked_rows": 1048,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7a_7_reason_homeland_lbl": {
+      "asked_rows": 1048,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7a_7_reason_education_opps_lbl": {
+      "asked_rows": 1048,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7a_7_reason_other": {
+      "asked_rows": 1048,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7a_7_reason_pna_lbl": {
+      "asked_rows": 1048,
+      "observed_classes": 1,
+      "trained": false
+    },
+    "s7b_1_no_return_safety_concerns_lbl": {
+      "asked_rows": 1850,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7b_1_no_return_economic_syria_lbl": {
+      "asked_rows": 1850,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7b_1_no_return_legal_docs_lbl": {
+      "asked_rows": 1850,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7b_1_no_return_debt_host_lbl": {
+      "asked_rows": 1850,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7b_1_no_return_livelihood_lbl": {
+      "asked_rows": 1850,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7b_1_no_return_services_lbl": {
+      "asked_rows": 1850,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7b_1_no_return_family_needs_lbl": {
+      "asked_rows": 1850,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7b_1_no_return_housing_lbl": {
+      "asked_rows": 1850,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7b_1_no_return_social_tensions_lbl": {
+      "asked_rows": 1850,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7b_1_no_return_debt_syria_lbl": {
+      "asked_rows": 1850,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7b_1_no_return_advised_against_lbl": {
+      "asked_rows": 1850,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7b_1_no_return_better_assistance_lbl": {
+      "asked_rows": 1850,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7b_1_no_return_no_family_lbl": {
+      "asked_rows": 1850,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7b_1_no_return_no_resources_lbl": {
+      "asked_rows": 1850,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7b_1_no_return_adapted_host_lbl": {
+      "asked_rows": 1850,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7b_1_no_return_home_damaged_lbl": {
+      "asked_rows": 1850,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7b_1_no_return_have_citizenship_lbl": {
+      "asked_rows": 1850,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7b_1_no_return_health_travel_lbl": {
+      "asked_rows": 1850,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7b_1_no_return_other": {
+      "asked_rows": 1850,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7b_1_no_return_dont_know_lbl": {
+      "asked_rows": 1850,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7b_1_no_return_PNA_lbl": {
+      "asked_rows": 1850,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7b_2_recon_safety_improved_lbl": {
+      "asked_rows": 1850,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7b_2_recon_legal_access_lbl": {
+      "asked_rows": 1850,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7b_2_recon_sufficient_resources_lbl": {
+      "asked_rows": 1850,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7b_2_recon_livelihood_opps_lbl": {
+      "asked_rows": 1850,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7b_2_recon_basic_services_lbl": {
+      "asked_rows": 1850,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7b_2_recon_special_services_lbl": {
+      "asked_rows": 1850,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7b_2_recon_housing_access_lbl": {
+      "asked_rows": 1850,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7b_2_recon_debt_paid_host_lbl": {
+      "asked_rows": 1850,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7b_2_recon_family_together_lbl": {
+      "asked_rows": 1850,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7b_2_recon_reentry_possible_lbl": {
+      "asked_rows": 1850,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7b_2_recon_asylum_negative_lbl": {
+      "asked_rows": 1850,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7b_2_recon_debt_paid_syria_lbl": {
+      "asked_rows": 1850,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7b_2_recon_others_returning_lbl": {
+      "asked_rows": 1850,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7b_2_recon_host_worse_lbl": {
+      "asked_rows": 1850,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7b_2_recon_war_host_lbl": {
+      "asked_rows": 1850,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7b_2_recon_never_lbl": {
+      "asked_rows": 1850,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7b_2_recon_other": {
+      "asked_rows": 1850,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7b_2_recon_PNA_lbl": {
+      "asked_rows": 1850,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7c_1_cond_safety_improved_lbl": {
+      "asked_rows": 5381,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7c_1_cond_sufficient_resources_lbl": {
+      "asked_rows": 5381,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7c_1_cond_livelihood_opps_lbl": {
+      "asked_rows": 5381,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7c_1_cond_basic_services_lbl": {
+      "asked_rows": 5381,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7c_1_cond_special_services_lbl": {
+      "asked_rows": 5381,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7c_1_cond_housing_access_lbl": {
+      "asked_rows": 5381,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7c_1_cond_reentry_possible_lbl": {
+      "asked_rows": 5381,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7c_1_cond_debt_paid_host_lbl": {
+      "asked_rows": 5381,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7c_1_cond_debt_paid_syria_lbl": {
+      "asked_rows": 5381,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7c_1_cond_host_worse_lbl": {
+      "asked_rows": 5381,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s7c_1_cond_other": {
+      "asked_rows": 5381,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s3_13_hope_return_5yr_lbl": {
+      "asked_rows": 3411,
+      "observed_classes": 3,
+      "trained": true
+    },
+    "s3_14_visit_importance_lbl": {
+      "asked_rows": 1850,
+      "observed_classes": 7,
+      "trained": true
+    },
+    "s3_16_friend_ret_family_lbl": {
+      "asked_rows": 78,
+      "observed_classes": 2,
+      "trained": false
+    },
+    "s3_16_friend_ret_safety_lbl": {
+      "asked_rows": 78,
+      "observed_classes": 2,
+      "trained": false
+    },
+    "s3_16_friend_ret_econ_syria_lbl": {
+      "asked_rows": 78,
+      "observed_classes": 2,
+      "trained": false
+    },
+    "s3_16_friend_ret_no_legal_lbl": {
+      "asked_rows": 78,
+      "observed_classes": 2,
+      "trained": false
+    },
+    "s3_16_friend_ret_no_econ_host_lbl": {
+      "asked_rows": 78,
+      "observed_classes": 1,
+      "trained": false
+    },
+    "s3_16_friend_ret_no_services_lbl": {
+      "asked_rows": 78,
+      "observed_classes": 2,
+      "trained": false
+    },
+    "s3_16_friend_ret_high_cost_lbl": {
+      "asked_rows": 78,
+      "observed_classes": 2,
+      "trained": false
+    },
+    "s3_16_friend_ret_homeland_lbl": {
+      "asked_rows": 78,
+      "observed_classes": 2,
+      "trained": false
+    },
+    "s3_16_friend_ret_has_property_lbl": {
+      "asked_rows": 78,
+      "observed_classes": 2,
+      "trained": false
+    },
+    "s3_16_friend_ret_has_resources_lbl": {
+      "asked_rows": 78,
+      "observed_classes": 2,
+      "trained": false
+    },
+    "s3_16_friend_ret_other": {
+      "asked_rows": 78,
+      "observed_classes": 2,
+      "trained": false
+    },
+    "s3_17_friend_no_ret_safety_lbl": {
+      "asked_rows": 2057,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s3_17_friend_no_ret_no_econ_lbl": {
+      "asked_rows": 2057,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s3_17_friend_no_ret_no_education_lbl": {
+      "asked_rows": 2057,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s3_17_friend_no_ret_no_health_lbl": {
+      "asked_rows": 2057,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s3_17_friend_no_ret_no_water_lbl": {
+      "asked_rows": 2057,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s3_17_friend_no_ret_no_electricity_lbl": {
+      "asked_rows": 2057,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s3_17_friend_no_ret_food_insecurity_lbl": {
+      "asked_rows": 2057,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s3_17_friend_no_ret_other": {
+      "asked_rows": 2057,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s3_23a_safety_rank1_lbl": {
+      "asked_rows": 4215,
+      "observed_classes": 10,
+      "trained": true
+    },
+    "s3_23b_safety_rank2_lbl": {
+      "asked_rows": 4215,
+      "observed_classes": 10,
+      "trained": true
+    },
+    "s4_3_main_earner_gender": {
+      "asked_rows": 5267,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s4_4_main_earner_age": {
+      "asked_rows": 5267,
+      "observed_classes": 7,
+      "trained": true
+    },
+    "s4_5_main_earner_relation_lbl": {
+      "asked_rows": 5267,
+      "observed_classes": 9,
+      "trained": true
+    },
+    "s4_6_main_earner_education_lbl": {
+      "asked_rows": 5267,
+      "observed_classes": 7,
+      "trained": true
+    },
+    "s4_7_has_work_permit_lbl": {
+      "asked_rows": 5561,
+      "observed_classes": 4,
+      "trained": true
+    },
+    "s4_11_job_but_absent_lbl": {
+      "asked_rows": 192,
+      "observed_classes": 4,
+      "trained": true
+    },
+    "s4_16_employment_type_lbl": {
+      "asked_rows": 5561,
+      "observed_classes": 8,
+      "trained": true
+    },
+    "s6_4_need_housing_lbl": {
+      "asked_rows": 1080,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s6_4_need_food_lbl": {
+      "asked_rows": 1080,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s6_4_need_commodities_lbl": {
+      "asked_rows": 1080,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s6_4_need_education_lbl": {
+      "asked_rows": 1080,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s6_4_need_health_lbl": {
+      "asked_rows": 1080,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s6_4_need_electricity_lbl": {
+      "asked_rows": 1080,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s6_4_need_water_lbl": {
+      "asked_rows": 1080,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s6_4_need_other": {
+      "asked_rows": 1080,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s6_6_assist_unhcr_lbl": {
+      "asked_rows": 1265,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s6_6_assist_wfp_lbl": {
+      "asked_rows": 1265,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s6_6_assist_intl_orgs_lbl": {
+      "asked_rows": 1265,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s6_6_assist_government_lbl": {
+      "asked_rows": 1265,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s6_6_assist_religious_lbl": {
+      "asked_rows": 1265,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s6_6_assist_ngo_lbl": {
+      "asked_rows": 1265,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s6_6_assist_other": {
+      "asked_rows": 1265,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s6_11_challenge_movement_lbl": {
+      "asked_rows": 1609,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s6_11_challenge_eviction_lbl": {
+      "asked_rows": 1609,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s6_11_challenge_safety_lbl": {
+      "asked_rows": 1609,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s6_11_challenge_legal_lbl": {
+      "asked_rows": 1609,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s6_11_challenge_employment_lbl": {
+      "asked_rows": 1609,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s6_11_challenge_no_assistance_lbl": {
+      "asked_rows": 1609,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s6_11_challenge_debt_lbl": {
+      "asked_rows": 1609,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s6_11_challenge_health_access_lbl": {
+      "asked_rows": 1609,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s6_11_challenge_education_access_lbl": {
+      "asked_rows": 1609,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s6_11_challenge_separation_lbl": {
+      "asked_rows": 1609,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s6_11_challenge_tensions_lbl": {
+      "asked_rows": 1609,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s6_11_challenge_forced_return_lbl": {
+      "asked_rows": 1609,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s6_11_challenge_other": {
+      "asked_rows": 1609,
+      "observed_classes": 2,
+      "trained": true
+    },
+    "s6_12_children_schooling_lbl": {
+      "asked_rows": 7432,
+      "observed_classes": 4,
+      "trained": true
+    }
+  },
+  "forced_fixture": {
+    "changed_vectors": 77004,
+    "total_vectors": 132273,
+    "changed_heads": {
+      "s2_9_property_docs_lbl": 621,
+      "s2_11_house_occupancy_lbl": 621,
+      "s3_3_who_visited_lbl": 621,
+      "s3_4a_visit_year": 621,
+      "s3_4b_visit_month": 621,
+      "s7a_2_location_known_lbl": 621,
+      "s7a_5_alone_reason_lbl": 621,
+      "s7a_6_return_companions_lbl": 621,
+      "s7a_7_reason_safety_improved_lbl": 621,
+      "s7a_7_reason_family_reunite_lbl": 621,
+      "s7a_7_reason_sufficient_resources_lbl": 621,
+      "s7a_7_reason_livelihood_found_lbl": 621,
+      "s7a_7_reason_services_adequate_lbl": 621,
+      "s7a_7_reason_property_access_lbl": 621,
+      "s7a_7_reason_movement_freedom_lbl": 621,
+      "s7a_7_reason_sufficient_info_lbl": 621,
+      "s7a_7_reason_positive_feedback_lbl": 621,
+      "s7a_7_reason_problems_host_lbl": 621,
+      "s7a_7_reason_residency_delays_lbl": 621,
+      "s7a_7_reason_residency_other": 621,
+      "s7a_7_reason_high_cost_living_lbl": 621,
+      "s7a_7_reason_limited_jobs_lbl": 621,
+      "s7a_7_reason_work_permit_lbl": 621,
+      "s7a_7_reason_homeland_lbl": 621,
+      "s7a_7_reason_education_opps_lbl": 621,
+      "s7a_7_reason_other": 621,
+      "s7b_1_no_return_safety_concerns_lbl": 621,
+      "s7b_1_no_return_economic_syria_lbl": 621,
+      "s7b_1_no_return_legal_docs_lbl": 621,
+      "s7b_1_no_return_debt_host_lbl": 621,
+      "s7b_1_no_return_livelihood_lbl": 621,
+      "s7b_1_no_return_services_lbl": 621,
+      "s7b_1_no_return_family_needs_lbl": 621,
+      "s7b_1_no_return_housing_lbl": 621,
+      "s7b_1_no_return_social_tensions_lbl": 621,
+      "s7b_1_no_return_debt_syria_lbl": 621,
+      "s7b_1_no_return_advised_against_lbl": 621,
+      "s7b_1_no_return_better_assistance_lbl": 621,
+      "s7b_1_no_return_no_family_lbl": 621,
+      "s7b_1_no_return_no_resources_lbl": 621,
+      "s7b_1_no_return_adapted_host_lbl": 621,
+      "s7b_1_no_return_home_damaged_lbl": 621,
+      "s7b_1_no_return_have_citizenship_lbl": 621,
+      "s7b_1_no_return_health_travel_lbl": 621,
+      "s7b_1_no_return_other": 621,
+      "s7b_1_no_return_dont_know_lbl": 621,
+      "s7b_1_no_return_PNA_lbl": 621,
+      "s7b_2_recon_safety_improved_lbl": 621,
+      "s7b_2_recon_legal_access_lbl": 621,
+      "s7b_2_recon_sufficient_resources_lbl": 621,
+      "s7b_2_recon_livelihood_opps_lbl": 621,
+      "s7b_2_recon_basic_services_lbl": 621,
+      "s7b_2_recon_special_services_lbl": 621,
+      "s7b_2_recon_housing_access_lbl": 621,
+      "s7b_2_recon_debt_paid_host_lbl": 621,
+      "s7b_2_recon_family_together_lbl": 621,
+      "s7b_2_recon_reentry_possible_lbl": 621,
+      "s7b_2_recon_asylum_negative_lbl": 621,
+      "s7b_2_recon_debt_paid_syria_lbl": 621,
+      "s7b_2_recon_others_returning_lbl": 621,
+      "s7b_2_recon_host_worse_lbl": 621,
+      "s7b_2_recon_war_host_lbl": 621,
+      "s7b_2_recon_never_lbl": 621,
+      "s7b_2_recon_other": 621,
+      "s7b_2_recon_PNA_lbl": 621,
+      "s7c_1_cond_safety_improved_lbl": 621,
+      "s7c_1_cond_sufficient_resources_lbl": 621,
+      "s7c_1_cond_livelihood_opps_lbl": 621,
+      "s7c_1_cond_basic_services_lbl": 621,
+      "s7c_1_cond_special_services_lbl": 621,
+      "s7c_1_cond_housing_access_lbl": 621,
+      "s7c_1_cond_reentry_possible_lbl": 621,
+      "s7c_1_cond_debt_paid_host_lbl": 621,
+      "s7c_1_cond_debt_paid_syria_lbl": 621,
+      "s7c_1_cond_host_worse_lbl": 621,
+      "s7c_1_cond_other": 621,
+      "s3_13_hope_return_5yr_lbl": 621,
+      "s3_14_visit_importance_lbl": 621,
+      "s3_17_friend_no_ret_safety_lbl": 621,
+      "s3_17_friend_no_ret_no_econ_lbl": 621,
+      "s3_17_friend_no_ret_no_education_lbl": 621,
+      "s3_17_friend_no_ret_no_health_lbl": 621,
+      "s3_17_friend_no_ret_no_water_lbl": 621,
+      "s3_17_friend_no_ret_no_electricity_lbl": 621,
+      "s3_17_friend_no_ret_food_insecurity_lbl": 621,
+      "s3_17_friend_no_ret_other": 621,
+      "s3_23a_safety_rank1_lbl": 621,
+      "s3_23b_safety_rank2_lbl": 621,
+      "s4_3_main_earner_gender": 621,
+      "s4_4_main_earner_age": 621,
+      "s4_5_main_earner_relation_lbl": 621,
+      "s4_6_main_earner_education_lbl": 621,
+      "s4_7_has_work_permit_lbl": 621,
+      "s4_11_job_but_absent_lbl": 621,
+      "s4_16_employment_type_lbl": 621,
+      "s6_4_need_housing_lbl": 621,
+      "s6_4_need_food_lbl": 621,
+      "s6_4_need_commodities_lbl": 621,
+      "s6_4_need_education_lbl": 621,
+      "s6_4_need_health_lbl": 621,
+      "s6_4_need_electricity_lbl": 621,
+      "s6_4_need_water_lbl": 621,
+      "s6_4_need_other": 621,
+      "s6_6_assist_unhcr_lbl": 621,
+      "s6_6_assist_wfp_lbl": 621,
+      "s6_6_assist_intl_orgs_lbl": 621,
+      "s6_6_assist_government_lbl": 621,
+      "s6_6_assist_religious_lbl": 621,
+      "s6_6_assist_ngo_lbl": 621,
+      "s6_6_assist_other": 621,
+      "s6_11_challenge_movement_lbl": 621,
+      "s6_11_challenge_eviction_lbl": 621,
+      "s6_11_challenge_safety_lbl": 621,
+      "s6_11_challenge_legal_lbl": 621,
+      "s6_11_challenge_employment_lbl": 621,
+      "s6_11_challenge_no_assistance_lbl": 621,
+      "s6_11_challenge_debt_lbl": 621,
+      "s6_11_challenge_health_access_lbl": 621,
+      "s6_11_challenge_education_access_lbl": 621,
+      "s6_11_challenge_separation_lbl": 621,
+      "s6_11_challenge_tensions_lbl": 621,
+      "s6_11_challenge_forced_return_lbl": 621,
+      "s6_11_challenge_other": 621,
+      "s6_12_children_schooling_lbl": 621
+    },
+    "raw_sentinel_max_abs": 0.0,
+    "postfloor_sentinel_max_abs": 2.220446049250313e-16,
+    "mass_max_abs": 4.440892098500626e-16,
+    "score_access": false
+  },
+  "forced_predictions_sha256": "43eee1974a8c46a5372a5d6eea553024d95c2a0ee2043781244973e6af96d2bd",
+  "shadow_refit_shift": {
+    "base_mean_tv": 0.01708516837865359,
+    "base_max_tv": 0.25628599487105985,
+    "tree_mean_tv": 0.06458862112992636,
+    "tree_heads": 124,
+    "scope": "Common original hidden GIVEN rows; no target labels."
+  },
+  "invariants": {
+    "changed_vectors": 0,
+    "total_vectors": 132273,
+    "changed_heads": {},
+    "raw_sentinel_max_abs": 0.0,
+    "postfloor_sentinel_max_abs": 0.0,
+    "mass_max_abs": 0.0
+  },
+  "predict_seconds": 413.04858779999995,
+  "predictions_sha256": "a4cffcc1c75c8b63b1d2c0e1e0d24a20a202a3361603c80160c19d6d42b400e1"
+}

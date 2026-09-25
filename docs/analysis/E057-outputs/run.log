@@ -1,0 +1,10 @@
+unicef final_base start
+unicef predictions frozen
+world_bank final_base start
+world_bank predictions frozen
+unhcr shadow_base start
+unhcr shadow_trees start
+unhcr final_base start
+unhcr refit_trees start
+unhcr predictions frozen
+{"instruments": {"unicef": {"skill": 0.5006484230707156, "e041_skill": 0.5006484230707156, "e025_skill": 0.5006484230707156, "delta_e041": 0.0, "delta_e025": 0.0, "e025_absolute_002_pass": true, "base_cache_raw_exact": true, "cells": 17856, "predict_seconds": 37.172648100000515}, "world_bank": {"skill": 0.45471730736298255, "e041_skill": 0.45471730736298255, "e025_skill": 0.45471730736298255, "delta_e041": 0.0, "delta_e025": 0.0, "e025_absolute_002_pass": true, "base_cache_raw_exact": true, "cells": 39520, "predict_seconds": 98.6705951999993}, "unhcr": {"skill": 0.5624627288576414, "e041_skill": 0.5624627288576414, "e025_skill": 0.5629488737050165, "delta_e041": 0.0, "delta_e025": -0.0004861448473750807, "e025_absolute_002_pass": true, "base_cache_raw_exact": true, "cells": 132273, "predict_seconds": 413.04858779999995}}, "import_seconds": 4.52203130000089, "prediction_complete_seconds": 559.1985497000005, "worker_total_seconds": 563.4551293000004, "conservative_fit_seconds": 544.353256800001, "peak_memory_bytes": {"rss": 1770012672, "commitment": 1690710016}, "runtime_pass": true, "memory_pass": true, "no_regression_pass": true, "phase": 1, "scope": "Synthetic engineering only; official CLI and new assembly not run."}

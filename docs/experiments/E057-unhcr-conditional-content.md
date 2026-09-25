@@ -178,8 +178,122 @@ not explicitly approved its named destination in this conversation.
 
 ## Result
 
-Pending. No synthetic response or new model score was inspected at registration.
+Completed one registered phase1 engineering run. Original preregistration bytes
+remain in [registration.md](../analysis/E057-outputs/registration.md), committed
+before fitting as592da4c. Executed implementatione51b29f. No threshold, grid,
+head list, seed or model change followed any score. No extra study or S3 work.
+
+- Thirteen focused tests PASS (final pre-run console:13 passed in8.31s): schema
+  order, excluded-child parent handling, exact alpha0/zero-mass identity, actual
+  official floor parity, full answer-class alignment, sparse/constant fallback,
+  whole-block masking, same base/tree fit roles, selection/validation/refit
+  ordering, forced activation and exact full-refit fallback after rejection.
+- Schema scope145 leaves/213 outputs/max14 answer classes confirmed. TRAIN8279
+  split5879/1200/1200; outer DEV621; shadow query3021. Both stages considered
+  all145 leaves;124 eligible trees fitted in each stage (248 total),21 fallback.
+  Asked counts shadow8..5276, full8..7432. These are synthetic observations;
+  real asked counts and resulting fit workload remain unknown from schema.
+- Selection retained3 nonzero leaves. One frozen whole-policy validation:
+  delta skill+.0000217454212122, SE.0000111234759201; fails >2SE
+  (.0000222469518401). **All145 shares set to0**, without pruning or retuning.
+  Final E041 and all eligible trees then refitted on all8279 visible rows.
+  The failed guard is an expected exact-fallback path, not a technical defect.
+- Natural policy changed0/132273 UNHCR vectors. Full base/returned vectors
+  exactly match the hash-verified E041 cache on all189649 three-instrument cells.
+  Parent/nonleaf/UNICEF/WB unchanged. Forced alpha=.5 fixture, never scored,
+  changed77004/132273 vectors over124 leaves. Raw sentinel difference0;
+  total-mass max4.44e-16, post-floor sentinel max2.22e-16. Complete output checks
+  PASS; other21 heads fall back. Injected positive fixture tests the accepted
+  path; actual synthetic run tests policy rejection and final refit identity.
+- On common621 hidden GIVEN rows, shadow/full base mean TV.0170852
+  (max.256286), tree mean TV.0645886 over124 heads. This establishes a refit
+  distribution change, not the sign or size of any refit performance change.
+  Independent validation evaluated shadow predictions, not a fresh final model.
+- Frozen verifier PASS:60 source hashes, registration/schema/split/library
+  hashes, all non-fit blocks masked, deterministic disjoint roles, event order,
+  exact final-policy reconstruction132273 vectors and protected files unchanged.
+  Zero new fits or label scores. Row-level artifacts remain ignored locally.
+
+### Measured complete cost
+
+One owned heavy worker, CPU2threads/no GPU. Whole parent-inclusive run564.661591s
+(9m24.66s); dependency import4.522031s, all3 predictions frozen559.198550s,
+worker including comparisons563.455129s. Rehearsal conservative fit544.353257s
+(entire base-predict calls counted, not just optimizer time). Limits900/1200s PASS.
+Supplemental aggregate across worker, both launchers and parent harness:
+sum of OS lifetime RSS peaks1,828,978,688 bytes (~1.703GiB), commitment peaks
+1,705,742,336 bytes (~1.589GiB), below8GiB. Worker-tree parent monitor max
+RSS1,783,631,872 bytes; no abort, exit0. This is measured all3, not extrapolated
+from SIPP or selected heads, and not a hosted runtime guarantee.
+The two preceding focused-test passes include tiny110-row fixture fits; their
+individual fit times were not persisted (latest entire test process8.31s).
+They are outside the reported rehearsal fit counter. No other full model fit
+occurred; test timing is a minor accounting limitation, not another efficacy run.
+
+| Stage | Seconds |
+| --- | ---: |
+| UNICEF exact E041 call |37.1700|
+| World Bank exact E041 call |98.6686|
+| UNHCR shadow E041 |149.5534|
+| UNHCR shadow tree batch,124 fits |16.8254|
+| Shadow freeze to selection event, includes persistence |1.4206|
+| Selection event to validation event, includes persistence |.0350|
+| UNHCR full E041 refit |225.0955|
+| UNHCR full tree batch,124 fits |17.0404|
+| Complete UNHCR predict including diagnostic writes |413.0486|
+
+Existing E025/E041 caches were reused only after56 prior source hashes, six
+cache hashes and schema/data/frame/config/cells/truth/split bindings matched.
+These are clean existing phase1 synthetic references, not additional fits.
+Official floor/core metric arithmetic was used; official CLI was not run.
+
+| Instrument | E057/E041 skill | E025 skill | Delta E041 | Delta E025 | Absolute.002 |
+| --- | ---: | ---: | ---: | ---: | --- |
+| UNICEF |.500648423071|.500648423071|0|0|PASS|
+| World Bank |.454717307363|.454717307363|0|0|PASS|
+| UNHCR |.562462728858|.562948873705|0|-.000486144847|PASS|
+
+Data/source hashes: [preflight](../analysis/E057-outputs/preflight.json).
+Split SHA256033a4939112860864e607048054610e4fbb7d881b1af2f20289fc7192ec74f8d;
+frozen policy SHA256f0852180eef1d46472a23c3ac5764846cd5790e250f5c03f2392c1bf28116499.
+Complete outputs and checks: [result](../analysis/E057-outputs/result.json),
+[execution](../analysis/E057-outputs/unhcr-execution.json),
+[verification](../analysis/E057-outputs/frozen-verification.json),
+[exposure ledger](../analysis/E057-outputs/exposure-ledger.md),
+[reproduction](../analysis/E057-outputs/reproduction.md).
+
+### Interpretation and limits
+
+Honest visible-row policy selection, whole-policy rejection, all-visible refit,
+sentinel preservation and a complete local runtime are feasible on this fixed
+synthetic phase1 channel. Engineering success neither establishes real UNHCR
+gain nor disproves it. The near-threshold validation result does not justify
+lowering the guard. Multiple leaf selection, respondent dependence, one fixed
+training realization, approximate real gates and shadow/refit shift remain.
+Natural allzero output does not test selected-active performance; the forced
+path is structural only. No calibration/proxy response, unused E056 audit arm,
+fresh seed or private DEV/TEST was accessed.
+
+Domain verdict: content-only changes are structurally applicable to the public
+UNHCR schema while keeping sentinel routing intact. Synthetic class activity
+and scores cannot validate humanitarian conditional relationships. E056 remains
+a scoped development precedent, not a transferable effect-size oracle.
 
 ## Decision
 
-Pending engineering screen; no DEV recommendation or TEST adoption at registration.
+- **Research technical feasibility PASS, scoped.** New wrapper and frozen E041
+  injection satisfy registered structural/resource checks. Historical unchanged
+  source-default parity is hash-verified; new default-wrapper/standalone assembly
+  parity, ZIP checker and official all3 remain unperformed S2 release checks.
+- **Release-performance screen PASS only on exposed synthetic phase1.** Natural
+  policy returns exact E041; this does not qualify forced alpha=.5 or claim gain.
+- **DEV exploration pending S2 validation.** Further validation is worthwhile for
+  the named conditional-content mechanism and honest actual-TRAIN procedure;
+  no new DEV incumbent, release-qualified archive or upload recommendation here.
+  [S2 handoff](../analysis/E057-outputs/s2-handoff.ko.md) specifies remaining gates
+  and unresolved/failed readings. No synthetic-positive adoption argument.
+- **Actual UNHCR improvement / final adoption unestablished.** E041 DEV incumbent,
+  E025 fallback. S3 stopped; A018 remains unconfirmed by the user. Existing STOPs
+  preserved; no new backup study, ZIP, method or TEST artifact. All owned jobs
+  complete; user dirty files preserved. Commit owned records only. Push remains
+  subject to the previously rejected named-destination approval, never bypassed.

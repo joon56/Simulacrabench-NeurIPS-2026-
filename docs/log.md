@@ -2,6 +2,45 @@
 
 Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-notes]].
 
+## 2026-09-25 - E057 honest UNHCR selection/refit procedure and full cost verified
+
+- User clarification governs prior A018 entry: S3 stopped; TEST selected/frozen
+  remains an unconfirmed review proposal. E041 DEV incumbent/E025 fallback.
+  Input HEAD9284bf4 matched; user dirty files preserved, no active fit at entry.
+  Registration592da4c; executed codee51b29f. No E056 rerun, SIPP/Adult array or
+  calibration access, unused audit-arm lookup, new seed or private answers.
+- Schema-only145 gated leaves/max14 classes/17 GIVEN fixed before scores.
+  TRAIN8279 split5879/1200/1200 with seed5701. All non-fit PREDICT blocks masked
+  before same-role base/tree fitting. 124 eligible trees in each of shadow/refit
+  (248 total),21 sparse/constant fallbacks. Actual asked counts are data-dependent.
+- Selection3 leaves; one whole-policy independent validation delta skill
+  +.000021745421, SE.000011123476 fails fixed2SE guard. All shares0 frozen;
+  then full visible-data refit. No post-result threshold/head/grid changes.
+  Natural all189649 all3 vectors exact E041. Forced alpha=.5 unscored fixture
+  exercises124 heads/77004 UNHCR vectors; raw sentinel exact, mass4.44e-16,
+  post-floor sentinel2.22e-16; parents/nonleaves exact.
+- Complete parent-inclusive all3 run564.661591s, import4.522031s, predictions
+  frozen559.198550s, conservative fit544.353257s. Aggregate OS lifetime RSS
+  peaks1,828,978,688 bytes(~1.703GiB), below8GiB; CPU2threads, one heavy worker,
+  no GPU/paid resource. Local runtime is no hosted guarantee. No resource abort.
+- Hash-verified clean E025 deltas0/0/-.000486144847 pass absolute.002; E041 deltas
+  all0. Scores.500648423071/.454717307363/.562462728858. All exposed synthetic
+  engineering data, not new target efficacy evidence. Shadow/refit base mean
+  TV.0170852, tree.0645886 shows distribution shift, not validated final gain.
+- Thirteen focused tests PASS. Frozen verifier PASS60 source hashes, deterministic
+  split/masking/event order,132273 reconstructed UNHCR vectors, protected paths
+  unchanged; no new fit or label score. Row artifacts ignored under external/e057.
+- Research procedural feasibility PASS; release-performance screen scoped PASS.
+  Research candidate parked pending S2 default/assembly parity, ZIP checker,
+  official all3, shared assembly runtime and preregistered SCORES readings.
+  Actual gain/DEV release eligibility/final adoption unestablished. See E057
+  record and outputs/s2-handoff.ko.md. No ZIP/method/TEST artifact or upload,
+  no backup or S3 resumption. Prior STOPs intact; all owned processes finished.
+- Owned files committed locally; previous automatic approval review rejected
+  push to the configured GitHub origin because destination ownership/privacy
+  and external-transfer authorization were unverified. No bypass attempted;
+  named-destination confirmation remains required for push/remote verification.
+
 ## 2026-09-25 - A018 selects E041 TEST artifact; separate E025 fallback frozen
 
 - Fixed E025/E041/E044/E045/E047/E049/E052 and qualitative selection/gates before
