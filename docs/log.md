@@ -2,6 +2,29 @@
 
 Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-notes]].
 
+## 2026-09-25 - A016 S0 chooses conditional leaf-content research
+
+- Compared independent conditional content, replay repair, prior full-answer
+  trees/PFN, E054 probe and TEST readiness. E046 already screened fair tree
+  selection; E051 direct complete-answer trees also stopped. A006 defects alone
+  cannot justify repeating either study. E055 STOP remains unchanged.
+- Main: reserve E056 for asked-only GIVEN trees on six SIPP leaf heads,
+  preserving E041 raw sentinel/total mass. Official floor can indirectly alter
+  sentinel probability; no post-floor invariance claim. This new fitted library
+  differs from E051 full distributions and E055 existing donor shares.
+- One fixed E055 sample/A014 SSUID-group view; prior oracle exposure disclosed,
+  calibration stays unopened, selection then one audit conditional on feasibility.
+  New near-zero oracle screen is only finite-library feasibility, not adoption
+  or a revision of E055's +.005 gate. Learned audit and uncertainty govern onward
+  research; no automatic production package or hidden-domain gain claim.
+- Caps and complete S1 prompt: docs/plans/2026-09-25-S1-conditional-content.ko.md.
+  Backup is a bounded frozen E041/E025 TEST decision/readiness review, no refit.
+  Rationale, negatives, source hashes and scope: A016-next-research-decision.md.
+- S0 input7f712e1, documentation only. No model fit, score access, archive or
+  upload. E041 incumbent/E025 fallback/E054 parked. No python/wsl observed via
+  Get-Process; CIM visibility denied, so next session rechecks. Existing user
+  changes excluded. E056 reserved, E-file not created; next analysis A017.
+
 ## 2026-09-25 - A015 workflow adopted; sessions and prompts configured
 
 - User adopted A015's recommendation and requested session/prompt organization.

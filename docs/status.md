@@ -43,11 +43,16 @@ in [session-prompts.ko.md](session-prompts.ko.md). Details belong in linked reco
   jobs and working tree before beginning new work; this is not a process lock.
 - Integration ownership transfers at handoff. One writing session per checkout;
   subagents are bounded reviewers/workers, not competing session managers.
-- **Next: S0 coordinator.** Compare materially different hypotheses using A009,
-  A006 and the latest scoped stops; choose one main task and a justified backup,
-  then generate a concrete S1 prompt. No replacement candidate is yet established.
-- Next available experiment **E056**; reserve centrally before creating it.
-  Next analysis ID A016; workflow continuation stays within A015.
+- **Next: S1 conditional leaf content.** [A016 decision](analysis/A016-next-research-decision.md)
+  selects independent asked-only trees with E041 raw sentinel mass preserved;
+  E046/E051 already tested other tree families. No replacement candidate exists.
+  [Copy-ready prompt](plans/2026-09-25-S1-conditional-content.ko.md) fixes one
+  SIPP group view, oracle/selection/audit boundaries and compute/stop caps.
+- Backup on invalid/STOP/inconclusive/over-cap: existing E041/E025 TEST evidence
+  and readiness-gap review, no fits or packages. S0 changed documents only.
+- **E056 reserved for next S1**, not yet registered or executed. Next analysis
+  ID A017. Input code HEAD7f712e1; S0 observed no python/wsl via Get-Process,
+  but command-line inspection unavailable. Recheck jobs and preserve user changes.
 - Keep E055's STOP; do not add favorable seeds or silently lower its threshold.
   New exploration may have different justified criteria registered beforehand.
 
