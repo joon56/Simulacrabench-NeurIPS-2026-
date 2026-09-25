@@ -5,10 +5,10 @@
     "rechecked_execution_hashes":  133,
     "scorecard_mapping":  "Execution-time SCORES.md hash verified against immutable scorecard-prerun.md; final scorecard contains pre-hosted clarification and measured results",
     "final_files":  {
-                        "docs/status.md":  "f119d180c5d923703c61558aecebd7b735a05200fc01686cd914af48f19c5c3d",
-                        "docs/log.md":  "ca58c2e4a6be0aa9ee2a41000dfd5dd72ed5cc0cc614238ef05b056236043c49",
+                        "docs/status.md":  "07ce84f26cf2d6283eefc7b007587d854aace405cf17faa76102e53a8d75c7df",
+                        "docs/log.md":  "a41dbac00a846434187fc93293d6d0f1e01776c58a66e69ba5795799c49a1258",
                         "docs/experiments/E057-unhcr-conditional-content.md":  "8f002817566778cf3a6001c4700787c766f1fbd5b041890178a91558c4191953",
-                        "docs/analysis/E057-outputs/s2/report.md":  "3cff9974af2d6bdccd7a862932f47c1b9c3d1108f46954b36f1c01906249b24a",
+                        "docs/analysis/E057-outputs/s2/report.md":  "09d948ce45c23b74aca97487d20a64681337ac0f13eb54c3f47d7819c02198bd",
                         "docs/analysis/E057-outputs/s2/scorecard-clarification.md":  "d7e9f0b15f49d9cf98b3ae107ef576198d9fdcd194a71bb896a491a41c0cc2b5",
                         "submissions/2026-09-25-E057/SCORES.md":  "45860e9a6fcfef5345145d39fc611e71314d96d09d3ab6519b6686d7b27f0d9e",
                         "submissions/2026-09-25-E057/verification.json":  "bb96f73ca87bc5e9508b95d8c24dcc80a38bc7fbb9eb603d072be1132ba3de07",
@@ -18,5 +18,6 @@
     "model_fits_during_closeout":  0,
     "uploaded":  false,
     "s3_resumed":  false,
-    "test_selected":  false
+    "test_selected":  false,
+    "push_status":  "Blocked by automatic approval review before execution; explicit authorization for E057 payload to named origin pending"
 }

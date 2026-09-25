@@ -78,6 +78,9 @@ in [session-prompts.ko.md](session-prompts.ko.md). Details belong in linked reco
   PASS; three suites1624.724s total, no repeated successful fit. Next is a
   user-controlled DEV decision/result loop using the frozen scorecard, not
   more identical local fitting. No automatic upload, backup or S3 resumption.
+  Local S2 commit a8494e8 verified; automatic approval review blocked origin
+  push of this payload. Explicit destination/payload confirmation pending;
+  local release PASS unchanged. See the S2 report for the exact destination.
   E058 is only the expected next number; recheck collisions before reserving.
 - **S3 A018 unconfirmed review artifacts:** E041 ZIP official phase2 PASSx3, raw
   source parity442425, all3 shared-process336.55s/peak commitment1.60GB.
