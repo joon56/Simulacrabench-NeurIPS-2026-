@@ -2,6 +2,15 @@
 
 Working folder for SimulacraBench, officially the Humanitarian Survey Completion Competition (HSCC). Original briefing: `SIMULACRABENCH.md` (Korean, partially outdated — this file wins on conflicts). Official site: <https://simulacrabench.org> · Starter kit: <https://github.com/SituatedEvals/public> (cloned at `external/starter-kit/`, gitignored) · Leaderboard: <https://www.codabench.org/competitions/17822/> · Terms/forum: Codabench org 4076 · Contact: team@simulacrabench.org. (Pre-launch URLs situatedevals.org and the `notebooks` repo are dead.)
 
+## Session entry and workflow (adopted 2026-09-25)
+
+Read this file, `docs/status.md`, then the newest three `docs/log.md` entries,
+in that order. Follow `docs/workflow.md` for the user-adopted research process;
+copy-ready session prompts are in `docs/session-prompts.ko.md`. Existing user
+authorization persists. Distinguish technical qualification, release performance
+checks, DEV exploration and final TEST selection. These prospective clarifications
+do not rewrite any earlier preregistration, STOP or hosted result.
+
 ## Task summary (per official starter kit README)
 
 Three unpublished survey instruments (post-launch schema update 2026-08-19): UNICEF v1.1 "Faith & Immunisation" 19 items / 12 scored / 8 gated (19,846 rows, 10 countries); World Bank "Skills Assessment" 106 / 76 scored / 40 gated (6,927 rows, 3 countries, youth job-seekers); UNHCR ERPIS v1.3 285 / 213 scored / 156 gated (10,349 rows — Syrian refugees in Egypt/Iraq/Jordan/Lebanon, 2 CATI rounds treated as independent cross-sections). Schema `description` fields now carry real instrument metadata — read them, they are modelling input. Visible respondents arrive complete; **held-out respondents show only their `GIVEN` block — every `PREDICT` cell is blank and scored** (cross-respondent generalization; there are no separate Track A/B).
@@ -27,7 +36,7 @@ Three unpublished survey instruments (post-launch schema update 2026-08-19): UNI
 - `predict(frame, schema)` is called **once per instrument**, returns one probability vector per blank cell — rows top-to-bottom, items in `schema["items"]` key order (not `frame.columns` order), each vector finite, non-negative, sum > 0 (grader renormalizes+floors). Load weights at **module import**, not inside `predict()`.
 - Network removed before import; no downloads at runtime (`HSCC-NETWORK-*` / `HSCC-HF-CACHE`).
 - Compute: **1× H100, 16 GB RAM (hard limit), 8 CPUs. Phase 1: 900 s; Phase 2: 3600 s — the budget covers the whole run: import + model load + all three instruments together, NOT per instrument.** Same `predict()` must PASS all three schemas.
-- Phase 1: **1 leaderboard submission/day — the 20-total cap was removed 2026-08-18** (config.yml commit "Removed max per participant submission number"; Codabench shows 1/day only). Phase 2: single final submission + 4-page method description (`docs/method-4p.md`). Submissions stay disciplined regardless: local-harness verification first, expected-vs-actual logged.
+- Phase 1: **1 leaderboard submission/day — the 20-total cap was removed 2026-08-18** (config.yml commit "Removed max per participant submission number"; Codabench shows 1/day only). Phase 2: single final submission + 4-page method description (`docs/method-4p.md`). Submissions stay disciplined regardless: local-harness verification first, preregistered readings and actual outcomes logged.
 - Failures come back as sanitized `HSCC-*` codes only — no stdout, no tracebacks (exception *type* survives, message dropped). Debug locally; the platform will not tell you more.
 - Data exfiltration / re-identification attempts = disqualification (contractual, third-party enforceable).
 
@@ -69,22 +78,24 @@ docs/analysis/   # A-series process records (EDA, domain research): append-only 
 
 ## Operating discipline (how every modelling decision is made)
 
-1. **No claim without a number.** Every modelling change is justified only by held-out skill on the local harness. No merge without measured improvement.
+1. **No claim without evidence of the stated scope.** Quantify improvement claims with held-out results on an identified channel or actual hosted readings; state uncertainty and transfer limits. Committing research code or a technically qualified exploratory candidate is not model adoption and does not require claiming an improvement. Local qualification, DEV incumbent selection and final TEST selection are separate decisions.
 2. **Structure before parameters.** Exhaust deterministic structure (skip-logic gate coupling, chain closure) before adding learned components — the organizers measured gating alone at 0.98 → 0.76 log score.
 3. **Overconfidence is the cardinal sin.** A confident wrong cell costs log(1e-3) ≈ −6.9 nats vs ≈ −1.4 for an honest hedge. When uncertain, shrink toward the marginal; check calibration before any submission.
-4. **Submissions are ammunition** — 1/day (total cap removed 2026-08-18, but the noised leaderboard still can't rank close variants). Never spend a submission on unverified changes; record expected score before submitting, compare after.
-5. **Complexity must pay rent.** A complex model is adopted only after beating the calibrated simple stack on the local harness, within the wall-clock budget (profile it).
+4. **Submissions are ammunition** — 1/day (total cap removed 2026-08-18, but the noised leaderboard still can't rank close variants). Never spend a submission on unverified changes; preregister result-reading arms and next actions before submitting, then compare the actual result. A numerical expectation requires evidence; otherwise explicitly leave it unknown.
+5. **Complexity must pay rent.** Compare each candidate with the calibrated incumbent, report measured gain and generalization limits, and profile the whole run. Local qualification follows its registered criterion; a qualified exploratory DEV test can proceed without a positive proxy result. A favorable DEV reading does not automatically select the final TEST model.
 6. **Everything is logged** — hypothesis → result → conclusion in docs/log.md. An unreproducible experiment didn't happen.
-7. **Every empirical conclusion is validated against background domain.** Two domain types, tracked separately: *technical* (methods — which technique, how implemented) and *background* (what the data means — populations, instruments, humanitarian context; independent of AI/statistics). An EDA finding or measured gain becomes a claim only after checking consistency with background domain knowledge (docs/domain.md, published survey reports). A finding that contradicts domain expectations is flagged — neither auto-rejected nor built upon as-is. Domain surprise raises the evidence bar, it does not veto: check for artifacts (leakage, coding error, confound) and replicate (different seed/split/instrument slice) before adopting; if it survives, adopt it AND log it as a potential genuine discovery (surprising-but-real correlations exist — domain consensus can be wrong). Numbers-only correlation chains without this check produce contradictory hypotheses (lesson from prior work). Experiment files carry a "Domain check" section: expectation pre-registered before the run, verdict after.
+7. **Every empirical conclusion is validated against background domain.** Two domain types, tracked separately: *technical* (methods — which technique, how implemented) and *background* (what the data means — populations, instruments, humanitarian context; independent of AI/statistics). An EDA finding or measured gain becomes a claim only after checking consistency with background domain knowledge (docs/domain.md, published survey reports). A finding that contradicts domain expectations is flagged — neither auto-rejected nor built upon as-is. Domain surprise raises the evidence bar, it does not veto: check for artifacts (leakage, coding error, confound) and replicate (different seed/split/instrument slice) before adopting; if it survives, consider adoption under the registered criteria and log it as a potential genuine discovery (surprising-but-real correlations exist — domain consensus can be wrong). Numbers-only correlation chains without this check produce contradictory hypotheses (lesson from prior work). Experiment files carry a "Domain check" section: expectation pre-registered before the run, verdict after.
+8. **Keep stop decisions scoped.** Use an informative, validly scoped oracle before estimator construction. A failed registered gate stops that study, not all target-domain approaches. If a proxy cannot answer the mechanism, state why and preregister a distinct bounded exploration with all submission checks; never lower a failed study's threshold or search favorable seeds after the result. The user permits qualified, decision-relevant exploratory DEV submissions without local adoption.
+9. **Bound work and preserve continuity.** Name the decision, main task, ready backup and resource cap before costly work. Continue authorized work within that scope, then hand off exact artifacts, evaluation exposure and running-job state. Use one integration owner per checkout; independent subagents may review or own disjoint tasks, but must not race edits, fits or commits. The user controls hosted uploads unless explicitly authorizing one.
 
 ## Experiment tree (how approaches are recorded)
 
 - **One experiment = one file** in `docs/experiments/E0XX-slug.md` (copy `TEMPLATE.md`): `parent:` header is the tree edge (which model it branches from), `status:` ∈ adopted / rejected / parked / superseded-by:E0YY. `docs/log.md` stays a daily journal and refers to experiments by ID.
 - **Rejected model code is never deleted** — only its status changes. Approaches get revived and combined; deleting code falsifies the tree.
 - **Commit messages carry the experiment ID** (`E003: given-stratum backoff`) so git history maps onto the tree.
-- **Adoption threshold is fixed**: Δ(3-instrument mean, sample excluded) > +0.005 (~3σ of phase-sampling noise, measured 2026-08-12). The experiment file's Decision section is the only place verdicts are rendered.
+- **Register the decision criterion before scoring.** The historical local default is Δ(3-instrument mean, sample excluded) > +0.005, motivated by old sandbox split-score SD about .0016 on 2026-08-12. It is an operational bar, not a universal significance level, paired-difference interval or external-proxy/TEST futility bound. State any justified different prospective criterion, its channel and scope before score access. Keep earlier registrations and verdicts unchanged. The experiment Decision section records separate local, DEV-exploration and TEST dispositions.
 - `python scripts/render_tree.py` regenerates `docs/tree.md` (mermaid) from the headers — run it whenever an experiment file is added or its status changes.
-- Leaderboard submissions snapshot into `submissions/` with the experiment ID and expected-vs-actual score pair.
+- Leaderboard submissions snapshot into `submissions/` with the experiment ID, preregistered reading arms and actual scores. Include a justified numerical expectation only when available; do not invent one.
 - Submission ZIPs use `submissions/YYYY-MM-DD-E0XX.zip`; matching source and scorecards use `submissions/YYYY-MM-DD-E0XX/`. Keep future deliverables in this established layout, not `output/dev/` (user preference, 2026-09-19).
 - **End of each working day: push to `origin` (private GitHub repo).**
 
@@ -95,8 +106,8 @@ Domain study runs as one-paper-per-session via the `paper-session` skill (`.clau
 ## Rules for working here
 
 - **All code, comments, and commit messages in English.**
-- Never hardcode assumptions about the real data — develop only against the synthetic sandbox and published shard statistics.
-- Local validation harness is the source of truth between daily submissions; don't waste the 1/day leaderboard submission on unverified changes.
+- Never hardcode unverified assumptions about hidden competition responses. Use the synthetic sandbox, public schema/statistics and audited permitted public proxies such as the already approved Adult/SIPP channels. Keep external-data provenance, license/disclosure and leakage boundaries; never access or reconstruct private competition responses.
+- The local harness precisely measures its own channel; it does not certify transfer. Prefer a qualified, decision-relevant DEV submission to an unused slot, but do not submit unverified changes or unreadable probes merely to fill the day. Follow `docs/workflow.md` for the mandatory submission checks and result interpretation.
 - Log every experiment in `docs/log.md`; snapshot every submission in `submissions/`.
 - Strategy priority: exact skip-logic handling → calibrated simple models (IRT + low-rank + smoothing) → hybrids. LLM persona-prompting is log-loss-unfavorable without calibration post-processing.
 - `external/starter-kit/score.py` is the official grader — use it for final validation of any submission; keep `src/eval/` for fast in-process iteration and mirror its skill metric exactly.

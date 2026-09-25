@@ -2,6 +2,25 @@
 
 Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-notes]].
 
+## 2026-09-25 - A015 workflow adopted; sessions and prompts configured
+
+- User adopted A015's recommendation and requested session/prompt organization.
+  Created docs/workflow.md and docs/session-prompts.ko.md: S0 coordinator/prompt,
+  S1 research, S2 DEV package/result, S3 TEST selection/delivery. These are task
+  types and copy-ready prompts; no automatic chats, scheduler or resident agents.
+- Independent read-only review found conflicting archival/adoption, universal
+  threshold/oracle and sandbox-only instructions. Aligned CLAUDE.md and future
+  experiment TEMPLATE prospectively. Old registrations, STOPs and artifacts
+  remain unchanged; technical qualification and release checks remain mandatory.
+- Added bounded continuation, evaluation-exposure tracking, single integration
+  owner/ID allocation, resource-aware subagent delegation, precise handoffs,
+  noisy-result interpretation and separate TEST freeze. Existing upload boundary
+  and user preference for useful qualified DEV exploration persist.
+- Compacted status after exact-byte archive under A015-outputs, hash recorded
+  in A015 v2. No model fit, new experiment, score, package or upload. Next S0
+  selects a concrete main/backup before S1; E056 remains available, E041 incumbent,
+  E054 parked and E055's original scoped STOP retained.
+
 ## 2026-09-25 - A015 workflow self-audit and proposed session contract
 
 - User requested self-diagnosis, outcome-specific research flow and reusable

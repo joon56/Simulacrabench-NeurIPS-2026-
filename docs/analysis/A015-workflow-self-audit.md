@@ -4,6 +4,10 @@ date-completed: 2026-09-25
 status: done
 relates-to: E041 / E052 / E054 / E055 / A011 / A014
 
+Current authority: the user adopted the recommendation in v2 below. The initial
+proposal and diagnosis are preserved here; active rules are in CLAUDE.md and
+docs/workflow.md, with copy-ready prompts in docs/session-prompts.ko.md.
+
 ## Goal and authority
 
 Assess whether the current research process serves the user's objective of
@@ -25,6 +29,40 @@ scorecard, A014/E055 outcomes, and the earlier threshold/slot-use corrections.
 At audit start status.md had 318 lines despite its one-page handoff purpose.
 Consulted primary statistical sources listed below. No model fits or scores
 were run; no production/submission files or existing experiment verdicts changed.
+
+### v2 — 2026-09-25: User adoption and operational setup
+
+The user adopted the recommended workflow and authorized efficient session,
+instruction-document and subagent organization. The proposal below is retained
+as the audit's historical reasoning; active instructions are now in
+[workflow.md](../workflow.md), aligned with CLAUDE.md and the future experiment
+template. [Session prompts](../session-prompts.ko.md) define S0 coordinator,
+S1 research, S2 DEV package/result and S3 TEST finalization. No chat sessions,
+background scheduler or persistent custom agents were created.
+
+Independent read-only review identified and helped resolve old rules conflating
+archival commits with adoption, universal +.005/proxy-oracle vetoes, and the
+sandbox-only restriction despite approved public proxies. All earlier experiment
+registrations/verdicts and submission files remain unchanged. New criteria must
+be justified before new scores; no retrospective threshold change is permitted.
+
+The shared guide includes bounded main/backup work, evaluated-label exposure,
+decision value of probes, separate release/adoption decisions, one integration
+owner, ID allocation, resource contention, immutable running sources, result
+identity, TEST freeze and precise handoffs. Subagents are optional bounded
+workers/reviewers; consensus does not substitute for evidence.
+
+Compacted status.md after preserving its exact pre-setup bytes in
+[status-before-workflow.md](A015-outputs/status-before-workflow.md), SHA256
+`50a9ae3460605bca51d463246175e5fc64c276ce4f0404acc18096463d01d73e`.
+No history deleted. Next session is S0 candidate triage, not automatic E055
+reopening or E054 upload. E056 is still available, not a fabricated new candidate.
+
+Final independent review corrected automatic adoption after domain replication,
+unsupported expected-score requirements, and wording that would prevent building
+the verification tools themselves. Reviewer cleared those corrections. Local
+document links, preserved status hash and whitespace checks passed. No model
+tests were needed for these instruction/document-only changes.
 
 ## Diagnosis
 

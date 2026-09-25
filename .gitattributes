@@ -86,3 +86,4 @@ docs/analysis/E055-outputs/*.json -text whitespace=cr-at-eol
 docs/analysis/E055-outputs/*-registration.md -text whitespace=cr-at-eol
 docs/analysis/E055-outputs/*.log -text
 docs/analysis/E055-outputs/*.py -text whitespace=cr-at-eol
+docs/analysis/A015-outputs/status-before-workflow.md -text whitespace=cr-at-eol
