@@ -3,6 +3,20 @@ parent: E056
 status: parked
 date: 2026-09-25
 
+## Hosted result addendum — recorded 2026-09-25
+
+User reports Grand .64 without best update. Instrument scores and upload
+metadata were not supplied; recording date is not upload timing. This matches
+the preregistered unresolved arm, not technical failure or a measured zero effect.
+DEV: retain E041, park E057. TEST: no promotion/selection; S3 remains stopped.
+No hidden activation, UNHCR score or precise effect inferred. Phase1 technical
+qualification retained; same-policy repeats/blind guard or share sweeps are not
+justified. E056's scoped audit and all earlier STOPs remain unchanged.
+Next: [document-only S0 handoff](../analysis/E057-outputs/s2/post-result-handoff.ko.md).
+No new fit, package, upload, proxy score or phase2 work. Structured report in
+[hosted-result.json](../../submissions/2026-09-25-E057/hosted-result.json).
+Original S1/S2 decisions below are historical and are not rewritten by this result.
+
 ## S2 release addendum — 2026-09-25
 
 User authorized remaining release checks only. Execution freeze3f0f6ad follows

@@ -1,5 +1,10 @@
 # E057 — UNHCR conditional leaf content, DEV exploration
 
+**Current result, recorded2026-09-25:** user reports Grand **.64, no best update**.
+Registered **unresolved** arm; retain E041, park E057. Instrument scores and
+upload metadata not provided. See appended hosted reading below. The preparation
+and qualification sections retain their pre-result context.
+
 Prepared 2026-09-25; this date is not an upload commitment.
 Intended upload date: unset. Actual upload timestamp/ID: unknown, not submitted.
 Slot availability: unverified; user must check the one authorized account before
@@ -110,3 +115,39 @@ the preserved preregistration, not this later appended results section.
 [S2 report](../../docs/analysis/E057-outputs/s2/report.md) records reproduction,
 scope and environment limits. Actual account slot remains unverified; no
 intended upload date or new hosted observation assigned.
+
+## Hosted reading — user report recorded 2026-09-25
+
+User: E057 Grand .64, no highest-score update. This matches the original and
+clarified preregistered **Grand=.64 without update: unresolved** arm. No reported
+technical failure; a scored result is reported, but exact platform status/code
+was not independently fetched. No instrument score, hosted runtime, submission
+ID/sequence, upload timestamp or uploaded ZIP hash was supplied. Recording date
+is not an inferred upload date. The prepared ZIP hash above was locally checked;
+it is not independent confirmation of the bytes actually uploaded.
+
+**DEV decision:** keep E041; E057 remains parked. No readable new best was
+demonstrated. Small positive/negative/zero effects, policy inactivity and
+noise/rounding remain unresolved. Local synthetic all-zero shares do not reveal
+the actual hosted selector or validation outcome. Do not recover UNHCR or
+control scores from Grand. This does not prove conditional trees universally
+fail or invalidate E056's scoped SIPP audit.
+
+**TEST decision:** no new evidence to promote E057 over E041 or E025. Retain it
+as an archived, phase1-qualified research candidate, not a selected finalist.
+Any future reconsideration needs distinct decision-relevant evidence and
+phase2 TRAIN+DEV selection/refit behavior, official all3/parity and shared
+resources. No phase2 work or TEST choice is authorized by this reading; S3
+remains stopped and A018 remains an unconfirmed proposal.
+
+**Next:** document-only S0 strategy review using the
+[handoff prompt](../../docs/analysis/E057-outputs/s2/post-result-handoff.ko.md).
+Lower priority of repeating this fixed policy; do not repeat identical uploads
+to average noise, relax two-SE guards, sweep seeds/shares/heads, open extra
+E056 audit/calibration arms or rerun unchanged release fits. No approved pending
+local follow-up was identified in this handoff. A distinct mechanism requires
+new rationale and prospective registration; do not invent E058 just to fill a slot.
+
+[Structured user report](hosted-result.json). Original reading arms, local
+verification.json and all model/ZIP bytes retained. Missing metadata can be
+appended later without changing this reading or reconstructing hidden values.

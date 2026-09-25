@@ -15,12 +15,14 @@ in [session-prompts.ko.md](session-prompts.ko.md). Details belong in linked reco
   that [A018](analysis/A018-test-selection.md) is an unconfirmed review proposal,
   including its selected/frozen wording. E041 remains DEV incumbent; E025 is the
   existing fallback. Preserve A018 files; no S3 resumption in this S1 session.
-- Latest user-reported submission: E052 Grand .64, no best update; individual
-  scores unavailable. E045/E047/E049 also read .64 without an update; effects
+- Latest user-reported submission: **E057 Grand .64, no best update**; individual
+  scores not supplied. Registered unresolved arm: E041 retained, E057 parked.
+  [Reading/S0 handoff](analysis/E057-outputs/s2/post-result-handoff.ko.md).
+  E045/E047/E049/E052 also read .64 without an update; effects
   remain unresolved. E044 .63 was adverse under its registered arm. Keep E041.
 - E054 is prepared but **parked and unsubmitted**; A013 found limited readable
   probe value. It is not an improvement candidate or automatic next submission.
-- Current-day slot availability is unverified. No new upload reported in setup.
+- Current-day slot availability is unverified; E057 upload date/time unknown.
   Historical .65 leaderboard screenshot is not a current winning-score forecast.
 
 ## Latest research decision
@@ -37,8 +39,8 @@ in [session-prompts.ko.md](session-prompts.ko.md). Details belong in linked reco
   Default/assembly/official189649 vectors exact, active fixture PASS, official
   all3/checker/E025 absolute.002 PASS. Shared assembly540.508s/1.696GiB RSS;
   official suite556.545s/2.313GiB. ZIP21bce867... frozen, candidate still parked.
-  Eligible for bounded user-controlled DEV exploration; no target gain,
-  new incumbent, TEST choice, method change or upload. Account slot unknown.
+  User now reports Grand.64/no update: no readable improvement, effect/activation
+  unresolved. No incumbent/TEST promotion or repeat-upload recommendation.
 - [E056](experiments/E056-conditional-leaf-content.md) positive conditional-content
   research screen: SIPP group audit delta skill +.000651952785,
   95% SSUID interval [+.000202805542,+.001195519933]. Only BIR alpha=.5 selected;
@@ -75,9 +77,9 @@ in [session-prompts.ko.md](session-prompts.ko.md). Details belong in linked reco
   peak RSS.401GiB. Frozen arithmetic verified without new labels or fits.
 - **S1 E057 complete.** Registration592da4c, executed codee51b29f. All owned jobs
   complete. **S2 complete:** freeze3f0f6ad, all remaining local release checks
-  PASS; three suites1624.724s total, no repeated successful fit. Next is a
-  user-controlled DEV decision/result loop using the frozen scorecard, not
-  more identical local fitting. No automatic upload, backup or S3 resumption.
+  PASS; three suites1624.724s total, no repeated successful fit. Hosted.64/no
+  update recorded under the unresolved arm. **Next: document-only S0 strategy
+  review**, using the post-result handoff. No new fit, upload or S3 resumption.
   Local S2 commit a8494e8 verified; automatic approval review blocked origin
   push of this payload. Explicit destination/payload confirmation pending;
   local release PASS unchanged. See the S2 report for the exact destination.

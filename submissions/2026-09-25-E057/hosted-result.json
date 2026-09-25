@@ -1,0 +1,23 @@
+{
+  "experiment": "E057",
+  "source": "user_report_in_S2",
+  "recorded_on": "2026-09-25",
+  "grand": 0.64,
+  "new_dev_best": false,
+  "instrument_scores": {"unicef": null, "world_bank": null, "unhcr": null},
+  "platform_status": "scored_result_reported_by_user",
+  "platform_status_independently_verified": false,
+  "platform_code": null,
+  "submission_id": null,
+  "submission_sequence": null,
+  "uploaded_at": null,
+  "uploaded_zip_sha256": null,
+  "prepared_zip_sha256": "21bce8672ce3b3b659c9e8dfae551737c994ff64d4f57d54411c59ba77d0cba4",
+  "hosted_seconds": null,
+  "registered_arm": "unresolved_grand_equal_064_without_best_update",
+  "dev_decision": "retain_E041_park_E057",
+  "test_decision": "no_promotion_no_selection_S3_remains_stopped",
+  "hidden_activation": "unknown",
+  "effect_direction_and_magnitude": "unresolved",
+  "next_action": "S0_document_only_strategy_review_no_blind_retry_or_tuning"
+}

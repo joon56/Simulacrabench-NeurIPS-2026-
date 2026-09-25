@@ -2,6 +2,32 @@
 
 Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-notes]].
 
+## 2026-09-25 - E057 hosted Grand .64 without update; retain E041
+
+- User reports E057 Grand.64, no best update. Individual scores, exact platform
+  code/status, submission ID/sequence, upload timestamp/hash and hosted runtime
+  not supplied. Scored result reported; no technical failure reported. No
+  platform fetch. Recording date is not an inferred upload date.
+- Original and clarified SCORES both map this observation to unresolved.
+  No readable new best; small gains/losses/zero, inactivity and noise remain
+  unresolved. No hidden instrument or actual selector outcome inferred from
+  Grand or from synthetic allzero policy. Keep E041; E057 stays parked.
+- TEST judgment separate: no new promotion evidence; E057 phase1 qualification
+  remains, phase2 unverified. E025 fallback; S3 still stopped/A018 unconfirmed.
+  No identical retry, blind share/head/seed search or lowered2SE guard. This
+  result does not universally reject conditional content or E056's SIPP finding.
+- Updated scorecard, separate hosted-result.json, experiment/index/status and
+  E057-outputs/s2/post-result-handoff.ko.md with a document-only S0 prompt.
+  Historical preregistration, local verification and model/main/ZIP bytes kept.
+  No new fit, label score, package, upload or S3 job; no active job at entry.
+- Verification: all133 frozen evidence/input hash entries PASS (historical
+  scorecard mapped to immutable prerun copy); local verification manifest and
+  pre-result reading arms unchanged. User-report JSON,21 local links and
+  task-file diff whitespace checks PASS. Fits run0.
+- Input417f27e; existing user changes preserved. Prior automatic origin-push
+  rejection remains unresolved: reporting a score is not destination/payload
+  approval. Complete local result commit; no push retry or bypass pending approval.
+
 ## 2026-09-25 - E057 S2 local release qualification PASS; no upload
 
 - User authorized E057 remaining release checks only. Input949884b, execution

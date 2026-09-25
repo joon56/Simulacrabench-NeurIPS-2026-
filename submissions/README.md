@@ -26,7 +26,8 @@ protocol:
   a different day, the Notes column says so.
 - **Reported LB** — Codabench shows per-instrument scores only when the
   submission becomes the new best; otherwise only Grand is visible, recorded
-  here as "0.63, no update". "no update" means ≤ the incumbent, NOT a failure.
+  here as "0.63, no update". "no update" means no readable new best, not a
+  technical failure or a bound on the exact underlying effect after noise.
 - A **FAILED** row consumed no daily slot (standing fact established 2026-09-13).
 - Rows #19–#21 are deliberate **probes** (P1/P2/P3): they degrade the score on
   purpose to measure where the remaining loss sits. Their low Grand values are
@@ -42,6 +43,7 @@ protocol:
 
 | # | Date | Snapshot | Local skill (sample/unicef/wb/unhcr) | Expected LB | Reported LB | Notes |
 |---|------|----------|--------------------------------------|-------------|-------------|-------|
+| — | 2026-09-25 | 2026-09-25-E057 | — / 0.5006 / 0.4547 / 0.5625 | Fixed conditional-content exploration; no numerical forecast | **0.64, no update**; instrument scores not supplied | User report recorded2026-09-25; upload timestamp/ID/sequence/hash unknown. Preregistered unresolved arm: E041 retained, E057 parked; hidden activation/effect unknown. Phase1 all3/checker/189649-vector parity/E025 absolute.002 PASS, shared assembly540.508s. No TEST promotion/S3 resume or identical retry. See SCORES.md and post-result S0 handoff. |
 | 31 | 2026-09-24 | 2026-09-24-E054 | — / 0.5006 / 0.4547 / 0.1065 | Measurement only; .38-.44 conditional envelope, NOT forecast | **Prepared, not submitted** | Final gated UNHCR vectors uniform after unchanged E041; controls/ungated exact. Formal93-draw reading only.38 informative, .39-.43 unresolved; no common6-draw arm. Limited practical information value and preregistration ambiguity disclosed. Checker/official all3/exact189649-vector parity PASS,338.472499s. E041 remains best; E054 parked. See SCORES.md/A013. |
 | 30 | 2026-09-24 | 2026-09-24-E052 | — / 0.5006 / 0.4547 / 0.5626 | .64 incumbent anchor; .65+ target, no calibrated forecast | **0.64, no update**; instrument scores unavailable | Fixed UNHCR routing control: original own-item evidence/lambdas after base-only ancestor routing. Clean+.000167291 vsE041, household-.001080278; no adoption. E050/E051 observed oracle stops and failed E052 selector bound retained; no new selector. 34tests/checker/official all3 PASS, raw source/archive/diagnostic parity0 with25,911 naturally active vectors,402.795s <900 locally. Result recorded2026-09-24; unresolved arm, E052 parked. Exact effect and hosted activation unknown; no blind routing-intensity grid. E041 remains best. See SCORES.md. |
 | 29 | 2026-09-23 | 2026-09-23-E049 | — / 0.5006 / 0.4547 / 0.5625 | .64 incumbent anchor; .65+ target, no calibrated forecast | **0.64, no update**; instrument scores unavailable | TabPFN-HSCC E049; Built with PriorLabs-TabPFN. Independent original V2 predicts four UNHCR gate parents, guarded confidence policies blend descendant closures. E048 constant oracle stopped first. Observed learned +.001739/0 inconclusive; clean/household exact E041, all local selectors reject. 29 tests/checker/official all3/raw source parity PASS; offline639.517s, forced-active conservative all3753.797s <900s. Result reported2026-09-24; unresolved arm, parked. Exact effect and hosted activation unknown; E041 stays best. See SCORES.md. |
