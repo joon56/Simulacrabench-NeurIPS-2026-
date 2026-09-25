@@ -2,6 +2,28 @@
 
 Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-notes]].
 
+## 2026-09-25 - A017 S2 readiness: no new DEV package
+
+- S2 supplied no E number; inspected actual S1 handoff. At entry E056 reserved,
+  E055 scoped STOP, E054 parked for limited readable value. No candidate or
+  submission date invented. E041 incumbent/E025 fallback; TEST selection open.
+- Frozen E054 source/artifact/schema/data/cache/snapshot hashes96/96 match.
+  E025/E041/E054 archived main bytes match snapshots; fresh official ZIP checker
+  PASS for E041/E054. Local and remote kit remain ee427a9; no changed input
+  justifies refitting or official score reruns for this unselected archive.
+- Retained historical all3 official PASS,189649 exact source/archive vectors,
+  unchanged E041 base deltas0/0/-.000486144847 versus E025 and338.472499s local.
+  Probe's deliberate decrease is not submitted-output no-regression. Existing
+  SCORES preregistration preserved; no hidden-score or zero-effect inference.
+- A017 records hashes, retained-check scope, conditional readings and blockers.
+  Next work remains A016's E056 S1 protocol, not automatic packaging;
+  positive proxy evidence would still need UNHCR implementation/release checks.
+- Input4166130; unrelated user changes preserved. No fit, score-role access,
+  model/ZIP change or upload. Slot availability unknown. All launched commands
+  completed; process command-line visibility limited. During close, another
+  owner committed E056 registration18ab9e6 and S3 A018 files appeared. Their
+  files excluded; no duplicate S1 launch. Recheck ownership/IDs before work.
+
 ## 2026-09-25 - A016 S0 chooses conditional leaf-content research
 
 - Compared independent conditional content, replay repair, prior full-answer
