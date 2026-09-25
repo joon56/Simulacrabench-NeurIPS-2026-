@@ -306,6 +306,12 @@ def evaluate_stage(stage):
                                for i in range(3)]) for n in TARGETS}
     else:
         scores = score_arms(arms, labels)
+    # Restricted score arrays permit independent arithmetic verification without
+    # reopening response labels or evaluating another policy on the audit.
+    with (LOCAL / f'{stage}-scores.npz').open('xb') as stream:
+        saved = ({f'base/{n}': scored[n][0] for n in TARGETS} |
+                 {f'selected/{n}': scored[n][1] for n in TARGETS}) if stage == 'audit' else scores
+        np.savez_compressed(stream, **saved, groups=selected_groups.astype(str))
     base = {n: rows[0] for n, rows in arms.items()}
     if stage == 'oracle':
         result = oracle(scores, TARGETS, base)
@@ -338,7 +344,8 @@ def evaluate_stage(stage):
             'conditional_asked_loss': conditional, 'checks': validate_arms({n: [base[n], selected[n]] for n in TARGETS}),
             'gate': 'FOLLOWUP_RESEARCH' if delta.mean() > 0 and interval[0] > 0 else 'STOP_INCONCLUSIVE_OR_NONPOSITIVE'}
     result.update({'role': stage, 'rows': len(take), 'ssuid_groups': len(np.unique(selected_groups)),
-                   'library_sha256': manifest['library_sha256'], 'share_values': list(SHARES)})
+                   'library_sha256': manifest['library_sha256'], 'share_values': list(SHARES),
+                   'scores_sha256': digest((LOCAL / f'{stage}-scores.npz').read_bytes())})
     write_json(destination, result)
     print(json.dumps(result, allow_nan=False), flush=True)
 
