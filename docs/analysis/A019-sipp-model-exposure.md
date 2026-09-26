@@ -1,6 +1,6 @@
 # A019 — SIPP model-exposure entry audit
 date-started: 2026-09-26
-status: in-progress
+status: done
 relates-to: E041 / E055 / E056 / prospective donor-interaction research
 
 ## Contract fixed before key projection
@@ -54,4 +54,19 @@ separate claims. No new scientific efficacy conclusion from this audit.
   2a52f18,df10864,527ddd2. Initial sandbox scan encountered permissions in old
   temporary grader environments; authorized elevated read resolved the scan.
   Third-party site-package substring hits are not SIPP project use.
-- Key projection, counts and manifest checks: pending.
+- Key projection completed10:06UTC, within30min;6.8364s command wall, zero fit
+  and zero new score. Eligible39131people/17314SSUIDs. Used12000people/8908SSUIDs
+  excludes24432people; remaining14699people/8406SSUIDs. New complete-group
+  prefix5999people/3431SSUIDs: oracle1918/1124,selection2007/1130,audit2074/1177.
+  No group crosses roles or historical use. All minimum counts PASS.
+- Both E055 and E056 manifests match exact source and reconstructed sample/roles.
+  Ignored tmp/verify_e055_artifacts.py is frozen verification only, not a new fit
+  or sample; official Census input-example.py is documentation, no recorded run.
+  History and current code search find no other project SIPP model use. Scope of
+  this evidence is repository-recorded work, not arbitrary unrecorded activity.
+- Existing A014 extraction and earlier verifiers materialized full-source
+  responses for preprocessing/checks. Thus unused-for-model is NOT never-seen.
+  This distinction is retained in E058; no new independent dataset claim.
+- PASS permits E058 registration. E056 calibration and all old non-fit labels
+  remain unopened. Artifacts: A019-outputs/entry-audit.json, scripts/audit_a019_exposure.py;
+  keys/hashes under ignored external/a019 only. No scientific efficacy verdict.

@@ -1,0 +1,69 @@
+{
+  "status": "PASS",
+  "source_sha256": "92aa1bc010bb85cf46750b1560e1a96e5f150b8f418296b560d52883064e3ede",
+  "columns_read": [
+    "SSUID",
+    "PNUM",
+    "MONTHCODE",
+    "ERESIDENCEID",
+    "THHLDSTATUS",
+    "TAGE_EHC"
+  ],
+  "sample_hash": "fe456797e61f7c074a84bfaa7171c0ba7e0fb86cdd089ba716f8dfd0c0b13d6c",
+  "historical_role_counts": {
+    "person": {
+      "fit": 5939,
+      "oracle": 1850,
+      "calibration": 1787,
+      "audit": 1215,
+      "selection": 1209
+    },
+    "group": {
+      "fit": 5922,
+      "oracle": 1872,
+      "calibration": 1866,
+      "audit": 1192,
+      "selection": 1148
+    }
+  },
+  "eligible_persons": 39131,
+  "eligible_ssuids": 17314,
+  "historical_persons": 12000,
+  "historical_ssuids": 8908,
+  "excluded_persons_by_ssuid": 24432,
+  "remaining_persons": 14699,
+  "remaining_ssuids": 8406,
+  "selected_persons": 5999,
+  "selected_ssuids": 3431,
+  "roles": {
+    "oracle": {
+      "persons": 1918,
+      "ssuids": 1124
+    },
+    "selection": {
+      "persons": 2007,
+      "ssuids": 1130
+    },
+    "audit": {
+      "persons": 2074,
+      "ssuids": 1177
+    }
+  },
+  "role_ssuid_overlap": 0,
+  "old_new_ssuid_overlap": 0,
+  "manifest_hashes": {
+    "external/e055/sipp-person-manifest.json": "29d5c8de3878859990de7d2e547807fcc76a81e70aca9bd4ba147a73120ec2fb",
+    "external/e055/sipp-group-manifest.json": "543ca976ed5a21af55d9afae69b8208597f15cb0545b4881698b2f87da453e20",
+    "docs/analysis/E056-outputs/manifest.json": "2f4dc40455d734beedd60903cf6caedbe2779fa5822ce1a3f1a1953a58374313"
+  },
+  "local_key_hashes": {
+    "evaluation-keys.parquet": "0d33a219a5f17a59d338715aead99060d381ef58a01981667b995da7e8e38bbc",
+    "fit-keys.parquet": "d997c85a9152df9da81e0146c38f0a99467bab5d27ffeb0d763496dbc5e2e9ac",
+    "historical-keys.parquet": "11000e55e5f76d4ce7d9804595fc8e3573ef1c09977edb8c56906d9ebd9fe0d7"
+  },
+  "script_sha256": "4145a2e2754939ade5e2ba80a9d1a97735e9059b3746b393ab806ec922d77929",
+  "wall_seconds": 6.8364003999995475,
+  "fit_calls": 0,
+  "new_score_calls": 0,
+  "scope": "Same aggregate-exposed A014 source. Provenance conditional on recorded repository run history."
+}
