@@ -1,6 +1,6 @@
 # E058 — Fixed-donor GIVEN pair interactions
 parent: E041
-status: parked
+status: rejected
 date: 2026-09-26
 
 ## Contract and novelty
@@ -138,9 +138,59 @@ authorize future relabeling as untouched. No automatic third branch.
 
 ## Result
 
-Pending. No new target response or model score accessed at registration.
+Registration completed before response access (f537a79); immutable original:
+[registration.md](../analysis/E058-outputs/registration.md). Tested execution
+code8bcdf51. Implementation and one monitored library run completed; evaluation
+stages deliberately not run, for the exact identity reason below. No thresholds,
+donor pools, activation rules, sample or seeds changed after observation.
+
+A019 PASS:5999 new query persons/3431SSUIDs, disjoint from historical8908SSUIDs.
+One generic E041 first stage fit on original5922 fit persons. Its original
+learned section selector activated **zero sections**. Inner roles were
+metric-fit1184/selection592/reference3554/replay592. The original selector's
+gain_log=-.0015416657769860144, SE=.004426562883715935; these are internal fit
+diagnostics, NOT new outer selection results. Existing legacy evidence remained
+in use; zero learned active sections does not mean zero retrieval evidence.
+
+No beta fit was permitted. Baseline, recomputed beta0 and candidate are exact
+across41993 vectors. All three registered global mixtures on the oracle role
+are exact after official normalization/floor as well. Label-free certificate: exact arithmetic
+oracle delta0; conservative floating gain upper1e-12 < registered1e-10 STOP.
+No new oracle, selection or audit response was read; no efficacy score or CI.
+
+**Disclosed label-saving deviation:** instead of opening oracle labels to score
+three identical predictions, verify exact identity plus a worst-class bound
+using frozen predictions only. Every possible label assignment gives the same
+STOP. This replaces the planned oracle scoring operation, not its criterion.
+The verification script was added after library observation, uses no new labels
+and cannot create a continuation arm. Selection and audit remain unopened.
+
+Focused tests12 PASS (4.30s); frozen verifier checked59 source hashes, data/key/
+registration/artifact hashes, full query masking, donor/fit-role isolation,
+official floor, identity and resource caps. Real beta0 exercise was inactive;
+active interaction objective/evidence path was tested only with small fixtures.
+No empirical learned-interaction gain or active-path real-data validation.
+
+Whole library parent/worker run20.267330s, worker19.527362s; conservative fit
+12.978182s. Peak aggregate process-tree RSS634986496bytes (.591GiB), commitment
+708263936bytes (.660GiB), sampled.2s including monitor harness. One heavy fit,
+CPU2, no GPU/install/paid resource. Key audit6.8364s, identity verification.9851s
+are separate. These are this local SIPP diagnostic costs, not hosted all3 cost.
+All jobs completed within caps. No old model cache reused.
+
+Details, artifact hashes and commands: [closeout](../analysis/E058-outputs/closeout.md),
+[exposure ledger](../analysis/E058-outputs/exposure-ledger.md),
+[identity certificate](../analysis/E058-outputs/oracle-identity-certificate.json).
 
 ## Decision
 
-Pending research screen only. Technical diagnostic, proxy efficacy, future
-UNHCR research, release qualification and final adoption are separate decisions.
+STOP this registered fixed-active-section family. Technical diagnostic and
+inactive identity checks PASS; proxy efficacy unmeasured. No positive UNHCR
+research handoff, S2 candidate, release qualification or TEST adoption. E041
+incumbent/E025 fallback unchanged; E057 parked, earlier STOPs retained, S3 stopped
+and A018 still unconfirmed. No alternate activation policy, split or seed search.
+This does not reject pair interactions generally or bound hidden UNHCR/TEST gain.
+Resume only under a separately authorized, preregistered design addressing the
+inactive-section limitation and preserving this exposure history. No automatic
+backup or further experiment. Planned checklist above remains historical;
+scored stages were intentionally superseded by the label-free STOP certificate.

@@ -1,6 +1,6 @@
 ﻿# STATUS — current decisions and handoff
 
-Updated: 2026-09-25. Read CLAUDE.md first, then this file, then the newest three
+Updated: 2026-09-26. Read CLAUDE.md first, then this file, then the newest three
 log entries. The user adopted [workflow.md](workflow.md); session prompts are
 in [session-prompts.ko.md](session-prompts.ko.md). Details belong in linked records.
 
@@ -27,6 +27,17 @@ in [session-prompts.ko.md](session-prompts.ko.md). Details belong in linked reco
 
 ## Latest research decision
 
+- [E058](experiments/E058-donor-pair-interactions.md) fixed-donor GIVEN pair
+  interaction **STOP**. [A019](analysis/A019-sipp-model-exposure.md) exposure
+  audit PASS; one fresh generic E041 fit on original5922 rows,5999 disjoint
+  query rows. Original active learned sections0, so beta fits0 and41993 output
+  vectors exact baseline. Label-free finite-library oracle upper1e-12 below
+  unchanged1e-10 gate; no new oracle/selection/audit response opened or score
+  computed.12 tests and frozen verification PASS. Whole local run20.267s,
+  conservative fit12.978s, peak aggregate commitment.660GiB. This inactive
+  family STOP is not an interaction efficacy estimate or UNHCR impossibility.
+  [Closeout](analysis/E058-outputs/closeout.md),
+  [exposure ledger](analysis/E058-outputs/exposure-ledger.md). No S2 candidate.
 - [E057](experiments/E057-unhcr-conditional-content.md) UNHCR procedure/runtime
   engineering PASS, research candidate parked. All145 schema leaves considered;
   124 shadow+124 refit trees. Selection3 leaves; independent validation fails
@@ -78,12 +89,16 @@ in [session-prompts.ko.md](session-prompts.ko.md). Details belong in linked reco
 - **S1 E057 complete.** Registration592da4c, executed codee51b29f. All owned jobs
   complete. **S2 complete:** freeze3f0f6ad, all remaining local release checks
   PASS; three suites1624.724s total, no repeated successful fit. Hosted.64/no
-  update recorded under the unresolved arm. **Next: document-only S0 strategy
-  review**, using the post-result handoff. No new fit, upload or S3 resumption.
+  update recorded under the unresolved arm. Its post-result S0 handoff remains
+  historical; user subsequently authorized the bounded E058 study below.
   User explicitly approved the previously blocked origin push; S2 release and
   hosted-result commits through25e0b33 pushed to origin/work/e050-submission.
   Local release PASS unchanged; external-transfer approval blocker resolved.
-  E058 is only the expected next number; recheck collisions before reserving.
+- **S1 A019/E058 complete.** Audit registration24803a1, experiment registration
+  f537a79, executed code8bcdf51. Fixed-active-section family STOP certified
+  without new evaluation labels. No S2 handoff, additional fit or automatic
+  backup. Next research requires a separately scoped, preregistered decision
+  addressing this limitation. E059 is expected only; check collisions first.
 - **S3 A018 unconfirmed review artifacts:** E041 ZIP official phase2 PASSx3, raw
   source parity442425, all3 shared-process336.55s/peak commitment1.60GB.
   E025332.78s/1.56GB; its historical official provenance limits are disclosed.
@@ -91,7 +106,7 @@ in [session-prompts.ko.md](session-prompts.ko.md). Details belong in linked reco
   Its historical proposed release actions/dates remain in A018; they are not
   active instructions or a user-confirmed TEST schedule in this S1 handoff.
   These engineering records do not establish a user-confirmed TEST choice.
-  Those archived jobs finished; E057 also closed with no active job. Preserve user changes.
+  Those archived jobs finished; E058 also closed with no active job. Preserve user changes.
 - Keep E055's STOP; do not add favorable seeds or silently lower its threshold.
   New exploration may have different justified criteria registered beforehand.
 

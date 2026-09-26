@@ -1,0 +1,26 @@
+{
+  "gate": "STOP_FINITE_LIBRARY",
+  "reason": "Frozen original E041 active-section set is empty.",
+  "exact_arithmetic_oracle_delta_skill": 0.0,
+  "floating_point_gain_lower": 0.0,
+  "floating_point_gain_upper": 1e-12,
+  "per_arm_label_free_upper": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "roundoff_allowance_skill": 1e-12,
+  "registered_stop_tolerance": 1e-10,
+  "mixture_raw_max_abs": 0.0,
+  "baseline_candidate_beta0_vectors_exact": 41993,
+  "all_new_evaluation_roles_unopened": true,
+  "new_evaluation_label_reads": 0,
+  "new_score_calls": 0,
+  "new_e041_fits": 1,
+  "beta_fits": 0,
+  "checked_source_hashes": 59,
+  "library_sha256": "fc7f660b5c05e01fff4e4de41bd16fbf648ca3a5578a710aa20e64dd41e45ec6",
+  "verifier_sha256": "869f40ef307b9e68486d429edcbc4fdb28b6b3b42cbdce7bd0901ba71a4a0e04",
+  "seconds": 0.9851420999984839,
+  "scope": "Exact identity family in real arithmetic; conservative float bound for any possible oracle labels. No effect-size estimate or efficacy audit."
+}

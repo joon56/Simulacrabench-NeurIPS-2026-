@@ -1,0 +1,307 @@
+{
+  "library_sha256": "fc7f660b5c05e01fff4e4de41bd16fbf648ca3a5578a710aa20e64dd41e45ec6",
+  "masked_sha256": "cfa92d52032e93a343b78adfc5479b72c1e93ece87f00e51333a6d84300026c3",
+  "first_stage_sha256": "0da627283f8adb6b1dfaabf320fd278d97826bc5aaf083da784de00047d69136",
+  "fit_rows": 5922,
+  "query_rows": 5999,
+  "predicted": [
+    "HOSPITALIZED",
+    "EHREAS_DT",
+    "EHREAS_BIR",
+    "EHREAS_OS",
+    "EHREAS_NST",
+    "EHREAS_OTH",
+    "EHREAS_COR"
+  ],
+  "schema": {
+    "items": {
+      "TAGE": {
+        "class": "GIVEN",
+        "values": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11",
+          "12",
+          "13",
+          "14",
+          "15",
+          "16",
+          "17",
+          "18",
+          "19",
+          "20",
+          "21",
+          "22",
+          "23",
+          "24",
+          "25",
+          "26",
+          "27",
+          "28",
+          "29",
+          "30",
+          "31",
+          "32",
+          "33",
+          "34",
+          "35",
+          "36",
+          "37",
+          "38",
+          "39",
+          "40",
+          "41",
+          "42",
+          "43",
+          "44",
+          "45",
+          "46",
+          "47",
+          "48",
+          "49",
+          "50",
+          "51",
+          "52",
+          "53",
+          "54",
+          "55",
+          "56",
+          "57",
+          "58",
+          "59",
+          "60",
+          "61",
+          "62",
+          "63",
+          "64",
+          "65",
+          "66",
+          "67",
+          "68",
+          "69",
+          "70",
+          "71",
+          "72",
+          "73",
+          "74",
+          "75",
+          "76",
+          "77",
+          "78",
+          "79",
+          "80",
+          "81",
+          "82",
+          "83",
+          "84",
+          "85",
+          "86",
+          "87",
+          "88",
+          "89",
+          "90"
+        ]
+      },
+      "ESEX": {
+        "class": "GIVEN",
+        "values": [
+          "1",
+          "2"
+        ]
+      },
+      "ERACE": {
+        "class": "GIVEN",
+        "values": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ]
+      },
+      "EORIGIN": {
+        "class": "GIVEN",
+        "values": [
+          "1",
+          "2"
+        ]
+      },
+      "EEDUC": {
+        "class": "GIVEN",
+        "values": [
+          "31",
+          "32",
+          "33",
+          "34",
+          "35",
+          "36",
+          "37",
+          "38",
+          "39",
+          "40",
+          "41",
+          "42",
+          "43",
+          "44",
+          "45",
+          "46",
+          "MISSING"
+        ]
+      },
+      "EMS": {
+        "class": "GIVEN",
+        "values": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "MISSING"
+        ]
+      },
+      "HOSPITALIZED": {
+        "class": "PREDICT",
+        "values": [
+          "0",
+          "1"
+        ]
+      },
+      "EHREAS_DT": {
+        "class": "PREDICT",
+        "values": [
+          "1",
+          "2"
+        ],
+        "gate": {
+          "parent": "HOSPITALIZED",
+          "observed_if": [
+            "1"
+          ]
+        }
+      },
+      "EHREAS_BIR": {
+        "class": "PREDICT",
+        "values": [
+          "1",
+          "2"
+        ],
+        "gate": {
+          "parent": "HOSPITALIZED",
+          "observed_if": [
+            "1"
+          ]
+        }
+      },
+      "EHREAS_OS": {
+        "class": "PREDICT",
+        "values": [
+          "1",
+          "2"
+        ],
+        "gate": {
+          "parent": "HOSPITALIZED",
+          "observed_if": [
+            "1"
+          ]
+        }
+      },
+      "EHREAS_NST": {
+        "class": "PREDICT",
+        "values": [
+          "1",
+          "2"
+        ],
+        "gate": {
+          "parent": "HOSPITALIZED",
+          "observed_if": [
+            "1"
+          ]
+        }
+      },
+      "EHREAS_OTH": {
+        "class": "PREDICT",
+        "values": [
+          "1",
+          "2"
+        ],
+        "gate": {
+          "parent": "HOSPITALIZED",
+          "observed_if": [
+            "1"
+          ]
+        }
+      },
+      "EHREAS_COR": {
+        "class": "PREDICT",
+        "values": [
+          "1",
+          "2"
+        ],
+        "gate": {
+          "parent": "HOSPITALIZED",
+          "observed_if": [
+            "1"
+          ]
+        }
+      }
+    },
+    "gated_value": "NA_GATED"
+  },
+  "active_sections": [],
+  "section_diagnostics": {
+    "sections": [
+      {
+        "selected": false,
+        "gain_log": -0.0015416657769860144,
+        "standard_error": 0.004426562883715935,
+        "old_share": 0.0,
+        "new_share": 0.28672016056003397,
+        "iterations": 18
+      }
+    ],
+    "active": [],
+    "fit_rows": 1184,
+    "selection_rows": 592,
+    "reference_rows": 3554,
+    "replay_rows": 592
+  },
+  "beta_details": {},
+  "beta0_raw_exact": true,
+  "vectors": 41993,
+  "changed_candidate_vectors": 0,
+  "concentration_counts": {
+    "diffuse": 4279,
+    "concentrated": 1720
+  },
+  "frozen_lambdas": {
+    "EHREAS_BIR": [
+      0.1,
+      0.1
+    ],
+    "EHREAS_OTH": [
+      0.0,
+      0.1
+    ],
+    "EHREAS_COR": [
+      0.0,
+      0.1
+    ]
+  },
+  "new_e041_fits": 1,
+  "fit_seconds": 12.978181599999516,
+  "versions": {
+    "python": "3.13.14 (tags/v3.13.14:fd17997, Jun 10 2026, 13:03:48) [MSC v.1944 64 bit (AMD64)]",
+    "numpy": "2.5.1",
+    "pandas": "3.0.5"
+  },
+  "evaluation_labels_read": false
+}

@@ -1,5 +1,43 @@
 # Experiment log
 
+## 2026-09-26 - A019 PASS; E058 fixed-active donor interactions STOP without new scores
+
+- Latest attached user protocol explicitly authorized a key-only exposure audit
+  then one fixed-donor SIPP interaction study. Entry HEAD eaed6a5 matched; user
+  changes preserved, no entry Python/WSL jobs. Audit registered24803a1 and
+  completed10:06UTC within30min. Historical12000people/8908SSUIDs reconstructed
+  exactly; excluding whole units leaves14699people/8406SSUIDs. Fixed prefix5999
+  people/3431SSUIDs gives oracle1918/1124, selection2007/1130, audit2074/1177.
+  All gates PASS. Same A014 source had prior aggregate exposure, not new data.
+- E058 registration f537a79 and tested code8bcdf51 precede the only fresh
+  generic E041 first stage. Original fit5922 labels only;5999 whole PREDICT
+  query blocks masked. No small-schema fallback or old model-cache reuse.
+  Original learned active sections0; beta fits0. Existing legacy retrieval
+  evidence remains. Baseline/recomputed beta0/candidate exact41993 vectors.
+- Disclosed evaluation deviation saves labels: frozen prediction identity and
+  worst-class arithmetic certify exact oracle delta0, float upper1e-12 below
+  fixed1e-10 STOP. No oracle/selection/audit response read, score or bootstrap
+  computed. No alternate activation, split, seed, threshold or follow-up branch.
+  New5999 GIVEN-only prediction queries are now recorded model use; targets
+  remain unopened. Old non-fit labels, including calibration1866, stay closed.
+- 12 focused tests PASS; frozen verifier checks59 source hashes and key/data/
+  registration/artifact hashes, mask/donor isolation, official floor and caps.
+  Active path tested only on engineering fixtures. Full library parent run
+  20.2673297s, worker19.5273615s, conservative fit12.9781816s; peak tree RSS
+  634986496bytes/commitment708263936bytes, CPU2, single heavy fit. No GPU/paid/
+  install. Key audit6.8364s and verification.9851s separate; not all3 runtime.
+- First fit command was automatically rejected under stale E057 scope; no
+  process launched. Latest attachment's explicit one-fit authorization resolved
+  review; identical command then ran once. No technical failure or resource cap
+  breach. Output/library SHA fc7f660b5c05e01fff4e4de41bd16fbf648ca3a5578a710aa20e64dd41e45ec6.
+- STOP this inactive finite family; no measured interaction effect or general
+  UNHCR futility claim. No S2 candidate/package/upload. E041 incumbent/E025
+  fallback, E057 parked, prior STOPs and S3/A018 unconfirmed status unchanged.
+  Results, reproducibility and exposure: docs/analysis/E058-outputs/closeout.md
+  and exposure-ledger.md. Any new study requires separate scope/registration;
+  no automatic backup. Task-only commit and origin push follow existing user
+  authorization; row arrays/keys remain ignored locally.
+
 Daily record. Domain literature: [[domain]] · kit mechanics: [[starter-kit-notes]].
 
 ## 2026-09-25 - E057 origin push explicitly approved and completed
