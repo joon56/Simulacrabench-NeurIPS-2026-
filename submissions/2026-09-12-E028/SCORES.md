@@ -39,3 +39,20 @@ arm: real branch overlap is light enough that E010's column-conditioned
 agreement already captured it; the No/DK-branch answer distributions
 add nothing visible. Gate math complete. Parked (harmless — exact on
 clean gates).
+
+## API score reconciliation - 2026-09-27
+
+Source: user-supplied My Submissions JSON, recorded 2026-09-27.
+This supplement supersedes missing-score/ID/time statements above for the IDs
+listed here; the earlier registration, interpretation and local checks remain
+historical. Values below are released API scores, not unnoised raw scores.
+Created time is platform submission metadata, not the snapshot directory date.
+Current leaderboard membership is not a historical best-update event log.
+The uploaded ZIP bytes/hash and hosted runtime are not verified by this response.
+
+| Submission ID | Filename | Created (KST) | Status | Grand API | UNICEF API | World Bank API | UNHCR API | On leaderboard at snapshot |
+|---|---|---|---|---:|---:|---:|---:|---|
+| 920764 | 2026-09-12-E028.zip | 2026-09-10 12:15:57.044057 +09:00 | Finished | 0.6333333333 | 0.5200000000 | 0.4900000000 | 0.8900000000 | false |
+
+[Complete score ledger](../SCORES.md) and [sanitized source](../hosted-scores/2026-09-27.json).
+All score precision fields are 2. Failed attempts have no scores; never substitute zero.

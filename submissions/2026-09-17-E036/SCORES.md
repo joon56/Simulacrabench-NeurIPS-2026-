@@ -51,3 +51,20 @@ the split changes little. (Upload hit a Codabench 500 first; retry
 succeeded, no slot lost.) The panel-sim gain (+0.0105) did not
 transfer: the sim's relation-specific copy rates were an assumption,
 not a measurement. E036 parked; E025 remains the model of record.
+
+## API score reconciliation - 2026-09-27
+
+Source: user-supplied My Submissions JSON, recorded 2026-09-27.
+This supplement supersedes missing-score/ID/time statements above for the IDs
+listed here; the earlier registration, interpretation and local checks remain
+historical. Values below are released API scores, not unnoised raw scores.
+Created time is platform submission metadata, not the snapshot directory date.
+Current leaderboard membership is not a historical best-update event log.
+The uploaded ZIP bytes/hash and hosted runtime are not verified by this response.
+
+| Submission ID | Filename | Created (KST) | Status | Grand API | UNICEF API | World Bank API | UNHCR API | On leaderboard at snapshot |
+|---|---|---|---|---:|---:|---:|---:|---|
+| 927186 | 2026-09-17-E036.zip | 2026-09-16 19:13:13.187271 +09:00 | Finished | 0.6333333333 | 0.5200000000 | 0.4900000000 | 0.8900000000 | false |
+
+[Complete score ledger](../SCORES.md) and [sanitized source](../hosted-scores/2026-09-27.json).
+All score precision fields are 2. Failed attempts have no scores; never substitute zero.

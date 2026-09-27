@@ -52,3 +52,21 @@ Consequence for the instrument: the within-round dup sim must be
 re-calibrated with heavier answer perturbation before it is trusted
 for further layer tuning — its +0.031 prediction did not transfer,
 whereas E018's +0.06 prediction did (direction right, magnitude not).
+
+## API score reconciliation - 2026-09-27
+
+Source: user-supplied My Submissions JSON, recorded 2026-09-27.
+This supplement supersedes missing-score/ID/time statements above for the IDs
+listed here; the earlier registration, interpretation and local checks remain
+historical. Values below are released API scores, not unnoised raw scores.
+Created time is platform submission metadata, not the snapshot directory date.
+Current leaderboard membership is not a historical best-update event log.
+The uploaded ZIP bytes/hash and hosted runtime are not verified by this response.
+
+| Submission ID | Filename | Created (KST) | Status | Grand API | UNICEF API | World Bank API | UNHCR API | On leaderboard at snapshot |
+|---|---|---|---|---:|---:|---:|---:|---|
+| 916707 | 2026-09-07-E019.zip | 2026-09-06 18:46:52.818164 +09:00 | Failed | not reported | not reported | not reported | not reported | false |
+| 916756 | 2026-09-07-E019.zip | 2026-09-06 19:12:13.692340 +09:00 | Finished | 0.6266666667 | 0.5200000000 | 0.4900000000 | 0.8700000000 | false |
+
+[Complete score ledger](../SCORES.md) and [sanitized source](../hosted-scores/2026-09-27.json).
+All score precision fields are 2. Failed attempts have no scores; never substitute zero.

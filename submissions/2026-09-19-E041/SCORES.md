@@ -133,3 +133,20 @@ decomposition. No .65 forecast or first-place claim follows from this result.
 Decision: retain E041 as the leaderboard-backed DEV incumbent; E025 remains
 the separately verified phase-2 fallback. E041 phase-2 validation and a matching
 method document remain future work before any phase-2 replacement.
+
+## API score reconciliation - 2026-09-27
+
+Source: user-supplied My Submissions JSON, recorded 2026-09-27.
+This supplement supersedes missing-score/ID/time statements above for the IDs
+listed here; the earlier registration, interpretation and local checks remain
+historical. Values below are released API scores, not unnoised raw scores.
+Created time is platform submission metadata, not the snapshot directory date.
+Current leaderboard membership is not a historical best-update event log.
+The uploaded ZIP bytes/hash and hosted runtime are not verified by this response.
+
+| Submission ID | Filename | Created (KST) | Status | Grand API | UNICEF API | World Bank API | UNHCR API | On leaderboard at snapshot |
+|---|---|---|---|---:|---:|---:|---:|---|
+| 933094 | E041.zip | 2026-09-19 17:10:46.209685 +09:00 | Finished | 0.6433333333 | 0.5200000000 | 0.4900000000 | 0.9200000000 | true |
+
+[Complete score ledger](../SCORES.md) and [sanitized source](../hosted-scores/2026-09-27.json).
+All score precision fields are 2. Failed attempts have no scores; never substitute zero.

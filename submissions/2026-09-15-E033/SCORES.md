@@ -68,3 +68,20 @@ gated items (part of 0.079).
 Next: P3 (E034) switches the evidence layer off on unhcr — is the
 content skill evidence-driven (⇒ lever = match coverage, helped by the
 phase-2 pool) or base-model-driven (⇒ lever = P(item | GIVEN))?
+
+## API score reconciliation - 2026-09-27
+
+Source: user-supplied My Submissions JSON, recorded 2026-09-27.
+This supplement supersedes missing-score/ID/time statements above for the IDs
+listed here; the earlier registration, interpretation and local checks remain
+historical. Values below are released API scores, not unnoised raw scores.
+Created time is platform submission metadata, not the snapshot directory date.
+Current leaderboard membership is not a historical best-update event log.
+The uploaded ZIP bytes/hash and hosted runtime are not verified by this response.
+
+| Submission ID | Filename | Created (KST) | Status | Grand API | UNICEF API | World Bank API | UNHCR API | On leaderboard at snapshot |
+|---|---|---|---|---:|---:|---:|---:|---|
+| 925831 | 2026-09-15-E033.zip | 2026-09-14 18:08:58.435880 +09:00 | Finished | 0.5500000000 | 0.5200000000 | 0.4900000000 | 0.6400000000 | false |
+
+[Complete score ledger](../SCORES.md) and [sanitized source](../hosted-scores/2026-09-27.json).
+All score precision fields are 2. Failed attempts have no scores; never substitute zero.

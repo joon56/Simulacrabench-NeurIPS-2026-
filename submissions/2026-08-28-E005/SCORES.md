@@ -32,3 +32,20 @@ E002 = 0.43 (0.45 / 0.43 / 0.41). Qualitative expectations, pre-registered:
 - Risk logged: if unhcr DROPS below 0.41, suspect the softening was
   insufficient (α=20 too trusting of stated gates) — diagnostic: raise α /
   cap ã for the 59 round-2-only multi-select items.
+
+## API score reconciliation - 2026-09-27
+
+Source: user-supplied My Submissions JSON, recorded 2026-09-27.
+This supplement supersedes missing-score/ID/time statements above for the IDs
+listed here; the earlier registration, interpretation and local checks remain
+historical. Values below are released API scores, not unnoised raw scores.
+Created time is platform submission metadata, not the snapshot directory date.
+Current leaderboard membership is not a historical best-update event log.
+The uploaded ZIP bytes/hash and hosted runtime are not verified by this response.
+
+| Submission ID | Filename | Created (KST) | Status | Grand API | UNICEF API | World Bank API | UNHCR API | On leaderboard at snapshot |
+|---|---|---|---|---:|---:|---:|---:|---|
+| 905825 | 2026-08-28-E005.zip | 2026-08-28 20:24:21.138691 +09:00 | Finished | 0.5333333333 | 0.4900000000 | 0.4800000000 | 0.6300000000 | false |
+
+[Complete score ledger](../SCORES.md) and [sanitized source](../hosted-scores/2026-09-27.json).
+All score precision fields are 2. Failed attempts have no scores; never substitute zero.

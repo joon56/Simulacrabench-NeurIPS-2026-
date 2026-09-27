@@ -33,3 +33,10 @@ Reference: E025 LB = 0.63 (0.52 / 0.49 / 0.89). Pre-registered
 **Grand 0.63, no update (≤ E025; unhcr ≤ 0.89).** Pre-registered 0.89
 arm: nothing beyond per-item copying is exploitable from concentrated
 matches — the evidence-input idea (E020/E024/E027) is closed. Parked.
+
+## API inventory check - 2026-09-27
+
+No E027-labelled submission occurs in the supplied 33-record API response.
+Preserve the historical user-reported result above; do not assign another
+submission's ID or institution scores to it. Absence here does not prove it
+was never submitted. See [complete inventory](../SCORES.md).

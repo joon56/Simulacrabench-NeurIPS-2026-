@@ -52,3 +52,20 @@ STACKABLE: each sim-verified refinement is worth ~+0.005–0.01 skill,
 so the route to the 0.92 leaders is 3–4 more stacked refinements, not
 one trick. Next composition (E023): TOP_K chosen by replay + a second
 weight-estimation iteration + same-wave candidate weighting.
+
+## API score reconciliation - 2026-09-27
+
+Source: user-supplied My Submissions JSON, recorded 2026-09-27.
+This supplement supersedes missing-score/ID/time statements above for the IDs
+listed here; the earlier registration, interpretation and local checks remain
+historical. Values below are released API scores, not unnoised raw scores.
+Created time is platform submission metadata, not the snapshot directory date.
+Current leaderboard membership is not a historical best-update event log.
+The uploaded ZIP bytes/hash and hosted runtime are not verified by this response.
+
+| Submission ID | Filename | Created (KST) | Status | Grand API | UNICEF API | World Bank API | UNHCR API | On leaderboard at snapshot |
+|---|---|---|---|---:|---:|---:|---:|---|
+| 917783 | 2026-09-08-E022.zip | 2026-09-07 20:07:30.765710 +09:00 | Finished | 0.6300000000 | 0.5200000000 | 0.4900000000 | 0.8800000000 | false |
+
+[Complete score ledger](../SCORES.md) and [sanitized source](../hosted-scores/2026-09-27.json).
+All score precision fields are 2. Failed attempts have no scores; never substitute zero.

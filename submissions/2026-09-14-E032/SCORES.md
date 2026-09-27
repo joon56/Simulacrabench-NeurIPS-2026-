@@ -63,3 +63,25 @@ skill_G ≈ 0.92–0.95): flagged, consistent with the schema's own
 agreement statistics and the organizers' unshipped gating fixes. Next
 probe splits the gated loss into sentinel ("who is skipped") vs content
 ("what the asked say").
+
+## API score reconciliation - 2026-09-27
+
+Source: user-supplied My Submissions JSON, recorded 2026-09-27.
+This supplement supersedes missing-score/ID/time statements above for the IDs
+listed here; the earlier registration, interpretation and local checks remain
+historical. Values below are released API scores, not unnoised raw scores.
+Created time is platform submission metadata, not the snapshot directory date.
+Current leaderboard membership is not a historical best-update event log.
+The uploaded ZIP bytes/hash and hosted runtime are not verified by this response.
+
+| Submission ID | Filename | Created (KST) | Status | Grand API | UNICEF API | World Bank API | UNHCR API | On leaderboard at snapshot |
+|---|---|---|---|---:|---:|---:|---:|---|
+| 923842 | 2026-09-14-E032.zip | 2026-09-12 21:42:10.722644 +09:00 | Finished | 0.1633333333 | 0.1000000000 | 0.1600000000 | 0.2300000000 | false |
+
+Reconciliation: ID 923842 reports World Bank 0.1600000000, whereas the older
+narrative above records 0.17. Use 0.16 for this identified submission. Preserve
+the old report and second-account anecdote as history; this response does not
+resolve their provenance. Historical derived probe estimates are not recalculated.
+
+[Complete score ledger](../SCORES.md) and [sanitized source](../hosted-scores/2026-09-27.json).
+All score precision fields are 2. Failed attempts have no scores; never substitute zero.

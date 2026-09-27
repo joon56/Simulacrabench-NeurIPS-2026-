@@ -41,3 +41,20 @@ Map after P1–P3 (unhcr): total 0.89; gated cells 0.892/cell, content
 cells 0.885; sentinel knowledge alone leaves gated cells at 0.56; base
 model alone 0.79; evidence +0.10. Remaining 0.11 has no single owner:
 each component's next +0.01 is a separate piece of work.
+
+## API score reconciliation - 2026-09-27
+
+Source: user-supplied My Submissions JSON, recorded 2026-09-27.
+This supplement supersedes missing-score/ID/time statements above for the IDs
+listed here; the earlier registration, interpretation and local checks remain
+historical. Values below are released API scores, not unnoised raw scores.
+Created time is platform submission metadata, not the snapshot directory date.
+Current leaderboard membership is not a historical best-update event log.
+The uploaded ZIP bytes/hash and hosted runtime are not verified by this response.
+
+| Submission ID | Filename | Created (KST) | Status | Grand API | UNICEF API | World Bank API | UNHCR API | On leaderboard at snapshot |
+|---|---|---|---|---:|---:|---:|---:|---|
+| 926556 | 2026-09-16-E034.zip | 2026-09-15 11:09:41.132262 +09:00 | Finished | 0.6000000000 | 0.5200000000 | 0.4900000000 | 0.7900000000 | false |
+
+[Complete score ledger](../SCORES.md) and [sanitized source](../hosted-scores/2026-09-27.json).
+All score precision fields are 2. Failed attempts have no scores; never substitute zero.

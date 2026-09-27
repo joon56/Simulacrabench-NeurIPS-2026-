@@ -94,3 +94,24 @@ use supported by the E044 comparison. Do not spend subsequent slots on a blind
 candidate-count grid; prioritize auditing selection against final predictions
 or a separately screened mechanism. E041 remains DEV best .64/.52/.49/.92;
 E025 remains the validated phase-2 fallback. Archive/model bytes unchanged.
+
+## API score reconciliation - 2026-09-27
+
+Source: user-supplied My Submissions JSON, recorded 2026-09-27.
+This supplement supersedes missing-score/ID/time statements above for the IDs
+listed here; the earlier registration, interpretation and local checks remain
+historical. Values below are released API scores, not unnoised raw scores.
+Created time is platform submission metadata, not the snapshot directory date.
+Current leaderboard membership is not a historical best-update event log.
+The uploaded ZIP bytes/hash and hosted runtime are not verified by this response.
+
+| Submission ID | Filename | Created (KST) | Status | Grand API | UNICEF API | World Bank API | UNHCR API | On leaderboard at snapshot |
+|---|---|---|---|---:|---:|---:|---:|---|
+| 937555 | 2026-09-21-E045.zip | 2026-09-21 22:37:10.711224 +09:00 | Finished | 0.6433333333 | 0.5200000000 | 0.4900000000 | 0.9200000000 | false |
+
+All four released values equal E041 ID 933094 in this snapshot. Keep the
+existing unresolved/parked disposition; no exact-zero effect or identical
+hosted predictions follow. No re-fit, retry, TEST promotion or S3 resumption.
+
+[Complete score ledger](../SCORES.md) and [sanitized source](../hosted-scores/2026-09-27.json).
+All score precision fields are 2. Failed attempts have no scores; never substitute zero.

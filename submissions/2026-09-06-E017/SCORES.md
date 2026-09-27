@@ -54,3 +54,21 @@ Pre-registered in docs/experiments/E017-capacity-ab.md (2026-09-05):
 Context: same-day E016 (ladder MAX_CARD lift) rejected at +0.0002
 local; its geography claim joins the A/B candidate pool but is NOT
 bundled here (one change per A/B).
+
+## API score reconciliation - 2026-09-27
+
+Source: user-supplied My Submissions JSON, recorded 2026-09-27.
+This supplement supersedes missing-score/ID/time statements above for the IDs
+listed here; the earlier registration, interpretation and local checks remain
+historical. Values below are released API scores, not unnoised raw scores.
+Created time is platform submission metadata, not the snapshot directory date.
+Current leaderboard membership is not a historical best-update event log.
+The uploaded ZIP bytes/hash and hosted runtime are not verified by this response.
+
+| Submission ID | Filename | Created (KST) | Status | Grand API | UNICEF API | World Bank API | UNHCR API | On leaderboard at snapshot |
+|---|---|---|---|---:|---:|---:|---:|---|
+| 914419 | 2026-09-06-E017.zip | 2026-09-04 12:16:49.178086 +09:00 | Failed | not reported | not reported | not reported | not reported | false |
+| 914481 | 2026-09-06-E017.zip | 2026-09-04 14:11:47.114577 +09:00 | Finished | 0.6000000000 | 0.5200000000 | 0.4900000000 | 0.7900000000 | false |
+
+[Complete score ledger](../SCORES.md) and [sanitized source](../hosted-scores/2026-09-27.json).
+All score precision fields are 2. Failed attempts have no scores; never substitute zero.

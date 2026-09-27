@@ -42,3 +42,24 @@ E017 +0.01 → E025 +0.01 stacked → E026 flat). Ran without timeout with
 four trainings per instrument — the hosted GPU path is robust.
 E026 parked; E025 remains the best submission (0.63 / 0.52 / 0.49 /
 0.89).
+
+## API score reconciliation - 2026-09-27
+
+Source: user-supplied My Submissions JSON, recorded 2026-09-27.
+This supplement supersedes missing-score/ID/time statements above for the IDs
+listed here; the earlier registration, interpretation and local checks remain
+historical. Values below are released API scores, not unnoised raw scores.
+Created time is platform submission metadata, not the snapshot directory date.
+Current leaderboard membership is not a historical best-update event log.
+The uploaded ZIP bytes/hash and hosted runtime are not verified by this response.
+
+| Submission ID | Filename | Created (KST) | Status | Grand API | UNICEF API | World Bank API | UNHCR API | On leaderboard at snapshot |
+|---|---|---|---|---:|---:|---:|---:|---|
+| 920060 | 2026-09-10-E026.zip | 2026-09-09 19:48:08.532143 +09:00 | Finished | 0.6300000000 | 0.5200000000 | 0.4900000000 | 0.8800000000 | false |
+
+UNHCR 0.8800000000 is one released increment below E025 0.8900000000,
+although both Grand values display as 0.63. The old Grand-only flat reading
+does not establish instrument equality or a precise causal regression.
+
+[Complete score ledger](../SCORES.md) and [sanitized source](../hosted-scores/2026-09-27.json).
+All score precision fields are 2. Failed attempts have no scores; never substitute zero.

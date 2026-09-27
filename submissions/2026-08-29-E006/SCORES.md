@@ -29,3 +29,20 @@ Reference: E005 LB = 0.53 (0.49 / 0.48 / 0.63). Pre-registered:
 - Risk: greedy selection on 20% holdout may overfit instrument-specific
   quirks; if any instrument drops > 0.02, revisit EVAL_CAP and selection
   stability (different seeds) before next submission.
+
+## API score reconciliation - 2026-09-27
+
+Source: user-supplied My Submissions JSON, recorded 2026-09-27.
+This supplement supersedes missing-score/ID/time statements above for the IDs
+listed here; the earlier registration, interpretation and local checks remain
+historical. Values below are released API scores, not unnoised raw scores.
+Created time is platform submission metadata, not the snapshot directory date.
+Current leaderboard membership is not a historical best-update event log.
+The uploaded ZIP bytes/hash and hosted runtime are not verified by this response.
+
+| Submission ID | Filename | Created (KST) | Status | Grand API | UNICEF API | World Bank API | UNHCR API | On leaderboard at snapshot |
+|---|---|---|---|---:|---:|---:|---:|---|
+| 907501 | 2026-08-29-E006.zip | 2026-08-29 21:48:00.895054 +09:00 | Finished | 0.5466666667 | 0.5000000000 | 0.4800000000 | 0.6600000000 | false |
+
+[Complete score ledger](../SCORES.md) and [sanitized source](../hosted-scores/2026-09-27.json).
+All score precision fields are 2. Failed attempts have no scores; never substitute zero.

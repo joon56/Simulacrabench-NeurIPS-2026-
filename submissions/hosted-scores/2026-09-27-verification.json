@@ -1,0 +1,395 @@
+{
+    "verified_utc":  "2026-09-27T12:36:20.3520258+00:00",
+    "verdict":  "PASS_SCORE_RECORD_RECONCILIATION",
+    "role":  "S0 authorized score-record maintenance and commit/push",
+    "authority":  "User asked to record all supplied submission scores and push; no experiment execution",
+    "base_head":  "1d223340d4e1fa3993b411dc5daafab9cb37d0cd",
+    "workflow_revision":  "2026-09-27-r4",
+    "workflow_sha256":  "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642",
+    "read_receipts":  [
+                          "460853",
+                          "094255",
+                          "007bfe",
+                          "240a52",
+                          "de7b52"
+                      ],
+    "source_sha256":  "c027afdb51d2b6df3ad73f6fa765a579846b9d00947bc8ebdec3bab2c68b13f3",
+    "source_provenance":  "User supplied; no independent account access or uploaded-byte verification",
+    "record_count":  33,
+    "finished":  30,
+    "failed":  3,
+    "score_fields_verified":  120,
+    "record_checks":  [
+                          {
+                              "id":  947705,
+                              "metadata_scores_and_both_tables_match":  true
+                          },
+                          {
+                              "id":  944523,
+                              "metadata_scores_and_both_tables_match":  true
+                          },
+                          {
+                              "id":  942742,
+                              "metadata_scores_and_both_tables_match":  true
+                          },
+                          {
+                              "id":  941513,
+                              "metadata_scores_and_both_tables_match":  true
+                          },
+                          {
+                              "id":  939418,
+                              "metadata_scores_and_both_tables_match":  true
+                          },
+                          {
+                              "id":  937555,
+                              "metadata_scores_and_both_tables_match":  true
+                          },
+                          {
+                              "id":  934397,
+                              "metadata_scores_and_both_tables_match":  true
+                          },
+                          {
+                              "id":  933094,
+                              "metadata_scores_and_both_tables_match":  true
+                          },
+                          {
+                              "id":  931543,
+                              "metadata_scores_and_both_tables_match":  true
+                          },
+                          {
+                              "id":  929395,
+                              "metadata_scores_and_both_tables_match":  true
+                          },
+                          {
+                              "id":  927186,
+                              "metadata_scores_and_both_tables_match":  true
+                          },
+                          {
+                              "id":  926556,
+                              "metadata_scores_and_both_tables_match":  true
+                          },
+                          {
+                              "id":  925831,
+                              "metadata_scores_and_both_tables_match":  true
+                          },
+                          {
+                              "id":  923842,
+                              "metadata_scores_and_both_tables_match":  true
+                          },
+                          {
+                              "id":  922271,
+                              "metadata_scores_and_both_tables_match":  true
+                          },
+                          {
+                              "id":  922189,
+                              "metadata_scores_and_both_tables_match":  true
+                          },
+                          {
+                              "id":  920764,
+                              "metadata_scores_and_both_tables_match":  true
+                          },
+                          {
+                              "id":  920060,
+                              "metadata_scores_and_both_tables_match":  true
+                          },
+                          {
+                              "id":  919240,
+                              "metadata_scores_and_both_tables_match":  true
+                          },
+                          {
+                              "id":  917783,
+                              "metadata_scores_and_both_tables_match":  true
+                          },
+                          {
+                              "id":  916756,
+                              "metadata_scores_and_both_tables_match":  true
+                          },
+                          {
+                              "id":  916707,
+                              "metadata_scores_and_both_tables_match":  true
+                          },
+                          {
+                              "id":  915640,
+                              "metadata_scores_and_both_tables_match":  true
+                          },
+                          {
+                              "id":  914481,
+                              "metadata_scores_and_both_tables_match":  true
+                          },
+                          {
+                              "id":  914419,
+                              "metadata_scores_and_both_tables_match":  true
+                          },
+                          {
+                              "id":  913330,
+                              "metadata_scores_and_both_tables_match":  true
+                          },
+                          {
+                              "id":  912056,
+                              "metadata_scores_and_both_tables_match":  true
+                          },
+                          {
+                              "id":  911341,
+                              "metadata_scores_and_both_tables_match":  true
+                          },
+                          {
+                              "id":  910149,
+                              "metadata_scores_and_both_tables_match":  true
+                          },
+                          {
+                              "id":  908518,
+                              "metadata_scores_and_both_tables_match":  true
+                          },
+                          {
+                              "id":  907501,
+                              "metadata_scores_and_both_tables_match":  true
+                          },
+                          {
+                              "id":  905825,
+                              "metadata_scores_and_both_tables_match":  true
+                          },
+                          {
+                              "id":  904087,
+                              "metadata_scores_and_both_tables_match":  true
+                          }
+                      ],
+    "preserved_scorecards":  [
+                                 {
+                                     "path":  "submissions/2026-09-27-E060/SCORES.md",
+                                     "original_bytes":  6400,
+                                     "original_sha256":  "a519a4d73fafe14653e41af7c0afadd1c5e3ae6a911459d08f02cd2db5c4a5ed",
+                                     "prefix_preserved":  true
+                                 },
+                                 {
+                                     "path":  "submissions/2026-09-25-E057/SCORES.md",
+                                     "original_bytes":  10130,
+                                     "original_sha256":  "6d34f2646594f609968ce28e4b9a4356a1ee61f7ab46a8e8e0286b4eeba7d6e1",
+                                     "prefix_preserved":  true
+                                 },
+                                 {
+                                     "path":  "submissions/2026-09-24-E052/SCORES.md",
+                                     "original_bytes":  6711,
+                                     "original_sha256":  "b41510c1d3b5375f942db98032bd37c95ec2e6b597e256dff9c71d34550137ad",
+                                     "prefix_preserved":  true
+                                 },
+                                 {
+                                     "path":  "submissions/2026-09-23-E049/SCORES.md",
+                                     "original_bytes":  6302,
+                                     "original_sha256":  "fe4de6c388a8555492b1169358fad094a27083ab10b69d19f1938618cc52c5ef",
+                                     "prefix_preserved":  true
+                                 },
+                                 {
+                                     "path":  "submissions/2026-09-22-E047/SCORES.md",
+                                     "original_bytes":  6475,
+                                     "original_sha256":  "245d138c2f34b9135bda6dbf2d10a3f02972435d094f9fe255428e57a846088f",
+                                     "prefix_preserved":  true
+                                 },
+                                 {
+                                     "path":  "submissions/2026-09-21-E045/SCORES.md",
+                                     "original_bytes":  6264,
+                                     "original_sha256":  "0961d9687035f18ec15ab03ad25106fbb780fdc3919cf9ba6e72bf5b4590f9fd",
+                                     "prefix_preserved":  true
+                                 },
+                                 {
+                                     "path":  "submissions/2026-09-20-E044/SCORES.md",
+                                     "original_bytes":  5764,
+                                     "original_sha256":  "04b376a021453ac2d877656a209d02a6035ff6a91b62930f393a32e0e8cd4e28",
+                                     "prefix_preserved":  true
+                                 },
+                                 {
+                                     "path":  "submissions/2026-09-19-E041/SCORES.md",
+                                     "original_bytes":  8233,
+                                     "original_sha256":  "e38a4bbef76f03116da661b10818dc9fa8aaf51bf663c635053f4d60095c3e89",
+                                     "prefix_preserved":  true
+                                 },
+                                 {
+                                     "path":  "submissions/2026-09-20-E040/SCORES.md",
+                                     "original_bytes":  2698,
+                                     "original_sha256":  "fbbcb813af5c935e2778e175a21bd6d07309c85bbc646437196bc6059f426c6e",
+                                     "prefix_preserved":  true
+                                 },
+                                 {
+                                     "path":  "submissions/2026-09-19-E038/SCORES.md",
+                                     "original_bytes":  2946,
+                                     "original_sha256":  "a506559a7f97b32a3852f5ac00e33a14c5d6edd89451783ed5f75199f167fefa",
+                                     "prefix_preserved":  true
+                                 },
+                                 {
+                                     "path":  "submissions/2026-09-17-E036/SCORES.md",
+                                     "original_bytes":  2808,
+                                     "original_sha256":  "17380699026bbc23f86f6c51319cedf308066f29f495a32022f44bd33ab2b89f",
+                                     "prefix_preserved":  true
+                                 },
+                                 {
+                                     "path":  "submissions/2026-09-16-E034/SCORES.md",
+                                     "original_bytes":  2220,
+                                     "original_sha256":  "dfd869f3c17c667afcd343b4cc6a5e7eb724a4849a1e1d4d80f24d2d5fd211c0",
+                                     "prefix_preserved":  true
+                                 },
+                                 {
+                                     "path":  "submissions/2026-09-15-E033/SCORES.md",
+                                     "original_bytes":  3886,
+                                     "original_sha256":  "96f7ecd3472955dbbe5e7b8d13d68c5317763c104e999edb8e02a3c413a358c8",
+                                     "prefix_preserved":  true
+                                 },
+                                 {
+                                     "path":  "submissions/2026-09-14-E032/SCORES.md",
+                                     "original_bytes":  3394,
+                                     "original_sha256":  "af7ad78f3eb0aa92ed581d80a0cc97e5d1c089fc607ac596dd6d7917f96bfb4f",
+                                     "prefix_preserved":  true
+                                 },
+                                 {
+                                     "path":  "submissions/2026-09-14-E031b/SCORES.md",
+                                     "original_bytes":  1247,
+                                     "original_sha256":  "4cc76fd5a2cdd9b950fff6766d786ebfc1e2e269c7c29eed1ebe9477dd13337f",
+                                     "prefix_preserved":  true
+                                 },
+                                 {
+                                     "path":  "submissions/2026-09-13-E031/SCORES.md",
+                                     "original_bytes":  3355,
+                                     "original_sha256":  "c5d6123ca608c6c53f0a6bca11be7f11b85f1bc9d889b360fee8e1d3cdf95cb2",
+                                     "prefix_preserved":  true
+                                 },
+                                 {
+                                     "path":  "submissions/2026-09-12-E028/SCORES.md",
+                                     "original_bytes":  1914,
+                                     "original_sha256":  "59643ca6726fc668d678bc874da39f2cd0dcb5e2356a1ed20891077ccf30786b",
+                                     "prefix_preserved":  true
+                                 },
+                                 {
+                                     "path":  "submissions/2026-09-10-E026/SCORES.md",
+                                     "original_bytes":  2055,
+                                     "original_sha256":  "6233d98471406a1c835b69590f4a14bc9148bc609d3c84481f47faed0401d79f",
+                                     "prefix_preserved":  true
+                                 },
+                                 {
+                                     "path":  "submissions/2026-09-09-E025/SCORES.md",
+                                     "original_bytes":  2803,
+                                     "original_sha256":  "60277a5ae7087574f0eb39643385a3a2f778f834af0e28dadb86a991188babbc",
+                                     "prefix_preserved":  true
+                                 },
+                                 {
+                                     "path":  "submissions/2026-09-08-E022/SCORES.md",
+                                     "original_bytes":  2832,
+                                     "original_sha256":  "cad4aa4b2635d33e7a19aa109da674a9e3939ea370415247ea642e97cd3f4f5c",
+                                     "prefix_preserved":  true
+                                 },
+                                 {
+                                     "path":  "submissions/2026-09-07-E019/SCORES.md",
+                                     "original_bytes":  2785,
+                                     "original_sha256":  "aaa1d41ccdfa9d846d415ec745c847c666ff33b42384c9a35979cd43a3c89f20",
+                                     "prefix_preserved":  true
+                                 },
+                                 {
+                                     "path":  "submissions/2026-09-06-E018/SCORES.md",
+                                     "original_bytes":  3465,
+                                     "original_sha256":  "3f056e8508008fc75e9e9ed4be80a36eea667b4852ccd844b7a5bf8d9a4f3c22",
+                                     "prefix_preserved":  true
+                                 },
+                                 {
+                                     "path":  "submissions/2026-09-06-E017/SCORES.md",
+                                     "original_bytes":  2875,
+                                     "original_sha256":  "eb7ff7951d2c268e8f638d14914b7c8b3dbc2a151d59fde50b457e7c88aad2fd",
+                                     "prefix_preserved":  true
+                                 },
+                                 {
+                                     "path":  "submissions/2026-09-04-E014/SCORES.md",
+                                     "original_bytes":  2176,
+                                     "original_sha256":  "79b84622d58e0d1d224a5c3d47f0ee90700b8bfe90022d37b1103916ef764da7",
+                                     "prefix_preserved":  true
+                                 },
+                                 {
+                                     "path":  "submissions/2026-09-03-E013/SCORES.md",
+                                     "original_bytes":  3906,
+                                     "original_sha256":  "62b830ab6c1a100cddaeb87dbe67d133130de98e0c3444735678a99e663c9348",
+                                     "prefix_preserved":  true
+                                 },
+                                 {
+                                     "path":  "submissions/2026-09-02-E012/SCORES.md",
+                                     "original_bytes":  3247,
+                                     "original_sha256":  "9f6c47f302d49a402382a11aae5f9e73c8e21220716bbc9b2830ef5a2db2687d",
+                                     "prefix_preserved":  true
+                                 },
+                                 {
+                                     "path":  "submissions/2026-09-01-E010/SCORES.md",
+                                     "original_bytes":  3350,
+                                     "original_sha256":  "c8f23a87f6d31d8b0b2cd81656ced35f545e2760ee2c0bfa12c2ebf0bbb905ef",
+                                     "prefix_preserved":  true
+                                 },
+                                 {
+                                     "path":  "submissions/2026-08-30-E008/SCORES.md",
+                                     "original_bytes":  2992,
+                                     "original_sha256":  "5d1712843cb29aa555b8941b3dfdec2f000416a26d7411cc06df1340d87fce95",
+                                     "prefix_preserved":  true
+                                 },
+                                 {
+                                     "path":  "submissions/2026-08-29-E006/SCORES.md",
+                                     "original_bytes":  1446,
+                                     "original_sha256":  "4be595ae37a988248368c33abd5d6c3fc714bac50f73eea2e3659543e315518f",
+                                     "prefix_preserved":  true
+                                 },
+                                 {
+                                     "path":  "submissions/2026-08-28-E005/SCORES.md",
+                                     "original_bytes":  1721,
+                                     "original_sha256":  "dea90554d6643bc9d05d926d945a9e8a26fb4ac95bf3256c20f6946025a6065f",
+                                     "prefix_preserved":  true
+                                 },
+                                 {
+                                     "path":  "submissions/2026-08-27-E002/SCORES.md",
+                                     "original_bytes":  1623,
+                                     "original_sha256":  "084bd62347e3cfc0ed7cdeb8790b1c458aba18f2e0ce5efa761bb4fab8666e6b",
+                                     "prefix_preserved":  true
+                                 },
+                                 {
+                                     "path":  "submissions/2026-09-11-E027/SCORES.md",
+                                     "original_bytes":  1577,
+                                     "original_sha256":  "43f494f33ba339313a596202d6e269bb0a4874cafc15a27749f4bfe125eb4141",
+                                     "prefix_preserved":  true
+                                 }
+                             ],
+    "readme_historical_rows_local_expectation_notes_preserved":  32,
+    "sanitized_fields":  "Only submission identity/status/time/phase/leaderboard/scores; account and diagnostic fields omitted",
+    "unmatched_historical_E027":  "Recorded as absent from supplied response; no invented scores",
+    "artifact_sha256":  {
+                            "submissions/2026-09-27-E060/SCORES.md":  "30552d2713f4fb20cd2ce83a2a059a26a20e49e75ca8632a7b8625ffaa838783",
+                            "submissions/2026-09-25-E057/SCORES.md":  "bf2c5d6e6f6381ef418f03a1a08c43844b038afc670cd854242260c77a859cc4",
+                            "submissions/2026-09-24-E052/SCORES.md":  "fc7ed108a0bf94f9e03d992f32f1fed0adcb60ceeb47c2a6c84cf25581ddfc53",
+                            "submissions/2026-09-23-E049/SCORES.md":  "945305b78c3fc91ee565459fd70d19e5643d411fbda6cc20f711b6b44a6320ca",
+                            "submissions/2026-09-22-E047/SCORES.md":  "20c02e0fa67271b88d8077f4326531774b9c54c9913f68f821dbdb347a5ce0ae",
+                            "submissions/2026-09-21-E045/SCORES.md":  "6501511293203af75950f3ce5dbc1a64d8195604ac7c6f1f172122e32d663a3f",
+                            "submissions/2026-09-20-E044/SCORES.md":  "4859c8827b9c156a0c0fa22bc6dcd6786cc432d492c30135f0f49f3fe33769d1",
+                            "submissions/2026-09-19-E041/SCORES.md":  "452de89434093225c755639e711b567bfd1160dc38eab74d6b603fda65c2351c",
+                            "submissions/2026-09-20-E040/SCORES.md":  "11ea118daf371932f50c5dfae5be024ca3dd2a49b0ac58b6a1f0f0cd2e49a1aa",
+                            "submissions/2026-09-19-E038/SCORES.md":  "adcb71f74665fd745f238e9b6eb2a2172ee70d8d7f964e92842575e8f989a37c",
+                            "submissions/2026-09-17-E036/SCORES.md":  "6c72143a26428555889d9cdc97eeed1fe08cf75cf5226c5f6ffe74d165a8e86b",
+                            "submissions/2026-09-16-E034/SCORES.md":  "ce4a32d414c6cd096c120028c691f3af9868737a3901e9b774709fb7644bcf58",
+                            "submissions/2026-09-15-E033/SCORES.md":  "159437af03390c5d05ba106cb6be3ae97f83109ebd0414c92e24ee0b0f85ada8",
+                            "submissions/2026-09-14-E032/SCORES.md":  "9e0af23fcd0cfc0b3d93f014e674e981cd4449d63ba86e2c86c6e8f841dcd5cb",
+                            "submissions/2026-09-14-E031b/SCORES.md":  "049dad4c7ba119e94035de20fe9f84635434de0f6df625ba5ee70ce4e7521cfc",
+                            "submissions/2026-09-13-E031/SCORES.md":  "0a720ad266f832dbdb831a37e4cb6ba3ed452b4fc20343f9f6ec0da9305028cf",
+                            "submissions/2026-09-12-E028/SCORES.md":  "e5049f00bf434d6d33976b4bb2eb54709c0d4668727cbdd71e21406796d63c71",
+                            "submissions/2026-09-10-E026/SCORES.md":  "3fe075c84b8f4efd9769e0616e4fbc61da8a202ab82114ec7a4e0df1f0b3468c",
+                            "submissions/2026-09-09-E025/SCORES.md":  "2ba8033957f88ab68a745111995d175a9c5318d915d206332681302b1c8da00a",
+                            "submissions/2026-09-08-E022/SCORES.md":  "e1890c8b8914b1ab529e1739a508d5a1087a2ee9a37b712f57098070ec6a0f7b",
+                            "submissions/2026-09-07-E019/SCORES.md":  "b70466dd354f01b36d449b770ec0e88b163b1d55d23034123f4427644af9a624",
+                            "submissions/2026-09-06-E018/SCORES.md":  "cb5864e944040f70f17e28de7745714c5e3f81d61d2203efefa526eb56567eb2",
+                            "submissions/2026-09-06-E017/SCORES.md":  "b12385e300ee987f501af4e33e41b6d0c5b6a60bb1b2c2f1689dda8dfcb23aea",
+                            "submissions/2026-09-04-E014/SCORES.md":  "dca9796d59b170c60a1d6e687312e39239ef04ae491a7ac342247bfdba769068",
+                            "submissions/2026-09-03-E013/SCORES.md":  "e3ed673532f6f59ea475e8868ae1ccf83ec7f63798e737d1ba18f24661fa23b3",
+                            "submissions/2026-09-02-E012/SCORES.md":  "c38900ab5659719d9ac964635bb9ce4d5d68f3dafc847b9fc5c2fd9969f220a1",
+                            "submissions/2026-09-01-E010/SCORES.md":  "6cf574ae2aa722fc414c74c3dae930fde879f1a359485bf065a0cebe43c0b97b",
+                            "submissions/2026-08-30-E008/SCORES.md":  "4016b9e5282deccd3ee2b68fa0b1c4b2aed1a847b729d7609cf412b392786a05",
+                            "submissions/2026-08-29-E006/SCORES.md":  "746525752dead10b9069c4e0322b3e089209758731a250caf882097959425714",
+                            "submissions/2026-08-28-E005/SCORES.md":  "0308baa7e72cf7dd84238d358cdd9182675e803c8cae51f93984c257619bc076",
+                            "submissions/2026-08-27-E002/SCORES.md":  "771114d6c14d16fa43a27f1a619d0e44785619927022a3edb01b3df2237a5801",
+                            "submissions/2026-09-11-E027/SCORES.md":  "5b249a4159d2948d3544085a41d64bfa0d6c482b29b272829be6dd3f9a009387",
+                            "submissions/README.md":  "60984aa7c8bf30bd701bd290bf7f85c0c2df416245017e32727a2d20eb9a1509",
+                            "submissions/SCORES.md":  "1e6d753c24c5c2e42fc4b316ea524a4285b59ef672cc5c3a5a1288768d157dab",
+                            "submissions/hosted-scores/2026-09-27.json":  "dfe719bec68faf60c7dfec86c6034ba35fe1a6ba7a9437b88813dbc1ea567ce8"
+                        },
+    "verification_self_hash":  "Excluded",
+    "shared_status_log":  "Not edited because separate E061 S1 is active; read submissions/SCORES.md for newer API evidence",
+    "scientific_actions":  "No fit/predict/score/test/protected data/model/archive/TEST operations",
+    "commit_scope":  "Only listed submission score documents and this verification; previous unrelated dirty work excluded",
+    "head_and_remote":  "Actual resulting commit and push verified separately after this pre-commit report"
+}
