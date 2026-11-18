@@ -1,0 +1,14 @@
+E070 submission third-party components (unmodified copies)
+
+- TabICL 2.2.0 source, git 0dbff3ec8fc68c123c87af77b0ea8b25cd2d23f3 (soda-inria/tabicl),
+  vendor/primary/tabicl. BSD 3-Clause; see LICENSES/tabicl-LICENSE.
+- TabICL v2 classifier checkpoint tabicl-classifier-v2-20260212.ckpt, Hugging Face
+  jingang/TabICL revision 4dcd344ece2c00be9e831fdd35bed57b5ad83e19, SHA256
+  bdc7dbd5e4ff21f8f0456fcf90c6b7cdf72dbea960f2d05b19bec19f9b3d4ed0, weights/.
+  Model metadata declares bsd-3-clause.
+- einops 0.8.1, vendor/primary/einops. MIT; see LICENSES/einops-LICENSE.
+- tqdm 4.67.1, vendor/fallback/tqdm (used only if the runtime image lacks tqdm).
+  MPL-2.0 AND MIT; see LICENSES/tqdm-LICENCE.
+- HSCC starter kit material, MIT; see LICENSES/starter-kit-LICENSE.
+
+Team code: main.py and e041_core.py.

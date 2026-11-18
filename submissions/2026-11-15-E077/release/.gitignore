@@ -1,0 +1,4 @@
+weights/*.ckpt
+*.zip
+__pycache__/
+*.pyc
