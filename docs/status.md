@@ -16,6 +16,13 @@ then [workflow](workflow.md), revision **2026-10-26-r7**. Current user scope win
   access-approved files; list with sizes and hashes in analysis/not-in-repository.md. Working
   folders tmp/, external/, .venv/, UNCHR_data/ and trip/ are ignored and exist only on the
   author's machine until its cleanup.
+- **Branches: only `main` remains on GitHub** (the old work branches, including
+  `work/e050-submission` that several records name, were deleted on 2026-11-21; all their
+  commits are in `main`, so the commit ids cited in the records and in the report stay valid).
+- **Verified from the public repository alone (2026-11-21):** a fresh shallow clone of `main`
+  has the same 3,654 tracked files as the working copy, and
+  `submissions/2026-11-15-E077/release/` with the public TabICL checkpoint rebuilds the
+  uploaded Final archive byte for byte (SHA256 7ebb1972...6cd62ac8).
 - No open work.
 
 ## Position — 2026-11-15 (Final submitted; historical)

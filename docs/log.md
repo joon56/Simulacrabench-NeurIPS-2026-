@@ -28,6 +28,20 @@ excluded, then the local folder is cleaned up):
 The 103 MB submission archives and tmp/ (local validation logs, builds, tools) were never
 tracked; the Final archive is rebuilt from submissions/2026-11-15-E077/release/.
 
+Wrap-up before the working folder is removed (same day, at the user's request):
+- Deleted the five old work branches (e041, e043, e045, e047, e049) and then the redundant
+  `work/e050-submission` on GitHub and locally; each tip was an ancestor of `main` (checked
+  before deleting). `main` is the only branch; the report's commit-pinned code link still
+  resolves.
+- Fresh shallow clone of `main` (onto another drive: the system drive had 0.25 GB free):
+  3,654 tracked files, equal to the working copy; the Final archive rebuilt from the clone and
+  the public checkpoint is identical to the uploaded one. The clone was deleted afterwards.
+- No stash, no other worktree, no unpushed commit, no tracked file modified; the only
+  untracked files are the 36 listed in analysis/not-in-repository.md. No process or scheduled
+  task of the project was still running.
+- Removed the assistant's own temporary files (LaTeX tool cache, PDF library, rebuilt archive,
+  one scorer work directory). Project memory notes updated to point at the repository.
+
 ## 2026-11-18 - Report compiled, release pushed; only the OpenReview submission remains
 
 User decisions today: the working repository was made public; push the release folder only;
