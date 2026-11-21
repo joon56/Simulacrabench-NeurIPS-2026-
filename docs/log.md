@@ -41,6 +41,8 @@ Wrap-up before the working folder is removed (same day, at the user's request):
   task of the project was still running.
 - Removed the assistant's own temporary files (LaTeX tool cache, PDF library, rebuilt archive,
   one scorer work directory). Project memory notes updated to point at the repository.
+- Early task notes T1-T4 (they existed only in the device-migration backup) added unchanged
+  under docs/plans/early-tasks/.
 
 ## 2026-11-18 - Report compiled, release pushed; only the OpenReview submission remains
 
