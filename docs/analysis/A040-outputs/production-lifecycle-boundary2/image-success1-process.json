@@ -1,0 +1,16 @@
+﻿{
+    "exit_code":  -1073741819,
+    "pid":  45876,
+    "child_start_utc":  "2026-10-05T15:41:12.7549979Z",
+    "case":  "success",
+    "child_wall_seconds":  8.0124563,
+    "supervisor_wall_seconds":  8.0429239,
+    "aggregate_seconds":  8.0429239,
+    "remaining_owned_pid":  0,
+    "forced":  false,
+    "attempt":  "image-success1",
+    "cpu_affinity":  3,
+    "child_exit_utc":  "2026-10-05T15:41:20.7674542Z",
+    "within_cap":  true,
+    "cap_seconds":  60
+}

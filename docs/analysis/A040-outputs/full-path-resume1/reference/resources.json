@@ -1,0 +1,31 @@
+{
+  "mode": "reference",
+  "outcome": "REFERENCE_PASS",
+  "reason": null,
+  "child_exit": 0,
+  "elapsed_seconds": 123.2180565000017,
+  "prior_process_seconds": 0,
+  "cumulative_parent_seconds": 123.2180565000017,
+  "samples": 121,
+  "sampling_seconds": 1,
+  "rss_peak_sampled": 2029539328,
+  "commitment_peak_sampled": 2919292928,
+  "includes_controller": true,
+  "available_before": {
+    "physical": 21029494784,
+    "commitment": 20085809152
+  },
+  "host_cap": 16000000000,
+  "gpu": {
+    "allocated_peak": 173800448,
+    "reserved_peak": 213909504,
+    "device_capacity": 8589410304
+  },
+  "last_event": {
+    "event": "instrument_end",
+    "elapsed": 121.9366955000005,
+    "instrument": "unhcr",
+    "vectors": 132273
+  },
+  "remaining_children": []
+}

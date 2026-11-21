@@ -1,0 +1,9 @@
+{
+  "child_pid": 34996,
+  "returncode": 1,
+  "watchdog_timeout": false,
+  "wall_seconds": 3.783474899999419,
+  "remote_termination_claim": false,
+  "known_ids": "live-state.json",
+  "cleanup_only_required_if_unconfirmed": true
+}

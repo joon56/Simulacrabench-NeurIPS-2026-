@@ -1,0 +1,56 @@
+{
+    "original22_files_preserved":  true,
+    "actual_native_boundary":  0,
+    "new_chargeable_remote_actions":  0,
+    "log_prior_text_preserved":  true,
+    "focused_cases":  14,
+    "old39_or15_suites_repeated":  false,
+    "cycles":  2,
+    "runner_byte_identical":  true,
+    "head":  "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+    "candidate_extras_excluded_from_counts":  true,
+    "model_imports":  0,
+    "outcome":  "LOCAL_OUTPUT_CONTRACT_PASS",
+    "actual_authentication":  0,
+    "actual_science":  0,
+    "limits":  {
+                   "regression_seconds":  120,
+                   "cycles":  3,
+                   "active_seconds":  2700
+               },
+    "remote_execution":  "NOT_AUTHORIZED",
+    "baseline_reproduction":  "Output export manifest mismatch",
+    "future_linux_h100_900_release":  "UNVERIFIED",
+    "producer_independent_evidence":  [
+                                          "frozen fixture instrument/vectors",
+                                          "prior reference result counts/hash keys only",
+                                          "unchanged runner source/AST"
+                                      ],
+    "semantic_change_modules":  [
+                                    "sandbox_stage.py"
+                                ],
+    "internal_regression_seconds":  1.8199293,
+    "expected_counts":  {
+                            "unhcr":  132273,
+                            "unicef":  17856,
+                            "world_bank":  39520
+                        },
+    "approval_resolution":  "Original result/fixture direct access removed from tests; only frozen metadata extract; old directory denied",
+    "new12_source_hashes_verified":  true,
+    "unchanged_production_modules":  9,
+    "baseline_source_sha256":  "8e0cfd474416aa586af9f7ec936c20c7d4fbf0c1888d2d770cc10c4d038027d0",
+    "s0_review_before_next_scope":  true,
+    "reference_export_failure_candidate_zero":  true,
+    "protected_arrays_read_hash":  0,
+    "status_prior_text_preserved":  true,
+    "automatic_approval_rejections":  1,
+    "actual_rpc":  0,
+    "rejected_request_processes":  0,
+    "placement_only_modules":  [
+                                   "contract.py",
+                                   "live_launcher.py"
+                               ],
+    "forbidden_access_attempts":  0,
+    "reproduction_cases":  1,
+    "outer_regression_seconds":  2.6014084
+}

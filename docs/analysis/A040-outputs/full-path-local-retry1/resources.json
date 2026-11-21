@@ -1,0 +1,112 @@
+{
+  "outcome": "BLOCKED_RESOURCE",
+  "recorded_utc": "2026-10-02T07:17:30.286114+00:00",
+  "task_start_utc": "2026-10-02T07:02:00Z",
+  "deadline_utc": "2026-10-02T09:02:00Z",
+  "task_wall_seconds_at_record": 930.286114,
+  "current": {
+    "model_free_seconds": 0.8901340999982494,
+    "model_free_invocations": 1,
+    "generator_invocations": 1,
+    "generator_internal_seconds": 0.6093447000021115,
+    "generator_tool_wall_seconds": 1.4808347,
+    "reference_watchdog_commands": 1,
+    "reference_watchdog_tool_seconds": 0.3249281,
+    "reference_watchdog_tool_exit": 1,
+    "reference_preflight": {
+      "outcome": "BLOCKED_RESOURCE",
+      "started": false,
+      "available": {
+        "physical": 16806551552,
+        "commitment": 13981937664
+      }
+    },
+    "candidate_commands": 0,
+    "scientific_processes": 0,
+    "scientific_child_seconds": 0,
+    "scientific_parent_seconds": 0,
+    "fit": 0,
+    "predict": 0,
+    "load": 0,
+    "score": 0,
+    "whole_path_measured": false,
+    "rss_peak": null,
+    "private_commitment_peak": null,
+    "cuda_allocated_peak": null,
+    "cuda_reserved_peak": null,
+    "sampling_loop_started": false
+  },
+  "gpu_preflight": {
+    "device": "NVIDIA GeForce RTX 3070",
+    "total_MiB": 8192,
+    "used_MiB": 2115,
+    "utilization_percent": 7,
+    "evidence": "d26b25",
+    "task_peak": false
+  },
+  "historical_original": {
+    "outcome": "LOCAL_CONTRACT_FAIL",
+    "child_seconds": 11.889835100000255,
+    "parent_seconds": 13.26487410000027,
+    "counters": {
+      "fits": 14,
+      "predicts": 15,
+      "loads": 2
+    },
+    "rss_peak_sampled": 1592758272,
+    "commitment_peak_sampled": 2600308736,
+    "gpu": {
+      "allocated_peak": 279770624,
+      "reserved_peak": 308281344,
+      "device_capacity": 8589410304
+    }
+  },
+  "historical_tiny_retry1": {
+    "outcome": "LOCAL_CONTRACT_PASS",
+    "child_seconds": 39.42617599999994,
+    "parent_seconds": 40.831311599999935,
+    "counters": {
+      "fits": 216,
+      "predicts": 217,
+      "loads": 2
+    },
+    "rss_peak_sampled": 1576665088,
+    "commitment_peak_sampled": 2573598720,
+    "gpu": {
+      "allocated_peak": 279770624,
+      "reserved_peak": 308281344,
+      "device_capacity": 8589410304
+    }
+  },
+  "historical_failed_full_path_preparation": {
+    "scientific_processes": 0,
+    "child_seconds": 0,
+    "parent_scientific_seconds": 0,
+    "fits": 0,
+    "predicts": 0,
+    "loads": 0,
+    "scores": 0,
+    "model_free_seconds": 2.093759900000805,
+    "generator_invocations": 1,
+    "generator_exit": 1,
+    "generator_tool_wall_seconds": 0.7898181,
+    "generator_internal_elapsed": null,
+    "rss_peak": null,
+    "commitment_peak": null,
+    "cuda_allocated_peak": null,
+    "cuda_reserved_peak": null,
+    "resource_watchdog_started": false,
+    "full_path_measured": false
+  },
+  "cumulative_scientific": {
+    "scientific_processes": 2,
+    "child_seconds": 51.316011100000196,
+    "parent_seconds": 54.096185700000206,
+    "fits": 230,
+    "predicts": 232,
+    "loads": 4,
+    "memory_peaks_added": false,
+    "full_path_estimate": false
+  },
+  "memory_peaks_added": false
+}

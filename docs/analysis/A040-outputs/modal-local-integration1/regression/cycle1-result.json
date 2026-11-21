@@ -1,0 +1,244 @@
+{
+  "scope": "LOCAL_PROTOCOL_FIXTURE",
+  "sdk": "1.6.0",
+  "cases": [
+    {
+      "name": "mechanical_runner_installer_preservation_and_compile",
+      "pass": true
+    },
+    {
+      "name": "original_enum_reproduced",
+      "pass": true
+    },
+    {
+      "name": "normal_single_production_path",
+      "pass": true,
+      "commands": [
+        {
+          "args": [
+            "python",
+            "-I",
+            "-B",
+            "-u",
+            "/work/docs/analysis/A040-outputs/modal-local-integration1/linux_boundary.py"
+          ],
+          "kwargs": {
+            "timeout": 60,
+            "text": true
+          }
+        },
+        {
+          "args": [
+            "python",
+            "-I",
+            "-B",
+            "-u",
+            "/work/docs/analysis/A040-outputs/modal-local-integration1/linux_watchdog.py",
+            "reference"
+          ],
+          "kwargs": {
+            "timeout": 925,
+            "text": true
+          }
+        },
+        {
+          "args": [
+            "python",
+            "-I",
+            "-B",
+            "-u",
+            "/work/docs/analysis/A040-outputs/modal-local-integration1/linux_watchdog.py",
+            "candidate"
+          ],
+          "kwargs": {
+            "timeout": 925,
+            "text": true
+          }
+        }
+      ],
+      "mock_calls": [
+        "injected_client",
+        "billing",
+        "app_create",
+        "image_build",
+        "billing",
+        "sandbox_create",
+        "write:/work/tiny.txt",
+        "write:/work/docs/analysis/A040-outputs/modal-local-integration1/target-contract.json",
+        "read:/work/docs/analysis/A040-outputs/modal-local-integration1/boundary-result.json",
+        "read:/work/docs/analysis/A040-outputs/modal-local-integration1/linux-requirements.json",
+        "billing",
+        "read:/work/docs/analysis/A040-outputs/modal-local-integration1/reference/result.json",
+        "read:/work/docs/analysis/A040-outputs/modal-local-integration1/reference/resources.json",
+        "read:/work/docs/analysis/A040-outputs/modal-local-integration1/reference/events.jsonl",
+        "read:/work/docs/analysis/A040-outputs/modal-local-integration1/reference/resource-samples.jsonl",
+        "read:/work/docs/analysis/A040-outputs/modal-local-integration1/reference/stdout.txt",
+        "read:/work/docs/analysis/A040-outputs/modal-local-integration1/reference/stderr.txt",
+        "read:/work/tmp/a040-modal-local-integration1/reference/unicef.json",
+        "read:/work/tmp/a040-modal-local-integration1/reference/wb.json",
+        "read:/work/tmp/a040-modal-local-integration1/reference/unhcr.json",
+        "billing",
+        "read:/work/docs/analysis/A040-outputs/modal-local-integration1/candidate/result.json",
+        "read:/work/docs/analysis/A040-outputs/modal-local-integration1/candidate/resources.json",
+        "read:/work/docs/analysis/A040-outputs/modal-local-integration1/candidate/events.jsonl",
+        "read:/work/docs/analysis/A040-outputs/modal-local-integration1/candidate/resource-samples.jsonl",
+        "read:/work/docs/analysis/A040-outputs/modal-local-integration1/candidate/stdout.txt",
+        "read:/work/docs/analysis/A040-outputs/modal-local-integration1/candidate/stderr.txt",
+        "read:/work/tmp/a040-modal-local-integration1/candidate/unicef.json",
+        "read:/work/tmp/a040-modal-local-integration1/candidate/wb.json",
+        "read:/work/tmp/a040-modal-local-integration1/candidate/unhcr.json",
+        "read:/work/tmp/a040-modal-local-integration1/candidate/unhcr-engineering-alpha025.json",
+        "read:/work/tmp/a040-modal-local-integration1/candidate/unhcr-final-e041.json",
+        "sandbox_terminate",
+        "app_stop",
+        "sandbox_poll",
+        "billing"
+      ],
+      "result": "LOCAL_PROTOCOL_PATH_PASS"
+    },
+    {
+      "name": "duplicate_run_and_mode_latches",
+      "pass": true
+    },
+    {
+      "name": "empty",
+      "pass": true,
+      "outcome": "STOP_FIRST_ERROR",
+      "recorded_science": [],
+      "termination": "NO_CREATE_ATTEMPT",
+      "error": "RuntimeError('Empty or unspecified image result')"
+    },
+    {
+      "name": "status_failure",
+      "pass": true,
+      "outcome": "STOP_FIRST_ERROR",
+      "recorded_science": [],
+      "termination": "NO_CREATE_ATTEMPT",
+      "error": "RuntimeError('Base image unsuccessful status: 2')"
+    },
+    {
+      "name": "status_unspecified",
+      "pass": true,
+      "outcome": "STOP_FIRST_ERROR",
+      "recorded_science": [],
+      "termination": "NO_CREATE_ATTEMPT",
+      "error": "RuntimeError('Empty or unspecified image result')"
+    },
+    {
+      "name": "wrong_type",
+      "pass": true,
+      "outcome": "STOP_FIRST_ERROR",
+      "recorded_science": [],
+      "termination": "NO_CREATE_ATTEMPT",
+      "error": "TypeError('Wrong image stream response type')"
+    },
+    {
+      "name": "base_identity",
+      "pass": true,
+      "outcome": "STOP_FIRST_ERROR",
+      "recorded_science": [],
+      "termination": "NO_CREATE_ATTEMPT",
+      "error": "ValueError('Base result identity mismatch')"
+    },
+    {
+      "name": "image_identity",
+      "pass": true,
+      "outcome": "STOP_FIRST_ERROR",
+      "recorded_science": [],
+      "termination": "NO_CREATE_ATTEMPT",
+      "error": "ValueError('ImageFromId response mismatch')"
+    },
+    {
+      "name": "workspace",
+      "pass": true,
+      "outcome": "STOP_FIRST_ERROR",
+      "recorded_science": [],
+      "termination": "NO_CREATE_ATTEMPT",
+      "error": "RuntimeError('Workspace mismatch')"
+    },
+    {
+      "name": "cash",
+      "pass": true,
+      "outcome": "STOP_FIRST_ERROR",
+      "recorded_science": [],
+      "termination": "UNCONFIRMED",
+      "error": "RuntimeError('Cash billing contradiction')"
+    },
+    {
+      "name": "cost",
+      "pass": true,
+      "outcome": "STOP_FIRST_ERROR",
+      "recorded_science": [],
+      "termination": "NO_CREATE_ATTEMPT",
+      "error": "RuntimeError('Cumulative cost planning gate')"
+    },
+    {
+      "name": "base_timeout",
+      "pass": true,
+      "outcome": "STOP_FIRST_ERROR",
+      "recorded_science": [],
+      "termination": "NO_CREATE_ATTEMPT",
+      "error": "TimeoutError('Operation deadline; cancellation completion not assumed')"
+    },
+    {
+      "name": "build",
+      "pass": true,
+      "outcome": "STOP_FIRST_ERROR",
+      "recorded_science": [],
+      "termination": "TERMINAL_TASK0_CONFIRMED",
+      "error": "RuntimeError('injected image failure')"
+    },
+    {
+      "name": "build_timeout",
+      "pass": true,
+      "outcome": "STOP_FIRST_ERROR",
+      "recorded_science": [],
+      "termination": "TERMINAL_TASK0_CONFIRMED",
+      "error": "TimeoutError('Image preparation cap')"
+    },
+    {
+      "name": "payload",
+      "pass": true,
+      "outcome": "STOP_FIRST_ERROR",
+      "recorded_science": [],
+      "termination": "TERMINAL_TASK0_CONFIRMED",
+      "error": "ValueError('Payload identity mismatch: tiny.txt')"
+    },
+    {
+      "name": "transfer",
+      "pass": true,
+      "outcome": "STOP_FIRST_ERROR",
+      "recorded_science": [],
+      "termination": "TERMINAL_TASK0_CONFIRMED",
+      "error": "OSError('injected transport failure')"
+    },
+    {
+      "name": "boundary",
+      "pass": true,
+      "outcome": "STOP_FIRST_ERROR",
+      "recorded_science": [],
+      "termination": "TERMINAL_TASK0_CONFIRMED",
+      "error": "RuntimeError('Target boundary incomplete or failed')"
+    },
+    {
+      "name": "app_id_loss",
+      "pass": true,
+      "outcome": "STOP_FIRST_ERROR",
+      "recorded_science": [],
+      "termination": "TERMINAL_TASK0_CONFIRMED",
+      "error": "OSError('injected lost create reply')"
+    }
+  ],
+  "actual_rpc": 0,
+  "actual_science": 0,
+  "actual_native_boundary": 0,
+  "actual_payload112_read": 0,
+  "new_remote_chargeable_actions": 0,
+  "native_egress_enforcement_proven": false,
+  "runtime_image_account_payload_facts": "UNVERIFIED",
+  "outcome": "LOCAL_INTEGRATION_REGRESSION_FAIL",
+  "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\modal-local-integration1\\tests_integration.py\", line 437, in <module>\n    LOOP.run_until_complete(integration_cases())\n    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\asyncio\\base_events.py\", line 725, in run_until_complete\n    return future.result()\n           ~~~~~~~~~~~~~^^\n  File \"C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\modal-local-integration1\\tests_integration.py\", line 363, in integration_cases\n    check(item.calls.count(\"sandbox_create\") == 1 and item.calls.count(\"sandbox_recover\") == 1, \"Sandbox recovery must be read-only\")\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\modal-local-integration1\\tests_integration.py\", line 82, in check\n    raise AssertionError(message)\nAssertionError: Sandbox recovery must be read-only\n",
+  "elapsed_seconds": 2.4243631000008463,
+  "blocked_attempts": [],
+  "completed_cases": 20
+}

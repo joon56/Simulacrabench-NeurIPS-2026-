@@ -1,0 +1,433 @@
+﻿{
+    "date":  "2026-10-01T02:37:00.2658751+09:00",
+    "role":  "S0",
+    "task":  "A039 S1 result review and decision-changing residual metadata",
+    "head":  "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+    "workflow_revision":  "2026-09-27-r4",
+    "workflow_sha256":  "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642",
+    "read_evidence":  [
+                          "1554db ordered AGENTS/CLAUDE/status/latest three log/workflow",
+                          "33ab69 closeout/questions/document mapping; large JSON output truncated, targeted projections followed",
+                          "eb28c7 entry/verification/boundary fixtures, HEAD/dirty/jobs/hash",
+                          "23da01 exposure ledger/handoff and remaining workflow",
+                          "689c55,ec3e05 selected saved-header/mapping/verification facts"
+                      ],
+    "receipt_assessment":  "S1 supplied concrete read and execution transcript references; reviewed records, not independent observation of that session or re-execution",
+    "scope":  "Existing allowed documents/source identities and S0 records only; no raw headers/keys/responses or scientific replay",
+    "s1_identity_checks":  [
+                               {
+                                   "path":  "AGENTS.md",
+                                   "expected":  "86394bbf164a2b7df6a309f4564b9dacf3b2799fa0227a703e4ea11d4d842596",
+                                   "actual":  "86394bbf164a2b7df6a309f4564b9dacf3b2799fa0227a703e4ea11d4d842596",
+                                   "match":  true
+                               },
+                               {
+                                   "path":  "CLAUDE.md",
+                                   "expected":  "69175e6d741a17042db4852d4961a5c52bd97fe2cd5bfbff762d30d7e5270364",
+                                   "actual":  "69175e6d741a17042db4852d4961a5c52bd97fe2cd5bfbff762d30d7e5270364",
+                                   "match":  true
+                               },
+                               {
+                                   "path":  "docs/workflow.md",
+                                   "expected":  "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642",
+                                   "actual":  "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642",
+                                   "match":  true
+                               },
+                               {
+                                   "path":  "docs/session-prompts.ko.md",
+                                   "expected":  "c68eba8618c6a49caf1b590181ede5d5c03800d4c2305ea0e5efe3cc266e5615",
+                                   "actual":  "c68eba8618c6a49caf1b590181ede5d5c03800d4c2305ea0e5efe3cc266e5615",
+                                   "match":  true
+                               },
+                               {
+                                   "path":  "docs/status.md",
+                                   "expected":  "f8b9ff3ca8b6dbb6031c874188e5d5f9e90daa459f41191f63f74396f9161d1f",
+                                   "actual":  "f8b9ff3ca8b6dbb6031c874188e5d5f9e90daa459f41191f63f74396f9161d1f",
+                                   "match":  true
+                               },
+                               {
+                                   "path":  "docs/log.md",
+                                   "expected":  "4f2bc0697493883a85d78149ea1652f1b43190468673c844ff9e79bf61d10846",
+                                   "actual":  "4f2bc0697493883a85d78149ea1652f1b43190468673c844ff9e79bf61d10846",
+                                   "match":  true
+                               },
+                               {
+                                   "path":  "docs/tree.md",
+                                   "expected":  "eaa884a4194db103335136495205fe5b51297c17db15e9eac62946ced286cc44",
+                                   "actual":  "eaa884a4194db103335136495205fe5b51297c17db15e9eac62946ced286cc44",
+                                   "match":  true
+                               },
+                               {
+                                   "path":  ".gitignore",
+                                   "expected":  "f67ba089f7490b4ba0845848f0b13b55633b5efd058a0be7d64203a1e480c6fd",
+                                   "actual":  "f67ba089f7490b4ba0845848f0b13b55633b5efd058a0be7d64203a1e480c6fd",
+                                   "match":  true
+                               },
+                               {
+                                   "path":  "docs/analysis/A037-winning-priority-review.md",
+                                   "expected":  "87e77d8279f68e52751653f3b6098ec1976e4b53a75faf7206043ec6cf4bf66d",
+                                   "actual":  "87e77d8279f68e52751653f3b6098ec1976e4b53a75faf7206043ec6cf4bf66d",
+                                   "match":  true
+                               },
+                               {
+                                   "path":  "docs/analysis/A038-vaf-local-document-intake.md",
+                                   "expected":  "6aaac47c03e420fffed87fe8f5a942c29e82714c88e968702ec3eb1402eaad0e",
+                                   "actual":  "6aaac47c03e420fffed87fe8f5a942c29e82714c88e968702ec3eb1402eaad0e",
+                                   "match":  true
+                               },
+                               {
+                                   "path":  "docs/analysis/A038-outputs/next-actions.ko.md",
+                                   "expected":  "fd04c57f653e8c8c697b700df73b04b49b17464f82de62acc1593ed8c96c3a39",
+                                   "actual":  "fd04c57f653e8c8c697b700df73b04b49b17464f82de62acc1593ed8c96c3a39",
+                                   "match":  true
+                               },
+                               {
+                                   "path":  "docs/analysis/A038-outputs/inventory.json",
+                                   "expected":  "b5ee9712dbfe36178cdae88cc5904cd784e6c5e3a7c73f4a8eda581b8a19d029",
+                                   "actual":  "b5ee9712dbfe36178cdae88cc5904cd784e6c5e3a7c73f4a8eda581b8a19d029",
+                                   "match":  true
+                               },
+                               {
+                                   "path":  "docs/analysis/A038-outputs/document-comparison.json",
+                                   "expected":  "44f44bb5f82e85db91e08a22303ca7522e0dba0852b5cb85d346494063bc244f",
+                                   "actual":  "44f44bb5f82e85db91e08a22303ca7522e0dba0852b5cb85d346494063bc244f",
+                                   "match":  true
+                               },
+                               {
+                                   "path":  "docs/analysis/A032-outputs/readiness-contract.ko.md",
+                                   "expected":  "139d577ab9afa82aa8d64ab8814847af0b953fffdfed6f141de520040a5a512d",
+                                   "actual":  "139d577ab9afa82aa8d64ab8814847af0b953fffdfed6f141de520040a5a512d",
+                                   "match":  true
+                               },
+                               {
+                                   "path":  "docs/analysis/A032-outputs/researcher-guide.txt",
+                                   "expected":  "dd2807e0ae8030a028eaad592a83539386022b9e1b017565a39e1730207f70fc",
+                                   "actual":  "dd2807e0ae8030a028eaad592a83539386022b9e1b017565a39e1730207f70fc",
+                                   "match":  true
+                               },
+                               {
+                                   "path":  "docs/analysis/A032-outputs/routing-metadata.json",
+                                   "expected":  "8897d05493dfd3e0fd08557c52b69ac31ab49b1ca4e44af428348a53a45150bf",
+                                   "actual":  "8897d05493dfd3e0fd08557c52b69ac31ab49b1ca4e44af428348a53a45150bf",
+                                   "match":  true
+                               },
+                               {
+                                   "path":  "docs/analysis/A032-outputs/terms-of-use.html",
+                                   "expected":  "baeb420638470691e0ee7db0d2c4cdb10912df922cc4fa200bb07b9b13fc1d19",
+                                   "actual":  "baeb420638470691e0ee7db0d2c4cdb10912df922cc4fa200bb07b9b13fc1d19",
+                                   "match":  true
+                               },
+                               {
+                                   "path":  "docs/analysis/A032-outputs/source-register.md",
+                                   "expected":  "9d5a4f8917cd9bd033e059fb45c350357db83bbc65186765fc419d920a5f179f",
+                                   "actual":  "9d5a4f8917cd9bd033e059fb45c350357db83bbc65186765fc419d920a5f179f",
+                                   "match":  true
+                               },
+                               {
+                                   "path":  "docs/analysis/A039-outputs/s0-entry.json",
+                                   "expected":  "9f326492e5d5caae50f31317f99f4c81759eb41cb74ca6b0b2af37771dea9bb0",
+                                   "actual":  "9f326492e5d5caae50f31317f99f4c81759eb41cb74ca6b0b2af37771dea9bb0",
+                                   "match":  true
+                               },
+                               {
+                                   "path":  "docs/analysis/A039-outputs/s0-plan.md",
+                                   "expected":  "6adb1ab139f684ef63eb1ac276fcae5e0abfbc4f9d9f51710230a2ea91215bd4",
+                                   "actual":  "6adb1ab139f684ef63eb1ac276fcae5e0abfbc4f9d9f51710230a2ea91215bd4",
+                                   "match":  true
+                               },
+                               {
+                                   "path":  "docs/analysis/A039-outputs/s0-verification.json",
+                                   "expected":  "2c93f999e528860fdf77a411ccb1bf14abf5573e37c7f4e76c79dcaa64adb4e7",
+                                   "actual":  "2c93f999e528860fdf77a411ccb1bf14abf5573e37c7f4e76c79dcaa64adb4e7",
+                                   "match":  true
+                               },
+                               {
+                                   "path":  "docs/analysis/A039-outputs/s1-handoff.ko.md",
+                                   "expected":  "73215a6569d00ac0bc100687973cfdd3484e2e4a9184f67615ceeb0f6efe042d",
+                                   "actual":  "73215a6569d00ac0bc100687973cfdd3484e2e4a9184f67615ceeb0f6efe042d",
+                                   "match":  true
+                               },
+                               {
+                                   "path":  "docs/analysis/A039-outputs/s1/boundary-fixtures.json",
+                                   "expected":  "5611534b417e06b5620d85ba509be047bbff8293552592f4f15a5ca01400652f",
+                                   "actual":  "5611534b417e06b5620d85ba509be047bbff8293552592f4f15a5ca01400652f",
+                                   "match":  true
+                               },
+                               {
+                                   "path":  "docs/analysis/A039-outputs/s1/closeout.md",
+                                   "expected":  "20364dea129579ac3e8bec4d559afb87383b1c80c04a46c7cc3475ec058da55f",
+                                   "actual":  "20364dea129579ac3e8bec4d559afb87383b1c80c04a46c7cc3475ec058da55f",
+                                   "match":  true
+                               },
+                               {
+                                   "path":  "docs/analysis/A039-outputs/s1/document-mapping.json",
+                                   "expected":  "c4d66ae07f4852574e3b1943b32b1ca67299808c7cb9a95d036ecc5b7110381d",
+                                   "actual":  "c4d66ae07f4852574e3b1943b32b1ca67299808c7cb9a95d036ecc5b7110381d",
+                                   "match":  true
+                               },
+                               {
+                                   "path":  "docs/analysis/A039-outputs/s1/entry.json",
+                                   "expected":  "e9e8ce049eb7f31929f2f2b942f1ca1ab9eb31f8c052c8b7e5edea921775c9a4",
+                                   "actual":  "e9e8ce049eb7f31929f2f2b942f1ca1ab9eb31f8c052c8b7e5edea921775c9a4",
+                                   "match":  true
+                               },
+                               {
+                                   "path":  "docs/analysis/A039-outputs/s1/exposure-ledger.md",
+                                   "expected":  "95f5239bc9905cef7b411b32b2791b0216838bbda682ba045ec0c373cfcb0c8c",
+                                   "actual":  "95f5239bc9905cef7b411b32b2791b0216838bbda682ba045ec0c373cfcb0c8c",
+                                   "match":  true
+                               },
+                               {
+                                   "path":  "docs/analysis/A039-outputs/s1/header_reader.py",
+                                   "expected":  "9c7dceefcdc06ea86ccf1443a5b2f45faebaa22acab16375a095bd931d54fd11",
+                                   "actual":  "9c7dceefcdc06ea86ccf1443a5b2f45faebaa22acab16375a095bd931d54fd11",
+                                   "match":  true
+                               },
+                               {
+                                   "path":  "docs/analysis/A039-outputs/s1/header-comparison.json",
+                                   "expected":  "88d78e1aa7785aa304700d2075f6d33861afe0cf35aad57747c0c3dad0f8ab74",
+                                   "actual":  "88d78e1aa7785aa304700d2075f6d33861afe0cf35aad57747c0c3dad0f8ab74",
+                                   "match":  true
+                               },
+                               {
+                                   "path":  "docs/analysis/A039-outputs/s1/log-before.md",
+                                   "expected":  "d8579531b4e72d94d46662996e25d822d64f2bb8d772f628a90ab2f83f58136c",
+                                   "actual":  "d8579531b4e72d94d46662996e25d822d64f2bb8d772f628a90ab2f83f58136c",
+                                   "match":  true
+                               },
+                               {
+                                   "path":  "docs/analysis/A039-outputs/s1/remaining-questions.ko.md",
+                                   "expected":  "d1265ecd7cef066afacd838465d0518cc9020528412c0dccdc91b5eebb755821",
+                                   "actual":  "d1265ecd7cef066afacd838465d0518cc9020528412c0dccdc91b5eebb755821",
+                                   "match":  true
+                               },
+                               {
+                                   "path":  "docs/analysis/A039-outputs/s1/s0-handoff.ko.md",
+                                   "expected":  "1d546374acba6a3ed400ea7cf05fc1ec9b0b9ab9aa966b1528b3acf1dda35f9d",
+                                   "actual":  "1d546374acba6a3ed400ea7cf05fc1ec9b0b9ab9aa966b1528b3acf1dda35f9d",
+                                   "match":  true
+                               },
+                               {
+                                   "path":  "docs/analysis/A039-outputs/s1/status-before.md",
+                                   "expected":  "9123c5585590baf8d6bcbd6def3e518d32ec1c3f5e9a3375c012b169d76cfe19",
+                                   "actual":  "9123c5585590baf8d6bcbd6def3e518d32ec1c3f5e9a3375c012b169d76cfe19",
+                                   "match":  true
+                               },
+                               {
+                                   "path":  "docs/analysis/A039-outputs/s1/test_header_reader.py",
+                                   "expected":  "ba65f255a0f613313537ed7976f0ac1b1b442a027f75807d3245cc84ea295816",
+                                   "actual":  "ba65f255a0f613313537ed7976f0ac1b1b442a027f75807d3245cc84ea295816",
+                                   "match":  true
+                               }
+                           ],
+    "mismatches":  [
+
+                   ],
+    "verification_document_sha256":  "04abbf3595d2ba0a880362f959c8ba881c64d35e91b93f731afed719e091aacb",
+    "saved_header_summary":  [
+                                 {
+                                     "table":  "main",
+                                     "columns":  196,
+                                     "bytes":  4220,
+                                     "labels_exact":  true,
+                                     "header_duplicate_names":  0,
+                                     "ddi_match":  false
+                                 },
+                                 {
+                                     "table":  "case",
+                                     "columns":  74,
+                                     "bytes":  1450,
+                                     "labels_exact":  true,
+                                     "header_duplicate_names":  0,
+                                     "ddi_match":  false
+                                 },
+                                 {
+                                     "table":  "family",
+                                     "columns":  22,
+                                     "bytes":  373,
+                                     "labels_exact":  true,
+                                     "header_duplicate_names":  0,
+                                     "ddi_match":  false
+                                 },
+                                 {
+                                     "table":  "member",
+                                     "columns":  183,
+                                     "bytes":  4418,
+                                     "labels_exact":  true,
+                                     "header_duplicate_names":  0,
+                                     "ddi_match":  false
+                                 },
+                                 {
+                                     "table":  "sharing_group_long",
+                                     "columns":  586,
+                                     "bytes":  13173,
+                                     "labels_exact":  true,
+                                     "header_duplicate_names":  0,
+                                     "ddi_match":  false
+                                 },
+                                 {
+                                     "table":  "sharing_group_short",
+                                     "columns":  430,
+                                     "bytes":  9723,
+                                     "labels_exact":  true,
+                                     "header_duplicate_names":  0,
+                                     "ddi_match":  false
+                                 }
+                             ],
+    "selected_named_routes":  [
+                                  {
+                                      "form":  "VAF_Host_2023_LongXLS_final.xlsx",
+                                      "name":  "FamilyRegistered",
+                                      "chapter":  "Family Information",
+                                      "relevant":  "${TargetCase} = \u0027No\u0027",
+                                      "calculation":  ""
+                                  },
+                                  {
+                                      "form":  "VAF_Host_2023_LongXLS_final.xlsx",
+                                      "name":  "NotRegIDFamilyType",
+                                      "chapter":  "CaseInformation",
+                                      "relevant":  "${FamilyRegistered} = \u0027No\u0027",
+                                      "calculation":  ""
+                                  },
+                                  {
+                                      "form":  "VAF_Host_2023_LongXLS_final.xlsx",
+                                      "name":  "IndAge",
+                                      "chapter":  "IndBioData",
+                                      "relevant":  "",
+                                      "calculation":  "if(${indStilLive_yn}=\u0027DoesntLiveHereAnymore\u0027 or ${IndAge_yn}=\u0027Yes\u0027,int(${ind_age}),int(round((today()-${IndDOB}) div 365,2)))"
+                                  },
+                                  {
+                                      "form":  "VAF_Host_2023_LongXLS_final.xlsx",
+                                      "name":  "WGQSeeing",
+                                      "chapter":  "HEALTH",
+                                      "relevant":  "${IndAge} \u003e= 5",
+                                      "calculation":  ""
+                                  },
+                                  {
+                                      "form":  "VAF_Host_2023_ShortXLS_final.xlsx",
+                                      "name":  "FamilyRegistered",
+                                      "chapter":  "Family Information",
+                                      "relevant":  "${TargetCase} = \u0027No\u0027",
+                                      "calculation":  ""
+                                  },
+                                  {
+                                      "form":  "VAF_Host_2023_ShortXLS_final.xlsx",
+                                      "name":  "NotRegIDFamilyType",
+                                      "chapter":  "CaseInformation",
+                                      "relevant":  "${FamilyRegistered} = \u0027No\u0027",
+                                      "calculation":  ""
+                                  },
+                                  {
+                                      "form":  "VAF_Host_2023_ShortXLS_final.xlsx",
+                                      "name":  "IndAge",
+                                      "chapter":  "IndBioData",
+                                      "relevant":  "",
+                                      "calculation":  "if(${indStilLive_yn}=\u0027DoesntLiveHereAnymore\u0027 or ${IndAge_yn}=\u0027Yes\u0027,int(${ind_age}),int(round((today()-${IndDOB}) div 365,2)))"
+                                  },
+                                  {
+                                      "form":  "VAF_Host_2023_ShortXLS_final.xlsx",
+                                      "name":  "WGQSeeing",
+                                      "chapter":  "HEALTH",
+                                      "relevant":  "${IndAge} \u003e= 5",
+                                      "calculation":  ""
+                                  }
+                              ],
+    "key_semantics":  {
+                          "hierarchy":  "DOCUMENTED in guide; named indices absent in actual headers, export crosswalk UNRESOLVED",
+                          "Form":  "DOCUMENTED: guide p4/p13 and file-specific DDI Long/Short categories",
+                          "ID_ind":  "PARTIAL: member label Calculate UNHCR Individual Number; anonymisation, uniqueness and relation to individualindex UNKNOWN",
+                          "ID_main":  "UNRESOLVED: label 0 in main and empty in other tables; not a householdindex crosswalk"
+                      },
+    "missing_semantics":  "PARTIAL: breakoff fields and ordinary refusal/DK categories documented; generic Missing value does not define CSV token, reason or editing provenance",
+    "jobs":  "No visible python/uv in name-only check; not global-idleness proof",
+    "prior_dirty":  [
+                        " M .claude/skills/paper-session/SKILL.md",
+                        " M .gitignore",
+                        " M CLAUDE.md",
+                        " M docs/domain-study-guide.ko.md",
+                        " M docs/index.md",
+                        " M docs/log.md",
+                        " M docs/session-prompts.ko.md",
+                        " M docs/status.md",
+                        " M docs/tree.md",
+                        " M docs/workflow.md",
+                        "?? .agents/",
+                        "?? AGENTS.md",
+                        "?? README.md",
+                        "?? docs/analysis/A020-outputs/",
+                        "?? docs/analysis/A020-post-e058-design-review.md",
+                        "?? docs/analysis/A021-outputs/",
+                        "?? docs/analysis/A021-selector-comparison-contract.md",
+                        "?? docs/analysis/A022-outputs/",
+                        "?? docs/analysis/A022-remaining-role-audit.md",
+                        "?? docs/analysis/A023-candidate-boundary-contract.md",
+                        "?? docs/analysis/A023-cost-accounting.md",
+                        "?? docs/analysis/A023-outputs/",
+                        "?? docs/analysis/A024-channel-precision-review.md",
+                        "?? docs/analysis/A024-outputs/",
+                        "?? docs/analysis/A025-submission-oriented-review.md",
+                        "?? docs/analysis/A026-outputs/",
+                        "?? docs/analysis/A026-post-e060-strategy-review.md",
+                        "?? docs/analysis/A027-outputs/",
+                        "?? docs/analysis/A027-workflow-role-revision.md",
+                        "?? docs/analysis/A028-outputs/",
+                        "?? docs/analysis/A028-workflow-entry-audit.md",
+                        "?? docs/analysis/A029-codex-migration-audit.md",
+                        "?? docs/analysis/A029-outputs/",
+                        "?? docs/analysis/A030-outputs/",
+                        "?? docs/analysis/A030-vaf-channel-metadata-review.md",
+                        "?? docs/analysis/A031-outputs/",
+                        "?? docs/analysis/A031-post-a030-handoff-review.md",
+                        "?? docs/analysis/A032-document-acquisition-and-readiness.md",
+                        "?? docs/analysis/A032-outputs/",
+                        "?? docs/analysis/A033-dev-handoff-and-role-repair.md",
+                        "?? docs/analysis/A033-outputs/",
+                        "?? docs/analysis/A034-e061-s0-review.md",
+                        "?? docs/analysis/A034-outputs/",
+                        "?? docs/analysis/A035-e061-dev-submission-review.md",
+                        "?? docs/analysis/A035-outputs/",
+                        "?? docs/analysis/A036-e061-post-result-review.md",
+                        "?? docs/analysis/A036-outputs/",
+                        "?? docs/analysis/A037-outputs/",
+                        "?? docs/analysis/A037-winning-priority-review.md",
+                        "?? docs/analysis/A038-outputs/",
+                        "?? docs/analysis/A038-vaf-local-document-intake.md",
+                        "?? docs/analysis/A039-outputs/",
+                        "?? docs/analysis/E059-outputs/",
+                        "?? docs/analysis/E060-outputs/",
+                        "?? docs/analysis/E061-outputs/",
+                        "?? docs/codex-setup.ko.md",
+                        "?? docs/experiments/E059-leaf-donor-interactions.md",
+                        "?? docs/experiments/E060-content-target-retrieval.md",
+                        "?? docs/experiments/E061-tied-content-heads.md",
+                        "?? docs/plans/README.md",
+                        "?? requirements-models.txt",
+                        "?? scripts/assemble_e060.py",
+                        "?? scripts/assemble_e061.py",
+                        "?? scripts/check_a021_selector_contract.py",
+                        "?? scripts/check_a023_candidate_boundary.py",
+                        "?? scripts/check_a023_resources.py",
+                        "?? scripts/check_e060.py",
+                        "?? scripts/check_e061_release.py",
+                        "?? scripts/check_e061_tied_heads.py",
+                        "?? scripts/check_workspace.py",
+                        "?? scripts/screen_e059.py",
+                        "?? src/models/content_target_retrieval.py",
+                        "?? src/models/tied_content_heads.py",
+                        "?? submissions/2026-09-27-E060.zip",
+                        "?? submissions/2026-09-27-E060/NOTICE.txt",
+                        "?? submissions/2026-09-27-E060/main.py",
+                        "?? submissions/2026-09-27-E060/verification.json",
+                        "?? submissions/2026-09-28-E061.zip",
+                        "?? submissions/2026-09-28-E061/",
+                        "?? tests/test_a021_selector_contract.py",
+                        "?? tests/test_a023_candidate_boundary.py",
+                        "?? tests/test_content_target_retrieval.py",
+                        "?? tests/test_e059_interactions.py",
+                        "?? tests/test_e060_assembly.py",
+                        "?? tests/test_e061_assembly.py",
+                        "?? tests/test_tied_content_heads.py",
+                        "?? tests/test_workspace_check.py",
+                        "?? trip/"
+                    ]
+}

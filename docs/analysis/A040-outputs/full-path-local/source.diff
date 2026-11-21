@@ -1,0 +1,1008 @@
+# Post-failure source evidence; not a scientific freeze.
+# adapter.py byte-identical to retry1/prototype.py; no model change.
+--- /dev/null
++++ generate_fixture.py
+@@ -0,0 +1,66 @@
++"""New-only fake input generation. No model imports or query truth generation."""
++import hashlib
++import json
++from pathlib import Path
++import sys
++import time
++
++import numpy as np
++import pandas as pd
++
++HERE=Path(__file__).resolve().parent
++ROOT=HERE.parents[3]
++TEMP=ROOT/'tmp/a040-full-path-local'
++sys.path.insert(0,str(HERE))
++from orchestration import layout
++
++
++def main():
++    start=time.perf_counter()
++    rng=np.random.Generator(np.random.PCG64(4000))
++    shuffled=np.random.Generator(np.random.PCG64(4001)).permutation(8279)
++    roles={'fit':sorted(shuffled[2000:].tolist()),'selection':sorted(shuffled[:1000].tolist()),
++           'evaluation':sorted(shuffled[1000:2000].tolist()),'external':list(range(8279,8900)),
++           'permutation':shuffled.tolist(),'permutation_seed':4001}
++    with (HERE/'roles.json').open('x',encoding='utf-8') as stream:json.dump(roles,stream)
++    records=[]
++    for name,nvisible,nquery in [('unicef',14885,1488),('world_bank',5195,520),('unhcr',8279,621)]:
++        schema_path=ROOT/'external/starter-kit/data'/(name+'.json')
++        schema=json.loads(schema_path.read_text(encoding='utf-8-sig'))
++        given,heads,options=layout(schema);n=nvisible+nquery
++        columns={}
++        blocks=[roles[k] for k in ('fit','selection','evaluation')] if name=='unhcr' else [list(range(nvisible))]
++        coverage={}
++        for item,spec in schema['items'].items():
++            if spec['class'] not in ('GIVEN','PREDICT'):continue
++            opts=options[item];K=len(opts)
++            if item in given:
++                values=np.asarray(opts,dtype=object)[rng.permutation(np.arange(n)%K)]
++            else:
++                values=np.full(n,np.nan,dtype=object)
++                for block in blocks:
++                    codes=rng.permutation(np.arange(len(block))%K)
++                    assert len(np.unique(codes))==K
++                    values[block]=np.asarray(opts,dtype=object)[codes]
++                coverage[item]=K
++            columns[item]=values
++        frame=pd.DataFrame(columns,index=range(n))
++        assert frame.loc[nvisible:,heads].isna().all().all()
++        assert frame.loc[:nvisible-1,given+heads].notna().all().all()
++        output=TEMP/(name+'.json')
++        text=frame.to_json(orient='split',force_ascii=False)
++        with output.open('x',encoding='utf-8') as stream:stream.write(text)
++        records.append({'instrument':name,'path':output.relative_to(ROOT).as_posix(),
++                        'sha256':hashlib.sha256(text.encode()).hexdigest(),'bytes':output.stat().st_size,
++                        'schema_path':schema_path.relative_to(ROOT).as_posix(),
++                        'schema_sha256':hashlib.sha256(schema_path.read_bytes()).hexdigest(),
++                        'visible':nvisible,'query':nquery,'given':len(given),'heads':len(heads),
++                        'vectors':nquery*len(heads),'coverage':coverage})
++    result={'seed':4000,'query_truth_generated':False,'old_fixture_read':False,
++            'elapsed_seconds':time.perf_counter()-start,'inputs':records,
++            'role_sha256':hashlib.sha256((HERE/'roles.json').read_bytes()).hexdigest()}
++    with (HERE/'fixture-manifest.json').open('x',encoding='utf-8') as stream:json.dump(result,stream,indent=2)
++    print(json.dumps({'created':len(records),'seconds':result['elapsed_seconds'],'scientific_calls':0}))
++
++
++if __name__=='__main__':main()
+--- /dev/null
++++ observer.py
+@@ -0,0 +1,113 @@
++"""In-memory E041 observation; delegates unchanged arguments and returns."""
++from collections import defaultdict
++from functools import wraps
++import time
++
++import numpy as np
++
++from orchestration import fingerprint, layout, restore
++
++
++class E041Observer:
++    def __init__(self,module,log,reference=None):
++        self.module,self.log,self.reference=module,log,reference
++        self.instrument=None
++        self.stage=None
++        self.allowed=set()
++        self.heads=[]
++        self.counts=defaultdict(int)
++        self.seconds=defaultdict(float)
++        self.failures=defaultdict(int)
++        self.stage_records=[]
++        self.boundary_checks=0
++        names=['select_ladder','tune_and_train','_train','_train_on','minimize',
++               'fit_sections','build_ladder','_best_lambda','_complete_rows','_targets',
++               '_given_matrix','conditional_agreement','supervised_layer',
++               'hh_sharp_layer','_evidence','_topk_excl','_SHARP_PREDICT']
++        for name in names:self._wrap(name)
++
++    def check_frame(self,frame,fit_only=False):
++        if fit_only:
++            if not set(frame.index).issubset(self.allowed):
++                raise PermissionError('Held-role rows reached E041 fitting helper')
++        else:
++            outside=[i for i in frame.index if i not in self.allowed]
++            available=[h for h in self.heads if h in frame.columns]
++            if outside and available and not frame.loc[outside,available].isna().all().all():
++                raise PermissionError('Unmasked held-role labels reached E041 helper')
++        self.boundary_checks+=1
++
++    def _wrap(self,name):
++        original=getattr(self.module,name)
++        frame_functions={'select_ladder','tune_and_train','_complete_rows','_given_matrix',
++                         'conditional_agreement','supervised_layer','hh_sharp_layer','_evidence','_SHARP_PREDICT'}
++        verbose={'select_ladder','tune_and_train','_train','_train_on','minimize','fit_sections',
++                 'conditional_agreement','supervised_layer','hh_sharp_layer'}
++        @wraps(original)
++        def observed(*args,**kwargs):
++            key=self.instrument+'/'+self.stage+'/'+name
++            self.counts[key]+=1
++            if name in frame_functions:self.check_frame(args[0])
++            if name in ('build_ladder','_targets'):self.check_frame(args[0],fit_only=True)
++            if name=='fit_sections':
++                labels=args[1]
++                outside=sorted(set(range(len(labels)))-self.allowed)
++                if outside and not np.all(labels[outside]==-1):raise PermissionError('Held truth reached metric fit')
++                for positions in args[2:5]:
++                    if not set(map(int,positions)).issubset(self.allowed):raise PermissionError('Metric role outside F')
++                self.boundary_checks+=1
++            if name=='_best_lambda' and len(args[0])<30:
++                raise AssertionError('Legacy minimum30 changed')
++            info={}
++            if name=='_train_on':
++                info['device']=str(args[0]);self.counts['neural_device_'+str(args[0])]+=1
++            if name=='_train':info['fit_rows']=int(args[0].shape[0])
++            if name in verbose:self.log.emit('e041_call_start',instrument=self.instrument,stage=self.stage,function=name,**info)
++            start=time.perf_counter()
++            try:
++                value=original(*args,**kwargs)
++                if name=='_complete_rows':self.check_frame(value,fit_only=True)
++                if name in ('supervised_layer','hh_sharp_layer'):
++                    self.counts[key+'/empty_evidence']+=int(not bool(value[0]))
++                return value
++            except BaseException as exc:
++                self.failures[key]+=1
++                self.log.emit('e041_call_error',instrument=self.instrument,stage=self.stage,function=name,error=repr(exc),**info)
++                raise
++            finally:
++                elapsed=time.perf_counter()-start
++                self.seconds[key]+=elapsed
++                if name in verbose:self.log.emit('e041_call_end',instrument=self.instrument,stage=self.stage,function=name,seconds=elapsed,**info)
++        setattr(self.module,name,observed)
++
++    def __call__(self,frame,schema,stage,fit_rows):
++        self.stage=stage
++        self.allowed=set(map(int,fit_rows))
++        _,self.heads,options=layout(schema)
++        self.check_frame(frame)
++        visible=set(frame.index[frame[self.heads].notna().all(axis=1)])
++        if visible!=self.allowed:raise PermissionError('E041 complete-row role mismatch')
++        if self.instrument=='unhcr' and len(visible)<500:raise AssertionError('Tiny supervised fallback forbidden')
++        query=sorted(set(frame.index)-visible)
++        before=fingerprint(frame)
++        start=time.perf_counter()
++        self.counts['pipeline']+=1
++        self.log.emit('pipeline_start',instrument=self.instrument,stage=stage,fit_rows=len(visible),query_rows=len(query))
++        output=self.module.predict(frame,schema)
++        restore(output,self.heads,query,options)
++        if fingerprint(frame)!=before:raise AssertionError('E041 input mutated')
++        parity=None
++        if self.reference is not None and stage!='unhcr_shadow':
++            reference=self.reference[self.instrument]
++            parity=len(reference)==len(output) and all(np.array_equal(np.asarray(a),np.asarray(b)) for a,b in zip(output,reference))
++            if not parity:raise AssertionError('Exact E041 reference parity failed: '+self.instrument+'/'+stage)
++        elapsed=time.perf_counter()-start
++        record=dict(instrument=self.instrument,stage=stage,fit_rows=len(visible),query_rows=len(query),vectors=len(output),seconds=elapsed,reference_exact=parity)
++        self.stage_records.append(record)
++        self.log.emit('pipeline_end',**record)
++        return output
++
++    def summary(self):
++        return dict(counts=dict(self.counts),inclusive_seconds=dict(self.seconds),failed_attempts=dict(self.failures),
++                    stages=self.stage_records,boundary_checks=self.boundary_checks,
++                    note='Nested timings overlap. Whole pipeline includes recursive rendering and all observer work.')
+--- /dev/null
++++ orchestration.py
+@@ -0,0 +1,173 @@
++"""Research composition; models injected, no model imports or hidden-data access."""
++from dataclasses import dataclass
++import hashlib
++import json
++
++import numpy as np
++import pandas as pd
++
++
++def layout(schema):
++    given = [n for n,r in schema['items'].items() if r['class']=='GIVEN']
++    heads = [n for n,r in schema['items'].items() if r['class']=='PREDICT']
++    options = {n:list(r['values'])+([schema['gated_value']] if r.get('gate') else [])
++               for n,r in schema['items'].items() if r['class'] in ('GIVEN','PREDICT')}
++    return given,heads,options
++
++
++def fingerprint(frame):
++    h=hashlib.sha256(json.dumps(list(frame.columns)).encode())
++    h.update(pd.util.hash_pandas_object(frame,index=True).to_numpy().tobytes())
++    return h.hexdigest()
++
++
++@dataclass(frozen=True)
++class RolePlan:
++    fit: tuple
++    selection: tuple
++    evaluation: tuple
++    external: tuple
++
++
++class FitView:
++    """Only a masked frame and entitled fit/query rows reach the expert."""
++    def __init__(self, frame, schema, fit_rows, query_rows):
++        self.shadow=frame
++        self.fit_rows=sorted(fit_rows)
++        self.query_rows=sorted(query_rows)
++        self.given,self.heads,self.options=layout(schema)
++        if set(self.fit_rows)&set(self.query_rows):
++            raise PermissionError('Fit/query overlap')
++        outside=sorted(set(frame.index)-set(self.fit_rows))
++        if not frame.loc[outside,self.heads].isna().all().all():
++            raise PermissionError('Non-fit target reached expert view')
++        if not frame.loc[self.fit_rows,self.given+self.heads].notna().all().all():
++            raise ValueError('Incomplete fit role')
++
++    def fit_input(self, head):
++        X=self.shadow.loc[self.fit_rows,self.given].copy().astype(object)
++        y=self.shadow.loc[self.fit_rows,head].map({v:i for i,v in enumerate(self.options[head])})
++        if y.isna().any():
++            raise ValueError('Invalid fit label')
++        if len(X) and not any(X[n].nunique(dropna=False)>1 for n in self.given):
++            raise ValueError('Zero usable features')
++        return X,y.to_numpy(dtype=int)
++
++
++class SealedRoles:
++    def __init__(self, frame, schema, plan):
++        given,self.heads,self.options=layout(schema)
++        all_rows=plan.fit+plan.selection+plan.evaluation+plan.external
++        if len(all_rows)!=len(set(all_rows)) or set(all_rows)!=set(frame.index):
++            raise ValueError('Roles must partition original row positions')
++        self.plan=plan
++        self._selection=self._encode(frame,sorted(plan.selection))
++        self._evaluation=self._encode(frame,sorted(plan.evaluation))
++        self.shadow=frame.copy(deep=True)
++        self.shadow.loc[sorted(plan.selection+plan.evaluation+plan.external),self.heads]=np.nan
++        self._phase='fitting'
++
++    def _encode(self,frame,rows):
++        result={}
++        for h in self.heads:
++            y=frame.loc[rows,h].map({v:i for i,v in enumerate(self.options[h])})
++            if y.isna().any():raise ValueError('Invalid sealed fake label')
++            result[h]=y.to_numpy(dtype=int);result[h].setflags(write=False)
++        return result
++
++    def shadow_complete(self):
++        if self._phase!='fitting':raise PermissionError('Shadow phase reused')
++        self._phase='ready'
++
++    def selection(self):
++        if self._phase!='ready':raise PermissionError('Selection before shadow complete')
++        self._phase='selection';return self._selection
++
++    def freeze(self,alpha):
++        if self._phase!='selection' or alpha not in (0,.25,.5):raise PermissionError('Invalid freeze')
++        self._phase='frozen'
++
++    def evaluation(self):
++        if self._phase!='frozen':raise PermissionError('Evaluation before freeze')
++        self._phase='evaluated';return self._evaluation
++
++
++def restore(vectors,heads,rows,options):
++    if len(vectors)!=len(heads)*len(rows):raise ValueError('Wrong canonical vector count')
++    result={}
++    for j,h in enumerate(heads):
++        p=np.asarray(vectors[j::len(heads)],dtype=np.float64)
++        if p.shape!=(len(rows),len(options[h])) or not np.isfinite(p).all() or (p<0).any() or (p.sum(axis=1)<=0).any():
++            raise ValueError('Invalid canonical probabilities for '+h)
++        result[h]=p
++    return result
++
++
++def subset(maps,all_rows,rows):
++    index={r:i for i,r in enumerate(all_rows)}
++    ix=[index[r] for r in sorted(rows)]
++    return {h:p[ix] for h,p in maps.items()}
++
++
++def flatten(maps,heads):
++    n=len(maps[heads[0]])
++    return [maps[h][i].tolist() for i in range(n) for h in heads]
++
++
++class FullPathPredictor:
++    def __init__(self,base_call,expert_call,math,log):
++        self.base_call,self.expert_call,self.math,self.log=base_call,expert_call,math,log
++        self.last=None
++
++    def predict(self,frame,schema,plan=None):
++        given,heads,options=layout(schema)
++        if 's3_11_intent_return_12m_lbl' not in schema['items']:
++            visible=tuple(frame.index[frame[heads].notna().all(axis=1)])
++            return self.base_call(frame,schema,'control',visible)
++        if plan is None:raise ValueError('UNHCR requires frozen role mapping')
++        before=fingerprint(frame)
++        sealed=SealedRoles(frame,schema,plan)
++        shadow_query=sorted(plan.selection+plan.evaluation+plan.external)
++        score_query=sorted(plan.selection+plan.evaluation)
++        shadow_raw=self.base_call(sealed.shadow,schema,'unhcr_shadow',plan.fit)
++        p_all=restore(shadow_raw,heads,shadow_query,options)
++        p_score=subset(p_all,shadow_query,score_query)
++        view=FitView(sealed.shadow,schema,plan.fit,score_query)
++        q_score=self.expert_call(view,'expert_shadow')
++        sealed.shadow_complete()
++        alpha=self.math.select_alpha(subset(p_score,score_query,plan.selection),
++                                     subset(q_score,score_query,plan.selection),sealed.selection())
++        sealed.freeze(alpha)
++        self.log.emit('alpha_frozen',alpha=alpha)
++        accepted,lower=self.math.independent_check(subset(p_score,score_query,plan.evaluation),
++                            subset(q_score,score_query,plan.evaluation),sealed.evaluation(),alpha)
++        self.log.emit('natural_decision',alpha=alpha,accepted=bool(accepted),lower=lower,efficacy_evidence=False)
++        del p_all,p_score,q_score,shadow_raw,view,sealed
++        visible=tuple(sorted(plan.fit+plan.selection+plan.evaluation))
++        final_raw=self.base_call(frame,schema,'unhcr_final',visible)
++        final_maps=restore(final_raw,heads,sorted(plan.external),options)
++        final_view=FitView(frame,schema,visible,plan.external)
++        self.last=dict(raw=final_raw,maps=final_maps,q=None,view=final_view,
++                       heads=heads,alpha=alpha,accepted=bool(accepted),lower=lower)
++        if accepted:
++            self.last['q']=self.expert_call(final_view,'expert_final')
++            output=self.render_final(alpha)
++        else:
++            output=final_raw
++            self.log.emit('natural_final_expert_skipped',alpha=alpha)
++        if fingerprint(frame)!=before:raise AssertionError('Input frame mutated')
++        return output
++
++    def render_final(self,alpha,empty=False):
++        if alpha==0 or empty:return self.last['raw']
++        if self.last['q'] is None:raise ValueError('Active rendering needs final expert')
++        maps={h:self.math.mix(self.last['maps'][h],self.last['q'][h],alpha) for h in self.last['heads']}
++        return flatten(maps,self.last['heads'])
++
++    def engineering_active(self):
++        if self.last is None:raise ValueError('No final baseline')
++        if self.last['q'] is None:
++            self.log.emit('engineering_forced_final_expert',natural_accepted=self.last['accepted'])
++            self.last['q']=self.expert_call(self.last['view'],'expert_final')
++        self.log.emit('engineering_render',alpha=.25,natural_alpha=self.last['alpha'],natural_accepted=self.last['accepted'])
++        return self.render_final(.25)
+--- /dev/null
++++ record_closeout.py
+@@ -0,0 +1,139 @@
++"""Metadata-only closeout. No scientific imports, fixture generation or model calls."""
++import ast
++from datetime import datetime, timezone
++import difflib
++import hashlib
++import importlib.metadata
++import json
++from pathlib import Path
++import subprocess
++
++HERE = Path(__file__).resolve().parent
++ROOT = HERE.parents[3]
++TEMP = ROOT / 'tmp/a040-full-path-local'
++
++
++def read(path):
++    return json.loads(path.read_text(encoding='utf-8-sig'))
++
++
++def save(path, value):
++    with path.open('x', encoding='utf-8') as stream:
++        json.dump(value, stream, indent=2, ensure_ascii=False)
++
++
++def digest(path):
++    return hashlib.sha256(path.read_bytes()).hexdigest()
++
++
++def row(path):
++    return {'path': path.relative_to(ROOT).as_posix(), 'sha256': digest(path), 'bytes': path.stat().st_size}
++
++
++entry = read(HERE / 'entry.json')
++checks = []
++for item in entry['protected'] + entry['reused_input_checks']:
++    relative = item['path'].replace('\\', '/')
++    if relative.startswith('tmp/'):
++        assert relative.startswith('tmp/a040-local-technical/source/') or relative == 'tmp/a040-local-technical/acquisition/tabicl-classifier-v2-20260212.ckpt'
++    assert not relative.endswith(('.parquet', '.npz'))
++    checks.append(dict(path=relative, expected=item['sha256'], actual=digest(ROOT / relative)))
++assert all(c['expected'] == c['actual'] for c in checks)
++pins = [{'name': p['name'], 'expected': p['version'], 'actual': importlib.metadata.version(p['name'])} for p in entry['pins']]
++assert all(p['expected'] == p['actual'] for p in pins)
++adapter_same = (HERE / 'adapter.py').read_bytes() == (ROOT / 'docs/analysis/A040-outputs/local-technical-retry1/prototype.py').read_bytes()
++assert adapter_same
++
++schemas = []
++for name in ('unicef', 'world_bank', 'unhcr'):
++    path = ROOT / 'external/starter-kit/data' / (name + '.json')
++    schema = read(path)
++    schemas.append(dict(row(path), instrument=name, top_keys=list(schema), gated_value=schema.get('gated_value'),
++                        given=sum(i['class'] == 'GIVEN' for i in schema['items'].values()),
++                        predict=sum(i['class'] == 'PREDICT' for i in schema['items'].values()),
++                        gated_items=sum(bool(i.get('gate')) for i in schema['items'].values())))
++roles = read(HERE / 'roles.json')
++assert [len(roles[k]) for k in ('fit', 'selection', 'evaluation', 'external')] == [6279, 1000, 1000, 621]
++assert sorted(roles['fit'] + roles['selection'] + roles['evaluation']) == list(range(8279))
++assert set(roles['external']) == set(range(8279, 8900))
++assert not list(TEMP.rglob('*.json'))
++assert not list(HERE.rglob('scientific-started.json'))
++assert not (HERE / 'frozen-inputs/manifest.json').exists()
++
++source_diff = ['# Post-failure source evidence; not a scientific freeze.\n',
++               '# adapter.py byte-identical to retry1/prototype.py; no model change.\n']
++parsed = []
++for path in sorted(HERE.glob('*.py')):
++    source = path.read_text(encoding='utf-8-sig')
++    ast.parse(source, filename=str(path))
++    parsed.append(path.name)
++    if path.name != 'adapter.py':
++        source_diff.extend(difflib.unified_diff([], source.splitlines(keepends=True), fromfile='/dev/null', tofile=path.name))
++(HERE / 'source.diff').write_text(''.join(source_diff), encoding='utf-8')
++now = datetime.now(timezone.utc)
++head = subprocess.check_output(['git', '-c', 'safe.directory=' + ROOT.as_posix(), 'rev-parse', 'HEAD'], cwd=ROOT, text=True).strip()
++assert head == entry['head']
++dirty = subprocess.check_output(['git', '-c', 'safe.directory=' + ROOT.as_posix(), 'status', '--short'], cwd=ROOT, text=True)
++(HERE / 'dirty-at-closeout.txt').write_text(dirty, encoding='utf-8')
++save(HERE / 'active-jobs-at-closeout.json', dict(evidence='5121eb elevated read-only CIM query', named_python_jupyter_jobs=[],
++      sandbox_query_denied=True, successful_query_exit=0, scientific_children_started=0))
++old = read(ROOT / 'docs/analysis/A040-outputs/local-technical/result.json')
++old_res = read(ROOT / 'docs/analysis/A040-outputs/local-technical/run-resources.json')
++retry = read(ROOT / 'docs/analysis/A040-outputs/local-technical-retry1/resources.json')['current']
++resources = dict(decision='LOCAL_FULL_PATH_FAIL', recorded_utc=now.isoformat(),
++    task_start_utc=entry['start_utc'], task_deadline_utc=entry['deadline_utc'],
++    task_wall_seconds_at_record=(now-datetime.fromisoformat(entry['start_utc'].replace('Z','+00:00'))).total_seconds(),
++    current=dict(scientific_processes=0, child_seconds=0, parent_scientific_seconds=0, fits=0, predicts=0, loads=0, scores=0,
++                 model_free_seconds=read(HERE / 'model-free-result.json')['elapsed_seconds'],
++                 generator_invocations=1, generator_exit=1, generator_tool_wall_seconds=.7898181,
++                 generator_internal_elapsed=None, rss_peak=None, commitment_peak=None, cuda_allocated_peak=None,
++                 cuda_reserved_peak=None, resource_watchdog_started=False, full_path_measured=False),
++    preflight=dict(device='NVIDIA GeForce RTX 3070', total_MiB=8192, used_MiB=637, utilization_percent=2,
++                   evidence='0d1818 nvidia-smi', device_snapshot_not_task_peak=True, host_available_not_measured=True),
++    original=dict(outcome=old['outcome'], child_seconds=old['elapsed_seconds'], parent_seconds=old_res['elapsed_seconds'],
++                  counters=old['counters'], rss_peak_sampled=old_res['rss_peak_sampled'],
++                  commitment_peak_sampled=old_res['commitment_peak_sampled'], gpu=old_res['gpu']),
++    retry1=dict(outcome='LOCAL_CONTRACT_PASS', child_seconds=retry['child_elapsed_seconds'], parent_seconds=retry['parent_elapsed_seconds'],
++                counters=retry['counts'], rss_peak_sampled=retry['watchdog']['rss_peak_sampled'],
++                commitment_peak_sampled=retry['watchdog']['commitment_peak_sampled'], gpu=retry['watchdog']['gpu']),
++    cumulative=dict(scientific_processes=2, child_seconds=old['elapsed_seconds']+retry['child_elapsed_seconds'],
++                    parent_seconds=old_res['elapsed_seconds']+retry['parent_elapsed_seconds'], fits=230, predicts=232, loads=4,
++                    memory_peaks_added=False, full_path_estimate=False))
++save(HERE / 'resources.json', resources)
++for mode in ('reference','candidate'):
++    save(HERE / mode / 'result.json', dict(record_kind='closeout_not_runner_output', outcome='NOT_RUN', scientific_invocations=0,
++         reason='First input generation failed before scientific freeze; reference gate never opened'))
++    save(HERE / mode / 'resources.json', dict(record_kind='closeout_not_watchdog_output', outcome='NOT_RUN', started=False,
++         elapsed_seconds=0, rss_peak=None, commitment_peak=None, cuda_peak=None, model_calls=0))
++save(HERE / 'frozen-inputs/state.json', dict(state='NOT_REACHED', scientific_manifest_created=False,
++     reason='Input generation failed; source-manifest.json is post-failure evidence only', registered_before_generation=True))
++save(HERE / 'result.json', dict(outcome='LOCAL_FULL_PATH_FAIL', stage='input_generation_unicef_layout', error="KeyError: 'gated_value'",
++     scientific_invocations=0, reference='NOT_RUN', candidate='NOT_RUN', model_free='PASS_MODEL_FREE_ONLY',
++     fixture_generation_invocations=1, generated_inputs=0, generated_outputs=0, roles_created=True,
++     post_failure_scientific_source_edits=False, retry=False, s2_candidate=False, next_owner='S0', evidence='generation-failure.txt'))
++save(HERE / 'dependency-identity.json', dict(pins=pins, package_imports_for_check=0, method='importlib.metadata versions only'))
++save(HERE / 'source-manifest.json', dict(kind='POST_FAILURE_EVIDENCE_NOT_SCIENTIFIC_FREEZE', recorded_utc=now.isoformat(),
++     head=head, files=[row(p) for p in sorted(HERE.glob('*.py'))] + [row(HERE / n) for n in
++       ('registration.md','plan.md','requirements.lock.txt','entry.json','roles.json','model-free-result.json')]
++       + [row(ROOT / 'submissions/2026-09-19-E041/main.py')] + [row(ROOT / s['path']) for s in schemas],
++     schemas=schemas, reused_source_and_checkpoint=[c for c in checks if c['path'].startswith('tmp/')],
++     role_counts={k:len(roles[k]) for k in ('fit','selection','evaluation','external')},
++     role_sha256=digest(HERE / 'roles.json'), fake_input_files=[], fake_data_hashes=None,
++     source_diff_sha256=digest(HERE / 'source.diff'), adapter_byte_identity=adapter_same))
++save(HERE / 'verification.json', dict(outcome='LOCAL_FULL_PATH_FAIL', metadata_record_checks='PASS', head=head,
++     workflow_revision=entry['workflow_revision'], workflow_sha256=entry['workflow_sha256'],
++     read_evidence=entry['read_evidence']+['eca2fd source/contract/policy', '073bd7 required records and setup',
++      'fff6ce actual raw schema key diagnosis; no invocation', '5121eb closeout process check'],
++     protected_and_reused_checks=checks, protected_count=len(entry['protected']), reused_count=len(entry['reused_input_checks']),
++     pins_matched=len(pins), adapter_unchanged=True, parsed_new_python_files=parsed,
++     static_parse_not_execution_validation=True, original_failure_and_retry_preserved=True,
++     full_fake_input_files=0, scientific_latches=0, model_imports=0, fits=0, predicts=0, scores=0, checkpoint_deserializations=0,
++     model_free_pass_not_schema_or_full_path_pass=True, scientific_freeze_reached=False,
++     source_or_model_repair_after_failure=False, full_runtime_memory_parity_unverified=True,
++     new_role_positions_only=True, real_data_or_old_fixtures_read=False,
++     releases_commits_pushes_agents_installs_downloads=0, s0_review_required=True,
++     residual_obligations=['public runtime schema entry contract','actual E041 all3','full-context shadow and final expert',
++         'S/E freeze and guard with actual models','exact control/inactive/empty parity','forced-active full output',
++         'whole runtime/RSS/private commitment/CUDA peaks','H100/hosted900s','native network protection','release gates','efficacy']))
++print(json.dumps(dict(outcome='LOCAL_FULL_PATH_FAIL', protected=len(entry['protected']), reused=len(entry['reused_input_checks']),
++                     pins=len(pins), scientific_runs=0, task_wall_seconds=resources['task_wall_seconds_at_record'])))
+--- /dev/null
++++ runner.py
+@@ -0,0 +1,225 @@
++"""One reference or candidate process; launched only by watchdog.py."""
++import argparse
++import hashlib
++import importlib.util
++import io
++import json
++import os
++from pathlib import Path
++import sys
++import time
++import traceback
++
++START=time.perf_counter()
++HERE=Path(__file__).resolve().parent
++ROOT=HERE.parents[3]
++TEMP=ROOT/'tmp/a040-full-path-local'
++SOURCE=ROOT/'tmp/a040-local-technical/source/tabicl-0dbff3ec8fc68c123c87af77b0ea8b25cd2d23f3/src'
++CHECKPOINT=ROOT/'tmp/a040-local-technical/acquisition/tabicl-classifier-v2-20260212.ckpt'
++sys.path[:0]=[str(HERE),str(SOURCE)]
++from telemetry import EventLog
++PARSER=argparse.ArgumentParser();PARSER.add_argument('mode',choices=['reference','candidate'])
++MODE=PARSER.parse_args().mode
++OUT=HERE/MODE
++LOG=EventLog((OUT/'events.jsonl').open('x',encoding='utf-8'))
++COUNTS=dict(checkpoint_loads=0,expert_fit=0,expert_predict=0,expert_empty=0,expert_singleton=0)
++NETWORK=dict(deliberate_blocks=0,package_attempts=0,subprocess_attempts=0)
++EXPERT_STAGES=[]
++
++
++def save(name,value):
++    (OUT/name).write_text(json.dumps(value,indent=2),encoding='utf-8')
++
++
++def state_hash(model):
++    digest=hashlib.sha256()
++    for name,value in model.state_dict().items():
++        digest.update(name.encode());digest.update(value.detach().cpu().contiguous().numpy().tobytes())
++    return digest.hexdigest()
++
++
++def main():
++    import psutil
++    current=psutil.Process();current.cpu_affinity(current.cpu_affinity()[:2])
++    for name in ('OMP_NUM_THREADS','MKL_NUM_THREADS','OPENBLAS_NUM_THREADS','NUMEXPR_NUM_THREADS'):os.environ[name]='2'
++    os.environ.update(HF_HUB_OFFLINE='1',TRANSFORMERS_OFFLINE='1',HF_HOME=str(TEMP/'hf-offline'),A040_CHECKPOINT=str(CHECKPOINT))
++    deliberate=[True]
++    def audit(name,args):
++        if name in ('socket.connect','socket.getaddrinfo','socket.sendto'):
++            NETWORK['deliberate_blocks' if deliberate[0] else 'package_attempts']+=1
++            raise PermissionError('A040 runtime network denied')
++        if name in ('subprocess.Popen','os.system','os.posix_spawn'):
++            NETWORK['subprocess_attempts']+=1
++            raise PermissionError('A040 runtime subprocess denied')
++    sys.addaudithook(audit)
++    import socket
++    with socket.socket() as probe:
++        try:probe.connect(('127.0.0.1',9))
++        except PermissionError:pass
++        else:raise AssertionError('Network guard failed')
++    deliberate[0]=False
++    manifest=json.loads((HERE/'frozen-inputs/manifest.json').read_text(encoding='utf-8-sig'))
++    for row in manifest['files']:
++        if hashlib.sha256((ROOT/row['path']).read_bytes()).hexdigest()!=row['sha256']:raise AssertionError('Frozen input changed: '+row['path'])
++    LOG.emit('manifest_verified',files=len(manifest['files']),mode=MODE)
++    import numpy as np
++    import pandas as pd
++    import torch
++    global TORCH
++    TORCH=torch
++    torch.set_num_threads(2);torch.set_num_interop_threads(2)
++    if not torch.cuda.is_available():raise RuntimeError('Required local CUDA unavailable')
++    if '3070' not in torch.cuda.get_device_name(0):raise RuntimeError('Unexpected GPU')
++    torch.cuda.reset_peak_memory_stats()
++    LOG.emit('runtime',torch=torch.__version__,cuda=torch.version.cuda,device=torch.cuda.get_device_name(0),affinity=current.cpu_affinity())
++    from orchestration import FullPathPredictor,RolePlan,layout,restore,fingerprint
++    from observer import E041Observer
++    source=ROOT/'submissions/2026-09-19-E041/main.py'
++    spec=importlib.util.spec_from_file_location('e041',source)
++    e041=importlib.util.module_from_spec(spec);sys.modules['e041']=e041;spec.loader.exec_module(e041)
++    adapter=None;before_state=None
++    if MODE=='candidate':
++        original_load=torch.load
++        def observed_load(path,*args,**kwargs):
++            if Path(path).resolve()!=CHECKPOINT.resolve():raise PermissionError('Unexpected model file')
++            if hashlib.sha256(CHECKPOINT.read_bytes()).hexdigest()!='bdc7dbd5e4ff21f8f0456fcf90c6b7cdf72dbea960f2d05b19bec19f9b3d4ed0':raise AssertionError('Checkpoint bytes changed')
++            COUNTS['checkpoint_loads']+=1
++            start=time.perf_counter();value=original_load(path,*args,**kwargs)
++            LOG.emit('checkpoint_load',count=COUNTS['checkpoint_loads'],seconds=time.perf_counter()-start)
++            return value
++        torch.load=observed_load
++        import adapter
++        before_state=state_hash(adapter.SHARED_MODEL)
++        if COUNTS['checkpoint_loads']!=1:raise AssertionError('Import-time load contract')
++        LOG.emit('candidate_import_complete',checkpoint_loads=1,state_sha256=before_state,
++                 gpu_allocated_peak=torch.cuda.max_memory_allocated(),gpu_reserved_peak=torch.cuda.max_memory_reserved())
++    reference=None
++    if MODE=='candidate':
++        ref_result=json.loads((HERE/'reference/result.json').read_text())
++        if ref_result['outcome']!='REFERENCE_PASS':raise PermissionError('Reference did not pass')
++        reference={}
++        for name in ('unicef','world_bank','unhcr'):
++            path=TEMP/'reference'/(name+'.json')
++            if hashlib.sha256(path.read_bytes()).hexdigest()!=ref_result['output_hashes'][name]:raise AssertionError('Reference output changed')
++            reference[name]=json.loads(path.read_text())
++        LOG.emit('new_reference_read',instruments=3,old_predictions_read=False)
++    observer=E041Observer(e041,LOG,reference)
++    global OBSERVER
++    OBSERVER=observer
++    expert_scope={}
++    if MODE=='candidate':
++        original_fit=adapter.SharedClassifier.fit
++        original_predict=adapter.SharedClassifier.predict_proba
++        def observed_fit(self,X,y,*args,**kwargs):
++            view=expert_scope['view']
++            if list(X.index)!=view.fit_rows or list(X.columns)!=view.given:raise PermissionError('Expert fit role/feature mismatch')
++            expected=view.shadow.loc[view.fit_rows,expert_scope['head']].map({v:i for i,v in enumerate(view.options[expert_scope['head']])}).to_numpy(dtype=int)
++            if not np.array_equal(y,expected):raise PermissionError('Expert target isolation failed')
++            COUNTS['expert_fit']+=1
++            start=time.perf_counter();value=original_fit(self,X,y,*args,**kwargs);torch.cuda.synchronize()
++            LOG.emit('expert_fit_end',stage=expert_scope['stage'],head_name=expert_scope['head'],seconds=time.perf_counter()-start,fit_rows=len(X),
++                     gpu_allocated_peak=torch.cuda.max_memory_allocated(),gpu_reserved_peak=torch.cuda.max_memory_reserved())
++            return value
++        def observed_predict(self,X,*args,**kwargs):
++            view=expert_scope['view']
++            if list(X.index)!=view.query_rows or list(X.columns)!=view.given:raise PermissionError('Expert query boundary')
++            COUNTS['expert_predict']+=1
++            start=time.perf_counter();value=original_predict(self,X,*args,**kwargs);torch.cuda.synchronize()
++            LOG.emit('expert_predict_end',stage=expert_scope['stage'],head_name=expert_scope['head'],seconds=time.perf_counter()-start,query_rows=len(X),
++                     gpu_allocated_peak=torch.cuda.max_memory_allocated(),gpu_reserved_peak=torch.cuda.max_memory_reserved())
++            return value
++        adapter.SharedClassifier.fit=observed_fit
++        adapter.SharedClassifier.predict_proba=observed_predict
++
++    def expert(view,stage):
++        start=time.perf_counter();values={};previous=None
++        expected=(6279,2000) if stage=='expert_shadow' else (8279,621)
++        if (len(view.fit_rows),len(view.query_rows))!=expected:raise AssertionError('Expert context shape changed')
++        LOG.emit('expert_stage_start',stage=stage,fit_rows=expected[0],query_rows=expected[1],heads=len(view.heads))
++        for head in view.heads:
++            expert_scope.update(view=view,stage=stage,head=head)
++            X,y=view.fit_input(head)
++            if len(np.unique(y))!=len(view.options[head]):raise AssertionError('Fixture class coverage changed')
++            del X,y
++            LOG.emit('expert_head_start',stage=stage,head_name=head,classes=len(view.options[head]))
++            estimator,p=adapter.predict_head(view,head)
++            if estimator is None:raise AssertionError('Unexpected singleton/empty fixture head')
++            if estimator.model_ is not adapter.SHARED_MODEL or estimator.model_kv_cache_ is not None:raise AssertionError('Shared weight/cache contract')
++            if previous is not None and (previous.X_encoder_ is estimator.X_encoder_ or previous.ensemble_generator_ is estimator.ensemble_generator_):raise AssertionError('Head context objects shared')
++            if p.shape!=(len(view.query_rows),len(view.options[head])) or not np.isfinite(p).all() or (p<0).any() or not np.allclose(p.sum(axis=1),1,rtol=0,atol=1e-6):raise AssertionError('Invalid expert probabilities')
++            values[head]=p;previous=estimator
++        del previous
++        expert_scope.clear()
++        stage_record=dict(stage=stage,heads=len(values),fit_rows=expected[0],query_rows=expected[1],seconds=time.perf_counter()-start)
++        EXPERT_STAGES.append(stage_record);LOG.emit('expert_stage_end',**stage_record)
++        return values
++
++    predictor=FullPathPredictor(observer,expert,adapter,LOG) if MODE=='candidate' else None
++    fixture=json.loads((HERE/'fixture-manifest.json').read_text())
++    role_json=json.loads((HERE/'roles.json').read_text())
++    plan=RolePlan(*(tuple(role_json[k]) for k in ('fit','selection','evaluation','external')))
++    output_hashes={};output_counts={};decision=None
++    for row in fixture['inputs']:
++        name=row['instrument'];observer.instrument=name
++        payload=json.loads((ROOT/row['path']).read_text(encoding='utf-8'))
++        frame=pd.DataFrame(payload['data'],columns=payload['columns'],index=payload['index'],dtype=object)
++        frame=frame.where(frame.notna(),np.nan)
++        del payload
++        schema=json.loads((ROOT/row['schema_path']).read_text(encoding='utf-8-sig'))
++        given,heads,options=layout(schema)
++        if list(frame.index)!=list(range(row['visible']+row['query'])):raise AssertionError('Original row positions lost')
++        if not frame.iloc[row['visible']:][heads].isna().all().all():raise PermissionError('External query truth present')
++        before=fingerprint(frame)
++        LOG.emit('instrument_start',instrument=name,visible=row['visible'],query=row['query'])
++        if MODE=='reference':
++            output=observer(frame,schema,'reference',range(row['visible']))
++        else:
++            output=predictor.predict(frame,schema,plan if name=='unhcr' else None)
++        restore(output,heads,range(row['visible'],len(frame)),options)
++        if len(output)!=row['vectors']:raise AssertionError('Full canonical vector count')
++        path=TEMP/MODE/(name+'.json')
++        with path.open('x',encoding='utf-8') as stream:json.dump([list(map(float,v)) for v in output],stream,separators=(',',':'))
++        output_hashes[name]=hashlib.sha256(path.read_bytes()).hexdigest();output_counts[name]=len(output)
++        if MODE=='candidate' and name=='unhcr':
++            engineering=predictor.engineering_active()
++            restore(engineering,heads,range(row['visible'],len(frame)),options)
++            inactive=predictor.render_final(0);fallback=predictor.render_final(.25,empty=True)
++            if inactive is not predictor.last['raw'] or fallback is not predictor.last['raw']:raise AssertionError('Inactive/fallback identity changed')
++            if not all(np.array_equal(np.asarray(a),np.asarray(b)) for a,b in zip(inactive,reference[name])):raise AssertionError('Inactive exact parity')
++            for label,vectors in [('unhcr-engineering-alpha025',engineering),('unhcr-final-e041',inactive)]:
++                path=TEMP/MODE/(label+'.json')
++                with path.open('x',encoding='utf-8') as stream:json.dump([list(map(float,v)) for v in vectors],stream,separators=(',',':'))
++                output_hashes[label]=hashlib.sha256(path.read_bytes()).hexdigest()
++            decision={k:predictor.last[k] for k in ('alpha','accepted','lower')}
++            LOG.emit('branch_parity',inactive_exact=True,empty_fallback_exact=True,engineering_alpha=.25,natural_decision=decision)
++        if fingerprint(frame)!=before:raise AssertionError('Caller input mutated')
++        LOG.emit('instrument_end',instrument=name,vectors=len(output))
++    if sum(output_counts.values())!=189649:raise AssertionError('Wrong all3 count')
++    if NETWORK!=dict(deliberate_blocks=1,package_attempts=0,subprocess_attempts=0):raise AssertionError('Runtime network attempt')
++    if MODE=='candidate':
++        if state_hash(adapter.SHARED_MODEL)!=before_state:raise AssertionError('Frozen model state changed')
++        if COUNTS['checkpoint_loads']!=1 or COUNTS['expert_fit']!=426 or COUNTS['expert_predict']!=426:raise AssertionError('Full expert call counts')
++        if adapter.COUNTS!=dict(adapter_injections=426,singleton=0,empty=0):raise AssertionError('Unexpected expert fallback/injection counts')
++        if observer.counts['pipeline']!=4:raise AssertionError('Candidate pipeline count')
++    elif observer.counts['pipeline']!=3:raise AssertionError('Reference pipeline count')
++    return dict(output_hashes=output_hashes,output_counts=output_counts,natural_decision=decision,
++                frozen_state_sha256=before_state,full_path_completed=True,actual_effect_evidence=False)
++
++
++if __name__=='__main__':
++    result=dict(outcome='LOCAL_FULL_PATH_FAIL',mode=MODE)
++    code=1
++    try:
++        result.update(main());result['outcome']='REFERENCE_PASS' if MODE=='reference' else 'LOCAL_FULL_PATH_PASS';code=0
++    except BaseException as exc:
++        result.update(error=repr(exc),traceback=traceback.format_exc())
++        if 'out of memory' in str(exc).lower():result['outcome']='LOCAL_RESOURCE_LIMIT'
++        if isinstance(exc,ModuleNotFoundError) or 'CUDA unavailable' in str(exc):result['outcome']='BLOCKED_RESOURCE'
++        LOG.emit('failure',error=repr(exc),outcome=result['outcome'])
++    finally:
++        result.update(elapsed_seconds=time.perf_counter()-START,counts=COUNTS,network=NETWORK,expert_stages=EXPERT_STAGES)
++        if 'OBSERVER' in globals():result['e041']=OBSERVER.summary()
++        if 'TORCH' in globals() and TORCH.cuda.is_initialized():
++            result['gpu']=dict(allocated_peak=TORCH.cuda.max_memory_allocated(),reserved_peak=TORCH.cuda.max_memory_reserved(),device_capacity=TORCH.cuda.get_device_properties(0).total_memory)
++        save('result.json',result);LOG.sink.close()
++    sys.exit(code)
+--- /dev/null
++++ telemetry.py
+@@ -0,0 +1,13 @@
++"""Small JSONL logger; no scientific dependencies."""
++import json
++import time
++
++
++class EventLog:
++    def __init__(self, sink):
++        self.sink = sink
++        self.start = time.perf_counter()
++
++    def emit(self, event_name, **details):
++        self.sink.write(json.dumps(dict(event=event_name, elapsed=time.perf_counter()-self.start, **details))+'\n')
++        self.sink.flush()
+--- /dev/null
++++ tests_model_free.py
+@@ -0,0 +1,148 @@
++"""New orchestration spies only; no scientific model imports or fits."""
++import ast
++import inspect
++import io
++import json
++import os
++from pathlib import Path
++import sys
++import time
++import threading
++
++START = time.perf_counter()
++HERE = Path(__file__).resolve().parent
++sys.path.insert(0, str(HERE))
++
++
++def main():
++    for name in ('OMP_NUM_THREADS','MKL_NUM_THREADS','OPENBLAS_NUM_THREADS','NUMEXPR_NUM_THREADS'):
++        os.environ[name]='2'
++    import numpy as np
++    import pandas as pd
++    import orchestration as o
++    from telemetry import EventLog
++    sink = io.StringIO()
++    log = EventLog(sink)
++    log.emit('probe', head_name='head', classes=15)
++    assert json.loads(sink.getvalue())['head_name'] == 'head'
++    sites = 0
++    for path in HERE.glob('*.py'):
++        if path.name == Path(__file__).name:
++            continue
++        tree=ast.parse(path.read_text(encoding='utf-8-sig'))
++        expansions={}
++        for assignment in ast.walk(tree):
++            if not isinstance(assignment,ast.Assign):continue
++            for target in assignment.targets:
++                if isinstance(target,ast.Name):
++                    value=assignment.value
++                    if isinstance(value,ast.Dict):
++                        expansions.setdefault(target.id,set()).update(k.value for k in value.keys if isinstance(k,ast.Constant))
++                    elif isinstance(value,ast.Call) and isinstance(value.func,ast.Name) and value.func.id=='dict':
++                        expansions.setdefault(target.id,set()).update(k.arg for k in value.keywords if k.arg is not None)
++                elif isinstance(target,ast.Subscript) and isinstance(target.value,ast.Name) and isinstance(target.slice,ast.Constant):
++                    expansions.setdefault(target.value.id,set()).add(target.slice.value)
++        for node in ast.walk(tree):
++            if isinstance(node, ast.Call) and isinstance(node.func, ast.Attribute) and node.func.attr == 'emit':
++                keywords={k.arg:None for k in node.keywords if k.arg is not None}
++                for k in node.keywords:
++                    if k.arg is None:
++                        assert isinstance(k.value,ast.Name) and k.value.id in expansions
++                        for key in expansions[k.value.id]:
++                            assert key not in keywords
++                            keywords[key]=None
++                assert not {'event','elapsed'} & set(keywords)
++                inspect.signature(log.emit).bind(*[None for _ in node.args], **keywords)
++                sites += 1
++    schema = {'gated_value': 'NA_GATED', 'items': {
++        'g': {'class': 'GIVEN', 'values': ['a', 'b']},
++        's3_11_intent_return_12m_lbl': {'class': 'PREDICT', 'values': ['n', 'y']},
++        'h': {'class': 'PREDICT', 'values': ['n', 'y']}}}
++    heads = list(schema['items'])[1:]
++    frame = pd.DataFrame({'g': ['a', 'b']*5,
++                          heads[0]: ['n', 'y']*4+[np.nan]*2,
++                          heads[1]: ['y', 'n']*4+[np.nan]*2})
++    plan = o.RolePlan((0,1,2,3), (4,5), (6,7), (8,9))
++    traces = []
++    for accepted in (False, True):
++        calls = []
++        class Math:
++            @staticmethod
++            def select_alpha(p, q, truth):
++                calls.append('S')
++                assert list(truth[heads[0]]) == [0, 1]
++                return .5
++            @staticmethod
++            def independent_check(p, q, truth, alpha):
++                calls.append('E')
++                assert alpha == .5 and list(truth[heads[1]]) == [1, 0]
++                return accepted, 0.1 if accepted else -0.1
++            @staticmethod
++            def mix(p, q, alpha):
++                return p if alpha == 0 else (1-alpha)*p + alpha*q
++        raw_by_stage = {}
++        def base(f, s, stage, fit_rows):
++            calls.append(stage)
++            assert set(f.index[f[heads].notna().all(axis=1)]) == set(fit_rows)
++            outside = sorted(set(f.index)-set(fit_rows))
++            assert f.loc[outside, heads].isna().all().all()
++            values = [[.2+row*.01, .8-row*.01] for row in outside for _ in heads]
++            raw_by_stage[stage] = values
++            return values
++        def expert(view, stage):
++            calls.append(stage)
++            assert view.query_rows == ([4,5,6,7] if stage == 'expert_shadow' else [8,9])
++            for head in heads:
++                X, y = view.fit_input(head)
++                assert list(X.index) == list(view.fit_rows) and list(X.columns) == ['g']
++                assert len(y) == (4 if stage == 'expert_shadow' else 8)
++            return {h: np.tile([.4,.6], (len(view.query_rows),1)) for h in heads}
++        predictor = o.FullPathPredictor(base, expert, Math, log)
++        saved = frame.copy(deep=True)
++        natural = predictor.predict(frame, schema, plan)
++        assert frame.equals(saved)
++        assert calls[:4] == ['unhcr_shadow','expert_shadow','S','E']
++        assert calls[4] == 'unhcr_final'
++        assert calls.count('expert_final') == int(accepted)
++        if not accepted:
++            assert natural is raw_by_stage['unhcr_final']
++        engineering = predictor.engineering_active()
++        assert calls.count('expert_final') == 1 and len(engineering) == 4
++        assert predictor.render_final(0) is raw_by_stage['unhcr_final']
++        assert predictor.render_final(.25, empty=True) is raw_by_stage['unhcr_final']
++        predictor.engineering_active()
++        assert calls.count('expert_final') == 1
++        assert predictor.last['alpha'] == .5 and predictor.last['accepted'] == accepted
++        traces.append({'accepted':accepted,'calls':calls})
++    sealed = o.SealedRoles(frame,schema,plan)
++    try:
++        sealed.evaluation()
++    except PermissionError:
++        pass
++    else:
++        raise AssertionError('Early E access allowed')
++    bad = sealed.shadow.copy();bad.loc[4,heads[0]]='n'
++    try:
++        o.FitView(bad,schema,plan.fit,plan.selection+plan.evaluation)
++    except PermissionError:
++        pass
++    else:
++        raise AssertionError('Unmasked held target allowed')
++    controls = {'gated_value':'NA_GATED','items':{'g':schema['items']['g'],'h':schema['items']['h']}}
++    marker = [[.4,.6],[.6,.4]]
++    control = o.FullPathPredictor(lambda *args:marker, lambda *args: (_ for _ in ()).throw(AssertionError('Control expert')), Math, log)
++    assert control.predict(frame[['g','h']],controls) is marker
++    assert o.restore([[.1,.9],[.2,.8],[.3,.7],[.4,.6]],heads,[4,6],{h:['n','y'] for h in heads})[heads[1]].tolist()==[[.2,.8],[.4,.6]]
++    assert not any(n in sys.modules for n in ('torch','tabicl','adapter','runner','e041'))
++    return {'outcome':'PASS_MODEL_FREE_ONLY','traces':traces,'logger_sites':sites,'scientific_fits':0,'model_imports':0}
++
++
++if __name__ == '__main__':
++    timer=threading.Timer(60,lambda:os._exit(2));timer.daemon=True;timer.start()
++    result = main()
++    result['elapsed_seconds'] = time.perf_counter()-START
++    assert result['elapsed_seconds'] < 60
++    with (HERE/'model-free-result.json').open('x',encoding='utf-8') as stream:
++        json.dump(result,stream,indent=2)
++    timer.cancel()
++    print(json.dumps(result))
+--- /dev/null
++++ watchdog.py
+@@ -0,0 +1,105 @@
++"""Sequential per-mode900s watchdog; one exclusive latch per scientific mode."""
++import argparse
++import ctypes
++from datetime import datetime,timezone
++import json
++from pathlib import Path
++import subprocess
++import sys
++import time
++
++import psutil
++
++HERE=Path(__file__).resolve().parent
++ROOT=HERE.parents[3]
++CAP=16_000_000_000
++DEADLINE=datetime(2026,10,2,8,11,30,tzinfo=timezone.utc)
++PARSER=argparse.ArgumentParser();PARSER.add_argument('mode',choices=['reference','candidate'])
++MODE=PARSER.parse_args().mode
++OUT=HERE/MODE
++
++
++class MemoryStatus(ctypes.Structure):
++    _fields_=[('length',ctypes.c_ulong),('load',ctypes.c_ulong)]+[(n,ctypes.c_ulonglong) for n in
++        ('total_phys','avail_phys','total_page','avail_page','total_virtual','avail_virtual','extended')]
++
++
++def save(value):
++    (OUT/'resources.json').write_text(json.dumps(value,indent=2),encoding='utf-8')
++
++
++def main():
++    if (OUT/'scientific-started.json').exists():raise PermissionError('Scientific mode already invoked')
++    regression=json.loads((HERE/'model-free-result.json').read_text())
++    if regression['outcome']!='PASS_MODEL_FREE_ONLY':raise PermissionError('Model-free checks failed')
++    prior_seconds=0
++    if MODE=='candidate':
++        ref=json.loads((HERE/'reference/resources.json').read_text())
++        if ref['outcome']!='REFERENCE_PASS' or ref['child_exit']!=0:raise PermissionError('Reference gate failed')
++        prior_seconds=ref['elapsed_seconds']
++    mem=MemoryStatus();mem.length=ctypes.sizeof(mem)
++    if not ctypes.windll.kernel32.GlobalMemoryStatusEx(ctypes.byref(mem)):
++        save(dict(outcome='BLOCKED_RESOURCE',started=False,reason='Host memory measurement unavailable'));return 2
++    available=dict(physical=mem.avail_phys,commitment=mem.avail_page)
++    if min(available.values())<CAP:
++        save(dict(outcome='BLOCKED_RESOURCE',started=False,available=available));return 2
++    minimum=1900 if MODE=='reference' else 950
++    if (DEADLINE-datetime.now(timezone.utc)).total_seconds()<minimum:
++        save(dict(outcome='INCOMPLETE',started=False,reason='Not enough original task time'));return 2
++    cap=min(900,1800-prior_seconds)
++    controller=psutil.Process();affinity=controller.cpu_affinity()[:2];controller.cpu_affinity(affinity)
++    with (OUT/'scientific-started.json').open('x',encoding='utf-8') as stream:
++        json.dump(dict(mode=MODE,start_utc=datetime.now(timezone.utc).isoformat(),invocations=1,
++                       seconds_cap=cap,host_cap=CAP,affinity=affinity),stream)
++    start=time.perf_counter();reason=None;samples=[]
++    with (OUT/'stdout.txt').open('xb') as stdout,(OUT/'stderr.txt').open('xb') as stderr:
++        child=subprocess.Popen([sys.executable,'-I','-B','-u',str(HERE/'runner.py'),MODE],
++                               cwd=ROOT,stdout=stdout,stderr=stderr,creationflags=subprocess.CREATE_NO_WINDOW)
++        try:
++            while child.poll() is None:
++                elapsed=time.perf_counter()-start;rss=commitment=0
++                processes=[controller]+controller.children(recursive=True)
++                for process in processes:
++                    try:
++                        process.cpu_affinity(affinity);info=process.memory_info();rss+=info.rss;commitment+=info.private
++                    except psutil.NoSuchProcess:continue
++                sample=dict(elapsed=elapsed,rss=rss,commitment=commitment,pids=[p.pid for p in processes])
++                samples.append(sample)
++                with (OUT/'resource-samples.jsonl').open('a',encoding='utf-8') as stream:stream.write(json.dumps(sample)+'\n')
++                if elapsed>=cap:reason='Scientific process time cap';break
++                if max(rss,commitment)>CAP:reason='Host resource cap';break
++                time.sleep(min(1,max(.001,cap-(time.perf_counter()-start))))
++        except BaseException as exc:reason='Controller/measurement error: '+repr(exc)
++        finally:
++            if reason:
++                for process in reversed(controller.children(recursive=True)):
++                    try:process.kill()
++                    except psutil.NoSuchProcess:pass
++            child.wait(timeout=10)
++    elapsed=time.perf_counter()-start
++    result=json.loads((OUT/'result.json').read_text()) if (OUT/'result.json').exists() else {}
++    outcome=result.get('outcome','INCOMPLETE')
++    if reason:outcome='LOCAL_RESOURCE_LIMIT' if 'cap' in reason else 'INCOMPLETE'
++    events=[]
++    if (OUT/'events.jsonl').exists():
++        for line in (OUT/'events.jsonl').read_text().splitlines():
++            try:events.append(json.loads(line))
++            except json.JSONDecodeError:pass
++    gpu=result.get('gpu')
++    if gpu is None:
++        known=[e for e in events if 'gpu_allocated_peak' in e]
++        gpu={'allocated_peak_lower_bound':max((e['gpu_allocated_peak'] for e in known),default=None),
++             'reserved_peak_lower_bound':max((e['gpu_reserved_peak'] for e in known),default=None),
++             'complete_peak_measured':False}
++    record=dict(mode=MODE,outcome=outcome,reason=reason,child_exit=child.returncode,
++                elapsed_seconds=elapsed,prior_process_seconds=prior_seconds,cumulative_parent_seconds=prior_seconds+elapsed,
++                samples=len(samples),sampling_seconds=1,rss_peak_sampled=max((s['rss'] for s in samples),default=0),
++                commitment_peak_sampled=max((s['commitment'] for s in samples),default=0),includes_controller=True,
++                available_before=available,host_cap=CAP,gpu=gpu,last_event=events[-1] if events else None,
++                remaining_children=[p.pid for p in controller.children(recursive=True)])
++    save(record)
++    print(json.dumps(dict(mode=MODE,outcome=outcome,seconds=elapsed,reason=reason)))
++    return 0 if outcome in ('REFERENCE_PASS','LOCAL_FULL_PATH_PASS') else 1
++
++
++if __name__=='__main__':sys.exit(main())

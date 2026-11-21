@@ -1,0 +1,17 @@
+{
+  "scope": "LOCAL_PROTOCOL_FIXTURE",
+  "termination": "TERMINAL_TASK0_CONFIRMED",
+  "errors": [],
+  "observations": [
+    {
+      "state": 5,
+      "tasks": 0,
+      "confirmed": true
+    }
+  ],
+  "billing_final": {
+    "metered": "0.01009897",
+    "billed": "0"
+  },
+  "elapsed_seconds": 0.002914999997301493
+}

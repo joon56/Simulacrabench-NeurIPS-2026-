@@ -1,0 +1,23 @@
+{
+    "decision":  "LOCAL_TECHNICAL_PASS_FOR_S0",
+    "status":  "parked",
+    "finished_utc":  "2026-10-09T13:53:46.6657348Z",
+    "entry_utc":  "2026-10-09T13:10:30Z",
+    "gross_seconds":  2596.6657348,
+    "head":  "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+    "dirty_count":  109,
+    "new_artifacts":  89,
+    "manifest_sha256":  "5dcee0cbeaaae2fa4ee5bae8feaf75b623ffaf0c25aef8656d757e3af5665776",
+    "verification_sha256":  "fc30eeb8110bbbcdd4e98a9479f07fc66c3d0ad9e21932255942a3d2313cb2e0",
+    "json_errors":  [
+
+                    ],
+    "named_local_jobs":  [
+
+                         ],
+    "scientific_processes":  2,
+    "computational_stage_seconds":  754.55169910000041,
+    "return_to":  "S0",
+    "automatic_follow_on":  false,
+    "commit_push_zip_remote":  0
+}

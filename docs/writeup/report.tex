@@ -1,0 +1,365 @@
+%% SimulacraBench Technical Report -- team Odyssey
+%% Built on the organizers' template (section skeleton and order kept).
+%% Compile with neurips_2026.sty (https://neurips.cc/Conferences/2026/PaperInformation/StyleFiles).
+%% All fields are filled (2026-11-18); \todo{...} is unused.
+
+\documentclass{article}
+%% The official 2026 style defines its footer only when a track option is given; [final] alone
+%% (as in the organizers' template) stops with an undefined control sequence.
+\usepackage[main, final]{neurips_2026}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{booktabs}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{nicefrac}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{enumitem}
+
+\newcommand{\teamid}{Odyssey}
+\newcommand{\todo}[1]{\textcolor{red}{#1}}
+\newcommand{\cbox}{$\square$}
+\newcommand{\cboxchecked}{$\boxtimes$}
+
+\title{SimulacraBench Technical Report:\\ Donor-Retrieval Survey Completion with Additions Validated Inside the Run}
+
+\author{%
+  Minjoon Yoo\\
+  Yonsei University\\
+  \texttt{parcival56@yonsei.ac.kr}
+  %% \And further authors, if any (every author needs an OpenReview profile)
+}
+
+\begin{document}
+
+\maketitle
+
+\begin{center}
+\begin{tabular}{l}
+\toprule
+\textbf{Team ID:} \teamid \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\begin{abstract}
+  Held-out respondents are completed from their GIVEN block by a calibrated base predictor and additions that are admitted only by the validation run inside the submission. The base predictor uses hierarchical backoff tables, a shared-trunk network with a softmax head per item, soft coupling to the declared skip logic, and donor evidence (the answers of the most similar visible respondents under Fellegi-Sunter agreement weights, sharpened on UNHCR by section-specific metrics learned from the visible rows). On top of the base predictor, each instrument may receive one transform chain built from one or more of these parts: a log-linear pool with gradient-boosted tree experts or a pretrained in-context tabular model (TabICL v2), a copy share for exact matches, and a reliability calibration. The chain is fitted on 1,000 respondents hidden inside the run and applied only if 1,000 further hidden respondents confirm it. The test-phase skill is 0.479 (UNICEF 0.343, World Bank 0.234, UNHCR 0.860). In development, 24 variants never read above the base by one display step, so we claim nothing about the size of the additions' contribution.
+\end{abstract}
+
+%% ---------------------------------------------------------------------------
+\section{Method summary}
+\label{sec:method}
+
+\subsection{Method type}
+
+\begin{table}[h]
+  \centering
+  \small
+  \resizebox{\linewidth}{!}{%
+  \begin{tabular}{@{}clcl@{}}
+    \toprule
+    \cbox & LLM-simulated respondents (prompting, personas) & \cbox & Fine-tuned language model \\
+    \cbox & Tabular / conditional generative model & \cboxchecked & Supervised prediction (GBDT, neural net, linear/GLM) \\
+    \cboxchecked & Bayesian / hierarchical / multilevel model & \cbox & Small-area estimation or post-stratification \\
+    \cbox & Reweighting, raking, or calibration of the released sample & \cboxchecked & Imputation / matching / nearest-neighbour \\
+    \cboxchecked & Retrieval over released or external microdata & \cbox & Agent-based or mechanistic simulation \\
+    \cboxchecked & Ensemble or stacking of multiple components & \cboxchecked & Other: pretrained in-context tabular model \\
+    \bottomrule
+  \end{tabular}}
+\end{table}
+
+\subsection{Pipeline}
+\label{sec:pipeline}
+The grader calls \texttt{predict} once per instrument with the complete visible respondents
+and the held-out respondents, of whom only the GIVEN block is shown. Everything is fitted
+inside that call; the archive holds no parameter estimated from survey responses.
+(1)~\emph{Base.} A predictor (Section~1.4) is fitted on all visible rows and yields one
+probability vector per held-out cell; on World Bank and UNICEF it is the cell-wise mean over
+three network seeds. (2)~\emph{Guard.} A fixed permutation splits the visible rows into
+$S$ (1,000), $E$ (1,000) and $F$ (rest). The answers of $S$ and $E$ are hidden, and a shadow
+base and the experts are fitted on $F$ alone, so their predictions for $S$ and $E$ are
+honest. Candidate chains (Section~1.6) are fitted on $S$ and ranked by a two-fold
+out-of-fold score within $S$. The best two are tested on $E$ in order; a chain is accepted
+if $\bar d - 1.0\,\mathrm{sd}(d)/\sqrt{n} > 0$, where $d$ is the per-respondent difference
+in mean floored log probability to the shadow base. (3)~\emph{Application.} An accepted
+chain is refitted on $S \cup E$ and applied to the base output of step~1, with its experts
+refitted on all visible rows. Otherwise the instrument keeps the base output.
+The base follows record-linkage practice \citep{fellegi1969} and retrieval-augmented tabular
+learning \citep{gorishniy2024tabr}; the guard is a small cross-validated stacking procedure
+\citep{wolpert1992,vanderlaan2007}.
+
+\subsection{Inputs and feature construction}
+Used: the GIVEN columns as categorical levels, the answers of visible respondents, and the
+schema (item classes, option lists, gate parents and opening values). Count-like levels
+(``3'', ``6--10'', ``11+'') are also parsed into numbers and summed into household totals
+for the tree experts. Not used: question text and item descriptions, survey weights (not
+released), respondent identifiers and row order (the organizers state they carry no
+information), external data. Gated items get the schema's gate value as an extra final
+option, predicted like any other answer.
+
+\subsection{Model or simulator}
+\textbf{Base predictor.}
+(i)~\emph{Backoff tables}: per item, a ladder of conditional tables over up to three GIVEN
+columns (cardinality $\le 12$), each level shrunk toward the coarser one with pseudo-count
+$\kappa \in \{1,3,10,30,100\}$.
+(ii)~\emph{Network}: one-hot GIVEN features, a two-layer trunk (64 or 128 units), one softmax
+head per item including the gate value and one asked-only head per gated item; one
+weight per instrument mixes network and tables.
+(iii)~\emph{Soft gates}: the gate-implied distribution, computed from the predicted parent
+distribution, is mixed with the unrestricted head using a shrunken agreement rate between
+the declared gate and the visible rows; a gate the data contradict is not enforced.
+(iv)~\emph{Donor evidence}: for every held-out row the visible rows are scored by weighted
+agreement on the GIVEN columns, with Fellegi-Sunter weights $\log(m_j/u_j) -
+\log((1-m_j)/(1-u_j))$ estimated from provisional best-match pairs \citep{fellegi1969};
+the softmax-weighted answer shares of the ten best donors are mixed into the model
+distribution with a weight $\lambda \in [0, 0.98]$ per item and per match-concentration
+bucket, chosen by a self-excluded replay on visible rows.
+(v)~\emph{Supervised section metrics (UNHCR only)}: per questionnaire section, a diagonal
+metric over GIVEN-agreement indicators re-weights 32 candidate donors; it maximizes the
+floored log probability of the donors' answers on 1,200 visible query rows and replaces
+(iv) only where it gains on 800 separate rows by more than $\max(0.003, 2\,\mathrm{se})$.
+
+\textbf{Experts} (used only inside chains).
+$g$: gradient-boosted trees \citep{ke2017lightgbm,pedregosa2011} per item on the GIVEN
+columns and household totals.
+$r$: the same plus the answers, match scores and soft votes of the nearest visible rows and,
+per item, the donor answer shares under the metrics of (iv) and (v) with the three heaviest
+donors' answers; training rows get leave-one-out neighbours.
+$q$: $r$ plus four donor-only metric fields that mark donors whose own best answer-agreement
+with another visible row is unusually high (a robust $z$-score), i.e.\ donors that already
+have a twin among the visible rows.
+TabICL: a pretrained in-context tabular classifier \citep{qu2025tabicl} fitted per item on
+the GIVEN columns, without gradient updates.
+UNHCR uses $r$ and $q$; World Bank and UNICEF use $g$ and TabICL.
+
+\subsection{Fitting, training, or prompting}
+All fitting uses the visible rows of the phase (test phase: TRAIN and DEV). The network
+minimizes pooled cross-entropy with Adam (learning rate $3\cdot10^{-3}$, weight decay
+$10^{-4}$, at most 500 epochs, patience 30); width, dropout, the table ladder and the
+mixture weights are selected on an internal 20\% split and the network is refitted on all
+visible rows. Trees: 120 iterations at most, learning rate 0.1, 15 leaves, early stopping.
+Section metrics: L-BFGS-B, 50 iterations, weights in $[0,12]$. Nothing was tuned on test
+data, and no test-phase feedback existed before the single upload.
+
+\subsection{Prediction and aggregation}
+Chains offered to the guard are sequences of the following parts.
+\emph{Pool}: $p \propto p_{\mathrm{base}}^{a}\prod_k p_k^{b_k}$ with exponents in $[0,3]$
+maximizing the log-likelihood on $S$, starting at the base itself $(1,0,\dots)$
+\citep{genest1986}; a per-item variant shrinks item exponents to the global ones.
+\emph{Copy share}: $(1-\rho)\,p + \rho\,e$, where $e$ is the answer share among visible rows
+tied at the best match score and $\rho = 0.9995\,\sigma(a + x^\top g)$ depends on label-free
+match-quality features.
+\emph{Calibration}: Section~1.7.
+UNHCR is offered 15 chains (pools with $r$, $q$ or both, with and without copy share and
+calibration); World Bank and UNICEF 8 chains (pools with $g$, TabICL or both, with and
+without calibration). At most one chain per instrument is applied. The guard's decision is
+made on the organizers' machine and is not observable to us; no statistic of the data is
+encoded in the outputs.
+
+\subsection{Post-processing and calibration (if applicable)}
+The calibration part bins the top-class probability above 0.5 (edges 0.7, 0.8, 0.9, 0.95,
+0.98, 0.99, 0.995, 0.999), replaces it by the smoothed, monotone observed accuracy on $S$
+(50 pseudo-cells toward the stated confidence, cap $1-10^{-4}$) and rescales the other
+classes; it is applied only if the guard accepts a chain containing it. No clipping is
+applied beyond the grader's own floor of $10^{-3}$.
+
+%% ---------------------------------------------------------------------------
+\section{Models, data, and compute}
+\label{sec:resources}
+
+\paragraph{Pretrained models and off-the-shelf components.} See Table~\ref{tab:models}.
+
+\begin{table}[h]
+  \centering
+  \small
+  \caption{Pretrained models and off-the-shelf components.}
+  \label{tab:models}
+  \resizebox{\linewidth}{!}{%
+  \begin{tabular}{lll}
+    \toprule
+    Component & Version / checkpoint & Role in pipeline  \\
+    \midrule
+    TabICL v2 classifier & \texttt{tabicl-classifier-v2-20260212.ckpt}, Hugging Face & expert on World Bank, UNICEF \\
+     & \texttt{jingang/TabICL}, revision \texttt{4dcd344e}; bundled & \\
+    TabICL source & 2.2.0 (commit \texttt{0dbff3e}), bundled unmodified & inference code for the checkpoint \\
+    scikit-learn & \texttt{HistGradientBoostingClassifier}, image version & tree experts $g$, $r$, $q$ \\
+    PyTorch & image version & base network \\
+    \bottomrule
+  \end{tabular}}
+\end{table}
+
+\paragraph{Data.} Development used the TRAIN rows (visible) and the noised development
+leaderboard; the test run saw TRAIN and DEV as visible rows. No external dataset enters the
+submitted pipeline (Table~\ref{tab:external}). The organizers' synthetic sandbox was used
+for engineering checks. Two public datasets (UCI Adult; the 2023 SIPP public-use file of the
+U.S. Census Bureau) served offline as proxy benchmarks for method studies whose results were
+not adopted, and a second pretrained tabular model (TabPFN v2) was tried in development. Of one
+access-approved UNHCR dataset (Jordan VAF 2023, host-community survey) only the documentation
+and the header lines of the data files were inspected; no record was read or linked. No
+parameter, prior, weight or choice in the submission derives from any of these.
+
+\begin{table}[h]
+  \centering
+  \small
+  \caption{External datasets used.}
+  \label{tab:external}
+  \begin{tabular}{llll}
+    \toprule
+    Dataset & Source / URL & Size & Use in pipeline \\
+    \midrule
+    None & n/a & n/a & n/a \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\paragraph{Compute.} One H100, 8 CPU cores, 16\,GB, no network (organizers' image, Python
+3.13, no extra requirements). The three instruments take about 1,120\,s on one RTX~3070 on
+the synthetic sandbox in the test-phase setting; the limit is 3,600\,s.
+
+%% ---------------------------------------------------------------------------
+\section{Results}
+\label{sec:results}
+
+\subsection{Test-phase leaderboard results}
+Table~\ref{tab:results} gives the official metrics of the team's development and test entries.
+
+\begin{table}[h]
+  \centering
+  \small
+  \caption{Official SimulacraBench results for team \teamid{} (marginal-reference skill; the
+  development values are noised and rounded by the organizers before conversion). The
+  organizers' crowd-marginal baseline (\texttt{baseline/marginal\_counts}) scores exactly 0
+  on every skill by construction of the metric (starter-kit README); the leaderboard shows no
+  separate baseline entry.}
+  \label{tab:results}
+  \begin{tabular}{lrrrr}
+    \toprule
+    Split & \texttt{skill} & \texttt{skill\_unicef} & \texttt{skill\_world\_bank} & \texttt{skill\_unhcr} \\
+    \midrule
+    Development & 0.4764 & 0.3499 & 0.2335 & 0.8457 \\
+    Test        & 0.4791 & 0.3427 & 0.2345 & 0.8600 \\
+    Organizer baseline (test) & 0.0000 & 0.0000 & 0.0000 & 0.0000 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\subsection{Breakdown by population, survey, or question type}
+The leaderboard exposes one skill per instrument. The method does worst on World Bank
+(0.234): its nine GIVEN columns carry little about test scores and post-assessment answers,
+and it has no donor structure: neighbour-based experts read two to three development
+display steps below the base there. It does best on UNHCR (0.860), where the answers of
+similar visible households are the main source of skill: in development, the base without
+donor evidence read 0.79 on the former uniform-reference scale and 0.92 with it.
+
+%% ---------------------------------------------------------------------------
+\section{Reproducibility}
+\label{sec:repro}
+
+\begin{itemize}[leftmargin=*]
+  \item Code repository: \url{https://github.com/joon56/Simulacrabench-NeurIPS-2026-}, folder
+        \texttt{submissions/2026-11-15-E077/release/} (licence: BSD-3-Clause; bundled third-party
+        components keep their licences, listed in \texttt{NOTICE.txt}).
+  \item Commit hash used for the test-phase submission: \texttt{17565e871703}. The repository holds
+        the files of the uploaded archive byte for byte (\texttt{MANIFEST.sha256}).
+  \item Command to reproduce the test-phase submission file:
+        in that folder, \texttt{python tools/fetch\_checkpoint.py \&\& python tools/make\_zip.py submission.zip};
+        the uploaded archive has SHA256 \texttt{7ebb1972\ldots6cd62ac8} (Codabench submission 1053618).
+        Scoring it with the organizers' \texttt{score.py --phase 2} on the released data reproduces
+        the entry up to GPU floating-point noise.
+  \item Environment: the organizers' image (Python 3.13; numpy, pandas, scipy, scikit-learn, torch
+        pre-installed); no \texttt{requirements.txt}; a CUDA device is required.
+  \item Pretrained weights: the TabICL v2 checkpoint above, publicly downloadable from Hugging Face
+        (checked 2026-11-15; size and SHA256 are verified by the fetch script). No API models.
+\end{itemize}
+
+%% ---------------------------------------------------------------------------
+\section{Limitations}
+\label{sec:limitations}
+
+The method predicts marginal distributions per cell and says nothing about the joint
+distribution of a respondent's answers. Its skill on UNHCR rests on visible respondents who
+closely resemble the held-out one; for a population without such neighbours it falls back
+to the base tables and network, which read far lower. We cannot attribute the test score to
+components: the guard's accepted chains are unobservable, the development board resolved
+only differences of about 0.01 on the former scale, and all 24 development uploads of
+variants read in the base's bins.\label{endmain}
+
+%% ---------------------------------------------------------------------------
+\bibliographystyle{plainnat}
+\bibliography{refs}
+
+%% ---------------------------------------------------------------------------
+\clearpage
+\appendix
+
+\section{Full configuration}
+\textbf{Base (file \texttt{e041\_core.py}).} Tables: columns with cardinality $\le 12$, depth
+$\le 3$, $\kappa$ grid $\{1,3,10,30,100\}$, selection on a 20\% split (seed 0, at most 3,000
+evaluation rows). Network: configurations (64 units, no dropout) and (128 units, dropout
+0.1), two layers, Adam, learning rate $3\cdot10^{-3}$, weight decay $10^{-4}$, at most 500
+epochs, patience 30; network/table weight grid $\{0, 0.1, \dots, 1\}$. Gate agreement:
+shrinkage pseudo-count 20, optionally conditioned on one GIVEN column (cardinality $\le 12$).
+Donor evidence: all GIVEN columns as signature, rarity weights $-\log\sum_v f_v^2$ for a
+first pass, provisional pairs at top-1 posterior mass $\ge 0.5$ (at least 30 pairs,
+otherwise rarity weights), ten donors, $\lambda$ grid $\{0, 0.1, \dots, 0.9, 0.95, 0.98\}$,
+two buckets split at maximum posterior weight 0.5 (at least 30 rows per bucket), at most
+6,000 replay queries. Section metrics (UNHCR): sections from the item-name prefix, 32
+candidates, 1,200 fit / 800 selection / 800 replay queries, L-BFGS-B with 50 iterations,
+weights in $[0,12]$, penalty $10^{-3}$ on the squared deviation from the initial weights,
+activation if the gain exceeds $\max(0.003, 2\,\mathrm{se})$. World Bank and UNICEF use the
+base without section metrics.
+
+\textbf{Seeds.} Network seeds $\{0,1,2\}$ averaged cell-wise on World Bank and UNICEF, seed 0
+on UNHCR. Averaging probabilities cannot lower the expected log score of a single run
+(Jensen; the grader's floor is affine).
+
+\textbf{Guard (file \texttt{main.py}).} Permutation PCG64(4501) of the visible rows; $|S| =
+|E| = 1{,}000$; shadow base with seed 0; ranking by the pooled floored log score, two-fold
+out-of-fold within $S$ for chains with fitted parts; at most two chains tested on $E$;
+one-sided quantile 1.0; refit on $S \cup E$ after acceptance.
+
+\textbf{Tree experts.} \texttt{HistGradientBoostingClassifier}: learning rate 0.1, at most 120
+iterations, 15 leaves, minimum 10 samples per leaf, L2 1.0, 255 bins, early stopping
+(validation fraction 0.15, patience 6), seed 0; output mixed with 0.002 uniform mass.
+Neighbour features: three nearest visible rows by the agreement weights (answer, score,
+agreement flags) and soft votes of the ten nearest. Retrieval features per item: donor shares
+under the learned and the initial metric, the three largest donor weights and those donors'
+answers. Pairing fields of $q$: robust $z$ (median and MAD over the 32 nearest visible rows)
+of a visible row's best answer agreement, thresholds 2.5, 3.5 and 5 (``no twin'' fields) and
+$\ge 5$ (``has a twin''); for a training row the donor's score excludes that row.
+
+\textbf{TabICL.} Eight ensemble members, normalization methods none and power, softmax
+temperature 0.9, logits averaged, seed 42, mixed precision on GPU.
+
+\textbf{Pool.} Log-probabilities clipped at $10^{-6}$; exponents in $[0,3]$, L-BFGS-B, 60
+iterations; per-item variant with ridge 0.02 toward the global exponents.
+\textbf{Copy share.} Five candidates searched, ties at the best score; features: per-field
+disagreement with the best row, exact-match multiplicity ($\ge 2$, $\ge 3$), agreement of
+the two best rows' answers, tie indicator; ridge 0.002 (features) and 0.005 (per-item
+shifts); two starting points, the better optimum is kept.
+
+\textbf{Chains.} UNHCR: \texttt{xlpool, xlpoolh, xlpool+cal, xlpoolh+cal, qlpool, qlpoolh,
+qlpoolh+cal, rlpool, rlpoolh, rlpoolh+cal, xlpoolh+twinh, xlpoolh+twinh+cal, twinh,
+twinh+cal, cal} (\texttt{x}: both experts; \texttt{h}: per-item parameters). World Bank and
+UNICEF: \texttt{xlpool, xlpoolh, xlpool+cal, xlpoolh+cal, lpool, lpoolh, glpool, cal}
+(\texttt{lpool}: TabICL alone; \texttt{glpool}: $g$ alone).
+
+\section{(Optional) Additional results}
+\textbf{Development readings.} Old uniform-reference scale, rounded to 0.01 by the
+organizers: base UNICEF 0.52 / World Bank 0.49 / UNHCR 0.92 (the UNHCR value sits on a
+rounding boundary and also reads 0.91). Neighbour trees alone: 0.51 / 0.48 / 0.91. Expert
+$r$ alone: 0.49 / 0.46 / 0.91; $q$ alone: 0.50 / 0.46 / 0.91. Guarded packages (pools,
+copy share, calibration, earlier gate corrections): equal to the base in every reading.
+\textbf{Synthetic sandbox, test-phase setting.} The submitted archive against the base alone,
+mean log probability per cell: UNHCR $+0.0003$, World Bank $+0.0015$, UNICEF $+0.0010$
+(accepted chains: pool with $q$; pool with TabICL; pool with TabICL). These numbers show
+that the path runs and does not lose on synthetic data; they are not estimates for the real
+instruments.
+
+\end{document}

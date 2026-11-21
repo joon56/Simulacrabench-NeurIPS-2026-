@@ -1,0 +1,16 @@
+{
+  "scope": "LOCAL_PROTOCOL_FIXTURE",
+  "management_estimate": 3.621006543509648,
+  "posted_evidence": 0.01009897,
+  "actual_cost_this_local_fixture": 0,
+  "prior_component": 1.152e-05,
+  "cash_authority": 0,
+  "total_plan": 5,
+  "invoice_attribution": "UNVERIFIED",
+  "historical_active_seconds": 14777.0797748,
+  "gpu_request_reservation": 2.965933453125,
+  "gpu_actual_seconds": null,
+  "reservation_is_invoice": false,
+  "historical_workspace_metered": 0.01009897,
+  "historical_2400s_reservation": 2.965933453125
+}

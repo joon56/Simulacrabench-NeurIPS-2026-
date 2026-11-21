@@ -1,0 +1,114 @@
+{
+    "record":  "A044 S0 offline follow-up",
+    "verdict":  "RECOMMEND_SEPARATE_S3_E025_PROVENANCE_COMPLETION / NOT_EXECUTED",
+    "observed_at":  "2026-10-23T16:24:35.3821640+09:00",
+    "head":  "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+    "workflow_revision":  "2026-10-22-r6",
+    "workflow_sha256":  "69620b7eeaad5a01a6a6b884fbd95dfede3e26b2ee2b09016479846082aec089",
+    "read_evidence":  "entry.json and current tool transcript",
+    "outage_evidence":  "User reports Codabench unavailable to everyone; not independently checked; no inferred extension/quota change",
+    "preserved_documents":  [
+                                {
+                                    "path":  "AGENTS.md",
+                                    "sha256":  "e3d52f09f32c7e3b8fdb194419119c4f563557103404da0831ffb31fbf2150e8",
+                                    "match":  true
+                                },
+                                {
+                                    "path":  "CLAUDE.md",
+                                    "sha256":  "7300b637f3a0ae937b2273a1945892df129eb16ee3ef7bdc6cff707c69ffc1e3",
+                                    "match":  true
+                                },
+                                {
+                                    "path":  "docs/workflow.md",
+                                    "sha256":  "69620b7eeaad5a01a6a6b884fbd95dfede3e26b2ee2b09016479846082aec089",
+                                    "match":  true
+                                },
+                                {
+                                    "path":  "docs/analysis/A044-outputs/s3-prep/revalidation-plan.md",
+                                    "sha256":  "5dbca47de7423afe593adbed2472a34d7d486306a76b1088ff1658ab957d78e5",
+                                    "match":  true
+                                },
+                                {
+                                    "path":  "docs/analysis/A044-outputs/s3-prep/phase2-validity.md",
+                                    "sha256":  "64538cae05ea3a4fe8a2aec8fb40a891b9e0230c5004fbf67b25ddcfc80215c6",
+                                    "match":  true
+                                },
+                                {
+                                    "path":  "docs/analysis/A044-outputs/s3-prep/license-inventory.md",
+                                    "sha256":  "f60661f9f01232b351de6c0ff068899cf1d71b710659134408d7192959522c62",
+                                    "match":  true
+                                },
+                                {
+                                    "path":  "docs/analysis/A044-outputs/s3-prep/method-e041-draft.md",
+                                    "sha256":  "9809358328376f3ab77ed8fd4eb4982184d4c8336bd7c823b7a189b896de4433",
+                                    "match":  true
+                                },
+                                {
+                                    "path":  "docs/analysis/A012-outputs/README.md",
+                                    "sha256":  "f54f6318b6ce41946dc23ae10a74a236a77de8a9cdd82d065aae5d9fd829f04e",
+                                    "match":  true
+                                },
+                                {
+                                    "path":  "docs/analysis/A012-outputs/final-review.md",
+                                    "sha256":  "036120fa6e71ee66d9047146507a094d75922eb726bd4dcdd6e23bee5b1b933d",
+                                    "match":  true
+                                },
+                                {
+                                    "path":  "docs/analysis/A012-phase2-baseline-and-calibration-gate.md",
+                                    "sha256":  "0ffb5a13f2f6bdcfd08fa110946f5fa9dafa480e25f3bf62b63c71be791694d9",
+                                    "match":  true
+                                },
+                                {
+                                    "path":  "submissions/phase2-E041-preparation/verification.json",
+                                    "sha256":  "de65ac4dfc5e5ede05473896c846947457210c7246e1d254c6218b89b362e001",
+                                    "match":  true
+                                },
+                                {
+                                    "path":  "submissions/phase2-E041-preparation/supplemental-verification.json",
+                                    "sha256":  "5208da8abaf5a37496f382f57b814a6101296c723b41a4877095c333f9aa9775",
+                                    "match":  true
+                                },
+                                {
+                                    "path":  "docs/analysis/E064-outputs/s0-release-review/verification.json",
+                                    "sha256":  "c0a5480982f5f9aeab695e26c556ebcdba66115635c93ae5dd01d6acbba247cd",
+                                    "match":  true
+                                }
+                            ],
+    "status_history_reconstructed":  true,
+    "log_history_reconstructed":  true,
+    "status_notice_inserted":  "- **2026-10-23 offline priority: separately scoped E025 phase2 provenance completion.**\n  Codabench outage is user-reported, not independently verified. E064 fixed ZIP stays\n  parked/pending one user-controlled DEV submission when access/phase/account/slot permit.\n- B01 complete. Proposed S3 closes E025 modular-source versus preserved official archive\n  raw linkage; no new E041 fit/candidate/ZIP. [Decision](analysis/A044-outputs/offline-followup/decision.md),\n  [execution proposal](analysis/A044-outputs/offline-followup/s3-e025-provenance.ko.md).\n  New gross120min/compute2700s/all3 shared900s/normal2+invalid-arm reserve1/CPU2/GPU0/\n  8GiB/cash0. User instruction in separate S3 required; this S0 did not execute it.\n- Nine exact input hashes inherited from post-run A012 metadata, no numerical access\n  or rehash here. Future S3 checks identity/provenance before model work. Method/license/\n  Terms finalization remains separate; final TEST choice open. All STOP/HOLD/exposure retained.\n- **Writer: none; S0 offline follow-up released after document verification.**\n  [Receipt](analysis/A044-outputs/offline-followup/verification.json). Local named jobs0;\n  no remote/all-chat census. No automatic polling/upload/commit/push.\n\n### Earlier current-position notices — historical; offline priority above governs the next task\n\r\n",
+    "log_insert_offset":  20,
+    "log_text_inserted":  "## 2026-10-23 - A044 S0 selects offline E025 provenance task during reported outage\n\n- User reports Codabench unavailable. No independent outage/recovery/slot/extension\n  claim; preserve E064 fixed ZIP and original DEV result arms.\n- Current instructions/status/newest3log refreshed, unchanged workflow r6 and S3/A012\n  records reviewed. Recommend separate S3 E025 modular-source/official phase2 raw\n  linkage completion. This reduces fallback delivery uncertainty, not a score-gain claim.\n- A012 supplemental metadata supplies exact6 E041 raw+3 synthetic historical hashes;\n  input contents not opened/hashed. Proposal120min/2700s/2normalall3+1invalid reserve,\n  each900s/CPU2/GPU0/8GiB/cash0, no E041 refit/new candidate/new ZIP/old-budget reuse.\n- Existing successful checker evidence reused when identities hold. Stock official\n  scorer retains its truth sequence; models receive only masked TEST predictions.\n  New wrapper repair affects only new checks, no valid-result retry. Exact reuse\n  failure returns a concrete gap before model calls. Separate S3 user instruction required.\n- Method/license/Terms finalization remains later work. All STOP/HOLD/parked/exposure/\n  A022/E059 protected roles/A_half/A018 preserved. Writes only new follow-up docs and\n  status/log. No model/data/cache/ZIP/test/web/remote/subagent/upload/commit/push.\n- Local document helper\u0027s property-count check failed before status/log writes;\n  array-wrapped key count confirmed9, corrected within same S0, no scientific attempt.\n  [Decision](analysis/A044-outputs/offline-followup/decision.md),\n  [handoff](analysis/A044-outputs/offline-followup/s3-e025-provenance.ko.md),\n  [preservation/release](analysis/A044-outputs/offline-followup/verification.json).\n\r\n",
+    "proposed_input_count":  9,
+    "numerical_input_access_or_hash":  0,
+    "proposal_limits":  "gross120min/compute2700s/all3shared900s/2normal+1invalid repair/CPU2/GPU0/8GiB/cash0; separately instructed S3 only",
+    "new_execution_authority":  false,
+    "helper_repair":  "PowerShell property-count assertion failed before status/log mutation in chunk1271df; explicit array of property names confirms9; same-scope document helper corrected. No scientific attempt.",
+    "execution_counts":  {
+                             "protected_data_cache_zip_access":  0,
+                             "web_platform_remote":  0,
+                             "upload":  0,
+                             "test_checker":  0,
+                             "commit_push":  0,
+                             "subagent":  0,
+                             "fit_predict_score":  0
+                         },
+    "named_jobs":  [
+
+                   ],
+    "outgoing_owner":  "S0 A044 offline follow-up /root",
+    "incoming_owner":  "none; user-directed S3 accepts separately",
+    "exclusive_writer_released":  true,
+    "release_at":  "2026-10-23T16:24:35.3821640+09:00",
+    "owned_running_commands":  [
+
+                               ],
+    "artifact_sha256":  {
+                            "docs/analysis/A044-outputs/offline-followup/entry.json":  "df1b76ab458217c59f20995450c42a31209767d5ad782aecfc126ed40f8ade7b",
+                            "docs/analysis/A044-outputs/offline-followup/decision.md":  "914712714416ceacf8ae7fe6efe8c3642f180a98a71196f48e87e001c44623d3",
+                            "docs/analysis/A044-outputs/offline-followup/s3-e025-provenance.ko.md":  "6b7d3e9f8c683f448bfa0bc3836f7cbb37cd2467cfa85dbdcf8e0c0c00368508",
+                            "docs/analysis/A044-outputs/offline-followup/proposed-input-identities.json":  "1a6f87f2652967cfd9e1842ada9a08fcccc89180866c1a2a9ec10921a263e609",
+                            "docs/status.md":  "bc517b52192ef3143d974827356c64b85c86f0afded91456e3bfa20474512e01",
+                            "docs/log.md":  "8f1664b2db09f1e8f6eae77211c8f3b00645a7344d0a7bb4af8dc3c5dabcbe42"
+                        }
+}

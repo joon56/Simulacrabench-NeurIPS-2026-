@@ -1,0 +1,705 @@
+{
+  "status": "RECOMMEND_ONE_USER_DEV_SUBMISSION",
+  "role": "S0",
+  "task": "Document review of fixed E063 release and user submission recommendation",
+  "authority": "Current user E063 S2 handoff requests S0 review. Document decision/record/handoff only; no S2 or upload action inferred.",
+  "entry": {
+    "at": "2026-10-10T00:18:30.3577506+09:00",
+    "head": "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+    "branch": "work/e050-submission",
+    "dirty": [
+      " M .claude/skills/paper-session/SKILL.md",
+      " M .gitignore",
+      " M CLAUDE.md",
+      " M docs/domain-study-guide.ko.md",
+      " M docs/index.md",
+      " M docs/log.md",
+      " M docs/session-prompts.ko.md",
+      " M docs/status.md",
+      " M docs/tree.md",
+      " M docs/workflow.md",
+      " M submissions/SCORES.md",
+      "?? .agents/",
+      "?? AGENTS.md",
+      "?? README.md",
+      "?? docs/analysis/A020-outputs/",
+      "?? docs/analysis/A020-post-e058-design-review.md",
+      "?? docs/analysis/A021-outputs/",
+      "?? docs/analysis/A021-selector-comparison-contract.md",
+      "?? docs/analysis/A022-outputs/",
+      "?? docs/analysis/A022-remaining-role-audit.md",
+      "?? docs/analysis/A023-candidate-boundary-contract.md",
+      "?? docs/analysis/A023-cost-accounting.md",
+      "?? docs/analysis/A023-outputs/",
+      "?? docs/analysis/A024-channel-precision-review.md",
+      "?? docs/analysis/A024-outputs/",
+      "?? docs/analysis/A025-submission-oriented-review.md",
+      "?? docs/analysis/A026-outputs/",
+      "?? docs/analysis/A026-post-e060-strategy-review.md",
+      "?? docs/analysis/A027-outputs/",
+      "?? docs/analysis/A027-workflow-role-revision.md",
+      "?? docs/analysis/A028-outputs/",
+      "?? docs/analysis/A028-workflow-entry-audit.md",
+      "?? docs/analysis/A029-codex-migration-audit.md",
+      "?? docs/analysis/A029-outputs/",
+      "?? docs/analysis/A030-outputs/",
+      "?? docs/analysis/A030-vaf-channel-metadata-review.md",
+      "?? docs/analysis/A031-outputs/",
+      "?? docs/analysis/A031-post-a030-handoff-review.md",
+      "?? docs/analysis/A032-document-acquisition-and-readiness.md",
+      "?? docs/analysis/A032-outputs/",
+      "?? docs/analysis/A033-dev-handoff-and-role-repair.md",
+      "?? docs/analysis/A033-outputs/",
+      "?? docs/analysis/A034-e061-s0-review.md",
+      "?? docs/analysis/A034-outputs/",
+      "?? docs/analysis/A035-e061-dev-submission-review.md",
+      "?? docs/analysis/A035-outputs/",
+      "?? docs/analysis/A036-e061-post-result-review.md",
+      "?? docs/analysis/A036-outputs/",
+      "?? docs/analysis/A037-outputs/",
+      "?? docs/analysis/A037-winning-priority-review.md",
+      "?? docs/analysis/A038-outputs/",
+      "?? docs/analysis/A038-vaf-local-document-intake.md",
+      "?? docs/analysis/A039-outputs/",
+      "?? docs/analysis/A040-outputs/",
+      "?? docs/analysis/A041-outputs/",
+      "?? docs/analysis/A041-wb-ordinal-head-review.md",
+      "?? docs/analysis/A042-outputs/",
+      "?? docs/analysis/A042-post-e062-priority.md",
+      "?? docs/analysis/E059-outputs/",
+      "?? docs/analysis/E060-outputs/",
+      "?? docs/analysis/E061-outputs/",
+      "?? docs/analysis/E062-outputs/",
+      "?? docs/analysis/E063-outputs/",
+      "?? docs/codex-setup.ko.md",
+      "?? docs/experiments/E059-leaf-donor-interactions.md",
+      "?? docs/experiments/E060-content-target-retrieval.md",
+      "?? docs/experiments/E061-tied-content-heads.md",
+      "?? docs/experiments/E062-wb-ordinal-heads.md",
+      "?? docs/experiments/E063-round-conditioned-metric.md",
+      "?? docs/plans/README.md",
+      "?? requirements-models.txt",
+      "?? scripts/assemble_e060.py",
+      "?? scripts/assemble_e061.py",
+      "?? scripts/assemble_e062.py",
+      "?? scripts/assemble_e063.py",
+      "?? scripts/check_a021_selector_contract.py",
+      "?? scripts/check_a023_candidate_boundary.py",
+      "?? scripts/check_a023_resources.py",
+      "?? scripts/check_e060.py",
+      "?? scripts/check_e061_release.py",
+      "?? scripts/check_e061_tied_heads.py",
+      "?? scripts/check_e062_release.py",
+      "?? scripts/check_e062_wb_ordinal.py",
+      "?? scripts/check_e063_release.py",
+      "?? scripts/check_e063_round_metric.py",
+      "?? scripts/check_workspace.py",
+      "?? scripts/screen_e059.py",
+      "?? src/models/content_target_retrieval.py",
+      "?? src/models/round_metric_retrieval.py",
+      "?? src/models/tied_content_heads.py",
+      "?? src/models/wb_ordinal_heads.py",
+      "?? submissions/2026-09-27-E060.zip",
+      "?? submissions/2026-09-27-E060/NOTICE.txt",
+      "?? submissions/2026-09-27-E060/main.py",
+      "?? submissions/2026-09-27-E060/verification.json",
+      "?? submissions/2026-09-28-E061.zip",
+      "?? submissions/2026-09-28-E061/",
+      "?? submissions/2026-10-08-E062.zip",
+      "?? submissions/2026-10-08-E062/",
+      "?? submissions/2026-10-09-E063.zip",
+      "?? submissions/2026-10-09-E063/",
+      "?? tests/test_a021_selector_contract.py",
+      "?? tests/test_a023_candidate_boundary.py",
+      "?? tests/test_content_target_retrieval.py",
+      "?? tests/test_e059_interactions.py",
+      "?? tests/test_e060_assembly.py",
+      "?? tests/test_e061_assembly.py",
+      "?? tests/test_e062_assembly.py",
+      "?? tests/test_e063_assembly.py",
+      "?? tests/test_round_metric_retrieval.py",
+      "?? tests/test_tied_content_heads.py",
+      "?? tests/test_wb_ordinal_heads.py",
+      "?? tests/test_workspace_check.py",
+      "?? trip/"
+    ],
+    "jobs": [],
+    "hashes": [
+      {
+        "path": "AGENTS.md",
+        "sha256": "73b86e5310d6a45d5206efd3b55da47c48748ee7b077e6fcad6be276f1716a3a"
+      },
+      {
+        "path": "CLAUDE.md",
+        "sha256": "0cda5c3385ea3368d0c24a6602e4b1220adc864a205e231f10042b655d031749"
+      },
+      {
+        "path": "docs/status.md",
+        "sha256": "2d3685c17874ed26e2597b5a412f85c6eb7282ea13b6f6d1f36994d12db0342a"
+      },
+      {
+        "path": "docs/log.md",
+        "sha256": "d23c768f90b38a8ff52bc07dd6ed222b86b0f0e8174903e610ee37e5a9659c3d"
+      },
+      {
+        "path": "docs/workflow.md",
+        "sha256": "a577942675e16a732339e586c14796104dda704693568439ae28670cc7fb7b23"
+      }
+    ],
+    "review_exists": false
+  },
+  "workflow": {
+    "revision": "2026-10-05-r5",
+    "sha256": "a577942675e16a732339e586c14796104dda704693568439ae28670cc7fb7b23"
+  },
+  "actual_reads": [
+    {
+      "chunk": "6b510f",
+      "paths": [
+        "AGENTS.md",
+        "CLAUDE.md"
+      ],
+      "scope": "Full ordered reads"
+    },
+    {
+      "chunk": "1900c0",
+      "paths": [
+        "docs/status.md",
+        "docs/log.md"
+      ],
+      "scope": "Current100 lines then newest3 full entries"
+    },
+    {
+      "chunk": "70e349",
+      "paths": [
+        "docs/workflow.md",
+        "docs/analysis/E063-outputs/s2/s0-handoff.ko.md"
+      ],
+      "scope": "Full ordered reads"
+    },
+    {
+      "chunk": "dd8e4c",
+      "paths": [
+        "s2/closeout.md",
+        "s2/repair-record.md",
+        "s2/exposure-ledger.md",
+        "submissions/2026-10-09-E063/SCORES.md"
+      ],
+      "scope": "Full text"
+    },
+    {
+      "chunk": "9096e0",
+      "scope": "JSON fields inventory and full baseline-identity-supplement/dependency-disclosure"
+    },
+    {
+      "chunk": "b2103c",
+      "scope": "Selected verification/release/cost/entry fields, stored and reviewed; no raw paths followed"
+    },
+    {
+      "chunk": "ae6dd7",
+      "scope": "S2 read-receipt and zip-check text, allowed identity metadata"
+    },
+    {
+      "chunk": "edaa81",
+      "scope": "Artifact/freeze metadata and full final-receipt/identity-repair-freeze"
+    },
+    {
+      "chunk": "fb79ef",
+      "scope": "29 recorded text/source hashes matched; final receipt hash first observed separately"
+    }
+  ],
+  "read_time": "Actual entry read tool calls precede entry.at; no fabricated per-file timestamp. All S0 review on 2026-10-10 KST.",
+  "incoming_receipt": "Session-reported actual reads with named chunks, not current S0 independent observation of another transcript; no other-chat compliance guarantee.",
+  "identity": {
+    "checks": [
+      {
+        "path": "docs/analysis/E063-outputs/s2/s0-handoff.ko.md",
+        "expected": "042f8b633427c29356d4c76a422330aa0d5de039365ffd3f0de2c3820ee81f44",
+        "actual": "042f8b633427c29356d4c76a422330aa0d5de039365ffd3f0de2c3820ee81f44",
+        "match": true
+      },
+      {
+        "path": "docs/analysis/E063-outputs/s2/closeout.md",
+        "expected": "832ad3e9531e036b888dba914c152ccdb17419ce2d6fc3848779a809a984ed47",
+        "actual": "832ad3e9531e036b888dba914c152ccdb17419ce2d6fc3848779a809a984ed47",
+        "match": true
+      },
+      {
+        "path": "docs/analysis/E063-outputs/s2/verification.json",
+        "expected": "f042012d926d2e31f71b2d8efdb3f418db24c2050503fed7f8fe7ca029c3069f",
+        "actual": "f042012d926d2e31f71b2d8efdb3f418db24c2050503fed7f8fe7ca029c3069f",
+        "match": true
+      },
+      {
+        "path": "docs/analysis/E063-outputs/s2/cost-time-ledger.json",
+        "expected": "578db476183643632b4c2acef3d60d55527be05bc037cfa56ecc5f53c85233f9",
+        "actual": "578db476183643632b4c2acef3d60d55527be05bc037cfa56ecc5f53c85233f9",
+        "match": true
+      },
+      {
+        "path": "docs/analysis/E063-outputs/s2/baseline-identity-supplement.json",
+        "expected": "771eb9f90830b1b88efd53a6312d69a8039d56a17a001e0e9ebd1470f544c242",
+        "actual": "771eb9f90830b1b88efd53a6312d69a8039d56a17a001e0e9ebd1470f544c242",
+        "match": true
+      },
+      {
+        "path": "docs/analysis/E063-outputs/s2/identity-repair-freeze.json",
+        "expected": "5e0009fe22c71256a14af596625cbbc95815bf880756f5311d4323e4d2c7a50a",
+        "actual": "5e0009fe22c71256a14af596625cbbc95815bf880756f5311d4323e4d2c7a50a",
+        "match": true
+      },
+      {
+        "path": "docs/analysis/E063-outputs/s2/dependency-disclosure.json",
+        "expected": "08bbd112dea35cf529c8a7be8c18308f38a5dc8356ccce6424258456d39c71e9",
+        "actual": "08bbd112dea35cf529c8a7be8c18308f38a5dc8356ccce6424258456d39c71e9",
+        "match": true
+      },
+      {
+        "path": "docs/analysis/E063-outputs/s2/exposure-ledger.md",
+        "expected": "1e52d3397d199cd56eac6282569ab25720c5724ee79605bcaa97f77e51d66ff4",
+        "actual": "1e52d3397d199cd56eac6282569ab25720c5724ee79605bcaa97f77e51d66ff4",
+        "match": true
+      },
+      {
+        "path": "docs/analysis/E063-outputs/s2/read-receipt.md",
+        "expected": "0eb060adda74633dcd3e8cd3363f960ed01fca1d1273dff009adde01f8c69f68",
+        "actual": "0eb060adda74633dcd3e8cd3363f960ed01fca1d1273dff009adde01f8c69f68",
+        "match": true
+      },
+      {
+        "path": "docs/analysis/E063-outputs/s2/repair-record.md",
+        "expected": "a9ee887d01df45c1a44ecba523522940ece87a3d8628a90b1b45b30269b411bf",
+        "actual": "a9ee887d01df45c1a44ecba523522940ece87a3d8628a90b1b45b30269b411bf",
+        "match": true
+      },
+      {
+        "path": "docs/analysis/E063-outputs/s2/release-results.json",
+        "expected": "7d0e2c7ff13c27e32be467d15a78a96615e5df221438c664917e28ce71bcf72f",
+        "actual": "7d0e2c7ff13c27e32be467d15a78a96615e5df221438c664917e28ce71bcf72f",
+        "match": true
+      },
+      {
+        "path": "docs/analysis/E063-outputs/s2/release-freeze.json",
+        "expected": "2321f70393bcd241e6302b780e418ca0a9ab1ad7e6f63c669a07b6d74cdb6107",
+        "actual": "2321f70393bcd241e6302b780e418ca0a9ab1ad7e6f63c669a07b6d74cdb6107",
+        "match": true
+      },
+      {
+        "path": "docs/analysis/E063-outputs/s2/baseline-reuse.json",
+        "expected": "bb21573f01afba5a41ce6cfb1f9cc2b1c4c6a041c13cad1c10fe0676a7764369",
+        "actual": "bb21573f01afba5a41ce6cfb1f9cc2b1c4c6a041c13cad1c10fe0676a7764369",
+        "match": true
+      },
+      {
+        "path": "docs/analysis/E063-outputs/s2/preflight.json",
+        "expected": "fbabfbe07db07a0f263a2af90f2a8ade25778e67319705d3e316b97328d589c5",
+        "actual": "fbabfbe07db07a0f263a2af90f2a8ade25778e67319705d3e316b97328d589c5",
+        "match": true
+      },
+      {
+        "path": "docs/analysis/E063-outputs/s2/assembly-output-freeze.json",
+        "expected": "e5c0bc7257dce285458d46f3156495f2de27e49e41b69b1a1cf07d5cd3688d50",
+        "actual": "e5c0bc7257dce285458d46f3156495f2de27e49e41b69b1a1cf07d5cd3688d50",
+        "match": true
+      },
+      {
+        "path": "docs/analysis/E063-outputs/s2/truth-stage-freeze.json",
+        "expected": "e156c8b7ca0ea0df1eab0a17e2810e5f12f0f4e5f4c52e553d46cbe55b85e459",
+        "actual": "e156c8b7ca0ea0df1eab0a17e2810e5f12f0f4e5f4c52e553d46cbe55b85e459",
+        "match": true
+      },
+      {
+        "path": "docs/analysis/E063-outputs/s2/zip-check.log",
+        "expected": "a1fda94b0e4dbc5eff47965e7a85daeae629f47459d0568bdaf782f58114682e",
+        "actual": "a1fda94b0e4dbc5eff47965e7a85daeae629f47459d0568bdaf782f58114682e",
+        "match": true
+      },
+      {
+        "path": "submissions/2026-10-09-E063/SCORES.md",
+        "expected": "98cfc9bff6aa17bfe62dca9e1b0bfd2a64885129ae0f51c3338ad9f4b8346d40",
+        "actual": "98cfc9bff6aa17bfe62dca9e1b0bfd2a64885129ae0f51c3338ad9f4b8346d40",
+        "match": true
+      },
+      {
+        "path": "submissions/2026-10-09-E063/main.py",
+        "expected": "7fe62705e26c45a891b8bbc8a453db4c525384af4a5989112a8c402672f3950e",
+        "actual": "7fe62705e26c45a891b8bbc8a453db4c525384af4a5989112a8c402672f3950e",
+        "match": true
+      },
+      {
+        "path": "scripts/assemble_e063.py",
+        "expected": "eaae572a2a82b654448d15f1b7c62bd388786b75044a10ff327c93ade71baf85",
+        "actual": "eaae572a2a82b654448d15f1b7c62bd388786b75044a10ff327c93ade71baf85",
+        "match": true
+      },
+      {
+        "path": "scripts/check_e063_release.py",
+        "expected": "bfccea83af4a8bc7a1c07b3347af701108123f94f0dc456aaf76d137debf6300",
+        "actual": "bfccea83af4a8bc7a1c07b3347af701108123f94f0dc456aaf76d137debf6300",
+        "match": true
+      },
+      {
+        "path": "tests/test_e063_assembly.py",
+        "expected": "08982a8b330080f6979ec6dc51c5746c0a953ed10890d97fed33cbb0637b2358",
+        "actual": "08982a8b330080f6979ec6dc51c5746c0a953ed10890d97fed33cbb0637b2358",
+        "match": true
+      },
+      {
+        "path": "src/models/round_metric_retrieval.py",
+        "expected": "5595bebdcdc697fc9e1eba149e10735cac4ae434b20b0ce3e93c968e8b35106b",
+        "actual": "5595bebdcdc697fc9e1eba149e10735cac4ae434b20b0ce3e93c968e8b35106b",
+        "match": true
+      },
+      {
+        "path": "src/models/supervised_retrieval.py",
+        "expected": "2940338c5378de03303befb74e3834fbad631c0eb18f4ecb55d2cc39a471f879",
+        "actual": "2940338c5378de03303befb74e3834fbad631c0eb18f4ecb55d2cc39a471f879",
+        "match": true
+      },
+      {
+        "path": "submissions/2026-09-09-E025/main.py",
+        "expected": "00793cf9d720d6f7511ffd738935206b3a5401f2454255409429db8d55e991b9",
+        "actual": "00793cf9d720d6f7511ffd738935206b3a5401f2454255409429db8d55e991b9",
+        "match": true
+      },
+      {
+        "path": "docs/analysis/E063-outputs/s0-review/decision.md",
+        "expected": "07e576ff18a9d0a603f44fc7ccec4d0ce345b85f5348d036fb7f6fcf3a5ee59f",
+        "actual": "07e576ff18a9d0a603f44fc7ccec4d0ce345b85f5348d036fb7f6fcf3a5ee59f",
+        "match": true
+      },
+      {
+        "path": "docs/analysis/E063-outputs/s0-review/s2-handoff.ko.md",
+        "expected": "5f97ea0880bafc9680d40ac3ea1a76cd2db81873003f279d9134c1a10650e27e",
+        "actual": "5f97ea0880bafc9680d40ac3ea1a76cd2db81873003f279d9134c1a10650e27e",
+        "match": true
+      },
+      {
+        "path": "docs/tree.md",
+        "expected": "eaa884a4194db103335136495205fe5b51297c17db15e9eac62946ced286cc44",
+        "actual": "eaa884a4194db103335136495205fe5b51297c17db15e9eac62946ced286cc44",
+        "match": true
+      },
+      {
+        "path": "docs/analysis/E063-outputs/s2/artifact-manifest.json",
+        "expected": "1ac029ae4499066b82fb7b68c9fd0c917ce0e89a0d7040bb7a8fe45d1570774a",
+        "actual": "1ac029ae4499066b82fb7b68c9fd0c917ce0e89a0d7040bb7a8fe45d1570774a",
+        "match": true
+      },
+      {
+        "path": "docs/analysis/E063-outputs/s2/final-receipt.json",
+        "expected": null,
+        "actual": "8a38bac07fa05a89db721a8e797330410d57f56ddf3e22d333f9e0a597b6ced1",
+        "match": null
+      }
+    ],
+    "release_freeze_utc": "2026-10-09T14:41:45.982862+00:00",
+    "release_freeze_calls": 0,
+    "final_verification_hash_match": true,
+    "candidate_zip_hash_inherited": {
+      "path": "submissions/2026-10-09-E063.zip",
+      "sha256": "5469b5374f6fb3745cabf64071183ed3de5bbe240ea4f18c034049d560d532d9",
+      "bytes": 15720
+    },
+    "no_ZIP_raw_rehash": true
+  },
+  "preservation_baseline": [
+    {
+      "path": "docs/analysis/E063-outputs/s2/s0-handoff.ko.md",
+      "sha256": "042f8b633427c29356d4c76a422330aa0d5de039365ffd3f0de2c3820ee81f44"
+    },
+    {
+      "path": "docs/analysis/E063-outputs/s2/closeout.md",
+      "sha256": "832ad3e9531e036b888dba914c152ccdb17419ce2d6fc3848779a809a984ed47"
+    },
+    {
+      "path": "docs/analysis/E063-outputs/s2/verification.json",
+      "sha256": "f042012d926d2e31f71b2d8efdb3f418db24c2050503fed7f8fe7ca029c3069f"
+    },
+    {
+      "path": "docs/analysis/E063-outputs/s2/cost-time-ledger.json",
+      "sha256": "578db476183643632b4c2acef3d60d55527be05bc037cfa56ecc5f53c85233f9"
+    },
+    {
+      "path": "docs/analysis/E063-outputs/s2/baseline-identity-supplement.json",
+      "sha256": "771eb9f90830b1b88efd53a6312d69a8039d56a17a001e0e9ebd1470f544c242"
+    },
+    {
+      "path": "docs/analysis/E063-outputs/s2/identity-repair-freeze.json",
+      "sha256": "5e0009fe22c71256a14af596625cbbc95815bf880756f5311d4323e4d2c7a50a"
+    },
+    {
+      "path": "docs/analysis/E063-outputs/s2/dependency-disclosure.json",
+      "sha256": "08bbd112dea35cf529c8a7be8c18308f38a5dc8356ccce6424258456d39c71e9"
+    },
+    {
+      "path": "docs/analysis/E063-outputs/s2/exposure-ledger.md",
+      "sha256": "1e52d3397d199cd56eac6282569ab25720c5724ee79605bcaa97f77e51d66ff4"
+    },
+    {
+      "path": "docs/analysis/E063-outputs/s2/read-receipt.md",
+      "sha256": "0eb060adda74633dcd3e8cd3363f960ed01fca1d1273dff009adde01f8c69f68"
+    },
+    {
+      "path": "docs/analysis/E063-outputs/s2/repair-record.md",
+      "sha256": "a9ee887d01df45c1a44ecba523522940ece87a3d8628a90b1b45b30269b411bf"
+    },
+    {
+      "path": "docs/analysis/E063-outputs/s2/release-results.json",
+      "sha256": "7d0e2c7ff13c27e32be467d15a78a96615e5df221438c664917e28ce71bcf72f"
+    },
+    {
+      "path": "docs/analysis/E063-outputs/s2/release-freeze.json",
+      "sha256": "2321f70393bcd241e6302b780e418ca0a9ab1ad7e6f63c669a07b6d74cdb6107"
+    },
+    {
+      "path": "docs/analysis/E063-outputs/s2/baseline-reuse.json",
+      "sha256": "bb21573f01afba5a41ce6cfb1f9cc2b1c4c6a041c13cad1c10fe0676a7764369"
+    },
+    {
+      "path": "docs/analysis/E063-outputs/s2/preflight.json",
+      "sha256": "fbabfbe07db07a0f263a2af90f2a8ade25778e67319705d3e316b97328d589c5"
+    },
+    {
+      "path": "docs/analysis/E063-outputs/s2/assembly-output-freeze.json",
+      "sha256": "e5c0bc7257dce285458d46f3156495f2de27e49e41b69b1a1cf07d5cd3688d50"
+    },
+    {
+      "path": "docs/analysis/E063-outputs/s2/truth-stage-freeze.json",
+      "sha256": "e156c8b7ca0ea0df1eab0a17e2810e5f12f0f4e5f4c52e553d46cbe55b85e459"
+    },
+    {
+      "path": "docs/analysis/E063-outputs/s2/zip-check.log",
+      "sha256": "a1fda94b0e4dbc5eff47965e7a85daeae629f47459d0568bdaf782f58114682e"
+    },
+    {
+      "path": "submissions/2026-10-09-E063/SCORES.md",
+      "sha256": "98cfc9bff6aa17bfe62dca9e1b0bfd2a64885129ae0f51c3338ad9f4b8346d40"
+    },
+    {
+      "path": "submissions/2026-10-09-E063/main.py",
+      "sha256": "7fe62705e26c45a891b8bbc8a453db4c525384af4a5989112a8c402672f3950e"
+    },
+    {
+      "path": "scripts/assemble_e063.py",
+      "sha256": "eaae572a2a82b654448d15f1b7c62bd388786b75044a10ff327c93ade71baf85"
+    },
+    {
+      "path": "scripts/check_e063_release.py",
+      "sha256": "bfccea83af4a8bc7a1c07b3347af701108123f94f0dc456aaf76d137debf6300"
+    },
+    {
+      "path": "tests/test_e063_assembly.py",
+      "sha256": "08982a8b330080f6979ec6dc51c5746c0a953ed10890d97fed33cbb0637b2358"
+    },
+    {
+      "path": "src/models/round_metric_retrieval.py",
+      "sha256": "5595bebdcdc697fc9e1eba149e10735cac4ae434b20b0ce3e93c968e8b35106b"
+    },
+    {
+      "path": "src/models/supervised_retrieval.py",
+      "sha256": "2940338c5378de03303befb74e3834fbad631c0eb18f4ecb55d2cc39a471f879"
+    },
+    {
+      "path": "submissions/2026-09-09-E025/main.py",
+      "sha256": "00793cf9d720d6f7511ffd738935206b3a5401f2454255409429db8d55e991b9"
+    },
+    {
+      "path": "docs/analysis/E063-outputs/s0-review/decision.md",
+      "sha256": "07e576ff18a9d0a603f44fc7ccec4d0ce345b85f5348d036fb7f6fcf3a5ee59f"
+    },
+    {
+      "path": "docs/analysis/E063-outputs/s0-review/s2-handoff.ko.md",
+      "sha256": "5f97ea0880bafc9680d40ac3ea1a76cd2db81873003f279d9134c1a10650e27e"
+    },
+    {
+      "path": "docs/tree.md",
+      "sha256": "eaa884a4194db103335136495205fe5b51297c17db15e9eac62946ced286cc44"
+    },
+    {
+      "path": "docs/analysis/E063-outputs/s2/artifact-manifest.json",
+      "sha256": "1ac029ae4499066b82fb7b68c9fd0c917ce0e89a0d7040bb7a8fe45d1570774a"
+    },
+    {
+      "path": "docs/analysis/E063-outputs/s2/final-receipt.json",
+      "sha256": "8a38bac07fa05a89db721a8e797330410d57f56ddf3e22d333f9e0a597b6ced1"
+    }
+  ],
+  "decision": {
+    "release_qualification_accepted": true,
+    "candidate": "E063 fixed H",
+    "candidate_state": "parked",
+    "incumbent": "E041",
+    "fallback": "E025",
+    "main": "Recommend one unchanged ZIP user Development submission after user confirms account/phase/slot; actual result to same E063 S2.",
+    "backup": "If user defers or slot unavailable, parked; no new run or retry.",
+    "rationale": "Distinct naturally active whole policy preserved through release; required local gates met and hosted arms can change priority. Tiny synthetic gain/sunk cost/unused slot do not establish efficacy or justify adoption.",
+    "correction": "Late E025 current-byte identity after assembly launch, before evaluator/package/official. Reference-only dependency, exact preset hash and previous completed raw provenance preserved; no candidate policy/reference selection change. Accepted without retroactive timing claim or rerun.",
+    "inherited_release": {
+      "zip": {
+        "path": "submissions/2026-10-09-E063.zip",
+        "sha256": "5469b5374f6fb3745cabf64071183ed3de5bbe240ea4f18c034049d560d532d9",
+        "bytes": 15720
+      },
+      "prepared_kst": "2026-10-09T23:51:00.484781+09:00",
+      "source_assembly_extracted_vectors": 189649,
+      "controls_exact": true,
+      "official_all3_seconds": 701.724240399999,
+      "per_instrument_regression": {
+        "unicef": {
+          "skill": 0.5006484230707156,
+          "delta_E025": 0,
+          "delta_E041": 0,
+          "release_pass": true
+        },
+        "world_bank": {
+          "skill": 0.45471730736298255,
+          "delta_E025": 0,
+          "delta_E041": 0,
+          "release_pass": true
+        },
+        "unhcr": {
+          "skill": 0.5624803077254883,
+          "delta_E025": -0.00046856597952815715,
+          "delta_E041": 0.00001757886784692353,
+          "release_pass": true
+        }
+      },
+      "cost_seconds": 1214.5834377000024,
+      "combined_S1_S2_seconds": 1969.1351368000028,
+      "calls": {
+        "pipeline": 6,
+        "neural": 18,
+        "metric": 16
+      },
+      "observed_peak_GiB": {
+        "rss": 2.2867431640625,
+        "commitment": 2.4681930541992188
+      },
+      "max_sample_gap_seconds": 0.12008280000009108
+    },
+    "limits": [
+      "Weak exposed synthetic +.0000175789, 8/16 descriptive declines, no independent audit",
+      "Existing proxy/selection and in-sample base/replay remain",
+      "Historical missing package/executable metadata remains unknown",
+      "Late E025 identity not a prospective check",
+      "Sampled local CPU peaks/time do not certify hosted dependency/H100/continuous limits",
+      "ZIP hash inherited S2 record; no current S0 ZIP hash/remote bytes/ID/time/account/slot/result verification"
+    ],
+    "next_reading": "Original SCORES favorable/tie/adverse/mixed/technical/missing-provenance arms unchanged. Tie lowers this policy priority without zero-effect claim. No automatic adoption or same-policy retry."
+  },
+  "exposure": {
+    "historical_people": 17999,
+    "SSUID": 12339,
+    "aggregates_A022": "preserved",
+    "consumed_E059": "oracle1918/1124;selection2007/1130",
+    "protected": "audit2074/1177;calibration1866",
+    "new_responses_predictions_keys_modelcache": 0
+  },
+  "preserved_states": "All STOP/HOLD including E058/E059/A023/A024/A039/A040; E057/E060/E061/E062/E063 parked, E062UNRESOLVED; A_half unpromoted/A018 unconfirmed/S3 stopped.",
+  "operations": {
+    "documents_source_identity_reads": true,
+    "S0_docs_status_log_writes": true,
+    "model_import_edit_fit_predict_score": 0,
+    "tests_checker_rerun": 0,
+    "ZIP_data_Parquet_NPZ_key_cache_read_hash": 0,
+    "web_platform_remote_install": 0,
+    "upload_commit_push": 0,
+    "subagents": 0,
+    "S2_S3_TEST_execution": 0
+  },
+  "administrative_notes": [
+    "Initial combined JSON tool output was truncated; parser failed without filesystem changes. Narrow selected fields read successfully afterward; no scientific failure or execution.",
+    "Scoped elevated shell used for permitted local document actions under existing environment limitation; no approval-review rejection."
+  ],
+  "final_verification": {
+    "status": "DOCUMENT_CHECK_COMPLETE",
+    "at": "2026-10-10T00:23:58.7575028+09:00",
+    "preserved_selected_count": 30,
+    "hash_mismatches": [],
+    "shared_additions": [
+      {
+        "path": "docs/status.md",
+        "before_sha256": "2d3685c17874ed26e2597b5a412f85c6eb7282ea13b6f6d1f36994d12db0342a",
+        "after_sha256": "c10f72f371e997a3402189c2d5babd35bd34b06b1c1101c80c60a8418e6e143a",
+        "restored_sha256": "2d3685c17874ed26e2597b5a412f85c6eb7282ea13b6f6d1f36994d12db0342a",
+        "original_bytes_preserved": true
+      },
+      {
+        "path": "docs/log.md",
+        "before_sha256": "d23c768f90b38a8ff52bc07dd6ed222b86b0f0e8174903e610ee37e5a9659c3d",
+        "after_sha256": "44c39bc1d530b81ef9e59307b54728bf45468d489daf53b4badf169b68e267ea",
+        "restored_sha256": "d23c768f90b38a8ff52bc07dd6ed222b86b0f0e8174903e610ee37e5a9659c3d",
+        "original_bytes_preserved": true
+      }
+    ],
+    "markdown_links": [
+      {
+        "file": "decision.md",
+        "target": "../s2/closeout.md",
+        "exists": true
+      },
+      {
+        "file": "decision.md",
+        "target": "../s2/verification.json",
+        "exists": true
+      },
+      {
+        "file": "decision.md",
+        "target": "../s2/cost-time-ledger.json",
+        "exists": true
+      },
+      {
+        "file": "decision.md",
+        "target": "../s2/repair-record.md",
+        "exists": true
+      },
+      {
+        "file": "decision.md",
+        "target": "../s2/baseline-identity-supplement.json",
+        "exists": true
+      },
+      {
+        "file": "decision.md",
+        "target": "../../../../submissions/2026-10-09-E063/SCORES.md",
+        "exists": true
+      },
+      {
+        "file": "decision.md",
+        "target": "s2-result-handoff.ko.md",
+        "exists": true
+      },
+      {
+        "file": "decision.md",
+        "target": "verification.json",
+        "exists": true
+      }
+    ],
+    "artifacts": [
+      {
+        "path": "docs\\analysis\\E063-outputs\\s0-release-review\\decision.md",
+        "sha256": "f73c245384976210a4aaf24289fb7f5cc8ffc2f810e3d50b661f3f20d71a989d",
+        "bytes": 6439
+      },
+      {
+        "path": "docs\\analysis\\E063-outputs\\s0-release-review\\s2-result-handoff.ko.md",
+        "sha256": "b353953df0dfa90d349dd8900338323dcf52a9547d58b50c8fb5c62721ade81b",
+        "bytes": 4542
+      },
+      {
+        "path": "docs\\analysis\\E063-outputs\\s0-release-review\\shared-additions.json",
+        "sha256": "50fa5944347c4d309c9f35dff2990652ffddb4867a6753759c42a047e6fe37b6",
+        "bytes": 3950
+      }
+    ],
+    "head": "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+    "head_unchanged": true,
+    "dirty_count": 114,
+    "dirty_difference": [],
+    "named_local_jobs": [],
+    "diff_check_exit": 0,
+    "diff_output": [],
+    "tool_chunk": "730aa3",
+    "scope_note": "30 selected permitted files preserved; 29 matched prior recorded identities, final receipt captured at S0 entry. No full-workspace or remote-job audit. ZIP/data/cache not opened or hashed."
+  }
+}

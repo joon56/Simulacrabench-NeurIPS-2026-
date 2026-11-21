@@ -1,0 +1,10 @@
+{
+    "work_cutoff":  "2026-10-06T14:32:43Z",
+    "clock_observed_utc":  "2026-10-06T14:56:32Z",
+    "deadline_extended":  false,
+    "new_python_children":  0,
+    "reason":  "Closeout reserve would be consumed",
+    "code_prepared_unverified":  true,
+    "outcome":  "NOT_EXECUTED_TIME_GATE",
+    "deadline":  "2026-10-06T14:42:43Z"
+}

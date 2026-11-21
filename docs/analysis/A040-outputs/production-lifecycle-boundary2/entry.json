@@ -1,0 +1,50 @@
+{
+    "read_evidence":  [
+                          "227670",
+                          "0bf89f",
+                          "003ea5",
+                          "0d445b",
+                          "fbfe70",
+                          "80ef51",
+                          "a37062",
+                          "193b16"
+                      ],
+    "local_named_jobs":  0,
+    "science_processes":  4,
+    "work_cutoff_utc":  "2026-10-05T16:09:10Z",
+    "forbidden":  "Actual auth/RPC/build/model/payload/keys/cache/installation/commit/push/subagents/S2/S3",
+    "workflow_revision":  "2026-10-05-r5",
+    "head":  "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+    "main":  "Actual SDK Image.build success/failure to Sandbox plus real120s stall cleanup",
+    "workflow_sha256":  "a577942675e16a732339e586c14796104dda704693568439ae28670cc7fb7b23",
+    "role":  "S1 technical",
+    "authority":  "User supplied attached same-S1 execution prompt; prior same-chat S1 explicit scope persists",
+    "dirty_count":  89,
+    "prior_preparation_seconds":  17197.7879076,
+    "entry_utc":  "2026-10-05T15:34:10Z",
+    "deadline_utc":  "2026-10-05T16:19:10Z",
+    "source_manifest_sha256":  "9bed44512e531215e68c4cc0a2dfd5ea99670a44f4125166eb62999684e624f3",
+    "read_paths":  [
+                       "AGENTS.md",
+                       "CLAUDE.md",
+                       "docs/status.md",
+                       "docs/log.md newest3",
+                       "docs/workflow.md",
+                       "user-handoff.ko.md",
+                       "production-lifecycle-repair1 named inputs",
+                       "installed SDK source"
+                   ],
+    "backup":  "Exact unresolved boundary closeout only",
+    "science_seconds":  1077.3504532,
+    "limits":  {
+                   "checks":  420,
+                   "short":  60,
+                   "stall":  210,
+                   "short_kill":  50,
+                   "whole":  2700,
+                   "stall_kill":  200,
+                   "closeout":  600,
+                   "gpu":  0,
+                   "cpu":  2
+               }
+}

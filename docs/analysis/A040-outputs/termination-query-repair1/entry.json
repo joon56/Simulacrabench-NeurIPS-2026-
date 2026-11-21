@@ -1,0 +1,44 @@
+{
+    "prior_science_processes":  4,
+    "read_evidence":  [
+                          "61c339",
+                          "9aca66"
+                      ],
+    "prior_science_seconds":  1077.3504532,
+    "work_cutoff_utc":  "2026-10-05T12:27:24Z",
+    "local_jobs":  [
+
+                   ],
+    "workflow_revision":  "2026-10-05-r5",
+    "head":  "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+    "main":  "Actual wrapper/protobuf helper validation then exact-resource termination evidence",
+    "workflow_sha256":  "a577942675e16a732339e586c14796104dda704693568439ae28670cc7fb7b23",
+    "role":  "S1 cleanup-only technical",
+    "authority":  "Current user: read r5/status amendment; continue existing termination task; autonomously repair within scope",
+    "forbidden":  "New resource/build/science/production controller repair/payload/protected data/commit/push/subagents/S2/S3",
+    "entry_utc":  "2026-10-05T12:02:24Z",
+    "deadline_utc":  "2026-10-05T12:32:24Z",
+    "backup":  "Precise unresolved identity/terminal closeout",
+    "ordered_reads":  [
+                          "AGENTS.md",
+                          "CLAUDE.md r5 entry",
+                          "docs/status.md current",
+                          "docs/log.md newest3",
+                          "docs/workflow.md",
+                          "s0-query-contract-review amendment/base scope/decision"
+                      ],
+    "old_helper_sha256":  "28019d3b2543e1f53d667b63af302b806e49b70e19bbe19aa25b2aaa735abd57",
+    "prior_preparation_seconds":  12587.4312918,
+    "limits":  {
+                   "remote_final_reserve":  30,
+                   "per_call":  15,
+                   "total_seconds":  1800,
+                   "closeout_reserve":  300,
+                   "local_check_seconds":  180,
+                   "gpu":  0,
+                   "per_process":  30,
+                   "terminate_max":  1,
+                   "cpu":  2,
+                   "remote_window":  120
+               }
+}

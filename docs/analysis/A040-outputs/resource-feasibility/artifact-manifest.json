@@ -1,0 +1,61 @@
+﻿{
+    "kind":  "New information artifacts only, self excluded",
+    "recorded_utc":  "2026-10-02T09:28:03.4902352Z",
+    "files":  [
+                  {
+                      "path":  "closeout.md",
+                      "bytes":  3384,
+                      "sha256":  "2f4f2083aa12024416456e83c083c7a205e2d017cf3a8ce504e36ac8646a1268"
+                  },
+                  {
+                      "path":  "cost-and-porting.md",
+                      "bytes":  9453,
+                      "sha256":  "8476a91564efb92af47aa6c814d0a2adb7e9153b7a0657b906610b78e2a6aecd"
+                  },
+                  {
+                      "path":  "dirty-before.txt",
+                      "bytes":  3219,
+                      "sha256":  "184f0fe5ff15527c15fb34d257489dd2552aa7f718ac2c3259d5032741e8d7e9"
+                  },
+                  {
+                      "path":  "entry.json",
+                      "bytes":  10116,
+                      "sha256":  "82eccf1901c428b7566b81c040f6c914b3d360999d25af50ce1c9c0aefb015f5"
+                  },
+                  {
+                      "path":  "exposure-ledger.md",
+                      "bytes":  1752,
+                      "sha256":  "ff025bf6d7c07124ce3631ce94de7a045262de10cb2350bcb984e369289f42ae"
+                  },
+                  {
+                      "path":  "log-before.md",
+                      "bytes":  244638,
+                      "sha256":  "92956d3af832ef609743677685464b202370675e2045103b46d0448061f9d445"
+                  },
+                  {
+                      "path":  "options.md",
+                      "bytes":  3064,
+                      "sha256":  "a5cf7e7bfb9ee3bfc45a91163d0ed0ac5344b7f6a842e753ef5fccf1c8123d9a"
+                  },
+                  {
+                      "path":  "s0-handoff.ko.md",
+                      "bytes":  2714,
+                      "sha256":  "be4792acf7e5eaa6e38a09597329c4e6a1663c1533c9bd461f3915dbe947dbf2"
+                  },
+                  {
+                      "path":  "source-register.md",
+                      "bytes":  2697,
+                      "sha256":  "c5e3ce6ea78ad8f1766e92124e5100e1ac17b05ceb69d9b5aea117d71463d4f4"
+                  },
+                  {
+                      "path":  "status-before.md",
+                      "bytes":  31122,
+                      "sha256":  "3b64e97376271b8fe9f7ff41b1cb0a74a1ef994a019a128550d290848352de61"
+                  },
+                  {
+                      "path":  "verification.json",
+                      "bytes":  14033,
+                      "sha256":  "31d5a66ef607c3f49cb6543891d85d7b6bfc3d5dccc08067e38221970c65e048"
+                  }
+              ]
+}

@@ -1,0 +1,7 @@
+{
+  "reason": "Complete production import and official runtime-schema dependencies before any pipeline or score; initial entry remains unchanged.",
+  "source_hashes": {
+    "external/starter-kit/make_sandbox.py": "8cf628cbb4771ed6e91ad74ebb4f75b22667af39d8f48e01c956c675b1b1586b",
+    "src/models/cross_link.py": "0f5a28a6fea27215e0697b94558bc226b24a24a9811a59c3fd71e0d5b5283b17"
+  }
+}

@@ -1,0 +1,167 @@
+{
+    "role":  "S0",
+    "decision":  "HOLD_SPECIFIC_INPUT_NO_UNCHANGED_CONTINUATION",
+    "workflow_revision":  "2026-09-27-r4",
+    "workflow_sha256":  "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642",
+    "head":  "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+    "read_evidence":  [
+                          "66254e ordered entry/current log",
+                          "31879c HEAD/dirty/named jobs",
+                          "3b9fa0 seven required handoff records"
+                      ],
+    "scope":  "Documents and selected document hashes only; no account RPC, SDK execution, input/checkpoint hash, tests, models, contact, remote creation, ZIP, git mutation, subagents or S2/S3",
+    "authentication":  "S1 evidence verified joon56; no fresh S0 authentication check",
+    "s1_remote_metadata_rpcs":  true,
+    "s1_remote_resource_requests":  0,
+    "s0_remote_metadata_rpcs":  0,
+    "cumulative_s1_active_seconds":  2295.2633125,
+    "provider_inquiry":  "draft only; not sent",
+    "new_s1_prompt":  false,
+    "before_hashes":  [
+                          {
+                              "path":  "docs/status.md",
+                              "sha256":  "8e6e9a45a3f82e043064ef84ceecb1c4a4961ef19e243d1c41919a675637d9d9"
+                          },
+                          {
+                              "path":  "docs/log.md",
+                              "sha256":  "0dd0d670f531564b5fab4a131178b36499e446c482192ea320200fa3625ee628"
+                          },
+                          {
+                              "path":  "docs/workflow.md",
+                              "sha256":  "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642"
+                          },
+                          {
+                              "path":  "docs/tree.md",
+                              "sha256":  "eaa884a4194db103335136495205fe5b51297c17db15e9eac62946ced286cc44"
+                          },
+                          {
+                              "path":  "docs/analysis/A040-outputs/modal-full-path1-resume1/closeout.md",
+                              "sha256":  "b0f213982e78a7e2713ba60a13555105acfe0e996abf84acaf88923d3b70050d"
+                          },
+                          {
+                              "path":  "docs/analysis/A040-outputs/modal-full-path1-resume1/build-control.md",
+                              "sha256":  "503d589756806689df9224170a935b37b46d52e99dd1cf02f99ef1739ea50cba"
+                          },
+                          {
+                              "path":  "docs/analysis/A040-outputs/modal-full-path1-resume1/account-read.json",
+                              "sha256":  "370d2ede8377275e96bd53a2dcf623df2262bd0712589fc282429a13ed5a608a"
+                          },
+                          {
+                              "path":  "docs/analysis/A040-outputs/modal-full-path1-resume1/cost-ledger.json",
+                              "sha256":  "90a92e588ade1f5d475eaa07532176a3ab8adda09a9b0fff972283da0e3bf99c"
+                          },
+                          {
+                              "path":  "docs/analysis/A040-outputs/modal-full-path1-resume1/verification.json",
+                              "sha256":  "8644adbcc79209ff23cb6907ab49ac696c04397f53fc155f985cbac6e7884789"
+                          },
+                          {
+                              "path":  "docs/analysis/A040-outputs/modal-full-path1-resume1/termination-receipt.json",
+                              "sha256":  "f5c42b348cf24b49ac026e22b079caaad365f5d6985913c6fb3618dd03ee9b78"
+                          },
+                          {
+                              "path":  "docs/analysis/A040-outputs/modal-full-path1-resume1/entry.json",
+                              "sha256":  "9eb9fb7ec68075aa00ee49898b25fb66bd1f10b5ed3b6b183ed175d8858b3d8c"
+                          }
+                      ],
+    "status_log_original_bytes_preserved":  true,
+    "final_checks":  "PASS_DOCUMENT_REVIEW_ONLY",
+    "recorded_kst":  "2026-10-02T22:23:10.1328990+09:00",
+    "preservation":  [
+                         {
+                             "path":  "docs/status.md",
+                             "after":  "8189e022b0a52ef58389674426564d8e33f768c960b1d1bdd8f737013550367d",
+                             "unchanged":  false,
+                             "intended_addition":  true
+                         },
+                         {
+                             "path":  "docs/log.md",
+                             "after":  "3ac1669e510006d5681b96b1f99e5cfe3f809c07c20d1aa53af1d59faa2f92b1",
+                             "unchanged":  false,
+                             "intended_addition":  true
+                         },
+                         {
+                             "path":  "docs/workflow.md",
+                             "after":  "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642",
+                             "unchanged":  true,
+                             "intended_addition":  false
+                         },
+                         {
+                             "path":  "docs/tree.md",
+                             "after":  "eaa884a4194db103335136495205fe5b51297c17db15e9eac62946ced286cc44",
+                             "unchanged":  true,
+                             "intended_addition":  false
+                         },
+                         {
+                             "path":  "docs/analysis/A040-outputs/modal-full-path1-resume1/closeout.md",
+                             "after":  "b0f213982e78a7e2713ba60a13555105acfe0e996abf84acaf88923d3b70050d",
+                             "unchanged":  true,
+                             "intended_addition":  false
+                         },
+                         {
+                             "path":  "docs/analysis/A040-outputs/modal-full-path1-resume1/build-control.md",
+                             "after":  "503d589756806689df9224170a935b37b46d52e99dd1cf02f99ef1739ea50cba",
+                             "unchanged":  true,
+                             "intended_addition":  false
+                         },
+                         {
+                             "path":  "docs/analysis/A040-outputs/modal-full-path1-resume1/account-read.json",
+                             "after":  "370d2ede8377275e96bd53a2dcf623df2262bd0712589fc282429a13ed5a608a",
+                             "unchanged":  true,
+                             "intended_addition":  false
+                         },
+                         {
+                             "path":  "docs/analysis/A040-outputs/modal-full-path1-resume1/cost-ledger.json",
+                             "after":  "90a92e588ade1f5d475eaa07532176a3ab8adda09a9b0fff972283da0e3bf99c",
+                             "unchanged":  true,
+                             "intended_addition":  false
+                         },
+                         {
+                             "path":  "docs/analysis/A040-outputs/modal-full-path1-resume1/verification.json",
+                             "after":  "8644adbcc79209ff23cb6907ab49ac696c04397f53fc155f985cbac6e7884789",
+                             "unchanged":  true,
+                             "intended_addition":  false
+                         },
+                         {
+                             "path":  "docs/analysis/A040-outputs/modal-full-path1-resume1/termination-receipt.json",
+                             "after":  "f5c42b348cf24b49ac026e22b079caaad365f5d6985913c6fb3618dd03ee9b78",
+                             "unchanged":  true,
+                             "intended_addition":  false
+                         },
+                         {
+                             "path":  "docs/analysis/A040-outputs/modal-full-path1-resume1/entry.json",
+                             "after":  "9eb9fb7ec68075aa00ee49898b25fb66bd1f10b5ed3b6b183ed175d8858b3d8c",
+                             "unchanged":  true,
+                             "intended_addition":  false
+                         }
+                     ],
+    "selected_s1_artifact_hash_matches":  [
+                                              {
+                                                  "name":  "closeout.md",
+                                                  "matches":  true
+                                              },
+                                              {
+                                                  "name":  "build-control.md",
+                                                  "matches":  true
+                                              },
+                                              {
+                                                  "name":  "account-read.json",
+                                                  "matches":  true
+                                              },
+                                              {
+                                                  "name":  "cost-ledger.json",
+                                                  "matches":  true
+                                              },
+                                              {
+                                                  "name":  "verification.json",
+                                                  "matches":  true
+                                              },
+                                              {
+                                                  "name":  "termination-receipt.json",
+                                                  "matches":  true
+                                              },
+                                              {
+                                                  "name":  "entry.json",
+                                                  "matches":  true
+                                              }
+                                          ]
+}

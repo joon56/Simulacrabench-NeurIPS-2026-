@@ -1,0 +1,21 @@
+{
+  "mode": "tests",
+  "attempt": 1,
+  "started_utc": "2026-10-07T12:52:38.268196+00:00",
+  "wall_seconds": 50.035517100001016,
+  "prior_worker_seconds": 0,
+  "cumulative_worker_seconds": 50.035517100001016,
+  "exit_code": 1,
+  "resource_stop": "COMPLETE",
+  "error": null,
+  "peak_owned_tree_bytes": {
+    "rss": 347947008,
+    "commitment": 386572288
+  },
+  "sample_count": 463,
+  "sample_interval_seconds": 0.1,
+  "counter_semantics": "Conservative sum of per-process peak RSS/private commitment, owned controller and descendants",
+  "numerical_threads": 2,
+  "gpu": 0,
+  "status": "FAIL"
+}

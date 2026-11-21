@@ -1,0 +1,31 @@
+{
+  "scope": "LOCAL_PROTOCOL_FIXTURE",
+  "termination": "TERMINAL_TASK0_CONFIRMED",
+  "errors": [
+    {
+      "type": "InvalidError",
+      "message": "fixed billing failure",
+      "stage": "WorkspaceBillingSummary"
+    },
+    {
+      "stage": "final_billing",
+      "error": "InvalidError('fixed billing failure')"
+    }
+  ],
+  "observations": [
+    {
+      "state": 5,
+      "tasks": 0,
+      "confirmed": true
+    }
+  ],
+  "sandbox_terminal": {
+    "status": 3,
+    "status_name": "GENERIC_STATUS_TERMINATED",
+    "exitcode": 0
+  },
+  "sandbox_id": "sb-aaaaaaaaaaaaaaaaaaaaaa",
+  "terminal_source": "Exact-ID SandboxWait",
+  "terminal_observed_utc": "2026-10-05T14:29:10.180182+00:00",
+  "elapsed_seconds": 0.25274740000168094
+}

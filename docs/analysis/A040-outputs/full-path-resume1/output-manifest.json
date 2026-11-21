@@ -1,0 +1,31 @@
+{
+  "files": [
+    {
+      "path": "tmp/a040-full-path-resume1/reference/unhcr.json",
+      "sha256": "d3d5501ceb060b0cb0560dac6a90f3fe274fab56b67f6ee4ae2cc69794b15a7f",
+      "bytes": 10389129
+    },
+    {
+      "path": "tmp/a040-full-path-resume1/reference/unicef.json",
+      "sha256": "fa83bc6c3978005de2c4a657edc0f74511a88d62f9a09b113e27f40f5cecf6a2",
+      "bytes": 1822114
+    },
+    {
+      "path": "tmp/a040-full-path-resume1/reference/world_bank.json",
+      "sha256": "909e9796435931891ff984715455d568607ad94e13fd1401775838f551963735",
+      "bytes": 6846390
+    },
+    {
+      "path": "tmp/a040-full-path-resume1/candidate/unicef.json",
+      "sha256": "fa83bc6c3978005de2c4a657edc0f74511a88d62f9a09b113e27f40f5cecf6a2",
+      "bytes": 1822114
+    },
+    {
+      "path": "tmp/a040-full-path-resume1/candidate/world_bank.json",
+      "sha256": "909e9796435931891ff984715455d568607ad94e13fd1401775838f551963735",
+      "bytes": 6846390
+    }
+  ],
+  "candidate_unhcr_output_written": false,
+  "old_predictions_read": false
+}

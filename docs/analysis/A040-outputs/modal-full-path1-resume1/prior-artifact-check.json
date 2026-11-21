@@ -1,0 +1,116 @@
+﻿[
+    {
+        "path":  "allowlist.json",
+        "expected":  "f8a52aaabb040593737485a9f860d53ae39600693ab18517128c577d0ac5dcfe",
+        "actual":  "f8a52aaabb040593737485a9f860d53ae39600693ab18517128c577d0ac5dcfe",
+        "match":  true
+    },
+    {
+        "path":  "boundary-result.json",
+        "expected":  "e84a9f68341374d8dff365a0f3796e4bae545d41b201c1b7efffd9ea51c4d37e",
+        "actual":  "e84a9f68341374d8dff365a0f3796e4bae545d41b201c1b7efffd9ea51c4d37e",
+        "match":  true
+    },
+    {
+        "path":  "closeout.md",
+        "expected":  "24b9c04801ad7815f94396d9829413cd407be72ca058a35333f07ffc1945feff",
+        "actual":  "24b9c04801ad7815f94396d9829413cd407be72ca058a35333f07ffc1945feff",
+        "match":  true
+    },
+    {
+        "path":  "cost-ledger.json",
+        "expected":  "475b7d2db5501a817adf0fe4f6b03f43dd1e32f4817035b748221ee27f0ed363",
+        "actual":  "475b7d2db5501a817adf0fe4f6b03f43dd1e32f4817035b748221ee27f0ed363",
+        "match":  true
+    },
+    {
+        "path":  "dirty-entry.txt",
+        "expected":  "184f0fe5ff15527c15fb34d257489dd2552aa7f718ac2c3259d5032741e8d7e9",
+        "actual":  "184f0fe5ff15527c15fb34d257489dd2552aa7f718ac2c3259d5032741e8d7e9",
+        "match":  true
+    },
+    {
+        "path":  "entry.json",
+        "expected":  "c52bbf401c1e0476a755292e7341da8ece2a8b1141ed6c9d15423227b772948c",
+        "actual":  "c52bbf401c1e0476a755292e7341da8ece2a8b1141ed6c9d15423227b772948c",
+        "match":  true
+    },
+    {
+        "path":  "exposure-ledger.md",
+        "expected":  "d059a4db489756e991d0fb8b2c49a71a310c4ceb470c521350f3aee78779dd2a",
+        "actual":  "d059a4db489756e991d0fb8b2c49a71a310c4ceb470c521350f3aee78779dd2a",
+        "match":  true
+    },
+    {
+        "path":  "log-before.md",
+        "expected":  "4407ec8c78d806b89bd67be8ae33750c9e29ae97b41620039637a129f3a792ad",
+        "actual":  "4407ec8c78d806b89bd67be8ae33750c9e29ae97b41620039637a129f3a792ad",
+        "match":  true
+    },
+    {
+        "path":  "platform-contract.md",
+        "expected":  "21ec1d6aa347443b81ad002649a47a11289101678c5366166b6c3a98e6314072",
+        "actual":  "21ec1d6aa347443b81ad002649a47a11289101678c5366166b6c3a98e6314072",
+        "match":  true
+    },
+    {
+        "path":  "prepare_allowlist.py",
+        "expected":  "db5b02061900dd92201ea7f3fb7e2fbf85ee32b7ea2c562d14a5b9fc0c442714",
+        "actual":  "db5b02061900dd92201ea7f3fb7e2fbf85ee32b7ea2c562d14a5b9fc0c442714",
+        "match":  true
+    },
+    {
+        "path":  "registration.md",
+        "expected":  "e1d91e101daa7e64d8707d952c9347247e86ee3e4f3aa9769790bff34d8f48b5",
+        "actual":  "e1d91e101daa7e64d8707d952c9347247e86ee3e4f3aa9769790bff34d8f48b5",
+        "match":  true
+    },
+    {
+        "path":  "s0-handoff.ko.md",
+        "expected":  "83757099adb98edac98c9c291da1b400b6bd4a52b652e1067e36a1dcc415c33d",
+        "actual":  "83757099adb98edac98c9c291da1b400b6bd4a52b652e1067e36a1dcc415c33d",
+        "match":  true
+    },
+    {
+        "path":  "sdk-package-selection.json",
+        "expected":  "24b8d934851039ecb7b7a537a7959c3b26be2bf1a366cce8d1caeafa151ad50f",
+        "actual":  "24b8d934851039ecb7b7a537a7959c3b26be2bf1a366cce8d1caeafa151ad50f",
+        "match":  true
+    },
+    {
+        "path":  "sdk-requirements.lock.txt",
+        "expected":  "f245a99b042968df56b28a747f6122deefc41bdd4650d4d152c3019affd23541",
+        "actual":  "f245a99b042968df56b28a747f6122deefc41bdd4650d4d152c3019affd23541",
+        "match":  true
+    },
+    {
+        "path":  "source-input-image-manifest.json",
+        "expected":  "23f1a78192e9418b67cbfae75cb8043479efbe01e2650a45b0123d44dd7c8f7b",
+        "actual":  "23f1a78192e9418b67cbfae75cb8043479efbe01e2650a45b0123d44dd7c8f7b",
+        "match":  true
+    },
+    {
+        "path":  "source.diff",
+        "expected":  "53f5cfa08aa9ab9a33cf0249a1dd41c5e9f86296f613772fafd1c2413b385a35",
+        "actual":  "53f5cfa08aa9ab9a33cf0249a1dd41c5e9f86296f613772fafd1c2413b385a35",
+        "match":  true
+    },
+    {
+        "path":  "status-before.md",
+        "expected":  "ae0701c4ec2d77d2f7e23e0a1d8d68213c1be227acf73fbee763310295c4fed0",
+        "actual":  "ae0701c4ec2d77d2f7e23e0a1d8d68213c1be227acf73fbee763310295c4fed0",
+        "match":  true
+    },
+    {
+        "path":  "termination-receipt.json",
+        "expected":  "e88a1edbd956f111ac43e6788215733497b79aec3584b65607a86bc79574e430",
+        "actual":  "e88a1edbd956f111ac43e6788215733497b79aec3584b65607a86bc79574e430",
+        "match":  true
+    },
+    {
+        "path":  "verification.json",
+        "expected":  "9639649dbba6d03841aff6a93b259d609ff513e5a3fd270d7befae2bcad419aa",
+        "actual":  "9639649dbba6d03841aff6a93b259d609ff513e5a3fd270d7befae2bcad419aa",
+        "match":  true
+    }
+]

@@ -1,0 +1,25 @@
+{
+    "role":  "S1 technical local controller repair",
+    "deadline_utc":  "2026-10-04T12:32:45Z",
+    "python_jobs_observed":  0,
+    "authority":  "Latest user explicitly requests local controller repair and regression from s0-modal-logging-review/s1-local-controller-repair.ko.md",
+    "allowed":  "stdlib controller copies; SDK source review; sequential fake transport and redirected UTF8 regression only",
+    "prior_active_seconds":  3312.1552137,
+    "regression_subprocess_cumulative_seconds_cap":  120,
+    "read_utc":  "2026-10-04T12:07:13.5038446Z",
+    "task_seconds_cap":  1800,
+    "forbidden":  "Remote/account requests, staging/model/response reads or hashes, model execution, git writes, subagents",
+    "read_evidence":  [
+                          "9c897b AGENTS CLAUDE handoff",
+                          "7d0144 status latest3 log workflow",
+                          "b0b066 S0 decision handoff",
+                          "7c674a current workflow HEAD dirty jobs",
+                          "922f56 required historical records",
+                          "cb6224 original controller and termination source"
+                      ],
+    "workflow_revision":  "2026-09-27-r4",
+    "head":  "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+    "started_utc":  "2026-10-04T12:02:45Z",
+    "workflow_sha256":  "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642",
+    "output_collision":  false
+}

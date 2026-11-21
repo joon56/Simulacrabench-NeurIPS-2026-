@@ -1,0 +1,23 @@
+{
+  "mode": "tests",
+  "attempt": 2,
+  "only": null,
+  "wall_seconds": 40.080261600000085,
+  "child_seconds": 40.031859200000326,
+  "prior_seconds": 13.438657399998192,
+  "cumulative_seconds": 53.51891899999828,
+  "focused_cumulative_seconds": 53.51891899999828,
+  "exit_code": 1,
+  "resource_stop": "COMPLETE",
+  "error": null,
+  "peak_owned_tree_bytes": {
+    "rss": 407699456,
+    "commitment": 422580224
+  },
+  "sample_count": 368,
+  "sample_interval_seconds": 0.1,
+  "threads": 2,
+  "gpu": 0,
+  "semantics": "Conservative sum of per-process peak RSS/private, controller and descendants; stage wall includes parent source verification and cleanup",
+  "status": "FAIL"
+}

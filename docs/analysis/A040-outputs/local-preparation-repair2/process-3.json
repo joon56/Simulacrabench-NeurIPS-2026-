@@ -1,0 +1,12 @@
+﻿{
+    "mode":  "baseline",
+    "hidden":  true,
+    "affinity_mask":  3,
+    "owned_pid_remaining":  0,
+    "wall_seconds":  1.0264708999999999,
+    "number":  3,
+    "timeout_seconds":  27,
+    "error":  null,
+    "pid":  50976,
+    "exit_code":  0
+}

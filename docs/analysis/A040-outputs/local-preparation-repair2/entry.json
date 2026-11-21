@@ -1,0 +1,37 @@
+{
+    "read_evidence":  [
+                          "35c5d5",
+                          "f22ad3",
+                          "6046f0",
+                          "f6d17b",
+                          "b1df18"
+                      ],
+    "each_process_seconds":  30,
+    "head":  "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+    "closeout_deadline_utc":  "2026-10-05T10:03:15Z",
+    "reads":  [
+                  "AGENTS.md",
+                  "CLAUDE.md entry",
+                  "docs/status.md current",
+                  "docs/log.md latest3",
+                  "docs/workflow.md routing",
+                  "s0-no-reply-plan/decision.md",
+                  "named repair1 and resume4 records"
+              ],
+    "prior_preparation_seconds":  9685.2829087,
+    "role":  "S1",
+    "execution_cutoff_utc":  "2026-10-05T09:53:15Z",
+    "gpu":  0,
+    "workflow_sha256":  "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642",
+    "prior_science_seconds":  1077.3504532,
+    "workflow_revision":  "2026-09-27-r4",
+    "backup":  "Failure preservation and closeout",
+    "forbidden":  "Responses/112 payload/checkpoint/cache/VAF/model/auth/RPC/build/install/web/subagents/git publish/S2/S3",
+    "main":  "Owned loop IPC plus independent forbidden-operation guards; actual SDK source mount and isolated import",
+    "allowed":  "New local checker and minimal source flag; actual SDK discovery; isolated exact-byte import; records",
+    "prior_science_processes":  4,
+    "entry_utc":  "2026-10-05T09:03:15Z",
+    "cpu_threads":  2,
+    "task":  "Technical validation",
+    "check_process_seconds":  180
+}

@@ -1,0 +1,47 @@
+{
+  "outcome": "ASSERTIONS_PASS_EXIT_PENDING",
+  "case": "stall",
+  "protocol_only": true,
+  "sdk_default_build": true,
+  "image_id": "im-dddddddddddddddddddddd",
+  "creates": 1,
+  "terminates": 1,
+  "commands": [],
+  "terminal": {
+    "scope": "LOCAL_PROTOCOL_FIXTURE",
+    "termination": "TERMINAL_TASK0_CONFIRMED",
+    "errors": [],
+    "observations": [
+      {
+        "state": 5,
+        "tasks": 0,
+        "confirmed": true
+      }
+    ],
+    "sandbox_terminal": {
+      "status": 3,
+      "status_name": "GENERIC_STATUS_TERMINATED",
+      "exitcode": 0
+    },
+    "sandbox_id": "sb-aaaaaaaaaaaaaaaaaaaaaa",
+    "terminal_source": "Exact-ID SandboxWait",
+    "terminal_observed_utc": "2026-10-05T15:59:26.531182+00:00",
+    "billing_final": {
+      "metered_cost": "0.01009897",
+      "billed_cost": "0",
+      "metered_breakdown": {},
+      "attribution": "WORKSPACE_AGGREGATE_NOT_TASK_INVOICE",
+      "posting_delay_unknown": true
+    },
+    "elapsed_seconds": 0.25033679999614833
+  },
+  "source_files": [
+    {
+      "filename": "/root/controller_core.py",
+      "sha256": "fc561eee08f1eafbbeac2cbcc5fa31890ef719bf603c5c7dd1af7aea5e556bcb"
+    }
+  ],
+  "child_work_seconds": 120.47516690000339,
+  "actual_auth_rpc_model": 0,
+  "protected_access": 0
+}

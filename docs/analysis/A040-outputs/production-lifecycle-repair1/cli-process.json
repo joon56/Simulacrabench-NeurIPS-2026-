@@ -1,0 +1,7 @@
+﻿{
+    "pid":  9448,
+    "kill_after_ms":  29000,
+    "cpu_affinity":  3,
+    "wall_seconds":  1.6177232,
+    "exit_code":  0
+}

@@ -1,0 +1,18 @@
+{
+  "scope": "LIVE",
+  "termination": "TERMINAL_TASK0_CONFIRMED",
+  "errors": [],
+  "observations": [
+    {
+      "state": 5,
+      "tasks": 0,
+      "confirmed": true,
+      "sandbox_returncode": null
+    }
+  ],
+  "billing_final": {
+    "metered": "0.00000000",
+    "billed": "0.00000000"
+  },
+  "elapsed_seconds": 2.1232256000002963
+}

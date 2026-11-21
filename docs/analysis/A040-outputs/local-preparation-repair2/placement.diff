@@ -1,0 +1,10 @@
+--- original/contract.py
++++ local-preparation-repair2/contract.py
+@@ -12,1 +12,1 @@
+-REMOTE_DIR = "/work/docs/analysis/A040-outputs/modal-output-contract-repair1"
++REMOTE_DIR = "/work/docs/analysis/A040-outputs/local-preparation-repair2"
+--- original/live_launcher.py
++++ local-preparation-repair2/live_launcher.py
+@@ -26,1 +26,1 @@
+-    prefix = "docs/analysis/A040-outputs/modal-output-contract-repair1/"
++    prefix = "docs/analysis/A040-outputs/local-preparation-repair2/"

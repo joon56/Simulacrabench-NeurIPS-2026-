@@ -1,0 +1,20 @@
+{
+  "frozen_utc": "2026-09-28T12:48:32.429566+00:00",
+  "hashes": {
+    "scripts/assemble_e061.py": "d89d55ea7a97f40077f00f4f24844e77390b458bddd473a76369285c5e01420e",
+    "scripts/check_e061_release.py": "8f48c48a12d2c183ee5fb329fcba803989f9cc9a6151c5b1b9b083191ad432b3",
+    "tests/test_e061_assembly.py": "3a987fc7bfe280b8fa9f04b1f7fb0e9083ef7ec9157d92a12e67ba412e14c593",
+    "docs/analysis/E061-outputs/s2/main.py": "d1363c7c38d0754d29bb11acdf40a6e14013220b289e4d711196d1271299d0c0",
+    "docs/analysis/E061-outputs/s2/observer/sitecustomize.py": "79f9ea52d7e31c8ed0a88f7d474a2142697ee1229a1926bdec6d6795dea3eff5",
+    "docs/analysis/E061-outputs/s2/release-contract.md": "f8aa86e63ffcbbcb5098d20bb0fbc14e85a6a9db7b7b0950801da164d715c226",
+    "docs/analysis/E061-outputs/s2/entry.json": "336e6371737f52f1448781dc2ab3262777281c1e83972d190fdbb7a0216c4241",
+    "submissions/2026-09-28-E061/SCORES.md": "826bcbcc2518714f70835aa8cf65943543190e40112400ac2709f88ee359bb69",
+    "external/starter-kit/tools/check_submission_zip.py": "0cb9e671b3b19ab62e68b37512ee8717e97d47694276f16e27a77b02d2f37916",
+    "external/starter-kit/LICENSE": "a81db73b86212de93a3944eea5dfb01126ffe17d5fbdb620a6e4c4d04830b20e",
+    "docs/analysis/E061-outputs/s2/phase1/unicef/respondents.parquet": "5287baf2c5cc301740b7478001a095fc1d608c92c2dc2a6963e349a0500fbd8c",
+    "docs/analysis/E061-outputs/s2/phase1/world_bank/respondents.parquet": "1fe8dab61f6dc9774e6d155fffb8dbd0179ee4c39ce49f809f05369e0cac2ed5",
+    "docs/analysis/E061-outputs/s2/phase1/unhcr/respondents.parquet": "e8bc82257f666283f9f4d2b6ce7ac2656cd10e3fddc7e2e35b2f25429a44bcfb"
+  },
+  "model_calls": 0,
+  "source": "entry.json/S1 manifests"
+}

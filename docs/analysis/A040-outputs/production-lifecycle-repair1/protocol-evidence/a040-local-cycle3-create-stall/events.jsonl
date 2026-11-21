@@ -1,0 +1,7 @@
+{"event": "operation", "time": 1791210752.3945127, "stage": "connect", "timeout": 60}
+{"event": "operation", "time": 1791210752.3959188, "stage": "billing", "timeout": 1}
+{"event": "operation", "time": 1791210752.396558, "stage": "base_stream", "timeout": 1}
+{"event": "operation", "time": 1791210752.397048, "stage": "base_identity", "timeout": 1}
+{"event": "operation", "time": 1791210752.4026282, "stage": "app_create", "timeout": 1}
+{"event": "operation", "time": 1791210752.412179, "stage": "build_billing", "timeout": 1}
+{"event": "operation", "time": 1791210752.422674, "stage": "sandbox_create", "timeout": 120}

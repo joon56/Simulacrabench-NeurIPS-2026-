@@ -1,0 +1,23 @@
+{
+  "outcome": "LOCAL_CONTRACT_FAIL",
+  "reason": null,
+  "child_exit": 1,
+  "elapsed_seconds": 13.26487410000027,
+  "sample_period_seconds": 1,
+  "samples": 13,
+  "rss_peak_sampled": 1592758272,
+  "commitment_peak_sampled": 2600308736,
+  "includes_watchdog": true,
+  "available_before": {
+    "physical": 21524160512,
+    "commitment": 21310939136
+  },
+  "host_cap": 16000000000,
+  "gpu": {
+    "allocated_peak": 279770624,
+    "reserved_peak": 308281344,
+    "device_capacity": 8589410304
+  },
+  "full_path_measured": false,
+  "remaining_children": []
+}

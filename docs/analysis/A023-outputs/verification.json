@@ -1,0 +1,36 @@
+{
+  "started_utc": "2026-09-26T17:16:32.625402+00:00",
+  "command": [
+    "C:\\Users\\USER\\Desktop\\SimulacraBench\\.venv\\Scripts\\python.exe",
+    "-B",
+    "scripts/check_a023_candidate_boundary.py",
+    "--verify"
+  ],
+  "real_fits": 0,
+  "real_optimizer_calls": 0,
+  "response_reads": 0,
+  "parquet_reads": 0,
+  "cache_decodes": 0,
+  "real_predictions": 0,
+  "real_scores": 0,
+  "scope": "Owned tiny-fixture worker plus monitor, not real model runtime",
+  "cpu_threads_limit": 2,
+  "memory_limit_bytes": 2147483648,
+  "sample_seconds": 0.1,
+  "worker_wall_limit_seconds": 60,
+  "resource_stop": "COMPLETE",
+  "peak_tree_bytes": {
+    "rss": 70479872,
+    "commitment": 40534016
+  },
+  "seconds_including_worker_imports": 0.6082996999975876,
+  "test_output": ".............                                                            [100%]\r\n13 passed in 0.10s\r\n{\"schema_candidates\": [[\"legacy\", []], [\"upstream\", [\"3\"]], [\"endpoints\", [\"3\", \"7a\", \"7b\", \"7c\"]]], \"static_cost\": {\"configs\": [[64, 2, 0.0], [128, 2, 0.1]], \"normal_base_pipelines\": 2, \"normal_neural_calls_per_pipeline\": 3, \"normal_neural_calls_total\": 6, \"train_call_source_lines\": [253, 217], \"metric_optimizer_source_line\": 97, \"metric_optimizer_calls\": \"M_PD + M_R; one per section per build\", \"actual_fits\": 0, \"real_time_seconds\": null, \"real_memory_bytes\": null, \"scope\": \"Normal nonempty path only; see cost contract for branches\"}}\r\n",
+  "exit_code": 0,
+  "status": "TECHNICAL_PASS",
+  "empirical_disposition": "HOLD",
+  "code_hashes": {
+    "scripts/check_a023_candidate_boundary.py": "d5f49f360ecfb647838972cdfd45cba75b8b7c04a4869cf54fecf636c37865ba",
+    "scripts/check_a023_resources.py": "b2d5a837e2d0d9f55448c084ca1c3cfbe97db2987f6bf0b7b55d5718fa2a8d76",
+    "tests/test_a023_candidate_boundary.py": "b6742f729e49708c4b6c6dfcb39f7a1f64de001bf2b658164dba9835afb54962"
+  }
+}

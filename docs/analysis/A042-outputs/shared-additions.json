@@ -1,0 +1,18 @@
+[
+  {
+    "path": "docs/status.md",
+    "before_sha256": "6f4fa0e7c7c5597a86399c5277ed235c66ff1efc2aa81aaf9284fe3d6bd2ae75",
+    "anchor": "## Current position\r\n\r\n",
+    "insertion": "- **2026-10-09 A042 S0: E062 tie accepted; one bounded S1 information task.**\r\n  E062 remains UNRESOLVED/parked; E041 incumbent/E025 fallback. No same-policy\r\n  retry or head/seed/threshold rescue. Next main: UNHCR query-round-conditioned\r\n  reranking within original K32, one shared-shrinkage contract;40min documents/\r\n  source/math only. Distinct from E036 lambda, E047 final share and E058/E059\r\n  match-pair terms; usefulness/learnability unknown, existing proxy/replay\r\n  limitations retained. No model or E/S2 authorization.\r\n  [A042 decision](analysis/A042-post-e062-priority.md),\r\n  [Separate S1 prompt](analysis/A042-outputs/s1-handoff.ko.md),\r\n  [Verification](analysis/A042-outputs/verification.json).\r\n  Backup: specific rejection/HOLD closeout only. A039/A040 and all STOP/HOLD,\r\n  exposure/protected roles/A_half/A018/S3 unchanged. No commit/push/remote.\r\n\r\n",
+    "replacement": {
+      "from": "Updated: 2026-10-08.",
+      "to": "Updated: 2026-10-09."
+    }
+  },
+  {
+    "path": "docs/log.md",
+    "before_sha256": "e90428d9d9bb9e4c12b32d8efbec2fe25d1d2a21a44ea6d040f149dc5e85d0d7",
+    "anchor": "# Experiment log\r\n\r\n",
+    "insertion": "## 2026-10-09 - A042 S0 accepts E062 tie and prioritizes one retrieval contract\r\n\r\n- Reviewed ordered current entry/workflow r5, E062 supplied-result provenance/\r\n  original arm and research history. HEADa43f4379, dirty102, named local jobs0.\r\n  S2-recorded29 document hashes match; JSON outer-brace normalization preserves\r\n  fields. Existing source/result/SCORES/registration/manifests remain historical.\r\n- E062 Finished969351 public Grand.6433333333/.52/.49/.92 equals E041933094.\r\n  Accept UNRESOLVED, E041 incumbent/E025 fallback/E062 parked; no exact-zero,\r\n  activation/target16 inference or independent best-update/scorer/remote-byte claim.\r\n- Main RECOMMEND_BOUNDED_S1_INFORMATION: one UNHCR query-wave-conditioned metric\r\n  on original32 donors, common-metric shrinkage and exact endpoint contract.\r\n  E041 source uses section-fixed exact-match weights; public wave1/2 and recording\r\n  heterogeneity motivate a question, not useful gain. Whole E041 already uses wave.\r\n- Distinguished E036 same/cross-donor lambda, E043/E045 coverage, E047/E049\r\n  final mixture, E058/E059 match-pair terms, E060 target weighting. Their negative/\r\n  unresolved outcomes and oracle-to-learner gaps remain counterevidence.\r\n-40min future information/source/math task, last10min records, no code/model/\r\n  data/tests/web/remote. Require one parameter/information/selection/cost contract\r\n  or exact rejection/HOLD; no automatic implementation or repeated review.\r\n  No suitable numeric oracle now; exposed synthetic is engineering, original\r\n  Adult/SIPP roles and protected audits cannot supply a new round mechanism.\r\n- Compared and did not prioritize generic WB tree/input swaps, E062 rescue,\r\n  A040 repair or VAF semantic assumptions. No new E, source/ZIP/tree edits,\r\n  fits/predictions/scores/tests/platform/commit/push/subagents/S3/TEST.\r\n  All incumbent/parked/STOP/HOLD/exposure/protected/A_half/A018 states preserved.\r\n- [Decision](analysis/A042-post-e062-priority.md);\r\n  [S1 prompt](analysis/A042-outputs/s1-handoff.ko.md);\r\n  [Verification](analysis/A042-outputs/verification.json).\r\n\r\n"
+  }
+]

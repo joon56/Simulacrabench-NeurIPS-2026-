@@ -1,0 +1,11 @@
+{
+  "frozen_utc": "2026-10-09T14:46:54.208378+00:00",
+  "purpose": "Supplement only; preserve original preflight/freeze and explicitly late E025 current-byte check",
+  "hashes": {
+    "submissions/2026-09-09-E025/main.py": "00793cf9d720d6f7511ffd738935206b3a5401f2454255409429db8d55e991b9",
+    "docs/analysis/E063-outputs/s2/baseline-identity-supplement.json": "771eb9f90830b1b88efd53a6312d69a8039d56a17a001e0e9ebd1470f544c242"
+  },
+  "source_model_input_policy_changes": 0,
+  "invalidated_successes": 0,
+  "new_fit_or_optimizer": 0
+}

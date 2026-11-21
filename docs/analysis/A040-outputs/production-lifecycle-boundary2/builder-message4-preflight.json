@@ -1,0 +1,35 @@
+﻿{
+    "kill_seconds":  50,
+    "case":  "builder_fail",
+    "remaining_seconds":  372.1331518000000026,
+    "start_utc":  "2026-10-05T15:51:54.2772200+00:00",
+    "inputs":  [
+                   {
+                       "sha256":  "41a52d76512eca79c019e0359fbb230faf27f2738c912919d8d23781e583da5d",
+                       "path":  "source-manifest.json"
+                   },
+                   {
+                       "sha256":  "4ebaa1f15c3b6eeec755a9028646e2fa5daa6c2f83810df09fd1407369f7b566",
+                       "path":  "boundary_transport.py"
+                   },
+                   {
+                       "sha256":  "cab28e9604e3310f28ad8288c11fa87973d8000da6c6839ec4e9f3a4d0203574",
+                       "path":  "fixture_transport.py"
+                   },
+                   {
+                       "sha256":  "555759980ceff510f4900d510c16a9f50706d8d2e969b1231f203cfc84db98a7",
+                       "path":  "local_guard.py"
+                   },
+                   {
+                       "sha256":  "2dd8e979f56879caab7bc140fd29d94a7f9c56aa663512f12202608c004178fd",
+                       "path":  "check_boundary.py"
+                   },
+                   {
+                       "sha256":  "6fe6008844170e6c2fd2b554a2e3ef8b9687dad2fdfac866a144cdfbface9a03",
+                       "path":  "run_check.ps1"
+                   }
+               ],
+    "attempt":  "builder-message4",
+    "cap_seconds":  60,
+    "used_seconds":  47.8668481999999974
+}

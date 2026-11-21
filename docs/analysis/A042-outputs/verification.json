@@ -1,0 +1,914 @@
+{
+  "date_kst": "2026-10-09",
+  "status": "RECOMMEND_BOUNDED_S1_INFORMATION",
+  "role": "S0",
+  "task_type": "E062 post-result strategy and one separate S1 information handoff",
+  "workflow_revision": "2026-10-05-r5",
+  "workflow_sha256": "a577942675e16a732339e586c14796104dda704693568439ae28670cc7fb7b23",
+  "entry": {
+    "at": "2026-10-09T19:02:53.4473589+09:00",
+    "head": "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+    "branch": "work/e050-submission",
+    "dirty": [
+      " M .claude/skills/paper-session/SKILL.md",
+      " M .gitignore",
+      " M CLAUDE.md",
+      " M docs/domain-study-guide.ko.md",
+      " M docs/index.md",
+      " M docs/log.md",
+      " M docs/session-prompts.ko.md",
+      " M docs/status.md",
+      " M docs/tree.md",
+      " M docs/workflow.md",
+      " M submissions/SCORES.md",
+      "?? .agents/",
+      "?? AGENTS.md",
+      "?? README.md",
+      "?? docs/analysis/A020-outputs/",
+      "?? docs/analysis/A020-post-e058-design-review.md",
+      "?? docs/analysis/A021-outputs/",
+      "?? docs/analysis/A021-selector-comparison-contract.md",
+      "?? docs/analysis/A022-outputs/",
+      "?? docs/analysis/A022-remaining-role-audit.md",
+      "?? docs/analysis/A023-candidate-boundary-contract.md",
+      "?? docs/analysis/A023-cost-accounting.md",
+      "?? docs/analysis/A023-outputs/",
+      "?? docs/analysis/A024-channel-precision-review.md",
+      "?? docs/analysis/A024-outputs/",
+      "?? docs/analysis/A025-submission-oriented-review.md",
+      "?? docs/analysis/A026-outputs/",
+      "?? docs/analysis/A026-post-e060-strategy-review.md",
+      "?? docs/analysis/A027-outputs/",
+      "?? docs/analysis/A027-workflow-role-revision.md",
+      "?? docs/analysis/A028-outputs/",
+      "?? docs/analysis/A028-workflow-entry-audit.md",
+      "?? docs/analysis/A029-codex-migration-audit.md",
+      "?? docs/analysis/A029-outputs/",
+      "?? docs/analysis/A030-outputs/",
+      "?? docs/analysis/A030-vaf-channel-metadata-review.md",
+      "?? docs/analysis/A031-outputs/",
+      "?? docs/analysis/A031-post-a030-handoff-review.md",
+      "?? docs/analysis/A032-document-acquisition-and-readiness.md",
+      "?? docs/analysis/A032-outputs/",
+      "?? docs/analysis/A033-dev-handoff-and-role-repair.md",
+      "?? docs/analysis/A033-outputs/",
+      "?? docs/analysis/A034-e061-s0-review.md",
+      "?? docs/analysis/A034-outputs/",
+      "?? docs/analysis/A035-e061-dev-submission-review.md",
+      "?? docs/analysis/A035-outputs/",
+      "?? docs/analysis/A036-e061-post-result-review.md",
+      "?? docs/analysis/A036-outputs/",
+      "?? docs/analysis/A037-outputs/",
+      "?? docs/analysis/A037-winning-priority-review.md",
+      "?? docs/analysis/A038-outputs/",
+      "?? docs/analysis/A038-vaf-local-document-intake.md",
+      "?? docs/analysis/A039-outputs/",
+      "?? docs/analysis/A040-outputs/",
+      "?? docs/analysis/A041-outputs/",
+      "?? docs/analysis/A041-wb-ordinal-head-review.md",
+      "?? docs/analysis/E059-outputs/",
+      "?? docs/analysis/E060-outputs/",
+      "?? docs/analysis/E061-outputs/",
+      "?? docs/analysis/E062-outputs/",
+      "?? docs/codex-setup.ko.md",
+      "?? docs/experiments/E059-leaf-donor-interactions.md",
+      "?? docs/experiments/E060-content-target-retrieval.md",
+      "?? docs/experiments/E061-tied-content-heads.md",
+      "?? docs/experiments/E062-wb-ordinal-heads.md",
+      "?? docs/plans/README.md",
+      "?? requirements-models.txt",
+      "?? scripts/assemble_e060.py",
+      "?? scripts/assemble_e061.py",
+      "?? scripts/assemble_e062.py",
+      "?? scripts/check_a021_selector_contract.py",
+      "?? scripts/check_a023_candidate_boundary.py",
+      "?? scripts/check_a023_resources.py",
+      "?? scripts/check_e060.py",
+      "?? scripts/check_e061_release.py",
+      "?? scripts/check_e061_tied_heads.py",
+      "?? scripts/check_e062_release.py",
+      "?? scripts/check_e062_wb_ordinal.py",
+      "?? scripts/check_workspace.py",
+      "?? scripts/screen_e059.py",
+      "?? src/models/content_target_retrieval.py",
+      "?? src/models/tied_content_heads.py",
+      "?? src/models/wb_ordinal_heads.py",
+      "?? submissions/2026-09-27-E060.zip",
+      "?? submissions/2026-09-27-E060/NOTICE.txt",
+      "?? submissions/2026-09-27-E060/main.py",
+      "?? submissions/2026-09-27-E060/verification.json",
+      "?? submissions/2026-09-28-E061.zip",
+      "?? submissions/2026-09-28-E061/",
+      "?? submissions/2026-10-08-E062.zip",
+      "?? submissions/2026-10-08-E062/",
+      "?? tests/test_a021_selector_contract.py",
+      "?? tests/test_a023_candidate_boundary.py",
+      "?? tests/test_content_target_retrieval.py",
+      "?? tests/test_e059_interactions.py",
+      "?? tests/test_e060_assembly.py",
+      "?? tests/test_e061_assembly.py",
+      "?? tests/test_e062_assembly.py",
+      "?? tests/test_tied_content_heads.py",
+      "?? tests/test_wb_ordinal_heads.py",
+      "?? tests/test_workspace_check.py",
+      "?? trip/"
+    ],
+    "jobs": [],
+    "hashes": [
+      {
+        "path": "docs/workflow.md",
+        "sha256": "a577942675e16a732339e586c14796104dda704693568439ae28670cc7fb7b23"
+      },
+      {
+        "path": "docs/status.md",
+        "sha256": "6f4fa0e7c7c5597a86399c5277ed235c66ff1efc2aa81aaf9284fe3d6bd2ae75"
+      },
+      {
+        "path": "docs/log.md",
+        "sha256": "e90428d9d9bb9e4c12b32d8efbec2fe25d1d2a21a44ea6d040f149dc5e85d0d7"
+      }
+    ],
+    "experiments": [
+      "docs/experiments\\TEMPLATE.md",
+      "docs/experiments\\E062-wb-ordinal-heads.md",
+      "docs/experiments\\E061-tied-content-heads.md",
+      "docs/experiments\\E060-content-target-retrieval.md",
+      "docs/experiments\\E059-leaf-donor-interactions.md",
+      "docs/experiments\\E058-donor-pair-interactions.md",
+      "docs/experiments\\E057-unhcr-conditional-content.md",
+      "docs/experiments\\E056-conditional-leaf-content.md",
+      "docs/experiments\\E055-coupled-star-replay.md",
+      "docs/experiments\\E054-gated-loss-resolution.md",
+      "docs/experiments\\E053-uncensored-bucket-replay.md",
+      "docs/experiments\\E052-evidence-after-gates.md",
+      "docs/experiments\\E051-direct-content-tree.md",
+      "docs/experiments\\E050-recursive-evidence-selection.md",
+      "docs/experiments\\E049-adaptive-tabpfn-parents.md",
+      "docs/experiments\\E048-tabpfn-gate-parents.md",
+      "docs/experiments\\E047-adaptive-final-evidence.md",
+      "docs/experiments\\E046-honest-tree-selector.md",
+      "docs/experiments\\E045-union-retrieval.md",
+      "docs/experiments\\E044-retrieval-weight-control.md",
+      "docs/experiments\\E043-section-candidate-search.md",
+      "docs/experiments\\E042-final-evidence-blend.md",
+      "docs/experiments\\E041-supervised-retrieval.md",
+      "docs/experiments\\E040-tree-content.md",
+      "docs/experiments\\E039-tree-blend.md",
+      "docs/experiments\\E038-id-sig.md",
+      "docs/experiments\\E037-sentinel-ceiling.md",
+      "docs/experiments\\E036-wave-lam.md",
+      "docs/experiments\\E035-transition-ceiling.md",
+      "docs/experiments\\E034-probe-evidence-off.md",
+      "docs/experiments\\E033-probe-sentinel.md",
+      "docs/experiments\\E032-probe-gated.md",
+      "docs/experiments\\E031-p2-ingredients.md",
+      "docs/experiments\\E030-ord-sig.md",
+      "docs/experiments\\E029-seed-temp.md",
+      "docs/experiments\\E028-pvc-gate.md",
+      "docs/experiments\\E027-ev-conc.md",
+      "docs/experiments\\E026-hh-cap4.md",
+      "docs/experiments\\E025-hh-cap.md",
+      "docs/experiments\\E024-ev-base.md",
+      "docs/experiments\\E023-stack2.md",
+      "docs/experiments\\E022-hh-sharp.md",
+      "docs/experiments\\E021-household-weights.md",
+      "docs/experiments\\E020-evidence-features.md",
+      "docs/experiments\\E019-sharp-link.md",
+      "docs/experiments\\E018-dup-link.md",
+      "docs/experiments\\E017-capacity-ab.md",
+      "docs/experiments\\E016-wide-ladder.md",
+      "docs/experiments\\E015-trunk-capacity.md",
+      "docs/experiments\\E014-prob-link.md",
+      "docs/experiments\\E013-cross-round-link.md",
+      "docs/experiments\\E012-shared-trunk.md",
+      "docs/experiments\\E011-ordinal-smooth.md",
+      "docs/experiments\\E010-cond-agreement.md",
+      "docs/experiments\\E009-item-blend.md",
+      "docs/experiments\\E008-logit-blend.md",
+      "docs/experiments\\E007-erpis-prior.md",
+      "docs/experiments\\E006-hier-backoff.md",
+      "docs/experiments\\E005-soft-stratum.md",
+      "docs/experiments\\E004-stratum-backoff.md",
+      "docs/experiments\\E003-soft-gating.md",
+      "docs/experiments\\E002-gated-marginal.md",
+      "docs/experiments\\E001-marginal-counts.md"
+    ],
+    "analysis_top": [
+      "A001-background-domain-packet.md",
+      "A002-schema-eda.md",
+      "A003-erpis-prior-csv.md",
+      "A004-wb-structure.md",
+      "A005-sandbox-oracle.md",
+      "A006-dev-validation-audit.md",
+      "A007-submission-history-and-dev-plan.md",
+      "A008-winning-strategy-hypotheses.md",
+      "A009-post-E049-strategy-review.md",
+      "A010-daily-candidate-comparison.md",
+      "A011-replay-bias-diagnostics.md",
+      "A012-phase2-baseline-and-calibration-gate.md",
+      "A013-probe-resolution-and-method.md",
+      "A014-observed-gated-channel.md",
+      "A015-workflow-self-audit.md",
+      "A016-next-research-decision.md",
+      "A017-s2-readiness-check.md",
+      "A018-test-selection.md",
+      "A019-sipp-model-exposure.md",
+      "A020-post-e058-design-review.md",
+      "A021-selector-comparison-contract.md",
+      "A022-remaining-role-audit.md",
+      "A023-candidate-boundary-contract.md",
+      "A023-cost-accounting.md",
+      "A024-channel-precision-review.md",
+      "A025-submission-oriented-review.md",
+      "A026-post-e060-strategy-review.md",
+      "A027-workflow-role-revision.md",
+      "A028-workflow-entry-audit.md",
+      "A029-codex-migration-audit.md",
+      "A030-vaf-channel-metadata-review.md",
+      "A031-post-a030-handoff-review.md",
+      "A032-document-acquisition-and-readiness.md",
+      "A033-dev-handoff-and-role-repair.md",
+      "A034-e061-s0-review.md",
+      "A035-e061-dev-submission-review.md",
+      "A036-e061-post-result-review.md",
+      "A037-winning-priority-review.md",
+      "A038-vaf-local-document-intake.md",
+      "A041-wb-ordinal-head-review.md",
+      "E041-implementation-plan.md",
+      "E043-submission-plan.md",
+      "E045-submission-plan.md",
+      "E046-submission-plan.md",
+      "E047-submission-plan.md",
+      "TEMPLATE.md"
+    ],
+    "analysis_dirs": [
+      "A001-sources",
+      "A002-outputs",
+      "A008-outputs",
+      "A011-outputs",
+      "A012-outputs",
+      "A013-outputs",
+      "A014-outputs",
+      "A015-outputs",
+      "A017-outputs",
+      "A018-outputs",
+      "A019-outputs",
+      "A020-outputs",
+      "A021-outputs",
+      "A022-outputs",
+      "A023-outputs",
+      "A024-outputs",
+      "A026-outputs",
+      "A027-outputs",
+      "A028-outputs",
+      "A029-outputs",
+      "A030-outputs",
+      "A031-outputs",
+      "A032-outputs",
+      "A033-outputs",
+      "A034-outputs",
+      "A035-outputs",
+      "A036-outputs",
+      "A037-outputs",
+      "A038-outputs",
+      "A039-outputs",
+      "A040-outputs",
+      "A041-outputs",
+      "E043-outputs",
+      "E045-outputs",
+      "E046-outputs",
+      "E047-outputs",
+      "E048-outputs",
+      "E049-outputs",
+      "E050-outputs",
+      "E051-outputs",
+      "E052-outputs",
+      "E053-outputs",
+      "E054-outputs",
+      "E055-outputs",
+      "E056-outputs",
+      "E057-outputs",
+      "E058-outputs",
+      "E059-outputs",
+      "E060-outputs",
+      "E061-outputs",
+      "E062-outputs"
+    ]
+  },
+  "read_receipt": {
+    "actual_order": [
+      "AGENTS.md",
+      "CLAUDE.md",
+      "docs/status.md current125lines",
+      "docs/log.md newest3 entries",
+      "docs/workflow.md including reread of truncated routing section",
+      "E062 s2/post-result-handoff.ko.md and linked result/provenance/verification"
+    ],
+    "actual_read_chunks": [
+      "d53d82",
+      "ee6363",
+      "5c811e",
+      "a7eed6",
+      "dd14f7",
+      "1a926d",
+      "e7efc1",
+      "b61afa",
+      "6b876c",
+      "ba66b8",
+      "1be5fd",
+      "ce13e8"
+    ],
+    "scope": "Named documents or indicated bounded excerpts and targeted static source searches; not all history/source files fully read",
+    "S2_receipt": "session-reported, not other-chat transcript authentication",
+    "skills": [
+      "caveman full",
+      "using-superpowers",
+      "brainstorming (comparison/design only; explicit S0/no-commit scope wins)",
+      "karpathy-guidelines (source review)",
+      "verification-before-completion (document verification only)"
+    ]
+  },
+  "post_result_review": {
+    "document_comparisons": [
+      {
+        "path": "AGENTS.md",
+        "expected": "73b86e5310d6a45d5206efd3b55da47c48748ee7b077e6fcad6be276f1716a3a",
+        "actual": "73b86e5310d6a45d5206efd3b55da47c48748ee7b077e6fcad6be276f1716a3a",
+        "match": true
+      },
+      {
+        "path": "CLAUDE.md",
+        "expected": "0cda5c3385ea3368d0c24a6602e4b1220adc864a205e231f10042b655d031749",
+        "actual": "0cda5c3385ea3368d0c24a6602e4b1220adc864a205e231f10042b655d031749",
+        "match": true
+      },
+      {
+        "path": "docs/workflow.md",
+        "expected": "a577942675e16a732339e586c14796104dda704693568439ae28670cc7fb7b23",
+        "actual": "a577942675e16a732339e586c14796104dda704693568439ae28670cc7fb7b23",
+        "match": true
+      },
+      {
+        "path": "docs/codex-setup.ko.md",
+        "expected": "804ad28cc886fa2c839940a9bbabdfb0949a4f345812080c1b90585b281afc4d",
+        "actual": "804ad28cc886fa2c839940a9bbabdfb0949a4f345812080c1b90585b281afc4d",
+        "match": true
+      },
+      {
+        "path": "submissions/2026-09-19-E041/SCORES.md",
+        "expected": "452de89434093225c755639e711b567bfd1160dc38eab74d6b603fda65c2351c",
+        "actual": "452de89434093225c755639e711b567bfd1160dc38eab74d6b603fda65c2351c",
+        "match": true
+      },
+      {
+        "path": "submissions/hosted-scores/2026-09-27.json",
+        "expected": "dfe719bec68faf60c7dfec86c6034ba35fe1a6ba7a9437b88813dbc1ea567ce8",
+        "actual": "dfe719bec68faf60c7dfec86c6034ba35fe1a6ba7a9437b88813dbc1ea567ce8",
+        "match": true
+      },
+      {
+        "path": "docs/analysis/E062-outputs/s2/s0-handoff.ko.md",
+        "expected": "0872cc13ea90b2877a064e592de755afd6b4850cb1f05bc1c3715a5501120ea9",
+        "actual": "0872cc13ea90b2877a064e592de755afd6b4850cb1f05bc1c3715a5501120ea9",
+        "match": true
+      },
+      {
+        "path": "docs/analysis/E062-outputs/s2/closeout.md",
+        "expected": "806b091263a5942d352ad27e5f78e0f8074506bd7a13ab337d24b59f3765d777",
+        "actual": "806b091263a5942d352ad27e5f78e0f8074506bd7a13ab337d24b59f3765d777",
+        "match": true
+      },
+      {
+        "path": "docs/analysis/E062-outputs/s2/verification.json",
+        "expected": "b82170820c005909c0610e5dca69115f772b024e3ffd0d36469a10482dbc80f4",
+        "actual": "b82170820c005909c0610e5dca69115f772b024e3ffd0d36469a10482dbc80f4",
+        "match": true
+      },
+      {
+        "path": "docs/analysis/E062-outputs/s2/source-archive-manifest.json",
+        "expected": "8005f80b8d063065c8ec53a01ed808dd72711284affe2fac08e21d03b66961dd",
+        "actual": "8005f80b8d063065c8ec53a01ed808dd72711284affe2fac08e21d03b66961dd",
+        "match": true
+      },
+      {
+        "path": "docs/analysis/E062-outputs/s2/final-preservation.json",
+        "expected": "8f7a1de76a25f72fd83e2ee45d05afe07cb2f16c23d06f2148fbd214df007ad1",
+        "actual": "8f7a1de76a25f72fd83e2ee45d05afe07cb2f16c23d06f2148fbd214df007ad1",
+        "match": true
+      },
+      {
+        "path": "docs/analysis/E062-outputs/s2/release-freeze.json",
+        "expected": "d416d6a20f58dd5cb616aeb7feb21a1fbd68285261b866ed70d5cf38ead41777",
+        "actual": "d416d6a20f58dd5cb616aeb7feb21a1fbd68285261b866ed70d5cf38ead41777",
+        "match": true
+      },
+      {
+        "path": "docs/analysis/E062-outputs/s2/scorecard-prerun.md",
+        "expected": "11d13920be8e5fa386cbf1d7a6155504f3f4d9e459ba00ba46a3044fdb1b2d6a",
+        "actual": "11d13920be8e5fa386cbf1d7a6155504f3f4d9e459ba00ba46a3044fdb1b2d6a",
+        "match": true
+      },
+      {
+        "path": "docs/analysis/E062-outputs/s2/scorecard-finalization.json",
+        "expected": "9ffa6b090c02ec5344abe49878c448f5e226c086b1d00490de06aa9055c30733",
+        "actual": "9ffa6b090c02ec5344abe49878c448f5e226c086b1d00490de06aa9055c30733",
+        "match": true
+      },
+      {
+        "path": "docs/analysis/E062-outputs/s2/closeout-receipt.json",
+        "expected": "26750b094def213aacd2052b1ee3f89450a2e6515c1a06e5dee761326f7a8237",
+        "actual": "26750b094def213aacd2052b1ee3f89450a2e6515c1a06e5dee761326f7a8237",
+        "match": true
+      },
+      {
+        "path": "docs/analysis/E062-outputs/s2/resource-summary.json",
+        "expected": "0881ba59914609a48526c99e1beb707b6044a63cf14b330034d9098c35bebee5",
+        "actual": "0881ba59914609a48526c99e1beb707b6044a63cf14b330034d9098c35bebee5",
+        "match": true
+      },
+      {
+        "path": "docs/analysis/E062-outputs/s2/exposure-ledger.md",
+        "expected": "6c57bd7d6263e92ced0a34b811d0ce76c1ea73ada8c4c095ffaa8e874ca5b1cc",
+        "actual": "6c57bd7d6263e92ced0a34b811d0ce76c1ea73ada8c4c095ffaa8e874ca5b1cc",
+        "match": true
+      },
+      {
+        "path": "docs/analysis/E062-outputs/artifact-manifest.json",
+        "expected": "bb6d5187d06abfe8c3a705cc8b373f3978c56d80411d89c4127ef8646302fbcf",
+        "actual": "bb6d5187d06abfe8c3a705cc8b373f3978c56d80411d89c4127ef8646302fbcf",
+        "match": true
+      },
+      {
+        "path": "docs/analysis/E062-outputs/registration.md",
+        "expected": "c6b7d587dcc928a761f65b510f8c6018b6c26f7c6b2e59d11a28a4cf0c6389d9",
+        "actual": "c6b7d587dcc928a761f65b510f8c6018b6c26f7c6b2e59d11a28a4cf0c6389d9",
+        "match": true
+      },
+      {
+        "path": "docs/analysis/E062-outputs/verification.json",
+        "expected": "7e212f3e45e1dbf70227068909af0a020c27662567cdfea2e0f67a0c02ed2daf",
+        "actual": "7e212f3e45e1dbf70227068909af0a020c27662567cdfea2e0f67a0c02ed2daf",
+        "match": true
+      },
+      {
+        "path": "docs/experiments/E062-wb-ordinal-heads.md",
+        "expected": "f54406766b8ab175a88575a0d7d9509f3e5ee60066367993935102261e4a4421",
+        "actual": "f54406766b8ab175a88575a0d7d9509f3e5ee60066367993935102261e4a4421",
+        "match": true
+      },
+      {
+        "path": "docs/analysis/E062-outputs/s0-release-review/decision.md",
+        "expected": "8d700cd541b54e9b832a3ff6c5eb670afa773325d3f1a8936c6d08cedf3be37a",
+        "actual": "8d700cd541b54e9b832a3ff6c5eb670afa773325d3f1a8936c6d08cedf3be37a",
+        "match": true
+      },
+      {
+        "path": "docs/analysis/E062-outputs/s0-release-review/verification.json",
+        "expected": "278b513304e89f4eb12caef4bae7aa8c901db6e4f85ff53b33e95a477c39866e",
+        "actual": "278b513304e89f4eb12caef4bae7aa8c901db6e4f85ff53b33e95a477c39866e",
+        "match": true
+      },
+      {
+        "path": "submissions/2026-10-08-E062/SCORES.md",
+        "expected": "034b56c66b24c9d3f68cf810074e09b2cb24523c6aa04c9df81e6dca356bed3f",
+        "actual": "034b56c66b24c9d3f68cf810074e09b2cb24523c6aa04c9df81e6dca356bed3f",
+        "match": true
+      },
+      {
+        "path": "submissions/SCORES.md",
+        "expected": "672e50c16a1b066e03b1fb02d41ab1cab13e991594afe5e7988f138865453c49",
+        "actual": "672e50c16a1b066e03b1fb02d41ab1cab13e991594afe5e7988f138865453c49",
+        "match": true
+      },
+      {
+        "path": "docs/status.md",
+        "expected": "6f4fa0e7c7c5597a86399c5277ed235c66ff1efc2aa81aaf9284fe3d6bd2ae75",
+        "actual": "6f4fa0e7c7c5597a86399c5277ed235c66ff1efc2aa81aaf9284fe3d6bd2ae75",
+        "match": true
+      },
+      {
+        "path": "docs/log.md",
+        "expected": "e90428d9d9bb9e4c12b32d8efbec2fe25d1d2a21a44ea6d040f149dc5e85d0d7",
+        "actual": "e90428d9d9bb9e4c12b32d8efbec2fe25d1d2a21a44ea6d040f149dc5e85d0d7",
+        "match": true
+      },
+      {
+        "path": "docs/analysis/E062-outputs/s2/post-result/user-supplied-api-fragment.txt",
+        "expected": "af63ecada9ec137e4ff39c4afab122ebba71b3018fbf3c62691ac4725162aa4b",
+        "actual": "af63ecada9ec137e4ff39c4afab122ebba71b3018fbf3c62691ac4725162aa4b",
+        "match": true
+      },
+      {
+        "path": "docs/analysis/E062-outputs/s2/post-result/user-supplied-api.json",
+        "expected": "a2928c4b6fd9c348fc6a25fb65bc65a2cc1d9e24703a06b9b31319eb7a11b557",
+        "actual": "a2928c4b6fd9c348fc6a25fb65bc65a2cc1d9e24703a06b9b31319eb7a11b557",
+        "match": true
+      }
+    ],
+    "all29_match": true,
+    "normalization_field_equality": true,
+    "accepted_arm": "UNRESOLVED",
+    "E041_E062_four_public_score_strings_equal": true,
+    "best_event": "not supplied; no readable new best is an operational reading",
+    "scorer_version_identity": "not newly verified",
+    "upload_bytes": "unknown; ZIP neither read nor rehashed",
+    "created_when": "supplied platform creation metadata"
+  },
+  "main": {
+    "task": "One query-round-conditioned donor reranking contract within original K32, common-metric shrinkage",
+    "classification": "information/source/math contract; not model or engineering runtime PASS",
+    "support": "Observed E041 section-constant metric, public GIVEN wave1/2 and recorded round-specific coding differences; earlier positive E041 whole-policy hosted evidence",
+    "counterevidence": [
+      "Whole E041 already uses wave",
+      "K32 can lack useful alternatives",
+      "Conditional fits can overfit smaller context support",
+      "E045/E047 permissive-oracle/learner gaps",
+      "E058 active0 and E059 selection STOP, E060 public tie",
+      "Retained marginal selector/in-sample replay limitations"
+    ],
+    "no_current_numeric_oracle": true,
+    "alternatives_not_selected": [
+      "generic WB tree/input swap without concrete headroom",
+      "E062 rescue/retry",
+      "A040 same-input repair",
+      "VAF unresolved semantics treated as assumptions"
+    ],
+    "budget": "Future S1 gross40min, last10min records, models/tests/remote0",
+    "backup": "Exact rejection/HOLD closeout only",
+    "future_execution_authority": "This file does not start S1; user directs separate session. S1 information contract does not authorize future implementation/S2"
+  },
+  "source_identity_before_review_close": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "73b86e5310d6a45d5206efd3b55da47c48748ee7b077e6fcad6be276f1716a3a"
+    },
+    {
+      "path": "CLAUDE.md",
+      "sha256": "0cda5c3385ea3368d0c24a6602e4b1220adc864a205e231f10042b655d031749"
+    },
+    {
+      "path": "docs/workflow.md",
+      "sha256": "a577942675e16a732339e586c14796104dda704693568439ae28670cc7fb7b23"
+    },
+    {
+      "path": "docs/codex-setup.ko.md",
+      "sha256": "804ad28cc886fa2c839940a9bbabdfb0949a4f345812080c1b90585b281afc4d"
+    },
+    {
+      "path": "submissions/2026-09-19-E041/SCORES.md",
+      "sha256": "452de89434093225c755639e711b567bfd1160dc38eab74d6b603fda65c2351c"
+    },
+    {
+      "path": "submissions/hosted-scores/2026-09-27.json",
+      "sha256": "dfe719bec68faf60c7dfec86c6034ba35fe1a6ba7a9437b88813dbc1ea567ce8"
+    },
+    {
+      "path": "docs/analysis/E062-outputs/s2/s0-handoff.ko.md",
+      "sha256": "0872cc13ea90b2877a064e592de755afd6b4850cb1f05bc1c3715a5501120ea9"
+    },
+    {
+      "path": "docs/analysis/E062-outputs/s2/closeout.md",
+      "sha256": "806b091263a5942d352ad27e5f78e0f8074506bd7a13ab337d24b59f3765d777"
+    },
+    {
+      "path": "docs/analysis/E062-outputs/s2/verification.json",
+      "sha256": "b82170820c005909c0610e5dca69115f772b024e3ffd0d36469a10482dbc80f4"
+    },
+    {
+      "path": "docs/analysis/E062-outputs/s2/source-archive-manifest.json",
+      "sha256": "8005f80b8d063065c8ec53a01ed808dd72711284affe2fac08e21d03b66961dd"
+    },
+    {
+      "path": "docs/analysis/E062-outputs/s2/final-preservation.json",
+      "sha256": "8f7a1de76a25f72fd83e2ee45d05afe07cb2f16c23d06f2148fbd214df007ad1"
+    },
+    {
+      "path": "docs/analysis/E062-outputs/s2/release-freeze.json",
+      "sha256": "d416d6a20f58dd5cb616aeb7feb21a1fbd68285261b866ed70d5cf38ead41777"
+    },
+    {
+      "path": "docs/analysis/E062-outputs/s2/scorecard-prerun.md",
+      "sha256": "11d13920be8e5fa386cbf1d7a6155504f3f4d9e459ba00ba46a3044fdb1b2d6a"
+    },
+    {
+      "path": "docs/analysis/E062-outputs/s2/scorecard-finalization.json",
+      "sha256": "9ffa6b090c02ec5344abe49878c448f5e226c086b1d00490de06aa9055c30733"
+    },
+    {
+      "path": "docs/analysis/E062-outputs/s2/closeout-receipt.json",
+      "sha256": "26750b094def213aacd2052b1ee3f89450a2e6515c1a06e5dee761326f7a8237"
+    },
+    {
+      "path": "docs/analysis/E062-outputs/s2/resource-summary.json",
+      "sha256": "0881ba59914609a48526c99e1beb707b6044a63cf14b330034d9098c35bebee5"
+    },
+    {
+      "path": "docs/analysis/E062-outputs/s2/exposure-ledger.md",
+      "sha256": "6c57bd7d6263e92ced0a34b811d0ce76c1ea73ada8c4c095ffaa8e874ca5b1cc"
+    },
+    {
+      "path": "docs/analysis/E062-outputs/artifact-manifest.json",
+      "sha256": "bb6d5187d06abfe8c3a705cc8b373f3978c56d80411d89c4127ef8646302fbcf"
+    },
+    {
+      "path": "docs/analysis/E062-outputs/registration.md",
+      "sha256": "c6b7d587dcc928a761f65b510f8c6018b6c26f7c6b2e59d11a28a4cf0c6389d9"
+    },
+    {
+      "path": "docs/analysis/E062-outputs/verification.json",
+      "sha256": "7e212f3e45e1dbf70227068909af0a020c27662567cdfea2e0f67a0c02ed2daf"
+    },
+    {
+      "path": "docs/experiments/E062-wb-ordinal-heads.md",
+      "sha256": "f54406766b8ab175a88575a0d7d9509f3e5ee60066367993935102261e4a4421"
+    },
+    {
+      "path": "docs/analysis/E062-outputs/s0-release-review/decision.md",
+      "sha256": "8d700cd541b54e9b832a3ff6c5eb670afa773325d3f1a8936c6d08cedf3be37a"
+    },
+    {
+      "path": "docs/analysis/E062-outputs/s0-release-review/verification.json",
+      "sha256": "278b513304e89f4eb12caef4bae7aa8c901db6e4f85ff53b33e95a477c39866e"
+    },
+    {
+      "path": "submissions/2026-10-08-E062/SCORES.md",
+      "sha256": "034b56c66b24c9d3f68cf810074e09b2cb24523c6aa04c9df81e6dca356bed3f"
+    },
+    {
+      "path": "submissions/SCORES.md",
+      "sha256": "672e50c16a1b066e03b1fb02d41ab1cab13e991594afe5e7988f138865453c49"
+    },
+    {
+      "path": "docs/analysis/E062-outputs/s2/post-result/user-supplied-api-fragment.txt",
+      "sha256": "af63ecada9ec137e4ff39c4afab122ebba71b3018fbf3c62691ac4725162aa4b"
+    },
+    {
+      "path": "docs/analysis/E062-outputs/s2/post-result/user-supplied-api.json",
+      "sha256": "a2928c4b6fd9c348fc6a25fb65bc65a2cc1d9e24703a06b9b31319eb7a11b557"
+    },
+    {
+      "path": "external/starter-kit/data/unhcr.json",
+      "sha256": "b1175b6bdbd96e90a4defd83af20a38d711c6eca9fe3ce880109ff244abe80d9"
+    },
+    {
+      "path": "external/starter-kit/data/world_bank.json",
+      "sha256": "6b3760742c6e864eb8d0bb2f9ec523a19a486b73282d79432dbcca16e3664125"
+    },
+    {
+      "path": "src/models/supervised_retrieval.py",
+      "sha256": "2940338c5378de03303befb74e3834fbad631c0eb18f4ecb55d2cc39a471f879"
+    },
+    {
+      "path": "src/models/shared_trunk.py",
+      "sha256": "df648763c8e0ba5532ebf9e437af95cd10d8527112c1338b8b5db9ad6a212e1f"
+    },
+    {
+      "path": "src/models/logit_blend.py",
+      "sha256": "c25e91e648d5eb8a11afca1c8b02accad1a585540b6ed7d4ca363730a535705f"
+    },
+    {
+      "path": "docs/analysis/A004-wb-structure.md",
+      "sha256": "9ef4313ea4908c149d5fac63bf5a0fbb60a143652a6d80f6a95b552723afd16f"
+    },
+    {
+      "path": "docs/analysis/A006-dev-validation-audit.md",
+      "sha256": "b566ec46b7cbcc120f94aa94f7c91dc44e8a0798b08e8d36c34bed9599531dfc"
+    },
+    {
+      "path": "docs/analysis/A008-winning-strategy-hypotheses.md",
+      "sha256": "dd40ebbb004e25f9eca0acd677055a09f5ac1f339159a63639b0704dc466b06a"
+    },
+    {
+      "path": "docs/analysis/A037-winning-priority-review.md",
+      "sha256": "87e77d8279f68e52751653f3b6098ec1976e4b53a75faf7206043ec6cf4bf66d"
+    },
+    {
+      "path": "docs/analysis/A041-wb-ordinal-head-review.md",
+      "sha256": "c90d039be216dce7f253da124e8cd20deb67004a01fdaa08cd3d1e7d62aa10f8"
+    },
+    {
+      "path": "docs/analysis/A039-outputs/s1/remaining-questions.ko.md",
+      "sha256": "d1265ecd7cef066afacd838465d0518cc9020528412c0dccdc91b5eebb755821"
+    },
+    {
+      "path": "docs/experiments/E036-wave-lam.md",
+      "sha256": "5a32d978878d6854d51b43881817326ddf5b08aa63c1c116b1cd2172726d633a"
+    },
+    {
+      "path": "docs/experiments/E039-tree-blend.md",
+      "sha256": "2c9f8ea8981ea9e5ae0c47e1145394b296d5d9840eb9b7252fce19fd56127056"
+    },
+    {
+      "path": "docs/experiments/E040-tree-content.md",
+      "sha256": "06afa2a1a184e82145aacb7fc5f45928747017ff00ad6ed4e8842ce76423df34"
+    },
+    {
+      "path": "docs/experiments/E041-supervised-retrieval.md",
+      "sha256": "8a17f3cb2cb54deb19fdbffe597dcba173002a82100250ea4ff8be446d76bafb"
+    },
+    {
+      "path": "docs/experiments/E043-section-candidate-search.md",
+      "sha256": "e7d9acac562092596d9bd05921dfab49ac8a2c15854fad8abbba606941ccc4cf"
+    },
+    {
+      "path": "docs/experiments/E045-union-retrieval.md",
+      "sha256": "d7ad5bf5420a7ac4d87ae6989b6bc0e4be94cb03e88c7c4a6dfd58d3da729a5c"
+    },
+    {
+      "path": "docs/experiments/E046-honest-tree-selector.md",
+      "sha256": "03ecf325bf81caf102bba13822dd8bc7a5a810c4c53c0b435be8945b047cb611"
+    },
+    {
+      "path": "docs/experiments/E047-adaptive-final-evidence.md",
+      "sha256": "925274f5f5df964e120242f35430a96beee23cf046e6101cc32b5cb80251b436"
+    },
+    {
+      "path": "docs/experiments/E048-tabpfn-gate-parents.md",
+      "sha256": "60e030be4969bf45fa7db73404db4a1d590c321dc39935ab6c793bcdc77670a0"
+    },
+    {
+      "path": "docs/experiments/E049-adaptive-tabpfn-parents.md",
+      "sha256": "0d6a9f197a5239f2c7a70ed6da3c8e01b8e24a67ba1b4ea7ecf512d9490db046"
+    },
+    {
+      "path": "docs/experiments/E051-direct-content-tree.md",
+      "sha256": "7efd35b3e5e85b15be316e3ef9acecc4d898459de832e37213feb4a93afe1b16"
+    },
+    {
+      "path": "docs/experiments/E058-donor-pair-interactions.md",
+      "sha256": "540c0c42c4cb172fd3796c8c7853740bbbe2a023a3536d9f201698d0d61ec97c"
+    },
+    {
+      "path": "docs/experiments/E059-leaf-donor-interactions.md",
+      "sha256": "bfbe26a10727bc2b703e7bceb674b344461053357dcc6c5a0a9f217a4738626c"
+    },
+    {
+      "path": "docs/experiments/E060-content-target-retrieval.md",
+      "sha256": "b1ba67e7d521d181dac1df4a285ea39ba98b5b20244e6d9ce81e52363e3e7bc0"
+    },
+    {
+      "path": "docs/analysis/E062-outputs/s2/post-result/result.ko.md",
+      "sha256": "ef7df564e5280f7ccc328d4e0f28ca1ec60d375a8d5b21a864d3802852412bf4"
+    },
+    {
+      "path": "docs/analysis/E062-outputs/s2/post-result/comparison.json",
+      "sha256": "c59e0386f635959d3d0e28bb0b93474d84cdf705634cfb9a73d3c870b06b33ab"
+    },
+    {
+      "path": "docs/analysis/E062-outputs/s2/post-result/verification.json",
+      "sha256": "a06d92b35461d693d54f354ce46f6dc8904a64e2a8c0e76e32937c7a368a5bbf"
+    },
+    {
+      "path": "docs/analysis/E062-outputs/s2/post-result-handoff.ko.md",
+      "sha256": "7816e178e8f6cde209e12857df7cccffbe1e5793b2e00dc0b5cac13c007f479d"
+    },
+    {
+      "path": "docs/tree.md",
+      "sha256": "eaa884a4194db103335136495205fe5b51297c17db15e9eac62946ced286cc44"
+    },
+    {
+      "path": "src/models/dup_link.py",
+      "sha256": "e1ce093d927eed6db0553776b74f8ddfca5d159bf035b6cd7b4df9e7bc6b168f"
+    },
+    {
+      "path": "src/eval/retrieval_oracle.py",
+      "sha256": "b6c3487a01f5174e02e7691ec455a8e72cfab7533f68026b9010665a60b23ca4"
+    },
+    {
+      "path": "src/models/trunk_select.py",
+      "sha256": "9fecc3539bdf275675cc4fc87f36dbd94912f53a66a1431d8683a9d7d8cfec11"
+    },
+    {
+      "path": "docs/experiments/E008-logit-blend.md",
+      "sha256": "94c6e368f5219892f3b5965a24e0f3548d25857e86afb3e4d234cf0531069262"
+    },
+    {
+      "path": "docs/experiments/E012-shared-trunk.md",
+      "sha256": "0c40ac6802f683f5523b8639080f4b0df0fcbe4150e7b40ad8eb2a8f918e6b8a"
+    },
+    {
+      "path": "docs/experiments/E017-capacity-ab.md",
+      "sha256": "ad20a4fa677175c06d1d7a6d5710f342898b270c96a5eb38e7e392f6d3c7da68"
+    },
+    {
+      "path": "docs/experiments/E020-evidence-features.md",
+      "sha256": "08dd0b2ca6ae9470e13722495ecdb4149704e872a486f31cac966a6ccad8685c"
+    },
+    {
+      "path": "docs/experiments/E029-seed-temp.md",
+      "sha256": "47363f8c6fbb011d8d1e66ac94dceea98ab7dcb8432da27d7406f4a5f2eac666"
+    },
+    {
+      "path": "docs/experiments/E030-ord-sig.md",
+      "sha256": "72ad36f848e9bebdfb2049b2bf2b4d66cc1a70d61863862a5c6d7a5593f7a20b"
+    },
+    {
+      "path": "docs/analysis/A002-schema-eda.md",
+      "sha256": "520930e0b38fa04e092a2bf427aac9f3a1487225897fcf75ca134d8f81054f58"
+    }
+  ],
+  "reference_E041_snapshot": {
+    "path": "submissions/2026-09-19-E041/main.py",
+    "recorded_sha256": "22c911806ea91234ae350341adfb9c0df2ce4be41cc88e73be304e4bb1023073",
+    "semantics": "Historical recorded identity; snapshot not freshly rehashed in this S0"
+  },
+  "A042_collision_at_entry": [],
+  "allowed_writes": [
+    "docs/analysis/A042-post-e062-priority.md",
+    "docs/analysis/A042-outputs/",
+    "docs/status.md",
+    "docs/log.md"
+  ],
+  "shared_edit_spec": "shared-additions.json; original bytes restored by removing additions and reverting Updated date",
+  "operations": {
+    "model_implementation": 0,
+    "model_import": 0,
+    "fit": 0,
+    "optimizer": 0,
+    "predict": 0,
+    "score": 0,
+    "tests_fixtures": 0,
+    "Parquet_NPZ_cache_response_key_reads_hashes": 0,
+    "ZIP_reads_hashes_writes": 0,
+    "web_platform_remote_calls": 0,
+    "data_acquisition": 0,
+    "install": 0,
+    "subagents": 0,
+    "commit_push": 0,
+    "S2_S3_TEST": 0,
+    "permitted_user_supplied_API_document_reads": true,
+    "static_schema_source_reads_and_hashes": true,
+    "document_record_writes": true
+  },
+  "administrative_errors": [
+    "Default shell setup failed before command; authorized narrow escalated document commands used",
+    "Oversized tool text output truncated; relevant lost sections reread with bounded commands",
+    "PowerShell literal glob docs/analysis/*.md rejected by rg; corrected to directory with -g '*.md'",
+    "No-match rg returns1 treated as bounded search result, not model failure"
+  ],
+  "automatic_approval_rejection": false,
+  "boundaries": "E041 incumbent/E025 fallback; E057/E060/E061/E062 parked; E058 STOP/E059 STOP_SELECTION/A023/A024 empirical HOLD/A039/A040/all STOP/HOLD; 17999/12339 aggregate exposure/A022 original roles/E059 consumed oracle1918/1124 selection2007/1130/protected audit2074/1177 calibration1866; A_half nonpromotion/A018 user-unconfirmed/S3 stopped/no new S2 candidate",
+  "final_document_verification": {
+    "status": "PASS_DOCUMENT_ONLY",
+    "observed_at": "2026-10-09T19:18:09.4019216+09:00",
+    "immutable_checked": 67,
+    "immutable_mismatches": [],
+    "shared_receipts": [
+      {
+        "path": "docs/status.md",
+        "before_sha256": "6f4fa0e7c7c5597a86399c5277ed235c66ff1efc2aa81aaf9284fe3d6bd2ae75",
+        "after_sha256": "0dcfcbc092c2418c45cf4ba735c9192c84ca73f0294aa3c594de5c9a7f58f617",
+        "restored_sha256": "6f4fa0e7c7c5597a86399c5277ed235c66ff1efc2aa81aaf9284fe3d6bd2ae75",
+        "prior_bytes_preserved": true
+      },
+      {
+        "path": "docs/log.md",
+        "before_sha256": "e90428d9d9bb9e4c12b32d8efbec2fe25d1d2a21a44ea6d040f149dc5e85d0d7",
+        "after_sha256": "e37ec6f91e5e1441e0343217fecf684ebbeabd7df2212d2ae9cff33dfc3d6d7f",
+        "restored_sha256": "e90428d9d9bb9e4c12b32d8efbec2fe25d1d2a21a44ea6d040f149dc5e85d0d7",
+        "prior_bytes_preserved": true
+      }
+    ],
+    "links": [
+      {
+        "source": "docs/analysis/A042-post-e062-priority.md",
+        "link": "A042-outputs/s1-handoff.ko.md",
+        "exists": true
+      },
+      {
+        "source": "docs/analysis/A042-post-e062-priority.md",
+        "link": "E062-outputs/s2/post-result/result.ko.md",
+        "exists": true
+      },
+      {
+        "source": "docs/analysis/A042-post-e062-priority.md",
+        "link": "A042-outputs/verification.json",
+        "exists": true
+      }
+    ],
+    "new_document_hashes": [
+      {
+        "path": "docs/analysis/A042-post-e062-priority.md",
+        "sha256": "9d478646da798409b8999988584ab5d7df827e1a5f8fcb30f3cee6e8c5c311bb"
+      },
+      {
+        "path": "docs/analysis/A042-outputs/s1-handoff.ko.md",
+        "sha256": "d22fd902e8c61fcd8278450ee01cb822af5d72dd8d82fceb36bea06a6a8db9ef"
+      }
+    ],
+    "handoff_recorded_E041_hash_correct": true,
+    "head_unchanged": true,
+    "final_head": "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+    "final_dirty_count": 104,
+    "missing_entry_dirty_lines": [],
+    "new_dirty_lines": [
+      "?? docs/analysis/A042-outputs/",
+      "?? docs/analysis/A042-post-e062-priority.md"
+    ],
+    "named_local_jobs": [],
+    "job_scope": "Named local process metadata only; not proof of all remote jobs or other sessions",
+    "git_diff_check_exit": 0,
+    "preservation_scope": "Selected67 immutable document/source hashes, shared-document reverse edits, entry git-status lines; not a recursive rehash of all workspace bytes",
+    "scientific_validation_rerun": false
+  }
+}

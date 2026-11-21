@@ -1,0 +1,29 @@
+{
+  "user_approval": "Explicit user approval received after acquisition/execution permission request",
+  "approval_text_unicode": "승인해줘.",
+  "previous_approval_block_resolved": true,
+  "previous_record": "approval-review.json",
+  "start_utc": "2026-10-02T02:45:00Z",
+  "deadline_utc": "2026-10-02T03:45:00Z",
+  "recorded_end_utc": "2026-10-02T03:33:14.850795+00:00",
+  "wall_seconds_through_record": 2894.850795,
+  "scientific_start": {
+    "start_utc": "2026-10-02T03:26:08.502564+00:00",
+    "invocations": 1,
+    "deadline_seconds": 120,
+    "memory_cap": 16000000000,
+    "affinity": [
+      0,
+      1
+    ]
+  },
+  "scientific_runs": 1,
+  "outcome": "LOCAL_CONTRACT_FAIL",
+  "no_retry": true,
+  "scope": "S1 local technical; S0 review next; no S2 authority",
+  "workflow_revision": "2026-09-27-r4",
+  "workflow_sha256": "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642",
+  "receipt": "Entry ordered reads retained; current bounded continuation used unchanged contract/observation and explicit approval",
+  "allowed": "Pinned public acquisition; isolated prototype and fresh fake fixture; own records/status/log",
+  "forbidden": "Real/protected data, old caches, actual E041/all3/full context, retries, agents, paid/remote, ZIP/upload/commit/push/S2/S3/TEST"
+}

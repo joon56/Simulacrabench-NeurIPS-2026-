@@ -1,0 +1,926 @@
+{
+  "commit": "0dbff3ec8fc68c123c87af77b0ea8b25cd2d23f3",
+  "tabicl_version": "2.2.0",
+  "file_count": 153,
+  "all_match": true,
+  "checks": [
+    {
+      "path": ".github/workflows/testing.yml",
+      "expected_git_blob": "bef2dd55dba9d537ba656d3d97305e4323dc1df2",
+      "actual_git_blob": "bef2dd55dba9d537ba656d3d97305e4323dc1df2",
+      "match": true
+    },
+    {
+      "path": ".gitignore",
+      "expected_git_blob": "3889a6daa61e13a21f4a39677f9f6a3ef86495ea",
+      "actual_git_blob": "3889a6daa61e13a21f4a39677f9f6a3ef86495ea",
+      "match": true
+    },
+    {
+      "path": ".readthedocs.yaml",
+      "expected_git_blob": "839a3ae1ab3a649cd3df407c6916b1d1e51f577b",
+      "actual_git_blob": "839a3ae1ab3a649cd3df407c6916b1d1e51f577b",
+      "match": true
+    },
+    {
+      "path": "CHANGES.md",
+      "expected_git_blob": "8a1870d6ca4a14838df3db94f8975036679b3b67",
+      "actual_git_blob": "8a1870d6ca4a14838df3db94f8975036679b3b67",
+      "match": true
+    },
+    {
+      "path": "LICENSE",
+      "expected_git_blob": "a77493a7d127c4e8d61c2383730f4c0648684b48",
+      "actual_git_blob": "a77493a7d127c4e8d61c2383730f4c0648684b48",
+      "match": true
+    },
+    {
+      "path": "README.md",
+      "expected_git_blob": "d9b849659e38a31865dbbaa0f220d7c612a1cc24",
+      "actual_git_blob": "d9b849659e38a31865dbbaa0f220d7c612a1cc24",
+      "match": true
+    },
+    {
+      "path": "docs/Makefile",
+      "expected_git_blob": "d4bb2cbb9eddb1bb1b4f366623044af8e4830919",
+      "actual_git_blob": "d4bb2cbb9eddb1bb1b4f366623044af8e4830919",
+      "match": true
+    },
+    {
+      "path": "docs/TabICL.ico",
+      "expected_git_blob": "acfc8c1671bebfda7ace8972a4585965631043f0",
+      "actual_git_blob": "acfc8c1671bebfda7ace8972a4585965631043f0",
+      "match": true
+    },
+    {
+      "path": "docs/TabICL_logo.svg",
+      "expected_git_blob": "aafc80926a0257a5fa6d8d3a36b8535d8512a222",
+      "actual_git_blob": "aafc80926a0257a5fa6d8d3a36b8535d8512a222",
+      "match": true
+    },
+    {
+      "path": "docs/TabICL_logo_dark.svg",
+      "expected_git_blob": "f3ad2610e49e7083322aa2ebe18deb1f020602d1",
+      "actual_git_blob": "f3ad2610e49e7083322aa2ebe18deb1f020602d1",
+      "match": true
+    },
+    {
+      "path": "docs/TabICL_logo_no_text.svg",
+      "expected_git_blob": "e792a2684d4eb3ffe50b8938201caa22210d07c1",
+      "actual_git_blob": "e792a2684d4eb3ffe50b8938201caa22210d07c1",
+      "match": true
+    },
+    {
+      "path": "docs/_static/.gitkeep",
+      "expected_git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "actual_git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "match": true
+    },
+    {
+      "path": "docs/_static/css/custom.css",
+      "expected_git_blob": "00e61deebc9002d7631a8ff892e5a706ecf0db99",
+      "actual_git_blob": "00e61deebc9002d7631a8ff892e5a706ecf0db99",
+      "match": true
+    },
+    {
+      "path": "docs/_templates/index.html",
+      "expected_git_blob": "df940d4a2ef041fb594ba6ef1fcba844957003fb",
+      "actual_git_blob": "df940d4a2ef041fb594ba6ef1fcba844957003fb",
+      "match": true
+    },
+    {
+      "path": "docs/api.rst",
+      "expected_git_blob": "a2c00b5ab91317c95f6bf45e373d608957d276b3",
+      "actual_git_blob": "a2c00b5ab91317c95f6bf45e373d608957d276b3",
+      "match": true
+    },
+    {
+      "path": "docs/conf.py",
+      "expected_git_blob": "d3f8fbba371968a8348f7bbcd52fb37a4f093683",
+      "actual_git_blob": "d3f8fbba371968a8348f7bbcd52fb37a4f093683",
+      "match": true
+    },
+    {
+      "path": "docs/figures/architecture.png",
+      "expected_git_blob": "25e8f61f2839723502c690258afe8f920273cffa",
+      "actual_git_blob": "25e8f61f2839723502c690258afe8f920273cffa",
+      "match": true
+    },
+    {
+      "path": "docs/figures/finetune_decision_boundaries.png",
+      "expected_git_blob": "d07c20deee3f2592ad0d88087fb91a291bead2da",
+      "actual_git_blob": "d07c20deee3f2592ad0d88087fb91a291bead2da",
+      "match": true
+    },
+    {
+      "path": "docs/figures/pareto_front_improvability_tabarena.png",
+      "expected_git_blob": "3ffbd579ad35276d0e7da14ddf426341c454b6e8",
+      "actual_git_blob": "3ffbd579ad35276d0e7da14ddf426341c454b6e8",
+      "match": true
+    },
+    {
+      "path": "docs/figures/runtime_tabpfnv25_tabiclv2.png",
+      "expected_git_blob": "25de0549ab51430f468ca62c66b121a0830b4728",
+      "actual_git_blob": "25de0549ab51430f468ca62c66b121a0830b4728",
+      "match": true
+    },
+    {
+      "path": "docs/figures/tabiclv2_perf_vs_n_features.png",
+      "expected_git_blob": "8ff19784de5976665eee32155f263bc88f8ddd55",
+      "actual_git_blob": "8ff19784de5976665eee32155f263bc88f8ddd55",
+      "match": true
+    },
+    {
+      "path": "docs/figures/tabiclv2_perf_vs_n_samples.png",
+      "expected_git_blob": "6d5cefebbd32423e863c4392fccbd908b35c977d",
+      "actual_git_blob": "6d5cefebbd32423e863c4392fccbd908b35c977d",
+      "match": true
+    },
+    {
+      "path": "docs/figures/tabiclv2_time_series.png",
+      "expected_git_blob": "699d6103080c29a305232fa1031ff7198887408c",
+      "actual_git_blob": "699d6103080c29a305232fa1031ff7198887408c",
+      "match": true
+    },
+    {
+      "path": "docs/index.rst",
+      "expected_git_blob": "ba9408913d08cdf930fc6e0ef6d1278294b39d2e",
+      "actual_git_blob": "ba9408913d08cdf930fc6e0ef6d1278294b39d2e",
+      "match": true
+    },
+    {
+      "path": "docs/make.bat",
+      "expected_git_blob": "32bb24529f92346af26219baed295b7488b77534",
+      "actual_git_blob": "32bb24529f92346af26219baed295b7488b77534",
+      "match": true
+    },
+    {
+      "path": "pyproject.toml",
+      "expected_git_blob": "bbd04aa38c9f23aaf4ccee2ce7084e5c5aa1f4c4",
+      "actual_git_blob": "bbd04aa38c9f23aaf4ccee2ce7084e5c5aa1f4c4",
+      "match": true
+    },
+    {
+      "path": "scripts/train_stage1.sh",
+      "expected_git_blob": "1a75ed240d2d59592905e9afeb0a428fdc45b18c",
+      "actual_git_blob": "1a75ed240d2d59592905e9afeb0a428fdc45b18c",
+      "match": true
+    },
+    {
+      "path": "scripts/train_stage2.sh",
+      "expected_git_blob": "ccdf90172e53997014d4f1db59f29888ea6a6103",
+      "actual_git_blob": "ccdf90172e53997014d4f1db59f29888ea6a6103",
+      "match": true
+    },
+    {
+      "path": "scripts/train_stage3.sh",
+      "expected_git_blob": "9749a3fa5e4d817b22214481511441b2bf99b57c",
+      "actual_git_blob": "9749a3fa5e4d817b22214481511441b2bf99b57c",
+      "match": true
+    },
+    {
+      "path": "scripts/train_v2_clf_stage1.sh",
+      "expected_git_blob": "99e8c3ecc47fb7a24f34e0fe33c1a070198fc818",
+      "actual_git_blob": "99e8c3ecc47fb7a24f34e0fe33c1a070198fc818",
+      "match": true
+    },
+    {
+      "path": "scripts/train_v2_clf_stage2.sh",
+      "expected_git_blob": "1e100749397dfc2cec5fa65a1f031defae013dda",
+      "actual_git_blob": "1e100749397dfc2cec5fa65a1f031defae013dda",
+      "match": true
+    },
+    {
+      "path": "scripts/train_v2_clf_stage3.sh",
+      "expected_git_blob": "17d7dbccf968a53622c9b8ee3397bf60be109e7d",
+      "actual_git_blob": "17d7dbccf968a53622c9b8ee3397bf60be109e7d",
+      "match": true
+    },
+    {
+      "path": "scripts/train_v2_reg_stage1.sh",
+      "expected_git_blob": "7d01483faaa196d275c5d48a88955833857909a0",
+      "actual_git_blob": "7d01483faaa196d275c5d48a88955833857909a0",
+      "match": true
+    },
+    {
+      "path": "scripts/train_v2_reg_stage2.sh",
+      "expected_git_blob": "7028e8e3fb35b376959fd8170bf5476ed8dca070",
+      "actual_git_blob": "7028e8e3fb35b376959fd8170bf5476ed8dca070",
+      "match": true
+    },
+    {
+      "path": "scripts/train_v2_reg_stage3.sh",
+      "expected_git_blob": "a1b010a90cdda235533380664ed56d0e0d42631c",
+      "actual_git_blob": "a1b010a90cdda235533380664ed56d0e0d42631c",
+      "match": true
+    },
+    {
+      "path": "src/tabicl/__about__.py",
+      "expected_git_blob": "8a124bf6486bf3d8e9e8221738e3dcef97b14ece",
+      "actual_git_blob": "8a124bf6486bf3d8e9e8221738e3dcef97b14ece",
+      "match": true
+    },
+    {
+      "path": "src/tabicl/__init__.py",
+      "expected_git_blob": "621809f31c928f84f363453270ec74f342693d22",
+      "actual_git_blob": "621809f31c928f84f363453270ec74f342693d22",
+      "match": true
+    },
+    {
+      "path": "src/tabicl/_finetune/__init__.py",
+      "expected_git_blob": "ebf23300f5c2c313d74cbac9c979992e877681af",
+      "actual_git_blob": "ebf23300f5c2c313d74cbac9c979992e877681af",
+      "match": true
+    },
+    {
+      "path": "src/tabicl/_finetune/base.py",
+      "expected_git_blob": "904a0509b16cad03f4f7c3a161e6098cb428c3fc",
+      "actual_git_blob": "904a0509b16cad03f4f7c3a161e6098cb428c3fc",
+      "match": true
+    },
+    {
+      "path": "src/tabicl/_finetune/classifier.py",
+      "expected_git_blob": "6d26b733e0ff3b9aacb3f1c7ee62fef87be9b322",
+      "actual_git_blob": "6d26b733e0ff3b9aacb3f1c7ee62fef87be9b322",
+      "match": true
+    },
+    {
+      "path": "src/tabicl/_finetune/data.py",
+      "expected_git_blob": "20a8870a9372fed9deed44717fe668b6e5226ba7",
+      "actual_git_blob": "20a8870a9372fed9deed44717fe668b6e5226ba7",
+      "match": true
+    },
+    {
+      "path": "src/tabicl/_finetune/logging.py",
+      "expected_git_blob": "9e242a2ae747db71efeaea39294ef17e65d6a897",
+      "actual_git_blob": "9e242a2ae747db71efeaea39294ef17e65d6a897",
+      "match": true
+    },
+    {
+      "path": "src/tabicl/_finetune/regressor.py",
+      "expected_git_blob": "fccfcbd9b4ec6f9f6f09a776ca28dc9c900c9e13",
+      "actual_git_blob": "fccfcbd9b4ec6f9f6f09a776ca28dc9c900c9e13",
+      "match": true
+    },
+    {
+      "path": "src/tabicl/_model/__init__.py",
+      "expected_git_blob": "b2a472f9f95933ed0bb7a9e47c598f0485fd9666",
+      "actual_git_blob": "b2a472f9f95933ed0bb7a9e47c598f0485fd9666",
+      "match": true
+    },
+    {
+      "path": "src/tabicl/_model/_cgroup_memory.py",
+      "expected_git_blob": "78916673b83a95c6ab7c4a9a7d846df1d9483607",
+      "actual_git_blob": "78916673b83a95c6ab7c4a9a7d846df1d9483607",
+      "match": true
+    },
+    {
+      "path": "src/tabicl/_model/attention.py",
+      "expected_git_blob": "a2b4e359e6bb9daaea7ed5866f8d66b765665b34",
+      "actual_git_blob": "a2b4e359e6bb9daaea7ed5866f8d66b765665b34",
+      "match": true
+    },
+    {
+      "path": "src/tabicl/_model/embedding.py",
+      "expected_git_blob": "1144b5c39d581111d8c6557ccf95f33c6761043e",
+      "actual_git_blob": "1144b5c39d581111d8c6557ccf95f33c6761043e",
+      "match": true
+    },
+    {
+      "path": "src/tabicl/_model/encoders.py",
+      "expected_git_blob": "886a37f3825ca06ace94672d97a0d68d3434f942",
+      "actual_git_blob": "886a37f3825ca06ace94672d97a0d68d3434f942",
+      "match": true
+    },
+    {
+      "path": "src/tabicl/_model/inference.py",
+      "expected_git_blob": "6fee7a192b1838f203d9fe880188ad2c55c7f967",
+      "actual_git_blob": "6fee7a192b1838f203d9fe880188ad2c55c7f967",
+      "match": true
+    },
+    {
+      "path": "src/tabicl/_model/inference_config.py",
+      "expected_git_blob": "b3f6ccf1b429456fd87d72d1196bf02f708c5fef",
+      "actual_git_blob": "b3f6ccf1b429456fd87d72d1196bf02f708c5fef",
+      "match": true
+    },
+    {
+      "path": "src/tabicl/_model/interaction.py",
+      "expected_git_blob": "bd6cfb0ec40bc6740b6c7e23caeb0e318feebacd",
+      "actual_git_blob": "bd6cfb0ec40bc6740b6c7e23caeb0e318feebacd",
+      "match": true
+    },
+    {
+      "path": "src/tabicl/_model/kv_cache.py",
+      "expected_git_blob": "634be36bea922cc5991ae161bce0042fb4511d0a",
+      "actual_git_blob": "634be36bea922cc5991ae161bce0042fb4511d0a",
+      "match": true
+    },
+    {
+      "path": "src/tabicl/_model/layers.py",
+      "expected_git_blob": "02034d1b8360a599b0e753c57948d6282097d58b",
+      "actual_git_blob": "02034d1b8360a599b0e753c57948d6282097d58b",
+      "match": true
+    },
+    {
+      "path": "src/tabicl/_model/learning.py",
+      "expected_git_blob": "ec880e1a00b874b7dc6c0b828886fbd4c8d793bf",
+      "actual_git_blob": "ec880e1a00b874b7dc6c0b828886fbd4c8d793bf",
+      "match": true
+    },
+    {
+      "path": "src/tabicl/_model/quantile_dist.py",
+      "expected_git_blob": "ed82c576e3dd2717ba08c79fefebb772eb7ccef5",
+      "actual_git_blob": "ed82c576e3dd2717ba08c79fefebb772eb7ccef5",
+      "match": true
+    },
+    {
+      "path": "src/tabicl/_model/rope.py",
+      "expected_git_blob": "3820e8ad94e61249cec89aff91bce04c9eb55e97",
+      "actual_git_blob": "3820e8ad94e61249cec89aff91bce04c9eb55e97",
+      "match": true
+    },
+    {
+      "path": "src/tabicl/_model/ssmax.py",
+      "expected_git_blob": "113dec7d41309d7222bb7a30aaa47a387bd5e1dc",
+      "actual_git_blob": "113dec7d41309d7222bb7a30aaa47a387bd5e1dc",
+      "match": true
+    },
+    {
+      "path": "src/tabicl/_model/tabicl.py",
+      "expected_git_blob": "5bcde56de2ff09dd5598ffcd51dae7be5529d48f",
+      "actual_git_blob": "5bcde56de2ff09dd5598ffcd51dae7be5529d48f",
+      "match": true
+    },
+    {
+      "path": "src/tabicl/_sklearn/__init__.py",
+      "expected_git_blob": "df2b6fa52e268e4eb3c055af1812948174e74125",
+      "actual_git_blob": "df2b6fa52e268e4eb3c055af1812948174e74125",
+      "match": true
+    },
+    {
+      "path": "src/tabicl/_sklearn/base.py",
+      "expected_git_blob": "1578462d63f96033064dc18bb7d51900e16ed6f0",
+      "actual_git_blob": "1578462d63f96033064dc18bb7d51900e16ed6f0",
+      "match": true
+    },
+    {
+      "path": "src/tabicl/_sklearn/classifier.py",
+      "expected_git_blob": "828f06a87e205c3015e23faac0beac779a8e4fa6",
+      "actual_git_blob": "828f06a87e205c3015e23faac0beac779a8e4fa6",
+      "match": true
+    },
+    {
+      "path": "src/tabicl/_sklearn/preprocessing.py",
+      "expected_git_blob": "34ec20ba411ef963c8cdd981850d8204438334d0",
+      "actual_git_blob": "34ec20ba411ef963c8cdd981850d8204438334d0",
+      "match": true
+    },
+    {
+      "path": "src/tabicl/_sklearn/regressor.py",
+      "expected_git_blob": "e7ed72687c386484f3e14674ad7a07dccbfb4f26",
+      "actual_git_blob": "e7ed72687c386484f3e14674ad7a07dccbfb4f26",
+      "match": true
+    },
+    {
+      "path": "src/tabicl/_sklearn/sklearn_utils.py",
+      "expected_git_blob": "54eff56232a8456d3b60b6e421d5ad4c5efbcdc9",
+      "actual_git_blob": "54eff56232a8456d3b60b6e421d5ad4c5efbcdc9",
+      "match": true
+    },
+    {
+      "path": "src/tabicl/_torch_devices.py",
+      "expected_git_blob": "9584a272af2c21c4b55297eac45731ed79aeeae4",
+      "actual_git_blob": "9584a272af2c21c4b55297eac45731ed79aeeae4",
+      "match": true
+    },
+    {
+      "path": "src/tabicl/_unsupervised/__init__.py",
+      "expected_git_blob": "c758e41d7335f064547a21d4297a8cadf0b85a17",
+      "actual_git_blob": "c758e41d7335f064547a21d4297a8cadf0b85a17",
+      "match": true
+    },
+    {
+      "path": "src/tabicl/_unsupervised/unsupervised.py",
+      "expected_git_blob": "4d8cf7e9c3b7654609b7b82ae6d770bf2bb01dfc",
+      "actual_git_blob": "4d8cf7e9c3b7654609b7b82ae6d770bf2bb01dfc",
+      "match": true
+    },
+    {
+      "path": "src/tabicl/forecast/__init__.py",
+      "expected_git_blob": "037709a83ffa18038e47c9ece91f8aacb5566a23",
+      "actual_git_blob": "037709a83ffa18038e47c9ece91f8aacb5566a23",
+      "match": true
+    },
+    {
+      "path": "src/tabicl/forecast/_dispatch.py",
+      "expected_git_blob": "5ed76761b0adf7936d52414373f157a6d73e81f4",
+      "actual_git_blob": "5ed76761b0adf7936d52414373f157a6d73e81f4",
+      "match": true
+    },
+    {
+      "path": "src/tabicl/forecast/_engine.py",
+      "expected_git_blob": "be75499a93e07ef6426e2db5752cce9eeb89d34b",
+      "actual_git_blob": "be75499a93e07ef6426e2db5752cce9eeb89d34b",
+      "match": true
+    },
+    {
+      "path": "src/tabicl/forecast/_forecaster.py",
+      "expected_git_blob": "24bfbeecc070a38bb332d3bb4ad1b9df6e990917",
+      "actual_git_blob": "24bfbeecc070a38bb332d3bb4ad1b9df6e990917",
+      "match": true
+    },
+    {
+      "path": "src/tabicl/forecast/_plotting.py",
+      "expected_git_blob": "e95c827de28e0dc782a6aa3cc19e48991209fd49",
+      "actual_git_blob": "e95c827de28e0dc782a6aa3cc19e48991209fd49",
+      "match": true
+    },
+    {
+      "path": "src/tabicl/forecast/_preprocessing.py",
+      "expected_git_blob": "3f357a090abcd4c5dc673942fcbff4f90f517fc3",
+      "actual_git_blob": "3f357a090abcd4c5dc673942fcbff4f90f517fc3",
+      "match": true
+    },
+    {
+      "path": "src/tabicl/forecast/_ts_dataframe.py",
+      "expected_git_blob": "90a6d4de9a459ae2f39f3080b1887ebd2ccd3c63",
+      "actual_git_blob": "90a6d4de9a459ae2f39f3080b1887ebd2ccd3c63",
+      "match": true
+    },
+    {
+      "path": "src/tabicl/forecast/transforms/__init__.py",
+      "expected_git_blob": "4db8e34b8825d14a770e2575ecb7f2473417d653",
+      "actual_git_blob": "4db8e34b8825d14a770e2575ecb7f2473417d653",
+      "match": true
+    },
+    {
+      "path": "src/tabicl/forecast/transforms/_base.py",
+      "expected_git_blob": "29f8fb96ce8b6c3b0d56789055678eb0200c7b48",
+      "actual_git_blob": "29f8fb96ce8b6c3b0d56789055678eb0200c7b48",
+      "match": true
+    },
+    {
+      "path": "src/tabicl/forecast/transforms/_calendar.py",
+      "expected_git_blob": "4d0968d03beab58257292387b3ebd624c50b7b48",
+      "actual_git_blob": "4d0968d03beab58257292387b3ebd624c50b7b48",
+      "match": true
+    },
+    {
+      "path": "src/tabicl/forecast/transforms/_pipeline.py",
+      "expected_git_blob": "2405fe74edebaa4a14ff1b3422723e5df0e42ab8",
+      "actual_git_blob": "2405fe74edebaa4a14ff1b3422723e5df0e42ab8",
+      "match": true
+    },
+    {
+      "path": "src/tabicl/forecast/transforms/_seasonality.py",
+      "expected_git_blob": "042657d7bea797a52fc693464072af7fc4b32666",
+      "actual_git_blob": "042657d7bea797a52fc693464072af7fc4b32666",
+      "match": true
+    },
+    {
+      "path": "src/tabicl/prior/__init__.py",
+      "expected_git_blob": "9479cc1c5dbbde349f4826a6d1102b53b0658168",
+      "actual_git_blob": "9479cc1c5dbbde349f4826a6d1102b53b0658168",
+      "match": true
+    },
+    {
+      "path": "src/tabicl/prior/__main__.py",
+      "expected_git_blob": "5e85c3186b0ef0d508c4c282b20b9e512ade03fc",
+      "actual_git_blob": "5e85c3186b0ef0d508c4c282b20b9e512ade03fc",
+      "match": true
+    },
+    {
+      "path": "src/tabicl/prior/_activations.py",
+      "expected_git_blob": "42a97e345f6733b4487c147643a444e4928681ff",
+      "actual_git_blob": "42a97e345f6733b4487c147643a444e4928681ff",
+      "match": true
+    },
+    {
+      "path": "src/tabicl/prior/_dataset.py",
+      "expected_git_blob": "5ac18c5fa6e6c8e1c599bb70014ab70977c51bbc",
+      "actual_git_blob": "5ac18c5fa6e6c8e1c599bb70014ab70977c51bbc",
+      "match": true
+    },
+    {
+      "path": "src/tabicl/prior/_genload.py",
+      "expected_git_blob": "210fd1e599590ad13fa1b7933311276cd8b1122b",
+      "actual_git_blob": "210fd1e599590ad13fa1b7933311276cd8b1122b",
+      "match": true
+    },
+    {
+      "path": "src/tabicl/prior/_graph_scm.py",
+      "expected_git_blob": "ff746f06b7004f1cd1a5b52333c25781c4daa62b",
+      "actual_git_blob": "ff746f06b7004f1cd1a5b52333c25781c4daa62b",
+      "match": true
+    },
+    {
+      "path": "src/tabicl/prior/_hp_sampling.py",
+      "expected_git_blob": "7c7e5ac106e27c6bd6e12d33c3b5511a164ac71c",
+      "actual_git_blob": "7c7e5ac106e27c6bd6e12d33c3b5511a164ac71c",
+      "match": true
+    },
+    {
+      "path": "src/tabicl/prior/_mlp_scm.py",
+      "expected_git_blob": "f74f797eae8b97784d7119f4f910380ce6cefdd1",
+      "actual_git_blob": "f74f797eae8b97784d7119f4f910380ce6cefdd1",
+      "match": true
+    },
+    {
+      "path": "src/tabicl/prior/_prior_config.py",
+      "expected_git_blob": "06e6a85033db9bc6c888a53021ad949d68568cf1",
+      "actual_git_blob": "06e6a85033db9bc6c888a53021ad949d68568cf1",
+      "match": true
+    },
+    {
+      "path": "src/tabicl/prior/_reg2cls.py",
+      "expected_git_blob": "bceb5c422cdb67284bbc5ba6e3b95ed2cae108b7",
+      "actual_git_blob": "bceb5c422cdb67284bbc5ba6e3b95ed2cae108b7",
+      "match": true
+    },
+    {
+      "path": "src/tabicl/prior/_tree_scm.py",
+      "expected_git_blob": "68ca5cd091f2f4b98cbf3cea7fe05687b22230c6",
+      "actual_git_blob": "68ca5cd091f2f4b98cbf3cea7fe05687b22230c6",
+      "match": true
+    },
+    {
+      "path": "src/tabicl/prior/_utils.py",
+      "expected_git_blob": "99bec69eb1c5b0f92b6e7b27772b9f3e16e5d98b",
+      "actual_git_blob": "99bec69eb1c5b0f92b6e7b27772b9f3e16e5d98b",
+      "match": true
+    },
+    {
+      "path": "src/tabicl/prior/graph_lib/README.md",
+      "expected_git_blob": "03fb2c879e2eba0dd4c6fc06df50f05380e57403",
+      "actual_git_blob": "03fb2c879e2eba0dd4c6fc06df50f05380e57403",
+      "match": true
+    },
+    {
+      "path": "src/tabicl/prior/graph_lib/__init__.py",
+      "expected_git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "actual_git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "match": true
+    },
+    {
+      "path": "src/tabicl/prior/graph_lib/_activation.py",
+      "expected_git_blob": "b7b99d6ef47a4790b20ce85bc8c70d63296588b8",
+      "actual_git_blob": "b7b99d6ef47a4790b20ce85bc8c70d63296588b8",
+      "match": true
+    },
+    {
+      "path": "src/tabicl/prior/graph_lib/_base.py",
+      "expected_git_blob": "87844850755f48179bbabe5230743621531d9f71",
+      "actual_git_blob": "87844850755f48179bbabe5230743621531d9f71",
+      "match": true
+    },
+    {
+      "path": "src/tabicl/prior/graph_lib/_config.py",
+      "expected_git_blob": "d2cfec1f4754e9901f1dad1103114105036f843f",
+      "actual_git_blob": "d2cfec1f4754e9901f1dad1103114105036f843f",
+      "match": true
+    },
+    {
+      "path": "src/tabicl/prior/graph_lib/_converter.py",
+      "expected_git_blob": "eadf20b751753ef973965970b0df987e5d71b5a1",
+      "actual_git_blob": "eadf20b751753ef973965970b0df987e5d71b5a1",
+      "match": true
+    },
+    {
+      "path": "src/tabicl/prior/graph_lib/_dataset.py",
+      "expected_git_blob": "972bf7318558da9df463e2d890ab74da0214a861",
+      "actual_git_blob": "972bf7318558da9df463e2d890ab74da0214a861",
+      "match": true
+    },
+    {
+      "path": "src/tabicl/prior/graph_lib/_function.py",
+      "expected_git_blob": "1c005a36078f6d233459200f492e4e64bc1d57f0",
+      "actual_git_blob": "1c005a36078f6d233459200f492e4e64bc1d57f0",
+      "match": true
+    },
+    {
+      "path": "src/tabicl/prior/graph_lib/_graph.py",
+      "expected_git_blob": "5429430bbd089525c3a0e52e5ecc9196b7e22141",
+      "actual_git_blob": "5429430bbd089525c3a0e52e5ecc9196b7e22141",
+      "match": true
+    },
+    {
+      "path": "src/tabicl/prior/graph_lib/_graph_function.py",
+      "expected_git_blob": "be12075c3ce6bd9583eda707037f59dbf00b5860",
+      "actual_git_blob": "be12075c3ce6bd9583eda707037f59dbf00b5860",
+      "match": true
+    },
+    {
+      "path": "src/tabicl/prior/graph_lib/_matrix.py",
+      "expected_git_blob": "a3860bcc75dc2cabbbef21eae498e2f1603a40bd",
+      "actual_git_blob": "a3860bcc75dc2cabbbef21eae498e2f1603a40bd",
+      "match": true
+    },
+    {
+      "path": "src/tabicl/prior/graph_lib/_multi_function.py",
+      "expected_git_blob": "a4f274ee69b0bd39a688516fdd1efd91874daff6",
+      "actual_git_blob": "a4f274ee69b0bd39a688516fdd1efd91874daff6",
+      "match": true
+    },
+    {
+      "path": "src/tabicl/prior/graph_lib/_node_function.py",
+      "expected_git_blob": "a1da6b0ccef60426352103b69a65c416ce62476e",
+      "actual_git_blob": "a1da6b0ccef60426352103b69a65c416ce62476e",
+      "match": true
+    },
+    {
+      "path": "src/tabicl/prior/graph_lib/_points.py",
+      "expected_git_blob": "8f5c1e07438d5b98ea914c6a9d0517cbf36d4fc3",
+      "actual_git_blob": "8f5c1e07438d5b98ea914c6a9d0517cbf36d4fc3",
+      "match": true
+    },
+    {
+      "path": "src/tabicl/prior/graph_lib/_properties.py",
+      "expected_git_blob": "f945bd10a583d1e77346bde8340385747b117477",
+      "actual_git_blob": "f945bd10a583d1e77346bde8340385747b117477",
+      "match": true
+    },
+    {
+      "path": "src/tabicl/prior/graph_lib/_weights.py",
+      "expected_git_blob": "9453e8b32ae7d8c98dd15dcf0b49502509204687",
+      "actual_git_blob": "9453e8b32ae7d8c98dd15dcf0b49502509204687",
+      "match": true
+    },
+    {
+      "path": "src/tabicl/prior/graph_lib/eval/__init__.py",
+      "expected_git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "actual_git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "match": true
+    },
+    {
+      "path": "src/tabicl/prior/graph_lib/eval/check_runtime.py",
+      "expected_git_blob": "b4d97140ef9f8d25f86e28565278af56ccd2ebf4",
+      "actual_git_blob": "b4d97140ef9f8d25f86e28565278af56ccd2ebf4",
+      "match": true
+    },
+    {
+      "path": "src/tabicl/prior/graph_lib/eval/plot_random_dag.py",
+      "expected_git_blob": "50d00dc978d948e0dd779f881030d31c85ddf55f",
+      "actual_git_blob": "50d00dc978d948e0dd779f881030d31c85ddf55f",
+      "match": true
+    },
+    {
+      "path": "src/tabicl/prior/graph_lib/eval/plot_random_dataset.py",
+      "expected_git_blob": "12ea872dfcae16d235e8c9a7c4be61f32b1807d3",
+      "actual_git_blob": "12ea872dfcae16d235e8c9a7c4be61f32b1807d3",
+      "match": true
+    },
+    {
+      "path": "src/tabicl/prior/graph_lib/eval/plot_random_function.py",
+      "expected_git_blob": "16429d37cfc2adcfdcf5fa70548d1f5e1a86c27b",
+      "actual_git_blob": "16429d37cfc2adcfdcf5fa70548d1f5e1a86c27b",
+      "match": true
+    },
+    {
+      "path": "src/tabicl/prior/graph_lib/eval/plot_random_matrix.py",
+      "expected_git_blob": "131221dc885c5203bc6cee7b3f3e945eca7b8636",
+      "actual_git_blob": "131221dc885c5203bc6cee7b3f3e945eca7b8636",
+      "match": true
+    },
+    {
+      "path": "src/tabicl/prior/graph_lib/eval/plot_random_points.py",
+      "expected_git_blob": "484d473933ee50ebad9fff58e304e02307368656",
+      "actual_git_blob": "484d473933ee50ebad9fff58e304e02307368656",
+      "match": true
+    },
+    {
+      "path": "src/tabicl/prior/graph_lib/eval/plot_random_reg_1d_dataset.py",
+      "expected_git_blob": "0f5dd448986e9ddb5f367865f8d0514d3999c8db",
+      "actual_git_blob": "0f5dd448986e9ddb5f367865f8d0514d3999c8db",
+      "match": true
+    },
+    {
+      "path": "src/tabicl/prior/graph_lib/eval/plot_random_reg_2d_dataset.py",
+      "expected_git_blob": "31cac60d1d39d832b939b3d98d6e84909b40945d",
+      "actual_git_blob": "31cac60d1d39d832b939b3d98d6e84909b40945d",
+      "match": true
+    },
+    {
+      "path": "src/tabicl/prior/graph_lib/eval/plot_random_weights.py",
+      "expected_git_blob": "a99219821b56c711d11cdd351e7a8527a5c88fad",
+      "actual_git_blob": "a99219821b56c711d11cdd351e7a8527a5c88fad",
+      "match": true
+    },
+    {
+      "path": "src/tabicl/prior/graph_lib/eval/plot_scalars.py",
+      "expected_git_blob": "a5017489dc43006ead352cbbcac2dc21bae1e4c2",
+      "actual_git_blob": "a5017489dc43006ead352cbbcac2dc21bae1e4c2",
+      "match": true
+    },
+    {
+      "path": "src/tabicl/shap/__init__.py",
+      "expected_git_blob": "720efd9c073d1c9047c27e4b5faf11e1f1fb2b9d",
+      "actual_git_blob": "720efd9c073d1c9047c27e4b5faf11e1f1fb2b9d",
+      "match": true
+    },
+    {
+      "path": "src/tabicl/shap/_shap.py",
+      "expected_git_blob": "3f7680d531999e9d51bf941a739edbbb73546811",
+      "actual_git_blob": "3f7680d531999e9d51bf941a739edbbb73546811",
+      "match": true
+    },
+    {
+      "path": "src/tabicl/shap/_shapiq.py",
+      "expected_git_blob": "58247ce88ec2b80543ef7b9aed278fd732ad623e",
+      "actual_git_blob": "58247ce88ec2b80543ef7b9aed278fd732ad623e",
+      "match": true
+    },
+    {
+      "path": "src/tabicl/train/__init__.py",
+      "expected_git_blob": "2651aca8c12d7da1cb634c0ba4c0f11d8e139f02",
+      "actual_git_blob": "2651aca8c12d7da1cb634c0ba4c0f11d8e139f02",
+      "match": true
+    },
+    {
+      "path": "src/tabicl/train/__main__.py",
+      "expected_git_blob": "2af78bc3c020a2530f1ef9b474e568244c6d39ae",
+      "actual_git_blob": "2af78bc3c020a2530f1ef9b474e568244c6d39ae",
+      "match": true
+    },
+    {
+      "path": "src/tabicl/train/_muon.py",
+      "expected_git_blob": "4d835c711eea83ce1047f069314a89f15e361d04",
+      "actual_git_blob": "4d835c711eea83ce1047f069314a89f15e361d04",
+      "match": true
+    },
+    {
+      "path": "src/tabicl/train/_optim.py",
+      "expected_git_blob": "945b586b15685b50b6c0f2d1e8a7686e4bcdf1ee",
+      "actual_git_blob": "945b586b15685b50b6c0f2d1e8a7686e4bcdf1ee",
+      "match": true
+    },
+    {
+      "path": "src/tabicl/train/_run.py",
+      "expected_git_blob": "93321ff4eaf16d65533b084549cc2f649906eecc",
+      "actual_git_blob": "93321ff4eaf16d65533b084549cc2f649906eecc",
+      "match": true
+    },
+    {
+      "path": "src/tabicl/train/_train_config.py",
+      "expected_git_blob": "5ce4d99955efdb6a29d721cf0817a0baa903dc0a",
+      "actual_git_blob": "5ce4d99955efdb6a29d721cf0817a0baa903dc0a",
+      "match": true
+    },
+    {
+      "path": "tests/__init__.py",
+      "expected_git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "actual_git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "match": true
+    },
+    {
+      "path": "tests/_cgroup_docker_probe.py",
+      "expected_git_blob": "140759475d1b4560039e1e793e996fe5d0da5c13",
+      "actual_git_blob": "140759475d1b4560039e1e793e996fe5d0da5c13",
+      "match": true
+    },
+    {
+      "path": "tests/conftest.py",
+      "expected_git_blob": "f842fb8c01b7cf9469a16b9192f4d15f215cf405",
+      "actual_git_blob": "f842fb8c01b7cf9469a16b9192f4d15f215cf405",
+      "match": true
+    },
+    {
+      "path": "tests/test_cgroup_memory_docker.py",
+      "expected_git_blob": "414c5ed020e4c0d1b714c4e0a3f6c313b0e761c2",
+      "actual_git_blob": "414c5ed020e4c0d1b714c4e0a3f6c313b0e761c2",
+      "match": true
+    },
+    {
+      "path": "tests/test_datetime_encoder.py",
+      "expected_git_blob": "df8d2431bc924bfef05ece0cd59661477960a0b7",
+      "actual_git_blob": "df8d2431bc924bfef05ece0cd59661477960a0b7",
+      "match": true
+    },
+    {
+      "path": "tests/test_finetune_early_stopping.py",
+      "expected_git_blob": "9b81db3732c078a20b172023a6e0b47760c0bda8",
+      "actual_git_blob": "9b81db3732c078a20b172023a6e0b47760c0bda8",
+      "match": true
+    },
+    {
+      "path": "tests/test_finetune_freezing.py",
+      "expected_git_blob": "cdb3ebfd64f881a98073bb6dae7e61de25668ff2",
+      "actual_git_blob": "cdb3ebfd64f881a98073bb6dae7e61de25668ff2",
+      "match": true
+    },
+    {
+      "path": "tests/test_finetune_string_input.py",
+      "expected_git_blob": "796e3bc192f055fc4e12c90d991aff440a320a93",
+      "actual_git_blob": "796e3bc192f055fc4e12c90d991aff440a320a93",
+      "match": true
+    },
+    {
+      "path": "tests/test_inference.py",
+      "expected_git_blob": "8d2e3b54cb894650b68718924519fb0b89ffa37c",
+      "actual_git_blob": "8d2e3b54cb894650b68718924519fb0b89ffa37c",
+      "match": true
+    },
+    {
+      "path": "tests/test_inference_memory.py",
+      "expected_git_blob": "3226d29f72f495dd6c986f3d351468b2724cad04",
+      "actual_git_blob": "3226d29f72f495dd6c986f3d351468b2724cad04",
+      "match": true
+    },
+    {
+      "path": "tests/test_numpy_inputs.py",
+      "expected_git_blob": "3f94198057077961d56283c56d4c7e7a2b262b63",
+      "actual_git_blob": "3f94198057077961d56283c56d4c7e7a2b262b63",
+      "match": true
+    },
+    {
+      "path": "tests/test_predict_allnan_categorical.py",
+      "expected_git_blob": "b054d7144c8c978ebb745aa4d9bb73967e31a93c",
+      "actual_git_blob": "b054d7144c8c978ebb745aa4d9bb73967e31a93c",
+      "match": true
+    },
+    {
+      "path": "tests/test_shap_categorical.py",
+      "expected_git_blob": "93203bcdc087cb3ed390e04816271f4633bcf034",
+      "actual_git_blob": "93203bcdc087cb3ed390e04816271f4633bcf034",
+      "match": true
+    },
+    {
+      "path": "tests/test_sklearn.py",
+      "expected_git_blob": "8c59b56b91bd1bbd4d5d19c9eb0163cfebeea49e",
+      "actual_git_blob": "8c59b56b91bd1bbd4d5d19c9eb0163cfebeea49e",
+      "match": true
+    },
+    {
+      "path": "tests/test_string_input.py",
+      "expected_git_blob": "635324483bac9143c6a2679d5aca8d167d223566",
+      "actual_git_blob": "635324483bac9143c6a2679d5aca8d167d223566",
+      "match": true
+    },
+    {
+      "path": "tests/torch_devices_helpers.py",
+      "expected_git_blob": "89fca7dc248d5f1b2774233917ae85c4e07e134b",
+      "actual_git_blob": "89fca7dc248d5f1b2774233917ae85c4e07e134b",
+      "match": true
+    },
+    {
+      "path": "tutorials/README.rst",
+      "expected_git_blob": "aff9b0104373cfcf944467560dd127407ae3ac03",
+      "actual_git_blob": "aff9b0104373cfcf944467560dd127407ae3ac03",
+      "match": true
+    },
+    {
+      "path": "tutorials/classification_2D_proba.py",
+      "expected_git_blob": "722c4341d8c50e190cf02166f5002f4d2d661bd9",
+      "actual_git_blob": "722c4341d8c50e190cf02166f5002f4d2d661bd9",
+      "match": true
+    },
+    {
+      "path": "tutorials/finetune_classifier.py",
+      "expected_git_blob": "c9c242e2d5e321658a4d54a2e38c417f47c9fde5",
+      "actual_git_blob": "c9c242e2d5e321658a4d54a2e38c417f47c9fde5",
+      "match": true
+    },
+    {
+      "path": "tutorials/finetune_regressor.py",
+      "expected_git_blob": "12a7cf36fa65ef8eeab9ab99f5bd2defcf611014",
+      "actual_git_blob": "12a7cf36fa65ef8eeab9ab99f5bd2defcf611014",
+      "match": true
+    },
+    {
+      "path": "tutorials/getting_started.py",
+      "expected_git_blob": "4e92d81207d88af20ab0bb10f2edf3fc2f2743c3",
+      "actual_git_blob": "4e92d81207d88af20ab0bb10f2edf3fc2f2743c3",
+      "match": true
+    },
+    {
+      "path": "tutorials/interpretability.py",
+      "expected_git_blob": "963448724cb66f324992b056090e3545136f6f2f",
+      "actual_git_blob": "963448724cb66f324992b056090e3545136f6f2f",
+      "match": true
+    },
+    {
+      "path": "tutorials/regression_heteroscedastic_1D.py",
+      "expected_git_blob": "f13a7fcf1ba0dfb8b65abd9afb920332e9b35c73",
+      "actual_git_blob": "f13a7fcf1ba0dfb8b65abd9afb920332e9b35c73",
+      "match": true
+    },
+    {
+      "path": "tutorials/string_handling.py",
+      "expected_git_blob": "7d6ed0701dd794ca0d8fdbd7f0007081fe5d9ea1",
+      "actual_git_blob": "7d6ed0701dd794ca0d8fdbd7f0007081fe5d9ea1",
+      "match": true
+    },
+    {
+      "path": "tutorials/time_series_forecasting.py",
+      "expected_git_blob": "7fc23f988417303e5b1fe35e06f65bd56e3054b0",
+      "actual_git_blob": "7fc23f988417303e5b1fe35e06f65bd56e3054b0",
+      "match": true
+    },
+    {
+      "path": "tutorials/unsupervised_learning.py",
+      "expected_git_blob": "594cbbb3c78e514b874763898a3d6f3a6f8c6011",
+      "actual_git_blob": "594cbbb3c78e514b874763898a3d6f3a6f8c6011",
+      "match": true
+    }
+  ]
+}

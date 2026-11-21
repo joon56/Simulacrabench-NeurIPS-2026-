@@ -1,0 +1,18 @@
+{
+    "basis":  "submissions/phase2-E041-preparation/supplemental-verification.json",
+    "basis_sha256":  "5208da8abaf5a37496f382f57b814a6101296c723b41a4877095c333f9aa9775",
+    "historical_collection":  "Post-run2026-09-24, not pre-fit attestation",
+    "currently_rehashed_numerical_files":  0,
+    "scope":  "Exactly6 existing E041 JSON raw arrays and3 existing synthetic Parquet; proposal for separately authorized S3 only",
+    "sha256":  {
+                   "docs/analysis/A012-outputs/E041-unicef-source.json":  "5b7ffed4d3df848d78ee0933b7384965499980d3c124542bd61e6e5556751d21",
+                   "docs/analysis/A012-outputs/E041-unicef-official-predictions.json":  "d895e2c7bd86258a96ea775866a83a1f7ad5741ca480360b5bef893af4499fce",
+                   "external/starter-kit/_sandbox/unicef/respondents.parquet":  "8e7c659d277c5145c7a8a6d055ac59a7dd3c35699317741239b6b1969bce1488",
+                   "docs/analysis/A012-outputs/E041-world_bank-source.json":  "137335794fa0e96bd19173796b3c7d275dd1fbfbbf1a130bd04331591170e3f8",
+                   "docs/analysis/A012-outputs/E041-world_bank-official-predictions.json":  "8ff6d023bfe34ca87232a98fb38657f49e0889dd70b864ae2fa2b9477ce5e402",
+                   "external/starter-kit/_sandbox/world_bank/respondents.parquet":  "4592bed873410c5248edf1205e5cab41dd30494926e3b49f8da598e266758c8a",
+                   "docs/analysis/A012-outputs/E041-unhcr-source.json":  "891c9315ff08391d0ad6a832dfd4a4ba0d8186028c1405898ba845ccc77d79ff",
+                   "docs/analysis/A012-outputs/E041-unhcr-official-predictions.json":  "2c39c68bb163faaee19582b533b329c1f4f496add152ae12bc2206c8eb5217f0",
+                   "external/starter-kit/_sandbox/unhcr/respondents.parquet":  "5d00075706e0a7beafdc8a70acfe07cde1f489048741eb2f3ae1fababdb72774"
+               }
+}

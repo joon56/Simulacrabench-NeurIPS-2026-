@@ -1,0 +1,21 @@
+{
+  "started_utc": "2026-10-05T11:09:17.276031+00:00",
+  "deadline_utc": "2026-10-05T11:11:17.276031+00:00",
+  "discovery_cutoff_utc": "2026-10-05T11:10:47.276031+00:00",
+  "call_cap_seconds": 15,
+  "final_evidence_reserve_seconds": 30,
+  "allowed_calls": [
+    "Client.from_env",
+    "WorkspaceNameLookup",
+    "AppLookup",
+    "AppGetInfo",
+    "TaskList",
+    "SandboxList(include_finished=True)",
+    "SandboxWait",
+    "SandboxTerminate(max1)",
+    "WorkspaceBillingSummary"
+  ],
+  "forbidden": "create/build/exec/files/transfer",
+  "app_id": "ap-XiMVzlJgrNrCiFpIN1kB4W",
+  "sandbox_name": "a040-resume5-20261005-094405-gpu"
+}

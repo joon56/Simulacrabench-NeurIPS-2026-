@@ -1,0 +1,26 @@
+test_probability_and_nll (tests.test_wb_ordinal_heads.OrdinalTests.test_probability_and_nll) ... FAIL
+
+======================================================================
+FAIL: test_probability_and_nll (tests.test_wb_ordinal_heads.OrdinalTests.test_probability_and_nll)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\SimulacraBench\tests\test_wb_ordinal_heads.py", line 23, in test_probability_and_nll
+    self.assertEqual(tuple(logp.shape), (7, 7))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Tuples differ: (7, 6) != (7, 7)
+
+First differing element 1:
+6
+7
+
+- (7, 6)
+?     ^
+
++ (7, 7)
+?     ^
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.010s
+
+FAILED (failures=1)

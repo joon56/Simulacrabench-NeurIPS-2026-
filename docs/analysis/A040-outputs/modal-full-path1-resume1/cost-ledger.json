@@ -1,0 +1,53 @@
+﻿{
+    "currency":  "USD",
+    "credit_cap":  5,
+    "cash_cap":  0,
+    "preparation_cap":  1,
+    "shutdown_other_reserve":  1,
+    "previous_ledger":  "../modal-full-path1/cost-ledger.json",
+    "previous_ledger_sha256":  "475b7d2db5501a817adf0fe4f6b03f43dd1e32f4817035b748221ee27f0ed363",
+    "previous_actual_actions":  {
+                                    "local_sdk_installations":  1,
+                                    "remote_builds":  0,
+                                    "remote_transfers":  0,
+                                    "remote_sandboxes":  0,
+                                    "scientific_processes":  0,
+                                    "cloud_resource_seconds":  0,
+                                    "created_resource_cost_estimate":  0
+                                },
+    "resume_actual_actions":  {
+                                  "remote_resource_requests":  0,
+                                  "boundary_seconds":  0,
+                                  "scientific_processes":  0,
+                                  "transfers":  0,
+                                  "sdk_installations":  0,
+                                  "model_calls":  0,
+                                  "builds":  0,
+                                  "sandboxes":  0,
+                                  "account_metadata_reads":  true
+                              },
+    "combined_created_resource_cost_estimate":  0,
+    "posted_account_summary":  "account-read.json",
+    "posted_account_metered_usd":  0,
+    "posted_account_billed_usd":  0,
+    "posted_usage_caution":  "Point-in-time account summary, not task-attributed final invoice or independently verified unused credits",
+    "original_conditional_plan":  {
+                                      "memory_MiB":  15258,
+                                      "cpu_physical":  1,
+                                      "seconds":  2400,
+                                      "rate":  0.00123580560546875,
+                                      "container_cost":  2.965933453125,
+                                      "including_prep_and_reserve":  4.965933453125,
+                                      "whole_preparation_bound_verified":  false
+                                  },
+    "whole_preparation_bound_verified":  false,
+    "remaining_credits_verified":  false,
+    "spend_limit_verified":  false,
+    "usage_limit_verified":  false,
+    "user_report":  "credits30/spend0/usage30, awaiting current screen values",
+    "build_control":  "build-control.md",
+    "previous_active_seconds":  1169.2559841,
+    "attempt_active_seconds":  1126.0073284,
+    "cumulative_active_seconds":  2295.2633125,
+    "intersession_gap_seconds":  1085.7440159
+}

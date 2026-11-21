@@ -1,0 +1,11 @@
+{
+  "pid": 40312,
+  "started_monotonic": 29844.9683485,
+  "ended_monotonic": 29850.7079243,
+  "wall_seconds": 5.739575800002058,
+  "exit_code": 0,
+  "killed": false,
+  "name": "attempt-01",
+  "closed_utc": "2026-10-05T12:46:50.597707+00:00",
+  "read_only": false
+}

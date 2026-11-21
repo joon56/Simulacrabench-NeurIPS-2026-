@@ -1,0 +1,46 @@
+{
+    "task":  "S3-METHOD-DRAFTS-A044",
+    "role":  "S3",
+    "task_type":  "document-only review drafts",
+    "accepted_at":  "2026-10-23T17:28:46.0965403+09:00",
+    "authority":  "Current user explicitly instructs this handoff and approves new gross60min/document execution300s/cash0",
+    "gross_start_conservative":  "2026-10-23T17:26:00+09:00",
+    "closeout_only_from":  "2026-10-23T18:16:00+09:00",
+    "deadline":  "2026-10-23T18:26:00+09:00",
+    "head":  "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+    "branch":  "work/e050-submission",
+    "dirty_count":  2557,
+    "outgoing_owner":  "S0-E025-REVIEW-A044 /root",
+    "outgoing_release":  "2026-10-23T17:18:28.1456284+09:00",
+    "incoming_owner":  "S3-METHOD-DRAFTS-A044 /root",
+    "workflow_revision":  "2026-10-22-r6",
+    "workflow_sha256":  "69620b7eeaad5a01a6a6b884fbd95dfede3e26b2ee2b09016479846082aec089",
+    "actual_read_order":  [
+                              "AGENTS.md",
+                              "CLAUDE.md",
+                              "docs/status.md current85lines",
+                              "docs/log.md newest3 entries",
+                              "docs/workflow.md plus truncated middle reread",
+                              "docs/analysis/A044-outputs/s0-e025-review/s3-method-review-drafts.ko.md"
+                          ],
+    "read_evidence":  "Tool transcript: r6 sole writer, bounded S3, document-only scope, old successful work reuse, current user choice open; new handoff confines outputs and authorizes two4-page REVIEW DRAFT PDFs, not grant/delivery",
+    "allowed":  "named documents; exact dated main.py static only; original method md/pdf read; document renderer copy; new review PDFs/PNGs and records",
+    "forbidden":  "model import/fit/predict/score/research tests/checker, raw/data/cache/ZIP read or rehash, network/login/download/install/remote/subagents, final TEST selection/license grant/upload/commit/push",
+    "limits":  {
+                   "gross_minutes":  60,
+                   "cpu":  2,
+                   "document_child_seconds":  300,
+                   "cash":  0,
+                   "pdf_per_candidate":  3,
+                   "rss_private_each_bytes":  2147483648,
+                   "pdf_total":  6,
+                   "gpu":  0,
+                   "heavy":  1
+               },
+    "local_python_jobs":  [
+
+                          ],
+    "remote_all_chat_census":  false,
+    "exclusive_writer_released":  false,
+    "s0_artifact_identities_verified":  true
+}

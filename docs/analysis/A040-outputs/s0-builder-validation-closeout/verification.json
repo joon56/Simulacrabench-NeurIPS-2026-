@@ -1,0 +1,575 @@
+{
+  "role": "S0",
+  "task": "Result review, stop enforcement and priority decision",
+  "date_kst": "2026-10-05",
+  "verdict": "ACCEPT_STOP_LOCAL_VALIDATION_INCOMPLETE / DEPRIORITIZE_CURRENT_MODAL_PREPARATION",
+  "head": "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+  "workflow_revision": "2026-09-27-r4",
+  "workflow_sha256": "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642",
+  "read_evidence": [
+    {
+      "chunk": "6fd70a",
+      "description": "Ordered AGENTS/CLAUDE/status/log/workflow command; combined output truncated; not claimed fully visible."
+    },
+    {
+      "chunk": "6209b1",
+      "description": "Reread status/newest3log/workflow entry; named file listing; systematic-debugging source."
+    },
+    {
+      "chunk": "e82985",
+      "description": "Full named closeout/verification/baseline result/stderr/manifest/ledger/checker/two cycle receipts; HEAD/dirty/local process metadata."
+    },
+    {
+      "chunk": "e43ae3",
+      "description": "Original cycle1 stderr, S1 entry receipt, previous prospective cap/priority rule."
+    }
+  ],
+  "entry_hash_time": "2026-10-05T01:40:08.7595520+09:00",
+  "final_check_time": "2026-10-05T01:42:28.8070222+09:00",
+  "source_pairs": [
+    {
+      "new": "docs\\analysis\\A040-outputs\\modal-builder-source-repair1\\contract.py",
+      "old": "docs\\analysis\\A040-outputs\\modal-output-contract-repair1\\contract.py",
+      "expected": "647c5a467183edc512893158ce6eb41d72677c90af38f04ed02888f4dc3b3526",
+      "new_hash": "647c5a467183edc512893158ce6eb41d72677c90af38f04ed02888f4dc3b3526",
+      "old_hash": "647c5a467183edc512893158ce6eb41d72677c90af38f04ed02888f4dc3b3526",
+      "matches": true
+    },
+    {
+      "new": "docs\\analysis\\A040-outputs\\modal-builder-source-repair1\\protocol.py",
+      "old": "docs\\analysis\\A040-outputs\\modal-output-contract-repair1\\protocol.py",
+      "expected": "4616f24b44d8b482cf90a560a13e59324f20e497af4090d6e588fe437801ff77",
+      "new_hash": "4616f24b44d8b482cf90a560a13e59324f20e497af4090d6e588fe437801ff77",
+      "old_hash": "4616f24b44d8b482cf90a560a13e59324f20e497af4090d6e588fe437801ff77",
+      "matches": true
+    },
+    {
+      "new": "docs\\analysis\\A040-outputs\\modal-builder-source-repair1\\controller_core.py",
+      "old": "docs\\analysis\\A040-outputs\\modal-output-contract-repair1\\controller_core.py",
+      "expected": "fc561eee08f1eafbbeac2cbcc5fa31890ef719bf603c5c7dd1af7aea5e556bcb",
+      "new_hash": "fc561eee08f1eafbbeac2cbcc5fa31890ef719bf603c5c7dd1af7aea5e556bcb",
+      "old_hash": "fc561eee08f1eafbbeac2cbcc5fa31890ef719bf603c5c7dd1af7aea5e556bcb",
+      "matches": true
+    },
+    {
+      "new": "docs\\analysis\\A040-outputs\\modal-builder-source-repair1\\live_binding.py",
+      "old": "docs\\analysis\\A040-outputs\\modal-output-contract-repair1\\live_binding.py",
+      "expected": "ca1351a05eea38577632a918b286d5ee7e5c82d423928fd8c2ce1af67de206c8",
+      "new_hash": "ca1351a05eea38577632a918b286d5ee7e5c82d423928fd8c2ce1af67de206c8",
+      "old_hash": "ca1351a05eea38577632a918b286d5ee7e5c82d423928fd8c2ce1af67de206c8",
+      "matches": true
+    },
+    {
+      "new": "docs\\analysis\\A040-outputs\\modal-builder-source-repair1\\sdk_endpoint.py",
+      "old": "docs\\analysis\\A040-outputs\\modal-output-contract-repair1\\sdk_endpoint.py",
+      "expected": "94606de56ba23e65e3dcacc57009cb0e60b5506648a2b276cb3165696af4251f",
+      "new_hash": "94606de56ba23e65e3dcacc57009cb0e60b5506648a2b276cb3165696af4251f",
+      "old_hash": "94606de56ba23e65e3dcacc57009cb0e60b5506648a2b276cb3165696af4251f",
+      "matches": true
+    },
+    {
+      "new": "docs\\analysis\\A040-outputs\\modal-builder-source-repair1\\payload.py",
+      "old": "docs\\analysis\\A040-outputs\\modal-output-contract-repair1\\payload.py",
+      "expected": "17273bebff6debd9888983ffcb2a7b3e3dbff572dccd203c05f9c8b5c9f60424",
+      "new_hash": "17273bebff6debd9888983ffcb2a7b3e3dbff572dccd203c05f9c8b5c9f60424",
+      "old_hash": "17273bebff6debd9888983ffcb2a7b3e3dbff572dccd203c05f9c8b5c9f60424",
+      "matches": true
+    },
+    {
+      "new": "docs\\analysis\\A040-outputs\\modal-builder-source-repair1\\sandbox_stage.py",
+      "old": "docs\\analysis\\A040-outputs\\modal-output-contract-repair1\\sandbox_stage.py",
+      "expected": "723f80623c0b400a7c68d1a8bfd4e6d4b6e9fa4d67060a418db156c8c88621b9",
+      "new_hash": "723f80623c0b400a7c68d1a8bfd4e6d4b6e9fa4d67060a418db156c8c88621b9",
+      "old_hash": "723f80623c0b400a7c68d1a8bfd4e6d4b6e9fa4d67060a418db156c8c88621b9",
+      "matches": true
+    },
+    {
+      "new": "docs\\analysis\\A040-outputs\\modal-builder-source-repair1\\linux_boundary.py",
+      "old": "docs\\analysis\\A040-outputs\\modal-output-contract-repair1\\linux_boundary.py",
+      "expected": "4c2aad23c52813693249a6d104c50f208ed33928086b466e46e853ad074712ff",
+      "new_hash": "4c2aad23c52813693249a6d104c50f208ed33928086b466e46e853ad074712ff",
+      "old_hash": "4c2aad23c52813693249a6d104c50f208ed33928086b466e46e853ad074712ff",
+      "matches": true
+    },
+    {
+      "new": "docs\\analysis\\A040-outputs\\modal-builder-source-repair1\\linux_watchdog.py",
+      "old": "docs\\analysis\\A040-outputs\\modal-output-contract-repair1\\linux_watchdog.py",
+      "expected": "9b08538d3b5990389e103ef2d391d58fec6ec63795bf0dc5ebcec08bc1991d34",
+      "new_hash": "9b08538d3b5990389e103ef2d391d58fec6ec63795bf0dc5ebcec08bc1991d34",
+      "old_hash": "9b08538d3b5990389e103ef2d391d58fec6ec63795bf0dc5ebcec08bc1991d34",
+      "matches": true
+    },
+    {
+      "new": "docs\\analysis\\A040-outputs\\modal-builder-source-repair1\\linux_runner.py",
+      "old": "docs\\analysis\\A040-outputs\\modal-output-contract-repair1\\linux_runner.py",
+      "expected": "82facf9151daa8eadc55c438be99f4c0cf5e331978c18b3a59530ef2af5b680e",
+      "new_hash": "82facf9151daa8eadc55c438be99f4c0cf5e331978c18b3a59530ef2af5b680e",
+      "old_hash": "82facf9151daa8eadc55c438be99f4c0cf5e331978c18b3a59530ef2af5b680e",
+      "matches": true
+    },
+    {
+      "new": "docs\\analysis\\A040-outputs\\modal-builder-source-repair1\\live_worker.py",
+      "old": "docs\\analysis\\A040-outputs\\modal-output-contract-repair1\\live_worker.py",
+      "expected": "5f9b934e435bc62259944f47f97a81f29cf9559b183d7a0b9e87736156b18902",
+      "new_hash": "5f9b934e435bc62259944f47f97a81f29cf9559b183d7a0b9e87736156b18902",
+      "old_hash": "5f9b934e435bc62259944f47f97a81f29cf9559b183d7a0b9e87736156b18902",
+      "matches": true
+    },
+    {
+      "new": "docs\\analysis\\A040-outputs\\modal-builder-source-repair1\\live_launcher.py",
+      "old": "docs\\analysis\\A040-outputs\\modal-output-contract-repair1\\live_launcher.py",
+      "expected": "965f893be21113ee25114d4bebf8cd6a13aa75f88e7907963661daf66153e01b",
+      "new_hash": "965f893be21113ee25114d4bebf8cd6a13aa75f88e7907963661daf66153e01b",
+      "old_hash": "965f893be21113ee25114d4bebf8cd6a13aa75f88e7907963661daf66153e01b",
+      "matches": true
+    }
+  ],
+  "baseline_hashes": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "86394bbf164a2b7df6a309f4564b9dacf3b2799fa0227a703e4ea11d4d842596"
+    },
+    {
+      "path": "CLAUDE.md",
+      "sha256": "69175e6d741a17042db4852d4961a5c52bd97fe2cd5bfbff762d30d7e5270364"
+    },
+    {
+      "path": "docs/workflow.md",
+      "sha256": "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642"
+    },
+    {
+      "path": "docs/status.md",
+      "sha256": "d772375204ca3efd5ba3d8ba15c2b847af39f2eadb4f2afa90bbba0d9adf654d"
+    },
+    {
+      "path": "docs/log.md",
+      "sha256": "5d68ecddd0639c5e7d463e8f6e9f5c4031c7f7abc10fc3e6bdcbe53571d38f14"
+    },
+    {
+      "path": "docs/tree.md",
+      "sha256": "eaa884a4194db103335136495205fe5b51297c17db15e9eac62946ced286cc44"
+    },
+    {
+      "path": "docs/analysis/A040-outputs/s0-modal-builder-review/decision.md",
+      "sha256": "6c4c569a81f4120871df52a7cbfc4e4ad52f588e096f0ca56d77fabf7217e81f"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-builder-source-repair1\\closeout.md",
+      "sha256": "69297b21ad00b08f958886141dfca44447db389a5f0fae49b52cbb8f5382ae6a"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-builder-source-repair1\\verification.json",
+      "sha256": "10e24edfb66cd6d52749a24e84a1e72c6fb0e8c1a07003b6c8b6143e577c71fd"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-builder-source-repair1\\baseline-result.json",
+      "sha256": "6c496b9b129a35198de4fefab882d9e4461a75afca0e9216b7030df0153a8eb5"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-builder-source-repair1\\baseline-stderr.txt",
+      "sha256": "0ff26c25ec8cc30d408df065cdc169142ec57c830a3711ba358e6cfb41cbb754"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-builder-source-repair1\\cycle2-baseline-stderr.txt",
+      "sha256": "a05acbf1b074b5ac6047236087e8cc219210aa327640a64e93711d0a6ac44f1e"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-builder-source-repair1\\source-manifest.json",
+      "sha256": "33adec1d4cb7559e77b5891ec9975cb33ec4bbdba04c67bd84116639f162182a"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-builder-source-repair1\\cost-time-ledger.json",
+      "sha256": "240591e1fb605f711e6a03aefd6459aa08640bb67faf80636a6f41bf3e47fc71"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-builder-source-repair1\\check_builder_source.py",
+      "sha256": "32d3c1a4390ab9d238ce1750c73a3a4703a0c55033db8582356db12adf5d190e"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-builder-source-repair1\\cycle1.json",
+      "sha256": "77cf95111702c1f946011b1c4614011702fefd9d62daf56b644a7c11aeaf65c2"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-builder-source-repair1\\cycle2.json",
+      "sha256": "0a3eed110833ad37147edd27b0b9eaabd6c0e312a1dde8fe1e43cc8ba3ace10c"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-builder-source-repair1\\entry.json",
+      "sha256": "0f3453640bcdf84b6aa716c9c7c1a2e635cb39ff085d57d6f24be9968229df16"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-builder-source-repair1\\source.diff",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-builder-source-repair1\\placement.diff",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-builder-source-repair1\\contract.py",
+      "sha256": "647c5a467183edc512893158ce6eb41d72677c90af38f04ed02888f4dc3b3526"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-output-contract-repair1\\contract.py",
+      "sha256": "647c5a467183edc512893158ce6eb41d72677c90af38f04ed02888f4dc3b3526"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-builder-source-repair1\\protocol.py",
+      "sha256": "4616f24b44d8b482cf90a560a13e59324f20e497af4090d6e588fe437801ff77"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-output-contract-repair1\\protocol.py",
+      "sha256": "4616f24b44d8b482cf90a560a13e59324f20e497af4090d6e588fe437801ff77"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-builder-source-repair1\\controller_core.py",
+      "sha256": "fc561eee08f1eafbbeac2cbcc5fa31890ef719bf603c5c7dd1af7aea5e556bcb"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-output-contract-repair1\\controller_core.py",
+      "sha256": "fc561eee08f1eafbbeac2cbcc5fa31890ef719bf603c5c7dd1af7aea5e556bcb"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-builder-source-repair1\\live_binding.py",
+      "sha256": "ca1351a05eea38577632a918b286d5ee7e5c82d423928fd8c2ce1af67de206c8"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-output-contract-repair1\\live_binding.py",
+      "sha256": "ca1351a05eea38577632a918b286d5ee7e5c82d423928fd8c2ce1af67de206c8"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-builder-source-repair1\\sdk_endpoint.py",
+      "sha256": "94606de56ba23e65e3dcacc57009cb0e60b5506648a2b276cb3165696af4251f"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-output-contract-repair1\\sdk_endpoint.py",
+      "sha256": "94606de56ba23e65e3dcacc57009cb0e60b5506648a2b276cb3165696af4251f"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-builder-source-repair1\\payload.py",
+      "sha256": "17273bebff6debd9888983ffcb2a7b3e3dbff572dccd203c05f9c8b5c9f60424"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-output-contract-repair1\\payload.py",
+      "sha256": "17273bebff6debd9888983ffcb2a7b3e3dbff572dccd203c05f9c8b5c9f60424"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-builder-source-repair1\\sandbox_stage.py",
+      "sha256": "723f80623c0b400a7c68d1a8bfd4e6d4b6e9fa4d67060a418db156c8c88621b9"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-output-contract-repair1\\sandbox_stage.py",
+      "sha256": "723f80623c0b400a7c68d1a8bfd4e6d4b6e9fa4d67060a418db156c8c88621b9"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-builder-source-repair1\\linux_boundary.py",
+      "sha256": "4c2aad23c52813693249a6d104c50f208ed33928086b466e46e853ad074712ff"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-output-contract-repair1\\linux_boundary.py",
+      "sha256": "4c2aad23c52813693249a6d104c50f208ed33928086b466e46e853ad074712ff"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-builder-source-repair1\\linux_watchdog.py",
+      "sha256": "9b08538d3b5990389e103ef2d391d58fec6ec63795bf0dc5ebcec08bc1991d34"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-output-contract-repair1\\linux_watchdog.py",
+      "sha256": "9b08538d3b5990389e103ef2d391d58fec6ec63795bf0dc5ebcec08bc1991d34"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-builder-source-repair1\\linux_runner.py",
+      "sha256": "82facf9151daa8eadc55c438be99f4c0cf5e331978c18b3a59530ef2af5b680e"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-output-contract-repair1\\linux_runner.py",
+      "sha256": "82facf9151daa8eadc55c438be99f4c0cf5e331978c18b3a59530ef2af5b680e"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-builder-source-repair1\\live_worker.py",
+      "sha256": "5f9b934e435bc62259944f47f97a81f29cf9559b183d7a0b9e87736156b18902"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-output-contract-repair1\\live_worker.py",
+      "sha256": "5f9b934e435bc62259944f47f97a81f29cf9559b183d7a0b9e87736156b18902"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-builder-source-repair1\\live_launcher.py",
+      "sha256": "965f893be21113ee25114d4bebf8cd6a13aa75f88e7907963661daf66153e01b"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-output-contract-repair1\\live_launcher.py",
+      "sha256": "965f893be21113ee25114d4bebf8cd6a13aa75f88e7907963661daf66153e01b"
+    }
+  ],
+  "preservation": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "86394bbf164a2b7df6a309f4564b9dacf3b2799fa0227a703e4ea11d4d842596",
+      "unchanged": true
+    },
+    {
+      "path": "CLAUDE.md",
+      "sha256": "69175e6d741a17042db4852d4961a5c52bd97fe2cd5bfbff762d30d7e5270364",
+      "unchanged": true
+    },
+    {
+      "path": "docs/workflow.md",
+      "sha256": "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642",
+      "unchanged": true
+    },
+    {
+      "path": "docs/status.md",
+      "sha256": "0c3f16565bfe2cb7cf5b980de46cab4bd2bc6d7f6bcb7a727d6b87eebbab2eed",
+      "unchanged": false
+    },
+    {
+      "path": "docs/log.md",
+      "sha256": "39727a7aa683cd4f8d9fa7f65eb3631636dc7daf97017a2f27aaa7ad135f0719",
+      "unchanged": false
+    },
+    {
+      "path": "docs/tree.md",
+      "sha256": "eaa884a4194db103335136495205fe5b51297c17db15e9eac62946ced286cc44",
+      "unchanged": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/s0-modal-builder-review/decision.md",
+      "sha256": "6c4c569a81f4120871df52a7cbfc4e4ad52f588e096f0ca56d77fabf7217e81f",
+      "unchanged": true
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-builder-source-repair1\\closeout.md",
+      "sha256": "69297b21ad00b08f958886141dfca44447db389a5f0fae49b52cbb8f5382ae6a",
+      "unchanged": true
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-builder-source-repair1\\verification.json",
+      "sha256": "10e24edfb66cd6d52749a24e84a1e72c6fb0e8c1a07003b6c8b6143e577c71fd",
+      "unchanged": true
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-builder-source-repair1\\baseline-result.json",
+      "sha256": "6c496b9b129a35198de4fefab882d9e4461a75afca0e9216b7030df0153a8eb5",
+      "unchanged": true
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-builder-source-repair1\\baseline-stderr.txt",
+      "sha256": "0ff26c25ec8cc30d408df065cdc169142ec57c830a3711ba358e6cfb41cbb754",
+      "unchanged": true
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-builder-source-repair1\\cycle2-baseline-stderr.txt",
+      "sha256": "a05acbf1b074b5ac6047236087e8cc219210aa327640a64e93711d0a6ac44f1e",
+      "unchanged": true
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-builder-source-repair1\\source-manifest.json",
+      "sha256": "33adec1d4cb7559e77b5891ec9975cb33ec4bbdba04c67bd84116639f162182a",
+      "unchanged": true
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-builder-source-repair1\\cost-time-ledger.json",
+      "sha256": "240591e1fb605f711e6a03aefd6459aa08640bb67faf80636a6f41bf3e47fc71",
+      "unchanged": true
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-builder-source-repair1\\check_builder_source.py",
+      "sha256": "32d3c1a4390ab9d238ce1750c73a3a4703a0c55033db8582356db12adf5d190e",
+      "unchanged": true
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-builder-source-repair1\\cycle1.json",
+      "sha256": "77cf95111702c1f946011b1c4614011702fefd9d62daf56b644a7c11aeaf65c2",
+      "unchanged": true
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-builder-source-repair1\\cycle2.json",
+      "sha256": "0a3eed110833ad37147edd27b0b9eaabd6c0e312a1dde8fe1e43cc8ba3ace10c",
+      "unchanged": true
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-builder-source-repair1\\entry.json",
+      "sha256": "0f3453640bcdf84b6aa716c9c7c1a2e635cb39ff085d57d6f24be9968229df16",
+      "unchanged": true
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-builder-source-repair1\\source.diff",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "unchanged": true
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-builder-source-repair1\\placement.diff",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "unchanged": true
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-builder-source-repair1\\contract.py",
+      "sha256": "647c5a467183edc512893158ce6eb41d72677c90af38f04ed02888f4dc3b3526",
+      "unchanged": true
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-output-contract-repair1\\contract.py",
+      "sha256": "647c5a467183edc512893158ce6eb41d72677c90af38f04ed02888f4dc3b3526",
+      "unchanged": true
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-builder-source-repair1\\protocol.py",
+      "sha256": "4616f24b44d8b482cf90a560a13e59324f20e497af4090d6e588fe437801ff77",
+      "unchanged": true
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-output-contract-repair1\\protocol.py",
+      "sha256": "4616f24b44d8b482cf90a560a13e59324f20e497af4090d6e588fe437801ff77",
+      "unchanged": true
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-builder-source-repair1\\controller_core.py",
+      "sha256": "fc561eee08f1eafbbeac2cbcc5fa31890ef719bf603c5c7dd1af7aea5e556bcb",
+      "unchanged": true
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-output-contract-repair1\\controller_core.py",
+      "sha256": "fc561eee08f1eafbbeac2cbcc5fa31890ef719bf603c5c7dd1af7aea5e556bcb",
+      "unchanged": true
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-builder-source-repair1\\live_binding.py",
+      "sha256": "ca1351a05eea38577632a918b286d5ee7e5c82d423928fd8c2ce1af67de206c8",
+      "unchanged": true
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-output-contract-repair1\\live_binding.py",
+      "sha256": "ca1351a05eea38577632a918b286d5ee7e5c82d423928fd8c2ce1af67de206c8",
+      "unchanged": true
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-builder-source-repair1\\sdk_endpoint.py",
+      "sha256": "94606de56ba23e65e3dcacc57009cb0e60b5506648a2b276cb3165696af4251f",
+      "unchanged": true
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-output-contract-repair1\\sdk_endpoint.py",
+      "sha256": "94606de56ba23e65e3dcacc57009cb0e60b5506648a2b276cb3165696af4251f",
+      "unchanged": true
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-builder-source-repair1\\payload.py",
+      "sha256": "17273bebff6debd9888983ffcb2a7b3e3dbff572dccd203c05f9c8b5c9f60424",
+      "unchanged": true
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-output-contract-repair1\\payload.py",
+      "sha256": "17273bebff6debd9888983ffcb2a7b3e3dbff572dccd203c05f9c8b5c9f60424",
+      "unchanged": true
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-builder-source-repair1\\sandbox_stage.py",
+      "sha256": "723f80623c0b400a7c68d1a8bfd4e6d4b6e9fa4d67060a418db156c8c88621b9",
+      "unchanged": true
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-output-contract-repair1\\sandbox_stage.py",
+      "sha256": "723f80623c0b400a7c68d1a8bfd4e6d4b6e9fa4d67060a418db156c8c88621b9",
+      "unchanged": true
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-builder-source-repair1\\linux_boundary.py",
+      "sha256": "4c2aad23c52813693249a6d104c50f208ed33928086b466e46e853ad074712ff",
+      "unchanged": true
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-output-contract-repair1\\linux_boundary.py",
+      "sha256": "4c2aad23c52813693249a6d104c50f208ed33928086b466e46e853ad074712ff",
+      "unchanged": true
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-builder-source-repair1\\linux_watchdog.py",
+      "sha256": "9b08538d3b5990389e103ef2d391d58fec6ec63795bf0dc5ebcec08bc1991d34",
+      "unchanged": true
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-output-contract-repair1\\linux_watchdog.py",
+      "sha256": "9b08538d3b5990389e103ef2d391d58fec6ec63795bf0dc5ebcec08bc1991d34",
+      "unchanged": true
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-builder-source-repair1\\linux_runner.py",
+      "sha256": "82facf9151daa8eadc55c438be99f4c0cf5e331978c18b3a59530ef2af5b680e",
+      "unchanged": true
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-output-contract-repair1\\linux_runner.py",
+      "sha256": "82facf9151daa8eadc55c438be99f4c0cf5e331978c18b3a59530ef2af5b680e",
+      "unchanged": true
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-builder-source-repair1\\live_worker.py",
+      "sha256": "5f9b934e435bc62259944f47f97a81f29cf9559b183d7a0b9e87736156b18902",
+      "unchanged": true
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-output-contract-repair1\\live_worker.py",
+      "sha256": "5f9b934e435bc62259944f47f97a81f29cf9559b183d7a0b9e87736156b18902",
+      "unchanged": true
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-builder-source-repair1\\live_launcher.py",
+      "sha256": "965f893be21113ee25114d4bebf8cd6a13aa75f88e7907963661daf66153e01b",
+      "unchanged": true
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-output-contract-repair1\\live_launcher.py",
+      "sha256": "965f893be21113ee25114d4bebf8cd6a13aa75f88e7907963661daf66153e01b",
+      "unchanged": true
+    }
+  ],
+  "prior_shared_document_bytes": [
+    {
+      "path": "docs/status.md",
+      "reconstructed_sha256": "d772375204ca3efd5ba3d8ba15c2b847af39f2eadb4f2afa90bbba0d9adf654d",
+      "matches": true
+    },
+    {
+      "path": "docs/log.md",
+      "reconstructed_sha256": "5d68ecddd0639c5e7d463e8f6e9f5c4031c7f7abc10fc3e6bdcbe53571d38f14",
+      "matches": true
+    }
+  ],
+  "new_files": [
+    "decision.md",
+    "verification.json"
+  ],
+  "modified_shared": [
+    "docs/status.md",
+    "docs/log.md"
+  ],
+  "execution": {
+    "source_edits": 0,
+    "imports_tests": 0,
+    "fit_predict_score": 0,
+    "payload_protected_reads_hashes": 0,
+    "remote_rpc": 0,
+    "build_gpu": 0,
+    "commit_push": 0,
+    "subagents": 0
+  },
+  "new_s1_prompt_issued": false,
+  "local_named_process_rows": [],
+  "process_scope": "python/pythonw/uv local only; no remote job lookup",
+  "ledger_inherited": {
+    "preparation_seconds": 9685.2829087,
+    "science_processes": 4,
+    "science_seconds": 1077.3504532,
+    "current_science": 0,
+    "h100": 0,
+    "scope": "Latest S1 ledger, excludes this S0 review; local checks nested in preparation."
+  },
+  "limitations": [
+    "Cycle1 sandbox cause is S1-reported; raw error is launcher access failure with garbled system text.",
+    "No actual SDK import/mount/isolation or repaired source; checker downstream assertions unvalidated.",
+    "Historical app termination/billing carried without fresh remote query.",
+    "Priority reduction applies to present infrastructure route, not all TabICL research or H100 feasibility.",
+    "No implementation/verification of a replacement IPC guard occurred. Resumption conditions are inputs, not execution authorization."
+  ]
+}

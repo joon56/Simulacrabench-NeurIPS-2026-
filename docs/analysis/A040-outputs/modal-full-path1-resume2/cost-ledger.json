@@ -1,0 +1,79 @@
+﻿{
+    "currency":  "USD",
+    "policy":  "Monitored planning targets; exact invoice bound not guaranteed",
+    "preparation_target":  1,
+    "total_target":  5,
+    "cash_authorization":  0,
+    "initiate_shutdown_at":  4,
+    "termination_reserve":  1,
+    "previous_ledger":  "../modal-full-path1-resume1/cost-ledger.json",
+    "previous_ledger_sha256":  "90a92e588ade1f5d475eaa07532176a3ab8adda09a9b0fff972283da0e3bf99c",
+    "previous_attempts_created_resource_estimate":  0,
+    "prior_active_seconds":  2295.2633125,
+    "baseline":  "billing-baseline.json",
+    "current_account_summary":  {
+                                    "start":  "2026-10-01 00:00:00+00:00",
+                                    "end":  "2026-11-01 00:00:00+00:00",
+                                    "metered_cost":  "0E-8",
+                                    "metered_cost_breakdown":  {
+                                                                   "LLM Tokens":  "0E-8",
+                                                                   "Deployed Apps":  "0.00001152",
+                                                                   "Volumes":  "0E-8"
+                                                               },
+                                    "adjustments":  {
+                                                        "Plan Cost":  "0E-8",
+                                                        "Credits":  "-0E-8",
+                                                        "Reservation Adjustment":  "-0E-8",
+                                                        "Network Egress Allowance":  "0E-8",
+                                                        "Free Storage":  "-0E-8"
+                                                    },
+                                    "billed_cost":  "0E-8"
+                                },
+    "observed_deployed_apps_component_usd":  1.152E-05,
+    "posted_account_metered_usd":  0,
+    "posted_account_billed_usd":  0,
+    "task_attributed_final_charge":  null,
+    "posted_component_total_discrepancy":  "Breakdown apps component nonzero while metered total still0; unresolved posting/aggregation",
+    "base_pull_resource_usage":  null,
+    "retained_base_image_cost":  null,
+    "unknown_overhead_not_zero":  true,
+    "prelaunch_plan":  "cost-policy.md",
+    "plan_total_usd":  4.815933453125,
+    "management_samples":  "cost-samples.jsonl",
+    "management_value_caution":  "Planning overhead allowance plus estimated time, not observed charge",
+    "remote_app_id":  "ap-CJkQ7byYW3D872nirY6KRM",
+    "remote_base_image_id":  "im-eWgRNij0VH6mzozlOzEyxy",
+    "remote_app_lifetime_seconds":  3.137724,
+    "local_build_future_seconds":  2.543755999999121,
+    "client_build_invocations":  1,
+    "client_rebuilds":  0,
+    "dependency_installer_invocations_observed":  0,
+    "provider_retry_count_observed":  0,
+    "provider_retry_count_complete":  false,
+    "h100_requests":  0,
+    "scientific_invocations":  0,
+    "cash_spend_detected":  false,
+    "usage_over_target_detected":  false,
+    "terminal_app_confirmed":  true,
+    "owned_task_count":  0,
+    "attempt_active_wall_seconds":  1016.8919012,
+    "cumulative_active_wall_seconds":  3312.1552137000003,
+    "intersession_gap_seconds":  8711.9926715999991,
+    "last_account_summary":  {
+                                 "metered_cost":  "0E-8",
+                                 "billed_cost":  "0E-8",
+                                 "adjustments":  {
+                                                     "plan_cost":  "0E-8",
+                                                     "credits":  "-0E-8",
+                                                     "reservation_adjustment":  "-0E-8",
+                                                     "network_egress_allowance":  "0E-8",
+                                                     "free_storage":  "-0E-8"
+                                                 },
+                                 "metered_cost_breakdown":  {
+                                                                "llm_tokens":  "0E-8",
+                                                                "deployed_apps":  "0.00001152",
+                                                                "volumes":  "0E-8"
+                                                            }
+                             },
+    "recorded_utc":  "2026-10-02T16:00:06.8919012+00:00"
+}

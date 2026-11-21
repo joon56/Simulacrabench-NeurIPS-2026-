@@ -1,0 +1,38 @@
+--- confirm_terminal.pre-entry-fix.py
++++ confirm_terminal.py
+@@ -197,17 +197,31 @@
+         return self.receipt
+ 
+ 
++def execute_on_sdk_loop(query, client_factory=None):
++    async def invoke():
++        return await query.run(client_factory)
++    return synchronizer.create_blocking(invoke)()
++
++
+ def main():
+     here = Path(__file__).resolve().parent
+     now = datetime.now(timezone.utc)
+-    with (here / 'remote-window.json').open('x', encoding='utf-8') as stream:
+-        json.dump({'started_utc': now.isoformat(), 'deadline_utc': (now+timedelta(seconds=120)).isoformat(),
++    window_path = here / 'remote-window.json'
++    if not window_path.exists():
++        with window_path.open('x', encoding='utf-8') as stream:
++            json.dump({'started_utc': now.isoformat(), 'deadline_utc': (now+timedelta(seconds=120)).isoformat(),
+             'discovery_cutoff_utc': (now+timedelta(seconds=90)).isoformat(), 'call_cap_seconds': 15,
+             'final_reserve_seconds': 30, 'terminate_max': 1, 'new_resources': 0}, stream, indent=2)
++    elif (here / 'termination-billing-receipt.json').exists():
++        raise RuntimeError('No automatic reentry after query/possible side effects')
++    window = json.loads(window_path.read_text(encoding='utf-8'))
++    remaining = (datetime.fromisoformat(window['deadline_utc'])-now).total_seconds()
++    if remaining <= 30:
++        raise TimeoutError('Original discovery window exhausted')
+     def save(value):
+         (here / 'termination-billing-receipt.json').write_text(json.dumps(value, indent=2), encoding='utf-8')
+-    query = Query(save)
+-    result = synchronizer.create_blocking(query.run)()
++    query = Query(save, total=remaining)
++    result = execute_on_sdk_loop(query)
+     print(json.dumps({k: result.get(k) for k in ('terminal', 'sandbox_id', 'version', 'terminate_requests', 'app', 'billing', 'errors', 'elapsed_seconds')}))
+     return 0 if result['terminal'] == 'TERMINAL_CONFIRMED' else 1
+ 

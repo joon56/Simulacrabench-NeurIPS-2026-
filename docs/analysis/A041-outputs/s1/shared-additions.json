@@ -1,0 +1,14 @@
+[
+  {
+    "path": "docs/status.md",
+    "before_sha256": "ad5ae2edf49acd4bf99c1a510ea545c18c7e50b5d121726fa540e15ccfc1bb0c",
+    "marker": "## Current position\r\n\r\n",
+    "inserted_text": "- **2026-10-07 A041 S1: DESIGN_READY_FOR_S0_REVIEW.**\r\n  One proposed WB16 CORN-style conditional head plus separate Not answered;\r\n  categorical NLL/pooled denominator and existing selection/refit rules preserved.\r\n  Public methods/source review only. Fresh WB oracle absent; efficacy/runtime\r\n  unmeasured. Normal all3 neural9, candidate/E041/E025 comparison neural27.\r\n  [Contract](analysis/A041-outputs/s1/contract.md),\r\n  [S0 handoff](analysis/A041-outputs/s1/s0-handoff.ko.md).\r\n  No implementation/E/S2 authority; prospective WB direction and separate S1\r\n  registration required. All incumbents/parked/STOP/HOLD/exposure states retained.\r\n\r\n"
+  },
+  {
+    "path": "docs/log.md",
+    "before_sha256": "812413d7ef86aca5e63159596bb63808ffe8bb55b58e5540283500fecfb7f138",
+    "marker": "# Experiment log\r\n\r\n",
+    "inserted_text": "## 2026-10-07 - A041 S1 documents one WB ordinal-head design for S0 review\r\n\r\n- Verdict DESIGN_READY_FOR_S0_REVIEW, information/design only. Read CORAL/CORN\r\n  primary methods (2/3 sources), production E041 paths and official score source.\r\n  Recommend one conditional six-bin head plus separate Not answered probability;\r\n  per-cell categorical NLL, original pooled denominator/configs/seeds/splits/refit.\r\n- Rank consistency alone is not an advantage over valid softmax. Explicit limits:\r\n  order-specific finite logit bias, sparse risk sets, nonuniform initialization,\r\n  all-WB76 spillover, in-sample lambda replay, absent fresh target oracle.\r\n  Existing synthetic is engineering only; no universal +.005 or protected-role reuse.\r\n- Source count: normal all3 pipeline3/neural9; candidate/E041/E025 all3 comparison\r\n  pipeline9/neural27. WB E041 dispatch equals E025, WB metric optimizer0.\r\n  Actual candidate time/memory unmeasured; E061 timing remains historical reference.\r\n- r5 receipt recorded; HEADa43f4379, dirty91, named local Python jobs0 at entry.\r\n  Inputs17/19 match; shared status/log match S0 post-write verification instead of\r\n  older inputs. No rollback. Permitted-source preservation and additive shared\r\n  edits recorded in verification. Protected data/model/fit/fixture/test/remote0.\r\n- [Closeout](analysis/A041-outputs/s1/closeout.md),\r\n  [Contract](analysis/A041-outputs/s1/contract.md),\r\n  [Costs](analysis/A041-outputs/s1/cost-accounting.md),\r\n  [S0 handoff](analysis/A041-outputs/s1/s0-handoff.ko.md).\r\n  Return to S0; future WB implementation requires prospective user direction and\r\n  separate S1 registration. No E/ZIP/commit/push/tree/S2/S3/subagents. All prior\r\n  incumbent/parked/STOP/HOLD/exposure/A018 states preserved.\r\n\r\n"
+  }
+]

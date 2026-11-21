@@ -1,0 +1,10 @@
+{
+  "recorded_utc": "2026-10-08T10:15:29.723667+00:00",
+  "initial_sha256": "11d13920be8e5fa386cbf1d7a6155504f3f4d9e459ba00ba46a3044fdb1b2d6a",
+  "final_sha256": "216927ac8482252ea483dbad3b760160c384d4b9a5ef3f2359c0f2aaf5c4d121",
+  "original_prefix_bytes": 4032,
+  "original_prefix_unchanged": true,
+  "change": "Append local release evidence after last official verify(); arms unchanged",
+  "freeze_not_rewritten": true,
+  "frozen_scorecard_alias": "docs/analysis/E062-outputs/s2/scorecard-prerun.md"
+}

@@ -1,0 +1,25 @@
+﻿{
+    "exit_code":  -1073741819,
+    "pid":  33640,
+    "child_start_utc":  "2026-10-06T14:12:10.9269162Z",
+    "case":  "minimal_build",
+    "actual_python":  {
+                          "exit_code":  -1073741819,
+                          "start_utc":  "2026-10-06T14:12:10.9888477Z",
+                          "has_exited":  true,
+                          "pid":  43232,
+                          "affinity":  3,
+                          "wall_seconds":  5.6040374,
+                          "exit_utc":  "2026-10-06T14:12:16.5928851Z"
+                      },
+    "child_wall_seconds":  5.6739723999999994,
+    "supervisor_wall_seconds":  5.6906469999999993,
+    "aggregate_seconds":  21.46396829999999992,
+    "remaining_owned_pid":  0,
+    "forced":  false,
+    "attempt":  "c4-no-observer",
+    "cpu_affinity":  3,
+    "child_exit_utc":  "2026-10-06T14:12:16.6008886Z",
+    "within_cap":  true,
+    "cap_seconds":  30
+}

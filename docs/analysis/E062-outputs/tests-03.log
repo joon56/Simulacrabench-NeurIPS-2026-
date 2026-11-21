@@ -1,0 +1,8 @@
+test_all_wb_targets_missing_cannot_silently_fallback (tests.test_wb_ordinal_heads.HarnessTests.test_all_wb_targets_missing_cannot_silently_fallback) ... ok
+test_nine_outputs_required_before_evaluation (tests.test_wb_ordinal_heads.HarnessTests.test_nine_outputs_required_before_evaluation) ... ok
+test_reader_role_filters_and_dev_projection (tests.test_wb_ordinal_heads.HarnessTests.test_reader_role_filters_and_dev_projection) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.038s
+
+OK

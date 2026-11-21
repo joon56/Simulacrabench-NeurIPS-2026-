@@ -1,0 +1,22 @@
+[
+  {
+    "case": "stream_fail",
+    "pass": true,
+    "fake_creates": 1,
+    "fake_terminates": 1,
+    "outcome": "STOP_FIRST_ERROR",
+    "termination": "TERMINAL_TASK0_CONFIRMED",
+    "stream_reads": 1,
+    "stream_writes": 1
+  },
+  {
+    "case": "billing_cash",
+    "pass": true,
+    "fake_creates": 1,
+    "fake_terminates": 1,
+    "outcome": "STOP_CLEANUP_UNCONFIRMED",
+    "termination": "TERMINAL_TASK0_CONFIRMED",
+    "stream_reads": 52,
+    "stream_writes": 2
+  }
+]

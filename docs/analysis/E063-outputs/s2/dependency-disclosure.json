@@ -1,0 +1,30 @@
+{
+  "imports": [
+    "numpy",
+    "pandas",
+    "re",
+    "scipy.optimize",
+    "scipy.special",
+    "sklearn.preprocessing",
+    "threadpoolctl",
+    "torch"
+  ],
+  "packages": {
+    "numpy": "2.5.1",
+    "pandas": "3.0.5",
+    "scipy": "1.18.1",
+    "torch": "2.13.0+cpu",
+    "pyarrow": "25.0.1",
+    "scikit-learn": "1.9.0",
+    "threadpoolctl": "3.6.0",
+    "PyYAML": "6.0.3"
+  },
+  "external_pretrained_models": [],
+  "bundled_weights_or_data": [],
+  "runtime_data": "Only provided frame and public schema; learn online from visible TRAIN, DEV GIVEN inputs; no repository/cache/data file paths in standalone main.",
+  "requirements_file": false,
+  "installation": "No requirements/install requested or performed; existing local .venv only. Current dependency availability verified locally, hosted image availability not independently verified.",
+  "offline": "Official stock DRIVER denies Python sockets before model imports; no acquisition/network operations in this S2. Not a native-code/OS egress firewall guarantee.",
+  "hardware": "CPU numerical threads2/GPU0. No H100/hosted installation or future full900s guarantee.",
+  "notice": "Starter-kit LICENSE copied verbatim as NOTICE.txt in archive, project source authored in existing repository."
+}

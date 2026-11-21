@@ -1,0 +1,44 @@
+[
+    {
+        "expected":  "ca1351a05eea38577632a918b286d5ee7e5c82d423928fd8c2ce1af67de206c8",
+        "path":  "docs\\analysis\\A040-outputs\\modal-full-path1-resume3\\live_binding.py",
+        "actual":  "ca1351a05eea38577632a918b286d5ee7e5c82d423928fd8c2ce1af67de206c8",
+        "equal":  true
+    },
+    {
+        "expected":  "69045525d5cdac7fe4b61297f2672325bd652bc7ef87f5d1eaf7cfdab24c5d59",
+        "path":  "docs\\analysis\\A040-outputs\\modal-full-path1-resume3\\controller_core.py",
+        "actual":  "69045525d5cdac7fe4b61297f2672325bd652bc7ef87f5d1eaf7cfdab24c5d59",
+        "equal":  true
+    },
+    {
+        "expected":  "bbc5fc6e2835f6bddf516a3eeade73b18c2546f826db990a5bddf806da1fc6dc",
+        "path":  "docs\\analysis\\A040-outputs\\modal-full-path1-resume3\\live_worker.py",
+        "actual":  "bbc5fc6e2835f6bddf516a3eeade73b18c2546f826db990a5bddf806da1fc6dc",
+        "equal":  true
+    },
+    {
+        "expected":  "563dc236092021162cd62d6a12e2cb2f6dec9edbbcbb95a644ad1bcae9648cfa",
+        "path":  "docs\\analysis\\A040-outputs\\modal-full-path1-resume3\\live_launcher.py",
+        "actual":  "563dc236092021162cd62d6a12e2cb2f6dec9edbbcbb95a644ad1bcae9648cfa",
+        "equal":  true
+    },
+    {
+        "expected":  "7123a721678bba95ff82dd282e1aab24937302bced2363ccb4b90c5cf6ab07b6",
+        "path":  "docs\\analysis\\A040-outputs\\modal-full-path1-resume3\\preflight.py",
+        "actual":  "7123a721678bba95ff82dd282e1aab24937302bced2363ccb4b90c5cf6ab07b6",
+        "equal":  true
+    },
+    {
+        "expected":  "e7342a842bcb97ef2e21c573da398bb9392892320bfe9169f7a6daa2f1945fb9",
+        "path":  "docs\\analysis\\A040-outputs\\modal-full-path1-resume3\\operational-contract.md",
+        "actual":  "e7342a842bcb97ef2e21c573da398bb9392892320bfe9169f7a6daa2f1945fb9",
+        "equal":  true
+    },
+    {
+        "expected":  "d30b24b510433929c38384f186e22010e28c29dfa8945a5514242a9235d93e1c",
+        "path":  "docs\\analysis\\A040-outputs\\modal-full-path1-resume3\\entry.json",
+        "actual":  "d30b24b510433929c38384f186e22010e28c29dfa8945a5514242a9235d93e1c",
+        "equal":  true
+    }
+]

@@ -1,0 +1,10 @@
+{
+  "utc": "2026-10-11T14:01:17.313958+00:00",
+  "mode": "H",
+  "attempt": 1,
+  "only": null,
+  "freeze": "freeze-01.json",
+  "prior_seconds": 480.88315500000976,
+  "limit_seconds": 900.0,
+  "registration_sha256": "f1113c07ac9127938fc8b02486830e0a23aa1add32ead4e1ce2269811986a8c7"
+}

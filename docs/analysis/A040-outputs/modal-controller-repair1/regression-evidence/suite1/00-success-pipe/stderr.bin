@@ -1,0 +1,17 @@
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\SimulacraBench\docs\analysis\A040-outputs\modal-controller-repair1\controller.py", line 115, in run_controller
+    app_id = await bounded(transport.create(), phase)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\SimulacraBench\docs\analysis\A040-outputs\modal-controller-repair1\controller.py", line 90, in bounded
+    return task.result()
+           ~~~~~~~~~~~^^
+  File "C:\Users\USER\Desktop\SimulacraBench\docs\analysis\A040-outputs\modal-controller-repair1\controller.py", line 35, in create
+    self.app = await self.sdk.App.lookup(self.app_name, client=self.client,
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        create_if_missing=True, environment_name="main")
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\SimulacraBench\docs\analysis\A040-outputs\modal-controller-repair1\fake_worker.py", line 88, in lookup
+    note("App.lookup", name=name, create_if_missing=create_if_missing, environment=environment_name)
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: fake_sdk.<locals>.note() got multiple values for argument 'name'
+

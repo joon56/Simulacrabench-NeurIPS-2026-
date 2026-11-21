@@ -1,0 +1,9 @@
+{
+    "create":  0,
+    "scope":  "Exact existing-resource metadata/needed termination only",
+    "source_hash":  "56da54defd86b966040b3dbc4644586982c710d9513ab2b685ca3eb553abc044",
+    "outer_deadline_utc":  "2026-10-05T12:16:19.5405169+00:00",
+    "terminate_max":  1,
+    "window":  1,
+    "utc":  "2026-10-05T12:14:19.5405169+00:00"
+}

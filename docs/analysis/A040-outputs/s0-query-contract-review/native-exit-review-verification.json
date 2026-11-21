@@ -1,0 +1,367 @@
+{
+  "role": "S0",
+  "task": "Review boundary2 observations and scope one local exit-crash reduction; no execution",
+  "recorded_at": "2026-10-06T22:23:57.8172024+09:00",
+  "verdict": "LOCAL_PRODUCTION_LIFECYCLE_HOLD / REMOTE_MEASUREMENT_NOT_AUTHORIZED",
+  "read_receipt": {
+    "workflow_revision": "2026-10-05-r5",
+    "workflow_sha256": "a577942675e16a732339e586c14796104dda704693568439ae28670cc7fb7b23",
+    "ordered_entry_read": [
+      "CLAUDE.md",
+      "docs/status.md",
+      "docs/log.md newest3",
+      "docs/workflow.md"
+    ],
+    "evidence": "Tool read sequence in this S0 turn; status/newest3 reread separately after long combined output was truncated. Current workflow hash unchanged from prior fully read r5 context.",
+    "named_inputs": [
+      "production-lifecycle-boundary2/closeout.md",
+      "verification.json",
+      "stall-timing.json",
+      "regression-history.md",
+      "source-manifest.json",
+      "cost-time-ledger.json",
+      "owned-native-crash-evidence.json",
+      "source.diff",
+      "placement.diff",
+      "entry.json",
+      "preservation.json",
+      "real-stall1-stderr.txt",
+      "builder-await6-stderr.txt",
+      "builder-failure1-stderr.txt"
+    ],
+    "allowed_source_review": [
+      "boundary2/local_guard.py",
+      "check_boundary.py",
+      "boundary_transport.py",
+      "run_check.ps1",
+      "observer-source-manifest.json",
+      "installed modal/_image.py relevant build implementation",
+      "installed synchronicity/synchronizer.py relevant lifecycle implementation",
+      "sdk-venv/pyvenv.cfg",
+      "METADATA for modal1.6.0, synchronicity0.12.5, protobuf6.33.6, grpclib0.4.9"
+    ],
+    "receipt_classification": "S0 observed tool reads; S1 read evidence is session-reported, not a guarantee for other chats.",
+    "skills": [
+      "karpathy-guidelines",
+      "systematic-debugging"
+    ]
+  },
+  "accepted_observations": {
+    "sdk_image_build_connection": "observed in local protocol fixtures; no actual remote installer execution",
+    "builder_failure": "Sandbox0, science commands0, App cleanup",
+    "create_wait_seconds": 120.00916240000515,
+    "stall_supervisor_seconds": 125.9060169,
+    "stall_forced": false,
+    "final_exit_code": -1073741819,
+    "final_native_error": "c0000005 / python313.dll / final GC",
+    "root_cause_confirmed": false,
+    "known_original_source_manifest": "68d8ac3c23b8ab0f74a41893bd122733e79e54fb6915ee293d921a9a30e1cb50"
+  },
+  "scope_proposed_not_executed": {
+    "owner": "same S1",
+    "main": "Short builder-failure minimal reproduction and controlled reduction; evidence-based in-scope local repair if cause isolated",
+    "backup": "Exact unresolved-input HOLD closeout",
+    "overall_seconds": 2400,
+    "closeout_reserved_seconds": 600,
+    "new_check_aggregate_seconds": 240,
+    "per_check_envelope_seconds": 30,
+    "cleanup_start_seconds": 20,
+    "cpu": 2,
+    "gpu": 0,
+    "max_named_cause_comparisons": 6,
+    "environment": "Same installed interpreter/dependencies; diagnostic options only, no backend or package substitution",
+    "real120s_repeat": false,
+    "unchanged_successful_suite_repeat": false,
+    "remote_authorization": false
+  },
+  "preservation": {
+    "head_before": "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+    "head_after": "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+    "branch": "work/e050-submission",
+    "dirty_entries_before": 89,
+    "dirty_entries_after": 89,
+    "dirty_porcelain_identical": true,
+    "named_jobs_before": [],
+    "named_jobs_after": [],
+    "entry_source_match": [
+      {
+        "path": "docs\\analysis\\A040-outputs\\production-lifecycle-boundary2\\contract.py",
+        "sha256": "8d2a072c8c353dbeb929b0c3620faa08b9b9ce70a97e3d4573e3f6db53c047f7",
+        "match": true
+      },
+      {
+        "path": "docs\\analysis\\A040-outputs\\production-lifecycle-boundary2\\protocol.py",
+        "sha256": "4616f24b44d8b482cf90a560a13e59324f20e497af4090d6e588fe437801ff77",
+        "match": true
+      },
+      {
+        "path": "docs\\analysis\\A040-outputs\\production-lifecycle-boundary2\\controller_core.py",
+        "sha256": "fc561eee08f1eafbbeac2cbcc5fa31890ef719bf603c5c7dd1af7aea5e556bcb",
+        "match": true
+      },
+      {
+        "path": "docs\\analysis\\A040-outputs\\production-lifecycle-boundary2\\live_binding.py",
+        "sha256": "ca1351a05eea38577632a918b286d5ee7e5c82d423928fd8c2ce1af67de206c8",
+        "match": true
+      },
+      {
+        "path": "docs\\analysis\\A040-outputs\\production-lifecycle-boundary2\\sdk_endpoint.py",
+        "sha256": "877117e9aae8a9ddb53096ebc4e23488dc94511b9e52ce430663a03c94ff09cc",
+        "match": true
+      },
+      {
+        "path": "docs\\analysis\\A040-outputs\\production-lifecycle-boundary2\\payload.py",
+        "sha256": "17273bebff6debd9888983ffcb2a7b3e3dbff572dccd203c05f9c8b5c9f60424",
+        "match": true
+      },
+      {
+        "path": "docs\\analysis\\A040-outputs\\production-lifecycle-boundary2\\sandbox_stage.py",
+        "sha256": "2b0ed4cd332a4e9ca85f335dd3fa3637eecc467a77be7f063b714c051dff0191",
+        "match": true
+      },
+      {
+        "path": "docs\\analysis\\A040-outputs\\production-lifecycle-boundary2\\linux_boundary.py",
+        "sha256": "4c2aad23c52813693249a6d104c50f208ed33928086b466e46e853ad074712ff",
+        "match": true
+      },
+      {
+        "path": "docs\\analysis\\A040-outputs\\production-lifecycle-boundary2\\linux_watchdog.py",
+        "sha256": "9b08538d3b5990389e103ef2d391d58fec6ec63795bf0dc5ebcec08bc1991d34",
+        "match": true
+      },
+      {
+        "path": "docs\\analysis\\A040-outputs\\production-lifecycle-boundary2\\linux_runner.py",
+        "sha256": "82facf9151daa8eadc55c438be99f4c0cf5e331978c18b3a59530ef2af5b680e",
+        "match": true
+      },
+      {
+        "path": "docs\\analysis\\A040-outputs\\production-lifecycle-boundary2\\live_worker.py",
+        "sha256": "1f134b1e5564fd2bddd61613878039af39cab1f10e8adf3e6d8f980a5e601297",
+        "match": true
+      },
+      {
+        "path": "docs\\analysis\\A040-outputs\\production-lifecycle-boundary2\\live_launcher.py",
+        "sha256": "6536a589b36f873dd073f5e967dd8f82e8aada7b3becc61c7036cb2b3680ddbe",
+        "match": true
+      },
+      {
+        "path": "docs\\analysis\\A040-outputs\\production-lifecycle-boundary2\\cleanup_query.py",
+        "sha256": "f3311c40e088b4adb07b12919376d6490016da24d2a00652fb95e5b2d86fbe93",
+        "match": true
+      }
+    ],
+    "immutable_after": [
+      {
+        "path": "docs\\analysis\\A040-outputs\\production-lifecycle-boundary2\\contract.py",
+        "sha256": "8d2a072c8c353dbeb929b0c3620faa08b9b9ce70a97e3d4573e3f6db53c047f7",
+        "unchanged": true
+      },
+      {
+        "path": "docs\\analysis\\A040-outputs\\production-lifecycle-boundary2\\protocol.py",
+        "sha256": "4616f24b44d8b482cf90a560a13e59324f20e497af4090d6e588fe437801ff77",
+        "unchanged": true
+      },
+      {
+        "path": "docs\\analysis\\A040-outputs\\production-lifecycle-boundary2\\controller_core.py",
+        "sha256": "fc561eee08f1eafbbeac2cbcc5fa31890ef719bf603c5c7dd1af7aea5e556bcb",
+        "unchanged": true
+      },
+      {
+        "path": "docs\\analysis\\A040-outputs\\production-lifecycle-boundary2\\live_binding.py",
+        "sha256": "ca1351a05eea38577632a918b286d5ee7e5c82d423928fd8c2ce1af67de206c8",
+        "unchanged": true
+      },
+      {
+        "path": "docs\\analysis\\A040-outputs\\production-lifecycle-boundary2\\sdk_endpoint.py",
+        "sha256": "877117e9aae8a9ddb53096ebc4e23488dc94511b9e52ce430663a03c94ff09cc",
+        "unchanged": true
+      },
+      {
+        "path": "docs\\analysis\\A040-outputs\\production-lifecycle-boundary2\\payload.py",
+        "sha256": "17273bebff6debd9888983ffcb2a7b3e3dbff572dccd203c05f9c8b5c9f60424",
+        "unchanged": true
+      },
+      {
+        "path": "docs\\analysis\\A040-outputs\\production-lifecycle-boundary2\\sandbox_stage.py",
+        "sha256": "2b0ed4cd332a4e9ca85f335dd3fa3637eecc467a77be7f063b714c051dff0191",
+        "unchanged": true
+      },
+      {
+        "path": "docs\\analysis\\A040-outputs\\production-lifecycle-boundary2\\linux_boundary.py",
+        "sha256": "4c2aad23c52813693249a6d104c50f208ed33928086b466e46e853ad074712ff",
+        "unchanged": true
+      },
+      {
+        "path": "docs\\analysis\\A040-outputs\\production-lifecycle-boundary2\\linux_watchdog.py",
+        "sha256": "9b08538d3b5990389e103ef2d391d58fec6ec63795bf0dc5ebcec08bc1991d34",
+        "unchanged": true
+      },
+      {
+        "path": "docs\\analysis\\A040-outputs\\production-lifecycle-boundary2\\linux_runner.py",
+        "sha256": "82facf9151daa8eadc55c438be99f4c0cf5e331978c18b3a59530ef2af5b680e",
+        "unchanged": true
+      },
+      {
+        "path": "docs\\analysis\\A040-outputs\\production-lifecycle-boundary2\\live_worker.py",
+        "sha256": "1f134b1e5564fd2bddd61613878039af39cab1f10e8adf3e6d8f980a5e601297",
+        "unchanged": true
+      },
+      {
+        "path": "docs\\analysis\\A040-outputs\\production-lifecycle-boundary2\\live_launcher.py",
+        "sha256": "6536a589b36f873dd073f5e967dd8f82e8aada7b3becc61c7036cb2b3680ddbe",
+        "unchanged": true
+      },
+      {
+        "path": "docs\\analysis\\A040-outputs\\production-lifecycle-boundary2\\cleanup_query.py",
+        "sha256": "f3311c40e088b4adb07b12919376d6490016da24d2a00652fb95e5b2d86fbe93",
+        "unchanged": true
+      },
+      {
+        "path": "docs\\analysis\\A040-outputs\\production-lifecycle-boundary2\\closeout.md",
+        "sha256": "550f70e5d624be3a1f21a1e09d75be4bcca3de53bf34e6247a530e940578be00",
+        "unchanged": true
+      },
+      {
+        "path": "docs\\analysis\\A040-outputs\\production-lifecycle-boundary2\\verification.json",
+        "sha256": "8abd6131e2f507004c4f5a63dc1152c910b7b933987d55c9756586b417651261",
+        "unchanged": true
+      },
+      {
+        "path": "docs\\analysis\\A040-outputs\\production-lifecycle-boundary2\\stall-timing.json",
+        "sha256": "8ca2985c281428885bb3a925a773272ee263d86ce25c87a18fbf82ac24840e30",
+        "unchanged": true
+      },
+      {
+        "path": "docs\\analysis\\A040-outputs\\production-lifecycle-boundary2\\regression-history.md",
+        "sha256": "7e5b9157f4630fd36094229c4645e3eb28b99a41ff96e132fadccf26520eb3b2",
+        "unchanged": true
+      },
+      {
+        "path": "docs\\analysis\\A040-outputs\\production-lifecycle-boundary2\\source-manifest.json",
+        "sha256": "68d8ac3c23b8ab0f74a41893bd122733e79e54fb6915ee293d921a9a30e1cb50",
+        "unchanged": true
+      },
+      {
+        "path": "docs\\analysis\\A040-outputs\\production-lifecycle-boundary2\\cost-time-ledger.json",
+        "sha256": "69052835136e483b3c3dfbc7c85b1ac73d1afbf6b71b7388f01d203eecf08015",
+        "unchanged": true
+      },
+      {
+        "path": "docs\\analysis\\A040-outputs\\production-lifecycle-boundary2\\owned-native-crash-evidence.json",
+        "sha256": "49d39b79c80f2e978fd337faf35f893d0223b3b5fe391a8e330124ff86a500bb",
+        "unchanged": true
+      },
+      {
+        "path": "docs\\analysis\\A040-outputs\\production-lifecycle-boundary2\\source.diff",
+        "sha256": "71951235c95736c7022d4a057d85f51e448b055a9c60c6902adf14840e2ad48b",
+        "unchanged": true
+      },
+      {
+        "path": "docs\\analysis\\A040-outputs\\production-lifecycle-boundary2\\placement.diff",
+        "sha256": "8bbd6b559db1a1010e932e68e6b3a1220dd340886960629c73ce0aa9e8036412",
+        "unchanged": true
+      },
+      {
+        "path": "docs\\analysis\\A040-outputs\\production-lifecycle-boundary2\\entry.json",
+        "sha256": "c70558c4fdadd95ce9db89a057e9a3a1bb7a85eac38d1edb58cd1d3bebb92613",
+        "unchanged": true
+      },
+      {
+        "path": "docs\\analysis\\A040-outputs\\production-lifecycle-boundary2\\preservation.json",
+        "sha256": "5ac86e67f7828df016f7170b6d3f3726b866aa767ab828b564f35e5b8368c7bf",
+        "unchanged": true
+      },
+      {
+        "path": "AGENTS.md",
+        "sha256": "73b86e5310d6a45d5206efd3b55da47c48748ee7b077e6fcad6be276f1716a3a",
+        "unchanged": true
+      },
+      {
+        "path": "CLAUDE.md",
+        "sha256": "0cda5c3385ea3368d0c24a6602e4b1220adc864a205e231f10042b655d031749",
+        "unchanged": true
+      },
+      {
+        "path": "docs/workflow.md",
+        "sha256": "a577942675e16a732339e586c14796104dda704693568439ae28670cc7fb7b23",
+        "unchanged": true
+      },
+      {
+        "path": "docs/tree.md",
+        "sha256": "eaa884a4194db103335136495205fe5b51297c17db15e9eac62946ced286cc44",
+        "unchanged": true
+      }
+    ],
+    "shared_text_prior_bytes": [
+      {
+        "path": "docs/status.md",
+        "prior_bytes_restored_after_removing_own_addition": true,
+        "prior_sha256": "f2ed52d2aadf86f272d03bd1181946fcf4063147ad600cef9cb978c19d471973",
+        "format": {
+          "bom": true,
+          "crlf": true
+        },
+        "after_sha256": "16197da2365fdd9e49c6cb7e8d1ccca3b71edd94aba06febfa3ef0f3ac5542a4"
+      },
+      {
+        "path": "docs/log.md",
+        "prior_bytes_restored_after_removing_own_addition": true,
+        "prior_sha256": "24e4b5825e9ff66d699a3742b9f6072861bec1babd7ae4df03042c79d25a309f",
+        "format": {
+          "bom": true,
+          "crlf": true
+        },
+        "after_sha256": "18f4d547b9cbe77360d4b61095cd29e2e0de62575c80bee0144ad624acb0133f"
+      }
+    ],
+    "new_prompt": "docs/analysis/A040-outputs/s0-query-contract-review/native-exit-review-and-s1.ko.md",
+    "new_prompt_sha256": "f597db2844c4a2e2d64049906703ea9da10acd3d50ee39e00b66ef808242fbc5"
+  },
+  "operations": {
+    "document_source_metadata_hash_reads": true,
+    "writes": [
+      "native-exit-review-and-s1.ko.md",
+      "native-exit-review-verification.json",
+      "docs/status.md new position",
+      "docs/log.md new entry"
+    ],
+    "sdk_import": 0,
+    "tests_fixtures": 0,
+    "model_fit_predict_score": 0,
+    "protected_inputs_or_payload_read_hash": 0,
+    "auth_rpc": 0,
+    "web": 0,
+    "environment_mutation": 0,
+    "remote_creation": 0,
+    "zip": 0,
+    "commit_push": 0,
+    "subagents": 0
+  },
+  "carried_state": {
+    "preparation_through_s1_seconds": 19167.1928679,
+    "science_processes": 4,
+    "science_seconds": 1077.3504532,
+    "old_real_sandbox_terminal": "CONFIRMED, not requeried",
+    "historic_workspace_metered_usd": 0.01009897,
+    "historic_workspace_billed_usd": 0,
+    "final_attribution_and_gpu_seconds": "unknown",
+    "prep_total_plans_usd": [
+      1,
+      5
+    ],
+    "cash_authority_usd": 0,
+    "incumbent": "E041",
+    "fallback": "E025",
+    "parked": [
+      "E057",
+      "E060",
+      "E061"
+    ],
+    "scientific_stops_holds": "All preserved, including E058, E059 STOP_SELECTION, A039",
+    "exposure": "17999/12339; aggregate exposure/A022 original roles; E059 consumed oracle1918/1124, selection2007/1130; protected audit2074/1177, calibration1866",
+    "a_half": "not promoted",
+    "a018": "user unconfirmed",
+    "s3": "stopped",
+    "s2_candidate": false
+  }
+}

@@ -1,0 +1,90 @@
+﻿[
+    {
+        "Name":  ".claude",
+        "Count":  2
+    },
+    {
+        "Name":  ".gitattributes",
+        "Count":  1
+    },
+    {
+        "Name":  ".gitignore",
+        "Count":  1
+    },
+    {
+        "Name":  ".pytest_cache",
+        "Count":  5
+    },
+    {
+        "Name":  ".venv",
+        "Count":  32639
+    },
+    {
+        "Name":  "__pycache__",
+        "Count":  1
+    },
+    {
+        "Name":  "AGENTS.md",
+        "Count":  1
+    },
+    {
+        "Name":  "CLAUDE.md",
+        "Count":  1
+    },
+    {
+        "Name":  "conftest.py",
+        "Count":  1
+    },
+    {
+        "Name":  "data",
+        "Count":  1
+    },
+    {
+        "Name":  "docs",
+        "Count":  569
+    },
+    {
+        "Name":  "external",
+        "Count":  213
+    },
+    {
+        "Name":  "notebooks",
+        "Count":  1
+    },
+    {
+        "Name":  "output",
+        "Count":  6
+    },
+    {
+        "Name":  "requirements.txt",
+        "Count":  1
+    },
+    {
+        "Name":  "scripts",
+        "Count":  85
+    },
+    {
+        "Name":  "SIMULACRABENCH.md",
+        "Count":  1
+    },
+    {
+        "Name":  "src",
+        "Count":  106
+    },
+    {
+        "Name":  "submissions",
+        "Count":  169
+    },
+    {
+        "Name":  "tests",
+        "Count":  120
+    },
+    {
+        "Name":  "tmp",
+        "Count":  114491
+    },
+    {
+        "Name":  "trip",
+        "Count":  11
+    }
+]

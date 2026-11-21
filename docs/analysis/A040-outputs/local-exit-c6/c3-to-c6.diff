@@ -1,0 +1,65 @@
+diff --git a/docs/analysis/A040-outputs/local-exit-c6/c3-check-reconstructed.txt b/docs/analysis/A040-outputs/local-exit-c6/check_boundary.py
+index 7788b54..69c75be 100644
+--- a/docs/analysis/A040-outputs/local-exit-c6/c3-check-reconstructed.txt
++++ b/docs/analysis/A040-outputs/local-exit-c6/check_boundary.py
+@@ -15,6 +15,7 @@ kernel.SetProcessAffinityMask.argtypes=[ctypes.c_void_p,ctypes.c_size_t]
+ if not kernel.SetProcessAffinityMask(kernel.GetCurrentProcess(),3):
+     raise OSError('CPU2 affinity could not be set')
+ sys.dont_write_bytecode=True
++assert sys.argv[2] == 'protobuf_graph', 'Only the authorized C6 branch is allowed'
+ HERE=Path(__file__).resolve().parent
+ sys.path.insert(0,str(HERE))
+ (Path(__file__).parent/(sys.argv[1]+'-pid.json')).write_text(json.dumps({'pid':os.getpid(),'utc':datetime.now(timezone.utc).isoformat()}))
+@@ -44,26 +45,26 @@ if sys.argv[2]=='import_loop':
+     sys.exit(0)
+ 
+ ROOT=HERE.parents[3]
+-WORK=ROOT/'tmp/a040-local-exit-diagnosis1'
++WORK=HERE/'work'
+ ATTEMPT,CASE=sys.argv[1:]
+-assert CASE in ('success','builder_fail','stall','minimal_build','definition')
++assert CASE in ('success','builder_fail','stall','minimal_build','definition','protobuf_graph')
+ evidence=HERE/'attempts'/ATTEMPT
+ evidence.mkdir(parents=True,exist_ok=False)
+ name='a040-boundary2-'+ATTEMPT
+ directory=WORK/name
+-backend=Backend('builder_fail' if CASE in ('minimal_build','definition') else CASE,name,directory,evidence/'trace.jsonl')
++backend=Backend('builder_fail' if CASE in ('minimal_build','definition','protobuf_graph') else CASE,name,directory,evidence/'trace.jsonl')
+ wire.ACTIVE=backend
+ started=time.perf_counter()
+ backend.record('child_entry',pid=os.getpid(),case=CASE)
+ 
+-if CASE in ('minimal_build','definition'):
++if CASE in ('minimal_build','definition','protobuf_graph'):
+     from live_binding import image_from_id
+     from modal.exception import ImageBuildError
+     async def reduced():
+         endpoint=Endpoint(client_factory=backend.factory)
+         await endpoint.connect()
+         await endpoint.app_lookup(name,True)
+-        if CASE=='definition':
++        if CASE in ('definition','protobuf_graph'):
+             endpoint.image=image_from_id('im-fixturebase',endpoint.client).run_function(
+                 install_pins,args=('PROTOCOL_PINS_NOT_INSTALLED',time.time()+600),
+                 cpu=(1,1),memory=(8192,8192),timeout=600,include_source=True)
+@@ -75,6 +76,20 @@ if CASE in ('minimal_build','definition'):
+                 backend.record('expected_builder_failure')
+             else:
+                 raise AssertionError('Expected builder failure missing')
++        if CASE=='protobuf_graph':
++            from modal_proto import api_pb2 as pb
++            from modal.types import FunctionInfo
++            function=pb.Function(module_name='controller_core',function_name='install_pins',
++                                 is_builder_function=True)
++            data=pb.FunctionData(module_name=function.module_name,
++                function_name=function.function_name,
++                ranked_functions=[pb.FunctionData.RankedFunction(rank=0,function=function)])
++            response=pb.FunctionCreateResponse(function_id='fu-'+'f'*22,
++                function=function,function_data=data)
++            backend.record('protobuf_parser_enter', parser='modal.types.FunctionInfo._from_function_proto')
++            parsed=FunctionInfo._from_function_proto(response.function_data)
++            assert parsed is not None
++            backend.record('protobuf_graph_constructed_and_parsed')
+         await endpoint.stop_app(endpoint.app.app_id)
+         assert backend.stopped and backend.created==backend.terminated==0
+         assert not local_guard.blocked

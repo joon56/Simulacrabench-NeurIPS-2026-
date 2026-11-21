@@ -1,0 +1,168 @@
+{
+  "recorded_date_kst": "2026-09-29",
+  "role": "S2 E061 hosted result intake only",
+  "entry_utc": "2026-09-28T15:25:37.9228440+00:00",
+  "head": "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+  "branch": "work/e050-submission",
+  "workflow_revision": "2026-09-27-r4",
+  "workflow_sha256": "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642",
+  "authority": "Current user explicitly requested E061 actual result recording under existing result-only handoff, comparable Grand decline, no training/resubmission/model changes/commit/push.",
+  "read_evidence": [
+    {
+      "tool_chunk": "58a464",
+      "paths": [
+        "AGENTS.md",
+        "CLAUDE.md"
+      ]
+    },
+    {
+      "tool_chunk": "784568",
+      "paths": [
+        "docs/status.md",
+        "docs/log.md latest A035/E061 S2/A034",
+        "docs/workflow.md"
+      ],
+      "note": "Oversized output; missing workflow opening/A034 entry reread in5322d0."
+    },
+    {
+      "tool_chunk": "5322d0",
+      "paths": [
+        "docs/workflow.md",
+        "docs/log.md A034",
+        "docs/analysis/A035-outputs/s2-e061-result-intake.ko.md"
+      ]
+    },
+    {
+      "tool_chunk": "d1a20b",
+      "paths": [
+        "submissions/2026-09-28-E061/SCORES.md",
+        "docs/experiments/E061-tied-content-heads.md"
+      ],
+      "note": "Large historical ledger output narrowed to E041 inbe8d4c; SCORES tail reread there."
+    },
+    {
+      "tool_chunk": "5f3300",
+      "paths": [
+        "docs/analysis/A035-e061-dev-submission-review.md",
+        "submissions/2026-09-19-E041/SCORES.md",
+        "docs/analysis/E061-outputs/s2/exposure-ledger.md"
+      ]
+    },
+    {
+      "tool_chunk": "6fdf35",
+      "paths": [
+        "docs/analysis/E061-outputs/s2/closeout.md",
+        "docs/analysis/E061-outputs/s2/verification.json",
+        "docs/analysis/E061-outputs/s2/source-archive-manifest.json"
+      ]
+    },
+    {
+      "tool_chunk": "be8d4c",
+      "paths": [
+        "submissions/hosted-scores/2026-09-27.json E041933094 record"
+      ]
+    }
+  ],
+  "source": {
+    "type": "User-supplied API object in this conversation; not independently fetched/authenticated",
+    "file": "user-reported-949956.json",
+    "normalization": "Decoded pasted HTML spaces/Markdown underscore escapes; removed outer trailing comma; JSON field values retained. This file is not a byte-exact HTTP response archive.",
+    "provided_id": 949956,
+    "status": "Finished",
+    "created_when_utc": "2026-09-28T13:57:41.742034Z",
+    "created_when_kst": "2026-09-28T22:57:41.742034+09:00",
+    "timestamp_semantics": "Platform creation timestamp; user-reported22:57:41KST agrees to second. Not an independently measured upload start/finish time.",
+    "best_update_event": "Not supplied as a separate event; no improvement over E041 in released values. on_leaderboard=false and leaderboard=null are snapshot membership, not event history."
+  },
+  "comparison": {
+    "comparator": "E041",
+    "comparator_id": 933094,
+    "comparator_source": "submissions/hosted-scores/2026-09-27.json",
+    "same_phase": 29772,
+    "same_phase_name": "Development",
+    "both_status": "Finished",
+    "same_score_keys": [
+      "skill",
+      "skill_unicef",
+      "skill_world_bank",
+      "skill_unhcr"
+    ],
+    "precision_fields": 2,
+    "reported_E041": {
+      "grand": "0.6433333333",
+      "unicef": "0.5200000000",
+      "world_bank": "0.4900000000",
+      "unhcr": "0.9200000000"
+    },
+    "reported_E061": {
+      "grand": "0.6400000000",
+      "unicef": "0.5200000000",
+      "world_bank": "0.4900000000",
+      "unhcr": "0.9100000000"
+    },
+    "released_value_deltas": {
+      "grand": "-0.0033333333",
+      "unicef": "0.0000000000",
+      "world_bank": "0.0000000000",
+      "unhcr": "-0.0100000000"
+    },
+    "provenance_verdict": "Comparable at supplied released-score/phase metadata level; no supplied contradiction. E041 sanitized record lacks task/scoring-program IDs, so matching runtime/scorer versions not independently established.",
+    "arm": "Comparable Grand decline",
+    "decision": "Adverse operational reading for this run; E041 incumbent/E025 fallback retained, E061 parked.",
+    "limits": "Both displays may show.64, but API values differ. Additional Grand decimals do not restore unnoised precision. No exact effect, raw prediction identity/activation, isolated tying cause, zero effect or universal hypothesis refutation inferred."
+  },
+  "artifact": {
+    "filename": "2026-09-28-E061.zip",
+    "historical_local_path": "submissions/2026-09-28-E061.zip",
+    "historical_local_bytes": 16508,
+    "historical_local_sha256": "4b89e619987d568034bf8a70a7ffda190af483c083ad5921eec9f5a8d843f8c6",
+    "hash_source": "Unmodified prior S2 verification/manifest; no ZIP/source/model/data/NPZ/cache opened or rehashed this intake.",
+    "uploaded_bytes_verified": false,
+    "remote_hash": null,
+    "selected_local_path_confirmed": false,
+    "account_authorization_and_current_slot": "Not independently confirmed; payload reports owner and a Finished submission, no current quota assertion."
+  },
+  "disposition": {
+    "DEV": "E041 incumbent; E025 fallback; E057/E060/E061 parked",
+    "TEST": "No promotion or selection; A018 user-unconfirmed and S3 stopped",
+    "next": "S0 document-only strategic review of adverse fixed-policy observation; no identical-policy retry or seed/head/threshold rescue."
+  },
+  "preserved_exposure": "17999 people/12339 SSUID, aggregate exposure and A022 original roles; E059 consumed oracle1918/1124 and selection2007/1130, protected audit2074/1177 and calibration1866. E058 STOP/E059 STOP_SELECTION, A023/A024 empirical HOLD and all previous STOP/HOLD; A_half nonpromotion.",
+  "operations": {
+    "new_fit": 0,
+    "new_predict": 0,
+    "new_score": 0,
+    "new_release_check": 0,
+    "new_zip": 0,
+    "platform_query": false,
+    "upload": false,
+    "commit_push": false,
+    "model_edits": false,
+    "tree_edits": false,
+    "protected_data_access": false
+  },
+  "entry_document_hashes": {
+    "AGENTS.md": "86394bbf164a2b7df6a309f4564b9dacf3b2799fa0227a703e4ea11d4d842596",
+    "CLAUDE.md": "69175e6d741a17042db4852d4961a5c52bd97fe2cd5bfbff762d30d7e5270364",
+    "docs/workflow.md": "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642",
+    "docs/status.md": "363b943d2278c03e08b076f7c849f36e5563a9371245e4326261d90ccf187fa8",
+    "docs/log.md": "2d9c9c4fccc8ea25b7ec7fa5f6f98a16f99d1c44391dc54ac9befe022d1ef30b",
+    "docs/tree.md": "eaa884a4194db103335136495205fe5b51297c17db15e9eac62946ced286cc44",
+    "docs/experiments/E061-tied-content-heads.md": "9e78a640daf8ff037ce877c01b6106d48328442450d120532ea24cd05da01f69",
+    "submissions/2026-09-28-E061/SCORES.md": "fabe4b99720784afb9b6f61a2c5c15fc9a908ddd7658bed5ebd8312911138f82",
+    "submissions/2026-09-19-E041/SCORES.md": "452de89434093225c755639e711b567bfd1160dc38eab74d6b603fda65c2351c",
+    "submissions/hosted-scores/2026-09-27.json": "dfe719bec68faf60c7dfec86c6034ba35fe1a6ba7a9437b88813dbc1ea567ce8",
+    "docs/analysis/A035-e061-dev-submission-review.md": "f1c58ea926522197d7b991b7a881afd965d3a64f9e9cc1dc696529c0298e8247",
+    "docs/analysis/A035-outputs/s2-e061-result-intake.ko.md": "bfb9d8dc9cf648d3d6ab5866e36cad882e67a15ed7d97814691da77431cb0408",
+    "docs/analysis/E061-outputs/registration.md": "99f4e2497bc1dcbc71f82ad529abfd368092070ce4bf6eed5e298ac9b8dd6af8",
+    "docs/analysis/E061-outputs/manifest.json": "c1a84f0d484fd30b3eccd87ba2e23d39fa7c788eb11b14a3892dbb329576919a",
+    "docs/analysis/E061-outputs/s2/entry.json": "336e6371737f52f1448781dc2ab3262777281c1e83972d190fdbb7a0216c4241",
+    "docs/analysis/E061-outputs/s2/release-freeze.json": "4f92841cb166aa28e78e07294cb09614fc75e03c509ec8876ec58fce791f1bb8",
+    "docs/analysis/E061-outputs/s2/source-archive-manifest.json": "e3dbaa704ef4633064cac071b252d4b56ef0b51ff2c6f31930b805f1ba4ebf42",
+    "docs/analysis/E061-outputs/s2/verification.json": "d13a125f2cb26d4b62e1103e050af39ba2ee8c555664d3e06723e05766894a31",
+    "docs/analysis/E061-outputs/s2/closeout.md": "f3f8b47c47b5727ee6c0173da7409282a8a14f2ac39eaaaa2bf73151c5a16fdd",
+    "docs/analysis/E061-outputs/s2/exposure-ledger.md": "218da11a1f494b1ba22e0d7c8ff05c6a69eb71ecca2748ce1d2e55f12d52f2c2",
+    "docs/analysis/E061-outputs/s2/scorecard-prerun.md": "826bcbcc2518714f70835aa8cf65943543190e40112400ac2709f88ee359bb69"
+  },
+  "historical_manifest_difference": "Existing S2 manifest/verification are immutable pre-result records. E061 SCORES and experiment receive append-only result sections; status/log receive current result records, on top of A035 pre-existing status/log additions. Post-result-verification.json identifies final document hashes separately."
+}

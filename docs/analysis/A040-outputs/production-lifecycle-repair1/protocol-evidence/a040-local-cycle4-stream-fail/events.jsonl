@@ -1,0 +1,9 @@
+{"event": "operation", "time": 1791210872.2132092, "stage": "connect", "timeout": 60}
+{"event": "operation", "time": 1791210872.214096, "stage": "billing", "timeout": 1}
+{"event": "operation", "time": 1791210872.214617, "stage": "base_stream", "timeout": 1}
+{"event": "operation", "time": 1791210872.2150893, "stage": "base_identity", "timeout": 1}
+{"event": "operation", "time": 1791210872.2190742, "stage": "app_create", "timeout": 1}
+{"event": "operation", "time": 1791210872.2265644, "stage": "build_billing", "timeout": 1}
+{"event": "operation", "time": 1791210872.2396283, "stage": "sandbox_create", "timeout": 120}
+{"event": "operation", "time": 1791210872.2552416, "stage": "transfer", "timeout": 1}
+{"event": "first_error", "time": 1791210872.2651694, "error": "SandboxFilesystemError('An unexpected error occurred, please contact support@modal.com')"}

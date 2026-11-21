@@ -1,0 +1,105 @@
+﻿{
+    "kind":  "Current attempt artifacts, self excluded",
+    "files":  [
+                  {
+                      "path":  "allowlist.json",
+                      "bytes":  27562,
+                      "sha256":  "f8a52aaabb040593737485a9f860d53ae39600693ab18517128c577d0ac5dcfe"
+                  },
+                  {
+                      "path":  "boundary-result.json",
+                      "bytes":  391,
+                      "sha256":  "e84a9f68341374d8dff365a0f3796e4bae545d41b201c1b7efffd9ea51c4d37e"
+                  },
+                  {
+                      "path":  "closeout.md",
+                      "bytes":  5131,
+                      "sha256":  "24b9c04801ad7815f94396d9829413cd407be72ca058a35333f07ffc1945feff"
+                  },
+                  {
+                      "path":  "cost-ledger.json",
+                      "bytes":  1778,
+                      "sha256":  "475b7d2db5501a817adf0fe4f6b03f43dd1e32f4817035b748221ee27f0ed363"
+                  },
+                  {
+                      "path":  "dirty-entry.txt",
+                      "bytes":  3219,
+                      "sha256":  "184f0fe5ff15527c15fb34d257489dd2552aa7f718ac2c3259d5032741e8d7e9"
+                  },
+                  {
+                      "path":  "entry.json",
+                      "bytes":  1245,
+                      "sha256":  "c52bbf401c1e0476a755292e7341da8ece2a8b1141ed6c9d15423227b772948c"
+                  },
+                  {
+                      "path":  "exposure-ledger.md",
+                      "bytes":  1706,
+                      "sha256":  "d059a4db489756e991d0fb8b2c49a71a310c4ceb470c521350f3aee78779dd2a"
+                  },
+                  {
+                      "path":  "log-before.md",
+                      "bytes":  247747,
+                      "sha256":  "4407ec8c78d806b89bd67be8ae33750c9e29ae97b41620039637a129f3a792ad"
+                  },
+                  {
+                      "path":  "platform-contract.md",
+                      "bytes":  3936,
+                      "sha256":  "21ec1d6aa347443b81ad002649a47a11289101678c5366166b6c3a98e6314072"
+                  },
+                  {
+                      "path":  "prepare_allowlist.py",
+                      "bytes":  3446,
+                      "sha256":  "db5b02061900dd92201ea7f3fb7e2fbf85ee32b7ea2c562d14a5b9fc0c442714"
+                  },
+                  {
+                      "path":  "registration.md",
+                      "bytes":  5066,
+                      "sha256":  "e1d91e101daa7e64d8707d952c9347247e86ee3e4f3aa9769790bff34d8f48b5"
+                  },
+                  {
+                      "path":  "s0-handoff.ko.md",
+                      "bytes":  2716,
+                      "sha256":  "83757099adb98edac98c9c291da1b400b6bd4a52b652e1067e36a1dcc415c33d"
+                  },
+                  {
+                      "path":  "sdk-package-selection.json",
+                      "bytes":  1580,
+                      "sha256":  "24b8d934851039ecb7b7a537a7959c3b26be2bf1a366cce8d1caeafa151ad50f"
+                  },
+                  {
+                      "path":  "sdk-requirements.lock.txt",
+                      "bytes":  523,
+                      "sha256":  "f245a99b042968df56b28a747f6122deefc41bdd4650d4d152c3019affd23541"
+                  },
+                  {
+                      "path":  "source-input-image-manifest.json",
+                      "bytes":  43382,
+                      "sha256":  "23f1a78192e9418b67cbfae75cb8043479efbe01e2650a45b0123d44dd7c8f7b"
+                  },
+                  {
+                      "path":  "source.diff",
+                      "bytes":  3613,
+                      "sha256":  "53f5cfa08aa9ab9a33cf0249a1dd41c5e9f86296f613772fafd1c2413b385a35"
+                  },
+                  {
+                      "path":  "status-before.md",
+                      "bytes":  32894,
+                      "sha256":  "ae0701c4ec2d77d2f7e23e0a1d8d68213c1be227acf73fbee763310295c4fed0"
+                  },
+                  {
+                      "path":  "termination-receipt.json",
+                      "bytes":  442,
+                      "sha256":  "e88a1edbd956f111ac43e6788215733497b79aec3584b65607a86bc79574e430"
+                  },
+                  {
+                      "path":  "verification.json",
+                      "bytes":  2424,
+                      "sha256":  "9639649dbba6d03841aff6a93b259d609ff513e5a3fd270d7befae2bcad419aa"
+                  }
+              ],
+    "relative_links_checked":  9,
+    "missing_links":  [
+
+                      ],
+    "recorded_utc":  "2026-10-02T12:41:44.3445463Z"
+}

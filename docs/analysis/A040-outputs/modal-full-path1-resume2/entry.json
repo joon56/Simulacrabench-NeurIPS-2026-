@@ -1,0 +1,24 @@
+﻿{
+    "started_utc":  "2026-10-02T15:43:10Z",
+    "started_kst":  "2026-10-03T00:43:10+09:00",
+    "preparation_deadline_utc":  "2026-10-02T16:04:10Z",
+    "task_deadline_utc":  "2026-10-02T17:04:10Z",
+    "prior_active_seconds":  2295.2633125,
+    "role":  "S1 technical",
+    "authority":  "User attachment explicitly directs existing S1 resume2 and conditional original single verification",
+    "workflow_revision":  "2026-09-27-r4",
+    "workflow_sha256":  "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642",
+    "head":  "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+    "read_evidence":  [
+                          "a9595f AGENTS/CLAUDE/attachment",
+                          "90b0a0 status/latest3/workflow/current handoff",
+                          "8e7ade workflow truncation recovery/prior records/registration"
+                      ],
+    "budget_policy":  "Preparation1/total5 planning targets; cash0; shutdown at management estimate4; no strict invoice bound",
+    "prior_budget_rpc_denial_not_blocker":  true,
+    "baseline_tool":  "8e8715",
+    "baseline_metered_usd":  0,
+    "baseline_billed_usd":  0,
+    "user_report":  "credits30/spend0/usage30; settings unchanged, not live API confirmed",
+    "subagents_allowed":  false
+}

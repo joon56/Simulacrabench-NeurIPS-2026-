@@ -1,0 +1,25 @@
+﻿{
+    "exit_code":  -1073741819,
+    "pid":  54420,
+    "child_start_utc":  "2026-10-05T15:57:25.4777088Z",
+    "case":  "stall",
+    "actual_python":  {
+                          "exit_code":  -1073741819,
+                          "start_utc":  "2026-10-05T15:57:25.5288402Z",
+                          "has_exited":  true,
+                          "pid":  48852,
+                          "affinity":  3,
+                          "wall_seconds":  125.8273074,
+                          "exit_utc":  "2026-10-05T15:59:31.3561476Z"
+                      },
+    "child_wall_seconds":  125.88681319999999,
+    "supervisor_wall_seconds":  125.9060169,
+    "aggregate_seconds":  184.9543888999999974,
+    "remaining_owned_pid":  0,
+    "forced":  false,
+    "attempt":  "real-stall1",
+    "cpu_affinity":  3,
+    "child_exit_utc":  "2026-10-05T15:59:31.3645220Z",
+    "within_cap":  true,
+    "cap_seconds":  210
+}

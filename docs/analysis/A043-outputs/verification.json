@@ -1,0 +1,226 @@
+{
+  "decision": "E063_UNRESOLVED_FIXED_POLICY_DEPRIORITIZED; PROPOSE_ONE_S1_INFORMATION_CONTRACT",
+  "recorded_at": "2026-10-11T21:25:36.6846962+09:00",
+  "role": "S0 documents and static source only",
+  "head": "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+  "initial_dirty_count": 114,
+  "final_dirty_count": 116,
+  "new_dirty_entries": [
+    "?? docs/analysis/A043-outputs/",
+    "?? docs/analysis/A043-post-e063-priority.md"
+  ],
+  "named_local_jobs": [],
+  "read_evidence": "entry.json",
+  "named_post_result_manifest_matches": 9,
+  "preservation_checks": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "73b86e5310d6a45d5206efd3b55da47c48748ee7b077e6fcad6be276f1716a3a",
+      "match": true
+    },
+    {
+      "path": "CLAUDE.md",
+      "sha256": "0cda5c3385ea3368d0c24a6602e4b1220adc864a205e231f10042b655d031749",
+      "match": true
+    },
+    {
+      "path": "docs/workflow.md",
+      "sha256": "a577942675e16a732339e586c14796104dda704693568439ae28670cc7fb7b23",
+      "match": true
+    },
+    {
+      "path": "docs/tree.md",
+      "sha256": "eaa884a4194db103335136495205fe5b51297c17db15e9eac62946ced286cc44",
+      "match": true
+    },
+    {
+      "path": "src/models/shared_trunk.py",
+      "sha256": "df648763c8e0ba5532ebf9e437af95cd10d8527112c1338b8b5db9ad6a212e1f",
+      "match": true
+    },
+    {
+      "path": "src/models/link_sharp.py",
+      "sha256": "4a7921a00d7758e52a63a3ca7cd5ebf2285cef445b57fd89f15580d6fc108524",
+      "match": true
+    },
+    {
+      "path": "src/models/hh_cap.py",
+      "sha256": "9aad6be04e14ae97dc7aaba5499747c35b255b098680c66eaa8f8af58c940f70",
+      "match": true
+    },
+    {
+      "path": "src/models/supervised_retrieval.py",
+      "sha256": "2940338c5378de03303befb74e3834fbad631c0eb18f4ecb55d2cc39a471f879",
+      "match": true
+    },
+    {
+      "path": "src/models/tied_content_heads.py",
+      "sha256": "f9449d41d30041f6e9714c7a25777965ec4d25cfa2563b018fb08c94dde20833",
+      "match": true
+    },
+    {
+      "path": "src/models/logit_blend.py",
+      "sha256": "c25e91e648d5eb8a11afca1c8b02accad1a585540b6ed7d4ca363730a535705f",
+      "match": true
+    },
+    {
+      "path": "src/models/round_metric_retrieval.py",
+      "sha256": "5595bebdcdc697fc9e1eba149e10735cac4ae434b20b0ce3e93c968e8b35106b",
+      "match": true
+    },
+    {
+      "path": "docs/experiments/E012-shared-trunk.md",
+      "sha256": "0c40ac6802f683f5523b8639080f4b0df0fcbe4150e7b40ad8eb2a8f918e6b8a",
+      "match": true
+    },
+    {
+      "path": "docs/experiments/E061-tied-content-heads.md",
+      "sha256": "a052fc9939b0e2e8a15841cfaa3645fa5c14661766cac829ce1a7ffb3a063dff",
+      "match": true
+    },
+    {
+      "path": "docs/experiments/E063-round-conditioned-metric.md",
+      "sha256": "c2e32e41f725d4d44515d0bdb84a182394de4d0c7fe3c8773c7888ce280a16b9",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A033-dev-handoff-and-role-repair.md",
+      "sha256": "a48aefa0ca0b5151616b51c6489d607f300b82fbe543b663ff9c1b63693402c8",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A037-winning-priority-review.md",
+      "sha256": "87e77d8279f68e52751653f3b6098ec1976e4b53a75faf7206043ec6cf4bf66d",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A042-post-e062-priority.md",
+      "sha256": "9d478646da798409b8999988584ab5d7df827e1a5f8fcb30f3cee6e8c5c311bb",
+      "match": true
+    },
+    {
+      "path": "submissions/SCORES.md",
+      "sha256": "94d36f5af0254dec1d92e1aeb7d443c0517282817881f4e244af41fcd0735469",
+      "match": true
+    },
+    {
+      "path": "submissions/2026-10-09-E063/SCORES.md",
+      "sha256": "c66bfce12940d8086511a0479c61ef7e14c7103805e977c205991f0b7c4216e7",
+      "match": true
+    },
+    {
+      "path": "submissions/hosted-scores/2026-09-27.json",
+      "sha256": "dfe719bec68faf60c7dfec86c6034ba35fe1a6ba7a9437b88813dbc1ea567ce8",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/E063-outputs/s2/post-result/post-result-handoff.ko.md",
+      "sha256": "bfb041674bcf500789a6b67aa4c9853bd4dc26b90f7f21b5413e8eb97029f232",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/E063-outputs/s2/post-result/user-message.txt",
+      "sha256": "edb78c96c41419fa8d8b1f8159874055afea1e3ddd740a46a3b8621a11b43e14",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/E063-outputs/s2/post-result/user-supplied-api.json",
+      "sha256": "0532bb9b512ac9c01aa7371b02e88ef9be75b1670d1d4870bb0664b0c9843ab3",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/E063-outputs/s2/post-result/normalization.json",
+      "sha256": "d43c29f22e419e71b37e4bc6c72d98ec2e86bb90eb7c904e970803588145777f",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/E063-outputs/s2/post-result/result.ko.md",
+      "sha256": "8025ec5ddab33bae3675f72616f5c932e18d15f77f6ac3f3fb0c53b98d4369fb",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/E063-outputs/s2/post-result/comparison.json",
+      "sha256": "19c9ffedc1386e4732206fd033cdd5b19fa5cdd339dcccd93dabff0a5aa061f5",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/E063-outputs/s2/post-result/verification.json",
+      "sha256": "fc5f7868734dbff5ff817e8a8fc486b363896264c62ad6813e22fe4c5f8bbdf2",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/E063-outputs/s2/post-result/document-manifest.json",
+      "sha256": "b1438c86aba739729a37bb0df30f92a9daff655f3bae02bdffff7cffafba581a",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/E063-outputs/s2/post-result/read-receipt.md",
+      "sha256": "1df5b10520ac89f5bed0f2963e213f244341bfb5a02d8384829f1e988771a744",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/E063-outputs/s2/post-result/exposure-ledger.md",
+      "sha256": "17a65538c71f04ca30065dbca2738dfcbc3ec9fbc5ac0158342c7b41332c0fdd",
+      "match": true
+    }
+  ],
+  "shared_document_restore_checks": [
+    {
+      "path": "docs/status.md",
+      "utf8_bom": true,
+      "recorded_offset_includes_bom": true,
+      "expected": "b380285a72bee94da61cdb5abfaba7035f75553cc7e0dc59c552491ad91124df",
+      "restored": "b380285a72bee94da61cdb5abfaba7035f75553cc7e0dc59c552491ad91124df",
+      "match": true
+    },
+    {
+      "path": "docs/log.md",
+      "utf8_bom": true,
+      "recorded_offset_includes_bom": true,
+      "expected": "6e44fc3105a8d865178ff03eb8e8b86a2b8a28eb22f6c1286d00145113c971ee",
+      "restored": "6e44fc3105a8d865178ff03eb8e8b86a2b8a28eb22f6c1286d00145113c971ee",
+      "match": true
+    }
+  ],
+  "document_helper_failures": [
+    {
+      "chunk": "9f9130",
+      "stage": "restoration check",
+      "cause": "Array subexpression around ConvertFrom-Json nested the parsed array; c.path yielded two strings.",
+      "diagnosis": "a2fbbe confirms direct assignment provides two individual objects.",
+      "fix": "Enumerate directly assigned parsed JSON.",
+      "before_verification_write": true
+    },
+    {
+      "chunk": "31ce64",
+      "stage": "restoration check",
+      "cause": "ReadAllText removed UTF-8 BOM while saved insertion offsets include BOM. This was a verification-reader mismatch, not document content loss.",
+      "fix": "Use UTF8.GetString(ReadAllBytes) as the original insertion helper did. Both independently restored hashes now match before bytes.",
+      "before_verification_write": true
+    }
+  ],
+  "scope_counts": {
+    "model_import": 0,
+    "fit": 0,
+    "predict": 0,
+    "score": 0,
+    "tests_or_fixture": 0,
+    "protected_data_or_cache_access_or_rehash": 0,
+    "zip_access_or_rehash": 0,
+    "web_platform_remote": 0,
+    "subagents": 0,
+    "commit_push": 0,
+    "s3_test_selection": 0,
+    "new_response_exposure": 0
+  },
+  "duration_from_entry_seconds": 843.014,
+  "limitations": "Document/static-source checks only. No fresh numerical release validation, remote authentication, uploaded-byte check or whole-workspace hash audit. Prior S2 reads/actions are session-reported, not independently reproduced.",
+  "document_links": {
+    "evidence_chunk": "c080cd",
+    "checked": 14,
+    "all_exist": true,
+    "json_documents_parsed": 3,
+    "shared_document_diff_check_exit": 0
+  },
+  "self_hash_excluded": true
+}

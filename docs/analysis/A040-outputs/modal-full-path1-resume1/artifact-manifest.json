@@ -1,0 +1,96 @@
+﻿{
+    "kind":  "Resume1 local documentation and read-only API utilities; not runnable scientific freeze",
+    "recorded_utc":  "2026-10-02T13:17:58.0073284+00:00",
+    "files":  [
+                  {
+                      "path":  "account-read.json",
+                      "bytes":  791,
+                      "sha256":  "370d2ede8377275e96bd53a2dcf623df2262bd0712589fc282429a13ed5a608a"
+                  },
+                  {
+                      "path":  "boundary-result.json",
+                      "bytes":  298,
+                      "sha256":  "65f428bf67c9ffe44b33214b604ad1234997ff77fe08432b1528cd1f45cdf6b7"
+                  },
+                  {
+                      "path":  "build-control.md",
+                      "bytes":  6982,
+                      "sha256":  "503d589756806689df9224170a935b37b46d52e99dd1cf02f99ef1739ea50cba"
+                  },
+                  {
+                      "path":  "closeout.md",
+                      "bytes":  3888,
+                      "sha256":  "b0f213982e78a7e2713ba60a13555105acfe0e996abf84acaf88923d3b70050d"
+                  },
+                  {
+                      "path":  "cost-ledger.json",
+                      "bytes":  2784,
+                      "sha256":  "90a92e588ade1f5d475eaa07532176a3ab8adda09a9b0fff972283da0e3bf99c"
+                  },
+                  {
+                      "path":  "dirty-entry.txt",
+                      "bytes":  3219,
+                      "sha256":  "184f0fe5ff15527c15fb34d257489dd2552aa7f718ac2c3259d5032741e8d7e9"
+                  },
+                  {
+                      "path":  "entry.json",
+                      "bytes":  1412,
+                      "sha256":  "9eb9fb7ec68075aa00ee49898b25fb66bd1f10b5ed3b6b183ed175d8858b3d8c"
+                  },
+                  {
+                      "path":  "exposure-ledger.md",
+                      "bytes":  1638,
+                      "sha256":  "ff6bb95f11e483cad64e42c11082c0066041d9382e5a3a353397bc8e43a5fd15"
+                  },
+                  {
+                      "path":  "inspect_sdk_metadata.py",
+                      "bytes":  762,
+                      "sha256":  "3348c4181e381ebefd2975f37543b08ebacfa79740dc44e0aa9daf96eb946757"
+                  },
+                  {
+                      "path":  "log-before.md",
+                      "bytes":  250326,
+                      "sha256":  "211a2a8aede470647525ca24c54dd150054aaf973fa5addaac6915e213621973"
+                  },
+                  {
+                      "path":  "prior-artifact-check.json",
+                      "bytes":  4888,
+                      "sha256":  "235768f86dd796b1df469713d992c03e55489cf6953d5eaa1a5bc8e246a366cc"
+                  },
+                  {
+                      "path":  "read_account.py",
+                      "bytes":  1638,
+                      "sha256":  "a0a6738667361a0c963cd2d925ff73a4a9987cb571342660ee176058fe67c818"
+                  },
+                  {
+                      "path":  "s0-handoff.ko.md",
+                      "bytes":  2530,
+                      "sha256":  "00d5687285c8fe811940efc2bc91fd09c6275c638a1e423b039c64d93019e367"
+                  },
+                  {
+                      "path":  "source-evidence.json",
+                      "bytes":  2228,
+                      "sha256":  "80c96398a465fe2d39827facb4fb08a9ac3baeee44c0dc9fe72f15a881ada029"
+                  },
+                  {
+                      "path":  "source-register.md",
+                      "bytes":  2160,
+                      "sha256":  "04f60786a17dcccf2aab6ddbdbb38b0dc982671bbe9a1b0b948dd080ed0b9bbc"
+                  },
+                  {
+                      "path":  "status-before.md",
+                      "bytes":  34254,
+                      "sha256":  "1558819028fcbd5e6b49c857a42bb10a31742a809397b64c9ed1b33ef3fd440f"
+                  },
+                  {
+                      "path":  "termination-receipt.json",
+                      "bytes":  435,
+                      "sha256":  "f5c42b348cf24b49ac026e22b079caaad365f5d6985913c6fb3618dd03ee9b78"
+                  },
+                  {
+                      "path":  "verification.json",
+                      "bytes":  2640,
+                      "sha256":  "8644adbcc79209ff23cb6907ab49ac696c04397f53fc155f985cbac6e7884789"
+                  }
+              ]
+}

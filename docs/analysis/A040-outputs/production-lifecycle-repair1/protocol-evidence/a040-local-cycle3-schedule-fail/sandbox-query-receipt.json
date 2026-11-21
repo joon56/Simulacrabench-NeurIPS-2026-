@@ -1,0 +1,123 @@
+{
+  "app_id": "ap-bbbbbbbbbbbbbbbbbbbbbb",
+  "app_name": "a040-local-cycle3-schedule-fail",
+  "sandbox_name": "a040-local-cycle3-schedule-fail-gpu",
+  "sandbox_id": "sb-aaaaaaaaaaaaaaaaaaaaaa",
+  "terminal": "TERMINAL_CONFIRMED",
+  "calls": [
+    {
+      "method": "Client.from_env",
+      "started_utc": "2026-10-05T14:32:32.150151+00:00",
+      "cap_seconds": 1.333322633334319,
+      "outcome": "RETURNED"
+    },
+    {
+      "method": "WorkspaceNameLookup",
+      "started_utc": "2026-10-05T14:32:32.161631+00:00",
+      "cap_seconds": 1.3218427333340514,
+      "outcome": "RETURNED"
+    },
+    {
+      "method": "AppGetInfo",
+      "started_utc": "2026-10-05T14:32:32.171814+00:00",
+      "cap_seconds": 1.3116568333352916,
+      "outcome": "RETURNED"
+    },
+    {
+      "method": "AuthTokenManager.get_token",
+      "started_utc": "2026-10-05T14:32:32.186111+00:00",
+      "cap_seconds": 1.2973595333314734,
+      "outcome": "RETURNED"
+    },
+    {
+      "method": "SandboxListV2",
+      "started_utc": "2026-10-05T14:32:32.196888+00:00",
+      "cap_seconds": 1.2865805333349272,
+      "outcome": "RETURNED"
+    },
+    {
+      "method": "AuthTokenManager.get_token",
+      "started_utc": "2026-10-05T14:32:32.211409+00:00",
+      "cap_seconds": 1.2720577333311667,
+      "outcome": "RETURNED"
+    },
+    {
+      "method": "SandboxListV2",
+      "started_utc": "2026-10-05T14:32:32.221891+00:00",
+      "cap_seconds": 1.2615740333349095,
+      "outcome": "RETURNED"
+    },
+    {
+      "method": "SandboxWait",
+      "started_utc": "2026-10-05T14:32:32.239770+00:00",
+      "cap_seconds": 1.4103591999955825,
+      "outcome": "RETURNED"
+    },
+    {
+      "method": "AppGetInfo",
+      "started_utc": "2026-10-05T14:32:32.261889+00:00",
+      "cap_seconds": 1.3882383999953163,
+      "outcome": "RETURNED"
+    },
+    {
+      "method": "TaskList",
+      "started_utc": "2026-10-05T14:32:32.276241+00:00",
+      "cap_seconds": 1.3738842999955523,
+      "outcome": "RETURNED"
+    },
+    {
+      "method": "WorkspaceBillingSummary",
+      "started_utc": "2026-10-05T14:32:32.287593+00:00",
+      "cap_seconds": 1.362530099999276,
+      "outcome": "RETURNED"
+    }
+  ],
+  "errors": [],
+  "terminate_requests": 1,
+  "new_resources": 0,
+  "remote_commands": 0,
+  "remote_file_operations": 0,
+  "observed_utc": "2026-10-05T14:32:32.298278+00:00",
+  "observed_kst": "2026-10-05T23:32:32.298286+09:00",
+  "elapsed_seconds": 0.14816330000030575,
+  "identity": {
+    "workspace": "joon56",
+    "environment": "main",
+    "app_id": "ap-bbbbbbbbbbbbbbbbbbbbbb",
+    "app_name": "a040-local-cycle3-schedule-fail"
+  },
+  "version": "V1",
+  "listed": {
+    "id": "sb-aaaaaaaaaaaaaaaaaaaaaa",
+    "name": "a040-local-cycle3-schedule-fail-gpu",
+    "app_id": "ap-bbbbbbbbbbbbbbbbbbbbbb",
+    "image_id": "im-fixture",
+    "created_at": 100.0,
+    "started_at": 101.0,
+    "finished_at": 102.0,
+    "include_finished": true,
+    "result": {
+      "status": 3,
+      "status_name": "GENERIC_STATUS_TERMINATED",
+      "exitcode": 0
+    }
+  },
+  "sandbox_result": {
+    "status": 3,
+    "status_name": "GENERIC_STATUS_TERMINATED",
+    "exitcode": 0
+  },
+  "terminal_source": "Exact-ID SandboxWait",
+  "app": {
+    "state": 1,
+    "tasks": 0,
+    "stopped_task0": false
+  },
+  "billing": {
+    "metered_cost": "0.01009897",
+    "billed_cost": "0",
+    "metered_breakdown": {},
+    "attribution": "WORKSPACE_AGGREGATE_NOT_TASK_INVOICE",
+    "posting_delay_unknown": true
+  }
+}

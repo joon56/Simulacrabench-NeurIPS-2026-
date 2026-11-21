@@ -1,0 +1,101 @@
+ M .claude/skills/paper-session/SKILL.md
+ M .gitignore
+ M CLAUDE.md
+ M docs/domain-study-guide.ko.md
+ M docs/index.md
+ M docs/log.md
+ M docs/session-prompts.ko.md
+ M docs/status.md
+ M docs/tree.md
+ M docs/workflow.md
+?? .agents/
+?? AGENTS.md
+?? README.md
+?? docs/analysis/A020-outputs/
+?? docs/analysis/A020-post-e058-design-review.md
+?? docs/analysis/A021-outputs/
+?? docs/analysis/A021-selector-comparison-contract.md
+?? docs/analysis/A022-outputs/
+?? docs/analysis/A022-remaining-role-audit.md
+?? docs/analysis/A023-candidate-boundary-contract.md
+?? docs/analysis/A023-cost-accounting.md
+?? docs/analysis/A023-outputs/
+?? docs/analysis/A024-channel-precision-review.md
+?? docs/analysis/A024-outputs/
+?? docs/analysis/A025-submission-oriented-review.md
+?? docs/analysis/A026-outputs/
+?? docs/analysis/A026-post-e060-strategy-review.md
+?? docs/analysis/A027-outputs/
+?? docs/analysis/A027-workflow-role-revision.md
+?? docs/analysis/A028-outputs/
+?? docs/analysis/A028-workflow-entry-audit.md
+?? docs/analysis/A029-codex-migration-audit.md
+?? docs/analysis/A029-outputs/
+?? docs/analysis/A030-outputs/
+?? docs/analysis/A030-vaf-channel-metadata-review.md
+?? docs/analysis/A031-outputs/
+?? docs/analysis/A031-post-a030-handoff-review.md
+?? docs/analysis/A032-document-acquisition-and-readiness.md
+?? docs/analysis/A032-outputs/
+?? docs/analysis/A033-dev-handoff-and-role-repair.md
+?? docs/analysis/A033-outputs/
+?? docs/analysis/A034-e061-s0-review.md
+?? docs/analysis/A034-outputs/
+?? docs/analysis/A035-e061-dev-submission-review.md
+?? docs/analysis/A035-outputs/
+?? docs/analysis/A036-e061-post-result-review.md
+?? docs/analysis/A036-outputs/
+?? docs/analysis/A037-outputs/
+?? docs/analysis/A037-winning-priority-review.md
+?? docs/analysis/A038-outputs/
+?? docs/analysis/A038-vaf-local-document-intake.md
+?? docs/analysis/A039-outputs/
+?? docs/analysis/A040-outputs/
+?? docs/analysis/A041-outputs/
+?? docs/analysis/A041-wb-ordinal-head-review.md
+?? docs/analysis/E059-outputs/
+?? docs/analysis/E060-outputs/
+?? docs/analysis/E061-outputs/
+?? docs/analysis/E062-outputs/
+?? docs/codex-setup.ko.md
+?? docs/experiments/E059-leaf-donor-interactions.md
+?? docs/experiments/E060-content-target-retrieval.md
+?? docs/experiments/E061-tied-content-heads.md
+?? docs/experiments/E062-wb-ordinal-heads.md
+?? docs/plans/README.md
+?? requirements-models.txt
+?? scripts/assemble_e060.py
+?? scripts/assemble_e061.py
+?? scripts/assemble_e062.py
+?? scripts/check_a021_selector_contract.py
+?? scripts/check_a023_candidate_boundary.py
+?? scripts/check_a023_resources.py
+?? scripts/check_e060.py
+?? scripts/check_e061_release.py
+?? scripts/check_e061_tied_heads.py
+?? scripts/check_e062_release.py
+?? scripts/check_e062_wb_ordinal.py
+?? scripts/check_workspace.py
+?? scripts/screen_e059.py
+?? src/models/content_target_retrieval.py
+?? src/models/tied_content_heads.py
+?? src/models/wb_ordinal_heads.py
+?? submissions/2026-09-27-E060.zip
+?? submissions/2026-09-27-E060/NOTICE.txt
+?? submissions/2026-09-27-E060/main.py
+?? submissions/2026-09-27-E060/verification.json
+?? submissions/2026-09-28-E061.zip
+?? submissions/2026-09-28-E061/
+?? submissions/2026-10-08-E062.zip
+?? submissions/2026-10-08-E062/
+?? tests/test_a021_selector_contract.py
+?? tests/test_a023_candidate_boundary.py
+?? tests/test_content_target_retrieval.py
+?? tests/test_e059_interactions.py
+?? tests/test_e060_assembly.py
+?? tests/test_e061_assembly.py
+?? tests/test_e062_assembly.py
+?? tests/test_tied_content_heads.py
+?? tests/test_wb_ordinal_heads.py
+?? tests/test_workspace_check.py
+?? trip/

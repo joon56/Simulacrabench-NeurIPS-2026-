@@ -1,0 +1,766 @@
+{
+    "status":  "PASS",
+    "checked_utc":  "2026-09-28T13:13:29.1888596+00:00",
+    "session_elapsed_seconds_at_check":  3088.8583713999997,
+    "session_deadline_utc":  "2026-09-28T14:20:00Z",
+    "head":  "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+    "permitted_entry_hashes_checked":  95,
+    "entry_comparison":  [
+                             {
+                                 "path":  "src/models/shared_trunk.py",
+                                 "expected":  "df648763c8e0ba5532ebf9e437af95cd10d8527112c1338b8b5db9ad6a212e1f",
+                                 "actual":  "df648763c8e0ba5532ebf9e437af95cd10d8527112c1338b8b5db9ad6a212e1f",
+                                 "unchanged":  true,
+                                 "allowed_record_update":  false
+                             },
+                             {
+                                 "path":  "src/models/supervised_retrieval.py",
+                                 "expected":  "2940338c5378de03303befb74e3834fbad631c0eb18f4ecb55d2cc39a471f879",
+                                 "actual":  "2940338c5378de03303befb74e3834fbad631c0eb18f4ecb55d2cc39a471f879",
+                                 "unchanged":  true,
+                                 "allowed_record_update":  false
+                             },
+                             {
+                                 "path":  "src/models/link_sharp.py",
+                                 "expected":  "4a7921a00d7758e52a63a3ca7cd5ebf2285cef445b57fd89f15580d6fc108524",
+                                 "actual":  "4a7921a00d7758e52a63a3ca7cd5ebf2285cef445b57fd89f15580d6fc108524",
+                                 "unchanged":  true,
+                                 "allowed_record_update":  false
+                             },
+                             {
+                                 "path":  "src/models/hh_cap.py",
+                                 "expected":  "9aad6be04e14ae97dc7aaba5499747c35b255b098680c66eaa8f8af58c940f70",
+                                 "actual":  "9aad6be04e14ae97dc7aaba5499747c35b255b098680c66eaa8f8af58c940f70",
+                                 "unchanged":  true,
+                                 "allowed_record_update":  false
+                             },
+                             {
+                                 "path":  "src/models/hier_backoff.py",
+                                 "expected":  "e01f2030c191b0b632b274662cbb46537669f3b73e21ab0d5f7f671d28654ccd",
+                                 "actual":  "e01f2030c191b0b632b274662cbb46537669f3b73e21ab0d5f7f671d28654ccd",
+                                 "unchanged":  true,
+                                 "allowed_record_update":  false
+                             },
+                             {
+                                 "path":  "src/models/logit_blend.py",
+                                 "expected":  "c25e91e648d5eb8a11afca1c8b02accad1a585540b6ed7d4ca363730a535705f",
+                                 "actual":  "c25e91e648d5eb8a11afca1c8b02accad1a585540b6ed7d4ca363730a535705f",
+                                 "unchanged":  true,
+                                 "allowed_record_update":  false
+                             },
+                             {
+                                 "path":  "src/models/cond_agree.py",
+                                 "expected":  "aecad17990cc106199f96648ad02716eee43cc60f995b25125473a0b0bd5e197",
+                                 "actual":  "aecad17990cc106199f96648ad02716eee43cc60f995b25125473a0b0bd5e197",
+                                 "unchanged":  true,
+                                 "allowed_record_update":  false
+                             },
+                             {
+                                 "path":  "src/models/hh_sharp.py",
+                                 "expected":  "31acb4639894411320062f196050425ee1c143a456c9e0dac40ba6dd376ad5e0",
+                                 "actual":  "31acb4639894411320062f196050425ee1c143a456c9e0dac40ba6dd376ad5e0",
+                                 "unchanged":  true,
+                                 "allowed_record_update":  false
+                             },
+                             {
+                                 "path":  "src/models/hh_link.py",
+                                 "expected":  "fb34d8dc575a0edd644287ec9387ee32db7866083b53b907376f464837f0c1f6",
+                                 "actual":  "fb34d8dc575a0edd644287ec9387ee32db7866083b53b907376f464837f0c1f6",
+                                 "unchanged":  true,
+                                 "allowed_record_update":  false
+                             },
+                             {
+                                 "path":  "src/models/dup_link.py",
+                                 "expected":  "e1ce093d927eed6db0553776b74f8ddfca5d159bf035b6cd7b4df9e7bc6b168f",
+                                 "actual":  "e1ce093d927eed6db0553776b74f8ddfca5d159bf035b6cd7b4df9e7bc6b168f",
+                                 "unchanged":  true,
+                                 "allowed_record_update":  false
+                             },
+                             {
+                                 "path":  "src/models/prob_link.py",
+                                 "expected":  "6b03f700821b6d74c8ef0dfe834737ac4c9755d7fcf9a7c2f96b5b67e905d96d",
+                                 "actual":  "6b03f700821b6d74c8ef0dfe834737ac4c9755d7fcf9a7c2f96b5b67e905d96d",
+                                 "unchanged":  true,
+                                 "allowed_record_update":  false
+                             },
+                             {
+                                 "path":  "src/eval/retrieval_oracle.py",
+                                 "expected":  "b6c3487a01f5174e02e7691ec455a8e72cfab7533f68026b9010665a60b23ca4",
+                                 "actual":  "b6c3487a01f5174e02e7691ec455a8e72cfab7533f68026b9010665a60b23ca4",
+                                 "unchanged":  true,
+                                 "allowed_record_update":  false
+                             },
+                             {
+                                 "path":  "src/eval/runner.py",
+                                 "expected":  "498a93a89d5a13a5bbcec62e351e029140a062e93680ab38ae280d2fddd7ae9d",
+                                 "actual":  "498a93a89d5a13a5bbcec62e351e029140a062e93680ab38ae280d2fddd7ae9d",
+                                 "unchanged":  true,
+                                 "allowed_record_update":  false
+                             },
+                             {
+                                 "path":  "external/starter-kit/score.py",
+                                 "expected":  "7049e99a48acef2a74f37cb49bb66b5a9af8d05d2ed8fcf530287b5e81c5042f",
+                                 "actual":  "7049e99a48acef2a74f37cb49bb66b5a9af8d05d2ed8fcf530287b5e81c5042f",
+                                 "unchanged":  true,
+                                 "allowed_record_update":  false
+                             },
+                             {
+                                 "path":  "external/starter-kit/make_sandbox.py",
+                                 "expected":  "8cf628cbb4771ed6e91ad74ebb4f75b22667af39d8f48e01c956c675b1b1586b",
+                                 "actual":  "8cf628cbb4771ed6e91ad74ebb4f75b22667af39d8f48e01c956c675b1b1586b",
+                                 "unchanged":  true,
+                                 "allowed_record_update":  false
+                             },
+                             {
+                                 "path":  "external/starter-kit/config.yml",
+                                 "expected":  "f22f8e4faa62b6af0ee8e7e887e35980511e4517655479fefeeef4519fc52c15",
+                                 "actual":  "f22f8e4faa62b6af0ee8e7e887e35980511e4517655479fefeeef4519fc52c15",
+                                 "unchanged":  true,
+                                 "allowed_record_update":  false
+                             },
+                             {
+                                 "path":  "external/starter-kit/data/unicef.json",
+                                 "expected":  "0bce08036cc563ee2a369dcee316ff8a5f89045d86991756d72c266927674396",
+                                 "actual":  "0bce08036cc563ee2a369dcee316ff8a5f89045d86991756d72c266927674396",
+                                 "unchanged":  true,
+                                 "allowed_record_update":  false
+                             },
+                             {
+                                 "path":  "external/starter-kit/data/world_bank.json",
+                                 "expected":  "6b3760742c6e864eb8d0bb2f9ec523a19a486b73282d79432dbcca16e3664125",
+                                 "actual":  "6b3760742c6e864eb8d0bb2f9ec523a19a486b73282d79432dbcca16e3664125",
+                                 "unchanged":  true,
+                                 "allowed_record_update":  false
+                             },
+                             {
+                                 "path":  "external/starter-kit/data/unhcr.json",
+                                 "expected":  "b1175b6bdbd96e90a4defd83af20a38d711c6eca9fe3ce880109ff244abe80d9",
+                                 "actual":  "b1175b6bdbd96e90a4defd83af20a38d711c6eca9fe3ce880109ff244abe80d9",
+                                 "unchanged":  true,
+                                 "allowed_record_update":  false
+                             },
+                             {
+                                 "path":  "submissions/2026-09-19-E041/main.py",
+                                 "expected":  "22c911806ea91234ae350341adfb9c0df2ce4be41cc88e73be304e4bb1023073",
+                                 "actual":  "22c911806ea91234ae350341adfb9c0df2ce4be41cc88e73be304e4bb1023073",
+                                 "unchanged":  true,
+                                 "allowed_record_update":  false
+                             },
+                             {
+                                 "path":  "submissions/2026-09-09-E025/main.py",
+                                 "expected":  "00793cf9d720d6f7511ffd738935206b3a5401f2454255409429db8d55e991b9",
+                                 "actual":  "00793cf9d720d6f7511ffd738935206b3a5401f2454255409429db8d55e991b9",
+                                 "unchanged":  true,
+                                 "allowed_record_update":  false
+                             },
+                             {
+                                 "path":  "docs/experiments/E012-shared-trunk.md",
+                                 "expected":  "0c40ac6802f683f5523b8639080f4b0df0fcbe4150e7b40ad8eb2a8f918e6b8a",
+                                 "actual":  "0c40ac6802f683f5523b8639080f4b0df0fcbe4150e7b40ad8eb2a8f918e6b8a",
+                                 "unchanged":  true,
+                                 "allowed_record_update":  false
+                             },
+                             {
+                                 "path":  "docs/experiments/E015-trunk-capacity.md",
+                                 "expected":  "8a88d53d6a69ced34c994f3795f47aeb38f315d9c026f8b9d038acd9c8262c00",
+                                 "actual":  "8a88d53d6a69ced34c994f3795f47aeb38f315d9c026f8b9d038acd9c8262c00",
+                                 "unchanged":  true,
+                                 "allowed_record_update":  false
+                             },
+                             {
+                                 "path":  "docs/experiments/E029-seed-temp.md",
+                                 "expected":  "47363f8c6fbb011d8d1e66ac94dceea98ab7dcb8432da27d7406f4a5f2eac666",
+                                 "actual":  "47363f8c6fbb011d8d1e66ac94dceea98ab7dcb8432da27d7406f4a5f2eac666",
+                                 "unchanged":  true,
+                                 "allowed_record_update":  false
+                             },
+                             {
+                                 "path":  "docs/experiments/E056-conditional-leaf-content.md",
+                                 "expected":  "bcbee2f8ef4d5beee5740940ad3d1fc40b77bceaca0d155faa0e6046e297005c",
+                                 "actual":  "bcbee2f8ef4d5beee5740940ad3d1fc40b77bceaca0d155faa0e6046e297005c",
+                                 "unchanged":  true,
+                                 "allowed_record_update":  false
+                             },
+                             {
+                                 "path":  "docs/experiments/E060-content-target-retrieval.md",
+                                 "expected":  "b1ba67e7d521d181dac1df4a285ea39ba98b5b20244e6d9ce81e52363e3e7bc0",
+                                 "actual":  "b1ba67e7d521d181dac1df4a285ea39ba98b5b20244e6d9ce81e52363e3e7bc0",
+                                 "unchanged":  true,
+                                 "allowed_record_update":  false
+                             },
+                             {
+                                 "path":  "AGENTS.md",
+                                 "expected":  "86394bbf164a2b7df6a309f4564b9dacf3b2799fa0227a703e4ea11d4d842596",
+                                 "actual":  "86394bbf164a2b7df6a309f4564b9dacf3b2799fa0227a703e4ea11d4d842596",
+                                 "unchanged":  true,
+                                 "allowed_record_update":  false
+                             },
+                             {
+                                 "path":  "CLAUDE.md",
+                                 "expected":  "69175e6d741a17042db4852d4961a5c52bd97fe2cd5bfbff762d30d7e5270364",
+                                 "actual":  "69175e6d741a17042db4852d4961a5c52bd97fe2cd5bfbff762d30d7e5270364",
+                                 "unchanged":  true,
+                                 "allowed_record_update":  false
+                             },
+                             {
+                                 "path":  "docs/workflow.md",
+                                 "expected":  "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642",
+                                 "actual":  "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642",
+                                 "unchanged":  true,
+                                 "allowed_record_update":  false
+                             },
+                             {
+                                 "path":  "docs/tree.md",
+                                 "expected":  "eaa884a4194db103335136495205fe5b51297c17db15e9eac62946ced286cc44",
+                                 "actual":  "eaa884a4194db103335136495205fe5b51297c17db15e9eac62946ced286cc44",
+                                 "unchanged":  true,
+                                 "allowed_record_update":  false
+                             },
+                             {
+                                 "path":  "docs/analysis/A033-outputs/candidate-inputs.json",
+                                 "expected":  "bf58fafa307f65358ff35e2a82f9005177d272e20893ea98fd6864be83b0e03f",
+                                 "actual":  "bf58fafa307f65358ff35e2a82f9005177d272e20893ea98fd6864be83b0e03f",
+                                 "unchanged":  true,
+                                 "allowed_record_update":  false
+                             },
+                             {
+                                 "path":  "docs/analysis/A033-outputs/verification.json",
+                                 "expected":  "e06212dcbc30fc2e87e4240f105c7b1a95abc7cac1ae3b69df5d53cfec8131bf",
+                                 "actual":  "e06212dcbc30fc2e87e4240f105c7b1a95abc7cac1ae3b69df5d53cfec8131bf",
+                                 "unchanged":  true,
+                                 "allowed_record_update":  false
+                             },
+                             {
+                                 "path":  "docs/analysis/A033-dev-handoff-and-role-repair.md",
+                                 "expected":  "a48aefa0ca0b5151616b51c6489d607f300b82fbe543b663ff9c1b63693402c8",
+                                 "actual":  "a48aefa0ca0b5151616b51c6489d607f300b82fbe543b663ff9c1b63693402c8",
+                                 "unchanged":  true,
+                                 "allowed_record_update":  false
+                             },
+                             {
+                                 "path":  "docs/analysis/A033-outputs/codabench-score-access.ko.md",
+                                 "expected":  "9ccfc1296b41a8877e6ffe7196db628bcdb484af7b7ffd384d48a36f10f46c62",
+                                 "actual":  "9ccfc1296b41a8877e6ffe7196db628bcdb484af7b7ffd384d48a36f10f46c62",
+                                 "unchanged":  true,
+                                 "allowed_record_update":  false
+                             },
+                             {
+                                 "path":  "docs/analysis/A033-outputs/s1-tied-heads-handoff.ko.md",
+                                 "expected":  "b6668d226d982af65dad0770f241b22906e0898dfe34c05b482323ece0bb4c6b",
+                                 "actual":  "b6668d226d982af65dad0770f241b22906e0898dfe34c05b482323ece0bb4c6b",
+                                 "unchanged":  true,
+                                 "allowed_record_update":  false
+                             },
+                             {
+                                 "path":  "scripts/check_e057.py",
+                                 "expected":  "a7b711c2a82f1f706540d425ee0caba8cfe7350519fcb08342c2e5492f88252c",
+                                 "actual":  "a7b711c2a82f1f706540d425ee0caba8cfe7350519fcb08342c2e5492f88252c",
+                                 "unchanged":  true,
+                                 "allowed_record_update":  false
+                             },
+                             {
+                                 "path":  "docs/analysis/E057-outputs/preflight.json",
+                                 "expected":  "5f1c639a7a5ca9678c2a8233b10aac4b464887140926921260149751e108f44d",
+                                 "actual":  "5f1c639a7a5ca9678c2a8233b10aac4b464887140926921260149751e108f44d",
+                                 "unchanged":  true,
+                                 "allowed_record_update":  false
+                             },
+                             {
+                                 "path":  "docs/experiments/E041-supervised-retrieval.md",
+                                 "expected":  "8a17f3cb2cb54deb19fdbffe597dcba173002a82100250ea4ff8be446d76bafb",
+                                 "actual":  "8a17f3cb2cb54deb19fdbffe597dcba173002a82100250ea4ff8be446d76bafb",
+                                 "unchanged":  true,
+                                 "allowed_record_update":  false
+                             },
+                             {
+                                 "path":  "src/models/tied_content_heads.py",
+                                 "expected":  "f9449d41d30041f6e9714c7a25777965ec4d25cfa2563b018fb08c94dde20833",
+                                 "actual":  "f9449d41d30041f6e9714c7a25777965ec4d25cfa2563b018fb08c94dde20833",
+                                 "unchanged":  true,
+                                 "allowed_record_update":  false
+                             },
+                             {
+                                 "path":  "tests/test_tied_content_heads.py",
+                                 "expected":  "c638c75d98586e831c03c21594025b1c347f6acdb9d6ec156a042350290ff109",
+                                 "actual":  "c638c75d98586e831c03c21594025b1c347f6acdb9d6ec156a042350290ff109",
+                                 "unchanged":  true,
+                                 "allowed_record_update":  false
+                             },
+                             {
+                                 "path":  "scripts/check_e061_tied_heads.py",
+                                 "expected":  "de5171c689bda0db6aff7b5cb95ccd8c8bc0165b2904d259af86b1ce2184f0f7",
+                                 "actual":  "de5171c689bda0db6aff7b5cb95ccd8c8bc0165b2904d259af86b1ce2184f0f7",
+                                 "unchanged":  true,
+                                 "allowed_record_update":  false
+                             },
+                             {
+                                 "path":  "docs/analysis/E061-outputs/calls-01.jsonl",
+                                 "expected":  "6b1a1abaf582273e7ee21084bac4655850611b8798e4cfb38a179bca6e3612fb",
+                                 "actual":  "6b1a1abaf582273e7ee21084bac4655850611b8798e4cfb38a179bca6e3612fb",
+                                 "unchanged":  true,
+                                 "allowed_record_update":  false
+                             },
+                             {
+                                 "path":  "docs/analysis/E061-outputs/call-summary.json",
+                                 "expected":  "098318ea68bda7697b58109599c014c7684478efe0ebbdf6cce5a3400c661c6c",
+                                 "actual":  "098318ea68bda7697b58109599c014c7684478efe0ebbdf6cce5a3400c661c6c",
+                                 "unchanged":  true,
+                                 "allowed_record_update":  false
+                             },
+                             {
+                                 "path":  "docs/analysis/E061-outputs/candidate-01-timing.json",
+                                 "expected":  "f1a6121cdc7f8cae09bc42088d84db203e18979ab8e4cd29dd15208dd8f6bdd2",
+                                 "actual":  "f1a6121cdc7f8cae09bc42088d84db203e18979ab8e4cd29dd15208dd8f6bdd2",
+                                 "unchanged":  true,
+                                 "allowed_record_update":  false
+                             },
+                             {
+                                 "path":  "docs/analysis/E061-outputs/check_e061_tied_heads.py.txt",
+                                 "expected":  "de5171c689bda0db6aff7b5cb95ccd8c8bc0165b2904d259af86b1ce2184f0f7",
+                                 "actual":  "de5171c689bda0db6aff7b5cb95ccd8c8bc0165b2904d259af86b1ce2184f0f7",
+                                 "unchanged":  true,
+                                 "allowed_record_update":  false
+                             },
+                             {
+                                 "path":  "docs/analysis/E061-outputs/comparison.json",
+                                 "expected":  "6074e9c8cef6dfb6e784be25c81720a10115bd38a19cc70ece9e335be280d7e2",
+                                 "actual":  "6074e9c8cef6dfb6e784be25c81720a10115bd38a19cc70ece9e335be280d7e2",
+                                 "unchanged":  true,
+                                 "allowed_record_update":  false
+                             },
+                             {
+                                 "path":  "docs/analysis/E061-outputs/entry.json",
+                                 "expected":  "460a57698c015df5da031a0b010f7e0e814e38cbae1e3fe4bdb3e95c545607cd",
+                                 "actual":  "460a57698c015df5da031a0b010f7e0e814e38cbae1e3fe4bdb3e95c545607cd",
+                                 "unchanged":  true,
+                                 "allowed_record_update":  false
+                             },
+                             {
+                                 "path":  "docs/analysis/E061-outputs/environment-01.json",
+                                 "expected":  "2e847ec40de1a25e104d36230246e3c32ef035f8997454b5cfea9925391922ef",
+                                 "actual":  "2e847ec40de1a25e104d36230246e3c32ef035f8997454b5cfea9925391922ef",
+                                 "unchanged":  true,
+                                 "allowed_record_update":  false
+                             },
+                             {
+                                 "path":  "docs/analysis/E061-outputs/exposure-ledger.md",
+                                 "expected":  "d5a9c19637e996e51c29b88ee7e2ceba8691546cc51f1257d609b3b4afcf0abc",
+                                 "actual":  "d5a9c19637e996e51c29b88ee7e2ceba8691546cc51f1257d609b3b4afcf0abc",
+                                 "unchanged":  true,
+                                 "allowed_record_update":  false
+                             },
+                             {
+                                 "path":  "docs/analysis/E061-outputs/frozen-inputs.json",
+                                 "expected":  "f76ac4edcc8cef2b03edd0da46a4cab7a60b4d36eda46fcb6023446397ba7a45",
+                                 "actual":  "f76ac4edcc8cef2b03edd0da46a4cab7a60b4d36eda46fcb6023446397ba7a45",
+                                 "unchanged":  true,
+                                 "allowed_record_update":  false
+                             },
+                             {
+                                 "path":  "docs/analysis/E061-outputs/frozen-predictions-01.json",
+                                 "expected":  "cfae266a8e63c86c67fe9886b78b95f0492a4aaa87fccad71b41fa0cf5639664",
+                                 "actual":  "cfae266a8e63c86c67fe9886b78b95f0492a4aaa87fccad71b41fa0cf5639664",
+                                 "unchanged":  true,
+                                 "allowed_record_update":  false
+                             },
+                             {
+                                 "path":  "docs/analysis/E061-outputs/history-preservation.json",
+                                 "expected":  "db8a311c3b3d0a94c9c892d97ad0f2f4f177bf1aa3bd8a15cdac4a920ca438dc",
+                                 "actual":  "db8a311c3b3d0a94c9c892d97ad0f2f4f177bf1aa3bd8a15cdac4a920ca438dc",
+                                 "unchanged":  true,
+                                 "allowed_record_update":  false
+                             },
+                             {
+                                 "path":  "docs/analysis/E061-outputs/phase1-inputs-01.json",
+                                 "expected":  "01ec213417a0b01d934818001e8304d0487a5073bea94272a85a95167ef12b10",
+                                 "actual":  "01ec213417a0b01d934818001e8304d0487a5073bea94272a85a95167ef12b10",
+                                 "unchanged":  true,
+                                 "allowed_record_update":  false
+                             },
+                             {
+                                 "path":  "docs/analysis/E061-outputs/registration.md",
+                                 "expected":  "99f4e2497bc1dcbc71f82ad529abfd368092070ce4bf6eed5e298ac9b8dd6af8",
+                                 "actual":  "99f4e2497bc1dcbc71f82ad529abfd368092070ce4bf6eed5e298ac9b8dd6af8",
+                                 "unchanged":  true,
+                                 "allowed_record_update":  false
+                             },
+                             {
+                                 "path":  "docs/analysis/E061-outputs/review.md",
+                                 "expected":  "88ecf736df55dd37b5028da6c122c9931a499048b8307a03f40cb6ffa87a0577",
+                                 "actual":  "88ecf736df55dd37b5028da6c122c9931a499048b8307a03f40cb6ffa87a0577",
+                                 "unchanged":  true,
+                                 "allowed_record_update":  false
+                             },
+                             {
+                                 "path":  "docs/analysis/E061-outputs/run-01.log",
+                                 "expected":  "29c7f71ffb48f0ab99a61fae39ef67fdc4f45854b83a7fe425502f12ad9429d6",
+                                 "actual":  "29c7f71ffb48f0ab99a61fae39ef67fdc4f45854b83a7fe425502f12ad9429d6",
+                                 "unchanged":  true,
+                                 "allowed_record_update":  false
+                             },
+                             {
+                                 "path":  "docs/analysis/E061-outputs/run-01-resources.json",
+                                 "expected":  "9d683ba482716c1836dc7d10346f320b20cc6bbf0c8be2eb546c85e365bfc409",
+                                 "actual":  "9d683ba482716c1836dc7d10346f320b20cc6bbf0c8be2eb546c85e365bfc409",
+                                 "unchanged":  true,
+                                 "allowed_record_update":  false
+                             },
+                             {
+                                 "path":  "docs/analysis/E061-outputs/source-review.json",
+                                 "expected":  "0f3cde1e87c4352fb4ccc4e827a109e8583a493da1794163fd531212a3f54f5e",
+                                 "actual":  "0f3cde1e87c4352fb4ccc4e827a109e8583a493da1794163fd531212a3f54f5e",
+                                 "unchanged":  true,
+                                 "allowed_record_update":  false
+                             },
+                             {
+                                 "path":  "docs/analysis/E061-outputs/test_tied_content_heads.py.txt",
+                                 "expected":  "c638c75d98586e831c03c21594025b1c347f6acdb9d6ec156a042350290ff109",
+                                 "actual":  "c638c75d98586e831c03c21594025b1c347f6acdb9d6ec156a042350290ff109",
+                                 "unchanged":  true,
+                                 "allowed_record_update":  false
+                             },
+                             {
+                                 "path":  "docs/analysis/E061-outputs/tests-01.log",
+                                 "expected":  "caa87d28985386981e8611034128b397a0cfce15b6a5fc9f627de426eca4d95b",
+                                 "actual":  "caa87d28985386981e8611034128b397a0cfce15b6a5fc9f627de426eca4d95b",
+                                 "unchanged":  true,
+                                 "allowed_record_update":  false
+                             },
+                             {
+                                 "path":  "docs/analysis/E061-outputs/tests-01-resources.json",
+                                 "expected":  "fdfb4933e00dbdc05588d1006f8c6d4d8012a2f889b8fe9a23131c3d23412058",
+                                 "actual":  "fdfb4933e00dbdc05588d1006f8c6d4d8012a2f889b8fe9a23131c3d23412058",
+                                 "unchanged":  true,
+                                 "allowed_record_update":  false
+                             },
+                             {
+                                 "path":  "docs/analysis/E061-outputs/tests-02.log",
+                                 "expected":  "594f2e68abe71ff3e36d45083a9516f9061457c85f97631ecb764d3fba32f6f8",
+                                 "actual":  "594f2e68abe71ff3e36d45083a9516f9061457c85f97631ecb764d3fba32f6f8",
+                                 "unchanged":  true,
+                                 "allowed_record_update":  false
+                             },
+                             {
+                                 "path":  "docs/analysis/E061-outputs/tests-02-resources.json",
+                                 "expected":  "7016590f0e5661ef5748d5cf4ab9dfeaa04f0fc1bafb71dada9f4a9f3530b370",
+                                 "actual":  "7016590f0e5661ef5748d5cf4ab9dfeaa04f0fc1bafb71dada9f4a9f3530b370",
+                                 "unchanged":  true,
+                                 "allowed_record_update":  false
+                             },
+                             {
+                                 "path":  "docs/analysis/E061-outputs/tests-red.log",
+                                 "expected":  "432f195a1c78833ba6883e1ae144f0e0030c360442c048d2b1c46b8218767509",
+                                 "actual":  "432f195a1c78833ba6883e1ae144f0e0030c360442c048d2b1c46b8218767509",
+                                 "unchanged":  true,
+                                 "allowed_record_update":  false
+                             },
+                             {
+                                 "path":  "docs/analysis/E061-outputs/tests-red-resources.json",
+                                 "expected":  "c20b747354ae9efb2b9a6b3cf8baaa9b46daf405e7ddea5574dd1ba2bb6f434a",
+                                 "actual":  "c20b747354ae9efb2b9a6b3cf8baaa9b46daf405e7ddea5574dd1ba2bb6f434a",
+                                 "unchanged":  true,
+                                 "allowed_record_update":  false
+                             },
+                             {
+                                 "path":  "docs/analysis/E061-outputs/tied_content_heads.py.txt",
+                                 "expected":  "f9449d41d30041f6e9714c7a25777965ec4d25cfa2563b018fb08c94dde20833",
+                                 "actual":  "f9449d41d30041f6e9714c7a25777965ec4d25cfa2563b018fb08c94dde20833",
+                                 "unchanged":  true,
+                                 "allowed_record_update":  false
+                             },
+                             {
+                                 "path":  "docs/analysis/E061-outputs/vectors-01-candidate-unhcr.npz",
+                                 "expected":  "6dea1979543bd2ded188e24d572986c659fea3458696a1285dc946d730ebb71f",
+                                 "actual":  "6dea1979543bd2ded188e24d572986c659fea3458696a1285dc946d730ebb71f",
+                                 "unchanged":  true,
+                                 "allowed_record_update":  false
+                             },
+                             {
+                                 "path":  "docs/analysis/E061-outputs/vectors-01-candidate-unicef.npz",
+                                 "expected":  "1269a5064ee632708f14bff1e1ba2190e26f81c05caf1d6582bb52c9c821a62c",
+                                 "actual":  "1269a5064ee632708f14bff1e1ba2190e26f81c05caf1d6582bb52c9c821a62c",
+                                 "unchanged":  true,
+                                 "allowed_record_update":  false
+                             },
+                             {
+                                 "path":  "docs/analysis/E061-outputs/vectors-01-candidate-world_bank.npz",
+                                 "expected":  "4a261189acb717dc70e1791e9bf19f754adc29f81a137f546725d3061304af55",
+                                 "actual":  "4a261189acb717dc70e1791e9bf19f754adc29f81a137f546725d3061304af55",
+                                 "unchanged":  true,
+                                 "allowed_record_update":  false
+                             },
+                             {
+                                 "path":  "docs/analysis/E061-outputs/vectors-01-E025-unhcr.npz",
+                                 "expected":  "9255a4f334e0bdda4bb3835e81931b54f6e5f5515a00f140a8bdea6e851d6bb1",
+                                 "actual":  "9255a4f334e0bdda4bb3835e81931b54f6e5f5515a00f140a8bdea6e851d6bb1",
+                                 "unchanged":  true,
+                                 "allowed_record_update":  false
+                             },
+                             {
+                                 "path":  "docs/analysis/E061-outputs/vectors-01-E025-unicef.npz",
+                                 "expected":  "1269a5064ee632708f14bff1e1ba2190e26f81c05caf1d6582bb52c9c821a62c",
+                                 "actual":  "1269a5064ee632708f14bff1e1ba2190e26f81c05caf1d6582bb52c9c821a62c",
+                                 "unchanged":  true,
+                                 "allowed_record_update":  false
+                             },
+                             {
+                                 "path":  "docs/analysis/E061-outputs/vectors-01-E025-world_bank.npz",
+                                 "expected":  "4a261189acb717dc70e1791e9bf19f754adc29f81a137f546725d3061304af55",
+                                 "actual":  "4a261189acb717dc70e1791e9bf19f754adc29f81a137f546725d3061304af55",
+                                 "unchanged":  true,
+                                 "allowed_record_update":  false
+                             },
+                             {
+                                 "path":  "docs/analysis/E061-outputs/vectors-01-E041-unhcr.npz",
+                                 "expected":  "262ec003947b96a2b3bdad76866fc68b3763db148e061c5d5bc9a1c3ac416e3d",
+                                 "actual":  "262ec003947b96a2b3bdad76866fc68b3763db148e061c5d5bc9a1c3ac416e3d",
+                                 "unchanged":  true,
+                                 "allowed_record_update":  false
+                             },
+                             {
+                                 "path":  "docs/analysis/E061-outputs/vectors-01-E041-unicef.npz",
+                                 "expected":  "1269a5064ee632708f14bff1e1ba2190e26f81c05caf1d6582bb52c9c821a62c",
+                                 "actual":  "1269a5064ee632708f14bff1e1ba2190e26f81c05caf1d6582bb52c9c821a62c",
+                                 "unchanged":  true,
+                                 "allowed_record_update":  false
+                             },
+                             {
+                                 "path":  "docs/analysis/E061-outputs/vectors-01-E041-world_bank.npz",
+                                 "expected":  "4a261189acb717dc70e1791e9bf19f754adc29f81a137f546725d3061304af55",
+                                 "actual":  "4a261189acb717dc70e1791e9bf19f754adc29f81a137f546725d3061304af55",
+                                 "unchanged":  true,
+                                 "allowed_record_update":  false
+                             },
+                             {
+                                 "path":  "docs/experiments/E061-tied-content-heads.md",
+                                 "expected":  "9e78a640daf8ff037ce877c01b6106d48328442450d120532ea24cd05da01f69",
+                                 "actual":  "9e78a640daf8ff037ce877c01b6106d48328442450d120532ea24cd05da01f69",
+                                 "unchanged":  true,
+                                 "allowed_record_update":  false
+                             },
+                             {
+                                 "path":  "docs/analysis/E061-outputs/closeout.md",
+                                 "expected":  "fff9503516c2581672926393a505e87cf06b4bf43d8e064d455e55c2682a7cbc",
+                                 "actual":  "fff9503516c2581672926393a505e87cf06b4bf43d8e064d455e55c2682a7cbc",
+                                 "unchanged":  true,
+                                 "allowed_record_update":  false
+                             },
+                             {
+                                 "path":  "docs/analysis/E061-outputs/s2-handoff.ko.md",
+                                 "expected":  "5b82c01cefa60a75512fb114d7bc6b68dcfacedb5e6372110a2b44b42613a738",
+                                 "actual":  "5b82c01cefa60a75512fb114d7bc6b68dcfacedb5e6372110a2b44b42613a738",
+                                 "unchanged":  true,
+                                 "allowed_record_update":  false
+                             },
+                             {
+                                 "path":  "docs/analysis/E061-outputs/s0-handoff.ko.md",
+                                 "expected":  "9b1447167e189f5692eefc7873951cc020aebbba702dfcc8efb842a1866ab7d0",
+                                 "actual":  "9b1447167e189f5692eefc7873951cc020aebbba702dfcc8efb842a1866ab7d0",
+                                 "unchanged":  true,
+                                 "allowed_record_update":  false
+                             },
+                             {
+                                 "path":  "docs/status.md",
+                                 "expected":  "73fff3f7fc81b4a4c076229be80b5a00b5d77af3abba9a791e699b552db01bc9",
+                                 "actual":  "53c4555a09d4818b7855205090b414a9f76d6e46a24eeacf0b859af227f30c2a",
+                                 "unchanged":  false,
+                                 "allowed_record_update":  true
+                             },
+                             {
+                                 "path":  "docs/log.md",
+                                 "expected":  "2ef1824ef423162d77484f97acb8daefb159012d51f2ec87e9213b1f29c08705",
+                                 "actual":  "30578099484b609ce255065a687c85ffde783026ad3b5b9e18109725c6d23a76",
+                                 "unchanged":  false,
+                                 "allowed_record_update":  true
+                             },
+                             {
+                                 "path":  "docs/analysis/E061-outputs/manifest-before-s0-routing.json",
+                                 "expected":  "d98c44292d86663583a65b240fbfeaceb9694dfd486797398697a5deb03114f4",
+                                 "actual":  "d98c44292d86663583a65b240fbfeaceb9694dfd486797398697a5deb03114f4",
+                                 "unchanged":  true,
+                                 "allowed_record_update":  false
+                             },
+                             {
+                                 "path":  "external/starter-kit/_sandbox/unicef/respondents.parquet",
+                                 "expected":  "8e7c659d277c5145c7a8a6d055ac59a7dd3c35699317741239b6b1969bce1488",
+                                 "actual":  "8e7c659d277c5145c7a8a6d055ac59a7dd3c35699317741239b6b1969bce1488",
+                                 "unchanged":  true,
+                                 "allowed_record_update":  false
+                             },
+                             {
+                                 "path":  "external/starter-kit/_sandbox/world_bank/respondents.parquet",
+                                 "expected":  "4592bed873410c5248edf1205e5cab41dd30494926e3b49f8da598e266758c8a",
+                                 "actual":  "4592bed873410c5248edf1205e5cab41dd30494926e3b49f8da598e266758c8a",
+                                 "unchanged":  true,
+                                 "allowed_record_update":  false
+                             },
+                             {
+                                 "path":  "external/starter-kit/_sandbox/unhcr/respondents.parquet",
+                                 "expected":  "5d00075706e0a7beafdc8a70acfe07cde1f489048741eb2f3ae1fababdb72774",
+                                 "actual":  "5d00075706e0a7beafdc8a70acfe07cde1f489048741eb2f3ae1fababdb72774",
+                                 "unchanged":  true,
+                                 "allowed_record_update":  false
+                             },
+                             {
+                                 "path":  "docs/analysis/E061-outputs/manifest.json",
+                                 "expected":  "c1a84f0d484fd30b3eccd87ba2e23d39fa7c788eb11b14a3892dbb329576919a",
+                                 "actual":  "c1a84f0d484fd30b3eccd87ba2e23d39fa7c788eb11b14a3892dbb329576919a",
+                                 "unchanged":  true,
+                                 "allowed_record_update":  false
+                             },
+                             {
+                                 "path":  "docs/analysis/A034-e061-s0-review.md",
+                                 "expected":  "b3bf6927946e08536d1fde85d727c18095b0eb1d6f5a1c70d820282c7502b7b3",
+                                 "actual":  "b3bf6927946e08536d1fde85d727c18095b0eb1d6f5a1c70d820282c7502b7b3",
+                                 "unchanged":  true,
+                                 "allowed_record_update":  false
+                             },
+                             {
+                                 "path":  "docs/analysis/A034-outputs/entry.json",
+                                 "expected":  "97db424d24e03df5ac7693f9440e9da5fc5b071a99e7fa95e4bc1d16e806407d",
+                                 "actual":  "97db424d24e03df5ac7693f9440e9da5fc5b071a99e7fa95e4bc1d16e806407d",
+                                 "unchanged":  true,
+                                 "allowed_record_update":  false
+                             },
+                             {
+                                 "path":  "docs/analysis/A034-outputs/verification.json",
+                                 "expected":  "a8a1fec667e6b726b9070e054e588087feb27c219fe89b7eded582015da72382",
+                                 "actual":  "a8a1fec667e6b726b9070e054e588087feb27c219fe89b7eded582015da72382",
+                                 "unchanged":  true,
+                                 "allowed_record_update":  false
+                             },
+                             {
+                                 "path":  "docs/analysis/A034-outputs/s2-e061-release-handoff.ko.md",
+                                 "expected":  "38c7911a77b914135ba9cb9eac6b150b099bee9e981506d011142a19bef6fedf",
+                                 "actual":  "38c7911a77b914135ba9cb9eac6b150b099bee9e981506d011142a19bef6fedf",
+                                 "unchanged":  true,
+                                 "allowed_record_update":  false
+                             },
+                             {
+                                 "path":  "submissions/SCORES.md",
+                                 "expected":  "1e6d753c24c5c2e42fc4b316ea524a4285b59ef672cc5c3a5a1288768d157dab",
+                                 "actual":  "1e6d753c24c5c2e42fc4b316ea524a4285b59ef672cc5c3a5a1288768d157dab",
+                                 "unchanged":  true,
+                                 "allowed_record_update":  false
+                             },
+                             {
+                                 "path":  "submissions/hosted-scores/2026-09-27.json",
+                                 "expected":  "dfe719bec68faf60c7dfec86c6034ba35fe1a6ba7a9437b88813dbc1ea567ce8",
+                                 "actual":  "dfe719bec68faf60c7dfec86c6034ba35fe1a6ba7a9437b88813dbc1ea567ce8",
+                                 "unchanged":  true,
+                                 "allowed_record_update":  false
+                             },
+                             {
+                                 "path":  ".gitignore",
+                                 "expected":  "ddbfc49388e75ad97664da410f2422c42128c16be0a098fadfc3e3fc5a3508a9",
+                                 "actual":  "ddbfc49388e75ad97664da410f2422c42128c16be0a098fadfc3e3fc5a3508a9",
+                                 "unchanged":  true,
+                                 "allowed_record_update":  false
+                             },
+                             {
+                                 "path":  ".claude/skills/paper-session/SKILL.md",
+                                 "expected":  "ae38ce4b58cb2b7feeee90694646de2fc0defc646d8250aa58796d1c210a47cf",
+                                 "actual":  "ae38ce4b58cb2b7feeee90694646de2fc0defc646d8250aa58796d1c210a47cf",
+                                 "unchanged":  true,
+                                 "allowed_record_update":  false
+                             },
+                             {
+                                 "path":  "docs/domain-study-guide.ko.md",
+                                 "expected":  "c6df8543900b1e43f7ea0358f08dccced17aab48b20fbb7dfd09c6911d94e79f",
+                                 "actual":  "c6df8543900b1e43f7ea0358f08dccced17aab48b20fbb7dfd09c6911d94e79f",
+                                 "unchanged":  true,
+                                 "allowed_record_update":  false
+                             }
+                         ],
+    "release_freeze_comparison":  [
+                                      {
+                                          "original_path":  "scripts/assemble_e061.py",
+                                          "checked_path":  "scripts/assemble_e061.py",
+                                          "sha256":  "d89d55ea7a97f40077f00f4f24844e77390b458bddd473a76369285c5e01420e",
+                                          "unchanged":  true
+                                      },
+                                      {
+                                          "original_path":  "scripts/check_e061_release.py",
+                                          "checked_path":  "scripts/check_e061_release.py",
+                                          "sha256":  "8f48c48a12d2c183ee5fb329fcba803989f9cc9a6151c5b1b9b083191ad432b3",
+                                          "unchanged":  true
+                                      },
+                                      {
+                                          "original_path":  "tests/test_e061_assembly.py",
+                                          "checked_path":  "tests/test_e061_assembly.py",
+                                          "sha256":  "3a987fc7bfe280b8fa9f04b1f7fb0e9083ef7ec9157d92a12e67ba412e14c593",
+                                          "unchanged":  true
+                                      },
+                                      {
+                                          "original_path":  "docs/analysis/E061-outputs/s2/main.py",
+                                          "checked_path":  "docs/analysis/E061-outputs/s2/main.py",
+                                          "sha256":  "d1363c7c38d0754d29bb11acdf40a6e14013220b289e4d711196d1271299d0c0",
+                                          "unchanged":  true
+                                      },
+                                      {
+                                          "original_path":  "docs/analysis/E061-outputs/s2/observer/sitecustomize.py",
+                                          "checked_path":  "docs/analysis/E061-outputs/s2/observer/sitecustomize.py",
+                                          "sha256":  "79f9ea52d7e31c8ed0a88f7d474a2142697ee1229a1926bdec6d6795dea3eff5",
+                                          "unchanged":  true
+                                      },
+                                      {
+                                          "original_path":  "docs/analysis/E061-outputs/s2/release-contract.md",
+                                          "checked_path":  "docs/analysis/E061-outputs/s2/release-contract.md",
+                                          "sha256":  "f8aa86e63ffcbbcb5098d20bb0fbc14e85a6a9db7b7b0950801da164d715c226",
+                                          "unchanged":  true
+                                      },
+                                      {
+                                          "original_path":  "docs/analysis/E061-outputs/s2/entry.json",
+                                          "checked_path":  "docs/analysis/E061-outputs/s2/entry.json",
+                                          "sha256":  "336e6371737f52f1448781dc2ab3262777281c1e83972d190fdbb7a0216c4241",
+                                          "unchanged":  true
+                                      },
+                                      {
+                                          "original_path":  "submissions/2026-09-28-E061/SCORES.md",
+                                          "checked_path":  "docs/analysis/E061-outputs/s2/scorecard-prerun.md",
+                                          "sha256":  "826bcbcc2518714f70835aa8cf65943543190e40112400ac2709f88ee359bb69",
+                                          "unchanged":  true
+                                      },
+                                      {
+                                          "original_path":  "external/starter-kit/tools/check_submission_zip.py",
+                                          "checked_path":  "external/starter-kit/tools/check_submission_zip.py",
+                                          "sha256":  "0cb9e671b3b19ab62e68b37512ee8717e97d47694276f16e27a77b02d2f37916",
+                                          "unchanged":  true
+                                      },
+                                      {
+                                          "original_path":  "external/starter-kit/LICENSE",
+                                          "checked_path":  "external/starter-kit/LICENSE",
+                                          "sha256":  "a81db73b86212de93a3944eea5dfb01126ffe17d5fbdb620a6e4c4d04830b20e",
+                                          "unchanged":  true
+                                      },
+                                      {
+                                          "original_path":  "docs/analysis/E061-outputs/s2/phase1/unicef/respondents.parquet",
+                                          "checked_path":  "docs/analysis/E061-outputs/s2/phase1/unicef/respondents.parquet",
+                                          "sha256":  "5287baf2c5cc301740b7478001a095fc1d608c92c2dc2a6963e349a0500fbd8c",
+                                          "unchanged":  true
+                                      },
+                                      {
+                                          "original_path":  "docs/analysis/E061-outputs/s2/phase1/world_bank/respondents.parquet",
+                                          "checked_path":  "docs/analysis/E061-outputs/s2/phase1/world_bank/respondents.parquet",
+                                          "sha256":  "1fe8dab61f6dc9774e6d155fffb8dbd0179ee4c39ce49f809f05369e0cac2ed5",
+                                          "unchanged":  true
+                                      },
+                                      {
+                                          "original_path":  "docs/analysis/E061-outputs/s2/phase1/unhcr/respondents.parquet",
+                                          "checked_path":  "docs/analysis/E061-outputs/s2/phase1/unhcr/respondents.parquet",
+                                          "sha256":  "e8bc82257f666283f9f4d2b6ce7ac2656cd10e3fddc7e2e35b2f25429a44bcfb",
+                                          "unchanged":  true
+                                      }
+                                  ],
+    "scorecard_original_prefix_exact":  true,
+    "active_scientific_jobs":  [
+
+                               ],
+    "process_check":  "Get-Process found no python/pythonw/pytest/uv/wsl/bash; CIM process query denied by sandbox, no mutation; owned monitored worker exited0.",
+    "tree_unchanged":  true,
+    "scope":  "Only explicit entry allowlist and new release freeze were hashed. No manifest traversal into protected data or caches.",
+    "changes":  "New S2 files/new E061 snapshot and ZIP; status/log current records; SCORES append only. Existing S1/status-log differences at entry are A034 additions recorded in entry.json.",
+    "git_mutations":  false,
+    "upload":  false,
+    "S3_TEST":  false
+}

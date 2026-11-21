@@ -1,0 +1,21 @@
+{
+  "frozen_utc": "2026-10-09T14:41:45.982862+00:00",
+  "hashes": {
+    "scripts/assemble_e063.py": "eaae572a2a82b654448d15f1b7c62bd388786b75044a10ff327c93ade71baf85",
+    "scripts/check_e063_release.py": "bfccea83af4a8bc7a1c07b3347af701108123f94f0dc456aaf76d137debf6300",
+    "tests/test_e063_assembly.py": "08982a8b330080f6979ec6dc51c5746c0a953ed10890d97fed33cbb0637b2358",
+    "docs/analysis/E063-outputs/s2/main.py": "7fe62705e26c45a891b8bbc8a453db4c525384af4a5989112a8c402672f3950e",
+    "docs/analysis/E063-outputs/s2/observer/sitecustomize.py": "71e611cd8c830109c5f2c8db747e260c3dbac38a8cfcc3d47f66b4b8764f7d41",
+    "docs/analysis/E063-outputs/s2/release-contract.md": "d016eb7b8d2522d004a57b93db9e21669b5c201d8af42b68373cac8df6f3065a",
+    "docs/analysis/E063-outputs/s2/entry.json": "23a0dca7b8f1a6f5499a7dc7c14068ff4ecd6a94fab0667659bdf53ec1acb0a5",
+    "docs/analysis/E063-outputs/s2/SCORES.md": "34f3aa32766f636987bfbab151064833def5909eeec98c0bde445d7ec4140ff8",
+    "docs/analysis/E063-outputs/s2/baseline-reuse.json": "bb21573f01afba5a41ce6cfb1f9cc2b1c4c6a041c13cad1c10fe0676a7764369",
+    "external/starter-kit/tools/check_submission_zip.py": "0cb9e671b3b19ab62e68b37512ee8717e97d47694276f16e27a77b02d2f37916",
+    "external/starter-kit/LICENSE": "a81db73b86212de93a3944eea5dfb01126ffe17d5fbdb620a6e4c4d04830b20e",
+    "docs/analysis/E063-outputs/s2/phase1-masked/unicef/respondents.parquet": "611347fb8efb307e7641e411f959bd976720a257494f7879efa653e558e9fa81",
+    "docs/analysis/E063-outputs/s2/phase1-masked/world_bank/respondents.parquet": "0ef441661b0b0369b758f5dd799d6bd3af66fc9d477c5553b2b58842f9d959bf",
+    "docs/analysis/E063-outputs/s2/phase1-masked/unhcr/respondents.parquet": "8791fc630b75295b3ce536802138577819a7d158c7f34a57ae786a6f0f9ad5cb"
+  },
+  "model_calls": 0,
+  "source": "entry.json/S1 manifests"
+}

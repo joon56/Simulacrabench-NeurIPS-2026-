@@ -1,0 +1,7 @@
+{"event": "operation", "time": 1791215285.6125185, "stage": "connect", "timeout": 60}
+{"event": "operation", "time": 1791215285.6141684, "stage": "billing", "timeout": 30}
+{"event": "operation", "time": 1791215285.6152556, "stage": "base_stream", "timeout": 30}
+{"event": "operation", "time": 1791215285.6160426, "stage": "base_identity", "timeout": 30}
+{"event": "operation", "time": 1791215285.6210387, "stage": "app_create", "timeout": 30}
+{"event": "operation", "time": 1791215285.630423, "stage": "build_billing", "timeout": 30}
+{"event": "first_error", "time": 1791215285.7380576, "error": "ImageBuildError('Image build for im-dddddddddddddddddddddd failed with the exception:\\nfixed protocol builder failure')"}

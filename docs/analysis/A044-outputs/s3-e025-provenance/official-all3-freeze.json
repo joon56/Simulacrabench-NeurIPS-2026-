@@ -1,0 +1,33 @@
+{
+  "instruments": {
+    "unicef": {
+      "raw_sha256": "d895e2c7bd86258a96ea775866a83a1f7ad5741ca480360b5bef893af4499fce",
+      "status": "PASS",
+      "cells": 41676,
+      "skill": 0.49019777070093806,
+      "official_seconds": 53.427544593811035,
+      "wall_seconds": 54.45636559999912,
+      "work": "tmp/a044-e025-phase2/sbench-c9gx2vlf"
+    },
+    "world_bank": {
+      "raw_sha256": "8ff6d023bfe34ca87232a98fb38657f49e0889dd70b864ae2fa2b9477ce5e402",
+      "status": "PASS",
+      "cells": 92112,
+      "skill": 0.4620295047897023,
+      "official_seconds": 125.62778234481812,
+      "wall_seconds": 126.7080586000011,
+      "work": "tmp/a044-e025-phase2/sbench-n4sctkz2"
+    },
+    "unhcr": {
+      "raw_sha256": "adff64546a354cd3391ea5af78f4a4664f3bb51e2626b650308102c647fa7e7d",
+      "status": "PASS",
+      "cells": 308637,
+      "skill": 0.5651738139421264,
+      "official_seconds": 267.4690845012665,
+      "wall_seconds": 268.56587359999685,
+      "work": "tmp/a044-e025-phase2/sbench-kci_n_kw"
+    }
+  },
+  "at_unix": 1792742109.0855079,
+  "truth_policy": "Stock official scorer owns truth in its original sequence; predictor receives only masked frame."
+}

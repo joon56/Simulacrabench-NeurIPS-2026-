@@ -1,0 +1,969 @@
+{
+    "files":  [
+                  {
+                      "path":  "attempts/builder-await5-check_boundary.py",
+                      "sha256":  "6d7ea2accc431ced09636cd319c09054faba1b092940c92ffdcfec465dc7aa96",
+                      "bytes":  5538
+                  },
+                  {
+                      "path":  "attempts/builder-await6/check-result.json",
+                      "sha256":  "6fd4ce90abf7bdd61884a0c97d49c9018fda2b9a435c378077d0eeefd0b27a76",
+                      "bytes":  871
+                  },
+                  {
+                      "path":  "attempts/builder-await6/protocol-config.json",
+                      "sha256":  "48a84f15add293721402f375937b6cc8b00c8b5e51af3a0d7b80e719e828c7d3",
+                      "bytes":  3414
+                  },
+                  {
+                      "path":  "attempts/builder-await6/trace.jsonl",
+                      "sha256":  "ce15a56ef85b9caa1f6d1f6c1178684f66df55f752d62c4fb7d07afe089fd546",
+                      "bytes":  4971
+                  },
+                  {
+                      "path":  "attempts/builder-failure1/check-result.json",
+                      "sha256":  "f6fb9b4f2d29f70b9d146dcd174274dfdee413ecdfc22f28ab4508653a842e7c",
+                      "bytes":  870
+                  },
+                  {
+                      "path":  "attempts/builder-failure1/protocol-config.json",
+                      "sha256":  "f325c3d3864088bbd55f980fb9c673dd73d549ea7537a1a51f007bce327a0361",
+                      "bytes":  3422
+                  },
+                  {
+                      "path":  "attempts/builder-failure1/trace.jsonl",
+                      "sha256":  "b763d0d330fd8d9beb529a8ad8c60cebd5f38dd4c820251883e23249bcd4c4db",
+                      "bytes":  4842
+                  },
+                  {
+                      "path":  "attempts/builder-gc-diagnostic2/check_boundary.py",
+                      "sha256":  "a0d8f0aacd7144eab99566bafc44dd9f7ab6b3ee18c00fc753bc7e561f6e7c03",
+                      "bytes":  6550
+                  },
+                  {
+                      "path":  "attempts/builder-gc-diagnostic2/check-result.json",
+                      "sha256":  "ee78f42d348b9bd4d30684c34a8986843ebe9494641552ad7bec6cfbebccedde",
+                      "bytes":  870
+                  },
+                  {
+                      "path":  "attempts/builder-gc-diagnostic2/protocol-config.json",
+                      "sha256":  "5b9b2f51467bf637d5f956070b7da663ee989707b5dc3554bc1237ff903e84e1",
+                      "bytes":  3428
+                  },
+                  {
+                      "path":  "attempts/builder-gc-diagnostic2/trace.jsonl",
+                      "sha256":  "8ac9f3e271f094221c114fbcd8a15f4d34a468e11729c8575c36824e79dd3331",
+                      "bytes":  5070
+                  },
+                  {
+                      "path":  "attempts/builder-loop-close3/boundary_transport.py",
+                      "sha256":  "06f6ac7c442d29db515d5ed551dbf38826771d27c3fde1475248e2570dea3012",
+                      "bytes":  5559
+                  },
+                  {
+                      "path":  "attempts/builder-loop-close3/check-result.json",
+                      "sha256":  "5839938026749e6ce6d837908efbb18f941232e697f2ac3a69b6342edc603753",
+                      "bytes":  869
+                  },
+                  {
+                      "path":  "attempts/builder-loop-close3/protocol-config.json",
+                      "sha256":  "0e1ad8fa7ab436e03d294cc1eda94d94601c57501499545131c5a10dbf023816",
+                      "bytes":  3425
+                  },
+                  {
+                      "path":  "attempts/builder-loop-close3/trace.jsonl",
+                      "sha256":  "a16f5913f14847d69217ac2d7f3e29e083acf6190acb21d6410e777b08ae6924",
+                      "bytes":  5332
+                  },
+                  {
+                      "path":  "attempts/builder-message4/boundary_transport.py",
+                      "sha256":  "4ebaa1f15c3b6eeec755a9028646e2fa5daa6c2f83810df09fd1407369f7b566",
+                      "bytes":  5851
+                  },
+                  {
+                      "path":  "attempts/builder-message4/check_boundary.py",
+                      "sha256":  "2dd8e979f56879caab7bc140fd29d94a7f9c56aa663512f12202608c004178fd",
+                      "bytes":  6716
+                  },
+                  {
+                      "path":  "attempts/builder-message4/check-result.json",
+                      "sha256":  "933cbc26c0caae2b04cb5cf71af05f3a4f4713f255a2765bdc44187592912f04",
+                      "bytes":  871
+                  },
+                  {
+                      "path":  "attempts/builder-message4/protocol-config.json",
+                      "sha256":  "6dee88017f31cbb09a94e418d47cb42849fbeb91148940fcc805cdc97352c397",
+                      "bytes":  3422
+                  },
+                  {
+                      "path":  "attempts/builder-message4/trace.jsonl",
+                      "sha256":  "a2a6e6e0691b4321264544cda8432db3d64915afbe1b53e12f05946e3156ee0f",
+                      "bytes":  5339
+                  },
+                  {
+                      "path":  "attempts/image-exit-diagnostic2/check_boundary.py",
+                      "sha256":  "afb3bda316236dc15b7b8fff75c63e70b3a4687a6e70180e0f25049491382302",
+                      "bytes":  6167
+                  },
+                  {
+                      "path":  "attempts/image-exit-diagnostic2/check-result.json",
+                      "sha256":  "b6409a2a0a5fda834e4fea09da22d18640361fa2e6f3dd2f704d98bdd6f62b14",
+                      "bytes":  6163
+                  },
+                  {
+                      "path":  "attempts/image-exit-diagnostic2/protocol-config.json",
+                      "sha256":  "47c2c8703b68dcfac23d8116e7621f320ddc80e2045fb44c5adb3b55ede0ecd3",
+                      "bytes":  3428
+                  },
+                  {
+                      "path":  "attempts/image-exit-diagnostic2/trace.jsonl",
+                      "sha256":  "eb46931b124578fc32309c63b17b60a4c39dffe192f3c446cbe3e8a155b5eea6",
+                      "bytes":  14910
+                  },
+                  {
+                      "path":  "attempts/image-exit-repair3/check_boundary.py",
+                      "sha256":  "dab7c5b75e97dbc3704a04356d874184ca6f052ba1f3f5bd25106c88bbf93d0a",
+                      "bytes":  6511
+                  },
+                  {
+                      "path":  "attempts/image-exit-repair3/check-result.json",
+                      "sha256":  "52090f3b98e29e95e43a96b1f94345df2fb23126bc4d5419d632418831a7a638",
+                      "bytes":  6162
+                  },
+                  {
+                      "path":  "attempts/image-exit-repair3/protocol-config.json",
+                      "sha256":  "9f56fe4ff5c337be9ac5a2a54cd6da3a4b0fe413d50caa2ee9a56b420715cec3",
+                      "bytes":  3424
+                  },
+                  {
+                      "path":  "attempts/image-exit-repair3/trace.jsonl",
+                      "sha256":  "8fc8c4ab11da7c7a6809837ed2bacbf36b6f730c8f703e4ad594ec75b4af20cb",
+                      "bytes":  15026
+                  },
+                  {
+                      "path":  "attempts/image-observer4/check_boundary.py",
+                      "sha256":  "757e14ce9e129d33669c92586f6d9dbfdefeac2667400654f092e463e3f6f4e3",
+                      "bytes":  6438
+                  },
+                  {
+                      "path":  "attempts/image-observer4/check-result.json",
+                      "sha256":  "ceeef8a863042cf33c9e8efbfb0204e6ae03215d3328c5a2bb182bad2319d35e",
+                      "bytes":  6162
+                  },
+                  {
+                      "path":  "attempts/image-observer4/protocol-config.json",
+                      "sha256":  "0d1a41dbeb0720e677fce1dc812ef644a670e7e7fd9787b3b66d551e8b562c80",
+                      "bytes":  3421
+                  },
+                  {
+                      "path":  "attempts/image-observer4/trace.jsonl",
+                      "sha256":  "3625b76dec587e8c9875c0798de3a3664e80c47a708d8bf320be71384fafff18",
+                      "bytes":  7928
+                  },
+                  {
+                      "path":  "attempts/image-success1/check_boundary.py",
+                      "sha256":  "afb3bda316236dc15b7b8fff75c63e70b3a4687a6e70180e0f25049491382302",
+                      "bytes":  6167
+                  },
+                  {
+                      "path":  "attempts/image-success1/check-result.json",
+                      "sha256":  "751255c8a808232e319f5cd426ed2ea4b4521d743290fdcb95a3ed17aa74f38b",
+                      "bytes":  6162
+                  },
+                  {
+                      "path":  "attempts/image-success1/protocol-config.json",
+                      "sha256":  "541b21d115cfce2e252e288453d6aac23f2ce9abd95e74d980660f47c4d1a4f0",
+                      "bytes":  3417
+                  },
+                  {
+                      "path":  "attempts/image-success1/run_check.ps1",
+                      "sha256":  "2b569a7e8b707fd0ac8011639763fc8a85e26d3c1b6b8492e8e1dd90b84cb9de",
+                      "bytes":  3380
+                  },
+                  {
+                      "path":  "attempts/image-success1/trace.jsonl",
+                      "sha256":  "d7f3183be2920a4fe3f780f2044a46bc290f0ca8805ab131c29a12c4992599d1",
+                      "bytes":  14912
+                  },
+                  {
+                      "path":  "attempts/real-stall1/check-result.json",
+                      "sha256":  "8dca9a6069c4ff65d54f28188378f7e699c8d060cb847685bf1a13affcfa1b7c",
+                      "bytes":  1307
+                  },
+                  {
+                      "path":  "attempts/real-stall1/protocol-config.json",
+                      "sha256":  "8a3ad4ff5b9e86ed3b3ee48fe34be2443c8c6f119996d6eaf496524ddb542000",
+                      "bytes":  3417
+                  },
+                  {
+                      "path":  "attempts/real-stall1/trace.jsonl",
+                      "sha256":  "6bc60b950140a8d1e82d2c2520c5ec56009ca711e5b583e969bf07ae26064e3e",
+                      "bytes":  7127
+                  },
+                  {
+                      "path":  "baseline-source-manifest.json",
+                      "sha256":  "9bed44512e531215e68c4cc0a2dfd5ea99670a44f4125166eb62999684e624f3",
+                      "bytes":  3178
+                  },
+                  {
+                      "path":  "boundary_transport.py",
+                      "sha256":  "044d127a68021916b86fa677c39a7c68a5510aeeec89523c3d69b5c88b11926a",
+                      "bytes":  6705
+                  },
+                  {
+                      "path":  "builder-await5-preflight.json",
+                      "sha256":  "4c5e44f8c901b928ad0a1c044fbf6796e22b2e5bd2238c784c75716bbdfe125f",
+                      "bytes":  1517
+                  },
+                  {
+                      "path":  "builder-await5-process.json",
+                      "sha256":  "1f9cb2bd16e314569a9598210ef6c296a37dab7c7452f048c873cdf245825770",
+                      "bytes":  490
+                  },
+                  {
+                      "path":  "builder-await5-stderr.txt",
+                      "sha256":  "a7ca29bb044515fa611be9eab3d9399b215e4ad44177ba7ea0a07a3ccde74b91",
+                      "bytes":  275
+                  },
+                  {
+                      "path":  "builder-await5-stdout.txt",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "builder-await6-preflight.json",
+                      "sha256":  "8530817b6a5e3b082e8f2b84ad67fe0bdb2719397452b72c8c725dbc0a495e36",
+                      "bytes":  1517
+                  },
+                  {
+                      "path":  "builder-await6-process.json",
+                      "sha256":  "b6e94b493a92cc6c989b80f0beaa45d9c99800f20214f03dcd1995276ce9122e",
+                      "bytes":  509
+                  },
+                  {
+                      "path":  "builder-await6-stderr.txt",
+                      "sha256":  "6284e0d0d33312f947f94a1037d7ddc5a73c6ef08146dea692015a104eec8f1a",
+                      "bytes":  136
+                  },
+                  {
+                      "path":  "builder-await6-stdout.txt",
+                      "sha256":  "496c0f4249b57cf98f3c816e19c9a8ca2a146acd05431810ba2dc1dc1ef23141",
+                      "bytes":  408
+                  },
+                  {
+                      "path":  "builder-failure1-preflight.json",
+                      "sha256":  "b0c5864515a2cf8b367e969d22995b8f24f677fd31503c9ce8858fc105e8930c",
+                      "bytes":  1519
+                  },
+                  {
+                      "path":  "builder-failure1-process.json",
+                      "sha256":  "1c7a421367324d923b64500e7c1de51bf43352beb64b5978451d94bdafad3ea5",
+                      "bytes":  511
+                  },
+                  {
+                      "path":  "builder-failure1-stderr.txt",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "builder-failure1-stdout.txt",
+                      "sha256":  "a802c222e67836c4ebf396ffc12ef21b380fc6f1660b6e5058b7b0ea101bf9ce",
+                      "bytes":  408
+                  },
+                  {
+                      "path":  "builder-gc-diagnostic2-preflight.json",
+                      "sha256":  "5757ccea3bce0796b488f109b88b9d89ccb1b00f8b76062b74b937da430053fc",
+                      "bytes":  1525
+                  },
+                  {
+                      "path":  "builder-gc-diagnostic2-process.json",
+                      "sha256":  "51a0945cfa0f1ee865b26718670645e60e4019fba02a8f8f3899ea262a68e1f7",
+                      "bytes":  517
+                  },
+                  {
+                      "path":  "builder-gc-diagnostic2-stderr.txt",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "builder-gc-diagnostic2-stdout.txt",
+                      "sha256":  "63d0a24ed448c208db58fd996f4625db60b0a24d4bcc4bdad1e0dddcd30f9e3c",
+                      "bytes":  408
+                  },
+                  {
+                      "path":  "builder-loop-close3-preflight.json",
+                      "sha256":  "e1f646f4ceb23c01209cd86636fa248816e6037ba12435919c5a3276e07d9442",
+                      "bytes":  1522
+                  },
+                  {
+                      "path":  "builder-loop-close3-process.json",
+                      "sha256":  "7376ea6c645c3fec36c41e638d3f4090312d2ceedb5ec9b270fbf70ee5ab626c",
+                      "bytes":  505
+                  },
+                  {
+                      "path":  "builder-loop-close3-stderr.txt",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "builder-loop-close3-stdout.txt",
+                      "sha256":  "0b554bc686ba01ea278691dbc453c327a04ffdcbaea37bc9397d34cc66c1f19e",
+                      "bytes":  407
+                  },
+                  {
+                      "path":  "builder-message4-preflight.json",
+                      "sha256":  "913a55ea9c33d3c3dbc5fee9d599c99a58033aada936511e6b7cdf551c047c58",
+                      "bytes":  1519
+                  },
+                  {
+                      "path":  "builder-message4-process.json",
+                      "sha256":  "4c0feae30ca2a8de32950245abf44ba82628a961c483f4a5360ca709cb970079",
+                      "bytes":  510
+                  },
+                  {
+                      "path":  "builder-message4-stderr.txt",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "builder-message4-stdout.txt",
+                      "sha256":  "974afe93a5d38c7d6ab70325632884b1ecd4cd6a23c53eb1a6b19c40ea329385",
+                      "bytes":  408
+                  },
+                  {
+                      "path":  "check_boundary.py",
+                      "sha256":  "b88349b4fb272938a5a770671e65e937f15ff683ea0df1cad90acc3f4f679f47",
+                      "bytes":  5673
+                  },
+                  {
+                      "path":  "cleanup_query.py",
+                      "sha256":  "f3311c40e088b4adb07b12919376d6490016da24d2a00652fb95e5b2d86fbe93",
+                      "bytes":  10928
+                  },
+                  {
+                      "path":  "closeout.md",
+                      "sha256":  "550f70e5d624be3a1f21a1e09d75be4bcca3de53bf34e6247a530e940578be00",
+                      "bytes":  6235
+                  },
+                  {
+                      "path":  "contract.py",
+                      "sha256":  "8d2a072c8c353dbeb929b0c3620faa08b9b9ce70a97e3d4573e3f6db53c047f7",
+                      "bytes":  5098
+                  },
+                  {
+                      "path":  "controller_core.py",
+                      "sha256":  "fc561eee08f1eafbbeac2cbcc5fa31890ef719bf603c5c7dd1af7aea5e556bcb",
+                      "bytes":  1760
+                  },
+                  {
+                      "path":  "cost-time-ledger.json",
+                      "sha256":  "69052835136e483b3c3dfbc7c85b1ac73d1afbf6b71b7388f01d203eecf08015",
+                      "bytes":  10860
+                  },
+                  {
+                      "path":  "dirty-closeout.txt",
+                      "sha256":  "184f0fe5ff15527c15fb34d257489dd2552aa7f718ac2c3259d5032741e8d7e9",
+                      "bytes":  3219
+                  },
+                  {
+                      "path":  "document-preservation.json",
+                      "sha256":  "939d8b3ddbcbf7dea463fbe4705fb15685798e20b6b54b52ec8f98ff20b0dbe0",
+                      "bytes":  662
+                  },
+                  {
+                      "path":  "entry.json",
+                      "sha256":  "c70558c4fdadd95ce9db89a057e9a3a1bb7a85eac38d1edb58cd1d3bebb92613",
+                      "bytes":  2133
+                  },
+                  {
+                      "path":  "exposure-ledger.md",
+                      "sha256":  "a515399ec1faaef19a8e9ceddde72cb8f70ff7aa710e1b5fa70cfb6059636e20",
+                      "bytes":  1828
+                  },
+                  {
+                      "path":  "final-record-check.json",
+                      "sha256":  "b8f03ec4de9cf8c4f771db834b310186723ab404016a970ebd9443e301748775",
+                      "bytes":  462
+                  },
+                  {
+                      "path":  "fixture_transport.py",
+                      "sha256":  "cab28e9604e3310f28ad8288c11fa87973d8000da6c6839ec4e9f3a4d0203574",
+                      "bytes":  10909
+                  },
+                  {
+                      "path":  "image-exit-diagnostic2-preflight.json",
+                      "sha256":  "b5fed07cf6728a821f7c2ab32d266630a57069176d048acb957540adc0a147c4",
+                      "bytes":  1501
+                  },
+                  {
+                      "path":  "image-exit-diagnostic2-process.json",
+                      "sha256":  "5288f52c809aa0c60c247045e21e0a73f7ccbe5be9aced888aa43af2b4d1e4c1",
+                      "bytes":  503
+                  },
+                  {
+                      "path":  "image-exit-diagnostic2-stderr.txt",
+                      "sha256":  "296837ee84c846713c97ece2d77215594e3e58776d61638643463d4d0b3f28d0",
+                      "bytes":  136
+                  },
+                  {
+                      "path":  "image-exit-diagnostic2-stdout.txt",
+                      "sha256":  "4614db381025893abbf516e9c80afc4dcdb1f9f57c540ae15ba172520a3f664c",
+                      "bytes":  402
+                  },
+                  {
+                      "path":  "image-exit-repair3-preflight.json",
+                      "sha256":  "8daac854b04b4528b5da5d82cb18de86721bf53d15e28b0d0093de4f358b93c4",
+                      "bytes":  1498
+                  },
+                  {
+                      "path":  "image-exit-repair3-process.json",
+                      "sha256":  "81b6f3e3b0f471603446aa7147ce61064f42d4c90a4485b97133172d589c0082",
+                      "bytes":  508
+                  },
+                  {
+                      "path":  "image-exit-repair3-stderr.txt",
+                      "sha256":  "c089aff9690b6c3d1b21c6f28db1173303f8afbdaba9f41aca4096721e3da42f",
+                      "bytes":  136
+                  },
+                  {
+                      "path":  "image-exit-repair3-stdout.txt",
+                      "sha256":  "2f01c5200f016017c28351d2e517cd426fe857a953b1ed15682d7e7b54956763",
+                      "bytes":  402
+                  },
+                  {
+                      "path":  "image-observer4-preflight.json",
+                      "sha256":  "b8cf2050bbf6db9e6bc28c995a24a8bf3736d9d7d7e652ebeca4bd23e9c488f1",
+                      "bytes":  1513
+                  },
+                  {
+                      "path":  "image-observer4-process.json",
+                      "sha256":  "e3058bf59f3ad7611ce7edb3a310d566df8530cc19cbda4a86ffe83584859434",
+                      "bytes":  505
+                  },
+                  {
+                      "path":  "image-observer4-stderr.txt",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "image-observer4-stdout.txt",
+                      "sha256":  "e3bfae994cb5f7f7bee2a26da79458d887a220f74980c098bdd4340c2cd73dbd",
+                      "bytes":  401
+                  },
+                  {
+                      "path":  "image-success1-preflight.json",
+                      "sha256":  "e142953a1a2fd836ed9591ed87a6514f98d98de37cf23ed8c7c58be1dae3513f",
+                      "bytes":  1477
+                  },
+                  {
+                      "path":  "image-success1-process.json",
+                      "sha256":  "8e270e53b0e66824116f73cd036fc7377fed728df9ae70b9d23bfed97ea7d60e",
+                      "bytes":  485
+                  },
+                  {
+                      "path":  "image-success1-stderr.txt",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "image-success1-stdout.txt",
+                      "sha256":  "a1537e49956b06762f82ff0490f0345a25917880c5a0c8860596b2bebc06dff5",
+                      "bytes":  402
+                  },
+                  {
+                      "path":  "linux_boundary.py",
+                      "sha256":  "4c2aad23c52813693249a6d104c50f208ed33928086b466e46e853ad074712ff",
+                      "bytes":  5213
+                  },
+                  {
+                      "path":  "linux_runner.py",
+                      "sha256":  "82facf9151daa8eadc55c438be99f4c0cf5e331978c18b3a59530ef2af5b680e",
+                      "bytes":  14813
+                  },
+                  {
+                      "path":  "linux_watchdog.py",
+                      "sha256":  "9b08538d3b5990389e103ef2d391d58fec6ec63795bf0dc5ebcec08bc1991d34",
+                      "bytes":  5583
+                  },
+                  {
+                      "path":  "live_binding.py",
+                      "sha256":  "ca1351a05eea38577632a918b286d5ee7e5c82d423928fd8c2ce1af67de206c8",
+                      "bytes":  835
+                  },
+                  {
+                      "path":  "live_launcher.py",
+                      "sha256":  "6536a589b36f873dd073f5e967dd8f82e8aada7b3becc61c7036cb2b3680ddbe",
+                      "bytes":  5478
+                  },
+                  {
+                      "path":  "live_worker.py",
+                      "sha256":  "1f134b1e5564fd2bddd61613878039af39cab1f10e8adf3e6d8f980a5e601297",
+                      "bytes":  12465
+                  },
+                  {
+                      "path":  "local_guard.py",
+                      "sha256":  "555759980ceff510f4900d510c16a9f50706d8d2e969b1231f203cfc84db98a7",
+                      "bytes":  2714
+                  },
+                  {
+                      "path":  "observer-source-manifest.json",
+                      "sha256":  "41a52d76512eca79c019e0359fbb230faf27f2738c912919d8d23781e583da5d",
+                      "bytes":  3167
+                  },
+                  {
+                      "path":  "owned-native-crash-evidence.json",
+                      "sha256":  "49d39b79c80f2e978fd337faf35f893d0223b3b5fe391a8e330124ff86a500bb",
+                      "bytes":  2068
+                  },
+                  {
+                      "path":  "payload.py",
+                      "sha256":  "17273bebff6debd9888983ffcb2a7b3e3dbff572dccd203c05f9c8b5c9f60424",
+                      "bytes":  2663
+                  },
+                  {
+                      "path":  "placement.diff",
+                      "sha256":  "8bbd6b559db1a1010e932e68e6b3a1220dd340886960629c73ce0aa9e8036412",
+                      "bytes":  1267
+                  },
+                  {
+                      "path":  "preservation.json",
+                      "sha256":  "5ac86e67f7828df016f7170b6d3f3726b866aa767ab828b564f35e5b8368c7bf",
+                      "bytes":  2332
+                  },
+                  {
+                      "path":  "protocol.py",
+                      "sha256":  "4616f24b44d8b482cf90a560a13e59324f20e497af4090d6e588fe437801ff77",
+                      "bytes":  1678
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-boundary2-builder-await6/cost-ledger.json",
+                      "sha256":  "05857a5cb55ebf992809ed82e4903877cdaad261b48ff7536c770f70294efd1d",
+                      "bytes":  510
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-boundary2-builder-await6/events.jsonl",
+                      "sha256":  "b29e6a9dbdfde783bc185d534affd1d0991e9c3f3e74cb41dfa75dc9b58b1255",
+                      "bytes":  784
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-boundary2-builder-await6/result.json",
+                      "sha256":  "8833e02427d6c7e0209410679b754ec6eb408e93b43457f3ddd30584ad4785df",
+                      "bytes":  2289
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-boundary2-builder-await6/source-gate.json",
+                      "sha256":  "f7a7055cbb85651ee41a55e8c10a195b7d4a337a9b02c931bd2e2966d7612213",
+                      "bytes":  135
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-boundary2-builder-await6/state.json",
+                      "sha256":  "8833e02427d6c7e0209410679b754ec6eb408e93b43457f3ddd30584ad4785df",
+                      "bytes":  2289
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-boundary2-builder-await6/termination-receipt.json",
+                      "sha256":  "915007e865f14811c1dc5bbd76a428d33e51db00eabbfa5f5e59bf50ba100202",
+                      "bytes":  314
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-boundary2-builder-failure1/cost-ledger.json",
+                      "sha256":  "c272ad7539cd86b2c2efc1a52b5ce7ab08a8c0213473d4646c443039f1b702f9",
+                      "bytes":  510
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-boundary2-builder-failure1/events.jsonl",
+                      "sha256":  "79468df6e995ddbe1a33ba139f0d597cb83ac3650a1ca6d1d8f5f987a3e698fe",
+                      "bytes":  727
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-boundary2-builder-failure1/result.json",
+                      "sha256":  "7eb1f8225e7548422e4b53789800103edf07fe0e9575d0d616c988d1297e0e79",
+                      "bytes":  2291
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-boundary2-builder-failure1/source-gate.json",
+                      "sha256":  "e140f46a56c3238f79188f72c9f0783bc72e31c2d7638406f897a1fd725c0c28",
+                      "bytes":  135
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-boundary2-builder-failure1/state.json",
+                      "sha256":  "7eb1f8225e7548422e4b53789800103edf07fe0e9575d0d616c988d1297e0e79",
+                      "bytes":  2291
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-boundary2-builder-failure1/termination-receipt.json",
+                      "sha256":  "6bd5f2c2fe8a6eaa275ae14e461d808798f59f3c6bcb5fe346b5a10c99846767",
+                      "bytes":  313
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-boundary2-builder-gc-diagnostic2/cost-ledger.json",
+                      "sha256":  "ee54f0ca21c9df68be2fb1336de544d7dce2bd7050ae14318286955fd4b2a717",
+                      "bytes":  510
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-boundary2-builder-gc-diagnostic2/events.jsonl",
+                      "sha256":  "2a34a7147bd7652bc295a1d7d7dc6313b465c00e91f8b2f2cdf0f31039d77bc3",
+                      "bytes":  724
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-boundary2-builder-gc-diagnostic2/result.json",
+                      "sha256":  "cc7dbe24dab984dc041c8ea1b2d51dad254ec01c830fccf773504350b501d8a6",
+                      "bytes":  2296
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-boundary2-builder-gc-diagnostic2/source-gate.json",
+                      "sha256":  "e140f46a56c3238f79188f72c9f0783bc72e31c2d7638406f897a1fd725c0c28",
+                      "bytes":  135
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-boundary2-builder-gc-diagnostic2/state.json",
+                      "sha256":  "cc7dbe24dab984dc041c8ea1b2d51dad254ec01c830fccf773504350b501d8a6",
+                      "bytes":  2296
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-boundary2-builder-gc-diagnostic2/termination-receipt.json",
+                      "sha256":  "42b47dfd1baaaf584733bd86edc3c31f5ec50cc086d93cf28bb1ff36ef2fc84d",
+                      "bytes":  313
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-boundary2-builder-loop-close3/cost-ledger.json",
+                      "sha256":  "8bc064f2f3cb67994934e236a9b4f07d7552d85f8d428a436c71942cc343c15c",
+                      "bytes":  509
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-boundary2-builder-loop-close3/events.jsonl",
+                      "sha256":  "77dd549a75209fbdb32af658000cc5981740763e4030c3113d1a57b0c89c1eac",
+                      "bytes":  728
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-boundary2-builder-loop-close3/result.json",
+                      "sha256":  "b0438c3d609adeeb58a4c76b86978976d17ad447d90e03d516b4e6f7301b5849",
+                      "bytes":  2294
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-boundary2-builder-loop-close3/source-gate.json",
+                      "sha256":  "e140f46a56c3238f79188f72c9f0783bc72e31c2d7638406f897a1fd725c0c28",
+                      "bytes":  135
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-boundary2-builder-loop-close3/state.json",
+                      "sha256":  "b0438c3d609adeeb58a4c76b86978976d17ad447d90e03d516b4e6f7301b5849",
+                      "bytes":  2294
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-boundary2-builder-loop-close3/termination-receipt.json",
+                      "sha256":  "6b548435d18962fda700c5503a4524c3760f4f61b17d154f14b3ec3bc7eb05f0",
+                      "bytes":  313
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-boundary2-builder-message4/cost-ledger.json",
+                      "sha256":  "cf8affbdf80969c7739d09d0da2cef2f203540222a0d3374d733cd70af044fb6",
+                      "bytes":  510
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-boundary2-builder-message4/events.jsonl",
+                      "sha256":  "00d600ff67739c3b6d3ee18e0f6979ebc5d68af425c75a832bcbec2d79e91656",
+                      "bytes":  728
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-boundary2-builder-message4/result.json",
+                      "sha256":  "4019ce93ddbd4566c08ec18127a471b4d373f412bf377c19de72e217b6b9a3c6",
+                      "bytes":  2291
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-boundary2-builder-message4/source-gate.json",
+                      "sha256":  "e140f46a56c3238f79188f72c9f0783bc72e31c2d7638406f897a1fd725c0c28",
+                      "bytes":  135
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-boundary2-builder-message4/state.json",
+                      "sha256":  "4019ce93ddbd4566c08ec18127a471b4d373f412bf377c19de72e217b6b9a3c6",
+                      "bytes":  2291
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-boundary2-builder-message4/termination-receipt.json",
+                      "sha256":  "4a17bb36a8f2e6dcb166d22b9f37d1d0808fe185350a7d75badc8b748f4d0260",
+                      "bytes":  314
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-boundary2-image-exit-diagnostic2/cost-ledger.json",
+                      "sha256":  "e98d613c61391b2cf4cd5709f7b8c9dda99c0f3cc374f9ea550a840cab265042",
+                      "bytes":  521
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-boundary2-image-exit-diagnostic2/events.jsonl",
+                      "sha256":  "7583fc522e22364f76dabd024949a3d696db7a3af15c01479f88ef8fec6bdad0",
+                      "bytes":  3403
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-boundary2-image-exit-diagnostic2/result.json",
+                      "sha256":  "45f6b63f6b61bdb1068c0e43a9d81283e586fb59850d77070873e47feb3c1f76",
+                      "bytes":  1371
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-boundary2-image-exit-diagnostic2/sandbox-query-receipt.json",
+                      "sha256":  "38430f4db4786a1fbaa2f30f55278141e029369e6c852f879a1f26b87aab81fa",
+                      "bytes":  4299
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-boundary2-image-exit-diagnostic2/sandbox-terminal-evidence.json",
+                      "sha256":  "5f81a59aabcb441a7fb0dba932b62b56eedd64bbc7861411f77ce9553aea983e",
+                      "bytes":  374
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-boundary2-image-exit-diagnostic2/source-gate.json",
+                      "sha256":  "e140f46a56c3238f79188f72c9f0783bc72e31c2d7638406f897a1fd725c0c28",
+                      "bytes":  135
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-boundary2-image-exit-diagnostic2/state.json",
+                      "sha256":  "45f6b63f6b61bdb1068c0e43a9d81283e586fb59850d77070873e47feb3c1f76",
+                      "bytes":  1371
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-boundary2-image-exit-diagnostic2/termination-receipt.json",
+                      "sha256":  "3fe5ac0e719d77222c6c8b92d3c8e9b180a88bc65097c2e16c91cf2a0b234dc3",
+                      "bytes":  709
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-boundary2-image-exit-repair3/cost-ledger.json",
+                      "sha256":  "37584d14a7bdd19c7b99401508db27763e62b650fed843efa9970365fc74bdb4",
+                      "bytes":  519
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-boundary2-image-exit-repair3/events.jsonl",
+                      "sha256":  "ebb9e22d174b64b8727d0e6656268f1404afca509abfe4863a6084eb44e21dd8",
+                      "bytes":  3397
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-boundary2-image-exit-repair3/result.json",
+                      "sha256":  "88b488946ea8c1076ae5c0a82f5547ce0a8fac593831b36ecce4fbcfc12ada47",
+                      "bytes":  1363
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-boundary2-image-exit-repair3/sandbox-query-receipt.json",
+                      "sha256":  "231c6c7f3881db0ef5d4ded3f6cea783e63ad05be7988b61dcfd08a72bc9ff24",
+                      "bytes":  4283
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-boundary2-image-exit-repair3/sandbox-terminal-evidence.json",
+                      "sha256":  "62d98b3a71cb6cfba852d64e99258e8a677915399279fead22427211bd115b3e",
+                      "bytes":  374
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-boundary2-image-exit-repair3/source-gate.json",
+                      "sha256":  "e140f46a56c3238f79188f72c9f0783bc72e31c2d7638406f897a1fd725c0c28",
+                      "bytes":  135
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-boundary2-image-exit-repair3/state.json",
+                      "sha256":  "88b488946ea8c1076ae5c0a82f5547ce0a8fac593831b36ecce4fbcfc12ada47",
+                      "bytes":  1363
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-boundary2-image-exit-repair3/termination-receipt.json",
+                      "sha256":  "a281c29529e9fd524d3d12ff51ae307afc3485c3a1ba2dceee14066597a20ef7",
+                      "bytes":  708
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-boundary2-image-observer4/cost-ledger.json",
+                      "sha256":  "3e8c88fbb0a33c0cc702dccf0e1d429310107c990a3f0e232fcebe95d023e012",
+                      "bytes":  520
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-boundary2-image-observer4/events.jsonl",
+                      "sha256":  "616e2955328a505fc9aa50429209ebd53ee2097fd777b748357fcd2bde7fd00b",
+                      "bytes":  3400
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-boundary2-image-observer4/result.json",
+                      "sha256":  "0c5bdf4f5ff3320067371e478b411b2e1911dbde5ca321d31f51a014381e8a2f",
+                      "bytes":  1357
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-boundary2-image-observer4/sandbox-query-receipt.json",
+                      "sha256":  "6962c376a3de2528160dd12fd6e19d7228307ed38c772e78084a1e805031d886",
+                      "bytes":  4272
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-boundary2-image-observer4/sandbox-terminal-evidence.json",
+                      "sha256":  "1451a58d6c9d85d30a2e30e03b7801079100ac4a231871293e3420066eaeff92",
+                      "bytes":  374
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-boundary2-image-observer4/source-gate.json",
+                      "sha256":  "e140f46a56c3238f79188f72c9f0783bc72e31c2d7638406f897a1fd725c0c28",
+                      "bytes":  135
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-boundary2-image-observer4/state.json",
+                      "sha256":  "0c5bdf4f5ff3320067371e478b411b2e1911dbde5ca321d31f51a014381e8a2f",
+                      "bytes":  1357
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-boundary2-image-observer4/termination-receipt.json",
+                      "sha256":  "251848563aa41daf6bee0b14599e6ab73209233e441ab263df015afbe9ae2cf5",
+                      "bytes":  709
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-boundary2-image-success1/cost-ledger.json",
+                      "sha256":  "ef143f0ac5aee05c2fa95980fc554d89dcfa585220fac7e6bbc0d39b0100527b",
+                      "bytes":  520
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-boundary2-image-success1/events.jsonl",
+                      "sha256":  "ab793503d1cf02b1afd7bdeb88a38a9ef98961d82389c5f1f25e516261ab26c2",
+                      "bytes":  3405
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-boundary2-image-success1/result.json",
+                      "sha256":  "390b920521ccfcc6ed311715316fb802b4c0e79d47ff9120d7cd7dede9b03ff6",
+                      "bytes":  1353
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-boundary2-image-success1/sandbox-query-receipt.json",
+                      "sha256":  "b7e7a64e53de3220a35300df9fa8e65abb865197e3f9c258cfef861e7bf75255",
+                      "bytes":  4268
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-boundary2-image-success1/sandbox-terminal-evidence.json",
+                      "sha256":  "07b1cef8e5404126d61b8acc821042b8ad37125aaeddfdebb3ec0ea14c24f342",
+                      "bytes":  374
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-boundary2-image-success1/source-gate.json",
+                      "sha256":  "e140f46a56c3238f79188f72c9f0783bc72e31c2d7638406f897a1fd725c0c28",
+                      "bytes":  135
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-boundary2-image-success1/state.json",
+                      "sha256":  "390b920521ccfcc6ed311715316fb802b4c0e79d47ff9120d7cd7dede9b03ff6",
+                      "bytes":  1353
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-boundary2-image-success1/termination-receipt.json",
+                      "sha256":  "d834d7da5d82d8e0aedd9422291b48845391db0e5dad4f6273a8fa98c6d9cacc",
+                      "bytes":  708
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-boundary2-real-stall1/cost-ledger.json",
+                      "sha256":  "51e2f611930b03c868eb856770029acf8c5ab4cb5871572039c5d1eb4ce47c51",
+                      "bytes":  520
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-boundary2-real-stall1/events.jsonl",
+                      "sha256":  "57e6e54bf75b0e74c9676bb3fcfbc67d4a8538583b37622f5660748e51a15665",
+                      "bytes":  931
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-boundary2-real-stall1/result.json",
+                      "sha256":  "9635cd66daf8551ce6b6b00a43237c09ae6a9e310ddc9cb18527958a7909def2",
+                      "bytes":  2376
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-boundary2-real-stall1/sandbox-query-receipt.json",
+                      "sha256":  "7f65ba69c72476513401c7fad3efa8b2470f1bf160fcc45cb07343667366e73e",
+                      "bytes":  4256
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-boundary2-real-stall1/sandbox-terminal-evidence.json",
+                      "sha256":  "ae464acb859f1b36979fc4c308a90b4c62c5fd03ef60a63038a4d17030a39f46",
+                      "bytes":  374
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-boundary2-real-stall1/source-gate.json",
+                      "sha256":  "f7a7055cbb85651ee41a55e8c10a195b7d4a337a9b02c931bd2e2966d7612213",
+                      "bytes":  135
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-boundary2-real-stall1/state.json",
+                      "sha256":  "9635cd66daf8551ce6b6b00a43237c09ae6a9e310ddc9cb18527958a7909def2",
+                      "bytes":  2376
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-boundary2-real-stall1/termination-receipt.json",
+                      "sha256":  "9c14dc2beee18e03ad490f6ad3a972ddd26029039b723e3004cecb3d7400d365",
+                      "bytes":  710
+                  },
+                  {
+                      "path":  "real-stall1-preflight.json",
+                      "sha256":  "0c0ad398f59f0f36158f46e7bef765ca630e910acb803c2b4f48a753bf558edd",
+                      "bytes":  1509
+                  },
+                  {
+                      "path":  "real-stall1-process.json",
+                      "sha256":  "a9c620ca99c56bfcf6161225b16f8bcdea3b597d4ddc31750eaf7151985be819",
+                      "bytes":  942
+                  },
+                  {
+                      "path":  "real-stall1-stderr.txt",
+                      "sha256":  "d9addbfb0eb7777e9e0b147399925907890991efcba52b8927b6f60ab7389572",
+                      "bytes":  136
+                  },
+                  {
+                      "path":  "real-stall1-stdout.txt",
+                      "sha256":  "d5e964f97c9efedd8ed568da47f5c5edcb886c6adb409664cea97acafefd7fd6",
+                      "bytes":  415
+                  },
+                  {
+                      "path":  "real-stall1-verdict.json",
+                      "sha256":  "6fdd05c674b07e8e9330d2d1f0787c1a00496733c325d50a0bceeeaa357fdcf1",
+                      "bytes":  149
+                  },
+                  {
+                      "path":  "record_closeout.py",
+                      "sha256":  "979b51f20ec04e4a84ca7efc1abf4258cdf14c3968348913f67233fccc0f91bf",
+                      "bytes":  10790
+                  },
+                  {
+                      "path":  "regression-history.md",
+                      "sha256":  "7e5b9157f4630fd36094229c4645e3eb28b99a41ff96e132fadccf26520eb3b2",
+                      "bytes":  3529
+                  },
+                  {
+                      "path":  "run_check.ps1",
+                      "sha256":  "71c2f2b2f0d47f27258d9176fbb41707715bd390407d44d28a7860863f0aa9b2",
+                      "bytes":  4923
+                  },
+                  {
+                      "path":  "s0-handoff.ko.md",
+                      "sha256":  "27e18c41bc2923d33d0955863d012c8e8a53dd0ef3d6014fa733326f28d6a762",
+                      "bytes":  2628
+                  },
+                  {
+                      "path":  "sandbox_stage.py",
+                      "sha256":  "2b0ed4cd332a4e9ca85f335dd3fa3637eecc467a77be7f063b714c051dff0191",
+                      "bytes":  7237
+                  },
+                  {
+                      "path":  "sdk_endpoint.py",
+                      "sha256":  "877117e9aae8a9ddb53096ebc4e23488dc94511b9e52ce430663a03c94ff09cc",
+                      "bytes":  4930
+                  },
+                  {
+                      "path":  "source.diff",
+                      "sha256":  "71951235c95736c7022d4a057d85f51e448b055a9c60c6902adf14840e2ad48b",
+                      "bytes":  845
+                  },
+                  {
+                      "path":  "source-manifest.json",
+                      "sha256":  "68d8ac3c23b8ab0f74a41893bd122733e79e54fb6915ee293d921a9a30e1cb50",
+                      "bytes":  3167
+                  },
+                  {
+                      "path":  "stall-timing.json",
+                      "sha256":  "8ca2985c281428885bb3a925a773272ee263d86ce25c87a18fbf82ac24840e30",
+                      "bytes":  1611
+                  },
+                  {
+                      "path":  "user-handoff.ko.md",
+                      "sha256":  "ebdbbab5681baed9e1c7ed0211a2033e1746600f0f0b8648e5f92289c6768035",
+                      "bytes":  12371
+                  },
+                  {
+                      "path":  "verification.json",
+                      "sha256":  "8abd6131e2f507004c4f5a63dc1152c910b7b933987d55c9756586b417651261",
+                      "bytes":  2366
+                  }
+              ]
+}

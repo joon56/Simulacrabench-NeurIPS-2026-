@@ -1,0 +1,69 @@
+{
+    "cycle2_test_sha256":  "e7caa0e6996860d0d8a89b56cec754182d9be8fd2d4e74b5f5a53a13a0bae0a1",
+    "source_manifest_sha256":  "8377129e94e8457aebd64156d1599efd8bf7b4a49f2c1b99b2dc00104218451d",
+    "head":  "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+    "metadata_inputs":  [
+                            {
+                                "path":  "docs/analysis/A040-outputs/modal-full-path1/allowlist.json",
+                                "sha256":  "f8a52aaabb040593737485a9f860d53ae39600693ab18517128c577d0ac5dcfe",
+                                "bytes":  27562
+                            },
+                            {
+                                "path":  "docs/analysis/A040-outputs/full-path-resume1/requirements.lock.txt",
+                                "sha256":  "6c6f0d0fc5db943eb1cb95ff4610ddea5df724bc50031b883a0dd67656771b70",
+                                "bytes":  606
+                            },
+                            {
+                                "path":  "docs/analysis/A040-outputs/full-path-resume1/runner.py",
+                                "sha256":  "fc8d12a09bc283675811fb25efa80a7056f9f9077dffac9dfd3510d9dfa5cde5",
+                                "bytes":  14706
+                            },
+                            {
+                                "path":  "docs/analysis/A040-outputs/modal-full-path1-resume3/controller_core.py",
+                                "sha256":  "69045525d5cdac7fe4b61297f2672325bd652bc7ef87f5d1eaf7cfdab24c5d59",
+                                "bytes":  1758
+                            },
+                            {
+                                "path":  "docs/analysis/A040-outputs/s0-modal-protocol-review/decision.md",
+                                "sha256":  "a70a4f46e28a2801193a087abad945e5d719b8f4f6286ca93eb83b002fa407c0",
+                                "bytes":  5842
+                            },
+                            {
+                                "path":  "docs/workflow.md",
+                                "sha256":  "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642",
+                                "bytes":  21956
+                            }
+                        ],
+    "scientific_policy":  {
+                              "candidate_seconds":  900,
+                              "swap_bytes":  0,
+                              "sandbox_seconds":  2400,
+                              "logical_threads":  2,
+                              "same_original_source":  true,
+                              "scientific_invocations_this_session":  0,
+                              "reference_seconds":  900,
+                              "memory_bytes":  15999172608,
+                              "gpu":  "H100!",
+                              "physical_cpu":  1,
+                              "gpus":  1
+                          },
+    "sdk_version":  "1.6.0",
+    "source_modules":  12,
+    "old_frozen_matches":  7,
+    "future_facts":  {
+                         "current_account":  "UNVERIFIED",
+                         "current_credit_balance":  "UNVERIFIED",
+                         "linux_native_enforcement":  "UNVERIFIED",
+                         "h100_all3_900s":  "UNVERIFIED",
+                         "remote_termination":  "UNVERIFIED",
+                         "runtime_image":  "UNVERIFIED",
+                         "payload112_identity":  "UNVERIFIED",
+                         "base_identity":  "UNVERIFIED"
+                     },
+    "scope":  "LOCAL_ORCHESTRATION_CONTRACT",
+    "old_frozen_files":  7,
+    "cycle1_test_sha256":  "780e6d2d58d10d92c343e7dbb63d0d9881325128fd5c5460c16b0b37be849a16",
+    "execution_authorized":  false,
+    "fixture_data":  "26 meaningless transfer bytes; recorded protocol outputs are []; no response dataset",
+    "tests_sha256":  "e7caa0e6996860d0d8a89b56cec754182d9be8fd2d4e74b5f5a53a13a0bae0a1"
+}

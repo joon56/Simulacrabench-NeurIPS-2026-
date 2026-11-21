@@ -1,0 +1,27 @@
+Evidence: tool chunk 55cb3d; first and only full-input generation invocation.
+Command: tmp/a040-local-technical/venv/Scripts/python.exe -I -B docs/analysis/A040-outputs/full-path-local/generate_fixture.py
+Exit: 1. Tool-reported command wall: 0.7898181 seconds (not internal generator timing).
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\SimulacraBench\docs\analysis\A040-outputs\full-path-local\generate_fixture.py", line 66, in <module>
+    if __name__=='__main__':main()
+  File "C:\Users\USER\Desktop\SimulacraBench\docs\analysis\A040-outputs\full-path-local\generate_fixture.py", line 30, in main
+    given,heads,options=layout(schema);n=nvisible+nquery
+  File "C:\Users\USER\Desktop\SimulacraBench\docs\analysis\A040-outputs\full-path-local\orchestration.py", line 13, in layout
+    options = {n:list(r['values'])+([schema['gated_value']] if r.get('gate') else [])
+KeyError: 'gated_value'
+
+Failed while laying out the first instrument, UNICEF, before any row values or
+input JSON were generated. roles.json was written first and remains preserved.
+No generator retry, source repair, model import, fit, predict, selection score,
+scientific latch, reference process or candidate process followed this failure.
+
+Read-only diagnosis (fff6ce): unicef and world_bank top-level keys are
+dataset/items/split; unhcr also has gated_value=NA_GATED. New orchestration assumed
+the runtime-schema field was present in all raw schema files. Original E041 also
+requires this field. The prepared runner independently reads raw JSON, so a future
+repair must establish the correct public runtime-schema preparation consistently
+for both generation and invocation. This session did not apply or test a repair.
+
+Spy PASS is narrower: tests_model_free.py lines57/131 explicitly supply
+gated_value. It did not validate all three actual public schema entry points.

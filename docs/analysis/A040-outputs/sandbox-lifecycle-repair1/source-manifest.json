@@ -1,0 +1,88 @@
+{
+    "scope":  "FAILED_TERMINATION_HELPER_ONLY_NOT_REPAIRED_PRODUCTION",
+    "source_manifest_baseline_sha256":  "c782c99e29cfceeaba132018d48f2be2a844e7f8b51ba8840157f9ebfa845765",
+    "helper":  {
+                   "path":  "confirm_terminal.py",
+                   "sha256":  "28019d3b2543e1f53d667b63af302b806e49b70e19bbe19aa25b2aaa735abd57",
+                   "status":  "EXECUTED_FAILURE_PRESERVED_NO_POST_RUN_FIX"
+               },
+    "production_copied":  0,
+    "production_changed":  0,
+    "baseline_production12":  [
+                                  {
+                                      "path":  "contract.py",
+                                      "sha256":  "08aaff6cf44696e1197679a2f428a95c60f50fa186e32042bf6d21f3bced6dfe",
+                                      "expected":  "08aaff6cf44696e1197679a2f428a95c60f50fa186e32042bf6d21f3bced6dfe",
+                                      "unchanged":  true
+                                  },
+                                  {
+                                      "path":  "protocol.py",
+                                      "sha256":  "4616f24b44d8b482cf90a560a13e59324f20e497af4090d6e588fe437801ff77",
+                                      "expected":  "4616f24b44d8b482cf90a560a13e59324f20e497af4090d6e588fe437801ff77",
+                                      "unchanged":  true
+                                  },
+                                  {
+                                      "path":  "controller_core.py",
+                                      "sha256":  "fc561eee08f1eafbbeac2cbcc5fa31890ef719bf603c5c7dd1af7aea5e556bcb",
+                                      "expected":  "fc561eee08f1eafbbeac2cbcc5fa31890ef719bf603c5c7dd1af7aea5e556bcb",
+                                      "unchanged":  true
+                                  },
+                                  {
+                                      "path":  "live_binding.py",
+                                      "sha256":  "ca1351a05eea38577632a918b286d5ee7e5c82d423928fd8c2ce1af67de206c8",
+                                      "expected":  "ca1351a05eea38577632a918b286d5ee7e5c82d423928fd8c2ce1af67de206c8",
+                                      "unchanged":  true
+                                  },
+                                  {
+                                      "path":  "sdk_endpoint.py",
+                                      "sha256":  "b5073417ab5d2ae3b857e8e0fdef2d5bb1df1a5a7cc28aff36fea6f4c4c4a93e",
+                                      "expected":  "b5073417ab5d2ae3b857e8e0fdef2d5bb1df1a5a7cc28aff36fea6f4c4c4a93e",
+                                      "unchanged":  true
+                                  },
+                                  {
+                                      "path":  "payload.py",
+                                      "sha256":  "17273bebff6debd9888983ffcb2a7b3e3dbff572dccd203c05f9c8b5c9f60424",
+                                      "expected":  "17273bebff6debd9888983ffcb2a7b3e3dbff572dccd203c05f9c8b5c9f60424",
+                                      "unchanged":  true
+                                  },
+                                  {
+                                      "path":  "sandbox_stage.py",
+                                      "sha256":  "723f80623c0b400a7c68d1a8bfd4e6d4b6e9fa4d67060a418db156c8c88621b9",
+                                      "expected":  "723f80623c0b400a7c68d1a8bfd4e6d4b6e9fa4d67060a418db156c8c88621b9",
+                                      "unchanged":  true
+                                  },
+                                  {
+                                      "path":  "linux_boundary.py",
+                                      "sha256":  "4c2aad23c52813693249a6d104c50f208ed33928086b466e46e853ad074712ff",
+                                      "expected":  "4c2aad23c52813693249a6d104c50f208ed33928086b466e46e853ad074712ff",
+                                      "unchanged":  true
+                                  },
+                                  {
+                                      "path":  "linux_watchdog.py",
+                                      "sha256":  "9b08538d3b5990389e103ef2d391d58fec6ec63795bf0dc5ebcec08bc1991d34",
+                                      "expected":  "9b08538d3b5990389e103ef2d391d58fec6ec63795bf0dc5ebcec08bc1991d34",
+                                      "unchanged":  true
+                                  },
+                                  {
+                                      "path":  "linux_runner.py",
+                                      "sha256":  "82facf9151daa8eadc55c438be99f4c0cf5e331978c18b3a59530ef2af5b680e",
+                                      "expected":  "82facf9151daa8eadc55c438be99f4c0cf5e331978c18b3a59530ef2af5b680e",
+                                      "unchanged":  true
+                                  },
+                                  {
+                                      "path":  "live_worker.py",
+                                      "sha256":  "5f9b934e435bc62259944f47f97a81f29cf9559b183d7a0b9e87736156b18902",
+                                      "expected":  "5f9b934e435bc62259944f47f97a81f29cf9559b183d7a0b9e87736156b18902",
+                                      "unchanged":  true
+                                  },
+                                  {
+                                      "path":  "live_launcher.py",
+                                      "sha256":  "e6592b15ce83816fb4487ccb2ca7326f91b40fc984349e7fd22352d6ba9e1e98",
+                                      "expected":  "e6592b15ce83816fb4487ccb2ca7326f91b40fc984349e7fd22352d6ba9e1e98",
+                                      "unchanged":  true
+                                  }
+                              ],
+    "fake_endpoint_scope":  "NONE_PHASE2_NOT_STARTED",
+    "installed_sdk_patch":  0,
+    "remote_model_verification":  "NOT_RUN"
+}

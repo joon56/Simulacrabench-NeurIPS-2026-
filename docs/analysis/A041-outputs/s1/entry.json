@@ -1,0 +1,150 @@
+{
+    "dirty_count":  91,
+    "writer_check":  "No conflicting writer observed; process-name check does not prove other chats absent. Compare shared hashes before editing.",
+    "start_utc":  "2026-10-07T10:51:42Z",
+    "work_cutoff_utc":  "2026-10-07T11:26:42Z",
+    "forbidden":  "Protected responses/keys/cache/checkpoint; model imports/fit/predict/score; fixture/tests; install/remote/Modal; source/snapshot/tree edits; E/ZIP/commit/push/S2/S3/subagents",
+    "head":  "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+    "main":  "One WB ordinal probability/learning/selection/cost contract",
+    "workflow_sha256":  "a577942675e16a732339e586c14796104dda704693568439ae28670cc7fb7b23",
+    "role":  "S1 information/design only",
+    "start_kst":  "2026-10-07T19:51:42+09:00",
+    "shared_difference_explanation":  "Only status/log differ from S0 input snapshot; current hashes match S0 verification.preservation.shared.current. No reset.",
+    "authority":  "Current user delivered A041 information/design scope to this S1",
+    "read_evidence":  [
+                          "6f8c41 AGENTS then CLAUDE",
+                          "48a022/c5e756/2e21e5 status portions",
+                          "9fbdf7 log latest3/workflow start/status tail; workflow rest in preceding raw read",
+                          "12b97f A041 review and inputs",
+                          "d743aa HEAD/dirty/jobs/input hashes",
+                          "e55c3f saved handoff and brainstorming",
+                          "7af21b S0 verification confirms shared-document update hashes"
+                      ],
+    "branch":  "work/e050-submission",
+    "caps":  {
+                 "model_and_computation_experiments":  0,
+                 "record_reserve_minutes":  10,
+                 "primary_documents":  3,
+                 "session_minutes":  45
+             },
+    "deadline_utc":  "2026-10-07T11:36:42Z",
+    "related_named_jobs":  0,
+    "backup":  "Specific rejection/resumption-input closeout",
+    "hash_comparisons":  [
+                             {
+                                 "expected":  "73b86e5310d6a45d5206efd3b55da47c48748ee7b077e6fcad6be276f1716a3a",
+                                 "path":  "AGENTS.md",
+                                 "entry_sha256":  "73b86e5310d6a45d5206efd3b55da47c48748ee7b077e6fcad6be276f1716a3a",
+                                 "matches_s0_inputs":  true
+                             },
+                             {
+                                 "expected":  "0cda5c3385ea3368d0c24a6602e4b1220adc864a205e231f10042b655d031749",
+                                 "path":  "CLAUDE.md",
+                                 "entry_sha256":  "0cda5c3385ea3368d0c24a6602e4b1220adc864a205e231f10042b655d031749",
+                                 "matches_s0_inputs":  true
+                             },
+                             {
+                                 "expected":  "a577942675e16a732339e586c14796104dda704693568439ae28670cc7fb7b23",
+                                 "path":  "docs/workflow.md",
+                                 "entry_sha256":  "a577942675e16a732339e586c14796104dda704693568439ae28670cc7fb7b23",
+                                 "matches_s0_inputs":  true
+                             },
+                             {
+                                 "expected":  "75ec8e9e34d301263857c30c7e50920bb9f96d5e1d3669bd52f76c73b31164ab",
+                                 "path":  "docs/status.md",
+                                 "entry_sha256":  "ad5ae2edf49acd4bf99c1a510ea545c18c7e50b5d121726fa540e15ccfc1bb0c",
+                                 "matches_s0_inputs":  false
+                             },
+                             {
+                                 "expected":  "3d6ee7cdde3ff5ce09434b6e8b3ffbfb039b366e01cd3f4ebdacdb7656132e50",
+                                 "path":  "docs/log.md",
+                                 "entry_sha256":  "812413d7ef86aca5e63159596bb63808ffe8bb55b58e5540283500fecfb7f138",
+                                 "matches_s0_inputs":  false
+                             },
+                             {
+                                 "expected":  "9ef4313ea4908c149d5fac63bf5a0fbb60a143652a6d80f6a95b552723afd16f",
+                                 "path":  "docs/analysis/A004-wb-structure.md",
+                                 "entry_sha256":  "9ef4313ea4908c149d5fac63bf5a0fbb60a143652a6d80f6a95b552723afd16f",
+                                 "matches_s0_inputs":  true
+                             },
+                             {
+                                 "expected":  "e8f63d896baa32f4008884aeddaa5e5fcd2e776e25fd50a7611be330844c4940",
+                                 "path":  "docs/experiments/E011-ordinal-smooth.md",
+                                 "entry_sha256":  "e8f63d896baa32f4008884aeddaa5e5fcd2e776e25fd50a7611be330844c4940",
+                                 "matches_s0_inputs":  true
+                             },
+                             {
+                                 "expected":  "0c40ac6802f683f5523b8639080f4b0df0fcbe4150e7b40ad8eb2a8f918e6b8a",
+                                 "path":  "docs/experiments/E012-shared-trunk.md",
+                                 "entry_sha256":  "0c40ac6802f683f5523b8639080f4b0df0fcbe4150e7b40ad8eb2a8f918e6b8a",
+                                 "matches_s0_inputs":  true
+                             },
+                             {
+                                 "expected":  "ad20a4fa677175c06d1d7a6d5710f342898b270c96a5eb38e7e392f6d3c7da68",
+                                 "path":  "docs/experiments/E017-capacity-ab.md",
+                                 "entry_sha256":  "ad20a4fa677175c06d1d7a6d5710f342898b270c96a5eb38e7e392f6d3c7da68",
+                                 "matches_s0_inputs":  true
+                             },
+                             {
+                                 "expected":  "f4ed0b5520815dcf8e95b6ca9dad0262af9f6814fd5464189fb0108597797866",
+                                 "path":  "docs/experiments/E026-hh-cap4.md",
+                                 "entry_sha256":  "f4ed0b5520815dcf8e95b6ca9dad0262af9f6814fd5464189fb0108597797866",
+                                 "matches_s0_inputs":  true
+                             },
+                             {
+                                 "expected":  "47363f8c6fbb011d8d1e66ac94dceea98ab7dcb8432da27d7406f4a5f2eac666",
+                                 "path":  "docs/experiments/E029-seed-temp.md",
+                                 "entry_sha256":  "47363f8c6fbb011d8d1e66ac94dceea98ab7dcb8432da27d7406f4a5f2eac666",
+                                 "matches_s0_inputs":  true
+                             },
+                             {
+                                 "expected":  "72ad36f848e9bebdfb2049b2bf2b4d66cc1a70d61863862a5c6d7a5593f7a20b",
+                                 "path":  "docs/experiments/E030-ord-sig.md",
+                                 "entry_sha256":  "72ad36f848e9bebdfb2049b2bf2b4d66cc1a70d61863862a5c6d7a5593f7a20b",
+                                 "matches_s0_inputs":  true
+                             },
+                             {
+                                 "expected":  "a052fc9939b0e2e8a15841cfaa3645fa5c14661766cac829ce1a7ffb3a063dff",
+                                 "path":  "docs/experiments/E061-tied-content-heads.md",
+                                 "entry_sha256":  "a052fc9939b0e2e8a15841cfaa3645fa5c14661766cac829ce1a7ffb3a063dff",
+                                 "matches_s0_inputs":  true
+                             },
+                             {
+                                 "expected":  "ddeda3423eecb8c11ddc2217c49884295131320e7bfa08d204a12fae28ac8510",
+                                 "path":  "src/models/ordinal_smooth.py",
+                                 "entry_sha256":  "ddeda3423eecb8c11ddc2217c49884295131320e7bfa08d204a12fae28ac8510",
+                                 "matches_s0_inputs":  true
+                             },
+                             {
+                                 "expected":  "df648763c8e0ba5532ebf9e437af95cd10d8527112c1338b8b5db9ad6a212e1f",
+                                 "path":  "src/models/shared_trunk.py",
+                                 "entry_sha256":  "df648763c8e0ba5532ebf9e437af95cd10d8527112c1338b8b5db9ad6a212e1f",
+                                 "matches_s0_inputs":  true
+                             },
+                             {
+                                 "expected":  "2940338c5378de03303befb74e3834fbad631c0eb18f4ecb55d2cc39a471f879",
+                                 "path":  "src/models/supervised_retrieval.py",
+                                 "entry_sha256":  "2940338c5378de03303befb74e3834fbad631c0eb18f4ecb55d2cc39a471f879",
+                                 "matches_s0_inputs":  true
+                             },
+                             {
+                                 "expected":  "9aad6be04e14ae97dc7aaba5499747c35b255b098680c66eaa8f8af58c940f70",
+                                 "path":  "src/models/hh_cap.py",
+                                 "entry_sha256":  "9aad6be04e14ae97dc7aaba5499747c35b255b098680c66eaa8f8af58c940f70",
+                                 "matches_s0_inputs":  true
+                             },
+                             {
+                                 "expected":  "22c911806ea91234ae350341adfb9c0df2ce4be41cc88e73be304e4bb1023073",
+                                 "path":  "submissions/2026-09-19-E041/main.py",
+                                 "entry_sha256":  "22c911806ea91234ae350341adfb9c0df2ce4be41cc88e73be304e4bb1023073",
+                                 "matches_s0_inputs":  true
+                             },
+                             {
+                                 "expected":  "6b3760742c6e864eb8d0bb2f9ec523a19a486b73282d79432dbcca16e3664125",
+                                 "path":  "external/starter-kit/data/world_bank.json",
+                                 "entry_sha256":  "6b3760742c6e864eb8d0bb2f9ec523a19a486b73282d79432dbcca16e3664125",
+                                 "matches_s0_inputs":  true
+                             }
+                         ],
+    "workflow":  "2026-10-05-r5"
+}

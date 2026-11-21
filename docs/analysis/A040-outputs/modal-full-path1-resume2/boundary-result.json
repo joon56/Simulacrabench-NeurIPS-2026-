@@ -1,0 +1,9 @@
+﻿{
+    "status":  "NOT_RUN",
+    "reason":  "First local build logging error",
+    "boundary_seconds":  0,
+    "reference":  "NOT_RUN",
+    "candidate":  "NOT_RUN",
+    "linux_port":  "NOT_COMPLETED",
+    "linux_dependency_freeze":  "NOT_COMPLETED"
+}

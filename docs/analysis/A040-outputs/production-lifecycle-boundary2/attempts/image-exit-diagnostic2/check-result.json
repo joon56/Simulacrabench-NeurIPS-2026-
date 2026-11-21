@@ -1,0 +1,167 @@
+{
+  "outcome": "BOUNDARY_PASS",
+  "case": "success",
+  "protocol_only": true,
+  "sdk_default_build": true,
+  "image_id": "im-dddddddddddddddddddddd",
+  "creates": 1,
+  "terminates": 1,
+  "commands": [
+    [
+      "/__modal/.bin/modal-sandbox-fs-tools",
+      "{\"WriteFile\": {\"path\": \"/work/protocol.txt\"}}"
+    ],
+    [
+      "/__modal/.bin/modal-sandbox-fs-tools",
+      "{\"WriteFile\": {\"path\": \"/work/docs/analysis/A040-outputs/production-lifecycle-boundary2/target-contract.json\"}}"
+    ],
+    [
+      "python",
+      "-I",
+      "-B",
+      "-u",
+      "/work/docs/analysis/A040-outputs/production-lifecycle-boundary2/linux_boundary.py"
+    ],
+    [
+      "/__modal/.bin/modal-sandbox-fs-tools",
+      "{\"ReadFile\": {\"path\": \"/work/docs/analysis/A040-outputs/production-lifecycle-boundary2/boundary-result.json\"}}"
+    ],
+    [
+      "/__modal/.bin/modal-sandbox-fs-tools",
+      "{\"ReadFile\": {\"path\": \"/work/docs/analysis/A040-outputs/production-lifecycle-boundary2/linux-requirements.json\"}}"
+    ],
+    [
+      "python",
+      "-I",
+      "-B",
+      "-u",
+      "/work/docs/analysis/A040-outputs/production-lifecycle-boundary2/linux_watchdog.py",
+      "reference"
+    ],
+    [
+      "/__modal/.bin/modal-sandbox-fs-tools",
+      "{\"ReadFile\": {\"path\": \"/work/docs/analysis/A040-outputs/production-lifecycle-boundary2/reference/result.json\"}}"
+    ],
+    [
+      "/__modal/.bin/modal-sandbox-fs-tools",
+      "{\"ReadFile\": {\"path\": \"/work/docs/analysis/A040-outputs/production-lifecycle-boundary2/reference/resources.json\"}}"
+    ],
+    [
+      "/__modal/.bin/modal-sandbox-fs-tools",
+      "{\"ReadFile\": {\"path\": \"/work/docs/analysis/A040-outputs/production-lifecycle-boundary2/reference/events.jsonl\"}}"
+    ],
+    [
+      "/__modal/.bin/modal-sandbox-fs-tools",
+      "{\"ReadFile\": {\"path\": \"/work/docs/analysis/A040-outputs/production-lifecycle-boundary2/reference/resource-samples.jsonl\"}}"
+    ],
+    [
+      "/__modal/.bin/modal-sandbox-fs-tools",
+      "{\"ReadFile\": {\"path\": \"/work/docs/analysis/A040-outputs/production-lifecycle-boundary2/reference/stdout.txt\"}}"
+    ],
+    [
+      "/__modal/.bin/modal-sandbox-fs-tools",
+      "{\"ReadFile\": {\"path\": \"/work/docs/analysis/A040-outputs/production-lifecycle-boundary2/reference/stderr.txt\"}}"
+    ],
+    [
+      "/__modal/.bin/modal-sandbox-fs-tools",
+      "{\"ReadFile\": {\"path\": \"/work/tmp/a040-modal-local-integration1/reference/unicef.json\"}}"
+    ],
+    [
+      "/__modal/.bin/modal-sandbox-fs-tools",
+      "{\"ReadFile\": {\"path\": \"/work/tmp/a040-modal-local-integration1/reference/world_bank.json\"}}"
+    ],
+    [
+      "/__modal/.bin/modal-sandbox-fs-tools",
+      "{\"ReadFile\": {\"path\": \"/work/tmp/a040-modal-local-integration1/reference/unhcr.json\"}}"
+    ],
+    [
+      "python",
+      "-I",
+      "-B",
+      "-u",
+      "/work/docs/analysis/A040-outputs/production-lifecycle-boundary2/linux_watchdog.py",
+      "candidate"
+    ],
+    [
+      "/__modal/.bin/modal-sandbox-fs-tools",
+      "{\"ReadFile\": {\"path\": \"/work/docs/analysis/A040-outputs/production-lifecycle-boundary2/candidate/result.json\"}}"
+    ],
+    [
+      "/__modal/.bin/modal-sandbox-fs-tools",
+      "{\"ReadFile\": {\"path\": \"/work/docs/analysis/A040-outputs/production-lifecycle-boundary2/candidate/resources.json\"}}"
+    ],
+    [
+      "/__modal/.bin/modal-sandbox-fs-tools",
+      "{\"ReadFile\": {\"path\": \"/work/docs/analysis/A040-outputs/production-lifecycle-boundary2/candidate/events.jsonl\"}}"
+    ],
+    [
+      "/__modal/.bin/modal-sandbox-fs-tools",
+      "{\"ReadFile\": {\"path\": \"/work/docs/analysis/A040-outputs/production-lifecycle-boundary2/candidate/resource-samples.jsonl\"}}"
+    ],
+    [
+      "/__modal/.bin/modal-sandbox-fs-tools",
+      "{\"ReadFile\": {\"path\": \"/work/docs/analysis/A040-outputs/production-lifecycle-boundary2/candidate/stdout.txt\"}}"
+    ],
+    [
+      "/__modal/.bin/modal-sandbox-fs-tools",
+      "{\"ReadFile\": {\"path\": \"/work/docs/analysis/A040-outputs/production-lifecycle-boundary2/candidate/stderr.txt\"}}"
+    ],
+    [
+      "/__modal/.bin/modal-sandbox-fs-tools",
+      "{\"ReadFile\": {\"path\": \"/work/tmp/a040-modal-local-integration1/candidate/unicef.json\"}}"
+    ],
+    [
+      "/__modal/.bin/modal-sandbox-fs-tools",
+      "{\"ReadFile\": {\"path\": \"/work/tmp/a040-modal-local-integration1/candidate/world_bank.json\"}}"
+    ],
+    [
+      "/__modal/.bin/modal-sandbox-fs-tools",
+      "{\"ReadFile\": {\"path\": \"/work/tmp/a040-modal-local-integration1/candidate/unhcr.json\"}}"
+    ],
+    [
+      "/__modal/.bin/modal-sandbox-fs-tools",
+      "{\"ReadFile\": {\"path\": \"/work/tmp/a040-modal-local-integration1/candidate/unhcr-engineering-alpha025.json\"}}"
+    ],
+    [
+      "/__modal/.bin/modal-sandbox-fs-tools",
+      "{\"ReadFile\": {\"path\": \"/work/tmp/a040-modal-local-integration1/candidate/unhcr-final-e041.json\"}}"
+    ]
+  ],
+  "terminal": {
+    "scope": "LOCAL_PROTOCOL_FIXTURE",
+    "termination": "TERMINAL_TASK0_CONFIRMED",
+    "errors": [],
+    "observations": [
+      {
+        "state": 5,
+        "tasks": 0,
+        "confirmed": true
+      }
+    ],
+    "sandbox_terminal": {
+      "status": 3,
+      "status_name": "GENERIC_STATUS_TERMINATED",
+      "exitcode": 0
+    },
+    "sandbox_id": "sb-aaaaaaaaaaaaaaaaaaaaaa",
+    "terminal_source": "Exact-ID SandboxWait",
+    "terminal_observed_utc": "2026-10-05T15:43:19.114295+00:00",
+    "billing_final": {
+      "metered_cost": "0.01009897",
+      "billed_cost": "0",
+      "metered_breakdown": {},
+      "attribution": "WORKSPACE_AGGREGATE_NOT_TASK_INVOICE",
+      "posting_delay_unknown": true
+    },
+    "elapsed_seconds": 0.3199203000040143
+  },
+  "source_files": [
+    {
+      "filename": "/root/controller_core.py",
+      "sha256": "fc561eee08f1eafbbeac2cbcc5fa31890ef719bf603c5c7dd1af7aea5e556bcb"
+    }
+  ],
+  "child_work_seconds": 1.7881424000006518,
+  "actual_auth_rpc_model": 0,
+  "protected_access": 0
+}

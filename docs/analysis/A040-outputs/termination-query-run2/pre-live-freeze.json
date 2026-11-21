@@ -1,0 +1,29 @@
+﻿{
+    "remote_child_allowance_seconds":  120,
+    "source_body":  "Exact copied Query and execute_on_sdk_loop unchanged; old main not called",
+    "local_boundary":  "BUDGET_BOUNDARY_PASS",
+    "max_terminate":  1,
+    "utc":  "2026-10-05T12:44:48.7482594+00:00",
+    "focused_check_wall_seconds":  0.9344398,
+    "new_resources":  0,
+    "rpc_cap":  14.5,
+    "reserve":  30,
+    "sources":  [
+                    {
+                        "sha256":  "a8c8f77893b9c6855d91f15c9755e63765ee95de8790264c103add3902d4aa8d",
+                        "path":  "runtime.py"
+                    },
+                    {
+                        "sha256":  "76ab5b2d9e968a8417feadfe6bd8e5334a7351014d8526f4433d4fd066a5b418",
+                        "path":  "attempt.py"
+                    },
+                    {
+                        "sha256":  "837b12248f7ed87fc4da2ae5f6bd2c861df6266cabfc371ee33bd56d97bbb701",
+                        "path":  "test_budget.py"
+                    },
+                    {
+                        "sha256":  "0e68a80ce1237aaa0f95d42777a24154b5cee110858e0bf0a692c17a2d75939a",
+                        "path":  "original/confirm_terminal.py"
+                    }
+                ]
+}

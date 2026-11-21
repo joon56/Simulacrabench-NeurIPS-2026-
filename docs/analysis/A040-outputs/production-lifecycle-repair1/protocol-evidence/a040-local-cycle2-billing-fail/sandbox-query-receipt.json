@@ -1,0 +1,159 @@
+{
+  "app_id": "ap-bbbbbbbbbbbbbbbbbbbbbb",
+  "app_name": "a040-local-cycle2-billing-fail",
+  "sandbox_name": "a040-local-cycle2-billing-fail-gpu",
+  "sandbox_id": "sb-aaaaaaaaaaaaaaaaaaaaaa",
+  "terminal": "TERMINAL_CONFIRMED",
+  "calls": [
+    {
+      "method": "Client.from_env",
+      "started_utc": "2026-10-05T14:29:09.990634+00:00",
+      "cap_seconds": 1.3333214333324577,
+      "outcome": "RETURNED"
+    },
+    {
+      "method": "WorkspaceNameLookup",
+      "started_utc": "2026-10-05T14:29:10.002743+00:00",
+      "cap_seconds": 1.3212109333326225,
+      "outcome": "RETURNED"
+    },
+    {
+      "method": "AppGetInfo",
+      "started_utc": "2026-10-05T14:29:10.014768+00:00",
+      "cap_seconds": 1.3091853333316976,
+      "outcome": "RETURNED"
+    },
+    {
+      "method": "AuthTokenManager.get_token",
+      "started_utc": "2026-10-05T14:29:10.026820+00:00",
+      "cap_seconds": 1.2971316333278082,
+      "outcome": "RETURNED"
+    },
+    {
+      "method": "SandboxListV2",
+      "started_utc": "2026-10-05T14:29:10.038912+00:00",
+      "cap_seconds": 1.2850382333272137,
+      "outcome": "RETURNED"
+    },
+    {
+      "method": "AuthTokenManager.get_token",
+      "started_utc": "2026-10-05T14:29:10.051227+00:00",
+      "cap_seconds": 1.2727207333300612,
+      "outcome": "RETURNED"
+    },
+    {
+      "method": "SandboxListV2",
+      "started_utc": "2026-10-05T14:29:10.063076+00:00",
+      "cap_seconds": 1.2608702333309338,
+      "outcome": "RETURNED"
+    },
+    {
+      "method": "SandboxWait",
+      "started_utc": "2026-10-05T14:29:10.080516+00:00",
+      "cap_seconds": 1.4100945999962278,
+      "outcome": "RETURNED"
+    },
+    {
+      "method": "AuthTokenManager.get_token",
+      "started_utc": "2026-10-05T14:29:10.092591+00:00",
+      "cap_seconds": 1.2313514333291096,
+      "outcome": "RETURNED"
+    },
+    {
+      "method": "SandboxListV2",
+      "started_utc": "2026-10-05T14:29:10.104672+00:00",
+      "cap_seconds": 1.2192682333261473,
+      "outcome": "RETURNED"
+    },
+    {
+      "method": "AuthTokenManager.get_token",
+      "started_utc": "2026-10-05T14:29:10.116816+00:00",
+      "cap_seconds": 1.2071229333305382,
+      "outcome": "RETURNED"
+    },
+    {
+      "method": "SandboxListV2",
+      "started_utc": "2026-10-05T14:29:10.129565+00:00",
+      "cap_seconds": 1.194373533326143,
+      "outcome": "RETURNED"
+    },
+    {
+      "method": "SandboxTerminate",
+      "started_utc": "2026-10-05T14:29:10.148928+00:00",
+      "cap_seconds": 1.175008133330266,
+      "outcome": "RETURNED"
+    },
+    {
+      "method": "SandboxWait",
+      "started_utc": "2026-10-05T14:29:10.167841+00:00",
+      "cap_seconds": 1.3227609999958077,
+      "outcome": "RETURNED"
+    },
+    {
+      "method": "AppGetInfo",
+      "started_utc": "2026-10-05T14:29:10.191014+00:00",
+      "cap_seconds": 1.299584299995331,
+      "outcome": "RETURNED"
+    },
+    {
+      "method": "TaskList",
+      "started_utc": "2026-10-05T14:29:10.205745+00:00",
+      "cap_seconds": 1.2848521999912919,
+      "outcome": "RETURNED"
+    },
+    {
+      "method": "WorkspaceBillingSummary",
+      "started_utc": "2026-10-05T14:29:10.220406+00:00",
+      "cap_seconds": 1.270186499990814,
+      "outcome": "InvalidError",
+      "message": "fixed billing failure"
+    }
+  ],
+  "errors": [
+    {
+      "type": "InvalidError",
+      "message": "fixed billing failure",
+      "stage": "WorkspaceBillingSummary"
+    }
+  ],
+  "terminate_requests": 1,
+  "new_resources": 0,
+  "remote_commands": 0,
+  "remote_file_operations": 0,
+  "observed_utc": "2026-10-05T14:29:10.235847+00:00",
+  "observed_kst": "2026-10-05T23:29:10.235863+09:00",
+  "elapsed_seconds": 0.24527150000358233,
+  "identity": {
+    "workspace": "joon56",
+    "environment": "main",
+    "app_id": "ap-bbbbbbbbbbbbbbbbbbbbbb",
+    "app_name": "a040-local-cycle2-billing-fail"
+  },
+  "version": "V1",
+  "listed": {
+    "id": "sb-aaaaaaaaaaaaaaaaaaaaaa",
+    "name": "a040-local-cycle2-billing-fail-gpu",
+    "app_id": "ap-bbbbbbbbbbbbbbbbbbbbbb",
+    "image_id": "im-fixture",
+    "created_at": 100.0,
+    "started_at": 101.0,
+    "finished_at": 0.0,
+    "include_finished": true,
+    "result": {
+      "status": 0,
+      "status_name": "GENERIC_STATUS_UNSPECIFIED",
+      "exitcode": 0
+    }
+  },
+  "sandbox_result": {
+    "status": 3,
+    "status_name": "GENERIC_STATUS_TERMINATED",
+    "exitcode": 0
+  },
+  "terminal_source": "Exact-ID SandboxWait",
+  "app": {
+    "state": 1,
+    "tasks": 0,
+    "stopped_task0": false
+  }
+}

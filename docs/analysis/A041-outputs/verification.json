@@ -1,0 +1,65 @@
+{
+  "date_kst": "2026-10-07",
+  "role": "S0",
+  "decision": "A041_INFORMATION_TASK_PROPOSED",
+  "named_task": "WB16 ungated binned ordinal-head probability/learning/evaluation/cost contract",
+  "maximum_minutes": 45,
+  "record_minutes_included": 10,
+  "S1_started": false,
+  "model_or_WB_intervention_authorized": false,
+  "A040_repair_deferred": true,
+  "input_record": "inputs.json",
+  "public_target_count": 16,
+  "labels_ordered": 6,
+  "separate_not_answered_category": true,
+  "prior_E011_not_reopened": true,
+  "read_receipt": "Same S0 workflow2026-10-05-r5, unchanged entry instructions read in prior continuous work; current status/newest3log and named records/sources/schema read this turn. Explicit read/hash distinction in inputs.",
+  "preservation": {
+    "time": "2026-10-07T19:50:29.7689615+09:00",
+    "head": "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+    "unchanged_source_count": 17,
+    "changed": [],
+    "jobs": [],
+    "outputs": [
+      {
+        "path": "docs/analysis/A041-wb-ordinal-head-review.md",
+        "sha256": "c90d039be216dce7f253da124e8cd20deb67004a01fdaa08cd3d1e7d62aa10f8"
+      },
+      {
+        "path": "docs/analysis/A041-outputs/s1-handoff.ko.md",
+        "sha256": "2c5e20acb75fd690e14e1d5f378057ba3a37fe2951fa274d33ebc041d3054f31"
+      },
+      {
+        "path": "docs/analysis/A041-outputs/inputs.json",
+        "sha256": "4060ce971a3cd3211d6011327ee17b4e9ae59d89ceeef2dd2ff9b3e9fecbaa27"
+      }
+    ],
+    "shared": {
+      "status_prior_bytes_preserved": true,
+      "log_prior_bytes_preserved": true,
+      "current": [
+        {
+          "path": "docs/status.md",
+          "sha256": "ad5ae2edf49acd4bf99c1a510ea545c18c7e50b5d121726fa540e15ccfc1bb0c"
+        },
+        {
+          "path": "docs/log.md",
+          "sha256": "812413d7ef86aca5e63159596bb63808ffe8bb55b58e5540283500fecfb7f138"
+        }
+      ]
+    }
+  },
+  "operations": {
+    "public_web_search_and_primary_abstract_reads": true,
+    "public_schema_metadata_read": true,
+    "document_writes_only": true,
+    "protected_response_key_Parquet_NPZ_cache_checkpoint_read_or_hash": 0,
+    "model_import_fit_predict_score": 0,
+    "tests_fixtures": 0,
+    "new_environment_remote_Modal": 0,
+    "code_or_snapshot_changes": 0,
+    "ZIP_commit_push_tree_S2_S3_subagents": 0
+  },
+  "limits": "No target gain forecast or numeric oracle; no full-paper contract claimed by S0; no whole-runtime guarantee. Source17 hashes unchanged and old status/log bytes preserved after removing current additions.",
+  "minor_read_errors": "Two guessed experiment filenames absent; corrected using rg inventory. No research execution or implementation."
+}

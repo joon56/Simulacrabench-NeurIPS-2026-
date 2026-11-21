@@ -1,0 +1,8 @@
+{
+  "frozen_utc": "2026-10-23T06:36:57.460307+00:00",
+  "hashes": {
+    "docs/analysis/E064-outputs/s2/phase1/unicef/respondents.parquet": "5287baf2c5cc301740b7478001a095fc1d608c92c2dc2a6963e349a0500fbd8c",
+    "docs/analysis/E064-outputs/s2/phase1/world_bank/respondents.parquet": "1fe8dab61f6dc9774e6d155fffb8dbd0179ee4c39ce49f809f05369e0cac2ed5",
+    "docs/analysis/E064-outputs/s2/phase1/unhcr/respondents.parquet": "e8bc82257f666283f9f4d2b6ce7ac2656cd10e3fddc7e2e35b2f25429a44bcfb"
+  }
+}

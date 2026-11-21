@@ -1,0 +1,57 @@
+REVIEW DRAFT - NOT FINAL TEST SELECTION
+
+ 4. New provenance, reproducibility and external-material disclosure
+ On 23 October a separately authorized S3 ran unchanged modular E025 once across all three instruments and the
+ preserved archive once with the stock official scorer. All 442,425 ordered raw vectors were exactly equal; width,
+ finite/nonnegative values and positive sums passed, and official phase 2 passed all three schemas. The pre-model
+ E041   reuse   gate   checked   exact   input/frame/order/source/scorer/completion   identities  and   recorded
+ Python/six-package versions. E041 was not rerun. [7]
+
+   Instrument / cells                             E025 skill                      E025 minus reused E041
+
+  UNICEF / 41,676                               0.490197770701                  0
+
+  World Bank / 92,112                             0.462029504790                  0
+
+  UNHCR / 308,637                              0.565173813942                  +0.000508448996
+
+ All absolute differences are at most 0.002 under the same truth/order/floor.001 engineering criterion. This is no
+ TEST-ranking  claim.  Source/official whole-all3 walls were 429.930/450.277 seconds, each below a shared
+ 900-second local cap, CPU2/GPU0. Maximum sampled tree RSS/private across them were 2.035/2.067 decimal GB;
+  final samples counted, maximum gap 0.221341 seconds. No instantaneous or hosted peak guarantee follows. Source
+ raw was frozen before dedicated truth evaluation; stock official truth sequencing remained unchanged and  its
+ predictor saw only masked frames. The identical ZIP/checker's previous PASS was reused. [7]
+ Older E025 official-minus-A012 UNICEF/WB drift (+0.000007983303/-0.000012753036) remains unexplained.
+ A012 provenance was collected  after  fitting, with  historical PyYAML/threadpoolctl/OS/native-library/affinity
+ omissions. A018's assembly-only parity, aborted concurrent work and later guard repairs remain historical. The new
+ modular/archive connection does not rewrite those records. Hidden-data runtime, GPU behavior and private hosted
+ versions remain unverified. [6,7]
+ The exact predictor is submissions/2026-09-25-E025/main.py. document-pairing.json links its SHA256, inherited
+ ZIP identity and new Markdown/PDF hashes; no ZIP was opened or rehashed here. Retained certificates list main.py
+ and the full starter MIT notice only. Runtime uses hosted NumPy/pandas/PyTorch/scikit-learn. No external rows,
+ pretrained weights, fitted artifacts, models.txt or network calls are bundled. Visible-row fitting/internal selection/refit
+ consume the same saved public 3,600-second Final clock; the historical H100/eight-CPU/16-GB contract does not
+  certify the current private environment. [1,6,7]
+ External development disclosure. Separate work used recoded/profile-constrained UCI Adult (Becker and Kohavi,
+ 1996; CC BY 4.0), Census 2023 SIPP public-use observations and Prior Labs TabPFN V2 experiments. A040 used
+ TabICLv2 for fake-data technical work. VAF/HOST document/header intake left empirical linkage/asked-state work
+ on HOLD. None of those rows, weights, outputs or proxy-fitted artifacts enters E025/E041; their unchanged lineage
+ predates later SIPP/TabICL/VAF work. Survey descriptions informed hypotheses, not fitted response priors. No
+ access approval is treated as redistribution permission. [3-6]
+  Starter MIT and third-party notices remain intact; runtime software retains its own licenses. TabPFN's Prior Labs
+ License 1.1 has extra attribution conditions and is not team MIT. Team-code rights holders and license scope remain
+ undecided. The prior scoped MIT proposal is not effective; this draft grants no rights or whole-repository publication
+ permission. Retained public dates are DEV through 13 November and Final 14-18 November 2026, with exact
+ timestamps/timezone and latest Terms unconfirmed. Website winner-only method wording differs from September's
+ every-TEST-entry clause. Final model, rights, current obligations, account/slot and upload need separate decisions.
+  [2,6]
+ References and evidence. [1] Pinned public kit f980ef5. [2] Official site and Codabench, retained snapshots only.
+ [3] Adult, UCI. [4] Census 2023 SIPP. [5] TabPFN license. [6] A018 and A044 s3-prep methods, rules and license
+ inventory. [7] A044 s3-e025-provenance closeout/comparison and S0 acceptance, 23 October 2026. No new web
+  fetch; exact documentary sources are in evidence-map.md.
+
+
+
+
+
+HSCC 2026 | E025 | REVIEW DRAFT | 23 October 2026                                                                4 / 4

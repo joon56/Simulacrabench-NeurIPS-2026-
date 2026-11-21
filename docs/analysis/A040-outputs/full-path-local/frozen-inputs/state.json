@@ -1,0 +1,6 @@
+{
+  "state": "NOT_REACHED",
+  "scientific_manifest_created": false,
+  "reason": "Input generation failed; source-manifest.json is post-failure evidence only",
+  "registered_before_generation": true
+}

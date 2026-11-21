@@ -1,0 +1,9 @@
+• 한글 로그 stderr
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\SimulacraBench\docs\analysis\A040-outputs\modal-controller-repair1\controller.py", line 123, in run_controller
+    result["image_id"] = await bounded(transport.build(), phase)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\SimulacraBench\docs\analysis\A040-outputs\modal-controller-repair1\controller.py", line 99, in bounded
+    raise TimeoutError("Operation deadline; cancellation completion not assumed")
+TimeoutError: Operation deadline; cancellation completion not assumed
+

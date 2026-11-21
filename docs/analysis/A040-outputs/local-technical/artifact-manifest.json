@@ -1,0 +1,153 @@
+{
+  "created_utc": "2026-10-02T03:34:30.658822+00:00",
+  "files": [
+    {
+      "path": "docs/analysis/A040-outputs/local-technical/active-jobs-at-closeout.json",
+      "sha256": "84b1c14e68260082e3e79edff0a78f4ebf1942cfd6c593246044ec2149cbb87d"
+    },
+    {
+      "path": "docs/analysis/A040-outputs/local-technical/approval-pending-closeout.md",
+      "sha256": "6982d965fb1f4a2d2a4f3874272bf3bd4c7b9b32c76f7f2049259a1aa08c2e1f"
+    },
+    {
+      "path": "docs/analysis/A040-outputs/local-technical/approval-pending-exposure-ledger.md",
+      "sha256": "72fa523513916de93f5dc69427cc0beab045eb96384623e2bc2a20c75b8128ba"
+    },
+    {
+      "path": "docs/analysis/A040-outputs/local-technical/approval-pending-resources.json",
+      "sha256": "eae2dd3d761835d19d8caf339d49f7c1254ece8fc561e656e36a88d02e8b947a"
+    },
+    {
+      "path": "docs/analysis/A040-outputs/local-technical/approval-pending-s0-handoff.ko.md",
+      "sha256": "3afb5e12c3f2089cda8dd29aa395008462f19f9d4ca2e7417c55691850d510e7"
+    },
+    {
+      "path": "docs/analysis/A040-outputs/local-technical/approval-pending-verification.json",
+      "sha256": "7ce07dc6597ec04883aa7ecc9e3cd56f9a97f7be6f58853bd57057766c1bf327"
+    },
+    {
+      "path": "docs/analysis/A040-outputs/local-technical/approval-review.json",
+      "sha256": "98aefcff5b234c8f9d9dcd7652813c66421a418a6f065f609057eff2b0e0167a"
+    },
+    {
+      "path": "docs/analysis/A040-outputs/local-technical/checkpoint-receipt.json",
+      "sha256": "40f5eb44a7627424ed90547422ceff806202a67513542c434bc789b11957b709"
+    },
+    {
+      "path": "docs/analysis/A040-outputs/local-technical/closeout.md",
+      "sha256": "5fdb42472bb89396ffb86fe8b16d0d1ade5918d49ac0c1eff5bf3c5e5f0960f3"
+    },
+    {
+      "path": "docs/analysis/A040-outputs/local-technical/dirty-at-closeout.txt",
+      "sha256": "184f0fe5ff15527c15fb34d257489dd2552aa7f718ac2c3259d5032741e8d7e9"
+    },
+    {
+      "path": "docs/analysis/A040-outputs/local-technical/entry.json",
+      "sha256": "a716162dc0edb9add459f595652b46843f1647c83dcc786030b6366bf59d6f13"
+    },
+    {
+      "path": "docs/analysis/A040-outputs/local-technical/events.jsonl",
+      "sha256": "c88d470a977845b411de87d793291114a2355df0b7be2332727a02f79b5e637d"
+    },
+    {
+      "path": "docs/analysis/A040-outputs/local-technical/exposure-ledger.md",
+      "sha256": "abb9917f07347a546e6f7f4a93952aa7c9c88a10da07fa0ac5f669ea8ef660d2"
+    },
+    {
+      "path": "docs/analysis/A040-outputs/local-technical/frozen-inputs/manifest.json",
+      "sha256": "19e02411d082e7f46077a200f01d51c1ed5faab167f4a1eeb12eb413620e276c"
+    },
+    {
+      "path": "docs/analysis/A040-outputs/local-technical/frozen-inputs/registration.md",
+      "sha256": "5553812cdbb5ff47320515fe296eb8380ba8fcc17debc7f59cf94e8952f841a7"
+    },
+    {
+      "path": "docs/analysis/A040-outputs/local-technical/frozen-inputs/run-manifest.json",
+      "sha256": "e85e7f4cf466869f21538ec512b00c778d814f5cd4be9c249fae7a1a75cded3b"
+    },
+    {
+      "path": "docs/analysis/A040-outputs/local-technical/log-before.md",
+      "sha256": "d2b9d4cb096cd1c9430f38cc495df6bac2632bb30a1a956ea2b20586270aa423"
+    },
+    {
+      "path": "docs/analysis/A040-outputs/local-technical/preflight.md",
+      "sha256": "f15dd0055ad4ed09f1a483a9ea2c4d76d17a57879653f46410a22c742723c84a"
+    },
+    {
+      "path": "docs/analysis/A040-outputs/local-technical/prototype.py",
+      "sha256": "411cd174e155038ebeecb130f1e4bafbb44580f9e0cc0898eaac96316af07612"
+    },
+    {
+      "path": "docs/analysis/A040-outputs/local-technical/provenance.md",
+      "sha256": "c28ea374e2e83d83c33a2a5762c086e8f7e9fcd1fb72a81eba0d27fe465e2793"
+    },
+    {
+      "path": "docs/analysis/A040-outputs/local-technical/requirements.lock.txt",
+      "sha256": "6c6f0d0fc5db943eb1cb95ff4610ddea5df724bc50031b883a0dd67656771b70"
+    },
+    {
+      "path": "docs/analysis/A040-outputs/local-technical/resource-samples.jsonl",
+      "sha256": "ca79ffc5f7564fe08a883877cb1744c9061f31bcbf528b4c30a58d90d46db2a1"
+    },
+    {
+      "path": "docs/analysis/A040-outputs/local-technical/resources.json",
+      "sha256": "44de4868cac5383aed3860d425fb8b80badc3753af304ccaa959dac0801836af"
+    },
+    {
+      "path": "docs/analysis/A040-outputs/local-technical/result.json",
+      "sha256": "c12df3285e002124a392d9cd7f8bdc362143a6ea4fb27af68f9b4352cf586116"
+    },
+    {
+      "path": "docs/analysis/A040-outputs/local-technical/resumption.json",
+      "sha256": "390c1587e17522b2b45559ddd135bb6ff9fd720865865d04deec12ee59c987fe"
+    },
+    {
+      "path": "docs/analysis/A040-outputs/local-technical/run-resources.json",
+      "sha256": "0e185cafaf2335f1787385c18ce196b4cb2e1f3ba22f0b8e975078fe358ddd0b"
+    },
+    {
+      "path": "docs/analysis/A040-outputs/local-technical/runner.py",
+      "sha256": "1db5eea335bdcd8bd30dca007cb37dee6ef9a243cabe6c0e5d8817e83434b0b5"
+    },
+    {
+      "path": "docs/analysis/A040-outputs/local-technical/s0-handoff.ko.md",
+      "sha256": "c922b24b98d8e7ce4de7745ccf067ad7a3618042b0dc3336056797d7aa80944a"
+    },
+    {
+      "path": "docs/analysis/A040-outputs/local-technical/scientific-started.json",
+      "sha256": "39bdf9fa8d6a4f686e1a59984b2682d7397293c24cceaa5bea71dfde0edeb9e5"
+    },
+    {
+      "path": "docs/analysis/A040-outputs/local-technical/source-receipt.json",
+      "sha256": "8be776939c17cf2279f0ee9ae5c3541c64bbc573b05ba717fc47d390bec39bf9"
+    },
+    {
+      "path": "docs/analysis/A040-outputs/local-technical/split.json",
+      "sha256": "5b41c77d0dd8cff0fd4aee41cb7ba59e1069b00372cc1e0921d3e94520c63641"
+    },
+    {
+      "path": "docs/analysis/A040-outputs/local-technical/status-before.md",
+      "sha256": "04ff645be06d16c313cb87c05c2555b5743920d11824b3efb3e53df011c3f93e"
+    },
+    {
+      "path": "docs/analysis/A040-outputs/local-technical/stderr.txt",
+      "sha256": "b4925fd30596373c63250a70221e75b9fe8bdb6be17472fabf8e210792ec43f6"
+    },
+    {
+      "path": "docs/analysis/A040-outputs/local-technical/stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/analysis/A040-outputs/local-technical/tests_local.py",
+      "sha256": "d28f49a59dca21848a31860d2b7838ebff5682760a453a24aa6317f0cc61f4ee"
+    },
+    {
+      "path": "docs/analysis/A040-outputs/local-technical/verification.json",
+      "sha256": "f856388d189eb6dc6edb23309edaef661fb3f1b4c4fb8f8426541f2eb8fba59c"
+    },
+    {
+      "path": "docs/analysis/A040-outputs/local-technical/watchdog.py",
+      "sha256": "0a2e71f93db1a0679daef2841f0a22c7c01f90ec54e06f2d1ef5b00838b997ca"
+    }
+  ]
+}

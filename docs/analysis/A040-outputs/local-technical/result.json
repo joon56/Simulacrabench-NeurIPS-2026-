@@ -1,0 +1,28 @@
+{
+  "outcome": "LOCAL_CONTRACT_FAIL",
+  "scientific_invocations": 1,
+  "error": "TypeError(\"event() got multiple values for argument 'name'\")",
+  "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\local-technical\\runner.py\", line 132, in <module>\n    result['tests'] = main()\n                      ~~~~^^\n  File \"C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\local-technical\\runner.py\", line 123, in main\n    summary = tests_local.run_tests(prototype, schema, torch, event, ROOT, COUNTERS)\n  File \"C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\local-technical\\tests_local.py\", line 124, in run_tests\n    event('many_class_head', name=name, classes=estimator.n_classes_)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nTypeError: event() got multiple values for argument 'name'\n",
+  "elapsed_seconds": 11.889835100000255,
+  "counters": {
+    "fits": 14,
+    "predicts": 15,
+    "loads": 2
+  },
+  "timings": {
+    "fit_seconds": 0.6466824000008273,
+    "predict_seconds": 5.416255300000103,
+    "load_seconds": 0.11460890000034851
+  },
+  "network": {
+    "deliberate_blocked": 1,
+    "package_attempts": 0,
+    "subprocess_attempts": 0
+  },
+  "full_path_measured": false,
+  "gpu": {
+    "allocated_peak": 279770624,
+    "reserved_peak": 308281344,
+    "device_capacity": 8589410304
+  }
+}

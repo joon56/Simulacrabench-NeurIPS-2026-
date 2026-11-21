@@ -1,0 +1,534 @@
+{
+  "task": "S3-E025-PROVENANCE-A044",
+  "verdict": "LOCAL_E025_PHASE2_PROVENANCE_COMPLETE_FOR_S0",
+  "head": "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+  "workflow_revision": "2026-10-22-r6",
+  "workflow_sha256": "69620b7eeaad5a01a6a6b884fbd95dfede3e26b2ee2b09016479846082aec089",
+  "read_receipt": "entry.json and protocol.md plus actual tool transcript",
+  "comparison": {
+    "instruments": {
+      "unicef": {
+        "cells": 41676,
+        "source_archive_raw_exact": true,
+        "e025_skill": 0.49019777070093806,
+        "reused_e041_skill": 0.49019777070093806,
+        "e025_minus_e041": 0.0,
+        "absolute_difference_le_0p002": true
+      },
+      "world_bank": {
+        "cells": 92112,
+        "source_archive_raw_exact": true,
+        "e025_skill": 0.4620295047897023,
+        "reused_e041_skill": 0.4620295047897023,
+        "e025_minus_e041": 0.0,
+        "absolute_difference_le_0p002": true
+      },
+      "unhcr": {
+        "cells": 308637,
+        "source_archive_raw_exact": true,
+        "e025_skill": 0.5651738139421264,
+        "reused_e041_skill": 0.5646653649465259,
+        "e025_minus_e041": 0.0005084489956005411,
+        "absolute_difference_le_0p002": true
+      }
+    },
+    "all_raw_exact": true,
+    "all_absolute_gate": true,
+    "ordered_vectors": 442425,
+    "no_new_subgroup_head_diagnostics": true
+  },
+  "budget": {
+    "measured_supervised_seconds": 910.9642052000017,
+    "administrative_charge_seconds": 120,
+    "charged_seconds": 1030.9642052000017,
+    "limit_seconds": 2700,
+    "remaining_seconds": 1669.0357947999983,
+    "gross_seconds_conservative": 2167.378603,
+    "gross_limit_seconds": 7200,
+    "all3_normal_starts": 2,
+    "invalid_arm_repair_starts": 0,
+    "all3_total_limit": 3,
+    "check_cycles": 1,
+    "red_green_check_seconds": 1.6704733999983454,
+    "check_limit_seconds": 120,
+    "ordinary_scientific_repairs": 0,
+    "e041_model_calls": 0,
+    "checker_runs": 0,
+    "no_unused_budget_continuation": true,
+    "resources": [
+      {
+        "action": "checks",
+        "token": "boundary-01",
+        "created": "2026-10-23T16:38:38.989043+09:00",
+        "shared_seconds": 119.6309789,
+        "charged_before": 120.0,
+        "administrative_reserve": 120.0,
+        "elapsed_seconds": 1.3014522999983456,
+        "exit_code": 0,
+        "failure": null,
+        "passed": true,
+        "owned_pids": [
+          13316,
+          14116
+        ],
+        "remnant_pids": [],
+        "final_sample_enforced": true,
+        "cpu_affinity_mask": 3,
+        "sample_count": 7,
+        "max_sample_gap_seconds": 0.2104103000019677,
+        "peak_sampled_tree_rss": 118198272,
+        "peak_sampled_tree_private": 110759936,
+        "peak_semantics": "Concurrent sampled process-tree sums include supervisor; .2s requested cadence. Observed maximum gap reported. Not an unsampled instantaneous or hosted-memory guarantee."
+      },
+      {
+        "action": "evaluate",
+        "token": "comparison-01",
+        "created": "2026-10-23T16:55:23.456886+09:00",
+        "shared_seconds": 120,
+        "charged_before": 1009.136979400002,
+        "administrative_reserve": 120.0,
+        "elapsed_seconds": 21.827225799999724,
+        "exit_code": 0,
+        "failure": null,
+        "passed": true,
+        "owned_pids": [
+          17396,
+          22652
+        ],
+        "remnant_pids": [],
+        "final_sample_enforced": true,
+        "cpu_affinity_mask": 3,
+        "sample_count": 104,
+        "max_sample_gap_seconds": 0.21952450000026147,
+        "peak_sampled_tree_rss": 750415872,
+        "peak_sampled_tree_private": 765882368,
+        "peak_semantics": "Concurrent sampled process-tree sums include supervisor; .2s requested cadence. Observed maximum gap reported. Not an unsampled instantaneous or hosted-memory guarantee."
+      },
+      {
+        "action": "official",
+        "token": "official-01",
+        "created": "2026-10-23T16:47:39.068293+09:00",
+        "shared_seconds": 900,
+        "charged_before": 558.8601863000004,
+        "administrative_reserve": 120.0,
+        "elapsed_seconds": 450.27679310000167,
+        "exit_code": 0,
+        "failure": null,
+        "passed": true,
+        "owned_pids": [
+          6616,
+          8956,
+          16988,
+          21080,
+          21188,
+          27212,
+          28036,
+          28996,
+          32568,
+          33344,
+          36844,
+          37012,
+          39196,
+          40028
+        ],
+        "remnant_pids": [],
+        "final_sample_enforced": true,
+        "cpu_affinity_mask": 3,
+        "sample_count": 2132,
+        "max_sample_gap_seconds": 0.2201454999994894,
+        "peak_sampled_tree_rss": 2035314688,
+        "peak_sampled_tree_private": 2067001344,
+        "peak_semantics": "Concurrent sampled process-tree sums include supervisor; .2s requested cadence. Observed maximum gap reported. Not an unsampled instantaneous or hosted-memory guarantee."
+      },
+      {
+        "action": "gate",
+        "token": "reuse-01",
+        "created": "2026-10-23T16:38:59.904218+09:00",
+        "shared_seconds": 120,
+        "charged_before": 121.30145229999835,
+        "administrative_reserve": 120.0,
+        "elapsed_seconds": 7.628557800002454,
+        "exit_code": 0,
+        "failure": null,
+        "passed": true,
+        "owned_pids": [
+          19248,
+          32020
+        ],
+        "remnant_pids": [],
+        "final_sample_enforced": true,
+        "cpu_affinity_mask": 3,
+        "sample_count": 37,
+        "max_sample_gap_seconds": 0.21269089999987045,
+        "peak_sampled_tree_rss": 550895616,
+        "peak_sampled_tree_private": 601419776,
+        "peak_semantics": "Concurrent sampled process-tree sums include supervisor; .2s requested cadence. Observed maximum gap reported. Not an unsampled instantaneous or hosted-memory guarantee."
+      },
+      {
+        "action": "source",
+        "token": "source-01",
+        "created": "2026-10-23T16:40:15.054594+09:00",
+        "shared_seconds": 900,
+        "charged_before": 128.9300101000008,
+        "administrative_reserve": 120.0,
+        "elapsed_seconds": 429.93017619999955,
+        "exit_code": 0,
+        "failure": null,
+        "passed": true,
+        "owned_pids": [
+          27660,
+          32324
+        ],
+        "remnant_pids": [],
+        "final_sample_enforced": true,
+        "cpu_affinity_mask": 3,
+        "sample_count": 2038,
+        "max_sample_gap_seconds": 0.22134019999793964,
+        "peak_sampled_tree_rss": 1463844864,
+        "peak_sampled_tree_private": 1583587328,
+        "peak_semantics": "Concurrent sampled process-tree sums include supervisor; .2s requested cadence. Observed maximum gap reported. Not an unsampled instantaneous or hosted-memory guarantee."
+      }
+    ]
+  },
+  "preserved_identities": [
+    {
+      "path": "docs/analysis/A012-outputs/E041-unicef-source.json",
+      "sha256": "5b7ffed4d3df848d78ee0933b7384965499980d3c124542bd61e6e5556751d21",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A012-outputs/E041-unicef-official-predictions.json",
+      "sha256": "d895e2c7bd86258a96ea775866a83a1f7ad5741ca480360b5bef893af4499fce",
+      "match": true
+    },
+    {
+      "path": "external/starter-kit/_sandbox/unicef/respondents.parquet",
+      "sha256": "8e7c659d277c5145c7a8a6d055ac59a7dd3c35699317741239b6b1969bce1488",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A012-outputs/E041-world_bank-source.json",
+      "sha256": "137335794fa0e96bd19173796b3c7d275dd1fbfbbf1a130bd04331591170e3f8",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A012-outputs/E041-world_bank-official-predictions.json",
+      "sha256": "8ff6d023bfe34ca87232a98fb38657f49e0889dd70b864ae2fa2b9477ce5e402",
+      "match": true
+    },
+    {
+      "path": "external/starter-kit/_sandbox/world_bank/respondents.parquet",
+      "sha256": "4592bed873410c5248edf1205e5cab41dd30494926e3b49f8da598e266758c8a",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A012-outputs/E041-unhcr-source.json",
+      "sha256": "891c9315ff08391d0ad6a832dfd4a4ba0d8186028c1405898ba845ccc77d79ff",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A012-outputs/E041-unhcr-official-predictions.json",
+      "sha256": "2c39c68bb163faaee19582b533b329c1f4f496add152ae12bc2206c8eb5217f0",
+      "match": true
+    },
+    {
+      "path": "external/starter-kit/_sandbox/unhcr/respondents.parquet",
+      "sha256": "5d00075706e0a7beafdc8a70acfe07cde1f489048741eb2f3ae1fababdb72774",
+      "match": true
+    },
+    {
+      "path": "src/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "match": true
+    },
+    {
+      "path": "src/models/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "match": true
+    },
+    {
+      "path": "src/models/hh_cap.py",
+      "sha256": "9aad6be04e14ae97dc7aaba5499747c35b255b098680c66eaa8f8af58c940f70",
+      "match": true
+    },
+    {
+      "path": "src/models/link_sharp.py",
+      "sha256": "4a7921a00d7758e52a63a3ca7cd5ebf2285cef445b57fd89f15580d6fc108524",
+      "match": true
+    },
+    {
+      "path": "src/models/hh_sharp.py",
+      "sha256": "31acb4639894411320062f196050425ee1c143a456c9e0dac40ba6dd376ad5e0",
+      "match": true
+    },
+    {
+      "path": "src/models/hier_backoff.py",
+      "sha256": "e01f2030c191b0b632b274662cbb46537669f3b73e21ab0d5f7f671d28654ccd",
+      "match": true
+    },
+    {
+      "path": "src/models/logit_blend.py",
+      "sha256": "c25e91e648d5eb8a11afca1c8b02accad1a585540b6ed7d4ca363730a535705f",
+      "match": true
+    },
+    {
+      "path": "src/models/cond_agree.py",
+      "sha256": "aecad17990cc106199f96648ad02716eee43cc60f995b25125473a0b0bd5e197",
+      "match": true
+    },
+    {
+      "path": "src/models/shared_trunk.py",
+      "sha256": "df648763c8e0ba5532ebf9e437af95cd10d8527112c1338b8b5db9ad6a212e1f",
+      "match": true
+    },
+    {
+      "path": "src/models/prob_link.py",
+      "sha256": "6b03f700821b6d74c8ef0dfe834737ac4c9755d7fcf9a7c2f96b5b67e905d96d",
+      "match": true
+    },
+    {
+      "path": "src/models/dup_link.py",
+      "sha256": "e1ce093d927eed6db0553776b74f8ddfca5d159bf035b6cd7b4df9e7bc6b168f",
+      "match": true
+    },
+    {
+      "path": "src/models/hh_link.py",
+      "sha256": "fb34d8dc575a0edd644287ec9387ee32db7866083b53b907376f464837f0c1f6",
+      "match": true
+    },
+    {
+      "path": "src/models/cross_link.py",
+      "sha256": "0f5a28a6fea27215e0697b94558bc226b24a24a9811a59c3fd71e0d5b5283b17",
+      "match": true
+    },
+    {
+      "path": "external/starter-kit/make_sandbox.py",
+      "sha256": "8cf628cbb4771ed6e91ad74ebb4f75b22667af39d8f48e01c956c675b1b1586b",
+      "match": true
+    },
+    {
+      "path": "external/starter-kit/score.py",
+      "sha256": "7049e99a48acef2a74f37cb49bb66b5a9af8d05d2ed8fcf530287b5e81c5042f",
+      "match": true
+    },
+    {
+      "path": "external/starter-kit/data/unicef.json",
+      "sha256": "0bce08036cc563ee2a369dcee316ff8a5f89045d86991756d72c266927674396",
+      "match": true
+    },
+    {
+      "path": "external/starter-kit/data/world_bank.json",
+      "sha256": "6b3760742c6e864eb8d0bb2f9ec523a19a486b73282d79432dbcca16e3664125",
+      "match": true
+    },
+    {
+      "path": "external/starter-kit/data/unhcr.json",
+      "sha256": "b1175b6bdbd96e90a4defd83af20a38d711c6eca9fe3ce880109ff244abe80d9",
+      "match": true
+    },
+    {
+      "path": "external/starter-kit/config.yml",
+      "sha256": "f22f8e4faa62b6af0ee8e7e887e35980511e4517655479fefeeef4519fc52c15",
+      "match": true
+    },
+    {
+      "path": "external/starter-kit/tools/check_submission_zip.py",
+      "sha256": "0cb9e671b3b19ab62e68b37512ee8717e97d47694276f16e27a77b02d2f37916",
+      "match": true
+    },
+    {
+      "path": "submissions/2026-09-25-E025/main.py",
+      "sha256": "00793cf9d720d6f7511ffd738935206b3a5401f2454255409429db8d55e991b9",
+      "match": true
+    },
+    {
+      "path": "submissions/2026-09-25-E025.zip",
+      "sha256": "142921c3ea843c653821cf06a8b3fab89e8e6c96592581590f7e970064d90c6f",
+      "match": true
+    },
+    {
+      "path": "submissions/2026-09-25-E041/main.py",
+      "sha256": "22c911806ea91234ae350341adfb9c0df2ce4be41cc88e73be304e4bb1023073",
+      "match": true
+    }
+  ],
+  "shared_document_histories_reconstructed_exactly": true,
+  "existing_dirty_path_records_preserved": 2500,
+  "new_dirty_paths_at_audit": [
+    "?? docs/analysis/A044-outputs/s3-e025-provenance/E025-unhcr-official-predictions.json",
+    "?? docs/analysis/A044-outputs/s3-e025-provenance/E025-unhcr-official.json",
+    "?? docs/analysis/A044-outputs/s3-e025-provenance/E025-unhcr-official.log",
+    "?? docs/analysis/A044-outputs/s3-e025-provenance/E025-unhcr-source.json",
+    "?? docs/analysis/A044-outputs/s3-e025-provenance/E025-unicef-official-predictions.json",
+    "?? docs/analysis/A044-outputs/s3-e025-provenance/E025-unicef-official.json",
+    "?? docs/analysis/A044-outputs/s3-e025-provenance/E025-unicef-official.log",
+    "?? docs/analysis/A044-outputs/s3-e025-provenance/E025-unicef-source.json",
+    "?? docs/analysis/A044-outputs/s3-e025-provenance/E025-world_bank-official-predictions.json",
+    "?? docs/analysis/A044-outputs/s3-e025-provenance/E025-world_bank-official.json",
+    "?? docs/analysis/A044-outputs/s3-e025-provenance/E025-world_bank-official.log",
+    "?? docs/analysis/A044-outputs/s3-e025-provenance/E025-world_bank-source.json",
+    "?? docs/analysis/A044-outputs/s3-e025-provenance/baseline-reuse.json",
+    "?? docs/analysis/A044-outputs/s3-e025-provenance/check-red.log",
+    "?? docs/analysis/A044-outputs/s3-e025-provenance/check_boundaries.py",
+    "?? docs/analysis/A044-outputs/s3-e025-provenance/closeout.md",
+    "?? docs/analysis/A044-outputs/s3-e025-provenance/comparison.json",
+    "?? docs/analysis/A044-outputs/s3-e025-provenance/dirty-entry.txt",
+    "?? docs/analysis/A044-outputs/s3-e025-provenance/entry.json",
+    "?? docs/analysis/A044-outputs/s3-e025-provenance/environment.json",
+    "?? docs/analysis/A044-outputs/s3-e025-provenance/finalize_record.py",
+    "?? docs/analysis/A044-outputs/s3-e025-provenance/identity-gate.json",
+    "?? docs/analysis/A044-outputs/s3-e025-provenance/input-allowlist.json",
+    "?? docs/analysis/A044-outputs/s3-e025-provenance/latch-boundary-01.json",
+    "?? docs/analysis/A044-outputs/s3-e025-provenance/latch-comparison-01.json",
+    "?? docs/analysis/A044-outputs/s3-e025-provenance/latch-official-01.json",
+    "?? docs/analysis/A044-outputs/s3-e025-provenance/latch-reuse-01.json",
+    "?? docs/analysis/A044-outputs/s3-e025-provenance/latch-source-01.json",
+    "?? docs/analysis/A044-outputs/s3-e025-provenance/official-all3-freeze.json",
+    "?? docs/analysis/A044-outputs/s3-e025-provenance/official-live-affinity.json",
+    "?? docs/analysis/A044-outputs/s3-e025-provenance/pre-run-freeze.json",
+    "?? docs/analysis/A044-outputs/s3-e025-provenance/process-closeout.json",
+    "?? docs/analysis/A044-outputs/s3-e025-provenance/protocol.md",
+    "?? docs/analysis/A044-outputs/s3-e025-provenance/resource-boundary-01.json",
+    "?? docs/analysis/A044-outputs/s3-e025-provenance/resource-comparison-01.json",
+    "?? docs/analysis/A044-outputs/s3-e025-provenance/resource-official-01.json",
+    "?? docs/analysis/A044-outputs/s3-e025-provenance/resource-reuse-01.json",
+    "?? docs/analysis/A044-outputs/s3-e025-provenance/resource-source-01.json",
+    "?? docs/analysis/A044-outputs/s3-e025-provenance/run-boundary-01.log",
+    "?? docs/analysis/A044-outputs/s3-e025-provenance/run-comparison-01.log",
+    "?? docs/analysis/A044-outputs/s3-e025-provenance/run-official-01.log",
+    "?? docs/analysis/A044-outputs/s3-e025-provenance/run-reuse-01.log",
+    "?? docs/analysis/A044-outputs/s3-e025-provenance/run-source-01.log",
+    "?? docs/analysis/A044-outputs/s3-e025-provenance/s0-handoff.ko.md",
+    "?? docs/analysis/A044-outputs/s3-e025-provenance/shared-entry-identities.json",
+    "?? docs/analysis/A044-outputs/s3-e025-provenance/source-all3-freeze.json",
+    "?? docs/analysis/A044-outputs/s3-e025-provenance/source-closure.json",
+    "?? docs/analysis/A044-outputs/s3-e025-provenance/static-freeze.json",
+    "?? docs/analysis/A044-outputs/s3-e025-provenance/supervise.py",
+    "?? docs/analysis/A044-outputs/s3-e025-provenance/task.py"
+  ],
+  "writes": [
+    "docs/analysis/A044-outputs/s3-e025-provenance/",
+    "tmp/a044-e025-phase2/",
+    "docs/status.md",
+    "docs/log.md",
+    "docs/phase2-preparation.md"
+  ],
+  "artifact_sha256": {
+    "docs/analysis/A044-outputs/s3-e025-provenance/baseline-reuse.json": "591a0256c57039611a1f98c4f66e693925a42b413e838c0630b0954d421cb530",
+    "docs/analysis/A044-outputs/s3-e025-provenance/budget-ledger.json": "47b6e0c1d76abe5656d75425df6ba40e371319189a12a2d294ba057bd6a84d83",
+    "docs/analysis/A044-outputs/s3-e025-provenance/check-red.log": "3b793da7d55fd53f9c84c2368a46c4dc0ddbbde87f8e20024177d220f6eb48b5",
+    "docs/analysis/A044-outputs/s3-e025-provenance/check_boundaries.py": "3686e992b4dc07c8817b76236a538b08c3e5cfd4dbf99c25ba6feb690c4b1bd6",
+    "docs/analysis/A044-outputs/s3-e025-provenance/closeout.md": "d36b20bbfd1fdf723209abc0e6642463714a2bd4a518c6417e2fda52f4f7d409",
+    "docs/analysis/A044-outputs/s3-e025-provenance/comparison.json": "f51126334f3bcea4bca87fba22d6c959c57eba2351f8237a5cd42b4c78bd66f4",
+    "docs/analysis/A044-outputs/s3-e025-provenance/dirty-closeout.txt": "6263dc5961857a8ec59402ccfb42b39130637ad9df4a64c6e37b9715f57c47c6",
+    "docs/analysis/A044-outputs/s3-e025-provenance/dirty-entry.txt": "1236162bb53fe0d784300e9f952f388f645c1f8b99bf1921873c1f51dd4f3285",
+    "docs/analysis/A044-outputs/s3-e025-provenance/E025-unhcr-official-predictions.json": "adff64546a354cd3391ea5af78f4a4664f3bb51e2626b650308102c647fa7e7d",
+    "docs/analysis/A044-outputs/s3-e025-provenance/E025-unhcr-official.json": "9b775167a578100e09b5030783f71a1bf3cae63d987c7c7a0fba81a1f064aa89",
+    "docs/analysis/A044-outputs/s3-e025-provenance/E025-unhcr-official.log": "c0499b3d7943001bb153b08c93647814ab16f1c5b195d75d076b750c52976346",
+    "docs/analysis/A044-outputs/s3-e025-provenance/E025-unhcr-source.json": "b1ded4555b70a00cc87a41ae21ab6e4a094ef46244e0d74ccbead297aa454273",
+    "docs/analysis/A044-outputs/s3-e025-provenance/E025-unicef-official-predictions.json": "d895e2c7bd86258a96ea775866a83a1f7ad5741ca480360b5bef893af4499fce",
+    "docs/analysis/A044-outputs/s3-e025-provenance/E025-unicef-official.json": "5451b022621302f1cf9eb6ec1c403c2af376fc10ec45b2afceb360aeed7b6db1",
+    "docs/analysis/A044-outputs/s3-e025-provenance/E025-unicef-official.log": "32ec7fd318787b63dcc5a3d04c0ae8e18d814395575069f6dc13a55de78c0766",
+    "docs/analysis/A044-outputs/s3-e025-provenance/E025-unicef-source.json": "3f66f685c47a7f09a24321bbc8623873f0eea2299391f5a9a666a06fe069bb71",
+    "docs/analysis/A044-outputs/s3-e025-provenance/E025-world_bank-official-predictions.json": "8ff6d023bfe34ca87232a98fb38657f49e0889dd70b864ae2fa2b9477ce5e402",
+    "docs/analysis/A044-outputs/s3-e025-provenance/E025-world_bank-official.json": "7353af877f8e0f442f9116d4b11f0b645f9bae3a0f2d6b409742b2e6ea9686bf",
+    "docs/analysis/A044-outputs/s3-e025-provenance/E025-world_bank-official.log": "d2e6dd0ebf179974c3acb416321bfe125e14a448dc869c7206c2cd4ecada5c8c",
+    "docs/analysis/A044-outputs/s3-e025-provenance/E025-world_bank-source.json": "deca683ca9fcf05f956d3508fcde6228159309c11450518eccb98c107fd19b52",
+    "docs/analysis/A044-outputs/s3-e025-provenance/entry.json": "71475b4b4784e071b4520361bdbdfd89bb57e392c0ddc40c12034855826c6e07",
+    "docs/analysis/A044-outputs/s3-e025-provenance/environment.json": "943843a571b46b0c38fd2f387ea6760f5d8fb60d76b3ca14da777099626b7bc3",
+    "docs/analysis/A044-outputs/s3-e025-provenance/finalize_record.py": "deb068721107b634ca10babe8d4585f415a592069c8dfd86c42b8b205e115575",
+    "docs/analysis/A044-outputs/s3-e025-provenance/identity-gate.json": "b1c986068cdfe59703e3fc110b1ca9978784e4550014c14a46ab43a455bb53bc",
+    "docs/analysis/A044-outputs/s3-e025-provenance/input-allowlist.json": "1a6f87f2652967cfd9e1842ada9a08fcccc89180866c1a2a9ec10921a263e609",
+    "docs/analysis/A044-outputs/s3-e025-provenance/latch-boundary-01.json": "49819cbc2f7f9018188ff20d75977f50870902a2578e48c5d95e94ebb0b56561",
+    "docs/analysis/A044-outputs/s3-e025-provenance/latch-comparison-01.json": "c8ce81522a3502dc02609a7f49f42f83fc620961a31a330adb3375e1457bb364",
+    "docs/analysis/A044-outputs/s3-e025-provenance/latch-official-01.json": "e4cd23788b55824484ca660dea2b681619f4e0295f563166a2245d4a98324d8b",
+    "docs/analysis/A044-outputs/s3-e025-provenance/latch-reuse-01.json": "b32cd76bbd4105cc9c779d7fc51a018e2388c77f238ebfadf6a81c33031ba7be",
+    "docs/analysis/A044-outputs/s3-e025-provenance/latch-source-01.json": "5d3a62aeecfdb9aba4da5317f469352ec8078cd48758472d227b67ec659a398e",
+    "docs/analysis/A044-outputs/s3-e025-provenance/official-all3-freeze.json": "bccf036fcb4bbf23872dbf1ac96762b027d5ac0f984d1309c2446f2be42c35fe",
+    "docs/analysis/A044-outputs/s3-e025-provenance/official-live-affinity.json": "180d497a42c4d714f5156caeb7b507eabd6be00f56e952859ea12bb058a18815",
+    "docs/analysis/A044-outputs/s3-e025-provenance/pre-run-freeze.json": "9bb267a5d0df3f0a055b60a1f2dc1186ea81647fb6b42176b17aaf22ff61eac7",
+    "docs/analysis/A044-outputs/s3-e025-provenance/process-closeout.json": "38bedfedf9ed45c9ae5a52bbfed4ab4d2024396eabf306095ade778112b21941",
+    "docs/analysis/A044-outputs/s3-e025-provenance/protocol.md": "eff7feb22a3b97bde583865ee0c22ba6b7486765a28e5ad32ee4bce70b050962",
+    "docs/analysis/A044-outputs/s3-e025-provenance/resource-boundary-01.json": "013ef4035c58bac1acccb6f5e528a47aeebe5a21d563b0a6a553776fd7034665",
+    "docs/analysis/A044-outputs/s3-e025-provenance/resource-comparison-01.json": "ebbaf7fff880de9f374429c125490cecf4c880764e52f308b2a924f997087bfa",
+    "docs/analysis/A044-outputs/s3-e025-provenance/resource-official-01.json": "5cf38132ef6107a08d3dd7cd403f26cf09a4e76c4d4d6d91927588b2d9db4e3c",
+    "docs/analysis/A044-outputs/s3-e025-provenance/resource-reuse-01.json": "590bc3a30ba74e9b786d368e28c79a1c90f3f361a2e7558de6a255f060e3c22b",
+    "docs/analysis/A044-outputs/s3-e025-provenance/resource-source-01.json": "2faa971f7ec8f38a29fe7321e4803343ad4fa85b9b6a6c3ae7886262b5fc3ed9",
+    "docs/analysis/A044-outputs/s3-e025-provenance/run-boundary-01.log": "d7695b49c4e37ac2c495348c46e73957164136cd57f35cd724ec019f707341d9",
+    "docs/analysis/A044-outputs/s3-e025-provenance/run-comparison-01.log": "f1bad60400e7b778a983c7de9b56b1754f7cee48207c4252be41e83118a7ceee",
+    "docs/analysis/A044-outputs/s3-e025-provenance/run-official-01.log": "f44978ccc5d13f76f8f6305753deaabc8cb73205f8f66ece9fb9fcb8b88a0ceb",
+    "docs/analysis/A044-outputs/s3-e025-provenance/run-reuse-01.log": "8106bca7fe737268e19c9523f6c037c98a7b3213116aae1bf71d2247679cf9bd",
+    "docs/analysis/A044-outputs/s3-e025-provenance/run-source-01.log": "34de4fe51f93a3b954b4ff4276d8276b9800b9bee5d56d16a129f789d1f33c09",
+    "docs/analysis/A044-outputs/s3-e025-provenance/s0-handoff.ko.md": "cd7fecbc4454761d512a1d8b51f94aeb8d49e18392558d770dbca41aa0eff686",
+    "docs/analysis/A044-outputs/s3-e025-provenance/shared-entry-identities.json": "9b14ec826c284e90430f5864aaa3ac80599a10eadf12274cdb3381e420d7f99a",
+    "docs/analysis/A044-outputs/s3-e025-provenance/source-all3-freeze.json": "4f7fa2316a8a0dd5b2bab54ebac7aa7b382590abd9001a58948f63d27297070a",
+    "docs/analysis/A044-outputs/s3-e025-provenance/source-closure.json": "906a509a61d0e5bd5c6f57a8502c9c1386231aed07d5fd692c319c9e6f78b099",
+    "docs/analysis/A044-outputs/s3-e025-provenance/static-freeze.json": "28b236a2c2caf19394ced95ee09b57b1afb894eaadf275400a4767728c069219",
+    "docs/analysis/A044-outputs/s3-e025-provenance/supervise.py": "cd47a38f6017f7736a0f6a47b30792df1dba220d9fdb932519ae8eb4c3827ef8",
+    "docs/analysis/A044-outputs/s3-e025-provenance/task.py": "805a939a67dc30450ccbcf47f4dc54fb2e799d381ac754cd3fe12265ab8033b0",
+    "docs/status.md": "dde2267259e04267af5fabac36f558678392721960cf00c2f7b8b0e1dc5f8380",
+    "docs/log.md": "be7afb90b044d146b80dd255767fe44d4a07249241851b670b72d163bd4f8eeb",
+    "docs/phase2-preparation.md": "919ca7ae8418439837987d58c21f36120a5f8ff74dadf004e7c0a24429c0bf6f"
+  },
+  "temporary_output_sha256": {
+    "tmp/a044-e025-phase2/boundary-01.ack": "41b60d218e65bd255d6fa694d4882ee94512b67108c14c8d2311de7c17c14938",
+    "tmp/a044-e025-phase2/boundary-01.done": "1f5f9a2f17903cd44f170f87c76856cde87c2f1372835375b45a795463124b79",
+    "tmp/a044-e025-phase2/boundary-01.go": "5cae0a2a251963f1dcd0d977044fbe16887ebb3b43f553dc81e9cf0f4d04a477",
+    "tmp/a044-e025-phase2/comparison-01.ack": "41b60d218e65bd255d6fa694d4882ee94512b67108c14c8d2311de7c17c14938",
+    "tmp/a044-e025-phase2/comparison-01.done": "1f5f9a2f17903cd44f170f87c76856cde87c2f1372835375b45a795463124b79",
+    "tmp/a044-e025-phase2/comparison-01.go": "5cae0a2a251963f1dcd0d977044fbe16887ebb3b43f553dc81e9cf0f4d04a477",
+    "tmp/a044-e025-phase2/official-01.ack": "41b60d218e65bd255d6fa694d4882ee94512b67108c14c8d2311de7c17c14938",
+    "tmp/a044-e025-phase2/official-01.done": "1f5f9a2f17903cd44f170f87c76856cde87c2f1372835375b45a795463124b79",
+    "tmp/a044-e025-phase2/official-01.go": "5cae0a2a251963f1dcd0d977044fbe16887ebb3b43f553dc81e9cf0f4d04a477",
+    "tmp/a044-e025-phase2/preserved-E025/LICENSE-starter-kit.txt": "a81db73b86212de93a3944eea5dfb01126ffe17d5fbdb620a6e4c4d04830b20e",
+    "tmp/a044-e025-phase2/preserved-E025/main.py": "00793cf9d720d6f7511ffd738935206b3a5401f2454255409429db8d55e991b9",
+    "tmp/a044-e025-phase2/reuse-01.ack": "41b60d218e65bd255d6fa694d4882ee94512b67108c14c8d2311de7c17c14938",
+    "tmp/a044-e025-phase2/reuse-01.done": "1f5f9a2f17903cd44f170f87c76856cde87c2f1372835375b45a795463124b79",
+    "tmp/a044-e025-phase2/reuse-01.go": "5cae0a2a251963f1dcd0d977044fbe16887ebb3b43f553dc81e9cf0f4d04a477",
+    "tmp/a044-e025-phase2/sbench-c9gx2vlf/data.json": "a7f0d77a1e0780e78aeec4fc86636826da1b056b7f1de2ec50b0d68aff614f9d",
+    "tmp/a044-e025-phase2/sbench-c9gx2vlf/driver.py": "99433c65717959f291c6e87f9cf27512abdf6151ca533ba5c4218a07333476f7",
+    "tmp/a044-e025-phase2/sbench-c9gx2vlf/predictions.json": "d895e2c7bd86258a96ea775866a83a1f7ad5741ca480360b5bef893af4499fce",
+    "tmp/a044-e025-phase2/sbench-c9gx2vlf/schema.json": "f5303081a86a711d8082f8fc0d27f0fb040cd5d640e3290b8b94e4d8a8f25339",
+    "tmp/a044-e025-phase2/sbench-kci_n_kw/data.json": "e2870dd3c3c34258053188b81a14833e5fc97fdd53725274ad5391e7e5a819b6",
+    "tmp/a044-e025-phase2/sbench-kci_n_kw/driver.py": "99433c65717959f291c6e87f9cf27512abdf6151ca533ba5c4218a07333476f7",
+    "tmp/a044-e025-phase2/sbench-kci_n_kw/predictions.json": "adff64546a354cd3391ea5af78f4a4664f3bb51e2626b650308102c647fa7e7d",
+    "tmp/a044-e025-phase2/sbench-kci_n_kw/schema.json": "251a85db6a9ceec588cbca4fb1de634d873b7e5744f9c93f2f76bc313b8a22b1",
+    "tmp/a044-e025-phase2/sbench-n4sctkz2/data.json": "06181d9bf747592359aabab7bd96c57be7a7a4aef8dad4b36404d39592cbde14",
+    "tmp/a044-e025-phase2/sbench-n4sctkz2/driver.py": "99433c65717959f291c6e87f9cf27512abdf6151ca533ba5c4218a07333476f7",
+    "tmp/a044-e025-phase2/sbench-n4sctkz2/predictions.json": "8ff6d023bfe34ca87232a98fb38657f49e0889dd70b864ae2fa2b9477ce5e402",
+    "tmp/a044-e025-phase2/sbench-n4sctkz2/schema.json": "3fec2e6c3d38a64b3b426372e3816d907a17b8a14d23ba32510bf91877b76a82",
+    "tmp/a044-e025-phase2/source-01.ack": "41b60d218e65bd255d6fa694d4882ee94512b67108c14c8d2311de7c17c14938",
+    "tmp/a044-e025-phase2/source-01.done": "1f5f9a2f17903cd44f170f87c76856cde87c2f1372835375b45a795463124b79",
+    "tmp/a044-e025-phase2/source-01.go": "5cae0a2a251963f1dcd0d977044fbe16887ebb3b43f553dc81e9cf0f4d04a477"
+  },
+  "counts": {
+    "normal_all3": 2,
+    "invalid_arm_retries": 0,
+    "e041_fit": 0,
+    "checker_runs": 0,
+    "new_zip": 0,
+    "upload": 0,
+    "network_queries": 0,
+    "installs": 0,
+    "remote_compute": 0,
+    "subagents": 0,
+    "commit": 0,
+    "push": 0
+  },
+  "final_TEST_choice": "not user-confirmed; E041 provisional/E025 fallback/E064 parked",
+  "remaining_uncertainties": [
+    "A012 post-run provenance and unrecorded environment fields",
+    "older E025 UNICEF/WB drift cause unresolved",
+    "private hosted environment and hidden runtime/efficacy",
+    "method/PDF, code license, current Terms/exact Final timestamps, final user choice"
+  ],
+  "owned_model_or_observer_jobs": [],
+  "owned_running_after_this_document_command": [],
+  "local_process_census": "process-closeout.json; only this stdlib document closeout at census",
+  "remote_all_chat_census": false,
+  "outgoing_owner": "S3-E025-PROVENANCE-A044 /root",
+  "incoming_owner": "none; returned to S0 review, awaiting separate acceptance",
+  "exclusive_writer_released": true,
+  "release_at": "2026-10-23T17:01:07.378603+09:00",
+  "scope_limit": "Local engineering provenance only; no final TEST selection/hosted equivalence/efficacy claim"
+}

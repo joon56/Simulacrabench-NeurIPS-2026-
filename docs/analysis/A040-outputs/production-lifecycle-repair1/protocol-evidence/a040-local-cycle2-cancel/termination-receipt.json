@@ -1,0 +1,28 @@
+{
+  "scope": "LOCAL_PROTOCOL_FIXTURE",
+  "termination": "TERMINAL_TASK0_CONFIRMED",
+  "errors": [],
+  "observations": [
+    {
+      "state": 5,
+      "tasks": 0,
+      "confirmed": true
+    }
+  ],
+  "sandbox_terminal": {
+    "status": 3,
+    "status_name": "GENERIC_STATUS_TERMINATED",
+    "exitcode": 0
+  },
+  "sandbox_id": "sb-aaaaaaaaaaaaaaaaaaaaaa",
+  "terminal_source": "Exact-ID SandboxWait",
+  "terminal_observed_utc": "2026-10-05T14:29:08.706338+00:00",
+  "billing_final": {
+    "metered_cost": "0.01009897",
+    "billed_cost": "0",
+    "metered_breakdown": {},
+    "attribution": "WORKSPACE_AGGREGATE_NOT_TASK_INVOICE",
+    "posting_delay_unknown": true
+  },
+  "elapsed_seconds": 0.2542438000018592
+}

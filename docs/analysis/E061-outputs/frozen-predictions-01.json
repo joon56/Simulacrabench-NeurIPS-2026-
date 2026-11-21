@@ -1,0 +1,63 @@
+{
+  "files": {
+    "vectors-01-candidate-unicef.npz": "1269a5064ee632708f14bff1e1ba2190e26f81c05caf1d6582bb52c9c821a62c",
+    "vectors-01-candidate-world_bank.npz": "4a261189acb717dc70e1791e9bf19f754adc29f81a137f546725d3061304af55",
+    "vectors-01-candidate-unhcr.npz": "6dea1979543bd2ded188e24d572986c659fea3458696a1285dc946d730ebb71f",
+    "vectors-01-E041-unicef.npz": "1269a5064ee632708f14bff1e1ba2190e26f81c05caf1d6582bb52c9c821a62c",
+    "vectors-01-E041-world_bank.npz": "4a261189acb717dc70e1791e9bf19f754adc29f81a137f546725d3061304af55",
+    "vectors-01-E041-unhcr.npz": "262ec003947b96a2b3bdad76866fc68b3763db148e061c5d5bc9a1c3ac416e3d",
+    "vectors-01-E025-unicef.npz": "1269a5064ee632708f14bff1e1ba2190e26f81c05caf1d6582bb52c9c821a62c",
+    "vectors-01-E025-world_bank.npz": "4a261189acb717dc70e1791e9bf19f754adc29f81a137f546725d3061304af55",
+    "vectors-01-E025-unhcr.npz": "9255a4f334e0bdda4bb3835e81931b54f6e5f5515a00f140a8bdea6e851d6bb1"
+  },
+  "contracts": {
+    "candidate-unicef": {
+      "vectors": 17856,
+      "max_sum_error": 1.9348226487636566e-07,
+      "official_check": "PASS"
+    },
+    "candidate-world_bank": {
+      "vectors": 39520,
+      "max_sum_error": 2.8615613700821996e-07,
+      "official_check": "PASS"
+    },
+    "candidate-unhcr": {
+      "vectors": 132273,
+      "max_sum_error": 2.414220944269019e-07,
+      "official_check": "PASS"
+    },
+    "E041-unicef": {
+      "vectors": 17856,
+      "max_sum_error": 1.9348226487636566e-07,
+      "official_check": "PASS"
+    },
+    "E041-world_bank": {
+      "vectors": 39520,
+      "max_sum_error": 2.8615613700821996e-07,
+      "official_check": "PASS"
+    },
+    "E041-unhcr": {
+      "vectors": 132273,
+      "max_sum_error": 2.2838357827126288e-07,
+      "official_check": "PASS"
+    },
+    "E025-unicef": {
+      "vectors": 17856,
+      "max_sum_error": 1.9348226487636566e-07,
+      "official_check": "PASS"
+    },
+    "E025-world_bank": {
+      "vectors": 39520,
+      "max_sum_error": 2.8615613700821996e-07,
+      "official_check": "PASS"
+    },
+    "E025-unhcr": {
+      "vectors": 132273,
+      "max_sum_error": 2.3830798445700907e-07,
+      "official_check": "PASS"
+    }
+  },
+  "all_nine_calls_complete": true,
+  "score_access_so_far": 0,
+  "source_manifest_sha256": "f76ac4edcc8cef2b03edd0da46a4cab7a60b4d36eda46fcb6023446397ba7a45"
+}

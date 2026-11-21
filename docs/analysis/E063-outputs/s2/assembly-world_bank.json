@@ -1,0 +1,23 @@
+{
+  "vectors": 39520,
+  "max_raw_sum_error": 2.8615613700821996e-07,
+  "comparisons": {
+    "H": {
+      "max_abs": 0.0,
+      "changed_vectors": 0
+    },
+    "E041": {
+      "max_abs": 0.0,
+      "changed_vectors": 0
+    },
+    "E025": {
+      "max_abs": 0.0,
+      "changed_vectors": 0
+    }
+  },
+  "flat_sha256": "ed59718bf900604bb69af3833bd5bcb12aab555924f32ae1009b4bcf90eedc2e",
+  "status": "PASS",
+  "output_file": "docs/analysis/E063-outputs/s2/vectors-assembly-world_bank.npz",
+  "sha256": "4a261189acb717dc70e1791e9bf19f754adc29f81a137f546725d3061304af55",
+  "prediction_and_check_seconds": 117.71734700000161
+}

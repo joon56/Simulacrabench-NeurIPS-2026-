@@ -1,0 +1,8 @@
+# Optional local modelling dependencies. Not a hosted submission requirements file.
+# Install only for an authorized modelling environment; see docs/codex-setup.ko.md.
+-r requirements.txt
+scipy
+scikit-learn
+threadpoolctl
+# Select the appropriate CPU/CUDA build for the machine before installing torch.
+torch

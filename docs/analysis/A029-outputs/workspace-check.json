@@ -1,0 +1,39 @@
+﻿{
+  "errors": [],
+  "sha256": {
+    "AGENTS.md": "febc698acbc581de465dba7a0108e97aa4c3c7d7859af035a6b159938c834dfc",
+    "CLAUDE.md": "eda4ec2ee1edec41f26a3f5c8e90c783947e16280e1b6d8bf7684263b87449ca",
+    "README.md": "44899910938a8913df121bf312489696815a257c97d24149abcbd8bab6e0f94d",
+    "docs/status.md": "81d2fdf2fd3d9b60af821e0fe4b354b3242e53140e4d4735c8ad1473fc174cbb",
+    "docs/workflow.md": "987b4549dbb6c701bab48df5969e4aa1ed8bf69cc3a851842f55853ca69a84ba",
+    "docs/session-prompts.ko.md": "0e09504f94ab35de5e724ebc448d484dacbbf7e497678a9f6342034bea9c45d7",
+    "docs/index.md": "0e8e1ca2d3aa35be4bd523c12554a8286f475ba1d7c47704af1a46ffeb065f34",
+    "docs/codex-setup.ko.md": "804ad28cc886fa2c839940a9bbabdfb0949a4f345812080c1b90585b281afc4d",
+    ".agents/skills/paper-session/SKILL.md": "b444bf486cb54c37200a9c886cc58a3d0dd6139cb0431abbf291e1cba95bb11e",
+    ".claude/skills/paper-session/SKILL.md": "ae38ce4b58cb2b7feeee90694646de2fc0defc646d8250aa58796d1c210a47cf",
+    "requirements.txt": "c57890e5eeaee69fbe973da6e300592e75124df8e323c62ef7b4552e4da958d0",
+    "requirements-models.txt": "29095e4880aa69c9a6b94aef36719276ec3f5ad0617e1839296d5549eb4d6e12"
+  },
+  "workflow_revision": "2026-09-27-r3",
+  "status": "PASS_DOCUMENT_WIRING",
+  "python": "3.13.14",
+  "executable": "C:\\Users\\USER\\Desktop\\SimulacraBench\\.venv\\Scripts\\python.exe",
+  "packages": {
+    "numpy": "2.5.1",
+    "pandas": "3.0.5",
+    "pytest": "9.1.1",
+    "pyarrow": "25.0.1",
+    "PyYAML": "6.0.3",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.0",
+    "torch": "2.13.0+cpu",
+    "threadpoolctl": "3.6.0"
+  },
+  "warnings": [],
+  "limits": [
+    "Static wiring only; not proof of agent loading or compliance.",
+    "Package metadata only; not import, ABI, model or release validation.",
+    "No log contents, response files, caches, models or archives read.",
+    "No git commands, network requests or file writes."
+  ]
+}

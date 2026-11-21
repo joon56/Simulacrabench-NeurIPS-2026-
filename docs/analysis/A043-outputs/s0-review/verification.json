@@ -1,0 +1,193 @@
+{
+  "decision": "ACCEPT_CONTRACT / RECOMMEND_BOUNDED_S1_IMPLEMENTATION",
+  "verified_at": "2026-10-11T22:07:57.4867899+09:00",
+  "role": "S0 document/static source review",
+  "head": "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+  "workflow_revision": "2026-10-05-r5",
+  "workflow_sha256": "a577942675e16a732339e586c14796104dda704693568439ae28670cc7fb7b23",
+  "initial_named_job_observation": "entry.json / entry_observation",
+  "final_named_jobs": [],
+  "dirty_count_before": 116,
+  "dirty_count_after": 116,
+  "preserved_original_files": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "73b86e5310d6a45d5206efd3b55da47c48748ee7b077e6fcad6be276f1716a3a",
+      "match": true
+    },
+    {
+      "path": "CLAUDE.md",
+      "sha256": "0cda5c3385ea3368d0c24a6602e4b1220adc864a205e231f10042b655d031749",
+      "match": true
+    },
+    {
+      "path": "docs/workflow.md",
+      "sha256": "a577942675e16a732339e586c14796104dda704693568439ae28670cc7fb7b23",
+      "match": true
+    },
+    {
+      "path": "docs/tree.md",
+      "sha256": "eaa884a4194db103335136495205fe5b51297c17db15e9eac62946ced286cc44",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A043-post-e063-priority.md",
+      "sha256": "46d7dd9965c601374d7571141f7f6d2a54008b0e7311aad64dc7a82745a130a6",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A043-outputs/s1-handoff.ko.md",
+      "sha256": "b451b10418bb9507b7b7870d0a6b45c386cecd746d23a167a49238c5a581a8ad",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A043-outputs/entry.json",
+      "sha256": "99a96e433ef3ab2d7525a240a4fec275eb0c96f8b2fe8c260fd1792262057122",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A043-outputs/verification.json",
+      "sha256": "d34056e30bb531a3432d99649a9e131de80f88d71fc3d828ddfb74f3502dd362",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A043-outputs/s1/contract.md",
+      "sha256": "f4ec8f24d394cd94d4baf1a58fe40fe9c6bf3ddc5a6d12865bbe9c2b9d41563e",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A043-outputs/s1/closeout.md",
+      "sha256": "2636b386d4b730c0052584b7e7ca139bfda7f680d5b10530cbab64e464b7af90",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A043-outputs/s1/s0-handoff.ko.md",
+      "sha256": "72c6df9af2df7a74fe5bb0a7c9d937c16b3e9e9737e0ca966fa4705b289ac9b6",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A043-outputs/s1/verification.json",
+      "sha256": "2ac519225f486c8de24f5dac02fe3310bb1973fc164c64b3a691b10b2d6da225",
+      "match": true
+    },
+    {
+      "path": "src/models/shared_trunk.py",
+      "sha256": "df648763c8e0ba5532ebf9e437af95cd10d8527112c1338b8b5db9ad6a212e1f",
+      "match": true
+    },
+    {
+      "path": "src/models/supervised_retrieval.py",
+      "sha256": "2940338c5378de03303befb74e3834fbad631c0eb18f4ecb55d2cc39a471f879",
+      "match": true
+    },
+    {
+      "path": "src/models/link_sharp.py",
+      "sha256": "4a7921a00d7758e52a63a3ca7cd5ebf2285cef445b57fd89f15580d6fc108524",
+      "match": true
+    },
+    {
+      "path": "src/models/hh_cap.py",
+      "sha256": "9aad6be04e14ae97dc7aaba5499747c35b255b098680c66eaa8f8af58c940f70",
+      "match": true
+    },
+    {
+      "path": "src/models/tied_content_heads.py",
+      "sha256": "f9449d41d30041f6e9714c7a25777965ec4d25cfa2563b018fb08c94dde20833",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/E063-outputs/freeze-01.json",
+      "sha256": "86662430e7cd0c8cfd09eb6ddf0f08ca43ebd7bda96adbfc4cfe2d40edfebc9a",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/E063-outputs/s2/post-result/result.ko.md",
+      "sha256": "8025ec5ddab33bae3675f72616f5c932e18d15f77f6ac3f3fb0c53b98d4369fb",
+      "match": true
+    },
+    {
+      "path": "docs/experiments/E063-round-conditioned-metric.md",
+      "sha256": "c2e32e41f725d4d44515d0bdb84a182394de4d0c7fe3c8773c7888ce280a16b9",
+      "match": true
+    },
+    {
+      "path": "submissions/SCORES.md",
+      "sha256": "94d36f5af0254dec1d92e1aeb7d443c0517282817881f4e244af41fcd0735469",
+      "match": true
+    },
+    {
+      "path": "submissions/2026-10-09-E063/SCORES.md",
+      "sha256": "c66bfce12940d8086511a0479c61ef7e14c7103805e977c205991f0b7c4216e7",
+      "match": true
+    }
+  ],
+  "shared_document_removal_restores": [
+    {
+      "path": "docs/status.md",
+      "restored_sha256": "8770a5e05863a625a2f98f175787f4258db19956aa3bf5db7087dbe710c2283e",
+      "match": true
+    },
+    {
+      "path": "docs/log.md",
+      "restored_sha256": "81ff88a0da2dfc941892c401a85f29dad7cc129cff65149b520ef36553de05fd",
+      "match": true
+    }
+  ],
+  "new_artifact_hashes": [
+    {
+      "path": "docs/analysis/A043-outputs/s0-review/decision.md",
+      "sha256": "9470a8a08c5e61f0b096aa1859b9c042b6264bcdff15fa088bfff3b53d244745"
+    },
+    {
+      "path": "docs/analysis/A043-outputs/s0-review/s1-implementation-handoff.ko.md",
+      "sha256": "cf558e158b3d9aef7df00f30c6fea785baaa1630abee330673ef1821ca4cf79d"
+    },
+    {
+      "path": "docs/analysis/A043-outputs/s0-review/status-addition.md",
+      "sha256": "01a978be807e7979dc84e96d4008388f8c3c281d86c8874d2f6ebe98026d6fa2"
+    },
+    {
+      "path": "docs/analysis/A043-outputs/s0-review/log-addition.md",
+      "sha256": "d1ab1e29c5ba301a285f4fda76bc295ac14964d03c6bae72cec58547dde46c9c"
+    },
+    {
+      "path": "docs/analysis/A043-outputs/s0-review/entry.json",
+      "sha256": "4821e5d417467bda69dea2653779be1d5f958d4ea8c2c21c8f3c3692c37de081"
+    },
+    {
+      "path": "docs/analysis/A043-outputs/s0-review/document-changes.json",
+      "sha256": "022129acff8c29d084e940bd0fae7364bcf70c2591f402a3604333528a5995fd"
+    }
+  ],
+  "diff_check_exit": 0,
+  "source_correction": "Metric weights/section activity/donors/replay eligibility have no neural-output dependency. Expected invariance on corresponding evaluated paths. Lambda and final recursive outputs may change; lambda-empty branch may omit held-query evidence.",
+  "s1_verdict_accepted_as": "Static information/design contract; not model/autograd/efficacy/release PASS.",
+  "source_identity_note": "S1 contract/closeout/handoff current hashes match reported artifact hashes. Status/log match S1 completion hashes, not older S1 entry hashes; changes were not reverted.",
+  "future_s1_scope": "Fixed H registration/implementation, focused new checks, fresh R/H; bounded ordinary repair reserve only. User delivery of proposed prompt needed for the separate S1; no transition occurred here.",
+  "not_executed": {
+    "model_import": 0,
+    "autograd": 0,
+    "fit": 0,
+    "predict": 0,
+    "score": 0,
+    "tests_or_fixture": 0,
+    "protected_data_or_old_cache_access_or_rehash": 0,
+    "synthetic_data_access_or_rehash": 0,
+    "zip": 0,
+    "web_platform_remote": 0,
+    "subagents": 0,
+    "commit_push": 0,
+    "s3_test_selection": 0
+  },
+  "exposure": "17999 people/12339SSUID, aggregate and A022 original roles retained; E059 consumed oracle1918/1124 and selection2007/1130, protected audit2074/1177 and calibration1866. New response exposure0.",
+  "inherited_synthetic_hashes": "Read from E063 freeze as document metadata only; not reverified bytes.",
+  "limits": "Not a full-workspace hash audit, remote job audit, scientific rerun or authentication of other chats. S1 read/actions classified as session-reported.",
+  "local_document_links": {
+    "evidence_chunk": "931835",
+    "checked": 11,
+    "all_exist": true,
+    "json_documents_parsed": 3,
+    "no_e064_record_created": true
+  },
+  "self_hash_excluded": true
+}

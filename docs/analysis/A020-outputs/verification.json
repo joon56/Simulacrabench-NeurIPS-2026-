@@ -1,0 +1,21 @@
+{
+  "input_head": "1d223340d4e1fa3993b411dc5daafab9cb37d0cd",
+  "verification_date": "2026-09-26",
+  "source_manifest": "docs/analysis/E058-outputs/preflight.json",
+  "source_hashes_checked": 59,
+  "source_hash_mismatches": [],
+  "artifact_checks": [
+    {"path": "external/e058/first-stage.pkl", "bytes": 6136590, "sha256": "0da627283f8adb6b1dfaabf320fd278d97826bc5aaf083da784de00047d69136", "matches_record": true},
+    {"path": "external/e058/masked-frame.pkl", "bytes": 1435316, "sha256": "cfa92d52032e93a343b78adfc5479b72c1e93ece87f00e51333a6d84300026c3", "matches_record": true},
+    {"path": "external/e058/library.npz", "bytes": 1920806, "sha256": "fc7f660b5c05e01fff4e4de41bd16fbf648ca3a5578a710aa20e64dd41e45ec6", "matches_record": true},
+    {"path": "external/a019/evaluation-keys.parquet", "bytes": 85242, "sha256": "0d33a219a5f17a59d338715aead99060d381ef58a01981667b995da7e8e38bbc", "matches_record": true},
+    {"path": "external/a019/fit-keys.parquet", "bytes": 99372, "sha256": "d997c85a9152df9da81e0146c38f0a99467bab5d27ffeb0d763496dbc5e2e9ac", "matches_record": true}
+  ],
+  "observed_e058_directory_names": ["first-stage.pkl", "library-started.json", "library.npz", "masked-frame.pkl"],
+  "cache_deserializations": 0,
+  "fit_calls": 0,
+  "prediction_runs": 0,
+  "evaluation_response_reads": 0,
+  "score_calls": 0,
+  "scope": "Static source and document review plus file hashes; semantic cache checks and empirical efficacy are not performed."
+}

@@ -1,0 +1,9 @@
+{
+  "app_id": null,
+  "sandbox_id": null,
+  "errors": [],
+  "app_stop_ack": false,
+  "termination": "NO_CREATE_ATTEMPT",
+  "observations": [],
+  "elapsed_seconds": 6.8999997893115506e-06
+}

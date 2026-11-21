@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "observed_utc": "2026-10-09T14:46:22.662100+00:00",
+  "path": "submissions/2026-09-09-E025/main.py",
+  "expected": "00793cf9d720d6f7511ffd738935206b3a5401f2454255409429db8d55e991b9",
+  "actual": "00793cf9d720d6f7511ffd738935206b3a5401f2454255409429db8d55e991b9",
+  "original_preflight_omission": "Current E025 snapshot byte hash absent entry hash map; preflight snapshot_source_hashes_verified overstates that particular current-byte check. E062 frozen-inputs snapshot identity and completed raw provenance were already verified. Preserve original records.",
+  "timing": "After assembly launch, before evaluator/ZIP/official; not retroactively before candidate execution.",
+  "repair": "Only affected current snapshot identity checked; no model/policy/input/source changes, no numerical repeat, no baseline fit. E025 snapshot is reference provenance, not a candidate execution dependency.",
+  "freeze_preserved": true
+}

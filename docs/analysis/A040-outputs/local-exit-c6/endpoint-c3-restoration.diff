@@ -1,0 +1,14 @@
+diff --git a/docs/analysis/A040-outputs/local-exit-diagnosis1/sdk_endpoint.py b/docs/analysis/A040-outputs/local-exit-c6/sdk_endpoint.py
+index 334d590..7963bd3 100644
+--- a/docs/analysis/A040-outputs/local-exit-diagnosis1/sdk_endpoint.py
++++ b/docs/analysis/A040-outputs/local-exit-c6/sdk_endpoint.py
+@@ -57,7 +57,8 @@ class Endpoint:
+         return self.app.app_id
+ 
+     async def _build(self, image, app):
+-        return await image.build(app)
++        with SDK.enable_output():
++            return await image.build(app)
+ 
+     async def build(self, base_id, pins, deadline):
+         self.image = image_from_id(base_id, self.client).run_function(install_pins,

@@ -102,3 +102,83 @@ only; shared docs/status.md and docs/log.md, S1 files and all unrelated dirty
 changes are intentionally outside the commit. Other sessions should read this
 ledger as the newer score evidence; a source hash difference in SCORES.md is
 a result supplement, not changed model bytes or a qualification rerun.
+
+## 2026-10-08 supplement - E062 ID969351, UNRESOLVED
+
+Current user-supplied full JSON; not live platform retrieval/authentication.
+The33-record2026-09-27 inventory above remains its historical response scope.
+
+| ID | Filename / scorecard | Created (KST, metadata) | Status / phase | Grand API | UNICEF API | WB API | UNHCR API | LB snapshot |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 969351 | [2026-10-08-E062.zip](2026-10-08-E062/SCORES.md) | 2026-10-08 22:37:12.926748 +09:00 | Finished / Development29772 | 0.6433333333 | 0.5200000000 | 0.4900000000 | 0.9200000000 | false |
+
+Same four released score strings as E041 ID933094. Original WB/Grand tie arm
+UNRESOLVED: no readable new best, effect unresolved, E041 incumbent/E025 fallback,
+E062 parked. Exact-zero effect/prediction equality/family refutation not inferred.
+Best-update event not independently provided; membership is not an event log.
+Created metadata is not independently verified upload-start/completion time.
+Actual uploaded bytes/hash and selected local path unknown. Historical local
+ZIP hash inherited only; no ZIP read/rehash or platform query this task.
+Prior technical/synthetic release PASS is not hosted improvement evidence.
+No same-policy retry/seed-head-threshold rescue, automatic adoption/S3/TEST.
+
+[Full provided JSON](../docs/analysis/E062-outputs/s2/post-result/user-supplied-api.json),
+[provenance/comparison](../docs/analysis/E062-outputs/s2/post-result/result.ko.md),
+[S0 handoff](../docs/analysis/E062-outputs/s2/post-result-handoff.ko.md).
+This result task appends documents only; no commit/push or model/release rerun.
+All earlier record bytes, criteria/manifests and existing boundaries preserved.
+
+## 2026-10-10 supplement - E063 ID972597, UNRESOLVED
+
+Current user-provided API-form fragment, not live platform retrieval or
+authentication. The33-record2026-09-27 inventory remains its historical scope.
+
+| ID | Filename / scorecard | Created (KST, metadata) | Status / phase | Grand API | UNICEF API | WB API | UNHCR API | LB snapshot |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 972597 | [2026-10-09-E063.zip](2026-10-09-E063/SCORES.md) | 2026-10-10 00:29:35.752090 +09:00 | Finished / Development29772 | 0.6433333333 | 0.5200000000 | 0.4900000000 | 0.9200000000 | false |
+
+All precision2; all four API strings equal E041 ID933094. Original UNHCR/Grand
+tie with unchanged UNICEF/WB arm: UNRESOLVED, no readable improvement, effect
+unresolved. E041 incumbent/E025 fallback/E063 parked. No exact-zero effect,
+prediction equality, whole-hypothesis refutation or hidden round/head inference.
+No same-policy resubmission/seed-head-threshold rescue, automatic adoption/TEST.
+
+UTC created_when2026-10-09T15:29:35.752090Z is provided platform creation
+metadata, not independently verified upload start/completion or Finished time.
+Best-update event not separately supplied; owner/membership are not permission,
+slot or historical-event proof. Same remote scorer version unproven because E041
+extract omits task/scorer fields; provided E063 IDs do not prove scorer bytes.
+Actual uploaded path/bytes/hash unknown; matching filename is insufficient.
+Recorded local ZIP identity inherited only, no ZIP read/rehash this task.
+Prior technical/synthetic release PASS is separate from hosted improvement.
+
+[Original user text](../docs/analysis/E063-outputs/s2/post-result/user-message.txt),
+[normalized JSON](../docs/analysis/E063-outputs/s2/post-result/user-supplied-api.json),
+[provenance/comparison](../docs/analysis/E063-outputs/s2/post-result/result.ko.md),
+[S0 handoff](../docs/analysis/E063-outputs/s2/post-result/post-result-handoff.ko.md).
+Result-only additive documentation, original records/manifests and all existing
+STOP/HOLD/exposure boundaries retained. No commit/push/model/release/platform/S3.
+
+## 2026-10-26 supplement - E064 ID1008932, UNRESOLVED
+
+User-provided API-form fragment from this result-intake conversation; no live
+platform retrieval/authentication. The earlier inventories remain historical.
+
+| ID | Filename / scorecard | Created (KST, metadata) | Status / phase | Grand API | UNICEF API | WB API | UNHCR API | LB snapshot |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 1008932 | [2026-10-23-E064.zip](2026-10-23-E064/SCORES.md) | 2026-10-26 20:07:15.519457 +09:00 | Finished / Development29772 | 0.6433333333 | 0.5200000000 | 0.4900000000 | 0.9200000000 | false |
+
+All four full strings/precision2 match E041 ID933094. Original UNHCR/Grand tie
+arm: UNRESOLVED; no readable improvement. E041 incumbent/E025 fallback/E064 parked.
+No exact-zero effect, identical prediction/activation or family-wide refutation.
+No same-policy resubmission/tuning rescue, automatic promotion or final TEST choice.
+Created metadata is not independently verified upload/Finished time. Membership
+is not a best-update event log. Uploaded bytes/hash/path, account/slot and deployed
+scorer-version equality remain unverified. Local ZIP identity inherited, not rehashed.
+This task documents supplied values only; no model/validation/ZIP/platform/git action.
+
+[Original supplied text](../docs/analysis/E064-outputs/s2/post-result/user-message.txt),
+[normalized JSON](../docs/analysis/E064-outputs/s2/post-result/user-supplied-api.json),
+[comparison and limits](../docs/analysis/E064-outputs/s2/post-result/result.ko.md),
+[S0 handoff](../docs/analysis/E064-outputs/s2/post-result/post-result-handoff.ko.md).
+All earlier bytes/arms/STOP/HOLD/exposure retained; scientific budget0/cash0.

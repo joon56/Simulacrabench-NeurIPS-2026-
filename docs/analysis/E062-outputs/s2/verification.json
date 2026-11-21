@@ -1,0 +1,165 @@
+{
+  "recorded_utc": "2026-10-08T10:15:29.723667+00:00",
+  "status": "RELEASE_QUALIFIED_FOR_USER_REVIEW",
+  "role": "S2",
+  "task_type": "E062 fixed WB release technical validation",
+  "workflow_revision": "2026-10-05-r5",
+  "workflow_sha256": "a577942675e16a732339e586c14796104dda704693568439ae28670cc7fb7b23",
+  "read_receipt": "entry.json/read_evidence; actual ordered entry and bounded historical read scope",
+  "authority": "User delivered attachment20235e23-61f4-4e38-b2a1-428ccfb282bd declaring execution of fixed E062 assembly/synthetic release/ZIP in separate S2; existing S2 executes. No self-granted transition.",
+  "head": "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+  "preflight": "PASS; source/input/reference9/role/masking/schema/environment/staging identity",
+  "new_boundary_tests": {
+    "passed": 4,
+    "expected_initial_red_preserved": true,
+    "old_suite_rerun": false
+  },
+  "archive": {
+    "path": "submissions/2026-10-08-E062.zip",
+    "sha256": "83087eaa081e3973cf4c5b4ae48923f61d33a440c989c7d2a6652c069e90eee4",
+    "bytes": 16879,
+    "entries": [
+      "main.py",
+      "NOTICE.txt"
+    ],
+    "main_sha256": "6d602380d8cfde1039faa758e43bc0be48834e41ae1c5f01873567833e3501f5",
+    "checker": "PASS"
+  },
+  "parity": {
+    "observed_vectors_per_all3": 189649,
+    "source_assembly_max_raw_difference": 0,
+    "source_extracted_max_raw_difference": 0,
+    "assembly_extracted_flat_hashes_equal": true,
+    "UNICEF_UNHCR_exact_E041": true,
+    "WB_changed_vectors": 35613,
+    "max_raw_sum_error": 2.7508940547704697e-07,
+    "limits": "Observed fixed exposed synthetic TRAIN/DEV cases; not proof for all possible/hosted frames"
+  },
+  "official": {
+    "status": "PASS",
+    "phase": 1,
+    "instruments": {
+      "unicef": {
+        "vectors": 17856,
+        "max_raw_sum_error": 1.9348226487636566e-07,
+        "comparisons": {
+          "candidate": {
+            "max_abs": 0.0,
+            "changed_vectors": 0
+          },
+          "E041": {
+            "max_abs": 0.0,
+            "changed_vectors": 0
+          },
+          "E025": {
+            "max_abs": 0.0,
+            "changed_vectors": 0
+          }
+        },
+        "flat_sha256": "07bcb9f2d2d0c59339707ee761d6ca129093ba52b59b6c1c9a13ffef98f1e533",
+        "status": "PASS",
+        "skill": 0.5006484230707156,
+        "delta_E025": 0.0,
+        "delta_E041": 0.0,
+        "release_pass": true,
+        "cli_startup_to_exit_seconds": 69.4723017999986,
+        "scorer_seconds": 67.8784430027008,
+        "official_log": "docs\\analysis\\E062-outputs\\s2\\official-unicef.json",
+        "predictions_sha256": "990977bdd0792b171908ab65988610c60d8f8f1d642da005d001301f1013b664"
+      },
+      "world_bank": {
+        "vectors": 39520,
+        "max_raw_sum_error": 2.7508940547704697e-07,
+        "comparisons": {
+          "candidate": {
+            "max_abs": 0.0,
+            "changed_vectors": 0
+          },
+          "E041": {
+            "max_abs": 0.16004160046577454,
+            "changed_vectors": 35613
+          },
+          "E025": {
+            "max_abs": 0.16004160046577454,
+            "changed_vectors": 35613
+          }
+        },
+        "flat_sha256": "f73d34739bb66c0256ec6533260979ce502d3807969d4dbc006c2c3d23e166a2",
+        "status": "PASS",
+        "skill": 0.4549896845143664,
+        "delta_E025": 0.0002723771513838402,
+        "delta_E041": 0.0002723771513838402,
+        "release_pass": true,
+        "cli_startup_to_exit_seconds": 180.27588529999957,
+        "scorer_seconds": 178.66485333442688,
+        "official_log": "docs\\analysis\\E062-outputs\\s2\\official-world_bank.json",
+        "predictions_sha256": "66c466d99478d85f79400eff9645e60d6e81247571a95889017c1248b6c0ae3c"
+      },
+      "unhcr": {
+        "vectors": 132273,
+        "max_raw_sum_error": 2.2838357827126288e-07,
+        "comparisons": {
+          "candidate": {
+            "max_abs": 0.0,
+            "changed_vectors": 0
+          },
+          "E041": {
+            "max_abs": 0.0,
+            "changed_vectors": 0
+          },
+          "E025": {
+            "max_abs": 0.3597398473795115,
+            "changed_vectors": 49219
+          }
+        },
+        "flat_sha256": "d5e0102759c983d42355f57592dbb7560253685a40cc854f600b98e46306f02b",
+        "status": "PASS",
+        "skill": 0.5624627288576414,
+        "delta_E025": -0.0004861448473750807,
+        "delta_E041": 0.0,
+        "release_pass": true,
+        "cli_startup_to_exit_seconds": 435.1003966999997,
+        "scorer_seconds": 433.3300919532776,
+        "official_log": "docs\\analysis\\E062-outputs\\s2\\official-unhcr.json",
+        "predictions_sha256": "4808ab36cff2a1a503d4b45cdcf27bdb08fa6a0a32fe2aff5ab6fe673954964f"
+      }
+    },
+    "same_run_raw_comparison": true
+  },
+  "regression_rule": "candidate-E025>=-.002 AND candidate-E041>=-.002 per instrument; original official floor.001; all PASS",
+  "source_baseline_reuse": "Identical authorized source/input/roles/environment and exact output references; no unchanged baseline or source fit repeated",
+  "resource_summary": "resource-summary.json",
+  "calls": {
+    "full_stack": 6,
+    "neural": 18,
+    "metric": 16
+  },
+  "interpretation": {
+    "whole_WB_delta": 0.0002723771513838402,
+    "target16_log_score_delta": -0.0007987550486939816,
+    "other60_log_score_delta": 0.0009093584055200603,
+    "target_Not_answered_delta": -0.004408473492304696,
+    "subgroups": "Unchanged S1 descriptive results, not recomputed/tuned",
+    "engineering_only": true,
+    "real_WB_effect": "unknown",
+    "ordinal_target_improvement": "not established",
+    "Grand_forecast": null
+  },
+  "preregistered_arms": {
+    "initial_sha256": "11d13920be8e5fa386cbf1d7a6155504f3f4d9e459ba00ba46a3044fdb1b2d6a",
+    "unchanged": true
+  },
+  "state": "E041 incumbent/E025 fallback; E057/E060/E061/E062 parked; all STOP/HOLD/exposure/protected roles/A_half/A018/S3 preserved",
+  "preservation": "final-preservation.json and source-archive-manifest.json",
+  "hosted": {
+    "uploaded": false,
+    "submission_id": null,
+    "upload_time": null,
+    "remote_byte_identity": null,
+    "account": null,
+    "slot": null,
+    "H100_or_native_egress_guarantee": null
+  },
+  "next_action": "S0 document review of fixed whole-WB exploratory submission value only; no automatic action",
+  "forbidden_actions_performed": []
+}

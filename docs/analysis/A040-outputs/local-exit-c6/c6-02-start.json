@@ -1,0 +1,10 @@
+{
+    "attempt":  "c6-02",
+    "case":  "protobuf_graph",
+    "started_utc":  "2026-10-26T12:39:55.7231401+00:00",
+    "used":  0.67515399999999992,
+    "remaining":  89.32484600000000008,
+    "execution_stop_seconds":  25,
+    "overall_cap_seconds":  30,
+    "freeze_sha256":  "19e5f7e09ade7c87fef5def73b29895fbea48bb740763e4afde69f1021b29291"
+}

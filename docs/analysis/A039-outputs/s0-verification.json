@@ -1,0 +1,159 @@
+﻿{
+    "date":  "2026-10-01T02:06:37.9103124+09:00",
+    "scope":  "S0 handoff document verification only; no header audit or scientific test",
+    "status":  "HANDOFF_PREPARED_NOT_EXECUTED",
+    "head":  "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+    "head_unchanged":  true,
+    "baseline_documents":  [
+                               {
+                                   "path":  "AGENTS.md",
+                                   "before":  "86394bbf164a2b7df6a309f4564b9dacf3b2799fa0227a703e4ea11d4d842596",
+                                   "after":  "86394bbf164a2b7df6a309f4564b9dacf3b2799fa0227a703e4ea11d4d842596",
+                                   "unchanged":  true,
+                                   "expected_change":  false
+                               },
+                               {
+                                   "path":  "CLAUDE.md",
+                                   "before":  "69175e6d741a17042db4852d4961a5c52bd97fe2cd5bfbff762d30d7e5270364",
+                                   "after":  "69175e6d741a17042db4852d4961a5c52bd97fe2cd5bfbff762d30d7e5270364",
+                                   "unchanged":  true,
+                                   "expected_change":  false
+                               },
+                               {
+                                   "path":  "docs/workflow.md",
+                                   "before":  "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642",
+                                   "after":  "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642",
+                                   "unchanged":  true,
+                                   "expected_change":  false
+                               },
+                               {
+                                   "path":  "docs/session-prompts.ko.md",
+                                   "before":  "c68eba8618c6a49caf1b590181ede5d5c03800d4c2305ea0e5efe3cc266e5615",
+                                   "after":  "c68eba8618c6a49caf1b590181ede5d5c03800d4c2305ea0e5efe3cc266e5615",
+                                   "unchanged":  true,
+                                   "expected_change":  false
+                               },
+                               {
+                                   "path":  "docs/status.md",
+                                   "before":  "181862b031b5e88156c605803b50e4daec2f54c3ae06723b048d0bcb8ee03792",
+                                   "after":  "9123c5585590baf8d6bcbd6def3e518d32ec1c3f5e9a3375c012b169d76cfe19",
+                                   "unchanged":  false,
+                                   "expected_change":  true
+                               },
+                               {
+                                   "path":  "docs/log.md",
+                                   "before":  "7cbd60c213eee2f169fb309d1acebba1cd33770169c2152ad9336b4654b9cfc6",
+                                   "after":  "d8579531b4e72d94d46662996e25d822d64f2bb8d772f628a90ab2f83f58136c",
+                                   "unchanged":  false,
+                                   "expected_change":  true
+                               },
+                               {
+                                   "path":  "docs/tree.md",
+                                   "before":  "eaa884a4194db103335136495205fe5b51297c17db15e9eac62946ced286cc44",
+                                   "after":  "eaa884a4194db103335136495205fe5b51297c17db15e9eac62946ced286cc44",
+                                   "unchanged":  true,
+                                   "expected_change":  false
+                               },
+                               {
+                                   "path":  ".gitignore",
+                                   "before":  "f67ba089f7490b4ba0845848f0b13b55633b5efd058a0be7d64203a1e480c6fd",
+                                   "after":  "f67ba089f7490b4ba0845848f0b13b55633b5efd058a0be7d64203a1e480c6fd",
+                                   "unchanged":  true,
+                                   "expected_change":  false
+                               },
+                               {
+                                   "path":  "docs/analysis/A037-winning-priority-review.md",
+                                   "before":  "87e77d8279f68e52751653f3b6098ec1976e4b53a75faf7206043ec6cf4bf66d",
+                                   "after":  "87e77d8279f68e52751653f3b6098ec1976e4b53a75faf7206043ec6cf4bf66d",
+                                   "unchanged":  true,
+                                   "expected_change":  false
+                               },
+                               {
+                                   "path":  "docs/analysis/A038-vaf-local-document-intake.md",
+                                   "before":  "6aaac47c03e420fffed87fe8f5a942c29e82714c88e968702ec3eb1402eaad0e",
+                                   "after":  "6aaac47c03e420fffed87fe8f5a942c29e82714c88e968702ec3eb1402eaad0e",
+                                   "unchanged":  true,
+                                   "expected_change":  false
+                               },
+                               {
+                                   "path":  "docs/analysis/A038-outputs/next-actions.ko.md",
+                                   "before":  "fd04c57f653e8c8c697b700df73b04b49b17464f82de62acc1593ed8c96c3a39",
+                                   "after":  "fd04c57f653e8c8c697b700df73b04b49b17464f82de62acc1593ed8c96c3a39",
+                                   "unchanged":  true,
+                                   "expected_change":  false
+                               },
+                               {
+                                   "path":  "docs/analysis/A038-outputs/inventory.json",
+                                   "before":  "b5ee9712dbfe36178cdae88cc5904cd784e6c5e3a7c73f4a8eda581b8a19d029",
+                                   "after":  "b5ee9712dbfe36178cdae88cc5904cd784e6c5e3a7c73f4a8eda581b8a19d029",
+                                   "unchanged":  true,
+                                   "expected_change":  false
+                               },
+                               {
+                                   "path":  "docs/analysis/A038-outputs/document-comparison.json",
+                                   "before":  "44f44bb5f82e85db91e08a22303ca7522e0dba0852b5cb85d346494063bc244f",
+                                   "after":  "44f44bb5f82e85db91e08a22303ca7522e0dba0852b5cb85d346494063bc244f",
+                                   "unchanged":  true,
+                                   "expected_change":  false
+                               },
+                               {
+                                   "path":  "docs/analysis/A032-outputs/readiness-contract.ko.md",
+                                   "before":  "139d577ab9afa82aa8d64ab8814847af0b953fffdfed6f141de520040a5a512d",
+                                   "after":  "139d577ab9afa82aa8d64ab8814847af0b953fffdfed6f141de520040a5a512d",
+                                   "unchanged":  true,
+                                   "expected_change":  false
+                               },
+                               {
+                                   "path":  "docs/analysis/A032-outputs/researcher-guide.txt",
+                                   "before":  "dd2807e0ae8030a028eaad592a83539386022b9e1b017565a39e1730207f70fc",
+                                   "after":  "dd2807e0ae8030a028eaad592a83539386022b9e1b017565a39e1730207f70fc",
+                                   "unchanged":  true,
+                                   "expected_change":  false
+                               },
+                               {
+                                   "path":  "docs/analysis/A032-outputs/routing-metadata.json",
+                                   "before":  "8897d05493dfd3e0fd08557c52b69ac31ab49b1ca4e44af428348a53a45150bf",
+                                   "after":  "8897d05493dfd3e0fd08557c52b69ac31ab49b1ca4e44af428348a53a45150bf",
+                                   "unchanged":  true,
+                                   "expected_change":  false
+                               },
+                               {
+                                   "path":  "docs/analysis/A032-outputs/terms-of-use.html",
+                                   "before":  "baeb420638470691e0ee7db0d2c4cdb10912df922cc4fa200bb07b9b13fc1d19",
+                                   "after":  "baeb420638470691e0ee7db0d2c4cdb10912df922cc4fa200bb07b9b13fc1d19",
+                                   "unchanged":  true,
+                                   "expected_change":  false
+                               },
+                               {
+                                   "path":  "docs/analysis/A032-outputs/source-register.md",
+                                   "before":  "9d5a4f8917cd9bd033e059fb45c350357db83bbc65186765fc419d920a5f179f",
+                                   "after":  "9d5a4f8917cd9bd033e059fb45c350357db83bbc65186765fc419d920a5f179f",
+                                   "unchanged":  true,
+                                   "expected_change":  false
+                               }
+                           ],
+    "unexpected_changes":  0,
+    "artifacts":  [
+                      {
+                          "path":  "docs/analysis/A039-outputs/s0-entry.json",
+                          "sha256":  "9f326492e5d5caae50f31317f99f4c81759eb41cb74ca6b0b2af37771dea9bb0"
+                      },
+                      {
+                          "path":  "docs/analysis/A039-outputs/s0-plan.md",
+                          "sha256":  "6adb1ab139f684ef63eb1ac276fcae5e0abfbc4f9d9f51710230a2ea91215bd4"
+                      },
+                      {
+                          "path":  "docs/analysis/A039-outputs/s1-handoff.ko.md",
+                          "sha256":  "73215a6569d00ac0bc100687973cfdd3484e2e4a9184f67615ceeb0f6efe042d"
+                      }
+                  ],
+    "prompt_required_scope_present":  true,
+    "six_csv_names_present":  true,
+    "s1_execution":  0,
+    "response_file_header_key_or_cache_reads":  0,
+    "response_hashes":  0,
+    "model_calls_or_tests":  0,
+    "web_contact_agents_zip_commit_push":  0,
+    "original_A038_and_workflow_preserved":  true,
+    "limitations":  "Checked named documents, not whole workspace byte preservation. Header reading method is a future S1 requirement, not implemented or validated in S0."
+}

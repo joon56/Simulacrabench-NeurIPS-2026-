@@ -1,0 +1,278 @@
+{
+    "completed_utc":  "2026-09-30T17:33:17.7621292+00:00",
+    "scope":  "A039 S1 header/document record verification only; no repeated actual-header read",
+    "status":  "COMPLETE",
+    "header_verdict":  "HEADER_DIVERGENCE",
+    "labels_reconciliation":  "6/6 exact names and order",
+    "semantics":  {
+                      "legacy_export_crosswalk":  "UNRESOLVED",
+                      "missing_routing_edit":  "PARTIAL",
+                      "Form":  "DOCUMENTED",
+                      "ID_ind":  "PARTIAL",
+                      "ID_main":  "UNRESOLVED"
+                  },
+    "empirical":  "HOLD unchanged",
+    "head":  "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+    "workflow_revision":  "2026-09-27-r4",
+    "workflow_sha256":  "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642",
+    "read_receipt":  "entry.json, actual tool evidence; not inferred from hashes",
+    "source_checks":  [
+                          {
+                              "path":  "AGENTS.md",
+                              "before":  "86394bbf164a2b7df6a309f4564b9dacf3b2799fa0227a703e4ea11d4d842596",
+                              "after":  "86394bbf164a2b7df6a309f4564b9dacf3b2799fa0227a703e4ea11d4d842596",
+                              "unchanged":  true,
+                              "expected_change":  false
+                          },
+                          {
+                              "path":  "CLAUDE.md",
+                              "before":  "69175e6d741a17042db4852d4961a5c52bd97fe2cd5bfbff762d30d7e5270364",
+                              "after":  "69175e6d741a17042db4852d4961a5c52bd97fe2cd5bfbff762d30d7e5270364",
+                              "unchanged":  true,
+                              "expected_change":  false
+                          },
+                          {
+                              "path":  "docs/workflow.md",
+                              "before":  "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642",
+                              "after":  "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642",
+                              "unchanged":  true,
+                              "expected_change":  false
+                          },
+                          {
+                              "path":  "docs/session-prompts.ko.md",
+                              "before":  "c68eba8618c6a49caf1b590181ede5d5c03800d4c2305ea0e5efe3cc266e5615",
+                              "after":  "c68eba8618c6a49caf1b590181ede5d5c03800d4c2305ea0e5efe3cc266e5615",
+                              "unchanged":  true,
+                              "expected_change":  false
+                          },
+                          {
+                              "path":  "docs/status.md",
+                              "before":  "9123c5585590baf8d6bcbd6def3e518d32ec1c3f5e9a3375c012b169d76cfe19",
+                              "after":  "f8b9ff3ca8b6dbb6031c874188e5d5f9e90daa459f41191f63f74396f9161d1f",
+                              "unchanged":  false,
+                              "expected_change":  true
+                          },
+                          {
+                              "path":  "docs/log.md",
+                              "before":  "d8579531b4e72d94d46662996e25d822d64f2bb8d772f628a90ab2f83f58136c",
+                              "after":  "4f2bc0697493883a85d78149ea1652f1b43190468673c844ff9e79bf61d10846",
+                              "unchanged":  false,
+                              "expected_change":  true
+                          },
+                          {
+                              "path":  "docs/tree.md",
+                              "before":  "eaa884a4194db103335136495205fe5b51297c17db15e9eac62946ced286cc44",
+                              "after":  "eaa884a4194db103335136495205fe5b51297c17db15e9eac62946ced286cc44",
+                              "unchanged":  true,
+                              "expected_change":  false
+                          },
+                          {
+                              "path":  ".gitignore",
+                              "before":  "f67ba089f7490b4ba0845848f0b13b55633b5efd058a0be7d64203a1e480c6fd",
+                              "after":  "f67ba089f7490b4ba0845848f0b13b55633b5efd058a0be7d64203a1e480c6fd",
+                              "unchanged":  true,
+                              "expected_change":  false
+                          },
+                          {
+                              "path":  "docs/analysis/A037-winning-priority-review.md",
+                              "before":  "87e77d8279f68e52751653f3b6098ec1976e4b53a75faf7206043ec6cf4bf66d",
+                              "after":  "87e77d8279f68e52751653f3b6098ec1976e4b53a75faf7206043ec6cf4bf66d",
+                              "unchanged":  true,
+                              "expected_change":  false
+                          },
+                          {
+                              "path":  "docs/analysis/A038-vaf-local-document-intake.md",
+                              "before":  "6aaac47c03e420fffed87fe8f5a942c29e82714c88e968702ec3eb1402eaad0e",
+                              "after":  "6aaac47c03e420fffed87fe8f5a942c29e82714c88e968702ec3eb1402eaad0e",
+                              "unchanged":  true,
+                              "expected_change":  false
+                          },
+                          {
+                              "path":  "docs/analysis/A038-outputs/next-actions.ko.md",
+                              "before":  "fd04c57f653e8c8c697b700df73b04b49b17464f82de62acc1593ed8c96c3a39",
+                              "after":  "fd04c57f653e8c8c697b700df73b04b49b17464f82de62acc1593ed8c96c3a39",
+                              "unchanged":  true,
+                              "expected_change":  false
+                          },
+                          {
+                              "path":  "docs/analysis/A038-outputs/inventory.json",
+                              "before":  "b5ee9712dbfe36178cdae88cc5904cd784e6c5e3a7c73f4a8eda581b8a19d029",
+                              "after":  "b5ee9712dbfe36178cdae88cc5904cd784e6c5e3a7c73f4a8eda581b8a19d029",
+                              "unchanged":  true,
+                              "expected_change":  false
+                          },
+                          {
+                              "path":  "docs/analysis/A038-outputs/document-comparison.json",
+                              "before":  "44f44bb5f82e85db91e08a22303ca7522e0dba0852b5cb85d346494063bc244f",
+                              "after":  "44f44bb5f82e85db91e08a22303ca7522e0dba0852b5cb85d346494063bc244f",
+                              "unchanged":  true,
+                              "expected_change":  false
+                          },
+                          {
+                              "path":  "docs/analysis/A032-outputs/readiness-contract.ko.md",
+                              "before":  "139d577ab9afa82aa8d64ab8814847af0b953fffdfed6f141de520040a5a512d",
+                              "after":  "139d577ab9afa82aa8d64ab8814847af0b953fffdfed6f141de520040a5a512d",
+                              "unchanged":  true,
+                              "expected_change":  false
+                          },
+                          {
+                              "path":  "docs/analysis/A032-outputs/researcher-guide.txt",
+                              "before":  "dd2807e0ae8030a028eaad592a83539386022b9e1b017565a39e1730207f70fc",
+                              "after":  "dd2807e0ae8030a028eaad592a83539386022b9e1b017565a39e1730207f70fc",
+                              "unchanged":  true,
+                              "expected_change":  false
+                          },
+                          {
+                              "path":  "docs/analysis/A032-outputs/routing-metadata.json",
+                              "before":  "8897d05493dfd3e0fd08557c52b69ac31ab49b1ca4e44af428348a53a45150bf",
+                              "after":  "8897d05493dfd3e0fd08557c52b69ac31ab49b1ca4e44af428348a53a45150bf",
+                              "unchanged":  true,
+                              "expected_change":  false
+                          },
+                          {
+                              "path":  "docs/analysis/A032-outputs/terms-of-use.html",
+                              "before":  "baeb420638470691e0ee7db0d2c4cdb10912df922cc4fa200bb07b9b13fc1d19",
+                              "after":  "baeb420638470691e0ee7db0d2c4cdb10912df922cc4fa200bb07b9b13fc1d19",
+                              "unchanged":  true,
+                              "expected_change":  false
+                          },
+                          {
+                              "path":  "docs/analysis/A032-outputs/source-register.md",
+                              "before":  "9d5a4f8917cd9bd033e059fb45c350357db83bbc65186765fc419d920a5f179f",
+                              "after":  "9d5a4f8917cd9bd033e059fb45c350357db83bbc65186765fc419d920a5f179f",
+                              "unchanged":  true,
+                              "expected_change":  false
+                          },
+                          {
+                              "path":  "docs/analysis/A039-outputs/s0-entry.json",
+                              "before":  "9f326492e5d5caae50f31317f99f4c81759eb41cb74ca6b0b2af37771dea9bb0",
+                              "after":  "9f326492e5d5caae50f31317f99f4c81759eb41cb74ca6b0b2af37771dea9bb0",
+                              "unchanged":  true,
+                              "expected_change":  false
+                          },
+                          {
+                              "path":  "docs/analysis/A039-outputs/s0-plan.md",
+                              "before":  "6adb1ab139f684ef63eb1ac276fcae5e0abfbc4f9d9f51710230a2ea91215bd4",
+                              "after":  "6adb1ab139f684ef63eb1ac276fcae5e0abfbc4f9d9f51710230a2ea91215bd4",
+                              "unchanged":  true,
+                              "expected_change":  false
+                          },
+                          {
+                              "path":  "docs/analysis/A039-outputs/s0-verification.json",
+                              "before":  "2c93f999e528860fdf77a411ccb1bf14abf5573e37c7f4e76c79dcaa64adb4e7",
+                              "after":  "2c93f999e528860fdf77a411ccb1bf14abf5573e37c7f4e76c79dcaa64adb4e7",
+                              "unchanged":  true,
+                              "expected_change":  false
+                          },
+                          {
+                              "path":  "docs/analysis/A039-outputs/s1-handoff.ko.md",
+                              "before":  "73215a6569d00ac0bc100687973cfdd3484e2e4a9184f67615ceeb0f6efe042d",
+                              "after":  "73215a6569d00ac0bc100687973cfdd3484e2e4a9184f67615ceeb0f6efe042d",
+                              "unchanged":  true,
+                              "expected_change":  false
+                          }
+                      ],
+    "labels_identity_checks":  [
+                                   {
+                                       "table":  "main",
+                                       "matches_A038":  true,
+                                       "source":  "Hash captured during permitted VAR/LABEL read, not response file hash"
+                                   },
+                                   {
+                                       "table":  "case",
+                                       "matches_A038":  true,
+                                       "source":  "Hash captured during permitted VAR/LABEL read, not response file hash"
+                                   },
+                                   {
+                                       "table":  "family",
+                                       "matches_A038":  true,
+                                       "source":  "Hash captured during permitted VAR/LABEL read, not response file hash"
+                                   },
+                                   {
+                                       "table":  "member",
+                                       "matches_A038":  true,
+                                       "source":  "Hash captured during permitted VAR/LABEL read, not response file hash"
+                                   },
+                                   {
+                                       "table":  "sharing_group_long",
+                                       "matches_A038":  true,
+                                       "source":  "Hash captured during permitted VAR/LABEL read, not response file hash"
+                                   },
+                                   {
+                                       "table":  "sharing_group_short",
+                                       "matches_A038":  true,
+                                       "source":  "Hash captured during permitted VAR/LABEL read, not response file hash"
+                                   }
+                               ],
+    "header_files":  6,
+    "header_bytes":  33357,
+    "largest_header_bytes":  13173,
+    "response_bytes_after_first_LF_requested":  0,
+    "application_boundary":  "unbuffered FileIO.read(1), LF inclusive; validated parsing before saving names",
+    "OS_cache":  "Not measured; no claim about kernel prefetch",
+    "response_file_full_hashes":  0,
+    "header_hashes":  6,
+    "response_row_counts_or_key_values":  0,
+    "in_memory_tests":  {
+                            "checked_utc":  "2026-09-30T17:26:16.5453853+00:00",
+                            "status":  "PASS",
+                            "tests":  9,
+                            "scope":  "New in-memory header byte-boundary examples only",
+                            "red_evidence":  "cd881f expected ModuleNotFoundError before implementation",
+                            "green_evidence":  "6b19dd nine tests passed, 0 actual data opens",
+                            "cases":  [
+                                          "normal stops at LF",
+                                          "BOM/CRLF and quoted delimiter",
+                                          "duplicate/whitespace preserved",
+                                          "quoted newline hold at first LF",
+                                          "UTF8 invalid",
+                                          "suspicious value-like headers",
+                                          "malformed quote syntax",
+                                          "byte cap no extra read",
+                                          "missing LF"
+                                      ],
+                            "production_source_modified":  false,
+                            "actual_response_opens_during_tests":  0,
+                            "header_reader_sha256":  "9c7dceefcdc06ea86ccf1443a5b2f45faebaa22acab16375a095bd931d54fd11",
+                            "test_sha256":  "ba65f255a0f613313537ed7976f0ac1b1b442a027f75807d3245cc84ea295816",
+                            "post_test_change":  "Only VAR/LABEL document parser changed to StringIO to preserve multiline documentation. Tested read_header unchanged; no successful test rerun."
+                        },
+    "header_execution_evidence":  "18069c exited0, six headers,33357 bytes; no failure; comparison run once",
+    "worker_wall_seconds":  0.12093240000103833,
+    "parent_command_wall_seconds":  0.3773634,
+    "elapsed_from_conservative_budget_anchor_seconds":  797.7621292,
+    "budget_anchor_note":  "17:20:00Z is a conservative rounded-minute anchor, first observed clock17:20:52Z; not a subsecond session-start measurement",
+    "within_40min":  true,
+    "CPU":  "Single-thread standard-library worker, no parallel agents/workers; no affinity or whole-machine utilisation measurement",
+    "GPU":  false,
+    "peak_memory":  "Not measured",
+    "previous_log_entries_preserved":  true,
+    "status_other_content_preserved":  true,
+    "selected_jobs":  [
+
+                      ],
+    "jobs_scope":  "Limited process-name check, not global-idleness proof",
+    "scientific_calls":  0,
+    "original_extractor_or_successful_research_test_reruns":  0,
+    "web_download_contact_agents_install":  0,
+    "ZIP_submit_commit_push":  0,
+    "S2_S3_execution":  0,
+    "artifact_sha256":  {
+                            "docs/analysis/A039-outputs/s1/boundary-fixtures.json":  "5611534b417e06b5620d85ba509be047bbff8293552592f4f15a5ca01400652f",
+                            "docs/analysis/A039-outputs/s1/closeout.md":  "20364dea129579ac3e8bec4d559afb87383b1c80c04a46c7cc3475ec058da55f",
+                            "docs/analysis/A039-outputs/s1/document-mapping.json":  "c4d66ae07f4852574e3b1943b32b1ca67299808c7cb9a95d036ecc5b7110381d",
+                            "docs/analysis/A039-outputs/s1/entry.json":  "e9e8ce049eb7f31929f2f2b942f1ca1ab9eb31f8c052c8b7e5edea921775c9a4",
+                            "docs/analysis/A039-outputs/s1/exposure-ledger.md":  "95f5239bc9905cef7b411b32b2791b0216838bbda682ba045ec0c373cfcb0c8c",
+                            "docs/analysis/A039-outputs/s1/header_reader.py":  "9c7dceefcdc06ea86ccf1443a5b2f45faebaa22acab16375a095bd931d54fd11",
+                            "docs/analysis/A039-outputs/s1/header-comparison.json":  "88d78e1aa7785aa304700d2075f6d33861afe0cf35aad57747c0c3dad0f8ab74",
+                            "docs/analysis/A039-outputs/s1/log-before.md":  "d8579531b4e72d94d46662996e25d822d64f2bb8d772f628a90ab2f83f58136c",
+                            "docs/analysis/A039-outputs/s1/remaining-questions.ko.md":  "d1265ecd7cef066afacd838465d0518cc9020528412c0dccdc91b5eebb755821",
+                            "docs/analysis/A039-outputs/s1/s0-handoff.ko.md":  "1d546374acba6a3ed400ea7cf05fc1ec9b0b9ab9aa966b1528b3acf1dda35f9d",
+                            "docs/analysis/A039-outputs/s1/status-before.md":  "9123c5585590baf8d6bcbd6def3e518d32ec1c3f5e9a3375c012b169d76cfe19",
+                            "docs/analysis/A039-outputs/s1/test_header_reader.py":  "ba65f255a0f613313537ed7976f0ac1b1b442a027f75807d3245cc84ea295816",
+                            "docs/status.md":  "f8b9ff3ca8b6dbb6031c874188e5d5f9e90daa459f41191f63f74396f9161d1f",
+                            "docs/log.md":  "4f2bc0697493883a85d78149ea1652f1b43190468673c844ff9e79bf61d10846"
+                        },
+    "self_hash":  "Excluded",
+    "next":  "S0 review only via s0-handoff.ko.md; no automatic response/key/role/model task"
+}

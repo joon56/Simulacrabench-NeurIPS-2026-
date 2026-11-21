@@ -1,0 +1,12 @@
+{"event": "enter", "kind": "full_stack", "function": "_e061_predict", "totals": {"full_stack": 2, "neural": 3, "metric": 0}, "instrument": "world_bank", "pid": 16044}
+{"event": "target_boundary", "rows": 3280, "instrument": "world_bank", "pid": 16044}
+{"event": "target_boundary", "rows": 832, "instrument": "world_bank", "pid": 16044}
+{"event": "target_boundary", "rows": 1083, "instrument": "world_bank", "pid": 16044}
+{"event": "enter", "kind": "neural", "function": "_train_on", "totals": {"full_stack": 2, "neural": 4, "metric": 0}, "instrument": "world_bank", "pid": 16044}
+{"event": "return", "kind": "neural", "function": "_train_on", "seconds": 28.7802599000006, "returned": true, "epochs": 223, "best_epoch": 193, "device": "cpu", "instrument": "world_bank", "pid": 16044}
+{"event": "enter", "kind": "neural", "function": "_train_on", "totals": {"full_stack": 2, "neural": 5, "metric": 0}, "instrument": "world_bank", "pid": 16044}
+{"event": "return", "kind": "neural", "function": "_train_on", "seconds": 36.420767599998726, "returned": true, "epochs": 223, "best_epoch": 193, "device": "cpu", "instrument": "world_bank", "pid": 16044}
+{"event": "target_boundary", "rows": 5195, "instrument": "world_bank", "pid": 16044}
+{"event": "enter", "kind": "neural", "function": "_train_on", "totals": {"full_stack": 2, "neural": 6, "metric": 0}, "instrument": "world_bank", "pid": 16044}
+{"event": "return", "kind": "neural", "function": "_train_on", "seconds": 29.525677800000267, "returned": true, "epochs": 193, "best_epoch": 0, "device": "cpu", "instrument": "world_bank", "pid": 16044}
+{"event": "return", "kind": "full_stack", "function": "_e061_predict", "seconds": 121.82980419999876, "returned": true, "instrument": "world_bank", "pid": 16044}

@@ -1,0 +1,47 @@
+{
+    "status":  "PASS_DOCUMENT_REVIEW",
+    "revision":  "2026-09-27-r2",
+    "checked_at_utc":  "2026-09-27T09:24:38.8765344Z",
+    "head":  "1d223340d4e1fa3993b411dc5daafab9cb37d0cd",
+    "prior_hashes_preserved":  58,
+    "changed_existing":  [
+                             "CLAUDE.md",
+                             "docs/log.md",
+                             "docs/session-prompts.ko.md",
+                             "docs/status.md",
+                             "docs/workflow.md"
+                         ],
+    "hashes":  {
+                   "CLAUDE.md":  "d0a2311c0107e8f507a7da6474f6d166e8ab937a326d21838da1e5a0c460e710",
+                   "docs/workflow.md":  "d2ee4f33a9012be4fb180cf4f0c8b01bf2c890c318ac3a8f1313f97c3a84d805",
+                   "docs/session-prompts.ko.md":  "1f869bba0c150e2cfb0d2f48990cb8af41e4b0d742a721d5b03daea0ae931c27",
+                   "docs/status.md":  "7e71c9209b1a125a1c47b9a4d168e94ee9d095d40c2254308ae67280909ada4d",
+                   "docs/log.md":  "801fa84138748b48b35bbd341752180867a57483532c20fe368dd7b0c252c680",
+                   "docs/analysis/A027-workflow-role-revision.md":  "accdc13240e460bbb838da25dab8412ac597c4b15787383a3b922e436f43ebb3",
+                   "docs/analysis/A027-outputs/s1-channel-metadata-handoff.ko.md":  "5b1eae713b48d752c122462eaa4c16fc596c2c10015810028462566f2f3dee47",
+                   "docs/analysis/A027-outputs/entry.json":  "58d6ad8053f548d8477c8dc9bd116e9f03d284c0274b0765878ac2c1b4effb9b"
+               },
+    "links_checked":  4,
+    "manual_scenarios":  [
+                             "S0 broad progress does not start fits/packaging",
+                             "S1 metadata task does not require positive effects",
+                             "Confirmatory study retains role/precision prerequisites",
+                             "Distinct exploration documents oracle limits and release criteria",
+                             "Repeated same-input HOLD does not repeat diagnostics",
+                             "S2 result intake does not launch another experiment",
+                             "Explicit authorized transition proceeds without repeat approval",
+                             "Current no-commit/no-push scope overrides template defaults"
+                         ],
+    "jobs":  [
+
+             ],
+    "next_s1_executed":  false,
+    "scientific_execution":  false,
+    "network":  false,
+    "data_cache_zip_access":  false,
+    "tree_modified":  false,
+    "commit_push":  false,
+    "s3_resumed":  false,
+    "test_selected":  false,
+    "limitations":  "Persistent local instructions, not programmatic enforcement; no remote synchronization; no model tests run"
+}

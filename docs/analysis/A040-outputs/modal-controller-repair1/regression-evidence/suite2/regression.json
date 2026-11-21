@@ -1,0 +1,1613 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "scenario": "success",
+      "mode": "pipe",
+      "launcher": {
+        "pid": 36876,
+        "returncode": 0,
+        "watchdog_timeout": false,
+        "wall_seconds": 0.2320296000016242,
+        "mode": "pipe",
+        "remote_termination_claim": false,
+        "command": [
+          "C:\\Users\\USER\\Desktop\\SimulacraBench\\tmp\\a040-modal-full-path1\\sdk-venv\\Scripts\\python.exe",
+          "-X",
+          "utf8",
+          "-u",
+          "C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\modal-controller-repair1\\fake_worker.py",
+          "success",
+          "C:\\Users\\USER\\Desktop\\SimulacraBench\\tmp\\a040-modal-controller-repair1\\suite2\\00-success-pipe"
+        ],
+        "utf8_env": {
+          "PYTHONUTF8": "1",
+          "PYTHONIOENCODING": "utf-8"
+        }
+      },
+      "passed": true,
+      "result": {
+        "outcome": "BUILD_COMPLETED",
+        "owned_app_id": "ap-FAKE-OWNED",
+        "stop_ack": true,
+        "termination": "TERMINAL_TASK0_CONFIRMED",
+        "create_attempts": 1,
+        "build_attempts": 1,
+        "stop_attempts": 1,
+        "cleanup_errors": [],
+        "execution": "INJECTED_LOCAL_ONLY",
+        "image_id": "im-FAKE",
+        "termination_observation": {
+          "stopped": true,
+          "task_count": 0
+        },
+        "cleanup_seconds": 0.0006559000012202887,
+        "elapsed_seconds": 0.0038832000009279
+      },
+      "audit": {
+        "fake_calls": [
+          {
+            "call": "FAKE_Client.from_env"
+          },
+          {
+            "call": "FAKE_Workspace.from_context"
+          },
+          {
+            "call": "hydrate"
+          },
+          {
+            "call": "billing.summary"
+          },
+          {
+            "call": "App.lookup",
+            "app_name": "a040-LOCAL-FAKE",
+            "create_if_missing": true,
+            "environment": "main"
+          },
+          {
+            "call": "Image.from_registry",
+            "tag": "python:3.13.14-slim"
+          },
+          {
+            "call": "run_function_recipe",
+            "cpu": [
+              1,
+              1
+            ],
+            "memory": [
+              8192,
+              8192
+            ],
+            "timeout": 600,
+            "include_source": false
+          },
+          {
+            "call": "Image.build",
+            "app_id": "ap-FAKE-OWNED"
+          },
+          {
+            "call": "billing.summary"
+          },
+          {
+            "call": "AppStop",
+            "app_id": "ap-FAKE-OWNED"
+          },
+          {
+            "call": "AppGetInfo",
+            "app_id": "ap-FAKE-OWNED"
+          },
+          {
+            "call": "TaskList",
+            "app_id": "ap-FAKE-OWNED"
+          }
+        ],
+        "blocked_operations": [],
+        "sdk_imported": false,
+        "model_imported": false,
+        "pending_tasks_at_exit": 0,
+        "stdout_encoding": "utf-8",
+        "stderr_encoding": "utf-8",
+        "network_transport": "FAKE_ONLY",
+        "live_rpc_calls": 0,
+        "grandchildren_allowed": false,
+        "synthetic_network_guard_probe_blocked": 1
+      },
+      "counts": {
+        "App.lookup": 1,
+        "Image.build": 1,
+        "AppStop": 1,
+        "AppGetInfo": 1,
+        "TaskList": 1
+      }
+    },
+    {
+      "scenario": "success",
+      "mode": "file",
+      "launcher": {
+        "pid": 38308,
+        "returncode": 0,
+        "watchdog_timeout": false,
+        "wall_seconds": 0.23522650000086287,
+        "mode": "file",
+        "remote_termination_claim": false,
+        "command": [
+          "C:\\Users\\USER\\Desktop\\SimulacraBench\\tmp\\a040-modal-full-path1\\sdk-venv\\Scripts\\python.exe",
+          "-X",
+          "utf8",
+          "-u",
+          "C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\modal-controller-repair1\\fake_worker.py",
+          "success",
+          "C:\\Users\\USER\\Desktop\\SimulacraBench\\tmp\\a040-modal-controller-repair1\\suite2\\01-success-file"
+        ],
+        "utf8_env": {
+          "PYTHONUTF8": "1",
+          "PYTHONIOENCODING": "utf-8"
+        }
+      },
+      "passed": true,
+      "result": {
+        "outcome": "BUILD_COMPLETED",
+        "owned_app_id": "ap-FAKE-OWNED",
+        "stop_ack": true,
+        "termination": "TERMINAL_TASK0_CONFIRMED",
+        "create_attempts": 1,
+        "build_attempts": 1,
+        "stop_attempts": 1,
+        "cleanup_errors": [],
+        "execution": "INJECTED_LOCAL_ONLY",
+        "image_id": "im-FAKE",
+        "termination_observation": {
+          "stopped": true,
+          "task_count": 0
+        },
+        "cleanup_seconds": 0.0006945000004634494,
+        "elapsed_seconds": 0.004376299999421462
+      },
+      "audit": {
+        "fake_calls": [
+          {
+            "call": "FAKE_Client.from_env"
+          },
+          {
+            "call": "FAKE_Workspace.from_context"
+          },
+          {
+            "call": "hydrate"
+          },
+          {
+            "call": "billing.summary"
+          },
+          {
+            "call": "App.lookup",
+            "app_name": "a040-LOCAL-FAKE",
+            "create_if_missing": true,
+            "environment": "main"
+          },
+          {
+            "call": "Image.from_registry",
+            "tag": "python:3.13.14-slim"
+          },
+          {
+            "call": "run_function_recipe",
+            "cpu": [
+              1,
+              1
+            ],
+            "memory": [
+              8192,
+              8192
+            ],
+            "timeout": 600,
+            "include_source": false
+          },
+          {
+            "call": "Image.build",
+            "app_id": "ap-FAKE-OWNED"
+          },
+          {
+            "call": "billing.summary"
+          },
+          {
+            "call": "AppStop",
+            "app_id": "ap-FAKE-OWNED"
+          },
+          {
+            "call": "AppGetInfo",
+            "app_id": "ap-FAKE-OWNED"
+          },
+          {
+            "call": "TaskList",
+            "app_id": "ap-FAKE-OWNED"
+          }
+        ],
+        "blocked_operations": [],
+        "sdk_imported": false,
+        "model_imported": false,
+        "pending_tasks_at_exit": 0,
+        "stdout_encoding": "utf-8",
+        "stderr_encoding": "utf-8",
+        "network_transport": "FAKE_ONLY",
+        "live_rpc_calls": 0,
+        "grandchildren_allowed": false,
+        "synthetic_network_guard_probe_blocked": 1
+      },
+      "counts": {
+        "App.lookup": 1,
+        "Image.build": 1,
+        "AppStop": 1,
+        "AppGetInfo": 1,
+        "TaskList": 1
+      }
+    },
+    {
+      "scenario": "unicode_error",
+      "mode": "pipe",
+      "launcher": {
+        "pid": 37644,
+        "returncode": 2,
+        "watchdog_timeout": false,
+        "wall_seconds": 0.23898199999894132,
+        "mode": "pipe",
+        "remote_termination_claim": false,
+        "command": [
+          "C:\\Users\\USER\\Desktop\\SimulacraBench\\tmp\\a040-modal-full-path1\\sdk-venv\\Scripts\\python.exe",
+          "-X",
+          "utf8",
+          "-u",
+          "C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\modal-controller-repair1\\fake_worker.py",
+          "unicode_error",
+          "C:\\Users\\USER\\Desktop\\SimulacraBench\\tmp\\a040-modal-controller-repair1\\suite2\\02-unicode_error-pipe"
+        ],
+        "utf8_env": {
+          "PYTHONUTF8": "1",
+          "PYTHONIOENCODING": "utf-8"
+        }
+      },
+      "passed": true,
+      "result": {
+        "outcome": "BUILD_FAILED",
+        "owned_app_id": "ap-FAKE-OWNED",
+        "stop_ack": true,
+        "termination": "TERMINAL_TASK0_CONFIRMED",
+        "create_attempts": 1,
+        "build_attempts": 1,
+        "stop_attempts": 1,
+        "cleanup_errors": [],
+        "execution": "INJECTED_LOCAL_ONLY",
+        "error": "RuntimeError('retained exception • 한글')",
+        "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\modal-controller-repair1\\controller.py\", line 123, in run_controller\n    result[\"image_id\"] = await bounded(transport.build(), phase)\n                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\modal-controller-repair1\\controller.py\", line 90, in bounded\n    return task.result()\n           ~~~~~~~~~~~^^\n  File \"C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\modal-controller-repair1\\controller.py\", line 66, in build\n    await task\n  File \"C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\modal-controller-repair1\\fake_worker.py\", line 114, in build\n    raise RuntimeError(\"retained exception • 한글\")\nRuntimeError: retained exception • 한글\n",
+        "termination_observation": {
+          "stopped": true,
+          "task_count": 0
+        },
+        "cleanup_seconds": 0.0009854999989329372,
+        "elapsed_seconds": 0.008313000000271131
+      },
+      "audit": {
+        "fake_calls": [
+          {
+            "call": "FAKE_Client.from_env"
+          },
+          {
+            "call": "FAKE_Workspace.from_context"
+          },
+          {
+            "call": "hydrate"
+          },
+          {
+            "call": "billing.summary"
+          },
+          {
+            "call": "App.lookup",
+            "app_name": "a040-LOCAL-FAKE",
+            "create_if_missing": true,
+            "environment": "main"
+          },
+          {
+            "call": "Image.from_registry",
+            "tag": "python:3.13.14-slim"
+          },
+          {
+            "call": "run_function_recipe",
+            "cpu": [
+              1,
+              1
+            ],
+            "memory": [
+              8192,
+              8192
+            ],
+            "timeout": 600,
+            "include_source": false
+          },
+          {
+            "call": "Image.build",
+            "app_id": "ap-FAKE-OWNED"
+          },
+          {
+            "call": "billing.summary"
+          },
+          {
+            "call": "AppStop",
+            "app_id": "ap-FAKE-OWNED"
+          },
+          {
+            "call": "AppGetInfo",
+            "app_id": "ap-FAKE-OWNED"
+          },
+          {
+            "call": "TaskList",
+            "app_id": "ap-FAKE-OWNED"
+          }
+        ],
+        "blocked_operations": [],
+        "sdk_imported": false,
+        "model_imported": false,
+        "pending_tasks_at_exit": 0,
+        "stdout_encoding": "utf-8",
+        "stderr_encoding": "utf-8",
+        "network_transport": "FAKE_ONLY",
+        "live_rpc_calls": 0,
+        "grandchildren_allowed": false,
+        "synthetic_network_guard_probe_blocked": 1
+      },
+      "counts": {
+        "App.lookup": 1,
+        "Image.build": 1,
+        "AppStop": 1,
+        "AppGetInfo": 1,
+        "TaskList": 1
+      }
+    },
+    {
+      "scenario": "unicode_error",
+      "mode": "file",
+      "launcher": {
+        "pid": 8480,
+        "returncode": 2,
+        "watchdog_timeout": false,
+        "wall_seconds": 0.24998580000101356,
+        "mode": "file",
+        "remote_termination_claim": false,
+        "command": [
+          "C:\\Users\\USER\\Desktop\\SimulacraBench\\tmp\\a040-modal-full-path1\\sdk-venv\\Scripts\\python.exe",
+          "-X",
+          "utf8",
+          "-u",
+          "C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\modal-controller-repair1\\fake_worker.py",
+          "unicode_error",
+          "C:\\Users\\USER\\Desktop\\SimulacraBench\\tmp\\a040-modal-controller-repair1\\suite2\\03-unicode_error-file"
+        ],
+        "utf8_env": {
+          "PYTHONUTF8": "1",
+          "PYTHONIOENCODING": "utf-8"
+        }
+      },
+      "passed": true,
+      "result": {
+        "outcome": "BUILD_FAILED",
+        "owned_app_id": "ap-FAKE-OWNED",
+        "stop_ack": true,
+        "termination": "TERMINAL_TASK0_CONFIRMED",
+        "create_attempts": 1,
+        "build_attempts": 1,
+        "stop_attempts": 1,
+        "cleanup_errors": [],
+        "execution": "INJECTED_LOCAL_ONLY",
+        "error": "RuntimeError('retained exception • 한글')",
+        "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\modal-controller-repair1\\controller.py\", line 123, in run_controller\n    result[\"image_id\"] = await bounded(transport.build(), phase)\n                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\modal-controller-repair1\\controller.py\", line 90, in bounded\n    return task.result()\n           ~~~~~~~~~~~^^\n  File \"C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\modal-controller-repair1\\controller.py\", line 66, in build\n    await task\n  File \"C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\modal-controller-repair1\\fake_worker.py\", line 114, in build\n    raise RuntimeError(\"retained exception • 한글\")\nRuntimeError: retained exception • 한글\n",
+        "termination_observation": {
+          "stopped": true,
+          "task_count": 0
+        },
+        "cleanup_seconds": 0.0008047999999689637,
+        "elapsed_seconds": 0.009158099999694969
+      },
+      "audit": {
+        "fake_calls": [
+          {
+            "call": "FAKE_Client.from_env"
+          },
+          {
+            "call": "FAKE_Workspace.from_context"
+          },
+          {
+            "call": "hydrate"
+          },
+          {
+            "call": "billing.summary"
+          },
+          {
+            "call": "App.lookup",
+            "app_name": "a040-LOCAL-FAKE",
+            "create_if_missing": true,
+            "environment": "main"
+          },
+          {
+            "call": "Image.from_registry",
+            "tag": "python:3.13.14-slim"
+          },
+          {
+            "call": "run_function_recipe",
+            "cpu": [
+              1,
+              1
+            ],
+            "memory": [
+              8192,
+              8192
+            ],
+            "timeout": 600,
+            "include_source": false
+          },
+          {
+            "call": "Image.build",
+            "app_id": "ap-FAKE-OWNED"
+          },
+          {
+            "call": "billing.summary"
+          },
+          {
+            "call": "AppStop",
+            "app_id": "ap-FAKE-OWNED"
+          },
+          {
+            "call": "AppGetInfo",
+            "app_id": "ap-FAKE-OWNED"
+          },
+          {
+            "call": "TaskList",
+            "app_id": "ap-FAKE-OWNED"
+          }
+        ],
+        "blocked_operations": [],
+        "sdk_imported": false,
+        "model_imported": false,
+        "pending_tasks_at_exit": 0,
+        "stdout_encoding": "utf-8",
+        "stderr_encoding": "utf-8",
+        "network_transport": "FAKE_ONLY",
+        "live_rpc_calls": 0,
+        "grandchildren_allowed": false,
+        "synthetic_network_guard_probe_blocked": 1
+      },
+      "counts": {
+        "App.lookup": 1,
+        "Image.build": 1,
+        "AppStop": 1,
+        "AppGetInfo": 1,
+        "TaskList": 1
+      }
+    },
+    {
+      "scenario": "cancel_resistant",
+      "mode": "pipe",
+      "launcher": {
+        "pid": 9432,
+        "returncode": 2,
+        "watchdog_timeout": false,
+        "wall_seconds": 0.37011039999924833,
+        "mode": "pipe",
+        "remote_termination_claim": false,
+        "command": [
+          "C:\\Users\\USER\\Desktop\\SimulacraBench\\tmp\\a040-modal-full-path1\\sdk-venv\\Scripts\\python.exe",
+          "-X",
+          "utf8",
+          "-u",
+          "C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\modal-controller-repair1\\fake_worker.py",
+          "cancel_resistant",
+          "C:\\Users\\USER\\Desktop\\SimulacraBench\\tmp\\a040-modal-controller-repair1\\suite2\\04-cancel_resistant-pipe"
+        ],
+        "utf8_env": {
+          "PYTHONUTF8": "1",
+          "PYTHONIOENCODING": "utf-8"
+        }
+      },
+      "passed": true,
+      "result": {
+        "outcome": "BUILD_FAILED",
+        "owned_app_id": "ap-FAKE-OWNED",
+        "stop_ack": true,
+        "termination": "TERMINAL_TASK0_CONFIRMED",
+        "create_attempts": 1,
+        "build_attempts": 1,
+        "stop_attempts": 1,
+        "cleanup_errors": [],
+        "execution": "INJECTED_LOCAL_ONLY",
+        "error": "TimeoutError('Operation deadline; cancellation completion not assumed')",
+        "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\modal-controller-repair1\\controller.py\", line 123, in run_controller\n    result[\"image_id\"] = await bounded(transport.build(), phase)\n                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\modal-controller-repair1\\controller.py\", line 99, in bounded\n    raise TimeoutError(\"Operation deadline; cancellation completion not assumed\")\nTimeoutError: Operation deadline; cancellation completion not assumed\n",
+        "termination_observation": {
+          "stopped": true,
+          "task_count": 0
+        },
+        "cleanup_seconds": 0.0008173999995051417,
+        "elapsed_seconds": 0.13014779999866732
+      },
+      "audit": {
+        "fake_calls": [
+          {
+            "call": "FAKE_Client.from_env"
+          },
+          {
+            "call": "FAKE_Workspace.from_context"
+          },
+          {
+            "call": "hydrate"
+          },
+          {
+            "call": "billing.summary"
+          },
+          {
+            "call": "App.lookup",
+            "app_name": "a040-LOCAL-FAKE",
+            "create_if_missing": true,
+            "environment": "main"
+          },
+          {
+            "call": "Image.from_registry",
+            "tag": "python:3.13.14-slim"
+          },
+          {
+            "call": "run_function_recipe",
+            "cpu": [
+              1,
+              1
+            ],
+            "memory": [
+              8192,
+              8192
+            ],
+            "timeout": 600,
+            "include_source": false
+          },
+          {
+            "call": "Image.build",
+            "app_id": "ap-FAKE-OWNED"
+          },
+          {
+            "call": "billing.summary"
+          },
+          {
+            "call": "AppStop",
+            "app_id": "ap-FAKE-OWNED"
+          },
+          {
+            "call": "AppGetInfo",
+            "app_id": "ap-FAKE-OWNED"
+          },
+          {
+            "call": "TaskList",
+            "app_id": "ap-FAKE-OWNED"
+          }
+        ],
+        "blocked_operations": [],
+        "sdk_imported": false,
+        "model_imported": false,
+        "pending_tasks_at_exit": 1,
+        "stdout_encoding": "utf-8",
+        "stderr_encoding": "utf-8",
+        "network_transport": "FAKE_ONLY",
+        "live_rpc_calls": 0,
+        "grandchildren_allowed": false,
+        "synthetic_network_guard_probe_blocked": 1
+      },
+      "counts": {
+        "App.lookup": 1,
+        "Image.build": 1,
+        "AppStop": 1,
+        "AppGetInfo": 1,
+        "TaskList": 1
+      }
+    },
+    {
+      "scenario": "stop_timeout",
+      "mode": "pipe",
+      "launcher": {
+        "pid": 36236,
+        "returncode": 0,
+        "watchdog_timeout": false,
+        "wall_seconds": 0.3637767999989592,
+        "mode": "pipe",
+        "remote_termination_claim": false,
+        "command": [
+          "C:\\Users\\USER\\Desktop\\SimulacraBench\\tmp\\a040-modal-full-path1\\sdk-venv\\Scripts\\python.exe",
+          "-X",
+          "utf8",
+          "-u",
+          "C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\modal-controller-repair1\\fake_worker.py",
+          "stop_timeout",
+          "C:\\Users\\USER\\Desktop\\SimulacraBench\\tmp\\a040-modal-controller-repair1\\suite2\\05-stop_timeout-pipe"
+        ],
+        "utf8_env": {
+          "PYTHONUTF8": "1",
+          "PYTHONIOENCODING": "utf-8"
+        }
+      },
+      "passed": true,
+      "result": {
+        "outcome": "BUILD_COMPLETED",
+        "owned_app_id": "ap-FAKE-OWNED",
+        "stop_ack": false,
+        "termination": "UNCONFIRMED",
+        "create_attempts": 1,
+        "build_attempts": 1,
+        "stop_attempts": 1,
+        "cleanup_errors": [
+          {
+            "stage": "stop",
+            "error": "TimeoutError('Operation deadline; cancellation completion not assumed')"
+          }
+        ],
+        "execution": "INJECTED_LOCAL_ONLY",
+        "image_id": "im-FAKE",
+        "termination_observation": {
+          "stopped": false,
+          "task_count": 0
+        },
+        "cleanup_seconds": 0.12643759999991744,
+        "elapsed_seconds": 0.12946990000091319
+      },
+      "audit": {
+        "fake_calls": [
+          {
+            "call": "FAKE_Client.from_env"
+          },
+          {
+            "call": "FAKE_Workspace.from_context"
+          },
+          {
+            "call": "hydrate"
+          },
+          {
+            "call": "billing.summary"
+          },
+          {
+            "call": "App.lookup",
+            "app_name": "a040-LOCAL-FAKE",
+            "create_if_missing": true,
+            "environment": "main"
+          },
+          {
+            "call": "Image.from_registry",
+            "tag": "python:3.13.14-slim"
+          },
+          {
+            "call": "run_function_recipe",
+            "cpu": [
+              1,
+              1
+            ],
+            "memory": [
+              8192,
+              8192
+            ],
+            "timeout": 600,
+            "include_source": false
+          },
+          {
+            "call": "Image.build",
+            "app_id": "ap-FAKE-OWNED"
+          },
+          {
+            "call": "billing.summary"
+          },
+          {
+            "call": "AppStop",
+            "app_id": "ap-FAKE-OWNED"
+          },
+          {
+            "call": "AppGetInfo",
+            "app_id": "ap-FAKE-OWNED"
+          },
+          {
+            "call": "TaskList",
+            "app_id": "ap-FAKE-OWNED"
+          }
+        ],
+        "blocked_operations": [],
+        "sdk_imported": false,
+        "model_imported": false,
+        "pending_tasks_at_exit": 1,
+        "stdout_encoding": "utf-8",
+        "stderr_encoding": "utf-8",
+        "network_transport": "FAKE_ONLY",
+        "live_rpc_calls": 0,
+        "grandchildren_allowed": false,
+        "synthetic_network_guard_probe_blocked": 1
+      },
+      "counts": {
+        "App.lookup": 1,
+        "Image.build": 1,
+        "AppStop": 1,
+        "AppGetInfo": 1,
+        "TaskList": 1
+      }
+    },
+    {
+      "scenario": "stop_failure",
+      "mode": "pipe",
+      "launcher": {
+        "pid": 34872,
+        "returncode": 0,
+        "watchdog_timeout": false,
+        "wall_seconds": 0.23533820000011474,
+        "mode": "pipe",
+        "remote_termination_claim": false,
+        "command": [
+          "C:\\Users\\USER\\Desktop\\SimulacraBench\\tmp\\a040-modal-full-path1\\sdk-venv\\Scripts\\python.exe",
+          "-X",
+          "utf8",
+          "-u",
+          "C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\modal-controller-repair1\\fake_worker.py",
+          "stop_failure",
+          "C:\\Users\\USER\\Desktop\\SimulacraBench\\tmp\\a040-modal-controller-repair1\\suite2\\06-stop_failure-pipe"
+        ],
+        "utf8_env": {
+          "PYTHONUTF8": "1",
+          "PYTHONIOENCODING": "utf-8"
+        }
+      },
+      "passed": true,
+      "result": {
+        "outcome": "BUILD_COMPLETED",
+        "owned_app_id": "ap-FAKE-OWNED",
+        "stop_ack": false,
+        "termination": "UNCONFIRMED",
+        "create_attempts": 1,
+        "build_attempts": 1,
+        "stop_attempts": 1,
+        "cleanup_errors": [
+          {
+            "stage": "stop",
+            "error": "RuntimeError('stop failed • 한글')"
+          }
+        ],
+        "execution": "INJECTED_LOCAL_ONLY",
+        "image_id": "im-FAKE",
+        "termination_observation": {
+          "stopped": false,
+          "task_count": 0
+        },
+        "cleanup_seconds": 0.0006923000000824686,
+        "elapsed_seconds": 0.00384459999986575
+      },
+      "audit": {
+        "fake_calls": [
+          {
+            "call": "FAKE_Client.from_env"
+          },
+          {
+            "call": "FAKE_Workspace.from_context"
+          },
+          {
+            "call": "hydrate"
+          },
+          {
+            "call": "billing.summary"
+          },
+          {
+            "call": "App.lookup",
+            "app_name": "a040-LOCAL-FAKE",
+            "create_if_missing": true,
+            "environment": "main"
+          },
+          {
+            "call": "Image.from_registry",
+            "tag": "python:3.13.14-slim"
+          },
+          {
+            "call": "run_function_recipe",
+            "cpu": [
+              1,
+              1
+            ],
+            "memory": [
+              8192,
+              8192
+            ],
+            "timeout": 600,
+            "include_source": false
+          },
+          {
+            "call": "Image.build",
+            "app_id": "ap-FAKE-OWNED"
+          },
+          {
+            "call": "billing.summary"
+          },
+          {
+            "call": "AppStop",
+            "app_id": "ap-FAKE-OWNED"
+          },
+          {
+            "call": "AppGetInfo",
+            "app_id": "ap-FAKE-OWNED"
+          },
+          {
+            "call": "TaskList",
+            "app_id": "ap-FAKE-OWNED"
+          }
+        ],
+        "blocked_operations": [],
+        "sdk_imported": false,
+        "model_imported": false,
+        "pending_tasks_at_exit": 0,
+        "stdout_encoding": "utf-8",
+        "stderr_encoding": "utf-8",
+        "network_transport": "FAKE_ONLY",
+        "live_rpc_calls": 0,
+        "grandchildren_allowed": false,
+        "synthetic_network_guard_probe_blocked": 1
+      },
+      "counts": {
+        "App.lookup": 1,
+        "Image.build": 1,
+        "AppStop": 1,
+        "AppGetInfo": 1,
+        "TaskList": 1
+      }
+    },
+    {
+      "scenario": "ack_running",
+      "mode": "pipe",
+      "launcher": {
+        "pid": 36796,
+        "returncode": 0,
+        "watchdog_timeout": false,
+        "wall_seconds": 0.23356349999994563,
+        "mode": "pipe",
+        "remote_termination_claim": false,
+        "command": [
+          "C:\\Users\\USER\\Desktop\\SimulacraBench\\tmp\\a040-modal-full-path1\\sdk-venv\\Scripts\\python.exe",
+          "-X",
+          "utf8",
+          "-u",
+          "C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\modal-controller-repair1\\fake_worker.py",
+          "ack_running",
+          "C:\\Users\\USER\\Desktop\\SimulacraBench\\tmp\\a040-modal-controller-repair1\\suite2\\07-ack_running-pipe"
+        ],
+        "utf8_env": {
+          "PYTHONUTF8": "1",
+          "PYTHONIOENCODING": "utf-8"
+        }
+      },
+      "passed": true,
+      "result": {
+        "outcome": "BUILD_COMPLETED",
+        "owned_app_id": "ap-FAKE-OWNED",
+        "stop_ack": true,
+        "termination": "UNCONFIRMED",
+        "create_attempts": 1,
+        "build_attempts": 1,
+        "stop_attempts": 1,
+        "cleanup_errors": [],
+        "execution": "INJECTED_LOCAL_ONLY",
+        "image_id": "im-FAKE",
+        "termination_observation": {
+          "stopped": false,
+          "task_count": 1
+        },
+        "cleanup_seconds": 0.0007946999994601356,
+        "elapsed_seconds": 0.0038153999994392507
+      },
+      "audit": {
+        "fake_calls": [
+          {
+            "call": "FAKE_Client.from_env"
+          },
+          {
+            "call": "FAKE_Workspace.from_context"
+          },
+          {
+            "call": "hydrate"
+          },
+          {
+            "call": "billing.summary"
+          },
+          {
+            "call": "App.lookup",
+            "app_name": "a040-LOCAL-FAKE",
+            "create_if_missing": true,
+            "environment": "main"
+          },
+          {
+            "call": "Image.from_registry",
+            "tag": "python:3.13.14-slim"
+          },
+          {
+            "call": "run_function_recipe",
+            "cpu": [
+              1,
+              1
+            ],
+            "memory": [
+              8192,
+              8192
+            ],
+            "timeout": 600,
+            "include_source": false
+          },
+          {
+            "call": "Image.build",
+            "app_id": "ap-FAKE-OWNED"
+          },
+          {
+            "call": "billing.summary"
+          },
+          {
+            "call": "AppStop",
+            "app_id": "ap-FAKE-OWNED"
+          },
+          {
+            "call": "AppGetInfo",
+            "app_id": "ap-FAKE-OWNED"
+          },
+          {
+            "call": "TaskList",
+            "app_id": "ap-FAKE-OWNED"
+          }
+        ],
+        "blocked_operations": [],
+        "sdk_imported": false,
+        "model_imported": false,
+        "pending_tasks_at_exit": 0,
+        "stdout_encoding": "utf-8",
+        "stderr_encoding": "utf-8",
+        "network_transport": "FAKE_ONLY",
+        "live_rpc_calls": 0,
+        "grandchildren_allowed": false,
+        "synthetic_network_guard_probe_blocked": 1
+      },
+      "counts": {
+        "App.lookup": 1,
+        "Image.build": 1,
+        "AppStop": 1,
+        "AppGetInfo": 1,
+        "TaskList": 1
+      }
+    },
+    {
+      "scenario": "terminal_tasks",
+      "mode": "pipe",
+      "launcher": {
+        "pid": 3636,
+        "returncode": 0,
+        "watchdog_timeout": false,
+        "wall_seconds": 0.23325579999982438,
+        "mode": "pipe",
+        "remote_termination_claim": false,
+        "command": [
+          "C:\\Users\\USER\\Desktop\\SimulacraBench\\tmp\\a040-modal-full-path1\\sdk-venv\\Scripts\\python.exe",
+          "-X",
+          "utf8",
+          "-u",
+          "C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\modal-controller-repair1\\fake_worker.py",
+          "terminal_tasks",
+          "C:\\Users\\USER\\Desktop\\SimulacraBench\\tmp\\a040-modal-controller-repair1\\suite2\\08-terminal_tasks-pipe"
+        ],
+        "utf8_env": {
+          "PYTHONUTF8": "1",
+          "PYTHONIOENCODING": "utf-8"
+        }
+      },
+      "passed": true,
+      "result": {
+        "outcome": "BUILD_COMPLETED",
+        "owned_app_id": "ap-FAKE-OWNED",
+        "stop_ack": true,
+        "termination": "UNCONFIRMED",
+        "create_attempts": 1,
+        "build_attempts": 1,
+        "stop_attempts": 1,
+        "cleanup_errors": [],
+        "execution": "INJECTED_LOCAL_ONLY",
+        "image_id": "im-FAKE",
+        "termination_observation": {
+          "stopped": true,
+          "task_count": 1
+        },
+        "cleanup_seconds": 0.000671199999487726,
+        "elapsed_seconds": 0.0037247000000206754
+      },
+      "audit": {
+        "fake_calls": [
+          {
+            "call": "FAKE_Client.from_env"
+          },
+          {
+            "call": "FAKE_Workspace.from_context"
+          },
+          {
+            "call": "hydrate"
+          },
+          {
+            "call": "billing.summary"
+          },
+          {
+            "call": "App.lookup",
+            "app_name": "a040-LOCAL-FAKE",
+            "create_if_missing": true,
+            "environment": "main"
+          },
+          {
+            "call": "Image.from_registry",
+            "tag": "python:3.13.14-slim"
+          },
+          {
+            "call": "run_function_recipe",
+            "cpu": [
+              1,
+              1
+            ],
+            "memory": [
+              8192,
+              8192
+            ],
+            "timeout": 600,
+            "include_source": false
+          },
+          {
+            "call": "Image.build",
+            "app_id": "ap-FAKE-OWNED"
+          },
+          {
+            "call": "billing.summary"
+          },
+          {
+            "call": "AppStop",
+            "app_id": "ap-FAKE-OWNED"
+          },
+          {
+            "call": "AppGetInfo",
+            "app_id": "ap-FAKE-OWNED"
+          },
+          {
+            "call": "TaskList",
+            "app_id": "ap-FAKE-OWNED"
+          }
+        ],
+        "blocked_operations": [],
+        "sdk_imported": false,
+        "model_imported": false,
+        "pending_tasks_at_exit": 0,
+        "stdout_encoding": "utf-8",
+        "stderr_encoding": "utf-8",
+        "network_transport": "FAKE_ONLY",
+        "live_rpc_calls": 0,
+        "grandchildren_allowed": false,
+        "synthetic_network_guard_probe_blocked": 1
+      },
+      "counts": {
+        "App.lookup": 1,
+        "Image.build": 1,
+        "AppStop": 1,
+        "AppGetInfo": 1,
+        "TaskList": 1
+      }
+    },
+    {
+      "scenario": "terminal_zero",
+      "mode": "pipe",
+      "launcher": {
+        "pid": 38704,
+        "returncode": 0,
+        "watchdog_timeout": false,
+        "wall_seconds": 0.23378090000005614,
+        "mode": "pipe",
+        "remote_termination_claim": false,
+        "command": [
+          "C:\\Users\\USER\\Desktop\\SimulacraBench\\tmp\\a040-modal-full-path1\\sdk-venv\\Scripts\\python.exe",
+          "-X",
+          "utf8",
+          "-u",
+          "C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\modal-controller-repair1\\fake_worker.py",
+          "terminal_zero",
+          "C:\\Users\\USER\\Desktop\\SimulacraBench\\tmp\\a040-modal-controller-repair1\\suite2\\09-terminal_zero-pipe"
+        ],
+        "utf8_env": {
+          "PYTHONUTF8": "1",
+          "PYTHONIOENCODING": "utf-8"
+        }
+      },
+      "passed": true,
+      "result": {
+        "outcome": "BUILD_COMPLETED",
+        "owned_app_id": "ap-FAKE-OWNED",
+        "stop_ack": true,
+        "termination": "TERMINAL_TASK0_CONFIRMED",
+        "create_attempts": 1,
+        "build_attempts": 1,
+        "stop_attempts": 1,
+        "cleanup_errors": [],
+        "execution": "INJECTED_LOCAL_ONLY",
+        "image_id": "im-FAKE",
+        "termination_observation": {
+          "stopped": true,
+          "task_count": 0
+        },
+        "cleanup_seconds": 0.000640199999907054,
+        "elapsed_seconds": 0.004564099999697646
+      },
+      "audit": {
+        "fake_calls": [
+          {
+            "call": "FAKE_Client.from_env"
+          },
+          {
+            "call": "FAKE_Workspace.from_context"
+          },
+          {
+            "call": "hydrate"
+          },
+          {
+            "call": "billing.summary"
+          },
+          {
+            "call": "App.lookup",
+            "app_name": "a040-LOCAL-FAKE",
+            "create_if_missing": true,
+            "environment": "main"
+          },
+          {
+            "call": "Image.from_registry",
+            "tag": "python:3.13.14-slim"
+          },
+          {
+            "call": "run_function_recipe",
+            "cpu": [
+              1,
+              1
+            ],
+            "memory": [
+              8192,
+              8192
+            ],
+            "timeout": 600,
+            "include_source": false
+          },
+          {
+            "call": "Image.build",
+            "app_id": "ap-FAKE-OWNED"
+          },
+          {
+            "call": "billing.summary"
+          },
+          {
+            "call": "AppStop",
+            "app_id": "ap-FAKE-OWNED"
+          },
+          {
+            "call": "AppGetInfo",
+            "app_id": "ap-FAKE-OWNED"
+          },
+          {
+            "call": "TaskList",
+            "app_id": "ap-FAKE-OWNED"
+          }
+        ],
+        "blocked_operations": [],
+        "sdk_imported": false,
+        "model_imported": false,
+        "pending_tasks_at_exit": 0,
+        "stdout_encoding": "utf-8",
+        "stderr_encoding": "utf-8",
+        "network_transport": "FAKE_ONLY",
+        "live_rpc_calls": 0,
+        "grandchildren_allowed": false,
+        "synthetic_network_guard_probe_blocked": 1
+      },
+      "counts": {
+        "App.lookup": 1,
+        "Image.build": 1,
+        "AppStop": 1,
+        "AppGetInfo": 1,
+        "TaskList": 1
+      }
+    },
+    {
+      "scenario": "create_lost",
+      "mode": "pipe",
+      "launcher": {
+        "pid": 3136,
+        "returncode": 2,
+        "watchdog_timeout": false,
+        "wall_seconds": 0.23978549999992538,
+        "mode": "pipe",
+        "remote_termination_claim": false,
+        "command": [
+          "C:\\Users\\USER\\Desktop\\SimulacraBench\\tmp\\a040-modal-full-path1\\sdk-venv\\Scripts\\python.exe",
+          "-X",
+          "utf8",
+          "-u",
+          "C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\modal-controller-repair1\\fake_worker.py",
+          "create_lost",
+          "C:\\Users\\USER\\Desktop\\SimulacraBench\\tmp\\a040-modal-controller-repair1\\suite2\\10-create_lost-pipe"
+        ],
+        "utf8_env": {
+          "PYTHONUTF8": "1",
+          "PYTHONIOENCODING": "utf-8"
+        }
+      },
+      "passed": true,
+      "result": {
+        "outcome": "BUILD_FAILED",
+        "owned_app_id": null,
+        "stop_ack": false,
+        "termination": "ID_UNKNOWN",
+        "create_attempts": 1,
+        "build_attempts": 0,
+        "stop_attempts": 0,
+        "cleanup_errors": [],
+        "execution": "INJECTED_LOCAL_ONLY",
+        "error": "TimeoutError('create response lost • 한글')",
+        "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\modal-controller-repair1\\controller.py\", line 115, in run_controller\n    app_id = await bounded(transport.create(), phase)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\modal-controller-repair1\\controller.py\", line 90, in bounded\n    return task.result()\n           ~~~~~~~~~~~^^\n  File \"C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\modal-controller-repair1\\controller.py\", line 35, in create\n    self.app = await self.sdk.App.lookup(self.app_name, client=self.client,\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n                        create_if_missing=True, environment_name=\"main\")\n                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\modal-controller-repair1\\fake_worker.py\", line 92, in lookup\n    raise TimeoutError(\"create response lost • 한글\")\nTimeoutError: create response lost • 한글\n",
+        "cleanup_seconds": 1.2000000424450263e-06,
+        "elapsed_seconds": 0.004871399998592096
+      },
+      "audit": {
+        "fake_calls": [
+          {
+            "call": "FAKE_Client.from_env"
+          },
+          {
+            "call": "FAKE_Workspace.from_context"
+          },
+          {
+            "call": "hydrate"
+          },
+          {
+            "call": "billing.summary"
+          },
+          {
+            "call": "App.lookup",
+            "app_name": "a040-LOCAL-FAKE",
+            "create_if_missing": true,
+            "environment": "main"
+          }
+        ],
+        "blocked_operations": [],
+        "sdk_imported": false,
+        "model_imported": false,
+        "pending_tasks_at_exit": 0,
+        "stdout_encoding": "utf-8",
+        "stderr_encoding": "utf-8",
+        "network_transport": "FAKE_ONLY",
+        "live_rpc_calls": 0,
+        "grandchildren_allowed": false,
+        "synthetic_network_guard_probe_blocked": 1
+      },
+      "counts": {
+        "App.lookup": 1,
+        "Image.build": 0,
+        "AppStop": 0,
+        "AppGetInfo": 0,
+        "TaskList": 0
+      }
+    },
+    {
+      "scenario": "construct_error",
+      "mode": "pipe",
+      "launcher": {
+        "pid": 41380,
+        "returncode": 2,
+        "watchdog_timeout": false,
+        "wall_seconds": 0.2442971000000398,
+        "mode": "pipe",
+        "remote_termination_claim": false,
+        "command": [
+          "C:\\Users\\USER\\Desktop\\SimulacraBench\\tmp\\a040-modal-full-path1\\sdk-venv\\Scripts\\python.exe",
+          "-X",
+          "utf8",
+          "-u",
+          "C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\modal-controller-repair1\\fake_worker.py",
+          "construct_error",
+          "C:\\Users\\USER\\Desktop\\SimulacraBench\\tmp\\a040-modal-controller-repair1\\suite2\\11-construct_error-pipe"
+        ],
+        "utf8_env": {
+          "PYTHONUTF8": "1",
+          "PYTHONIOENCODING": "utf-8"
+        }
+      },
+      "passed": true,
+      "result": {
+        "outcome": "BUILD_FAILED",
+        "owned_app_id": "ap-FAKE-OWNED",
+        "stop_ack": true,
+        "termination": "TERMINAL_TASK0_CONFIRMED",
+        "create_attempts": 1,
+        "build_attempts": 0,
+        "stop_attempts": 1,
+        "cleanup_errors": [],
+        "execution": "INJECTED_LOCAL_ONLY",
+        "error": "RuntimeError('construction before old try • 한글')",
+        "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\modal-controller-repair1\\controller.py\", line 120, in run_controller\n    transport.construct()\n    ~~~~~~~~~~~~~~~~~~~^^\n  File \"C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\modal-controller-repair1\\controller.py\", line 40, in construct\n    self.image = self.sdk.Image.from_registry('python:3.13.14-slim').run_function(\n                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\modal-controller-repair1\\fake_worker.py\", line 102, in from_registry\n    raise RuntimeError(\"construction before old try • 한글\")\nRuntimeError: construction before old try • 한글\n",
+        "termination_observation": {
+          "stopped": true,
+          "task_count": 0
+        },
+        "cleanup_seconds": 0.0008658000006107613,
+        "elapsed_seconds": 0.006639500001256238
+      },
+      "audit": {
+        "fake_calls": [
+          {
+            "call": "FAKE_Client.from_env"
+          },
+          {
+            "call": "FAKE_Workspace.from_context"
+          },
+          {
+            "call": "hydrate"
+          },
+          {
+            "call": "billing.summary"
+          },
+          {
+            "call": "App.lookup",
+            "app_name": "a040-LOCAL-FAKE",
+            "create_if_missing": true,
+            "environment": "main"
+          },
+          {
+            "call": "Image.from_registry",
+            "tag": "python:3.13.14-slim"
+          },
+          {
+            "call": "AppStop",
+            "app_id": "ap-FAKE-OWNED"
+          },
+          {
+            "call": "AppGetInfo",
+            "app_id": "ap-FAKE-OWNED"
+          },
+          {
+            "call": "TaskList",
+            "app_id": "ap-FAKE-OWNED"
+          }
+        ],
+        "blocked_operations": [],
+        "sdk_imported": false,
+        "model_imported": false,
+        "pending_tasks_at_exit": 0,
+        "stdout_encoding": "utf-8",
+        "stderr_encoding": "utf-8",
+        "network_transport": "FAKE_ONLY",
+        "live_rpc_calls": 0,
+        "grandchildren_allowed": false,
+        "synthetic_network_guard_probe_blocked": 1
+      },
+      "counts": {
+        "App.lookup": 1,
+        "Image.build": 0,
+        "AppStop": 1,
+        "AppGetInfo": 1,
+        "TaskList": 1
+      }
+    },
+    {
+      "scenario": "prepare_error",
+      "mode": "pipe",
+      "launcher": {
+        "pid": 36220,
+        "returncode": 2,
+        "watchdog_timeout": false,
+        "wall_seconds": 0.25019350000002305,
+        "mode": "pipe",
+        "remote_termination_claim": false,
+        "command": [
+          "C:\\Users\\USER\\Desktop\\SimulacraBench\\tmp\\a040-modal-full-path1\\sdk-venv\\Scripts\\python.exe",
+          "-X",
+          "utf8",
+          "-u",
+          "C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\modal-controller-repair1\\fake_worker.py",
+          "prepare_error",
+          "C:\\Users\\USER\\Desktop\\SimulacraBench\\tmp\\a040-modal-controller-repair1\\suite2\\12-prepare_error-pipe"
+        ],
+        "utf8_env": {
+          "PYTHONUTF8": "1",
+          "PYTHONIOENCODING": "utf-8"
+        }
+      },
+      "passed": true,
+      "result": {
+        "outcome": "BUILD_FAILED",
+        "owned_app_id": null,
+        "stop_ack": false,
+        "termination": "NO_CREATE_ATTEMPT",
+        "create_attempts": 0,
+        "build_attempts": 0,
+        "stop_attempts": 0,
+        "cleanup_errors": [],
+        "execution": "INJECTED_LOCAL_ONLY",
+        "error": "RuntimeError('before create • 한글')",
+        "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\modal-controller-repair1\\controller.py\", line 112, in run_controller\n    await bounded(transport.prepare(), phase)\n  File \"C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\modal-controller-repair1\\controller.py\", line 90, in bounded\n    return task.result()\n           ~~~~~~~~~~~^^\n  File \"C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\modal-controller-repair1\\controller.py\", line 25, in prepare\n    self.client = await self.sdk.Client.from_env()\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\modal-controller-repair1\\fake_worker.py\", line 67, in from_env\n    raise RuntimeError(\"before create • 한글\")\nRuntimeError: before create • 한글\n",
+        "cleanup_seconds": 9.000013960758224e-07,
+        "elapsed_seconds": 0.003995799999756855
+      },
+      "audit": {
+        "fake_calls": [
+          {
+            "call": "FAKE_Client.from_env"
+          }
+        ],
+        "blocked_operations": [],
+        "sdk_imported": false,
+        "model_imported": false,
+        "pending_tasks_at_exit": 0,
+        "stdout_encoding": "utf-8",
+        "stderr_encoding": "utf-8",
+        "network_transport": "FAKE_ONLY",
+        "live_rpc_calls": 0,
+        "grandchildren_allowed": false,
+        "synthetic_network_guard_probe_blocked": 1
+      },
+      "counts": {
+        "App.lookup": 0,
+        "Image.build": 0,
+        "AppStop": 0,
+        "AppGetInfo": 0,
+        "TaskList": 0
+      }
+    },
+    {
+      "scenario": "query_timeout",
+      "mode": "pipe",
+      "launcher": {
+        "pid": 41720,
+        "returncode": 0,
+        "watchdog_timeout": false,
+        "wall_seconds": 0.36765639999975974,
+        "mode": "pipe",
+        "remote_termination_claim": false,
+        "command": [
+          "C:\\Users\\USER\\Desktop\\SimulacraBench\\tmp\\a040-modal-full-path1\\sdk-venv\\Scripts\\python.exe",
+          "-X",
+          "utf8",
+          "-u",
+          "C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\modal-controller-repair1\\fake_worker.py",
+          "query_timeout",
+          "C:\\Users\\USER\\Desktop\\SimulacraBench\\tmp\\a040-modal-controller-repair1\\suite2\\13-query_timeout-pipe"
+        ],
+        "utf8_env": {
+          "PYTHONUTF8": "1",
+          "PYTHONIOENCODING": "utf-8"
+        }
+      },
+      "passed": true,
+      "result": {
+        "outcome": "BUILD_COMPLETED",
+        "owned_app_id": "ap-FAKE-OWNED",
+        "stop_ack": true,
+        "termination": "UNCONFIRMED",
+        "create_attempts": 1,
+        "build_attempts": 1,
+        "stop_attempts": 1,
+        "cleanup_errors": [
+          {
+            "stage": "query",
+            "error": "TimeoutError('Operation deadline; cancellation completion not assumed')"
+          }
+        ],
+        "execution": "INJECTED_LOCAL_ONLY",
+        "image_id": "im-FAKE",
+        "cleanup_seconds": 0.12370029999874532,
+        "elapsed_seconds": 0.12743480000062846
+      },
+      "audit": {
+        "fake_calls": [
+          {
+            "call": "FAKE_Client.from_env"
+          },
+          {
+            "call": "FAKE_Workspace.from_context"
+          },
+          {
+            "call": "hydrate"
+          },
+          {
+            "call": "billing.summary"
+          },
+          {
+            "call": "App.lookup",
+            "app_name": "a040-LOCAL-FAKE",
+            "create_if_missing": true,
+            "environment": "main"
+          },
+          {
+            "call": "Image.from_registry",
+            "tag": "python:3.13.14-slim"
+          },
+          {
+            "call": "run_function_recipe",
+            "cpu": [
+              1,
+              1
+            ],
+            "memory": [
+              8192,
+              8192
+            ],
+            "timeout": 600,
+            "include_source": false
+          },
+          {
+            "call": "Image.build",
+            "app_id": "ap-FAKE-OWNED"
+          },
+          {
+            "call": "billing.summary"
+          },
+          {
+            "call": "AppStop",
+            "app_id": "ap-FAKE-OWNED"
+          },
+          {
+            "call": "AppGetInfo",
+            "app_id": "ap-FAKE-OWNED"
+          }
+        ],
+        "blocked_operations": [],
+        "sdk_imported": false,
+        "model_imported": false,
+        "pending_tasks_at_exit": 1,
+        "stdout_encoding": "utf-8",
+        "stderr_encoding": "utf-8",
+        "network_transport": "FAKE_ONLY",
+        "live_rpc_calls": 0,
+        "grandchildren_allowed": false,
+        "synthetic_network_guard_probe_blocked": 1
+      },
+      "counts": {
+        "App.lookup": 1,
+        "Image.build": 1,
+        "AppStop": 1,
+        "AppGetInfo": 1,
+        "TaskList": 0
+      }
+    },
+    {
+      "scenario": "blocked_loop",
+      "mode": "pipe",
+      "launcher": {
+        "pid": 17880,
+        "returncode": 1,
+        "watchdog_timeout": true,
+        "wall_seconds": 1.0330568999997922,
+        "mode": "pipe",
+        "remote_termination_claim": false,
+        "command": [
+          "C:\\Users\\USER\\Desktop\\SimulacraBench\\tmp\\a040-modal-full-path1\\sdk-venv\\Scripts\\python.exe",
+          "-X",
+          "utf8",
+          "-u",
+          "C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\modal-controller-repair1\\fake_worker.py",
+          "blocked_loop",
+          "C:\\Users\\USER\\Desktop\\SimulacraBench\\tmp\\a040-modal-controller-repair1\\suite2\\14-blocked_loop-pipe"
+        ],
+        "utf8_env": {
+          "PYTHONUTF8": "1",
+          "PYTHONIOENCODING": "utf-8"
+        },
+        "partial_journal": {
+          "outcome": "NOT_STARTED",
+          "owned_app_id": "ap-FAKE-OWNED",
+          "stop_ack": false,
+          "termination": "UNCONFIRMED",
+          "create_attempts": 1,
+          "build_attempts": 1,
+          "stop_attempts": 0,
+          "cleanup_errors": [],
+          "execution": "INJECTED_LOCAL_ONLY"
+        },
+        "termination": "UNCONFIRMED_WATCHDOG"
+      },
+      "passed": true
+    }
+  ],
+  "case_count": 15,
+  "seconds": 4.871305599999687,
+  "installer_source_equal": true,
+  "remote_calls": 0,
+  "sdk_imports": 0,
+  "scientific_runs": 0
+}

@@ -1,0 +1,14 @@
+﻿{
+    "frozen_kst":  "2026-10-23T15:36:18.9582340+09:00",
+    "reason":  "Final-sample memory qualification; model/assembly/observer/input/policy unchanged",
+    "old_controller_sha256":  "296613e2349f3e274028b1e082dc3de4f6491861b82e19c886a80ab2c6bab60f",
+    "replaces":  {
+                     "docs/analysis/E064-outputs/s2/release.py":  "296613e2349f3e274028b1e082dc3de4f6491861b82e19c886a80ab2c6bab60f"
+                 },
+    "hashes":  {
+                   "docs/analysis/E064-outputs/s2/release.py":  "6f51e7fcd7eea6b940d83e590e2b3cfe553515559db00a6478f8d8012d38a423",
+                   "docs/analysis/E064-outputs/s2/tests_resources.py":  "a46cd8bd41568216282bf24dc5439885a44140c01bf9ee1dd8edaed2dacb7fd6"
+               },
+    "assembly_preserved_valid":  "All recorded peaks below8GiB, exact parity and call/time caps pass; no successful-arm repeat",
+    "code_repair_before_next_stage":  true
+}

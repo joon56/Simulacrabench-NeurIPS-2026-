@@ -1,0 +1,251 @@
+{
+    "created_utc":  "2026-10-04T12:50:37.5576605Z",
+    "files":  [
+                  {
+                      "path":  "billing-baseline.json",
+                      "bytes":  446,
+                      "sha256":  "b587e2162568be85e46c40c864566a7b37f252c36f5a5d925581fb66de5be549"
+                  },
+                  {
+                      "path":  "billing-latest.json",
+                      "bytes":  446,
+                      "sha256":  "b587e2162568be85e46c40c864566a7b37f252c36f5a5d925581fb66de5be549"
+                  },
+                  {
+                      "path":  "closeout.md",
+                      "bytes":  2800,
+                      "sha256":  "9628d193bef73a894fc87ec811b5606a6e45ee869e0e97d6ba69c5d2508a3c33"
+                  },
+                  {
+                      "path":  "controller_core.py",
+                      "bytes":  1758,
+                      "sha256":  "69045525d5cdac7fe4b61297f2672325bd652bc7ef87f5d1eaf7cfdab24c5d59"
+                  },
+                  {
+                      "path":  "cost-ledger.json",
+                      "bytes":  414,
+                      "sha256":  "37b9c05d58e9de9ce0c4d951850a927d1f801eabb07d00a8413c4e11d0deefe2"
+                  },
+                  {
+                      "path":  "dirty-close.txt",
+                      "bytes":  3219,
+                      "sha256":  "184f0fe5ff15527c15fb34d257489dd2552aa7f718ac2c3259d5032741e8d7e9"
+                  },
+                  {
+                      "path":  "dirty-entry.txt",
+                      "bytes":  3219,
+                      "sha256":  "184f0fe5ff15527c15fb34d257489dd2552aa7f718ac2c3259d5032741e8d7e9"
+                  },
+                  {
+                      "path":  "entry.json",
+                      "bytes":  1892,
+                      "sha256":  "d30b24b510433929c38384f186e22010e28c29dfa8945a5514242a9235d93e1c"
+                  },
+                  {
+                      "path":  "events.jsonl",
+                      "bytes":  2689,
+                      "sha256":  "41bc8cd11eaf6e6a75133adafc9954d130d9e34b6e50409b7ce68a2f60484113"
+                  },
+                  {
+                      "path":  "exposure-ledger.md",
+                      "bytes":  1859,
+                      "sha256":  "8a0415de027b11755e323d6f3ef03c3c4f7475411930f9df022ace096c20bdf9"
+                  },
+                  {
+                      "path":  "failure-analysis.md",
+                      "bytes":  3302,
+                      "sha256":  "74fb0eed6b834dd861c79a5626382ccb384a23ddaaeb25d7b26f207b41d065fd"
+                  },
+                  {
+                      "path":  "launch-receipt.json",
+                      "bytes":  185,
+                      "sha256":  "3437fbdea91e273a9d54e795b6f588a647aaa1fb29962e372567afe2e893a745"
+                  },
+                  {
+                      "path":  "launcher-console.txt",
+                      "bytes":  214,
+                      "sha256":  "a7af2be34f56360f4dfe5b9ac6c7422ff3409512624765f9ea88cdd278e60c25"
+                  },
+                  {
+                      "path":  "launcher-error.txt",
+                      "bytes":  0,
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                  },
+                  {
+                      "path":  "launcher-result.json",
+                      "bytes":  236,
+                      "sha256":  "59c8667d35a008ea884531513ae5407143b51d3212051222e9a220bb53e69eef"
+                  },
+                  {
+                      "path":  "launcher-started.json",
+                      "bytes":  82,
+                      "sha256":  "921124fc9622cd14e68c954a542f9c6382b829f41c529a0e8254301d562fceac"
+                  },
+                  {
+                      "path":  "live-controller-freeze.json",
+                      "bytes":  1910,
+                      "sha256":  "c7a01993f266544f39d9706ad52750f3518555701e6e0e78fc2480845a25eec4"
+                  },
+                  {
+                      "path":  "live-started.json",
+                      "bytes":  101,
+                      "sha256":  "32ff552431a2f2eb90297189fde62305d5774ddb0aebc3f8fd4154c66424a817"
+                  },
+                  {
+                      "path":  "live-state.json",
+                      "bytes":  1260,
+                      "sha256":  "c3507e22c0ca6380fcfeaa9ac87af1b2a3039bd024be13797a245df2a9014daa"
+                  },
+                  {
+                      "path":  "live-stderr.txt",
+                      "bytes":  791,
+                      "sha256":  "d1c60545d4be53cc2b0f16b0ae6ae885c7908ee7fa34856c66520bbd62d110ef"
+                  },
+                  {
+                      "path":  "live-stdout.txt",
+                      "bytes":  0,
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                  },
+                  {
+                      "path":  "live_binding.py",
+                      "bytes":  835,
+                      "sha256":  "ca1351a05eea38577632a918b286d5ee7e5c82d423928fd8c2ce1af67de206c8"
+                  },
+                  {
+                      "path":  "live_launcher.py",
+                      "bytes":  2330,
+                      "sha256":  "563dc236092021162cd62d6a12e2cb2f6dec9edbbcbb95a644ad1bcae9648cfa"
+                  },
+                  {
+                      "path":  "live_worker.py",
+                      "bytes":  14530,
+                      "sha256":  "bbc5fc6e2835f6bddf516a3eeade73b18c2546f826db990a5bddf806da1fc6dc"
+                  },
+                  {
+                      "path":  "operational-contract.md",
+                      "bytes":  3069,
+                      "sha256":  "e7342a842bcb97ef2e21c573da398bb9392892320bfe9169f7a6daa2f1945fb9"
+                  },
+                  {
+                      "path":  "owned-local-worker.json",
+                      "bytes":  123,
+                      "sha256":  "55cc7803107f406b5ac7a513b54cdf7d47e66ef9c3dd289efd38fae4b04ad2fa"
+                  },
+                  {
+                      "path":  "post-error-frozen-code-check.json",
+                      "bytes":  1782,
+                      "sha256":  "a51f19e95d64ed6f992b9760bf04887b22c0731b6efbf41c5d6f317ffc0aa199"
+                  },
+                  {
+                      "path":  "preflight-attempt1-resources.json",
+                      "bytes":  128,
+                      "sha256":  "044dcd722ca907fc371fe0f9d4408a99a7cc3a1f73fbaa0132fae3517a769eed"
+                  },
+                  {
+                      "path":  "preflight-attempt1-stderr.txt",
+                      "bytes":  1238,
+                      "sha256":  "2f76d72ec6b52e1bab24b507d24842a1f767f119ba9c40d941b2c3687886499e"
+                  },
+                  {
+                      "path":  "preflight-attempt2-resources.json",
+                      "bytes":  130,
+                      "sha256":  "e91728edcc1f1c49e2682854cb2d7ac33f9f0b3ae2c31e99cd43d2084cf0da06"
+                  },
+                  {
+                      "path":  "preflight-attempt2-stderr.txt",
+                      "bytes":  0,
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                  },
+                  {
+                      "path":  "preflight-attempt2-stdout.txt",
+                      "bytes":  508,
+                      "sha256":  "cc15b92eddcffb6daaba3ca296d970c90dda05f1bcdd0e8e503a1b9811a9364c"
+                  },
+                  {
+                      "path":  "preflight-before-version-import.py.txt",
+                      "bytes":  2492,
+                      "sha256":  "3f55084646d58824c70c3daffc827daec0d7da2d93089ade759fe9033bcc54ab"
+                  },
+                  {
+                      "path":  "preflight-resources.json",
+                      "bytes":  128,
+                      "sha256":  "044dcd722ca907fc371fe0f9d4408a99a7cc3a1f73fbaa0132fae3517a769eed"
+                  },
+                  {
+                      "path":  "preflight-result.json",
+                      "bytes":  3171,
+                      "sha256":  "3da753763986e5b6ca3e97b63a455ac58e9a64e7ffde7270e6dbd92b4cc4fe90"
+                  },
+                  {
+                      "path":  "preflight-stderr.txt",
+                      "bytes":  1238,
+                      "sha256":  "2f76d72ec6b52e1bab24b507d24842a1f767f119ba9c40d941b2c3687886499e"
+                  },
+                  {
+                      "path":  "preflight-stdout.txt",
+                      "bytes":  0,
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                  },
+                  {
+                      "path":  "preflight.py",
+                      "bytes":  2491,
+                      "sha256":  "7123a721678bba95ff82dd282e1aab24937302bced2363ccb4b90c5cf6ab07b6"
+                  },
+                  {
+                      "path":  "prior-resume2-preservation.json",
+                      "bytes":  1551,
+                      "sha256":  "fa24ae4271624a542c22eabdd469d70baabba90a4f3fba474c06ccb49b4c4851"
+                  },
+                  {
+                      "path":  "repair-source-identity.json",
+                      "bytes":  2477,
+                      "sha256":  "442c64cd3bcb3000ba2c5f2fbce642617ca42a5593a5459c9dece3a8405a177c"
+                  },
+                  {
+                      "path":  "result.json",
+                      "bytes":  1260,
+                      "sha256":  "c3507e22c0ca6380fcfeaa9ac87af1b2a3039bd024be13797a245df2a9014daa"
+                  },
+                  {
+                      "path":  "s0-handoff.ko.md",
+                      "bytes":  2604,
+                      "sha256":  "3ea7215b4c2a7ecc575ccada0c50e1b936974b5c43ca69a38c5c832733f90079"
+                  },
+                  {
+                      "path":  "shared-file-preservation.json",
+                      "bytes":  91,
+                      "sha256":  "75ac0c5b0fa6877701f7cb9f45ab76b41257b568d49669e610295874db5248bb"
+                  },
+                  {
+                      "path":  "source.diff",
+                      "bytes":  32007,
+                      "sha256":  "2a5b8e5534ccb6eb31a28e757c41759b4b19bad86e5e1a06ef4ad6a7cde74e64"
+                  },
+                  {
+                      "path":  "stage-summary.json",
+                      "bytes":  833,
+                      "sha256":  "3852d80ef25ba1ebb15285f2b9c62fd2f79a6a85f94cb36c05d3e7465a8473f7"
+                  },
+                  {
+                      "path":  "termination-receipt.json",
+                      "bytes":  196,
+                      "sha256":  "ad584f600e308679446b49fa0a8efafda397a15dbd5a06b506d8a53a85c0e439"
+                  },
+                  {
+                      "path":  "time-ledger.json",
+                      "bytes":  645,
+                      "sha256":  "fb2c7e3e5f5f55a894b5590ef8669d3d1a57675b8abf6dc2a8fd04774d0f98e5"
+                  },
+                  {
+                      "path":  "transfer-receipt.json",
+                      "bytes":  336,
+                      "sha256":  "8c3edd5f61c7ce49b65952156ab19da9af3539a79ec308f0495453a30f4d1aa6"
+                  },
+                  {
+                      "path":  "verification.json",
+                      "bytes":  3561,
+                      "sha256":  "a17887f0d95aad82ff547435fa67ed834b0c72237bc633aacde174660c1fb4bc"
+                  }
+              ],
+    "kind":  "Post-error resume3 artifacts; no model/payload hashes; excludes self and bytecode"
+}

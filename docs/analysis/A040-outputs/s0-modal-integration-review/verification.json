@@ -1,0 +1,248 @@
+{
+  "date_kst": "2026-10-04",
+  "read_time_checkpoint_kst": "2026-10-04T22:38:30+09:00",
+  "role": "S0",
+  "task": "Local integration result and source review; bounded handoff only",
+  "head": "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+  "workflow_revision": "2026-09-27-r4",
+  "workflow_sha256": "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642",
+  "read_evidence": [
+    "384c3d AGENTS/CLAUDE entry/status/latest3log/workflow routing; rest unchanged from preceding read",
+    "b78e70 closeout/phase-evidence/verification/contract-manifest/ledger",
+    "5231e2 HEAD/dirty/named local processes/directory metadata",
+    "56649f contract/live_worker/launcher full source",
+    "983089 sandbox_stage/sdk_endpoint/linux_boundary full source",
+    "f54f55 watchdog/runner first120/payload/protocol/regression-history/source-manifest",
+    "556407 runner remaining output path/results/test references/exposure/entry",
+    "cb1b4a SDK filesystem source/test endpoint and fixture manifest metadata",
+    "0e0964 runner mechanical diff, partial regression detail",
+    "de480a existing reference result metadata, compact all39 verdicts",
+    "54ff76 explicit source/document identity"
+  ],
+  "verdict": "RECORDED_LOCAL_PASS / REMOTE_HOLD_OUTPUT_CONTRACT",
+  "finding": {
+    "producer": "world_bank",
+    "consumer": "wb",
+    "test_fake": "wb",
+    "expected_effect": "Completed real reference rejected during export before candidate dispatch",
+    "basis": "Static source + frozen fixture/result metadata; no reproduction executed",
+    "secondary": "Total count alone does not verify per-instrument metadata"
+  },
+  "source_manifest_matches": 12,
+  "selected_artifact_manifest_matches": 24,
+  "recorded_regression_cases": 39,
+  "recorded_regression_failed_cases": 0,
+  "before_hashes": [
+    {
+      "path": "docs/analysis/A040-outputs/modal-local-integration1/closeout.md",
+      "sha256": "6f72a4c3ff2561b3866d125fce535b8c674f90cffdedd2e49a02bad17ae4e51e",
+      "source_match": null,
+      "artifact_match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/modal-local-integration1/phase-evidence.md",
+      "sha256": "4abb5d627a8d30b9dc49a754debabfa1fc8fe5563d4d21f20500b7f7708c0f40",
+      "source_match": null,
+      "artifact_match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/modal-local-integration1/regression-history.md",
+      "sha256": "53079437ba52f72f47af51c9a46ab3d18ed4a8c28b8f3aa44543c5a036716b43",
+      "source_match": null,
+      "artifact_match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/modal-local-integration1/verification.json",
+      "sha256": "56ad144bb01dfa46af2b2da64a8abc75a4fac4184219d6c8d998cb684e011924",
+      "source_match": null,
+      "artifact_match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/modal-local-integration1/contract-manifest.json",
+      "sha256": "27e0b5d35b4c162a54abb3f9b02afb639682f089a3dcc110ea718df093002acf",
+      "source_match": null,
+      "artifact_match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/modal-local-integration1/cost-time-ledger.json",
+      "sha256": "24d1ddfa83b5dc4c6877d76f799a379a51a2491144f0d0f9a52e78a5d64389a3",
+      "source_match": null,
+      "artifact_match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/modal-local-integration1/entry.json",
+      "sha256": "171d48e3801627a67d14de7ef207e58d48d8169e4616ac541aa5698f63dcc35b",
+      "source_match": null,
+      "artifact_match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/modal-local-integration1/exposure-ledger.md",
+      "sha256": "12de21a13aa379f4c5f9bfe6d3a749632e38d90316452e609fcd754935a3efd9",
+      "source_match": null,
+      "artifact_match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/modal-local-integration1/source-manifest.json",
+      "sha256": "8377129e94e8457aebd64156d1599efd8bf7b4a49f2c1b99b2dc00104218451d",
+      "source_match": null,
+      "artifact_match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/modal-local-integration1/source.diff",
+      "sha256": "0c21c34c58fbed0e87f1a7f1d819207e0320e765cd79854d2630a8f4b3708c61",
+      "source_match": null,
+      "artifact_match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/modal-local-integration1/tests_integration.py",
+      "sha256": "e7caa0e6996860d0d8a89b56cec754182d9be8fd2d4e74b5f5a53a13a0bae0a1",
+      "source_match": null,
+      "artifact_match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/modal-local-integration1/regression/cycle2-result.json",
+      "sha256": "430a634db0c061bfe88c59317cc32f2b58418a61b6b94bc4db5f9e7b7a7abb4e",
+      "source_match": null,
+      "artifact_match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/modal-local-integration1/artifact-manifest.json",
+      "sha256": "2622d19f6b73c54b37272f03216486035567b96257fa4e2638fa0cac3e0cd27f",
+      "source_match": null,
+      "artifact_match": null
+    },
+    {
+      "path": "docs/analysis/A040-outputs/modal-local-integration1/contract.py",
+      "sha256": "8627e5b454e68f130078483f9c24e7ee2514046af8bdc1512021582d519bff05",
+      "source_match": true,
+      "artifact_match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/modal-local-integration1/protocol.py",
+      "sha256": "4616f24b44d8b482cf90a560a13e59324f20e497af4090d6e588fe437801ff77",
+      "source_match": true,
+      "artifact_match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/modal-local-integration1/controller_core.py",
+      "sha256": "fc561eee08f1eafbbeac2cbcc5fa31890ef719bf603c5c7dd1af7aea5e556bcb",
+      "source_match": true,
+      "artifact_match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/modal-local-integration1/live_binding.py",
+      "sha256": "ca1351a05eea38577632a918b286d5ee7e5c82d423928fd8c2ce1af67de206c8",
+      "source_match": true,
+      "artifact_match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/modal-local-integration1/sdk_endpoint.py",
+      "sha256": "94606de56ba23e65e3dcacc57009cb0e60b5506648a2b276cb3165696af4251f",
+      "source_match": true,
+      "artifact_match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/modal-local-integration1/payload.py",
+      "sha256": "17273bebff6debd9888983ffcb2a7b3e3dbff572dccd203c05f9c8b5c9f60424",
+      "source_match": true,
+      "artifact_match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/modal-local-integration1/sandbox_stage.py",
+      "sha256": "8e0cfd474416aa586af9f7ec936c20c7d4fbf0c1888d2d770cc10c4d038027d0",
+      "source_match": true,
+      "artifact_match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/modal-local-integration1/linux_boundary.py",
+      "sha256": "4c2aad23c52813693249a6d104c50f208ed33928086b466e46e853ad074712ff",
+      "source_match": true,
+      "artifact_match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/modal-local-integration1/linux_watchdog.py",
+      "sha256": "9b08538d3b5990389e103ef2d391d58fec6ec63795bf0dc5ebcec08bc1991d34",
+      "source_match": true,
+      "artifact_match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/modal-local-integration1/linux_runner.py",
+      "sha256": "82facf9151daa8eadc55c438be99f4c0cf5e331978c18b3a59530ef2af5b680e",
+      "source_match": true,
+      "artifact_match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/modal-local-integration1/live_worker.py",
+      "sha256": "5f9b934e435bc62259944f47f97a81f29cf9559b183d7a0b9e87736156b18902",
+      "source_match": true,
+      "artifact_match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/modal-local-integration1/live_launcher.py",
+      "sha256": "49345a91d5627fd66a99aea31131d787cc0c4214399decca3837a78bced5e4e0",
+      "source_match": true,
+      "artifact_match": true
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "86394bbf164a2b7df6a309f4564b9dacf3b2799fa0227a703e4ea11d4d842596"
+    },
+    {
+      "path": "CLAUDE.md",
+      "sha256": "69175e6d741a17042db4852d4961a5c52bd97fe2cd5bfbff762d30d7e5270364"
+    },
+    {
+      "path": "docs/status.md",
+      "sha256": "d578d1ee18f837b85671524b49de06e81ce14de42c63b4a80a79e4b140da2b2e"
+    },
+    {
+      "path": "docs/log.md",
+      "sha256": "26edcfe74adbf23d5fef7860225efa4f211021edbeb5bde0f9d05a90d2c27ac6"
+    },
+    {
+      "path": "docs/workflow.md",
+      "sha256": "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642"
+    },
+    {
+      "path": "docs/tree.md",
+      "sha256": "eaa884a4194db103335136495205fe5b51297c17db15e9eac62946ced286cc44"
+    },
+    {
+      "path": "docs/analysis/A040-outputs/full-path-resume1/fixture-manifest.json",
+      "sha256": "43c8d6594b9667b7a09fad1d2349aadce082ee15ce7c35a1739a6a10e2f1ae98"
+    }
+  ],
+  "process_check": "Get-Process python/pythonw/uv returned no rows; not exhaustive local/remote audit",
+  "counters": {
+    "tests": 0,
+    "model_sdk_import": 0,
+    "fit_predict_score": 0,
+    "protected_payload_checkpoint_reads_hashes": 0,
+    "rpc": 0,
+    "remote_resource_creation": 0,
+    "zip_upload": 0,
+    "commit_push": 0,
+    "subagents": 0
+  },
+  "historical_preparation_controller_seconds": 7553.1022106,
+  "historical_science": {
+    "processes": 4,
+    "parent_seconds": 1077.3504532
+  },
+  "limits": [
+    "No fresh scientific or regression execution",
+    "No remote account/resource/cost verification",
+    "Selected source/document hashes, not full workspace/payload audit",
+    "Historical local PASS preserved; new review blocks advancement only"
+  ],
+  "preservation": "PASS_SELECTED_DOCUMENT_SOURCE_PRESERVATION",
+  "final_verification_evidence": "c1b627",
+  "final_verification_kst": "2026-10-04T22:44:30.6305763+09:00",
+  "selected_existing_files_unchanged": 30,
+  "status_log_prior_bytes_reconstructed": true,
+  "markdown_links_exist": true,
+  "after_shared_hashes": {
+    "docs/status.md": "1c377cb2c1f70af6b8cd42b81c699191c92b9d2c1ad23a674af6b0fa1023e3e7",
+    "docs/log.md": "9fd76c217aee55fc8442291749a065b7ef95f92340da6f71b6f4ea237c293773"
+  }
+}

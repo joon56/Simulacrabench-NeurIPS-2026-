@@ -1,0 +1,166 @@
+{
+    "record":  "E064 S0 release review",
+    "verdict":  "RECOMMEND_ONE_FIXED_DEV_SUBMISSION_FOR_USER_DECISION",
+    "observed_at":  "2026-10-23T16:12:06.8770816+09:00",
+    "head":  "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+    "workflow_revision":  "2026-10-22-r6",
+    "workflow_sha256":  "69620b7eeaad5a01a6a6b884fbd95dfede3e26b2ee2b09016479846082aec089",
+    "read_evidence":  "entry.json and current tool transcript",
+    "input_document_manifest_match":  true,
+    "explicit_s2_document_hash_matches":  12,
+    "preserved_read_only_documents":  [
+                                          {
+                                              "path":  "AGENTS.md",
+                                              "sha256":  "e3d52f09f32c7e3b8fdb194419119c4f563557103404da0831ffb31fbf2150e8",
+                                              "match":  true
+                                          },
+                                          {
+                                              "path":  "CLAUDE.md",
+                                              "sha256":  "7300b637f3a0ae937b2273a1945892df129eb16ee3ef7bdc6cff707c69ffc1e3",
+                                              "match":  true
+                                          },
+                                          {
+                                              "path":  "docs/workflow.md",
+                                              "sha256":  "69620b7eeaad5a01a6a6b884fbd95dfede3e26b2ee2b09016479846082aec089",
+                                              "match":  true
+                                          },
+                                          {
+                                              "path":  "docs/analysis/A044-outputs/batch-01-e064-release.ko.md",
+                                              "sha256":  "26d4d49238035036426b23ee6b0c7827d55c1143f93a70778dd9ea4c2973b5af",
+                                              "match":  true
+                                          },
+                                          {
+                                              "path":  "docs/experiments/E064-conditional-gradient.md",
+                                              "sha256":  "e7b6e10fc6e01d1eec9015ad837e240baa3965b9c2df2b83f5d56a0d30f287da",
+                                              "match":  true
+                                          },
+                                          {
+                                              "path":  "docs/analysis/A043-outputs/s0-review/decision.md",
+                                              "sha256":  "9470a8a08c5e61f0b096aa1859b9c042b6264bcdff15fa088bfff3b53d244745",
+                                              "match":  true
+                                          },
+                                          {
+                                              "path":  "docs/analysis/E064-outputs/s2/verification.json",
+                                              "sha256":  "ef6959b5325aabe326060e171b451e0f790c16f84a32dffeb681352d3d6af413",
+                                              "match":  true
+                                          },
+                                          {
+                                              "path":  "docs/analysis/E064-outputs/s2/artifact-manifest.json",
+                                              "sha256":  "35db26299f9af3944b9e42b34dbf52b59a7413bcc2a2e84ffd0f793dd4e3e778",
+                                              "match":  true
+                                          },
+                                          {
+                                              "path":  "docs/analysis/E064-outputs/s2/closeout.md",
+                                              "sha256":  "b9a22c7af43f6af9f009d562bd0ce40fbb0c31b68b60d4c49b80bc6d127aaef6",
+                                              "match":  true
+                                          },
+                                          {
+                                              "path":  "docs/analysis/E064-outputs/s2/s0-handoff.ko.md",
+                                              "sha256":  "4244f050ffa800d8ccbf1f4f6a23f68d1ab9d51daa62e68287af09653363a706",
+                                              "match":  true
+                                          },
+                                          {
+                                              "path":  "docs/analysis/E064-outputs/s2/baseline-reuse.json",
+                                              "sha256":  "075d7f61dff43617543d374139e7b3f4ba4d1e4b952732da6f9aa01609d7a70e",
+                                              "match":  true
+                                          },
+                                          {
+                                              "path":  "docs/analysis/E064-outputs/s2/release-contract.md",
+                                              "sha256":  "fa1897a368361669666b33dc752e52ee9812f8d391e8ea9d082f0b967223321a",
+                                              "match":  true
+                                          },
+                                          {
+                                              "path":  "docs/analysis/E064-outputs/s2/repair-history.md",
+                                              "sha256":  "e9b2af6580f1bc6c1cd4722d3e3bf80a097ed27eded8bba2447f4bb3567a3ac4",
+                                              "match":  true
+                                          },
+                                          {
+                                              "path":  "docs/analysis/E064-outputs/s2/independent-review.md",
+                                              "sha256":  "8a311441b773cb7748e2abf580660873a355a25dc051c5c487e575918f1fe01c",
+                                              "match":  true
+                                          },
+                                          {
+                                              "path":  "docs/analysis/E064-outputs/s2/cost-time-ledger.json",
+                                              "sha256":  "be8a1eddec99916fff9e0b39a8457717f889c16fd99513f936b3115446183dca",
+                                              "match":  true
+                                          },
+                                          {
+                                              "path":  "docs/analysis/E064-outputs/s2/exposure-ledger.md",
+                                              "sha256":  "162ab255e0c41fb41530e5c00bb6f2042d30a1776c51a1669b0d5e726338761e",
+                                              "match":  true
+                                          },
+                                          {
+                                              "path":  "docs/analysis/E064-outputs/s2/package-path.json",
+                                              "sha256":  "83dec081ad23c89642697fbe0fad119e70423d503099d87d1c91b51d4911f20a",
+                                              "match":  true
+                                          },
+                                          {
+                                              "path":  "docs/analysis/E064-outputs/s2/official.json",
+                                              "sha256":  "6827991ea9ae9877e90025904648116f82d99dcf8f3edac040e37f517c442cbf",
+                                              "match":  true
+                                          },
+                                          {
+                                              "path":  "docs/analysis/E064-outputs/s2/official-parity-unhcr.json",
+                                              "sha256":  "fceac76c5471766caada40379f9aceab0af6b994cbef3a3a649a5b0ec418c31d",
+                                              "match":  true
+                                          },
+                                          {
+                                              "path":  "submissions/2026-10-23-E064/SCORES.md",
+                                              "sha256":  "da64a3dc13d40374483fb9c83b87ebecbd443fe063f156a741e8ae9c9b5a3767",
+                                              "match":  true
+                                          }
+                                      ],
+    "status_history_reconstructed":  true,
+    "log_history_reconstructed":  true,
+    "status_notice_inserted":  "- **2026-10-23 S0: recommend one user-controlled DEV submission of fixed E064.**\n  B01 release evidence accepted within its documented scope; synthetic UNHCR decline\n  and incomplete historical environment fields remain limitations. E064 parked,\n  E041 DEV incumbent/E025 fallback. No efficacy or TEST promotion.\n  [Decision](analysis/E064-outputs/s0-release-review/decision.md).\n- Prepared package: submissions/2026-10-23-E064.zip,16305bytes; SHA256\n  002028ce0c7fa7cb3549d198cef3e4c13060fdf9aa47ce7a7f7a773ee1c74f1c inherited from S2.\n  This S0 did not open/rehash it. Actual upload/result/ID/slot/account/remote bytes unknown.\n- B01 is complete. No S1/release rerun, new candidate or unused-budget continuation.\n  User may submit the same ZIP after checking the intended DEV phase/account/slot;\n  actual result returns to the existing executor for document-only preregistered reading.\n  [Result intake](analysis/E064-outputs/s0-release-review/s2-result-handoff.ko.md).\n- **Writer: none; S0 E064 release review released after final document verification.**\n  [Receipt](analysis/E064-outputs/s0-release-review/verification.json).\n  Named local Python/pythonw/uv jobs0 observed; remote/all-chat state not certified.\n- E041 provisional TEST reference/E025 alternative; final user choice remains open.\n  Separate E025 phase2 provenance and method/license finalization proposals remain\n  unapproved; current Terms/exact Final timestamps still need confirmation before delivery.\n- All parked/STOP/HOLD/A_half non-promotion/A018 unconfirmed,17999/12339SSUID,\n  aggregate/A022 roles/E059 consumed and protected roles unchanged.\n\n### Earlier current-position notices — historical; the decision above supersedes their next-step instructions\n\r\n",
+    "log_insert_offset":  20,
+    "log_text_inserted":  "## 2026-10-23 - E064 S0 release review; one fixed DEV submission recommended\n\n- Current AGENTS/CLAUDE/status/newest3log/workflow r6 and named B01 records read.\n  B01 writer release accepted, HEADa43f4379/branch retained. Named local jobs0.\n  Git2443-path listing has permission omissions; not a full preservation certificate.\n- S2 artifact-manifest hash and12 explicit document/scorecard hashes match. Final\n  official receipt and resource PASS support the verdict; intermediate package\n  PENDING_OFFICIAL field is historical. No scientific/ZIP/data recheck performed.\n- Recommend one user-controlled DEV exploration of the unchanged16305-byte E064 ZIP.\n  Independent conditional heads remain; direct trunk gradient is removed, distinct\n  from E061 tying/E063 metric. Small synthetic decline, E012/E061 counterevidence,\n  noisy/rounded hosted resolution and missing historical environment fields retained.\n  No numerical expected Grand, efficacy/adoption/TEST claim or automatic upload.\n- E025/E041 frozen-output comparisons accepted for their recorded provenance; no\n  assertion of complete environment equality. Final-memory-predicate repair and\n  recorded below-cap assembly peak accepted without replaying successful learning.\n- B01 consumed1827.881025s charged/1407.881025s measured,2all3/6pipeline/18neural/\n  16metric; no old allowance reopened. All original documents/SCORES/sources retained.\n- Result intake goes to the same executor under original SCORES arms, document-only.\n  E025 phase2/method/license/Terms work remains separately scoped. All scientific\n  STOP/HOLD/exposure/parked/A_half/A018 boundaries unchanged. No new batch or E record.\n- S0 writes only this review and status/log; model/test/data/cache/ZIP/web/platform/\n  remote/subagent/upload/commit/push0. Writer released after document verification.\n  [Decision](analysis/E064-outputs/s0-release-review/decision.md),\n  [verification](analysis/E064-outputs/s0-release-review/verification.json).\n\r\n",
+    "judgment":  "Accept narrow S2 technical/release evidence; actual efficacy/hosted behavior unknown. Fixed DEV recommendation only, no upload or TEST choice.",
+    "package_identity_inherited":  {
+                                       "sha256":  "002028ce0c7fa7cb3549d198cef3e4c13060fdf9aa47ce7a7f7a773ee1c74f1c",
+                                       "bytes":  16305,
+                                       "path":  "submissions/2026-10-23-E064.zip",
+                                       "rehashed_here":  false,
+                                       "created_kst":  "2026-10-23T15:37:47.637369+09:00",
+                                       "remote_bytes_verified":  false
+                                   },
+    "resolved_reading":  "Intermediate PENDING_OFFICIAL and technical.remaining preserved; final official PASS and explicit writer-release receipt supersede these stage snapshots.",
+    "limitations":  [
+                        "Baseline missing executable hash and scipy/sklearn/pyarrow history; no complete environment equality",
+                        "Small synthetic decline/no fresh oracle; E012/E061 counterevidence",
+                        "Local sampled CPU runtime/memory only; no hidden/H100 guarantee",
+                        "No live account/slot/platform or upload verification",
+                        "Partial Git path inventory, not all-byte preservation",
+                        "Executor reports separately permitted source reviewer; this S0 launched no subagent"
+                    ],
+    "execution_counts":  {
+                             "protected_data_cache_zip_access_or_hash":  0,
+                             "subagent":  0,
+                             "commit_push":  0,
+                             "web_platform_remote":  0,
+                             "upload":  0,
+                             "test_checker":  0,
+                             "fit_predict_score":  0,
+                             "model_import":  0
+                         },
+    "named_jobs":  [
+
+                   ],
+    "job_scope":  "Local Python/pythonw/uv name census only",
+    "outgoing_owner":  "S0 E064 release review /root",
+    "incoming_owner":  "none; existing B01 may accept document result task when user provides it",
+    "exclusive_writer_released":  true,
+    "release_at":  "2026-10-23T16:12:06.8770816+09:00",
+    "release_condition":  "Effective at completion of this document process",
+    "owned_running_commands":  [
+
+                               ],
+    "preserved_states":  "E041 incumbent/provisional TEST; E025 fallback/alternative; E064 and prior candidates parked; all STOP/HOLD,17999/12339,A022,E059 consumed/protected roles,A_half nonpromotion,A018 unconfirmed",
+    "artifact_sha256":  {
+                            "docs/analysis/E064-outputs/s0-release-review/entry.json":  "37d32ad14be0a85b37249b3d91e79f7c2f5217c6226c30b3a9963538497b0437",
+                            "docs/analysis/E064-outputs/s0-release-review/decision.md":  "47eeb149ea25a1b422d10742c6243f6b2826593b810ec828b02e1202a0caef0e",
+                            "docs/analysis/E064-outputs/s0-release-review/s2-result-handoff.ko.md":  "b742fb665cc691c26835a9b74cf321376dec87b241684b6b00b2427eb26f0c92",
+                            "docs/status.md":  "96c27bd4a4b31fad765bee465340e715a244e806ec21eadb8c30a3b2fab08122",
+                            "docs/log.md":  "f9c3ebd82406af9edfbc86aeaf2286ff2846f1794ce4b6786c8c1c3b167aec76"
+                        }
+}

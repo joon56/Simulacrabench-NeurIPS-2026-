@@ -1,0 +1,19 @@
+{
+  "outcome": "BUILD_FAILED",
+  "owned_app_id": "ap-FAKE-OWNED",
+  "stop_ack": true,
+  "termination": "TERMINAL_TASK0_CONFIRMED",
+  "create_attempts": 1,
+  "build_attempts": 1,
+  "stop_attempts": 1,
+  "cleanup_errors": [],
+  "execution": "INJECTED_LOCAL_ONLY",
+  "error": "RuntimeError('retained exception • 한글')",
+  "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\modal-controller-repair1\\controller.py\", line 123, in run_controller\n    result[\"image_id\"] = await bounded(transport.build(), phase)\n                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\modal-controller-repair1\\controller.py\", line 90, in bounded\n    return task.result()\n           ~~~~~~~~~~~^^\n  File \"C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\modal-controller-repair1\\controller.py\", line 66, in build\n    await task\n  File \"C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\modal-controller-repair1\\fake_worker.py\", line 114, in build\n    raise RuntimeError(\"retained exception • 한글\")\nRuntimeError: retained exception • 한글\n",
+  "termination_observation": {
+    "stopped": true,
+    "task_count": 0
+  },
+  "cleanup_seconds": 0.0009854999989329372,
+  "elapsed_seconds": 0.008313000000271131
+}

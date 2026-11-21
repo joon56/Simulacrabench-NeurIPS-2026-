@@ -1,0 +1,42 @@
+{
+  "outcome": "STOP_TERMINATION_UNCONFIRMED",
+  "reason": "REMOTE_WINDOW_EXHAUSTED_BEFORE_QUERY",
+  "workflow_revision": "2026-10-05-r5",
+  "workflow_sha256": "a577942675e16a732339e586c14796104dda704693568439ae28670cc7fb7b23",
+  "head": "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+  "local_evidence": "Named wrapper/protobuf/entry boundaries pass with regression-history evidence limits; no complete live CLI result",
+  "first_live_entry": "FAIL before normal client initialization; preserved",
+  "entry_repair": "ENTRY_DISPATCH_PASS exit0; actual SDK synchronizer, fake external endpoints",
+  "continuation": "Parent refused; original absolute deadline unchanged; tool a37022",
+  "focused_checks_seconds": 3.1790341,
+  "remote_terminal": "UNCONFIRMED",
+  "fresh_billing": null,
+  "local_named_jobs_at_closeout": 0,
+  "local_job_evidence": "tool4a279d",
+  "old_helper_sha256_unchanged": "28019d3b2543e1f53d667b63af302b806e49b70e19bbe19aa25b2aaa735abd57",
+  "first_live_helper_reconstruction_matches_frozen_hash": "56da54defd86b966040b3dbc4644586982c710d9513ab2b685ca3eb553abc044",
+  "production_source_edits": 0,
+  "production_source_rehash": false,
+  "shared_document_preservation": {
+    "docs/status.md": {
+      "before_sha256": "092445fa8d1022ebf27403cde7f764997e9d883c43f483102976238f1a7dde79",
+      "after_sha256": "16e961b42bd5ad14cbf603cdf0d9a073bbe58ef5f78513451761b7508e96ba89",
+      "remove_own_addition_restores_exact_bytes": true
+    },
+    "docs/log.md": {
+      "before_sha256": "5dd51ed027b04b8b2e15dfbfe2f1de206a848e18785fd5716382e240a803afac",
+      "after_sha256": "67f213e216b9a258eb4b4b4cdf56b82ee5aa2ea047492e4d2b10e2a299c561d0",
+      "remove_own_addition_restores_exact_bytes": true
+    }
+  },
+  "git_read_evidence": "toolb66428; safe.directory scoped only; ignore-config permission warning retained",
+  "new_resources": 0,
+  "live_rpc_calls": 0,
+  "terminate_requests": 0,
+  "commit_push": 0,
+  "research_and_exposure_states_preserved": true,
+  "scope_limit": "No remote terminal, Linux/H100/900s/effect/release certification; no new allowance",
+  "artifact_manifest_verified_before_finalization": 39,
+  "final_record_check": "PASS: saved evidence, exact old-helper/workflow hashes, status/log insertion reversal, no second live process/SDK receipt",
+  "verification_is_scientific_or_remote_execution": false
+}

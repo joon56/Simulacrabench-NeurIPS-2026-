@@ -1,0 +1,128 @@
+{
+  "mode": "fixed",
+  "checks": [
+    {
+      "name": "SDK1.6.0",
+      "pass": true
+    },
+    {
+      "name": "one_real_builder",
+      "pass": true
+    },
+    {
+      "name": "FILE_only",
+      "pass": true
+    },
+    {
+      "name": "module_function",
+      "pass": true
+    },
+    {
+      "name": "defining_file",
+      "pass": true
+    },
+    {
+      "name": "spec_deps_equal",
+      "pass": true
+    },
+    {
+      "name": "default_client_separate",
+      "pass": true
+    },
+    {
+      "name": "one_file_entry",
+      "pass": true
+    },
+    {
+      "name": "reject_missing",
+      "pass": true
+    },
+    {
+      "name": "reject_extra",
+      "pass": true
+    },
+    {
+      "name": "reject_wrong_local",
+      "pass": true
+    },
+    {
+      "name": "reject_wrong_remote",
+      "pass": true
+    },
+    {
+      "name": "reject_hash",
+      "pass": true
+    },
+    {
+      "name": "all_owned_ipc_closed",
+      "pass": true
+    },
+    {
+      "name": "no_unexpected_forbidden_attempts",
+      "pass": true
+    }
+  ],
+  "builder": {
+    "type": "file",
+    "module": "controller_core",
+    "function": "install_pins",
+    "implementation": "install_pins",
+    "defining_file": "C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\local-preparation-repair2\\controller_core.py",
+    "mount_count": 2,
+    "client_mount": "Mount()",
+    "project_files": [
+      [
+        "C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\local-preparation-repair2\\controller_core.py",
+        "/root/controller_core.py"
+      ]
+    ],
+    "image_dependencies": [
+      "_Image",
+      "_Function"
+    ],
+    "builder_dependencies": [
+      "_Mount",
+      "_Mount",
+      "_Image"
+    ]
+  },
+  "selected_sha256": "fc561eee08f1eafbbeac2cbcc5fa31890ef719bf603c5c7dd1af7aea5e556bcb",
+  "stage": "C:\\Users\\USER\\Desktop\\SimulacraBench\\tmp\\a040-local-preparation-repair2\\selected",
+  "outcome": "PASS",
+  "guard": {
+    "events": [
+      {
+        "ipc": "socket.bind",
+        "pid": 38168,
+        "thread": 4276
+      },
+      {
+        "ipc": "socket.connect",
+        "pid": 38168,
+        "thread": 4276
+      }
+    ],
+    "pairs": [
+      {
+        "pid": 38168,
+        "thread": 4276,
+        "loop": "_WindowsSelectorEventLoop",
+        "started": 17067.2842024,
+        "endpoints": [
+          [
+            "127.0.0.1",
+            59370
+          ],
+          [
+            "127.0.0.1",
+            59371
+          ]
+        ],
+        "closed": true
+      }
+    ],
+    "unexpected": [],
+    "scope": "Python guards only; no native/OS security certification"
+  },
+  "elapsed_seconds": 0.7512439999991329
+}

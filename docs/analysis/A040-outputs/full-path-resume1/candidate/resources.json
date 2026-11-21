@@ -1,0 +1,35 @@
+{
+  "mode": "candidate",
+  "outcome": "LOCAL_RESOURCE_LIMIT",
+  "reason": "Scientific process time cap",
+  "child_exit": 15,
+  "elapsed_seconds": 900.0362109999987,
+  "prior_process_seconds": 123.2180565000017,
+  "cumulative_parent_seconds": 1023.2542675000004,
+  "samples": 886,
+  "sampling_seconds": 1,
+  "rss_peak_sampled": 2628603904,
+  "commitment_peak_sampled": 7371657216,
+  "includes_controller": true,
+  "available_before": {
+    "physical": 20937748480,
+    "commitment": 19628646400
+  },
+  "host_cap": 16000000000,
+  "gpu": {
+    "allocated_peak_lower_bound": 3113411072,
+    "reserved_peak_lower_bound": 4886364160,
+    "complete_peak_measured": false
+  },
+  "last_event": {
+    "event": "expert_fit_end",
+    "elapsed": 899.5604577000013,
+    "stage": "expert_final",
+    "head_name": "s6_10_face_challenges_lbl",
+    "seconds": 0.17482920000111335,
+    "fit_rows": 8279,
+    "gpu_allocated_peak": 3113411072,
+    "gpu_reserved_peak": 4886364160
+  },
+  "remaining_children": []
+}

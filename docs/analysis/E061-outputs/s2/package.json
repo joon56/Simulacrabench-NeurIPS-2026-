@@ -1,0 +1,12 @@
+{
+  "status": "PASS_CHECKER_PENDING_OFFICIAL",
+  "files": {
+    "main.py": "d1363c7c38d0754d29bb11acdf40a6e14013220b289e4d711196d1271299d0c0",
+    "NOTICE.txt": "a81db73b86212de93a3944eea5dfb01126ffe17d5fbdb620a6e4c4d04830b20e",
+    "2026-09-28-E061.zip": "4b89e619987d568034bf8a70a7ffda190af483c083ad5921eec9f5a8d843f8c6"
+  },
+  "extracted_main_sha256": "d1363c7c38d0754d29bb11acdf40a6e14013220b289e4d711196d1271299d0c0",
+  "zip_bytes": 16508,
+  "checker": "OK: C:\\Users\\USER\\Desktop\\SimulacraBench\\submissions\\2026-09-28-E061.zip looks like a valid submission ZIP.",
+  "checker_smoke": "one tiny generated-frame predict; no neural or metric fit"
+}

@@ -1,0 +1,30 @@
+{
+  "observed_utc": "2026-10-09T13:40:31Z",
+  "purpose": "Complete package-marker identity inventory; no changed executable body",
+  "files": {
+    "src/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "tracked_head_bytes": 0,
+      "git_dirty": false
+    },
+    "src/models/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "tracked_head_bytes": 0,
+      "git_dirty": false
+    },
+    "src/eval/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "tracked_head_bytes": 0,
+      "git_dirty": false
+    }
+  },
+  "limitation": "Markers were not separately enumerated in the initial 60-file hash map. Entry and current dirty lists show these tracked empty markers unchanged; no statements or executable initialization exist. This supplemental observation is after R began and does not replace or alter the original freeze.",
+  "read_evidence": [
+    "835995",
+    "61ee58"
+  ],
+  "changes": 0
+}

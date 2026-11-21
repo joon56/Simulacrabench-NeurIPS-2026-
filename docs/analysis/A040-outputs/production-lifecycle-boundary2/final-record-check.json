@@ -1,0 +1,13 @@
+{
+    "status_log_additions_only":  true,
+    "prior_source13_preserved":  true,
+    "head":  "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+    "active_seconds":  1969.4049602999999,
+    "owned_native_crashes":  10,
+    "recorded_utc":  "2026-10-05T16:06:59.4049603+00:00",
+    "local_named_jobs":  0,
+    "lifecycle":  "HOLD",
+    "dirty_count":  89,
+    "outcome":  "RECORDS_AND_SOURCE_PRESERVATION_VERIFIED",
+    "current_source13_verified":  true
+}

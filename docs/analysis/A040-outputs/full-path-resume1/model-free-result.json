@@ -1,0 +1,3048 @@
+{
+  "outcome": "PASS_MODEL_FREE_ONLY",
+  "entry_outcome": "ALL3_RUNTIME_ENTRY_PASS",
+  "schemas": [
+    {
+      "instrument": "unicef",
+      "given": 7,
+      "heads": 12,
+      "visible": 14885,
+      "query": 1488,
+      "vectors": 17856,
+      "probability_width": 61,
+      "metadata": {
+        "raw_sha256": "0bce08036cc563ee2a369dcee316ff8a5f89045d86991756d72c266927674396",
+        "config_sha256": "f22f8e4faa62b6af0ee8e7e887e35980511e4517655479fefeeef4519fc52c15",
+        "loader_sha256": "8cf628cbb4771ed6e91ad74ebb4f75b22667af39d8f48e01c956c675b1b1586b",
+        "runtime_sha256": "4deb5160563d18a5bd21a3e6df6bcbdcd30973649bfce1f726cc61479f819b17",
+        "runtime_hash_encoding": "UTF-8 JSON ensure_ascii=False,separators=comma/colon,original key order",
+        "item_order": [
+          "Country",
+          "Q01",
+          "Q02",
+          "Q03",
+          "Q04",
+          "Q05",
+          "Q06",
+          "Q07",
+          "Q08",
+          "Q09",
+          "Q10",
+          "Q11",
+          "Q12",
+          "Q13",
+          "Q14",
+          "Q15",
+          "Q16",
+          "Q17",
+          "Q18"
+        ],
+        "options": {
+          "Country": [
+            "Brazil",
+            "Egypt",
+            "Guatemala",
+            "Iraq",
+            "Kenya",
+            "Mali",
+            "Nepal",
+            "Nigeria",
+            "Pakistan",
+            "Zambia"
+          ],
+          "Q01": [
+            "18 to 24 years old",
+            "25 - 34 years old",
+            "35 - 44 years old",
+            "45 and above",
+            "NA_GATED"
+          ],
+          "Q02": [
+            "Female",
+            "Male",
+            "Prefer not to answer"
+          ],
+          "Q03": [
+            "Rural",
+            "Urban"
+          ],
+          "Q04": [
+            "Religious leader",
+            "Member of religious community",
+            "Not part of any religious community"
+          ],
+          "Q05": [
+            "Buddhist",
+            "Christian",
+            "Hindu",
+            "Jewish",
+            "Muslim",
+            "Traditional religions",
+            "Not religious",
+            "Other",
+            "Baha'i",
+            "Sikh"
+          ],
+          "Q06": [
+            "Yes, it matters what my religious leaders believe about the COVID-19 vaccine and if they support it",
+            "No, it does not matter to me what my religious leaders believe about the COVID-19 vaccine",
+            "Not sure",
+            "Prefer not to answer",
+            "No response"
+          ],
+          "Q07": [
+            "Yes",
+            "No",
+            "Not sure"
+          ],
+          "Q08": [
+            "Yes",
+            "No"
+          ],
+          "Q09": [
+            "Yes",
+            "No",
+            "Not sure",
+            "NA_GATED"
+          ],
+          "Q10": [
+            "I am afraid of the potential side effects of the COVID-19 Vaccine",
+            "I am not confident that the vaccine will protect me",
+            "I do not feel at risk of catching COVID-19",
+            "It's not that serious. If I catch COVID-19 I can recover without vaccine",
+            "I believe God/Allah/Adonai/gods and goddesses/higher power will protect me from COVID-19",
+            "Goes against my religious belief",
+            "Other",
+            "NA_GATED"
+          ],
+          "Q11": [
+            "Health worker",
+            "Religious leader",
+            "Family member",
+            "Peer/friend",
+            "Other"
+          ],
+          "Q12": [
+            "Clear information on vaccine safety and side effects",
+            "Strong recommendation from the persons I trust most",
+            "Seeing religious leaders lead by example through taking the vaccine publicly",
+            "Public statements by influential persons",
+            "Government guidance",
+            "Social media or traditional media",
+            "Doing my part to protect my community",
+            "Other"
+          ],
+          "Q13": [
+            "Yes",
+            "No"
+          ],
+          "Q14": [
+            "Very Important",
+            "Somehow Important",
+            "Not at all important",
+            "Not sure",
+            "NA_GATED"
+          ],
+          "Q15": [
+            "Health worker",
+            "Religious leader",
+            "Family member",
+            "Peer/Friend",
+            "Other",
+            "NA_GATED"
+          ],
+          "Q16": [
+            "Yes",
+            "No",
+            "Not sure",
+            "NA_GATED"
+          ],
+          "Q17": [
+            "Yes",
+            "No",
+            "Only some religious leaders support vaccination for children",
+            "Not sure",
+            "No response",
+            "NA_GATED"
+          ],
+          "Q18": [
+            "Encourages child vaccination",
+            "Discourages child vaccination",
+            "Does not affect decision for child vaccination",
+            "Not sure",
+            "NA_GATED"
+          ]
+        }
+      }
+    },
+    {
+      "instrument": "world_bank",
+      "given": 9,
+      "heads": 76,
+      "visible": 5195,
+      "query": 520,
+      "vectors": 39520,
+      "probability_width": 655,
+      "metadata": {
+        "raw_sha256": "6b3760742c6e864eb8d0bb2f9ec523a19a486b73282d79432dbcca16e3664125",
+        "config_sha256": "f22f8e4faa62b6af0ee8e7e887e35980511e4517655479fefeeef4519fc52c15",
+        "loader_sha256": "8cf628cbb4771ed6e91ad74ebb4f75b22667af39d8f48e01c956c675b1b1586b",
+        "runtime_sha256": "7cfa62f854f51306cede481263eb52f1b3af6a222caf22bd122e92441b440c20",
+        "runtime_hash_encoding": "UTF-8 JSON ensure_ascii=False,separators=comma/colon,original key order",
+        "item_order": [
+          "participant_id",
+          "group",
+          "sc_nstd_extra",
+          "sc_nstd_agree",
+          "sc_nstd_consc",
+          "sc_nstd_stability",
+          "sc_nstd_open",
+          "sc_nstd_gm",
+          "sc_nstd_pp",
+          "sc_nstd_s_aware",
+          "sc_nstd_s_manage",
+          "sc_nstd_soc_aware",
+          "sc_nstd_realistic",
+          "sc_nstd_invest",
+          "sc_nstd_artistic",
+          "sc_nstd_social",
+          "sc_nstd_enterp",
+          "sc_nstd_convent",
+          "sc_nstd_corsi_1",
+          "sc_nstd_corsi_2",
+          "sc_nstd_ds_f_ms",
+          "sc_nstd_ds_f_2",
+          "sc_nstd_ds_b_ms",
+          "sc_nstd_ds_b_2",
+          "sc_nstd_hmt_1",
+          "sc_nstd_cpt_corrected",
+          "sc_nstd_cpt_percent_correct",
+          "sc_nstd_cpt_commissions",
+          "sc_nstd_tmt_time_1",
+          "sc_nstd_tmt_log_a",
+          "sc_nstd_tmt_err_a",
+          "sc_nstd_tmt_time_2",
+          "sc_nstd_tmt_log_b",
+          "sc_nstd_tmt_err_b",
+          "sc_nstd_mtpt_total_time_1",
+          "sc_nstd_mtpt_quit_1",
+          "sc_nstd_mtpt_err_per_s",
+          "sc_nstd_bret_mean_collected",
+          "sc_nstd_bret_prop",
+          "user.age",
+          "user.gender",
+          "user.country",
+          "user.educationLevel",
+          "user.hadJob",
+          "user.employmentStatus",
+          "user.howLongSearchingForJob",
+          "user.howManyHoursSearchedPerWeek",
+          "user.howManyApplicationsLastMonth",
+          "user.expectedToFindJobInSixMonths",
+          "user.expectedToFindJobInSixMonthsWhyNot",
+          "user.howLongUnemployed",
+          "user.howLongInCurrentPosition",
+          "user.appliedInThePastSector",
+          "user.otherAppliedInThePastSector",
+          "user.preferredSector",
+          "user.otherPreferredSector",
+          "user.wageOfSimilarEmployees",
+          "user.lowestAcceptablePay",
+          "user.jobStrengthsAndWeaknesses",
+          "user.helpJobSearch",
+          "user.helpGettingJob",
+          "user.planToIncreaseJobSearch",
+          "user.targetSector",
+          "user.howManyHoursWillSearchPerWeek",
+          "user.howManyApplicationsNextMonth",
+          "user.plansToAttachSkillsReport",
+          "user.willSkillsAttachHelpGetInterview",
+          "user.expectsToFindJobInSixMonths",
+          "user.wageOfSimilarEmployeesAfter",
+          "user.lowestAcceptablePayAfter",
+          "user.accessedLearningLinks",
+          "user.howManyHoursToUpskillPerWeek",
+          "user.accessedLearningLinksWhyNot",
+          "user.plannedCourses",
+          "user.helpGetInterview",
+          "user.helpGetJobInDesiredSector",
+          "user.reportUsefullness",
+          "user.likelyToRecommend",
+          "tr_employment_status",
+          "tr_job_full",
+          "tr_job_number",
+          "tr_period_pay",
+          "tr_pay",
+          "tr_job_days",
+          "tr_sector_past",
+          "tr_employed_time",
+          "tr_did_full",
+          "tr_increase_job_search_full",
+          "tr_feedback_full",
+          "tr_feedback_increase_job",
+          "tr_target_sector",
+          "tr_help_job_search_full",
+          "tr_help_get_job_full",
+          "tr_recommend_full",
+          "tr_attach_skills_report_full",
+          "tr_report_help_interview_full",
+          "tr_similar_wage_after",
+          "tr_low_pay_after",
+          "tr_search_hours_after",
+          "tr_applications_next_1m",
+          "tr_job_offers",
+          "tr_upskill_hours_week",
+          "tr_riasec_sector_past",
+          "tr_riasec_target_sector",
+          "tr_feel_work",
+          "tr_self_efficacy"
+        ],
+        "options": {
+          "group": [
+            "yes1",
+            "yes2",
+            "yes3",
+            "yes4",
+            "Not randomised"
+          ],
+          "sc_nstd_extra": [
+            "<2.5",
+            "2.5-3.0",
+            "3.0-3.5",
+            "3.5-4.0",
+            "4.0-4.5",
+            "4.5-5.0",
+            "Not answered"
+          ],
+          "sc_nstd_agree": [
+            "<2.5",
+            "2.5-3.0",
+            "3.0-3.5",
+            "3.5-4.0",
+            "4.0-4.5",
+            "4.5-5.0",
+            "Not answered"
+          ],
+          "sc_nstd_consc": [
+            "<2.5",
+            "2.5-3.0",
+            "3.0-3.5",
+            "3.5-4.0",
+            "4.0-4.5",
+            "4.5-5.0",
+            "Not answered"
+          ],
+          "sc_nstd_stability": [
+            "<2.5",
+            "2.5-3.0",
+            "3.0-3.5",
+            "3.5-4.0",
+            "4.0-4.5",
+            "4.5-5.0",
+            "Not answered"
+          ],
+          "sc_nstd_open": [
+            "<2.5",
+            "2.5-3.0",
+            "3.0-3.5",
+            "3.5-4.0",
+            "4.0-4.5",
+            "4.5-5.0",
+            "Not answered"
+          ],
+          "sc_nstd_gm": [
+            "<2.5",
+            "2.5-3.0",
+            "3.0-3.5",
+            "3.5-4.0",
+            "4.0-4.5",
+            "4.5-5.0",
+            "Not answered"
+          ],
+          "sc_nstd_pp": [
+            "<2.5",
+            "2.5-3.0",
+            "3.0-3.5",
+            "3.5-4.0",
+            "4.0-4.5",
+            "4.5-5.0",
+            "Not answered"
+          ],
+          "sc_nstd_s_aware": [
+            "<2.5",
+            "2.5-3.0",
+            "3.0-3.5",
+            "3.5-4.0",
+            "4.0-4.5",
+            "4.5-5.0",
+            "Not answered"
+          ],
+          "sc_nstd_s_manage": [
+            "<2.5",
+            "2.5-3.0",
+            "3.0-3.5",
+            "3.5-4.0",
+            "4.0-4.5",
+            "4.5-5.0",
+            "Not answered"
+          ],
+          "sc_nstd_soc_aware": [
+            "<2.5",
+            "2.5-3.0",
+            "3.0-3.5",
+            "3.5-4.0",
+            "4.0-4.5",
+            "4.5-5.0",
+            "Not answered"
+          ],
+          "sc_nstd_realistic": [
+            "<2.5",
+            "2.5-3.0",
+            "3.0-3.5",
+            "3.5-4.0",
+            "4.0-4.5",
+            "4.5-5.0",
+            "Not answered"
+          ],
+          "sc_nstd_invest": [
+            "<2.5",
+            "2.5-3.0",
+            "3.0-3.5",
+            "3.5-4.0",
+            "4.0-4.5",
+            "4.5-5.0",
+            "Not answered"
+          ],
+          "sc_nstd_artistic": [
+            "<2.5",
+            "2.5-3.0",
+            "3.0-3.5",
+            "3.5-4.0",
+            "4.0-4.5",
+            "4.5-5.0",
+            "Not answered"
+          ],
+          "sc_nstd_social": [
+            "<2.5",
+            "2.5-3.0",
+            "3.0-3.5",
+            "3.5-4.0",
+            "4.0-4.5",
+            "4.5-5.0",
+            "Not answered"
+          ],
+          "sc_nstd_enterp": [
+            "<2.5",
+            "2.5-3.0",
+            "3.0-3.5",
+            "3.5-4.0",
+            "4.0-4.5",
+            "4.5-5.0",
+            "Not answered"
+          ],
+          "sc_nstd_convent": [
+            "<2.5",
+            "2.5-3.0",
+            "3.0-3.5",
+            "3.5-4.0",
+            "4.0-4.5",
+            "4.5-5.0",
+            "Not answered"
+          ],
+          "sc_nstd_corsi_1": [
+            "0",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "Not answered"
+          ],
+          "sc_nstd_ds_f_2": [
+            "0",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "Not answered"
+          ],
+          "sc_nstd_ds_b_2": [
+            "0",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "Not answered"
+          ],
+          "sc_nstd_hmt_1": [
+            "<=0.2",
+            "0.3",
+            "0.4",
+            "0.5",
+            "0.6",
+            "0.7",
+            "0.8+",
+            "Not answered"
+          ],
+          "sc_nstd_cpt_corrected": [
+            "<=25",
+            "26-50",
+            "51-75",
+            "76-90",
+            ">90",
+            "Not answered"
+          ],
+          "sc_nstd_tmt_log_a": [
+            "<3.9",
+            "3.9-4.3",
+            "4.3-4.6",
+            "4.6+",
+            "Not answered"
+          ],
+          "sc_nstd_tmt_err_a": [
+            "0",
+            "1",
+            "2",
+            "3+",
+            "Not answered"
+          ],
+          "sc_nstd_tmt_log_b": [
+            "<4.0",
+            "4.0-4.4",
+            "4.4-4.8",
+            "4.8+",
+            "Not answered"
+          ],
+          "sc_nstd_tmt_err_b": [
+            "0",
+            "1",
+            "2",
+            "3+",
+            "Not answered"
+          ],
+          "sc_nstd_mtpt_quit_1": [
+            "0",
+            "1",
+            "Not answered"
+          ],
+          "sc_nstd_mtpt_err_per_s": [
+            "<0.10",
+            "0.10-0.20",
+            "0.20-0.30",
+            "0.30+",
+            "Not answered"
+          ],
+          "sc_nstd_bret_prop": [
+            "<0.25",
+            "0.25-0.40",
+            "0.40-0.50",
+            "0.50-0.65",
+            "0.65+",
+            "Not answered"
+          ],
+          "user.age": [
+            "15-19",
+            "20-24",
+            "25-29",
+            "30-34",
+            "35-44",
+            "45+",
+            "Not answered"
+          ],
+          "user.gender": [
+            "Female",
+            "Male",
+            "Other",
+            "Prefer not to say",
+            "Not answered"
+          ],
+          "user.country": [
+            "South Africa",
+            "Lesotho",
+            "Nigeria",
+            "Other",
+            "Not answered"
+          ],
+          "user.educationLevel": [
+            "No schooling completed",
+            "Primary school",
+            "Some high school, no matric certificate",
+            "Secondary school",
+            "Matric",
+            "Trade / technical / vocational training (at a TVET, FET or private college)",
+            "University bachelor\u2019s degree",
+            "University honours degree",
+            "Master\u2019s degree",
+            "Professional degree (Law, Medicine, PhD)",
+            "Not answered"
+          ],
+          "user.hadJob": [
+            "no",
+            "yes"
+          ],
+          "user.employmentStatus": [
+            "Searching for a job",
+            "Not actively searching for a job",
+            "Full-time employed",
+            "Part-time employed",
+            "Freelancing / Gig Work",
+            "Running own business / Self-employed",
+            "Internship / Apprenticeship",
+            "Skills training/ Certification course",
+            "Studying"
+          ],
+          "user.howLongSearchingForJob": [
+            "Less than one month",
+            "About one month",
+            "2-3 months",
+            "4-6 months",
+            "6 months \u2013 1 year",
+            "More than 1 year",
+            "More than 2 years",
+            "More than 5 years",
+            "NA_GATED"
+          ],
+          "user.howManyHoursSearchedPerWeek": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6-10",
+            "10-15",
+            "16-20",
+            "21-30",
+            "31-40",
+            "more than 40",
+            "NA_GATED"
+          ],
+          "user.howManyApplicationsLastMonth": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6-10",
+            "10-15",
+            "16-20",
+            "21-30",
+            "31-40",
+            "more than 40",
+            "NA_GATED"
+          ],
+          "user.expectedToFindJobInSixMonths": [
+            "no",
+            "yes",
+            "Not answered",
+            "NA_GATED"
+          ],
+          "user.howLongUnemployed": [
+            "Less than one month",
+            "About one month",
+            "2-3 months",
+            "4-6 months",
+            "Under 6 months",
+            "6 months \u2013 1 year",
+            "More than 1 year",
+            "More than 2 years",
+            "More than 5 years",
+            "NA_GATED"
+          ],
+          "user.howLongInCurrentPosition": [
+            "Less than one month",
+            "About one month",
+            "2-3 months",
+            "4-6 months",
+            "Under 6 months",
+            "6 months \u2013 1 year",
+            "More than 1 year",
+            "More than 2 years",
+            "More than 5 years",
+            "NA_GATED"
+          ],
+          "user.appliedInThePastSector": [
+            "Architecture and Engineering",
+            "Arts, Design, Entertainment, Sport",
+            "Building and Grounds Cleaning and Maintenance",
+            "Community and Social Service",
+            "Computer and Mathematical",
+            "Construction and Extraction",
+            "Educational Instruction and Library",
+            "Entrepreneurship/ Self-employment",
+            "Farming, Fishing, and Forestry",
+            "Financial Operations",
+            "Food Preparation and Serving Related",
+            "Healthcare Practitioners and Technical",
+            "Healthcare Support",
+            "Installation, Maintenance, and Repair",
+            "Legal",
+            "Life, Physical, and Social Science",
+            "Management",
+            "Office and Administrative Support",
+            "Personal Care and Service",
+            "Production",
+            "Protective Service",
+            "Sales and Related",
+            "Transportation and Material Moving",
+            "Other",
+            "Not answered",
+            "NA_GATED"
+          ],
+          "user.preferredSector": [
+            "Architecture and Engineering",
+            "Arts, Design, Entertainment, Sport",
+            "Building and Grounds Cleaning and Maintenance",
+            "Community and Social Service",
+            "Computer and Mathematical",
+            "Construction and Extraction",
+            "Educational Instruction and Library",
+            "Entrepreneurship/ Self-employment",
+            "Farming, Fishing, and Forestry",
+            "Financial Operations",
+            "Food Preparation and Serving Related",
+            "Healthcare Practitioners and Technical",
+            "Healthcare Support",
+            "Installation, Maintenance, and Repair",
+            "Legal",
+            "Life, Physical, and Social Science",
+            "Management",
+            "Office and Administrative Support",
+            "Personal Care and Service",
+            "Production",
+            "Protective Service",
+            "Sales and Related",
+            "Transportation and Material Moving",
+            "Other",
+            "Not answered",
+            "NA_GATED"
+          ],
+          "user.wageOfSimilarEmployees": [
+            "0",
+            "1-1999",
+            "2000-2999",
+            "3000-3999",
+            "4000-4999",
+            "5000-6999",
+            "7000-9999",
+            "10000-14999",
+            "15000-24999",
+            "25000+",
+            "Not answered"
+          ],
+          "user.lowestAcceptablePay": [
+            "0",
+            "1-1999",
+            "2000-2999",
+            "3000-3999",
+            "4000-4999",
+            "5000-6999",
+            "7000-9999",
+            "10000-14999",
+            "15000-24999",
+            "25000+",
+            "Not answered"
+          ],
+          "user.jobStrengthsAndWeaknesses": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "Not answered"
+          ],
+          "user.helpJobSearch": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "Not answered"
+          ],
+          "user.helpGettingJob": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "Not answered"
+          ],
+          "user.planToIncreaseJobSearch": [
+            "yes",
+            "same as before",
+            "no",
+            "not applicable",
+            "Not answered"
+          ],
+          "user.targetSector": [
+            "Architecture and Engineering",
+            "Arts, Design, Entertainment, Sport",
+            "Building and Grounds Cleaning and Maintenance",
+            "Community and Social Service",
+            "Computer and Mathematical",
+            "Construction and Extraction",
+            "Educational Instruction and Library",
+            "Entrepreneurship/ Self-employment",
+            "Farming, Fishing, and Forestry",
+            "Financial Operations",
+            "Food Preparation and Serving Related",
+            "Healthcare Practitioners and Technical",
+            "Healthcare Support",
+            "Installation, Maintenance, and Repair",
+            "Legal",
+            "Life, Physical, and Social Science",
+            "Management",
+            "Office and Administrative Support",
+            "Personal Care and Service",
+            "Production",
+            "Protective Service",
+            "Sales and Related",
+            "Transportation and Material Moving",
+            "Other",
+            "Not answered"
+          ],
+          "user.howManyHoursWillSearchPerWeek": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6-10",
+            "10-15",
+            "16-20",
+            "21-30",
+            "31-40",
+            "more than 40",
+            "Not answered"
+          ],
+          "user.howManyApplicationsNextMonth": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6-10",
+            "10-15",
+            "16-20",
+            "21-30",
+            "31-40",
+            "more than 40",
+            "Not answered"
+          ],
+          "user.plansToAttachSkillsReport": [
+            "no",
+            "yes",
+            "Not answered"
+          ],
+          "user.willSkillsAttachHelpGetInterview": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "Not answered"
+          ],
+          "user.expectsToFindJobInSixMonths": [
+            "no",
+            "yes",
+            "Not answered"
+          ],
+          "user.wageOfSimilarEmployeesAfter": [
+            "0",
+            "1-1999",
+            "2000-2999",
+            "3000-3999",
+            "4000-4999",
+            "5000-6999",
+            "7000-9999",
+            "10000-14999",
+            "15000-24999",
+            "25000+",
+            "Not answered"
+          ],
+          "user.lowestAcceptablePayAfter": [
+            "0",
+            "1-1999",
+            "2000-2999",
+            "3000-3999",
+            "4000-4999",
+            "5000-6999",
+            "7000-9999",
+            "10000-14999",
+            "15000-24999",
+            "25000+",
+            "Not answered"
+          ],
+          "user.accessedLearningLinks": [
+            "no",
+            "plan to",
+            "yes",
+            "Not answered"
+          ],
+          "user.howManyHoursToUpskillPerWeek": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6-10",
+            "10-15",
+            "16-20",
+            "21-30",
+            "31-40",
+            "more than 40",
+            "NA_GATED"
+          ],
+          "user.plannedCourses": [
+            "Adaptability",
+            "Career Interests",
+            "Data Analysis in Excel",
+            "Emotional Intelligence",
+            "Financial",
+            "Growth Mindset",
+            "Mentoring Platform for Entrepreneurs",
+            "Personality",
+            "Persistence",
+            "Problem Solving",
+            "Programming",
+            "Risk Propensity",
+            "Running your own business",
+            "Small Business Marketing",
+            "Social Media Marketing",
+            "Speed",
+            "Visual-spatial Working memory",
+            "Not answered"
+          ],
+          "user.helpGetInterview": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "Not answered"
+          ],
+          "user.helpGetJobInDesiredSector": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "Not answered"
+          ],
+          "user.reportUsefullness": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "Not answered"
+          ],
+          "user.likelyToRecommend": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "Not answered"
+          ],
+          "tr_employment_status": [
+            "Searching for a job",
+            "Not actively searching for a job",
+            "Full-time employed",
+            "Part-time employed",
+            "Freelancing / Gig Work",
+            "Running own business / Self-employed",
+            "Internship / Apprenticeship",
+            "Skills training/ Certification course",
+            "Studying",
+            "Not answered",
+            "NA_GATED"
+          ],
+          "tr_job_full": [
+            "No",
+            "Yes",
+            "Not answered",
+            "NA_GATED"
+          ],
+          "tr_job_number": [
+            "0",
+            "1",
+            "2",
+            "4",
+            "NA_GATED"
+          ],
+          "tr_did_full": [
+            "Yes",
+            "No",
+            "I don\u2019t remember",
+            "Not answered",
+            "NA_GATED"
+          ],
+          "tr_feedback_full": [
+            "No",
+            "Yes",
+            "Not answered",
+            "NA_GATED"
+          ],
+          "tr_feedback_increase_job": [
+            "Yes, I now spend more time job searching since I registered for the YES program",
+            "No change. The time I spend job searching hasn\u2019t changed since I registered",
+            "I spend less time job searching since I registered for the YES program.",
+            "I job searched for a little while and now have a job",
+            "I was already employed when I registered for the YES program",
+            "Not answered",
+            "NA_GATED"
+          ],
+          "tr_target_sector": [
+            "Architecture and Engineering",
+            "Arts, Design, Entertainment, Sports",
+            "Building and Grounds Cleaning and Maintenance",
+            "Community and Social Service",
+            "Computer and Mathematical",
+            "Construction and Extraction",
+            "Educational Instruction and Library",
+            "Entrepreneurship/ Self-employment",
+            "Farming, Fishing, and Forestry",
+            "Financial Operations",
+            "Food Preparation and Serving Related",
+            "Healthcare Practitioners and Technical",
+            "Healthcare Support",
+            "Installation, Maintenance, and Repair",
+            "Legal",
+            "Life, Physical, and Social Science",
+            "Management",
+            "Office and Administrative Support",
+            "Personal Care and Service",
+            "Production",
+            "Protective Service",
+            "Sales and Related",
+            "Transportation and Material Moving",
+            "Not answered",
+            "NA_GATED"
+          ],
+          "tr_help_job_search_full": [
+            "Yes",
+            "No",
+            "Not sure",
+            "Not answered",
+            "NA_GATED"
+          ],
+          "tr_help_get_job_full": [
+            "Yes",
+            "No",
+            "Not sure",
+            "Not answered",
+            "NA_GATED"
+          ],
+          "tr_recommend_full": [
+            "Not likely",
+            "Not sure",
+            "Likely",
+            "Not answered",
+            "NA_GATED"
+          ],
+          "tr_attach_skills_report_full": [
+            "No",
+            "Yes",
+            "Not answered",
+            "NA_GATED"
+          ],
+          "tr_report_help_interview_full": [
+            "Yes",
+            "No",
+            "Not sure",
+            "Not answered",
+            "NA_GATED"
+          ],
+          "tr_similar_wage_after": [
+            "1-1999",
+            "2000-2999",
+            "3000-3999",
+            "4000-4999",
+            "5000-6999",
+            "7000-9999",
+            "10000-14999",
+            "15000-24999",
+            "Not answered",
+            "NA_GATED"
+          ],
+          "tr_low_pay_after": [
+            "1-1999",
+            "2000-2999",
+            "3000-3999",
+            "4000-4999",
+            "5000-6999",
+            "7000-9999",
+            "10000-14999",
+            "15000-24999",
+            "Not answered",
+            "NA_GATED"
+          ],
+          "tr_search_hours_after": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6-10",
+            "11-15",
+            "16-20",
+            "21-30",
+            "31-40",
+            "more than 40",
+            "Not answered",
+            "NA_GATED"
+          ],
+          "tr_applications_next_1m": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6-10",
+            "11-15",
+            "16-20",
+            "21-30",
+            "31-40",
+            "more than 40",
+            "Not answered",
+            "NA_GATED"
+          ],
+          "tr_job_offers": [
+            "0",
+            "1",
+            "2",
+            "3+",
+            "Not answered",
+            "NA_GATED"
+          ],
+          "tr_upskill_hours_week": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6-10",
+            "11-15",
+            "16-20",
+            "21-30",
+            "31-40",
+            "more than 40",
+            "Not answered",
+            "NA_GATED"
+          ],
+          "tr_riasec_target_sector": [
+            "Realistic",
+            "Investigative",
+            "Social",
+            "Enterprising",
+            "Conventional",
+            "Not answered",
+            "NA_GATED"
+          ],
+          "tr_feel_work": [
+            "2.125",
+            "2.75",
+            "2.875",
+            "3.0",
+            "3.125",
+            "3.25",
+            "3.5",
+            "3.625",
+            "3.75",
+            "3.875",
+            "4.0",
+            "Not answered",
+            "NA_GATED"
+          ],
+          "tr_self_efficacy": [
+            "<3.4",
+            "3.4-3.7",
+            "3.8-3.9",
+            "4.0",
+            "Not answered",
+            "NA_GATED"
+          ]
+        }
+      }
+    },
+    {
+      "instrument": "unhcr",
+      "given": 17,
+      "heads": 213,
+      "visible": 8279,
+      "query": 621,
+      "vectors": 132273,
+      "probability_width": 834,
+      "metadata": {
+        "raw_sha256": "b1175b6bdbd96e90a4defd83af20a38d711c6eca9fe3ce880109ff244abe80d9",
+        "config_sha256": "f22f8e4faa62b6af0ee8e7e887e35980511e4517655479fefeeef4519fc52c15",
+        "loader_sha256": "8cf628cbb4771ed6e91ad74ebb4f75b22667af39d8f48e01c956c675b1b1586b",
+        "runtime_sha256": "ef734cec5bcc931bcc9eaa49694310e924f024ff7cf58a047b4c2cb60394c8ae",
+        "runtime_hash_encoding": "UTF-8 JSON ensure_ascii=False,separators=comma/colon,original key order",
+        "item_order": [
+          "panel_hh_key",
+          "wave",
+          "s1_2_country_asylum_lbl",
+          "s2_1_hh_relationship_lbl",
+          "s2_1b_age",
+          "s2_1c_education_level_lbl",
+          "s2_1d_marital_status_lbl",
+          "s2_2_single_parent_lbl",
+          "s2_3_boys_0_5",
+          "s2_3_girls_0_5",
+          "s2_3_boys_6_17",
+          "s2_3_girls_6_17",
+          "s2_3_men_18_59",
+          "s2_3_women_18_59",
+          "s2_3_men_60plus",
+          "s2_3_women_60plus",
+          "governorate_col",
+          "s2_4a_origin_governorate_lbl",
+          "s2_6_return_decision_maker",
+          "s2_7_own_house_syria_lbl",
+          "s2_8_own_land_syria_lbl",
+          "s2_9_property_docs_lbl",
+          "s2_10_house_condition_lbl",
+          "s2_11_house_occupancy_lbl",
+          "s3_1_has_valid_docs_lbl",
+          "s3_2_visited_syria_lbl",
+          "s3_3_who_visited_lbl",
+          "s3_4a_visit_year",
+          "s3_4b_visit_month",
+          "s3_5_family_in_syria_lbl",
+          "s3_6_permanent_returns_lbl",
+          "s3_7_num_permanent_returns_lbl",
+          "s3_9a_recent_returns_count_lbl",
+          "s3_8a_return_year",
+          "s3_8b_return_month",
+          "s3_7_num_permanent_returns",
+          "s3_9a_recent_returns_calc",
+          "s3_9b_returned_children",
+          "s3_9c_returnee_working_lbl",
+          "s3_10a_returnee_is_head_lbl",
+          "s3_10b_returnee_gender_lbl",
+          "s3_10c_returnee_age",
+          "s3_10d_employ_before_return_lbl",
+          "s3_10g_employ_syria_lbl",
+          "s3_11_intent_return_12m_lbl",
+          "s7a_1_return_destination_lbl",
+          "s7a_2_location_known_lbl",
+          "s7a_2a_ret_governorate1",
+          "s7a_2b_ret_district1",
+          "s7a_2c_ret_subdistrict_other",
+          "s7a_4_return_alone_lbl",
+          "s7a_5_alone_reason_lbl",
+          "s7a_6_return_companions_lbl",
+          "s7a_7_reason_safety_improved_lbl",
+          "s7a_7_reason_family_reunite_lbl",
+          "s7a_7_reason_sufficient_resources_lbl",
+          "s7a_7_reason_livelihood_found_lbl",
+          "s7a_7_reason_services_adequate_lbl",
+          "s7a_7_reason_property_access_lbl",
+          "s7a_7_reason_movement_freedom_lbl",
+          "s7a_7_reason_sufficient_info_lbl",
+          "s7a_7_reason_positive_feedback_lbl",
+          "s7a_7_reason_problems_host_lbl",
+          "s7a_7_reason_residency_delays_lbl",
+          "s7a_7_reason_residency_other",
+          "s7a_7_reason_high_cost_living_lbl",
+          "s7a_7_reason_limited_jobs_lbl",
+          "s7a_7_reason_work_permit_lbl",
+          "s7a_7_reason_homeland_lbl",
+          "s7a_7_reason_education_opps_lbl",
+          "s7a_7_reason_other",
+          "s7a_7_reason_pna_lbl",
+          "s7b_1_no_return_safety_concerns_lbl",
+          "s7b_1_no_return_economic_syria_lbl",
+          "s7b_1_no_return_legal_docs_lbl",
+          "s7b_1_no_return_debt_host_lbl",
+          "s7b_1_no_return_livelihood_lbl",
+          "s7b_1_no_return_services_lbl",
+          "s7b_1_no_return_family_needs_lbl",
+          "s7b_1_no_return_housing_lbl",
+          "s7b_1_no_return_social_tensions_lbl",
+          "s7b_1_no_return_debt_syria_lbl",
+          "s7b_1_no_return_advised_against_lbl",
+          "s7b_1_no_return_better_assistance_lbl",
+          "s7b_1_no_return_no_family_lbl",
+          "s7b_1_no_return_no_resources_lbl",
+          "s7b_1_no_return_adapted_host_lbl",
+          "s7b_1_no_return_home_damaged_lbl",
+          "s7b_1_no_return_have_citizenship_lbl",
+          "s7b_1_no_return_health_travel_lbl",
+          "s7b_1_no_return_other",
+          "s7b_1_no_return_dont_know_lbl",
+          "s7b_1_no_return_PNA_lbl",
+          "s7b_2_recon_safety_improved_lbl",
+          "s7b_2_recon_legal_access_lbl",
+          "s7b_2_recon_sufficient_resources_lbl",
+          "s7b_2_recon_livelihood_opps_lbl",
+          "s7b_2_recon_basic_services_lbl",
+          "s7b_2_recon_special_services_lbl",
+          "s7b_2_recon_housing_access_lbl",
+          "s7b_2_recon_debt_paid_host_lbl",
+          "s7b_2_recon_family_together_lbl",
+          "s7b_2_recon_reentry_possible_lbl",
+          "s7b_2_recon_asylum_negative_lbl",
+          "s7b_2_recon_debt_paid_syria_lbl",
+          "s7b_2_recon_others_returning_lbl",
+          "s7b_2_recon_host_worse_lbl",
+          "s7b_2_recon_war_host_lbl",
+          "s7b_2_recon_never_lbl",
+          "s7b_2_recon_other",
+          "s7b_2_recon_PNA_lbl",
+          "s7c_1_cond_safety_improved_lbl",
+          "s7c_1_cond_sufficient_resources_lbl",
+          "s7c_1_cond_livelihood_opps_lbl",
+          "s7c_1_cond_basic_services_lbl",
+          "s7c_1_cond_special_services_lbl",
+          "s7c_1_cond_housing_access_lbl",
+          "s7c_1_cond_reentry_possible_lbl",
+          "s7c_1_cond_debt_paid_host_lbl",
+          "s7c_1_cond_debt_paid_syria_lbl",
+          "s7c_1_cond_host_worse_lbl",
+          "s7c_1_cond_other",
+          "s3_12_hope_return_someday_lbl",
+          "s3_13_hope_return_5yr_lbl",
+          "s3_14_visit_importance_lbl",
+          "s3_15_friend_return_likely_lbl",
+          "s3_16_friend_ret_family_lbl",
+          "s3_16_friend_ret_safety_lbl",
+          "s3_16_friend_ret_econ_syria_lbl",
+          "s3_16_friend_ret_no_legal_lbl",
+          "s3_16_friend_ret_no_econ_host_lbl",
+          "s3_16_friend_ret_no_services_lbl",
+          "s3_16_friend_ret_high_cost_lbl",
+          "s3_16_friend_ret_homeland_lbl",
+          "s3_16_friend_ret_has_property_lbl",
+          "s3_16_friend_ret_has_resources_lbl",
+          "s3_16_friend_ret_other",
+          "s3_17_friend_no_ret_safety_lbl",
+          "s3_17_friend_no_ret_no_econ_lbl",
+          "s3_17_friend_no_ret_no_education_lbl",
+          "s3_17_friend_no_ret_no_health_lbl",
+          "s3_17_friend_no_ret_no_water_lbl",
+          "s3_17_friend_no_ret_no_electricity_lbl",
+          "s3_17_friend_no_ret_food_insecurity_lbl",
+          "s3_17_friend_no_ret_other",
+          "s3_18_num_network_returned_lbl",
+          "s3_19_origin_comm_freq_lbl",
+          "s3_20_origin_employ_rating_lbl",
+          "s3_21_employ_info_confidence_lbl",
+          "s3_22_return_safety_feeling_lbl",
+          "s3_23_safety_active_conflict_lbl",
+          "s3_23_safety_law_enforcement_lbl",
+          "s3_23_safety_tribal_conflict_lbl",
+          "s3_23_safety_armed_actors_lbl",
+          "s3_23_safety_explosives_lbl",
+          "s3_23_safety_public_spaces_lbl",
+          "s3_23_safety_no_concerns_lbl",
+          "s3_23_safety_theft_lbl",
+          "s3_23_safety_kidnapping_lbl",
+          "s3_23_safety_other",
+          "s3_23a_safety_rank1_lbl",
+          "s3_23b_safety_rank2_lbl",
+          "s3_24_origin_electricity_lbl",
+          "s3_25_origin_water_lbl",
+          "s4_0_hh_anyone_working_lbl",
+          "s4_1_is_main_earner_lbl",
+          "s4_3_main_earner_gender",
+          "s4_4_main_earner_age",
+          "s4_5_main_earner_relation_lbl",
+          "s4_6_main_earner_education_lbl",
+          "s4_7_has_work_permit_lbl",
+          "s4_today_date_lbl",
+          "s4_8_worked_pay_lastweek_lbl",
+          "s4_9_business_lastweek_lbl",
+          "s4_10_family_biz_lastweek_lbl",
+          "s4_11_job_but_absent_lbl",
+          "s4_16_employment_type_lbl",
+          "s5_1_unfair_treatment_freq_lbl",
+          "s5_2_citizen_friends_ratio_lbl",
+          "s5_3_refugee_friends_ratio_lbl",
+          "s5_4_employ_discrimination_lbl",
+          "s5_5_shopping_discrimination_lbl",
+          "s5_6_feel_left_out_lbl",
+          "s5_7_life_complicated_lbl",
+          "s5_8_value_not_recognized_lbl",
+          "s5_9_looked_down_on_lbl",
+          "s5_10_community_relations_lbl",
+          "s6_1_income_work_lbl",
+          "s6_1_income_remittances_lbl",
+          "s6_1_income_humanitarian_lbl",
+          "s6_1_income_government_lbl",
+          "s6_1_income_selling_assets_lbl",
+          "s6_1_income_syria_pension_lbl",
+          "s6_1_income_savings_lbl",
+          "s6_1_income_loans_lbl",
+          "s6_1_income_community_lbl",
+          "s6_1_income_none_lbl",
+          "s6_1_income_other",
+          "s6_1_income_dont_know_lbl",
+          "s6_1_income_no_answer_lbl",
+          "s6_2_income_varies_lbl",
+          "s6_3_income_adequacy_lbl",
+          "s6_4_need_housing_lbl",
+          "s6_4_need_food_lbl",
+          "s6_4_need_commodities_lbl",
+          "s6_4_need_education_lbl",
+          "s6_4_need_health_lbl",
+          "s6_4_need_electricity_lbl",
+          "s6_4_need_water_lbl",
+          "s6_4_need_other",
+          "s6_5_assistance_received_lbl",
+          "s6_6_assist_unhcr_lbl",
+          "s6_6_assist_wfp_lbl",
+          "s6_6_assist_intl_orgs_lbl",
+          "s6_6_assist_government_lbl",
+          "s6_6_assist_religious_lbl",
+          "s6_6_assist_ngo_lbl",
+          "s6_6_assist_other",
+          "s6_7_receive_remittances_lbl",
+          "s6_8_send_remittances_lbl",
+          "s6_9a_debt_host_country_lbl",
+          "s6_9b_debt_syria_lbl",
+          "s6_10_face_challenges_lbl",
+          "s6_11_challenge_movement_lbl",
+          "s6_11_challenge_eviction_lbl",
+          "s6_11_challenge_safety_lbl",
+          "s6_11_challenge_legal_lbl",
+          "s6_11_challenge_employment_lbl",
+          "s6_11_challenge_no_assistance_lbl",
+          "s6_11_challenge_debt_lbl",
+          "s6_11_challenge_health_access_lbl",
+          "s6_11_challenge_education_access_lbl",
+          "s6_11_challenge_separation_lbl",
+          "s6_11_challenge_tensions_lbl",
+          "s6_11_challenge_forced_return_lbl",
+          "s6_11_challenge_other",
+          "s6_12_children_schooling_lbl",
+          "bc3_followup_permission_lbl",
+          "include_final_analysis1",
+          "w_final",
+          "x25_CheckSyria_lbl",
+          "q7c_undecided_conditions_consider_return_2_lbl",
+          "q7c_undecided_conditions_consider_return_99_lbl",
+          "return_to_syria_qS_1_interviewed_before_lbl",
+          "return_to_syria_qS_2_return_date_lbl",
+          "return_to_syria_qS_3_return_decision_lbl",
+          "return_to_syria_qS_3_other_lbl",
+          "return_to_syria_qS_4_entire_household_lbl",
+          "return_to_syria_qS_5_remained_behind_lbl",
+          "return_to_syria_qS_5_remained_behind_1_lbl",
+          "return_to_syria_qS_5_remained_behind_2_lbl",
+          "return_to_syria_qS_5_remained_behind_3_lbl",
+          "return_to_syria_qS_5_remained_behind_4_lbl",
+          "return_to_syria_qS_5_remained_behind_5_lbl",
+          "return_to_syria_qS_5_other_lbl",
+          "return_to_syria_qS_6_return_type_lbl",
+          "return_to_syria_qS_7_return_method_lbl",
+          "return_to_syria_qS_7_other_lbl",
+          "return_to_syria_qS_8_return_assistance_lbl",
+          "return_to_syria_qS_9_remain_next_12m_lbl",
+          "return_to_syria_qS_10_reason_not_remain_lbl",
+          "return_to_syria_qS_11_accommodation_lbl",
+          "return_to_syria_qS_11_other_lbl",
+          "return_to_syria_qS_12_stay_next_6m_lbl",
+          "return_to_syria_qS_13_pressing_needs_lbl",
+          "return_to_syria_qS_13_pressing_needs_1_lbl",
+          "return_to_syria_qS_13_pressing_needs_2_lbl",
+          "return_to_syria_qS_13_pressing_needs_3_lbl",
+          "return_to_syria_qS_13_pressing_needs_4_lbl",
+          "return_to_syria_qS_13_pressing_needs_5_lbl",
+          "return_to_syria_qS_13_pressing_needs_6_lbl",
+          "return_to_syria_qS_13_pressing_needs_7_lbl",
+          "return_to_syria_qS_13_pressing_needs_8_lbl",
+          "return_to_syria_qS_13_pressing_needs_9_lbl",
+          "return_to_syria_qS_13_pressing_needs_10_lbl",
+          "return_to_syria_qS_13_pressing_needs_11_lbl",
+          "return_to_syria_qS_13_pressing_needs_12_lbl",
+          "return_to_syria_qS_13_pressing_needs_13_lbl",
+          "return_to_syria_qS_13_pressing_needs_14_lbl",
+          "return_to_syria_qS_13_pressing_needs_15_lbl",
+          "return_to_syria_qS_13_pressing_needs_16_lbl",
+          "return_to_syria_qS_13_pressing_needs_17_lbl",
+          "return_to_syria_qS_13_pressing_needs_18_lbl",
+          "return_to_syria_qS_13_pressing_needs_19_lbl",
+          "return_to_syria_qS_13_pressing_needs_20_lbl"
+        ],
+        "options": {
+          "wave": [
+            "1",
+            "2"
+          ],
+          "s1_2_country_asylum_lbl": [
+            "Egypt",
+            "Iraq",
+            "Jordan",
+            "Lebanon"
+          ],
+          "s2_1_hh_relationship_lbl": [
+            "1. Head of household",
+            "2. Spouse/partner",
+            "3. Son/Daughter",
+            "4. Son/Daughter-in-law",
+            "5. Father/Mother",
+            "6. Father/Mother-in-law",
+            "7. Brother/Sister",
+            "8. Other adult member of the household",
+            "9. A non-household member"
+          ],
+          "s2_1b_age": [
+            "18-24",
+            "25-34",
+            "35-44",
+            "45-54",
+            "55-64",
+            "65+",
+            "[generalised:s2]"
+          ],
+          "s2_1c_education_level_lbl": [
+            "1. No formal education",
+            "2. Early Childhood Education or Pre-primary",
+            "3. Primary",
+            "4. Secondary",
+            "5. Secondary - Technical and Vocational Education and Training (TVET)",
+            "6. Post-secondary - Technical and Vocational Education and Training (TVET)",
+            "7. Tertiary and above",
+            "[generalised:s2]"
+          ],
+          "s2_1d_marital_status_lbl": [
+            "1. Never married",
+            "2. Married",
+            "3. In a domestic partnership (unmarried couple)",
+            "4. In a polygamous marriage",
+            "5. Widowed",
+            "6. Divorced",
+            "7. Separated"
+          ],
+          "s2_2_single_parent_lbl": [
+            "0. No",
+            "1. Yes"
+          ],
+          "s2_3_boys_0_5": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6-10",
+            "11+"
+          ],
+          "s2_3_girls_0_5": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6-10",
+            "11+"
+          ],
+          "s2_3_boys_6_17": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6-10",
+            "11+"
+          ],
+          "s2_3_girls_6_17": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6-10",
+            "11+"
+          ],
+          "s2_3_men_18_59": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6-10",
+            "11+"
+          ],
+          "s2_3_women_18_59": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6-10",
+            "11+"
+          ],
+          "s2_3_men_60plus": [
+            "0",
+            "1",
+            "2",
+            "11+"
+          ],
+          "s2_3_women_60plus": [
+            "0",
+            "1",
+            "2",
+            "4",
+            "6-10",
+            "11+"
+          ],
+          "governorate_col": [
+            "Ajloun",
+            "Akkar",
+            "Al Aqaba",
+            "Al Balqa",
+            "Al Karak",
+            "Al Mafraq",
+            "Al Tafilah",
+            "Al-Najaf",
+            "Al-Sulaymaniyah",
+            "Alexandria",
+            "Amman",
+            "Assiut",
+            "Aswan",
+            "Behera",
+            "Beirut",
+            "Bekaa",
+            "Beni Suef",
+            "Cairo",
+            "Dakahlia",
+            "Damietta",
+            "Duhok",
+            "El Nabatieh",
+            "Erbil",
+            "Fayoum",
+            "Gharbia",
+            "Giza",
+            "Hermel/Baalbek",
+            "Irbid",
+            "Ismailia",
+            "Jarash",
+            "Kafr El-Shikh",
+            "Kalyoubia",
+            "Kirkuk",
+            "Luxor",
+            "Maan",
+            "Madaba",
+            "Matrouh",
+            "Menia",
+            "Menoufia",
+            "Mount Lebanon",
+            "North",
+            "Port Said",
+            "Red Sea",
+            "Sharkia",
+            "South Lebanon",
+            "Zarqa"
+          ],
+          "s2_4a_origin_governorate_lbl": [
+            "Al-Hasakeh",
+            "Aleppo",
+            "Ar-Raqqa",
+            "As-Sweida",
+            "Damascus",
+            "Dar'a",
+            "Deir-ez-Zor",
+            "Don\u2019t want to answer",
+            "Hama",
+            "Homs",
+            "Idleb",
+            "Lattakia",
+            "Quneitra",
+            "Rural Damascus",
+            "Tartous",
+            "[generalised:s2]"
+          ],
+          "s2_6_return_decision_maker": [
+            "1. Decision is made by Head of household",
+            "2. Decision is made jointly with all adult members",
+            "3. Decision is made by father and mother jointly",
+            "4. Decision is made by respondent (if not head of household)",
+            "5. Decision is made by another household member(s)",
+            "6. Decision is made by another non-household member"
+          ],
+          "s2_7_own_house_syria_lbl": [
+            "0. No",
+            "1. Yes",
+            "98. I don't know"
+          ],
+          "s2_8_own_land_syria_lbl": [
+            "0. No",
+            "1. Yes",
+            "98. I don't know"
+          ],
+          "s2_9_property_docs_lbl": [
+            "1. Yes, we have documents for all the property in Syria",
+            "2. Yes, we have documents for some, but not all",
+            "3. No, we do not have any documents",
+            "98. Don't know (DO NOT READ ALOUD)",
+            "NA_GATED"
+          ],
+          "s2_10_house_condition_lbl": [
+            "1. The home is partially damaged but safe to live in",
+            "2. The home is partially damaged and unsafe to live in",
+            "3. The home is fully destroyed",
+            "4. The home has not been damaged or destroyed",
+            "98. Don't know",
+            "NA_GATED"
+          ],
+          "s2_11_house_occupancy_lbl": [
+            "1. Inhabited with our household\u2019s consent for free",
+            "2. Inhabited with our household\u2019s consent and rented",
+            "3. Inhabited without our household\u2019s consent",
+            "4. Unoccupied",
+            "97. Other (specify)",
+            "98. Don't know",
+            "NA_GATED"
+          ],
+          "s3_1_has_valid_docs_lbl": [
+            "1. Yes",
+            "2. No",
+            "98. I don't know (DO NOT READ ALOUD)"
+          ],
+          "s3_2_visited_syria_lbl": [
+            "1. Yes",
+            "2. No",
+            "98. I don't know (DO NOT READ ALOUD)",
+            "99. I prefer not to answer (DO NOT READ ALOUD)"
+          ],
+          "s3_3_who_visited_lbl": [
+            "1. I alone",
+            "2.  Another household member or members",
+            "3. I (self) AND another household member or members",
+            "NA_GATED"
+          ],
+          "s3_4a_visit_year": [
+            "before 2011",
+            "2011-2014",
+            "2015-2018",
+            "2019-2022",
+            "2023",
+            "2024",
+            "2025",
+            "98",
+            "99",
+            "NA_GATED"
+          ],
+          "s3_4b_visit_month": [
+            "1",
+            "10",
+            "11",
+            "12",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "98",
+            "99",
+            "NA_GATED"
+          ],
+          "s3_5_family_in_syria_lbl": [
+            "1. Yes",
+            "2. No",
+            "98. I don't know (DO NOT READ ALOUD)",
+            "Not recorded"
+          ],
+          "s3_6_permanent_returns_lbl": [
+            "0. No",
+            "1. Yes",
+            "98. I don't know",
+            "99. Refused to answer",
+            "NA_GATED"
+          ],
+          "s3_7_num_permanent_returns_lbl": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6-10",
+            "11+",
+            "NA_GATED"
+          ],
+          "s3_9a_recent_returns_count_lbl": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6-10",
+            "11+",
+            "NA_GATED"
+          ],
+          "s3_8a_return_year": [
+            "before 2011",
+            "2011-2014",
+            "2015-2018",
+            "2019-2022",
+            "2023",
+            "2024",
+            "2025",
+            "98",
+            "99",
+            "NA_GATED"
+          ],
+          "s3_8b_return_month": [
+            "1",
+            "10",
+            "11",
+            "12",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "98",
+            "99",
+            "NA_GATED"
+          ],
+          "s3_9b_returned_children": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6-10",
+            "11+",
+            "NA_GATED"
+          ],
+          "s3_9c_returnee_working_lbl": [
+            "1. Yes",
+            "2. No",
+            "98. Don't know",
+            "NA_GATED"
+          ],
+          "s3_10a_returnee_is_head_lbl": [
+            "0. No",
+            "1. Yes",
+            "NA_GATED"
+          ],
+          "s3_10b_returnee_gender_lbl": [
+            "1. Male",
+            "2. Female",
+            "NA_GATED"
+          ],
+          "s3_10c_returnee_age": [
+            "18-24",
+            "25-34",
+            "35-44",
+            "45-54",
+            "55-64",
+            "65+",
+            "NA_GATED"
+          ],
+          "s3_10d_employ_before_return_lbl": [
+            "1. Employed in regular work",
+            "2. Employed in sporadic, irregular work",
+            "3. Not employed and looking for work",
+            "4. Not employed and not looking for work",
+            "98. I don\u2019t know",
+            "NA_GATED"
+          ],
+          "s3_10g_employ_syria_lbl": [
+            "1. Employed in regular work",
+            "2. Employed in sporadic, irregular work",
+            "3. Not employed and looking for work",
+            "4. Not employed and not looking for work",
+            "5. I don\u2019t know",
+            "NA_GATED"
+          ],
+          "s3_11_intent_return_12m_lbl": [
+            "0. No",
+            "1. Yes",
+            "98. I don't know"
+          ],
+          "s7a_1_return_destination_lbl": [
+            "1. Same place of origin in Syria",
+            "2. Another village/town/city/governorate/district",
+            "98. I don't know / I am undecided",
+            "NA_GATED"
+          ],
+          "s7a_2_location_known_lbl": [
+            "0. No",
+            "1. Yes",
+            "98. Undecided",
+            "NA_GATED"
+          ],
+          "s7a_4_return_alone_lbl": [
+            "0. No",
+            "1. Yes",
+            "NA_GATED"
+          ],
+          "s7a_5_alone_reason_lbl": [
+            "1. I want to reestablish a situation first before bringing my family",
+            "2. My family is already in Syria",
+            "3. My family wants to remain in host country",
+            "4. I have no family in Syria or in host country",
+            "97. Others (please specify)",
+            "NA_GATED"
+          ],
+          "s7a_6_return_companions_lbl": [
+            "1. All family members",
+            "2. All family members and extended family",
+            "3. Some family members while others remain in the ${Q1_2_CoA_label_label}",
+            "4. Undecided/Not sure",
+            "NA_GATED"
+          ],
+          "s7a_7_reason_safety_improved_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s7a_7_reason_family_reunite_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s7a_7_reason_sufficient_resources_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s7a_7_reason_livelihood_found_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s7a_7_reason_services_adequate_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s7a_7_reason_property_access_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s7a_7_reason_movement_freedom_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s7a_7_reason_sufficient_info_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s7a_7_reason_positive_feedback_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s7a_7_reason_problems_host_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s7a_7_reason_residency_delays_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s7a_7_reason_residency_other": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s7a_7_reason_high_cost_living_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s7a_7_reason_limited_jobs_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s7a_7_reason_work_permit_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s7a_7_reason_homeland_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s7a_7_reason_education_opps_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s7a_7_reason_other": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s7a_7_reason_pna_lbl": [
+            "0",
+            "NA_GATED"
+          ],
+          "s7b_1_no_return_safety_concerns_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s7b_1_no_return_economic_syria_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s7b_1_no_return_legal_docs_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s7b_1_no_return_debt_host_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s7b_1_no_return_livelihood_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s7b_1_no_return_services_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s7b_1_no_return_family_needs_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s7b_1_no_return_housing_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s7b_1_no_return_social_tensions_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s7b_1_no_return_debt_syria_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s7b_1_no_return_advised_against_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s7b_1_no_return_better_assistance_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s7b_1_no_return_no_family_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s7b_1_no_return_no_resources_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s7b_1_no_return_adapted_host_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s7b_1_no_return_home_damaged_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s7b_1_no_return_have_citizenship_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s7b_1_no_return_health_travel_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s7b_1_no_return_other": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s7b_1_no_return_dont_know_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s7b_1_no_return_PNA_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s7b_2_recon_safety_improved_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s7b_2_recon_legal_access_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s7b_2_recon_sufficient_resources_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s7b_2_recon_livelihood_opps_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s7b_2_recon_basic_services_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s7b_2_recon_special_services_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s7b_2_recon_housing_access_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s7b_2_recon_debt_paid_host_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s7b_2_recon_family_together_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s7b_2_recon_reentry_possible_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s7b_2_recon_asylum_negative_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s7b_2_recon_debt_paid_syria_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s7b_2_recon_others_returning_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s7b_2_recon_host_worse_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s7b_2_recon_war_host_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s7b_2_recon_never_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s7b_2_recon_other": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s7b_2_recon_PNA_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s7c_1_cond_safety_improved_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s7c_1_cond_sufficient_resources_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s7c_1_cond_livelihood_opps_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s7c_1_cond_basic_services_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s7c_1_cond_special_services_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s7c_1_cond_housing_access_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s7c_1_cond_reentry_possible_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s7c_1_cond_debt_paid_host_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s7c_1_cond_debt_paid_syria_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s7c_1_cond_host_worse_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s7c_1_cond_other": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s3_12_hope_return_someday_lbl": [
+            "0. No",
+            "1. Yes",
+            "98. I don't know",
+            "NA_GATED"
+          ],
+          "s3_13_hope_return_5yr_lbl": [
+            "0. No",
+            "1. Yes",
+            "98. I don't know",
+            "NA_GATED"
+          ],
+          "s3_14_visit_importance_lbl": [
+            "1. Extremely important",
+            "2. Moderately important",
+            "3. Neither important nor unimportant",
+            "4. Slightly unimportant",
+            "5. Not important at all",
+            "98. I don't know",
+            "99. I prefer not to answer",
+            "NA_GATED"
+          ],
+          "s3_15_friend_return_likely_lbl": [
+            "1. Yes",
+            "2. No",
+            "3. My best friend is not Syrian.",
+            "98. Don\u2019t know"
+          ],
+          "s3_16_friend_ret_family_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s3_16_friend_ret_safety_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s3_16_friend_ret_econ_syria_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s3_16_friend_ret_no_legal_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s3_16_friend_ret_no_econ_host_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s3_16_friend_ret_no_services_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s3_16_friend_ret_high_cost_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s3_16_friend_ret_homeland_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s3_16_friend_ret_has_property_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s3_16_friend_ret_has_resources_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s3_16_friend_ret_other": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s3_17_friend_no_ret_safety_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s3_17_friend_no_ret_no_econ_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s3_17_friend_no_ret_no_education_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s3_17_friend_no_ret_no_health_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s3_17_friend_no_ret_no_water_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s3_17_friend_no_ret_no_electricity_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s3_17_friend_no_ret_food_insecurity_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s3_17_friend_no_ret_other": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s3_18_num_network_returned_lbl": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6-10",
+            "11+"
+          ],
+          "s3_19_origin_comm_freq_lbl": [
+            "1. Daily",
+            "2. Several times a week",
+            "3. Once a week",
+            "4. Several times a month",
+            "5. Once a month",
+            "6. Infrequently",
+            "7. Never",
+            "98. Don't know (DO NOT READ ALOUD)"
+          ],
+          "s3_20_origin_employ_rating_lbl": [
+            "1. Very poor",
+            "2. Somewhat poor",
+            "3. Neither poor nor good",
+            "4. Somewhat good",
+            "5. Very good",
+            "98. 98. Don\u2019t know",
+            "99. Refused (DO NOT READ ALOUD)"
+          ],
+          "s3_21_employ_info_confidence_lbl": [
+            "1. I am very confident \u2013 I know enough to understand",
+            "2. I am somewhat confident \u2013 I know a little but not enough",
+            "3. I am neither confident nor unconfident",
+            "4. I am not confident \u2013 I know very little",
+            "5. I am not at all confident \u2013 I don\u2019t know anything",
+            "99. Refused (DO NOT READ ALOUD)"
+          ],
+          "s3_22_return_safety_feeling_lbl": [
+            "1. Very safe",
+            "2. Somewhat safe",
+            "3. Neither safe nor unsafe",
+            "4. Somewhat unsafe",
+            "5. Very unsafe",
+            "98. Don't know/no opinion"
+          ],
+          "s3_23_safety_active_conflict_lbl": [
+            "0",
+            "1"
+          ],
+          "s3_23_safety_law_enforcement_lbl": [
+            "0",
+            "1"
+          ],
+          "s3_23_safety_tribal_conflict_lbl": [
+            "0",
+            "1"
+          ],
+          "s3_23_safety_armed_actors_lbl": [
+            "0",
+            "1"
+          ],
+          "s3_23_safety_explosives_lbl": [
+            "0",
+            "1"
+          ],
+          "s3_23_safety_public_spaces_lbl": [
+            "0",
+            "1"
+          ],
+          "s3_23_safety_no_concerns_lbl": [
+            "0",
+            "1"
+          ],
+          "s3_23_safety_theft_lbl": [
+            "0",
+            "1"
+          ],
+          "s3_23_safety_kidnapping_lbl": [
+            "0",
+            "1"
+          ],
+          "s3_23_safety_other": [
+            "0",
+            "1"
+          ],
+          "s3_23a_safety_rank1_lbl": [
+            "1. There is no reduction or end of active conflict",
+            "2. Laws are not being enforced effectively",
+            "3. There is no reduction or cessation of tribal/social conflict",
+            "4. There is a large presence of armed actors",
+            "5. The area is not free of explosive hazards, mines, IEDs",
+            "6. Public spaces remain unsafe to visit",
+            "7. I have no safety or security concerns",
+            "8. Concerns over theft",
+            "9. Concerns over kidnapping",
+            "97. Other (specify)",
+            "NA_GATED"
+          ],
+          "s3_23b_safety_rank2_lbl": [
+            "1. There is no reduction or end of active conflict",
+            "2. Laws are not being enforced effectively",
+            "3. There is no reduction or cessation of tribal/social conflict",
+            "4. There is a large presence of armed actors",
+            "5. The area is not free of explosive hazards, mines, IEDs",
+            "6. Public spaces remain unsafe to visit",
+            "7. I have no safety or security concerns",
+            "8. Concerns over theft",
+            "9. Concerns over kidnapping",
+            "97. Other (specify)",
+            "NA_GATED"
+          ],
+          "s3_24_origin_electricity_lbl": [
+            "1. Available 24 hours a day",
+            "2. Available for some hours each day, but not all day",
+            "3. Available some days each week, but not every day",
+            "4. Available less than once a week (e.g. a few times a month or rarely)",
+            "5. Not available at all",
+            "98. Don't know (DO NOT READ ALOUD)",
+            "99. Refuse to answer (DO NOT READ ALOUD)"
+          ],
+          "s3_25_origin_water_lbl": [
+            "1. Water is available 24 hours a day",
+            "2. Water is available for some hours each day, but not all day",
+            "3. Water is available some days each week, but not every day",
+            "4. Water is available less than once a week",
+            "5. There is no water available",
+            "98. Don't know (DO NOT READ ALOUD)",
+            "99. Refuse to answer (DO NOT READ ALOUD)"
+          ],
+          "s4_0_hh_anyone_working_lbl": [
+            "0. No",
+            "1. Yes"
+          ],
+          "s4_1_is_main_earner_lbl": [
+            "0. No",
+            "1. Yes",
+            "NA_GATED"
+          ],
+          "s4_3_main_earner_gender": [
+            "1. Male",
+            "2. Female",
+            "NA_GATED"
+          ],
+          "s4_4_main_earner_age": [
+            "<18",
+            "18-24",
+            "25-34",
+            "35-44",
+            "45-54",
+            "55-64",
+            "65+",
+            "NA_GATED"
+          ],
+          "s4_5_main_earner_relation_lbl": [
+            "1. Head of household",
+            "2. Spouse/partner",
+            "3. Son/Daughter",
+            "4. Son/Daughter-in-law",
+            "5. Father/Mother",
+            "6. Father/Mother-in-law",
+            "7. Brother/Sister",
+            "8. Other adult member of the household",
+            "9. A non-household member",
+            "NA_GATED"
+          ],
+          "s4_6_main_earner_education_lbl": [
+            "1. No formal education",
+            "2. Early Childhood Education or Pre-primary",
+            "3. Primary",
+            "4. Secondary",
+            "5. Secondary - Technical and Vocational Education and Training (TVET)",
+            "6. Post-secondary - Technical and Vocational Education and Training (TVET)",
+            "7. Tertiary and above",
+            "NA_GATED"
+          ],
+          "s4_7_has_work_permit_lbl": [
+            "0. No",
+            "1. Yes",
+            "98. I don't know",
+            "99. Refused to answer",
+            "NA_GATED"
+          ],
+          "s4_8_worked_pay_lastweek_lbl": [
+            "1. Yes",
+            "2. No",
+            "98. I don't know (DO NOT READ ALOUD)",
+            "99. I prefer not to answer (DO NOT READ ALOUD)",
+            "NA_GATED"
+          ],
+          "s4_9_business_lastweek_lbl": [
+            "1. Yes",
+            "2. No",
+            "98. I don't know (DO NOT READ ALOUD)",
+            "99. I prefer not to answer (DO NOT READ ALOUD)",
+            "NA_GATED"
+          ],
+          "s4_10_family_biz_lastweek_lbl": [
+            "1. Yes",
+            "2. No",
+            "98. I don't know (DO NOT READ ALOUD)",
+            "99. I prefer not to answer (DO NOT READ ALOUD)",
+            "NA_GATED"
+          ],
+          "s4_11_job_but_absent_lbl": [
+            "1. Yes",
+            "2. No",
+            "98. I don't know (DO NOT READ ALOUD)",
+            "99. I prefer not to answer (DO NOT READ ALOUD)",
+            "NA_GATED"
+          ],
+          "s4_16_employment_type_lbl": [
+            "1. Day laborer",
+            "2. Salaried worker, private sector",
+            "3. Salaried worker, public sector",
+            "4. Self-employed without paid employees (own-account worker)",
+            "5. Self-employed with paid employees",
+            "6. Unpaid/in-kind household worker",
+            "7. Other (please specify)",
+            "98. Don\u2019t know",
+            "99. Refused",
+            "NA_GATED"
+          ],
+          "s5_1_unfair_treatment_freq_lbl": [
+            "1. Never",
+            "2. Rarely",
+            "3. Sometimes",
+            "4. Often",
+            "5. Always",
+            "98. Don\u2019t know/no opinion",
+            "99. Prefer not to answer"
+          ],
+          "s5_2_citizen_friends_ratio_lbl": [
+            "1. None",
+            "2. Less than half",
+            "3. Half",
+            "4. More than half",
+            "5. All"
+          ],
+          "s5_3_refugee_friends_ratio_lbl": [
+            "1. None",
+            "2. Less than half",
+            "3. Half",
+            "4. More than half",
+            "5. All"
+          ],
+          "s5_4_employ_discrimination_lbl": [
+            "1. Never",
+            "2. Rarely",
+            "3. Sometimes",
+            "4. Often",
+            "5. Always",
+            "98. Don\u2019t know/no opinion",
+            "99. Prefer not to answer"
+          ],
+          "s5_5_shopping_discrimination_lbl": [
+            "1. Strongly agree",
+            "2. Somewhat agree",
+            "3. Neither agree nor disagree",
+            "4. Somewhat disagree",
+            "5. Strongly disagree",
+            "98. Don\u2019t know/no opinion [DO NOT READ ALOUD]"
+          ],
+          "s5_6_feel_left_out_lbl": [
+            "1. Strongly agree",
+            "2. Somewhat agree",
+            "3. Neither agree nor disagree",
+            "4. Somewhat disagree",
+            "5. Strongly disagree",
+            "98. Don\u2019t know/no opinion [DO NOT READ ALOUD]"
+          ],
+          "s5_7_life_complicated_lbl": [
+            "1. Strongly agree",
+            "2. Somewhat agree",
+            "3. Neither agree nor disagree",
+            "4. Somewhat disagree",
+            "5. Strongly disagree",
+            "98. Don\u2019t know/no opinion [DO NOT READ ALOUD]"
+          ],
+          "s5_8_value_not_recognized_lbl": [
+            "1. Strongly agree",
+            "2. Somewhat agree",
+            "3. Neither agree nor disagree",
+            "4. Somewhat disagree",
+            "5. Strongly disagree",
+            "98. Don\u2019t know/no opinion [DO NOT READ ALOUD]"
+          ],
+          "s5_9_looked_down_on_lbl": [
+            "1. Strongly agree",
+            "2. Somewhat agree",
+            "3. Neither agree nor disagree",
+            "4. Somewhat disagree",
+            "5. Strongly disagree",
+            "98. Don\u2019t know/no opinion [DO NOT READ ALOUD]"
+          ],
+          "s5_10_community_relations_lbl": [
+            "1. Very positive",
+            "2. Positive",
+            "3. Neither positive nor negative",
+            "4. Negative",
+            "5. Very negative",
+            "98. Don\u2019t know (DO NOT READ ALOUD)",
+            "99. Refused (DO NOT READ ALOUD)"
+          ],
+          "s6_1_income_work_lbl": [
+            "0",
+            "1"
+          ],
+          "s6_1_income_remittances_lbl": [
+            "0",
+            "1"
+          ],
+          "s6_1_income_humanitarian_lbl": [
+            "0",
+            "1"
+          ],
+          "s6_1_income_government_lbl": [
+            "0",
+            "1"
+          ],
+          "s6_1_income_selling_assets_lbl": [
+            "0",
+            "1"
+          ],
+          "s6_1_income_syria_pension_lbl": [
+            "0",
+            "1"
+          ],
+          "s6_1_income_savings_lbl": [
+            "0",
+            "1"
+          ],
+          "s6_1_income_loans_lbl": [
+            "0",
+            "1"
+          ],
+          "s6_1_income_community_lbl": [
+            "0",
+            "1"
+          ],
+          "s6_1_income_none_lbl": [
+            "0",
+            "1"
+          ],
+          "s6_1_income_other": [
+            "0",
+            "1"
+          ],
+          "s6_1_income_dont_know_lbl": [
+            "0",
+            "1"
+          ],
+          "s6_1_income_no_answer_lbl": [
+            "0",
+            "1"
+          ],
+          "s6_2_income_varies_lbl": [
+            "1. Yes, it varies a lot",
+            "2. Yes, it varies a little",
+            "3. No, it doesn\u2019t vary",
+            "98. Don\u2019t know",
+            "99. Refused"
+          ],
+          "s6_3_income_adequacy_lbl": [
+            "1. Our household income covers our expenses, and we are able to save",
+            "2. Our household income covers our expenses without notable difficulties but we are not able to save",
+            "3. Our household income does not cover our expenses and we face some difficulties in meeting our needs",
+            "4. Our household income does not cover our expenses and we face significant difficulties in meeting our needs"
+          ],
+          "s6_4_need_housing_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s6_4_need_food_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s6_4_need_commodities_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s6_4_need_education_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s6_4_need_health_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s6_4_need_electricity_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s6_4_need_water_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s6_4_need_other": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s6_5_assistance_received_lbl": [
+            "0. No",
+            "1. Yes",
+            "98. I don't know",
+            "99. Refused to answer"
+          ],
+          "s6_6_assist_unhcr_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s6_6_assist_wfp_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s6_6_assist_intl_orgs_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s6_6_assist_government_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s6_6_assist_religious_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s6_6_assist_ngo_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s6_6_assist_other": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s6_7_receive_remittances_lbl": [
+            "1. Yes, regularly",
+            "2. Yes, irregularly",
+            "3. No",
+            "99. Prefer not to answer"
+          ],
+          "s6_8_send_remittances_lbl": [
+            "1. Yes, regularly",
+            "2. Yes, irregularly",
+            "3. No",
+            "98. Don\u2019t know",
+            "99. Prefer not to answer"
+          ],
+          "s6_9a_debt_host_country_lbl": [
+            "1. Yes",
+            "2. No",
+            "98. Don't know",
+            "99. Prefer not to answer"
+          ],
+          "s6_9b_debt_syria_lbl": [
+            "1. Yes",
+            "2. No",
+            "98. Don't know",
+            "99. Prefer not to answer"
+          ],
+          "s6_10_face_challenges_lbl": [
+            "0. No",
+            "1. Yes",
+            "98. I don't know",
+            "99. Refused to answer"
+          ],
+          "s6_11_challenge_movement_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s6_11_challenge_eviction_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s6_11_challenge_safety_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s6_11_challenge_legal_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s6_11_challenge_employment_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s6_11_challenge_no_assistance_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s6_11_challenge_debt_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s6_11_challenge_health_access_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s6_11_challenge_education_access_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s6_11_challenge_separation_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s6_11_challenge_tensions_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s6_11_challenge_forced_return_lbl": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s6_11_challenge_other": [
+            "0",
+            "1",
+            "NA_GATED"
+          ],
+          "s6_12_children_schooling_lbl": [
+            "0. No",
+            "1. Yes",
+            "98. I don't know",
+            "99. Refused to answer",
+            "NA_GATED"
+          ]
+        }
+      }
+    }
+  ],
+  "expected_negative_cases": [
+    {
+      "case": "missing_values",
+      "expected_exception": "ValueError",
+      "message": "Country is GIVEN but has no values to draw from"
+    },
+    {
+      "case": "null_option",
+      "expected_exception": "ValueError",
+      "message": "Country lists a null option. NaN means 'held out, predict this' and cannot also mean an answer: give non-response its own level instead."
+    },
+    {
+      "case": "numeric_option",
+      "expected_exception": "ValueError",
+      "message": "Country lists [123] as a number. Options have to be strings: a gated column carries the sentinel alongside them, which no numeric column can hold, and a CSV round trip would bring them back as text and stop matching. Quote them."
+    },
+    {
+      "case": "sentinel_in_values",
+      "expected_exception": "ValueError",
+      "message": "Country lists 'NA_GATED' among its values. The sentinel is appended by options_for, never enumerated."
+    },
+    {
+      "case": "missing_parent",
+      "expected_exception": "ValueError",
+      "message": "Country gates on 'MISSING', which is not in the schema"
+    },
+    {
+      "case": "dataset_field",
+      "expected_exception": "ValueError",
+      "message": "dataset is missing 'version'"
+    },
+    {
+      "case": "dataset_rows",
+      "expected_exception": "ValueError",
+      "message": "dataset.n_rows must be a positive integer, not 0"
+    },
+    {
+      "case": "split_missing",
+      "expected_exception": "ValueError",
+      "message": "split is missing n_train"
+    },
+    {
+      "case": "split_type",
+      "expected_exception": "ValueError",
+      "message": "split.n_train must be a count of respondents, a non-negative integer, not True"
+    },
+    {
+      "case": "split_total",
+      "expected_exception": "ValueError",
+      "message": "n_train + n_dev + n_test sum to 19847, but dataset.n_rows is 19846: every respondent has exactly one role"
+    },
+    {
+      "case": "invalid_config",
+      "expected_exception": "ValueError",
+      "message": "phase 1: noised must be true or false"
+    }
+  ],
+  "actual_connections": [
+    "generate_fixture.py",
+    "runner.py"
+  ],
+  "spies": {
+    "outcome": "PASS_MODEL_FREE_ONLY",
+    "traces": [
+      {
+        "accepted": false,
+        "calls": [
+          "unhcr_shadow",
+          "expert_shadow",
+          "S",
+          "E",
+          "unhcr_final",
+          "expert_final"
+        ]
+      },
+      {
+        "accepted": true,
+        "calls": [
+          "unhcr_shadow",
+          "expert_shadow",
+          "S",
+          "E",
+          "unhcr_final",
+          "expert_final"
+        ]
+      }
+    ],
+    "logger_sites": 25,
+    "scientific_fits": 0,
+    "model_imports": 0
+  },
+  "model_imports": 0,
+  "scientific_fits": 0,
+  "elapsed_seconds": 0.8901340999982494
+}

@@ -1,0 +1,31 @@
+{
+  "outcome": "PASS_MODEL_FREE_ONLY",
+  "traces": [
+    {
+      "accepted": false,
+      "calls": [
+        "unhcr_shadow",
+        "expert_shadow",
+        "S",
+        "E",
+        "unhcr_final",
+        "expert_final"
+      ]
+    },
+    {
+      "accepted": true,
+      "calls": [
+        "unhcr_shadow",
+        "expert_shadow",
+        "S",
+        "E",
+        "unhcr_final",
+        "expert_final"
+      ]
+    }
+  ],
+  "logger_sites": 24,
+  "scientific_fits": 0,
+  "model_imports": 0,
+  "elapsed_seconds": 2.093759900000805
+}

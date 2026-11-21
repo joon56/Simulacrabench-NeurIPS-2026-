@@ -1,0 +1,61 @@
+{
+  "status": "PASS",
+  "scores": {
+    "E025-unicef": {
+      "skill": 0.5006484230707156,
+      "log_score": -0.780008047004413,
+      "n_cells": 17856,
+      "uniform_reference": 1.5620418219183347
+    },
+    "E041-unicef": {
+      "skill": 0.5006484230707156,
+      "log_score": -0.780008047004413,
+      "n_cells": 17856,
+      "uniform_reference": 1.5620418219183347
+    },
+    "H-unicef": {
+      "skill": 0.5006484230707156,
+      "log_score": -0.780008047004413,
+      "n_cells": 17856,
+      "uniform_reference": 1.5620418219183347
+    },
+    "E025-world_bank": {
+      "skill": 0.45471730736298255,
+      "log_score": -1.1005776279104411,
+      "n_cells": 39520,
+      "uniform_reference": 2.0183615632250977
+    },
+    "E041-world_bank": {
+      "skill": 0.45471730736298255,
+      "log_score": -1.1005776279104411,
+      "n_cells": 39520,
+      "uniform_reference": 2.0183615632250977
+    },
+    "H-world_bank": {
+      "skill": 0.45471730736298255,
+      "log_score": -1.1005776279104411,
+      "n_cells": 39520,
+      "uniform_reference": 2.0183615632250977
+    },
+    "E025-unhcr": {
+      "skill": 0.5629488737050165,
+      "log_score": -0.5514502212860809,
+      "n_cells": 132273,
+      "uniform_reference": 1.2617522026791088
+    },
+    "E041-unhcr": {
+      "skill": 0.5624627288576414,
+      "log_score": -0.5520636156180775,
+      "n_cells": 132273,
+      "uniform_reference": 1.2617522026791088
+    },
+    "H-unhcr": {
+      "skill": 0.5623783752558484,
+      "log_score": -0.5521700489609437,
+      "n_cells": 132273,
+      "uniform_reference": 1.2617522026791088
+    }
+  },
+  "comparison": "Current release official evaluator/truth/order/floor .001, fixed raw references only; no baseline fit",
+  "assembly_outputs_frozen_before_truth": true
+}

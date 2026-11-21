@@ -1,0 +1,701 @@
+{
+  "date_kst": "2026-10-07",
+  "role": "S0",
+  "task": "Review completed A040 local exit diagnosis and decide further investment",
+  "outcome": "ADDITIONAL_A040_REPAIR_DEFERRED",
+  "retained_verdicts": [
+    "LOCAL_EXIT_DIAGNOSIS_HOLD",
+    "LOCAL_PRODUCTION_LIFECYCLE_HOLD",
+    "REMOTE_MEASUREMENT_NOT_AUTHORIZED"
+  ],
+  "new_execution_prompt": false,
+  "workflow": {
+    "revision": "2026-10-05-r5",
+    "sha256": "a577942675e16a732339e586c14796104dda704693568439ae28670cc7fb7b23",
+    "ordered_read_paths": [
+      "AGENTS.md",
+      "CLAUDE.md",
+      "docs/status.md",
+      "docs/log.md newest three entries",
+      "docs/workflow.md"
+    ],
+    "actual_read_evidence": [
+      "exec_command chunk72e7e2: AGENTS/CLAUDE",
+      "chunkd84492: status/log3/workflow; workflow missing range subsequently read in chunkd1be66",
+      "chunksd1be66/e696ef/98b8dd/dd44ca/e2b952: named closeout, verification, registration, diffs, exposure, receipts and ledgers",
+      "raw process files read in final preservation command"
+    ],
+    "s1_receipt": "Reported S1 read evidence; not independent proof of all other chat actions"
+  },
+  "source_identity": {
+    "manifests": [
+      {
+        "path": "source-manifest.json",
+        "sha256": "8740c8847f7fa763120f461e6c34002759af696e41ce244e9740843a43fbc8f9"
+      },
+      {
+        "path": "artifact-manifest.json",
+        "sha256": "69fb0ed83c58f1a8d5ae626a5bcfcd21142eb42556f29f76fb0dd6b72a216f31"
+      }
+    ],
+    "source_entries": 13,
+    "artifact_entries": 93,
+    "all_match": true,
+    "lists_overlap": true,
+    "scope": "Only guarded local diagnostic documents/source/protocol metadata. No model or response payload hashes.",
+    "files_hash_verified": [
+      {
+        "manifest": "source-manifest.json",
+        "path": "contract.py",
+        "sha256": "c8fa35a0fe8eda5b107fd245d8c8566a7b64a09adacc267f09f60323c88c4bc0"
+      },
+      {
+        "manifest": "source-manifest.json",
+        "path": "protocol.py",
+        "sha256": "4616f24b44d8b482cf90a560a13e59324f20e497af4090d6e588fe437801ff77"
+      },
+      {
+        "manifest": "source-manifest.json",
+        "path": "controller_core.py",
+        "sha256": "fc561eee08f1eafbbeac2cbcc5fa31890ef719bf603c5c7dd1af7aea5e556bcb"
+      },
+      {
+        "manifest": "source-manifest.json",
+        "path": "live_binding.py",
+        "sha256": "ca1351a05eea38577632a918b286d5ee7e5c82d423928fd8c2ce1af67de206c8"
+      },
+      {
+        "manifest": "source-manifest.json",
+        "path": "sdk_endpoint.py",
+        "sha256": "1edd25a8e1f72098191bae0da95b8f78811375f4123cc8f40393d3dc0e92dad3"
+      },
+      {
+        "manifest": "source-manifest.json",
+        "path": "payload.py",
+        "sha256": "17273bebff6debd9888983ffcb2a7b3e3dbff572dccd203c05f9c8b5c9f60424"
+      },
+      {
+        "manifest": "source-manifest.json",
+        "path": "sandbox_stage.py",
+        "sha256": "2b0ed4cd332a4e9ca85f335dd3fa3637eecc467a77be7f063b714c051dff0191"
+      },
+      {
+        "manifest": "source-manifest.json",
+        "path": "linux_boundary.py",
+        "sha256": "4c2aad23c52813693249a6d104c50f208ed33928086b466e46e853ad074712ff"
+      },
+      {
+        "manifest": "source-manifest.json",
+        "path": "linux_watchdog.py",
+        "sha256": "9b08538d3b5990389e103ef2d391d58fec6ec63795bf0dc5ebcec08bc1991d34"
+      },
+      {
+        "manifest": "source-manifest.json",
+        "path": "linux_runner.py",
+        "sha256": "82facf9151daa8eadc55c438be99f4c0cf5e331978c18b3a59530ef2af5b680e"
+      },
+      {
+        "manifest": "source-manifest.json",
+        "path": "live_worker.py",
+        "sha256": "1f134b1e5564fd2bddd61613878039af39cab1f10e8adf3e6d8f980a5e601297"
+      },
+      {
+        "manifest": "source-manifest.json",
+        "path": "live_launcher.py",
+        "sha256": "2b49a7cd1d8251fb91d3dda6b6e91c469657026dc683ce5f90b554e980a2e477"
+      },
+      {
+        "manifest": "source-manifest.json",
+        "path": "cleanup_query.py",
+        "sha256": "f3311c40e088b4adb07b12919376d6490016da24d2a00652fb95e5b2d86fbe93"
+      },
+      {
+        "manifest": "artifact-manifest.json",
+        "path": "boundary_transport.c4-before.txt",
+        "sha256": "044d127a68021916b86fa677c39a7c68a5510aeeec89523c3d69b5c88b11926a"
+      },
+      {
+        "manifest": "artifact-manifest.json",
+        "path": "boundary_transport.py",
+        "sha256": "4ebaa1f15c3b6eeec755a9028646e2fa5daa6c2f83810df09fd1407369f7b566"
+      },
+      {
+        "manifest": "artifact-manifest.json",
+        "path": "c1-baseline-pid.json",
+        "sha256": "2530663ffa6db6d9849a78d8c10464f625b4b09403079085c369d18463c758f6"
+      },
+      {
+        "manifest": "artifact-manifest.json",
+        "path": "c1-baseline-preflight.json",
+        "sha256": "de7262bdce4f11dd1ccd143d36453558c5051c68f4d51efe40eb8069d5e5a573"
+      },
+      {
+        "manifest": "artifact-manifest.json",
+        "path": "c1-baseline-process.json",
+        "sha256": "793532f29f04a27c6ad36168506ad79ce207883da2e461ca62ec6518b0179fd7"
+      },
+      {
+        "manifest": "artifact-manifest.json",
+        "path": "c1-baseline-stderr.txt",
+        "sha256": "ae5270d211131f4b748de5d5ed7e898dd01e6ce769616bb6a7a461d2874e20da"
+      },
+      {
+        "manifest": "artifact-manifest.json",
+        "path": "c1-baseline-stdout.txt",
+        "sha256": "733045c388982c4a8ea5cf0c01a3310d083ec19e52d565a204c634aaa3146731"
+      },
+      {
+        "manifest": "artifact-manifest.json",
+        "path": "c1-baseline-verdict.json",
+        "sha256": "6fdd05c674b07e8e9330d2d1f0787c1a00496733c325d50a0bceeeaa357fdcf1"
+      },
+      {
+        "manifest": "artifact-manifest.json",
+        "path": "c1-loop-pid.json",
+        "sha256": "38b3f9e7acbcdb861aa8bc8190f63d4cefc26dcf2d6099c94254267813bbf9c6"
+      },
+      {
+        "manifest": "artifact-manifest.json",
+        "path": "c1-loop-preflight.json",
+        "sha256": "e6326d28ef88749240ca70caef075b79d6793c3aa728490ca72a8e4a5257baf9"
+      },
+      {
+        "manifest": "artifact-manifest.json",
+        "path": "c1-loop-process.json",
+        "sha256": "05b405c58afccbf734f34755d6abb93d8236cafaa4186f49ca46989d2130be18"
+      },
+      {
+        "manifest": "artifact-manifest.json",
+        "path": "c1-loop-result.json",
+        "sha256": "88f78b13effacfe4ac495813915b78270e06ec919f4d974d9ed578fbb9984ed4"
+      },
+      {
+        "manifest": "artifact-manifest.json",
+        "path": "c1-loop-stderr.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "manifest": "artifact-manifest.json",
+        "path": "c1-loop-stdout.txt",
+        "sha256": "7d6078fcb2a03e9bb8539d7411da4889740b8b5dd0747e8bfb663078c1768af9"
+      },
+      {
+        "manifest": "artifact-manifest.json",
+        "path": "c1-loop-verdict.json",
+        "sha256": "a7f65905c8ef238ec4cc585de666ac7d8a8763f0b14bd1a39b21b1f1417f9540"
+      },
+      {
+        "manifest": "artifact-manifest.json",
+        "path": "C1-registration.md",
+        "sha256": "7d33851b9ea7814d97cda577dff3eb9f10fbd14e175a91bd633a98317e6c8902"
+      },
+      {
+        "manifest": "artifact-manifest.json",
+        "path": "c2-minimal-pid.json",
+        "sha256": "1cb09d714eceff3859fa6fa7e10186a4f0ffd856bb293df072ceea7457348d01"
+      },
+      {
+        "manifest": "artifact-manifest.json",
+        "path": "c2-minimal-preflight.json",
+        "sha256": "1d5bf1eb792ee585938896dcac9abd5c82936c2f0cae291e7924ca4d0df332b5"
+      },
+      {
+        "manifest": "artifact-manifest.json",
+        "path": "c2-minimal-process.json",
+        "sha256": "b003ab84be296b05ab43487154ce3b731920697573edd1bcefc7396578088b76"
+      },
+      {
+        "manifest": "artifact-manifest.json",
+        "path": "c2-minimal-stderr.txt",
+        "sha256": "7aee4c09fc022ee832c9cecfc4431a333573421e1083515da7431f88b0bea371"
+      },
+      {
+        "manifest": "artifact-manifest.json",
+        "path": "c2-minimal-stdout.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "manifest": "artifact-manifest.json",
+        "path": "c2-minimal-verdict.json",
+        "sha256": "6fdd05c674b07e8e9330d2d1f0787c1a00496733c325d50a0bceeeaa357fdcf1"
+      },
+      {
+        "manifest": "artifact-manifest.json",
+        "path": "C2-registration.md",
+        "sha256": "f32d9703c3e2ca6e59b49a81235bb6951e7591a0434ba5a84d36c5f0aef558fa"
+      },
+      {
+        "manifest": "artifact-manifest.json",
+        "path": "c3-definition-pid.json",
+        "sha256": "7e1917c2cf06e99fbbfd0599d40af54485422681e8df28ba36c7ba7b0a3974d6"
+      },
+      {
+        "manifest": "artifact-manifest.json",
+        "path": "c3-definition-preflight.json",
+        "sha256": "291029f6efec5b642c7365829ef1ef9a6b05309eb0e11be1d93f6a09c133c3fe"
+      },
+      {
+        "manifest": "artifact-manifest.json",
+        "path": "c3-definition-process.json",
+        "sha256": "48369b2b3d1618d330345b22cdaef4bce0631a543a336bd3b9ad143c7795bd29"
+      },
+      {
+        "manifest": "artifact-manifest.json",
+        "path": "c3-definition-stderr.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "manifest": "artifact-manifest.json",
+        "path": "c3-definition-stdout.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "manifest": "artifact-manifest.json",
+        "path": "c3-definition-verdict.json",
+        "sha256": "76b9747a24c7141d746d494af8479d72f33d6640294bae98af6deffb7814fee8"
+      },
+      {
+        "manifest": "artifact-manifest.json",
+        "path": "C3-registration.md",
+        "sha256": "5970011f5a44fdcba69c0fb5182a889c6ec8198d952d4a11c7b8aff3eb81365a"
+      },
+      {
+        "manifest": "artifact-manifest.json",
+        "path": "c4-no-observer-pid.json",
+        "sha256": "1c9fb7f647370efba370dc9482a79b26434cc56e5fbfdd34fd15f9d155ac36ba"
+      },
+      {
+        "manifest": "artifact-manifest.json",
+        "path": "c4-no-observer-preflight.json",
+        "sha256": "bf4c088cc57d85abd0078d44e57a236b0d524ed6c1c1151a5d0fe039449b96d0"
+      },
+      {
+        "manifest": "artifact-manifest.json",
+        "path": "c4-no-observer-process.json",
+        "sha256": "f703d65748ea026462d33693e488c61cbc9520ec1a9afd198ba6281ecd8b4dbd"
+      },
+      {
+        "manifest": "artifact-manifest.json",
+        "path": "c4-no-observer-stderr.txt",
+        "sha256": "8baf2f00ba01214f5ed20e483d5b7c4f1ba39d8fd901af426df4f2138d7743f7"
+      },
+      {
+        "manifest": "artifact-manifest.json",
+        "path": "c4-no-observer-stdout.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "manifest": "artifact-manifest.json",
+        "path": "c4-no-observer-verdict.json",
+        "sha256": "6fdd05c674b07e8e9330d2d1f0787c1a00496733c325d50a0bceeeaa357fdcf1"
+      },
+      {
+        "manifest": "artifact-manifest.json",
+        "path": "C4-registration.md",
+        "sha256": "38de8b1a2a0f9a2dce3eae09c16af39b91bdd08f39b76d782f7fd64594b77ba7"
+      },
+      {
+        "manifest": "artifact-manifest.json",
+        "path": "c5-no-output-pid.json",
+        "sha256": "5fff6f37acf6b49eb717523b6ef3fcb1f387db8d2a65cc09de66ff9f2108020a"
+      },
+      {
+        "manifest": "artifact-manifest.json",
+        "path": "c5-no-output-preflight.json",
+        "sha256": "f26b4f6b2a32c1bf58a4e3d3a5ebf8d7904ca97734c024d3cbfe38f0232bf84d"
+      },
+      {
+        "manifest": "artifact-manifest.json",
+        "path": "c5-no-output-process.json",
+        "sha256": "3e21d94ba76f1db302b457a98a36ae32673ac54af1321da57aa1f539e6a6aa63"
+      },
+      {
+        "manifest": "artifact-manifest.json",
+        "path": "c5-no-output-stderr.txt",
+        "sha256": "b22731cb32459d9d12c0beb8d7479a70e3a2f31db44055e1e6dae882a008d4f2"
+      },
+      {
+        "manifest": "artifact-manifest.json",
+        "path": "c5-no-output-stdout.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "manifest": "artifact-manifest.json",
+        "path": "c5-no-output-verdict.json",
+        "sha256": "6fdd05c674b07e8e9330d2d1f0787c1a00496733c325d50a0bceeeaa357fdcf1"
+      },
+      {
+        "manifest": "artifact-manifest.json",
+        "path": "C5-registration.md",
+        "sha256": "638e370654ab04d53bf991cda3b529327266838c66c3b9e74ee8deb48e956eda"
+      },
+      {
+        "manifest": "artifact-manifest.json",
+        "path": "c6-blocked-receipt.json",
+        "sha256": "70dc89645d2c1a9567fbeea245f91d265295adea9b0394004dcfb3d640b52bbc"
+      },
+      {
+        "manifest": "artifact-manifest.json",
+        "path": "C6-registration.md",
+        "sha256": "bd00766b5d73d6253677e073c28b38ba87337180ae9d3e499597f1eddbaa996c"
+      },
+      {
+        "manifest": "artifact-manifest.json",
+        "path": "check_boundary.py",
+        "sha256": "db01026f594e01059782bce37c3d7dc95f448c4a36e6bf785f5445c13130c9ae"
+      },
+      {
+        "manifest": "artifact-manifest.json",
+        "path": "cleanup_query.py",
+        "sha256": "f3311c40e088b4adb07b12919376d6490016da24d2a00652fb95e5b2d86fbe93"
+      },
+      {
+        "manifest": "artifact-manifest.json",
+        "path": "closeout.md",
+        "sha256": "d242e9ae96d194224dea4c56fc6d2d84347d9f60ad55452d2ffb277d49f01498"
+      },
+      {
+        "manifest": "artifact-manifest.json",
+        "path": "contract.py",
+        "sha256": "c8fa35a0fe8eda5b107fd245d8c8566a7b64a09adacc267f09f60323c88c4bc0"
+      },
+      {
+        "manifest": "artifact-manifest.json",
+        "path": "controller_core.py",
+        "sha256": "fc561eee08f1eafbbeac2cbcc5fa31890ef719bf603c5c7dd1af7aea5e556bcb"
+      },
+      {
+        "manifest": "artifact-manifest.json",
+        "path": "cost-time-ledger.json",
+        "sha256": "cfad6cbbbaed13d2933040f42f1426ca8f9a9476af34ce1a2afced4c8bd46463"
+      },
+      {
+        "manifest": "artifact-manifest.json",
+        "path": "diagnostic-source.diff",
+        "sha256": "62bc0b7bbb9d366f709120859b07d043a313800cdd82cdf8155baf178d86fcc7"
+      },
+      {
+        "manifest": "artifact-manifest.json",
+        "path": "entry-addendum.json",
+        "sha256": "3e7e3845187c7d8fc4225671ad62d18c180f9bf346c6d10d63c08056b7569e01"
+      },
+      {
+        "manifest": "artifact-manifest.json",
+        "path": "entry.json",
+        "sha256": "8dc46db820ab5e1651d6938a89f5da2d855750034f8f4ae5530060ebb36edc88"
+      },
+      {
+        "manifest": "artifact-manifest.json",
+        "path": "exposure-ledger.md",
+        "sha256": "8f16f524a46a70663ac31fec3c9f1a8a1d93aaa72a40ea767954a2b333f565d6"
+      },
+      {
+        "manifest": "artifact-manifest.json",
+        "path": "final-record-check.json",
+        "sha256": "41501b84cbf75ef0cff8a70120de5034635e3c8fcce5d7cee6e066da7e51518f"
+      },
+      {
+        "manifest": "artifact-manifest.json",
+        "path": "fixture_transport.py",
+        "sha256": "cab28e9604e3310f28ad8288c11fa87973d8000da6c6839ec4e9f3a4d0203574"
+      },
+      {
+        "manifest": "artifact-manifest.json",
+        "path": "linux_boundary.py",
+        "sha256": "4c2aad23c52813693249a6d104c50f208ed33928086b466e46e853ad074712ff"
+      },
+      {
+        "manifest": "artifact-manifest.json",
+        "path": "linux_runner.py",
+        "sha256": "82facf9151daa8eadc55c438be99f4c0cf5e331978c18b3a59530ef2af5b680e"
+      },
+      {
+        "manifest": "artifact-manifest.json",
+        "path": "linux_watchdog.py",
+        "sha256": "9b08538d3b5990389e103ef2d391d58fec6ec63795bf0dc5ebcec08bc1991d34"
+      },
+      {
+        "manifest": "artifact-manifest.json",
+        "path": "live_binding.py",
+        "sha256": "ca1351a05eea38577632a918b286d5ee7e5c82d423928fd8c2ce1af67de206c8"
+      },
+      {
+        "manifest": "artifact-manifest.json",
+        "path": "live_launcher.py",
+        "sha256": "2b49a7cd1d8251fb91d3dda6b6e91c469657026dc683ce5f90b554e980a2e477"
+      },
+      {
+        "manifest": "artifact-manifest.json",
+        "path": "live_worker.py",
+        "sha256": "1f134b1e5564fd2bddd61613878039af39cab1f10e8adf3e6d8f980a5e601297"
+      },
+      {
+        "manifest": "artifact-manifest.json",
+        "path": "local_guard.py",
+        "sha256": "555759980ceff510f4900d510c16a9f50706d8d2e969b1231f203cfc84db98a7"
+      },
+      {
+        "manifest": "artifact-manifest.json",
+        "path": "payload.py",
+        "sha256": "17273bebff6debd9888983ffcb2a7b3e3dbff572dccd203c05f9c8b5c9f60424"
+      },
+      {
+        "manifest": "artifact-manifest.json",
+        "path": "placement.diff",
+        "sha256": "4cd812b7e8cb7df2bdc5de159def32dc3f89f3067147859e1cbb3d008ce98b4f"
+      },
+      {
+        "manifest": "artifact-manifest.json",
+        "path": "preservation-before-closeout.json",
+        "sha256": "7a15aeca390fd761a6cdcf0fc5579e9b027202342dd41f51a6ef1d78da320cca"
+      },
+      {
+        "manifest": "artifact-manifest.json",
+        "path": "preservation-before.json",
+        "sha256": "8f26c940772ae8e4e2a3b77f4c0af9d6c0f4c9f2eac0c52e5fb643433ed122ff"
+      },
+      {
+        "manifest": "artifact-manifest.json",
+        "path": "protocol.py",
+        "sha256": "4616f24b44d8b482cf90a560a13e59324f20e497af4090d6e588fe437801ff77"
+      },
+      {
+        "manifest": "artifact-manifest.json",
+        "path": "regression-history.md",
+        "sha256": "901d65d477f971b040735160192cabe2dd6c88af67f06230769a4dfc731ed949"
+      },
+      {
+        "manifest": "artifact-manifest.json",
+        "path": "reproduction.md",
+        "sha256": "af99e5e252acc092cf1a4042e9aa2669744955cd82df8f4ed9ce415e6cc97225"
+      },
+      {
+        "manifest": "artifact-manifest.json",
+        "path": "run_check.ps1",
+        "sha256": "4b4a71239682c625c35cf55a3ac67a8278933f305bd02121b807c3676bb50577"
+      },
+      {
+        "manifest": "artifact-manifest.json",
+        "path": "s0-handoff.ko.md",
+        "sha256": "e595afc4a816736813af0999ad3ad5aee7bac3f4b9f88af41714b9b67252cf4d"
+      },
+      {
+        "manifest": "artifact-manifest.json",
+        "path": "sandbox_stage.py",
+        "sha256": "2b0ed4cd332a4e9ca85f335dd3fa3637eecc467a77be7f063b714c051dff0191"
+      },
+      {
+        "manifest": "artifact-manifest.json",
+        "path": "sdk_endpoint.c5-before.txt",
+        "sha256": "877117e9aae8a9ddb53096ebc4e23488dc94511b9e52ce430663a03c94ff09cc"
+      },
+      {
+        "manifest": "artifact-manifest.json",
+        "path": "sdk_endpoint.py",
+        "sha256": "1edd25a8e1f72098191bae0da95b8f78811375f4123cc8f40393d3dc0e92dad3"
+      },
+      {
+        "manifest": "artifact-manifest.json",
+        "path": "shared-preservation.json",
+        "sha256": "4039ddacf2bf2d513f8aefea258754c02b4b6d1690674b1303ad0930edc4e9ec"
+      },
+      {
+        "manifest": "artifact-manifest.json",
+        "path": "source-manifest.json",
+        "sha256": "8740c8847f7fa763120f461e6c34002759af696e41ce244e9740843a43fbc8f9"
+      },
+      {
+        "manifest": "artifact-manifest.json",
+        "path": "source-register.md",
+        "sha256": "08c168fe67206a0c1e14a9559b9b46d03304e3975ca1071fdeb1c2125ac5bd68"
+      },
+      {
+        "manifest": "artifact-manifest.json",
+        "path": "source.diff",
+        "sha256": "bca21c7a27b56d4e4378c640312ac9689704def21a8d8e02b0639277d9d5b900"
+      },
+      {
+        "manifest": "artifact-manifest.json",
+        "path": "verification.json",
+        "sha256": "7b6b7acaa137f54ae3e9af2aa5f3937de0728e8151d7a61311d63251f23ef673"
+      },
+      {
+        "manifest": "artifact-manifest.json",
+        "path": "attempts/c1-baseline/check-result.json",
+        "sha256": "3a66a788b94c0732abf7a2ec5c6aece2aea3a55bb051fea8081a73bd9c21d480"
+      },
+      {
+        "manifest": "artifact-manifest.json",
+        "path": "attempts/c1-baseline/protocol-config.json",
+        "sha256": "7a05618a2e5cabbbe5b6307fdb15de6e36589efb142a5f8ca7a5605cdbcb56e4"
+      },
+      {
+        "manifest": "artifact-manifest.json",
+        "path": "attempts/c1-baseline/trace.jsonl",
+        "sha256": "d33ebfb213a4bab95eb00f66e1ff015dab84d7f2ec49ee89ad4ad494a9c786d4"
+      },
+      {
+        "manifest": "artifact-manifest.json",
+        "path": "attempts/c2-minimal/check-result.json",
+        "sha256": "ad90368e936a4e5ad0949504a4291cbf66b9d9a8c32c5b0cb7618ab117fa0cbc"
+      },
+      {
+        "manifest": "artifact-manifest.json",
+        "path": "attempts/c2-minimal/trace.jsonl",
+        "sha256": "59dded5868a9975b2264daa41e62784312616e490127e3bb1d9cf300ca671747"
+      },
+      {
+        "manifest": "artifact-manifest.json",
+        "path": "attempts/c3-definition/check-result.json",
+        "sha256": "0eda3165bb4913ac275a054ffd453ba897e04dc3c821eefe44922515ac8ddfb6"
+      },
+      {
+        "manifest": "artifact-manifest.json",
+        "path": "attempts/c3-definition/trace.jsonl",
+        "sha256": "897c3a6af41c86b3c854c5a7178dbb3b1bc82e5963478578c97e1d1090d381f5"
+      },
+      {
+        "manifest": "artifact-manifest.json",
+        "path": "attempts/c4-no-observer/check-result.json",
+        "sha256": "ad90368e936a4e5ad0949504a4291cbf66b9d9a8c32c5b0cb7618ab117fa0cbc"
+      },
+      {
+        "manifest": "artifact-manifest.json",
+        "path": "attempts/c4-no-observer/trace.jsonl",
+        "sha256": "f37becfcf268e642c5efe75b199ab0ba4df9d7e6f0557fb66d241b70592bd851"
+      },
+      {
+        "manifest": "artifact-manifest.json",
+        "path": "attempts/c5-no-output/check-result.json",
+        "sha256": "ad90368e936a4e5ad0949504a4291cbf66b9d9a8c32c5b0cb7618ab117fa0cbc"
+      },
+      {
+        "manifest": "artifact-manifest.json",
+        "path": "attempts/c5-no-output/trace.jsonl",
+        "sha256": "8fe3a76fa7fbc37c29a7049d544df0202fbbea30791f26969ebb97a7ea9d4819"
+      }
+    ],
+    "content_read_scope": "Named documents, JSON receipts, registrations, stderr and diffs. Other permitted artifact bodies were hash-read only, not claimed as semantically inspected."
+  },
+  "accepted": {
+    "first_distinguished_boundary": "Actual build/resolve versus definition/import controls in this fixed diagnostic composition",
+    "cause_isolated": false,
+    "repair_verified": false,
+    "comparisons_executed": 5,
+    "children": 6,
+    "checks_seconds": 27.3473137,
+    "per_child_cap_seconds": 30,
+    "forced": 0,
+    "C6": "NOT_RUN",
+    "gross_session_seconds": 3621.5275252,
+    "session_cap_seconds": 2400,
+    "session_wall_limit_exceeded": true,
+    "resource_overall_pass": false,
+    "prior_preparation_seconds": 22788.7203931,
+    "science_processes": 4,
+    "science_seconds": 1077.3504532
+  },
+  "decision": {
+    "main": "Close current diagnosis and defer further A040 repair; no C6 or remote continuation",
+    "backup": "Exact missing-input closeout, completed",
+    "resumption": "New concrete causal/fix evidence connecting build/resolve object or lifetime to native crash; prospective scoped change and total validation cost. S0 review and applicable S1 authority required.",
+    "replacement_candidate": "None qualified by this review; no new model invented."
+  },
+  "preservation": {
+    "time": "2026-10-07T00:45:53.6563215+09:00",
+    "head": "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+    "dirty_count": 89,
+    "preserved_count": 102,
+    "changed": [],
+    "named_jobs": [],
+    "raw_process_receipts": [
+      {
+        "attempt": "c1-baseline",
+        "exit_code": -1073741819,
+        "supervisor_wall_seconds": 8.3450331,
+        "forced": false,
+        "remaining_owned_pid": 0
+      },
+      {
+        "attempt": "c1-loop",
+        "exit_code": 0,
+        "supervisor_wall_seconds": 0.7853144999999999,
+        "forced": false,
+        "remaining_owned_pid": 0
+      },
+      {
+        "attempt": "c2-minimal",
+        "exit_code": -1073741819,
+        "supervisor_wall_seconds": 5.8211005,
+        "forced": false,
+        "remaining_owned_pid": 0
+      },
+      {
+        "attempt": "c3-definition",
+        "exit_code": 0,
+        "supervisor_wall_seconds": 0.8218732,
+        "forced": false,
+        "remaining_owned_pid": 0
+      },
+      {
+        "attempt": "c4-no-observer",
+        "exit_code": -1073741819,
+        "supervisor_wall_seconds": 5.690646999999999,
+        "forced": false,
+        "remaining_owned_pid": 0
+      },
+      {
+        "attempt": "c5-no-output",
+        "exit_code": -1073741819,
+        "supervisor_wall_seconds": 5.8833454,
+        "forced": false,
+        "remaining_owned_pid": 0
+      }
+    ],
+    "note_sha256": "d5e4141eb8fa546b1a27bf6fe400f6c875e5415e063a0ce9e10793028d5afc2c",
+    "shared_documents": {
+      "status_prior_bytes_preserved": true,
+      "log_prior_bytes_preserved": true,
+      "current": [
+        {
+          "path": "docs/status.md",
+          "sha256": "75ec8e9e34d301263857c30c7e50920bb9f96d5e1d3669bd52f76c73b31164ab"
+        },
+        {
+          "path": "docs/log.md",
+          "sha256": "3d6ee7cdde3ff5ce09434b6e8b3ffbfb039b366e01cd3f4ebdacdb7656132e50"
+        }
+      ]
+    },
+    "original_investigation_and_prior_dirty_hashes_preserved": true,
+    "shared_change": "One new status item and log entry, status Updated date. Old bytes verified by removing exactly these changes."
+  },
+  "operations": {
+    "source_or_record_hash_reads": true,
+    "document_writes": [
+      "docs/analysis/A040-outputs/s0-query-contract-review/exit-diagnosis-s0-closeout.md",
+      "docs/analysis/A040-outputs/s0-query-contract-review/exit-diagnosis-s0-verification.json",
+      "docs/status.md",
+      "docs/log.md"
+    ],
+    "research_code_changes": 0,
+    "SDK_import": 0,
+    "tests_fixtures": 0,
+    "fit_predict_score": 0,
+    "RPC_or_remote_query": 0,
+    "protected_input_or_model_hash": 0,
+    "web": 0,
+    "environment_change": 0,
+    "ZIP": 0,
+    "commit_push": 0,
+    "subagents": 0,
+    "S2_S3": 0,
+    "helper_notes": [
+      "Manifest-read guard initially excluded the five local protocol trace.jsonl paths; inspected names and allowed exactly those text metadata paths.",
+      "Oversized metadata output was truncated; repeated compact metadata read only.",
+      "Strict PowerShell error mode treated Git ignore-file access warning as terminating; retried read-only metadata with normal warning handling."
+    ]
+  },
+  "preserved_state": "E041 incumbent/E025 fallback; E057/E060/E061 parked; all STOP/HOLD/A039; 17999/12339 and A022 original roles; E059 consumed oracle1918/1124 selection2007/1130; protected audit2074/1177 calibration1866; A_half not promoted; A018 unconfirmed; S3 stopped; S2 none.",
+  "historical_remote": "Existing exact-ID Sandbox terminal remains confirmed, not queried again. Workspace metered0.01009897/billed0 are historical; task-attributed final cost/GPU time unknown."
+}

@@ -1,0 +1,8 @@
+[phase] 1 (Development): TRAIN visible, DEV scored, 900s for predict()
+[data] C:\Users\USER\Desktop\SimulacraBench\docs\analysis\E062-outputs\s2\phase1\unicef against C:\Users\USER\Desktop\SimulacraBench\external\starter-kit\data\unicef.json: 16373 respondents, 1488 held out, 17856 cells
+[install] nothing declared; running in this environment, which stands in for the hosted image
+[run] sockets disabled in-process, network off
+[work] C:\Users\USER\Desktop\SimulacraBench\docs\analysis\E062-outputs\s2\official-work\sbench-2t2nkx9v
+[log] C:\Users\USER\Desktop\SimulacraBench\docs\analysis\E062-outputs\s2\official-unicef.json
+
+PASS  0.5000  (67.9s)

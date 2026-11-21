@@ -1,0 +1,46 @@
+{
+    "task_type":  "Technical validation",
+    "read_evidence":  [
+                          "139ab4",
+                          "50020f",
+                          "21c676",
+                          "ef9fe3",
+                          "759583",
+                          "eb42bc",
+                          "57f6a0",
+                          "4b59f0",
+                          "0e049e",
+                          "88d2ae"
+                      ],
+    "local_named_jobs":  [
+
+                         ],
+    "science_processes":  4,
+    "workflow_revision":  "2026-09-27-r4",
+    "authority":  "Current user delivers A040 builder source delivery local repair prompt to existing S1",
+    "main":  "Actual SDK builder FILE/single-file mount and isolated import contract",
+    "workflow_sha256":  "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642",
+    "role":  "S1",
+    "date_kst":  "2026-10-05",
+    "forbidden":  "RPC/auth/build/transfer/install/model/protected inputs/old suites/commit/push/subagents/S2/S3",
+    "entry_utc":  "2026-10-04T15:57:31Z",
+    "head":  "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+    "deadline_utc":  "2026-10-04T16:42:31Z",
+    "science_seconds":  1077.3504532,
+    "read_paths":  [
+                       "AGENTS.md",
+                       "CLAUDE.md",
+                       "docs/status.md",
+                       "docs/log.md newest3",
+                       "docs/workflow.md",
+                       "docs/analysis/A040-outputs/s0-modal-builder-review/decision.md"
+                   ],
+    "backup":  "Preserve failure and closeout only",
+    "allowed":  "New source12 copy; installer source flag only; mechanical placement; SDK local discovery and isolated exact-byte import; records",
+    "prior_preparation_seconds":  9080.7295157,
+    "limits":  {
+                   "checks_seconds":  120,
+                   "cycles":  2,
+                   "wall_seconds":  2700
+               }
+}

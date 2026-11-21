@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "verdict": "RELEASE_QUALIFIED_FOR_USER_REVIEW",
+  "observed_at": "2026-10-23T15:54:24.708780+09:00",
+  "calls": {
+    "full_stack": 6,
+    "neural": 18,
+    "metric": 16
+  },
+  "projection_requests": 24,
+  "scientific_starts": 2,
+  "source_assembly_extracted_raw_vectors": 189649,
+  "local_zip_sha256": "002028ce0c7fa7cb3549d198cef3e4c13060fdf9aa47ce7a7f7a773ee1c74f1c",
+  "remaining": "Final named-job census, shared result addition, writer release receipt."
+}

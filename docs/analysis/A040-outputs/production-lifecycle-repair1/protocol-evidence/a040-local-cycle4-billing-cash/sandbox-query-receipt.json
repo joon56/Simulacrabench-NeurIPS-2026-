@@ -1,0 +1,159 @@
+{
+  "app_id": "ap-bbbbbbbbbbbbbbbbbbbbbb",
+  "app_name": "a040-local-cycle4-billing-cash",
+  "sandbox_name": "a040-local-cycle4-billing-cash-gpu",
+  "sandbox_id": "sb-aaaaaaaaaaaaaaaaaaaaaa",
+  "terminal": "TERMINAL_CONFIRMED",
+  "calls": [
+    {
+      "method": "Client.from_env",
+      "started_utc": "2026-10-05T14:34:32.843157+00:00",
+      "cap_seconds": 1.3333090333399014,
+      "outcome": "RETURNED"
+    },
+    {
+      "method": "WorkspaceNameLookup",
+      "started_utc": "2026-10-05T14:34:32.858820+00:00",
+      "cap_seconds": 1.3176451333420118,
+      "outcome": "RETURNED"
+    },
+    {
+      "method": "AppGetInfo",
+      "started_utc": "2026-10-05T14:34:32.881483+00:00",
+      "cap_seconds": 1.2949799333364354,
+      "outcome": "RETURNED"
+    },
+    {
+      "method": "AuthTokenManager.get_token",
+      "started_utc": "2026-10-05T14:34:32.907753+00:00",
+      "cap_seconds": 1.268706333336013,
+      "outcome": "RETURNED"
+    },
+    {
+      "method": "SandboxListV2",
+      "started_utc": "2026-10-05T14:34:32.927718+00:00",
+      "cap_seconds": 1.248739533337357,
+      "outcome": "RETURNED"
+    },
+    {
+      "method": "AuthTokenManager.get_token",
+      "started_utc": "2026-10-05T14:34:32.941219+00:00",
+      "cap_seconds": 1.2352349333377788,
+      "outcome": "RETURNED"
+    },
+    {
+      "method": "SandboxListV2",
+      "started_utc": "2026-10-05T14:34:32.955054+00:00",
+      "cap_seconds": 1.2213989333395148,
+      "outcome": "RETURNED"
+    },
+    {
+      "method": "SandboxWait",
+      "started_utc": "2026-10-05T14:34:32.977787+00:00",
+      "cap_seconds": 1.3653287000051932,
+      "outcome": "RETURNED"
+    },
+    {
+      "method": "AuthTokenManager.get_token",
+      "started_utc": "2026-10-05T14:34:32.993894+00:00",
+      "cap_seconds": 1.182553333339456,
+      "outcome": "RETURNED"
+    },
+    {
+      "method": "SandboxListV2",
+      "started_utc": "2026-10-05T14:34:33.012211+00:00",
+      "cap_seconds": 1.1642367333406582,
+      "outcome": "RETURNED"
+    },
+    {
+      "method": "AuthTokenManager.get_token",
+      "started_utc": "2026-10-05T14:34:33.025557+00:00",
+      "cap_seconds": 1.1508866333388141,
+      "outcome": "RETURNED"
+    },
+    {
+      "method": "SandboxListV2",
+      "started_utc": "2026-10-05T14:34:33.038919+00:00",
+      "cap_seconds": 1.1375242333378992,
+      "outcome": "RETURNED"
+    },
+    {
+      "method": "SandboxTerminate",
+      "started_utc": "2026-10-05T14:34:33.060627+00:00",
+      "cap_seconds": 1.115816633340728,
+      "outcome": "RETURNED"
+    },
+    {
+      "method": "SandboxWait",
+      "started_utc": "2026-10-05T14:34:33.080465+00:00",
+      "cap_seconds": 1.2626380000001518,
+      "outcome": "RETURNED"
+    },
+    {
+      "method": "AppGetInfo",
+      "started_utc": "2026-10-05T14:34:33.104308+00:00",
+      "cap_seconds": 1.2387929000033182,
+      "outcome": "RETURNED"
+    },
+    {
+      "method": "TaskList",
+      "started_utc": "2026-10-05T14:34:33.117892+00:00",
+      "cap_seconds": 1.2252064000058454,
+      "outcome": "RETURNED"
+    },
+    {
+      "method": "WorkspaceBillingSummary",
+      "started_utc": "2026-10-05T14:34:33.129685+00:00",
+      "cap_seconds": 1.2134107000019867,
+      "outcome": "RETURNED"
+    }
+  ],
+  "errors": [],
+  "terminate_requests": 1,
+  "new_resources": 0,
+  "remote_commands": 0,
+  "remote_file_operations": 0,
+  "observed_utc": "2026-10-05T14:34:33.144066+00:00",
+  "observed_kst": "2026-10-05T23:34:33.144076+09:00",
+  "elapsed_seconds": 0.3009749999982887,
+  "identity": {
+    "workspace": "joon56",
+    "environment": "main",
+    "app_id": "ap-bbbbbbbbbbbbbbbbbbbbbb",
+    "app_name": "a040-local-cycle4-billing-cash"
+  },
+  "version": "V1",
+  "listed": {
+    "id": "sb-aaaaaaaaaaaaaaaaaaaaaa",
+    "name": "a040-local-cycle4-billing-cash-gpu",
+    "app_id": "ap-bbbbbbbbbbbbbbbbbbbbbb",
+    "image_id": "im-fixture",
+    "created_at": 100.0,
+    "started_at": 101.0,
+    "finished_at": 0.0,
+    "include_finished": true,
+    "result": {
+      "status": 0,
+      "status_name": "GENERIC_STATUS_UNSPECIFIED",
+      "exitcode": 0
+    }
+  },
+  "sandbox_result": {
+    "status": 3,
+    "status_name": "GENERIC_STATUS_TERMINATED",
+    "exitcode": 0
+  },
+  "terminal_source": "Exact-ID SandboxWait",
+  "app": {
+    "state": 1,
+    "tasks": 0,
+    "stopped_task0": false
+  },
+  "billing": {
+    "metered_cost": "0.01009897",
+    "billed_cost": "1",
+    "metered_breakdown": {},
+    "attribution": "WORKSPACE_AGGREGATE_NOT_TASK_INVOICE",
+    "posting_delay_unknown": true
+  }
+}

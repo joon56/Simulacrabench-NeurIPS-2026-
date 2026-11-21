@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "instruments": {
+    "unicef": {
+      "skill": 0.5006484230707156,
+      "delta_E025": 0.0,
+      "delta_E041": 0.0,
+      "release_pass": true
+    },
+    "world_bank": {
+      "skill": 0.45471730736298255,
+      "delta_E025": 0.0,
+      "delta_E041": 0.0,
+      "release_pass": true
+    },
+    "unhcr": {
+      "skill": 0.5624803077254883,
+      "delta_E025": -0.00046856597952815715,
+      "delta_E041": 1.757886784692353e-05,
+      "release_pass": true
+    }
+  }
+}

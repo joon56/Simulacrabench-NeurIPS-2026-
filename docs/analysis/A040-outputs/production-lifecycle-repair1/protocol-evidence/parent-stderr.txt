@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\SimulacraBench\docs\analysis\A040-outputs\production-lifecycle-repair1\live_launcher.py", line 107, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\USER\Desktop\SimulacraBench\docs\analysis\A040-outputs\production-lifecycle-repair1\live_launcher.py", line 77, in main
+    result = child(args.contract, context_factory=context_factory)
+  File "C:\Users\USER\Desktop\SimulacraBench\docs\analysis\A040-outputs\production-lifecycle-repair1\live_launcher.py", line 55, in child
+    raise ValueError("Fixed pins mismatch")
+ValueError: Fixed pins mismatch

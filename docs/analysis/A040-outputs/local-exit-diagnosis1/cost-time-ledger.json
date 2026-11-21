@@ -1,0 +1,23 @@
+{
+    "preparation_plan_usd":  1,
+    "reservation_2400s_usd":  2.965933453125,
+    "historical_gpu_seconds":  null,
+    "prior_preparation_seconds":  19167.1928679,
+    "final_attributed_A040_cost":  null,
+    "new_remote_cost_actions":  0,
+    "recorded_utc":  "2026-10-06T15:03:04.5275252+00:00",
+    "checks_supervisor_seconds":  27.3473137,
+    "unmeasured_wait_deduction_seconds":  0,
+    "cash_authority_usd":  0,
+    "accounting":  "Gross wall counted conservatively; no unverified idle deduction. Checks are subset, not added twice. Documentation-only closeout after time gate.",
+    "historical_workspace_billed_usd":  0,
+    "session_wall_limit_exceeded":  true,
+    "science_processes_unchanged":  4,
+    "historical_workspace_metered_usd":  0.01009897,
+    "science_seconds_unchanged":  1077.3504532,
+    "gross_session_seconds":  3621.5275251999997,
+    "session_cap_seconds":  2400,
+    "cumulative_preparation_seconds":  22788.7203931,
+    "entry_utc":  "2026-10-06T14:02:43Z",
+    "total_plan_usd":  5
+}

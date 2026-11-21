@@ -1,0 +1,8 @@
+[phase] 1 (Development): TRAIN visible, DEV scored, 900s for predict()
+[data] C:\Users\USER\Desktop\SimulacraBench\docs\analysis\E062-outputs\s2\phase1\unhcr against C:\Users\USER\Desktop\SimulacraBench\external\starter-kit\data\unhcr.json: 8900 respondents, 621 held out, 132273 cells
+[install] nothing declared; running in this environment, which stands in for the hosted image
+[run] sockets disabled in-process, network off
+[work] C:\Users\USER\Desktop\SimulacraBench\docs\analysis\E062-outputs\s2\official-work\sbench-5gxx8rcx
+[log] C:\Users\USER\Desktop\SimulacraBench\docs\analysis\E062-outputs\s2\official-unhcr.json
+
+PASS  0.5600  (433.3s)

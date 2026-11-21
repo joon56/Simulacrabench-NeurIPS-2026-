@@ -1,0 +1,16 @@
+﻿{
+    "exit_code":  -1073741819,
+    "pid":  44012,
+    "child_start_utc":  "2026-10-05T15:49:12.0406353Z",
+    "case":  "builder_fail",
+    "child_wall_seconds":  5.9104312,
+    "supervisor_wall_seconds":  5.9371320999999995,
+    "aggregate_seconds":  41.9644554999999979,
+    "remaining_owned_pid":  0,
+    "forced":  false,
+    "attempt":  "builder-gc-diagnostic2",
+    "cpu_affinity":  3,
+    "child_exit_utc":  "2026-10-05T15:49:17.9510665Z",
+    "within_cap":  true,
+    "cap_seconds":  60
+}

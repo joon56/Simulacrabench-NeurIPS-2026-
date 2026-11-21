@@ -1,0 +1,286 @@
+{
+    "start_utc":  "2026-10-01T10:52:00Z",
+    "deadline_utc":  "2026-10-01T11:52:00Z",
+    "start_note":  "Conservative minute-rounded budget anchor; first clock observation10:52:27Z",
+    "role":  "S1 information investigation",
+    "authority":  "User attachment45afea4e names this receiving S1 and authorizes A040 document/source study only",
+    "workflow_revision":  "2026-09-27-r4",
+    "workflow_sha256":  "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642",
+    "read_evidence":  [
+                          "7b9604 attachment/AGENTS/CLAUDE",
+                          "facd8e status/latest3/workflow/A040 decision/source register",
+                          "70f054 remaining status/workflow and S0 identity records"
+                      ],
+    "head":  "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+    "branch":  "work/e050-submission",
+    "dirty_entry":  [
+                        " M .claude/skills/paper-session/SKILL.md",
+                        " M .gitignore",
+                        " M CLAUDE.md",
+                        " M docs/domain-study-guide.ko.md",
+                        " M docs/index.md",
+                        " M docs/log.md",
+                        " M docs/session-prompts.ko.md",
+                        " M docs/status.md",
+                        " M docs/tree.md",
+                        " M docs/workflow.md",
+                        "?? .agents/",
+                        "?? AGENTS.md",
+                        "?? README.md",
+                        "?? docs/analysis/A020-outputs/",
+                        "?? docs/analysis/A020-post-e058-design-review.md",
+                        "?? docs/analysis/A021-outputs/",
+                        "?? docs/analysis/A021-selector-comparison-contract.md",
+                        "?? docs/analysis/A022-outputs/",
+                        "?? docs/analysis/A022-remaining-role-audit.md",
+                        "?? docs/analysis/A023-candidate-boundary-contract.md",
+                        "?? docs/analysis/A023-cost-accounting.md",
+                        "?? docs/analysis/A023-outputs/",
+                        "?? docs/analysis/A024-channel-precision-review.md",
+                        "?? docs/analysis/A024-outputs/",
+                        "?? docs/analysis/A025-submission-oriented-review.md",
+                        "?? docs/analysis/A026-outputs/",
+                        "?? docs/analysis/A026-post-e060-strategy-review.md",
+                        "?? docs/analysis/A027-outputs/",
+                        "?? docs/analysis/A027-workflow-role-revision.md",
+                        "?? docs/analysis/A028-outputs/",
+                        "?? docs/analysis/A028-workflow-entry-audit.md",
+                        "?? docs/analysis/A029-codex-migration-audit.md",
+                        "?? docs/analysis/A029-outputs/",
+                        "?? docs/analysis/A030-outputs/",
+                        "?? docs/analysis/A030-vaf-channel-metadata-review.md",
+                        "?? docs/analysis/A031-outputs/",
+                        "?? docs/analysis/A031-post-a030-handoff-review.md",
+                        "?? docs/analysis/A032-document-acquisition-and-readiness.md",
+                        "?? docs/analysis/A032-outputs/",
+                        "?? docs/analysis/A033-dev-handoff-and-role-repair.md",
+                        "?? docs/analysis/A033-outputs/",
+                        "?? docs/analysis/A034-e061-s0-review.md",
+                        "?? docs/analysis/A034-outputs/",
+                        "?? docs/analysis/A035-e061-dev-submission-review.md",
+                        "?? docs/analysis/A035-outputs/",
+                        "?? docs/analysis/A036-e061-post-result-review.md",
+                        "?? docs/analysis/A036-outputs/",
+                        "?? docs/analysis/A037-outputs/",
+                        "?? docs/analysis/A037-winning-priority-review.md",
+                        "?? docs/analysis/A038-outputs/",
+                        "?? docs/analysis/A038-vaf-local-document-intake.md",
+                        "?? docs/analysis/A039-outputs/",
+                        "?? docs/analysis/A040-outputs/",
+                        "?? docs/analysis/E059-outputs/",
+                        "?? docs/analysis/E060-outputs/",
+                        "?? docs/analysis/E061-outputs/",
+                        "?? docs/codex-setup.ko.md",
+                        "?? docs/experiments/E059-leaf-donor-interactions.md",
+                        "?? docs/experiments/E060-content-target-retrieval.md",
+                        "?? docs/experiments/E061-tied-content-heads.md",
+                        "?? docs/plans/README.md",
+                        "?? requirements-models.txt",
+                        "?? scripts/assemble_e060.py",
+                        "?? scripts/assemble_e061.py",
+                        "?? scripts/check_a021_selector_contract.py",
+                        "?? scripts/check_a023_candidate_boundary.py",
+                        "?? scripts/check_a023_resources.py",
+                        "?? scripts/check_e060.py",
+                        "?? scripts/check_e061_release.py",
+                        "?? scripts/check_e061_tied_heads.py",
+                        "?? scripts/check_workspace.py",
+                        "?? scripts/screen_e059.py",
+                        "?? src/models/content_target_retrieval.py",
+                        "?? src/models/tied_content_heads.py",
+                        "?? submissions/2026-09-27-E060.zip",
+                        "?? submissions/2026-09-27-E060/NOTICE.txt",
+                        "?? submissions/2026-09-27-E060/main.py",
+                        "?? submissions/2026-09-27-E060/verification.json",
+                        "?? submissions/2026-09-28-E061.zip",
+                        "?? submissions/2026-09-28-E061/",
+                        "?? tests/test_a021_selector_contract.py",
+                        "?? tests/test_a023_candidate_boundary.py",
+                        "?? tests/test_content_target_retrieval.py",
+                        "?? tests/test_e059_interactions.py",
+                        "?? tests/test_e060_assembly.py",
+                        "?? tests/test_e061_assembly.py",
+                        "?? tests/test_tied_content_heads.py",
+                        "?? tests/test_workspace_check.py",
+                        "?? trip/"
+                    ],
+    "jobs":  [
+
+             ],
+    "jobs_limit":  "Process-name check only",
+    "limits":  {
+                   "official_core_documents_max":  12,
+                   "minutes":  60
+               },
+    "scope":  "Official documents/small text sources, existing permitted local production source/public schema; writes only S1 records and minimal status/log",
+    "forbidden":  "No import/run of model source, models/weights/packages/downloaded data, fixtures/tests, response/key/cache/Parquet/NPZ/VAF, agents, contact, submission/ZIP/commit/push/S2/S3",
+    "source_checks":  [
+                          {
+                              "path":  "AGENTS.md",
+                              "before":  "86394bbf164a2b7df6a309f4564b9dacf3b2799fa0227a703e4ea11d4d842596",
+                              "expected_after":  "86394bbf164a2b7df6a309f4564b9dacf3b2799fa0227a703e4ea11d4d842596",
+                              "actual":  "86394bbf164a2b7df6a309f4564b9dacf3b2799fa0227a703e4ea11d4d842596",
+                              "matches":  true
+                          },
+                          {
+                              "path":  "CLAUDE.md",
+                              "before":  "69175e6d741a17042db4852d4961a5c52bd97fe2cd5bfbff762d30d7e5270364",
+                              "expected_after":  "69175e6d741a17042db4852d4961a5c52bd97fe2cd5bfbff762d30d7e5270364",
+                              "actual":  "69175e6d741a17042db4852d4961a5c52bd97fe2cd5bfbff762d30d7e5270364",
+                              "matches":  true
+                          },
+                          {
+                              "path":  "docs/workflow.md",
+                              "before":  "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642",
+                              "expected_after":  "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642",
+                              "actual":  "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642",
+                              "matches":  true
+                          },
+                          {
+                              "path":  "docs/session-prompts.ko.md",
+                              "before":  "c68eba8618c6a49caf1b590181ede5d5c03800d4c2305ea0e5efe3cc266e5615",
+                              "expected_after":  "c68eba8618c6a49caf1b590181ede5d5c03800d4c2305ea0e5efe3cc266e5615",
+                              "actual":  "c68eba8618c6a49caf1b590181ede5d5c03800d4c2305ea0e5efe3cc266e5615",
+                              "matches":  true
+                          },
+                          {
+                              "path":  "docs/status.md",
+                              "before":  "bba2a040735a02d68e22dbe9ebd3c735c65869878360bcefb74869039af902d4",
+                              "expected_after":  "d883c40171b08d23c89e03100d9f69eb6c9361e959236d527e039842946cd9e7",
+                              "actual":  "d883c40171b08d23c89e03100d9f69eb6c9361e959236d527e039842946cd9e7",
+                              "matches":  true
+                          },
+                          {
+                              "path":  "docs/log.md",
+                              "before":  "818c9a5fc7d9741815f5fa4f37d679e1d150d124b7328a940036d58a67e94c7a",
+                              "expected_after":  "a3f4aae0768a26f1e481ae837c094c659de2d2cff1128294334955663b4f81a8",
+                              "actual":  "a3f4aae0768a26f1e481ae837c094c659de2d2cff1128294334955663b4f81a8",
+                              "matches":  true
+                          },
+                          {
+                              "path":  "docs/tree.md",
+                              "before":  "eaa884a4194db103335136495205fe5b51297c17db15e9eac62946ced286cc44",
+                              "expected_after":  "eaa884a4194db103335136495205fe5b51297c17db15e9eac62946ced286cc44",
+                              "actual":  "eaa884a4194db103335136495205fe5b51297c17db15e9eac62946ced286cc44",
+                              "matches":  true
+                          },
+                          {
+                              "path":  ".gitignore",
+                              "before":  "f67ba089f7490b4ba0845848f0b13b55633b5efd058a0be7d64203a1e480c6fd",
+                              "expected_after":  "f67ba089f7490b4ba0845848f0b13b55633b5efd058a0be7d64203a1e480c6fd",
+                              "actual":  "f67ba089f7490b4ba0845848f0b13b55633b5efd058a0be7d64203a1e480c6fd",
+                              "matches":  true
+                          },
+                          {
+                              "path":  "docs/analysis/A037-winning-priority-review.md",
+                              "before":  "87e77d8279f68e52751653f3b6098ec1976e4b53a75faf7206043ec6cf4bf66d",
+                              "expected_after":  "87e77d8279f68e52751653f3b6098ec1976e4b53a75faf7206043ec6cf4bf66d",
+                              "actual":  "87e77d8279f68e52751653f3b6098ec1976e4b53a75faf7206043ec6cf4bf66d",
+                              "matches":  true
+                          },
+                          {
+                              "path":  "docs/analysis/A039-outputs/s0-review/closeout.md",
+                              "before":  "7d9d306f74ed54e256ad9a328d148bd988218e997893632e63bc84051107e1d9",
+                              "expected_after":  "7d9d306f74ed54e256ad9a328d148bd988218e997893632e63bc84051107e1d9",
+                              "actual":  "7d9d306f74ed54e256ad9a328d148bd988218e997893632e63bc84051107e1d9",
+                              "matches":  true
+                          },
+                          {
+                              "path":  "docs/experiments/E041-supervised-retrieval.md",
+                              "before":  "8a17f3cb2cb54deb19fdbffe597dcba173002a82100250ea4ff8be446d76bafb",
+                              "expected_after":  "8a17f3cb2cb54deb19fdbffe597dcba173002a82100250ea4ff8be446d76bafb",
+                              "actual":  "8a17f3cb2cb54deb19fdbffe597dcba173002a82100250ea4ff8be446d76bafb",
+                              "matches":  true
+                          },
+                          {
+                              "path":  "docs/experiments/E043-section-candidate-search.md",
+                              "before":  "e7d9acac562092596d9bd05921dfab49ac8a2c15854fad8abbba606941ccc4cf",
+                              "expected_after":  "e7d9acac562092596d9bd05921dfab49ac8a2c15854fad8abbba606941ccc4cf",
+                              "actual":  "e7d9acac562092596d9bd05921dfab49ac8a2c15854fad8abbba606941ccc4cf",
+                              "matches":  true
+                          },
+                          {
+                              "path":  "docs/experiments/E045-union-retrieval.md",
+                              "before":  "d7ad5bf5420a7ac4d87ae6989b6bc0e4be94cb03e88c7c4a6dfd58d3da729a5c",
+                              "expected_after":  "d7ad5bf5420a7ac4d87ae6989b6bc0e4be94cb03e88c7c4a6dfd58d3da729a5c",
+                              "actual":  "d7ad5bf5420a7ac4d87ae6989b6bc0e4be94cb03e88c7c4a6dfd58d3da729a5c",
+                              "matches":  true
+                          },
+                          {
+                              "path":  "docs/experiments/E048-tabpfn-gate-parents.md",
+                              "before":  "60e030be4969bf45fa7db73404db4a1d590c321dc39935ab6c793bcdc77670a0",
+                              "expected_after":  "60e030be4969bf45fa7db73404db4a1d590c321dc39935ab6c793bcdc77670a0",
+                              "actual":  "60e030be4969bf45fa7db73404db4a1d590c321dc39935ab6c793bcdc77670a0",
+                              "matches":  true
+                          },
+                          {
+                              "path":  "docs/experiments/E049-adaptive-tabpfn-parents.md",
+                              "before":  "0d6a9f197a5239f2c7a70ed6da3c8e01b8e24a67ba1b4ea7ecf512d9490db046",
+                              "expected_after":  "0d6a9f197a5239f2c7a70ed6da3c8e01b8e24a67ba1b4ea7ecf512d9490db046",
+                              "actual":  "0d6a9f197a5239f2c7a70ed6da3c8e01b8e24a67ba1b4ea7ecf512d9490db046",
+                              "matches":  true
+                          },
+                          {
+                              "path":  "docs/experiments/E051-direct-content-tree.md",
+                              "before":  "7efd35b3e5e85b15be316e3ef9acecc4d898459de832e37213feb4a93afe1b16",
+                              "expected_after":  "7efd35b3e5e85b15be316e3ef9acecc4d898459de832e37213feb4a93afe1b16",
+                              "actual":  "7efd35b3e5e85b15be316e3ef9acecc4d898459de832e37213feb4a93afe1b16",
+                              "matches":  true
+                          },
+                          {
+                              "path":  "submissions/SCORES.md",
+                              "before":  "1e6d753c24c5c2e42fc4b316ea524a4285b59ef672cc5c3a5a1288768d157dab",
+                              "expected_after":  "1e6d753c24c5c2e42fc4b316ea524a4285b59ef672cc5c3a5a1288768d157dab",
+                              "actual":  "1e6d753c24c5c2e42fc4b316ea524a4285b59ef672cc5c3a5a1288768d157dab",
+                              "matches":  true
+                          },
+                          {
+                              "path":  "docs/analysis/A040-outputs/s0-entry.json",
+                              "expected":  "9f8e8614c07afcfb7071328a1b444965e1ab923ffc2cc3cef9d96f8291354773",
+                              "actual":  "9f8e8614c07afcfb7071328a1b444965e1ab923ffc2cc3cef9d96f8291354773",
+                              "matches":  true
+                          },
+                          {
+                              "path":  "docs/analysis/A040-outputs/s0-decision.md",
+                              "expected":  "f26a97f3ca21856742d2486b84bfdb38b5e6d18bab0a76c2f077c8f5a81f30fa",
+                              "actual":  "f26a97f3ca21856742d2486b84bfdb38b5e6d18bab0a76c2f077c8f5a81f30fa",
+                              "matches":  true
+                          },
+                          {
+                              "path":  "docs/analysis/A040-outputs/source-register.md",
+                              "expected":  "7671d2da5bc3dfb2a06f0426683571c0e9b29eb1499c2bd12232fc2a8923610e",
+                              "actual":  "7671d2da5bc3dfb2a06f0426683571c0e9b29eb1499c2bd12232fc2a8923610e",
+                              "matches":  true
+                          },
+                          {
+                              "path":  "docs/analysis/A040-outputs/s1-handoff.ko.md",
+                              "expected":  "a447cb450fa2384f3344e0726b22657808588f5c0ec7e31825ad64d40077bfde",
+                              "actual":  "a447cb450fa2384f3344e0726b22657808588f5c0ec7e31825ad64d40077bfde",
+                              "matches":  true
+                          }
+                      ],
+    "baseline_hashes":  {
+                            "AGENTS.md":  "86394bbf164a2b7df6a309f4564b9dacf3b2799fa0227a703e4ea11d4d842596",
+                            "CLAUDE.md":  "69175e6d741a17042db4852d4961a5c52bd97fe2cd5bfbff762d30d7e5270364",
+                            "docs/workflow.md":  "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642",
+                            "docs/session-prompts.ko.md":  "c68eba8618c6a49caf1b590181ede5d5c03800d4c2305ea0e5efe3cc266e5615",
+                            "docs/status.md":  "d883c40171b08d23c89e03100d9f69eb6c9361e959236d527e039842946cd9e7",
+                            "docs/log.md":  "a3f4aae0768a26f1e481ae837c094c659de2d2cff1128294334955663b4f81a8",
+                            "docs/tree.md":  "eaa884a4194db103335136495205fe5b51297c17db15e9eac62946ced286cc44",
+                            ".gitignore":  "f67ba089f7490b4ba0845848f0b13b55633b5efd058a0be7d64203a1e480c6fd",
+                            "docs/analysis/A037-winning-priority-review.md":  "87e77d8279f68e52751653f3b6098ec1976e4b53a75faf7206043ec6cf4bf66d",
+                            "docs/analysis/A039-outputs/s0-review/closeout.md":  "7d9d306f74ed54e256ad9a328d148bd988218e997893632e63bc84051107e1d9",
+                            "docs/experiments/E041-supervised-retrieval.md":  "8a17f3cb2cb54deb19fdbffe597dcba173002a82100250ea4ff8be446d76bafb",
+                            "docs/experiments/E043-section-candidate-search.md":  "e7d9acac562092596d9bd05921dfab49ac8a2c15854fad8abbba606941ccc4cf",
+                            "docs/experiments/E045-union-retrieval.md":  "d7ad5bf5420a7ac4d87ae6989b6bc0e4be94cb03e88c7c4a6dfd58d3da729a5c",
+                            "docs/experiments/E048-tabpfn-gate-parents.md":  "60e030be4969bf45fa7db73404db4a1d590c321dc39935ab6c793bcdc77670a0",
+                            "docs/experiments/E049-adaptive-tabpfn-parents.md":  "0d6a9f197a5239f2c7a70ed6da3c8e01b8e24a67ba1b4ea7ecf512d9490db046",
+                            "docs/experiments/E051-direct-content-tree.md":  "7efd35b3e5e85b15be316e3ef9acecc4d898459de832e37213feb4a93afe1b16",
+                            "submissions/SCORES.md":  "1e6d753c24c5c2e42fc4b316ea524a4285b59ef672cc5c3a5a1288768d157dab",
+                            "docs/analysis/A040-outputs/s0-entry.json":  "9f8e8614c07afcfb7071328a1b444965e1ab923ffc2cc3cef9d96f8291354773",
+                            "docs/analysis/A040-outputs/s0-decision.md":  "f26a97f3ca21856742d2486b84bfdb38b5e6d18bab0a76c2f077c8f5a81f30fa",
+                            "docs/analysis/A040-outputs/source-register.md":  "7671d2da5bc3dfb2a06f0426683571c0e9b29eb1499c2bd12232fc2a8923610e",
+                            "docs/analysis/A040-outputs/s1-handoff.ko.md":  "a447cb450fa2384f3344e0726b22657808588f5c0ec7e31825ad64d40077bfde",
+                            "docs/analysis/A040-outputs/s0-verification.json":  "a0105e74cacf460b0a4c3de786c13b3c4652ad125a8c62c60bd0805f7443b151"
+                        }
+}

@@ -1,0 +1,95 @@
+{
+  "status": "PASS",
+  "instruments": {
+    "unicef": {
+      "vectors": 17856,
+      "max_raw_sum_error": 1.9348226487636566e-07,
+      "comparisons": {
+        "candidate": {
+          "max_abs": 0.0,
+          "changed_vectors": 0
+        },
+        "E041": {
+          "max_abs": 0.0,
+          "changed_vectors": 0
+        },
+        "E025": {
+          "max_abs": 0.0,
+          "changed_vectors": 0
+        }
+      },
+      "flat_sha256": "07bcb9f2d2d0c59339707ee761d6ca129093ba52b59b6c1c9a13ffef98f1e533",
+      "status": "PASS",
+      "skill": 0.5006484230707156,
+      "delta_E025": 0.0,
+      "delta_E041": 0.0,
+      "release_pass": true,
+      "cli_startup_to_exit_seconds": 64.91755139999987,
+      "scorer_seconds": 63.32677698135376,
+      "official_log": "docs\\analysis\\E061-outputs\\s2\\official-unicef.json",
+      "predictions_sha256": "990977bdd0792b171908ab65988610c60d8f8f1d642da005d001301f1013b664"
+    },
+    "world_bank": {
+      "vectors": 39520,
+      "max_raw_sum_error": 2.8615613700821996e-07,
+      "comparisons": {
+        "candidate": {
+          "max_abs": 0.0,
+          "changed_vectors": 0
+        },
+        "E041": {
+          "max_abs": 0.0,
+          "changed_vectors": 0
+        },
+        "E025": {
+          "max_abs": 0.0,
+          "changed_vectors": 0
+        }
+      },
+      "flat_sha256": "ed59718bf900604bb69af3833bd5bcb12aab555924f32ae1009b4bcf90eedc2e",
+      "status": "PASS",
+      "skill": 0.45471730736298255,
+      "delta_E025": 0.0,
+      "delta_E041": 0.0,
+      "release_pass": true,
+      "cli_startup_to_exit_seconds": 150.76025850000042,
+      "scorer_seconds": 149.08108258247375,
+      "official_log": "docs\\analysis\\E061-outputs\\s2\\official-world_bank.json",
+      "predictions_sha256": "0e85bb043eb280d6722b1c247c6b2b716f27bbf6d4d9cc23f160ac8ae08ee690"
+    },
+    "unhcr": {
+      "vectors": 132273,
+      "max_raw_sum_error": 2.414220944269019e-07,
+      "comparisons": {
+        "candidate": {
+          "max_abs": 0.0,
+          "changed_vectors": 0
+        },
+        "E041": {
+          "max_abs": 0.16454842686653137,
+          "changed_vectors": 132225
+        },
+        "E025": {
+          "max_abs": 0.3597398473795115,
+          "changed_vectors": 132273
+        }
+      },
+      "flat_sha256": "115feea24ec4ddc781d764e05a1d59fd347b5653d5557d7ac9d1cfd0f6b082eb",
+      "status": "PASS",
+      "skill": 0.5623918781304167,
+      "delta_E025": -0.0005569955745997612,
+      "delta_E041": -7.085072722468055e-05,
+      "release_pass": true,
+      "cli_startup_to_exit_seconds": 375.2835071999998,
+      "scorer_seconds": 373.5707895755768,
+      "official_log": "docs\\analysis\\E061-outputs\\s2\\official-unhcr.json",
+      "predictions_sha256": "a9049cde6ae457d16ac7bf5938b06da8d2a4e27251bb4baea00593ced2d46ba1"
+    }
+  },
+  "cli_seconds_sum": 590.9613171000001,
+  "cumulative_calls": {
+    "full_stack": 6,
+    "neural": 18,
+    "metric": 16
+  }
+}

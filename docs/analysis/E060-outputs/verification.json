@@ -1,0 +1,178 @@
+{
+    "status":  "PASS",
+    "disposition":  "QUALIFIED_EXPLORATORY_DEV_NOT_UPLOADED",
+    "checked_at_utc":  "2026-09-27T07:40:55.2806311Z",
+    "head":  "1d223340d4e1fa3993b411dc5daafab9cb37d0cd",
+    "technical_qualification":  "PASS",
+    "release_performance_policy":  "PASS",
+    "observed_target_efficacy":  "UNKNOWN",
+    "adoption":  "NOT_ADOPTED",
+    "test_selection":  "USER_UNCONFIRMED",
+    "fixture_tests":  11,
+    "instruments":  {
+                        "unicef":  {
+                                       "seconds":  35.03729569999996,
+                                       "cells":  17856,
+                                       "candidate_skill":  0.5006484230707156,
+                                       "baseline_skill":  {
+                                                              "E041":  0.5006484230707156,
+                                                              "E025":  0.5006484230707156
+                                                          },
+                                       "delta_e025":  0.0,
+                                       "delta_e041":  0.0,
+                                       "changed_vectors":  0,
+                                       "max_probability_delta":  0.0,
+                                       "call_counts":  {
+                                                           "neural_requests":  3,
+                                                           "neural_attempts":  3,
+                                                           "metric_optimizers":  0
+                                                       },
+                                       "release_pass":  true,
+                                       "vectors_sha256":  "71a53308df4e97ff73ea73558a56104b22fb264778713f9ce880f88ae9bde20d"
+                                   },
+                        "world_bank":  {
+                                           "seconds":  90.20828600000095,
+                                           "cells":  39520,
+                                           "candidate_skill":  0.45471730736298255,
+                                           "baseline_skill":  {
+                                                                  "E041":  0.45471730736298255,
+                                                                  "E025":  0.45471730736298255
+                                                              },
+                                           "delta_e025":  0.0,
+                                           "delta_e041":  0.0,
+                                           "changed_vectors":  0,
+                                           "max_probability_delta":  0.0,
+                                           "call_counts":  {
+                                                               "neural_requests":  3,
+                                                               "neural_attempts":  3,
+                                                               "metric_optimizers":  0
+                                                           },
+                                           "release_pass":  true,
+                                           "vectors_sha256":  "574faa32e2423b6bdd958e178cb6ede2b65c10bc734c497d366ac120b79aea34"
+                                       },
+                        "unhcr":  {
+                                      "seconds":  199.2613298999986,
+                                      "cells":  132273,
+                                      "candidate_skill":  0.5624429548505255,
+                                      "baseline_skill":  {
+                                                             "E041":  0.5624627288576414,
+                                                             "E025":  0.5629488737050165
+                                                         },
+                                      "delta_e025":  -0.0005059188544909166,
+                                      "delta_e041":  -1.9774007115835879E-05,
+                                      "changed_vectors":  42820,
+                                      "max_probability_delta":  0.09450195934036731,
+                                      "call_counts":  {
+                                                          "neural_requests":  3,
+                                                          "neural_attempts":  3,
+                                                          "metric_optimizers":  8
+                                                      },
+                                      "release_pass":  true,
+                                      "vectors_sha256":  "a4ea548f90c122a210b04a14816b3f2325ed3622798dd6293272257c81aebb1a"
+                                  }
+                    },
+    "official":  {
+                     "status":  "PASS",
+                     "instruments":  {
+                                         "unicef":  {
+                                                        "status":  "PASS",
+                                                        "skill":  0.5006484230707156,
+                                                        "seconds":  35.514177083969116,
+                                                        "raw_exact":  true
+                                                    },
+                                         "world_bank":  {
+                                                            "status":  "PASS",
+                                                            "skill":  0.45471730736298255,
+                                                            "seconds":  89.42878222465515,
+                                                            "raw_exact":  true
+                                                        },
+                                         "unhcr":  {
+                                                       "status":  "PASS",
+                                                       "skill":  0.5624429548505255,
+                                                       "seconds":  209.20098900794983,
+                                                       "raw_exact":  true
+                                                   }
+                                     }
+                 },
+    "runtimes":  {
+                     "source":  {
+                                    "status":  "PASS",
+                                    "reason":  "COMPLETE",
+                                    "exit_code":  0,
+                                    "seconds":  342.4691633000002,
+                                    "total_suite_seconds":  389.0438369000003,
+                                    "peak_process_tree_bytes":  {
+                                                                    "rss":  1588727808,
+                                                                    "commitment":  1550082048
+                                                                }
+                                },
+                     "assembly":  {
+                                      "status":  "PASS",
+                                      "reason":  "COMPLETE",
+                                      "exit_code":  0,
+                                      "seconds":  319.31939970000167,
+                                      "total_suite_seconds":  708.363236600002,
+                                      "peak_process_tree_bytes":  {
+                                                                      "rss":  1488670720,
+                                                                      "commitment":  1548267520
+                                                                  }
+                                  },
+                     "official":  {
+                                      "status":  "PASS",
+                                      "reason":  "COMPLETE",
+                                      "exit_code":  0,
+                                      "seconds":  338.0928504000003,
+                                      "total_suite_seconds":  1046.4560870000023,
+                                      "peak_process_tree_bytes":  {
+                                                                      "rss":  1922732032,
+                                                                      "commitment":  2048143360
+                                                                  }
+                                  }
+                 },
+    "failed_attempt":  {
+                           "status":  "FAIL",
+                           "reason":  "COMPLETE",
+                           "exit_code":  1,
+                           "seconds":  46.5746736000001,
+                           "total_suite_seconds":  46.5746736000001,
+                           "peak_process_tree_bytes":  {
+                                                           "rss":  1034473472,
+                                                           "commitment":  1095700480
+                                                       }
+                       },
+    "total_suite_seconds":  1046.4560870000023,
+    "total_cap_seconds":  2700,
+    "source_and_assembly_measured_calls":  {
+                                               "neural_attempts":  18,
+                                               "metric_optimizers":  16,
+                                               "neural_requests":  18
+                                           },
+    "fixture_metric_optimizers_source_count":  4,
+    "official_internal_call_counts":  "not instrumented",
+    "failed_attempt_neural_calls":  "3 inferred, not measured",
+    "package":  {
+                    "main.py":  "eb9fd1869c6c2cd7b856d163d5646981d3888197bbd3f27b384e099335ab7bc3",
+                    "NOTICE.txt":  "a81db73b86212de93a3944eea5dfb01126ffe17d5fbdb620a6e4c4d04830b20e",
+                    "2026-09-27-E060.zip":  "f5d77ba35fe6ffd7da098e36a86cb8e041692a50c79104ee9a26bea580e8064d"
+                },
+    "package_checker":  "OK: C:\\Users\\USER\\Desktop\\SimulacraBench\\submissions\\2026-09-27-E060.zip looks like a valid submission ZIP.",
+    "zip_bytes":  14995,
+    "prior_permitted_hashes_rechecked":  103,
+    "prior_hashes_match":  true,
+    "inherited_observed_parquet_hashes_not_revalidated":  {
+                                                              "external/sipp-2023/a014-month12-restricted.parquet":  "92aa1bc010bb85cf46750b1560e1a96e5f150b8f418296b560d52883064e3ede",
+                                                              "external/a019/fit-keys.parquet":  "d997c85a9152df9da81e0146c38f0a99467bab5d27ffeb0d763496dbc5e2e9ac",
+                                                              "external/a019/evaluation-keys.parquet":  "0d33a219a5f17a59d338715aead99060d381ef58a01981667b995da7e8e38bbc",
+                                                              "external/a019/historical-keys.parquet":  "11000e55e5f76d4ce7d9804595fc8e3573ef1c09977edb8c56906d9ebd9fe0d7"
+                                                          },
+    "protected_observed_response_access":  false,
+    "commit_push":  false,
+    "uploaded":  false,
+    "upload_timestamp":  null,
+    "active_python_wsl_bash_processes":  [
+
+                                         ],
+    "tree_preserved":  true,
+    "tree_update":  "Automatic approval review rejected before launch; explicit prior user protection",
+    "registration":  "technical-retry1/registration.md is immutable pre-run registration; experiment result append occurs after all suites"
+}

@@ -1,0 +1,52 @@
+{
+    "record":  "A044 S0 offline follow-up scope",
+    "recorded_at":  "2026-10-23T16:18:27.4169686+09:00",
+    "role":  "S0",
+    "workflow_revision":  "2026-10-22-r6",
+    "workflow_sha256":  "69620b7eeaad5a01a6a6b884fbd95dfede3e26b2ee2b09016479846082aec089",
+    "head":  "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+    "read_evidence":  [
+                          "Current AGENTS, CLAUDE first72 lines, current status/newest3log refreshed; full CLAUDE/workflow read in preceding unchanged task",
+                          "Workflow batch/TEST/closeout and S3 plan/validity:600006",
+                          "A012 README/final-review/A012 result and explicit supplemental JSON metadata read in current transcript",
+                          "No numerical artifact was opened or hashed; historical hashes read from supplemental manifest only"
+                      ],
+    "outage_evidence":  "User reports Codabench unavailable to everyone; not independently checked; no inferred extension/quota change",
+    "outgoing_prior_owner":  "S0 E064 release review /root",
+    "incoming_owner":  "S0 A044 offline follow-up /root",
+    "accepted_at":  "2026-10-23T16:18:27.4179688+09:00",
+    "owned_write_paths":  [
+                              "docs/analysis/A044-outputs/offline-followup/",
+                              "docs/status.md current notice",
+                              "docs/log.md new entry"
+                          ],
+    "named_jobs":  [
+
+                   ],
+    "dirty_inventory_note":  "125 directory-collapsed dirty entries; global ignore permission warning; not full recursive/file-byte preservation",
+    "read_only_hashes_before":  {
+                                    "AGENTS.md":  "e3d52f09f32c7e3b8fdb194419119c4f563557103404da0831ffb31fbf2150e8",
+                                    "CLAUDE.md":  "7300b637f3a0ae937b2273a1945892df129eb16ee3ef7bdc6cff707c69ffc1e3",
+                                    "docs/status.md":  "96c27bd4a4b31fad765bee465340e715a244e806ec21eadb8c30a3b2fab08122",
+                                    "docs/log.md":  "f9c3ebd82406af9edfbc86aeaf2286ff2846f1794ce4b6786c8c1c3b167aec76",
+                                    "docs/workflow.md":  "69620b7eeaad5a01a6a6b884fbd95dfede3e26b2ee2b09016479846082aec089",
+                                    "docs/analysis/A044-outputs/s3-prep/revalidation-plan.md":  "5dbca47de7423afe593adbed2472a34d7d486306a76b1088ff1658ab957d78e5",
+                                    "docs/analysis/A044-outputs/s3-prep/phase2-validity.md":  "64538cae05ea3a4fe8a2aec8fb40a891b9e0230c5004fbf67b25ddcfc80215c6",
+                                    "docs/analysis/A044-outputs/s3-prep/license-inventory.md":  "f60661f9f01232b351de6c0ff068899cf1d71b710659134408d7192959522c62",
+                                    "docs/analysis/A044-outputs/s3-prep/method-e041-draft.md":  "9809358328376f3ab77ed8fd4eb4982184d4c8336bd7c823b7a189b896de4433",
+                                    "docs/analysis/A012-outputs/README.md":  "f54f6318b6ce41946dc23ae10a74a236a77de8a9cdd82d065aae5d9fd829f04e",
+                                    "docs/analysis/A012-outputs/final-review.md":  "036120fa6e71ee66d9047146507a094d75922eb726bd4dcdd6e23bee5b1b933d",
+                                    "docs/analysis/A012-phase2-baseline-and-calibration-gate.md":  "0ffb5a13f2f6bdcfd08fa110946f5fa9dafa480e25f3bf62b63c71be791694d9",
+                                    "submissions/phase2-E041-preparation/verification.json":  "de65ac4dfc5e5ede05473896c846947457210c7246e1d254c6218b89b362e001",
+                                    "submissions/phase2-E041-preparation/supplemental-verification.json":  "5208da8abaf5a37496f382f57b814a6101296c723b41a4877095c333f9aa9775",
+                                    "docs/analysis/E064-outputs/s0-release-review/verification.json":  "c0a5480982f5f9aeab695e26c556ebcdba66115635c93ae5dd01d6acbba247cd"
+                                },
+    "forbidden":  [
+                      "model/data/cache/ZIP execution or access",
+                      "S3 execution",
+                      "web/platform/remote/login/contact",
+                      "subagents",
+                      "commit/push",
+                      "final TEST choice"
+                  ]
+}

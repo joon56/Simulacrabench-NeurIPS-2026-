@@ -1,0 +1,15 @@
+{
+  "mode": "tests",
+  "wall_seconds": 0.1777746,
+  "status": "LAUNCHER_ACCESS_BLOCKED",
+  "exit_code": 1,
+  "tool_chunk": "5cd793",
+  "command": ".venv/Scripts/python.exe -X utf8 -B scripts/check_e064_conditional_gradient.py tests --attempt 1 --only tests.test_conditional_gradient.GradientTests.test_initial_state_forward_rng_and_denominator",
+  "message": "Venv launcher could not access its configured base Python from restricted sandbox. Separate read-only permission check confirms original base executable exists.",
+  "controller_started": false,
+  "test_cases_started": 0,
+  "scientific_processes": 0,
+  "memory_measured": false,
+  "resolution": "Use the same existing interpreter with permitted process access; no installation, venv/config edit or environment replacement.",
+  "limitation": "Duration is exec tool process wall; controller could not initialize its own monitor. This is not a resource-qualified model/test run."
+}

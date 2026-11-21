@@ -1,0 +1,54 @@
+{
+  "outputs": {
+    "unicef": {
+      "file": "vectors-E041-unicef.npz",
+      "sha256": "1269a5064ee632708f14bff1e1ba2190e26f81c05caf1d6582bb52c9c821a62c",
+      "contract": {
+        "vectors": 17856,
+        "max_sum_error": 1.9348226487636566e-07,
+        "official_check": "PASS",
+        "zero_entries": 14416
+      }
+    },
+    "world_bank": {
+      "file": "vectors-E041-world_bank.npz",
+      "sha256": "4a261189acb717dc70e1791e9bf19f754adc29f81a137f546725d3061304af55",
+      "contract": {
+        "vectors": 39520,
+        "max_sum_error": 2.8615613700821996e-07,
+        "official_check": "PASS",
+        "zero_entries": 44413
+      }
+    },
+    "unhcr": {
+      "file": "vectors-E041-unhcr.npz",
+      "sha256": "262ec003947b96a2b3bdad76866fc68b3763db148e061c5d5bc9a1c3ac416e3d",
+      "contract": {
+        "vectors": 132273,
+        "max_sum_error": 2.2838357827126288e-07,
+        "official_check": "PASS",
+        "zero_entries": 368
+      }
+    }
+  },
+  "timings": {
+    "unicef": {
+      "predict_seconds": 32.60157419999996,
+      "validate_save_seconds": 0.19077289999950153
+    },
+    "world_bank": {
+      "predict_seconds": 88.56492330000037,
+      "validate_save_seconds": 0.5383058999996138
+    },
+    "unhcr": {
+      "predict_seconds": 210.5816663000005,
+      "validate_save_seconds": 1.2153839000002336
+    }
+  },
+  "worker_seconds": 342.1588388,
+  "pipeline_attempts_cumulative": 6,
+  "neural_attempts_cumulative": 18,
+  "target_checks": 12,
+  "metric_calls_this_worker": 8,
+  "scores_accessed": 0
+}

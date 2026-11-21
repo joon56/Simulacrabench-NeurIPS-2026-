@@ -1,0 +1,9 @@
+test_control_and_unhcr_dispatch_use_explicit_bindings (tests.test_e061_assembly.AssemblyBoundaryTests.test_control_and_unhcr_dispatch_use_explicit_bindings) ... ok
+test_frozen_control_prefix_and_no_repository_import (tests.test_e061_assembly.AssemblyBoundaryTests.test_frozen_control_prefix_and_no_repository_import) ... ok
+test_original_and_tied_training_globals_are_distinct (tests.test_e061_assembly.AssemblyBoundaryTests.test_original_and_tied_training_globals_are_distinct) ... ok
+test_tied_source_network_forward_and_mapping_exact (tests.test_e061_assembly.AssemblyBoundaryTests.test_tied_source_network_forward_and_mapping_exact) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 2.445s
+
+OK

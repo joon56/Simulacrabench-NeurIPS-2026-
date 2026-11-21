@@ -1,0 +1,46 @@
+{
+  "gate": "ORACLE",
+  "library_sha256": "56748de6d0ad5a0323476a0b19aed87f79d7d4aabbc227888efc7196ad70a187",
+  "prepared_sha256": "fe4e0889ba9a23d139d5c265df48167e00d267fc5a3e0a45f25c7efe7b6d9102",
+  "execution_hashes": {
+    "scripts/screen_e059.py": "31ee84558932e3ef45871c6b53919ec59882044f8fec57ba4635e2242712c5f2",
+    "tests/test_e059_interactions.py": "746d52ed0de056d5789441c2df6f9bf0c70767638c2b9e765f019bc29e82e65c"
+  },
+  "registration_sha256": "0de9835b3053a5410e98ec5a1327c60aabfc0587071efb52725c4c7d44d8dc9a",
+  "beta": [
+    0.011656660294367344,
+    -0.011893916861615575,
+    -0.017247324206499142,
+    -0.04942048150367127,
+    -0.04068979745282575,
+    -0.0028259667034815396,
+    -0.013579470286299793,
+    -0.0447905994153992,
+    -0.03499004415250484,
+    0.0042680666079209255,
+    -0.07628187754889121,
+    -0.05876436711727147,
+    -0.07180259552553236,
+    -0.04311045061897047,
+    -0.0935036217818758
+  ],
+  "iterations": 3,
+  "optimizer_success": true,
+  "optimizer_status": 0,
+  "optimizer_message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+  "beta_fits": 1,
+  "base_fits": 0,
+  "fit_seconds": 0.02293189999909373,
+  "beta0_exact": true,
+  "reconstruction_max_abs": 1.1102230246251565e-16,
+  "changed_B_vectors": {
+    "R": 8839,
+    "A_half": 8876
+  },
+  "total_vectors": 41993,
+  "oracle_label_free_bounds": [
+    0.009801188697647092,
+    0.0006988723907911057
+  ],
+  "new_evaluation_labels_read": false
+}

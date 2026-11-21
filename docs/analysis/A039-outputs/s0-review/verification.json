@@ -1,0 +1,271 @@
+﻿{
+    "date":  "2026-10-01T02:39:48.1302771+09:00",
+    "role":  "S0",
+    "decision":  "ACCEPT_HEADER_RESULT / EMPIRICAL_HOLD / AWAIT_SPECIFIC_METADATA",
+    "head":  "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+    "head_unchanged":  true,
+    "s1_intake_allowed_hashes_matched":  34,
+    "post_review_checks":  [
+                               {
+                                   "path":  "AGENTS.md",
+                                   "before":  "86394bbf164a2b7df6a309f4564b9dacf3b2799fa0227a703e4ea11d4d842596",
+                                   "after":  "86394bbf164a2b7df6a309f4564b9dacf3b2799fa0227a703e4ea11d4d842596",
+                                   "unchanged":  true,
+                                   "expected_change":  false
+                               },
+                               {
+                                   "path":  "CLAUDE.md",
+                                   "before":  "69175e6d741a17042db4852d4961a5c52bd97fe2cd5bfbff762d30d7e5270364",
+                                   "after":  "69175e6d741a17042db4852d4961a5c52bd97fe2cd5bfbff762d30d7e5270364",
+                                   "unchanged":  true,
+                                   "expected_change":  false
+                               },
+                               {
+                                   "path":  "docs/workflow.md",
+                                   "before":  "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642",
+                                   "after":  "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642",
+                                   "unchanged":  true,
+                                   "expected_change":  false
+                               },
+                               {
+                                   "path":  "docs/session-prompts.ko.md",
+                                   "before":  "c68eba8618c6a49caf1b590181ede5d5c03800d4c2305ea0e5efe3cc266e5615",
+                                   "after":  "c68eba8618c6a49caf1b590181ede5d5c03800d4c2305ea0e5efe3cc266e5615",
+                                   "unchanged":  true,
+                                   "expected_change":  false
+                               },
+                               {
+                                   "path":  "docs/status.md",
+                                   "before":  "f8b9ff3ca8b6dbb6031c874188e5d5f9e90daa459f41191f63f74396f9161d1f",
+                                   "after":  "bba2a040735a02d68e22dbe9ebd3c735c65869878360bcefb74869039af902d4",
+                                   "unchanged":  false,
+                                   "expected_change":  true
+                               },
+                               {
+                                   "path":  "docs/log.md",
+                                   "before":  "4f2bc0697493883a85d78149ea1652f1b43190468673c844ff9e79bf61d10846",
+                                   "after":  "818c9a5fc7d9741815f5fa4f37d679e1d150d124b7328a940036d58a67e94c7a",
+                                   "unchanged":  false,
+                                   "expected_change":  true
+                               },
+                               {
+                                   "path":  "docs/tree.md",
+                                   "before":  "eaa884a4194db103335136495205fe5b51297c17db15e9eac62946ced286cc44",
+                                   "after":  "eaa884a4194db103335136495205fe5b51297c17db15e9eac62946ced286cc44",
+                                   "unchanged":  true,
+                                   "expected_change":  false
+                               },
+                               {
+                                   "path":  ".gitignore",
+                                   "before":  "f67ba089f7490b4ba0845848f0b13b55633b5efd058a0be7d64203a1e480c6fd",
+                                   "after":  "f67ba089f7490b4ba0845848f0b13b55633b5efd058a0be7d64203a1e480c6fd",
+                                   "unchanged":  true,
+                                   "expected_change":  false
+                               },
+                               {
+                                   "path":  "docs/analysis/A037-winning-priority-review.md",
+                                   "before":  "87e77d8279f68e52751653f3b6098ec1976e4b53a75faf7206043ec6cf4bf66d",
+                                   "after":  "87e77d8279f68e52751653f3b6098ec1976e4b53a75faf7206043ec6cf4bf66d",
+                                   "unchanged":  true,
+                                   "expected_change":  false
+                               },
+                               {
+                                   "path":  "docs/analysis/A038-vaf-local-document-intake.md",
+                                   "before":  "6aaac47c03e420fffed87fe8f5a942c29e82714c88e968702ec3eb1402eaad0e",
+                                   "after":  "6aaac47c03e420fffed87fe8f5a942c29e82714c88e968702ec3eb1402eaad0e",
+                                   "unchanged":  true,
+                                   "expected_change":  false
+                               },
+                               {
+                                   "path":  "docs/analysis/A038-outputs/next-actions.ko.md",
+                                   "before":  "fd04c57f653e8c8c697b700df73b04b49b17464f82de62acc1593ed8c96c3a39",
+                                   "after":  "fd04c57f653e8c8c697b700df73b04b49b17464f82de62acc1593ed8c96c3a39",
+                                   "unchanged":  true,
+                                   "expected_change":  false
+                               },
+                               {
+                                   "path":  "docs/analysis/A038-outputs/inventory.json",
+                                   "before":  "b5ee9712dbfe36178cdae88cc5904cd784e6c5e3a7c73f4a8eda581b8a19d029",
+                                   "after":  "b5ee9712dbfe36178cdae88cc5904cd784e6c5e3a7c73f4a8eda581b8a19d029",
+                                   "unchanged":  true,
+                                   "expected_change":  false
+                               },
+                               {
+                                   "path":  "docs/analysis/A038-outputs/document-comparison.json",
+                                   "before":  "44f44bb5f82e85db91e08a22303ca7522e0dba0852b5cb85d346494063bc244f",
+                                   "after":  "44f44bb5f82e85db91e08a22303ca7522e0dba0852b5cb85d346494063bc244f",
+                                   "unchanged":  true,
+                                   "expected_change":  false
+                               },
+                               {
+                                   "path":  "docs/analysis/A032-outputs/readiness-contract.ko.md",
+                                   "before":  "139d577ab9afa82aa8d64ab8814847af0b953fffdfed6f141de520040a5a512d",
+                                   "after":  "139d577ab9afa82aa8d64ab8814847af0b953fffdfed6f141de520040a5a512d",
+                                   "unchanged":  true,
+                                   "expected_change":  false
+                               },
+                               {
+                                   "path":  "docs/analysis/A032-outputs/researcher-guide.txt",
+                                   "before":  "dd2807e0ae8030a028eaad592a83539386022b9e1b017565a39e1730207f70fc",
+                                   "after":  "dd2807e0ae8030a028eaad592a83539386022b9e1b017565a39e1730207f70fc",
+                                   "unchanged":  true,
+                                   "expected_change":  false
+                               },
+                               {
+                                   "path":  "docs/analysis/A032-outputs/routing-metadata.json",
+                                   "before":  "8897d05493dfd3e0fd08557c52b69ac31ab49b1ca4e44af428348a53a45150bf",
+                                   "after":  "8897d05493dfd3e0fd08557c52b69ac31ab49b1ca4e44af428348a53a45150bf",
+                                   "unchanged":  true,
+                                   "expected_change":  false
+                               },
+                               {
+                                   "path":  "docs/analysis/A032-outputs/terms-of-use.html",
+                                   "before":  "baeb420638470691e0ee7db0d2c4cdb10912df922cc4fa200bb07b9b13fc1d19",
+                                   "after":  "baeb420638470691e0ee7db0d2c4cdb10912df922cc4fa200bb07b9b13fc1d19",
+                                   "unchanged":  true,
+                                   "expected_change":  false
+                               },
+                               {
+                                   "path":  "docs/analysis/A032-outputs/source-register.md",
+                                   "before":  "9d5a4f8917cd9bd033e059fb45c350357db83bbc65186765fc419d920a5f179f",
+                                   "after":  "9d5a4f8917cd9bd033e059fb45c350357db83bbc65186765fc419d920a5f179f",
+                                   "unchanged":  true,
+                                   "expected_change":  false
+                               },
+                               {
+                                   "path":  "docs/analysis/A039-outputs/s0-entry.json",
+                                   "before":  "9f326492e5d5caae50f31317f99f4c81759eb41cb74ca6b0b2af37771dea9bb0",
+                                   "after":  "9f326492e5d5caae50f31317f99f4c81759eb41cb74ca6b0b2af37771dea9bb0",
+                                   "unchanged":  true,
+                                   "expected_change":  false
+                               },
+                               {
+                                   "path":  "docs/analysis/A039-outputs/s0-plan.md",
+                                   "before":  "6adb1ab139f684ef63eb1ac276fcae5e0abfbc4f9d9f51710230a2ea91215bd4",
+                                   "after":  "6adb1ab139f684ef63eb1ac276fcae5e0abfbc4f9d9f51710230a2ea91215bd4",
+                                   "unchanged":  true,
+                                   "expected_change":  false
+                               },
+                               {
+                                   "path":  "docs/analysis/A039-outputs/s0-verification.json",
+                                   "before":  "2c93f999e528860fdf77a411ccb1bf14abf5573e37c7f4e76c79dcaa64adb4e7",
+                                   "after":  "2c93f999e528860fdf77a411ccb1bf14abf5573e37c7f4e76c79dcaa64adb4e7",
+                                   "unchanged":  true,
+                                   "expected_change":  false
+                               },
+                               {
+                                   "path":  "docs/analysis/A039-outputs/s1-handoff.ko.md",
+                                   "before":  "73215a6569d00ac0bc100687973cfdd3484e2e4a9184f67615ceeb0f6efe042d",
+                                   "after":  "73215a6569d00ac0bc100687973cfdd3484e2e4a9184f67615ceeb0f6efe042d",
+                                   "unchanged":  true,
+                                   "expected_change":  false
+                               },
+                               {
+                                   "path":  "docs/analysis/A039-outputs/s1/boundary-fixtures.json",
+                                   "before":  "5611534b417e06b5620d85ba509be047bbff8293552592f4f15a5ca01400652f",
+                                   "after":  "5611534b417e06b5620d85ba509be047bbff8293552592f4f15a5ca01400652f",
+                                   "unchanged":  true,
+                                   "expected_change":  false
+                               },
+                               {
+                                   "path":  "docs/analysis/A039-outputs/s1/closeout.md",
+                                   "before":  "20364dea129579ac3e8bec4d559afb87383b1c80c04a46c7cc3475ec058da55f",
+                                   "after":  "20364dea129579ac3e8bec4d559afb87383b1c80c04a46c7cc3475ec058da55f",
+                                   "unchanged":  true,
+                                   "expected_change":  false
+                               },
+                               {
+                                   "path":  "docs/analysis/A039-outputs/s1/document-mapping.json",
+                                   "before":  "c4d66ae07f4852574e3b1943b32b1ca67299808c7cb9a95d036ecc5b7110381d",
+                                   "after":  "c4d66ae07f4852574e3b1943b32b1ca67299808c7cb9a95d036ecc5b7110381d",
+                                   "unchanged":  true,
+                                   "expected_change":  false
+                               },
+                               {
+                                   "path":  "docs/analysis/A039-outputs/s1/entry.json",
+                                   "before":  "e9e8ce049eb7f31929f2f2b942f1ca1ab9eb31f8c052c8b7e5edea921775c9a4",
+                                   "after":  "e9e8ce049eb7f31929f2f2b942f1ca1ab9eb31f8c052c8b7e5edea921775c9a4",
+                                   "unchanged":  true,
+                                   "expected_change":  false
+                               },
+                               {
+                                   "path":  "docs/analysis/A039-outputs/s1/exposure-ledger.md",
+                                   "before":  "95f5239bc9905cef7b411b32b2791b0216838bbda682ba045ec0c373cfcb0c8c",
+                                   "after":  "95f5239bc9905cef7b411b32b2791b0216838bbda682ba045ec0c373cfcb0c8c",
+                                   "unchanged":  true,
+                                   "expected_change":  false
+                               },
+                               {
+                                   "path":  "docs/analysis/A039-outputs/s1/header_reader.py",
+                                   "before":  "9c7dceefcdc06ea86ccf1443a5b2f45faebaa22acab16375a095bd931d54fd11",
+                                   "after":  "9c7dceefcdc06ea86ccf1443a5b2f45faebaa22acab16375a095bd931d54fd11",
+                                   "unchanged":  true,
+                                   "expected_change":  false
+                               },
+                               {
+                                   "path":  "docs/analysis/A039-outputs/s1/header-comparison.json",
+                                   "before":  "88d78e1aa7785aa304700d2075f6d33861afe0cf35aad57747c0c3dad0f8ab74",
+                                   "after":  "88d78e1aa7785aa304700d2075f6d33861afe0cf35aad57747c0c3dad0f8ab74",
+                                   "unchanged":  true,
+                                   "expected_change":  false
+                               },
+                               {
+                                   "path":  "docs/analysis/A039-outputs/s1/log-before.md",
+                                   "before":  "d8579531b4e72d94d46662996e25d822d64f2bb8d772f628a90ab2f83f58136c",
+                                   "after":  "d8579531b4e72d94d46662996e25d822d64f2bb8d772f628a90ab2f83f58136c",
+                                   "unchanged":  true,
+                                   "expected_change":  false
+                               },
+                               {
+                                   "path":  "docs/analysis/A039-outputs/s1/remaining-questions.ko.md",
+                                   "before":  "d1265ecd7cef066afacd838465d0518cc9020528412c0dccdc91b5eebb755821",
+                                   "after":  "d1265ecd7cef066afacd838465d0518cc9020528412c0dccdc91b5eebb755821",
+                                   "unchanged":  true,
+                                   "expected_change":  false
+                               },
+                               {
+                                   "path":  "docs/analysis/A039-outputs/s1/s0-handoff.ko.md",
+                                   "before":  "1d546374acba6a3ed400ea7cf05fc1ec9b0b9ab9aa966b1528b3acf1dda35f9d",
+                                   "after":  "1d546374acba6a3ed400ea7cf05fc1ec9b0b9ab9aa966b1528b3acf1dda35f9d",
+                                   "unchanged":  true,
+                                   "expected_change":  false
+                               },
+                               {
+                                   "path":  "docs/analysis/A039-outputs/s1/status-before.md",
+                                   "before":  "9123c5585590baf8d6bcbd6def3e518d32ec1c3f5e9a3375c012b169d76cfe19",
+                                   "after":  "9123c5585590baf8d6bcbd6def3e518d32ec1c3f5e9a3375c012b169d76cfe19",
+                                   "unchanged":  true,
+                                   "expected_change":  false
+                               },
+                               {
+                                   "path":  "docs/analysis/A039-outputs/s1/test_header_reader.py",
+                                   "before":  "ba65f255a0f613313537ed7976f0ac1b1b442a027f75807d3245cc84ea295816",
+                                   "after":  "ba65f255a0f613313537ed7976f0ac1b1b442a027f75807d3245cc84ea295816",
+                                   "unchanged":  true,
+                                   "expected_change":  false
+                               }
+                           ],
+    "unexpected_changes":  0,
+    "s1_verification_unchanged":  true,
+    "artifacts":  [
+                      {
+                          "path":  "docs/analysis/A039-outputs/s0-review/entry.json",
+                          "sha256":  "0f9c7dc68813d0a118562765be2c4becd835f70430a3e33730872839b2b1cf15"
+                      },
+                      {
+                          "path":  "docs/analysis/A039-outputs/s0-review/closeout.md",
+                          "sha256":  "7d9d306f74ed54e256ad9a328d148bd988218e997893632e63bc84051107e1d9"
+                      },
+                      {
+                          "path":  "docs/analysis/A039-outputs/s0-review/custodian-questions.en.md",
+                          "sha256":  "91d15013570ecc866b32c7813daed4e0adb8a74a7b811630109829c874a602b4"
+                      }
+                  ],
+    "saved_header_totals_consistent":  true,
+    "verification_scope":  "Allowed document identity and report consistency only. No independent reconstruction of S1 execution or whole-workspace proof.",
+    "raw_header_key_response_cache_access_or_hashes":  0,
+    "scientific_calls_tests":  0,
+    "web_contact_agents_zip_commit_push":  0,
+    "new_executable_s1_handoff":  false,
+    "all_prior_stop_hold_exposure_preserved":  true
+}

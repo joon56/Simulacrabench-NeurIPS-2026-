@@ -1,0 +1,210 @@
+[
+    {
+        "shared_addition_only":  false,
+        "after_sha256":  "73b86e5310d6a45d5206efd3b55da47c48748ee7b077e6fcad6be276f1716a3a",
+        "path":  "AGENTS.md",
+        "before_sha256":  "73b86e5310d6a45d5206efd3b55da47c48748ee7b077e6fcad6be276f1716a3a",
+        "preserved":  true,
+        "restored_sha256":  null
+    },
+    {
+        "shared_addition_only":  false,
+        "after_sha256":  "0cda5c3385ea3368d0c24a6602e4b1220adc864a205e231f10042b655d031749",
+        "path":  "CLAUDE.md",
+        "before_sha256":  "0cda5c3385ea3368d0c24a6602e4b1220adc864a205e231f10042b655d031749",
+        "preserved":  true,
+        "restored_sha256":  null
+    },
+    {
+        "shared_addition_only":  false,
+        "after_sha256":  "a577942675e16a732339e586c14796104dda704693568439ae28670cc7fb7b23",
+        "path":  "docs/workflow.md",
+        "before_sha256":  "a577942675e16a732339e586c14796104dda704693568439ae28670cc7fb7b23",
+        "preserved":  true,
+        "restored_sha256":  null
+    },
+    {
+        "shared_addition_only":  true,
+        "after_sha256":  "8ddbf092434bad7481be3542e5bda110414251a2f6fb60c41157f8e91aeb6b26",
+        "path":  "docs/status.md",
+        "before_sha256":  "ad5ae2edf49acd4bf99c1a510ea545c18c7e50b5d121726fa540e15ccfc1bb0c",
+        "preserved":  true,
+        "restored_sha256":  "ad5ae2edf49acd4bf99c1a510ea545c18c7e50b5d121726fa540e15ccfc1bb0c"
+    },
+    {
+        "shared_addition_only":  true,
+        "after_sha256":  "53ec42822b4907dc5c7b0babe8bcfb10f545f27262fbb1d8143fc26a10f6770e",
+        "path":  "docs/log.md",
+        "before_sha256":  "812413d7ef86aca5e63159596bb63808ffe8bb55b58e5540283500fecfb7f138",
+        "preserved":  true,
+        "restored_sha256":  "812413d7ef86aca5e63159596bb63808ffe8bb55b58e5540283500fecfb7f138"
+    },
+    {
+        "shared_addition_only":  false,
+        "after_sha256":  "9ef4313ea4908c149d5fac63bf5a0fbb60a143652a6d80f6a95b552723afd16f",
+        "path":  "docs/analysis/A004-wb-structure.md",
+        "before_sha256":  "9ef4313ea4908c149d5fac63bf5a0fbb60a143652a6d80f6a95b552723afd16f",
+        "preserved":  true,
+        "restored_sha256":  null
+    },
+    {
+        "shared_addition_only":  false,
+        "after_sha256":  "e8f63d896baa32f4008884aeddaa5e5fcd2e776e25fd50a7611be330844c4940",
+        "path":  "docs/experiments/E011-ordinal-smooth.md",
+        "before_sha256":  "e8f63d896baa32f4008884aeddaa5e5fcd2e776e25fd50a7611be330844c4940",
+        "preserved":  true,
+        "restored_sha256":  null
+    },
+    {
+        "shared_addition_only":  false,
+        "after_sha256":  "0c40ac6802f683f5523b8639080f4b0df0fcbe4150e7b40ad8eb2a8f918e6b8a",
+        "path":  "docs/experiments/E012-shared-trunk.md",
+        "before_sha256":  "0c40ac6802f683f5523b8639080f4b0df0fcbe4150e7b40ad8eb2a8f918e6b8a",
+        "preserved":  true,
+        "restored_sha256":  null
+    },
+    {
+        "shared_addition_only":  false,
+        "after_sha256":  "ad20a4fa677175c06d1d7a6d5710f342898b270c96a5eb38e7e392f6d3c7da68",
+        "path":  "docs/experiments/E017-capacity-ab.md",
+        "before_sha256":  "ad20a4fa677175c06d1d7a6d5710f342898b270c96a5eb38e7e392f6d3c7da68",
+        "preserved":  true,
+        "restored_sha256":  null
+    },
+    {
+        "shared_addition_only":  false,
+        "after_sha256":  "f4ed0b5520815dcf8e95b6ca9dad0262af9f6814fd5464189fb0108597797866",
+        "path":  "docs/experiments/E026-hh-cap4.md",
+        "before_sha256":  "f4ed0b5520815dcf8e95b6ca9dad0262af9f6814fd5464189fb0108597797866",
+        "preserved":  true,
+        "restored_sha256":  null
+    },
+    {
+        "shared_addition_only":  false,
+        "after_sha256":  "47363f8c6fbb011d8d1e66ac94dceea98ab7dcb8432da27d7406f4a5f2eac666",
+        "path":  "docs/experiments/E029-seed-temp.md",
+        "before_sha256":  "47363f8c6fbb011d8d1e66ac94dceea98ab7dcb8432da27d7406f4a5f2eac666",
+        "preserved":  true,
+        "restored_sha256":  null
+    },
+    {
+        "shared_addition_only":  false,
+        "after_sha256":  "72ad36f848e9bebdfb2049b2bf2b4d66cc1a70d61863862a5c6d7a5593f7a20b",
+        "path":  "docs/experiments/E030-ord-sig.md",
+        "before_sha256":  "72ad36f848e9bebdfb2049b2bf2b4d66cc1a70d61863862a5c6d7a5593f7a20b",
+        "preserved":  true,
+        "restored_sha256":  null
+    },
+    {
+        "shared_addition_only":  false,
+        "after_sha256":  "a052fc9939b0e2e8a15841cfaa3645fa5c14661766cac829ce1a7ffb3a063dff",
+        "path":  "docs/experiments/E061-tied-content-heads.md",
+        "before_sha256":  "a052fc9939b0e2e8a15841cfaa3645fa5c14661766cac829ce1a7ffb3a063dff",
+        "preserved":  true,
+        "restored_sha256":  null
+    },
+    {
+        "shared_addition_only":  false,
+        "after_sha256":  "ddeda3423eecb8c11ddc2217c49884295131320e7bfa08d204a12fae28ac8510",
+        "path":  "src/models/ordinal_smooth.py",
+        "before_sha256":  "ddeda3423eecb8c11ddc2217c49884295131320e7bfa08d204a12fae28ac8510",
+        "preserved":  true,
+        "restored_sha256":  null
+    },
+    {
+        "shared_addition_only":  false,
+        "after_sha256":  "df648763c8e0ba5532ebf9e437af95cd10d8527112c1338b8b5db9ad6a212e1f",
+        "path":  "src/models/shared_trunk.py",
+        "before_sha256":  "df648763c8e0ba5532ebf9e437af95cd10d8527112c1338b8b5db9ad6a212e1f",
+        "preserved":  true,
+        "restored_sha256":  null
+    },
+    {
+        "shared_addition_only":  false,
+        "after_sha256":  "2940338c5378de03303befb74e3834fbad631c0eb18f4ecb55d2cc39a471f879",
+        "path":  "src/models/supervised_retrieval.py",
+        "before_sha256":  "2940338c5378de03303befb74e3834fbad631c0eb18f4ecb55d2cc39a471f879",
+        "preserved":  true,
+        "restored_sha256":  null
+    },
+    {
+        "shared_addition_only":  false,
+        "after_sha256":  "9aad6be04e14ae97dc7aaba5499747c35b255b098680c66eaa8f8af58c940f70",
+        "path":  "src/models/hh_cap.py",
+        "before_sha256":  "9aad6be04e14ae97dc7aaba5499747c35b255b098680c66eaa8f8af58c940f70",
+        "preserved":  true,
+        "restored_sha256":  null
+    },
+    {
+        "shared_addition_only":  false,
+        "after_sha256":  "22c911806ea91234ae350341adfb9c0df2ce4be41cc88e73be304e4bb1023073",
+        "path":  "submissions/2026-09-19-E041/main.py",
+        "before_sha256":  "22c911806ea91234ae350341adfb9c0df2ce4be41cc88e73be304e4bb1023073",
+        "preserved":  true,
+        "restored_sha256":  null
+    },
+    {
+        "shared_addition_only":  false,
+        "after_sha256":  "6b3760742c6e864eb8d0bb2f9ec523a19a486b73282d79432dbcca16e3664125",
+        "path":  "external/starter-kit/data/world_bank.json",
+        "before_sha256":  "6b3760742c6e864eb8d0bb2f9ec523a19a486b73282d79432dbcca16e3664125",
+        "preserved":  true,
+        "restored_sha256":  null
+    },
+    {
+        "shared_addition_only":  false,
+        "after_sha256":  "c90d039be216dce7f253da124e8cd20deb67004a01fdaa08cd3d1e7d62aa10f8",
+        "path":  "docs/analysis/A041-wb-ordinal-head-review.md",
+        "before_sha256":  "c90d039be216dce7f253da124e8cd20deb67004a01fdaa08cd3d1e7d62aa10f8",
+        "preserved":  true,
+        "restored_sha256":  null
+    },
+    {
+        "shared_addition_only":  false,
+        "after_sha256":  "4060ce971a3cd3211d6011327ee17b4e9ae59d89ceeef2dd2ff9b3e9fecbaa27",
+        "path":  "docs/analysis/A041-outputs/inputs.json",
+        "before_sha256":  "4060ce971a3cd3211d6011327ee17b4e9ae59d89ceeef2dd2ff9b3e9fecbaa27",
+        "preserved":  true,
+        "restored_sha256":  null
+    },
+    {
+        "shared_addition_only":  false,
+        "after_sha256":  "909aeeaf105db89d9a175f7489692f17226f79b01fc445bf03534a885a7c7526",
+        "path":  "docs/analysis/A041-outputs/verification.json",
+        "before_sha256":  "909aeeaf105db89d9a175f7489692f17226f79b01fc445bf03534a885a7c7526",
+        "preserved":  true,
+        "restored_sha256":  null
+    },
+    {
+        "shared_addition_only":  false,
+        "after_sha256":  "2c5e20acb75fd690e14e1d5f378057ba3a37fe2951fa274d33ebc041d3054f31",
+        "path":  "docs/analysis/A041-outputs/s1-handoff.ko.md",
+        "before_sha256":  "2c5e20acb75fd690e14e1d5f378057ba3a37fe2951fa274d33ebc041d3054f31",
+        "preserved":  true,
+        "restored_sha256":  null
+    },
+    {
+        "shared_addition_only":  false,
+        "after_sha256":  "eaa884a4194db103335136495205fe5b51297c17db15e9eac62946ced286cc44",
+        "path":  "docs/tree.md",
+        "before_sha256":  "eaa884a4194db103335136495205fe5b51297c17db15e9eac62946ced286cc44",
+        "preserved":  true,
+        "restored_sha256":  null
+    },
+    {
+        "shared_addition_only":  false,
+        "after_sha256":  "7049e99a48acef2a74f37cb49bb66b5a9af8d05d2ed8fcf530287b5e81c5042f",
+        "path":  "external/starter-kit/score.py",
+        "before_sha256":  "7049e99a48acef2a74f37cb49bb66b5a9af8d05d2ed8fcf530287b5e81c5042f",
+        "preserved":  true,
+        "restored_sha256":  null
+    },
+    {
+        "shared_addition_only":  false,
+        "after_sha256":  "272aae939a2587b7197569ff84733a1d3b51050e4090ed903a7c8f4e1c88ca18",
+        "path":  "src/eval/logloss.py",
+        "before_sha256":  "272aae939a2587b7197569ff84733a1d3b51050e4090ed903a7c8f4e1c88ca18",
+        "preserved":  true,
+        "restored_sha256":  null
+    }
+]

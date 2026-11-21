@@ -1,0 +1,157 @@
+diff --git "a/C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\production-lifecycle-boundary2/check_boundary.py" "b/C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\local-exit-diagnosis1/check_boundary.py"
+index a0ba86f..c715712 100644
+--- "a/C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\production-lifecycle-boundary2/check_boundary.py"
++++ "b/C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\local-exit-diagnosis1/check_boundary.py"
+@@ -17,6 +17,7 @@ if not kernel.SetProcessAffinityMask(kernel.GetCurrentProcess(),3):
+ sys.dont_write_bytecode=True
+ HERE=Path(__file__).resolve().parent
+ sys.path.insert(0,str(HERE))
++(Path(__file__).parent/(sys.argv[1]+'-pid.json')).write_text(json.dumps({'pid':os.getpid(),'utc':datetime.now(timezone.utc).isoformat()}))
+ import local_guard
+ local_guard.install()
+ local_guard.block_sdk_auth()
+@@ -33,26 +34,75 @@ from live_worker import Context, cleanup
+ from controller_core import install_pins
+ import live_launcher
+ 
++if sys.argv[2]=='import_loop':
++    async def noop():
++        return 17
++    assert synchronizer.create_blocking(noop)()==17
++    assert not local_guard.blocked
++    (HERE/(sys.argv[1]+'-result.json')).write_text(json.dumps({'assertions':'PASS_EXIT_PENDING','case':'import_loop'}))
++    print('managed loop returned')
++    sys.exit(0)
++
+ ROOT=HERE.parents[3]
+-WORK=ROOT/'tmp/a040-production-lifecycle-boundary2'
++WORK=ROOT/'tmp/a040-local-exit-diagnosis1'
+ ATTEMPT,CASE=sys.argv[1:]
+-assert CASE in ('success','builder_fail','stall')
++assert CASE in ('success','builder_fail','stall','minimal_build','definition','protobuf_graph')
+ evidence=HERE/'attempts'/ATTEMPT
+ evidence.mkdir(parents=True,exist_ok=False)
+ name='a040-boundary2-'+ATTEMPT
+ directory=WORK/name
+-backend=Backend(CASE,name,directory,evidence/'trace.jsonl')
++backend=Backend('builder_fail' if CASE in ('minimal_build','definition','protobuf_graph') else CASE,name,directory,evidence/'trace.jsonl')
+ wire.ACTIVE=backend
+ started=time.perf_counter()
+ backend.record('child_entry',pid=os.getpid(),case=CASE)
+ 
++if CASE in ('minimal_build','definition','protobuf_graph'):
++    from live_binding import image_from_id
++    from modal.exception import ImageBuildError
++    async def reduced():
++        endpoint=Endpoint(client_factory=backend.factory)
++        await endpoint.connect()
++        await endpoint.app_lookup(name,True)
++        if CASE in ('definition','protobuf_graph'):
++            endpoint.image=image_from_id('im-fixturebase',endpoint.client).run_function(
++                install_pins,args=('PROTOCOL_PINS_NOT_INSTALLED',time.time()+600),
++                cpu=(1,1),memory=(8192,8192),timeout=600,include_source=True)
++        else:
++            try:
++                await endpoint.build('im-fixturebase','PROTOCOL_PINS_NOT_INSTALLED',time.time()+600)
++            except ImageBuildError as error:
++                assert 'fixed protocol builder failure' in str(error)
++                backend.record('expected_builder_failure')
++            else:
++                raise AssertionError('Expected builder failure missing')
++        if CASE=='protobuf_graph':
++            from modal_proto import api_pb2 as pb
++            from modal.types import FunctionInfo
++            function=pb.Function(module_name='controller_core',function_name='install_pins',
++                                 is_builder_function=True)
++            data=pb.FunctionData(module_name=function.module_name,
++                function_name=function.function_name,
++                ranked_functions=[pb.FunctionData.RankedFunction(rank=0,function=function)])
++            response=pb.FunctionCreateResponse(function_id='fu-'+'f'*22,
++                function=function,function_data=data)
++            parsed=FunctionInfo._from_function_proto(response.function_data)
++            assert parsed is not None
++            backend.record('protobuf_graph_constructed_and_parsed')
++        await endpoint.stop_app(endpoint.app.app_id)
++        assert backend.stopped and backend.created==backend.terminated==0
++        assert not local_guard.blocked
++        backend.record('reduced_return',case=CASE)
++    synchronizer.create_blocking(reduced)()
++    (evidence/'check-result.json').write_text(json.dumps({'assertions':'PASS_EXIT_PENDING','case':CASE}))
++    sys.exit(0)
++
+ now=time.time()
+ # Production120s create/2s cancellation/60s cleanup retained; child supervisor is separate.
+ plan=Plan('LOCAL_PROTOCOL_FIXTURE',name,'im-fixturebase',sha(b'base-protocol'),now+2400,now+4800,now+7200)
+ assert plan.cancel_grace==2 and plan.cleanup_timeout==60
+ manifest=json.loads((HERE/'source-manifest.json').read_text())
+ config={'plan':asdict(plan),'source_manifest_sha256':sha((HERE/'source-manifest.json').read_bytes()),
+-    'extra_files':[dict(r,path='docs/analysis/A040-outputs/production-lifecycle-boundary2/'+r['path'],reason='new local boundary source') for r in manifest['files']]}
++    'extra_files':[dict(r,path='docs/analysis/A040-outputs/local-exit-diagnosis1/'+r['path'],reason='new local boundary source') for r in manifest['files']]}
+ config_path=evidence/'protocol-config.json'; config_path.write_text(json.dumps(config))
+ contexts=[]
+ def factory(config,plan):
+diff --git "a/C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\production-lifecycle-boundary2/run_check.ps1" "b/C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\local-exit-diagnosis1/run_check.ps1"
+index 2b6b347..8d58063 100644
+--- "a/C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\production-lifecycle-boundary2/run_check.ps1"
++++ "b/C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\local-exit-diagnosis1/run_check.ps1"
+@@ -1,4 +1,4 @@
+-param([Parameter(Mandatory=$true)][string]$Attempt,[Parameter(Mandatory=$true)][ValidateSet('success','builder_fail','stall')][string]$Case)
++param([Parameter(Mandatory=$true)][string]$Attempt,[Parameter(Mandatory=$true)][ValidateSet('builder_fail','import_loop','guard_only','sdk_loop','definition','minimal_build','protobuf_graph')][string]$Case)
+ $ErrorActionPreference='Stop'
+ $d=$PSScriptRoot
+ $root=(Get-Location).Path
+@@ -7,9 +7,9 @@ $used=0.0
+ Get-ChildItem -LiteralPath $d -Filter '*-process.json' -File | ForEach-Object {
+     $used+=(Get-Content -LiteralPath $_.FullName -Raw -Encoding UTF8 | ConvertFrom-Json).supervisor_wall_seconds
+ }
+-$cap=if($Case -eq 'stall'){210}else{60}
+-$kill=if($Case -eq 'stall'){200}else{50}
+-if ((420-$used) -lt $cap) {throw 'Aggregate check budget cannot cover worst case'}
++$cap=30
++$kill=20
++if ((240-$used) -lt $cap) {throw 'Aggregate check budget cannot cover worst case'}
+ if (([DateTimeOffset]::Parse($entry.work_cutoff_utc)-[DateTimeOffset]::UtcNow).TotalSeconds -lt $cap) {throw 'Closeout reserve would be consumed'}
+ foreach($suffix in @('-stdout.txt','-stderr.txt','-process.json','-preflight.json')) {
+     if(Test-Path -LiteralPath (Join-Path $d ($Attempt+$suffix))){throw 'Attempt output collision'}
+@@ -17,7 +17,7 @@ foreach($suffix in @('-stdout.txt','-stderr.txt','-process.json','-preflight.jso
+ $manifest=Get-Content -LiteralPath (Join-Path $d 'source-manifest.json') -Raw -Encoding UTF8 | ConvertFrom-Json
+ foreach($row in $manifest.files){if((Get-FileHash -LiteralPath (Join-Path $d $row.path)).Hash.ToLower() -ne $row.sha256){throw ('Source freeze mismatch '+$row.path)}}
+ $inputs=@(foreach($name in @('source-manifest.json','boundary_transport.py','fixture_transport.py','local_guard.py','check_boundary.py','run_check.ps1')){@{path=$name;sha256=(Get-FileHash -LiteralPath (Join-Path $d $name)).Hash.ToLower()}})
+-@{attempt=$Attempt;case=$Case;start_utc=[DateTimeOffset]::UtcNow.ToString('o');used_seconds=$used;remaining_seconds=420-$used;cap_seconds=$cap;kill_seconds=$kill;inputs=$inputs} | ConvertTo-Json -Depth 8 | Set-Content -LiteralPath (Join-Path $d ($Attempt+'-preflight.json')) -Encoding UTF8
++@{attempt=$Attempt;case=$Case;start_utc=[DateTimeOffset]::UtcNow.ToString('o');used_seconds=$used;remaining_seconds=240-$used;cap_seconds=$cap;kill_seconds=$kill;inputs=$inputs} | ConvertTo-Json -Depth 8 | Set-Content -LiteralPath (Join-Path $d ($Attempt+'-preflight.json')) -Encoding UTF8
+ $watch=[Diagnostics.Stopwatch]::StartNew()
+ $p=Start-Process -FilePath (Join-Path $root 'tmp/a040-modal-full-path1/sdk-venv/Scripts/python.exe') -ArgumentList @('-I','-X','faulthandler',('"'+(Join-Path $d 'check_boundary.py')+'"'),$Attempt,$Case) -WindowStyle Hidden -PassThru -RedirectStandardOutput (Join-Path $d ($Attempt+'-stdout.txt')) -RedirectStandardError (Join-Path $d ($Attempt+'-stderr.txt'))
+ $ownedHandle=$p.Handle
+@@ -25,8 +25,8 @@ $p.ProcessorAffinity=[IntPtr]3
+ $childStart=$p.StartTime.ToUniversalTime().ToString('o')
+ $forced=$false
+ $actualPython=$null
+-$tracePath=Join-Path $d ('attempts/'+$Attempt+'/trace.jsonl')
+-while(-not $p.WaitForExit(500)){
++$tracePath=Join-Path $d ($Attempt+'-pid.json')
++while(-not $p.WaitForExit(50)){
+     if($null -eq $actualPython -and (Test-Path -LiteralPath $tracePath)){
+         $first=Get-Content -LiteralPath $tracePath -Encoding UTF8 -TotalCount 1 | ConvertFrom-Json
+         if($first.pid){
+diff --git "a/C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\production-lifecycle-boundary2/boundary_transport.py" "b/C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\local-exit-diagnosis1/boundary_transport.py"
+index 7512698..dc46c73 100644
+--- "a/C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\production-lifecycle-boundary2/boundary_transport.py"
++++ "b/C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\local-exit-diagnosis1/boundary_transport.py"
+@@ -75,17 +75,6 @@ class Backend(wire.Backend):
+         if name=='ImageGetOrCreate':
+             assert request.build_function_id==FUNCTION and self.function_definition is not None
+             assert self.source_files
+-            chains=[]
+-            for task in asyncio.all_tasks():
+-                current=task.get_coro(); names=[]
+-                while current is not None:
+-                    code=getattr(current,'cr_code',getattr(current,'gi_code',None))
+-                    if code is not None: names.append({'file':code.co_filename.replace('\\','/'),'function':code.co_name})
+-                    current=getattr(current,'cr_await',getattr(current,'gi_yieldfrom',None))
+-                if any(r['file'].endswith('/modal/_image.py') and r['function']=='build' for r in names): chains.append(names)
+-            assert chains,'Actual Image.build missing from live SDK await chain'
+-            assert any(any(r['file'].endswith('/sdk_endpoint.py') and r['function']=='_build' for r in c) for c in chains)
+-            self.record('sdk_image_build_chain',chains=chains)
+             self.record('image_build_requested',image_id=BUILT,base_images=[r.image_id for r in request.image.base_images])
+             return pb.ImageGetOrCreateResponse(image_id=BUILT)
+         if name=='SandboxCreate':

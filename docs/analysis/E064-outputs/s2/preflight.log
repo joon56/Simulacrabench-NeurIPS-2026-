@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\SimulacraBench\docs\analysis\E064-outputs\s2\release.py", line 807, in <module>
+    {'preflight': preflight, 'assembly': assembly, 'evaluate': evaluate, 'package': package, 'official': official_run}[args.mode]()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\USER\Desktop\SimulacraBench\docs\analysis\E064-outputs\s2\release.py", line 380, in preflight
+    s1_manifest = {r['path']: r['sha256'] for r in read(S1/'artifact-manifest.json')['files']}
+                                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+KeyError: 'files'

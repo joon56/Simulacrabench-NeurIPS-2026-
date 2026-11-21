@@ -1,0 +1,8 @@
+{"event": "operation", "time": 1791210752.099482, "stage": "connect", "timeout": 60}
+{"event": "operation", "time": 1791210752.1003635, "stage": "billing", "timeout": 1}
+{"event": "operation", "time": 1791210752.1008859, "stage": "base_stream", "timeout": 1}
+{"event": "operation", "time": 1791210752.1013732, "stage": "base_identity", "timeout": 1}
+{"event": "operation", "time": 1791210752.1049926, "stage": "app_create", "timeout": 1}
+{"event": "operation", "time": 1791210752.1162903, "stage": "build_billing", "timeout": 1}
+{"event": "operation", "time": 1791210752.1257231, "stage": "sandbox_create", "timeout": 120}
+{"event": "first_error", "time": 1791210752.1474338, "error": "InvalidError('fixed scheduling failure')"}

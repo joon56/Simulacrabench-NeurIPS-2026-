@@ -1,0 +1,18 @@
+{
+  "outcome": "LOCAL_FULL_PATH_FAIL",
+  "stage": "input_generation_unicef_layout",
+  "error": "KeyError: 'gated_value'",
+  "scientific_invocations": 0,
+  "reference": "NOT_RUN",
+  "candidate": "NOT_RUN",
+  "model_free": "PASS_MODEL_FREE_ONLY",
+  "fixture_generation_invocations": 1,
+  "generated_inputs": 0,
+  "generated_outputs": 0,
+  "roles_created": true,
+  "post_failure_scientific_source_edits": false,
+  "retry": false,
+  "s2_candidate": false,
+  "next_owner": "S0",
+  "evidence": "generation-failure.txt"
+}

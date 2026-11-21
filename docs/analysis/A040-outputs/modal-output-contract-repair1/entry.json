@@ -1,0 +1,30 @@
+{
+    "role":  "S1 local technical output contract repair",
+    "deadline_utc":  "2026-10-04T14:48:27Z",
+    "authority":  "Current user explicitly permits this output-contract repair only",
+    "allowed":  "Sources, named metadata only; new copies and small protocol regression",
+    "prior_active_seconds":  7553.1022106,
+    "prior_science_seconds":  1077.3504532,
+    "forbidden":  "Credentials/RPC/models/real arrays/payload112/remote/subagents/commit/push/S2/S3",
+    "read_evidence":  [
+                          "2e9352 AGENTS CLAUDE status; truncation recovered92bb4a/422653; unchanged tail retained from initial read",
+                          "422653 newest3 log entries",
+                          "b28ff2 full workflow, S0 review, HEAD/dirty/jobs/collisions/hashes",
+                          "6fb277 previous records and reference metadata; ef3103 producer/consumer/test source and frozen counts"
+                      ],
+    "caps":  {
+                 "regression_seconds":  120,
+                 "cycles":  3,
+                 "active_seconds":  2700
+             },
+    "workflow_sha256":  "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642",
+    "workflow_revision":  "2026-09-27-r4",
+    "named_python_uv_jobs":  [
+
+                             ],
+    "started_utc":  "2026-10-04T14:03:27Z",
+    "head":  "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+    "prior_science_processes":  4,
+    "path_collision":  false,
+    "read_receipt_recorded_utc":  "2026-10-04T14:06:20.8807296Z"
+}

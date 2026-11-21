@@ -1,0 +1,19 @@
+test_common_reduction (tests.test_round_metric_retrieval.MetricTests.test_common_reduction) ... FAIL
+
+======================================================================
+FAIL: test_common_reduction (tests.test_round_metric_retrieval.MetricTests.test_common_reduction)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\SimulacraBench\tests\test_round_metric_retrieval.py", line 34, in test_common_reduction
+    h = self.module()
+  File "C:\Users\USER\Desktop\SimulacraBench\tests\test_round_metric_retrieval.py", line 18, in module
+    self.assertIsNotNone(importlib.util.find_spec('src.models.round_metric_retrieval'),
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                         'E063 implementation is absent')
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: unexpectedly None : E063 implementation is absent
+
+----------------------------------------------------------------------
+Ran 1 test in 0.006s
+
+FAILED (failures=1)

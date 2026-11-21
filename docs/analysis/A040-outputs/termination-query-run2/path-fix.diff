@@ -1,0 +1,11 @@
+--- runtime.pre-path-fix.py
++++ runtime.py
+@@ -76,7 +76,7 @@
+     check_start(state, mutation_possible=possible, read_only=read_only,
+                 known_id=prior.get('sandbox_id') if prior else None)
+     paths = [folder / 'original/confirm_terminal.py', folder / 'runtime.py', folder / 'attempt.py']
+-    hashes = {str(p.relative_to(folder)): hashlib.sha256(p.read_bytes()).hexdigest() for p in paths}
++    hashes = {p.relative_to(folder).as_posix(): hashlib.sha256(p.read_bytes()).hexdigest() for p in paths}
+     assert hashes['original/confirm_terminal.py'] == EXPECTED
+     name = 'attempt-%02d' % (len(state['attempts']) + 1)
+     attempt_dir = folder / name

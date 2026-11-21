@@ -1,0 +1,66 @@
+{
+    "outcome":  "REMOTE_PREPARATION_FAIL",
+    "reason":  "BUILDER_MODULE_UNAVAILABLE",
+    "first_error_stop":  true,
+    "static_config_pass":  true,
+    "static_config_outer_seconds":  0.4316955,
+    "source_modules_unchanged":  12,
+    "source_edits":  0,
+    "retry_count":  0,
+    "launcher_invocations":  1,
+    "image_attempts":  1,
+    "workspace":  "joon56",
+    "environment_requested":  "main",
+    "base_current_result_identity_verified":  true,
+    "app_id":  "ap-zr5WBi06SAuzc6om241Y32",
+    "failed_image_id":  "im-LEPHgU6tpUAuu3H17E5rr5",
+    "error":  "ModuleNotFoundError: No module named \u0027controller_core\u0027",
+    "installer_body_reached":  false,
+    "dependency_image_completed":  false,
+    "app_terminal_state":  5,
+    "app_terminal_name":  "APP_STATE_STOPPED",
+    "tasks":  0,
+    "cleanup_errors":  [
+
+                       ],
+    "sandbox_created":  0,
+    "sandbox_terminal":  "NOT_APPLICABLE_NOT_CREATED",
+    "payload_content_reads":  0,
+    "payload_transfer":  0,
+    "gpu":  0,
+    "boundary":  0,
+    "reference":  0,
+    "candidate":  0,
+    "protected_data_reads":  0,
+    "successful_suite_reruns":  0,
+    "commit_push":  0,
+    "s2_s3":  0,
+    "h100_900s_effect_release":  "NOT_MEASURED",
+    "raw_worker_historical_field":  "5504.7268216 is historical only; current prior8319.0316208",
+    "shared_documents":  [
+                             {
+                                 "inserted_characters":  565,
+                                 "path":  "C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\status.md",
+                                 "insert_index":  321,
+                                 "prior_bytes_preserved":  true
+                             },
+                             {
+                                 "inserted_characters":  1746,
+                                 "path":  "C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\log.md",
+                                 "insert_index":  21,
+                                 "prior_bytes_preserved":  true
+                             }
+                         ],
+    "source_preservation_evidence":  "source-preservation.json",
+    "remote_evidence":  "run/result.json, termination-receipt.json, builder-stdout.txt, builder-stderr.txt",
+    "final_readonly_checks":  {
+                                  "config_sha256":  "b0b896643357932b8f8e60295a5b681886efa36494a5a7a95e924935b8aee590",
+                                  "source_manifest_sha256":  "0060ed98fc7e3c9ecc5625bd24f5c276971b026817dbb06c92fc2744dec83815",
+                                  "head":  "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+                                  "job_scope":  "Named local processes only; remote termination separately verified by existing receipt",
+                                  "named_python_pythonw_uv_jobs":  [
+
+                                                                   ],
+                                  "source12_match":  true
+                              }
+}

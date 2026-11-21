@@ -1,0 +1,266 @@
+{
+  "verdicts": [
+    "LOCAL_TECHNICAL_PASS_FOR_S0_PENDING_RESOURCE_RECEIPT"
+  ],
+  "scores": {
+    "R-unicef": {
+      "skill": 0.5006484230707156,
+      "log_score": -0.780008047004413,
+      "n_cells": 17856,
+      "uniform_reference": 1.5620418219183347
+    },
+    "H-unicef": {
+      "skill": 0.5006484230707156,
+      "log_score": -0.780008047004413,
+      "n_cells": 17856,
+      "uniform_reference": 1.5620418219183347
+    },
+    "R-world_bank": {
+      "skill": 0.45471730736298255,
+      "log_score": -1.1005776279104411,
+      "n_cells": 39520,
+      "uniform_reference": 2.0183615632250977
+    },
+    "H-world_bank": {
+      "skill": 0.45471730736298255,
+      "log_score": -1.1005776279104411,
+      "n_cells": 39520,
+      "uniform_reference": 2.0183615632250977
+    },
+    "R-unhcr": {
+      "skill": 0.5624627288576414,
+      "log_score": -0.5520636156180775,
+      "n_cells": 132273,
+      "uniform_reference": 1.2617522026791088
+    },
+    "H-unhcr": {
+      "skill": 0.5624803077254883,
+      "log_score": -0.552041435442851,
+      "n_cells": 132273,
+      "uniform_reference": 1.2617522026791088
+    }
+  },
+  "comparison": {
+    "unicef": {
+      "delta_skill_H_R": 0.0,
+      "delta_log_H_R": 0.0,
+      "max_raw_difference": 0.0,
+      "changed_vectors": 0,
+      "regression_pass": true
+    },
+    "world_bank": {
+      "delta_skill_H_R": 0.0,
+      "delta_log_H_R": 0.0,
+      "max_raw_difference": 0.0,
+      "changed_vectors": 0,
+      "regression_pass": true
+    },
+    "unhcr": {
+      "delta_skill_H_R": 1.757886784692353e-05,
+      "delta_log_H_R": 2.2180175226482746e-05,
+      "max_raw_difference": 0.13446233163832838,
+      "changed_vectors": 46405,
+      "regression_pass": true
+    }
+  },
+  "section_wave_descriptive": {
+    "2/wave1": {
+      "cells": 1656,
+      "delta_log_H_R": -0.00024474925152994964,
+      "changed_vectors": 320
+    },
+    "3/wave1": {
+      "cells": 16836,
+      "delta_log_H_R": 0.00017916977087965988,
+      "changed_vectors": 6987
+    },
+    "7a/wave1": {
+      "cells": 6624,
+      "delta_log_H_R": -2.5449950592113532e-05,
+      "changed_vectors": 1584
+    },
+    "7b/wave1": {
+      "cells": 10764,
+      "delta_log_H_R": 0.0004712867987951336,
+      "changed_vectors": 2568
+    },
+    "7c/wave1": {
+      "cells": 3036,
+      "delta_log_H_R": -0.0007582291535002029,
+      "changed_vectors": 748
+    },
+    "4/wave1": {
+      "cells": 3312,
+      "delta_log_H_R": -0.0005641168802215398,
+      "changed_vectors": 2601
+    },
+    "5/wave1": {
+      "cells": 2760,
+      "delta_log_H_R": 0.00015284014754416315,
+      "changed_vectors": 1550
+    },
+    "6/wave1": {
+      "cells": 13800,
+      "delta_log_H_R": 0.0002626542028320663,
+      "changed_vectors": 2904
+    },
+    "2/wave2": {
+      "cells": 2070,
+      "delta_log_H_R": 4.2729966071231676e-05,
+      "changed_vectors": 447
+    },
+    "3/wave2": {
+      "cells": 21045,
+      "delta_log_H_R": 1.1335951546661954e-05,
+      "changed_vectors": 9062
+    },
+    "7a/wave2": {
+      "cells": 8280,
+      "delta_log_H_R": -6.488534702037896e-05,
+      "changed_vectors": 2424
+    },
+    "7b/wave2": {
+      "cells": 13455,
+      "delta_log_H_R": -0.00021264036142750898,
+      "changed_vectors": 5121
+    },
+    "7c/wave2": {
+      "cells": 3795,
+      "delta_log_H_R": 0.0005585372228049528,
+      "changed_vectors": 1133
+    },
+    "4/wave2": {
+      "cells": 4140,
+      "delta_log_H_R": -0.0008824432392193483,
+      "changed_vectors": 3415
+    },
+    "5/wave2": {
+      "cells": 3450,
+      "delta_log_H_R": 0.00017416235138591662,
+      "changed_vectors": 1934
+    },
+    "6/wave2": {
+      "cells": 17250,
+      "delta_log_H_R": -2.63026700841714e-05,
+      "changed_vectors": 3607
+    }
+  },
+  "H_support": {
+    "eligible": true,
+    "visible": 8279,
+    "held": 621,
+    "wave_support": {
+      "fit": [
+        465,
+        735
+      ],
+      "select": [
+        323,
+        477
+      ]
+    },
+    "fit_donor_width": 32,
+    "reason": "supported",
+    "sections": [
+      {
+        "selected": true,
+        "gain_log": 0.08397332244797404,
+        "standard_error": 0.00735726574987738,
+        "old_share": 0.5,
+        "new_share": 0.8320154703252908,
+        "iterations": 20
+      },
+      {
+        "selected": true,
+        "gain_log": 0.05205419041602496,
+        "standard_error": 0.002417053743723343,
+        "old_share": 0.5,
+        "new_share": 0.8075509035162558,
+        "iterations": 17
+      },
+      {
+        "selected": false,
+        "gain_log": -0.0004676074592761138,
+        "standard_error": 0.005249504212606395,
+        "old_share": 0.0,
+        "new_share": 0.5164627586352406,
+        "iterations": 29
+      },
+      {
+        "selected": true,
+        "gain_log": 0.04048450798793469,
+        "standard_error": 0.00859823965861751,
+        "old_share": 0.5,
+        "new_share": 0.7720913586937949,
+        "iterations": 36
+      },
+      {
+        "selected": true,
+        "gain_log": 0.07142862607019518,
+        "standard_error": 0.010554392815198488,
+        "old_share": 0.5,
+        "new_share": 0.8353426557089092,
+        "iterations": 22
+      },
+      {
+        "selected": true,
+        "gain_log": 0.08651656858406405,
+        "standard_error": 0.007816278891986623,
+        "old_share": 0.5,
+        "new_share": 0.7965386403270661,
+        "iterations": 22
+      },
+      {
+        "selected": true,
+        "gain_log": 0.11538562920506129,
+        "standard_error": 0.006156200332339622,
+        "old_share": 0.5,
+        "new_share": 0.8187798384128337,
+        "iterations": 17
+      },
+      {
+        "selected": true,
+        "gain_log": 0.04931564498170846,
+        "standard_error": 0.0036098527380675543,
+        "old_share": 0.5,
+        "new_share": 0.8151366559654084,
+        "iterations": 17
+      }
+    ],
+    "active": [
+      0,
+      1,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "fit_rows": 1200,
+    "selection_rows": 800,
+    "reference_rows": 5479,
+    "replay_rows": 800
+  },
+  "H_active": [
+    0,
+    1,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "R_active": [
+    0,
+    1,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "lambda_items_changed": 37,
+  "control_parity": true,
+  "regression_pass": true,
+  "channel": "Already exposed synthetic TRAIN/DEV; no new oracle, independent audit or actual UNHCR efficacy"
+}

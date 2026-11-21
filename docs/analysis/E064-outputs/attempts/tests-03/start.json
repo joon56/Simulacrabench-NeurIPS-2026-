@@ -1,0 +1,10 @@
+{
+  "utc": "2026-10-11T13:51:06.512030+00:00",
+  "mode": "tests",
+  "attempt": 3,
+  "only": "tests.test_conditional_gradient.ObserverTests",
+  "freeze": "freeze-01.json",
+  "prior_seconds": 72.24539309999749,
+  "limit_seconds": 60.0,
+  "registration_sha256": "f1113c07ac9127938fc8b02486830e0a23aa1add32ead4e1ce2269811986a8c7"
+}

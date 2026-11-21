@@ -1,0 +1,28 @@
+{
+  "vectors": 39520,
+  "max_raw_sum_error": 2.8615613700821996e-07,
+  "comparisons": {
+    "H": {
+      "max_abs": 0.0,
+      "changed_vectors": 0
+    },
+    "E041": {
+      "max_abs": 0.0,
+      "changed_vectors": 0
+    },
+    "E025": {
+      "max_abs": 0.0,
+      "changed_vectors": 0
+    }
+  },
+  "flat_sha256": "ed59718bf900604bb69af3833bd5bcb12aab555924f32ae1009b4bcf90eedc2e",
+  "status": "PASS",
+  "skill": 0.45471730736298255,
+  "delta_E025": 0.0,
+  "delta_E041": 0.0,
+  "release_pass": true,
+  "cli_startup_to_exit_seconds": 168.28066709999985,
+  "scorer_seconds": 166.5829553604126,
+  "official_log": "docs\\analysis\\E063-outputs\\s2\\official-world_bank.json",
+  "predictions_sha256": "0e85bb043eb280d6722b1c247c6b2b716f27bbf6d4d9cc23f160ac8ae08ee690"
+}

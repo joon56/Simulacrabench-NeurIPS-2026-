@@ -1,0 +1,120 @@
+{
+    "json_records_parsed":  11,
+    "scope":  "This new failed-query record only",
+    "files":  [
+                  {
+                      "path":  "closeout.md",
+                      "sha256":  "1f45a40c1a63be013ef00ce63cd55518936fa30129a85a3668e2bbc25a78f19b",
+                      "bytes":  4173
+                  },
+                  {
+                      "path":  "confirm_terminal.py",
+                      "sha256":  "28019d3b2543e1f53d667b63af302b806e49b70e19bbe19aa25b2aaa735abd57",
+                      "bytes":  7694
+                  },
+                  {
+                      "path":  "cost-time-ledger.json",
+                      "sha256":  "3a6e913bbe2d1d98894327852a3935505f35f0e16e7a4dd1198f7e943570b9ba",
+                      "bytes":  1900
+                  },
+                  {
+                      "path":  "dirty-closeout.txt",
+                      "sha256":  "955a127ca4f204a6bdbefd565c3c5296e3d4e09078c8d579e49450941d394a59",
+                      "bytes":  3126
+                  },
+                  {
+                      "path":  "dirty-entry.txt",
+                      "sha256":  "955a127ca4f204a6bdbefd565c3c5296e3d4e09078c8d579e49450941d394a59",
+                      "bytes":  3126
+                  },
+                  {
+                      "path":  "entry.json",
+                      "sha256":  "5f84d72c4a99abd411abcea6123e272d3356279fdc8837118e88ac886bd9679c",
+                      "bytes":  1994
+                  },
+                  {
+                      "path":  "exposure-ledger.md",
+                      "sha256":  "a6d9a03d80c232e6f4ec7b88852984afee2cfa47de1ee9abc22251c15e89807c",
+                      "bytes":  1345
+                  },
+                  {
+                      "path":  "local-process-closeout.json",
+                      "sha256":  "6e09850445a2931025eac1a05aeabe2e3eb494c7c429d7c723e05dd61d7310b2",
+                      "bytes":  240
+                  },
+                  {
+                      "path":  "local-regression.json",
+                      "sha256":  "81d094db04aa2c69af5589277360a17099e009642ea0131b3288ab62a185d01f",
+                      "bytes":  427
+                  },
+                  {
+                      "path":  "placement.diff",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "preservation.json",
+                      "sha256":  "2e7716892cdaccc34caf6f3d38364c86b148ff828c44757cbf1de0c131f9521c",
+                      "bytes":  5552
+                  },
+                  {
+                      "path":  "remote-exit.json",
+                      "sha256":  "93d281f804f273d42f318f809a1556d996f214d6965835d7515e6c2b392089a7",
+                      "bytes":  85
+                  },
+                  {
+                      "path":  "remote-process.json",
+                      "sha256":  "58e65531bbb1f2ad5baac737c5b5eee282c939f8bba99b5f4fa2ba4215c4cf4b",
+                      "bytes":  166
+                  },
+                  {
+                      "path":  "remote-window.json",
+                      "sha256":  "9d6fff9650c70b0365eaadcb4ee8ebd4ee7c361a1112200aa512559630f04c9c",
+                      "bytes":  651
+                  },
+                  {
+                      "path":  "s0-handoff.ko.md",
+                      "sha256":  "b68aed6e40f12b013849b238eceb2cb0b56aa32483670f9158d3f455c8da02af",
+                      "bytes":  2226
+                  },
+                  {
+                      "path":  "source-manifest.json",
+                      "sha256":  "cd57ca189a98839e7a1396f70896d79db39ac9c6cbb38e9cfcf044f4a6ed3189",
+                      "bytes":  5961
+                  },
+                  {
+                      "path":  "source.diff",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "terminal-stderr.txt",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "terminal-stdout.txt",
+                      "sha256":  "b01c93c1864dbf49f320527833247b3f5321c67cab1a74e260553346026e35d8",
+                      "bytes":  213
+                  },
+                  {
+                      "path":  "termination-billing-receipt.json",
+                      "sha256":  "5be484f47ea5c1c086127dcbb734ef02c5233e4bac90f1de42437a8aa4a83301",
+                      "bytes":  1034
+                  },
+                  {
+                      "path":  "user-authority.ko.md",
+                      "sha256":  "18610be7f8163629a9994890ebcb50394c6d6e7f8031de3fa1abbf8a91833a9e",
+                      "bytes":  8880
+                  },
+                  {
+                      "path":  "verification.json",
+                      "sha256":  "3761c022cec62322c0fdfb41440852afd9ee24d015a2ccc2ca04b118d17c954a",
+                      "bytes":  2088
+                  }
+              ],
+    "qualified_production_source":  false,
+    "self_excluded":  true,
+    "created_utc":  "2026-10-05T11:15:33.2080044+00:00",
+    "local_regression":  "NOT_RUN"
+}

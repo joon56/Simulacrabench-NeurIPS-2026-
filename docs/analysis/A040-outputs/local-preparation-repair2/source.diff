@@ -1,0 +1,5 @@
+--- original/sdk_endpoint.py
++++ local-preparation-repair2/sdk_endpoint.py
+@@ -50,1 +50,1 @@
+-            args=(pins, deadline), cpu=(1, 1), memory=(8192, 8192), timeout=600, include_source=False)
++            args=(pins, deadline), cpu=(1, 1), memory=(8192, 8192), timeout=600, include_source=True)

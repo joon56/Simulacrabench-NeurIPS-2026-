@@ -1,0 +1,9 @@
+{
+  "parent_inclusive_seconds": 5.271213200001512,
+  "peak_tree_bytes": {
+    "rss": 434130944,
+    "commitment": 471924736
+  },
+  "reason": "COMPLETE",
+  "exit_code": 0
+}

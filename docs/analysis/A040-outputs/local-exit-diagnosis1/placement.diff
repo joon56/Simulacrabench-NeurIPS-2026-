@@ -1,0 +1,26 @@
+diff --git "a/C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\production-lifecycle-boundary2/contract.py" "b/C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\local-exit-diagnosis1/contract.py"
+index 4c4475e..6cc8537 100644
+--- "a/C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\production-lifecycle-boundary2/contract.py"
++++ "b/C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\local-exit-diagnosis1/contract.py"
+@@ -9,7 +9,7 @@ import time
+ MODULES = ("contract.py", "protocol.py", "controller_core.py", "live_binding.py",
+            "sdk_endpoint.py", "payload.py", "sandbox_stage.py", "linux_boundary.py",
+            "linux_watchdog.py", "linux_runner.py", "live_worker.py", "live_launcher.py", "cleanup_query.py")
+-REMOTE_DIR = "/work/docs/analysis/A040-outputs/production-lifecycle-boundary2"
++REMOTE_DIR = "/work/docs/analysis/A040-outputs/local-exit-diagnosis1"
+ CAP_BYTES = 15258 * 1024 * 1024
+ GPU_PLAN = 2.965933453125
+ 
+diff --git "a/C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\production-lifecycle-boundary2/live_launcher.py" "b/C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\local-exit-diagnosis1/live_launcher.py"
+index e013263..ae111e6 100644
+--- "a/C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\production-lifecycle-boundary2/live_launcher.py"
++++ "b/C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\local-exit-diagnosis1/live_launcher.py"
+@@ -23,7 +23,7 @@ def load_contract(path, allow_fixture=False):
+     if sha((HERE / "source-manifest.json").read_bytes()) != config["source_manifest_sha256"]:
+         raise ValueError("External source-freeze identity mismatch")
+     verify_sources(HERE, manifest)
+-    prefix = "docs/analysis/A040-outputs/production-lifecycle-boundary2/"
++    prefix = "docs/analysis/A040-outputs/local-exit-diagnosis1/"
+     additions = {row["path"]: row for row in config["extra_files"]}
+     if len(additions) != len(config["extra_files"]) or set(additions) != {prefix + name for name in MODULES}:
+         raise ValueError("Complete transferred port/source closure required")

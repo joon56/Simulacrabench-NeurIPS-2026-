@@ -1,0 +1,16 @@
+{
+  "mode": "isolate-empty",
+  "cwd": "C:\\Users\\USER\\Desktop\\SimulacraBench\\tmp\\a040-local-preparation-repair2\\empty",
+  "sys_path": [
+    "C:\\Users\\USER\\Desktop\\SimulacraBench\\tmp\\a040-local-preparation-repair2\\empty",
+    "C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python313\\python313.zip",
+    "C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python313\\DLLs",
+    "C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python313\\Lib",
+    "C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python313"
+  ],
+  "installer_calls": 0,
+  "imported": false,
+  "missing": "controller_core",
+  "outcome": "PASS",
+  "elapsed_seconds": 0.0012186999992991332
+}

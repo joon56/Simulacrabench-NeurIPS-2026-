@@ -1,0 +1,193 @@
+{
+  "pins": [
+    {
+      "name": "certifi",
+      "version": "2026.7.22",
+      "actual": "2026.7.22"
+    },
+    {
+      "name": "charset-normalizer",
+      "version": "3.5.2",
+      "actual": "3.5.2"
+    },
+    {
+      "name": "cloudpickle",
+      "version": "3.1.2",
+      "actual": "3.1.2"
+    },
+    {
+      "name": "colorama",
+      "version": "0.4.6",
+      "actual": "0.4.6"
+    },
+    {
+      "name": "einops",
+      "version": "0.8.1",
+      "actual": "0.8.1"
+    },
+    {
+      "name": "filelock",
+      "version": "3.32.3",
+      "actual": "3.32.3"
+    },
+    {
+      "name": "fsspec",
+      "version": "2026.7.0",
+      "actual": "2026.7.0"
+    },
+    {
+      "name": "huggingface-hub",
+      "version": "0.34.4",
+      "actual": "0.34.4"
+    },
+    {
+      "name": "idna",
+      "version": "3.20",
+      "actual": "3.20"
+    },
+    {
+      "name": "Jinja2",
+      "version": "3.1.6",
+      "actual": "3.1.6"
+    },
+    {
+      "name": "joblib",
+      "version": "1.6.0",
+      "actual": "1.6.0"
+    },
+    {
+      "name": "MarkupSafe",
+      "version": "3.0.3",
+      "actual": "3.0.3"
+    },
+    {
+      "name": "mpmath",
+      "version": "1.3.0",
+      "actual": "1.3.0"
+    },
+    {
+      "name": "networkx",
+      "version": "3.6.1",
+      "actual": "3.6.1"
+    },
+    {
+      "name": "numpy",
+      "version": "2.2.6",
+      "actual": "2.2.6"
+    },
+    {
+      "name": "packaging",
+      "version": "26.3",
+      "actual": "26.3"
+    },
+    {
+      "name": "pandas",
+      "version": "2.2.3",
+      "actual": "2.2.3"
+    },
+    {
+      "name": "pip",
+      "version": "26.1.2",
+      "actual": "26.1.2"
+    },
+    {
+      "name": "psutil",
+      "version": "7.0.0",
+      "actual": "7.0.0"
+    },
+    {
+      "name": "python-dateutil",
+      "version": "2.9.0.post0",
+      "actual": "2.9.0.post0"
+    },
+    {
+      "name": "pytz",
+      "version": "2026.4",
+      "actual": "2026.4"
+    },
+    {
+      "name": "PyYAML",
+      "version": "6.0.3",
+      "actual": "6.0.3"
+    },
+    {
+      "name": "requests",
+      "version": "2.34.2",
+      "actual": "2.34.2"
+    },
+    {
+      "name": "scikit-learn",
+      "version": "1.6.1",
+      "actual": "1.6.1"
+    },
+    {
+      "name": "scipy",
+      "version": "1.15.3",
+      "actual": "1.15.3"
+    },
+    {
+      "name": "setuptools",
+      "version": "78.1.0",
+      "actual": "78.1.0"
+    },
+    {
+      "name": "six",
+      "version": "1.17.0",
+      "actual": "1.17.0"
+    },
+    {
+      "name": "sympy",
+      "version": "1.14.0",
+      "actual": "1.14.0"
+    },
+    {
+      "name": "threadpoolctl",
+      "version": "3.7.0",
+      "actual": "3.7.0"
+    },
+    {
+      "name": "torch",
+      "version": "2.8.0+cu126",
+      "actual": "2.8.0+cu126"
+    },
+    {
+      "name": "tqdm",
+      "version": "4.67.1",
+      "actual": "4.67.1"
+    },
+    {
+      "name": "typing_extensions",
+      "version": "4.16.0",
+      "actual": "4.16.0"
+    },
+    {
+      "name": "tzdata",
+      "version": "2026.4",
+      "actual": "2026.4"
+    },
+    {
+      "name": "urllib3",
+      "version": "2.8.0",
+      "actual": "2.8.0"
+    }
+  ],
+  "PyYAML": "6.0.3",
+  "unchanged": [
+    "adapter.py",
+    "orchestration.py",
+    "observer.py",
+    "telemetry.py",
+    "tests_model_free.py",
+    "requirements.lock.txt"
+  ],
+  "original_assertion_counts": {
+    "adapter.py": 0,
+    "generate_fixture.py": 3,
+    "observer.py": 0,
+    "orchestration.py": 0,
+    "runner.py": 0,
+    "telemetry.py": 0,
+    "tests_model_free.py": 25,
+    "watchdog.py": 0
+  }
+}

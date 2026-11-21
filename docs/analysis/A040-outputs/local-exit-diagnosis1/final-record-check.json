@@ -1,0 +1,15 @@
+{
+    "limitation":  "Current diagnostic sources differ from historical attempts; see per-attempt preflight hashes and diff. Gross wall breach retained.",
+    "named_python_jobs":  [
+
+                          ],
+    "current_source_manifest_matches":  true,
+    "guard_bytes_unchanged":  true,
+    "new_regression_processes":  0,
+    "recorded_utc":  "2026-10-06T15:03:04.5275252+00:00",
+    "prior_document_writer_stop":  "Git ignore-file warning under ErrorAction Stop; no regression launched; metadata writing resumed",
+    "dirty_count":  89,
+    "head":  "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+    "administrative_only":  true,
+    "git_status_correction":  "Prior NUL excludes path was rejected by Git; prior dirty0 was invalid. Current command-local nonexistent excludes path query succeeded; no global config changed."
+}

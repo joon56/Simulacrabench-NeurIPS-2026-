@@ -1,0 +1,15 @@
+﻿{
+    "status":  "NO_RESOURCE_CREATED",
+    "remote_ids":  [
+
+                   ],
+    "apps_created":  0,
+    "image_build_requests":  0,
+    "sandbox_create_requests":  0,
+    "reference_exec_requests":  0,
+    "candidate_exec_requests":  0,
+    "termination_requests":  0,
+    "account_metadata_RPCs_occurred":  true,
+    "account_wide_workloads_queried":  false,
+    "residual_task_resource_cost_estimate":  0
+}

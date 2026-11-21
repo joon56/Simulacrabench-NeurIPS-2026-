@@ -1,0 +1,34 @@
+{
+  "scope": "LOCAL_PROTOCOL_FIXTURE",
+  "outcome": "STOP_FIRST_ERROR",
+  "app_name": "a040-local-cycle2-hydrate",
+  "create_intent": true,
+  "build_intent": true,
+  "sandbox_intent": true,
+  "app_id": "ap-bbbbbbbbbbbbbbbbbbbbbb",
+  "sandbox_id": "sb-aaaaaaaaaaaaaaaaaaaaaa",
+  "image_id": "im-dddddddddddddddddddddd",
+  "actual_remote_facts": "UNVERIFIED",
+  "workspace": "joon56",
+  "base": {
+    "status": 1,
+    "result_sha256": "05bda966fe2fe8e6a11e34e23fb41926197bd16c84277350bad26928e43e1746"
+  },
+  "base_metadata_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "payload": {
+    "files": 1,
+    "bytes": 22,
+    "verified_at_endpoint": true
+  },
+  "sandbox_name": "a040-local-cycle2-hydrate-gpu",
+  "sandbox_resource_possible": true,
+  "sandbox_reservation_usd": 2.965933453125,
+  "gpu_actual_seconds": null,
+  "sandbox_create_rpc_intent": true,
+  "error": "ExecutionError(\"Can not hydrate <class 'modal.sandbox._Sandbox'>:  it has type prefix sb but the object_id starts with bad. This usually means the object name was previously used for a different type. Rename the object/app or stop the previous deployment and redeploy.\")",
+  "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\production-lifecycle-repair1\\live_worker.py\", line 206, in run\n    await execute(context)\n  File \"C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\production-lifecycle-repair1\\sandbox_stage.py\", line 44, in execute\n    state[\"sandbox_id\"] = await context.op(endpoint.sandbox_create(plan.app_name + \"-gpu\"), \"sandbox_create\", 120)\n                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\production-lifecycle-repair1\\live_worker.py\", line 75, in op\n    return await bounded(awaitable, timeout, self.plan.cancel_grace)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\production-lifecycle-repair1\\controller_core.py\", line 9, in bounded\n    return task.result()\n           ~~~~~~~~~~~^^\n  File \"C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\production-lifecycle-repair1\\sdk_endpoint.py\", line 72, in sandbox_create\n    self.sandbox = await self.sandbox_factory(\"sleep\", \"2400\", app=self.app,\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    ...<5 lines>...\n            \"TRANSFORMERS_OFFLINE\": \"1\"}, client=self.client)\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\USER\\Desktop\\SimulacraBench\\tmp\\a040-modal-full-path1\\sdk-venv\\Lib\\site-packages\\modal\\sandbox.py\", line 766, in create\n    return await _Sandbox._create(\n           ^^^^^^^^^^^^^^^^^^^^^^^\n    ...<36 lines>...\n    )\n    ^\n  File \"C:\\Users\\USER\\Desktop\\SimulacraBench\\tmp\\a040-modal-full-path1\\sdk-venv\\Lib\\site-packages\\modal\\sandbox.py\", line 947, in _create\n    await resolver.load(obj, load_context)\n  File \"C:\\Users\\USER\\Desktop\\SimulacraBench\\tmp\\a040-modal-full-path1\\sdk-venv\\Lib\\site-packages\\modal\\sandbox.py\", line 602, in _load\n    self._hydrate(sandbox_id, load_context.client, create_resp.metadata)\n    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\USER\\Desktop\\SimulacraBench\\tmp\\a040-modal-full-path1\\sdk-venv\\Lib\\site-packages\\modal\\_object.py\", line 171, in _hydrate\n    raise ExecutionError(\n    ...<5 lines>...\n    )\nmodal.exception.ExecutionError: Can not hydrate <class 'modal.sandbox._Sandbox'>:  it has type prefix sb but the object_id starts with bad. This usually means the object name was previously used for a different type. Rename the object/app or stop the previous deployment and redeploy.\n",
+  "sandbox_terminate_rpc_intent": true,
+  "terminate_sandbox_id": "sb-aaaaaaaaaaaaaaaaaaaaaa",
+  "termination": "TERMINAL_TASK0_CONFIRMED",
+  "elapsed_seconds": 0.4743820000003325
+}

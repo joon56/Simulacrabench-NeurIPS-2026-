@@ -1,0 +1,22 @@
+{
+  "scope": "LOCAL_PROTOCOL_FIXTURE",
+  "outcome": "STOP_FIRST_ERROR",
+  "app_name": "a040-boundary2-builder-loop-close3",
+  "create_intent": true,
+  "build_intent": true,
+  "sandbox_intent": false,
+  "app_id": "ap-bbbbbbbbbbbbbbbbbbbbbb",
+  "sandbox_id": null,
+  "image_id": null,
+  "actual_remote_facts": "UNVERIFIED",
+  "workspace": "joon56",
+  "base": {
+    "status": 1,
+    "result_sha256": "05bda966fe2fe8e6a11e34e23fb41926197bd16c84277350bad26928e43e1746"
+  },
+  "base_metadata_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "error": "ImageBuildError('Image build for im-dddddddddddddddddddddd failed with the exception:\\nfixed protocol builder failure')",
+  "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\production-lifecycle-boundary2\\live_worker.py\", line 207, in run\n    await build(context)\n  File \"C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\production-lifecycle-boundary2\\live_worker.py\", line 102, in build\n    context.state[\"image_id\"] = await task\n                                ^^^^^^^^^^\n  File \"C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\production-lifecycle-boundary2\\sdk_endpoint.py\", line 68, in build\n    await self.image_builder(self.image, self.app)\n  File \"C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\production-lifecycle-boundary2\\sdk_endpoint.py\", line 61, in _build\n    return await image.build(app)\n           ^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\USER\\Desktop\\SimulacraBench\\tmp\\a040-modal-full-path1\\sdk-venv\\Lib\\site-packages\\modal\\_image.py\", line 1104, in build\n    await resolver.load(self, load_context)\n  File \"C:\\Users\\USER\\Desktop\\SimulacraBench\\tmp\\a040-modal-full-path1\\sdk-venv\\Lib\\site-packages\\modal\\_image.py\", line 787, in _load\n    raise ImageBuildError(\n        f\"Image build for {image_id} failed with the exception:\\n{result.exception}\", image_id\n    )\nmodal.exception.ImageBuildError: Image build for im-dddddddddddddddddddddd failed with the exception:\nfixed protocol builder failure\n",
+  "termination": "TERMINAL_TASK0_CONFIRMED",
+  "elapsed_seconds": 0.18069699999614386
+}

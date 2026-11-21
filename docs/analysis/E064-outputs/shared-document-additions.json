@@ -1,0 +1,20 @@
+﻿[
+    {
+        "insert_character_position":  321,
+        "byte_preserved":  true,
+        "removed_addition_restores_hash":  "d9a448b9cc64879535ff889f2f451a3b45047555bf9595079a132e47adc8ff33",
+        "path":  "docs/status.md",
+        "after":  "6a92b32866d871b1d6cd662eeb2f26d0d59bbfde7967342e1bb4d952b6bc4d27",
+        "before":  "d9a448b9cc64879535ff889f2f451a3b45047555bf9595079a132e47adc8ff33",
+        "insert_characters":  1078
+    },
+    {
+        "insert_character_position":  21,
+        "byte_preserved":  true,
+        "removed_addition_restores_hash":  "fa3cafd09dbdc63d1bb7a630192167009142923d417a08566bab52a5f240cb77",
+        "path":  "docs/log.md",
+        "after":  "eb0cabd26873f213b6d03f86a350983d8e7bf828082ffe3043d4580a06a467e1",
+        "before":  "fa3cafd09dbdc63d1bb7a630192167009142923d417a08566bab52a5f240cb77",
+        "insert_characters":  2166
+    }
+]

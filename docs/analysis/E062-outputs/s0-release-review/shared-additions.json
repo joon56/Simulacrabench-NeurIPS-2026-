@@ -1,0 +1,14 @@
+[
+  {
+    "path": "docs/status.md",
+    "before_sha256": "935f6ce440cd0f584cb4bf84ae080179764cf5320db0e3bf27ca664752355cd0",
+    "anchor": "## Current position\r\n\r\n",
+    "insertion": "- **2026-10-08 E062 S0: RECOMMEND_ONE_USER_DEV_SUBMISSION.**\r\n  Accepted S2 local release evidence; recommend one user-controlled Development\r\n  submission of the unchanged 16879-byte E062 ZIP. No new model/package run.\r\n  Whole WB synthetic +.0002723772 remains weak exploratory evidence; target16\r\n  -.0007987550 and Not answered -.0044084735 weaken the mechanism claim.\r\n  Existing hosted arms unchanged; after supplied result, same S2 records only,\r\n  then returns to S0. No actual upload/account/slot/remote-byte confirmation.\r\n  [S0 decision](analysis/E062-outputs/s0-release-review/decision.md),\r\n  [verification](analysis/E062-outputs/s0-release-review/verification.json).\r\n  E041 incumbent/E025 fallback; E057/E060/E061/E062 parked. All STOP/HOLD,\r\n  exposure/protected roles/A_half/A018/S3 unchanged. No commit/push/remote/TEST.\r\n\r\n"
+  },
+  {
+    "path": "docs/log.md",
+    "before_sha256": "6e6ef47f4d9fd7a2757dfe8cb3d96e6b06aab6728eb78012e5d1ced917eb0a92",
+    "anchor": "# Experiment log\r\n\r\n",
+    "insertion": "## 2026-10-08 - E062 S0 recommends one fixed exploratory DEV submission\r\n\r\n- Reviewed current ordered entry/workflow r5 and S2 closeout/verification/manifest/\r\n  preservation/resources/disclosure/scorecard. HEADa43f4379, dirty101 preserved;\r\n  named local Python/pythonw/uv jobs0 at entry. S2 read receipt is session-reported.\r\n- Accepted RELEASE_QUALIFIED_FOR_USER_REVIEW on existing records, with no\r\n  successful test/model/package rerun. Allowed32 document/source hashes match;\r\n  original SCORES prefix unchanged. ZIP identity inherited, not rehashed by S0.\r\n- Decision RECOMMEND_ONE_USER_DEV_SUBMISSION. Whole WB +.0002723772 does not\r\n  negate target16 -.0007987550 and Not answered -.0044084735; low efficacy\r\n  confidence, no Grand forecast. One fixed whole-policy DEV observation offers\r\n  new operational evidence without further fit/infrastructure/tuning.\r\n- User decides actual same-ZIP upload/slot. Result-only S2 recording then S0\r\n  review; preregistered favorable/unresolved/adverse/mixed/technical/provenance\r\n  arms unchanged. Actual upload/hosted outcome/remote bytes remain unknown.\r\n- Original source/S1/S2/SCORES/registration/manifests/snapshots/tree preserved.\r\n  New S0 records and shared insertions only; no data/cache/ZIP access, remote,\r\n  models/tests/score, commit/push/subagents/S3/TEST. E041/E025, parked,\r\n  STOP/HOLD and full exposure/protected-role boundaries unchanged.\r\n- [Decision](analysis/E062-outputs/s0-release-review/decision.md);\r\n  [verification](analysis/E062-outputs/s0-release-review/verification.json).\r\n\r\n"
+  }
+]

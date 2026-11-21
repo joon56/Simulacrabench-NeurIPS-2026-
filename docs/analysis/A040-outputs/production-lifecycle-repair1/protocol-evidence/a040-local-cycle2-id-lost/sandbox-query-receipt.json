@@ -1,0 +1,59 @@
+{
+  "app_id": "ap-bbbbbbbbbbbbbbbbbbbbbb",
+  "app_name": "a040-local-cycle2-id-lost",
+  "sandbox_name": "a040-local-cycle2-id-lost-gpu",
+  "sandbox_id": null,
+  "terminal": "UNCONFIRMED",
+  "calls": [
+    {
+      "method": "Client.from_env",
+      "started_utc": "2026-10-05T14:29:07.920871+00:00",
+      "cap_seconds": 1.3333229333366035,
+      "outcome": "RETURNED"
+    },
+    {
+      "method": "WorkspaceNameLookup",
+      "started_utc": "2026-10-05T14:29:07.935163+00:00",
+      "cap_seconds": 1.3190306333417539,
+      "outcome": "RETURNED"
+    },
+    {
+      "method": "AppGetInfo",
+      "started_utc": "2026-10-05T14:29:07.948185+00:00",
+      "cap_seconds": 1.306006733342656,
+      "outcome": "RETURNED"
+    },
+    {
+      "method": "AuthTokenManager.get_token",
+      "started_utc": "2026-10-05T14:29:07.960408+00:00",
+      "cap_seconds": 1.2937825333428918,
+      "outcome": "RETURNED"
+    },
+    {
+      "method": "SandboxListV2",
+      "started_utc": "2026-10-05T14:29:07.976449+00:00",
+      "cap_seconds": 1.277738833341573,
+      "outcome": "RETURNED"
+    }
+  ],
+  "errors": [
+    {
+      "type": "ValueError",
+      "message": "Exact-name listing is empty or ambiguous",
+      "stage": "SandboxListV2"
+    }
+  ],
+  "terminate_requests": 0,
+  "new_resources": 0,
+  "remote_commands": 0,
+  "remote_file_operations": 0,
+  "observed_utc": "2026-10-05T14:29:07.989877+00:00",
+  "observed_kst": "2026-10-05T23:29:07.989888+09:00",
+  "elapsed_seconds": 0.06903529999544844,
+  "identity": {
+    "workspace": "joon56",
+    "environment": "main",
+    "app_id": "ap-bbbbbbbbbbbbbbbbbbbbbb",
+    "app_name": "a040-local-cycle2-id-lost"
+  }
+}

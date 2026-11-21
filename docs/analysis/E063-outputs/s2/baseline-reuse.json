@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "frozen_before_candidate_calls": true,
+  "R_clean_E041_exact_vectors": 189649,
+  "baseline_evidence": {
+    "E025": {
+      "decision": "REUSE",
+      "fresh_all3": 0,
+      "inputs_schema_roles_order_mask_equal": true,
+      "snapshot_source_hashes_verified": true,
+      "completion_raw_manifest_verified": true,
+      "common_environment_equal": true,
+      "missing_environment": "E062 did not separately record executable SHA or scipy/sklearn/pyarrow package versions; current E063 full versions verified, no invented historical versions.",
+      "import_stage": "Current numeric/scoring dependencies imported before pool check; compare shared recorded Python/numpy/pandas/torch/thread/CUDA fields, not full pool-list JSON.",
+      "historical_wall_seconds": 324.97659750000093
+    },
+    "E041": {
+      "decision": "REUSE",
+      "fresh_all3": 0,
+      "inputs_schema_roles_order_mask_equal": true,
+      "snapshot_source_hashes_verified": true,
+      "completion_raw_manifest_verified": true,
+      "common_environment_equal": true,
+      "missing_environment": "E062 did not separately record executable SHA or scipy/sklearn/pyarrow package versions; current E063 full versions verified, no invented historical versions.",
+      "import_stage": "Current numeric/scoring dependencies imported before pool check; compare shared recorded Python/numpy/pandas/torch/thread/CUDA fields, not full pool-list JSON.",
+      "historical_wall_seconds": 342.9659210000009
+    }
+  },
+  "decision_basis": "Qualified clean outputs reused; no missing required provenance, no conditional fresh branch, not score-dependent."
+}

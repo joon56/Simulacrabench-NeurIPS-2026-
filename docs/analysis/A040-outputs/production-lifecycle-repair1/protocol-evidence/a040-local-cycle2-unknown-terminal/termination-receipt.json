@@ -1,0 +1,23 @@
+{
+  "scope": "LOCAL_PROTOCOL_FIXTURE",
+  "termination": "UNCONFIRMED",
+  "errors": [
+    {
+      "type": "ValueError",
+      "message": "No named terminal result",
+      "stage": "SandboxWait"
+    }
+  ],
+  "observations": [
+    {
+      "state": 5,
+      "tasks": 0,
+      "confirmed": true
+    }
+  ],
+  "billing_final": {
+    "metered": "0.01009897",
+    "billed": "0"
+  },
+  "elapsed_seconds": 0.12355519999982789
+}

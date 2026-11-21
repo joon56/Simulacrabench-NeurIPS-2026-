@@ -1,0 +1,181 @@
+{
+  "outcome": "LOCAL_RESOURCE_LIMIT",
+  "recorded_utc": "2026-10-02T08:36:18.590335+00:00",
+  "task_start_utc": "2026-10-02T08:05:10Z",
+  "deadline_utc": "2026-10-02T10:05:10Z",
+  "task_wall_seconds_at_record": 1868.590335,
+  "current": {
+    "scientific_processes": 2,
+    "parent_seconds": 1023.2542675000004,
+    "reference_child_seconds": 121.99946859999909,
+    "candidate_child_terminal_seconds": null,
+    "static_wiring_seconds": 0.04609069999787607,
+    "resource_entry_probe": {
+      "recorded_utc": "2026-10-02T08:06:37.026793+00:00",
+      "outcome": "RESOURCE_ENTRY_PASS",
+      "started": false,
+      "measurement_ok": true,
+      "available": {
+        "physical": 21073350656,
+        "commitment": 20134481920
+      },
+      "threshold_bytes": 16000000000,
+      "definition": "unchanged watchdog MemoryStatus AST; GlobalMemoryStatusEx avail_phys/avail_page",
+      "probe_invocations": 1,
+      "elapsed_seconds": 0.001795799998944858
+    },
+    "generator_invocations": 0,
+    "schema_or_tiny_suite_reruns": 0,
+    "reference": {
+      "mode": "reference",
+      "outcome": "REFERENCE_PASS",
+      "reason": null,
+      "child_exit": 0,
+      "elapsed_seconds": 123.2180565000017,
+      "prior_process_seconds": 0,
+      "cumulative_parent_seconds": 123.2180565000017,
+      "samples": 121,
+      "sampling_seconds": 1,
+      "rss_peak_sampled": 2029539328,
+      "commitment_peak_sampled": 2919292928,
+      "includes_controller": true,
+      "available_before": {
+        "physical": 21029494784,
+        "commitment": 20085809152
+      },
+      "host_cap": 16000000000,
+      "gpu": {
+        "allocated_peak": 173800448,
+        "reserved_peak": 213909504,
+        "device_capacity": 8589410304
+      },
+      "last_event": {
+        "event": "instrument_end",
+        "elapsed": 121.9366955000005,
+        "instrument": "unhcr",
+        "vectors": 132273
+      },
+      "remaining_children": []
+    },
+    "candidate": {
+      "mode": "candidate",
+      "outcome": "LOCAL_RESOURCE_LIMIT",
+      "reason": "Scientific process time cap",
+      "child_exit": 15,
+      "elapsed_seconds": 900.0362109999987,
+      "prior_process_seconds": 123.2180565000017,
+      "cumulative_parent_seconds": 1023.2542675000004,
+      "samples": 886,
+      "sampling_seconds": 1,
+      "rss_peak_sampled": 2628603904,
+      "commitment_peak_sampled": 7371657216,
+      "includes_controller": true,
+      "available_before": {
+        "physical": 20937748480,
+        "commitment": 19628646400
+      },
+      "host_cap": 16000000000,
+      "gpu": {
+        "allocated_peak_lower_bound": 3113411072,
+        "reserved_peak_lower_bound": 4886364160,
+        "complete_peak_measured": false
+      },
+      "last_event": {
+        "event": "expert_fit_end",
+        "elapsed": 899.5604577000013,
+        "stage": "expert_final",
+        "head_name": "s6_10_face_challenges_lbl",
+        "seconds": 0.17482920000111335,
+        "fit_rows": 8279,
+        "gpu_allocated_peak": 3113411072,
+        "gpu_reserved_peak": 4886364160
+      },
+      "remaining_children": []
+    },
+    "expert_completed": {
+      "expert_shadow": {
+        "fit": {
+          "completed": 213,
+          "completed_call_seconds": 26.98540979999234,
+          "last_completed_head": "s6_12_children_schooling_lbl"
+        },
+        "predict": {
+          "completed": 213,
+          "completed_call_seconds": 307.02560870002344,
+          "last_completed_head": "s6_12_children_schooling_lbl"
+        }
+      },
+      "expert_final": {
+        "fit": {
+          "completed": 199,
+          "completed_call_seconds": 32.25839700000142,
+          "last_completed_head": "s6_10_face_challenges_lbl"
+        },
+        "predict": {
+          "completed": 198,
+          "completed_call_seconds": 334.0617184000075,
+          "last_completed_head": "s6_9b_debt_syria_lbl"
+        }
+      }
+    }
+  },
+  "historical_original": {
+    "outcome": "LOCAL_CONTRACT_FAIL",
+    "child_seconds": 11.889835100000255,
+    "parent_seconds": 13.26487410000027,
+    "counters": {
+      "fits": 14,
+      "predicts": 15,
+      "loads": 2
+    },
+    "rss_peak_sampled": 1592758272,
+    "commitment_peak_sampled": 2600308736,
+    "gpu": {
+      "allocated_peak": 279770624,
+      "reserved_peak": 308281344,
+      "device_capacity": 8589410304
+    }
+  },
+  "historical_tiny_retry1": {
+    "outcome": "LOCAL_CONTRACT_PASS",
+    "child_seconds": 39.42617599999994,
+    "parent_seconds": 40.831311599999935,
+    "counters": {
+      "fits": 216,
+      "predicts": 217,
+      "loads": 2
+    },
+    "rss_peak_sampled": 1576665088,
+    "commitment_peak_sampled": 2573598720,
+    "gpu": {
+      "allocated_peak": 279770624,
+      "reserved_peak": 308281344,
+      "device_capacity": 8589410304
+    }
+  },
+  "historical_scientific_totals": {
+    "scientific_processes": 2,
+    "child_seconds": 51.316011100000196,
+    "parent_seconds": 54.096185700000206,
+    "fits": 230,
+    "predicts": 232,
+    "loads": 4,
+    "memory_peaks_added": false,
+    "full_path_estimate": false
+  },
+  "cumulative": {
+    "scientific_processes": 4,
+    "parent_seconds": 1077.3504532000006,
+    "child_seconds": null,
+    "reason_child_total_missing": "Candidate was killed before terminal child timing",
+    "completed_tabicl_fits": 642,
+    "completed_tabicl_predicts": 643,
+    "tabicl_attempt_counts_complete": false,
+    "checkpoint_load_events": 5,
+    "e041_neural_fits": 21,
+    "metric_minimizations": 24
+  },
+  "memory_peaks_not_summed": true,
+  "candidate_gpu_peaks_are_lower_bounds": true,
+  "complete_uncapped_candidate_time_measured": false
+}

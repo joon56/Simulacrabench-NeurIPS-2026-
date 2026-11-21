@@ -1,0 +1,5 @@
+{
+    "log_prior_body_preserved":  true,
+    "status_prior_body_preserved":  true,
+    "comparison":  "Remove exactly new dated blocks; normalize CRLF only"
+}

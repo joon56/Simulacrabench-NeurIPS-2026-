@@ -1,0 +1,125 @@
+--- accepted/confirm_terminal.py
++++ new/cleanup_query.py
+@@ -12,9 +12,6 @@
+ from modal.sandbox import _get_sandbox_version, SandboxVersion
+ from modal_proto import api_pb2 as pb
+ 
+-APP = 'ap-XiMVzlJgrNrCiFpIN1kB4W'
+-APP_NAME = 'a040-resume5-20261005-094405'
+-NAME = APP_NAME + '-gpu'
+ TERMINAL = frozenset(getattr(pb.GenericResult, name) for name in (
+     'GENERIC_STATUS_SUCCESS', 'GENERIC_STATUS_FAILURE', 'GENERIC_STATUS_TERMINATED',
+     'GENERIC_STATUS_TIMEOUT', 'GENERIC_STATUS_INIT_FAILURE', 'GENERIC_STATUS_INTERNAL_FAILURE',
+@@ -29,15 +26,16 @@
+     return {'status': int(result.status), 'status_name': name, 'exitcode': int(result.exitcode)}
+ 
+ 
+-class Query:
+-    def __init__(self, save, *, clock=time.monotonic, total=120, reserve=30, call_cap=14.5):
++class CleanupQuery:
++    def __init__(self, save, app_id, app_name, *, clock=time.monotonic, total=120, reserve=30, call_cap=14.5):
++        self.app_id, self.app_name, self.sandbox_name = app_id, app_name, app_name + '-gpu'
+         self.clock, self.started = clock, clock()
+         self.deadline, self.discovery_end = self.started + total - .5, self.started + total - reserve
+         self.call_cap, self.save_callback = call_cap, save
+         self.stopped = False
+         self.secrets = []
+         self.client = None
+-        self.receipt = {'app_id': APP, 'app_name': APP_NAME, 'sandbox_name': NAME,
++        self.receipt = {'app_id': self.app_id, 'app_name': self.app_name, 'sandbox_name': self.sandbox_name,
+             'sandbox_id': None, 'terminal': 'UNCONFIRMED', 'calls': [], 'errors': [],
+             'terminate_requests': 0, 'new_resources': 0, 'remote_commands': 0,
+             'remote_file_operations': 0}
+@@ -100,13 +98,13 @@
+         before, found = 0.0, []
+         for _ in range(3):
+             response = await self.rpc('SandboxListV2', pb.SandboxListRequest(
+-                app_id=APP, environment_name='', include_finished=finished, before_timestamp=before), v2=True)
++                app_id=self.app_id, environment_name='', include_finished=finished, before_timestamp=before), v2=True)
+             if not response.sandboxes:
+                 return found
+             for row in response.sandboxes:
+-                if row.app_id != APP:
++                if row.app_id != self.app_id:
+                     raise ValueError('App-scoped listing identity mismatch')
+-                if row.name == NAME:
++                if row.name == self.sandbox_name:
+                     found.append(row)
+             next_before = response.sandboxes[-1].created_at
+             if next_before <= 0 or (before and next_before >= before):
+@@ -121,8 +119,8 @@
+         workspace = await self.rpc('WorkspaceNameLookup', Empty())
+         if workspace.username != 'joon56':
+             raise ValueError('Workspace mismatch')
+-        app = (await self.rpc('AppGetInfo', pb.AppGetInfoRequest(app_id=APP))).info
+-        if (app.app_id, app.description, app.environment_name) != (APP, APP_NAME, 'main'):
++        app = (await self.rpc('AppGetInfo', pb.AppGetInfoRequest(app_id=self.app_id))).info
++        if (app.app_id, app.description, app.environment_name) != (self.app_id, self.app_name, 'main'):
+             raise ValueError('App ID/name/environment mismatch')
+         self.receipt['identity'] = {'workspace': workspace.username, 'environment': app.environment_name,
+                                   'app_id': app.app_id, 'app_name': app.description}
+@@ -147,7 +145,7 @@
+             raise ValueError('Unknown listed result status')
+         wait = await self.rpc('SandboxWait' + suffix, pb.SandboxWaitRequest(sandbox_id=row.id, timeout=0),
+                               v2=v2, evidence=True)
+-        if wait.metadata.app_id and wait.metadata.app_id != APP:
++        if wait.metadata.app_id and wait.metadata.app_id != self.app_id:
+             raise ValueError('Wait metadata app mismatch')
+         self.receipt['sandbox_result'] = result_metadata(wait.result)
+         if wait.result.status == pb.GenericResult.GENERIC_STATUS_UNSPECIFIED:
+@@ -166,7 +164,7 @@
+             await self.rpc('SandboxTerminate' + suffix, pb.SandboxTerminateRequest(sandbox_id=row.id), v2=v2)
+             wait = await self.rpc('SandboxWait' + suffix, pb.SandboxWaitRequest(sandbox_id=row.id, timeout=10),
+                                   v2=v2, evidence=True)
+-            if wait.metadata.app_id and wait.metadata.app_id != APP:
++            if wait.metadata.app_id and wait.metadata.app_id != self.app_id:
+                 raise ValueError('Final wait metadata app mismatch')
+             self.receipt['sandbox_result'] = result_metadata(wait.result)
+         if wait.result.status not in TERMINAL:
+@@ -174,8 +172,8 @@
+         self.receipt['terminal'] = 'TERMINAL_CONFIRMED'
+         self.receipt['terminal_source'] = 'Exact-ID SandboxWait' + suffix
+         self.save()  # Billing or App checks cannot erase terminal proof.
+-        current_app = (await self.rpc('AppGetInfo', pb.AppGetInfoRequest(app_id=APP), evidence=True)).info
+-        tasks = await self.rpc('TaskList', pb.TaskListRequest(app_id=APP), evidence=True)
++        current_app = (await self.rpc('AppGetInfo', pb.AppGetInfoRequest(app_id=self.app_id), evidence=True)).info
++        tasks = await self.rpc('TaskList', pb.TaskListRequest(app_id=self.app_id), evidence=True)
+         self.receipt['app'] = {'state': int(current_app.lifecycle.app_state), 'tasks': len(tasks.tasks),
+             'stopped_task0': current_app.lifecycle.app_state == pb.APP_STATE_STOPPED and not tasks.tasks}
+         request = pb.WorkspaceBillingSummaryRequest()
+@@ -196,35 +194,3 @@
+             self.save()
+         return self.receipt
+ 
+-
+-def execute_on_sdk_loop(query, client_factory=None):
+-    async def invoke():
+-        return await query.run(client_factory)
+-    return synchronizer.create_blocking(invoke)()
+-
+-
+-def main():
+-    here = Path(__file__).resolve().parent
+-    now = datetime.now(timezone.utc)
+-    window_path = here / 'remote-window.json'
+-    if not window_path.exists():
+-        with window_path.open('x', encoding='utf-8') as stream:
+-            json.dump({'started_utc': now.isoformat(), 'deadline_utc': (now+timedelta(seconds=120)).isoformat(),
+-            'discovery_cutoff_utc': (now+timedelta(seconds=90)).isoformat(), 'call_cap_seconds': 15,
+-            'final_reserve_seconds': 30, 'terminate_max': 1, 'new_resources': 0}, stream, indent=2)
+-    elif (here / 'termination-billing-receipt.json').exists():
+-        raise RuntimeError('No automatic reentry after query/possible side effects')
+-    window = json.loads(window_path.read_text(encoding='utf-8'))
+-    remaining = (datetime.fromisoformat(window['deadline_utc'])-now).total_seconds()
+-    if remaining <= 30:
+-        raise TimeoutError('Original discovery window exhausted')
+-    def save(value):
+-        (here / 'termination-billing-receipt.json').write_text(json.dumps(value, indent=2), encoding='utf-8')
+-    query = Query(save, total=remaining)
+-    result = execute_on_sdk_loop(query)
+-    print(json.dumps({k: result.get(k) for k in ('terminal', 'sandbox_id', 'version', 'terminate_requests', 'app', 'billing', 'errors', 'elapsed_seconds')}))
+-    return 0 if result['terminal'] == 'TERMINAL_CONFIRMED' else 1
+-
+-
+-if __name__ == '__main__':
+-    raise SystemExit(main())

@@ -1,0 +1,122 @@
+﻿[
+    {
+        "path":  "UNCHR_data/UNHCR_JOR_2023_VAF_HOST_v2.1.xml",
+        "bytes":  3285553,
+        "response_content_read":  false
+    },
+    {
+        "path":  "UNCHR_data/microdata/FINAL VAF Socio-economic Survey in Urban.pdf",
+        "bytes":  2048958,
+        "response_content_read":  false
+    },
+    {
+        "path":  "UNCHR_data/microdata/UNHCR_JOR_2023_VAF_HOST_callback_data_working_children.xlsx",
+        "bytes":  383341,
+        "response_content_read":  false
+    },
+    {
+        "path":  "UNCHR_data/microdata/VAF researcher guide.pdf",
+        "bytes":  770228,
+        "response_content_read":  false
+    },
+    {
+        "path":  "UNCHR_data/microdata/UNHCR_JOR_2023_VAF_HOST_data_v2_1/UNHCR_JOR_2023_VAF_HOST_data_case_v2.1.csv",
+        "bytes":  2188124,
+        "response_content_read":  false
+    },
+    {
+        "path":  "UNCHR_data/microdata/UNHCR_JOR_2023_VAF_HOST_data_v2_1/UNHCR_JOR_2023_VAF_HOST_data_case_v2.1.dta",
+        "bytes":  2222555,
+        "response_content_read":  false
+    },
+    {
+        "path":  "UNCHR_data/microdata/UNHCR_JOR_2023_VAF_HOST_data_v2_1/UNHCR_JOR_2023_VAF_HOST_data_family_v2.1.csv",
+        "bytes":  818676,
+        "response_content_read":  false
+    },
+    {
+        "path":  "UNCHR_data/microdata/UNHCR_JOR_2023_VAF_HOST_data_v2_1/UNHCR_JOR_2023_VAF_HOST_data_family_v2.1.dta",
+        "bytes":  677858,
+        "response_content_read":  false
+    },
+    {
+        "path":  "UNCHR_data/microdata/UNHCR_JOR_2023_VAF_HOST_data_v2_1/UNHCR_JOR_2023_VAF_HOST_data_main_v2.1.csv",
+        "bytes":  5618907,
+        "response_content_read":  false
+    },
+    {
+        "path":  "UNCHR_data/microdata/UNHCR_JOR_2023_VAF_HOST_data_v2_1/UNHCR_JOR_2023_VAF_HOST_data_main_v2.1.dta",
+        "bytes":  5357438,
+        "response_content_read":  false
+    },
+    {
+        "path":  "UNCHR_data/microdata/UNHCR_JOR_2023_VAF_HOST_data_v2_1/UNHCR_JOR_2023_VAF_HOST_data_member_v2.1.csv",
+        "bytes":  15156409,
+        "response_content_read":  false
+    },
+    {
+        "path":  "UNCHR_data/microdata/UNHCR_JOR_2023_VAF_HOST_data_v2_1/UNHCR_JOR_2023_VAF_HOST_data_member_v2.1.dta",
+        "bytes":  20409170,
+        "response_content_read":  false
+    },
+    {
+        "path":  "UNCHR_data/microdata/UNHCR_JOR_2023_VAF_HOST_data_v2_1/UNHCR_JOR_2023_VAF_HOST_data_sharing_group_long_v2.1.csv",
+        "bytes":  2460057,
+        "response_content_read":  false
+    },
+    {
+        "path":  "UNCHR_data/microdata/UNHCR_JOR_2023_VAF_HOST_data_v2_1/UNHCR_JOR_2023_VAF_HOST_data_sharing_group_long_v2.1.dta",
+        "bytes":  4678626,
+        "response_content_read":  false
+    },
+    {
+        "path":  "UNCHR_data/microdata/UNHCR_JOR_2023_VAF_HOST_data_v2_1/UNHCR_JOR_2023_VAF_HOST_data_sharing_group_short_v2.1.csv",
+        "bytes":  5996042,
+        "response_content_read":  false
+    },
+    {
+        "path":  "UNCHR_data/microdata/UNHCR_JOR_2023_VAF_HOST_data_v2_1/UNHCR_JOR_2023_VAF_HOST_data_sharing_group_short_v2.1.dta",
+        "bytes":  7846318,
+        "response_content_read":  false
+    },
+    {
+        "path":  "UNCHR_data/microdata/UNHCR_JOR_2023_VAF_HOST_data_v2_1/UNHCR_JOR_2023_VAF_HOST_labels_case_v2.1.csv",
+        "bytes":  3157,
+        "response_content_read":  false
+    },
+    {
+        "path":  "UNCHR_data/microdata/UNHCR_JOR_2023_VAF_HOST_data_v2_1/UNHCR_JOR_2023_VAF_HOST_labels_family_v2.1.csv",
+        "bytes":  599,
+        "response_content_read":  false
+    },
+    {
+        "path":  "UNCHR_data/microdata/UNHCR_JOR_2023_VAF_HOST_data_v2_1/UNHCR_JOR_2023_VAF_HOST_labels_main_v2.1.csv",
+        "bytes":  12307,
+        "response_content_read":  false
+    },
+    {
+        "path":  "UNCHR_data/microdata/UNHCR_JOR_2023_VAF_HOST_data_v2_1/UNHCR_JOR_2023_VAF_HOST_labels_member_v2.1.csv",
+        "bytes":  8982,
+        "response_content_read":  false
+    },
+    {
+        "path":  "UNCHR_data/microdata/UNHCR_JOR_2023_VAF_HOST_data_v2_1/UNHCR_JOR_2023_VAF_HOST_labels_sharing_group_long_v2.1.csv",
+        "bytes":  59662,
+        "response_content_read":  false
+    },
+    {
+        "path":  "UNCHR_data/microdata/UNHCR_JOR_2023_VAF_HOST_data_v2_1/UNHCR_JOR_2023_VAF_HOST_labels_sharing_group_short_v2.1.csv",
+        "bytes":  33953,
+        "response_content_read":  false
+    },
+    {
+        "path":  "UNCHR_data/microdata/VAF_Host_KOBO/VAF_Host_2023_LongXLS_final.xlsx",
+        "bytes":  234101,
+        "response_content_read":  false
+    },
+    {
+        "path":  "UNCHR_data/microdata/VAF_Host_KOBO/VAF_Host_2023_ShortXLS_final.xlsx",
+        "bytes":  222025,
+        "response_content_read":  false
+    }
+]

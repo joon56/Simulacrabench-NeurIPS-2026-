@@ -1,0 +1,10 @@
+{
+  "utc": "2026-10-11T13:46:10.617167+00:00",
+  "mode": "tests",
+  "attempt": 1,
+  "only": "tests.test_conditional_gradient.GradientTests.test_initial_state_forward_rng_and_denominator",
+  "freeze": "freeze-01.json",
+  "prior_seconds": 0.1777746,
+  "limit_seconds": 60.0,
+  "registration_sha256": "f1113c07ac9127938fc8b02486830e0a23aa1add32ead4e1ce2269811986a8c7"
+}

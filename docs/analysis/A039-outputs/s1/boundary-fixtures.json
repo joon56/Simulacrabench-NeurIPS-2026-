@@ -1,0 +1,24 @@
+{
+    "checked_utc":  "2026-09-30T17:26:16.5453853+00:00",
+    "status":  "PASS",
+    "tests":  9,
+    "scope":  "New in-memory header byte-boundary examples only",
+    "red_evidence":  "cd881f expected ModuleNotFoundError before implementation",
+    "green_evidence":  "6b19dd nine tests passed, 0 actual data opens",
+    "cases":  [
+                  "normal stops at LF",
+                  "BOM/CRLF and quoted delimiter",
+                  "duplicate/whitespace preserved",
+                  "quoted newline hold at first LF",
+                  "UTF8 invalid",
+                  "suspicious value-like headers",
+                  "malformed quote syntax",
+                  "byte cap no extra read",
+                  "missing LF"
+              ],
+    "production_source_modified":  false,
+    "actual_response_opens_during_tests":  0,
+    "header_reader_sha256":  "9c7dceefcdc06ea86ccf1443a5b2f45faebaa22acab16375a095bd931d54fd11",
+    "test_sha256":  "ba65f255a0f613313537ed7976f0ac1b1b442a027f75807d3245cc84ea295816",
+    "post_test_change":  "Only VAR/LABEL document parser changed to StringIO to preserve multiline documentation. Tested read_header unchanged; no successful test rerun."
+}

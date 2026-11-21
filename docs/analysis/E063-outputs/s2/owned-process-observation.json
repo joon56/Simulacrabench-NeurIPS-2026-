@@ -1,0 +1,62 @@
+﻿{
+    "observed_kst":  "2026-10-09T23:58:22.0146454+09:00",
+    "scope":  "Named E063 local process observations only, no command lines or remote absence claim",
+    "processes":  [
+                      {
+                          "ProcessId":  32688,
+                          "ParentProcessId":  37920,
+                          "Name":  "python.exe",
+                          "KernelModeTime":  0,
+                          "UserModeTime":  0
+                      },
+                      {
+                          "ProcessId":  37360,
+                          "ParentProcessId":  32688,
+                          "Name":  "python.exe",
+                          "KernelModeTime":  405468750,
+                          "UserModeTime":  34531250
+                      },
+                      {
+                          "ProcessId":  34632,
+                          "ParentProcessId":  37360,
+                          "Name":  "python.exe",
+                          "KernelModeTime":  0,
+                          "UserModeTime":  0
+                      },
+                      {
+                          "ProcessId":  37228,
+                          "ParentProcessId":  34632,
+                          "Name":  "python.exe",
+                          "KernelModeTime":  25156250,
+                          "UserModeTime":  67812500
+                      },
+                      {
+                          "ProcessId":  9244,
+                          "ParentProcessId":  37228,
+                          "Name":  "python.exe",
+                          "KernelModeTime":  156250,
+                          "UserModeTime":  0
+                      },
+                      {
+                          "ProcessId":  36692,
+                          "ParentProcessId":  9244,
+                          "Name":  "python.exe",
+                          "KernelModeTime":  9062500,
+                          "UserModeTime":  933906250
+                      },
+                      {
+                          "ProcessId":  39088,
+                          "ParentProcessId":  36692,
+                          "Name":  "python.exe",
+                          "KernelModeTime":  0,
+                          "UserModeTime":  156250
+                      },
+                      {
+                          "ProcessId":  30364,
+                          "ParentProcessId":  39088,
+                          "Name":  "python.exe",
+                          "KernelModeTime":  121562500,
+                          "UserModeTime":  977343750
+                      }
+                  ]
+}

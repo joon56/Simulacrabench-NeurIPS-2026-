@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "source": "Transcribed from completed exec tool outputs; no test rerun",
+  "red": {
+    "command": ".venv/Scripts/python.exe -B -m pytest tests/test_content_target_retrieval.py -q -p no:cacheprovider",
+    "outcome": "Expected missing content_target_retrieval module during collection",
+    "pytest_seconds": 7.65
+  },
+  "green_objective": {
+    "command": ".venv/Scripts/python.exe -B -m pytest tests/test_content_target_retrieval.py -q -p no:cacheprovider",
+    "passed": 7,
+    "pytest_seconds": 15.69
+  },
+  "green_assembly": {
+    "command": ".venv/Scripts/python.exe -B -m pytest tests/test_e060_assembly.py -q -p no:cacheprovider",
+    "passed": 4,
+    "pytest_seconds": 4.84
+  },
+  "total_passed": 11,
+  "scope": "Generated numeric fixtures and injected layer stubs; no survey response access, neural fitting or efficacy claim",
+  "tiny_fixture_metric_optimizer_calls_source_count": 4,
+  "peak_memory": null,
+  "memory_scope": "These tiny pytest runs were not process-tree profiled; expensive suites use the registered watchdog",
+  "source_hashes": "Bound by technical-retry1/preflight.json"
+}

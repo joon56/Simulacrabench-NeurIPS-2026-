@@ -1,0 +1,33 @@
+{"event": "environment", "torch_threads": 2, "torch_interop_threads": 2, "cuda": false, "instrument": "unhcr", "pid": 41828}
+{"event": "enter", "kind": "full_stack", "function": "_e062_predict", "totals": {"full_stack": 6, "neural": 15, "metric": 8}, "instrument": "unhcr", "pid": 41828}
+{"event": "target_boundary", "rows": 5264, "instrument": "unhcr", "pid": 41828}
+{"event": "target_role", "rows": 5264, "roles": ["inner_train"], "index_sha256": "ff3eea6ae8f3fe567d85608d8962852c1db68949071a4b49befdcebd44943234", "instrument": "unhcr", "pid": 41828}
+{"event": "target_boundary", "rows": 1303, "instrument": "unhcr", "pid": 41828}
+{"event": "target_role", "rows": 1303, "roles": ["inner_stop"], "index_sha256": "7901a6d58cb96f7449ec668c635cdc0a31ff81d09002aef974a92abb5b5307c7", "instrument": "unhcr", "pid": 41828}
+{"event": "target_boundary", "rows": 1712, "instrument": "unhcr", "pid": 41828}
+{"event": "target_role", "rows": 1712, "roles": ["outer_selection"], "index_sha256": "54140c53e98f2f0af956a1bb6475038a8c4be4d6f0014c88f36aaee6a37acb0f", "instrument": "unhcr", "pid": 41828}
+{"event": "enter", "kind": "neural", "function": "_train_on", "totals": {"full_stack": 6, "neural": 16, "metric": 8}, "instrument": "unhcr", "pid": 41828}
+{"event": "return", "kind": "neural", "function": "_train_on", "seconds": 54.607551400000375, "returned": true, "epochs": 124, "best_epoch": 94, "device": "cpu", "instrument": "unhcr", "pid": 41828}
+{"event": "enter", "kind": "neural", "function": "_train_on", "totals": {"full_stack": 6, "neural": 17, "metric": 8}, "instrument": "unhcr", "pid": 41828}
+{"event": "return", "kind": "neural", "function": "_train_on", "seconds": 71.38867539999956, "returned": true, "epochs": 140, "best_epoch": 110, "device": "cpu", "instrument": "unhcr", "pid": 41828}
+{"event": "target_boundary", "rows": 8279, "instrument": "unhcr", "pid": 41828}
+{"event": "target_role", "rows": 8279, "roles": ["final_refit"], "index_sha256": "07863762c02a6317ef1ad940b87532b92647d4b7d728d4d4449927e4f3f8bc4b", "instrument": "unhcr", "pid": 41828}
+{"event": "enter", "kind": "neural", "function": "_train_on", "totals": {"full_stack": 6, "neural": 18, "metric": 8}, "instrument": "unhcr", "pid": 41828}
+{"event": "return", "kind": "neural", "function": "_train_on", "seconds": 69.3384105999994, "returned": true, "epochs": 110, "best_epoch": 0, "device": "cpu", "instrument": "unhcr", "pid": 41828}
+{"event": "enter", "kind": "metric", "function": "minimize", "totals": {"full_stack": 6, "neural": 18, "metric": 9}, "instrument": "unhcr", "pid": 41828}
+{"event": "return", "kind": "metric", "function": "minimize", "seconds": 0.028181100000438164, "returned": true, "iterations": 16, "success": true, "instrument": "unhcr", "pid": 41828}
+{"event": "enter", "kind": "metric", "function": "minimize", "totals": {"full_stack": 6, "neural": 18, "metric": 10}, "instrument": "unhcr", "pid": 41828}
+{"event": "return", "kind": "metric", "function": "minimize", "seconds": 0.10258070000054431, "returned": true, "iterations": 14, "success": true, "instrument": "unhcr", "pid": 41828}
+{"event": "enter", "kind": "metric", "function": "minimize", "totals": {"full_stack": 6, "neural": 18, "metric": 11}, "instrument": "unhcr", "pid": 41828}
+{"event": "return", "kind": "metric", "function": "minimize", "seconds": 0.0601435999997193, "returned": true, "iterations": 25, "success": true, "instrument": "unhcr", "pid": 41828}
+{"event": "enter", "kind": "metric", "function": "minimize", "totals": {"full_stack": 6, "neural": 18, "metric": 12}, "instrument": "unhcr", "pid": 41828}
+{"event": "return", "kind": "metric", "function": "minimize", "seconds": 0.06927969999924244, "returned": true, "iterations": 17, "success": true, "instrument": "unhcr", "pid": 41828}
+{"event": "enter", "kind": "metric", "function": "minimize", "totals": {"full_stack": 6, "neural": 18, "metric": 13}, "instrument": "unhcr", "pid": 41828}
+{"event": "return", "kind": "metric", "function": "minimize", "seconds": 0.029392399999778718, "returned": true, "iterations": 15, "success": true, "instrument": "unhcr", "pid": 41828}
+{"event": "enter", "kind": "metric", "function": "minimize", "totals": {"full_stack": 6, "neural": 18, "metric": 14}, "instrument": "unhcr", "pid": 41828}
+{"event": "return", "kind": "metric", "function": "minimize", "seconds": 0.02316690000043309, "returned": true, "iterations": 13, "success": true, "instrument": "unhcr", "pid": 41828}
+{"event": "enter", "kind": "metric", "function": "minimize", "totals": {"full_stack": 6, "neural": 18, "metric": 15}, "instrument": "unhcr", "pid": 41828}
+{"event": "return", "kind": "metric", "function": "minimize", "seconds": 0.030819999999948777, "returned": true, "iterations": 14, "success": true, "instrument": "unhcr", "pid": 41828}
+{"event": "enter", "kind": "metric", "function": "minimize", "totals": {"full_stack": 6, "neural": 18, "metric": 16}, "instrument": "unhcr", "pid": 41828}
+{"event": "return", "kind": "metric", "function": "minimize", "seconds": 0.05908869999984745, "returned": true, "iterations": 11, "success": true, "instrument": "unhcr", "pid": 41828}
+{"event": "return", "kind": "full_stack", "function": "_e062_predict", "seconds": 321.82272269999885, "returned": true, "instrument": "unhcr", "pid": 41828}

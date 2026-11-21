@@ -1,0 +1,18 @@
+--- placed/live_worker.py
++++ boundary2/live_worker.py
+@@ -117,6 +117,7 @@
+     from cleanup_query import CleanupQuery
+     started = time.monotonic()
+     total = min(context.plan.cleanup_timeout, max(0, context.plan.whole_deadline-time.time()))
++    context.event("cleanup_enter")
+     deadline = started + total
+     endpoint, state = context.endpoint, context.state
+     receipt = {"scope": context.plan.scope, "termination": "UNCONFIRMED", "errors": [], "observations": []}
+@@ -143,6 +144,7 @@
+             receipt["terminal_source"] = value["terminal_source"]
+             receipt["terminal_observed_utc"] = value["observed_utc"]
+             context.save("sandbox-terminal-evidence.json", receipt)
++            context.event("exact_terminal_saved", sandbox_id=value["sandbox_id"])
+         context.persist()
+ 
+     try:

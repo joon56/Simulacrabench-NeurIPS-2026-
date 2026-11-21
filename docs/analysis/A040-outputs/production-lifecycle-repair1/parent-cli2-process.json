@@ -1,0 +1,8 @@
+﻿{
+    "kill_after_ms":  29000,
+    "exit_code":  0,
+    "cpu_affinity":  3,
+    "pid":  43212,
+    "owned_cli_child":  1,
+    "wall_seconds":  1.5347864
+}

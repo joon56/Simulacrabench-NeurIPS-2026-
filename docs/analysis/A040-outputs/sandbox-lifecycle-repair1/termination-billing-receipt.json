@@ -1,0 +1,37 @@
+{
+  "workspace": "joon56",
+  "environment": "main",
+  "app_id": "ap-XiMVzlJgrNrCiFpIN1kB4W",
+  "app_name": "a040-resume5-20261005-094405",
+  "sandbox_name": "a040-resume5-20261005-094405-gpu",
+  "sandbox_id": null,
+  "terminal": "UNCONFIRMED",
+  "terminate_requests": 0,
+  "calls": [
+    {
+      "method": "Client.from_env",
+      "started_utc": "2026-10-05T11:09:17.735559+00:00",
+      "cap_seconds": 14.5,
+      "outcome": "RETURNED",
+      "finished_utc": "2026-10-05T11:09:18.489571+00:00"
+    },
+    {
+      "method": "WorkspaceNameLookup",
+      "started_utc": "2026-10-05T11:09:18.490438+00:00",
+      "cap_seconds": 14.5,
+      "outcome": "InvalidError"
+    }
+  ],
+  "new_resources": 0,
+  "remote_commands": 0,
+  "remote_file_operations": 0,
+  "errors": [
+    {
+      "type": "InvalidError",
+      "stage": "WorkspaceNameLookup"
+    }
+  ],
+  "observed_utc": "2026-10-05T11:09:18.491885+00:00",
+  "observed_kst": "2026-10-05T20:09:18.491892+09:00",
+  "elapsed_seconds": 1.2158656999999948
+}

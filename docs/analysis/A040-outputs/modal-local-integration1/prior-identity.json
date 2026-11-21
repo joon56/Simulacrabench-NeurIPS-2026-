@@ -1,0 +1,80 @@
+﻿[
+    {
+        "path":  "docs/analysis/A040-outputs/modal-full-path1-resume3/closeout.md",
+        "sha256":  "9628d193bef73a894fc87ec811b5606a6e45ee869e0e97d6ba69c5d2508a3c33",
+        "expected":  "9628d193bef73a894fc87ec811b5606a6e45ee869e0e97d6ba69c5d2508a3c33",
+        "equal":  true
+    },
+    {
+        "path":  "docs/analysis/A040-outputs/modal-full-path1-resume3/failure-analysis.md",
+        "sha256":  "74fb0eed6b834dd861c79a5626382ccb384a23ddaaeb25d7b26f207b41d065fd",
+        "expected":  "74fb0eed6b834dd861c79a5626382ccb384a23ddaaeb25d7b26f207b41d065fd",
+        "equal":  true
+    },
+    {
+        "path":  "docs/analysis/A040-outputs/modal-full-path1-resume3/verification.json",
+        "sha256":  "a17887f0d95aad82ff547435fa67ed834b0c72237bc633aacde174660c1fb4bc",
+        "expected":  "a17887f0d95aad82ff547435fa67ed834b0c72237bc633aacde174660c1fb4bc",
+        "equal":  true
+    },
+    {
+        "path":  "docs/analysis/A040-outputs/modal-full-path1-resume3/result.json",
+        "sha256":  "c3507e22c0ca6380fcfeaa9ac87af1b2a3039bd024be13797a245df2a9014daa",
+        "expected":  "c3507e22c0ca6380fcfeaa9ac87af1b2a3039bd024be13797a245df2a9014daa",
+        "equal":  true
+    },
+    {
+        "path":  "docs/analysis/A040-outputs/modal-full-path1-resume3/termination-receipt.json",
+        "sha256":  "ad584f600e308679446b49fa0a8efafda397a15dbd5a06b506d8a53a85c0e439",
+        "expected":  "ad584f600e308679446b49fa0a8efafda397a15dbd5a06b506d8a53a85c0e439",
+        "equal":  true
+    },
+    {
+        "path":  "docs/analysis/A040-outputs/modal-full-path1-resume3/live-controller-freeze.json",
+        "sha256":  "c7a01993f266544f39d9706ad52750f3518555701e6e0e78fc2480845a25eec4",
+        "expected":  "c7a01993f266544f39d9706ad52750f3518555701e6e0e78fc2480845a25eec4",
+        "equal":  true
+    },
+    {
+        "path":  "docs/analysis/A040-outputs/modal-full-path1-resume3/source.diff",
+        "sha256":  "2a5b8e5534ccb6eb31a28e757c41759b4b19bad86e5e1a06ef4ad6a7cde74e64",
+        "expected":  "2a5b8e5534ccb6eb31a28e757c41759b4b19bad86e5e1a06ef4ad6a7cde74e64",
+        "equal":  true
+    },
+    {
+        "path":  "docs/analysis/A040-outputs/modal-full-path1-resume3/live_binding.py",
+        "sha256":  "ca1351a05eea38577632a918b286d5ee7e5c82d423928fd8c2ce1af67de206c8",
+        "expected":  "ca1351a05eea38577632a918b286d5ee7e5c82d423928fd8c2ce1af67de206c8",
+        "equal":  true
+    },
+    {
+        "path":  "docs/analysis/A040-outputs/modal-full-path1-resume3/live_worker.py",
+        "sha256":  "bbc5fc6e2835f6bddf516a3eeade73b18c2546f826db990a5bddf806da1fc6dc",
+        "expected":  "bbc5fc6e2835f6bddf516a3eeade73b18c2546f826db990a5bddf806da1fc6dc",
+        "equal":  true
+    },
+    {
+        "path":  "docs/analysis/A040-outputs/modal-full-path1-resume3/controller_core.py",
+        "sha256":  "69045525d5cdac7fe4b61297f2672325bd652bc7ef87f5d1eaf7cfdab24c5d59",
+        "expected":  "69045525d5cdac7fe4b61297f2672325bd652bc7ef87f5d1eaf7cfdab24c5d59",
+        "equal":  true
+    },
+    {
+        "path":  "docs/analysis/A040-outputs/modal-full-path1-resume3/live_launcher.py",
+        "sha256":  "563dc236092021162cd62d6a12e2cb2f6dec9edbbcbb95a644ad1bcae9648cfa",
+        "expected":  "563dc236092021162cd62d6a12e2cb2f6dec9edbbcbb95a644ad1bcae9648cfa",
+        "equal":  true
+    },
+    {
+        "path":  "docs/analysis/A040-outputs/modal-full-path1-resume3/preflight.py",
+        "sha256":  "7123a721678bba95ff82dd282e1aab24937302bced2363ccb4b90c5cf6ab07b6",
+        "expected":  "7123a721678bba95ff82dd282e1aab24937302bced2363ccb4b90c5cf6ab07b6",
+        "equal":  true
+    },
+    {
+        "path":  "docs/analysis/A040-outputs/modal-full-path1-resume3/operational-contract.md",
+        "sha256":  "e7342a842bcb97ef2e21c573da398bb9392892320bfe9169f7a6daa2f1945fb9",
+        "expected":  "e7342a842bcb97ef2e21c573da398bb9392892320bfe9169f7a6daa2f1945fb9",
+        "equal":  true
+    }
+]

@@ -1,0 +1,472 @@
+{
+  "date_kst": "2026-10-05",
+  "role": "S0",
+  "task_type": "result/source review and next-scope recommendation",
+  "verdict": "ACCEPT_PREPARATION_FAILURE / RECOMMEND_BOUNDED_LOCAL_SOURCE_DELIVERY_REPAIR",
+  "remote_authorized_in_this_review": false,
+  "head": "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+  "workflow": {
+    "revision": "2026-09-27-r4",
+    "sha256": "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642",
+    "read_evidence": [
+      {
+        "tool_chunk": "b7dfb9",
+        "reads": "AGENTS; CLAUDE entry; status; newest three log entries; workflow routing, in order. Unchanged sections retain prior read context."
+      },
+      {
+        "tool_chunk": "026b71",
+        "reads": "resume4 closeout, failure analysis, builder stdout/stderr, run/result, termination, stage outcomes, verification, session ledger"
+      },
+      {
+        "tool_chunk": "360bf8",
+        "reads": "HEAD/dirty/local named processes; initial freeze; SDK keyword locations"
+      },
+      {
+        "tool_chunk": "95092c",
+        "reads": "SDK run_function and explicit source inclusion; current controller_core; prior decision/status/log"
+      },
+      {
+        "tool_chunk": "a5345d",
+        "reads": "FunctionSourceInfo constructor/get_entrypoint_mount; rest of freeze; source-manifest; workflow research, evidence, preservation"
+      },
+      {
+        "tool_chunk": "063c67",
+        "reads": "disk s0-handoff; ledger; actual sdk_endpoint/live_binding; caveman and karpathy guidelines"
+      }
+    ],
+    "latest_log_at_entry": [
+      "2026-10-04 A040 S1 fixed remote attempt stops at builder module import",
+      "2026-10-04 A040 S0 accepts output repair and scopes fixed remote measurement",
+      "2026-10-04 A040 S1 repairs canonical output producer/exporter contract"
+    ]
+  },
+  "baseline_at": "2026-10-05T00:26:37.4536397+09:00",
+  "final_preservation_check_at": "2026-10-05T00:30:17.6307618+09:00",
+  "baseline_hashes": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "86394bbf164a2b7df6a309f4564b9dacf3b2799fa0227a703e4ea11d4d842596"
+    },
+    {
+      "path": "CLAUDE.md",
+      "sha256": "69175e6d741a17042db4852d4961a5c52bd97fe2cd5bfbff762d30d7e5270364"
+    },
+    {
+      "path": "docs/status.md",
+      "sha256": "297d8eb9c2dbcf5e5fcdaca1e6b4289f7d60547f5b7239d0aea455267dda9784"
+    },
+    {
+      "path": "docs/log.md",
+      "sha256": "dc0163a140bcf59e051e94e16bfd02650a450df5d591acac524595a993b7d16b"
+    },
+    {
+      "path": "docs/workflow.md",
+      "sha256": "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642"
+    },
+    {
+      "path": "docs/tree.md",
+      "sha256": "eaa884a4194db103335136495205fe5b51297c17db15e9eac62946ced286cc44"
+    },
+    {
+      "path": "docs/analysis/A040-outputs/modal-output-contract-repair1/source-manifest.json",
+      "sha256": "0060ed98fc7e3c9ecc5625bd24f5c276971b026817dbb06c92fc2744dec83815"
+    },
+    {
+      "path": "docs/analysis/A040-outputs/modal-full-path1-resume4/config-source-input-freeze.json",
+      "sha256": "e1df5fb540e08e96bec471faba3baaeeb03fd535918ed0e0cbacefd157a60d63"
+    },
+    {
+      "path": "docs/analysis/A040-outputs/modal-full-path1-resume4/live-config.json",
+      "sha256": "b0b896643357932b8f8e60295a5b681886efa36494a5a7a95e924935b8aee590"
+    },
+    {
+      "path": "docs/analysis/A040-outputs/modal-full-path1-resume4/closeout.md",
+      "sha256": "b12e70c49293dae7c31751db676c5b2a80d06c15e4a73623e26db19e7e8be401"
+    },
+    {
+      "path": "docs/analysis/A040-outputs/modal-full-path1-resume4/failure-analysis.md",
+      "sha256": "4e5c9a5db12b9c03961b5eeaf15a06a4fb2c2c3e24b294a8994d87a4f21ba93f"
+    },
+    {
+      "path": "docs/analysis/A040-outputs/modal-full-path1-resume4/builder-stdout.txt",
+      "sha256": "579dd9cbba1d02747f53417db226a675726de4e7709bd1eb5c156276f1973234"
+    },
+    {
+      "path": "docs/analysis/A040-outputs/modal-full-path1-resume4/builder-stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/analysis/A040-outputs/modal-full-path1-resume4/run/result.json",
+      "sha256": "4a9cd2d1a38227e1dd0c0e704723bb3d99ef64b4689698bfcfb2066b86e7d4d1"
+    },
+    {
+      "path": "docs/analysis/A040-outputs/modal-full-path1-resume4/termination-receipt.json",
+      "sha256": "9dbfdeb4fa2a68b9425a474a5781feb5cfb4a9d9f24208e421ea3a1a883f3327"
+    },
+    {
+      "path": "docs/analysis/A040-outputs/modal-full-path1-resume4/stage-outcomes.json",
+      "sha256": "18de588759b165c264de56dfd59c93d0e949026af7d78ec67e7a573ed4c570ad"
+    },
+    {
+      "path": "docs/analysis/A040-outputs/modal-full-path1-resume4/verification.json",
+      "sha256": "7d758e43036a7f1168219afd6676a8a16feae63b037cdc3f428cb77754d64bb2"
+    },
+    {
+      "path": "docs/analysis/A040-outputs/modal-full-path1-resume4/session-cost-time-ledger.json",
+      "sha256": "8f8338dfd1b3b9a5b02f54b83deba9b449cc39fe11abf7907766581dadd1fa1d"
+    },
+    {
+      "path": "tmp/a040-modal-full-path1/sdk-venv/Lib/site-packages/modal/_image.py",
+      "sha256": "501027be53a74f40ac4eda78e23d288435e563e9e2a79d0df962eae72a4d634c"
+    },
+    {
+      "path": "tmp/a040-modal-full-path1/sdk-venv/Lib/site-packages/modal/_functions.py",
+      "sha256": "7524a3a79a9f270136f81b0034ef9a46b4edd818196284982afcc86363a34000"
+    },
+    {
+      "path": "tmp/a040-modal-full-path1/sdk-venv/Lib/site-packages/modal/_utils/function_utils.py",
+      "sha256": "7550829e8bdf4a562cb11b908745a8ab9a2a5f82a3fed00ae2f27751214d505c"
+    }
+  ],
+  "source_identity": [
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-output-contract-repair1\\contract.py",
+      "expected": "647c5a467183edc512893158ce6eb41d72677c90af38f04ed02888f4dc3b3526",
+      "actual": "647c5a467183edc512893158ce6eb41d72677c90af38f04ed02888f4dc3b3526",
+      "matches": true
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-output-contract-repair1\\protocol.py",
+      "expected": "4616f24b44d8b482cf90a560a13e59324f20e497af4090d6e588fe437801ff77",
+      "actual": "4616f24b44d8b482cf90a560a13e59324f20e497af4090d6e588fe437801ff77",
+      "matches": true
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-output-contract-repair1\\controller_core.py",
+      "expected": "fc561eee08f1eafbbeac2cbcc5fa31890ef719bf603c5c7dd1af7aea5e556bcb",
+      "actual": "fc561eee08f1eafbbeac2cbcc5fa31890ef719bf603c5c7dd1af7aea5e556bcb",
+      "matches": true
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-output-contract-repair1\\live_binding.py",
+      "expected": "ca1351a05eea38577632a918b286d5ee7e5c82d423928fd8c2ce1af67de206c8",
+      "actual": "ca1351a05eea38577632a918b286d5ee7e5c82d423928fd8c2ce1af67de206c8",
+      "matches": true
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-output-contract-repair1\\sdk_endpoint.py",
+      "expected": "94606de56ba23e65e3dcacc57009cb0e60b5506648a2b276cb3165696af4251f",
+      "actual": "94606de56ba23e65e3dcacc57009cb0e60b5506648a2b276cb3165696af4251f",
+      "matches": true
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-output-contract-repair1\\payload.py",
+      "expected": "17273bebff6debd9888983ffcb2a7b3e3dbff572dccd203c05f9c8b5c9f60424",
+      "actual": "17273bebff6debd9888983ffcb2a7b3e3dbff572dccd203c05f9c8b5c9f60424",
+      "matches": true
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-output-contract-repair1\\sandbox_stage.py",
+      "expected": "723f80623c0b400a7c68d1a8bfd4e6d4b6e9fa4d67060a418db156c8c88621b9",
+      "actual": "723f80623c0b400a7c68d1a8bfd4e6d4b6e9fa4d67060a418db156c8c88621b9",
+      "matches": true
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-output-contract-repair1\\linux_boundary.py",
+      "expected": "4c2aad23c52813693249a6d104c50f208ed33928086b466e46e853ad074712ff",
+      "actual": "4c2aad23c52813693249a6d104c50f208ed33928086b466e46e853ad074712ff",
+      "matches": true
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-output-contract-repair1\\linux_watchdog.py",
+      "expected": "9b08538d3b5990389e103ef2d391d58fec6ec63795bf0dc5ebcec08bc1991d34",
+      "actual": "9b08538d3b5990389e103ef2d391d58fec6ec63795bf0dc5ebcec08bc1991d34",
+      "matches": true
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-output-contract-repair1\\linux_runner.py",
+      "expected": "82facf9151daa8eadc55c438be99f4c0cf5e331978c18b3a59530ef2af5b680e",
+      "actual": "82facf9151daa8eadc55c438be99f4c0cf5e331978c18b3a59530ef2af5b680e",
+      "matches": true
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-output-contract-repair1\\live_worker.py",
+      "expected": "5f9b934e435bc62259944f47f97a81f29cf9559b183d7a0b9e87736156b18902",
+      "actual": "5f9b934e435bc62259944f47f97a81f29cf9559b183d7a0b9e87736156b18902",
+      "matches": true
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-output-contract-repair1\\live_launcher.py",
+      "expected": "965f893be21113ee25114d4bebf8cd6a13aa75f88e7907963661daf66153e01b",
+      "actual": "965f893be21113ee25114d4bebf8cd6a13aa75f88e7907963661daf66153e01b",
+      "matches": true
+    }
+  ],
+  "source_manifest_matches_named_hash": true,
+  "live_config_matches_freeze_hash": true,
+  "preservation": [
+    {
+      "path": "AGENTS.md",
+      "before": "86394bbf164a2b7df6a309f4564b9dacf3b2799fa0227a703e4ea11d4d842596",
+      "after": "86394bbf164a2b7df6a309f4564b9dacf3b2799fa0227a703e4ea11d4d842596",
+      "unchanged": true
+    },
+    {
+      "path": "CLAUDE.md",
+      "before": "69175e6d741a17042db4852d4961a5c52bd97fe2cd5bfbff762d30d7e5270364",
+      "after": "69175e6d741a17042db4852d4961a5c52bd97fe2cd5bfbff762d30d7e5270364",
+      "unchanged": true
+    },
+    {
+      "path": "docs/status.md",
+      "before": "297d8eb9c2dbcf5e5fcdaca1e6b4289f7d60547f5b7239d0aea455267dda9784",
+      "after": "92e4f5705acaf0a3fc6bc1ef453b10b55d275de6bbe445bab56a855c3b3677d8",
+      "unchanged": false
+    },
+    {
+      "path": "docs/log.md",
+      "before": "dc0163a140bcf59e051e94e16bfd02650a450df5d591acac524595a993b7d16b",
+      "after": "32d233a9997c7bc0fd74d066ebe0b7de91d31f3903831f16f299af15f7aef7a8",
+      "unchanged": false
+    },
+    {
+      "path": "docs/workflow.md",
+      "before": "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642",
+      "after": "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642",
+      "unchanged": true
+    },
+    {
+      "path": "docs/tree.md",
+      "before": "eaa884a4194db103335136495205fe5b51297c17db15e9eac62946ced286cc44",
+      "after": "eaa884a4194db103335136495205fe5b51297c17db15e9eac62946ced286cc44",
+      "unchanged": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/modal-output-contract-repair1/source-manifest.json",
+      "before": "0060ed98fc7e3c9ecc5625bd24f5c276971b026817dbb06c92fc2744dec83815",
+      "after": "0060ed98fc7e3c9ecc5625bd24f5c276971b026817dbb06c92fc2744dec83815",
+      "unchanged": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/modal-full-path1-resume4/config-source-input-freeze.json",
+      "before": "e1df5fb540e08e96bec471faba3baaeeb03fd535918ed0e0cbacefd157a60d63",
+      "after": "e1df5fb540e08e96bec471faba3baaeeb03fd535918ed0e0cbacefd157a60d63",
+      "unchanged": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/modal-full-path1-resume4/live-config.json",
+      "before": "b0b896643357932b8f8e60295a5b681886efa36494a5a7a95e924935b8aee590",
+      "after": "b0b896643357932b8f8e60295a5b681886efa36494a5a7a95e924935b8aee590",
+      "unchanged": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/modal-full-path1-resume4/closeout.md",
+      "before": "b12e70c49293dae7c31751db676c5b2a80d06c15e4a73623e26db19e7e8be401",
+      "after": "b12e70c49293dae7c31751db676c5b2a80d06c15e4a73623e26db19e7e8be401",
+      "unchanged": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/modal-full-path1-resume4/failure-analysis.md",
+      "before": "4e5c9a5db12b9c03961b5eeaf15a06a4fb2c2c3e24b294a8994d87a4f21ba93f",
+      "after": "4e5c9a5db12b9c03961b5eeaf15a06a4fb2c2c3e24b294a8994d87a4f21ba93f",
+      "unchanged": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/modal-full-path1-resume4/builder-stdout.txt",
+      "before": "579dd9cbba1d02747f53417db226a675726de4e7709bd1eb5c156276f1973234",
+      "after": "579dd9cbba1d02747f53417db226a675726de4e7709bd1eb5c156276f1973234",
+      "unchanged": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/modal-full-path1-resume4/builder-stderr.txt",
+      "before": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "after": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "unchanged": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/modal-full-path1-resume4/run/result.json",
+      "before": "4a9cd2d1a38227e1dd0c0e704723bb3d99ef64b4689698bfcfb2066b86e7d4d1",
+      "after": "4a9cd2d1a38227e1dd0c0e704723bb3d99ef64b4689698bfcfb2066b86e7d4d1",
+      "unchanged": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/modal-full-path1-resume4/termination-receipt.json",
+      "before": "9dbfdeb4fa2a68b9425a474a5781feb5cfb4a9d9f24208e421ea3a1a883f3327",
+      "after": "9dbfdeb4fa2a68b9425a474a5781feb5cfb4a9d9f24208e421ea3a1a883f3327",
+      "unchanged": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/modal-full-path1-resume4/stage-outcomes.json",
+      "before": "18de588759b165c264de56dfd59c93d0e949026af7d78ec67e7a573ed4c570ad",
+      "after": "18de588759b165c264de56dfd59c93d0e949026af7d78ec67e7a573ed4c570ad",
+      "unchanged": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/modal-full-path1-resume4/verification.json",
+      "before": "7d758e43036a7f1168219afd6676a8a16feae63b037cdc3f428cb77754d64bb2",
+      "after": "7d758e43036a7f1168219afd6676a8a16feae63b037cdc3f428cb77754d64bb2",
+      "unchanged": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/modal-full-path1-resume4/session-cost-time-ledger.json",
+      "before": "8f8338dfd1b3b9a5b02f54b83deba9b449cc39fe11abf7907766581dadd1fa1d",
+      "after": "8f8338dfd1b3b9a5b02f54b83deba9b449cc39fe11abf7907766581dadd1fa1d",
+      "unchanged": true
+    },
+    {
+      "path": "tmp/a040-modal-full-path1/sdk-venv/Lib/site-packages/modal/_image.py",
+      "before": "501027be53a74f40ac4eda78e23d288435e563e9e2a79d0df962eae72a4d634c",
+      "after": "501027be53a74f40ac4eda78e23d288435e563e9e2a79d0df962eae72a4d634c",
+      "unchanged": true
+    },
+    {
+      "path": "tmp/a040-modal-full-path1/sdk-venv/Lib/site-packages/modal/_functions.py",
+      "before": "7524a3a79a9f270136f81b0034ef9a46b4edd818196284982afcc86363a34000",
+      "after": "7524a3a79a9f270136f81b0034ef9a46b4edd818196284982afcc86363a34000",
+      "unchanged": true
+    },
+    {
+      "path": "tmp/a040-modal-full-path1/sdk-venv/Lib/site-packages/modal/_utils/function_utils.py",
+      "before": "7550829e8bdf4a562cb11b908745a8ab9a2a5f82a3fed00ae2f27751214d505c",
+      "after": "7550829e8bdf4a562cb11b908745a8ab9a2a5f82a3fed00ae2f27751214d505c",
+      "unchanged": true
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-output-contract-repair1\\contract.py",
+      "before": "647c5a467183edc512893158ce6eb41d72677c90af38f04ed02888f4dc3b3526",
+      "after": "647c5a467183edc512893158ce6eb41d72677c90af38f04ed02888f4dc3b3526",
+      "unchanged": true
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-output-contract-repair1\\protocol.py",
+      "before": "4616f24b44d8b482cf90a560a13e59324f20e497af4090d6e588fe437801ff77",
+      "after": "4616f24b44d8b482cf90a560a13e59324f20e497af4090d6e588fe437801ff77",
+      "unchanged": true
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-output-contract-repair1\\controller_core.py",
+      "before": "fc561eee08f1eafbbeac2cbcc5fa31890ef719bf603c5c7dd1af7aea5e556bcb",
+      "after": "fc561eee08f1eafbbeac2cbcc5fa31890ef719bf603c5c7dd1af7aea5e556bcb",
+      "unchanged": true
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-output-contract-repair1\\live_binding.py",
+      "before": "ca1351a05eea38577632a918b286d5ee7e5c82d423928fd8c2ce1af67de206c8",
+      "after": "ca1351a05eea38577632a918b286d5ee7e5c82d423928fd8c2ce1af67de206c8",
+      "unchanged": true
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-output-contract-repair1\\sdk_endpoint.py",
+      "before": "94606de56ba23e65e3dcacc57009cb0e60b5506648a2b276cb3165696af4251f",
+      "after": "94606de56ba23e65e3dcacc57009cb0e60b5506648a2b276cb3165696af4251f",
+      "unchanged": true
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-output-contract-repair1\\payload.py",
+      "before": "17273bebff6debd9888983ffcb2a7b3e3dbff572dccd203c05f9c8b5c9f60424",
+      "after": "17273bebff6debd9888983ffcb2a7b3e3dbff572dccd203c05f9c8b5c9f60424",
+      "unchanged": true
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-output-contract-repair1\\sandbox_stage.py",
+      "before": "723f80623c0b400a7c68d1a8bfd4e6d4b6e9fa4d67060a418db156c8c88621b9",
+      "after": "723f80623c0b400a7c68d1a8bfd4e6d4b6e9fa4d67060a418db156c8c88621b9",
+      "unchanged": true
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-output-contract-repair1\\linux_boundary.py",
+      "before": "4c2aad23c52813693249a6d104c50f208ed33928086b466e46e853ad074712ff",
+      "after": "4c2aad23c52813693249a6d104c50f208ed33928086b466e46e853ad074712ff",
+      "unchanged": true
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-output-contract-repair1\\linux_watchdog.py",
+      "before": "9b08538d3b5990389e103ef2d391d58fec6ec63795bf0dc5ebcec08bc1991d34",
+      "after": "9b08538d3b5990389e103ef2d391d58fec6ec63795bf0dc5ebcec08bc1991d34",
+      "unchanged": true
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-output-contract-repair1\\linux_runner.py",
+      "before": "82facf9151daa8eadc55c438be99f4c0cf5e331978c18b3a59530ef2af5b680e",
+      "after": "82facf9151daa8eadc55c438be99f4c0cf5e331978c18b3a59530ef2af5b680e",
+      "unchanged": true
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-output-contract-repair1\\live_worker.py",
+      "before": "5f9b934e435bc62259944f47f97a81f29cf9559b183d7a0b9e87736156b18902",
+      "after": "5f9b934e435bc62259944f47f97a81f29cf9559b183d7a0b9e87736156b18902",
+      "unchanged": true
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-output-contract-repair1\\live_launcher.py",
+      "before": "965f893be21113ee25114d4bebf8cd6a13aa75f88e7907963661daf66153e01b",
+      "after": "965f893be21113ee25114d4bebf8cd6a13aa75f88e7907963661daf66153e01b",
+      "unchanged": true
+    }
+  ],
+  "prior_status_log_preservation": [
+    {
+      "path": "docs/status.md",
+      "reconstructed_sha256": "297d8eb9c2dbcf5e5fcdaca1e6b4289f7d60547f5b7239d0aea455267dda9784",
+      "matches_prior_byte_hash": true
+    },
+    {
+      "path": "docs/log.md",
+      "reconstructed_sha256": "dc0163a140bcf59e051e94e16bfd02650a450df5d591acac524595a993b7d16b",
+      "matches_prior_byte_hash": true
+    }
+  ],
+  "local_named_process_check": {
+    "names": [
+      "python",
+      "pythonw",
+      "uv"
+    ],
+    "rows": [],
+    "limitation": "Not exhaustive local or remote workload audit; no cloud metadata calls."
+  },
+  "execution": {
+    "production_source_edits": 0,
+    "sdk_imports": 0,
+    "regressions_or_tests": 0,
+    "model_imports": 0,
+    "fit_predict_score": 0,
+    "payload_checkpoint_fake_protected_reads_or_hashes": 0,
+    "remote_calls": 0,
+    "builds": 0,
+    "sandbox": 0,
+    "h100": 0,
+    "zip": 0,
+    "commit_push": 0,
+    "subagents": 0
+  },
+  "observed_history": {
+    "preparation_controller_seconds": 9080.7295157,
+    "scientific_processes": 4,
+    "scientific_seconds": 1077.3504532,
+    "h100_seconds": 0,
+    "scope": "Inherited S1 ledger; current S0 document review excluded. Nested worker/cleanup not summed again.",
+    "metered_billed_recorded": "0.00000000",
+    "historical_component_usd": 0.00001152,
+    "management_not_invoice_usd": 0.6502900821875501,
+    "unused_allowance_in_management_usd": 0.65,
+    "cost_attribution_unposted": "UNKNOWN"
+  },
+  "new_files": [
+    "decision.md",
+    "s1-builder-source-contract.ko.md",
+    "verification.json"
+  ],
+  "edited_shared_files": [
+    "docs/status.md",
+    "docs/log.md"
+  ],
+  "limitations": [
+    "Source diagnosis only; no repaired production code or new test executed.",
+    "FILE single-source mount is source-supported; actual SDK function classification/mount graph must be demonstrated in future S1.",
+    "Recorded STOPPED/task0 not re-queried.",
+    "Local future PASS does not establish remote module import, complete dependency image, Linux enforcement, H100900s, target effect or release.",
+    "New S1 prompt is a proposal requiring user delivery to S1; no remote retry authority."
+  ],
+  "states_preserved": "E041/E025; parked E057/E060/E061; all STOP/HOLD/E058/E059/A039; 17999/12339 and A022 roles; E059 consumed oracle/selection, protected audit/calibration; A_half nonpromotion; A018 unconfirmed; S3 stopped; S2 none."
+}

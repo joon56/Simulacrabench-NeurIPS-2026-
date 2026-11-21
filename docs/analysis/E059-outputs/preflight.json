@@ -1,0 +1,88 @@
+{
+  "gate": "FIT",
+  "source_hashes_checked": 59,
+  "artifact_hashes_checked": 5,
+  "roles": {
+    "oracle": [
+      1918,
+      1124
+    ],
+    "selection": [
+      2007,
+      1130
+    ],
+    "audit": [
+      2074,
+      1177
+    ]
+  },
+  "active_original": [],
+  "lambdas": {
+    "EHREAS_BIR": [
+      0.1,
+      0.1
+    ],
+    "EHREAS_OTH": [
+      0.0,
+      0.1
+    ],
+    "EHREAS_COR": [
+      0.0,
+      0.1
+    ]
+  },
+  "learned_weights": [
+    7.7922078878754215,
+    2.9247678491238474,
+    1.1856227991812613,
+    0.4324801122134422,
+    1.4278377798936965,
+    0.7575278640025525
+  ],
+  "retrieval_share": 0.28672016056003397,
+  "pair_features_all_constant": false,
+  "prepared_sha256": "fe4e0889ba9a23d139d5c265df48167e00d267fc5a3e0a45f25c7efe7b6d9102",
+  "query_donors_sha256": "b2c1d2c89dd744808291536f9c2465f338a2c151803e9f6d6f777f2fe40505ca",
+  "metric_donors_sha256": "57ad134fbe41809699756f272bf3ac43b863d1392bae6a3e450766bbafdad8f1",
+  "execution_hashes": {
+    "scripts/screen_e059.py": "31ee84558932e3ef45871c6b53919ec59882044f8fec57ba4635e2242712c5f2",
+    "tests/test_e059_interactions.py": "746d52ed0de056d5789441c2df6f9bf0c70767638c2b9e765f019bc29e82e65c"
+  },
+  "registration_sha256": "0de9835b3053a5410e98ec5a1327c60aabfc0587071efb52725c4c7d44d8dc9a",
+  "data_sha256": "92aa1bc010bb85cf46750b1560e1a96e5f150b8f418296b560d52883064e3ede",
+  "artifact_hashes": [
+    {
+      "path": "external/e058/first-stage.pkl",
+      "bytes": 6136590,
+      "sha256": "0da627283f8adb6b1dfaabf320fd278d97826bc5aaf083da784de00047d69136",
+      "matches_record": true
+    },
+    {
+      "path": "external/e058/masked-frame.pkl",
+      "bytes": 1435316,
+      "sha256": "cfa92d52032e93a343b78adfc5479b72c1e93ece87f00e51333a6d84300026c3",
+      "matches_record": true
+    },
+    {
+      "path": "external/e058/library.npz",
+      "bytes": 1920806,
+      "sha256": "fc7f660b5c05e01fff4e4de41bd16fbf648ca3a5578a710aa20e64dd41e45ec6",
+      "matches_record": true
+    },
+    {
+      "path": "external/a019/evaluation-keys.parquet",
+      "bytes": 85242,
+      "sha256": "0d33a219a5f17a59d338715aead99060d381ef58a01981667b995da7e8e38bbc",
+      "matches_record": true
+    },
+    {
+      "path": "external/a019/fit-keys.parquet",
+      "bytes": 99372,
+      "sha256": "d997c85a9152df9da81e0146c38f0a99467bab5d27ffeb0d763496dbc5e2e9ac",
+      "matches_record": true
+    }
+  ],
+  "base_fits": 0,
+  "beta_fits": 0,
+  "new_evaluation_labels_read": false
+}

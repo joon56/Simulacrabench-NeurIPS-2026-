@@ -1,0 +1,15 @@
+{
+  "scope": "LIVE",
+  "app_name": "a040-resume4-20261004-144620",
+  "base_id": "im-eWgRNij0VH6mzozlOzEyxy",
+  "base_result_sha256": "942058f1cdfeb21505e29639b06bcda9238c372c9673c1f1ded1d0058284b612",
+  "prepare_deadline": 1791128780,
+  "gpu_latest_end": 1791131180,
+  "whole_deadline": 1791132380,
+  "execution_authorized": true,
+  "operation_timeout": 30,
+  "build_timeout": 900,
+  "cleanup_timeout": 60,
+  "cancel_grace": 2,
+  "poll_seconds": 2
+}

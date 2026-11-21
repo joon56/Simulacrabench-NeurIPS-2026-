@@ -1,0 +1,30 @@
+{
+  "recorded_utc": "2026-10-08T10:22:41.768243+00:00",
+  "status": "RELEASE_QUALIFIED_FOR_USER_REVIEW",
+  "role": "S2",
+  "workflow_revision": "2026-10-05-r5",
+  "workflow_sha256": "a577942675e16a732339e586c14796104dda704693568439ae28670cc7fb7b23",
+  "read_receipt": "entry.json",
+  "manifest_sha256": "8005f80b8d063065c8ec53a01ed808dd72711284affe2fac08e21d03b66961dd",
+  "manifest_entries_verified": 83,
+  "local_document_links_verified": 29,
+  "head": "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+  "head_unchanged": true,
+  "jobs_observation": {
+    "utc": "2026-10-08T10:21:56.0800862+00:00",
+    "named_local_job_count": 0,
+    "jobs": []
+  },
+  "gross_elapsed_through_final_receipt_seconds": 2741.768243,
+  "gross_budget_seconds": 7200,
+  "gross_includes_admin_failures_reads_repairs_documents_hashes": true,
+  "computational_children_seconds": 1257.2889890000006,
+  "scientific_checks_reexecuted_during_closeout": 0,
+  "ZIP_sha256": "83087eaa081e3973cf4c5b4ae48923f61d33a440c989c7d2a6652c069e90eee4",
+  "ZIP_bytes": 16879,
+  "state": "E041 incumbent/E025 fallback; E057/E060/E061/E062 parked; all STOP/HOLD/exposure/A018/S3 unchanged",
+  "SCORES_prefix_and_hosted_arms_unchanged": true,
+  "source_and_original_records_preserved": true,
+  "self_excluded": true,
+  "scope_closed": "Return S0 document handoff; stop. No upload/commit/push/TEST/S3 or new experiment."
+}

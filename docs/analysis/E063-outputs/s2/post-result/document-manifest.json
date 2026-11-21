@@ -1,0 +1,170 @@
+{
+  "created_kst": "2026-10-10T00:54:20.062320+09:00",
+  "scope": "New E063 post-result documents only, including before-document backups. No manifest path traversed to model/raw/ZIP files.",
+  "self_excluded": true,
+  "files": [
+    {
+      "path": "docs/analysis/E063-outputs/s2/post-result/before/01-SCORES.md",
+      "bytes": 4793,
+      "sha256": "98cfc9bff6aa17bfe62dca9e1b0bfd2a64885129ae0f51c3338ad9f4b8346d40"
+    },
+    {
+      "path": "docs/analysis/E063-outputs/s2/post-result/before/02-SCORES.md",
+      "bytes": 11866,
+      "sha256": "672e50c16a1b066e03b1fb02d41ab1cab13e991594afe5e7988f138865453c49"
+    },
+    {
+      "path": "docs/analysis/E063-outputs/s2/post-result/before/03-status.md",
+      "bytes": 77284,
+      "sha256": "c10f72f371e997a3402189c2d5babd35bd34b06b1c1101c80c60a8418e6e143a"
+    },
+    {
+      "path": "docs/analysis/E063-outputs/s2/post-result/before/04-log.md",
+      "bytes": 342809,
+      "sha256": "44c39bc1d530b81ef9e59307b54728bf45468d489daf53b4badf169b68e267ea"
+    },
+    {
+      "path": "docs/analysis/E063-outputs/s2/post-result/comparison.json",
+      "bytes": 5216,
+      "sha256": "19c9ffedc1386e4732206fd033cdd5b19fa5cdd339dcccd93dabff0a5aa061f5"
+    },
+    {
+      "path": "docs/analysis/E063-outputs/s2/post-result/document-changes.json",
+      "bytes": 2913,
+      "sha256": "10c2424f2f679bc2473dc7c5490783fe4bedad0923759f33b6150960f25a20e0"
+    },
+    {
+      "path": "docs/analysis/E063-outputs/s2/post-result/entry.json",
+      "bytes": 189685,
+      "sha256": "e82eb0aa21db35c174b9da267af1d77ca56d1f4ae9ddb8e1e601b76f4b8e0438"
+    },
+    {
+      "path": "docs/analysis/E063-outputs/s2/post-result/exposure-ledger.md",
+      "bytes": 2422,
+      "sha256": "17a65538c71f04ca30065dbca2738dfcbc3ec9fbc5ac0158342c7b41332c0fdd"
+    },
+    {
+      "path": "docs/analysis/E063-outputs/s2/post-result/global-scores-addition.md",
+      "bytes": 2114,
+      "sha256": "aa6834666a594aa2c3d6ef9883d4fdd64de714f10c8790274a4f8f4dd450b581"
+    },
+    {
+      "path": "docs/analysis/E063-outputs/s2/post-result/log-addition.md",
+      "bytes": 3379,
+      "sha256": "d6d1a94370334f7a172eaca8a6c574f2d345af0b115ca8b7efe49d223fa0fba6"
+    },
+    {
+      "path": "docs/analysis/E063-outputs/s2/post-result/normalization.json",
+      "bytes": 935,
+      "sha256": "d43c29f22e419e71b37e4bc6c72d98ec2e86bb90eb7c904e970803588145777f"
+    },
+    {
+      "path": "docs/analysis/E063-outputs/s2/post-result/post-result-handoff.ko.md",
+      "bytes": 3643,
+      "sha256": "bfb041674bcf500789a6b67aa4c9853bd4dc26b90f7f21b5413e8eb97029f232"
+    },
+    {
+      "path": "docs/analysis/E063-outputs/s2/post-result/read-receipt.md",
+      "bytes": 3065,
+      "sha256": "1df5b10520ac89f5bed0f2963e213f244341bfb5a02d8384829f1e988771a744"
+    },
+    {
+      "path": "docs/analysis/E063-outputs/s2/post-result/result.ko.md",
+      "bytes": 6866,
+      "sha256": "8025ec5ddab33bae3675f72616f5c932e18d15f77f6ac3f3fb0c53b98d4369fb"
+    },
+    {
+      "path": "docs/analysis/E063-outputs/s2/post-result/scorecard-addition.md",
+      "bytes": 2519,
+      "sha256": "ccb5538b7b216f6187b08317e738036fb85cd0e6feec4c20221c44dcd309251c"
+    },
+    {
+      "path": "docs/analysis/E063-outputs/s2/post-result/status-addition.md",
+      "bytes": 1281,
+      "sha256": "9f6c9b1226a7fd560061d4ca2d75b55d9d65c3b7910041455da97be0e827fbc7"
+    },
+    {
+      "path": "docs/analysis/E063-outputs/s2/post-result/user-message.txt",
+      "bytes": 7721,
+      "sha256": "edb78c96c41419fa8d8b1f8159874055afea1e3ddd740a46a3b8621a11b43e14"
+    },
+    {
+      "path": "docs/analysis/E063-outputs/s2/post-result/user-supplied-api.json",
+      "bytes": 1916,
+      "sha256": "0532bb9b512ac9c01aa7371b02e88ef9be75b1670d1d4870bb0664b0c9843ab3"
+    },
+    {
+      "path": "docs/analysis/E063-outputs/s2/post-result/verification.json",
+      "bytes": 18705,
+      "sha256": "fc5f7868734dbff5ff817e8a8fc486b363896264c62ad6813e22fe4c5f8bbdf2"
+    }
+  ],
+  "changed_destination_documents": [
+    {
+      "path": "submissions/2026-10-09-E063/SCORES.md",
+      "before_sha256": "98cfc9bff6aa17bfe62dca9e1b0bfd2a64885129ae0f51c3338ad9f4b8346d40",
+      "after_sha256": "c66bfce12940d8086511a0479c61ef7e14c7103805e977c205991f0b7c4216e7",
+      "before_bytes": 4793,
+      "after_bytes": 7312,
+      "addition_file": "scorecard-addition.md",
+      "addition_bytes": 2519,
+      "addition_sha256": "ccb5538b7b216f6187b08317e738036fb85cd0e6feec4c20221c44dcd309251c",
+      "insertion_byte_offset": 4793,
+      "mode": "suffix_only",
+      "removal_restores_before_exact_bytes": true,
+      "current_hash_matches": true,
+      "addition_bytes_match": true,
+      "original_bytes_restored_exactly": true
+    },
+    {
+      "path": "submissions/SCORES.md",
+      "before_sha256": "672e50c16a1b066e03b1fb02d41ab1cab13e991594afe5e7988f138865453c49",
+      "after_sha256": "94d36f5af0254dec1d92e1aeb7d443c0517282817881f4e244af41fcd0735469",
+      "before_bytes": 11866,
+      "after_bytes": 13980,
+      "addition_file": "global-scores-addition.md",
+      "addition_bytes": 2114,
+      "addition_sha256": "aa6834666a594aa2c3d6ef9883d4fdd64de714f10c8790274a4f8f4dd450b581",
+      "insertion_byte_offset": 11866,
+      "mode": "suffix_only",
+      "removal_restores_before_exact_bytes": true,
+      "current_hash_matches": true,
+      "addition_bytes_match": true,
+      "original_bytes_restored_exactly": true
+    },
+    {
+      "path": "docs/status.md",
+      "before_sha256": "c10f72f371e997a3402189c2d5babd35bd34b06b1c1101c80c60a8418e6e143a",
+      "after_sha256": "b380285a72bee94da61cdb5abfaba7035f75553cc7e0dc59c552491ad91124df",
+      "before_bytes": 77284,
+      "after_bytes": 78565,
+      "addition_file": "status-addition.md",
+      "addition_bytes": 1281,
+      "addition_sha256": "9f6c9b1226a7fd560061d4ca2d75b55d9d65c3b7910041455da97be0e827fbc7",
+      "insertion_byte_offset": 325,
+      "mode": "insert_only",
+      "removal_restores_before_exact_bytes": true,
+      "current_hash_matches": true,
+      "addition_bytes_match": true,
+      "original_bytes_restored_exactly": true
+    },
+    {
+      "path": "docs/log.md",
+      "before_sha256": "44c39bc1d530b81ef9e59307b54728bf45468d489daf53b4badf169b68e267ea",
+      "after_sha256": "6e44fc3105a8d865178ff03eb8e8b86a2b8a28eb22f6c1286d00145113c971ee",
+      "before_bytes": 342809,
+      "after_bytes": 346188,
+      "addition_file": "log-addition.md",
+      "addition_bytes": 3379,
+      "addition_sha256": "d6d1a94370334f7a172eaca8a6c574f2d345af0b115ca8b7efe49d223fa0fba6",
+      "insertion_byte_offset": 23,
+      "mode": "insert_only",
+      "removal_restores_before_exact_bytes": true,
+      "current_hash_matches": true,
+      "addition_bytes_match": true,
+      "original_bytes_restored_exactly": true
+    }
+  ],
+  "verification_sha256": "fc5f7868734dbff5ff817e8a8fc486b363896264c62ad6813e22fe4c5f8bbdf2",
+  "immutable_prior_manifests_preserved": true
+}

@@ -1,0 +1,12 @@
+[
+  {
+    "case": "schedule_fail",
+    "pass": true,
+    "fake_creates": 1,
+    "fake_terminates": 1,
+    "outcome": "STOP_FIRST_ERROR",
+    "termination": "TERMINAL_TASK0_CONFIRMED",
+    "stream_reads": 0,
+    "stream_writes": 0
+  }
+]

@@ -1,0 +1,3 @@
+3.13.14 (tags/v3.13.14:fd17997, Jun 10 2026, 13:03:48) [MSC v.1944 64 bit (AMD64)]
+C:\Users\USER\Desktop\SimulacraBench\tmp\a040-modal-full-path1\sdk-venv\Scripts\python.exe
+C:\Users\USER\AppData\Local\Programs\Python\Python313

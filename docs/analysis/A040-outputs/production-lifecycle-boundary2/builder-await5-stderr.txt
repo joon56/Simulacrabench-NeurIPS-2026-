@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\SimulacraBench\docs\analysis\A040-outputs\production-lifecycle-boundary2\check_boundary.py", line 13, in <module>
+    raise OSError('CPU2 affinity could not be set')
+OSError: CPU2 affinity could not be set

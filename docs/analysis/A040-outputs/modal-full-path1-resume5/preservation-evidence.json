@@ -1,0 +1,171 @@
+{
+    "recorded_utc":  "2026-10-05T10:01:42.9979873+00:00",
+    "source12":  [
+                     {
+                         "path":  "contract.py",
+                         "expected":  "08aaff6cf44696e1197679a2f428a95c60f50fa186e32042bf6d21f3bced6dfe",
+                         "actual":  "08aaff6cf44696e1197679a2f428a95c60f50fa186e32042bf6d21f3bced6dfe",
+                         "match":  true
+                     },
+                     {
+                         "path":  "protocol.py",
+                         "expected":  "4616f24b44d8b482cf90a560a13e59324f20e497af4090d6e588fe437801ff77",
+                         "actual":  "4616f24b44d8b482cf90a560a13e59324f20e497af4090d6e588fe437801ff77",
+                         "match":  true
+                     },
+                     {
+                         "path":  "controller_core.py",
+                         "expected":  "fc561eee08f1eafbbeac2cbcc5fa31890ef719bf603c5c7dd1af7aea5e556bcb",
+                         "actual":  "fc561eee08f1eafbbeac2cbcc5fa31890ef719bf603c5c7dd1af7aea5e556bcb",
+                         "match":  true
+                     },
+                     {
+                         "path":  "live_binding.py",
+                         "expected":  "ca1351a05eea38577632a918b286d5ee7e5c82d423928fd8c2ce1af67de206c8",
+                         "actual":  "ca1351a05eea38577632a918b286d5ee7e5c82d423928fd8c2ce1af67de206c8",
+                         "match":  true
+                     },
+                     {
+                         "path":  "sdk_endpoint.py",
+                         "expected":  "b5073417ab5d2ae3b857e8e0fdef2d5bb1df1a5a7cc28aff36fea6f4c4c4a93e",
+                         "actual":  "b5073417ab5d2ae3b857e8e0fdef2d5bb1df1a5a7cc28aff36fea6f4c4c4a93e",
+                         "match":  true
+                     },
+                     {
+                         "path":  "payload.py",
+                         "expected":  "17273bebff6debd9888983ffcb2a7b3e3dbff572dccd203c05f9c8b5c9f60424",
+                         "actual":  "17273bebff6debd9888983ffcb2a7b3e3dbff572dccd203c05f9c8b5c9f60424",
+                         "match":  true
+                     },
+                     {
+                         "path":  "sandbox_stage.py",
+                         "expected":  "723f80623c0b400a7c68d1a8bfd4e6d4b6e9fa4d67060a418db156c8c88621b9",
+                         "actual":  "723f80623c0b400a7c68d1a8bfd4e6d4b6e9fa4d67060a418db156c8c88621b9",
+                         "match":  true
+                     },
+                     {
+                         "path":  "linux_boundary.py",
+                         "expected":  "4c2aad23c52813693249a6d104c50f208ed33928086b466e46e853ad074712ff",
+                         "actual":  "4c2aad23c52813693249a6d104c50f208ed33928086b466e46e853ad074712ff",
+                         "match":  true
+                     },
+                     {
+                         "path":  "linux_watchdog.py",
+                         "expected":  "9b08538d3b5990389e103ef2d391d58fec6ec63795bf0dc5ebcec08bc1991d34",
+                         "actual":  "9b08538d3b5990389e103ef2d391d58fec6ec63795bf0dc5ebcec08bc1991d34",
+                         "match":  true
+                     },
+                     {
+                         "path":  "linux_runner.py",
+                         "expected":  "82facf9151daa8eadc55c438be99f4c0cf5e331978c18b3a59530ef2af5b680e",
+                         "actual":  "82facf9151daa8eadc55c438be99f4c0cf5e331978c18b3a59530ef2af5b680e",
+                         "match":  true
+                     },
+                     {
+                         "path":  "live_worker.py",
+                         "expected":  "5f9b934e435bc62259944f47f97a81f29cf9559b183d7a0b9e87736156b18902",
+                         "actual":  "5f9b934e435bc62259944f47f97a81f29cf9559b183d7a0b9e87736156b18902",
+                         "match":  true
+                     },
+                     {
+                         "path":  "live_launcher.py",
+                         "expected":  "e6592b15ce83816fb4487ccb2ca7326f91b40fc984349e7fd22352d6ba9e1e98",
+                         "actual":  "e6592b15ce83816fb4487ccb2ca7326f91b40fc984349e7fd22352d6ba9e1e98",
+                         "match":  true
+                     }
+                 ],
+    "named_metadata":  [
+                           {
+                               "path":  "C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\local-preparation-repair2/source-manifest.json",
+                               "expected":  "c782c99e29cfceeaba132018d48f2be2a844e7f8b51ba8840157f9ebfa845765",
+                               "actual":  "c782c99e29cfceeaba132018d48f2be2a844e7f8b51ba8840157f9ebfa845765",
+                               "match":  true
+                           },
+                           {
+                               "path":  "C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\modal-full-path1-resume5/live-config.json",
+                               "expected":  "3096841f7172920292712c1eec928c8f806b3ffd70b68a70236bfb91b7403511",
+                               "actual":  "3096841f7172920292712c1eec928c8f806b3ffd70b68a70236bfb91b7403511",
+                               "match":  true
+                           },
+                           {
+                               "path":  "docs/analysis/A040-outputs/modal-full-path1/allowlist.json",
+                               "expected":  "f8a52aaabb040593737485a9f860d53ae39600693ab18517128c577d0ac5dcfe",
+                               "actual":  "f8a52aaabb040593737485a9f860d53ae39600693ab18517128c577d0ac5dcfe",
+                               "match":  true
+                           },
+                           {
+                               "path":  "docs/analysis/A040-outputs/full-path-resume1/requirements.lock.txt",
+                               "expected":  "6c6f0d0fc5db943eb1cb95ff4610ddea5df724bc50031b883a0dd67656771b70",
+                               "actual":  "6c6f0d0fc5db943eb1cb95ff4610ddea5df724bc50031b883a0dd67656771b70",
+                               "match":  true
+                           },
+                           {
+                               "path":  "C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\modal-full-path1-resume5/user-authority.ko.md",
+                               "expected":  "b67fd5c80175d04433e6307b5301acf67d3fd54b88e0f8d250514328d503fd2e",
+                               "actual":  "b67fd5c80175d04433e6307b5301acf67d3fd54b88e0f8d250514328d503fd2e",
+                               "match":  true
+                           },
+                           {
+                               "path":  "docs/workflow.md",
+                               "expected":  "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642",
+                               "actual":  "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642",
+                               "match":  true
+                           }
+                       ],
+    "document_insertions":  [
+                                {
+                                    "path":  "docs/status.md",
+                                    "old_bytes_preserved_after_removing_single_insert":  true,
+                                    "backup_sha256":  "13b43f79e77845cb406bf8e5d79dd3843045393f51fa5b94514015295de65e21"
+                                },
+                                {
+                                    "path":  "docs/log.md",
+                                    "old_bytes_preserved_after_removing_single_insert":  true,
+                                    "backup_sha256":  "4f13b503b55a9b36e393a3567bf6f59d036818aef505a8bcbbc7c4292d8fcd04"
+                                }
+                            ],
+    "raw_worker_artifacts":  [
+                                 {
+                                     "path":  "run/attempt-started.json",
+                                     "bytes":  88,
+                                     "sha256":  "a77a96bdf81b68892e6ccf34c0ec9077eef42def1c34745b5b274135f0fa9439"
+                                 },
+                                 {
+                                     "path":  "run/cost-ledger.json",
+                                     "bytes":  299,
+                                     "sha256":  "0b04db605f78a254f5c852a94d434f734af660424aca495e5feebf0afe09d998"
+                                 },
+                                 {
+                                     "path":  "run/events.jsonl",
+                                     "bytes":  900,
+                                     "sha256":  "b3f02274c003de8efe519d5adf2ecb6e37fd3fff6d109dbd9fba76fb4172bf02"
+                                 },
+                                 {
+                                     "path":  "run/plan.json",
+                                     "bytes":  449,
+                                     "sha256":  "a9ac74057c15755a09a52d3c2c693bea7fe4009b751616f8e8fc47bbe1090267"
+                                 },
+                                 {
+                                     "path":  "run/result.json",
+                                     "bytes":  4306,
+                                     "sha256":  "d5baee1658b0ac07726fe22a0f2605bcac881c7fcf27d58825e03ca92fa3a02a"
+                                 },
+                                 {
+                                     "path":  "run/source-gate.json",
+                                     "bytes":  135,
+                                     "sha256":  "5690330e11ce714551f61ac1228060d805a8a32a397ef5285770a3e75e26b76b"
+                                 },
+                                 {
+                                     "path":  "run/state.json",
+                                     "bytes":  4306,
+                                     "sha256":  "d5baee1658b0ac07726fe22a0f2605bcac881c7fcf27d58825e03ca92fa3a02a"
+                                 },
+                                 {
+                                     "path":  "run/termination-receipt.json",
+                                     "bytes":  2459,
+                                     "sha256":  "3d33bddc22ebc138aba1c9ae3975819f398d06e1484054c5787e37a19f0e06b5"
+                                 }
+                             ],
+    "prior_results":  "Not modified; no blanket rehash of old data/artifacts",
+    "payload_rehash_during_closeout":  0
+}

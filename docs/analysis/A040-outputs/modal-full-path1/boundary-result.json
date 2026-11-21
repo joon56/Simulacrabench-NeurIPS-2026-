@@ -1,0 +1,9 @@
+{
+    "outcome":  "NOT_RUN",
+    "reason":  "Authentication and complete build-cost gate unresolved",
+    "model_free_boundary_seconds":  0,
+    "model_free_boundary_invocations":  0,
+    "scientific_imports":  0,
+    "prior_successful_suites_repeated":  0,
+    "file_identity_staging_check":  "112 source/fake/checkpoint files matched manifest and copies; not an OS boundary test"
+}

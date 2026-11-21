@@ -1,0 +1,20 @@
+{
+  "outcome": "LIVE_BINDING_PREFLIGHT_PASS",
+  "sdk": "1.6.0",
+  "elapsed_seconds": 0.4413260999990598,
+  "signatures": {
+    "Client.from_env": "(_override_config=None) -> '_Client'",
+    "Workspace.hydrate": "(self, client: modal.client._Client | None = None) -> Self",
+    "App.lookup": "(name: str, *, client: modal.client._Client | None = None, environment_name: str | None = None, create_if_missing: bool = False) -> '_App'",
+    "Image.build": "(self, app: 'modal.app._App') -> '_Image'",
+    "Sandbox.create": "(*args: str, app: 'modal.app._App | None' = None, name: str | None = None, tags: dict[str, str] | None = None, image: modal._image._Image | None = None, env: dict[str, str | None] | None = None, secrets: collections.abc.Collection[modal.secret._Secret] | None = None, network_file_systems: dict[str | os.PathLike, modal.network_file_system._NetworkFileSystem] = {}, timeout: int = 300, idle_timeout: int | None = None, workdir: str | None = None, gpu: str | None = None, cloud: str | None = None, region: str | collections.abc.Sequence[str] | None = None, cpu: float | tuple[float, float] | None = None, memory: int | tuple[int, int] | None = None, runtime: Optional[Literal['gvisor', 'vm']] = None, block_network: bool = False, outbound_cidr_allowlist: collections.abc.Sequence[str] | None = None, outbound_domain_allowlist: collections.abc.Sequence[str] | None = None, _experimental_outbound_policy: modal._outbound_policy._OutboundPolicy | None = None, inbound_cidr_allowlist: collections.abc.Sequence[str] | None = None, volumes: dict[str | os.PathLike, modal.volume._Volume | modal.cloud_bucket_mount._CloudBucketMount] = {}, pty: bool = False, encrypted_ports: collections.abc.Sequence[int] = [], h2_ports: collections.abc.Sequence[int] = [], unencrypted_ports: collections.abc.Sequence[int] = [], custom_domain: str | None = None, proxy: modal.proxy._Proxy | None = None, include_oidc_identity_token: bool = False, readiness_probe: modal.sandbox.Probe | None = None, verbose: bool = False, experimental_options: dict[str, typing.Any] | None = None, _experimental_enable_snapshot: bool = False, client: modal.client._Client | None = None, environment_name: str | None = None, pty_info: modal_proto.api_pb2.PTYInfo | None = None, cidr_allowlist: collections.abc.Sequence[str] | None = None) -> '_Sandbox'",
+    "Sandbox.exec": "(self, *args: str, stdout: modal.stream_type.StreamType = modal.stream_type.StreamType.PIPE, stderr: modal.stream_type.StreamType = modal.stream_type.StreamType.PIPE, timeout: int | None = None, workdir: str | None = None, env: dict[str, str | None] | None = None, secrets: collections.abc.Collection[modal.secret._Secret] | None = None, text: bool = True, bufsize: Literal[-1, 1] = -1, pty: bool = False, _pty_info: modal_proto.api_pb2.PTYInfo | None = None, pty_info: modal_proto.api_pb2.PTYInfo | None = None)",
+    "Sandbox.terminate": "(self, *, wait: bool = False) -> int | None",
+    "Sandbox.poll": "(self) -> int | None"
+  },
+  "image_handle_translated_to_raw_async_type": true,
+  "expected_negative_blocks": 1,
+  "actual_rpc_calls": 0,
+  "model_imports": 0,
+  "old_suite_repeated": false
+}

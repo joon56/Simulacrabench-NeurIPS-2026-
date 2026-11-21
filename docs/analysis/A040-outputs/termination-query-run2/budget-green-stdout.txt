@@ -1,0 +1,1 @@
+{"outcome": "BUDGET_BOUNDARY_PASS", "cases": ["cumulative_actual_child_only", "last30_blocks_full_helper", "unclosed_child_blocks_reentry", "durable_single_termination", "prior_or_uncertain_mutation_blocks_full_helper", "real_child_lifetime_accounted", "deadline_kills_owned_child"], "actual_sdk_auth_rpc": 0}

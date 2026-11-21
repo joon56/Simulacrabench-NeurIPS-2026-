@@ -1,0 +1,15 @@
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\SimulacraBench\docs\analysis\A040-outputs\termination-query-repair1\confirm_terminal.py", line 216, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "C:\Users\USER\Desktop\SimulacraBench\docs\analysis\A040-outputs\termination-query-repair1\confirm_terminal.py", line 210, in main
+    result = synchronizer.create_blocking(query.run)()
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\SimulacraBench\tmp\a040-modal-full-path1\sdk-venv\Lib\site-packages\synchronicity\synchronizer.py", line 1062, in create_blocking
+    return self.wrap(obj, name, target_module)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\SimulacraBench\tmp\a040-modal-full-path1\sdk-venv\Lib\site-packages\synchronicity\synchronizer.py", line 1065, in wrap
+    wrapped = self._wrap(obj, Interface.BLOCKING, name, target_module=target_module)
+  File "C:\Users\USER\Desktop\SimulacraBench\tmp\a040-modal-full-path1\sdk-venv\Lib\site-packages\synchronicity\synchronizer.py", line 1007, in _wrap
+    raise Exception("Argument %s is not a class or a callable" % obj)
+Exception: Argument <bound method Query.run of <__main__.Query object at 0x0000029BF9EC2F90>> is not a class or a callable

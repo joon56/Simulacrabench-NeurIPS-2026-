@@ -1,0 +1,27 @@
+{
+    "arrays_opened":  0,
+    "fixture_instrument_vectors":  [
+                                       {
+                                           "instrument":  "unicef",
+                                           "vectors":  17856
+                                       },
+                                       {
+                                           "instrument":  "world_bank",
+                                           "vectors":  39520
+                                       },
+                                       {
+                                           "instrument":  "unhcr",
+                                           "vectors":  132273
+                                       }
+                                   ],
+    "reference_counts":  {
+                             "unicef":  17856,
+                             "world_bank":  39520,
+                             "unhcr":  132273
+                         },
+    "reference_hash_keys":  [
+                                "unicef",
+                                "world_bank",
+                                "unhcr"
+                            ]
+}

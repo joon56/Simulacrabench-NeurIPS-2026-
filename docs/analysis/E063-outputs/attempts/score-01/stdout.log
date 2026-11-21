@@ -1,0 +1,256 @@
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e063_round_metric.py:223: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+{
+  "verdicts": [
+    "LOCAL_TECHNICAL_PASS_FOR_S0_PENDING_RESOURCE_RECEIPT"
+  ],
+  "comparison": {
+    "unicef": {
+      "delta_skill_H_R": 0.0,
+      "delta_log_H_R": 0.0,
+      "max_raw_difference": 0.0,
+      "changed_vectors": 0,
+      "regression_pass": true
+    },
+    "world_bank": {
+      "delta_skill_H_R": 0.0,
+      "delta_log_H_R": 0.0,
+      "max_raw_difference": 0.0,
+      "changed_vectors": 0,
+      "regression_pass": true
+    },
+    "unhcr": {
+      "delta_skill_H_R": 1.757886784692353e-05,
+      "delta_log_H_R": 2.2180175226482746e-05,
+      "max_raw_difference": 0.13446233163832838,
+      "changed_vectors": 46405,
+      "regression_pass": true
+    }
+  }
+}

@@ -1,0 +1,151 @@
+{
+    "status":  "PASS_DOCUMENT_RESULT_INTAKE",
+    "checked_utc":  "2026-09-28T15:31:09.5678545+00:00",
+    "head":  "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+    "document_comparison":  [
+                                {
+                                    "path":  "AGENTS.md",
+                                    "before":  "86394bbf164a2b7df6a309f4564b9dacf3b2799fa0227a703e4ea11d4d842596",
+                                    "after":  "86394bbf164a2b7df6a309f4564b9dacf3b2799fa0227a703e4ea11d4d842596",
+                                    "changed":  false
+                                },
+                                {
+                                    "path":  "CLAUDE.md",
+                                    "before":  "69175e6d741a17042db4852d4961a5c52bd97fe2cd5bfbff762d30d7e5270364",
+                                    "after":  "69175e6d741a17042db4852d4961a5c52bd97fe2cd5bfbff762d30d7e5270364",
+                                    "changed":  false
+                                },
+                                {
+                                    "path":  "docs/workflow.md",
+                                    "before":  "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642",
+                                    "after":  "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642",
+                                    "changed":  false
+                                },
+                                {
+                                    "path":  "docs/status.md",
+                                    "before":  "363b943d2278c03e08b076f7c849f36e5563a9371245e4326261d90ccf187fa8",
+                                    "after":  "2e30d4b24634865ad51f3bd09eccac1e55c125523dabe0620ee2d212af297d8e",
+                                    "changed":  true
+                                },
+                                {
+                                    "path":  "docs/log.md",
+                                    "before":  "2d9c9c4fccc8ea25b7ec7fa5f6f98a16f99d1c44391dc54ac9befe022d1ef30b",
+                                    "after":  "21baf39998eded0cd8c47acf2fa76d1ccec49fffc9a64a62457d89c5d9fb5482",
+                                    "changed":  true
+                                },
+                                {
+                                    "path":  "docs/tree.md",
+                                    "before":  "eaa884a4194db103335136495205fe5b51297c17db15e9eac62946ced286cc44",
+                                    "after":  "eaa884a4194db103335136495205fe5b51297c17db15e9eac62946ced286cc44",
+                                    "changed":  false
+                                },
+                                {
+                                    "path":  "docs/experiments/E061-tied-content-heads.md",
+                                    "before":  "9e78a640daf8ff037ce877c01b6106d48328442450d120532ea24cd05da01f69",
+                                    "after":  "a052fc9939b0e2e8a15841cfaa3645fa5c14661766cac829ce1a7ffb3a063dff",
+                                    "changed":  true
+                                },
+                                {
+                                    "path":  "submissions/2026-09-28-E061/SCORES.md",
+                                    "before":  "fabe4b99720784afb9b6f61a2c5c15fc9a908ddd7658bed5ebd8312911138f82",
+                                    "after":  "42cff85586e68d4f99e5ff77bf6a082196b35fa867bd29d9ef256e6833974282",
+                                    "changed":  true
+                                },
+                                {
+                                    "path":  "submissions/2026-09-19-E041/SCORES.md",
+                                    "before":  "452de89434093225c755639e711b567bfd1160dc38eab74d6b603fda65c2351c",
+                                    "after":  "452de89434093225c755639e711b567bfd1160dc38eab74d6b603fda65c2351c",
+                                    "changed":  false
+                                },
+                                {
+                                    "path":  "submissions/hosted-scores/2026-09-27.json",
+                                    "before":  "dfe719bec68faf60c7dfec86c6034ba35fe1a6ba7a9437b88813dbc1ea567ce8",
+                                    "after":  "dfe719bec68faf60c7dfec86c6034ba35fe1a6ba7a9437b88813dbc1ea567ce8",
+                                    "changed":  false
+                                },
+                                {
+                                    "path":  "docs/analysis/A035-e061-dev-submission-review.md",
+                                    "before":  "f1c58ea926522197d7b991b7a881afd965d3a64f9e9cc1dc696529c0298e8247",
+                                    "after":  "f1c58ea926522197d7b991b7a881afd965d3a64f9e9cc1dc696529c0298e8247",
+                                    "changed":  false
+                                },
+                                {
+                                    "path":  "docs/analysis/A035-outputs/s2-e061-result-intake.ko.md",
+                                    "before":  "bfb9d8dc9cf648d3d6ab5866e36cad882e67a15ed7d97814691da77431cb0408",
+                                    "after":  "bfb9d8dc9cf648d3d6ab5866e36cad882e67a15ed7d97814691da77431cb0408",
+                                    "changed":  false
+                                },
+                                {
+                                    "path":  "docs/analysis/E061-outputs/registration.md",
+                                    "before":  "99f4e2497bc1dcbc71f82ad529abfd368092070ce4bf6eed5e298ac9b8dd6af8",
+                                    "after":  "99f4e2497bc1dcbc71f82ad529abfd368092070ce4bf6eed5e298ac9b8dd6af8",
+                                    "changed":  false
+                                },
+                                {
+                                    "path":  "docs/analysis/E061-outputs/manifest.json",
+                                    "before":  "c1a84f0d484fd30b3eccd87ba2e23d39fa7c788eb11b14a3892dbb329576919a",
+                                    "after":  "c1a84f0d484fd30b3eccd87ba2e23d39fa7c788eb11b14a3892dbb329576919a",
+                                    "changed":  false
+                                },
+                                {
+                                    "path":  "docs/analysis/E061-outputs/s2/entry.json",
+                                    "before":  "336e6371737f52f1448781dc2ab3262777281c1e83972d190fdbb7a0216c4241",
+                                    "after":  "336e6371737f52f1448781dc2ab3262777281c1e83972d190fdbb7a0216c4241",
+                                    "changed":  false
+                                },
+                                {
+                                    "path":  "docs/analysis/E061-outputs/s2/release-freeze.json",
+                                    "before":  "4f92841cb166aa28e78e07294cb09614fc75e03c509ec8876ec58fce791f1bb8",
+                                    "after":  "4f92841cb166aa28e78e07294cb09614fc75e03c509ec8876ec58fce791f1bb8",
+                                    "changed":  false
+                                },
+                                {
+                                    "path":  "docs/analysis/E061-outputs/s2/source-archive-manifest.json",
+                                    "before":  "e3dbaa704ef4633064cac071b252d4b56ef0b51ff2c6f31930b805f1ba4ebf42",
+                                    "after":  "e3dbaa704ef4633064cac071b252d4b56ef0b51ff2c6f31930b805f1ba4ebf42",
+                                    "changed":  false
+                                },
+                                {
+                                    "path":  "docs/analysis/E061-outputs/s2/verification.json",
+                                    "before":  "d13a125f2cb26d4b62e1103e050af39ba2ee8c555664d3e06723e05766894a31",
+                                    "after":  "d13a125f2cb26d4b62e1103e050af39ba2ee8c555664d3e06723e05766894a31",
+                                    "changed":  false
+                                },
+                                {
+                                    "path":  "docs/analysis/E061-outputs/s2/closeout.md",
+                                    "before":  "f3f8b47c47b5727ee6c0173da7409282a8a14f2ac39eaaaa2bf73151c5a16fdd",
+                                    "after":  "f3f8b47c47b5727ee6c0173da7409282a8a14f2ac39eaaaa2bf73151c5a16fdd",
+                                    "changed":  false
+                                },
+                                {
+                                    "path":  "docs/analysis/E061-outputs/s2/exposure-ledger.md",
+                                    "before":  "218da11a1f494b1ba22e0d7c8ff05c6a69eb71ecca2748ce1d2e55f12d52f2c2",
+                                    "after":  "218da11a1f494b1ba22e0d7c8ff05c6a69eb71ecca2748ce1d2e55f12d52f2c2",
+                                    "changed":  false
+                                },
+                                {
+                                    "path":  "docs/analysis/E061-outputs/s2/scorecard-prerun.md",
+                                    "before":  "826bcbcc2518714f70835aa8cf65943543190e40112400ac2709f88ee359bb69",
+                                    "after":  "826bcbcc2518714f70835aa8cf65943543190e40112400ac2709f88ee359bb69",
+                                    "changed":  false
+                                }
+                            ],
+    "new_result_artifacts":  {
+                                 "docs/analysis/E061-outputs/s2/user-reported-949956.json":  "3837fdcc1c43de62c957158adb56b8fbcb53073a05089d007a1e88decececc08",
+                                 "docs/analysis/E061-outputs/s2/post-result.json":  "9f91f5fe333554f5e580ea47a07e67c48eccc414cb6529400edf56417746ee50",
+                                 "docs/analysis/E061-outputs/s2/post-result-handoff.ko.md":  "f2628a7a16a55279721efd79e316a27de1eed8676655b27e81391ea83cc7d92b"
+                             },
+    "original_scorecard_and_experiment_text_prefix_exact":  true,
+    "reported_decimal_deltas":  {
+                                    "skill":  "-0.0033333333",
+                                    "skill_unicef":  "0.0000000000",
+                                    "skill_world_bank":  "0.0000000000",
+                                    "skill_unhcr":  "-0.0100000000"
+                                },
+    "created_when_kst":  "2026-09-28T22:57:41.742034+09:00",
+    "active_scientific_jobs":  [
+
+                               ],
+    "verification_scope":  "Document JSON parsing, released-value arithmetic/time conversion, prefix preservation and document hash/link checks only. No model score calculation, tests, ZIP/source-model/data/NPZ/cache read or rehash.",
+    "manifest_difference":  "Prior S1/S2 manifests and verification remain byte-identical. E061 experiment/SCORES append result; status/log updated after existing A035 additions. Do not treat these new document hashes as a source/artifact change or a rerun trigger."
+}

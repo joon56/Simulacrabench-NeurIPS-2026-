@@ -1,0 +1,15 @@
+﻿{
+    "error":  "Local phase failed: baseline",
+    "phases":  [
+                   {
+                       "elapsed_through_phase":  0.3767133,
+                       "pid":  51144,
+                       "hidden":  true,
+                       "mode":  "baseline",
+                       "exit_code":  1
+                   }
+               ],
+    "remote_authorized":  false,
+    "outer_seconds":  0.38486519999999996,
+    "cycle":  2
+}

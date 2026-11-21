@@ -1,0 +1,64 @@
+{
+    "attempt":  "c6-02",
+    "outcome":  "NOT_REPRODUCED",
+    "reason":  "COMPLETE",
+    "error":  null,
+    "supervisor_wall_seconds":  2.5795243,
+    "aggregate_seconds":  3.25468099999999992,
+    "cap_seconds":  30,
+    "budget_seconds":  90,
+    "forced":  false,
+    "launcher_pid":  53860,
+    "exit_code":  0,
+    "actual_python_pid":  40428,
+    "children":  [
+                     {
+                         "pid":  27824,
+                         "name":  "conhost",
+                         "has_exited":  true,
+                         "start_utc":  "2026-10-26T12:39:55.0928255Z",
+                         "exit_code":  -1
+                     },
+                     {
+                         "pid":  29244,
+                         "name":  "conhost",
+                         "has_exited":  true,
+                         "start_utc":  "2026-10-26T12:39:56.1385552Z",
+                         "exit_code":  0
+                     },
+                     {
+                         "pid":  40428,
+                         "name":  "python",
+                         "has_exited":  true,
+                         "start_utc":  "2026-10-26T12:39:56.2115960Z",
+                         "exit_code":  0
+                     },
+                     {
+                         "pid":  53860,
+                         "name":  "python",
+                         "has_exited":  true,
+                         "start_utc":  "2026-10-26T12:39:56.0997030Z",
+                         "exit_code":  0
+                     }
+                 ],
+    "remaining_owned_pids":  [
+
+                             ],
+    "parser_reached":  true,
+    "parser_returned":  true,
+    "boundary_observation_unknown":  false,
+    "assertions":  {
+                       "assertions":  "PASS_EXIT_PENDING",
+                       "case":  "protobuf_graph"
+                   },
+    "forbidden_build_events":  0,
+    "peak_owned_tree_rss":  237060096,
+    "peak_owned_tree_private":  175984640,
+    "sample_count":  7,
+    "maximum_sample_gap_seconds":  0.2967709999999999,
+    "sampling_semantics":  "Current sampled working set/private sum of supervisor and discovered descendants; not continuous peak proof",
+    "cpu_affinity":  3,
+    "gpu":  0,
+    "remote_model":  0,
+    "finished_utc":  "2026-10-26T12:39:58.0156372+00:00"
+}

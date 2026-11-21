@@ -1,0 +1,1510 @@
+{
+    "files":  [
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle1-process.json",
+                      "sha256":  "45acd8ce54e11b0d2afeb2b32f83eb430d93556b8570defce5216d9aeb7e3e7a",
+                      "bytes":  184
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle1-stderr.txt",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle1-stdout.txt",
+                      "sha256":  "f5880c7651c31bf6a7ce872d6791738dbbc8f432e29899b5779ac255b276ce2d",
+                      "bytes":  658
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2-process.json",
+                      "sha256":  "07b6f3f20becb9425f87e71f5c71af626131ca351997b648eb3e2a74287fd1b9",
+                      "bytes":  181
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2-stderr.txt",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2-stdout.txt",
+                      "sha256":  "252bef0c3e77b6f314ef99f78438c9d233c84c9721d0fa4ffdf698509f883b26",
+                      "bytes":  658
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/log-before.md",
+                      "sha256":  "9fd76c217aee55fc8442291749a065b7ef95f92340da6f71b6f4ea237c293773",
+                      "bytes":  267521
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/status-before.md",
+                      "sha256":  "1c377cb2c1f70af6b8cd42b81c699191c92b9d2c1ad23a674af6b0fa1023e3e7",
+                      "bytes":  42734
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle1/result.json",
+                      "sha256":  "420b010fb4d26335a26a6f974caf472cafb718814da4ca820bda8e71d13f56b6",
+                      "bytes":  1618
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle1/old_producer_mismatch/events.jsonl",
+                      "sha256":  "f5b247bf19e4579112072d0a44e21c4e40739cc8a706414f347969f89acfaac6",
+                      "bytes":  514
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle1/old_producer_mismatch/reference/events.jsonl",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle1/old_producer_mismatch/reference/resource-samples.jsonl",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle1/old_producer_mismatch/reference/resources.json",
+                      "sha256":  "403d9d7d773b36b018ec5ca6b48f265c8a7e0442cb3dd26a7b3f7c88d892bbf0",
+                      "bytes":  140
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle1/old_producer_mismatch/reference/result.json",
+                      "sha256":  "99523f04c184f9fcc116767418db8ceaaa26fcff431701cada1c29737f018a10",
+                      "bytes":  502
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle1/old_producer_mismatch/reference/stderr.txt",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle1/old_producer_mismatch/reference/stdout.txt",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle1-source/contract.py",
+                      "sha256":  "8627e5b454e68f130078483f9c24e7ee2514046af8bdc1512021582d519bff05",
+                      "bytes":  4824
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle1-source/controller_core.py",
+                      "sha256":  "fc561eee08f1eafbbeac2cbcc5fa31890ef719bf603c5c7dd1af7aea5e556bcb",
+                      "bytes":  1760
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle1-source/linux_boundary.py",
+                      "sha256":  "4c2aad23c52813693249a6d104c50f208ed33928086b466e46e853ad074712ff",
+                      "bytes":  5213
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle1-source/linux_runner.py",
+                      "sha256":  "82facf9151daa8eadc55c438be99f4c0cf5e331978c18b3a59530ef2af5b680e",
+                      "bytes":  14813
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle1-source/linux_watchdog.py",
+                      "sha256":  "9b08538d3b5990389e103ef2d391d58fec6ec63795bf0dc5ebcec08bc1991d34",
+                      "bytes":  5583
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle1-source/live_binding.py",
+                      "sha256":  "ca1351a05eea38577632a918b286d5ee7e5c82d423928fd8c2ce1af67de206c8",
+                      "bytes":  835
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle1-source/live_launcher.py",
+                      "sha256":  "49345a91d5627fd66a99aea31131d787cc0c4214399decca3837a78bced5e4e0",
+                      "bytes":  4633
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle1-source/live_worker.py",
+                      "sha256":  "5f9b934e435bc62259944f47f97a81f29cf9559b183d7a0b9e87736156b18902",
+                      "bytes":  10822
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle1-source/payload.py",
+                      "sha256":  "17273bebff6debd9888983ffcb2a7b3e3dbff572dccd203c05f9c8b5c9f60424",
+                      "bytes":  2663
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle1-source/protocol.py",
+                      "sha256":  "4616f24b44d8b482cf90a560a13e59324f20e497af4090d6e588fe437801ff77",
+                      "bytes":  1678
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle1-source/sandbox_stage.py",
+                      "sha256":  "8e0cfd474416aa586af9f7ec936c20c7d4fbf0c1888d2d770cc10c4d038027d0",
+                      "bytes":  6673
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle1-source/sdk_endpoint.py",
+                      "sha256":  "94606de56ba23e65e3dcacc57009cb0e60b5506648a2b276cb3165696af4251f",
+                      "bytes":  3976
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle1-source/source-manifest.json",
+                      "sha256":  "8377129e94e8457aebd64156d1599efd8bf7b4a49f2c1b99b2dc00104218451d",
+                      "bytes":  3040
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle1-source/tests_output_contract.py",
+                      "sha256":  "08560aaeeb7c9c0ac294ce4eb46e2c4c94ac1c7c3891c8c4e0e0af3ca6863b51",
+                      "bytes":  11334
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/result.json",
+                      "sha256":  "ca2255ffc56026fdfab2b0e73d1750f03703b1084ba7a2235074a7d92f20cac5",
+                      "bytes":  4336
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/bad_hash_reference/boundary-process.json",
+                      "sha256":  "5a7ba4505e5733616532838f14c2052195bc59ae2bd0d51a9f8276c797ba5136",
+                      "bytes":  94
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/bad_hash_reference/boundary-result.json",
+                      "sha256":  "893e2643177fd61c065eaa1e1de477efc5b5a594e5227ef45e05c4c8ee967b5f",
+                      "bytes":  356
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/bad_hash_reference/events.jsonl",
+                      "sha256":  "225648e75a8c489622b77f107ef9a2c9eadae99b9f41e6541d9ea17d4fb1694e",
+                      "bytes":  1569
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/bad_hash_reference/linux-requirements.json",
+                      "sha256":  "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                      "bytes":  2
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/bad_hash_reference/reference-process.json",
+                      "sha256":  "5a7ba4505e5733616532838f14c2052195bc59ae2bd0d51a9f8276c797ba5136",
+                      "bytes":  94
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/bad_hash_reference/reference-started.json",
+                      "sha256":  "00edb7da577045256034c2d91c40e77ae55fa4bac1d700447bd3423545da6273",
+                      "bytes":  98
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/bad_hash_reference/state.json",
+                      "sha256":  "e110eef50612213d5b69fb7e51b6e98ede4c3489e3679c09f7e3af2f65188faa",
+                      "bytes":  546
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/bad_hash_reference/reference/events.jsonl",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/bad_hash_reference/reference/resource-samples.jsonl",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/bad_hash_reference/reference/resources.json",
+                      "sha256":  "403d9d7d773b36b018ec5ca6b48f265c8a7e0442cb3dd26a7b3f7c88d892bbf0",
+                      "bytes":  140
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/bad_hash_reference/reference/result.json",
+                      "sha256":  "3dcc7f7e19baf8815a4fd74adacb15658173f8b68a76ec0eab5b9a86ef97564b",
+                      "bytes":  502
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/bad_hash_reference/reference/stderr.txt",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/bad_hash_reference/reference/stdout.txt",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/bad_hash_reference/reference/outputs/unicef.json",
+                      "sha256":  "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                      "bytes":  2
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/extra_candidate_counts_candidate/boundary-process.json",
+                      "sha256":  "5a7ba4505e5733616532838f14c2052195bc59ae2bd0d51a9f8276c797ba5136",
+                      "bytes":  94
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/extra_candidate_counts_candidate/boundary-result.json",
+                      "sha256":  "893e2643177fd61c065eaa1e1de477efc5b5a594e5227ef45e05c4c8ee967b5f",
+                      "bytes":  356
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/extra_candidate_counts_candidate/candidate-process.json",
+                      "sha256":  "5a7ba4505e5733616532838f14c2052195bc59ae2bd0d51a9f8276c797ba5136",
+                      "bytes":  94
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/extra_candidate_counts_candidate/candidate-started.json",
+                      "sha256":  "4bac7a92e1b8c5540ced3fb4cba570bf5143e3a76b16f3bd67971ab8d6f84a67",
+                      "bytes":  99
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/extra_candidate_counts_candidate/events.jsonl",
+                      "sha256":  "bd4c124e2d62e5a657088fa119040326661d119ffdf3f63c63467b71620cda1b",
+                      "bytes":  2864
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/extra_candidate_counts_candidate/linux-requirements.json",
+                      "sha256":  "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                      "bytes":  2
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/extra_candidate_counts_candidate/reference-process.json",
+                      "sha256":  "5a7ba4505e5733616532838f14c2052195bc59ae2bd0d51a9f8276c797ba5136",
+                      "bytes":  94
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/extra_candidate_counts_candidate/reference-started.json",
+                      "sha256":  "172efc1dc12c24ded1f37e9f8271191b24f8ac8a8181e041acd5989c8a6dd4bc",
+                      "bytes":  99
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/extra_candidate_counts_candidate/state.json",
+                      "sha256":  "1647fac0fab75257003d58c8f0948b8e45ac1a62839bb3ca8a41e3c01f220899",
+                      "bytes":  620
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/extra_candidate_counts_candidate/candidate/events.jsonl",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/extra_candidate_counts_candidate/candidate/resource-samples.jsonl",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/extra_candidate_counts_candidate/candidate/resources.json",
+                      "sha256":  "8c8d5c22a18a4250baca405fed581f53650bdeed2597127bc2314cc6b5b7fcad",
+                      "bytes":  146
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/extra_candidate_counts_candidate/candidate/result.json",
+                      "sha256":  "796c268a49d372e54d7798dfa0a905ea5896c641303bbb7d489ed489bf2ac1e8",
+                      "bytes":  750
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/extra_candidate_counts_candidate/candidate/stderr.txt",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/extra_candidate_counts_candidate/candidate/stdout.txt",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/extra_candidate_counts_candidate/candidate/outputs/unhcr-engineering-alpha025.json",
+                      "sha256":  "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                      "bytes":  2
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/extra_candidate_counts_candidate/candidate/outputs/unhcr-final-e041.json",
+                      "sha256":  "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                      "bytes":  2
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/extra_candidate_counts_candidate/candidate/outputs/unhcr.json",
+                      "sha256":  "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                      "bytes":  2
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/extra_candidate_counts_candidate/candidate/outputs/unicef.json",
+                      "sha256":  "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                      "bytes":  2
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/extra_candidate_counts_candidate/candidate/outputs/world_bank.json",
+                      "sha256":  "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                      "bytes":  2
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/extra_candidate_counts_candidate/reference/events.jsonl",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/extra_candidate_counts_candidate/reference/resource-samples.jsonl",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/extra_candidate_counts_candidate/reference/resources.json",
+                      "sha256":  "403d9d7d773b36b018ec5ca6b48f265c8a7e0442cb3dd26a7b3f7c88d892bbf0",
+                      "bytes":  140
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/extra_candidate_counts_candidate/reference/result.json",
+                      "sha256":  "99523f04c184f9fcc116767418db8ceaaa26fcff431701cada1c29737f018a10",
+                      "bytes":  502
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/extra_candidate_counts_candidate/reference/stderr.txt",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/extra_candidate_counts_candidate/reference/stdout.txt",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/extra_candidate_counts_candidate/reference/outputs/unhcr.json",
+                      "sha256":  "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                      "bytes":  2
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/extra_candidate_counts_candidate/reference/outputs/unicef.json",
+                      "sha256":  "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                      "bytes":  2
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/extra_candidate_counts_candidate/reference/outputs/world_bank.json",
+                      "sha256":  "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                      "bytes":  2
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/extra_count_reference/boundary-process.json",
+                      "sha256":  "5a7ba4505e5733616532838f14c2052195bc59ae2bd0d51a9f8276c797ba5136",
+                      "bytes":  94
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/extra_count_reference/boundary-result.json",
+                      "sha256":  "893e2643177fd61c065eaa1e1de477efc5b5a594e5227ef45e05c4c8ee967b5f",
+                      "bytes":  356
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/extra_count_reference/events.jsonl",
+                      "sha256":  "4150444499f6ded3a60ad4e14c46177736b1744636173ebafb20fcfa1cf006e3",
+                      "bytes":  1653
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/extra_count_reference/linux-requirements.json",
+                      "sha256":  "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                      "bytes":  2
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/extra_count_reference/reference-process.json",
+                      "sha256":  "5a7ba4505e5733616532838f14c2052195bc59ae2bd0d51a9f8276c797ba5136",
+                      "bytes":  94
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/extra_count_reference/reference-started.json",
+                      "sha256":  "cdf12f5ae1ac5a03ffc16c394719d88e39413cc5d3657f841f51134cc7572305",
+                      "bytes":  99
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/extra_count_reference/state.json",
+                      "sha256":  "e110eef50612213d5b69fb7e51b6e98ede4c3489e3679c09f7e3af2f65188faa",
+                      "bytes":  546
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/extra_count_reference/reference/events.jsonl",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/extra_count_reference/reference/resource-samples.jsonl",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/extra_count_reference/reference/resources.json",
+                      "sha256":  "403d9d7d773b36b018ec5ca6b48f265c8a7e0442cb3dd26a7b3f7c88d892bbf0",
+                      "bytes":  140
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/extra_count_reference/reference/result.json",
+                      "sha256":  "bb7ce53fedfe3db05ebb542fc608aa207ab6c4d3dbde44f997d0556aeee3c743",
+                      "bytes":  519
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/extra_count_reference/reference/stderr.txt",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/extra_count_reference/reference/stdout.txt",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/extra_count_reference/reference/outputs/unhcr.json",
+                      "sha256":  "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                      "bytes":  2
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/extra_count_reference/reference/outputs/unicef.json",
+                      "sha256":  "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                      "bytes":  2
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/extra_count_reference/reference/outputs/world_bank.json",
+                      "sha256":  "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                      "bytes":  2
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/extra_hash_reference/boundary-process.json",
+                      "sha256":  "5a7ba4505e5733616532838f14c2052195bc59ae2bd0d51a9f8276c797ba5136",
+                      "bytes":  94
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/extra_hash_reference/boundary-result.json",
+                      "sha256":  "893e2643177fd61c065eaa1e1de477efc5b5a594e5227ef45e05c4c8ee967b5f",
+                      "bytes":  356
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/extra_hash_reference/events.jsonl",
+                      "sha256":  "65c160903bd680f241cfbc9970b8be35240636704dda9e488a9f3946eb9f4d8d",
+                      "bytes":  1396
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/extra_hash_reference/linux-requirements.json",
+                      "sha256":  "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                      "bytes":  2
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/extra_hash_reference/reference-process.json",
+                      "sha256":  "5a7ba4505e5733616532838f14c2052195bc59ae2bd0d51a9f8276c797ba5136",
+                      "bytes":  94
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/extra_hash_reference/reference-started.json",
+                      "sha256":  "381da1f235bccc55667e777efb0120d6ec72d87db41371b45832cd8f06e45988",
+                      "bytes":  99
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/extra_hash_reference/state.json",
+                      "sha256":  "e110eef50612213d5b69fb7e51b6e98ede4c3489e3679c09f7e3af2f65188faa",
+                      "bytes":  546
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/extra_hash_reference/reference/events.jsonl",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/extra_hash_reference/reference/resource-samples.jsonl",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/extra_hash_reference/reference/resources.json",
+                      "sha256":  "403d9d7d773b36b018ec5ca6b48f265c8a7e0442cb3dd26a7b3f7c88d892bbf0",
+                      "bytes":  140
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/extra_hash_reference/reference/result.json",
+                      "sha256":  "1c553a3b676aaed80b4ba5e55c5de3e840ce5312cfcb6615e70d94c2a2a74484",
+                      "bytes":  584
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/extra_hash_reference/reference/stderr.txt",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/extra_hash_reference/reference/stdout.txt",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/missing_count_reference/boundary-process.json",
+                      "sha256":  "5a7ba4505e5733616532838f14c2052195bc59ae2bd0d51a9f8276c797ba5136",
+                      "bytes":  94
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/missing_count_reference/boundary-result.json",
+                      "sha256":  "893e2643177fd61c065eaa1e1de477efc5b5a594e5227ef45e05c4c8ee967b5f",
+                      "bytes":  356
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/missing_count_reference/events.jsonl",
+                      "sha256":  "d38194b2dc0b202cd3f9e0376b4cef8114eac105218f7cdd4c2c530a8ba6e5c9",
+                      "bytes":  1658
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/missing_count_reference/linux-requirements.json",
+                      "sha256":  "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                      "bytes":  2
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/missing_count_reference/reference-process.json",
+                      "sha256":  "5a7ba4505e5733616532838f14c2052195bc59ae2bd0d51a9f8276c797ba5136",
+                      "bytes":  94
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/missing_count_reference/reference-started.json",
+                      "sha256":  "30d10f0753942ce5ed8be6b4cd195134de6e6d48d0fb7b019160fc1fe9a36c7a",
+                      "bytes":  99
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/missing_count_reference/state.json",
+                      "sha256":  "e110eef50612213d5b69fb7e51b6e98ede4c3489e3679c09f7e3af2f65188faa",
+                      "bytes":  546
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/missing_count_reference/reference/events.jsonl",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/missing_count_reference/reference/resource-samples.jsonl",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/missing_count_reference/reference/resources.json",
+                      "sha256":  "403d9d7d773b36b018ec5ca6b48f265c8a7e0442cb3dd26a7b3f7c88d892bbf0",
+                      "bytes":  140
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/missing_count_reference/reference/result.json",
+                      "sha256":  "b471fe0e27076a9f0845f09ff560cd166a1a5d0463b2deb63f4e4d18ceb8ea2b",
+                      "bytes":  481
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/missing_count_reference/reference/stderr.txt",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/missing_count_reference/reference/stdout.txt",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/missing_count_reference/reference/outputs/unhcr.json",
+                      "sha256":  "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                      "bytes":  2
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/missing_count_reference/reference/outputs/unicef.json",
+                      "sha256":  "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                      "bytes":  2
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/missing_count_reference/reference/outputs/world_bank.json",
+                      "sha256":  "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                      "bytes":  2
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/missing_extra_file_candidate/boundary-process.json",
+                      "sha256":  "5a7ba4505e5733616532838f14c2052195bc59ae2bd0d51a9f8276c797ba5136",
+                      "bytes":  94
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/missing_extra_file_candidate/boundary-result.json",
+                      "sha256":  "893e2643177fd61c065eaa1e1de477efc5b5a594e5227ef45e05c4c8ee967b5f",
+                      "bytes":  356
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/missing_extra_file_candidate/candidate-process.json",
+                      "sha256":  "5a7ba4505e5733616532838f14c2052195bc59ae2bd0d51a9f8276c797ba5136",
+                      "bytes":  94
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/missing_extra_file_candidate/candidate-started.json",
+                      "sha256":  "629263306131300a130d4aeaade9530ab6536147c4c6765f1ef362e7e29dadf1",
+                      "bytes":  99
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/missing_extra_file_candidate/events.jsonl",
+                      "sha256":  "1912486e4e892915884e446c0e9fbb7247a7a8e723fea8a71efb532b3af3fe70",
+                      "bytes":  2780
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/missing_extra_file_candidate/linux-requirements.json",
+                      "sha256":  "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                      "bytes":  2
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/missing_extra_file_candidate/reference-process.json",
+                      "sha256":  "5a7ba4505e5733616532838f14c2052195bc59ae2bd0d51a9f8276c797ba5136",
+                      "bytes":  94
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/missing_extra_file_candidate/reference-started.json",
+                      "sha256":  "37008628c53a51f6318938985b6edb18bec41b6792c0c6c755dafb079d0e8a0e",
+                      "bytes":  98
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/missing_extra_file_candidate/state.json",
+                      "sha256":  "1647fac0fab75257003d58c8f0948b8e45ac1a62839bb3ca8a41e3c01f220899",
+                      "bytes":  620
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/missing_extra_file_candidate/candidate/events.jsonl",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/missing_extra_file_candidate/candidate/resource-samples.jsonl",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/missing_extra_file_candidate/candidate/resources.json",
+                      "sha256":  "8c8d5c22a18a4250baca405fed581f53650bdeed2597127bc2314cc6b5b7fcad",
+                      "bytes":  146
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/missing_extra_file_candidate/candidate/result.json",
+                      "sha256":  "ea249ed667b8da7ae171a20312a7f4e6af7d1dfdb46ed2a36ef9dc382ae5c14e",
+                      "bytes":  694
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/missing_extra_file_candidate/candidate/stderr.txt",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/missing_extra_file_candidate/candidate/stdout.txt",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/missing_extra_file_candidate/candidate/outputs/unhcr.json",
+                      "sha256":  "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                      "bytes":  2
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/missing_extra_file_candidate/candidate/outputs/unicef.json",
+                      "sha256":  "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                      "bytes":  2
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/missing_extra_file_candidate/candidate/outputs/world_bank.json",
+                      "sha256":  "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                      "bytes":  2
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/missing_extra_file_candidate/reference/events.jsonl",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/missing_extra_file_candidate/reference/resource-samples.jsonl",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/missing_extra_file_candidate/reference/resources.json",
+                      "sha256":  "403d9d7d773b36b018ec5ca6b48f265c8a7e0442cb3dd26a7b3f7c88d892bbf0",
+                      "bytes":  140
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/missing_extra_file_candidate/reference/result.json",
+                      "sha256":  "99523f04c184f9fcc116767418db8ceaaa26fcff431701cada1c29737f018a10",
+                      "bytes":  502
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/missing_extra_file_candidate/reference/stderr.txt",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/missing_extra_file_candidate/reference/stdout.txt",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/missing_extra_file_candidate/reference/outputs/unhcr.json",
+                      "sha256":  "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                      "bytes":  2
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/missing_extra_file_candidate/reference/outputs/unicef.json",
+                      "sha256":  "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                      "bytes":  2
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/missing_extra_file_candidate/reference/outputs/world_bank.json",
+                      "sha256":  "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                      "bytes":  2
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/missing_file_reference/boundary-process.json",
+                      "sha256":  "5a7ba4505e5733616532838f14c2052195bc59ae2bd0d51a9f8276c797ba5136",
+                      "bytes":  94
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/missing_file_reference/boundary-result.json",
+                      "sha256":  "893e2643177fd61c065eaa1e1de477efc5b5a594e5227ef45e05c4c8ee967b5f",
+                      "bytes":  356
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/missing_file_reference/events.jsonl",
+                      "sha256":  "252a90c3ad7364f09b6a987eaeb9f0a8063be413dce1fb706bec07660fc27cf2",
+                      "bytes":  1568
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/missing_file_reference/linux-requirements.json",
+                      "sha256":  "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                      "bytes":  2
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/missing_file_reference/reference-process.json",
+                      "sha256":  "5a7ba4505e5733616532838f14c2052195bc59ae2bd0d51a9f8276c797ba5136",
+                      "bytes":  94
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/missing_file_reference/reference-started.json",
+                      "sha256":  "b478c0a3e953c76eced5336ca95de7c3570b9299723cfa7f567fa094d492410a",
+                      "bytes":  98
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/missing_file_reference/state.json",
+                      "sha256":  "e110eef50612213d5b69fb7e51b6e98ede4c3489e3679c09f7e3af2f65188faa",
+                      "bytes":  546
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/missing_file_reference/reference/events.jsonl",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/missing_file_reference/reference/resource-samples.jsonl",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/missing_file_reference/reference/resources.json",
+                      "sha256":  "403d9d7d773b36b018ec5ca6b48f265c8a7e0442cb3dd26a7b3f7c88d892bbf0",
+                      "bytes":  140
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/missing_file_reference/reference/result.json",
+                      "sha256":  "99523f04c184f9fcc116767418db8ceaaa26fcff431701cada1c29737f018a10",
+                      "bytes":  502
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/missing_file_reference/reference/stderr.txt",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/missing_file_reference/reference/stdout.txt",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/missing_file_reference/reference/outputs/unicef.json",
+                      "sha256":  "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                      "bytes":  2
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/missing_hash_candidate/boundary-process.json",
+                      "sha256":  "5a7ba4505e5733616532838f14c2052195bc59ae2bd0d51a9f8276c797ba5136",
+                      "bytes":  94
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/missing_hash_candidate/boundary-result.json",
+                      "sha256":  "893e2643177fd61c065eaa1e1de477efc5b5a594e5227ef45e05c4c8ee967b5f",
+                      "bytes":  356
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/missing_hash_candidate/candidate-process.json",
+                      "sha256":  "5a7ba4505e5733616532838f14c2052195bc59ae2bd0d51a9f8276c797ba5136",
+                      "bytes":  94
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/missing_hash_candidate/candidate-started.json",
+                      "sha256":  "74da96bf1112e55971674ea8f9317a8a5431eb5f21bd155104d40df0dc9887d7",
+                      "bytes":  99
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/missing_hash_candidate/events.jsonl",
+                      "sha256":  "687fb68bf819a8def25025a942b2a48f19404ee2a18ce69cd4dfb5f84b37c6d5",
+                      "bytes":  2436
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/missing_hash_candidate/linux-requirements.json",
+                      "sha256":  "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                      "bytes":  2
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/missing_hash_candidate/reference-process.json",
+                      "sha256":  "5a7ba4505e5733616532838f14c2052195bc59ae2bd0d51a9f8276c797ba5136",
+                      "bytes":  94
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/missing_hash_candidate/reference-started.json",
+                      "sha256":  "678ea4243b71833dd00efa1f4ac86ead540a95843c5207a933a20fbb3143acb8",
+                      "bytes":  99
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/missing_hash_candidate/state.json",
+                      "sha256":  "1647fac0fab75257003d58c8f0948b8e45ac1a62839bb3ca8a41e3c01f220899",
+                      "bytes":  620
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/missing_hash_candidate/candidate/events.jsonl",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/missing_hash_candidate/candidate/resource-samples.jsonl",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/missing_hash_candidate/candidate/resources.json",
+                      "sha256":  "8c8d5c22a18a4250baca405fed581f53650bdeed2597127bc2314cc6b5b7fcad",
+                      "bytes":  146
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/missing_hash_candidate/candidate/result.json",
+                      "sha256":  "c36df32ec2b80564f3497831e712b849f52e336d6238a4ee30d5aea8433ed1b1",
+                      "bytes":  612
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/missing_hash_candidate/candidate/stderr.txt",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/missing_hash_candidate/candidate/stdout.txt",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/missing_hash_candidate/reference/events.jsonl",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/missing_hash_candidate/reference/resource-samples.jsonl",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/missing_hash_candidate/reference/resources.json",
+                      "sha256":  "403d9d7d773b36b018ec5ca6b48f265c8a7e0442cb3dd26a7b3f7c88d892bbf0",
+                      "bytes":  140
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/missing_hash_candidate/reference/result.json",
+                      "sha256":  "99523f04c184f9fcc116767418db8ceaaa26fcff431701cada1c29737f018a10",
+                      "bytes":  502
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/missing_hash_candidate/reference/stderr.txt",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/missing_hash_candidate/reference/stdout.txt",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/missing_hash_candidate/reference/outputs/unhcr.json",
+                      "sha256":  "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                      "bytes":  2
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/missing_hash_candidate/reference/outputs/unicef.json",
+                      "sha256":  "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                      "bytes":  2
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/missing_hash_candidate/reference/outputs/world_bank.json",
+                      "sha256":  "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                      "bytes":  2
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/missing_hash_reference/boundary-process.json",
+                      "sha256":  "5a7ba4505e5733616532838f14c2052195bc59ae2bd0d51a9f8276c797ba5136",
+                      "bytes":  94
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/missing_hash_reference/boundary-result.json",
+                      "sha256":  "893e2643177fd61c065eaa1e1de477efc5b5a594e5227ef45e05c4c8ee967b5f",
+                      "bytes":  356
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/missing_hash_reference/events.jsonl",
+                      "sha256":  "343f3207ddf5dfff8784af22aeef383844e02e9673481a199f24ed334a002d07",
+                      "bytes":  1400
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/missing_hash_reference/linux-requirements.json",
+                      "sha256":  "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                      "bytes":  2
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/missing_hash_reference/reference-process.json",
+                      "sha256":  "5a7ba4505e5733616532838f14c2052195bc59ae2bd0d51a9f8276c797ba5136",
+                      "bytes":  94
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/missing_hash_reference/reference-started.json",
+                      "sha256":  "0b5e21bb8f414ecf8285ec9b54efe886b6e34bb1416e4ccbc9714c9009b7fe4d",
+                      "bytes":  99
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/missing_hash_reference/state.json",
+                      "sha256":  "e110eef50612213d5b69fb7e51b6e98ede4c3489e3679c09f7e3af2f65188faa",
+                      "bytes":  546
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/missing_hash_reference/reference/events.jsonl",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/missing_hash_reference/reference/resource-samples.jsonl",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/missing_hash_reference/reference/resources.json",
+                      "sha256":  "403d9d7d773b36b018ec5ca6b48f265c8a7e0442cb3dd26a7b3f7c88d892bbf0",
+                      "bytes":  140
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/missing_hash_reference/reference/result.json",
+                      "sha256":  "aeec35c868a7da74c7dffdd9554a3b436f81f7959251d45a4c9235f2ceac796e",
+                      "bytes":  420
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/missing_hash_reference/reference/stderr.txt",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/missing_hash_reference/reference/stdout.txt",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/noninteger_count_reference/boundary-process.json",
+                      "sha256":  "5a7ba4505e5733616532838f14c2052195bc59ae2bd0d51a9f8276c797ba5136",
+                      "bytes":  94
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/noninteger_count_reference/boundary-result.json",
+                      "sha256":  "893e2643177fd61c065eaa1e1de477efc5b5a594e5227ef45e05c4c8ee967b5f",
+                      "bytes":  356
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/noninteger_count_reference/events.jsonl",
+                      "sha256":  "854cdd0c511b8657dc5f69351a02797ed991c5727060dad3475238c3bd4932cd",
+                      "bytes":  1654
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/noninteger_count_reference/linux-requirements.json",
+                      "sha256":  "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                      "bytes":  2
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/noninteger_count_reference/reference-process.json",
+                      "sha256":  "5a7ba4505e5733616532838f14c2052195bc59ae2bd0d51a9f8276c797ba5136",
+                      "bytes":  94
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/noninteger_count_reference/reference-started.json",
+                      "sha256":  "116f14f4705ad5deb94d54944c6ef967a8ad872553dd0417e43924b00d885054",
+                      "bytes":  98
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/noninteger_count_reference/state.json",
+                      "sha256":  "e110eef50612213d5b69fb7e51b6e98ede4c3489e3679c09f7e3af2f65188faa",
+                      "bytes":  546
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/noninteger_count_reference/reference/events.jsonl",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/noninteger_count_reference/reference/resource-samples.jsonl",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/noninteger_count_reference/reference/resources.json",
+                      "sha256":  "403d9d7d773b36b018ec5ca6b48f265c8a7e0442cb3dd26a7b3f7c88d892bbf0",
+                      "bytes":  140
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/noninteger_count_reference/reference/result.json",
+                      "sha256":  "be74139e5d999eefa4363181cf17c3fd999f86bb0093852e043d6d75ac203d3d",
+                      "bytes":  504
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/noninteger_count_reference/reference/stderr.txt",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/noninteger_count_reference/reference/stdout.txt",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/noninteger_count_reference/reference/outputs/unhcr.json",
+                      "sha256":  "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                      "bytes":  2
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/noninteger_count_reference/reference/outputs/unicef.json",
+                      "sha256":  "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                      "bytes":  2
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/noninteger_count_reference/reference/outputs/world_bank.json",
+                      "sha256":  "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                      "bytes":  2
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/normal_pair/boundary-process.json",
+                      "sha256":  "5a7ba4505e5733616532838f14c2052195bc59ae2bd0d51a9f8276c797ba5136",
+                      "bytes":  94
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/normal_pair/boundary-result.json",
+                      "sha256":  "893e2643177fd61c065eaa1e1de477efc5b5a594e5227ef45e05c4c8ee967b5f",
+                      "bytes":  356
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/normal_pair/candidate-process.json",
+                      "sha256":  "5a7ba4505e5733616532838f14c2052195bc59ae2bd0d51a9f8276c797ba5136",
+                      "bytes":  94
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/normal_pair/candidate-started.json",
+                      "sha256":  "5e64e79aa1e0ea2fbb7ac5418adc700e7f9829a7b6e5c8fb7ded4f980c0671f6",
+                      "bytes":  99
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/normal_pair/events.jsonl",
+                      "sha256":  "f9ba8f66f7d692ada15a4052920d44794f3feb7d6153683887c2ab7822c04b68",
+                      "bytes":  2858
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/normal_pair/linux-requirements.json",
+                      "sha256":  "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                      "bytes":  2
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/normal_pair/reference-process.json",
+                      "sha256":  "5a7ba4505e5733616532838f14c2052195bc59ae2bd0d51a9f8276c797ba5136",
+                      "bytes":  94
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/normal_pair/reference-started.json",
+                      "sha256":  "ab7bf7731d63dfaf1792579d4be4117b77b86ea8001d7e26a43225bddecafb1c",
+                      "bytes":  98
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/normal_pair/state.json",
+                      "sha256":  "bac25134c7891a681b849e206b1b831dcf71a84fd25b68d9fce099eb79687359",
+                      "bytes":  666
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/normal_pair/candidate/events.jsonl",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/normal_pair/candidate/resource-samples.jsonl",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/normal_pair/candidate/resources.json",
+                      "sha256":  "8c8d5c22a18a4250baca405fed581f53650bdeed2597127bc2314cc6b5b7fcad",
+                      "bytes":  146
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/normal_pair/candidate/result.json",
+                      "sha256":  "ea249ed667b8da7ae171a20312a7f4e6af7d1dfdb46ed2a36ef9dc382ae5c14e",
+                      "bytes":  694
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/normal_pair/candidate/stderr.txt",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/normal_pair/candidate/stdout.txt",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/normal_pair/candidate/outputs/unhcr-engineering-alpha025.json",
+                      "sha256":  "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                      "bytes":  2
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/normal_pair/candidate/outputs/unhcr-final-e041.json",
+                      "sha256":  "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                      "bytes":  2
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/normal_pair/candidate/outputs/unhcr.json",
+                      "sha256":  "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                      "bytes":  2
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/normal_pair/candidate/outputs/unicef.json",
+                      "sha256":  "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                      "bytes":  2
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/normal_pair/candidate/outputs/world_bank.json",
+                      "sha256":  "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                      "bytes":  2
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/normal_pair/reference/events.jsonl",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/normal_pair/reference/resource-samples.jsonl",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/normal_pair/reference/resources.json",
+                      "sha256":  "403d9d7d773b36b018ec5ca6b48f265c8a7e0442cb3dd26a7b3f7c88d892bbf0",
+                      "bytes":  140
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/normal_pair/reference/result.json",
+                      "sha256":  "99523f04c184f9fcc116767418db8ceaaa26fcff431701cada1c29737f018a10",
+                      "bytes":  502
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/normal_pair/reference/stderr.txt",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/normal_pair/reference/stdout.txt",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/normal_pair/reference/outputs/unhcr.json",
+                      "sha256":  "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                      "bytes":  2
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/normal_pair/reference/outputs/unicef.json",
+                      "sha256":  "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                      "bytes":  2
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/normal_pair/reference/outputs/world_bank.json",
+                      "sha256":  "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                      "bytes":  2
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/same_total_wrong_counts_reference/boundary-process.json",
+                      "sha256":  "5a7ba4505e5733616532838f14c2052195bc59ae2bd0d51a9f8276c797ba5136",
+                      "bytes":  94
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/same_total_wrong_counts_reference/boundary-result.json",
+                      "sha256":  "893e2643177fd61c065eaa1e1de477efc5b5a594e5227ef45e05c4c8ee967b5f",
+                      "bytes":  356
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/same_total_wrong_counts_reference/events.jsonl",
+                      "sha256":  "77e2938fee1706f315076bb04a097c8f22bd01b8abe358e68901e0cdb5d9ea4d",
+                      "bytes":  1654
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/same_total_wrong_counts_reference/linux-requirements.json",
+                      "sha256":  "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                      "bytes":  2
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/same_total_wrong_counts_reference/reference-process.json",
+                      "sha256":  "5a7ba4505e5733616532838f14c2052195bc59ae2bd0d51a9f8276c797ba5136",
+                      "bytes":  94
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/same_total_wrong_counts_reference/reference-started.json",
+                      "sha256":  "be1058f5e6ebe4a3e5b5c663dafcbb45de346b2f4e4332dec08b67ce6bfbfc92",
+                      "bytes":  99
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/same_total_wrong_counts_reference/state.json",
+                      "sha256":  "e110eef50612213d5b69fb7e51b6e98ede4c3489e3679c09f7e3af2f65188faa",
+                      "bytes":  546
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/same_total_wrong_counts_reference/reference/events.jsonl",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/same_total_wrong_counts_reference/reference/resource-samples.jsonl",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/same_total_wrong_counts_reference/reference/resources.json",
+                      "sha256":  "403d9d7d773b36b018ec5ca6b48f265c8a7e0442cb3dd26a7b3f7c88d892bbf0",
+                      "bytes":  140
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/same_total_wrong_counts_reference/reference/result.json",
+                      "sha256":  "c6676e2579d9f8c55b3e98b6de5148fc0f499e638fffe015c0897664a056a250",
+                      "bytes":  502
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/same_total_wrong_counts_reference/reference/stderr.txt",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/same_total_wrong_counts_reference/reference/stdout.txt",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/same_total_wrong_counts_reference/reference/outputs/unhcr.json",
+                      "sha256":  "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                      "bytes":  2
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/same_total_wrong_counts_reference/reference/outputs/unicef.json",
+                      "sha256":  "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                      "bytes":  2
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/same_total_wrong_counts_reference/reference/outputs/world_bank.json",
+                      "sha256":  "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                      "bytes":  2
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/wb_count_reference/boundary-process.json",
+                      "sha256":  "5a7ba4505e5733616532838f14c2052195bc59ae2bd0d51a9f8276c797ba5136",
+                      "bytes":  94
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/wb_count_reference/boundary-result.json",
+                      "sha256":  "893e2643177fd61c065eaa1e1de477efc5b5a594e5227ef45e05c4c8ee967b5f",
+                      "bytes":  356
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/wb_count_reference/events.jsonl",
+                      "sha256":  "9b2530a9b96e78405079267384c61294fd765f985019c8e8b46120c0359cc9f8",
+                      "bytes":  1654
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/wb_count_reference/linux-requirements.json",
+                      "sha256":  "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                      "bytes":  2
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/wb_count_reference/reference-process.json",
+                      "sha256":  "5a7ba4505e5733616532838f14c2052195bc59ae2bd0d51a9f8276c797ba5136",
+                      "bytes":  94
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/wb_count_reference/reference-started.json",
+                      "sha256":  "9dbfd933162fccc6165e5b484cfcbbab3a9988157033040ce8a16464005682a3",
+                      "bytes":  99
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/wb_count_reference/state.json",
+                      "sha256":  "e110eef50612213d5b69fb7e51b6e98ede4c3489e3679c09f7e3af2f65188faa",
+                      "bytes":  546
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/wb_count_reference/reference/events.jsonl",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/wb_count_reference/reference/resource-samples.jsonl",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/wb_count_reference/reference/resources.json",
+                      "sha256":  "403d9d7d773b36b018ec5ca6b48f265c8a7e0442cb3dd26a7b3f7c88d892bbf0",
+                      "bytes":  140
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/wb_count_reference/reference/result.json",
+                      "sha256":  "a2ee27198a3f95cc2fe9d45cf55b3a0a78e9ec24196982d20f262284abbc0a86",
+                      "bytes":  494
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/wb_count_reference/reference/stderr.txt",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/wb_count_reference/reference/stdout.txt",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/wb_count_reference/reference/outputs/unhcr.json",
+                      "sha256":  "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                      "bytes":  2
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/wb_count_reference/reference/outputs/unicef.json",
+                      "sha256":  "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                      "bytes":  2
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/wb_count_reference/reference/outputs/world_bank.json",
+                      "sha256":  "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                      "bytes":  2
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/wb_hash_reference/boundary-process.json",
+                      "sha256":  "5a7ba4505e5733616532838f14c2052195bc59ae2bd0d51a9f8276c797ba5136",
+                      "bytes":  94
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/wb_hash_reference/boundary-result.json",
+                      "sha256":  "893e2643177fd61c065eaa1e1de477efc5b5a594e5227ef45e05c4c8ee967b5f",
+                      "bytes":  356
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/wb_hash_reference/events.jsonl",
+                      "sha256":  "19ac4074799d08dcb51d5b4d05e96cff6065c5633f4665a2924a11bbf9784a02",
+                      "bytes":  1398
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/wb_hash_reference/linux-requirements.json",
+                      "sha256":  "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                      "bytes":  2
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/wb_hash_reference/reference-process.json",
+                      "sha256":  "5a7ba4505e5733616532838f14c2052195bc59ae2bd0d51a9f8276c797ba5136",
+                      "bytes":  94
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/wb_hash_reference/reference-started.json",
+                      "sha256":  "abcbaed13cdd37d98bcca06d98ab7846abd82c85d6d15ce7866830d04e4e8630",
+                      "bytes":  99
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/wb_hash_reference/state.json",
+                      "sha256":  "e110eef50612213d5b69fb7e51b6e98ede4c3489e3679c09f7e3af2f65188faa",
+                      "bytes":  546
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/wb_hash_reference/reference/events.jsonl",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/wb_hash_reference/reference/resource-samples.jsonl",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/wb_hash_reference/reference/resources.json",
+                      "sha256":  "403d9d7d773b36b018ec5ca6b48f265c8a7e0442cb3dd26a7b3f7c88d892bbf0",
+                      "bytes":  140
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/wb_hash_reference/reference/result.json",
+                      "sha256":  "3cad09fd1f3f84aab4f73a538e90218db0ce5986cc3f8a3677f03abad386893a",
+                      "bytes":  494
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/wb_hash_reference/reference/stderr.txt",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2/wb_hash_reference/reference/stdout.txt",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2-source/contract.py",
+                      "sha256":  "647c5a467183edc512893158ce6eb41d72677c90af38f04ed02888f4dc3b3526",
+                      "bytes":  4829
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2-source/controller_core.py",
+                      "sha256":  "fc561eee08f1eafbbeac2cbcc5fa31890ef719bf603c5c7dd1af7aea5e556bcb",
+                      "bytes":  1760
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2-source/linux_boundary.py",
+                      "sha256":  "4c2aad23c52813693249a6d104c50f208ed33928086b466e46e853ad074712ff",
+                      "bytes":  5213
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2-source/linux_runner.py",
+                      "sha256":  "82facf9151daa8eadc55c438be99f4c0cf5e331978c18b3a59530ef2af5b680e",
+                      "bytes":  14813
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2-source/linux_watchdog.py",
+                      "sha256":  "9b08538d3b5990389e103ef2d391d58fec6ec63795bf0dc5ebcec08bc1991d34",
+                      "bytes":  5583
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2-source/live_binding.py",
+                      "sha256":  "ca1351a05eea38577632a918b286d5ee7e5c82d423928fd8c2ce1af67de206c8",
+                      "bytes":  835
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2-source/live_launcher.py",
+                      "sha256":  "965f893be21113ee25114d4bebf8cd6a13aa75f88e7907963661daf66153e01b",
+                      "bytes":  4638
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2-source/live_worker.py",
+                      "sha256":  "5f9b934e435bc62259944f47f97a81f29cf9559b183d7a0b9e87736156b18902",
+                      "bytes":  10822
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2-source/payload.py",
+                      "sha256":  "17273bebff6debd9888983ffcb2a7b3e3dbff572dccd203c05f9c8b5c9f60424",
+                      "bytes":  2663
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2-source/protocol.py",
+                      "sha256":  "4616f24b44d8b482cf90a560a13e59324f20e497af4090d6e588fe437801ff77",
+                      "bytes":  1678
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2-source/sandbox_stage.py",
+                      "sha256":  "723f80623c0b400a7c68d1a8bfd4e6d4b6e9fa4d67060a418db156c8c88621b9",
+                      "bytes":  6848
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2-source/sdk_endpoint.py",
+                      "sha256":  "94606de56ba23e65e3dcacc57009cb0e60b5506648a2b276cb3165696af4251f",
+                      "bytes":  3976
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2-source/source-manifest.json",
+                      "sha256":  "0060ed98fc7e3c9ecc5625bd24f5c276971b026817dbb06c92fc2744dec83815",
+                      "bytes":  3040
+                  },
+                  {
+                      "path":  "tmp/a040-modal-output-contract-repair1/cycle2-source/tests_output_contract.py",
+                      "sha256":  "08560aaeeb7c9c0ac294ce4eb46e2c4c94ac1c7c3891c8c4e0e0af3ca6863b51",
+                      "bytes":  11334
+                  }
+              ],
+    "scope":  "New small protocol artifacts only"
+}

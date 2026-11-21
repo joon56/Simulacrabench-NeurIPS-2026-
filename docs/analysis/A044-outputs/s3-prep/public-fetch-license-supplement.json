@@ -1,0 +1,16 @@
+[
+    {
+        "url":  "https://huggingface.co/Prior-Labs/TabPFN-v2-clf/raw/main/LICENSE.txt",
+        "file":  "license-tabpfn-v2.txt",
+        "retrieved_at":  "2026-10-23T01:52:12.1624526+09:00",
+        "status":  "OK",
+        "sha256":  "08b1851b4b6136b5fb0cb124d3258e0d91e3e1623f1be5904b77e4d270d112d8"
+    },
+    {
+        "url":  "https://archive.ics.uci.edu/dataset/2/adult",
+        "file":  "adult-official.html.txt",
+        "retrieved_at":  "2026-10-23T01:52:13.9903975+09:00",
+        "status":  "OK",
+        "sha256":  "f1c8c34d5a1c36f734e1cbf0d50fb8ca7efe03048dddf4ff53dd586cb8621214"
+    }
+]

@@ -1,0 +1,20 @@
+{
+  "seconds": 199.2613298999986,
+  "cells": 132273,
+  "candidate_skill": 0.5624429548505255,
+  "baseline_skill": {
+    "E041": 0.5624627288576414,
+    "E025": 0.5629488737050165
+  },
+  "delta_e025": -0.0005059188544909166,
+  "delta_e041": -1.977400711583588e-05,
+  "changed_vectors": 42820,
+  "max_probability_delta": 0.09450195934036731,
+  "call_counts": {
+    "neural_requests": 3,
+    "neural_attempts": 3,
+    "metric_optimizers": 8
+  },
+  "release_pass": true,
+  "vectors_sha256": "a4ea548f90c122a210b04a14816b3f2325ed3622798dd6293272257c81aebb1a"
+}

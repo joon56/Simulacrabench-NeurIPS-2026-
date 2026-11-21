@@ -1,0 +1,159 @@
+{
+  "app_id": "ap-bbbbbbbbbbbbbbbbbbbbbb",
+  "app_name": "a040-local-cycle2-reference-fail",
+  "sandbox_name": "a040-local-cycle2-reference-fail-gpu",
+  "sandbox_id": "sb-aaaaaaaaaaaaaaaaaaaaaa",
+  "terminal": "TERMINAL_CONFIRMED",
+  "calls": [
+    {
+      "method": "Client.from_env",
+      "started_utc": "2026-10-05T14:29:09.014823+00:00",
+      "cap_seconds": 1.333316233336518,
+      "outcome": "RETURNED"
+    },
+    {
+      "method": "WorkspaceNameLookup",
+      "started_utc": "2026-10-05T14:29:09.029017+00:00",
+      "cap_seconds": 1.3191220333392266,
+      "outcome": "RETURNED"
+    },
+    {
+      "method": "AppGetInfo",
+      "started_utc": "2026-10-05T14:29:09.043858+00:00",
+      "cap_seconds": 1.304278133335174,
+      "outcome": "RETURNED"
+    },
+    {
+      "method": "AuthTokenManager.get_token",
+      "started_utc": "2026-10-05T14:29:09.059417+00:00",
+      "cap_seconds": 1.2887160333339125,
+      "outcome": "RETURNED"
+    },
+    {
+      "method": "SandboxListV2",
+      "started_utc": "2026-10-05T14:29:09.075415+00:00",
+      "cap_seconds": 1.2727181333393673,
+      "outcome": "RETURNED"
+    },
+    {
+      "method": "AuthTokenManager.get_token",
+      "started_utc": "2026-10-05T14:29:09.090680+00:00",
+      "cap_seconds": 1.2574499333350104,
+      "outcome": "RETURNED"
+    },
+    {
+      "method": "SandboxListV2",
+      "started_utc": "2026-10-05T14:29:09.105523+00:00",
+      "cap_seconds": 1.2426046333348495,
+      "outcome": "RETURNED"
+    },
+    {
+      "method": "SandboxWait",
+      "started_utc": "2026-10-05T14:29:09.125444+00:00",
+      "cap_seconds": 1.3893476000012015,
+      "outcome": "RETURNED"
+    },
+    {
+      "method": "AuthTokenManager.get_token",
+      "started_utc": "2026-10-05T14:29:09.139604+00:00",
+      "cap_seconds": 1.2085194333340041,
+      "outcome": "RETURNED"
+    },
+    {
+      "method": "SandboxListV2",
+      "started_utc": "2026-10-05T14:29:09.153731+00:00",
+      "cap_seconds": 1.194390733333421,
+      "outcome": "RETURNED"
+    },
+    {
+      "method": "AuthTokenManager.get_token",
+      "started_utc": "2026-10-05T14:29:09.168127+00:00",
+      "cap_seconds": 1.1799937333344133,
+      "outcome": "RETURNED"
+    },
+    {
+      "method": "SandboxListV2",
+      "started_utc": "2026-10-05T14:29:09.182477+00:00",
+      "cap_seconds": 1.1656415333345649,
+      "outcome": "RETURNED"
+    },
+    {
+      "method": "SandboxTerminate",
+      "started_utc": "2026-10-05T14:29:09.205775+00:00",
+      "cap_seconds": 1.1423416333345813,
+      "outcome": "RETURNED"
+    },
+    {
+      "method": "SandboxWait",
+      "started_utc": "2026-10-05T14:29:09.225824+00:00",
+      "cap_seconds": 1.2889563999997335,
+      "outcome": "RETURNED"
+    },
+    {
+      "method": "AppGetInfo",
+      "started_utc": "2026-10-05T14:29:09.249513+00:00",
+      "cap_seconds": 1.2652650000018184,
+      "outcome": "RETURNED"
+    },
+    {
+      "method": "TaskList",
+      "started_utc": "2026-10-05T14:29:09.262729+00:00",
+      "cap_seconds": 1.252046400004474,
+      "outcome": "RETURNED"
+    },
+    {
+      "method": "WorkspaceBillingSummary",
+      "started_utc": "2026-10-05T14:29:09.276790+00:00",
+      "cap_seconds": 1.2379817000037292,
+      "outcome": "RETURNED"
+    }
+  ],
+  "errors": [],
+  "terminate_requests": 1,
+  "new_resources": 0,
+  "remote_commands": 0,
+  "remote_file_operations": 0,
+  "observed_utc": "2026-10-05T14:29:09.291441+00:00",
+  "observed_kst": "2026-10-05T23:29:09.291453+09:00",
+  "elapsed_seconds": 0.2766780000019935,
+  "identity": {
+    "workspace": "joon56",
+    "environment": "main",
+    "app_id": "ap-bbbbbbbbbbbbbbbbbbbbbb",
+    "app_name": "a040-local-cycle2-reference-fail"
+  },
+  "version": "V1",
+  "listed": {
+    "id": "sb-aaaaaaaaaaaaaaaaaaaaaa",
+    "name": "a040-local-cycle2-reference-fail-gpu",
+    "app_id": "ap-bbbbbbbbbbbbbbbbbbbbbb",
+    "image_id": "im-fixture",
+    "created_at": 100.0,
+    "started_at": 101.0,
+    "finished_at": 0.0,
+    "include_finished": true,
+    "result": {
+      "status": 0,
+      "status_name": "GENERIC_STATUS_UNSPECIFIED",
+      "exitcode": 0
+    }
+  },
+  "sandbox_result": {
+    "status": 3,
+    "status_name": "GENERIC_STATUS_TERMINATED",
+    "exitcode": 0
+  },
+  "terminal_source": "Exact-ID SandboxWait",
+  "app": {
+    "state": 1,
+    "tasks": 0,
+    "stopped_task0": false
+  },
+  "billing": {
+    "metered_cost": "0.01009897",
+    "billed_cost": "0",
+    "metered_breakdown": {},
+    "attribution": "WORKSPACE_AGGREGATE_NOT_TASK_INVOICE",
+    "posting_delay_unknown": true
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "raw_source": "user-message.txt",
+  "scope": "Visible latest My request body, including result fragment and escaped instruction block; IDE context excluded. UTF-8/LF archival transcription, not HTTP/platform original bytes.",
+  "raw_text_not_cleaned": true,
+  "transport_bytes_available": false,
+  "result_fragment_split_marker": "two newlines followed by **# ",
+  "fragment_lines": 72,
+  "html_space_entities_decoded": 71,
+  "trailing_markdown_backslashes_removed": 71,
+  "missing_outer_braces_added": true,
+  "other_content_rewrites": false,
+  "instruction_block": "Preserved in raw source, never interpreted as JSON. Escaped fences/list markers and HTML entities remain there.",
+  "score_strings_and_precision_preserved": true,
+  "normal_json": "user-supplied-api.json",
+  "platform_authentication": false,
+  "archive_final_newline": "One LF terminator; original transport/newline byte identity unavailable."
+}

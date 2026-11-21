@@ -1,0 +1,239 @@
+test_initial_state_forward_rng_and_denominator (tests.test_conditional_gradient.GradientTests.test_initial_state_forward_rng_and_denominator) ... ok
+test_branch_gradients_head_learning_and_adam (tests.test_conditional_gradient.GradientTests.test_branch_gradients_head_learning_and_adam) ... ok
+test_no_conditional_heads_and_local_train_factory (tests.test_conditional_gradient.GradientTests.test_no_conditional_heads_and_local_train_factory) ... ok
+test_original_train_tune_arithmetic_and_entry_dispatch (tests.test_conditional_gradient.GradientTests.test_original_train_tune_arithmetic_and_entry_dispatch) ... ok
+test_small_fallback_real_all213_renderer_and_empty_query (tests.test_conditional_gradient.BoundaryTests.test_small_fallback_real_all213_renderer_and_empty_query) ... ok
+test_tune_roles_two_configs_and_fresh_final_refit (tests.test_conditional_gradient.BoundaryTests.test_tune_roles_two_configs_and_fresh_final_refit) ... ok
+test_whole_predict_mask_and_given_only_features (tests.test_conditional_gradient.BoundaryTests.test_whole_predict_mask_and_given_only_features) ... C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+C:\Users\USER\Desktop\SimulacraBench\scripts\check_e064_conditional_gradient.py:230: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  hidden[predicted]=float('nan')
+ok
+test_six_output_freeze_and_aggregate_budget_gate (tests.test_conditional_gradient.BoundaryTests.test_six_output_freeze_and_aggregate_budget_gate) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 11.214s
+
+OK

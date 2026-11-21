@@ -1,0 +1,23 @@
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\SimulacraBench\docs\analysis\A040-outputs\production-lifecycle-repair1\test_cli_parent.py", line 40, in <module>
+    code=live_launcher.main([str(config_path)])
+  File "C:\Users\USER\Desktop\SimulacraBench\docs\analysis\A040-outputs\production-lifecycle-repair1\live_launcher.py", line 88, in main
+    process = subprocess.Popen([sys.executable, "-X", "utf8", "-B", str(HERE / "live_launcher.py"), args.contract, "--child"],
+                               stdout=stdout, stderr=stderr, cwd=HERE,
+                               creationflags=subprocess.CREATE_NO_WINDOW if os.name == "nt" else 0)
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python313\Lib\subprocess.py", line 1039, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        pass_fds, cwd, env,
+                        ^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+                        gid, gids, uid, umask,
+                        ^^^^^^^^^^^^^^^^^^^^^^
+                        start_new_session, process_group)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python313\Lib\subprocess.py", line 1550, in _execute_child
+    sys.audit("subprocess.Popen", executable, args, cwd, env)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\SimulacraBench\docs\analysis\A040-outputs\production-lifecycle-repair1\local_guard.py", line 57, in audit
+    raise PermissionError('Local guard: ' + event)
+PermissionError: Local guard: subprocess.Popen

@@ -1,0 +1,516 @@
+﻿{
+    "kind":  "Documentation/source/hash verification only; not a model test",
+    "decision":  "HOLD_SPECIFIC_INPUT",
+    "specific_input":  "Current official interpretation of offline-only training wording for visible-TRAIN runtime E041 optimization and frozen-ICL context/preprocessing/selection",
+    "start_utc":  "2026-10-01T10:52:00Z",
+    "verified_utc":  "2026-10-01T11:20:27.9950314Z",
+    "information_elapsed_seconds":  1708,
+    "within_60_minutes":  true,
+    "workflow_revision":  "2026-09-27-r4",
+    "workflow_sha256":  "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642",
+    "workflow_read_evidence":  [
+                                   "7b9604 attachment/AGENTS/CLAUDE",
+                                   "facd8e status/latest3/workflow/A040 decision/source register",
+                                   "70f054 remaining status/workflow and S0 identity records"
+                               ],
+    "head":  "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+    "head_unchanged":  true,
+    "official_distinct_resources":  12,
+    "failed_distinct_urls":  2,
+    "official_cap_respected":  true,
+    "same_resource_retries":  "See source-register.md; network request count exceeds distinct document count",
+    "protected_baseline_checks":  [
+                                      {
+                                          "path":  "AGENTS.md",
+                                          "expected":  "86394bbf164a2b7df6a309f4564b9dacf3b2799fa0227a703e4ea11d4d842596",
+                                          "actual":  "86394bbf164a2b7df6a309f4564b9dacf3b2799fa0227a703e4ea11d4d842596",
+                                          "match":  true
+                                      },
+                                      {
+                                          "path":  "CLAUDE.md",
+                                          "expected":  "69175e6d741a17042db4852d4961a5c52bd97fe2cd5bfbff762d30d7e5270364",
+                                          "actual":  "69175e6d741a17042db4852d4961a5c52bd97fe2cd5bfbff762d30d7e5270364",
+                                          "match":  true
+                                      },
+                                      {
+                                          "path":  "docs/workflow.md",
+                                          "expected":  "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642",
+                                          "actual":  "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642",
+                                          "match":  true
+                                      },
+                                      {
+                                          "path":  "docs/session-prompts.ko.md",
+                                          "expected":  "c68eba8618c6a49caf1b590181ede5d5c03800d4c2305ea0e5efe3cc266e5615",
+                                          "actual":  "c68eba8618c6a49caf1b590181ede5d5c03800d4c2305ea0e5efe3cc266e5615",
+                                          "match":  true
+                                      },
+                                      {
+                                          "path":  "docs/tree.md",
+                                          "expected":  "eaa884a4194db103335136495205fe5b51297c17db15e9eac62946ced286cc44",
+                                          "actual":  "eaa884a4194db103335136495205fe5b51297c17db15e9eac62946ced286cc44",
+                                          "match":  true
+                                      },
+                                      {
+                                          "path":  ".gitignore",
+                                          "expected":  "f67ba089f7490b4ba0845848f0b13b55633b5efd058a0be7d64203a1e480c6fd",
+                                          "actual":  "f67ba089f7490b4ba0845848f0b13b55633b5efd058a0be7d64203a1e480c6fd",
+                                          "match":  true
+                                      },
+                                      {
+                                          "path":  "docs/analysis/A037-winning-priority-review.md",
+                                          "expected":  "87e77d8279f68e52751653f3b6098ec1976e4b53a75faf7206043ec6cf4bf66d",
+                                          "actual":  "87e77d8279f68e52751653f3b6098ec1976e4b53a75faf7206043ec6cf4bf66d",
+                                          "match":  true
+                                      },
+                                      {
+                                          "path":  "docs/analysis/A039-outputs/s0-review/closeout.md",
+                                          "expected":  "7d9d306f74ed54e256ad9a328d148bd988218e997893632e63bc84051107e1d9",
+                                          "actual":  "7d9d306f74ed54e256ad9a328d148bd988218e997893632e63bc84051107e1d9",
+                                          "match":  true
+                                      },
+                                      {
+                                          "path":  "docs/experiments/E041-supervised-retrieval.md",
+                                          "expected":  "8a17f3cb2cb54deb19fdbffe597dcba173002a82100250ea4ff8be446d76bafb",
+                                          "actual":  "8a17f3cb2cb54deb19fdbffe597dcba173002a82100250ea4ff8be446d76bafb",
+                                          "match":  true
+                                      },
+                                      {
+                                          "path":  "docs/experiments/E043-section-candidate-search.md",
+                                          "expected":  "e7d9acac562092596d9bd05921dfab49ac8a2c15854fad8abbba606941ccc4cf",
+                                          "actual":  "e7d9acac562092596d9bd05921dfab49ac8a2c15854fad8abbba606941ccc4cf",
+                                          "match":  true
+                                      },
+                                      {
+                                          "path":  "docs/experiments/E045-union-retrieval.md",
+                                          "expected":  "d7ad5bf5420a7ac4d87ae6989b6bc0e4be94cb03e88c7c4a6dfd58d3da729a5c",
+                                          "actual":  "d7ad5bf5420a7ac4d87ae6989b6bc0e4be94cb03e88c7c4a6dfd58d3da729a5c",
+                                          "match":  true
+                                      },
+                                      {
+                                          "path":  "docs/experiments/E048-tabpfn-gate-parents.md",
+                                          "expected":  "60e030be4969bf45fa7db73404db4a1d590c321dc39935ab6c793bcdc77670a0",
+                                          "actual":  "60e030be4969bf45fa7db73404db4a1d590c321dc39935ab6c793bcdc77670a0",
+                                          "match":  true
+                                      },
+                                      {
+                                          "path":  "docs/experiments/E049-adaptive-tabpfn-parents.md",
+                                          "expected":  "0d6a9f197a5239f2c7a70ed6da3c8e01b8e24a67ba1b4ea7ecf512d9490db046",
+                                          "actual":  "0d6a9f197a5239f2c7a70ed6da3c8e01b8e24a67ba1b4ea7ecf512d9490db046",
+                                          "match":  true
+                                      },
+                                      {
+                                          "path":  "docs/experiments/E051-direct-content-tree.md",
+                                          "expected":  "7efd35b3e5e85b15be316e3ef9acecc4d898459de832e37213feb4a93afe1b16",
+                                          "actual":  "7efd35b3e5e85b15be316e3ef9acecc4d898459de832e37213feb4a93afe1b16",
+                                          "match":  true
+                                      },
+                                      {
+                                          "path":  "submissions/SCORES.md",
+                                          "expected":  "1e6d753c24c5c2e42fc4b316ea524a4285b59ef672cc5c3a5a1288768d157dab",
+                                          "actual":  "1e6d753c24c5c2e42fc4b316ea524a4285b59ef672cc5c3a5a1288768d157dab",
+                                          "match":  true
+                                      },
+                                      {
+                                          "path":  "docs/analysis/A040-outputs/s0-entry.json",
+                                          "expected":  "9f8e8614c07afcfb7071328a1b444965e1ab923ffc2cc3cef9d96f8291354773",
+                                          "actual":  "9f8e8614c07afcfb7071328a1b444965e1ab923ffc2cc3cef9d96f8291354773",
+                                          "match":  true
+                                      },
+                                      {
+                                          "path":  "docs/analysis/A040-outputs/s0-decision.md",
+                                          "expected":  "f26a97f3ca21856742d2486b84bfdb38b5e6d18bab0a76c2f077c8f5a81f30fa",
+                                          "actual":  "f26a97f3ca21856742d2486b84bfdb38b5e6d18bab0a76c2f077c8f5a81f30fa",
+                                          "match":  true
+                                      },
+                                      {
+                                          "path":  "docs/analysis/A040-outputs/source-register.md",
+                                          "expected":  "7671d2da5bc3dfb2a06f0426683571c0e9b29eb1499c2bd12232fc2a8923610e",
+                                          "actual":  "7671d2da5bc3dfb2a06f0426683571c0e9b29eb1499c2bd12232fc2a8923610e",
+                                          "match":  true
+                                      },
+                                      {
+                                          "path":  "docs/analysis/A040-outputs/s1-handoff.ko.md",
+                                          "expected":  "a447cb450fa2384f3344e0726b22657808588f5c0ec7e31825ad64d40077bfde",
+                                          "actual":  "a447cb450fa2384f3344e0726b22657808588f5c0ec7e31825ad64d40077bfde",
+                                          "match":  true
+                                      },
+                                      {
+                                          "path":  "docs/analysis/A040-outputs/s0-verification.json",
+                                          "expected":  "a0105e74cacf460b0a4c3de786c13b3c4652ad125a8c62c60bd0805f7443b151",
+                                          "actual":  "a0105e74cacf460b0a4c3de786c13b3c4652ad125a8c62c60bd0805f7443b151",
+                                          "match":  true
+                                      }
+                                  ],
+    "local_source_checks":  [
+                                {
+                                    "path":  "submissions/2026-09-19-E041/main.py",
+                                    "expected":  "22c911806ea91234ae350341adfb9c0df2ce4be41cc88e73be304e4bb1023073",
+                                    "actual":  "22c911806ea91234ae350341adfb9c0df2ce4be41cc88e73be304e4bb1023073",
+                                    "match":  true
+                                },
+                                {
+                                    "path":  "src/models/supervised_retrieval.py",
+                                    "expected":  "2940338c5378de03303befb74e3834fbad631c0eb18f4ecb55d2cc39a471f879",
+                                    "actual":  "2940338c5378de03303befb74e3834fbad631c0eb18f4ecb55d2cc39a471f879",
+                                    "match":  true
+                                },
+                                {
+                                    "path":  "src/models/shared_trunk.py",
+                                    "expected":  "df648763c8e0ba5532ebf9e437af95cd10d8527112c1338b8b5db9ad6a212e1f",
+                                    "actual":  "df648763c8e0ba5532ebf9e437af95cd10d8527112c1338b8b5db9ad6a212e1f",
+                                    "match":  true
+                                },
+                                {
+                                    "path":  "src/models/link_sharp.py",
+                                    "expected":  "4a7921a00d7758e52a63a3ca7cd5ebf2285cef445b57fd89f15580d6fc108524",
+                                    "actual":  "4a7921a00d7758e52a63a3ca7cd5ebf2285cef445b57fd89f15580d6fc108524",
+                                    "match":  true
+                                },
+                                {
+                                    "path":  "src/models/hh_cap.py",
+                                    "expected":  "9aad6be04e14ae97dc7aaba5499747c35b255b098680c66eaa8f8af58c940f70",
+                                    "actual":  "9aad6be04e14ae97dc7aaba5499747c35b255b098680c66eaa8f8af58c940f70",
+                                    "match":  true
+                                },
+                                {
+                                    "path":  "src/models/hier_backoff.py",
+                                    "expected":  "e01f2030c191b0b632b274662cbb46537669f3b73e21ab0d5f7f671d28654ccd",
+                                    "actual":  "e01f2030c191b0b632b274662cbb46537669f3b73e21ab0d5f7f671d28654ccd",
+                                    "match":  true
+                                },
+                                {
+                                    "path":  "src/eval/logloss.py",
+                                    "expected":  "272aae939a2587b7197569ff84733a1d3b51050e4090ed903a7c8f4e1c88ca18",
+                                    "actual":  "272aae939a2587b7197569ff84733a1d3b51050e4090ed903a7c8f4e1c88ca18",
+                                    "match":  true
+                                },
+                                {
+                                    "path":  "docs/experiments/E041-supervised-retrieval.md",
+                                    "expected":  "8a17f3cb2cb54deb19fdbffe597dcba173002a82100250ea4ff8be446d76bafb",
+                                    "actual":  "8a17f3cb2cb54deb19fdbffe597dcba173002a82100250ea4ff8be446d76bafb",
+                                    "match":  true
+                                },
+                                {
+                                    "path":  "docs/experiments/E048-tabpfn-gate-parents.md",
+                                    "expected":  "60e030be4969bf45fa7db73404db4a1d590c321dc39935ab6c793bcdc77670a0",
+                                    "actual":  "60e030be4969bf45fa7db73404db4a1d590c321dc39935ab6c793bcdc77670a0",
+                                    "match":  true
+                                },
+                                {
+                                    "path":  "docs/experiments/E049-adaptive-tabpfn-parents.md",
+                                    "expected":  "0d6a9f197a5239f2c7a70ed6da3c8e01b8e24a67ba1b4ea7ecf512d9490db046",
+                                    "actual":  "0d6a9f197a5239f2c7a70ed6da3c8e01b8e24a67ba1b4ea7ecf512d9490db046",
+                                    "match":  true
+                                },
+                                {
+                                    "path":  "docs/experiments/E051-direct-content-tree.md",
+                                    "expected":  "7efd35b3e5e85b15be316e3ef9acecc4d898459de832e37213feb4a93afe1b16",
+                                    "actual":  "7efd35b3e5e85b15be316e3ef9acecc4d898459de832e37213feb4a93afe1b16",
+                                    "match":  true
+                                },
+                                {
+                                    "path":  "submissions/SCORES.md",
+                                    "expected":  "1e6d753c24c5c2e42fc4b316ea524a4285b59ef672cc5c3a5a1288768d157dab",
+                                    "actual":  "1e6d753c24c5c2e42fc4b316ea524a4285b59ef672cc5c3a5a1288768d157dab",
+                                    "match":  true
+                                },
+                                {
+                                    "path":  "submissions/2026-09-28-E061/SCORES.md",
+                                    "expected":  "42cff85586e68d4f99e5ff77bf6a082196b35fa867bd29d9ef256e6833974282",
+                                    "actual":  "42cff85586e68d4f99e5ff77bf6a082196b35fa867bd29d9ef256e6833974282",
+                                    "match":  true
+                                },
+                                {
+                                    "path":  "external/starter-kit/data/unhcr.json",
+                                    "expected":  "b1175b6bdbd96e90a4defd83af20a38d711c6eca9fe3ce880109ff244abe80d9",
+                                    "actual":  "b1175b6bdbd96e90a4defd83af20a38d711c6eca9fe3ce880109ff244abe80d9",
+                                    "match":  true
+                                },
+                                {
+                                    "path":  "external/starter-kit/data/unicef.json",
+                                    "expected":  "0bce08036cc563ee2a369dcee316ff8a5f89045d86991756d72c266927674396",
+                                    "actual":  "0bce08036cc563ee2a369dcee316ff8a5f89045d86991756d72c266927674396",
+                                    "match":  true
+                                },
+                                {
+                                    "path":  "external/starter-kit/data/world_bank.json",
+                                    "expected":  "6b3760742c6e864eb8d0bb2f9ec523a19a486b73282d79432dbcca16e3664125",
+                                    "actual":  "6b3760742c6e864eb8d0bb2f9ec523a19a486b73282d79432dbcca16e3664125",
+                                    "match":  true
+                                }
+                            ],
+    "protected_baseline_all_match":  true,
+    "local_source_all_match":  true,
+    "shared_file_preservation":  {
+                                     "status_text_outside_replaced_A040_block_unchanged":  true,
+                                     "all_preexisting_log_entries_unchanged":  true,
+                                     "status_sha256":  "c31b33d4bd8a7f3cf20dd8c83f1d3fbcf1ca13508b150a1e2328b3caf3e66746",
+                                     "log_sha256":  "c632b65e3b4f3b7bd85fe133fd18a9311a8e4907b4eb681dc7c77fdb64de2ad6"
+                                 },
+    "public_schema_counts_consistent":  true,
+    "all_213_option_widths_match":  true,
+    "jobs_at_exit":  [
+
+                     ],
+    "jobs_limit":  "Process-name snapshot only; not proof that every other chat/job is idle",
+    "dirty_exit":  [
+                       " M .claude/skills/paper-session/SKILL.md",
+                       " M .gitignore",
+                       " M CLAUDE.md",
+                       " M docs/domain-study-guide.ko.md",
+                       " M docs/index.md",
+                       " M docs/log.md",
+                       " M docs/session-prompts.ko.md",
+                       " M docs/status.md",
+                       " M docs/tree.md",
+                       " M docs/workflow.md",
+                       "?? .agents/",
+                       "?? AGENTS.md",
+                       "?? README.md",
+                       "?? docs/analysis/A020-outputs/",
+                       "?? docs/analysis/A020-post-e058-design-review.md",
+                       "?? docs/analysis/A021-outputs/",
+                       "?? docs/analysis/A021-selector-comparison-contract.md",
+                       "?? docs/analysis/A022-outputs/",
+                       "?? docs/analysis/A022-remaining-role-audit.md",
+                       "?? docs/analysis/A023-candidate-boundary-contract.md",
+                       "?? docs/analysis/A023-cost-accounting.md",
+                       "?? docs/analysis/A023-outputs/",
+                       "?? docs/analysis/A024-channel-precision-review.md",
+                       "?? docs/analysis/A024-outputs/",
+                       "?? docs/analysis/A025-submission-oriented-review.md",
+                       "?? docs/analysis/A026-outputs/",
+                       "?? docs/analysis/A026-post-e060-strategy-review.md",
+                       "?? docs/analysis/A027-outputs/",
+                       "?? docs/analysis/A027-workflow-role-revision.md",
+                       "?? docs/analysis/A028-outputs/",
+                       "?? docs/analysis/A028-workflow-entry-audit.md",
+                       "?? docs/analysis/A029-codex-migration-audit.md",
+                       "?? docs/analysis/A029-outputs/",
+                       "?? docs/analysis/A030-outputs/",
+                       "?? docs/analysis/A030-vaf-channel-metadata-review.md",
+                       "?? docs/analysis/A031-outputs/",
+                       "?? docs/analysis/A031-post-a030-handoff-review.md",
+                       "?? docs/analysis/A032-document-acquisition-and-readiness.md",
+                       "?? docs/analysis/A032-outputs/",
+                       "?? docs/analysis/A033-dev-handoff-and-role-repair.md",
+                       "?? docs/analysis/A033-outputs/",
+                       "?? docs/analysis/A034-e061-s0-review.md",
+                       "?? docs/analysis/A034-outputs/",
+                       "?? docs/analysis/A035-e061-dev-submission-review.md",
+                       "?? docs/analysis/A035-outputs/",
+                       "?? docs/analysis/A036-e061-post-result-review.md",
+                       "?? docs/analysis/A036-outputs/",
+                       "?? docs/analysis/A037-outputs/",
+                       "?? docs/analysis/A037-winning-priority-review.md",
+                       "?? docs/analysis/A038-outputs/",
+                       "?? docs/analysis/A038-vaf-local-document-intake.md",
+                       "?? docs/analysis/A039-outputs/",
+                       "?? docs/analysis/A040-outputs/",
+                       "?? docs/analysis/E059-outputs/",
+                       "?? docs/analysis/E060-outputs/",
+                       "?? docs/analysis/E061-outputs/",
+                       "?? docs/codex-setup.ko.md",
+                       "?? docs/experiments/E059-leaf-donor-interactions.md",
+                       "?? docs/experiments/E060-content-target-retrieval.md",
+                       "?? docs/experiments/E061-tied-content-heads.md",
+                       "?? docs/plans/README.md",
+                       "?? requirements-models.txt",
+                       "?? scripts/assemble_e060.py",
+                       "?? scripts/assemble_e061.py",
+                       "?? scripts/check_a021_selector_contract.py",
+                       "?? scripts/check_a023_candidate_boundary.py",
+                       "?? scripts/check_a023_resources.py",
+                       "?? scripts/check_e060.py",
+                       "?? scripts/check_e061_release.py",
+                       "?? scripts/check_e061_tied_heads.py",
+                       "?? scripts/check_workspace.py",
+                       "?? scripts/screen_e059.py",
+                       "?? src/models/content_target_retrieval.py",
+                       "?? src/models/tied_content_heads.py",
+                       "?? submissions/2026-09-27-E060.zip",
+                       "?? submissions/2026-09-27-E060/NOTICE.txt",
+                       "?? submissions/2026-09-27-E060/main.py",
+                       "?? submissions/2026-09-27-E060/verification.json",
+                       "?? submissions/2026-09-28-E061.zip",
+                       "?? submissions/2026-09-28-E061/",
+                       "?? tests/test_a021_selector_contract.py",
+                       "?? tests/test_a023_candidate_boundary.py",
+                       "?? tests/test_content_target_retrieval.py",
+                       "?? tests/test_e059_interactions.py",
+                       "?? tests/test_e060_assembly.py",
+                       "?? tests/test_e061_assembly.py",
+                       "?? tests/test_tied_content_heads.py",
+                       "?? tests/test_workspace_check.py",
+                       "?? trip/"
+                   ],
+    "git_read_note":  "Successful per-command safe.directory and empty core.excludesFile; no persistent config changes. Earlier default status warned on inaccessible global ignore; attempted NUL override failed and was not used as verification.",
+    "scientific_execution_counts":  {
+                                        "model_import":  0,
+                                        "checkpoint_download":  0,
+                                        "checkpoint_deserialize":  0,
+                                        "install":  0,
+                                        "fit":  0,
+                                        "optimizer":  0,
+                                        "predict":  0,
+                                        "score":  0,
+                                        "fixture_generation":  0,
+                                        "fixture_run":  0,
+                                        "model_tests":  0,
+                                        "protected_data_or_cache_read":  0,
+                                        "agents":  0,
+                                        "contact":  0,
+                                        "account_slot_query":  0,
+                                        "zip":  0,
+                                        "upload":  0,
+                                        "commit":  0,
+                                        "push":  0
+                                    },
+    "scientific_runtime_seconds":  null,
+    "scientific_peak_memory_bytes":  null,
+    "technical_model_pass":  false,
+    "empirical_evidence_added":  false,
+    "release_qualified":  false,
+    "s2_candidate":  false,
+    "writes":  "A040-outputs/s1/* plus one A040 status block and one new log entry",
+    "document_artifact_hashes":  [
+                                     {
+                                         "path":  "docs/analysis/A040-outputs/s1/base.py.txt",
+                                         "bytes":  18228,
+                                         "sha256":  "7f8f284ca91bf1f5a016179834e508890b3f5368c4a48a7dcb6cb4b83a30051a",
+                                         "last_write_utc":  "2026-10-01T10:56:08.8740987Z"
+                                     },
+                                     {
+                                         "path":  "docs/analysis/A040-outputs/s1/classifier.py.txt",
+                                         "bytes":  36789,
+                                         "sha256":  "64f5ef7ef88a920a3f7a5f6e2d9d8dc08769ec343e931f910acc2d9c4eaa5534",
+                                         "last_write_utc":  "2026-10-01T10:56:08.5923149Z"
+                                     },
+                                     {
+                                         "path":  "docs/analysis/A040-outputs/s1/closeout.md",
+                                         "bytes":  5867,
+                                         "sha256":  "2faa9b56b91e8d4a87b11810bf511cf9aa34b97ed631001e2f7a231193936dda",
+                                         "last_write_utc":  "2026-10-01T11:15:19.3005667Z"
+                                     },
+                                     {
+                                         "path":  "docs/analysis/A040-outputs/s1/contract.md",
+                                         "bytes":  13696,
+                                         "sha256":  "8f59764b01f68360a6eef0fee66d82c1316f9b89720abf26eb8e7f72e5b1bb38",
+                                         "last_write_utc":  "2026-10-01T11:09:11.0340015Z"
+                                     },
+                                     {
+                                         "path":  "docs/analysis/A040-outputs/s1/cost-accounting.md",
+                                         "bytes":  9244,
+                                         "sha256":  "684b9e09bac2163266b3117c23cad28341990d57ed9e6b9371aba855515db3ee",
+                                         "last_write_utc":  "2026-10-01T11:13:03.3085898Z"
+                                     },
+                                     {
+                                         "path":  "docs/analysis/A040-outputs/s1/entry.json",
+                                         "bytes":  20631,
+                                         "sha256":  "9a0c05b4e7f744eb8e20124cba4d26e8a4aa7bb7c44d42d8116b45b17c23559b",
+                                         "last_write_utc":  "2026-10-01T10:53:51.0507418Z"
+                                     },
+                                     {
+                                         "path":  "docs/analysis/A040-outputs/s1/exposure-ledger.md",
+                                         "bytes":  3463,
+                                         "sha256":  "3d2cf060d14af4ce8548ffd2e242c4f40e2806a650111b481a7e8677a647648c",
+                                         "last_write_utc":  "2026-10-01T11:13:12.0866188Z"
+                                     },
+                                     {
+                                         "path":  "docs/analysis/A040-outputs/s1/fetch-batch1.json",
+                                         "bytes":  1242,
+                                         "sha256":  "a2b02863720655effc19f65a92ab2ce98c7db72a6c95a396f5af9563c3101d68",
+                                         "last_write_utc":  "2026-10-01T10:55:17.5284594Z"
+                                     },
+                                     {
+                                         "path":  "docs/analysis/A040-outputs/s1/github-root.html",
+                                         "bytes":  420017,
+                                         "sha256":  "ab53fd94dc9f42508d44c9c837a401a0c67466b4fbfd525e2fe3f297d278d0d1",
+                                         "last_write_utc":  "2026-10-01T10:54:45.7687348Z"
+                                     },
+                                     {
+                                         "path":  "docs/analysis/A040-outputs/s1/github-tree.json",
+                                         "bytes":  41930,
+                                         "sha256":  "5df847a259fbb6f7dacea577f64e9a81eda69f6d2eb3486015b5a5384851c36d",
+                                         "last_write_utc":  "2026-10-01T10:55:44.4675041Z"
+                                     },
+                                     {
+                                         "path":  "docs/analysis/A040-outputs/s1/hf-metadata.json",
+                                         "bytes":  2151,
+                                         "sha256":  "459ec60a645b59a2678b822f0ee4fccef0ed39064135e67ee388a33b3be27274",
+                                         "last_write_utc":  "2026-10-01T10:54:46.0634508Z"
+                                     },
+                                     {
+                                         "path":  "docs/analysis/A040-outputs/s1/hscc-README.md.txt",
+                                         "bytes":  31620,
+                                         "sha256":  "9495b259621c74a44dbe415ad1784734412c8f42ad6dcc0d8f395648d6ac9d67",
+                                         "last_write_utc":  "2026-10-01T10:55:17.4898553Z"
+                                     },
+                                     {
+                                         "path":  "docs/analysis/A040-outputs/s1/LICENSE.txt",
+                                         "bytes":  12996,
+                                         "sha256":  "c959a1db8bc4b2f41c315a9b077c822372a4a84e1a83636bdb962715aaae6874",
+                                         "last_write_utc":  "2026-10-01T10:55:17.2211107Z"
+                                     },
+                                     {
+                                         "path":  "docs/analysis/A040-outputs/s1/local-source-hashes.json",
+                                         "bytes":  2529,
+                                         "sha256":  "e94e05a11fad8187aa61713111295ffd9913bc34e1b4db0f310dcf4342f4cf74",
+                                         "last_write_utc":  "2026-10-01T11:05:33.9648918Z"
+                                     },
+                                     {
+                                         "path":  "docs/analysis/A040-outputs/s1/log-before.md",
+                                         "bytes":  217445,
+                                         "sha256":  "a3f4aae0768a26f1e481ae837c094c659de2d2cff1128294334955663b4f81a8",
+                                         "last_write_utc":  "2026-10-01T10:46:45.7779850Z"
+                                     },
+                                     {
+                                         "path":  "docs/analysis/A040-outputs/s1/observation-plan.md",
+                                         "bytes":  7857,
+                                         "sha256":  "6278717d462e79a95b17353308877af3e67d586b6c5b5a43334ecf8f45b1ec02",
+                                         "last_write_utc":  "2026-10-01T11:13:07.7656088Z"
+                                     },
+                                     {
+                                         "path":  "docs/analysis/A040-outputs/s1/preprocessing.py.txt",
+                                         "bytes":  43233,
+                                         "sha256":  "2163a3bf6754127365a7aedac854d99a6f565545cc1ea7e63c68a596081b2976",
+                                         "last_write_utc":  "2026-10-01T10:56:32.3729476Z"
+                                     },
+                                     {
+                                         "path":  "docs/analysis/A040-outputs/s1/pyproject.toml.txt",
+                                         "bytes":  3636,
+                                         "sha256":  "2dddcf25d53fef0798457da2bca34ffdffd3de8c0ea98cdfe85cc24c744154af",
+                                         "last_write_utc":  "2026-10-01T10:55:16.9387057Z"
+                                     },
+                                     {
+                                         "path":  "docs/analysis/A040-outputs/s1/s0-handoff.ko.md",
+                                         "bytes":  3644,
+                                         "sha256":  "93b5e6f1d1c7c005cdd9ace282a034bf9eb7cd1fb83faedcbf2af41839c5280e",
+                                         "last_write_utc":  "2026-10-01T11:15:23.5184853Z"
+                                     },
+                                     {
+                                         "path":  "docs/analysis/A040-outputs/s1/schema-accounting.json",
+                                         "bytes":  264337,
+                                         "sha256":  "713f42a493024bc114a06d114d9e3f2e890424255d83b2035342a16105245881",
+                                         "last_write_utc":  "2026-10-01T11:03:49.6530772Z"
+                                     },
+                                     {
+                                         "path":  "docs/analysis/A040-outputs/s1/source-register.md",
+                                         "bytes":  6343,
+                                         "sha256":  "7ff307439bb4704584260544a35268ed71ec76352841f316e37a9612f88e7bfc",
+                                         "last_write_utc":  "2026-10-01T11:09:06.3530613Z"
+                                     },
+                                     {
+                                         "path":  "docs/analysis/A040-outputs/s1/status-before.md",
+                                         "bytes":  20299,
+                                         "sha256":  "d883c40171b08d23c89e03100d9f69eb6c9361e959236d527e039842946cd9e7",
+                                         "last_write_utc":  "2026-10-01T10:46:41.4581089Z"
+                                     }
+                                 ],
+    "hash_note":  "verification.json excludes its own hash; fetched weight SHA is remote metadata only. Entry hash checks do not constitute an audit of every preexisting untracked byte.",
+    "dirty_path_set_matches_entry":  true,
+    "required_artifacts_present":  true,
+    "authored_local_links_checked":  32,
+    "authored_local_links_all_resolve":  true,
+    "document_check_limit":  "Existence, schema metadata arithmetic, hashes and text preservation only; no fixtures/model tests or permission authentication."
+}

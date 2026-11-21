@@ -1,0 +1,44 @@
+START candidate unicef
+DONE candidate-unicef wall=36.943s neural_calls=3
+START candidate world_bank
+DONE candidate-world_bank wall=101.529s neural_calls=6
+START candidate unhcr
+DONE candidate-unhcr wall=190.915s neural_calls=9
+START E041 unicef
+DONE E041-unicef wall=33.761s neural_calls=12
+START E041 world_bank
+DONE E041-world_bank wall=102.195s neural_calls=15
+START E041 unhcr
+DONE E041-unhcr wall=225.119s neural_calls=18
+START E025 unicef
+DONE E025-unicef wall=32.577s neural_calls=21
+START E025 world_bank
+DONE E025-world_bank wall=100.825s neural_calls=24
+START E025 unhcr
+DONE E025-unhcr wall=240.133s neural_calls=27
+{
+  "verdict": "EXPLORATORY_SOURCE_QUALIFIED_PENDING_RESOURCE_REVIEW",
+  "comparison": {
+    "unicef": {
+      "delta_E041": 0.0,
+      "delta_E025": 0.0,
+      "max_absolute_vector_difference_E041": 0.0,
+      "changed_vectors_over_1e_10": 0,
+      "regression_pass": true
+    },
+    "world_bank": {
+      "delta_E041": 0.0,
+      "delta_E025": 0.0,
+      "max_absolute_vector_difference_E041": 0.0,
+      "changed_vectors_over_1e_10": 0,
+      "regression_pass": true
+    },
+    "unhcr": {
+      "delta_E041": -7.085072722468055e-05,
+      "delta_E025": -0.0005569955745997612,
+      "max_absolute_vector_difference_E041": 0.16454842686653137,
+      "changed_vectors_over_1e_10": 132225,
+      "regression_pass": true
+    }
+  }
+}

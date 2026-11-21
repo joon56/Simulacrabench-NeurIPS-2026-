@@ -1,0 +1,58 @@
+[
+    {
+        "url":  "https://raw.githubusercontent.com/SituatedEvals/public/f980ef5059360fcf977ed7971af5c00ee5c1962f/make_sandbox.py",
+        "retrieved_at":  "2026-10-23T01:46:49.4585900+09:00",
+        "file":  "upstream-make_sandbox.py.txt",
+        "status":  "OK",
+        "sha256":  "0630967fda75aaacbea8e042b3a73e97cc84470a00dace45172c377c474d806d"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/SituatedEvals/public/f980ef5059360fcf977ed7971af5c00ee5c1962f/FAQ.md",
+        "retrieved_at":  "2026-10-23T01:46:49.7633755+09:00",
+        "file":  "upstream-FAQ.md.txt",
+        "status":  "OK",
+        "sha256":  "3ec5bfd08d8dff429cdfb0064ed1f5144146162f701800762ca267e4092265d5"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/numpy/numpy/main/LICENSE.txt",
+        "retrieved_at":  "2026-10-23T01:46:50.0063493+09:00",
+        "file":  "license-numpy.txt",
+        "status":  "OK",
+        "sha256":  "1be1df33863f97a7bc1c4d67980bd6c69c9a6fef0a5ee76e6ad6cb91e56e8491"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/pandas-dev/pandas/main/LICENSE",
+        "retrieved_at":  "2026-10-23T01:46:50.2129998+09:00",
+        "file":  "license-pandas.txt",
+        "status":  "OK",
+        "sha256":  "9850f6b5bdef7346503065807b878deb8058b976c5c329f4c4d23bf4796ce9ae"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/pytorch/pytorch/main/LICENSE",
+        "retrieved_at":  "2026-10-23T01:46:50.4586177+09:00",
+        "file":  "license-pytorch.txt",
+        "status":  "OK",
+        "sha256":  "bd018feef8825e88181c84eb7e3aa4eafb8f08a20d9fd6ef948569610c4a3e43"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/scipy/scipy/main/LICENSE.txt",
+        "retrieved_at":  "2026-10-23T01:46:50.6876007+09:00",
+        "file":  "license-scipy.txt",
+        "status":  "OK",
+        "sha256":  "221e59f5e910fd7f94e44f0dac77436a11338c285c6346232e4a850a50da0e94"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/scikit-learn/scikit-learn/main/COPYING",
+        "retrieved_at":  "2026-10-23T01:46:50.9093675+09:00",
+        "file":  "license-scikit-learn.txt",
+        "status":  "OK",
+        "sha256":  "50d6a9d340f19ab355609917993114daf5f47e3161067bcf34955bbd05cd9cb0"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/joblib/threadpoolctl/master/LICENSE",
+        "retrieved_at":  "2026-10-23T01:46:51.1606368+09:00",
+        "file":  "license-threadpoolctl.txt",
+        "status":  "OK",
+        "sha256":  "ecd5f3320c3064582c4ebd53e413d8cd3ee5bb85f039e4137a3e9d3497a43cd4"
+    }
+]

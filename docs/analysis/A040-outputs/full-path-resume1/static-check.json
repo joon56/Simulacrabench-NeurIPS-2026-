@@ -1,0 +1,45 @@
+{
+  "outcome": "STATIC_WIRING_PASS",
+  "seconds": 0.04609069999787607,
+  "copies": [
+    {
+      "name": "runner.py",
+      "byte_identical": false,
+      "assertions_unchanged": 0
+    },
+    {
+      "name": "watchdog.py",
+      "byte_identical": false,
+      "assertions_unchanged": 0
+    },
+    {
+      "name": "adapter.py",
+      "byte_identical": true,
+      "assertions_unchanged": 0
+    },
+    {
+      "name": "orchestration.py",
+      "byte_identical": true,
+      "assertions_unchanged": 0
+    },
+    {
+      "name": "observer.py",
+      "byte_identical": true,
+      "assertions_unchanged": 0
+    },
+    {
+      "name": "schema_entry.py",
+      "byte_identical": true,
+      "assertions_unchanged": 0
+    },
+    {
+      "name": "telemetry.py",
+      "byte_identical": true,
+      "assertions_unchanged": 0
+    }
+  ],
+  "model_imports": 0,
+  "tests_or_generator_run": false,
+  "input_paths_unchanged": true,
+  "historical_model_free_result_copied_not_rerun": true
+}

@@ -1,0 +1,953 @@
+﻿{
+    "experiment":  "E064",
+    "parent":  "E041",
+    "status":  "parked",
+    "decision":  "LOCAL_TECHNICAL_PASS_FOR_S0",
+    "role":  "S1 bounded exploratory technical",
+    "observed_utc":  "2026-10-11T14:15:40.7780805Z",
+    "entry_utc":  "2026-10-11T13:35:20Z",
+    "gross_seconds_at_verification":  2420.7780804999998,
+    "deadline_utc":  "2026-10-11T15:35:20Z",
+    "computation_cutoff_utc":  "2026-10-11T15:25:20Z",
+    "authority":  {
+                      "protocol":  "user-protocol.ko.md",
+                      "task":  "User delivered A043 S0 implementation handoff to this executing S1; no S0/S2 transition inferred from labels.",
+                      "user_attachment":  "ba808f7e-b575-46a7-a398-5a5f4530f4de/Pasted text.txt"
+                  },
+    "workflow":  {
+                     "revision":  "2026-10-05-r5",
+                     "sha256":  "a577942675e16a732339e586c14796104dda704693568439ae28670cc7fb7b23",
+                     "reading_limits":  "Some large tool outputs truncated; relevant ranges reread, original inherited A043 read context retained. Hash list identifies bytes and is not a claim each full file was reread.",
+                     "actual_read_paths":  "Ordered startup files, current attachment/handoff/S0 decision/entry/verification, A043 contract/closeout/handoff/verification/priority, E063 allowed freeze/verification/implementation/post-result metadata, E012/E061/E063 records, production source bodies and required direct imports, old harness/test as text; official schema/options/masking/floor/score source.",
+                     "receipt":  {
+                                     "ordered":  [
+                                                     "AGENTS.md",
+                                                     "CLAUDE.md",
+                                                     "docs/status.md",
+                                                     "docs/log.md newest3 A043 S0accept/S1contract/S0proposal",
+                                                     "docs/workflow.md",
+                                                     "current handoff/attachment"
+                                                 ],
+                                     "evidence":  "Actual Get-Content outputs in this S1; workflow truncated portion reread; source bodies and dependencies read statically before implementation. Not inferred from hash.",
+                                     "allowed":  "New E064 implementation/focused fixtures; registered synthetic TRAIN/DEV projection; new outputs; status/log results",
+                                     "forbidden":  "TEST/protected/old raw cache/remote/GPU/ZIP/S2/S3/commit/push/subagents"
+                                 }
+                 },
+    "identity":  {
+                     "prior_S0_comparison":  "s0-identity-comparison.json",
+                     "head":  "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+                     "registration_sha256":  "f1113c07ac9127938fc8b02486830e0a23aa1add32ead4e1ce2269811986a8c7",
+                     "frozen_code":  [
+                                         {
+                                             "expected":  "19cd35b7d0069e3244a6a89b9baec6a61e702cc80b6e3f91f1a5689926e40927",
+                                             "path":  "src/models/conditional_gradient.py",
+                                             "match":  true,
+                                             "actual":  "19cd35b7d0069e3244a6a89b9baec6a61e702cc80b6e3f91f1a5689926e40927"
+                                         },
+                                         {
+                                             "expected":  "c78bb8e334cf858d5909247a0da4f9b6151d02d7b9ebd8152b3d48f4b2ec12f8",
+                                             "path":  "tests/test_conditional_gradient.py",
+                                             "match":  true,
+                                             "actual":  "c78bb8e334cf858d5909247a0da4f9b6151d02d7b9ebd8152b3d48f4b2ec12f8"
+                                         },
+                                         {
+                                             "expected":  "e4d70db795a0a26e9acd1c44e0423448058c566484ee52ecb1a4b4f8589d8d5f",
+                                             "path":  "scripts/check_e064_conditional_gradient.py",
+                                             "match":  true,
+                                             "actual":  "e4d70db795a0a26e9acd1c44e0423448058c566484ee52ecb1a4b4f8589d8d5f"
+                                         },
+                                         {
+                                             "expected":  "35a0f6e4529a7e21856554f3e978c7f35cbbcb660fe228c3052a7eedf3f8fd4b",
+                                             "path":  "docs/analysis/E064-outputs/memory_tree.py",
+                                             "match":  true,
+                                             "actual":  "35a0f6e4529a7e21856554f3e978c7f35cbbcb660fe228c3052a7eedf3f8fd4b"
+                                         }
+                                     ],
+                     "original_records":  [
+                                              {
+                                                  "expected":  "73b86e5310d6a45d5206efd3b55da47c48748ee7b077e6fcad6be276f1716a3a",
+                                                  "path":  "AGENTS.md",
+                                                  "match":  true,
+                                                  "actual":  "73b86e5310d6a45d5206efd3b55da47c48748ee7b077e6fcad6be276f1716a3a"
+                                              },
+                                              {
+                                                  "expected":  "0cda5c3385ea3368d0c24a6602e4b1220adc864a205e231f10042b655d031749",
+                                                  "path":  "CLAUDE.md",
+                                                  "match":  true,
+                                                  "actual":  "0cda5c3385ea3368d0c24a6602e4b1220adc864a205e231f10042b655d031749"
+                                              },
+                                              {
+                                                  "expected":  "a577942675e16a732339e586c14796104dda704693568439ae28670cc7fb7b23",
+                                                  "path":  "docs/workflow.md",
+                                                  "match":  true,
+                                                  "actual":  "a577942675e16a732339e586c14796104dda704693568439ae28670cc7fb7b23"
+                                              },
+                                              {
+                                                  "expected":  "eaa884a4194db103335136495205fe5b51297c17db15e9eac62946ced286cc44",
+                                                  "path":  "docs/tree.md",
+                                                  "match":  true,
+                                                  "actual":  "eaa884a4194db103335136495205fe5b51297c17db15e9eac62946ced286cc44"
+                                              },
+                                              {
+                                                  "expected":  "cf558e158b3d9aef7df00f30c6fea785baaa1630abee330673ef1821ca4cf79d",
+                                                  "path":  "docs/analysis/A043-outputs/s0-review/s1-implementation-handoff.ko.md",
+                                                  "match":  true,
+                                                  "actual":  "cf558e158b3d9aef7df00f30c6fea785baaa1630abee330673ef1821ca4cf79d"
+                                              },
+                                              {
+                                                  "expected":  "9470a8a08c5e61f0b096aa1859b9c042b6264bcdff15fa088bfff3b53d244745",
+                                                  "path":  "docs/analysis/A043-outputs/s0-review/decision.md",
+                                                  "match":  true,
+                                                  "actual":  "9470a8a08c5e61f0b096aa1859b9c042b6264bcdff15fa088bfff3b53d244745"
+                                              },
+                                              {
+                                                  "expected":  "4821e5d417467bda69dea2653779be1d5f958d4ea8c2c21c8f3c3692c37de081",
+                                                  "path":  "docs/analysis/A043-outputs/s0-review/entry.json",
+                                                  "match":  true,
+                                                  "actual":  "4821e5d417467bda69dea2653779be1d5f958d4ea8c2c21c8f3c3692c37de081"
+                                              },
+                                              {
+                                                  "expected":  "09b484d11167edd720a8f1fbc62aceff4c05f2262050969e6b5dc5eea7850d64",
+                                                  "path":  "docs/analysis/A043-outputs/s0-review/verification.json",
+                                                  "match":  true,
+                                                  "actual":  "09b484d11167edd720a8f1fbc62aceff4c05f2262050969e6b5dc5eea7850d64"
+                                              },
+                                              {
+                                                  "expected":  "f4ec8f24d394cd94d4baf1a58fe40fe9c6bf3ddc5a6d12865bbe9c2b9d41563e",
+                                                  "path":  "docs/analysis/A043-outputs/s1/contract.md",
+                                                  "match":  true,
+                                                  "actual":  "f4ec8f24d394cd94d4baf1a58fe40fe9c6bf3ddc5a6d12865bbe9c2b9d41563e"
+                                              },
+                                              {
+                                                  "expected":  "2636b386d4b730c0052584b7e7ca139bfda7f680d5b10530cbab64e464b7af90",
+                                                  "path":  "docs/analysis/A043-outputs/s1/closeout.md",
+                                                  "match":  true,
+                                                  "actual":  "2636b386d4b730c0052584b7e7ca139bfda7f680d5b10530cbab64e464b7af90"
+                                              },
+                                              {
+                                                  "expected":  "72c6df9af2df7a74fe5bb0a7c9d937c16b3e9e9737e0ca966fa4705b289ac9b6",
+                                                  "path":  "docs/analysis/A043-outputs/s1/s0-handoff.ko.md",
+                                                  "match":  true,
+                                                  "actual":  "72c6df9af2df7a74fe5bb0a7c9d937c16b3e9e9737e0ca966fa4705b289ac9b6"
+                                              },
+                                              {
+                                                  "expected":  "2ac519225f486c8de24f5dac02fe3310bb1973fc164c64b3a691b10b2d6da225",
+                                                  "path":  "docs/analysis/A043-outputs/s1/verification.json",
+                                                  "match":  true,
+                                                  "actual":  "2ac519225f486c8de24f5dac02fe3310bb1973fc164c64b3a691b10b2d6da225"
+                                              },
+                                              {
+                                                  "expected":  "46d7dd9965c601374d7571141f7f6d2a54008b0e7311aad64dc7a82745a130a6",
+                                                  "path":  "docs/analysis/A043-post-e063-priority.md",
+                                                  "match":  true,
+                                                  "actual":  "46d7dd9965c601374d7571141f7f6d2a54008b0e7311aad64dc7a82745a130a6"
+                                              },
+                                              {
+                                                  "expected":  "0c40ac6802f683f5523b8639080f4b0df0fcbe4150e7b40ad8eb2a8f918e6b8a",
+                                                  "path":  "docs/experiments/E012-shared-trunk.md",
+                                                  "match":  true,
+                                                  "actual":  "0c40ac6802f683f5523b8639080f4b0df0fcbe4150e7b40ad8eb2a8f918e6b8a"
+                                              },
+                                              {
+                                                  "expected":  "a052fc9939b0e2e8a15841cfaa3645fa5c14661766cac829ce1a7ffb3a063dff",
+                                                  "path":  "docs/experiments/E061-tied-content-heads.md",
+                                                  "match":  true,
+                                                  "actual":  "a052fc9939b0e2e8a15841cfaa3645fa5c14661766cac829ce1a7ffb3a063dff"
+                                              },
+                                              {
+                                                  "expected":  "c2e32e41f725d4d44515d0bdb84a182394de4d0c7fe3c8773c7888ce280a16b9",
+                                                  "path":  "docs/experiments/E063-round-conditioned-metric.md",
+                                                  "match":  true,
+                                                  "actual":  "c2e32e41f725d4d44515d0bdb84a182394de4d0c7fe3c8773c7888ce280a16b9"
+                                              },
+                                              {
+                                                  "expected":  "86662430e7cd0c8cfd09eb6ddf0f08ca43ebd7bda96adbfc4cfe2d40edfebc9a",
+                                                  "path":  "docs/analysis/E063-outputs/freeze-01.json",
+                                                  "match":  true,
+                                                  "actual":  "86662430e7cd0c8cfd09eb6ddf0f08ca43ebd7bda96adbfc4cfe2d40edfebc9a"
+                                              },
+                                              {
+                                                  "expected":  "d3451701d55ed98e52de3ee44d53b460c92f2ef2b518002f5cb6e16e68d36449",
+                                                  "path":  "docs/analysis/E063-outputs/implementation-contract.md",
+                                                  "match":  true,
+                                                  "actual":  "d3451701d55ed98e52de3ee44d53b460c92f2ef2b518002f5cb6e16e68d36449"
+                                              },
+                                              {
+                                                  "expected":  "fc30eeb8110bbbcdd4e98a9479f07fc66c3d0ad9e21932255942a3d2313cb2e0",
+                                                  "path":  "docs/analysis/E063-outputs/verification.json",
+                                                  "match":  true,
+                                                  "actual":  "fc30eeb8110bbbcdd4e98a9479f07fc66c3d0ad9e21932255942a3d2313cb2e0"
+                                              },
+                                              {
+                                                  "expected":  "8025ec5ddab33bae3675f72616f5c932e18d15f77f6ac3f3fb0c53b98d4369fb",
+                                                  "path":  "docs/analysis/E063-outputs/s2/post-result/result.ko.md",
+                                                  "match":  true,
+                                                  "actual":  "8025ec5ddab33bae3675f72616f5c932e18d15f77f6ac3f3fb0c53b98d4369fb"
+                                              },
+                                              {
+                                                  "expected":  "a437183e91834a8e0eb82f94b5c9b0abc3b66a480df0e14009fec1d45afec6f1",
+                                                  "path":  "scripts/check_e063_round_metric.py",
+                                                  "match":  true,
+                                                  "actual":  "a437183e91834a8e0eb82f94b5c9b0abc3b66a480df0e14009fec1d45afec6f1"
+                                              },
+                                              {
+                                                  "expected":  "ef6be195048261d8eabe21e2fac63f1d4c8d6a71341b51fe0197b3ee5d08200e",
+                                                  "path":  "tests/test_round_metric_retrieval.py",
+                                                  "match":  true,
+                                                  "actual":  "ef6be195048261d8eabe21e2fac63f1d4c8d6a71341b51fe0197b3ee5d08200e"
+                                              },
+                                              {
+                                                  "expected":  "a7b711c2a82f1f706540d425ee0caba8cfe7350519fcb08342c2e5492f88252c",
+                                                  "path":  "scripts/check_e057.py",
+                                                  "match":  true,
+                                                  "actual":  "a7b711c2a82f1f706540d425ee0caba8cfe7350519fcb08342c2e5492f88252c"
+                                              },
+                                              {
+                                                  "expected":  "7049e99a48acef2a74f37cb49bb66b5a9af8d05d2ed8fcf530287b5e81c5042f",
+                                                  "path":  "external/starter-kit/score.py",
+                                                  "match":  true,
+                                                  "actual":  "7049e99a48acef2a74f37cb49bb66b5a9af8d05d2ed8fcf530287b5e81c5042f"
+                                              },
+                                              {
+                                                  "expected":  "8cf628cbb4771ed6e91ad74ebb4f75b22667af39d8f48e01c956c675b1b1586b",
+                                                  "path":  "external/starter-kit/make_sandbox.py",
+                                                  "match":  true,
+                                                  "actual":  "8cf628cbb4771ed6e91ad74ebb4f75b22667af39d8f48e01c956c675b1b1586b"
+                                              },
+                                              {
+                                                  "expected":  "f22f8e4faa62b6af0ee8e7e887e35980511e4517655479fefeeef4519fc52c15",
+                                                  "path":  "external/starter-kit/config.yml",
+                                                  "match":  true,
+                                                  "actual":  "f22f8e4faa62b6af0ee8e7e887e35980511e4517655479fefeeef4519fc52c15"
+                                              },
+                                              {
+                                                  "expected":  "b70275ad94210fce7548761143be5e177769721045e287bb6c80aac3f928c65b",
+                                                  "path":  ".venv/Scripts/python.exe",
+                                                  "match":  true,
+                                                  "actual":  "b70275ad94210fce7548761143be5e177769721045e287bb6c80aac3f928c65b"
+                                              },
+                                              {
+                                                  "expected":  "ace9b5666874dca55409351d089ef1085f01eb7430ae894e98c82c4d3f269131",
+                                                  "path":  ".venv/pyvenv.cfg",
+                                                  "match":  true,
+                                                  "actual":  "ace9b5666874dca55409351d089ef1085f01eb7430ae894e98c82c4d3f269131"
+                                              },
+                                              {
+                                                  "expected":  "22c911806ea91234ae350341adfb9c0df2ce4be41cc88e73be304e4bb1023073",
+                                                  "path":  "submissions/2026-09-19-E041/main.py",
+                                                  "match":  true,
+                                                  "actual":  "22c911806ea91234ae350341adfb9c0df2ce4be41cc88e73be304e4bb1023073"
+                                              },
+                                              {
+                                                  "expected":  "df648763c8e0ba5532ebf9e437af95cd10d8527112c1338b8b5db9ad6a212e1f",
+                                                  "path":  "src/models/shared_trunk.py",
+                                                  "match":  true,
+                                                  "actual":  "df648763c8e0ba5532ebf9e437af95cd10d8527112c1338b8b5db9ad6a212e1f"
+                                              },
+                                              {
+                                                  "expected":  "4a7921a00d7758e52a63a3ca7cd5ebf2285cef445b57fd89f15580d6fc108524",
+                                                  "path":  "src/models/link_sharp.py",
+                                                  "match":  true,
+                                                  "actual":  "4a7921a00d7758e52a63a3ca7cd5ebf2285cef445b57fd89f15580d6fc108524"
+                                              },
+                                              {
+                                                  "expected":  "2940338c5378de03303befb74e3834fbad631c0eb18f4ecb55d2cc39a471f879",
+                                                  "path":  "src/models/supervised_retrieval.py",
+                                                  "match":  true,
+                                                  "actual":  "2940338c5378de03303befb74e3834fbad631c0eb18f4ecb55d2cc39a471f879"
+                                              },
+                                              {
+                                                  "expected":  "9aad6be04e14ae97dc7aaba5499747c35b255b098680c66eaa8f8af58c940f70",
+                                                  "path":  "src/models/hh_cap.py",
+                                                  "match":  true,
+                                                  "actual":  "9aad6be04e14ae97dc7aaba5499747c35b255b098680c66eaa8f8af58c940f70"
+                                              },
+                                              {
+                                                  "expected":  "c25e91e648d5eb8a11afca1c8b02accad1a585540b6ed7d4ca363730a535705f",
+                                                  "path":  "src/models/logit_blend.py",
+                                                  "match":  true,
+                                                  "actual":  "c25e91e648d5eb8a11afca1c8b02accad1a585540b6ed7d4ca363730a535705f"
+                                              },
+                                              {
+                                                  "expected":  "f9449d41d30041f6e9714c7a25777965ec4d25cfa2563b018fb08c94dde20833",
+                                                  "path":  "src/models/tied_content_heads.py",
+                                                  "match":  true,
+                                                  "actual":  "f9449d41d30041f6e9714c7a25777965ec4d25cfa2563b018fb08c94dde20833"
+                                              },
+                                              {
+                                                  "expected":  "e01f2030c191b0b632b274662cbb46537669f3b73e21ab0d5f7f671d28654ccd",
+                                                  "path":  "src/models/hier_backoff.py",
+                                                  "match":  true,
+                                                  "actual":  "e01f2030c191b0b632b274662cbb46537669f3b73e21ab0d5f7f671d28654ccd"
+                                              },
+                                              {
+                                                  "expected":  "aecad17990cc106199f96648ad02716eee43cc60f995b25125473a0b0bd5e197",
+                                                  "path":  "src/models/cond_agree.py",
+                                                  "match":  true,
+                                                  "actual":  "aecad17990cc106199f96648ad02716eee43cc60f995b25125473a0b0bd5e197"
+                                              },
+                                              {
+                                                  "expected":  "31acb4639894411320062f196050425ee1c143a456c9e0dac40ba6dd376ad5e0",
+                                                  "path":  "src/models/hh_sharp.py",
+                                                  "match":  true,
+                                                  "actual":  "31acb4639894411320062f196050425ee1c143a456c9e0dac40ba6dd376ad5e0"
+                                              },
+                                              {
+                                                  "expected":  "fb34d8dc575a0edd644287ec9387ee32db7866083b53b907376f464837f0c1f6",
+                                                  "path":  "src/models/hh_link.py",
+                                                  "match":  true,
+                                                  "actual":  "fb34d8dc575a0edd644287ec9387ee32db7866083b53b907376f464837f0c1f6"
+                                              },
+                                              {
+                                                  "expected":  "e1ce093d927eed6db0553776b74f8ddfca5d159bf035b6cd7b4df9e7bc6b168f",
+                                                  "path":  "src/models/dup_link.py",
+                                                  "match":  true,
+                                                  "actual":  "e1ce093d927eed6db0553776b74f8ddfca5d159bf035b6cd7b4df9e7bc6b168f"
+                                              },
+                                              {
+                                                  "expected":  "6b03f700821b6d74c8ef0dfe834737ac4c9755d7fcf9a7c2f96b5b67e905d96d",
+                                                  "path":  "src/models/prob_link.py",
+                                                  "match":  true,
+                                                  "actual":  "6b03f700821b6d74c8ef0dfe834737ac4c9755d7fcf9a7c2f96b5b67e905d96d"
+                                              },
+                                              {
+                                                  "expected":  "0f5a28a6fea27215e0697b94558bc226b24a24a9811a59c3fd71e0d5b5283b17",
+                                                  "path":  "src/models/cross_link.py",
+                                                  "match":  true,
+                                                  "actual":  "0f5a28a6fea27215e0697b94558bc226b24a24a9811a59c3fd71e0d5b5283b17"
+                                              },
+                                              {
+                                                  "expected":  "b6c3487a01f5174e02e7691ec455a8e72cfab7533f68026b9010665a60b23ca4",
+                                                  "path":  "src/eval/retrieval_oracle.py",
+                                                  "match":  true,
+                                                  "actual":  "b6c3487a01f5174e02e7691ec455a8e72cfab7533f68026b9010665a60b23ca4"
+                                              },
+                                              {
+                                                  "expected":  "272aae939a2587b7197569ff84733a1d3b51050e4090ed903a7c8f4e1c88ca18",
+                                                  "path":  "src/eval/logloss.py",
+                                                  "match":  true,
+                                                  "actual":  "272aae939a2587b7197569ff84733a1d3b51050e4090ed903a7c8f4e1c88ca18"
+                                              },
+                                              {
+                                                  "expected":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                                                  "path":  "src/__init__.py",
+                                                  "match":  true,
+                                                  "actual":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                                              },
+                                              {
+                                                  "expected":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                                                  "path":  "src/models/__init__.py",
+                                                  "match":  true,
+                                                  "actual":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                                              },
+                                              {
+                                                  "expected":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                                                  "path":  "src/eval/__init__.py",
+                                                  "match":  true,
+                                                  "actual":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                                              },
+                                              {
+                                                  "expected":  "0bce08036cc563ee2a369dcee316ff8a5f89045d86991756d72c266927674396",
+                                                  "path":  "external/starter-kit/data/unicef.json",
+                                                  "match":  true,
+                                                  "actual":  "0bce08036cc563ee2a369dcee316ff8a5f89045d86991756d72c266927674396"
+                                              },
+                                              {
+                                                  "expected":  "6b3760742c6e864eb8d0bb2f9ec523a19a486b73282d79432dbcca16e3664125",
+                                                  "path":  "external/starter-kit/data/world_bank.json",
+                                                  "match":  true,
+                                                  "actual":  "6b3760742c6e864eb8d0bb2f9ec523a19a486b73282d79432dbcca16e3664125"
+                                              },
+                                              {
+                                                  "expected":  "b1175b6bdbd96e90a4defd83af20a38d711c6eca9fe3ce880109ff244abe80d9",
+                                                  "path":  "external/starter-kit/data/unhcr.json",
+                                                  "match":  true,
+                                                  "actual":  "b1175b6bdbd96e90a4defd83af20a38d711c6eca9fe3ce880109ff244abe80d9"
+                                              }
+                                          ],
+                     "source_control_checkout_changed":  false,
+                     "freeze_sha256":  "5e8bd2eb84b73957e10f4ca21de858c8a5743290527364c45b09beeafb42245e",
+                     "branch":  "work/e050-submission",
+                     "initial_dirty":  116,
+                     "shared_additions":  "shared-document-additions.json",
+                     "dirty":  [
+                                   " M .claude/skills/paper-session/SKILL.md",
+                                   " M .gitignore",
+                                   " M CLAUDE.md",
+                                   " M docs/domain-study-guide.ko.md",
+                                   " M docs/index.md",
+                                   " M docs/log.md",
+                                   " M docs/session-prompts.ko.md",
+                                   " M docs/status.md",
+                                   " M docs/tree.md",
+                                   " M docs/workflow.md",
+                                   " M submissions/SCORES.md",
+                                   "?? .agents/",
+                                   "?? AGENTS.md",
+                                   "?? README.md",
+                                   "?? docs/analysis/A020-outputs/",
+                                   "?? docs/analysis/A020-post-e058-design-review.md",
+                                   "?? docs/analysis/A021-outputs/",
+                                   "?? docs/analysis/A021-selector-comparison-contract.md",
+                                   "?? docs/analysis/A022-outputs/",
+                                   "?? docs/analysis/A022-remaining-role-audit.md",
+                                   "?? docs/analysis/A023-candidate-boundary-contract.md",
+                                   "?? docs/analysis/A023-cost-accounting.md",
+                                   "?? docs/analysis/A023-outputs/",
+                                   "?? docs/analysis/A024-channel-precision-review.md",
+                                   "?? docs/analysis/A024-outputs/",
+                                   "?? docs/analysis/A025-submission-oriented-review.md",
+                                   "?? docs/analysis/A026-outputs/",
+                                   "?? docs/analysis/A026-post-e060-strategy-review.md",
+                                   "?? docs/analysis/A027-outputs/",
+                                   "?? docs/analysis/A027-workflow-role-revision.md",
+                                   "?? docs/analysis/A028-outputs/",
+                                   "?? docs/analysis/A028-workflow-entry-audit.md",
+                                   "?? docs/analysis/A029-codex-migration-audit.md",
+                                   "?? docs/analysis/A029-outputs/",
+                                   "?? docs/analysis/A030-outputs/",
+                                   "?? docs/analysis/A030-vaf-channel-metadata-review.md",
+                                   "?? docs/analysis/A031-outputs/",
+                                   "?? docs/analysis/A031-post-a030-handoff-review.md",
+                                   "?? docs/analysis/A032-document-acquisition-and-readiness.md",
+                                   "?? docs/analysis/A032-outputs/",
+                                   "?? docs/analysis/A033-dev-handoff-and-role-repair.md",
+                                   "?? docs/analysis/A033-outputs/",
+                                   "?? docs/analysis/A034-e061-s0-review.md",
+                                   "?? docs/analysis/A034-outputs/",
+                                   "?? docs/analysis/A035-e061-dev-submission-review.md",
+                                   "?? docs/analysis/A035-outputs/",
+                                   "?? docs/analysis/A036-e061-post-result-review.md",
+                                   "?? docs/analysis/A036-outputs/",
+                                   "?? docs/analysis/A037-outputs/",
+                                   "?? docs/analysis/A037-winning-priority-review.md",
+                                   "?? docs/analysis/A038-outputs/",
+                                   "?? docs/analysis/A038-vaf-local-document-intake.md",
+                                   "?? docs/analysis/A039-outputs/",
+                                   "?? docs/analysis/A040-outputs/",
+                                   "?? docs/analysis/A041-outputs/",
+                                   "?? docs/analysis/A041-wb-ordinal-head-review.md",
+                                   "?? docs/analysis/A042-outputs/",
+                                   "?? docs/analysis/A042-post-e062-priority.md",
+                                   "?? docs/analysis/A043-outputs/",
+                                   "?? docs/analysis/A043-post-e063-priority.md",
+                                   "?? docs/analysis/E059-outputs/",
+                                   "?? docs/analysis/E060-outputs/",
+                                   "?? docs/analysis/E061-outputs/",
+                                   "?? docs/analysis/E062-outputs/",
+                                   "?? docs/analysis/E063-outputs/",
+                                   "?? docs/analysis/E064-outputs/",
+                                   "?? docs/codex-setup.ko.md",
+                                   "?? docs/experiments/E059-leaf-donor-interactions.md",
+                                   "?? docs/experiments/E060-content-target-retrieval.md",
+                                   "?? docs/experiments/E061-tied-content-heads.md",
+                                   "?? docs/experiments/E062-wb-ordinal-heads.md",
+                                   "?? docs/experiments/E063-round-conditioned-metric.md",
+                                   "?? docs/experiments/E064-conditional-gradient.md",
+                                   "?? docs/plans/README.md",
+                                   "?? requirements-models.txt",
+                                   "?? scripts/assemble_e060.py",
+                                   "?? scripts/assemble_e061.py",
+                                   "?? scripts/assemble_e062.py",
+                                   "?? scripts/assemble_e063.py",
+                                   "?? scripts/check_a021_selector_contract.py",
+                                   "?? scripts/check_a023_candidate_boundary.py",
+                                   "?? scripts/check_a023_resources.py",
+                                   "?? scripts/check_e060.py",
+                                   "?? scripts/check_e061_release.py",
+                                   "?? scripts/check_e061_tied_heads.py",
+                                   "?? scripts/check_e062_release.py",
+                                   "?? scripts/check_e062_wb_ordinal.py",
+                                   "?? scripts/check_e063_release.py",
+                                   "?? scripts/check_e063_round_metric.py",
+                                   "?? scripts/check_e064_conditional_gradient.py",
+                                   "?? scripts/check_workspace.py",
+                                   "?? scripts/screen_e059.py",
+                                   "?? src/models/conditional_gradient.py",
+                                   "?? src/models/content_target_retrieval.py",
+                                   "?? src/models/round_metric_retrieval.py",
+                                   "?? src/models/tied_content_heads.py",
+                                   "?? src/models/wb_ordinal_heads.py",
+                                   "?? submissions/2026-09-27-E060.zip",
+                                   "?? submissions/2026-09-27-E060/NOTICE.txt",
+                                   "?? submissions/2026-09-27-E060/main.py",
+                                   "?? submissions/2026-09-27-E060/verification.json",
+                                   "?? submissions/2026-09-28-E061.zip",
+                                   "?? submissions/2026-09-28-E061/",
+                                   "?? submissions/2026-10-08-E062.zip",
+                                   "?? submissions/2026-10-08-E062/",
+                                   "?? submissions/2026-10-09-E063.zip",
+                                   "?? submissions/2026-10-09-E063/",
+                                   "?? tests/test_a021_selector_contract.py",
+                                   "?? tests/test_a023_candidate_boundary.py",
+                                   "?? tests/test_conditional_gradient.py",
+                                   "?? tests/test_content_target_retrieval.py",
+                                   "?? tests/test_e059_interactions.py",
+                                   "?? tests/test_e060_assembly.py",
+                                   "?? tests/test_e061_assembly.py",
+                                   "?? tests/test_e062_assembly.py",
+                                   "?? tests/test_e063_assembly.py",
+                                   "?? tests/test_round_metric_retrieval.py",
+                                   "?? tests/test_tied_content_heads.py",
+                                   "?? tests/test_wb_ordinal_heads.py",
+                                   "?? tests/test_workspace_check.py",
+                                   "?? trip/"
+                               ],
+                     "source_count_preserved":  50,
+                     "dirty_count":  121,
+                     "entry_after_registration_dirty":  118
+                 },
+    "checks":  {
+                   "float64_branch_gradient_atol":  1E-10,
+                   "git_diff_check_output":  [
+
+                                             ],
+                   "initial_forward_state_rng_ce_denominator":  "PASS",
+                   "local_train_tune_ast_and_real_factory":  "PASS",
+                   "normal_calls":  {
+                                        "neural":  18,
+                                        "metric":  16,
+                                        "pipeline":  6
+                                    },
+                   "per_arm_targets_checks":  12,
+                   "scientific_restarts":  0,
+                   "max_sum_error":  2.8615613700821996E-07,
+                   "outputs_per_arm":  189649,
+                   "head_learning_adam_none_zero":  "PASS",
+                   "git_diff_check_exit":  0,
+                   "unique_new_tests":  10,
+                   "all3_processes":  2,
+                   "expected_invariants":  {
+                                               "instruments":  {
+                                                                   "unicef":  {
+                                                                                  "matched_keys":  5,
+                                                                                  "status":  "PASS"
+                                                                              },
+                                                                   "world_bank":  {
+                                                                                      "matched_keys":  8,
+                                                                                      "status":  "PASS"
+                                                                                  },
+                                                                   "unhcr":  {
+                                                                                 "matched_keys":  16,
+                                                                                 "status":  "PASS"
+                                                                             }
+                                                               },
+                                               "permitted_unobserved_paths":  [
+
+                                                                              ]
+                                           },
+                   "query_mask_given_only_F_optimizer_and_role_trace":  "PASS",
+                   "expected_absent_module_red":  "tests-01",
+                   "red_is_history_not_model_failure":  true,
+                   "source_snapshot_assembly_parity":  "NOT_RUN",
+                   "successful_test_attempts":  [
+                                                    "tests-02",
+                                                    "tests-03"
+                                                ],
+                   "qualified_receipts":  [
+                                              {
+                                                  "attempt":  "tests-02",
+                                                  "seconds":  16.705581499998516,
+                                                  "max_gap":  0.11704670000472106,
+                                                  "resource_status":  "PASS"
+                                              },
+                                              {
+                                                  "attempt":  "tests-03",
+                                                  "seconds":  13.056013000001258,
+                                                  "max_gap":  0.12283609999576584,
+                                                  "resource_status":  "PASS"
+                                              },
+                                              {
+                                                  "attempt":  "prepare-01",
+                                                  "seconds":  15.587498600005347,
+                                                  "max_gap":  0.11890910000511212,
+                                                  "resource_status":  "PASS"
+                                              },
+                                              {
+                                                  "attempt":  "R-01",
+                                                  "seconds":  379.99425030000566,
+                                                  "max_gap":  0.1202930999934324,
+                                                  "resource_status":  "PASS"
+                                              },
+                                              {
+                                                  "attempt":  "H-01",
+                                                  "seconds":  376.84131909999996,
+                                                  "max_gap":  0.13102300000173273,
+                                                  "resource_status":  "PASS"
+                                              },
+                                              {
+                                                  "attempt":  "score-01",
+                                                  "seconds":  19.653196699997352,
+                                                  "max_gap":  0.11929650000092806,
+                                                  "resource_status":  "PASS"
+                                              }
+                                          ],
+                   "float64_branch_gradient_rtol":  1E-10,
+                   "official_in_process_score_calls":  6,
+                   "controls_raw_exact":  true
+               },
+    "result":  {
+                   "regression_pass":  true,
+                   "scores":  {
+                                  "R-unicef":  {
+                                                   "skill":  0.5006484230707156,
+                                                   "log_score":  -0.780008047004413,
+                                                   "n_cells":  17856,
+                                                   "uniform_reference":  1.5620418219183347
+                                               },
+                                  "H-unicef":  {
+                                                   "skill":  0.5006484230707156,
+                                                   "log_score":  -0.780008047004413,
+                                                   "n_cells":  17856,
+                                                   "uniform_reference":  1.5620418219183347
+                                               },
+                                  "R-world_bank":  {
+                                                       "skill":  0.45471730736298255,
+                                                       "log_score":  -1.1005776279104411,
+                                                       "n_cells":  39520,
+                                                       "uniform_reference":  2.0183615632250977
+                                                   },
+                                  "H-world_bank":  {
+                                                       "skill":  0.45471730736298255,
+                                                       "log_score":  -1.1005776279104411,
+                                                       "n_cells":  39520,
+                                                       "uniform_reference":  2.0183615632250977
+                                                   },
+                                  "R-unhcr":  {
+                                                  "skill":  0.5624627288576414,
+                                                  "log_score":  -0.5520636156180775,
+                                                  "n_cells":  132273,
+                                                  "uniform_reference":  1.2617522026791088
+                                              },
+                                  "H-unhcr":  {
+                                                  "skill":  0.5623783752558484,
+                                                  "log_score":  -0.5521700489609437,
+                                                  "n_cells":  132273,
+                                                  "uniform_reference":  1.2617522026791088
+                                              }
+                              },
+                   "selection":  {
+                                     "R":  {
+                                               "w":  0.9,
+                                               "config":  [
+                                                              128,
+                                                              2,
+                                                              0.1
+                                                          ],
+                                               "epoch":  110
+                                           },
+                                     "H":  {
+                                               "w":  0.9,
+                                               "config":  [
+                                                              128,
+                                                              2,
+                                                              0.1
+                                                          ],
+                                               "epoch":  121
+                                           }
+                                 },
+                   "comparison":  {
+                                      "unicef":  {
+                                                     "delta_skill_H_R":  0.0,
+                                                     "delta_log_H_R":  0.0,
+                                                     "max_raw_difference":  0.0,
+                                                     "changed_vectors":  0,
+                                                     "regression_pass":  true
+                                                 },
+                                      "world_bank":  {
+                                                         "delta_skill_H_R":  0.0,
+                                                         "delta_log_H_R":  0.0,
+                                                         "max_raw_difference":  0.0,
+                                                         "changed_vectors":  0,
+                                                         "regression_pass":  true
+                                                     },
+                                      "unhcr":  {
+                                                    "delta_skill_H_R":  -8.4353601792930277E-05,
+                                                    "delta_log_H_R":  -0.00010643334286619677,
+                                                    "max_raw_difference":  0.05873684199021589,
+                                                    "changed_vectors":  132225,
+                                                    "regression_pass":  true
+                                                }
+                                  },
+                   "synthetic_regression_bound":  -0.002,
+                   "scope":  "Technical PASS on exposed engineering data; negative UNHCR delta retained. No S2 release/adoption/TEST authorization.",
+                   "actual_efficacy":  "UNMEASURED",
+                   "lambda_items_changed":  12
+               },
+    "costs":  {
+                  "measured_stage_seconds":  877.37767080000708,
+                  "measured_child_seconds":  876.82369669999753,
+                  "precontroller_launcher_seconds":  0.1777746,
+                  "focused_stage_seconds":  85.301406099998729,
+                  "scientific_processes":  2,
+                  "scientific_restarts":  0,
+                  "all3_calls":  {
+                                     "neural":  18,
+                                     "metric":  16,
+                                     "pipeline":  6
+                                 },
+                  "small_checks":  {
+                                       "real_neural_backend_calls":  5,
+                                       "optimizer_endpoint_doubles":  2,
+                                       "standalone_adam_steps":  2,
+                                       "unique":  10,
+                                       "real_tiny_predict_entries":  5,
+                                       "total_tiny_adam_steps":  12,
+                                       "fixed_tiny_epochs_per_call":  2,
+                                       "neural_calls_within_tiny_predict":  0
+                                   },
+                  "neural_fit_wall_seconds":  544.16146629999275,
+                  "metric_fit_wall_seconds":  0.62476659999811091,
+                  "peak_owned_tree_bytes":  {
+                                                "rss":  1397243904,
+                                                "private_commitment":  1520046080
+                                            },
+                  "max_observed_gap_seconds":  0.13102300000173273,
+                  "memory_semantics":  "Conservative sum of per-process high-water RSS/private counters over owned controller+descendants, periodically observed; not a simultaneous allocator peak.",
+                  "cap":  {
+                              "all3_each":  900,
+                              "gpu":  0,
+                              "small_each":  60,
+                              "threads":  2,
+                              "bytes_each":  8589934592,
+                              "focused":  300,
+                              "computational":  1800
+                          },
+                  "remote_cost":  0,
+                  "cash_cost":  0,
+                  "stages":  [
+                                 {
+                                     "mode":  "tests",
+                                     "wall_seconds":  0.1777746,
+                                     "status":  "LAUNCHER_ACCESS_BLOCKED",
+                                     "exit_code":  1,
+                                     "tool_chunk":  "5cd793",
+                                     "command":  ".venv/Scripts/python.exe -X utf8 -B scripts/check_e064_conditional_gradient.py tests --attempt 1 --only tests.test_conditional_gradient.GradientTests.test_initial_state_forward_rng_and_denominator",
+                                     "message":  "Venv launcher could not access its configured base Python from restricted sandbox. Separate read-only permission check confirms original base executable exists.",
+                                     "controller_started":  false,
+                                     "test_cases_started":  0,
+                                     "scientific_processes":  0,
+                                     "memory_measured":  false,
+                                     "resolution":  "Use the same existing interpreter with permitted process access; no installation, venv/config edit or environment replacement.",
+                                     "limitation":  "Duration is exec tool process wall; controller could not initialize its own monitor. This is not a resource-qualified model/test run."
+                                 },
+                                 {
+                                     "mode":  "H",
+                                     "attempt":  1,
+                                     "only":  null,
+                                     "wall_seconds":  376.84131909999996,
+                                     "child_seconds":  376.7853030999977,
+                                     "prior_seconds":  480.88315500000976,
+                                     "cumulative_seconds":  857.7244741000097,
+                                     "focused_cumulative_seconds":  85.30140609999874,
+                                     "exit_code":  0,
+                                     "resource_stop":  "COMPLETE",
+                                     "error":  null,
+                                     "peak_owned_tree_bytes":  {
+                                                                   "rss":  1391734784,
+                                                                   "commitment":  1503817728
+                                                               },
+                                     "sample_count":  3315,
+                                     "max_observed_sample_gap_seconds":  0.13102300000173273,
+                                     "sample_interval_seconds":  0.1,
+                                     "threads":  2,
+                                     "gpu":  0,
+                                     "semantics":  "Conservative sum of per-process peak RSS/private, controller and descendants; stage wall includes parent source verification and cleanup",
+                                     "status":  "PASS"
+                                 },
+                                 {
+                                     "mode":  "prepare",
+                                     "attempt":  1,
+                                     "only":  null,
+                                     "wall_seconds":  15.587498600005347,
+                                     "child_seconds":  15.536909400005243,
+                                     "prior_seconds":  85.30140609999874,
+                                     "cumulative_seconds":  100.88890470000409,
+                                     "focused_cumulative_seconds":  85.30140609999874,
+                                     "exit_code":  0,
+                                     "resource_stop":  "COMPLETE",
+                                     "error":  null,
+                                     "peak_owned_tree_bytes":  {
+                                                                   "rss":  666570752,
+                                                                   "commitment":  738693120
+                                                               },
+                                     "sample_count":  139,
+                                     "max_observed_sample_gap_seconds":  0.11890910000511212,
+                                     "sample_interval_seconds":  0.1,
+                                     "threads":  2,
+                                     "gpu":  0,
+                                     "semantics":  "Conservative sum of per-process peak RSS/private, controller and descendants; stage wall includes parent source verification and cleanup",
+                                     "status":  "PASS"
+                                 },
+                                 {
+                                     "mode":  "R",
+                                     "attempt":  1,
+                                     "only":  null,
+                                     "wall_seconds":  379.99425030000566,
+                                     "child_seconds":  379.9376884000012,
+                                     "prior_seconds":  100.88890470000409,
+                                     "cumulative_seconds":  480.88315500000976,
+                                     "focused_cumulative_seconds":  85.30140609999874,
+                                     "exit_code":  0,
+                                     "resource_stop":  "COMPLETE",
+                                     "error":  null,
+                                     "peak_owned_tree_bytes":  {
+                                                                   "rss":  1397243904,
+                                                                   "commitment":  1520046080
+                                                               },
+                                     "sample_count":  3372,
+                                     "max_observed_sample_gap_seconds":  0.1202930999934324,
+                                     "sample_interval_seconds":  0.1,
+                                     "threads":  2,
+                                     "gpu":  0,
+                                     "semantics":  "Conservative sum of per-process peak RSS/private, controller and descendants; stage wall includes parent source verification and cleanup",
+                                     "status":  "PASS"
+                                 },
+                                 {
+                                     "mode":  "score",
+                                     "attempt":  1,
+                                     "only":  null,
+                                     "wall_seconds":  19.653196699997352,
+                                     "child_seconds":  19.59871089999797,
+                                     "prior_seconds":  857.7244741000097,
+                                     "cumulative_seconds":  877.3776708000071,
+                                     "focused_cumulative_seconds":  85.30140609999874,
+                                     "exit_code":  0,
+                                     "resource_stop":  "COMPLETE",
+                                     "error":  null,
+                                     "peak_owned_tree_bytes":  {
+                                                                   "rss":  721772544,
+                                                                   "commitment":  765091840
+                                                               },
+                                     "sample_count":  173,
+                                     "max_observed_sample_gap_seconds":  0.11929650000092806,
+                                     "sample_interval_seconds":  0.1,
+                                     "threads":  2,
+                                     "gpu":  0,
+                                     "semantics":  "Conservative sum of per-process peak RSS/private, controller and descendants; stage wall includes parent source verification and cleanup",
+                                     "status":  "PASS"
+                                 },
+                                 {
+                                     "mode":  "tests",
+                                     "attempt":  1,
+                                     "only":  "tests.test_conditional_gradient.GradientTests.test_initial_state_forward_rng_and_denominator",
+                                     "wall_seconds":  55.36203699999896,
+                                     "child_seconds":  55.30573690000165,
+                                     "prior_seconds":  0.1777746,
+                                     "cumulative_seconds":  55.53981159999896,
+                                     "focused_cumulative_seconds":  55.53981159999896,
+                                     "exit_code":  1,
+                                     "resource_stop":  "COMPLETE",
+                                     "error":  null,
+                                     "peak_owned_tree_bytes":  {
+                                                                   "rss":  354152448,
+                                                                   "commitment":  393412608
+                                                               },
+                                     "sample_count":  498,
+                                     "max_observed_sample_gap_seconds":  0.11553180000191787,
+                                     "sample_interval_seconds":  0.1,
+                                     "threads":  2,
+                                     "gpu":  0,
+                                     "semantics":  "Conservative sum of per-process peak RSS/private, controller and descendants; stage wall includes parent source verification and cleanup",
+                                     "status":  "FAIL"
+                                 },
+                                 {
+                                     "mode":  "tests",
+                                     "attempt":  2,
+                                     "only":  null,
+                                     "wall_seconds":  16.705581499998516,
+                                     "child_seconds":  16.65404370000033,
+                                     "prior_seconds":  55.53981159999896,
+                                     "cumulative_seconds":  72.24539309999747,
+                                     "focused_cumulative_seconds":  72.24539309999747,
+                                     "exit_code":  0,
+                                     "resource_stop":  "COMPLETE",
+                                     "error":  null,
+                                     "peak_owned_tree_bytes":  {
+                                                                   "rss":  442753024,
+                                                                   "commitment":  445874176
+                                                               },
+                                     "sample_count":  147,
+                                     "max_observed_sample_gap_seconds":  0.11704670000472106,
+                                     "sample_interval_seconds":  0.1,
+                                     "threads":  2,
+                                     "gpu":  0,
+                                     "semantics":  "Conservative sum of per-process peak RSS/private, controller and descendants; stage wall includes parent source verification and cleanup",
+                                     "status":  "PASS"
+                                 },
+                                 {
+                                     "mode":  "tests",
+                                     "attempt":  3,
+                                     "only":  "tests.test_conditional_gradient.ObserverTests",
+                                     "wall_seconds":  13.056013000001258,
+                                     "child_seconds":  13.00530429999344,
+                                     "prior_seconds":  72.24539309999749,
+                                     "cumulative_seconds":  85.30140609999874,
+                                     "focused_cumulative_seconds":  85.30140609999874,
+                                     "exit_code":  0,
+                                     "resource_stop":  "COMPLETE",
+                                     "error":  null,
+                                     "peak_owned_tree_bytes":  {
+                                                                   "rss":  360239104,
+                                                                   "commitment":  366092288
+                                                               },
+                                     "sample_count":  116,
+                                     "max_observed_sample_gap_seconds":  0.12283609999576584,
+                                     "sample_interval_seconds":  0.1,
+                                     "threads":  2,
+                                     "gpu":  0,
+                                     "semantics":  "Conservative sum of per-process peak RSS/private, controller and descendants; stage wall includes parent source verification and cleanup",
+                                     "status":  "PASS"
+                                 }
+                             ],
+                  "measurement_limit":  "Pre-controller denied launcher memory unmeasured. Qualified workers monitored before numerical imports. Stage wall includes source checks and cleanup; child wall includes startup/import/output. Nested function times not added to stage total."
+              },
+    "exposure":  {
+                     "protected_response_key_VAF_Adult_SIPP_access":  0,
+                     "remote_gpu_install_web_zip_commit_push_subagent":  0,
+                     "old_raw_or_model_cache_access":  0,
+                     "projection_roles":  [
+                                              "TRAIN",
+                                              "DEV"
+                                          ],
+                     "projection_requests":  24,
+                     "ledger":  "exposure-ledger.md",
+                     "model_DEV_projection":  "GIVEN and required order metadata only",
+                     "whole_DEV_predict_masked":  true,
+                     "synthetic_file_hash_scope":  "Only three user-authorized whole files; no TEST row request",
+                     "independent_audit_or_fresh_oracle":  false,
+                     "DEV_truth_stage":  "score-01 after six fresh raw files and common source/input freeze"
+                 },
+    "administrative_errors":  "regression-history.md",
+    "limitations":  [
+                        "First denied launcher memory unmeasured; qualified numerical workers monitored before import.",
+                        "RSS/private are conservative sum of process high-water counters, not simultaneous allocator peak.",
+                        "No actual efficacy/current E041 loss map/new oracle. Existing base/refit S-L reuse/in-sample full-proxy replay unchanged.",
+                        "E041 source executed, not snapshot/assembled release parity.",
+                        "No clean E025/release/official CLI/checker/SCORES artifact or S2 candidate."
+                    ],
+    "remaining_S2_if_separately_authorized":  [
+                                                  "clean E025 per-instrument-.002 and E041 release comparison",
+                                                  "source/assembly/extracted parity",
+                                                  "ZIP checker",
+                                                  "official all3 shared900s and memory",
+                                                  "SCORES pre-reading table and bytes provenance"
+                                              ],
+    "termination":  {
+                        "named_jobs":  [
+
+                                       ],
+                        "no_named_jobs":  true,
+                        "no_remote_resources_created":  true,
+                        "process_receipts_terminal":  true
+                    },
+    "preserved":  [
+                      "E041 incumbent/E025 fallback",
+                      "E057/E060/E061/E062/E063 parked; E064 parked",
+                      "E062/E063 UNRESOLVED",
+                      "E058 STOP/E059 STOP_SELECTION/A023/A024 empirical HOLD/A039/A040/all STOP/HOLD",
+                      "17999/12339SSUID aggregates/A022 original roles",
+                      "E059 consumed1918/1124 and2007/1130; protected2074/1177/calibration1866",
+                      "A_half not promoted/A018 unconfirmed/S3 stopped/no new S2 candidate"
+                  ]
+}

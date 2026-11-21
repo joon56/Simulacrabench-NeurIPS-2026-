@@ -1,0 +1,823 @@
+{
+  "schema_version": 1,
+  "task": "E062 S0 source-result review and separate S2 scope",
+  "decision": "RECOMMEND_S2_RELEASE_VALIDATION",
+  "role": "S0",
+  "task_type": "Result/strategy/document review and handoff",
+  "current_execution_authority": "No S2/model/ZIP execution in this conversation",
+  "workflow": {
+    "revision": "2026-10-05-r5",
+    "sha256": "a577942675e16a732339e586c14796104dda704693568439ae28670cc7fb7b23",
+    "actual_reads": [
+      "AGENTS.md",
+      "CLAUDE.md",
+      "docs/status.md current position and displayed historical parts",
+      "docs/log.md newest three entries",
+      "docs/workflow.md",
+      "docs/analysis/E062-outputs/s0-handoff.ko.md",
+      "E062 closeout,verification,comparison,resource-summary,implementation-contract,exposure-ledger,registration",
+      "E062 source/test/harness source and selected freeze/manifest/entry/environment/receipt metadata",
+      "E061 release cost/call structure source and records",
+      "submissions/SCORES.md existing E041 ledger"
+    ],
+    "tool_evidence": [
+      "c13864 AGENTS/CLAUDE",
+      "3ab9ea current status/workflow, long history truncated",
+      "dc35b1 untruncated newest3 log, workflow entry and E062 handoff",
+      "91acc1 workspace metadata",
+      "7876ab closeout/verification/implementation",
+      "923622 comparison/implementation/final receipt",
+      "9ce1f2 candidate source",
+      "9a1955 tests/harness source",
+      "ed4e85 evaluation source",
+      "468f82 S1 entry evidence"
+    ],
+    "read_claim_limit": "Status historical contents truncated are not claimed fully read. S1 entry.read_evidence/authority are session-reported, not independently read S1 transcript."
+  },
+  "workspace": {
+    "entry": {
+      "at": "2026-10-08T18:08:00.4334311+09:00",
+      "head": "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+      "branch": "work/e050-submission",
+      "dirty": [
+        " M .claude/skills/paper-session/SKILL.md",
+        " M .gitignore",
+        " M CLAUDE.md",
+        " M docs/domain-study-guide.ko.md",
+        " M docs/index.md",
+        " M docs/log.md",
+        " M docs/session-prompts.ko.md",
+        " M docs/status.md",
+        " M docs/tree.md",
+        " M docs/workflow.md",
+        "?? .agents/",
+        "?? AGENTS.md",
+        "?? README.md",
+        "?? docs/analysis/A020-outputs/",
+        "?? docs/analysis/A020-post-e058-design-review.md",
+        "?? docs/analysis/A021-outputs/",
+        "?? docs/analysis/A021-selector-comparison-contract.md",
+        "?? docs/analysis/A022-outputs/",
+        "?? docs/analysis/A022-remaining-role-audit.md",
+        "?? docs/analysis/A023-candidate-boundary-contract.md",
+        "?? docs/analysis/A023-cost-accounting.md",
+        "?? docs/analysis/A023-outputs/",
+        "?? docs/analysis/A024-channel-precision-review.md",
+        "?? docs/analysis/A024-outputs/",
+        "?? docs/analysis/A025-submission-oriented-review.md",
+        "?? docs/analysis/A026-outputs/",
+        "?? docs/analysis/A026-post-e060-strategy-review.md",
+        "?? docs/analysis/A027-outputs/",
+        "?? docs/analysis/A027-workflow-role-revision.md",
+        "?? docs/analysis/A028-outputs/",
+        "?? docs/analysis/A028-workflow-entry-audit.md",
+        "?? docs/analysis/A029-codex-migration-audit.md",
+        "?? docs/analysis/A029-outputs/",
+        "?? docs/analysis/A030-outputs/",
+        "?? docs/analysis/A030-vaf-channel-metadata-review.md",
+        "?? docs/analysis/A031-outputs/",
+        "?? docs/analysis/A031-post-a030-handoff-review.md",
+        "?? docs/analysis/A032-document-acquisition-and-readiness.md",
+        "?? docs/analysis/A032-outputs/",
+        "?? docs/analysis/A033-dev-handoff-and-role-repair.md",
+        "?? docs/analysis/A033-outputs/",
+        "?? docs/analysis/A034-e061-s0-review.md",
+        "?? docs/analysis/A034-outputs/",
+        "?? docs/analysis/A035-e061-dev-submission-review.md",
+        "?? docs/analysis/A035-outputs/",
+        "?? docs/analysis/A036-e061-post-result-review.md",
+        "?? docs/analysis/A036-outputs/",
+        "?? docs/analysis/A037-outputs/",
+        "?? docs/analysis/A037-winning-priority-review.md",
+        "?? docs/analysis/A038-outputs/",
+        "?? docs/analysis/A038-vaf-local-document-intake.md",
+        "?? docs/analysis/A039-outputs/",
+        "?? docs/analysis/A040-outputs/",
+        "?? docs/analysis/A041-outputs/",
+        "?? docs/analysis/A041-wb-ordinal-head-review.md",
+        "?? docs/analysis/E059-outputs/",
+        "?? docs/analysis/E060-outputs/",
+        "?? docs/analysis/E061-outputs/",
+        "?? docs/analysis/E062-outputs/",
+        "?? docs/codex-setup.ko.md",
+        "?? docs/experiments/E059-leaf-donor-interactions.md",
+        "?? docs/experiments/E060-content-target-retrieval.md",
+        "?? docs/experiments/E061-tied-content-heads.md",
+        "?? docs/experiments/E062-wb-ordinal-heads.md",
+        "?? docs/plans/README.md",
+        "?? requirements-models.txt",
+        "?? scripts/assemble_e060.py",
+        "?? scripts/assemble_e061.py",
+        "?? scripts/check_a021_selector_contract.py",
+        "?? scripts/check_a023_candidate_boundary.py",
+        "?? scripts/check_a023_resources.py",
+        "?? scripts/check_e060.py",
+        "?? scripts/check_e061_release.py",
+        "?? scripts/check_e061_tied_heads.py",
+        "?? scripts/check_e062_wb_ordinal.py",
+        "?? scripts/check_workspace.py",
+        "?? scripts/screen_e059.py",
+        "?? src/models/content_target_retrieval.py",
+        "?? src/models/tied_content_heads.py",
+        "?? src/models/wb_ordinal_heads.py",
+        "?? submissions/2026-09-27-E060.zip",
+        "?? submissions/2026-09-27-E060/NOTICE.txt",
+        "?? submissions/2026-09-27-E060/main.py",
+        "?? submissions/2026-09-27-E060/verification.json",
+        "?? submissions/2026-09-28-E061.zip",
+        "?? submissions/2026-09-28-E061/",
+        "?? tests/test_a021_selector_contract.py",
+        "?? tests/test_a023_candidate_boundary.py",
+        "?? tests/test_content_target_retrieval.py",
+        "?? tests/test_e059_interactions.py",
+        "?? tests/test_e060_assembly.py",
+        "?? tests/test_e061_assembly.py",
+        "?? tests/test_tied_content_heads.py",
+        "?? tests/test_wb_ordinal_heads.py",
+        "?? tests/test_workspace_check.py",
+        "?? trip/"
+      ],
+      "jobs": [],
+      "workflow_sha256": "a577942675e16a732339e586c14796104dda704693568439ae28670cc7fb7b23",
+      "shared": [
+        {
+          "path": "docs/status.md",
+          "sha256": "5edd7ee6b14c0624d6291402fd81900cbfbc5efc2dff658e6b94f5d329254067"
+        },
+        {
+          "path": "docs/log.md",
+          "sha256": "720b3127976efebb44f114d323392eb1fca517d0485f58d237e7130ec16942ec"
+        }
+      ]
+    },
+    "final_at": "2026-10-08T18:19:47.8476336+09:00",
+    "final_head": "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+    "final_dirty_count": 96,
+    "dirty_status_list_unchanged": true,
+    "final_named_jobs": [],
+    "job_claim_limit": "Named Python/pythonw/uv metadata; no claim about all chats/workloads or remote jobs"
+  },
+  "identities": {
+    "before": {
+      "checks": [
+        {
+          "kind": "allowed_source",
+          "path": "external/starter-kit/data/unhcr.json",
+          "expected": "b1175b6bdbd96e90a4defd83af20a38d711c6eca9fe3ce880109ff244abe80d9",
+          "actual": "b1175b6bdbd96e90a4defd83af20a38d711c6eca9fe3ce880109ff244abe80d9",
+          "match": true
+        },
+        {
+          "kind": "allowed_source",
+          "path": "docs/analysis/A041-outputs/s0-review.md",
+          "expected": "48ed217647ec2fa5f7b6ba807f02dbedc5c7ef3f5b7637061ebe31a5100b46ad",
+          "actual": "48ed217647ec2fa5f7b6ba807f02dbedc5c7ef3f5b7637061ebe31a5100b46ad",
+          "match": true
+        },
+        {
+          "kind": "allowed_source",
+          "path": "AGENTS.md",
+          "expected": "73b86e5310d6a45d5206efd3b55da47c48748ee7b077e6fcad6be276f1716a3a",
+          "actual": "73b86e5310d6a45d5206efd3b55da47c48748ee7b077e6fcad6be276f1716a3a",
+          "match": true
+        },
+        {
+          "kind": "allowed_source",
+          "path": "src/models/hh_cap.py",
+          "expected": "9aad6be04e14ae97dc7aaba5499747c35b255b098680c66eaa8f8af58c940f70",
+          "actual": "9aad6be04e14ae97dc7aaba5499747c35b255b098680c66eaa8f8af58c940f70",
+          "match": true
+        },
+        {
+          "kind": "allowed_source",
+          "path": "docs/analysis/A041-outputs/s1/cost-accounting.md",
+          "expected": "4b02f6954d640650274194529461ff6a5352c25e9219a4f0ff65a1ffdd1b6d07",
+          "actual": "4b02f6954d640650274194529461ff6a5352c25e9219a4f0ff65a1ffdd1b6d07",
+          "match": true
+        },
+        {
+          "kind": "allowed_source",
+          "path": "external/starter-kit/data/unicef.json",
+          "expected": "0bce08036cc563ee2a369dcee316ff8a5f89045d86991756d72c266927674396",
+          "actual": "0bce08036cc563ee2a369dcee316ff8a5f89045d86991756d72c266927674396",
+          "match": true
+        },
+        {
+          "kind": "allowed_source",
+          "path": "submissions/2026-09-19-E041/main.py",
+          "expected": "22c911806ea91234ae350341adfb9c0df2ce4be41cc88e73be304e4bb1023073",
+          "actual": "22c911806ea91234ae350341adfb9c0df2ce4be41cc88e73be304e4bb1023073",
+          "match": true
+        },
+        {
+          "kind": "allowed_source",
+          "path": "docs/analysis/A041-outputs/s1/contract.md",
+          "expected": "c65c4eb4eb75a1a15fda8416c5c7988f6ef47464460ac9b195201675cac20ca8",
+          "actual": "c65c4eb4eb75a1a15fda8416c5c7988f6ef47464460ac9b195201675cac20ca8",
+          "match": true
+        },
+        {
+          "kind": "allowed_source",
+          "path": "external/starter-kit/config.yml",
+          "expected": "f22f8e4faa62b6af0ee8e7e887e35980511e4517655479fefeeef4519fc52c15",
+          "actual": "f22f8e4faa62b6af0ee8e7e887e35980511e4517655479fefeeef4519fc52c15",
+          "match": true
+        },
+        {
+          "kind": "allowed_source",
+          "path": "src/models/shared_trunk.py",
+          "expected": "df648763c8e0ba5532ebf9e437af95cd10d8527112c1338b8b5db9ad6a212e1f",
+          "actual": "df648763c8e0ba5532ebf9e437af95cd10d8527112c1338b8b5db9ad6a212e1f",
+          "match": true
+        },
+        {
+          "kind": "allowed_source",
+          "path": "scripts/check_e061_tied_heads.py",
+          "expected": "de5171c689bda0db6aff7b5cb95ccd8c8bc0165b2904d259af86b1ce2184f0f7",
+          "actual": "de5171c689bda0db6aff7b5cb95ccd8c8bc0165b2904d259af86b1ce2184f0f7",
+          "match": true
+        },
+        {
+          "kind": "allowed_source",
+          "path": "docs/workflow.md",
+          "expected": "a577942675e16a732339e586c14796104dda704693568439ae28670cc7fb7b23",
+          "actual": "a577942675e16a732339e586c14796104dda704693568439ae28670cc7fb7b23",
+          "match": true
+        },
+        {
+          "kind": "allowed_source",
+          "path": "external/starter-kit/data/world_bank.json",
+          "expected": "6b3760742c6e864eb8d0bb2f9ec523a19a486b73282d79432dbcca16e3664125",
+          "actual": "6b3760742c6e864eb8d0bb2f9ec523a19a486b73282d79432dbcca16e3664125",
+          "match": true
+        },
+        {
+          "kind": "allowed_source",
+          "path": "src/models/hh_link.py",
+          "expected": "fb34d8dc575a0edd644287ec9387ee32db7866083b53b907376f464837f0c1f6",
+          "actual": "fb34d8dc575a0edd644287ec9387ee32db7866083b53b907376f464837f0c1f6",
+          "match": true
+        },
+        {
+          "kind": "allowed_source",
+          "path": "src/models/dup_link.py",
+          "expected": "e1ce093d927eed6db0553776b74f8ddfca5d159bf035b6cd7b4df9e7bc6b168f",
+          "actual": "e1ce093d927eed6db0553776b74f8ddfca5d159bf035b6cd7b4df9e7bc6b168f",
+          "match": true
+        },
+        {
+          "kind": "allowed_source",
+          "path": "docs/tree.md",
+          "expected": "eaa884a4194db103335136495205fe5b51297c17db15e9eac62946ced286cc44",
+          "actual": "eaa884a4194db103335136495205fe5b51297c17db15e9eac62946ced286cc44",
+          "match": true
+        },
+        {
+          "kind": "allowed_source",
+          "path": "src/eval/retrieval_oracle.py",
+          "expected": "b6c3487a01f5174e02e7691ec455a8e72cfab7533f68026b9010665a60b23ca4",
+          "actual": "b6c3487a01f5174e02e7691ec455a8e72cfab7533f68026b9010665a60b23ca4",
+          "match": true
+        },
+        {
+          "kind": "allowed_source",
+          "path": "src/models/prob_link.py",
+          "expected": "6b03f700821b6d74c8ef0dfe834737ac4c9755d7fcf9a7c2f96b5b67e905d96d",
+          "actual": "6b03f700821b6d74c8ef0dfe834737ac4c9755d7fcf9a7c2f96b5b67e905d96d",
+          "match": true
+        },
+        {
+          "kind": "allowed_source",
+          "path": "scripts/check_e057.py",
+          "expected": "a7b711c2a82f1f706540d425ee0caba8cfe7350519fcb08342c2e5492f88252c",
+          "actual": "a7b711c2a82f1f706540d425ee0caba8cfe7350519fcb08342c2e5492f88252c",
+          "match": true
+        },
+        {
+          "kind": "allowed_source",
+          "path": "src/models/hh_sharp.py",
+          "expected": "31acb4639894411320062f196050425ee1c143a456c9e0dac40ba6dd376ad5e0",
+          "actual": "31acb4639894411320062f196050425ee1c143a456c9e0dac40ba6dd376ad5e0",
+          "match": true
+        },
+        {
+          "kind": "allowed_source",
+          "path": "src/models/supervised_retrieval.py",
+          "expected": "2940338c5378de03303befb74e3834fbad631c0eb18f4ecb55d2cc39a471f879",
+          "actual": "2940338c5378de03303befb74e3834fbad631c0eb18f4ecb55d2cc39a471f879",
+          "match": true
+        },
+        {
+          "kind": "allowed_source",
+          "path": "CLAUDE.md",
+          "expected": "0cda5c3385ea3368d0c24a6602e4b1220adc864a205e231f10042b655d031749",
+          "actual": "0cda5c3385ea3368d0c24a6602e4b1220adc864a205e231f10042b655d031749",
+          "match": true
+        },
+        {
+          "kind": "allowed_source",
+          "path": "src/models/logit_blend.py",
+          "expected": "c25e91e648d5eb8a11afca1c8b02accad1a585540b6ed7d4ca363730a535705f",
+          "actual": "c25e91e648d5eb8a11afca1c8b02accad1a585540b6ed7d4ca363730a535705f",
+          "match": true
+        },
+        {
+          "kind": "allowed_source",
+          "path": "submissions/2026-09-09-E025/main.py",
+          "expected": "00793cf9d720d6f7511ffd738935206b3a5401f2454255409429db8d55e991b9",
+          "actual": "00793cf9d720d6f7511ffd738935206b3a5401f2454255409429db8d55e991b9",
+          "match": true
+        },
+        {
+          "kind": "allowed_source",
+          "path": "src/models/cond_agree.py",
+          "expected": "aecad17990cc106199f96648ad02716eee43cc60f995b25125473a0b0bd5e197",
+          "actual": "aecad17990cc106199f96648ad02716eee43cc60f995b25125473a0b0bd5e197",
+          "match": true
+        },
+        {
+          "kind": "allowed_source",
+          "path": "external/starter-kit/score.py",
+          "expected": "7049e99a48acef2a74f37cb49bb66b5a9af8d05d2ed8fcf530287b5e81c5042f",
+          "actual": "7049e99a48acef2a74f37cb49bb66b5a9af8d05d2ed8fcf530287b5e81c5042f",
+          "match": true
+        },
+        {
+          "kind": "allowed_source",
+          "path": "docs/analysis/A041-outputs/s0-review-verification.json",
+          "expected": "0e15f82db14fe3b15fcb711b214540141404e234219e369d75832034877a2007",
+          "actual": "0e15f82db14fe3b15fcb711b214540141404e234219e369d75832034877a2007",
+          "match": true
+        },
+        {
+          "kind": "allowed_source",
+          "path": "docs/analysis/A041-outputs/inputs.json",
+          "expected": "4060ce971a3cd3211d6011327ee17b4e9ae59d89ceeef2dd2ff9b3e9fecbaa27",
+          "actual": "4060ce971a3cd3211d6011327ee17b4e9ae59d89ceeef2dd2ff9b3e9fecbaa27",
+          "match": true
+        },
+        {
+          "kind": "allowed_source",
+          "path": "src/models/link_sharp.py",
+          "expected": "4a7921a00d7758e52a63a3ca7cd5ebf2285cef445b57fd89f15580d6fc108524",
+          "actual": "4a7921a00d7758e52a63a3ca7cd5ebf2285cef445b57fd89f15580d6fc108524",
+          "match": true
+        },
+        {
+          "kind": "allowed_source",
+          "path": "src/models/hier_backoff.py",
+          "expected": "e01f2030c191b0b632b274662cbb46537669f3b73e21ab0d5f7f671d28654ccd",
+          "actual": "e01f2030c191b0b632b274662cbb46537669f3b73e21ab0d5f7f671d28654ccd",
+          "match": true
+        },
+        {
+          "kind": "allowed_source",
+          "path": "external/starter-kit/make_sandbox.py",
+          "expected": "8cf628cbb4771ed6e91ad74ebb4f75b22667af39d8f48e01c956c675b1b1586b",
+          "actual": "8cf628cbb4771ed6e91ad74ebb4f75b22667af39d8f48e01c956c675b1b1586b",
+          "match": true
+        },
+        {
+          "kind": "allowed_source",
+          "path": "src/models/cross_link.py",
+          "expected": "0f5a28a6fea27215e0697b94558bc226b24a24a9811a59c3fd71e0d5b5283b17",
+          "actual": "0f5a28a6fea27215e0697b94558bc226b24a24a9811a59c3fd71e0d5b5283b17",
+          "match": true
+        },
+        {
+          "kind": "allowed_source",
+          "path": "src/models/wb_ordinal_heads.py",
+          "expected": "5a718f08bc7dd3342ea6b8ba48d63dcb4dbf1e9a2bc70fee9d1b6ec03ac33338",
+          "actual": "5a718f08bc7dd3342ea6b8ba48d63dcb4dbf1e9a2bc70fee9d1b6ec03ac33338",
+          "match": true
+        },
+        {
+          "kind": "allowed_source",
+          "path": "tests/test_wb_ordinal_heads.py",
+          "expected": "2e73212678faa4cff4db3731d24cd3a0b9676b34375d66c1f3d2935354f23e25",
+          "actual": "2e73212678faa4cff4db3731d24cd3a0b9676b34375d66c1f3d2935354f23e25",
+          "match": true
+        },
+        {
+          "kind": "allowed_source",
+          "path": "scripts/check_e062_wb_ordinal.py",
+          "expected": "e37a013a086ba8f8f666747b5c96d8d8b0388ab8cbcfba750fa0344269a7c90d",
+          "actual": "e37a013a086ba8f8f666747b5c96d8d8b0388ab8cbcfba750fa0344269a7c90d",
+          "match": true
+        },
+        {
+          "kind": "document_metadata",
+          "path": "docs/analysis/E062-outputs/call-summary.json",
+          "expected": "a7df60aa029f996a842e94d2ddbf1abf4488eb1b0e050f84c1ef0770821ad3a5",
+          "actual": "a7df60aa029f996a842e94d2ddbf1abf4488eb1b0e050f84c1ef0770821ad3a5",
+          "match": true
+        },
+        {
+          "kind": "document_metadata",
+          "path": "docs/analysis/E062-outputs/candidate-01-resources.json",
+          "expected": "49e5f1d8e0fa7647a2b51340666dbd83eefd1636734544b533df3bc3fbf16724",
+          "actual": "49e5f1d8e0fa7647a2b51340666dbd83eefd1636734544b533df3bc3fbf16724",
+          "match": true
+        },
+        {
+          "kind": "document_metadata",
+          "path": "docs/analysis/E062-outputs/candidate-complete.json",
+          "expected": "a07ce79b7962f864aaae8b805f359d641bcf50ac21406f4040c422f3fd19b0ac",
+          "actual": "a07ce79b7962f864aaae8b805f359d641bcf50ac21406f4040c422f3fd19b0ac",
+          "match": true
+        },
+        {
+          "kind": "document_metadata",
+          "path": "docs/analysis/E062-outputs/candidate-started.json",
+          "expected": "c3d0330e2d9714d9aa15c9908392091268a82d7265bf1d5cd3064eb79730fdb7",
+          "actual": "c3d0330e2d9714d9aa15c9908392091268a82d7265bf1d5cd3064eb79730fdb7",
+          "match": true
+        },
+        {
+          "kind": "document_metadata",
+          "path": "docs/analysis/E062-outputs/closeout-receipt.json",
+          "expected": "a159f9ab91a98000bd4f65e05a9d35eed7132a87e726d3335545d52ad4a50f1a",
+          "actual": "a159f9ab91a98000bd4f65e05a9d35eed7132a87e726d3335545d52ad4a50f1a",
+          "match": true
+        },
+        {
+          "kind": "document_metadata",
+          "path": "docs/analysis/E062-outputs/closeout.md",
+          "expected": "6ad4e78457f25b5177b7f27c84979a5704ef8c405dee883ece21e24cda3297dd",
+          "actual": "6ad4e78457f25b5177b7f27c84979a5704ef8c405dee883ece21e24cda3297dd",
+          "match": true
+        },
+        {
+          "kind": "document_metadata",
+          "path": "docs/analysis/E062-outputs/comparison.json",
+          "expected": "3be3ddc84246ff7bccd756756de30f1a15fbb546495631810641517d1e09a406",
+          "actual": "3be3ddc84246ff7bccd756756de30f1a15fbb546495631810641517d1e09a406",
+          "match": true
+        },
+        {
+          "kind": "document_metadata",
+          "path": "docs/analysis/E062-outputs/cost-contract.md",
+          "expected": "0ebcfbbe26a2f474079eb625ed682962bc212b1effa91e31b9a3245426db488b",
+          "actual": "0ebcfbbe26a2f474079eb625ed682962bc212b1effa91e31b9a3245426db488b",
+          "match": true
+        },
+        {
+          "kind": "document_metadata",
+          "path": "docs/analysis/E062-outputs/dirty-at-verification.json",
+          "expected": "eba4da7c9bac53d128d017529b1c9cfda8eaae4a216c750528c176081e06ee64",
+          "actual": "eba4da7c9bac53d128d017529b1c9cfda8eaae4a216c750528c176081e06ee64",
+          "match": true
+        },
+        {
+          "kind": "document_metadata",
+          "path": "docs/analysis/E062-outputs/E025-01-resources.json",
+          "expected": "be3849de86caa3c0b0eb94076479f19fbcaf84051875e5eab36bda9db898cbb6",
+          "actual": "be3849de86caa3c0b0eb94076479f19fbcaf84051875e5eab36bda9db898cbb6",
+          "match": true
+        },
+        {
+          "kind": "document_metadata",
+          "path": "docs/analysis/E062-outputs/E025-complete.json",
+          "expected": "7e48ee6663d43c11e20ae74085c63205b7d47bdd5e795c59e2c4fa79bca1d5a4",
+          "actual": "7e48ee6663d43c11e20ae74085c63205b7d47bdd5e795c59e2c4fa79bca1d5a4",
+          "match": true
+        },
+        {
+          "kind": "document_metadata",
+          "path": "docs/analysis/E062-outputs/E025-started.json",
+          "expected": "ca53c5dcd9010a0a22b6243929531328ad95306f123eb1eb9a3059db1e498438",
+          "actual": "ca53c5dcd9010a0a22b6243929531328ad95306f123eb1eb9a3059db1e498438",
+          "match": true
+        },
+        {
+          "kind": "document_metadata",
+          "path": "docs/analysis/E062-outputs/E041-01-resources.json",
+          "expected": "17d2bc41a371420208cc9143ea48772123df0d869f224499231f0b7a0a0c2fc6",
+          "actual": "17d2bc41a371420208cc9143ea48772123df0d869f224499231f0b7a0a0c2fc6",
+          "match": true
+        },
+        {
+          "kind": "document_metadata",
+          "path": "docs/analysis/E062-outputs/E041-complete.json",
+          "expected": "6f39388108930c67fd3dbd8e4e866e783ca1600d04d1dab63830042944ba23dd",
+          "actual": "6f39388108930c67fd3dbd8e4e866e783ca1600d04d1dab63830042944ba23dd",
+          "match": true
+        },
+        {
+          "kind": "document_metadata",
+          "path": "docs/analysis/E062-outputs/E041-started.json",
+          "expected": "8bb6a6ee5a38f8386c34cd57ece3e687a5bdaf77c46607af54b41a637b7127fd",
+          "actual": "8bb6a6ee5a38f8386c34cd57ece3e687a5bdaf77c46607af54b41a637b7127fd",
+          "match": true
+        },
+        {
+          "kind": "document_metadata",
+          "path": "docs/analysis/E062-outputs/entry.json",
+          "expected": "c183d760c87db6c759301cd03bdc680371b7fe4cddf42283e821deae6324021d",
+          "actual": "c183d760c87db6c759301cd03bdc680371b7fe4cddf42283e821deae6324021d",
+          "match": true
+        },
+        {
+          "kind": "document_metadata",
+          "path": "docs/analysis/E062-outputs/environment-candidate-01.json",
+          "expected": "3a0c99872d62f210ef6e343d8976a2131a57538fb508910c697c72c645b3e719",
+          "actual": "3a0c99872d62f210ef6e343d8976a2131a57538fb508910c697c72c645b3e719",
+          "match": true
+        },
+        {
+          "kind": "document_metadata",
+          "path": "docs/analysis/E062-outputs/environment-E025-01.json",
+          "expected": "2c09621e2c9cb6b1eec84f676aa49337dba43d9c812fa1c1f00a6b1767a006b4",
+          "actual": "2c09621e2c9cb6b1eec84f676aa49337dba43d9c812fa1c1f00a6b1767a006b4",
+          "match": true
+        },
+        {
+          "kind": "document_metadata",
+          "path": "docs/analysis/E062-outputs/environment-E041-01.json",
+          "expected": "fbd3f60fff991b42ac827efc6479baf8e23c662b96dd374a79113191006a89e0",
+          "actual": "fbd3f60fff991b42ac827efc6479baf8e23c662b96dd374a79113191006a89e0",
+          "match": true
+        },
+        {
+          "kind": "document_metadata",
+          "path": "docs/analysis/E062-outputs/environment-score-01.json",
+          "expected": "273226f151f88ccf033c056cb785ca70e3c866a057dc3a30f1a14dc4de0f1aec",
+          "actual": "273226f151f88ccf033c056cb785ca70e3c866a057dc3a30f1a14dc4de0f1aec",
+          "match": true
+        },
+        {
+          "kind": "document_metadata",
+          "path": "docs/analysis/E062-outputs/error-repair-history.md",
+          "expected": "abe83f5a3a4d90acd75da185b9a045704aa45fd42f64751db4f282a7deaabf8a",
+          "actual": "abe83f5a3a4d90acd75da185b9a045704aa45fd42f64751db4f282a7deaabf8a",
+          "match": true
+        },
+        {
+          "kind": "document_metadata",
+          "path": "docs/analysis/E062-outputs/exposure-ledger.md",
+          "expected": "2d17b3f37e130cb26c4f002ed51441f0d2ea3ad7ea1e62255b7028ce23e1bb35",
+          "actual": "2d17b3f37e130cb26c4f002ed51441f0d2ea3ad7ea1e62255b7028ce23e1bb35",
+          "match": true
+        },
+        {
+          "kind": "document_metadata",
+          "path": "docs/analysis/E062-outputs/frozen-inputs.json",
+          "expected": "7a7333b5660488eeb7c3e1685348028fd4a412486cb2c9b64d98afd308068bfd",
+          "actual": "7a7333b5660488eeb7c3e1685348028fd4a412486cb2c9b64d98afd308068bfd",
+          "match": true
+        },
+        {
+          "kind": "document_metadata",
+          "path": "docs/analysis/E062-outputs/frozen-predictions.json",
+          "expected": "4242c24c777708713f3ad16decf4b41496fdebdc332aca2b8650a1c12108ec6c",
+          "actual": "4242c24c777708713f3ad16decf4b41496fdebdc332aca2b8650a1c12108ec6c",
+          "match": true
+        },
+        {
+          "kind": "document_metadata",
+          "path": "docs/analysis/E062-outputs/implementation-contract.md",
+          "expected": "00bebf95df88dac579744fa70d029df540a106dd2e905fd9fb2d6ddbbd776123",
+          "actual": "00bebf95df88dac579744fa70d029df540a106dd2e905fd9fb2d6ddbbd776123",
+          "match": true
+        },
+        {
+          "kind": "document_metadata",
+          "path": "docs/analysis/E062-outputs/prepare-01-resources.json",
+          "expected": "a119359cced518d352140d84a4105edd506ed90af63f578f3cdc3efc37c89b5f",
+          "actual": "a119359cced518d352140d84a4105edd506ed90af63f578f3cdc3efc37c89b5f",
+          "match": true
+        },
+        {
+          "kind": "document_metadata",
+          "path": "docs/analysis/E062-outputs/registration.md",
+          "expected": "c6b7d587dcc928a761f65b510f8c6018b6c26f7c6b2e59d11a28a4cf0c6389d9",
+          "actual": "c6b7d587dcc928a761f65b510f8c6018b6c26f7c6b2e59d11a28a4cf0c6389d9",
+          "match": true
+        },
+        {
+          "kind": "document_metadata",
+          "path": "docs/analysis/E062-outputs/resource-summary.json",
+          "expected": "dbc31bfc057c978c22ed74d95be4150a8f521e6523362e83e0dca1695fbfe2c3",
+          "actual": "dbc31bfc057c978c22ed74d95be4150a8f521e6523362e83e0dca1695fbfe2c3",
+          "match": true
+        },
+        {
+          "kind": "document_metadata",
+          "path": "docs/analysis/E062-outputs/s0-handoff.ko.md",
+          "expected": "1012ee7facef2b4f08a25a4a61e823d420a098fc1547de26764e8890d3a843ae",
+          "actual": "1012ee7facef2b4f08a25a4a61e823d420a098fc1547de26764e8890d3a843ae",
+          "match": true
+        },
+        {
+          "kind": "document_metadata",
+          "path": "docs/analysis/E062-outputs/score-01-resources.json",
+          "expected": "bb73b994315eed3aa5c08636d17e18ad02a5cfc1589037322283f9b1714bf9f9",
+          "actual": "bb73b994315eed3aa5c08636d17e18ad02a5cfc1589037322283f9b1714bf9f9",
+          "match": true
+        },
+        {
+          "kind": "document_metadata",
+          "path": "docs/analysis/E062-outputs/shared-update-receipt.json",
+          "expected": "92da3472f400d06035c50249077dd96099b9264363c6ac0005778160c08f8af1",
+          "actual": "92da3472f400d06035c50249077dd96099b9264363c6ac0005778160c08f8af1",
+          "match": true
+        },
+        {
+          "kind": "document_metadata",
+          "path": "docs/analysis/E062-outputs/source-supplement.json",
+          "expected": "d6302907aca5747244617cb868761b2b8615b194b441a26c2a2891a8096f2140",
+          "actual": "d6302907aca5747244617cb868761b2b8615b194b441a26c2a2891a8096f2140",
+          "match": true
+        },
+        {
+          "kind": "document_metadata",
+          "path": "docs/analysis/E062-outputs/source.diff",
+          "expected": "98c0db3efdc75647552937f781036cc473e5da7634acce84d3777f7b3845585a",
+          "actual": "98c0db3efdc75647552937f781036cc473e5da7634acce84d3777f7b3845585a",
+          "match": true
+        },
+        {
+          "kind": "document_metadata",
+          "path": "docs/analysis/E062-outputs/tests-01-resources.json",
+          "expected": "9b55b4886ec4a62918c2f090ab7a826dabc509109cec3578c844d6983c15b91a",
+          "actual": "9b55b4886ec4a62918c2f090ab7a826dabc509109cec3578c844d6983c15b91a",
+          "match": true
+        },
+        {
+          "kind": "document_metadata",
+          "path": "docs/analysis/E062-outputs/tests-02-resources.json",
+          "expected": "80a18bdc1e265cefa5b21afdc8065567623f02dc5b571c00952dbefe545cedc6",
+          "actual": "80a18bdc1e265cefa5b21afdc8065567623f02dc5b571c00952dbefe545cedc6",
+          "match": true
+        },
+        {
+          "kind": "document_metadata",
+          "path": "docs/analysis/E062-outputs/tests-03-resources.json",
+          "expected": "24c3374ee42f571936ec3caebe95348d5e4c9b4be83c81f809f14647fede494d",
+          "actual": "24c3374ee42f571936ec3caebe95348d5e4c9b4be83c81f809f14647fede494d",
+          "match": true
+        },
+        {
+          "kind": "document_metadata",
+          "path": "docs/analysis/E062-outputs/verification.json",
+          "expected": "7e212f3e45e1dbf70227068909af0a020c27662567cdfea2e0f67a0c02ed2daf",
+          "actual": "7e212f3e45e1dbf70227068909af0a020c27662567cdfea2e0f67a0c02ed2daf",
+          "match": true
+        },
+        {
+          "kind": "experiment",
+          "path": "docs/experiments/E062-wb-ordinal-heads.md",
+          "expected": "f54406766b8ab175a88575a0d7d9509f3e5ee60066367993935102261e4a4421",
+          "actual": "f54406766b8ab175a88575a0d7d9509f3e5ee60066367993935102261e4a4421",
+          "match": true
+        }
+      ],
+      "skipped_responses": 3,
+      "skipped_npz": 9,
+      "at": "2026-10-08T18:11:30.4565671+09:00"
+    },
+    "after": {
+      "checks": 73,
+      "mismatches": []
+    },
+    "skips": "No source/key/respondent Parquet or probability NPZ/model cache accessed/hashed. Three Parquet and nine NPZ explicitly excluded."
+  },
+  "preservation": {
+    "shared_receipts": [
+      {
+        "path": "docs/status.md",
+        "before_sha256": "5edd7ee6b14c0624d6291402fd81900cbfbc5efc2dff658e6b94f5d329254067",
+        "after_sha256": "fae40ab8b33fb5c713de68524d74b0b40a20439f3caa19d5adfd1e945e269cb4",
+        "restored_sha256": "5edd7ee6b14c0624d6291402fd81900cbfbc5efc2dff658e6b94f5d329254067",
+        "preserved": true
+      },
+      {
+        "path": "docs/log.md",
+        "before_sha256": "720b3127976efebb44f114d323392eb1fca517d0485f58d237e7130ec16942ec",
+        "after_sha256": "880493ec5058ea004c81b2e148b7a5ee2cb54abe0089c568c3cb32ce631014b8",
+        "restored_sha256": "720b3127976efebb44f114d323392eb1fca517d0485f58d237e7130ec16942ec",
+        "preserved": true
+      }
+    ],
+    "shared_additions": "shared-additions.json",
+    "nonshared_73_unchanged": true,
+    "claim_limit": "Enumerated permitted files only; not a byte audit of every dirty file.",
+    "old_S1_manifests_and_verdicts_unchanged": true,
+    "tree_unchanged": true
+  },
+  "evidence_classification": {
+    "S1_counts": "Observed stored receipts plus source review, not S0 reruns",
+    "qualification": "Registration criteria and final resource/closeout receipts support source qualification",
+    "intermediate_comparison": "Pending-final-resource verdict retained; final receipts resolve it",
+    "target_effect": "Target16 adverse synthetic observation retained; actual WB effect unresolved",
+    "scope": "Whole-WB procedure, not isolated order effect"
+  },
+  "decision_rationale": {
+    "main": "Fixed E062 assembly/release validation; no additional model tuning",
+    "backup": "Scoped packaging/harness defect repair under aggregate caps, else precise closeout",
+    "why_proceed": "Distinct fixed WB procedure, non-no-op, controls/regression/local costs pass, bounded release can create a readable DEV candidate",
+    "counterevidence": "Target16 and Not answered synthetic declines; tiny aggregate gain from other60; no independent efficacy/oracle",
+    "not_claimed": [
+      "Expected Grand",
+      "Winning probability",
+      "Real WB benefit",
+      "Rank/order causal effect",
+      "Hosted H100 runtime",
+      "Release qualification",
+      "TEST adoption"
+    ]
+  },
+  "proposed_S2_not_run": {
+    "normal_all3_workers": 2,
+    "normal_pipeline_neural_metric": [
+      6,
+      18,
+      16
+    ],
+    "defect_reserve_only": [
+      3,
+      9,
+      8
+    ],
+    "total_pipeline_neural_metric_caps": [
+      9,
+      27,
+      24
+    ],
+    "computational_child_seconds": 2400,
+    "gross_seconds": 7200,
+    "records_reserve_seconds": 600,
+    "assembly_all3_seconds": 900,
+    "official_all3_combined_seconds": 900,
+    "cpu_threads": 2,
+    "gpu": 0,
+    "owned_RSS_GiB": 8,
+    "owned_private_commitment_GiB": 8,
+    "reference_policy": "Reuse exact E062 S1 fresh clean nine probability artifacts only if source/input/schema/role/environment/output identity holds; no baseline refit. Not reuse of arbitrary historical caches.",
+    "release_gates": "All189649 source/assembly/extracted raw vectors exact; UNICEF/UNHCR E041 exact; per-instrument candidate-E025 and candidate-E041>=-.002; checker/official all3/resources/byte provenance/scorecard",
+    "authority": "User delivery of prepared prompt authorizes receiving separate S2 scope; creation here does not"
+  },
+  "operations": {
+    "model_implementation": 0,
+    "model_import": 0,
+    "fit": 0,
+    "predict": 0,
+    "score": 0,
+    "test_fixture": 0,
+    "response_read_hash": 0,
+    "prediction_array_read_hash": 0,
+    "cache_deserialization": 0,
+    "remote_account_or_resource": 0,
+    "web": 0,
+    "install": 0,
+    "ZIP": 0,
+    "upload": 0,
+    "commit": 0,
+    "push": 0,
+    "subagent": 0,
+    "S2_execution": 0,
+    "S3": 0,
+    "document_writes": [
+      "decision.md",
+      "s2-handoff.ko.md",
+      "shared-additions.json",
+      "verification.json",
+      "docs/status.md",
+      "docs/log.md"
+    ]
+  },
+  "administrative_issues": [
+    {
+      "kind": "Local shell setup failure",
+      "detail": "Two default read-only shell startups failed with helper_unknown_error: setup refresh had errors before process. Narrow authorized read-only escalated commands worked. Not an automatic approval rejection or research failure."
+    },
+    {
+      "kind": "Output truncation",
+      "detail": "Long status/combined metadata output exceeded display limits. Latest3 and workflow entry and needed contract/metadata were reread narrowly. First identity JSON parse failed because shell output budget180 truncated it; repeated only permitted metadata hash reads with adequate output, all73 match. No scientific attempt."
+    }
+  ],
+  "state_preserved": [
+    "E041 incumbent/E025 fallback",
+    "E057/E060/E061/E062 parked",
+    "E058 STOP/E059 STOP_SELECTION/A039/A040/all STOP/HOLD",
+    "17999 people/12339 SSUID and aggregate exposure/A022 original roles",
+    "E059 consumed oracle1918/1124 selection2007/1130; protected audit2074/1177 calibration1866",
+    "A_half not promoted/A018 user-unconfirmed/S3 stopped",
+    "No release-qualified ZIP yet; S2 validation is recommendation only"
+  ],
+  "artifacts": [
+    {
+      "path": "docs/analysis/E062-outputs/s0-review/decision.md",
+      "sha256": "24377392c607dca86d087788d6a2b74476f2fef397a49ebe51b8e032f645e8a5"
+    },
+    {
+      "path": "docs/analysis/E062-outputs/s0-review/s2-handoff.ko.md",
+      "sha256": "860cac183aae05d785254124b18c562222e01be39d84c118450f951c74877c77"
+    },
+    {
+      "path": "docs/analysis/E062-outputs/s0-review/shared-additions.json",
+      "sha256": "2cb7aaefc0fa52170db107f8354fa590bc1765841bb4c5052da7db0467a96d7c"
+    }
+  ],
+  "self_excluded_from_artifact_hashes": true
+}

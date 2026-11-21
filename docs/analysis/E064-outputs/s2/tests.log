@@ -1,0 +1,8 @@
+test_every_candidate_definition_matches_transformed_source (__main__.AssemblyTests.test_every_candidate_definition_matches_transformed_source) ... ok
+test_explicit_controls_and_candidate_dispatch (__main__.AssemblyTests.test_explicit_controls_and_candidate_dispatch) ... ok
+test_prefix_isolation_and_factory (__main__.AssemblyTests.test_prefix_isolation_and_factory) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 38.326s
+
+OK

@@ -1,0 +1,969 @@
+{
+  "decision": "LOCAL_CONTRACT_PASS",
+  "model_free_regression": {
+    "outcome": "PASS_MODEL_FREE_ONLY",
+    "original_error": "event() got multiple values for argument 'name'",
+    "actual_logger_ast_sha256": "7c60b14a5538a4489d025d2a47a10b5e10d2c5fc9595c4681a5a8fc85d0dd140",
+    "payload": {
+      "event": "many_class_head",
+      "elapsed": 0.024416199999905075,
+      "head_name": "fixture_head",
+      "classes": 15
+    },
+    "call_sites": [
+      {
+        "file": "runner.py",
+        "line": 55,
+        "keywords": [
+          "scope",
+          "passed"
+        ]
+      },
+      {
+        "file": "runner.py",
+        "line": 59,
+        "keywords": [
+          "files",
+          "passed"
+        ]
+      },
+      {
+        "file": "runner.py",
+        "line": 70,
+        "keywords": [
+          "torch",
+          "cuda",
+          "device",
+          "affinity"
+        ]
+      },
+      {
+        "file": "runner.py",
+        "line": 120,
+        "keywords": [
+          "checkpoint_loads"
+        ]
+      },
+      {
+        "file": "runner.py",
+        "line": 96,
+        "keywords": [
+          "count",
+          "rows",
+          "features"
+        ]
+      },
+      {
+        "file": "runner.py",
+        "line": 109,
+        "keywords": [
+          "count",
+          "classes"
+        ]
+      },
+      {
+        "file": "runner.py",
+        "line": 83,
+        "keywords": [
+          "count",
+          "seconds"
+        ]
+      },
+      {
+        "file": "runner.py",
+        "line": 103,
+        "keywords": [
+          "count",
+          "seconds"
+        ]
+      },
+      {
+        "file": "runner.py",
+        "line": 116,
+        "keywords": [
+          "count",
+          "seconds"
+        ]
+      },
+      {
+        "file": "runner.py",
+        "line": 140,
+        "keywords": [
+          "error"
+        ]
+      },
+      {
+        "file": "tests_local.py",
+        "line": 43,
+        "keywords": [
+          "sha256",
+          "F",
+          "S",
+          "E",
+          "Q",
+          "seed"
+        ]
+      },
+      {
+        "file": "tests_local.py",
+        "line": 52,
+        "keywords": [
+          "passed"
+        ]
+      },
+      {
+        "file": "tests_local.py",
+        "line": 77,
+        "keywords": [
+          "passed",
+          "actual_E041_executed"
+        ]
+      },
+      {
+        "file": "tests_local.py",
+        "line": 96,
+        "keywords": [
+          "max_abs_diff",
+          "exact"
+        ]
+      },
+      {
+        "file": "tests_local.py",
+        "line": 109,
+        "keywords": [
+          "passed"
+        ]
+      },
+      {
+        "file": "tests_local.py",
+        "line": 136,
+        "keywords": [
+          "alpha",
+          "guard_accepted",
+          "efficacy_evidence"
+        ]
+      },
+      {
+        "file": "tests_local.py",
+        "line": 142,
+        "keywords": [
+          "passed",
+          "targets",
+          "vectors"
+        ]
+      },
+      {
+        "file": "tests_local.py",
+        "line": 124,
+        "keywords": [
+          "head_name",
+          "classes"
+        ]
+      }
+    ],
+    "call_sites_checked": 18,
+    "affected_consumers": [],
+    "forbidden_imports": [],
+    "scientific_processes": 0,
+    "logger_imported": false,
+    "elapsed_seconds": 0.042492399999900954
+  },
+  "source_diff": "source.diff",
+  "prototype_byte_identical": true,
+  "pins_byte_identical": true,
+  "all_original_assertions_preserved": [
+    {
+      "file": "prototype.py",
+      "assertions_unchanged": true,
+      "assertion_count": 0
+    },
+    {
+      "file": "runner.py",
+      "assertions_unchanged": true,
+      "assertion_count": 8
+    },
+    {
+      "file": "tests_local.py",
+      "assertions_unchanged": true,
+      "assertion_count": 35
+    },
+    {
+      "file": "watchdog.py",
+      "assertions_unchanged": true,
+      "assertion_count": 0
+    }
+  ],
+  "original_and_protected_checks": [
+    {
+      "path": "docs/analysis/A040-outputs/local-technical/active-jobs-at-closeout.json",
+      "expected": "84b1c14e68260082e3e79edff0a78f4ebf1942cfd6c593246044ec2149cbb87d",
+      "actual": "84b1c14e68260082e3e79edff0a78f4ebf1942cfd6c593246044ec2149cbb87d",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/local-technical/approval-pending-closeout.md",
+      "expected": "6982d965fb1f4a2d2a4f3874272bf3bd4c7b9b32c76f7f2049259a1aa08c2e1f",
+      "actual": "6982d965fb1f4a2d2a4f3874272bf3bd4c7b9b32c76f7f2049259a1aa08c2e1f",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/local-technical/approval-pending-exposure-ledger.md",
+      "expected": "72fa523513916de93f5dc69427cc0beab045eb96384623e2bc2a20c75b8128ba",
+      "actual": "72fa523513916de93f5dc69427cc0beab045eb96384623e2bc2a20c75b8128ba",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/local-technical/approval-pending-resources.json",
+      "expected": "eae2dd3d761835d19d8caf339d49f7c1254ece8fc561e656e36a88d02e8b947a",
+      "actual": "eae2dd3d761835d19d8caf339d49f7c1254ece8fc561e656e36a88d02e8b947a",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/local-technical/approval-pending-s0-handoff.ko.md",
+      "expected": "3afb5e12c3f2089cda8dd29aa395008462f19f9d4ca2e7417c55691850d510e7",
+      "actual": "3afb5e12c3f2089cda8dd29aa395008462f19f9d4ca2e7417c55691850d510e7",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/local-technical/approval-pending-verification.json",
+      "expected": "7ce07dc6597ec04883aa7ecc9e3cd56f9a97f7be6f58853bd57057766c1bf327",
+      "actual": "7ce07dc6597ec04883aa7ecc9e3cd56f9a97f7be6f58853bd57057766c1bf327",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/local-technical/approval-review.json",
+      "expected": "98aefcff5b234c8f9d9dcd7652813c66421a418a6f065f609057eff2b0e0167a",
+      "actual": "98aefcff5b234c8f9d9dcd7652813c66421a418a6f065f609057eff2b0e0167a",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/local-technical/artifact-manifest.json",
+      "expected": "a293456c26f8b315e15241243595da2d646ddb4c9cb38105c73601e379657eb0",
+      "actual": "a293456c26f8b315e15241243595da2d646ddb4c9cb38105c73601e379657eb0",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/local-technical/checkpoint-receipt.json",
+      "expected": "40f5eb44a7627424ed90547422ceff806202a67513542c434bc789b11957b709",
+      "actual": "40f5eb44a7627424ed90547422ceff806202a67513542c434bc789b11957b709",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/local-technical/closeout.md",
+      "expected": "5fdb42472bb89396ffb86fe8b16d0d1ade5918d49ac0c1eff5bf3c5e5f0960f3",
+      "actual": "5fdb42472bb89396ffb86fe8b16d0d1ade5918d49ac0c1eff5bf3c5e5f0960f3",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/local-technical/dirty-at-closeout.txt",
+      "expected": "184f0fe5ff15527c15fb34d257489dd2552aa7f718ac2c3259d5032741e8d7e9",
+      "actual": "184f0fe5ff15527c15fb34d257489dd2552aa7f718ac2c3259d5032741e8d7e9",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/local-technical/entry.json",
+      "expected": "a716162dc0edb9add459f595652b46843f1647c83dcc786030b6366bf59d6f13",
+      "actual": "a716162dc0edb9add459f595652b46843f1647c83dcc786030b6366bf59d6f13",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/local-technical/events.jsonl",
+      "expected": "c88d470a977845b411de87d793291114a2355df0b7be2332727a02f79b5e637d",
+      "actual": "c88d470a977845b411de87d793291114a2355df0b7be2332727a02f79b5e637d",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/local-technical/exposure-ledger.md",
+      "expected": "abb9917f07347a546e6f7f4a93952aa7c9c88a10da07fa0ac5f669ea8ef660d2",
+      "actual": "abb9917f07347a546e6f7f4a93952aa7c9c88a10da07fa0ac5f669ea8ef660d2",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/local-technical/frozen-inputs/manifest.json",
+      "expected": "19e02411d082e7f46077a200f01d51c1ed5faab167f4a1eeb12eb413620e276c",
+      "actual": "19e02411d082e7f46077a200f01d51c1ed5faab167f4a1eeb12eb413620e276c",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/local-technical/frozen-inputs/registration.md",
+      "expected": "5553812cdbb5ff47320515fe296eb8380ba8fcc17debc7f59cf94e8952f841a7",
+      "actual": "5553812cdbb5ff47320515fe296eb8380ba8fcc17debc7f59cf94e8952f841a7",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/local-technical/frozen-inputs/run-manifest.json",
+      "expected": "e85e7f4cf466869f21538ec512b00c778d814f5cd4be9c249fae7a1a75cded3b",
+      "actual": "e85e7f4cf466869f21538ec512b00c778d814f5cd4be9c249fae7a1a75cded3b",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/local-technical/log-before.md",
+      "expected": "d2b9d4cb096cd1c9430f38cc495df6bac2632bb30a1a956ea2b20586270aa423",
+      "actual": "d2b9d4cb096cd1c9430f38cc495df6bac2632bb30a1a956ea2b20586270aa423",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/local-technical/preflight.md",
+      "expected": "f15dd0055ad4ed09f1a483a9ea2c4d76d17a57879653f46410a22c742723c84a",
+      "actual": "f15dd0055ad4ed09f1a483a9ea2c4d76d17a57879653f46410a22c742723c84a",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/local-technical/prototype.py",
+      "expected": "411cd174e155038ebeecb130f1e4bafbb44580f9e0cc0898eaac96316af07612",
+      "actual": "411cd174e155038ebeecb130f1e4bafbb44580f9e0cc0898eaac96316af07612",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/local-technical/provenance.md",
+      "expected": "c28ea374e2e83d83c33a2a5762c086e8f7e9fcd1fb72a81eba0d27fe465e2793",
+      "actual": "c28ea374e2e83d83c33a2a5762c086e8f7e9fcd1fb72a81eba0d27fe465e2793",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/local-technical/requirements.lock.txt",
+      "expected": "6c6f0d0fc5db943eb1cb95ff4610ddea5df724bc50031b883a0dd67656771b70",
+      "actual": "6c6f0d0fc5db943eb1cb95ff4610ddea5df724bc50031b883a0dd67656771b70",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/local-technical/resource-samples.jsonl",
+      "expected": "ca79ffc5f7564fe08a883877cb1744c9061f31bcbf528b4c30a58d90d46db2a1",
+      "actual": "ca79ffc5f7564fe08a883877cb1744c9061f31bcbf528b4c30a58d90d46db2a1",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/local-technical/resources.json",
+      "expected": "44de4868cac5383aed3860d425fb8b80badc3753af304ccaa959dac0801836af",
+      "actual": "44de4868cac5383aed3860d425fb8b80badc3753af304ccaa959dac0801836af",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/local-technical/result.json",
+      "expected": "c12df3285e002124a392d9cd7f8bdc362143a6ea4fb27af68f9b4352cf586116",
+      "actual": "c12df3285e002124a392d9cd7f8bdc362143a6ea4fb27af68f9b4352cf586116",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/local-technical/resumption.json",
+      "expected": "390c1587e17522b2b45559ddd135bb6ff9fd720865865d04deec12ee59c987fe",
+      "actual": "390c1587e17522b2b45559ddd135bb6ff9fd720865865d04deec12ee59c987fe",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/local-technical/run-resources.json",
+      "expected": "0e185cafaf2335f1787385c18ce196b4cb2e1f3ba22f0b8e975078fe358ddd0b",
+      "actual": "0e185cafaf2335f1787385c18ce196b4cb2e1f3ba22f0b8e975078fe358ddd0b",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/local-technical/runner.py",
+      "expected": "1db5eea335bdcd8bd30dca007cb37dee6ef9a243cabe6c0e5d8817e83434b0b5",
+      "actual": "1db5eea335bdcd8bd30dca007cb37dee6ef9a243cabe6c0e5d8817e83434b0b5",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/local-technical/s0-handoff.ko.md",
+      "expected": "c922b24b98d8e7ce4de7745ccf067ad7a3618042b0dc3336056797d7aa80944a",
+      "actual": "c922b24b98d8e7ce4de7745ccf067ad7a3618042b0dc3336056797d7aa80944a",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/local-technical/scientific-started.json",
+      "expected": "39bdf9fa8d6a4f686e1a59984b2682d7397293c24cceaa5bea71dfde0edeb9e5",
+      "actual": "39bdf9fa8d6a4f686e1a59984b2682d7397293c24cceaa5bea71dfde0edeb9e5",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/local-technical/source-receipt.json",
+      "expected": "8be776939c17cf2279f0ee9ae5c3541c64bbc573b05ba717fc47d390bec39bf9",
+      "actual": "8be776939c17cf2279f0ee9ae5c3541c64bbc573b05ba717fc47d390bec39bf9",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/local-technical/split.json",
+      "expected": "5b41c77d0dd8cff0fd4aee41cb7ba59e1069b00372cc1e0921d3e94520c63641",
+      "actual": "5b41c77d0dd8cff0fd4aee41cb7ba59e1069b00372cc1e0921d3e94520c63641",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/local-technical/status-before.md",
+      "expected": "04ff645be06d16c313cb87c05c2555b5743920d11824b3efb3e53df011c3f93e",
+      "actual": "04ff645be06d16c313cb87c05c2555b5743920d11824b3efb3e53df011c3f93e",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/local-technical/stderr.txt",
+      "expected": "b4925fd30596373c63250a70221e75b9fe8bdb6be17472fabf8e210792ec43f6",
+      "actual": "b4925fd30596373c63250a70221e75b9fe8bdb6be17472fabf8e210792ec43f6",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/local-technical/stdout.txt",
+      "expected": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/local-technical/tests_local.py",
+      "expected": "d28f49a59dca21848a31860d2b7838ebff5682760a453a24aa6317f0cc61f4ee",
+      "actual": "d28f49a59dca21848a31860d2b7838ebff5682760a453a24aa6317f0cc61f4ee",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/local-technical/verification.json",
+      "expected": "f856388d189eb6dc6edb23309edaef661fb3f1b4c4fb8f8426541f2eb8fba59c",
+      "actual": "f856388d189eb6dc6edb23309edaef661fb3f1b4c4fb8f8426541f2eb8fba59c",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/local-technical/watchdog.py",
+      "expected": "0a2e71f93db1a0679daef2841f0a22c7c01f90ec54e06f2d1ef5b00838b997ca",
+      "actual": "0a2e71f93db1a0679daef2841f0a22c7c01f90ec54e06f2d1ef5b00838b997ca",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/s0-policy-resolution/decision.md",
+      "expected": "b97eede87c225503090df6dcc2fd9f8dae78327ff28c54c5e9031626f489d225",
+      "actual": "b97eede87c225503090df6dcc2fd9f8dae78327ff28c54c5e9031626f489d225",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/s0-policy-resolution/organizer-reply.txt",
+      "expected": "c0cf7a1a6fa488e84748ab44916cfc24d408d53c95952fe0c36c491a1e14531a",
+      "actual": "c0cf7a1a6fa488e84748ab44916cfc24d408d53c95952fe0c36c491a1e14531a",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/s0-policy-resolution/environment-check.md",
+      "expected": "56049d17a84f5bcc9b9e95eb97e4c457485742b40da5e8f73ee867271ba2a8d8",
+      "actual": "56049d17a84f5bcc9b9e95eb97e4c457485742b40da5e8f73ee867271ba2a8d8",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/s0-policy-resolution/s1-technical-handoff.ko.md",
+      "expected": "6cc2b4eff01fd1c12bcf2ffef2f2ec150f00b127193cc7a1d86587dd661107e7",
+      "actual": "6cc2b4eff01fd1c12bcf2ffef2f2ec150f00b127193cc7a1d86587dd661107e7",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/s1/base.py.txt",
+      "expected": "7f8f284ca91bf1f5a016179834e508890b3f5368c4a48a7dcb6cb4b83a30051a",
+      "actual": "7f8f284ca91bf1f5a016179834e508890b3f5368c4a48a7dcb6cb4b83a30051a",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/s1/classifier.py.txt",
+      "expected": "64f5ef7ef88a920a3f7a5f6e2d9d8dc08769ec343e931f910acc2d9c4eaa5534",
+      "actual": "64f5ef7ef88a920a3f7a5f6e2d9d8dc08769ec343e931f910acc2d9c4eaa5534",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/s1/closeout.md",
+      "expected": "2faa9b56b91e8d4a87b11810bf511cf9aa34b97ed631001e2f7a231193936dda",
+      "actual": "2faa9b56b91e8d4a87b11810bf511cf9aa34b97ed631001e2f7a231193936dda",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/s1/contract.md",
+      "expected": "8f59764b01f68360a6eef0fee66d82c1316f9b89720abf26eb8e7f72e5b1bb38",
+      "actual": "8f59764b01f68360a6eef0fee66d82c1316f9b89720abf26eb8e7f72e5b1bb38",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/s1/cost-accounting.md",
+      "expected": "684b9e09bac2163266b3117c23cad28341990d57ed9e6b9371aba855515db3ee",
+      "actual": "684b9e09bac2163266b3117c23cad28341990d57ed9e6b9371aba855515db3ee",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/s1/entry.json",
+      "expected": "9a0c05b4e7f744eb8e20124cba4d26e8a4aa7bb7c44d42d8116b45b17c23559b",
+      "actual": "9a0c05b4e7f744eb8e20124cba4d26e8a4aa7bb7c44d42d8116b45b17c23559b",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/s1/exposure-ledger.md",
+      "expected": "3d2cf060d14af4ce8548ffd2e242c4f40e2806a650111b481a7e8677a647648c",
+      "actual": "3d2cf060d14af4ce8548ffd2e242c4f40e2806a650111b481a7e8677a647648c",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/s1/fetch-batch1.json",
+      "expected": "a2b02863720655effc19f65a92ab2ce98c7db72a6c95a396f5af9563c3101d68",
+      "actual": "a2b02863720655effc19f65a92ab2ce98c7db72a6c95a396f5af9563c3101d68",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/s1/github-root.html",
+      "expected": "ab53fd94dc9f42508d44c9c837a401a0c67466b4fbfd525e2fe3f297d278d0d1",
+      "actual": "ab53fd94dc9f42508d44c9c837a401a0c67466b4fbfd525e2fe3f297d278d0d1",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/s1/github-tree.json",
+      "expected": "5df847a259fbb6f7dacea577f64e9a81eda69f6d2eb3486015b5a5384851c36d",
+      "actual": "5df847a259fbb6f7dacea577f64e9a81eda69f6d2eb3486015b5a5384851c36d",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/s1/hf-metadata.json",
+      "expected": "459ec60a645b59a2678b822f0ee4fccef0ed39064135e67ee388a33b3be27274",
+      "actual": "459ec60a645b59a2678b822f0ee4fccef0ed39064135e67ee388a33b3be27274",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/s1/hscc-README.md.txt",
+      "expected": "9495b259621c74a44dbe415ad1784734412c8f42ad6dcc0d8f395648d6ac9d67",
+      "actual": "9495b259621c74a44dbe415ad1784734412c8f42ad6dcc0d8f395648d6ac9d67",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/s1/LICENSE.txt",
+      "expected": "c959a1db8bc4b2f41c315a9b077c822372a4a84e1a83636bdb962715aaae6874",
+      "actual": "c959a1db8bc4b2f41c315a9b077c822372a4a84e1a83636bdb962715aaae6874",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/s1/local-source-hashes.json",
+      "expected": "e94e05a11fad8187aa61713111295ffd9913bc34e1b4db0f310dcf4342f4cf74",
+      "actual": "e94e05a11fad8187aa61713111295ffd9913bc34e1b4db0f310dcf4342f4cf74",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/s1/log-before.md",
+      "expected": "a3f4aae0768a26f1e481ae837c094c659de2d2cff1128294334955663b4f81a8",
+      "actual": "a3f4aae0768a26f1e481ae837c094c659de2d2cff1128294334955663b4f81a8",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/s1/observation-plan.md",
+      "expected": "6278717d462e79a95b17353308877af3e67d586b6c5b5a43334ecf8f45b1ec02",
+      "actual": "6278717d462e79a95b17353308877af3e67d586b6c5b5a43334ecf8f45b1ec02",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/s1/preprocessing.py.txt",
+      "expected": "2163a3bf6754127365a7aedac854d99a6f565545cc1ea7e63c68a596081b2976",
+      "actual": "2163a3bf6754127365a7aedac854d99a6f565545cc1ea7e63c68a596081b2976",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/s1/pyproject.toml.txt",
+      "expected": "2dddcf25d53fef0798457da2bca34ffdffd3de8c0ea98cdfe85cc24c744154af",
+      "actual": "2dddcf25d53fef0798457da2bca34ffdffd3de8c0ea98cdfe85cc24c744154af",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/s1/s0-handoff.ko.md",
+      "expected": "93b5e6f1d1c7c005cdd9ace282a034bf9eb7cd1fb83faedcbf2af41839c5280e",
+      "actual": "93b5e6f1d1c7c005cdd9ace282a034bf9eb7cd1fb83faedcbf2af41839c5280e",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/s1/schema-accounting.json",
+      "expected": "713f42a493024bc114a06d114d9e3f2e890424255d83b2035342a16105245881",
+      "actual": "713f42a493024bc114a06d114d9e3f2e890424255d83b2035342a16105245881",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/s1/source-register.md",
+      "expected": "7ff307439bb4704584260544a35268ed71ec76352841f316e37a9612f88e7bfc",
+      "actual": "7ff307439bb4704584260544a35268ed71ec76352841f316e37a9612f88e7bfc",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/s1/status-before.md",
+      "expected": "d883c40171b08d23c89e03100d9f69eb6c9361e959236d527e039842946cd9e7",
+      "actual": "d883c40171b08d23c89e03100d9f69eb6c9361e959236d527e039842946cd9e7",
+      "match": true
+    },
+    {
+      "path": "submissions/2026-09-19-E041/main.py",
+      "expected": "22c911806ea91234ae350341adfb9c0df2ce4be41cc88e73be304e4bb1023073",
+      "actual": "22c911806ea91234ae350341adfb9c0df2ce4be41cc88e73be304e4bb1023073",
+      "match": true
+    },
+    {
+      "path": "src/models/supervised_retrieval.py",
+      "expected": "2940338c5378de03303befb74e3834fbad631c0eb18f4ecb55d2cc39a471f879",
+      "actual": "2940338c5378de03303befb74e3834fbad631c0eb18f4ecb55d2cc39a471f879",
+      "match": true
+    },
+    {
+      "path": "src/models/shared_trunk.py",
+      "expected": "df648763c8e0ba5532ebf9e437af95cd10d8527112c1338b8b5db9ad6a212e1f",
+      "actual": "df648763c8e0ba5532ebf9e437af95cd10d8527112c1338b8b5db9ad6a212e1f",
+      "match": true
+    },
+    {
+      "path": "src/models/link_sharp.py",
+      "expected": "4a7921a00d7758e52a63a3ca7cd5ebf2285cef445b57fd89f15580d6fc108524",
+      "actual": "4a7921a00d7758e52a63a3ca7cd5ebf2285cef445b57fd89f15580d6fc108524",
+      "match": true
+    },
+    {
+      "path": "src/models/hh_cap.py",
+      "expected": "9aad6be04e14ae97dc7aaba5499747c35b255b098680c66eaa8f8af58c940f70",
+      "actual": "9aad6be04e14ae97dc7aaba5499747c35b255b098680c66eaa8f8af58c940f70",
+      "match": true
+    },
+    {
+      "path": "src/models/hier_backoff.py",
+      "expected": "e01f2030c191b0b632b274662cbb46537669f3b73e21ab0d5f7f671d28654ccd",
+      "actual": "e01f2030c191b0b632b274662cbb46537669f3b73e21ab0d5f7f671d28654ccd",
+      "match": true
+    },
+    {
+      "path": "src/eval/logloss.py",
+      "expected": "272aae939a2587b7197569ff84733a1d3b51050e4090ed903a7c8f4e1c88ca18",
+      "actual": "272aae939a2587b7197569ff84733a1d3b51050e4090ed903a7c8f4e1c88ca18",
+      "match": true
+    },
+    {
+      "path": "docs/experiments/E041-supervised-retrieval.md",
+      "expected": "8a17f3cb2cb54deb19fdbffe597dcba173002a82100250ea4ff8be446d76bafb",
+      "actual": "8a17f3cb2cb54deb19fdbffe597dcba173002a82100250ea4ff8be446d76bafb",
+      "match": true
+    },
+    {
+      "path": "docs/experiments/E048-tabpfn-gate-parents.md",
+      "expected": "60e030be4969bf45fa7db73404db4a1d590c321dc39935ab6c793bcdc77670a0",
+      "actual": "60e030be4969bf45fa7db73404db4a1d590c321dc39935ab6c793bcdc77670a0",
+      "match": true
+    },
+    {
+      "path": "docs/experiments/E049-adaptive-tabpfn-parents.md",
+      "expected": "0d6a9f197a5239f2c7a70ed6da3c8e01b8e24a67ba1b4ea7ecf512d9490db046",
+      "actual": "0d6a9f197a5239f2c7a70ed6da3c8e01b8e24a67ba1b4ea7ecf512d9490db046",
+      "match": true
+    },
+    {
+      "path": "docs/experiments/E051-direct-content-tree.md",
+      "expected": "7efd35b3e5e85b15be316e3ef9acecc4d898459de832e37213feb4a93afe1b16",
+      "actual": "7efd35b3e5e85b15be316e3ef9acecc4d898459de832e37213feb4a93afe1b16",
+      "match": true
+    },
+    {
+      "path": "submissions/SCORES.md",
+      "expected": "1e6d753c24c5c2e42fc4b316ea524a4285b59ef672cc5c3a5a1288768d157dab",
+      "actual": "1e6d753c24c5c2e42fc4b316ea524a4285b59ef672cc5c3a5a1288768d157dab",
+      "match": true
+    },
+    {
+      "path": "submissions/2026-09-28-E061/SCORES.md",
+      "expected": "42cff85586e68d4f99e5ff77bf6a082196b35fa867bd29d9ef256e6833974282",
+      "actual": "42cff85586e68d4f99e5ff77bf6a082196b35fa867bd29d9ef256e6833974282",
+      "match": true
+    },
+    {
+      "path": "external/starter-kit/data/unhcr.json",
+      "expected": "b1175b6bdbd96e90a4defd83af20a38d711c6eca9fe3ce880109ff244abe80d9",
+      "actual": "b1175b6bdbd96e90a4defd83af20a38d711c6eca9fe3ce880109ff244abe80d9",
+      "match": true
+    },
+    {
+      "path": "external/starter-kit/data/unicef.json",
+      "expected": "0bce08036cc563ee2a369dcee316ff8a5f89045d86991756d72c266927674396",
+      "actual": "0bce08036cc563ee2a369dcee316ff8a5f89045d86991756d72c266927674396",
+      "match": true
+    },
+    {
+      "path": "external/starter-kit/data/world_bank.json",
+      "expected": "6b3760742c6e864eb8d0bb2f9ec523a19a486b73282d79432dbcca16e3664125",
+      "actual": "6b3760742c6e864eb8d0bb2f9ec523a19a486b73282d79432dbcca16e3664125",
+      "match": true
+    },
+    {
+      "path": "AGENTS.md",
+      "expected": "86394bbf164a2b7df6a309f4564b9dacf3b2799fa0227a703e4ea11d4d842596",
+      "actual": "86394bbf164a2b7df6a309f4564b9dacf3b2799fa0227a703e4ea11d4d842596",
+      "match": true
+    },
+    {
+      "path": "CLAUDE.md",
+      "expected": "69175e6d741a17042db4852d4961a5c52bd97fe2cd5bfbff762d30d7e5270364",
+      "actual": "69175e6d741a17042db4852d4961a5c52bd97fe2cd5bfbff762d30d7e5270364",
+      "match": true
+    },
+    {
+      "path": "docs/workflow.md",
+      "expected": "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642",
+      "actual": "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642",
+      "match": true
+    },
+    {
+      "path": "docs/tree.md",
+      "expected": "eaa884a4194db103335136495205fe5b51297c17db15e9eac62946ced286cc44",
+      "actual": "eaa884a4194db103335136495205fe5b51297c17db15e9eac62946ced286cc44",
+      "match": true
+    },
+    {
+      "path": ".gitignore",
+      "expected": "f67ba089f7490b4ba0845848f0b13b55633b5efd058a0be7d64203a1e480c6fd",
+      "actual": "f67ba089f7490b4ba0845848f0b13b55633b5efd058a0be7d64203a1e480c6fd",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/s0-policy-resolution/verification.json",
+      "expected": "a3c86dd9267b2e69b37a4d1306a270a076351a187fb83f52379bce08979f64fa",
+      "actual": "a3c86dd9267b2e69b37a4d1306a270a076351a187fb83f52379bce08979f64fa",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/s1/verification.json",
+      "expected": "3a9bc99ef5a6a863e4ae5b0fd82b1aa59e381584cba69d7caa9d036ae2bd72fd",
+      "actual": "3a9bc99ef5a6a863e4ae5b0fd82b1aa59e381584cba69d7caa9d036ae2bd72fd",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/s0-local-failure-review/decision.md",
+      "expected": "092f3c4595718d67334b6d0094abb8b3c1d72de4004233de70e4c0bfc5bc07d5",
+      "actual": "092f3c4595718d67334b6d0094abb8b3c1d72de4004233de70e4c0bfc5bc07d5",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/s0-local-failure-review/s1-repair-handoff.ko.md",
+      "expected": "7c3235a09510cc4cb6a53758e0c2c06d83704bfa3a156cf0d39eebdbafe3fa10",
+      "actual": "7c3235a09510cc4cb6a53758e0c2c06d83704bfa3a156cf0d39eebdbafe3fa10",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/s0-local-failure-review/verification.json",
+      "expected": "8eb53684c71f2802e172d4eeb633b86ed41a2cd62dfbbe98ec28fe8d2dc97f2c",
+      "actual": "8eb53684c71f2802e172d4eeb633b86ed41a2cd62dfbbe98ec28fe8d2dc97f2c",
+      "match": true
+    }
+  ],
+  "preservation_checks": 90,
+  "all_preserved": true,
+  "frozen_input_count": 171,
+  "all_frozen_hashes_match": true,
+  "fresh_fixture": {
+    "path": "tmp/a040-local-technical-retry1/fixture.json",
+    "expected_sha256": "a532ee2dcd337cc72e278365234e7b55b08aec528a9bc9a1b718d666ee0d5a48",
+    "actual_sha256": "a532ee2dcd337cc72e278365234e7b55b08aec528a9bc9a1b718d666ee0d5a48",
+    "original_fixture_read_or_hashed": false,
+    "original_partial_outputs_spliced": false
+  },
+  "many_class_heads": [
+    {
+      "event": "many_class_head",
+      "elapsed": 11.451383300000089,
+      "head_name": "s3_4b_visit_month",
+      "classes": 15
+    },
+    {
+      "event": "many_class_head",
+      "elapsed": 12.784204900000077,
+      "head_name": "s3_8b_return_month",
+      "classes": 15
+    },
+    {
+      "event": "many_class_head",
+      "elapsed": 28.946697200000017,
+      "head_name": "s3_23a_safety_rank1_lbl",
+      "classes": 11
+    },
+    {
+      "event": "many_class_head",
+      "elapsed": 29.67606280000018,
+      "head_name": "s3_23b_safety_rank2_lbl",
+      "classes": 11
+    }
+  ],
+  "fake_only_decision": {
+    "event": "fake_only_decision",
+    "elapsed": 39.33070549999957,
+    "alpha": 0.5,
+    "guard_accepted": false,
+    "efficacy_evidence": false
+  },
+  "completion_event": {
+    "event": "complete_schema_and_frozen_weights",
+    "elapsed": 39.42492349999975,
+    "passed": true,
+    "targets": 213,
+    "vectors": 1917
+  },
+  "result": {
+    "outcome": "LOCAL_CONTRACT_PASS",
+    "scientific_invocations": 1,
+    "tests": {
+      "heads": 213,
+      "query_rows": 9,
+      "output_vectors": 1917,
+      "fixture_sha256": "a532ee2dcd337cc72e278365234e7b55b08aec528a9bc9a1b718d666ee0d5a48",
+      "stock_adapter_max_abs_diff": 0.0,
+      "frozen_state_sha256": "92c6c2f567512ef430085e13062f8d9d0141880ab344a02b73da0471f6b92393",
+      "actual_E041_control_parity": false,
+      "arithmetic_control_parity": true,
+      "counts": {
+        "fits": 216,
+        "predicts": 217,
+        "loads": 2
+      },
+      "prototype_counts": {
+        "adapter_injections": 215,
+        "singleton": 1,
+        "empty": 1
+      }
+    },
+    "elapsed_seconds": 39.42617599999994,
+    "counters": {
+      "fits": 216,
+      "predicts": 217,
+      "loads": 2
+    },
+    "timings": {
+      "fit_seconds": 5.192174999995586,
+      "predict_seconds": 28.034364900000583,
+      "load_seconds": 0.11799189999965165
+    },
+    "network": {
+      "deliberate_blocked": 1,
+      "package_attempts": 0,
+      "subprocess_attempts": 0
+    },
+    "full_path_measured": false,
+    "gpu": {
+      "allocated_peak": 279770624,
+      "reserved_peak": 308281344,
+      "device_capacity": 8589410304
+    }
+  },
+  "remaining_children": [],
+  "full_technical_pass": false,
+  "release_pass": false,
+  "empirical_evidence": false,
+  "real_new_exposure": 0,
+  "old_failure_preserved": true,
+  "checked_utc": "2026-10-02T04:10:31.234094+00:00",
+  "closeout": {
+    "head": "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+    "checked_utc": "2026-10-02T04:15:03.805389+00:00",
+    "task_wall_seconds_through_final_record": 813.805389,
+    "deadline_utc": "2026-10-02T05:01:30Z",
+    "within_task_cap": true,
+    "originals_still_match": true,
+    "frozen_inputs_still_match": true,
+    "prior_status_body_preserved": true,
+    "prior_log_body_preserved": true,
+    "artifact_links": [
+      {
+        "source": "closeout.md",
+        "target": "entry.json",
+        "exists": true
+      },
+      {
+        "source": "closeout.md",
+        "target": "source.diff",
+        "exists": true
+      },
+      {
+        "source": "closeout.md",
+        "target": "logging-regression.json",
+        "exists": true
+      },
+      {
+        "source": "closeout.md",
+        "target": "result.json",
+        "exists": true
+      },
+      {
+        "source": "closeout.md",
+        "target": "events.jsonl",
+        "exists": true
+      },
+      {
+        "source": "closeout.md",
+        "target": "verification.json",
+        "exists": true
+      },
+      {
+        "source": "closeout.md",
+        "target": "resources.json",
+        "exists": true
+      },
+      {
+        "source": "closeout.md",
+        "target": "run-resources.json",
+        "exists": true
+      },
+      {
+        "source": "closeout.md",
+        "target": "resource-samples.jsonl",
+        "exists": true
+      },
+      {
+        "source": "closeout.md",
+        "target": "s0-handoff.ko.md",
+        "exists": true
+      },
+      {
+        "source": "closeout.md",
+        "target": "frozen-inputs/registration.md",
+        "exists": true
+      },
+      {
+        "source": "closeout.md",
+        "target": "frozen-inputs/run-manifest.json",
+        "exists": true
+      },
+      {
+        "source": "closeout.md",
+        "target": "exposure-ledger.md",
+        "exists": true
+      },
+      {
+        "source": "closeout.md",
+        "target": "provenance.md",
+        "exists": true
+      },
+      {
+        "source": "s0-handoff.ko.md",
+        "target": "closeout.md",
+        "exists": true
+      },
+      {
+        "source": "s0-handoff.ko.md",
+        "target": "verification.json",
+        "exists": true
+      },
+      {
+        "source": "s0-handoff.ko.md",
+        "target": "result.json",
+        "exists": true
+      },
+      {
+        "source": "s0-handoff.ko.md",
+        "target": "resources.json",
+        "exists": true
+      },
+      {
+        "source": "s0-handoff.ko.md",
+        "target": "source.diff",
+        "exists": true
+      },
+      {
+        "source": "s0-handoff.ko.md",
+        "target": "frozen-inputs/run-manifest.json",
+        "exists": true
+      },
+      {
+        "source": "provenance.md",
+        "target": "../local-technical/provenance.md",
+        "exists": true
+      },
+      {
+        "source": "provenance.md",
+        "target": "requirements.lock.txt",
+        "exists": true
+      }
+    ],
+    "generator_AST_identical": true,
+    "split_sha256": "ccb5056fd3c4110946813ecdb57f785f731426eb90e52edfaca255d7a345552a",
+    "active_named_jobs": [],
+    "recorded_stdout_warning": "Pandas fragmentation PerformanceWarning retained; no code change"
+  }
+}

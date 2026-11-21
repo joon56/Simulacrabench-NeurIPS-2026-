@@ -1,0 +1,32 @@
+﻿[
+    {
+        "path":  "docs/analysis/A040-outputs/modal-full-path1-resume2/cost-policy.md",
+        "expected":  "663c2219bb001c5e62a97fec860054820590272818e4a5a084256938ef5c1d12",
+        "actual":  "663c2219bb001c5e62a97fec860054820590272818e4a5a084256938ef5c1d12",
+        "equal":  true
+    },
+    {
+        "path":  "docs/analysis/A040-outputs/modal-full-path1-resume2/cost-ledger.json",
+        "expected":  "8fcb1580f941e08f3b329475a28dd6916b6d448eac353d2c9add268eda5cbf99",
+        "actual":  "8fcb1580f941e08f3b329475a28dd6916b6d448eac353d2c9add268eda5cbf99",
+        "equal":  true
+    },
+    {
+        "path":  "docs/analysis/A040-outputs/modal-full-path1-resume2/build-result.json",
+        "expected":  "a37da982e58b1f2103bfe4f296638861ca7e4fa72ef8c673d20833fa283b94fe",
+        "actual":  "a37da982e58b1f2103bfe4f296638861ca7e4fa72ef8c673d20833fa283b94fe",
+        "equal":  true
+    },
+    {
+        "path":  "docs/analysis/A040-outputs/modal-full-path1-resume2/app-terminal.json",
+        "expected":  "f2cea92d38afa26882c4773be21c4c5e1057b3961073f77bcfb96b3b0428f5eb",
+        "actual":  "f2cea92d38afa26882c4773be21c4c5e1057b3961073f77bcfb96b3b0428f5eb",
+        "equal":  true
+    },
+    {
+        "path":  "docs/analysis/A040-outputs/modal-full-path1-resume2/termination-receipt.json",
+        "expected":  "de7b9a6f902a5fcc2f85a3f9b179c6d46fc7f271b6346f694dc3c02e4e974021",
+        "actual":  "de7b9a6f902a5fcc2f85a3f9b179c6d46fc7f271b6346f694dc3c02e4e974021",
+        "equal":  true
+    }
+]

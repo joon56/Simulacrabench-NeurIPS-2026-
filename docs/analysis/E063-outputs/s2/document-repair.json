@@ -1,0 +1,8 @@
+{
+  "failed_transcript": "fdb213",
+  "reason": "Link helper wrongly resolved original docs/ fragments/backups against relocated S2 directory; no actual destination link defect established",
+  "preserved_partial_verification": "verification-document-attempt-01.json",
+  "sha256": "30b72921ac2df2cb711b9565f638c6722d39235e247c6dc2f7cf6e2945311b08",
+  "affected_boundary": "New final document link check only, no model/source/ZIP change",
+  "repair": "Exclude archival copies/fragments from standalone-document base; check actual destination additions and snapshot; preserve original backup bytes"
+}

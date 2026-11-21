@@ -1,0 +1,95 @@
+﻿{
+    "source":  "Exact E041 prefix plus namespaced fixed E064 conditional-gradient source",
+    "external_models":  [
+
+                        ],
+    "bundled_data":  [
+
+                     ],
+    "bundled_weights":  [
+
+                        ],
+    "runtime_network":  "No network calls in candidate; no downloads or installation. Native egress isolation is hosted responsibility, not locally certified.",
+    "requirements_file":  "Omitted; same installed dependency family as E041. Uses hosted preinstalls; no version or image guarantee.",
+    "direct_imports":  [
+                           "numpy",
+                           "pandas",
+                           "torch",
+                           "sklearn.preprocessing",
+                           "scipy.optimize",
+                           "threadpoolctl"
+                       ],
+    "local_environment":  {
+                              "python":  "3.13.14 (tags/v3.13.14:fd17997, Jun 10 2026, 13:03:48) [MSC v.1944 64 bit (AMD64)]",
+                              "numpy":  "2.5.1",
+                              "pandas":  "3.0.5",
+                              "torch":  "2.13.0+cpu",
+                              "torch_threads":  2,
+                              "interop_threads":  2,
+                              "cuda_available":  false,
+                              "threadpools":  [
+                                                  {
+                                                      "user_api":  "blas",
+                                                      "internal_api":  "openblas",
+                                                      "num_threads":  2,
+                                                      "prefix":  "libscipy_openblas",
+                                                      "filepath":  "C:\\Users\\USER\\Desktop\\SimulacraBench\\.venv\\Lib\\site-packages\\numpy.libs\\libscipy_openblas64_-b788215d9d47792bcba3a2e2a7114320.dll",
+                                                      "version":  "0.3.33.112.0",
+                                                      "threading_layer":  "pthreads",
+                                                      "architecture":  "Haswell"
+                                                  },
+                                                  {
+                                                      "user_api":  "openmp",
+                                                      "internal_api":  "openmp",
+                                                      "num_threads":  2,
+                                                      "prefix":  "libiomp",
+                                                      "filepath":  "C:\\Users\\USER\\Desktop\\SimulacraBench\\.venv\\Lib\\site-packages\\torch\\lib\\libiomp5md.dll",
+                                                      "version":  null
+                                                  },
+                                                  {
+                                                      "user_api":  "openmp",
+                                                      "internal_api":  "openmp",
+                                                      "num_threads":  1,
+                                                      "prefix":  "libiomp",
+                                                      "filepath":  "C:\\Users\\USER\\Desktop\\SimulacraBench\\.venv\\Lib\\site-packages\\torch\\lib\\libiompstubs5md.dll",
+                                                      "version":  null
+                                                  },
+                                                  {
+                                                      "user_api":  "openmp",
+                                                      "internal_api":  "openmp",
+                                                      "num_threads":  2,
+                                                      "prefix":  "vcomp",
+                                                      "filepath":  "C:\\Users\\USER\\Desktop\\SimulacraBench\\.venv\\Lib\\site-packages\\sklearn\\.libs\\vcomp140.dll",
+                                                      "version":  null
+                                                  },
+                                                  {
+                                                      "user_api":  "blas",
+                                                      "internal_api":  "openblas",
+                                                      "num_threads":  2,
+                                                      "prefix":  "libscipy_openblas",
+                                                      "filepath":  "C:\\Users\\USER\\Desktop\\SimulacraBench\\.venv\\Lib\\site-packages\\scipy.libs\\libscipy_openblas-197ee2fc9b4d071f7e048078cac74115.dll",
+                                                      "version":  "0.3.31.dev",
+                                                      "threading_layer":  "pthreads",
+                                                      "architecture":  "Haswell"
+                                                  }
+                                              ],
+                              "scipy":  "1.18.1",
+                              "sklearn":  "1.9.0",
+                              "pyarrow":  "25.0.1",
+                              "packages":  {
+                                               "numpy":  "2.5.1",
+                                               "pandas":  "3.0.5",
+                                               "scipy":  "1.18.1",
+                                               "torch":  "2.13.0+cpu",
+                                               "pyarrow":  "25.0.1",
+                                               "scikit-learn":  "1.9.0",
+                                               "threadpoolctl":  "3.6.0",
+                                               "PyYAML":  "6.0.3"
+                                           },
+                              "executable_sha256":  "b70275ad94210fce7548761143be5e177769721045e287bb6c80aac3f928c65b",
+                              "base_executable_sha256":  "ef8f51028ac5329641985112f8efb1c2d4c47c86b8011ddf7e6fae21e2b4e5a1"
+                          },
+    "notice":  "Root NOTICE.txt preserves starter-kit MIT license text. It is not a new license grant for the complete repository or original team code.",
+    "runtime_learning":  "Visible rows only: neural selection/refit and retrieval metric/replay; authorized runtime fitting policy inherited. No pretrained external model.",
+    "limits":  "Historical baseline metadata lacks separate executable and some package versions; current E064 full environment matches its S1 freeze. Hosted image/H100 precision, hidden runtime and private scorer identity unverified."
+}

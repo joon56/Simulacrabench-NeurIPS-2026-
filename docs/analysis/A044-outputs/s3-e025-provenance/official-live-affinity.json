@@ -1,0 +1,63 @@
+{
+    "observed_at":  "2026-10-23T16:53:10.3281007+09:00",
+    "phase":  "official UNHCR",
+    "processes":  [
+                      {
+                          "pid":  39128,
+                          "parent":  39592,
+                          "affinity_mask":  65535,
+                          "rss":  5120000,
+                          "private":  880640
+                      },
+                      {
+                          "pid":  29524,
+                          "parent":  39128,
+                          "affinity_mask":  65535,
+                          "rss":  58396672,
+                          "private":  22765568
+                      },
+                      {
+                          "pid":  28036,
+                          "parent":  29524,
+                          "affinity_mask":  3,
+                          "rss":  5124096,
+                          "private":  888832
+                      },
+                      {
+                          "pid":  33344,
+                          "parent":  28036,
+                          "affinity_mask":  3,
+                          "rss":  51785728,
+                          "private":  15200256
+                      },
+                      {
+                          "pid":  16988,
+                          "parent":  33344,
+                          "affinity_mask":  3,
+                          "rss":  5009408,
+                          "private":  827392
+                      },
+                      {
+                          "pid":  39196,
+                          "parent":  16988,
+                          "affinity_mask":  3,
+                          "rss":  510078976,
+                          "private":  400609280
+                      },
+                      {
+                          "pid":  28996,
+                          "parent":  39196,
+                          "affinity_mask":  3,
+                          "rss":  5001216,
+                          "private":  819200
+                      },
+                      {
+                          "pid":  8956,
+                          "parent":  28996,
+                          "affinity_mask":  3,
+                          "rss":  838025216,
+                          "private":  922714112
+                      }
+                  ],
+    "note":  "Supervisor is lightweight and unrestricted; numerical child tree has affinity mask3. Read-only observation."
+}

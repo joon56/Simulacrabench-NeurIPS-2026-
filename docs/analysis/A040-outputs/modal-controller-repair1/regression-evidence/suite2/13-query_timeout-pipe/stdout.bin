@@ -1,0 +1,2 @@
+• 한글 로그 stdout
+{"outcome": "BUILD_COMPLETED", "owned_app_id": "ap-FAKE-OWNED", "stop_ack": true, "termination": "UNCONFIRMED", "create_attempts": 1, "build_attempts": 1, "stop_attempts": 1, "cleanup_errors": [{"stage": "query", "error": "TimeoutError('Operation deadline; cancellation completion not assumed')"}], "execution": "INJECTED_LOCAL_ONLY", "image_id": "im-FAKE", "cleanup_seconds": 0.12370029999874532, "elapsed_seconds": 0.12743480000062846}

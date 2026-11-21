@@ -1,0 +1,34 @@
+{
+  "mode": "tests-red",
+  "status": "FAIL",
+  "command": [
+    "C:\\Users\\USER\\Desktop\\SimulacraBench\\.venv\\Scripts\\python.exe",
+    "-X",
+    "utf8",
+    "-B",
+    "-m",
+    "unittest",
+    "tests.test_e062_assembly.AssemblyBoundaryTests.test_frozen_prefix_and_standalone_import",
+    "-v"
+  ],
+  "wall_seconds": 45.309151600000405,
+  "cumulative_worker_seconds": 45.309151600000405,
+  "historical_S1_worker_seconds": 1123.1965955,
+  "combined_worker_seconds": 1168.5057471000005,
+  "reason": "COMPLETE",
+  "error": null,
+  "exit_code": 1,
+  "peak_owned_tree_bytes": {
+    "rss": 353087488,
+    "commitment": 359284736
+  },
+  "sample_interval_seconds": 0.1,
+  "numerical_threads": 2,
+  "gpu": false,
+  "memory_semantics": "Owned controller+descendants; sum of per-process peak RSS/private commitment",
+  "cumulative_calls": {
+    "full_stack": 0,
+    "neural": 0,
+    "metric": 0
+  }
+}

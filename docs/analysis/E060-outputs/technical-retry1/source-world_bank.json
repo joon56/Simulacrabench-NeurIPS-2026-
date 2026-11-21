@@ -1,0 +1,20 @@
+{
+  "seconds": 90.20828600000095,
+  "cells": 39520,
+  "candidate_skill": 0.45471730736298255,
+  "baseline_skill": {
+    "E041": 0.45471730736298255,
+    "E025": 0.45471730736298255
+  },
+  "delta_e025": 0.0,
+  "delta_e041": 0.0,
+  "changed_vectors": 0,
+  "max_probability_delta": 0.0,
+  "call_counts": {
+    "neural_requests": 3,
+    "neural_attempts": 3,
+    "metric_optimizers": 0
+  },
+  "release_pass": true,
+  "vectors_sha256": "574faa32e2423b6bdd958e178cb6ede2b65c10bc734c497d366ac120b79aea34"
+}

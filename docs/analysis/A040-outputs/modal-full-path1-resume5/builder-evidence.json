@@ -1,0 +1,13 @@
+{
+    "image_id":  "im-XZ95GDfkfa6PwWUeFyciYM",
+    "source":  "Saved builder stdout; no new RPC",
+    "builder_completed":  true,
+    "required_pins":  34,
+    "matched_pins":  34,
+    "inventory_lines":  64,
+    "inventory_sha256":  "2d7798a4209b93728854c4f54477f743ed84769d6d47129f9dd1e9c59cd8f3b5",
+    "python_version":  "3.13.14 enforced by unchanged installer before installation",
+    "driver":  "NOT_OBSERVED",
+    "installation_report":  "Created in image, not exported",
+    "sandbox_runtime_boundary":  "NOT_RUN"
+}

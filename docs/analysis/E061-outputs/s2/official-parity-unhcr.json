@@ -1,0 +1,28 @@
+{
+  "vectors": 132273,
+  "max_raw_sum_error": 2.414220944269019e-07,
+  "comparisons": {
+    "candidate": {
+      "max_abs": 0.0,
+      "changed_vectors": 0
+    },
+    "E041": {
+      "max_abs": 0.16454842686653137,
+      "changed_vectors": 132225
+    },
+    "E025": {
+      "max_abs": 0.3597398473795115,
+      "changed_vectors": 132273
+    }
+  },
+  "flat_sha256": "115feea24ec4ddc781d764e05a1d59fd347b5653d5557d7ac9d1cfd0f6b082eb",
+  "status": "PASS",
+  "skill": 0.5623918781304167,
+  "delta_E025": -0.0005569955745997612,
+  "delta_E041": -7.085072722468055e-05,
+  "release_pass": true,
+  "cli_startup_to_exit_seconds": 375.2835071999998,
+  "scorer_seconds": 373.5707895755768,
+  "official_log": "docs\\analysis\\E061-outputs\\s2\\official-unhcr.json",
+  "predictions_sha256": "a9049cde6ae457d16ac7bf5938b06da8d2a4e27251bb4baea00593ced2d46ba1"
+}

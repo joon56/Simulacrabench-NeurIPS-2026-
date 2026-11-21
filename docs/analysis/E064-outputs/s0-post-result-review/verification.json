@@ -1,0 +1,380 @@
+{
+    "record":  "E064-S0-POST-RESULT-REVIEW",
+    "decision":  "UNRESOLVED_ACCEPTED / C6_DIAGNOSTIC_PROPOSED_NOT_AUTHORIZED",
+    "head":  "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+    "branch":  "work/e050-submission",
+    "workflow_revision":  "2026-10-22-r6",
+    "workflow_sha256":  "69620b7eeaad5a01a6a6b884fbd95dfede3e26b2ee2b09016479846082aec089",
+    "read_evidence":  "entry.json and actual tool transcript",
+    "incoming_document_hashes_matched":  12,
+    "preserved_document_checks":  [
+                                      {
+                                          "path":  "docs/analysis/E064-outputs/s2/post-result/entry.json",
+                                          "sha256":  "25c81e8a3bc87c408cd29dee6a1735887e6c81c2ecc77dcbc7cce826c57569bb",
+                                          "unchanged":  true
+                                      },
+                                      {
+                                          "path":  "docs/analysis/E064-outputs/s2/post-result/user-message.txt",
+                                          "sha256":  "799354cb9b51363cb410c4bda5b422e5d44702b31299e518e6a0ec370b31204b",
+                                          "unchanged":  true
+                                      },
+                                      {
+                                          "path":  "docs/analysis/E064-outputs/s2/post-result/user-supplied-api.json",
+                                          "sha256":  "a34a6bf598a13f1d6bb139dbaf141858e907eb52793ad59a18728a16b11afecf",
+                                          "unchanged":  true
+                                      },
+                                      {
+                                          "path":  "docs/analysis/E064-outputs/s2/post-result/comparison.json",
+                                          "sha256":  "3b62b0a058e4b540973be5947134e078d5bc4b16ebae0149361fb2c304ef3cd3",
+                                          "unchanged":  true
+                                      },
+                                      {
+                                          "path":  "docs/analysis/E064-outputs/s2/post-result/result.ko.md",
+                                          "sha256":  "7299c18dd1257103bfefa16a15cc1631d7a9a0031b0ac5c478484485797d33e8",
+                                          "unchanged":  true
+                                      },
+                                      {
+                                          "path":  "docs/analysis/E064-outputs/s2/post-result/exposure-ledger.md",
+                                          "sha256":  "d3866e17deb697af9861461d18be1e08609903cc48d69572e9edff65e5890005",
+                                          "unchanged":  true
+                                      },
+                                      {
+                                          "path":  "docs/analysis/E064-outputs/s2/post-result/post-result-handoff.ko.md",
+                                          "sha256":  "fc75530e7fb15ae07973a81ad85e853b051b502fb8b96dd956d09fc96115adf1",
+                                          "unchanged":  true
+                                      },
+                                      {
+                                          "path":  "docs/analysis/E064-outputs/s2/post-result/shared-document-additions.json",
+                                          "sha256":  "6021e5dacf1ae7cd452f39463bb0f35a0f338e1b6951c0628f46a62795065b64",
+                                          "unchanged":  true
+                                      },
+                                      {
+                                          "path":  "submissions/SCORES.md",
+                                          "sha256":  "df770499ca51137c9bc5cf0349623b61bc3f8579b483e0ac5cb8443b04c55905",
+                                          "unchanged":  true
+                                      },
+                                      {
+                                          "path":  "submissions/2026-10-23-E064/SCORES.md",
+                                          "sha256":  "f3ea22acf97b86a56c0b5ebed9edf6d513b29f6f778519123cc2ae774a9436fe",
+                                          "unchanged":  true
+                                      },
+                                      {
+                                          "path":  "AGENTS.md",
+                                          "sha256":  "e3d52f09f32c7e3b8fdb194419119c4f563557103404da0831ffb31fbf2150e8",
+                                          "unchanged":  true
+                                      },
+                                      {
+                                          "path":  "CLAUDE.md",
+                                          "sha256":  "7300b637f3a0ae937b2273a1945892df129eb16ee3ef7bdc6cff707c69ffc1e3",
+                                          "unchanged":  true
+                                      },
+                                      {
+                                          "path":  "docs/workflow.md",
+                                          "sha256":  "69620b7eeaad5a01a6a6b884fbd95dfede3e26b2ee2b09016479846082aec089",
+                                          "unchanged":  true
+                                      },
+                                      {
+                                          "path":  "docs/analysis/E064-outputs/s2/post-result/verification.json",
+                                          "sha256":  "40d2a7d3eb03775e0f900a879437632656ff6c1fb132e277352d63a82cde93e1",
+                                          "unchanged":  true
+                                      },
+                                      {
+                                          "path":  "docs/analysis/A040-outputs/local-exit-diagnosis1/C6-registration.md",
+                                          "sha256":  "bd00766b5d73d6253677e073c28b38ba87337180ae9d3e499597f1eddbaa996c",
+                                          "unchanged":  true
+                                      },
+                                      {
+                                          "path":  "docs/analysis/A040-outputs/local-exit-diagnosis1/closeout.md",
+                                          "sha256":  "d242e9ae96d194224dea4c56fc6d2d84347d9f60ad55452d2ffb277d49f01498",
+                                          "unchanged":  true
+                                      },
+                                      {
+                                          "path":  "docs/analysis/A040-outputs/local-exit-diagnosis1/reproduction.md",
+                                          "sha256":  "af99e5e252acc092cf1a4042e9aa2669744955cd82df8f4ed9ce415e6cc97225",
+                                          "unchanged":  true
+                                      },
+                                      {
+                                          "path":  "docs/analysis/A040-outputs/local-exit-diagnosis1/regression-history.md",
+                                          "sha256":  "901d65d477f971b040735160192cabe2dd6c88af67f06230769a4dfc731ed949",
+                                          "unchanged":  true
+                                      },
+                                      {
+                                          "path":  "docs/analysis/A040-outputs/local-exit-diagnosis1/c6-blocked-receipt.json",
+                                          "sha256":  "70dc89645d2c1a9567fbeea245f91d265295adea9b0394004dcfb3d640b52bbc",
+                                          "unchanged":  true
+                                      },
+                                      {
+                                          "path":  "docs/analysis/A040-outputs/local-exit-diagnosis1/source-manifest.json",
+                                          "sha256":  "8740c8847f7fa763120f461e6c34002759af696e41ce244e9740843a43fbc8f9",
+                                          "unchanged":  true
+                                      },
+                                      {
+                                          "path":  "docs/analysis/A040-outputs/local-exit-diagnosis1/source-register.md",
+                                          "sha256":  "08c168fe67206a0c1e14a9559b9b46d03304e3975ca1071fdeb1c2125ac5bd68",
+                                          "unchanged":  true
+                                      }
+                                  ],
+    "shared_original_bytes":  [
+                                  {
+                                      "path":  "docs/status.md",
+                                      "original_bytes_restorable":  true
+                                  },
+                                  {
+                                      "path":  "docs/log.md",
+                                      "original_bytes_restorable":  true
+                                  }
+                              ],
+    "document_links":  [
+                           {
+                               "from":  "docs\\analysis\\E064-outputs\\s0-post-result-review\\decision.md",
+                               "target":  "entry.json",
+                               "exists_before_receipt":  true,
+                               "this_verification":  false
+                           },
+                           {
+                               "from":  "docs\\analysis\\E064-outputs\\s0-post-result-review\\decision.md",
+                               "target":  "verification.json",
+                               "exists_before_receipt":  false,
+                               "this_verification":  true
+                           },
+                           {
+                               "from":  "docs\\analysis\\E064-outputs\\s0-post-result-review\\decision.md",
+                               "target":  "../s2/post-result/result.ko.md",
+                               "exists_before_receipt":  true,
+                               "this_verification":  false
+                           },
+                           {
+                               "from":  "docs\\analysis\\E064-outputs\\s0-post-result-review\\decision.md",
+                               "target":  "../s2/post-result/comparison.json",
+                               "exists_before_receipt":  true,
+                               "this_verification":  false
+                           },
+                           {
+                               "from":  "docs\\analysis\\E064-outputs\\s0-post-result-review\\decision.md",
+                               "target":  "../../A040-outputs/local-exit-diagnosis1/C6-registration.md",
+                               "exists_before_receipt":  true,
+                               "this_verification":  false
+                           },
+                           {
+                               "from":  "docs\\analysis\\E064-outputs\\s0-post-result-review\\decision.md",
+                               "target":  "s1-c6-diagnostic-handoff.ko.md",
+                               "exists_before_receipt":  true,
+                               "this_verification":  false
+                           },
+                           {
+                               "from":  "docs\\analysis\\E064-outputs\\s0-post-result-review\\s1-c6-diagnostic-handoff.ko.md",
+                               "target":  "decision.md",
+                               "exists_before_receipt":  true,
+                               "this_verification":  false
+                           },
+                           {
+                               "from":  "docs\\analysis\\E064-outputs\\s0-post-result-review\\s1-c6-diagnostic-handoff.ko.md",
+                               "target":  "entry.json",
+                               "exists_before_receipt":  true,
+                               "this_verification":  false
+                           },
+                           {
+                               "from":  "docs\\analysis\\E064-outputs\\s0-post-result-review\\s1-c6-diagnostic-handoff.ko.md",
+                               "target":  "verification.json",
+                               "exists_before_receipt":  false,
+                               "this_verification":  true
+                           }
+                       ],
+    "artifact_sha256":  {
+                            "docs/analysis/E064-outputs/s0-post-result-review/entry.json":  "618d728baea6d978149c1c9ffa981b3dfee8267c9c0fab461b370cd056d5f4f5",
+                            "docs/analysis/E064-outputs/s0-post-result-review/decision.md":  "cb6ea26c9d5d377714c707b00eb771e29ef4ee412d947cc680b3cff2881e4c65",
+                            "docs/analysis/E064-outputs/s0-post-result-review/s1-c6-diagnostic-handoff.ko.md":  "968fb9d4e2e215f3ba3bed35c8c455648537c2aa29d9632cdafa462488244d20",
+                            "docs/analysis/E064-outputs/s0-post-result-review/shared-document-additions.json":  "e81584cc19047931b9f4895b7544ce1e4e49a611b1a7426fac91d9b859df94c1",
+                            "docs/status.md":  "cbc153ec01d6adee815016470ddc6bd9d570060fea59e143b98d6ead91b0aec6",
+                            "docs/log.md":  "6fed4f47a594599ea84ce6dd08f994d90ecdedb0449afc6e1db9d791742285c9"
+                        },
+    "dirty_entry_count":  125,
+    "dirty_final_count":  125,
+    "dirty_final":  [
+                        " M .claude/skills/paper-session/SKILL.md",
+                        " M .gitignore",
+                        " M CLAUDE.md",
+                        " M docs/domain-study-guide.ko.md",
+                        " M docs/index.md",
+                        " M docs/log.md",
+                        " M docs/phase2-preparation.md",
+                        " M docs/session-prompts.ko.md",
+                        " M docs/status.md",
+                        " M docs/tree.md",
+                        " M docs/workflow.md",
+                        " M submissions/SCORES.md",
+                        "?? .agents/",
+                        "?? AGENTS.md",
+                        "?? README.md",
+                        "?? docs/analysis/A020-outputs/",
+                        "?? docs/analysis/A020-post-e058-design-review.md",
+                        "?? docs/analysis/A021-outputs/",
+                        "?? docs/analysis/A021-selector-comparison-contract.md",
+                        "?? docs/analysis/A022-outputs/",
+                        "?? docs/analysis/A022-remaining-role-audit.md",
+                        "?? docs/analysis/A023-candidate-boundary-contract.md",
+                        "?? docs/analysis/A023-cost-accounting.md",
+                        "?? docs/analysis/A023-outputs/",
+                        "?? docs/analysis/A024-channel-precision-review.md",
+                        "?? docs/analysis/A024-outputs/",
+                        "?? docs/analysis/A025-submission-oriented-review.md",
+                        "?? docs/analysis/A026-outputs/",
+                        "?? docs/analysis/A026-post-e060-strategy-review.md",
+                        "?? docs/analysis/A027-outputs/",
+                        "?? docs/analysis/A027-workflow-role-revision.md",
+                        "?? docs/analysis/A028-outputs/",
+                        "?? docs/analysis/A028-workflow-entry-audit.md",
+                        "?? docs/analysis/A029-codex-migration-audit.md",
+                        "?? docs/analysis/A029-outputs/",
+                        "?? docs/analysis/A030-outputs/",
+                        "?? docs/analysis/A030-vaf-channel-metadata-review.md",
+                        "?? docs/analysis/A031-outputs/",
+                        "?? docs/analysis/A031-post-a030-handoff-review.md",
+                        "?? docs/analysis/A032-document-acquisition-and-readiness.md",
+                        "?? docs/analysis/A032-outputs/",
+                        "?? docs/analysis/A033-dev-handoff-and-role-repair.md",
+                        "?? docs/analysis/A033-outputs/",
+                        "?? docs/analysis/A034-e061-s0-review.md",
+                        "?? docs/analysis/A034-outputs/",
+                        "?? docs/analysis/A035-e061-dev-submission-review.md",
+                        "?? docs/analysis/A035-outputs/",
+                        "?? docs/analysis/A036-e061-post-result-review.md",
+                        "?? docs/analysis/A036-outputs/",
+                        "?? docs/analysis/A037-outputs/",
+                        "?? docs/analysis/A037-winning-priority-review.md",
+                        "?? docs/analysis/A038-outputs/",
+                        "?? docs/analysis/A038-vaf-local-document-intake.md",
+                        "?? docs/analysis/A039-outputs/",
+                        "?? docs/analysis/A040-outputs/",
+                        "?? docs/analysis/A041-outputs/",
+                        "?? docs/analysis/A041-wb-ordinal-head-review.md",
+                        "?? docs/analysis/A042-outputs/",
+                        "?? docs/analysis/A042-post-e062-priority.md",
+                        "?? docs/analysis/A043-outputs/",
+                        "?? docs/analysis/A043-post-e063-priority.md",
+                        "?? docs/analysis/A044-outputs/",
+                        "?? docs/analysis/E059-outputs/",
+                        "?? docs/analysis/E060-outputs/",
+                        "?? docs/analysis/E061-outputs/",
+                        "?? docs/analysis/E062-outputs/",
+                        "?? docs/analysis/E063-outputs/",
+                        "?? docs/analysis/E064-outputs/",
+                        "?? docs/codex-setup.ko.md",
+                        "?? docs/experiments/E059-leaf-donor-interactions.md",
+                        "?? docs/experiments/E060-content-target-retrieval.md",
+                        "?? docs/experiments/E061-tied-content-heads.md",
+                        "?? docs/experiments/E062-wb-ordinal-heads.md",
+                        "?? docs/experiments/E063-round-conditioned-metric.md",
+                        "?? docs/experiments/E064-conditional-gradient.md",
+                        "?? docs/plans/README.md",
+                        "?? requirements-models.txt",
+                        "?? scripts/assemble_e060.py",
+                        "?? scripts/assemble_e061.py",
+                        "?? scripts/assemble_e062.py",
+                        "?? scripts/assemble_e063.py",
+                        "?? scripts/check_a021_selector_contract.py",
+                        "?? scripts/check_a023_candidate_boundary.py",
+                        "?? scripts/check_a023_resources.py",
+                        "?? scripts/check_e060.py",
+                        "?? scripts/check_e061_release.py",
+                        "?? scripts/check_e061_tied_heads.py",
+                        "?? scripts/check_e062_release.py",
+                        "?? scripts/check_e062_wb_ordinal.py",
+                        "?? scripts/check_e063_release.py",
+                        "?? scripts/check_e063_round_metric.py",
+                        "?? scripts/check_e064_conditional_gradient.py",
+                        "?? scripts/check_workspace.py",
+                        "?? scripts/screen_e059.py",
+                        "?? src/models/conditional_gradient.py",
+                        "?? src/models/content_target_retrieval.py",
+                        "?? src/models/round_metric_retrieval.py",
+                        "?? src/models/tied_content_heads.py",
+                        "?? src/models/wb_ordinal_heads.py",
+                        "?? submissions/2026-09-27-E060.zip",
+                        "?? submissions/2026-09-27-E060/NOTICE.txt",
+                        "?? submissions/2026-09-27-E060/main.py",
+                        "?? submissions/2026-09-27-E060/verification.json",
+                        "?? submissions/2026-09-28-E061.zip",
+                        "?? submissions/2026-09-28-E061/",
+                        "?? submissions/2026-10-08-E062.zip",
+                        "?? submissions/2026-10-08-E062/",
+                        "?? submissions/2026-10-09-E063.zip",
+                        "?? submissions/2026-10-09-E063/",
+                        "?? submissions/2026-10-23-E064.zip",
+                        "?? submissions/2026-10-23-E064/",
+                        "?? tests/test_a021_selector_contract.py",
+                        "?? tests/test_a023_candidate_boundary.py",
+                        "?? tests/test_conditional_gradient.py",
+                        "?? tests/test_content_target_retrieval.py",
+                        "?? tests/test_e059_interactions.py",
+                        "?? tests/test_e060_assembly.py",
+                        "?? tests/test_e061_assembly.py",
+                        "?? tests/test_e062_assembly.py",
+                        "?? tests/test_e063_assembly.py",
+                        "?? tests/test_round_metric_retrieval.py",
+                        "?? tests/test_tied_content_heads.py",
+                        "?? tests/test_wb_ordinal_heads.py",
+                        "?? tests/test_workspace_check.py",
+                        "?? trip/"
+                    ],
+    "all_entry_dirty_paths_retained":  true,
+    "scope":  [
+                  "New S0 review folder",
+                  "docs/status.md additive notice",
+                  "docs/log.md additive entry"
+              ],
+    "preservation_limit":  "Checks cover explicitly named documents. Model/source/archive preservation rests on no writes/access in this S0; not a fresh whole-checkout content hash.",
+    "actions":  {
+                    "subagents":  0,
+                    "data_cache_zip_access_hash":  0,
+                    "fit_predict_score":  0,
+                    "fixture_test_checker_rerun":  0,
+                    "model_code_changes":  0,
+                    "document_review_and_hashes":  true,
+                    "model_import":  0,
+                    "commit_push":  0,
+                    "remote_network_platform":  0,
+                    "new_E":  0
+                },
+    "proposal":  {
+                     "no_old_allowance_reused":  true,
+                     "path":  "docs/analysis/E064-outputs/s0-post-result-review/s1-c6-diagnostic-handoff.ko.md",
+                     "type":  "Single model-free technical sufficiency diagnosis",
+                     "fresh_gross_minutes":  30,
+                     "cash":  0,
+                     "executed":  false,
+                     "fresh_diagnostic_child_seconds":  90,
+                     "science":  0,
+                     "valid_C6_measurements":  1,
+                     "authorized":  false,
+                     "max_starts":  3
+                 },
+    "result_states":  {
+                          "other_stops":  "All prior STOP/HOLD/exposure/protected roles/A_half nonpromotion/A018 unconfirmed preserved",
+                          "E025":  "fallback/alternative",
+                          "E064":  "parked; public tie UNRESOLVED",
+                          "E041":  "incumbent; provisional TEST only",
+                          "A040":  "HOLD retained; no remote/lifecycle/release PASS"
+                      },
+    "document_helper_repair":  "Prior verification shell had a PowerShell array syntax error; parsing stopped before commands/writes. Corrected in scope; no scientific execution.",
+    "timing":  {
+                   "paid_cost":  0,
+                   "exact_session_start_not_measured":  true,
+                   "scientific_seconds":  0,
+                   "document_writer_accepted_at":  "2026-10-26T20:59:26.2806507+09:00",
+                   "total_review_runtime_claimed":  false,
+                   "released_at":  "2026-10-26T21:06:24.7219911+09:00"
+               },
+    "local_named_jobs":  [
+
+                         ],
+    "owned_running_jobs":  [
+
+                           ],
+    "process_scope":  "Local Python/pythonw/uv census; no other-session or remote inventory guarantee",
+    "outgoing_owner":  "S0-E064-POST-RESULT /root",
+    "incoming_owner":  null,
+    "exclusive_writer_released":  true,
+    "released_at":  "2026-10-26T21:06:24.7219911+09:00",
+    "next":  "User may direct separate S1 using the proposal; no automatic work. Otherwise no writer."
+}

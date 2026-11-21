@@ -1,0 +1,62 @@
+"""New real binding only: imports/signatures/object types, all network blocked."""
+import asyncio
+import inspect
+import json
+from pathlib import Path
+import socket
+import sys
+import time
+from unittest.mock import patch
+
+START = time.monotonic()
+HERE = Path(__file__).resolve().parent
+attempts = []
+def deny(*args, **kwargs):
+    attempts.append("blocked_network_or_auth")
+    raise PermissionError("Preflight: no RPC/auth/network")
+
+# Block network before importing the installed SDK; no credential discovery.
+socket.create_connection = deny
+socket.socket.connect = deny
+socket.socket.connect_ex = deny
+socket.getaddrinfo = deny
+socket.socket.sendto = deny
+
+import modal
+from live_binding import SDK, image_from_id
+from modal._version import __version__
+assert __version__ == "1.6.0"
+checked = {}
+for label, fn in {
+    "Client.from_env": SDK.Client.from_env, "Workspace.hydrate": SDK.Workspace.hydrate,
+    "App.lookup": SDK.App.lookup, "Image.build": SDK.Image.build,
+    "Sandbox.create": SDK.Sandbox.create, "Sandbox.exec": SDK.Sandbox.exec,
+    "Sandbox.terminate": SDK.Sandbox.terminate, "Sandbox.poll": SDK.Sandbox.poll,
+}.items():
+    assert inspect.iscoroutinefunction(fn), label
+    checked[label] = str(inspect.signature(fn))
+
+with patch.object(SDK.Client, "from_env", side_effect=deny):
+    image = image_from_id("im-LOCAL-PREFLIGHT-NOT-QUERIED", None)
+    assert isinstance(image, SDK.Image)
+    assert image.object_id == "im-LOCAL-PREFLIGHT-NOT-QUERIED"
+    workspace = SDK.Workspace.from_context(client=None)
+    assert isinstance(workspace, SDK.Workspace)
+    # Construction only. No hydrate/build/account call.
+    registry = SDK.Image.from_registry("python:3.13.14-slim")
+    assert isinstance(registry, SDK.Image)
+
+# Expected negative: a socket request must fail before network access.
+try:
+    socket.create_connection(("invalid.example", 443))
+except PermissionError:
+    pass
+else:
+    raise AssertionError("Network guard not enforced")
+assert attempts == ["blocked_network_or_auth"]
+result = {"outcome": "LIVE_BINDING_PREFLIGHT_PASS", "sdk": __version__,
+          "elapsed_seconds": time.monotonic()-START, "signatures": checked,
+          "image_handle_translated_to_raw_async_type": True, "expected_negative_blocks": 1,
+          "actual_rpc_calls": 0, "model_imports": 0, "old_suite_repeated": False}
+(HERE / "preflight-result.json").write_text(json.dumps(result, indent=2), encoding="utf-8")
+print(json.dumps({k:v for k,v in result.items() if k != "signatures"}))

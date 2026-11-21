@@ -1,0 +1,89 @@
+[
+    {
+        "url":  "https://raw.githubusercontent.com/SituatedEvals/public/f980ef5059360fcf977ed7971af5c00ee5c1962f/README.md",
+        "retrieved_at":  "2026-10-23T01:45:28.4740747+09:00",
+        "file":  "upstream-README.md.txt",
+        "status":  "OK",
+        "sha256":  "ffa3430f41211ec532d4fc46cbf1f5edb7853bbb45ab041ccd2c30e5884cf2ac"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/SituatedEvals/public/f980ef5059360fcf977ed7971af5c00ee5c1962f/config.yml",
+        "retrieved_at":  "2026-10-23T01:45:28.7679285+09:00",
+        "file":  "upstream-config.yml.txt",
+        "status":  "OK",
+        "sha256":  "bcc6aedf979a22512e2fc23bac5d161eda0dd2735e38c9c04b7c76bed5ad97c6"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/SituatedEvals/public/f980ef5059360fcf977ed7971af5c00ee5c1962f/score.py",
+        "retrieved_at":  "2026-10-23T01:45:29.0323933+09:00",
+        "file":  "upstream-score.py.txt",
+        "status":  "OK",
+        "sha256":  "d1853f2af6630d3cace2a57c94be51e7b317ff697b531b21553aea21c11f8090"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/SituatedEvals/public/f980ef5059360fcf977ed7971af5c00ee5c1962f/data/unicef.json",
+        "retrieved_at":  "2026-10-23T01:45:29.3558691+09:00",
+        "file":  "upstream-data__unicef.json.txt",
+        "status":  "OK",
+        "sha256":  "29870d75423bbfbebd103834c33ecdd121f7b93d14e3eba882913e08c9b9b3ab"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/SituatedEvals/public/f980ef5059360fcf977ed7971af5c00ee5c1962f/data/world_bank.json",
+        "retrieved_at":  "2026-10-23T01:45:29.6199778+09:00",
+        "file":  "upstream-data__world_bank.json.txt",
+        "status":  "OK",
+        "sha256":  "6a5e736886d6d5092ff9c72a1841114dc287bf368350d7325f36bd8384e6d23d"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/SituatedEvals/public/f980ef5059360fcf977ed7971af5c00ee5c1962f/data/unhcr.json",
+        "retrieved_at":  "2026-10-23T01:45:29.9282639+09:00",
+        "file":  "upstream-data__unhcr.json.txt",
+        "status":  "OK",
+        "sha256":  "a44721a8170ca102170a58490470628c81c085210d68a60e3cb774411019a384"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/SituatedEvals/public/f980ef5059360fcf977ed7971af5c00ee5c1962f/tools/check_submission_zip.py",
+        "retrieved_at":  "2026-10-23T01:45:30.1941654+09:00",
+        "file":  "upstream-tools__check_submission_zip.py.txt",
+        "status":  "OK",
+        "sha256":  "e1f7316642f440ece2aedd6e149f5f0a47c108fc836c602815fdd026aeee3d8f"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/SituatedEvals/public/f980ef5059360fcf977ed7971af5c00ee5c1962f/requirements.txt",
+        "retrieved_at":  "2026-10-23T01:45:30.4380234+09:00",
+        "file":  "upstream-requirements.txt.txt",
+        "status":  "OK",
+        "sha256":  "fbbf6a1a9209de01a739a46aa4013dae70bed76e4d8a6c076cebac263f3ddb37"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/SituatedEvals/public/f980ef5059360fcf977ed7971af5c00ee5c1962f/LICENSE",
+        "retrieved_at":  "2026-10-23T01:45:30.6819614+09:00",
+        "file":  "upstream-LICENSE.txt",
+        "status":  "OK",
+        "sha256":  "f38d690effe75689378dd6cb4376ac4204e41cac540990fa4a5800d15d4f5663"
+    },
+    {
+        "url":  "https://simulacrabench.org/",
+        "retrieved_at":  "2026-10-23T01:45:31.4948046+09:00",
+        "file":  "website.html.txt",
+        "status":  "OK",
+        "sha256":  "0b2967f63a6cb5652eb08fcb078443630810ae31c88e2abeb3d4f3f17f24eeed"
+    },
+    {
+        "url":  "https://www.codabench.org/api/competitions/17822/",
+        "retrieved_at":  "2026-10-23T01:45:46.5998067+09:00",
+        "status":  "작업 시간을 초과했습니다."
+    },
+    {
+        "url":  "https://www.codabench.org/competitions/17822/",
+        "retrieved_at":  "2026-10-23T01:46:01.6166116+09:00",
+        "status":  "작업 시간을 초과했습니다."
+    },
+    {
+        "url":  "https://api.github.com/repos/SituatedEvals/public/compare/ee427a94f6cc6a0d9d653b6be68c835a032e7552...f980ef5059360fcf977ed7971af5c00ee5c1962f",
+        "retrieved_at":  "2026-10-23T01:46:02.2290811+09:00",
+        "file":  "upstream-diff.json",
+        "status":  "OK",
+        "sha256":  "c0563763ccb2b2ab2b15c5725a13d5b637ddad75a4d4d948b46d4c295dec937a"
+    }
+]

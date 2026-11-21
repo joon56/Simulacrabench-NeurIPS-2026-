@@ -1,0 +1,1024 @@
+{
+    "files":  [
+                  {
+                      "path":  "cleanup_query.py",
+                      "sha256":  "f3311c40e088b4adb07b12919376d6490016da24d2a00652fb95e5b2d86fbe93",
+                      "bytes":  10928
+                  },
+                  {
+                      "path":  "cleanup-query-reuse.diff",
+                      "sha256":  "64dba20ca053fb703dac28149cf0fffd5ebf3da705e31fdeea248d88b91d172b",
+                      "bytes":  7430
+                  },
+                  {
+                      "path":  "cli-process.json",
+                      "sha256":  "03c899eea70cd112344190cacb2fd8ffc9db510df5cade99e6e7977cec1121fc",
+                      "bytes":  137
+                  },
+                  {
+                      "path":  "cli-stderr.txt",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "cli-stdout.txt",
+                      "sha256":  "5d5415213b57e3bbf64f2a8822397a23279453a65257957b65d3114eb0495504",
+                      "bytes":  409
+                  },
+                  {
+                      "path":  "closeout.md",
+                      "sha256":  "ac350deada3902da817e86af8c40edd4c53a07b69e1ae82a412e32af61086ca2",
+                      "bytes":  5739
+                  },
+                  {
+                      "path":  "contract.py",
+                      "sha256":  "a0f41feabedff09159649606bd6466e786954b7edbd5d59ba8f85556dbd3d8a7",
+                      "bytes":  5096
+                  },
+                  {
+                      "path":  "controller_core.py",
+                      "sha256":  "fc561eee08f1eafbbeac2cbcc5fa31890ef719bf603c5c7dd1af7aea5e556bcb",
+                      "bytes":  1760
+                  },
+                  {
+                      "path":  "cost-time-ledger.json",
+                      "sha256":  "e201d5de68f7fd3b7f180adde65a78781409f3cf101675735a90edf1078d5127",
+                      "bytes":  4325
+                  },
+                  {
+                      "path":  "cycle1-fixture_transport.py",
+                      "sha256":  "d7a6d0e5e8039adcbd97f3b93e247051b82e1089057b54bc56ce895a4ca06a7d",
+                      "bytes":  10447
+                  },
+                  {
+                      "path":  "cycle1-live_worker.py",
+                      "sha256":  "d7dc280de6eda8d5f8602abe5406c26a03de96ab62ff3c8f0237ac8d6b9a85ea",
+                      "bytes":  12129
+                  },
+                  {
+                      "path":  "cycle1-process.json",
+                      "sha256":  "352219636b3a9d3f4d08023832fc737978a4a42816290e3a782a8aad1b476adb",
+                      "bytes":  106
+                  },
+                  {
+                      "path":  "cycle1-source-manifest.json",
+                      "sha256":  "b799f3cdcca5eb75bb30f23264b5e846e2021b962f13ae03c0f6959491fa49be",
+                      "bytes":  3180
+                  },
+                  {
+                      "path":  "cycle1-stderr.txt",
+                      "sha256":  "1ef144f9fa4f4325af88b1b074289fe420af543c49bd13718e6daeeecdd7e4e5",
+                      "bytes":  1661
+                  },
+                  {
+                      "path":  "cycle1-stdout.txt",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "cycle2-case-results.json",
+                      "sha256":  "83bfaeb78eebd1243a151d2885dfa636fc969c79c8ce7d6be92e00c4a9fe4bb8",
+                      "bytes":  1929
+                  },
+                  {
+                      "path":  "cycle2-fixture_transport.py",
+                      "sha256":  "3dc3a61eddfcc25c5a6f316f35875bae2c06bbe9d200d0f959aac87bf9acad89",
+                      "bytes":  10560
+                  },
+                  {
+                      "path":  "cycle2-live_worker.py",
+                      "sha256":  "c00e1249d49f4f7d85728ff0e9ddb324d9b60c955c7a6b7cdbdd92162d06aa9d",
+                      "bytes":  12167
+                  },
+                  {
+                      "path":  "cycle2-process.json",
+                      "sha256":  "78919b6279ac472d0fc82cb4ef7bbc3664c7d422f47b9123b823c1956e7ad41e",
+                      "bytes":  108
+                  },
+                  {
+                      "path":  "cycle2-source-manifest.json",
+                      "sha256":  "7304d6a5c4d76d713cdbd62e37f35a700fefb79f26ed9e1b9ecbde4890188659",
+                      "bytes":  3178
+                  },
+                  {
+                      "path":  "cycle2-stderr.txt",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "cycle2-stdout.txt",
+                      "sha256":  "0b15bd7efc900b3a7f7b76d7b1beafe83b2a43bd894ca0eb8aa9c06bb367135a",
+                      "bytes":  1703
+                  },
+                  {
+                      "path":  "cycle2-tests_lifecycle.py",
+                      "sha256":  "ed8eebacfc07ed374d1a8220a1b7940a6efc24ba23b2d97fcd94a00586b1871a",
+                      "bytes":  5721
+                  },
+                  {
+                      "path":  "cycle3-case-results.json",
+                      "sha256":  "af17b3b51c3750cc9742879435fc194271316194e7b40b250c9c48099a618c76",
+                      "bytes":  246
+                  },
+                  {
+                      "path":  "cycle3-fixture_transport.py",
+                      "sha256":  "cab28e9604e3310f28ad8288c11fa87973d8000da6c6839ec4e9f3a4d0203574",
+                      "bytes":  10909
+                  },
+                  {
+                      "path":  "cycle3-process.json",
+                      "sha256":  "ac4683eb9abfddbe39175fcacfc7b6c08fbe8fc8223606d7f6ed9476f3a8d6de",
+                      "bytes":  110
+                  },
+                  {
+                      "path":  "cycle3-stderr.txt",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "cycle3-stdout.txt",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "cycle3-tests_lifecycle.py",
+                      "sha256":  "c909c40b3fad1df793309d33cd86d137b68432a057c2fb6a0af6552c9e291ac1",
+                      "bytes":  5949
+                  },
+                  {
+                      "path":  "cycle4-case-results.json",
+                      "sha256":  "b0bf0617f63ed0a71f4a4bbab93cfe6cf45b41d97b10959d4dc1c8bf5a743f95",
+                      "bytes":  495
+                  },
+                  {
+                      "path":  "cycle4-process.json",
+                      "sha256":  "e0891332eecf2599944e4389f32ae884d589f9dbb969c962a5594736be8171db",
+                      "bytes":  138
+                  },
+                  {
+                      "path":  "cycle4-stderr.txt",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "cycle4-stdout.txt",
+                      "sha256":  "bcc37a9874012dabaaa75cb03b417804f9c9b2cb933ab8b0dd7363aaec0a954f",
+                      "bytes":  557
+                  },
+                  {
+                      "path":  "dirty-closeout.txt",
+                      "sha256":  "184f0fe5ff15527c15fb34d257489dd2552aa7f718ac2c3259d5032741e8d7e9",
+                      "bytes":  3219
+                  },
+                  {
+                      "path":  "dirty-entry.txt",
+                      "sha256":  "184f0fe5ff15527c15fb34d257489dd2552aa7f718ac2c3259d5032741e8d7e9",
+                      "bytes":  3219
+                  },
+                  {
+                      "path":  "document-preservation.json",
+                      "sha256":  "06f7396d8bdd0fe5f1b4f314dccabfc299de1b5e3b92827d61c9d027f1ed77da",
+                      "bytes":  660
+                  },
+                  {
+                      "path":  "entry.json",
+                      "sha256":  "d54a1ece9eba0a706e668a39b0829cf79fa2d07ec020c03618971fb0e2d57ada",
+                      "bytes":  2042
+                  },
+                  {
+                      "path":  "exposure-ledger.md",
+                      "sha256":  "335971322314d655690496493ee32d0b2c93e9a7cff84fd483eb72dd0c8d1699",
+                      "bytes":  1391
+                  },
+                  {
+                      "path":  "final-record-check.json",
+                      "sha256":  "7266b640383779756be50b37459487fa7bc83f1d60601cc1381695b002b31604",
+                      "bytes":  451
+                  },
+                  {
+                      "path":  "finish_record.py",
+                      "sha256":  "036e2c3687d308e4c77ae87c45e675bcbc780978362db1e3df6b53cf000cda60",
+                      "bytes":  11156
+                  },
+                  {
+                      "path":  "fixture_transport.py",
+                      "sha256":  "cab28e9604e3310f28ad8288c11fa87973d8000da6c6839ec4e9f3a4d0203574",
+                      "bytes":  10909
+                  },
+                  {
+                      "path":  "linux_boundary.py",
+                      "sha256":  "4c2aad23c52813693249a6d104c50f208ed33928086b466e46e853ad074712ff",
+                      "bytes":  5213
+                  },
+                  {
+                      "path":  "linux_runner.py",
+                      "sha256":  "82facf9151daa8eadc55c438be99f4c0cf5e331978c18b3a59530ef2af5b680e",
+                      "bytes":  14813
+                  },
+                  {
+                      "path":  "linux_watchdog.py",
+                      "sha256":  "9b08538d3b5990389e103ef2d391d58fec6ec63795bf0dc5ebcec08bc1991d34",
+                      "bytes":  5583
+                  },
+                  {
+                      "path":  "live_binding.py",
+                      "sha256":  "ca1351a05eea38577632a918b286d5ee7e5c82d423928fd8c2ce1af67de206c8",
+                      "bytes":  835
+                  },
+                  {
+                      "path":  "live_launcher.py",
+                      "sha256":  "055edd6a0aab958297b815b1bf7ecfd37efc7ff15ef2488687e3a1fc8c91961c",
+                      "bytes":  5476
+                  },
+                  {
+                      "path":  "live_worker.py",
+                      "sha256":  "6b8a8caf31ab970b322f5697dbe30aadf223dfe7ff01e1f635dfebb575396b8a",
+                      "bytes":  12346
+                  },
+                  {
+                      "path":  "local_guard.py",
+                      "sha256":  "555759980ceff510f4900d510c16a9f50706d8d2e969b1231f203cfc84db98a7",
+                      "bytes":  2714
+                  },
+                  {
+                      "path":  "loop-red-process.json",
+                      "sha256":  "48966811630c2ff743c22c961e902c456bdd359620d3e5938f492046d594d9a0",
+                      "bytes":  81
+                  },
+                  {
+                      "path":  "loop-red-stderr.txt",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "loop-red-stdout.txt",
+                      "sha256":  "48f194c31c2bc3264a1dd04a8e29f5e4e0a7b98b1a1d33eee303069f6ae1738f",
+                      "bytes":  101
+                  },
+                  {
+                      "path":  "original/confirm_terminal.py",
+                      "sha256":  "0e68a80ce1237aaa0f95d42777a24154b5cee110858e0bf0a692c17a2d75939a",
+                      "bytes":  12216
+                  },
+                  {
+                      "path":  "original/contract.py",
+                      "sha256":  "08aaff6cf44696e1197679a2f428a95c60f50fa186e32042bf6d21f3bced6dfe",
+                      "bytes":  4825
+                  },
+                  {
+                      "path":  "original/controller_core.py",
+                      "sha256":  "fc561eee08f1eafbbeac2cbcc5fa31890ef719bf603c5c7dd1af7aea5e556bcb",
+                      "bytes":  1760
+                  },
+                  {
+                      "path":  "original/linux_boundary.py",
+                      "sha256":  "4c2aad23c52813693249a6d104c50f208ed33928086b466e46e853ad074712ff",
+                      "bytes":  5213
+                  },
+                  {
+                      "path":  "original/linux_runner.py",
+                      "sha256":  "82facf9151daa8eadc55c438be99f4c0cf5e331978c18b3a59530ef2af5b680e",
+                      "bytes":  14813
+                  },
+                  {
+                      "path":  "original/linux_watchdog.py",
+                      "sha256":  "9b08538d3b5990389e103ef2d391d58fec6ec63795bf0dc5ebcec08bc1991d34",
+                      "bytes":  5583
+                  },
+                  {
+                      "path":  "original/live_binding.py",
+                      "sha256":  "ca1351a05eea38577632a918b286d5ee7e5c82d423928fd8c2ce1af67de206c8",
+                      "bytes":  835
+                  },
+                  {
+                      "path":  "original/live_launcher.py",
+                      "sha256":  "e6592b15ce83816fb4487ccb2ca7326f91b40fc984349e7fd22352d6ba9e1e98",
+                      "bytes":  4634
+                  },
+                  {
+                      "path":  "original/live_worker.py",
+                      "sha256":  "5f9b934e435bc62259944f47f97a81f29cf9559b183d7a0b9e87736156b18902",
+                      "bytes":  10822
+                  },
+                  {
+                      "path":  "original/payload.py",
+                      "sha256":  "17273bebff6debd9888983ffcb2a7b3e3dbff572dccd203c05f9c8b5c9f60424",
+                      "bytes":  2663
+                  },
+                  {
+                      "path":  "original/protocol.py",
+                      "sha256":  "4616f24b44d8b482cf90a560a13e59324f20e497af4090d6e588fe437801ff77",
+                      "bytes":  1678
+                  },
+                  {
+                      "path":  "original/sandbox_stage.py",
+                      "sha256":  "723f80623c0b400a7c68d1a8bfd4e6d4b6e9fa4d67060a418db156c8c88621b9",
+                      "bytes":  6848
+                  },
+                  {
+                      "path":  "original/sdk_endpoint.py",
+                      "sha256":  "b5073417ab5d2ae3b857e8e0fdef2d5bb1df1a5a7cc28aff36fea6f4c4c4a93e",
+                      "bytes":  3975
+                  },
+                  {
+                      "path":  "original/source-manifest.json",
+                      "sha256":  "c782c99e29cfceeaba132018d48f2be2a844e7f8b51ba8840157f9ebfa845765",
+                      "bytes":  3079
+                  },
+                  {
+                      "path":  "parent-cli1-local_guard.py",
+                      "sha256":  "e6e6a5c181da5b5cecbf5407e18b9c8472f972f3e861fddc2419944eaa2022bb",
+                      "bytes":  2706
+                  },
+                  {
+                      "path":  "parent-cli1-test_cli_parent.py",
+                      "sha256":  "dd5462f84ce58c6307c3cb32f05dea17db9c41710fad2d66af817ad7e5521f48",
+                      "bytes":  2987
+                  },
+                  {
+                      "path":  "parent-cli2-process.json",
+                      "sha256":  "882c11c2488e7efe26179bccbea5c01f80c305c696ebd8619dfbab51a905e19e",
+                      "bytes":  166
+                  },
+                  {
+                      "path":  "parent-cli2-stderr.txt",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "parent-cli2-stdout.txt",
+                      "sha256":  "aa4bd4de9f4c97c5ebb56bf61e484b29a530f5f534ecc1870c4af8b826b150c1",
+                      "bytes":  303
+                  },
+                  {
+                      "path":  "parent-cli-process.json",
+                      "sha256":  "3051b77d2618d9dd580d4cfc71f34ffb72c06c84c276624c4414103710d1ea20",
+                      "bytes":  163
+                  },
+                  {
+                      "path":  "parent-cli-stderr.txt",
+                      "sha256":  "32f6cefc7102d26da34a193359a86f66f136b0109378f918f1da406290f3afad",
+                      "bytes":  1706
+                  },
+                  {
+                      "path":  "parent-cli-stdout.txt",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "payload.py",
+                      "sha256":  "17273bebff6debd9888983ffcb2a7b3e3dbff572dccd203c05f9c8b5c9f60424",
+                      "bytes":  2663
+                  },
+                  {
+                      "path":  "placement.diff",
+                      "sha256":  "03bdb3447caa2482e531e19eca205561060bd70e312b7fe310b37d1a48b70c78",
+                      "bytes":  1239
+                  },
+                  {
+                      "path":  "preservation.json",
+                      "sha256":  "726fc2dabe29a3b97c0e2740388f4649497700126ddc20355c6a0e2b24c145ef",
+                      "bytes":  2951
+                  },
+                  {
+                      "path":  "protocol.py",
+                      "sha256":  "4616f24b44d8b482cf90a560a13e59324f20e497af4090d6e588fe437801ff77",
+                      "bytes":  1678
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle1-normal/cost-ledger.json",
+                      "sha256":  "dbb0056e2ae83b7a0dc24c74a605820b151ee77b0625ff6dc31d9fd1f9f960a3",
+                      "bytes":  520
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle1-normal/events.jsonl",
+                      "sha256":  "6613319f7917441fd4d8e2988ae4f89fde4e16be16522e20c543acccc2398e71",
+                      "bytes":  3383
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle1-normal/protocol-config.json",
+                      "sha256":  "829361189b8ed342354e4c72a7ea6eada6ff1467fba75e5825d620946769e5c0",
+                      "bytes":  3360
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle1-normal/result.json",
+                      "sha256":  "8eda06c0da940868455dc703f2c6d0fbbc7ee0839643cef4bee090e01394ec01",
+                      "bytes":  1420
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle1-normal/sandbox-query-receipt.json",
+                      "sha256":  "5141dc1349e2ac4fdb2c0443e8b7624540f5db8f3d50755a19cc467422a31978",
+                      "bytes":  4482
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle1-normal/sandbox-terminal-evidence.json",
+                      "sha256":  "4c5e38337b693b3390fc87912da4d5e7ce9fad75808fe10d2af9964d0d11232a",
+                      "bytes":  374
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle1-normal/source-gate.json",
+                      "sha256":  "ce295ced53e9dcc3e11015661cb77ddb7cae13d755b188bd833bb6fc55858e31",
+                      "bytes":  135
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle1-normal/state.json",
+                      "sha256":  "8eda06c0da940868455dc703f2c6d0fbbc7ee0839643cef4bee090e01394ec01",
+                      "bytes":  1420
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle1-normal/termination-receipt.json",
+                      "sha256":  "25c36dff1b1690cfe347b294bdee50615b0ea5924d03d89ef39b15cc2fe6fbf9",
+                      "bytes":  853
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle2-billing-fail/cost-ledger.json",
+                      "sha256":  "c91f0f300888839195d169159a29abf13b87c8c19a8fa5d4a8e96c406224d52f",
+                      "bytes":  520
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle2-billing-fail/events.jsonl",
+                      "sha256":  "a8cfa0b0fd0d52c13e246214278bf250e8fe85d5698860c10d535c286f72e5d0",
+                      "bytes":  3389
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle2-billing-fail/protocol-config.json",
+                      "sha256":  "641036d984e45b3c8312a6acab7a06dfc83e644289c661bb8871d5a04d00c4cf",
+                      "bytes":  3372
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle2-billing-fail/result.json",
+                      "sha256":  "ed578a5a6f4a97bbe11016b2c9e69ad9901376cf6be2070d28dcd22be8d7537f",
+                      "bytes":  1433
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle2-billing-fail/sandbox-query-receipt.json",
+                      "sha256":  "943e771d0ad31b68131dc4db8eec94c09c3ac45c3a14bde204f04b3c39156cdc",
+                      "bytes":  4480
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle2-billing-fail/sandbox-terminal-evidence.json",
+                      "sha256":  "c5beafd710bff45cbe228107a424ab89a9bb292cdc4763fd2c3c103fb9dd2702",
+                      "bytes":  374
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle2-billing-fail/source-gate.json",
+                      "sha256":  "32ac194b69ee450556f35f987e1af1e3f94a76c555e856613976e86fd1041cd6",
+                      "bytes":  135
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle2-billing-fail/state.json",
+                      "sha256":  "ed578a5a6f4a97bbe11016b2c9e69ad9901376cf6be2070d28dcd22be8d7537f",
+                      "bytes":  1433
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle2-billing-fail/termination-receipt.json",
+                      "sha256":  "e6272e5d8f0a66ea8374f2f5662a329b86183aaa928b62adb14775771b4547dc",
+                      "bytes":  732
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle2-cancel/cost-ledger.json",
+                      "sha256":  "16145322bbb599a6cae0f78419a278e2d767c46132f70f145cbd48bd330e3a51",
+                      "bytes":  519
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle2-cancel/events.jsonl",
+                      "sha256":  "5caad7b29bee49d7944de5e004af1e134b1774650ff842306b434e13f9e74e46",
+                      "bytes":  749
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle2-cancel/protocol-config.json",
+                      "sha256":  "954cebd3ccb293d060ad66ffbf6be5055fd98907329a3283b816f0e8c6d403f5",
+                      "bytes":  3366
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle2-cancel/result.json",
+                      "sha256":  "c9769dc9ac193a063bf63486f4042328c67cbaddfe5a59f6644ba4b59f2253e0",
+                      "bytes":  5559
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle2-cancel/sandbox-query-receipt.json",
+                      "sha256":  "b05d172a9d2e770f66a46fceaf882a48a271901e38e7447f3db9cb9587877a31",
+                      "bytes":  4482
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle2-cancel/sandbox-terminal-evidence.json",
+                      "sha256":  "e07dfaf1eb03e447aff633ebf41c4a49234e78e80ecdc4e255af3d6bcc9e843e",
+                      "bytes":  374
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle2-cancel/source-gate.json",
+                      "sha256":  "32ac194b69ee450556f35f987e1af1e3f94a76c555e856613976e86fd1041cd6",
+                      "bytes":  135
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle2-cancel/state.json",
+                      "sha256":  "c9769dc9ac193a063bf63486f4042328c67cbaddfe5a59f6644ba4b59f2253e0",
+                      "bytes":  5559
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle2-cancel/termination-receipt.json",
+                      "sha256":  "d805701cd4b4755fb43ce5ba619a38813a23a7a85dde3fa48542e1ff09c0827e",
+                      "bytes":  709
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle2-hydrate/cost-ledger.json",
+                      "sha256":  "485312122e4f2bf1aaf3c50118fd9913a5ece5f8b643f7d7dd9f50d42fe510e3",
+                      "bytes":  520
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle2-hydrate/events.jsonl",
+                      "sha256":  "45e8eb38c40fcda26c65a8a55639faef809f46c709257e22a0e42b4bf13fc769",
+                      "bytes":  966
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle2-hydrate/protocol-config.json",
+                      "sha256":  "8353dfd40273385c18c094900ea629bd398013a9c31edb8bba24de9a592aac3b",
+                      "bytes":  3364
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle2-hydrate/result.json",
+                      "sha256":  "05be6672a312da8c9cd3dcbb3dd6fe7329acbeee27d77434b43461522945384b",
+                      "bytes":  4179
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle2-hydrate/sandbox-query-receipt.json",
+                      "sha256":  "dc02db3674f62b37bc2ffed12efcb0db866bcfa5bf01abe14068c9f647c00d43",
+                      "bytes":  4485
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle2-hydrate/sandbox-terminal-evidence.json",
+                      "sha256":  "39f4addf91185c6c0568856469bf8eb5154353f791e5ce8d5568123ce5595dce",
+                      "bytes":  374
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle2-hydrate/source-gate.json",
+                      "sha256":  "32ac194b69ee450556f35f987e1af1e3f94a76c555e856613976e86fd1041cd6",
+                      "bytes":  135
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle2-hydrate/state.json",
+                      "sha256":  "05be6672a312da8c9cd3dcbb3dd6fe7329acbeee27d77434b43461522945384b",
+                      "bytes":  4179
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle2-hydrate/termination-receipt.json",
+                      "sha256":  "180f456d49bd7ea675062042e374e3298f9410d1e84437c167531adfeab20071",
+                      "bytes":  710
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle2-id-lost/cost-ledger.json",
+                      "sha256":  "b83bc2c716faabe20abeff7df7184c2ca64a0ae9b3541a6eb9adc8f6ff88a005",
+                      "bytes":  521
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle2-id-lost/events.jsonl",
+                      "sha256":  "4c05759807dc56285f6b20787328030059396f7ec8d0343f2f9a1d7eac975ff8",
+                      "bytes":  3387
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle2-id-lost/protocol-config.json",
+                      "sha256":  "a4080c6c07410999e63e358db1be4722efdb1bcd555faed73924c7cbf11cdf56",
+                      "bytes":  3367
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle2-id-lost/result.json",
+                      "sha256":  "099fd96b54b4a3d3e6402e6a4c9864aca55deb827e627f67b0c4a3f10da1a2f0",
+                      "bytes":  1315
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle2-id-lost/sandbox-query-receipt.json",
+                      "sha256":  "64ce38f92c1e94d3b7cbb51b05c488e8e7e4184a841023f15f6d270c9e02c3cb",
+                      "bytes":  1648
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle2-id-lost/source-gate.json",
+                      "sha256":  "32ac194b69ee450556f35f987e1af1e3f94a76c555e856613976e86fd1041cd6",
+                      "bytes":  135
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle2-id-lost/state.json",
+                      "sha256":  "099fd96b54b4a3d3e6402e6a4c9864aca55deb827e627f67b0c4a3f10da1a2f0",
+                      "bytes":  1315
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle2-id-lost/termination-receipt.json",
+                      "sha256":  "b0cd90d7b77ff32aa04d8aa2a603b911f53bb63527345ec4e9dd4b78a2f2d6af",
+                      "bytes":  434
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle2-normal/cost-ledger.json",
+                      "sha256":  "9cb2c95e636bfeb4a0aa10ae0c03ac738850173c293b008fd1841dab5d12602e",
+                      "bytes":  521
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle2-normal/events.jsonl",
+                      "sha256":  "182a2c4f0a7bac3d2c63870aea5ce7ff50167046d32ad8e4c4de70563b5eee7d",
+                      "bytes":  3392
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle2-normal/protocol-config.json",
+                      "sha256":  "7888e9d7e38d9885ff210f4737c41f16eef9b0fcc160f32dfb497c31da2ec087",
+                      "bytes":  3363
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle2-normal/result.json",
+                      "sha256":  "f6280bfb9fd1b46f54c45d8eb93d9a2224044951e8657fe6649d4924f9827b6c",
+                      "bytes":  1345
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle2-normal/sandbox-query-receipt.json",
+                      "sha256":  "a334373a757f6903af4934a8f666e3236c7ce66b6fa615ed5e892be3b2cc9c18",
+                      "bytes":  4479
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle2-normal/sandbox-terminal-evidence.json",
+                      "sha256":  "b15d4bb30eafda7df8062678d5c45189fd0a8907ae69d6509c212efe68cd6278",
+                      "bytes":  374
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle2-normal/source-gate.json",
+                      "sha256":  "32ac194b69ee450556f35f987e1af1e3f94a76c555e856613976e86fd1041cd6",
+                      "bytes":  135
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle2-normal/state.json",
+                      "sha256":  "f6280bfb9fd1b46f54c45d8eb93d9a2224044951e8657fe6649d4924f9827b6c",
+                      "bytes":  1345
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle2-normal/termination-receipt.json",
+                      "sha256":  "45214e2e17cfb0b5cfc25334b6c54ffde113c9c905317c557b628fa22fc18721",
+                      "bytes":  707
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle2-reference-fail/cost-ledger.json",
+                      "sha256":  "2917cb1080e8b3bfee0d34bc526e6c23a2db52512ee98d3faf451100bbb80379",
+                      "bytes":  518
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle2-reference-fail/events.jsonl",
+                      "sha256":  "26ee4120d3b428361c426624633505e2350e4133b276dbb2864854a1552a58f2",
+                      "bytes":  2289
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle2-reference-fail/protocol-config.json",
+                      "sha256":  "3d1508535ddc705210d55281169fe3443a793b51121ea8e263165066a99ce7fb",
+                      "bytes":  3374
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle2-reference-fail/result.json",
+                      "sha256":  "4e6af564dc0f9f7ba2219b5b70e9e4b0cdc19350ee989d932091ab1092575555",
+                      "bytes":  1762
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle2-reference-fail/sandbox-query-receipt.json",
+                      "sha256":  "5ff52a9608550c5e75ec2814bd9917da2edf5449e3af650415d64b865123623c",
+                      "bytes":  4513
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle2-reference-fail/sandbox-terminal-evidence.json",
+                      "sha256":  "3cdfccd180909bf01b81aab3350b3d42f6ce626c481f71f66c4b27a8fa68f7a1",
+                      "bytes":  374
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle2-reference-fail/source-gate.json",
+                      "sha256":  "32ac194b69ee450556f35f987e1af1e3f94a76c555e856613976e86fd1041cd6",
+                      "bytes":  135
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle2-reference-fail/state.json",
+                      "sha256":  "4e6af564dc0f9f7ba2219b5b70e9e4b0cdc19350ee989d932091ab1092575555",
+                      "bytes":  1762
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle2-reference-fail/termination-receipt.json",
+                      "sha256":  "79842a7b3da4a1e544bb1eb71fd93b7ad31d8949244145b9dfbb3b71eb20ac8d",
+                      "bytes":  710
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle2-timeout/cost-ledger.json",
+                      "sha256":  "b96aa43338d472645b1e3140c9988fed56c6731e1549a95d20c62fda30eb4a98",
+                      "bytes":  521
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle2-timeout/events.jsonl",
+                      "sha256":  "1b2073eb0fce8c20afda6539d5727e4a8813cb1cfcc16d31c37e6e9ffb245ad8",
+                      "bytes":  741
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle2-timeout/protocol-config.json",
+                      "sha256":  "838f494281fe18752f70285325b6fc67c280e36877f0adffce6dbbc6f8755e55",
+                      "bytes":  3367
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle2-timeout/result.json",
+                      "sha256":  "5b145fd0ae6918f8d40c9f2d9cb7c33b4b398f7fe8339453bc4cba974a4c6bcd",
+                      "bytes":  4768
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle2-timeout/sandbox-query-receipt.json",
+                      "sha256":  "8ae48e91090a9db4b726f7cb7ffadb4cc4af942f714f3c96b29b1660e29b11a1",
+                      "bytes":  4486
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle2-timeout/sandbox-terminal-evidence.json",
+                      "sha256":  "761c4b6e94dc79d1ab012e4eeec11e9df6194c055720a9653191e50fdd460f51",
+                      "bytes":  374
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle2-timeout/source-gate.json",
+                      "sha256":  "32ac194b69ee450556f35f987e1af1e3f94a76c555e856613976e86fd1041cd6",
+                      "bytes":  135
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle2-timeout/state.json",
+                      "sha256":  "5b145fd0ae6918f8d40c9f2d9cb7c33b4b398f7fe8339453bc4cba974a4c6bcd",
+                      "bytes":  4768
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle2-timeout/termination-receipt.json",
+                      "sha256":  "dd3a69a98d15c535883dd61ae55eab90111f5c76f8b705c2e10ee58a5d820b6b",
+                      "bytes":  709
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle2-unknown-terminal/cost-ledger.json",
+                      "sha256":  "7c9399da39ee15b2e1e4e0a8b9c37ed7167b1722184e702609511d7fc1407de7",
+                      "bytes":  521
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle2-unknown-terminal/events.jsonl",
+                      "sha256":  "99bf671268e54ea2e536ec2f0ff630efab3d7787754171782596653ddc92bee5",
+                      "bytes":  3390
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle2-unknown-terminal/protocol-config.json",
+                      "sha256":  "4fcdc4dab3fcdb21220a9b174ac047099719de60bff7597c76a169ffca4d8ef7",
+                      "bytes":  3376
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle2-unknown-terminal/result.json",
+                      "sha256":  "68b1ad13cbda6be6fd258a9e81cad902adf1ce791c978c686204e66dcb48e92a",
+                      "bytes":  1332
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle2-unknown-terminal/sandbox-query-receipt.json",
+                      "sha256":  "09620416ed2aaf284fcf6234e4c7409c7aa0125940ceb897e9c6d3e3216e7823",
+                      "bytes":  2719
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle2-unknown-terminal/source-gate.json",
+                      "sha256":  "32ac194b69ee450556f35f987e1af1e3f94a76c555e856613976e86fd1041cd6",
+                      "bytes":  135
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle2-unknown-terminal/state.json",
+                      "sha256":  "68b1ad13cbda6be6fd258a9e81cad902adf1ce791c978c686204e66dcb48e92a",
+                      "bytes":  1332
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle2-unknown-terminal/termination-receipt.json",
+                      "sha256":  "92e6e38df9a110b942f93b3a5165690d1666d13e9e80ab38dfc0239eb41113ee",
+                      "bytes":  416
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle3-create-stall/events.jsonl",
+                      "sha256":  "4f4f330f740ccc42d590795348ba898203db2c463436eb5569954bc5141a9f3b",
+                      "bytes":  627
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle3-create-stall/protocol-config.json",
+                      "sha256":  "37b853e168863e451d1351576d3d2291a69ea8ca8dea9f514aaef20e5045575c",
+                      "bytes":  3369
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle3-create-stall/source-gate.json",
+                      "sha256":  "f66cdf8370b459c3fdcf4cdd3d9f0dd805970a20255e93103c99846b0abb6105",
+                      "bytes":  135
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle3-create-stall/state.json",
+                      "sha256":  "5da818a40afab07ce0d31c4609b379432c4e7dd590f8268fa0df671df74743a2",
+                      "bytes":  867
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle3-schedule-fail/cost-ledger.json",
+                      "sha256":  "da05b2a81cae9a640511394e67eeb1fcb88e10fc247fb2b771e0f151e535158f",
+                      "bytes":  520
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle3-schedule-fail/events.jsonl",
+                      "sha256":  "492f8c1a6ec1f8ff084a49ba569b0974f30c40e5d523fd43192a3081bc56fa1f",
+                      "bytes":  737
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle3-schedule-fail/protocol-config.json",
+                      "sha256":  "67f73b6e1784836fe1f1f4a67f4e3cddd408c09bc126b955a8b45920797f79f1",
+                      "bytes":  3370
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle3-schedule-fail/result.json",
+                      "sha256":  "6ca4eddda20c33dfafe5c1c1991c982f471095c3cc5bb2e7593e7367d953d3ed",
+                      "bytes":  3755
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle3-schedule-fail/sandbox-query-receipt.json",
+                      "sha256":  "a0006853a45b22160606fcf686f8a1c32bd2eb3dd0cafe5118810dd09a185e58",
+                      "bytes":  3454
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle3-schedule-fail/sandbox-terminal-evidence.json",
+                      "sha256":  "903e0966847aa03df9c15c842b362d662afdff47b097b0497834b57c188a29df",
+                      "bytes":  374
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle3-schedule-fail/source-gate.json",
+                      "sha256":  "f66cdf8370b459c3fdcf4cdd3d9f0dd805970a20255e93103c99846b0abb6105",
+                      "bytes":  135
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle3-schedule-fail/state.json",
+                      "sha256":  "6ca4eddda20c33dfafe5c1c1991c982f471095c3cc5bb2e7593e7367d953d3ed",
+                      "bytes":  3755
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle3-schedule-fail/termination-receipt.json",
+                      "sha256":  "da81e5ec1c4d29ab893858bd1cfe42cf5ca2a158a85d27720ce5ebddb51fb99e",
+                      "bytes":  710
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle4-billing-cash/cost-ledger.json",
+                      "sha256":  "86c6d52dbbbd1359859fcb2b1c38ddaf58ec92b66c907ec1467257c9f5670b03",
+                      "bytes":  520
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle4-billing-cash/events.jsonl",
+                      "sha256":  "0bd8b68651810b3b340664f3db8d79626a18fa166c8290ed9887fa9b00fd8c2c",
+                      "bytes":  3390
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle4-billing-cash/protocol-config.json",
+                      "sha256":  "8b70bc5a97717d1fe456cd05633eecde87ab821fa3729e51c71a3b88ff03e176",
+                      "bytes":  3372
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle4-billing-cash/result.json",
+                      "sha256":  "4197fa0b672e96e6408b53ca6192f9e9bc820d45cd21ac2f5a428026ad3d25fb",
+                      "bytes":  1431
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle4-billing-cash/sandbox-query-receipt.json",
+                      "sha256":  "4dd8b27179287ebde8e26834725e2bb2384013181ae3bd68e02795c0f3fc5db5",
+                      "bytes":  4505
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle4-billing-cash/sandbox-terminal-evidence.json",
+                      "sha256":  "5e11a4232a93c5c23a446e1906adc78dfaef7ac70b9f6c36799b4f8fe09171f6",
+                      "bytes":  374
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle4-billing-cash/source-gate.json",
+                      "sha256":  "f66cdf8370b459c3fdcf4cdd3d9f0dd805970a20255e93103c99846b0abb6105",
+                      "bytes":  135
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle4-billing-cash/state.json",
+                      "sha256":  "4197fa0b672e96e6408b53ca6192f9e9bc820d45cd21ac2f5a428026ad3d25fb",
+                      "bytes":  1431
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle4-billing-cash/termination-receipt.json",
+                      "sha256":  "c3ae2e8f90fce826418dfcf0776d584cad5b9e9024bd7123030e1fba088015cd",
+                      "bytes":  800
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle4-stream-fail/cost-ledger.json",
+                      "sha256":  "5d3b97bd6fa649717b9a6a9015188d585c7bc573c16c9bce2b6f86a4b0e2d65f",
+                      "bytes":  520
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle4-stream-fail/events.jsonl",
+                      "sha256":  "85d687297eb7e662914577320c5367138161321c200b122b938bb7c9da5b6eeb",
+                      "bytes":  871
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle4-stream-fail/protocol-config.json",
+                      "sha256":  "72688d43e19b196a9c1f061ec68bf33c5768f2465d5a9e35ec9aece52a50119f",
+                      "bytes":  3371
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle4-stream-fail/result.json",
+                      "sha256":  "bfaa91b26a6e95293419e8466db1dce71693e899559d8ae7fb19de7984afd970",
+                      "bytes":  3527
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle4-stream-fail/sandbox-query-receipt.json",
+                      "sha256":  "23b6d7bf32d90746607a25d723b5eb1ac08405b44ac7d066a7ddf2613f7c87c4",
+                      "bytes":  4502
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle4-stream-fail/sandbox-terminal-evidence.json",
+                      "sha256":  "9f03c78453e33776a9dbf6f7ad4a1775531a16a98fc7a7d270fdcfd016dcc645",
+                      "bytes":  374
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle4-stream-fail/source-gate.json",
+                      "sha256":  "f66cdf8370b459c3fdcf4cdd3d9f0dd805970a20255e93103c99846b0abb6105",
+                      "bytes":  135
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle4-stream-fail/state.json",
+                      "sha256":  "bfaa91b26a6e95293419e8466db1dce71693e899559d8ae7fb19de7984afd970",
+                      "bytes":  3527
+                  },
+                  {
+                      "path":  "protocol-evidence/a040-local-cycle4-stream-fail/termination-receipt.json",
+                      "sha256":  "f90d05fa5c3fdd00822b2cbcf62d2abc596ecc0de56f2103243aa015d96745ef",
+                      "bytes":  709
+                  },
+                  {
+                      "path":  "protocol-evidence/parent-child-guard.json",
+                      "sha256":  "e6bc0afd13905699e9f78c66b77014f7b55bbcd26e4072d1223c4834e4477a3f",
+                      "bytes":  31
+                  },
+                  {
+                      "path":  "protocol-evidence/parent-contract.json",
+                      "sha256":  "38e194d74b9ca84da4952bf4c2ad7a9573db203d605cfcd1acee141f0cb8f226",
+                      "bytes":  3780
+                  },
+                  {
+                      "path":  "protocol-evidence/parent-exit.json",
+                      "sha256":  "2618b95f1f6be6bfde8537756f85b83845d039001563135b9d59d817446733eb",
+                      "bytes":  16
+                  },
+                  {
+                      "path":  "protocol-evidence/parent-stderr.txt",
+                      "sha256":  "78edf992b632aa2204e29ae4141318e93456c597ac44375dc2ecae014290ec3d",
+                      "bytes":  645
+                  },
+                  {
+                      "path":  "protocol-evidence/parent-stdout.txt",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "regression-history.md",
+                      "sha256":  "947cc92f380688a4a1f5038e1a277996896a2570abc48cc9b39d0d9ff1cd756f",
+                      "bytes":  3199
+                  },
+                  {
+                      "path":  "s0-handoff.ko.md",
+                      "sha256":  "54ee3fc1703f2d2fa1f89372c2f838c6c3423632df602a59d72e996165c76d98",
+                      "bytes":  2329
+                  },
+                  {
+                      "path":  "sandbox_stage.py",
+                      "sha256":  "2b0ed4cd332a4e9ca85f335dd3fa3637eecc467a77be7f063b714c051dff0191",
+                      "bytes":  7237
+                  },
+                  {
+                      "path":  "sdk_endpoint.py",
+                      "sha256":  "877117e9aae8a9ddb53096ebc4e23488dc94511b9e52ce430663a03c94ff09cc",
+                      "bytes":  4930
+                  },
+                  {
+                      "path":  "sdk-boundary-evidence.md",
+                      "sha256":  "7626684409a19acd8838839fa3ec9b1b63cb06423efc7371e92ce0e4129f47be",
+                      "bytes":  3078
+                  },
+                  {
+                      "path":  "source.diff",
+                      "sha256":  "a1fbbd13a3a13726625262c69d2f6906c91ed8b95d5076f0fe7d6df31e8f042a",
+                      "bytes":  17215
+                  },
+                  {
+                      "path":  "source-manifest.json",
+                      "sha256":  "9bed44512e531215e68c4cc0a2dfd5ea99670a44f4125166eb62999684e624f3",
+                      "bytes":  3178
+                  },
+                  {
+                      "path":  "test_cli_entry.py",
+                      "sha256":  "74cc19e4866f4895c49c3b10ca28adbd12c4ca05bd893b567b269826a81da25b",
+                      "bytes":  1431
+                  },
+                  {
+                      "path":  "test_cli_parent.py",
+                      "sha256":  "caca35cc92801ffb1de70425ea57a8cf99ceb38b488691e81a61ee5215255225",
+                      "bytes":  3002
+                  },
+                  {
+                      "path":  "test_loop_red.py",
+                      "sha256":  "57e52189cfc832c547d6c07241f22f425a18aacb7f0d559fe573b20b743f6df2",
+                      "bytes":  925
+                  },
+                  {
+                      "path":  "tests_lifecycle.py",
+                      "sha256":  "e01704dea36198084fda1b0de4bed9e514dfed1545a98ec7d30ebde44b2150b0",
+                      "bytes":  6086
+                  },
+                  {
+                      "path":  "verification.json",
+                      "sha256":  "3189f6f269a9e6aac78c198594d8f77f823a3ac174e40a35f940b1f7c3d505e4",
+                      "bytes":  4320
+                  }
+              ]
+}

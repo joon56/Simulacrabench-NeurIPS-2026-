@@ -1,0 +1,14 @@
+{
+    "prior_scientific_parent_seconds":  1077.3504532,
+    "prior_scientific_processes":  4,
+    "new_binding_preflight_seconds":  2.4183792,
+    "new_live_controller_seconds":  3.7834749,
+    "new_scientific_seconds":  0,
+    "prior_active_seconds":  4477.3871369,
+    "recorded_utc":  "2026-10-04T12:50:37.3396847Z",
+    "new_active_seconds":  1027.3396847,
+    "child_times_already_inside_active_wall":  true,
+    "new_scientific_processes":  0,
+    "basis":  "Active wall from conservative entry through final artifact verification checkpoint; intersession wait excluded",
+    "cumulative_active_seconds":  5504.7268215999993
+}

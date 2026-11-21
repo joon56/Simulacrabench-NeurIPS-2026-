@@ -1,0 +1,166 @@
+{
+  "date_kst": "2026-10-04",
+  "role": "S0",
+  "task": "technical result document/source review and proposed handoff",
+  "head": "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+  "workflow_revision": "2026-09-27-r4",
+  "workflow_sha256": "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642",
+  "read_evidence": {
+    "ordered_entry_command": "c74ded: AGENTS -> CLAUDE -> status -> newest3log -> workflow",
+    "named_artifact_reads": [
+      "30a6d5: closeout, verification, diagnosis, entry",
+      "b70e0e: controller, launcher, source-hashes",
+      "b79179: diff and other artifacts, partially truncated",
+      "ea6de2: recovered cleanup table; regression JSON shape",
+      "99a07a: recovered all15 case verdicts and summary; diff tail",
+      "0dd960: remaining workflow and cost-policy; verification"
+    ],
+    "hash_check": "a7fc25: explicit allowlisted documents/source only",
+    "newest_log_entries_at_entry": [
+      "2026-10-04 A040 S1 local UTF-8 and bounded controller repair",
+      "2026-10-03 A040 S0 scopes local controller repair after logging failure",
+      "2026-10-03 A040 Modal resume2 stops on local build progress encoding"
+    ]
+  },
+  "decision": "ACCEPT_LOCAL_CONTROLLER_CONTRACT / RECOMMEND_BOUNDED_S1_CONTINUATION",
+  "execution_authority": "No S0 execution. Proposed scope activated only by user instruction to S1.",
+  "selected_manifest_matches": 12,
+  "before_hashes": [
+    {
+      "path": "docs/analysis/A040-outputs/modal-controller-repair1/closeout.md",
+      "sha256": "779c4d315f1e8ee85ebdc1d1014446d77a236efef52509a4385e87f7e1daf2ea",
+      "manifest_sha256": "779c4d315f1e8ee85ebdc1d1014446d77a236efef52509a4385e87f7e1daf2ea",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/modal-controller-repair1/verification.json",
+      "sha256": "7be5d4ee3efbb01f4d293f4e714fbdeb75061c5421ab4e0f6d72660cf5586d65",
+      "manifest_sha256": "7be5d4ee3efbb01f4d293f4e714fbdeb75061c5421ab4e0f6d72660cf5586d65",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/modal-controller-repair1/diagnosis-and-contract.md",
+      "sha256": "b5fabc833206459f1bc739012d955d85caedeb938355e333308561fd884c58ec",
+      "manifest_sha256": "b5fabc833206459f1bc739012d955d85caedeb938355e333308561fd884c58ec",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/modal-controller-repair1/entry.json",
+      "sha256": "5961341a829812dc254a5923e2f7a9c1893b5261e446ac9abb0e1c7dafaec7f4",
+      "manifest_sha256": "5961341a829812dc254a5923e2f7a9c1893b5261e446ac9abb0e1c7dafaec7f4",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/modal-controller-repair1/controller.py",
+      "sha256": "d830545f9ced6778d51f095fff68fd692e648496ba089ffb47d46db0fd1695de",
+      "manifest_sha256": "d830545f9ced6778d51f095fff68fd692e648496ba089ffb47d46db0fd1695de",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/modal-controller-repair1/launcher.py",
+      "sha256": "cf9b61ab363c52a3bd26cacf08fae0b098bdfc8b7215c28ec6ca4e1d64acbda6",
+      "manifest_sha256": "cf9b61ab363c52a3bd26cacf08fae0b098bdfc8b7215c28ec6ca4e1d64acbda6",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/modal-controller-repair1/source.diff",
+      "sha256": "79c85e3c489a838b970c8d7fbd3c988082092ca991a14a0c4e1263922d60cba0",
+      "manifest_sha256": "79c85e3c489a838b970c8d7fbd3c988082092ca991a14a0c4e1263922d60cba0",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/modal-controller-repair1/source-hashes.json",
+      "sha256": "c05f0fba522ee7eb0263fc8e0970de5d0e7284595ec96f5a5325e8cc7640db0e",
+      "manifest_sha256": "c05f0fba522ee7eb0263fc8e0970de5d0e7284595ec96f5a5325e8cc7640db0e",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/modal-controller-repair1/cleanup-state-table.md",
+      "sha256": "694613b14d28ddba70c1ac86199fb1f09f263007d319ab60d6c9fd44d9706c5a",
+      "manifest_sha256": "694613b14d28ddba70c1ac86199fb1f09f263007d319ab60d6c9fd44d9706c5a",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/modal-controller-repair1/regression-evidence/suite2/regression.json",
+      "sha256": "bba35b178e2b14a6f92fa569c17a1d872c40da5038a9fd5b5ef18aef3a821d91",
+      "manifest_sha256": "bba35b178e2b14a6f92fa569c17a1d872c40da5038a9fd5b5ef18aef3a821d91",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/modal-controller-repair1/sdk-contract-result.json",
+      "sha256": "8d09d2abb8a7dc63e960e497611c31a205a2c7caf7c5954c6f29ad29439abee5",
+      "manifest_sha256": "8d09d2abb8a7dc63e960e497611c31a205a2c7caf7c5954c6f29ad29439abee5",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/modal-controller-repair1/prior-artifact-check.json",
+      "sha256": "403ef73b2b1df570a2279e92f8ec17cc760e50277309f76e80e0403e6c40f212",
+      "manifest_sha256": "403ef73b2b1df570a2279e92f8ec17cc760e50277309f76e80e0403e6c40f212",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/modal-controller-repair1/artifact-manifest.json",
+      "sha256": "6568b5ab99aefd1136f3dff633116e6a084f736c2147edc104ea2dea84abb00b",
+      "manifest_sha256": null,
+      "match": null
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "86394bbf164a2b7df6a309f4564b9dacf3b2799fa0227a703e4ea11d4d842596"
+    },
+    {
+      "path": "CLAUDE.md",
+      "sha256": "69175e6d741a17042db4852d4961a5c52bd97fe2cd5bfbff762d30d7e5270364"
+    },
+    {
+      "path": "docs/status.md",
+      "sha256": "d1d3cee06bc7a158c73fdcf9389da794263143d5f0e7ba239947866031f93148"
+    },
+    {
+      "path": "docs/log.md",
+      "sha256": "f41f9097e37f74101f80f2a807084052f6399bb17a44dbfd2be7b53c9e30f70c"
+    },
+    {
+      "path": "docs/workflow.md",
+      "sha256": "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642"
+    },
+    {
+      "path": "docs/tree.md",
+      "sha256": "eaa884a4194db103335136495205fe5b51297c17db15e9eac62946ced286cc44"
+    }
+  ],
+  "counters": {
+    "tests": 0,
+    "model_imports": 0,
+    "sdk_imports": 0,
+    "fit_predict_score": 0,
+    "account_rpc": 0,
+    "remote_resource_creation": 0,
+    "protected_or_staged_data_reads_hashes": 0,
+    "zip": 0,
+    "commit_push": 0,
+    "subagents": 0
+  },
+  "preserved_scientific_history": {
+    "processes": 4,
+    "parent_seconds": 1077.3504532
+  },
+  "carried_preparation_controller_active_seconds": 4477.3871369,
+  "limitations": [
+    "No real SDK binding or server state verification",
+    "Selected manifest entries only, not whole tree/data manifest rehash",
+    "No independent current credit/limit/billing verification",
+    "Process check covers named local Python/pythonw/uv only",
+    "Review verification is document/source preservation, not fresh contract execution"
+  ],
+  "document_preservation_check": "PASS_DOCUMENT_SOURCE_REVIEW_ONLY",
+  "final_check_evidence": "7ed564",
+  "selected_preserved_files": 17,
+  "status_log_prior_body_byte_preserved": true,
+  "preservation_method": "Remove only the new blocks and reverse status date; SHA256 reconstructs both exact prior files including BOM/newlines",
+  "local_markdown_links_exist": true,
+  "after_shared_hashes": {
+    "docs/status.md": "422abdc536757c7de01d8d4b84989b91a5bd2ccf9ca0ca0abe505cf98ad42c03",
+    "docs/log.md": "9a55040dffdf93b8dd00d81e78fca44f5aa1030160ad8e7439578724f6e1273a"
+  }
+}

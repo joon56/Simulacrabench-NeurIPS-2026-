@@ -1,0 +1,168 @@
+{
+  "outcome": "PASS_MODEL_FREE_ONLY",
+  "original_error": "event() got multiple values for argument 'name'",
+  "actual_logger_ast_sha256": "7c60b14a5538a4489d025d2a47a10b5e10d2c5fc9595c4681a5a8fc85d0dd140",
+  "payload": {
+    "event": "many_class_head",
+    "elapsed": 0.024416199999905075,
+    "head_name": "fixture_head",
+    "classes": 15
+  },
+  "call_sites": [
+    {
+      "file": "runner.py",
+      "line": 55,
+      "keywords": [
+        "scope",
+        "passed"
+      ]
+    },
+    {
+      "file": "runner.py",
+      "line": 59,
+      "keywords": [
+        "files",
+        "passed"
+      ]
+    },
+    {
+      "file": "runner.py",
+      "line": 70,
+      "keywords": [
+        "torch",
+        "cuda",
+        "device",
+        "affinity"
+      ]
+    },
+    {
+      "file": "runner.py",
+      "line": 120,
+      "keywords": [
+        "checkpoint_loads"
+      ]
+    },
+    {
+      "file": "runner.py",
+      "line": 96,
+      "keywords": [
+        "count",
+        "rows",
+        "features"
+      ]
+    },
+    {
+      "file": "runner.py",
+      "line": 109,
+      "keywords": [
+        "count",
+        "classes"
+      ]
+    },
+    {
+      "file": "runner.py",
+      "line": 83,
+      "keywords": [
+        "count",
+        "seconds"
+      ]
+    },
+    {
+      "file": "runner.py",
+      "line": 103,
+      "keywords": [
+        "count",
+        "seconds"
+      ]
+    },
+    {
+      "file": "runner.py",
+      "line": 116,
+      "keywords": [
+        "count",
+        "seconds"
+      ]
+    },
+    {
+      "file": "runner.py",
+      "line": 140,
+      "keywords": [
+        "error"
+      ]
+    },
+    {
+      "file": "tests_local.py",
+      "line": 43,
+      "keywords": [
+        "sha256",
+        "F",
+        "S",
+        "E",
+        "Q",
+        "seed"
+      ]
+    },
+    {
+      "file": "tests_local.py",
+      "line": 52,
+      "keywords": [
+        "passed"
+      ]
+    },
+    {
+      "file": "tests_local.py",
+      "line": 77,
+      "keywords": [
+        "passed",
+        "actual_E041_executed"
+      ]
+    },
+    {
+      "file": "tests_local.py",
+      "line": 96,
+      "keywords": [
+        "max_abs_diff",
+        "exact"
+      ]
+    },
+    {
+      "file": "tests_local.py",
+      "line": 109,
+      "keywords": [
+        "passed"
+      ]
+    },
+    {
+      "file": "tests_local.py",
+      "line": 136,
+      "keywords": [
+        "alpha",
+        "guard_accepted",
+        "efficacy_evidence"
+      ]
+    },
+    {
+      "file": "tests_local.py",
+      "line": 142,
+      "keywords": [
+        "passed",
+        "targets",
+        "vectors"
+      ]
+    },
+    {
+      "file": "tests_local.py",
+      "line": 124,
+      "keywords": [
+        "head_name",
+        "classes"
+      ]
+    }
+  ],
+  "call_sites_checked": 18,
+  "affected_consumers": [],
+  "forbidden_imports": [],
+  "scientific_processes": 0,
+  "logger_imported": false,
+  "elapsed_seconds": 0.042492399999900954
+}

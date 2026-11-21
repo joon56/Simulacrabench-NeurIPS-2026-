@@ -1,0 +1,98 @@
+{
+    "task":  "S3-METHOD-DRAFTS-A044",
+    "reviewed_at":  "2026-10-23T17:43:54.3548588+09:00",
+    "method":  "All eight full-page 130dpi PNGs emitted through view_image and individually visually inspected by primary assistant",
+    "reviewer":  "S3 /root",
+    "result":  "PASS",
+    "pages":  [
+                  {
+                      "candidate":  "E041",
+                      "page":  1,
+                      "image":  "E041-page-1.png",
+                      "review_banner_and_candidate":  true,
+                      "formula_or_table_legible":  true,
+                      "no_visible_clipping_overlap_or_missing_glyphs":  true,
+                      "margins_header_footer":  true,
+                      "references_legible":  "not on this page",
+                      "notes":  "Readable body and page numbering; whitespace intentional"
+                  },
+                  {
+                      "candidate":  "E041",
+                      "page":  2,
+                      "image":  "E041-page-2.png",
+                      "review_banner_and_candidate":  true,
+                      "formula_or_table_legible":  true,
+                      "no_visible_clipping_overlap_or_missing_glyphs":  true,
+                      "margins_header_footer":  true,
+                      "references_legible":  "not on this page",
+                      "notes":  "Readable body and page numbering; whitespace intentional"
+                  },
+                  {
+                      "candidate":  "E041",
+                      "page":  3,
+                      "image":  "E041-page-3.png",
+                      "review_banner_and_candidate":  true,
+                      "formula_or_table_legible":  true,
+                      "no_visible_clipping_overlap_or_missing_glyphs":  true,
+                      "margins_header_footer":  true,
+                      "references_legible":  "not on this page",
+                      "notes":  "Readable body and page numbering; whitespace intentional"
+                  },
+                  {
+                      "candidate":  "E041",
+                      "page":  4,
+                      "image":  "E041-page-4.png",
+                      "review_banner_and_candidate":  true,
+                      "formula_or_table_legible":  true,
+                      "no_visible_clipping_overlap_or_missing_glyphs":  true,
+                      "margins_header_footer":  true,
+                      "references_legible":  true,
+                      "notes":  "Readable body and page numbering; whitespace intentional"
+                  },
+                  {
+                      "candidate":  "E025",
+                      "page":  1,
+                      "image":  "E025-page-1.png",
+                      "review_banner_and_candidate":  true,
+                      "formula_or_table_legible":  true,
+                      "no_visible_clipping_overlap_or_missing_glyphs":  true,
+                      "margins_header_footer":  true,
+                      "references_legible":  "not on this page",
+                      "notes":  "Readable body and page numbering; whitespace intentional"
+                  },
+                  {
+                      "candidate":  "E025",
+                      "page":  2,
+                      "image":  "E025-page-2.png",
+                      "review_banner_and_candidate":  true,
+                      "formula_or_table_legible":  true,
+                      "no_visible_clipping_overlap_or_missing_glyphs":  true,
+                      "margins_header_footer":  true,
+                      "references_legible":  "not on this page",
+                      "notes":  "Readable body and page numbering; whitespace intentional"
+                  },
+                  {
+                      "candidate":  "E025",
+                      "page":  3,
+                      "image":  "E025-page-3.png",
+                      "review_banner_and_candidate":  true,
+                      "formula_or_table_legible":  true,
+                      "no_visible_clipping_overlap_or_missing_glyphs":  true,
+                      "margins_header_footer":  true,
+                      "references_legible":  "not on this page",
+                      "notes":  "Readable body and page numbering; whitespace intentional"
+                  },
+                  {
+                      "candidate":  "E025",
+                      "page":  4,
+                      "image":  "E025-page-4.png",
+                      "review_banner_and_candidate":  true,
+                      "formula_or_table_legible":  true,
+                      "no_visible_clipping_overlap_or_missing_glyphs":  true,
+                      "margins_header_footer":  true,
+                      "references_legible":  true,
+                      "notes":  "Densest page; table, body and references remain inside margins above footer"
+                  }
+              ],
+    "limitations":  "Standard PDF Base14 fonts inspected in local renderer; no claim about every external viewer or print system"
+}

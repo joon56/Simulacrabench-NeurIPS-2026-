@@ -1,0 +1,33 @@
+{
+  "mode": "preflight",
+  "status": "PASS",
+  "command": [
+    "C:\\Users\\USER\\Desktop\\SimulacraBench\\.venv\\Scripts\\python.exe",
+    "-X",
+    "utf8",
+    "-B",
+    "C:\\Users\\USER\\Desktop\\SimulacraBench\\scripts\\check_e061_release.py",
+    "worker",
+    "preflight"
+  ],
+  "wall_seconds": 17.213753300000462,
+  "cumulative_worker_seconds": 45.48907210000107,
+  "historical_S1_worker_seconds": 1098.5227876999961,
+  "combined_worker_seconds": 1144.0118597999972,
+  "reason": "COMPLETE",
+  "error": null,
+  "exit_code": 0,
+  "peak_owned_tree_bytes": {
+    "rss": 837574656,
+    "commitment": 906702848
+  },
+  "sample_interval_seconds": 0.1,
+  "numerical_threads": 2,
+  "gpu": false,
+  "memory_semantics": "Owned controller+descendants; sum of per-process peak RSS/private commitment",
+  "cumulative_calls": {
+    "full_stack": 0,
+    "neural": 0,
+    "metric": 0
+  }
+}

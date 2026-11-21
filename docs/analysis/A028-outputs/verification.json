@@ -1,0 +1,58 @@
+{
+    "status":  "PASS_LOCAL_ENTRY_AND_TEMPLATE_CHECKS",
+    "at_utc":  "2026-09-27T09:36:07.1669168Z",
+    "head":  "1d223340d4e1fa3993b411dc5daafab9cb37d0cd",
+    "preserved_entry_hashes":  62,
+    "intentional_existing_edits":  [
+                                       "CLAUDE.md",
+                                       "docs/log.md",
+                                       "docs/session-prompts.ko.md",
+                                       "docs/status.md",
+                                       "docs/workflow.md"
+                                   ],
+    "hashes":  {
+                   "AGENTS.md":  "aafc20c7ce1d6abea63cfdca180b53dbc73cb091f4abbd8ae077eb4a48237d4a",
+                   "CLAUDE.md":  "f1de67c30933a48c46e05b5248ed8a380dc2df414ee2132c8b40bca403b29e55",
+                   "docs/workflow.md":  "987b4549dbb6c701bab48df5969e4aa1ed8bf69cc3a851842f55853ca69a84ba",
+                   "docs/session-prompts.ko.md":  "0e09504f94ab35de5e724ebc448d484dacbbf7e497678a9f6342034bea9c45d7",
+                   "docs/status.md":  "c213af0106dfc7df2efaa865376c53c997735ac7f41d2999e4af1b186f971c6e",
+                   "docs/log.md":  "d3b6f5cc3853aeab06c9f28e0ac60d3f216fe3e3e138e07a8f959833c8d3cb25",
+                   "docs/analysis/A028-workflow-entry-audit.md":  "cc930947f08bc377beb81879fc047e18030004539da1f8fcf8d5d27f629ff01d",
+                   "docs/analysis/A028-outputs/entry.json":  "7e8405879827dbf40e4489e8a9dc2881317380683678a5bc9a1868241b02cf10"
+               },
+    "template_coverage":  {
+                              "S0":  "EXPLICIT_READ_AND_RECEIPT_IN_TEMPLATE_NOT_RUNTIME_TEST",
+                              "S1":  "EXPLICIT_READ_AND_RECEIPT_IN_TEMPLATE_NOT_RUNTIME_TEST",
+                              "S2":  "EXPLICIT_READ_AND_RECEIPT_IN_TEMPLATE_NOT_RUNTIME_TEST",
+                              "S3":  "EXPLICIT_READ_AND_RECEIPT_IN_TEMPLATE_NOT_RUNTIME_TEST"
+                          },
+    "current_s0_receipt":  {
+                               "forbidden":  "research fits/scores/data/ZIP/tree/commit/push/S3/TEST",
+                               "evidence":  "Current conversation exec_command chunks658e4b and0ce833 display file contents; supplemental read covers truncated boundary",
+                               "task_type":  "workflow entry audit, document work",
+                               "read_timing":  "r2 before edits; r3 explicitly reread after edits, not automatically injected",
+                               "role":  "S0",
+                               "allowed":  "instruction audit and documentation",
+                               "revision":  "2026-09-27-r3",
+                               "read_paths":  [
+                                                  "AGENTS.md",
+                                                  "CLAUDE.md",
+                                                  "docs/status.md",
+                                                  "docs/log.md newest3",
+                                                  "docs/workflow.md"
+                                              ],
+                               "workflow_sha256":  "987b4549dbb6c701bab48df5969e4aa1ed8bf69cc3a851842f55853ca69a84ba"
+                           },
+    "other_session_runtime_loading":  "UNVERIFIED",
+    "fresh_codex_loading_test":  "NOT_RUN",
+    "all_session_compliance":  "NOT_ESTABLISHED",
+    "jobs":  [
+
+             ],
+    "network":  "Official OpenAI documentation only",
+    "research_execution":  false,
+    "user_settings_modified":  false,
+    "tree_modified":  false,
+    "commit_push":  false,
+    "limitations":  "Instructions/receipts are not technical enforcement; current S0 is not evidence for other chats"
+}

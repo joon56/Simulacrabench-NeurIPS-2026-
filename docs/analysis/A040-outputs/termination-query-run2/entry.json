@@ -1,0 +1,80 @@
+﻿{
+    "read_evidence":  [
+                          "a3c2f2",
+                          "876019",
+                          "60aaac",
+                          "9edd93"
+                      ],
+    "deadline_utc":  "2026-10-05T13:07:44Z",
+    "authority":  "Current user explicitly activates cumulative-child120s cleanup continuation",
+    "head":  "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+    "reads":  [
+                  "AGENTS.md",
+                  "CLAUDE.md",
+                  "docs/status.md",
+                  "docs/log.md newest3",
+                  "docs/workflow.md",
+                  "s0-query-contract-review/cleanup-time-budget-continuation.ko.md",
+                  "termination-query-repair1 named8 inputs"
+              ],
+    "work_cutoff_utc":  "2026-10-05T13:02:44Z",
+    "limits":  {
+                   "session_seconds":  1800,
+                   "each_check":  30,
+                   "cpu":  2,
+                   "terminate":  1,
+                   "closeout_reserve":  300,
+                   "remote_child_cumulative":  120,
+                   "remote_read_reserve":  30,
+                   "focused_checks":  180,
+                   "gpu":  0,
+                   "rpc":  15
+               },
+    "prior_preparation_seconds":  13951.7380878,
+    "role":  "S1 cleanup-only technical",
+    "workflow_sha256":  "a577942675e16a732339e586c14796104dda704693568439ae28670cc7fb7b23",
+    "jobs_evidence":  "ae924d",
+    "workflow_revision":  "2026-10-05-r5",
+    "main":  "Reuse exact helper; implement cumulative parent timing and durable single-termination guard; obtain exact terminal evidence",
+    "backup":  "Precise missing evidence and consumed allowance closeout",
+    "input_hashes":  [
+                         {
+                             "sha256":  "5e0650a18e043e0e4dbe5af6cb911c09713e6519972d4f8a2857623e49089991",
+                             "path":  "docs/analysis/A040-outputs/termination-query-repair1/closeout.md"
+                         },
+                         {
+                             "sha256":  "fe3cab13e636db07047f4c282a3486e42d0b6eda2e97a9f3f7f5eed31db8713e",
+                             "path":  "docs/analysis/A040-outputs/termination-query-repair1/regression-history.md"
+                         },
+                         {
+                             "sha256":  "0ea7371a6c886802812bdd8803dbc29add19b66a33e96559151a6d2e44a05d70",
+                             "path":  "docs/analysis/A040-outputs/termination-query-repair1/closeout-terminal-status.json"
+                         },
+                         {
+                             "sha256":  "48037dd6e2f665c0aef81229b9afb135b19b2d4d6d1ce96652ef2a8bb22633a0",
+                             "path":  "docs/analysis/A040-outputs/termination-query-repair1/verification.json"
+                         },
+                         {
+                             "sha256":  "17e17ac903baf17a851d44569efe8dd9670b736c42895bbf1656cfb4edf64ac2",
+                             "path":  "docs/analysis/A040-outputs/termination-query-repair1/source-manifest.json"
+                         },
+                         {
+                             "sha256":  "8e76c9bb326ad66c613d8dd42e49391728a06f13fb34ba04a5211da0e5f0f347",
+                             "path":  "docs/analysis/A040-outputs/termination-query-repair1/cost-time-ledger.json"
+                         },
+                         {
+                             "sha256":  "0e68a80ce1237aaa0f95d42777a24154b5cee110858e0bf0a692c17a2d75939a",
+                             "path":  "docs/analysis/A040-outputs/termination-query-repair1/confirm_terminal.py"
+                         },
+                         {
+                             "sha256":  "480a292f91865becf140e532924aae5938c4d2c8097901d628bbb7897e9c1682",
+                             "path":  "docs/analysis/A040-outputs/termination-query-repair1/entry-repair.diff"
+                         }
+                     ],
+    "related_jobs":  0,
+    "forbidden":  "New resource/build/model/data/controller repair/commit/push/subagent/S2/S3",
+    "allowed":  "Existing-resource metadata/normal auth/max1 necessary termination; local timing wiring and focused checks",
+    "science_seconds":  1077.3504532,
+    "entry_utc":  "2026-10-05T12:37:44Z",
+    "science_processes":  4
+}

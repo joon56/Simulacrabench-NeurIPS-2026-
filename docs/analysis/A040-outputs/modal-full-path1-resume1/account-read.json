@@ -1,0 +1,28 @@
+{
+  "recorded_utc": "2026-10-02T13:08:25.954432+00:00",
+  "resource_requests": 0,
+  "workspace": "joon56",
+  "settings": {
+    "default_environment": "main",
+    "image_builder_version": "2025.06"
+  },
+  "billing_summary": {
+    "start": "2026-10-01 00:00:00+00:00",
+    "end": "2026-11-01 00:00:00+00:00",
+    "metered_cost": "0E-8",
+    "metered_cost_breakdown": {
+      "LLM Tokens": "0E-8",
+      "Volumes": "0E-8"
+    },
+    "adjustments": {
+      "Plan Cost": "0E-8",
+      "Credits": "-0E-8",
+      "Reservation Adjustment": "-0E-8",
+      "Network Egress Allowance": "0E-8",
+      "Free Storage": "-0E-8"
+    },
+    "billed_cost": "0E-8"
+  },
+  "environment_budget_error_type": "PermissionDeniedError",
+  "credits_remaining_independently_verified": false
+}

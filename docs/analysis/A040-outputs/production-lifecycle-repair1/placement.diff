@@ -1,0 +1,22 @@
+--- original/contract.py
++++ placed/contract.py
+@@ -9,7 +9,7 @@
+ MODULES = ("contract.py", "protocol.py", "controller_core.py", "live_binding.py",
+            "sdk_endpoint.py", "payload.py", "sandbox_stage.py", "linux_boundary.py",
+            "linux_watchdog.py", "linux_runner.py", "live_worker.py", "live_launcher.py")
+-REMOTE_DIR = "/work/docs/analysis/A040-outputs/local-preparation-repair2"
++REMOTE_DIR = "/work/docs/analysis/A040-outputs/production-lifecycle-repair1"
+ CAP_BYTES = 15258 * 1024 * 1024
+ GPU_PLAN = 2.965933453125
+ 
+--- original/live_launcher.py
++++ placed/live_launcher.py
+@@ -23,7 +23,7 @@
+     if sha((HERE / "source-manifest.json").read_bytes()) != config["source_manifest_sha256"]:
+         raise ValueError("External source-freeze identity mismatch")
+     verify_sources(HERE, manifest)
+-    prefix = "docs/analysis/A040-outputs/local-preparation-repair2/"
++    prefix = "docs/analysis/A040-outputs/production-lifecycle-repair1/"
+     additions = {row["path"]: row for row in config["extra_files"]}
+     if len(additions) != len(config["extra_files"]) or set(additions) != {prefix + name for name in MODULES}:
+         raise ValueError("Complete transferred port/source closure required")

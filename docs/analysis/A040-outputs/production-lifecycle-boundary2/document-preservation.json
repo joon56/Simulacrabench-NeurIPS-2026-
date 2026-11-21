@@ -1,0 +1,18 @@
+[
+  {
+    "path": "docs/status.md",
+    "before_sha256": "5e0699cfde03a44376cd3a0033f35c3bb38bda888aae3f4209716e3beb4702a0",
+    "after_sha256": "f2ed52d2aadf86f272d03bd1181946fcf4063147ad600cef9cb978c19d471973",
+    "addition_offset": 325,
+    "addition_bytes": 760,
+    "original_restored_by_removing_addition": true
+  },
+  {
+    "path": "docs/log.md",
+    "before_sha256": "952f0a2a09e291af062538704c9f00fd45083d235a30102003c0510c90e8db06",
+    "after_sha256": "24e4b5825e9ff66d699a3742b9f6072861bec1babd7ae4df03042c79d25a309f",
+    "addition_offset": 23,
+    "addition_bytes": 2318,
+    "original_restored_by_removing_addition": true
+  }
+]

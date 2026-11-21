@@ -1,0 +1,1407 @@
+{
+  "status": "RELEASE_QUALIFIED_FOR_USER_REVIEW",
+  "role": "S2 fixed E063 assembly/release",
+  "observed_kst": "2026-10-10T00:12:37.084471+09:00",
+  "authority": "Current user attachment b38815ed explicitly designates this chat S2 fixed assembly/synthetic/ZIP; no upload/commit/push/remote/subagent/S3/TEST",
+  "workflow": {
+    "revision": "2026-10-05-r5",
+    "sha256": "a577942675e16a732339e586c14796104dda704693568439ae28670cc7fb7b23"
+  },
+  "actual_read_receipt": "read-receipt.md",
+  "head": "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+  "branch": "work/e050-submission",
+  "head_unchanged": true,
+  "original_dirty_count_grouped": 109,
+  "current_dirty_count_grouped": 114,
+  "original_dirty_entries_removed": [],
+  "new_dirty_entries": [
+    "?? docs/analysis/E063-outputs/s2/SCORES.md",
+    "?? docs/analysis/E063-outputs/s2/assembly-output-freeze.json",
+    "?? docs/analysis/E063-outputs/s2/assembly-resources.json",
+    "?? docs/analysis/E063-outputs/s2/assembly-unhcr.json",
+    "?? docs/analysis/E063-outputs/s2/assembly-unicef.json",
+    "?? docs/analysis/E063-outputs/s2/assembly-world_bank.json",
+    "?? docs/analysis/E063-outputs/s2/assembly.json",
+    "?? docs/analysis/E063-outputs/s2/assembly.log",
+    "?? docs/analysis/E063-outputs/s2/baseline-evaluation.json",
+    "?? docs/analysis/E063-outputs/s2/baseline-identity-supplement.json",
+    "?? docs/analysis/E063-outputs/s2/baseline-reuse.json",
+    "?? docs/analysis/E063-outputs/s2/calls-assembly-unhcr.jsonl",
+    "?? docs/analysis/E063-outputs/s2/calls-assembly-unicef.jsonl",
+    "?? docs/analysis/E063-outputs/s2/calls-assembly-world_bank.jsonl",
+    "?? docs/analysis/E063-outputs/s2/calls-official-unhcr-30364.jsonl",
+    "?? docs/analysis/E063-outputs/s2/calls-official-unhcr-36692.jsonl",
+    "?? docs/analysis/E063-outputs/s2/calls-official-unicef-37372.jsonl",
+    "?? docs/analysis/E063-outputs/s2/calls-official-unicef-37976.jsonl",
+    "?? docs/analysis/E063-outputs/s2/calls-official-world_bank-35428.jsonl",
+    "?? docs/analysis/E063-outputs/s2/calls-official-world_bank-38908.jsonl",
+    "?? docs/analysis/E063-outputs/s2/closeout.md",
+    "?? docs/analysis/E063-outputs/s2/cost-time-ledger.json",
+    "?? docs/analysis/E063-outputs/s2/dependency-disclosure.json",
+    "?? docs/analysis/E063-outputs/s2/entry.json",
+    "?? docs/analysis/E063-outputs/s2/evaluate-resources.json",
+    "?? docs/analysis/E063-outputs/s2/evaluate.log",
+    "?? docs/analysis/E063-outputs/s2/exposure-ledger.md",
+    "?? docs/analysis/E063-outputs/s2/extracted/NOTICE.txt",
+    "?? docs/analysis/E063-outputs/s2/extracted/main.py",
+    "?? docs/analysis/E063-outputs/s2/final-jobs.json",
+    "?? docs/analysis/E063-outputs/s2/historical-preservation.json",
+    "?? docs/analysis/E063-outputs/s2/identity-repair-freeze.json",
+    "?? docs/analysis/E063-outputs/s2/log-addition.md",
+    "?? docs/analysis/E063-outputs/s2/log-before.md",
+    "?? docs/analysis/E063-outputs/s2/main.py",
+    "?? docs/analysis/E063-outputs/s2/observer/sitecustomize.py",
+    "?? docs/analysis/E063-outputs/s2/official-parity-unhcr.json",
+    "?? docs/analysis/E063-outputs/s2/official-parity-unicef.json",
+    "?? docs/analysis/E063-outputs/s2/official-parity-world_bank.json",
+    "?? docs/analysis/E063-outputs/s2/official-resources.json",
+    "?? docs/analysis/E063-outputs/s2/official-unhcr.json",
+    "?? docs/analysis/E063-outputs/s2/official-unhcr.log",
+    "?? docs/analysis/E063-outputs/s2/official-unicef.json",
+    "?? docs/analysis/E063-outputs/s2/official-unicef.log",
+    "?? docs/analysis/E063-outputs/s2/official-work/sbench-_e_dw5hp/data.json",
+    "?? docs/analysis/E063-outputs/s2/official-work/sbench-_e_dw5hp/driver.py",
+    "?? docs/analysis/E063-outputs/s2/official-work/sbench-_e_dw5hp/predictions.json",
+    "?? docs/analysis/E063-outputs/s2/official-work/sbench-_e_dw5hp/schema.json",
+    "?? docs/analysis/E063-outputs/s2/official-work/sbench-viry7o6q/data.json",
+    "?? docs/analysis/E063-outputs/s2/official-work/sbench-viry7o6q/driver.py",
+    "?? docs/analysis/E063-outputs/s2/official-work/sbench-viry7o6q/predictions.json",
+    "?? docs/analysis/E063-outputs/s2/official-work/sbench-viry7o6q/schema.json",
+    "?? docs/analysis/E063-outputs/s2/official-work/sbench-ywzlr507/data.json",
+    "?? docs/analysis/E063-outputs/s2/official-work/sbench-ywzlr507/driver.py",
+    "?? docs/analysis/E063-outputs/s2/official-work/sbench-ywzlr507/predictions.json",
+    "?? docs/analysis/E063-outputs/s2/official-work/sbench-ywzlr507/schema.json",
+    "?? docs/analysis/E063-outputs/s2/official-world_bank.json",
+    "?? docs/analysis/E063-outputs/s2/official-world_bank.log",
+    "?? docs/analysis/E063-outputs/s2/official.json",
+    "?? docs/analysis/E063-outputs/s2/official.log",
+    "?? docs/analysis/E063-outputs/s2/owned-process-observation.json",
+    "?? docs/analysis/E063-outputs/s2/package-path.json",
+    "?? docs/analysis/E063-outputs/s2/package-resources.json",
+    "?? docs/analysis/E063-outputs/s2/package.json",
+    "?? docs/analysis/E063-outputs/s2/package.log",
+    "?? docs/analysis/E063-outputs/s2/phase1-masked/unhcr/respondents.parquet",
+    "?? docs/analysis/E063-outputs/s2/phase1-masked/unicef/respondents.parquet",
+    "?? docs/analysis/E063-outputs/s2/phase1-masked/world_bank/respondents.parquet",
+    "?? docs/analysis/E063-outputs/s2/phase1/unhcr/data.json",
+    "?? docs/analysis/E063-outputs/s2/phase1/unhcr/respondents.parquet",
+    "?? docs/analysis/E063-outputs/s2/phase1/unhcr/schema.json",
+    "?? docs/analysis/E063-outputs/s2/phase1/unicef/data.json",
+    "?? docs/analysis/E063-outputs/s2/phase1/unicef/respondents.parquet",
+    "?? docs/analysis/E063-outputs/s2/phase1/unicef/schema.json",
+    "?? docs/analysis/E063-outputs/s2/phase1/world_bank/data.json",
+    "?? docs/analysis/E063-outputs/s2/phase1/world_bank/respondents.parquet",
+    "?? docs/analysis/E063-outputs/s2/phase1/world_bank/schema.json",
+    "?? docs/analysis/E063-outputs/s2/preflight-resources.json",
+    "?? docs/analysis/E063-outputs/s2/preflight.json",
+    "?? docs/analysis/E063-outputs/s2/preflight.log",
+    "?? docs/analysis/E063-outputs/s2/projection.jsonl",
+    "?? docs/analysis/E063-outputs/s2/read-receipt.md",
+    "?? docs/analysis/E063-outputs/s2/regression.json",
+    "?? docs/analysis/E063-outputs/s2/release-contract.md",
+    "?? docs/analysis/E063-outputs/s2/release-freeze.json",
+    "?? docs/analysis/E063-outputs/s2/release-results.json",
+    "?? docs/analysis/E063-outputs/s2/release-scorecard-addition.md",
+    "?? docs/analysis/E063-outputs/s2/repair-record.md",
+    "?? docs/analysis/E063-outputs/s2/s0-handoff.ko.md",
+    "?? docs/analysis/E063-outputs/s2/shared-additions.json",
+    "?? docs/analysis/E063-outputs/s2/status-addition.md",
+    "?? docs/analysis/E063-outputs/s2/status-before.md",
+    "?? docs/analysis/E063-outputs/s2/tests-resources.json",
+    "?? docs/analysis/E063-outputs/s2/tests.log",
+    "?? docs/analysis/E063-outputs/s2/truth-stage-freeze.json",
+    "?? docs/analysis/E063-outputs/s2/vectors-assembly-unhcr.npz",
+    "?? docs/analysis/E063-outputs/s2/vectors-assembly-unicef.npz",
+    "?? docs/analysis/E063-outputs/s2/vectors-assembly-world_bank.npz",
+    "?? docs/analysis/E063-outputs/s2/zip-check.log",
+    "?? scripts/assemble_e063.py",
+    "?? scripts/check_e063_release.py",
+    "?? submissions/2026-10-09-E063.zip",
+    "?? submissions/2026-10-09-E063/NOTICE.txt",
+    "?? submissions/2026-10-09-E063/SCORES.md",
+    "?? submissions/2026-10-09-E063/main.py",
+    "?? tests/test_e063_assembly.py"
+  ],
+  "selected_original_file_checks": [
+    {
+      "path": "src/models/supervised_retrieval.py",
+      "sha256": "2940338c5378de03303befb74e3834fbad631c0eb18f4ecb55d2cc39a471f879",
+      "match": true
+    },
+    {
+      "path": "docs/experiments/E043-section-candidate-search.md",
+      "sha256": "e7d9acac562092596d9bd05921dfab49ac8a2c15854fad8abbba606941ccc4cf",
+      "match": true
+    },
+    {
+      "path": "src/models/logit_blend.py",
+      "sha256": "c25e91e648d5eb8a11afca1c8b02accad1a585540b6ed7d4ca363730a535705f",
+      "match": true
+    },
+    {
+      "path": "external/starter-kit/data/unhcr.json",
+      "sha256": "b1175b6bdbd96e90a4defd83af20a38d711c6eca9fe3ce880109ff244abe80d9",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A042-outputs/s1-handoff.ko.md",
+      "sha256": "d22fd902e8c61fcd8278450ee01cb822af5d72dd8d82fceb36bea06a6a8db9ef",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A037-winning-priority-review.md",
+      "sha256": "87e77d8279f68e52751653f3b6098ec1976e4b53a75faf7206043ec6cf4bf66d",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A042-outputs/s0-review/verification.json",
+      "sha256": "f5b034b9763d4486ddeba7aeba98eae1f8b31ae55a90bf7ddfc7eb9ca108e5ee",
+      "match": true
+    },
+    {
+      "path": "external/starter-kit/score.py",
+      "sha256": "7049e99a48acef2a74f37cb49bb66b5a9af8d05d2ed8fcf530287b5e81c5042f",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/E062-outputs/s2/post-result/verification.json",
+      "sha256": "a06d92b35461d693d54f354ce46f6dc8904a64e2a8c0e76e32937c7a368a5bbf",
+      "match": true
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "73b86e5310d6a45d5206efd3b55da47c48748ee7b077e6fcad6be276f1716a3a",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/E062-outputs/implementation-contract.md",
+      "sha256": "00bebf95df88dac579744fa70d029df540a106dd2e905fd9fb2d6ddbbd776123",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/E062-outputs/registration.md",
+      "sha256": "c6b7d587dcc928a761f65b510f8c6018b6c26f7c6b2e59d11a28a4cf0c6389d9",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A042-post-e062-priority.md",
+      "sha256": "9d478646da798409b8999988584ab5d7df827e1a5f8fcb30f3cee6e8c5c311bb",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/E062-outputs/frozen-inputs.json",
+      "sha256": "7a7333b5660488eeb7c3e1685348028fd4a412486cb2c9b64d98afd308068bfd",
+      "match": true
+    },
+    {
+      "path": "src/models/hh_cap.py",
+      "sha256": "9aad6be04e14ae97dc7aaba5499747c35b255b098680c66eaa8f8af58c940f70",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A023-candidate-boundary-contract.md",
+      "sha256": "0a22d6e17cc5b6d846060ebed5a65107e2de4d8647ec4280688f5d8847fbd444",
+      "match": true
+    },
+    {
+      "path": "external/starter-kit/data/unicef.json",
+      "sha256": "0bce08036cc563ee2a369dcee316ff8a5f89045d86991756d72c266927674396",
+      "match": true
+    },
+    {
+      "path": "docs/experiments/E058-donor-pair-interactions.md",
+      "sha256": "540c0c42c4cb172fd3796c8c7853740bbbe2a023a3536d9f201698d0d61ec97c",
+      "match": true
+    },
+    {
+      "path": "docs/experiments/E041-supervised-retrieval.md",
+      "sha256": "8a17f3cb2cb54deb19fdbffe597dcba173002a82100250ea4ff8be446d76bafb",
+      "match": true
+    },
+    {
+      "path": "scripts/check_e062_wb_ordinal.py",
+      "sha256": "e37a013a086ba8f8f666747b5c96d8d8b0388ab8cbcfba750fa0344269a7c90d",
+      "match": true
+    },
+    {
+      "path": "docs/experiments/E047-adaptive-final-evidence.md",
+      "sha256": "925274f5f5df964e120242f35430a96beee23cf046e6101cc32b5cb80251b436",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/E062-outputs/s2/post-result/result.ko.md",
+      "sha256": "ef7df564e5280f7ccc328d4e0f28ca1ec60d375a8d5b21a864d3802852412bf4",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A021-selector-comparison-contract.md",
+      "sha256": "6d00490b93ad7c986de38735137981bbfd453aacef7d2f627ca7bd60023ec2cc",
+      "match": true
+    },
+    {
+      "path": "src/models/shared_trunk.py",
+      "sha256": "df648763c8e0ba5532ebf9e437af95cd10d8527112c1338b8b5db9ad6a212e1f",
+      "match": true
+    },
+    {
+      "path": "docs/workflow.md",
+      "sha256": "a577942675e16a732339e586c14796104dda704693568439ae28670cc7fb7b23",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A042-outputs/s0-review/s1-implementation-handoff.ko.md",
+      "sha256": "279a72defb1438f4d3ce68685d197d92da2dcdd7b76270fc7a49162304489b20",
+      "match": true
+    },
+    {
+      "path": "external/starter-kit/data/world_bank.json",
+      "sha256": "6b3760742c6e864eb8d0bb2f9ec523a19a486b73282d79432dbcca16e3664125",
+      "match": true
+    },
+    {
+      "path": "src/models/hh_link.py",
+      "sha256": "fb34d8dc575a0edd644287ec9387ee32db7866083b53b907376f464837f0c1f6",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A042-outputs/s0-review/decision.md",
+      "sha256": "8f8d68c737930642a739b1071c11a361e4646cfecb1217c96f0e17c59ebff3c5",
+      "match": true
+    },
+    {
+      "path": "docs/experiments/E045-union-retrieval.md",
+      "sha256": "d7ad5bf5420a7ac4d87ae6989b6bc0e4be94cb03e88c7c4a6dfd58d3da729a5c",
+      "match": true
+    },
+    {
+      "path": "docs/experiments/E036-wave-lam.md",
+      "sha256": "5a32d978878d6854d51b43881817326ddf5b08aa63c1c116b1cd2172726d633a",
+      "match": true
+    },
+    {
+      "path": "docs/experiments/E060-content-target-retrieval.md",
+      "sha256": "b1ba67e7d521d181dac1df4a285ea39ba98b5b20244e6d9ce81e52363e3e7bc0",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A024-channel-precision-review.md",
+      "sha256": "1a830e20b63965a3f229f2d564f623e7e4965c6495a400e62239d89a30e2985d",
+      "match": true
+    },
+    {
+      "path": "src/models/hh_sharp.py",
+      "sha256": "31acb4639894411320062f196050425ee1c143a456c9e0dac40ba6dd376ad5e0",
+      "match": true
+    },
+    {
+      "path": "docs/tree.md",
+      "sha256": "eaa884a4194db103335136495205fe5b51297c17db15e9eac62946ced286cc44",
+      "match": true
+    },
+    {
+      "path": "src/eval/retrieval_oracle.py",
+      "sha256": "b6c3487a01f5174e02e7691ec455a8e72cfab7533f68026b9010665a60b23ca4",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A042-outputs/s1/s0-handoff.ko.md",
+      "sha256": "569e93a78213f153d44ec4c418ac7f1293a850dcd1ca127df349061b26909e6e",
+      "match": true
+    },
+    {
+      "path": "src/models/prob_link.py",
+      "sha256": "6b03f700821b6d74c8ef0dfe834737ac4c9755d7fcf9a7c2f96b5b67e905d96d",
+      "match": true
+    },
+    {
+      "path": "scripts/check_e057.py",
+      "sha256": "a7b711c2a82f1f706540d425ee0caba8cfe7350519fcb08342c2e5492f88252c",
+      "match": true
+    },
+    {
+      "path": ".venv/pyvenv.cfg",
+      "sha256": "ace9b5666874dca55409351d089ef1085f01eb7430ae894e98c82c4d3f269131",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A042-outputs/s1/contract.md",
+      "sha256": "d1ce78f2708569bda47bd2896e3dd5d88ed29ef01c90c846941c54bf8daff5bd",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/E062-outputs/s2/post-result/comparison.json",
+      "sha256": "c59e0386f635959d3d0e28bb0b93474d84cdf705634cfb9a73d3c870b06b33ab",
+      "match": true
+    },
+    {
+      "path": "CLAUDE.md",
+      "sha256": "0cda5c3385ea3368d0c24a6602e4b1220adc864a205e231f10042b655d031749",
+      "match": true
+    },
+    {
+      "path": "src/eval/logloss.py",
+      "sha256": "272aae939a2587b7197569ff84733a1d3b51050e4090ed903a7c8f4e1c88ca18",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A042-outputs/verification.json",
+      "sha256": "55923ddab0265b9bcc954b5d148014c8bffd5efd7c45a74d8a0c1f52aa6b16c5",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A042-outputs/s1/verification.json",
+      "sha256": "9111813910bb9acb4021a3564d7be6bedf17739057342ae2097e9f23950d6833",
+      "match": true
+    },
+    {
+      "path": "external/starter-kit/config.yml",
+      "sha256": "f22f8e4faa62b6af0ee8e7e887e35980511e4517655479fefeeef4519fc52c15",
+      "match": true
+    },
+    {
+      "path": "src/models/cond_agree.py",
+      "sha256": "aecad17990cc106199f96648ad02716eee43cc60f995b25125473a0b0bd5e197",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A006-dev-validation-audit.md",
+      "sha256": "b566ec46b7cbcc120f94aa94f7c91dc44e8a0798b08e8d36c34bed9599531dfc",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A042-outputs/s1/closeout.md",
+      "sha256": "b79f0c50cbf7918b0de02fa2bb274a762079ca318d992992d90fc366d5b576b6",
+      "match": true
+    },
+    {
+      "path": "submissions/2026-09-19-E041/main.py",
+      "sha256": "22c911806ea91234ae350341adfb9c0df2ce4be41cc88e73be304e4bb1023073",
+      "match": true
+    },
+    {
+      "path": "src/models/cross_link.py",
+      "sha256": "0f5a28a6fea27215e0697b94558bc226b24a24a9811a59c3fd71e0d5b5283b17",
+      "match": true
+    },
+    {
+      "path": "external/starter-kit/make_sandbox.py",
+      "sha256": "8cf628cbb4771ed6e91ad74ebb4f75b22667af39d8f48e01c956c675b1b1586b",
+      "match": true
+    },
+    {
+      "path": "docs/experiments/E059-leaf-donor-interactions.md",
+      "sha256": "bfbe26a10727bc2b703e7bceb674b344461053357dcc6c5a0a9f217a4738626c",
+      "match": true
+    },
+    {
+      "path": "src/models/dup_link.py",
+      "sha256": "e1ce093d927eed6db0553776b74f8ddfca5d159bf035b6cd7b4df9e7bc6b168f",
+      "match": true
+    },
+    {
+      "path": "src/models/link_sharp.py",
+      "sha256": "4a7921a00d7758e52a63a3ca7cd5ebf2285cef445b57fd89f15580d6fc108524",
+      "match": true
+    },
+    {
+      "path": "src/models/hier_backoff.py",
+      "sha256": "e01f2030c191b0b632b274662cbb46537669f3b73e21ab0d5f7f671d28654ccd",
+      "match": true
+    },
+    {
+      "path": "src/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "match": true
+    },
+    {
+      "path": "src/models/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "match": true
+    },
+    {
+      "path": "src/eval/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "match": true
+    },
+    {
+      "path": "src/models/round_metric_retrieval.py",
+      "sha256": "5595bebdcdc697fc9e1eba149e10735cac4ae434b20b0ce3e93c968e8b35106b",
+      "match": true
+    },
+    {
+      "path": "tests/test_round_metric_retrieval.py",
+      "sha256": "ef6be195048261d8eabe21e2fac63f1d4c8d6a71341b51fe0197b3ee5d08200e",
+      "match": true
+    },
+    {
+      "path": "scripts/check_e063_round_metric.py",
+      "sha256": "a437183e91834a8e0eb82f94b5c9b0abc3b66a480df0e14009fec1d45afec6f1",
+      "match": true
+    },
+    {
+      "path": "external/starter-kit/_sandbox/unicef/respondents.parquet",
+      "sha256": "8e7c659d277c5145c7a8a6d055ac59a7dd3c35699317741239b6b1969bce1488",
+      "match": true
+    },
+    {
+      "path": "external/starter-kit/_sandbox/world_bank/respondents.parquet",
+      "sha256": "4592bed873410c5248edf1205e5cab41dd30494926e3b49f8da598e266758c8a",
+      "match": true
+    },
+    {
+      "path": "external/starter-kit/_sandbox/unhcr/respondents.parquet",
+      "sha256": "5d00075706e0a7beafdc8a70acfe07cde1f489048741eb2f3ae1fababdb72774",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/E063-outputs/freeze-01.json",
+      "sha256": "86662430e7cd0c8cfd09eb6ddf0f08ca43ebd7bda96adbfc4cfe2d40edfebc9a",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/E063-outputs/registration.md",
+      "sha256": "e29a7600c9bd1bca75c6927a092adc706b3c49b7e6ea649d979e58816696a49c",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/E063-outputs/attempts/R-01/vectors-unicef.npz",
+      "sha256": "1269a5064ee632708f14bff1e1ba2190e26f81c05caf1d6582bb52c9c821a62c",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/E063-outputs/attempts/R-01/vectors-world_bank.npz",
+      "sha256": "4a261189acb717dc70e1791e9bf19f754adc29f81a137f546725d3061304af55",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/E063-outputs/attempts/R-01/vectors-unhcr.npz",
+      "sha256": "262ec003947b96a2b3bdad76866fc68b3763db148e061c5d5bc9a1c3ac416e3d",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/E063-outputs/attempts/H-01/vectors-unicef.npz",
+      "sha256": "1269a5064ee632708f14bff1e1ba2190e26f81c05caf1d6582bb52c9c821a62c",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/E063-outputs/attempts/H-01/vectors-world_bank.npz",
+      "sha256": "4a261189acb717dc70e1791e9bf19f754adc29f81a137f546725d3061304af55",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/E063-outputs/attempts/H-01/vectors-unhcr.npz",
+      "sha256": "445edba1bb9917b3a6cd85483284f4e171e3a5e0d705cf3a18f7382b7d06b5f0",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/E062-outputs/vectors-E025-unicef.npz",
+      "sha256": "1269a5064ee632708f14bff1e1ba2190e26f81c05caf1d6582bb52c9c821a62c",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/E062-outputs/vectors-E025-world_bank.npz",
+      "sha256": "4a261189acb717dc70e1791e9bf19f754adc29f81a137f546725d3061304af55",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/E062-outputs/vectors-E025-unhcr.npz",
+      "sha256": "9255a4f334e0bdda4bb3835e81931b54f6e5f5515a00f140a8bdea6e851d6bb1",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/E062-outputs/vectors-E041-unicef.npz",
+      "sha256": "1269a5064ee632708f14bff1e1ba2190e26f81c05caf1d6582bb52c9c821a62c",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/E062-outputs/vectors-E041-world_bank.npz",
+      "sha256": "4a261189acb717dc70e1791e9bf19f754adc29f81a137f546725d3061304af55",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/E062-outputs/vectors-E041-unhcr.npz",
+      "sha256": "262ec003947b96a2b3bdad76866fc68b3763db148e061c5d5bc9a1c3ac416e3d",
+      "match": true
+    },
+    {
+      "path": "scripts/assemble_e062.py",
+      "sha256": "dfcbac2ec2e8eb32af108cfc138213e10f3601cb80a06bf4d8d0e04ae6eca7a7",
+      "match": true
+    },
+    {
+      "path": "scripts/check_e062_release.py",
+      "sha256": "61593e348b0617c21ccfe803e5b8521e4a06757d390e133fafc02b96aef20f60",
+      "match": true
+    },
+    {
+      "path": "tests/test_e062_assembly.py",
+      "sha256": "20207fc449b9566a90e0e3fc9f4686a391fa55ae03b22113548b12575f30133a",
+      "match": true
+    },
+    {
+      "path": "external/starter-kit/tools/check_submission_zip.py",
+      "sha256": "0cb9e671b3b19ab62e68b37512ee8717e97d47694276f16e27a77b02d2f37916",
+      "match": true
+    },
+    {
+      "path": "external/starter-kit/LICENSE",
+      "sha256": "a81db73b86212de93a3944eea5dfb01126ffe17d5fbdb620a6e4c4d04830b20e",
+      "match": true
+    },
+    {
+      "path": "submissions/SCORES.md",
+      "sha256": "672e50c16a1b066e03b1fb02d41ab1cab13e991594afe5e7988f138865453c49",
+      "match": true
+    },
+    {
+      "path": "submissions/hosted-scores/2026-09-27.json",
+      "sha256": "dfe719bec68faf60c7dfec86c6034ba35fe1a6ba7a9437b88813dbc1ea567ce8",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/E063-outputs/s0-review/decision.md",
+      "sha256": "07e576ff18a9d0a603f44fc7ccec4d0ce345b85f5348d036fb7f6fcf3a5ee59f",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/E063-outputs/s0-review/verification.json",
+      "sha256": "f3679a685fbe47d99b46336c99693077a2171dc52203ca5cf0d9be34f6a78563",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/E063-outputs/s0-review/s2-handoff.ko.md",
+      "sha256": "5f97ea0880bafc9680d40ac3ea1a76cd2db81873003f279d9134c1a10650e27e",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/E063-outputs/verification.json",
+      "sha256": "fc30eeb8110bbbcdd4e98a9479f07fc66c3d0ad9e21932255942a3d2313cb2e0",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/E063-outputs/closeout.md",
+      "sha256": "ea8081573f81cbe4688199dc23f782cc13619ec4cb2f5ab1756bd2d18c3a94b4",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/E063-outputs/implementation-contract.md",
+      "sha256": "d3451701d55ed98e52de3ee44d53b460c92f2ef2b518002f5cb6e16e68d36449",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/E063-outputs/exposure-ledger.md",
+      "sha256": "ecc7f9b80f199b12a877e1f25b5c910f598cef06fe0b3dd1eba527a837eafd3b",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/E063-outputs/artifact-manifest.json",
+      "sha256": "5dcee0cbeaaae2fa4ee5bae8feaf75b623ffaf0c25aef8656d757e3af5665776",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/E063-outputs/unit-qualification.json",
+      "sha256": "2db124faa45b1ad679957d648062270f0801788468c6953ca3c6b097dca86b22",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/E063-outputs/cost-time-ledger.json",
+      "sha256": "21c2bba2aad87dee6888e557659731e5c4267e8adc856087444fd907671e7c34",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/E063-outputs/package-marker-identity.json",
+      "sha256": "5493a164e31b0bd31c4c1976398fa1cf4ba378f226a4eb7cf31032d43514d779",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/E063-outputs/attempts/score-01/comparison.json",
+      "sha256": "19f65babcb6aacc6508863c59ba32ab96ecc09087b3dd3d7556ce4962f468039",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/E063-outputs/attempts/score-01/frozen-predictions.json",
+      "sha256": "6ceff16808f14079198690afbc0aa7a147187935266af56e6e12239ff1e1b200",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/E063-outputs/attempts/R-01/complete.json",
+      "sha256": "ed3c05c925fb88480f2813822cf784c48fdb3618904e3602e3afaa49297323af",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/E063-outputs/attempts/R-01/environment.json",
+      "sha256": "c23462ada40f788cd07ad1311831ce2ecd3c1b6d508827a5a475fdec0e14be04",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/E063-outputs/attempts/R-01/resources.json",
+      "sha256": "62f4ce062af14ff6c452f7781ebdd201a88eb92a973069f8307d9e28d0e4f056",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/E063-outputs/attempts/H-01/complete.json",
+      "sha256": "333fb8fa2760b0bd8e0375abc6f6c8c5988e2c28fb54b4b7115d68407fd8438b",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/E063-outputs/attempts/H-01/environment.json",
+      "sha256": "c23462ada40f788cd07ad1311831ce2ecd3c1b6d508827a5a475fdec0e14be04",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/E063-outputs/attempts/H-01/resources.json",
+      "sha256": "1dd25c5753e003dce09f8566e53e511458c85067b218644200b9b5a661e88f68",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/E062-outputs/frozen-predictions.json",
+      "sha256": "4242c24c777708713f3ad16decf4b41496fdebdc332aca2b8650a1c12108ec6c",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/E062-outputs/artifact-manifest.json",
+      "sha256": "bb6d5187d06abfe8c3a705cc8b373f3978c56d80411d89c4127ef8646302fbcf",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/E062-outputs/environment-E025-01.json",
+      "sha256": "2c09621e2c9cb6b1eec84f676aa49337dba43d9c812fa1c1f00a6b1767a006b4",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/E062-outputs/environment-E041-01.json",
+      "sha256": "fbd3f60fff991b42ac827efc6479baf8e23c662b96dd374a79113191006a89e0",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/E062-outputs/E025-complete.json",
+      "sha256": "7e48ee6663d43c11e20ae74085c63205b7d47bdd5e795c59e2c4fa79bca1d5a4",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/E062-outputs/E041-complete.json",
+      "sha256": "6f39388108930c67fd3dbd8e4e866e783ca1600d04d1dab63830042944ba23dd",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/E062-outputs/E025-01-resources.json",
+      "sha256": "be3849de86caa3c0b0eb94076479f19fbcaf84051875e5eab36bda9db898cbb6",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/E062-outputs/E041-01-resources.json",
+      "sha256": "17d2bc41a371420208cc9143ea48772123df0d869f224499231f0b7a0a0c2fc6",
+      "match": true
+    },
+    {
+      "path": "tests/test_round_metric_retrieval.py",
+      "sha256": "ef6be195048261d8eabe21e2fac63f1d4c8d6a71341b51fe0197b3ee5d08200e",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/E063-outputs/test-observer-repair.diff",
+      "sha256": "2ce5a3ef327a71884d6939b308997b6ad65c0994fba0bb8284f966f99ce14467",
+      "match": true
+    }
+  ],
+  "historical_preservation": "historical-preservation.json (88 S0 identities) plus two explicitly checked test/diff paths above",
+  "shared_original_byte_restoration": [
+    {
+      "path": "docs/status.md",
+      "after_sha256": "2d3685c17874ed26e2597b5a412f85c6eb7282ea13b6f6d1f36994d12db0342a",
+      "restored_sha256": "0a1bf8c1df7a0874d93f0fd16c4a6feb7d8255a7ca9526d14991e1804aec5a3d",
+      "original_bytes_preserved": true
+    },
+    {
+      "path": "docs/log.md",
+      "after_sha256": "d23c768f90b38a8ff52bc07dd6ed222b86b0f0e8174903e610ee37e5a9659c3d",
+      "restored_sha256": "bad44a86824ec4cdddca7e0c3488a145f91d8ed09e597d850a8fe415e0658bb9",
+      "original_bytes_preserved": true
+    }
+  ],
+  "release_results": {
+    "decision": "RELEASE_QUALIFIED_FOR_USER_REVIEW",
+    "observed_kst": "2026-10-10T00:04:45.147246+09:00",
+    "head": "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+    "snapshot": "submissions/2026-10-09-E063",
+    "zip": {
+      "path": "submissions/2026-10-09-E063.zip",
+      "sha256": "5469b5374f6fb3745cabf64071183ed3de5bbe240ea4f18c034049d560d532d9",
+      "bytes": 15720
+    },
+    "main_sha256": "7fe62705e26c45a891b8bbc8a453db4c525384af4a5989112a8c402672f3950e",
+    "prepared_kst": "2026-10-09T23:51:00.484781+09:00",
+    "source_R_clean_E041_exact_vectors": 189649,
+    "source_H_assembly_extracted_exact_vectors": 189649,
+    "controls_exact": true,
+    "assembly": {
+      "status": "PASS",
+      "instruments": {
+        "unicef": {
+          "vectors": 17856,
+          "max_raw_sum_error": 1.9348226487636566e-07,
+          "comparisons": {
+            "H": {
+              "max_abs": 0.0,
+              "changed_vectors": 0
+            },
+            "E041": {
+              "max_abs": 0.0,
+              "changed_vectors": 0
+            },
+            "E025": {
+              "max_abs": 0.0,
+              "changed_vectors": 0
+            }
+          },
+          "flat_sha256": "07bcb9f2d2d0c59339707ee761d6ca129093ba52b59b6c1c9a13ffef98f1e533",
+          "status": "PASS",
+          "output_file": "docs/analysis/E063-outputs/s2/vectors-assembly-unicef.npz",
+          "sha256": "1269a5064ee632708f14bff1e1ba2190e26f81c05caf1d6582bb52c9c821a62c",
+          "prediction_and_check_seconds": 42.057293600002595
+        },
+        "world_bank": {
+          "vectors": 39520,
+          "max_raw_sum_error": 2.8615613700821996e-07,
+          "comparisons": {
+            "H": {
+              "max_abs": 0.0,
+              "changed_vectors": 0
+            },
+            "E041": {
+              "max_abs": 0.0,
+              "changed_vectors": 0
+            },
+            "E025": {
+              "max_abs": 0.0,
+              "changed_vectors": 0
+            }
+          },
+          "flat_sha256": "ed59718bf900604bb69af3833bd5bcb12aab555924f32ae1009b4bcf90eedc2e",
+          "status": "PASS",
+          "output_file": "docs/analysis/E063-outputs/s2/vectors-assembly-world_bank.npz",
+          "sha256": "4a261189acb717dc70e1791e9bf19f754adc29f81a137f546725d3061304af55",
+          "prediction_and_check_seconds": 117.71734700000161
+        },
+        "unhcr": {
+          "vectors": 132273,
+          "max_raw_sum_error": 2.2838357827126288e-07,
+          "comparisons": {
+            "H": {
+              "max_abs": 0.0,
+              "changed_vectors": 0
+            },
+            "E041": {
+              "max_abs": 0.13446233163832838,
+              "changed_vectors": 46405
+            },
+            "E025": {
+              "max_abs": 0.31079199642686395,
+              "changed_vectors": 50121
+            }
+          },
+          "flat_sha256": "99b66264dda6d11face008eb2835b60a12ba3e2b94d8ab501c8f4431820317de",
+          "status": "PASS",
+          "natural_policy": {
+            "status": "PASS",
+            "active_sections": 7,
+            "sections": 8,
+            "weights_sections_support_lambda_exact": true,
+            "inherited_lambda_changed_items": 37
+          },
+          "output_file": "docs/analysis/E063-outputs/s2/vectors-assembly-unhcr.npz",
+          "sha256": "445edba1bb9917b3a6cd85483284f4e171e3a5e0d705cf3a18f7382b7d06b5f0",
+          "prediction_and_check_seconds": 296.60970029999953
+        }
+      },
+      "environment": {
+        "python": "3.13.14 (tags/v3.13.14:fd17997, Jun 10 2026, 13:03:48) [MSC v.1944 64 bit (AMD64)]",
+        "numpy": "2.5.1",
+        "pandas": "3.0.5",
+        "torch": "2.13.0+cpu",
+        "torch_threads": 2,
+        "interop_threads": 2,
+        "cuda_available": false,
+        "threadpools": [
+          {
+            "user_api": "blas",
+            "internal_api": "openblas",
+            "num_threads": 2,
+            "prefix": "libscipy_openblas",
+            "filepath": "C:\\Users\\USER\\Desktop\\SimulacraBench\\.venv\\Lib\\site-packages\\numpy.libs\\libscipy_openblas64_-b788215d9d47792bcba3a2e2a7114320.dll",
+            "version": "0.3.33.112.0",
+            "threading_layer": "pthreads",
+            "architecture": "Haswell"
+          },
+          {
+            "user_api": "openmp",
+            "internal_api": "openmp",
+            "num_threads": 2,
+            "prefix": "libiomp",
+            "filepath": "C:\\Users\\USER\\Desktop\\SimulacraBench\\.venv\\Lib\\site-packages\\torch\\lib\\libiomp5md.dll",
+            "version": null
+          },
+          {
+            "user_api": "openmp",
+            "internal_api": "openmp",
+            "num_threads": 1,
+            "prefix": "libiomp",
+            "filepath": "C:\\Users\\USER\\Desktop\\SimulacraBench\\.venv\\Lib\\site-packages\\torch\\lib\\libiompstubs5md.dll",
+            "version": null
+          },
+          {
+            "user_api": "openmp",
+            "internal_api": "openmp",
+            "num_threads": 2,
+            "prefix": "vcomp",
+            "filepath": "C:\\Users\\USER\\Desktop\\SimulacraBench\\.venv\\Lib\\site-packages\\sklearn\\.libs\\vcomp140.dll",
+            "version": null
+          },
+          {
+            "user_api": "blas",
+            "internal_api": "openblas",
+            "num_threads": 2,
+            "prefix": "libscipy_openblas",
+            "filepath": "C:\\Users\\USER\\Desktop\\SimulacraBench\\.venv\\Lib\\site-packages\\scipy.libs\\libscipy_openblas-197ee2fc9b4d071f7e048078cac74115.dll",
+            "version": "0.3.31.dev",
+            "threading_layer": "pthreads",
+            "architecture": "Haswell"
+          }
+        ],
+        "scipy": "1.18.1",
+        "sklearn": "1.9.0",
+        "pyarrow": "25.0.1",
+        "packages": {
+          "numpy": "2.5.1",
+          "pandas": "3.0.5",
+          "scipy": "1.18.1",
+          "torch": "2.13.0+cpu",
+          "pyarrow": "25.0.1",
+          "scikit-learn": "1.9.0",
+          "threadpoolctl": "3.6.0",
+          "PyYAML": "6.0.3"
+        },
+        "executable_sha256": "b70275ad94210fce7548761143be5e177769721045e287bb6c80aac3f928c65b"
+      },
+      "cumulative_calls": {
+        "full_stack": 3,
+        "neural": 9,
+        "metric": 8
+      }
+    },
+    "official": {
+      "status": "PASS",
+      "instruments": {
+        "unicef": {
+          "vectors": 17856,
+          "max_raw_sum_error": 1.9348226487636566e-07,
+          "comparisons": {
+            "H": {
+              "max_abs": 0.0,
+              "changed_vectors": 0
+            },
+            "E041": {
+              "max_abs": 0.0,
+              "changed_vectors": 0
+            },
+            "E025": {
+              "max_abs": 0.0,
+              "changed_vectors": 0
+            }
+          },
+          "flat_sha256": "07bcb9f2d2d0c59339707ee761d6ca129093ba52b59b6c1c9a13ffef98f1e533",
+          "status": "PASS",
+          "skill": 0.5006484230707156,
+          "delta_E025": 0.0,
+          "delta_E041": 0.0,
+          "release_pass": true,
+          "cli_startup_to_exit_seconds": 73.51217770000221,
+          "scorer_seconds": 71.87745642662048,
+          "official_log": "docs\\analysis\\E063-outputs\\s2\\official-unicef.json",
+          "predictions_sha256": "990977bdd0792b171908ab65988610c60d8f8f1d642da005d001301f1013b664"
+        },
+        "world_bank": {
+          "vectors": 39520,
+          "max_raw_sum_error": 2.8615613700821996e-07,
+          "comparisons": {
+            "H": {
+              "max_abs": 0.0,
+              "changed_vectors": 0
+            },
+            "E041": {
+              "max_abs": 0.0,
+              "changed_vectors": 0
+            },
+            "E025": {
+              "max_abs": 0.0,
+              "changed_vectors": 0
+            }
+          },
+          "flat_sha256": "ed59718bf900604bb69af3833bd5bcb12aab555924f32ae1009b4bcf90eedc2e",
+          "status": "PASS",
+          "skill": 0.45471730736298255,
+          "delta_E025": 0.0,
+          "delta_E041": 0.0,
+          "release_pass": true,
+          "cli_startup_to_exit_seconds": 168.28066709999985,
+          "scorer_seconds": 166.5829553604126,
+          "official_log": "docs\\analysis\\E063-outputs\\s2\\official-world_bank.json",
+          "predictions_sha256": "0e85bb043eb280d6722b1c247c6b2b716f27bbf6d4d9cc23f160ac8ae08ee690"
+        },
+        "unhcr": {
+          "vectors": 132273,
+          "max_raw_sum_error": 2.2838357827126288e-07,
+          "comparisons": {
+            "H": {
+              "max_abs": 0.0,
+              "changed_vectors": 0
+            },
+            "E041": {
+              "max_abs": 0.13446233163832838,
+              "changed_vectors": 46405
+            },
+            "E025": {
+              "max_abs": 0.31079199642686395,
+              "changed_vectors": 50121
+            }
+          },
+          "flat_sha256": "99b66264dda6d11face008eb2835b60a12ba3e2b94d8ab501c8f4431820317de",
+          "status": "PASS",
+          "skill": 0.5624803077254883,
+          "delta_E025": -0.00046856597952815715,
+          "delta_E041": 1.757886784692353e-05,
+          "release_pass": true,
+          "cli_startup_to_exit_seconds": 448.9711657000007,
+          "scorer_seconds": 446.97822403907776,
+          "official_log": "docs\\analysis\\E063-outputs\\s2\\official-unhcr.json",
+          "predictions_sha256": "51b26777099cbc1b7e9bcb5cfc814a3a6e92a2c58717612ed00e2dfcfcc08439",
+          "natural_policy": {
+            "status": "PASS",
+            "active_sections": 7,
+            "sections": 8,
+            "weights_sections_support_lambda_exact": true,
+            "inherited_lambda_changed_items": 37
+          }
+        }
+      },
+      "cli_seconds_sum": 690.7640105000028,
+      "cumulative_calls": {
+        "full_stack": 6,
+        "neural": 18,
+        "metric": 16
+      }
+    },
+    "regression": {
+      "status": "PASS",
+      "instruments": {
+        "unicef": {
+          "skill": 0.5006484230707156,
+          "delta_E025": 0.0,
+          "delta_E041": 0.0,
+          "release_pass": true
+        },
+        "world_bank": {
+          "skill": 0.45471730736298255,
+          "delta_E025": 0.0,
+          "delta_E041": 0.0,
+          "release_pass": true
+        },
+        "unhcr": {
+          "skill": 0.5624803077254883,
+          "delta_E025": -0.00046856597952815715,
+          "delta_E041": 1.757886784692353e-05,
+          "release_pass": true
+        }
+      }
+    },
+    "baseline_reuse": {
+      "status": "PASS",
+      "frozen_before_candidate_calls": true,
+      "R_clean_E041_exact_vectors": 189649,
+      "baseline_evidence": {
+        "E025": {
+          "decision": "REUSE",
+          "fresh_all3": 0,
+          "inputs_schema_roles_order_mask_equal": true,
+          "snapshot_source_hashes_verified": true,
+          "completion_raw_manifest_verified": true,
+          "common_environment_equal": true,
+          "missing_environment": "E062 did not separately record executable SHA or scipy/sklearn/pyarrow package versions; current E063 full versions verified, no invented historical versions.",
+          "import_stage": "Current numeric/scoring dependencies imported before pool check; compare shared recorded Python/numpy/pandas/torch/thread/CUDA fields, not full pool-list JSON.",
+          "historical_wall_seconds": 324.97659750000093
+        },
+        "E041": {
+          "decision": "REUSE",
+          "fresh_all3": 0,
+          "inputs_schema_roles_order_mask_equal": true,
+          "snapshot_source_hashes_verified": true,
+          "completion_raw_manifest_verified": true,
+          "common_environment_equal": true,
+          "missing_environment": "E062 did not separately record executable SHA or scipy/sklearn/pyarrow package versions; current E063 full versions verified, no invented historical versions.",
+          "import_stage": "Current numeric/scoring dependencies imported before pool check; compare shared recorded Python/numpy/pandas/torch/thread/CUDA fields, not full pool-list JSON.",
+          "historical_wall_seconds": 342.9659210000009
+        }
+      },
+      "decision_basis": "Qualified clean outputs reused; no missing required provenance, no conditional fresh branch, not score-dependent."
+    },
+    "identity_supplement": {
+      "status": "PASS",
+      "observed_utc": "2026-10-09T14:46:22.662100+00:00",
+      "path": "submissions/2026-09-09-E025/main.py",
+      "expected": "00793cf9d720d6f7511ffd738935206b3a5401f2454255409429db8d55e991b9",
+      "actual": "00793cf9d720d6f7511ffd738935206b3a5401f2454255409429db8d55e991b9",
+      "original_preflight_omission": "Current E025 snapshot byte hash absent entry hash map; preflight snapshot_source_hashes_verified overstates that particular current-byte check. E062 frozen-inputs snapshot identity and completed raw provenance were already verified. Preserve original records.",
+      "timing": "After assembly launch, before evaluator/ZIP/official; not retroactively before candidate execution.",
+      "repair": "Only affected current snapshot identity checked; no model/policy/input/source changes, no numerical repeat, no baseline fit. E025 snapshot is reference provenance, not a candidate execution dependency.",
+      "freeze_preserved": true
+    },
+    "projection": {
+      "explicit_read_requests": 24,
+      "DEV_truth_requests": 3,
+      "truth_after_three_output_freeze": true,
+      "TEST_requests": 0,
+      "official_cli": "Three separate reads of new TRAIN/DEV-only staging and masked driver JSON; not included in custom projection request count"
+    },
+    "hosted": {
+      "uploaded": false,
+      "ID": null,
+      "timestamp": null,
+      "bytes_verified": false,
+      "account_slot": null,
+      "result": null
+    },
+    "scientific_reading": "Weak exposed synthetic effect only; S1 8/16 negative descriptive groups inherited, no independent audit or actual ERPIS/DEV/TEST effect estimate. E063 parked.",
+    "preserved_state": "E041 incumbent/E025 fallback; E057/E060/E061/E062/E063 parked; all STOP/HOLD/exposure/A_half/A018/S3 boundaries unchanged.",
+    "preservation_hash_check_count": 114,
+    "selected_hash_mismatches": [],
+    "qualification_correction": "Initial preflight omitted current E025 snapshot hash; exact late supplemental identity verified before evaluator/package/official, old claim corrected without rewriting freeze or rerunning successful models."
+  },
+  "cost_time": {
+    "status": "PASS",
+    "stages": [
+      {
+        "mode": "tests",
+        "status": "PASS",
+        "command": [
+          "C:\\Users\\USER\\Desktop\\SimulacraBench\\.venv\\Scripts\\python.exe",
+          "-X",
+          "utf8",
+          "-B",
+          "-m",
+          "unittest",
+          "tests.test_e063_assembly",
+          "-v"
+        ],
+        "wall_seconds": 4.589180400002078,
+        "cumulative_worker_seconds": 4.589180400002078,
+        "historical_S1_worker_seconds": 754.5516991000004,
+        "combined_worker_seconds": 759.1408795000025,
+        "reason": "COMPLETE",
+        "error": null,
+        "exit_code": 0,
+        "peak_owned_tree_bytes": {
+          "rss": 357437440,
+          "commitment": 367173632
+        },
+        "sample_interval_seconds": 0.1,
+        "numerical_threads": 2,
+        "gpu": false,
+        "sample_count": 43,
+        "maximum_monotonic_sample_gap_seconds": 0.1120374999991327,
+        "focused_cumulative_seconds": 4.589180400002078,
+        "memory_semantics": "Owned controller+descendants; sum of per-process peak RSS/private commitment",
+        "cumulative_calls": {
+          "full_stack": 0,
+          "neural": 0,
+          "metric": 0
+        }
+      },
+      {
+        "mode": "preflight",
+        "status": "PASS",
+        "command": [
+          "C:\\Users\\USER\\Desktop\\SimulacraBench\\.venv\\Scripts\\python.exe",
+          "-X",
+          "utf8",
+          "-B",
+          "C:\\Users\\USER\\Desktop\\SimulacraBench\\scripts\\check_e063_release.py",
+          "worker",
+          "preflight"
+        ],
+        "wall_seconds": 17.22608720000062,
+        "cumulative_worker_seconds": 21.8152676000027,
+        "historical_S1_worker_seconds": 754.5516991000004,
+        "combined_worker_seconds": 776.3669667000031,
+        "reason": "COMPLETE",
+        "error": null,
+        "exit_code": 0,
+        "peak_owned_tree_bytes": {
+          "rss": 849174528,
+          "commitment": 935903232
+        },
+        "sample_interval_seconds": 0.1,
+        "numerical_threads": 2,
+        "gpu": false,
+        "sample_count": 157,
+        "maximum_monotonic_sample_gap_seconds": 0.11271370000031311,
+        "focused_cumulative_seconds": 4.589180400002078,
+        "memory_semantics": "Owned controller+descendants; sum of per-process peak RSS/private commitment",
+        "cumulative_calls": {
+          "full_stack": 0,
+          "neural": 0,
+          "metric": 0
+        }
+      },
+      {
+        "mode": "assembly",
+        "status": "PASS",
+        "command": [
+          "C:\\Users\\USER\\Desktop\\SimulacraBench\\.venv\\Scripts\\python.exe",
+          "-X",
+          "utf8",
+          "-B",
+          "C:\\Users\\USER\\Desktop\\SimulacraBench\\scripts\\check_e063_release.py",
+          "worker",
+          "assembly"
+        ],
+        "wall_seconds": 465.7310139000001,
+        "cumulative_worker_seconds": 487.5462815000028,
+        "historical_S1_worker_seconds": 754.5516991000004,
+        "combined_worker_seconds": 1242.0979806000032,
+        "reason": "COMPLETE",
+        "error": null,
+        "exit_code": 0,
+        "peak_owned_tree_bytes": {
+          "rss": 1386868736,
+          "commitment": 1504919552
+        },
+        "sample_interval_seconds": 0.1,
+        "numerical_threads": 2,
+        "gpu": false,
+        "sample_count": 4206,
+        "maximum_monotonic_sample_gap_seconds": 0.11819029999969644,
+        "focused_cumulative_seconds": 4.589180400002078,
+        "memory_semantics": "Owned controller+descendants; sum of per-process peak RSS/private commitment",
+        "cumulative_calls": {
+          "full_stack": 3,
+          "neural": 9,
+          "metric": 8
+        }
+      },
+      {
+        "mode": "evaluate",
+        "status": "PASS",
+        "command": [
+          "C:\\Users\\USER\\Desktop\\SimulacraBench\\.venv\\Scripts\\python.exe",
+          "-X",
+          "utf8",
+          "-B",
+          "C:\\Users\\USER\\Desktop\\SimulacraBench\\scripts\\check_e063_release.py",
+          "worker",
+          "evaluate"
+        ],
+        "wall_seconds": 19.949819800000114,
+        "cumulative_worker_seconds": 507.4961013000029,
+        "historical_S1_worker_seconds": 754.5516991000004,
+        "combined_worker_seconds": 1262.0478004000033,
+        "reason": "COMPLETE",
+        "error": null,
+        "exit_code": 0,
+        "peak_owned_tree_bytes": {
+          "rss": 1014734848,
+          "commitment": 1101639680
+        },
+        "sample_interval_seconds": 0.1,
+        "numerical_threads": 2,
+        "gpu": false,
+        "sample_count": 181,
+        "maximum_monotonic_sample_gap_seconds": 0.11367369999788934,
+        "focused_cumulative_seconds": 4.589180400002078,
+        "memory_semantics": "Owned controller+descendants; sum of per-process peak RSS/private commitment",
+        "cumulative_calls": {
+          "full_stack": 3,
+          "neural": 9,
+          "metric": 8
+        }
+      },
+      {
+        "mode": "package",
+        "status": "PASS",
+        "command": [
+          "C:\\Users\\USER\\Desktop\\SimulacraBench\\.venv\\Scripts\\python.exe",
+          "-X",
+          "utf8",
+          "-B",
+          "C:\\Users\\USER\\Desktop\\SimulacraBench\\scripts\\check_e063_release.py",
+          "worker",
+          "package"
+        ],
+        "wall_seconds": 4.8797472000005655,
+        "cumulative_worker_seconds": 512.3758485000035,
+        "historical_S1_worker_seconds": 754.5516991000004,
+        "combined_worker_seconds": 1266.927547600004,
+        "reason": "COMPLETE",
+        "error": null,
+        "exit_code": 0,
+        "peak_owned_tree_bytes": {
+          "rss": 391221248,
+          "commitment": 388186112
+        },
+        "sample_interval_seconds": 0.1,
+        "numerical_threads": 2,
+        "gpu": false,
+        "sample_count": 45,
+        "maximum_monotonic_sample_gap_seconds": 0.1151510000017879,
+        "focused_cumulative_seconds": 4.589180400002078,
+        "memory_semantics": "Owned controller+descendants; sum of per-process peak RSS/private commitment",
+        "cumulative_calls": {
+          "full_stack": 3,
+          "neural": 9,
+          "metric": 8
+        }
+      },
+      {
+        "mode": "official",
+        "status": "PASS",
+        "command": [
+          "C:\\Users\\USER\\Desktop\\SimulacraBench\\.venv\\Scripts\\python.exe",
+          "-X",
+          "utf8",
+          "-B",
+          "C:\\Users\\USER\\Desktop\\SimulacraBench\\scripts\\check_e063_release.py",
+          "worker",
+          "official"
+        ],
+        "wall_seconds": 701.724240399999,
+        "cumulative_worker_seconds": 1214.1000889000024,
+        "historical_S1_worker_seconds": 754.5516991000004,
+        "combined_worker_seconds": 1968.6517880000029,
+        "reason": "COMPLETE",
+        "error": null,
+        "exit_code": 0,
+        "peak_owned_tree_bytes": {
+          "rss": 2455371776,
+          "commitment": 2650202112
+        },
+        "sample_interval_seconds": 0.1,
+        "numerical_threads": 2,
+        "gpu": false,
+        "sample_count": 6261,
+        "maximum_monotonic_sample_gap_seconds": 0.12008280000009108,
+        "focused_cumulative_seconds": 4.589180400002078,
+        "memory_semantics": "Owned controller+descendants; sum of per-process peak RSS/private commitment",
+        "cumulative_calls": {
+          "full_stack": 6,
+          "neural": 18,
+          "metric": 16
+        }
+      }
+    ],
+    "additional_nonoverlapping_preparation": {
+      "seconds": 0.4833488,
+      "evidence": "cef799 exec_command wall_seconds, first permitted identity/entry preparation before monitored tests",
+      "memory_observed": false,
+      "notes": "Non-numerical hashing/metadata only; included conservatively. Concurrent later shell/read/check spans overlap monitored all3 or are gross document work, not added twice."
+    },
+    "monitored_stage_seconds": 1214.1000889000024,
+    "total_computational_seconds": 1214.5834377000024,
+    "limit_computational_seconds": 3600,
+    "focused_seconds": 4.589180400002078,
+    "all3_units": 2,
+    "pipeline": 6,
+    "neural": 18,
+    "metric": 16,
+    "conditional_baseline_all3": 0,
+    "repair_reserve_all3": 0,
+    "peak_owned_tree_bytes": {
+      "rss": 2455371776,
+      "commitment": 2650202112
+    },
+    "peak_owned_tree_GiB": {
+      "rss": 2.2867431640625,
+      "commitment": 2.4681930541992188
+    },
+    "maximum_monotonic_sample_gap_seconds": 0.12008280000009108,
+    "nested_components_not_added": {
+      "neural": {
+        "calls": 18,
+        "seconds": 586.9468602999987
+      },
+      "metric": {
+        "calls": 16,
+        "seconds": 1.0000736999936635
+      }
+    },
+    "historical_S1": {
+      "seconds": 754.5516991000004,
+      "pipeline": 6,
+      "neural": 18,
+      "metric": 16
+    },
+    "combined_E063_S1_S2_seconds": 1969.1351368000028,
+    "combined_calls": {
+      "pipeline": 12,
+      "neural": 36,
+      "metric": 32
+    },
+    "cpu_numerical_threads": 2,
+    "gpu": 0,
+    "heavy": 1,
+    "remote_cost_usd": 0,
+    "limits": {
+      "all3_each": 900,
+      "focused_child": 60,
+      "focused_total": 300,
+      "rss_private_each": 8589934592,
+      "absolute_all3": 5,
+      "pipeline": 15,
+      "neural": 45,
+      "metric": 32
+    },
+    "scope": "Stage wall includes owned numerical child import/startup/predict/output/validation/evaluator/exit/cleanup and parent verification from monitor entry; nested subprocess intervals not extra cost. Static reading/authoring recorded in gross session time.",
+    "monitor_limit": "Actual .1s polling/max monotonic gap and conservative sums of process peaks, not continuous bounds proof; historical S1 max gap unrecorded, not retroactively repaired."
+  },
+  "tests": {
+    "new_cases": 3,
+    "no_fit": true,
+    "status": "PASS",
+    "old_successful_suite_rerun": false
+  },
+  "zip_checker": {
+    "status": "PASS",
+    "log": "zip-check.log",
+    "tiny_generated_predict": 1,
+    "neural_optimizer_fit": 0,
+    "zero_fit_basis": "Stock 2visible TRAIN smoke; original tune_and_train fit_rows<10 return, no UNHCR metric branch"
+  },
+  "source_archive_extracted_bytes_exact": true,
+  "preregistered_scorecard_prefix_preserved": true,
+  "baseline_fresh_fit": 0,
+  "ordinary_repairs": "repair-record.md: late missing E025 current identity corrected with original preflight preserved, plus document-only porcelain whitespace helper repair. No source/policy/scientific retry.",
+  "exposure": "exposure-ledger.md/projection.jsonl; no prohibited input/cache hash/content access",
+  "dependencies": "dependency-disclosure.json",
+  "operations": {
+    "original_source_experiment_snapshot_tree_edits": 0,
+    "fit_new_fixed_candidate_suites": 2,
+    "upload_platform_login_query": 0,
+    "commit_push": 0,
+    "remote_install_download": 0,
+    "subagents": 0,
+    "S3_TEST_selection": 0
+  },
+  "final_named_local_jobs": {
+    "observed_kst": "2026-10-10T00:10:30.8191521+09:00",
+    "scope": "Named local jobs with repository command path only; no remote query",
+    "jobs": []
+  },
+  "limits": [
+    "Exposed synthetic engineering/no independent audit; weak whole gain and8/16 descriptive declines inherited",
+    "Released API baseline user-provided; not independently authenticated/current scorer version or historical remote bytes proof",
+    "E025 current snapshot byte check late, after candidate launch but before evaluator/ZIP/official; not retroactive prospective identity claim",
+    "E062 common environment fields compared; unrecorded historical package/executable versions remain unknown",
+    "Current sampled memory peaks/max gap not continuous bound proof, historical S1 maximum gap absent",
+    "Hosted H100/install/shared900s/runtime not measured; Python socket guard not native egress firewall",
+    "Selected source/text/allowed raw preservation and dirty path continuity, not all workspace bytes or remote job absence"
+  ],
+  "preserved_state": "E041 incumbent/E025 fallback; E057/E060/E061/E062/E063 parked; E062 UNRESOLVED; E058 STOP/E059 STOP_SELECTION/A023/A024 empirical HOLD/A039/A040/all STOP/HOLD;17999/12339SSUID/aggregates/A022;E059 consumed1918/1124 and2007/1130;protected2074/1177 and1866;A_half unpromoted/A018 unconfirmed/S3 stopped"
+}

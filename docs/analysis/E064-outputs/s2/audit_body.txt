@@ -1,0 +1,89 @@
+class Audit:
+    """Observe the actual standalone functions; never alter model values."""
+    def __init__(self, main_path, log_path, previous, limits, ntrain, instrument):
+        self.main_path = os.path.normcase(os.path.abspath(main_path))
+        self.stream = open(log_path, 'x', encoding='utf-8')
+        self.totals, self.limits = dict(previous), limits
+        self.ntrain, self.instrument = ntrain, instrument
+        self.started = {}
+        self.roles = json.loads(os.environ.get('E064_ROLES', '{}'))
+        self.metric_roles = json.loads(os.environ.get('E064_METRIC_ROLES', '{}'))
+
+    def emit(self, row):
+        row.update(instrument=self.instrument, pid=os.getpid())
+        self.stream.write(json.dumps(row, allow_nan=False)+'\n'); self.stream.flush()
+
+    def invariant(self, key, value, phase='always'):
+        self.emit(dict(event='invariant', key=key, phase=phase, sha256=structured_digest(value)))
+
+    def profile(self, frame, event, arg):
+        if event not in ('call','return'): return
+        rawname = frame.f_code.co_name
+        filename = os.path.normcase(os.path.abspath(frame.f_code.co_filename))
+        model = filename == self.main_path
+        name = {'_e064_train_on':'_train_on','_e064_render_predict':'predict',
+                '_e064_tune_and_train':'tune_and_train'}.get(rawname, rawname)
+        loc = frame.f_locals
+        def index_hash(x):
+            return hashlib.sha256(__import__('numpy').asarray(x,dtype='<i8').tobytes()).hexdigest()
+        if model and rawname == '<module>' and event == 'return':
+            torch=sys.modules['torch']
+            torch.set_num_threads(2); torch.set_num_interop_threads(2)
+            if torch.cuda.is_available(): raise RuntimeError('GPU not allowed')
+            self.emit(dict(event='environment',torch_threads=torch.get_num_threads(),
+                           torch_interop_threads=torch.get_num_interop_threads(),cuda=False))
+        if model and name == '_targets' and event == 'call':
+            rows, predicted = loc['rows'], loc['predict_items']
+            digest = index_hash(rows.index)
+            roles=[k for k,v in self.roles.items() if v['index_sha256']==digest]
+            if not roles or (len(rows) and (min(rows.index)<0 or max(rows.index)>=self.ntrain)) or rows[predicted].isna().any().any():
+                raise RuntimeError('Neural target role/mask boundary')
+            self.emit(dict(event='target_role',roles=roles,rows=len(rows),index_sha256=digest))
+        if model and name == 'fit_sections' and event == 'call':
+            for role in ('fit','select','bank'):
+                if index_hash(loc[role]) != self.metric_roles[role]['index_sha256']:
+                    raise RuntimeError('Metric role mismatch')
+            self.emit(dict(event='metric_roles',status='PASS'))
+        if model and event == 'return' and arg is not None:
+            if name == 'fit_sections': self.invariant('metric_result',arg)
+            if name == 'estimate_weights': self.invariant('initial_weights',arg)
+            if name in ('candidate_indices','_topk_excl','_evidence','_replace_evidence'):
+                query=loc.get('query',loc.get('query_pos'))
+                if query is not None:
+                    phase='held' if len(query) and min(query)>=self.ntrain else 'visible'
+                    self.invariant(name+':'+index_hash(query),arg,phase)
+                    if name in ('candidate_indices','_topk_excl'):
+                        donors=arg if name=='candidate_indices' else [p[0] for p in arg]
+                        if any(int(q) in d for q,d in zip(query,donors)): raise RuntimeError('Donor self exclusion')
+            if name == '_max_q':
+                outer=frame.f_back.f_locals if frame.f_back else {}
+                phase='held' if loc.get('posteriors') is outer.get('post') else 'visible'
+                self.invariant('concentration:'+structured_digest(loc['posteriors']),arg>=.5,phase)
+            if name in ('supervised_layer','hh_sharp_layer'):
+                self.emit(dict(event='lambda',values={k:list(v) for k,v in loc.get('lam',{}).items()}))
+            if name=='supervised_layer' and 'active_items' in loc:
+                self.invariant('replay_eligibility',{k:loc[k] for k in ('cal','original_cal','replay','active_items','conc_cal')})
+            if name=='predict' and all(k in loc for k in ('full_tables','cond_tables','agreement')):
+                self.invariant('ladder_and_agreement',{k:loc[k] for k in ('cols','kappas','full_tables','cond_tables','agreement')})
+        kind=('full_stack' if model and rawname=='_e064_predict' else
+              'neural' if model and name=='_train_on' else
+              'metric' if name=='minimize' and filename.replace('\\','/').endswith('/scipy/optimize/_minimize.py') else None)
+        if kind is None: return
+        if event=='call':
+            if kind=='neural' and str(loc['dev'])!='cpu': raise RuntimeError('Non-CPU training')
+            if kind=='metric':
+                args=loc['args']; nf=self.metric_roles['fit']['rows']
+                if any(args[i].shape[0]!=nf for i in (0,1,2)): raise RuntimeError('Non-F optimizer input')
+                self.emit(dict(event='optimizer_slice',fit_rows=nf,coordinates=len(loc['x0'])))
+            self.totals[kind]+=1
+            self.emit(dict(event='enter',kind=kind,function=rawname,totals=dict(self.totals)))
+            if self.totals[kind]>self.limits[kind]: raise RuntimeError('Call cap '+kind)
+            self.started[id(frame)]=time.perf_counter()
+        else:
+            row=dict(event='return',kind=kind,function=rawname,returned=arg is not None,
+                     seconds=time.perf_counter()-self.started.pop(id(frame),time.perf_counter()))
+            if kind=='neural':
+                row.update(epochs=int(loc.get('epoch',0)),best_epoch=int(loc.get('best_epoch',0)),
+                           network_class=type(arg[0]).__name__ if arg else None,device=str(loc['dev']))
+            if kind=='metric' and arg is not None: row.update(iterations=int(arg.nit),success=bool(arg.success))
+            self.emit(row)

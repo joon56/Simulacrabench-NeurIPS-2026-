@@ -1,0 +1,17 @@
+{"event": "environment", "torch_threads": 2, "torch_interop_threads": 2, "cuda": false, "instrument": "world_bank", "pid": 33608}
+{"event": "enter", "kind": "full_stack", "function": "_e062_predict", "totals": {"full_stack": 5, "neural": 12, "metric": 8}, "instrument": "world_bank", "pid": 33608}
+{"event": "target_boundary", "rows": 3280, "instrument": "world_bank", "pid": 33608}
+{"event": "target_role", "rows": 3280, "roles": ["inner_train"], "index_sha256": "89b362895751cac0764c7c3eae8b63558c69bbbeb62d449497a5587d1182fbd5", "instrument": "world_bank", "pid": 33608}
+{"event": "target_boundary", "rows": 832, "instrument": "world_bank", "pid": 33608}
+{"event": "target_role", "rows": 832, "roles": ["inner_stop"], "index_sha256": "155afd869046f0643cfdafa635fb10064f9e374bb3584b6cfd8228c968db22e4", "instrument": "world_bank", "pid": 33608}
+{"event": "target_boundary", "rows": 1083, "instrument": "world_bank", "pid": 33608}
+{"event": "target_role", "rows": 1083, "roles": ["outer_selection"], "index_sha256": "5b659342db3e691771931b7546a7d20cb32123bea957c13517e52e3cac461d8b", "instrument": "world_bank", "pid": 33608}
+{"event": "enter", "kind": "neural", "function": "_e062_train_on", "totals": {"full_stack": 5, "neural": 13, "metric": 8}, "instrument": "world_bank", "pid": 33608}
+{"event": "return", "kind": "neural", "function": "_e062_train_on", "seconds": 38.538579899999604, "returned": true, "epochs": 256, "best_epoch": 226, "device": "cpu", "instrument": "world_bank", "pid": 33608}
+{"event": "enter", "kind": "neural", "function": "_e062_train_on", "totals": {"full_stack": 5, "neural": 14, "metric": 8}, "instrument": "world_bank", "pid": 33608}
+{"event": "return", "kind": "neural", "function": "_e062_train_on", "seconds": 35.61128049999934, "returned": true, "epochs": 214, "best_epoch": 184, "device": "cpu", "instrument": "world_bank", "pid": 33608}
+{"event": "target_boundary", "rows": 5195, "instrument": "world_bank", "pid": 33608}
+{"event": "target_role", "rows": 5195, "roles": ["final_refit"], "index_sha256": "31723171cab38858ed86b9a2eadb6f5f752872741d6f8cc00c63833a51b79c70", "instrument": "world_bank", "pid": 33608}
+{"event": "enter", "kind": "neural", "function": "_e062_train_on", "totals": {"full_stack": 5, "neural": 15, "metric": 8}, "instrument": "world_bank", "pid": 33608}
+{"event": "return", "kind": "neural", "function": "_e062_train_on", "seconds": 34.51216269999895, "returned": true, "epochs": 184, "best_epoch": 0, "device": "cpu", "instrument": "world_bank", "pid": 33608}
+{"event": "return", "kind": "full_stack", "function": "_e062_predict", "seconds": 138.32950979999987, "returned": true, "instrument": "world_bank", "pid": 33608}

@@ -1,0 +1,11 @@
+{
+  "status": "FAIL",
+  "reason": "COMPLETE",
+  "exit_code": 1,
+  "seconds": 46.5746736000001,
+  "total_suite_seconds": 46.5746736000001,
+  "peak_process_tree_bytes": {
+    "rss": 1034473472,
+    "commitment": 1095700480
+  }
+}

@@ -1,0 +1,624 @@
+﻿diff --git a/docs/analysis/A040-outputs/modal-controller-repair1/controller.py b/docs/analysis/A040-outputs/modal-full-path1-resume3/controller_core.py
+index 5c2c9fc..c22c3b5 100644
+--- a/docs/analysis/A040-outputs/modal-controller-repair1/controller.py
++++ b/docs/analysis/A040-outputs/modal-full-path1-resume3/controller_core.py
+@@ -1,88 +1,7 @@
+-"""Injected async controller. No SDK import, credentials, input reads or live CLI.
+-
+-Use raw internal async objects consistently (SDK1.6.0 contract), never public .aio
+-wrappers with a raw stub. Only the fake binding is executable in this scope.
+-"""
++"""Raw async finite wait and unchanged installer from repair1; live-only caller."""
+ import asyncio
+-import dataclasses
+-import json
+-import time
+-import traceback
+-from pathlib import Path
+-
+-
+-def write_json(path, value):
+-    path.write_text(json.dumps(value, ensure_ascii=False, indent=2), encoding="utf-8")
+-
+-
+-class AsyncSDKTransport:
+-    def __init__(self, sdk, requirements, deadline, app_name, record):
+-        self.sdk, self.requirements, self.deadline = sdk, requirements, deadline
+-        self.app_name, self.record = app_name, record
+-        self.client = self.app = self.image = None
+-
+-    async def prepare(self):
+-        self.client = await self.sdk.Client.from_env()
+-        self.workspace = self.sdk.Workspace.from_context(client=self.client)
+-        await self.workspace.hydrate()
+-        if self.workspace.name != "joon56":
+-            raise RuntimeError("Workspace mismatch")
+-        self.baseline = await self.workspace.billing.summary()
+-        if float(self.baseline.billed_cost) != 0:
+-            raise RuntimeError("Cash billing contradiction")
+-
+-    async def create(self):
+-        self.app = await self.sdk.App.lookup(self.app_name, client=self.client,
+-                            create_if_missing=True, environment_name="main")
+-        return self.app.app_id
+ 
+-    def construct(self):
+-        self.image = self.sdk.Image.from_registry('python:3.13.14-slim').run_function(
+-            install_pins, args=(self.requirements, self.deadline), cpu=(1,1), memory=(8192,8192),
+-            timeout=600, include_source=False)
+-
+-    async def build(self):
+-        # Same recipe and monitored budget formula as original. No retry/rebuild.
+-        started, last_bill, delta = time.monotonic(), 0.0, 0.0
+-        task = None
+-        try:
+-            with self.sdk.enable_output():
+-                task = asyncio.create_task(self.image.build(self.app))
+-                while not task.done():
+-                    elapsed = time.monotonic() - started
+-                    if elapsed-last_bill >= 45 or last_bill == 0:
+-                        try:
+-                            summary = await bounded(self.workspace.billing.summary(), 10, 0.1)
+-                            delta = max(0, float(summary.metered_cost)-float(self.baseline.metered_cost))
+-                            self.record("billing", dataclasses.asdict(summary))
+-                        except Exception as exc:
+-                            self.record("billing_error", {"error": repr(exc)})
+-                        last_bill = max(elapsed, 0.001)
+-                    estimate = .65 + elapsed*(.0000131+8*.00000222)
+-                    self.record("cost", {"estimate": estimate, "management_value": max(estimate, delta)})
+-                    if max(estimate, delta) >= 4 or time.time() >= self.deadline-45:
+-                        raise TimeoutError("Preparation time/cost stop")
+-                    await asyncio.wait({task}, timeout=10)
+-                await task
+-            return self.image.object_id
+-        finally:
+-            if task is not None and not task.done():
+-                task.cancel()  # Parent controller/launcher bounds remaining tasks.
+-
+-    async def stop(self, app_id):
+-        pb = self.sdk.pb
+-        await self.client._stub.AppStop(pb.AppStopRequest(app_id=app_id, source=pb.APP_STOP_SOURCE_CLI))
+-
+-    async def query(self, app_id):
+-        pb = self.sdk.pb
+-        info = await self.client._stub.AppGetInfo(pb.AppGetInfoRequest(app_id=app_id))
+-        tasks = await self.client._stub.TaskList(pb.TaskListRequest(app_id=app_id))
+-        # Fail closed: only explicit STOPPED and complete empty task query suffice.
+-        return {"stopped": info.info.lifecycle.app_state == pb.APP_STATE_STOPPED,
+-                "task_count": len(tasks.tasks)}
+-
+-
+-async def bounded(awaitable, seconds, cancel_grace=0.03):
++async def bounded(awaitable, seconds, cancel_grace=2):
+     """wait_for/gather can wait indefinitely when cancellation is suppressed."""
+     task = asyncio.create_task(awaitable)
+     done, _ = await asyncio.wait({task}, timeout=max(0, seconds))
+@@ -99,63 +18,6 @@ async def bounded(awaitable, seconds, cancel_grace=0.03):
+     raise TimeoutError("Operation deadline; cancellation completion not assumed")
+ 
+ 
+-async def run_controller(transport, output, phase=0.12, cleanup_total=0.35):
+-    output = Path(output)
+-    result = {"outcome": "NOT_STARTED", "owned_app_id": None, "stop_ack": False,
+-              "termination": "UNCONFIRMED", "create_attempts": 0, "build_attempts": 0,
+-              "stop_attempts": 0, "cleanup_errors": [], "execution": "INJECTED_LOCAL_ONLY"}
+-    def persist():
+-        write_json(output / "result.json", result)
+-    started = time.monotonic()
+-    try:
+-        # Entire preparation/creation/construction lies inside cleanup boundary.
+-        await bounded(transport.prepare(), phase)
+-        result["create_attempts"] = 1
+-        persist()  # Intent persisted BEFORE request, including unknown-ID case.
+-        app_id = await bounded(transport.create(), phase)
+-        if not isinstance(app_id, str) or not app_id:
+-            raise RuntimeError("Missing owned App ID")
+-        result["owned_app_id"] = app_id
+-        persist()
+-        transport.construct()
+-        result["build_attempts"] = 1
+-        persist()
+-        result["image_id"] = await bounded(transport.build(), phase)
+-        result["outcome"] = "BUILD_COMPLETED"
+-    except BaseException as exc:
+-        result.update(outcome="BUILD_FAILED", error=repr(exc), traceback=traceback.format_exc())
+-        # Persist original exception BEFORE cancellation/stop/query work.
+-        persist()
+-    finally:
+-        cleanup_start = time.monotonic()
+-        deadline = cleanup_start + cleanup_total
+-        app_id = result["owned_app_id"]
+-        if app_id is None:
+-            result["termination"] = ("ID_UNKNOWN" if result["create_attempts"] else "NO_CREATE_ATTEMPT")
+-        else:
+-            result["stop_attempts"] = 1
+-            persist()
+-            try:
+-                remaining = max(0, deadline-time.monotonic())
+-                await bounded(transport.stop(app_id), min(phase, remaining), 0)
+-                result["stop_ack"] = True
+-            except BaseException as exc:
+-                result["cleanup_errors"].append({"stage": "stop", "error": repr(exc)})
+-            # One exact-ID status pair, no stop reissue or create/discovery retry.
+-            remaining = max(0, deadline-time.monotonic())
+-            if remaining > 0:
+-                try:
+-                    observed = await bounded(transport.query(app_id), min(phase, remaining), 0)
+-                    result["termination_observation"] = observed
+-                    if observed["stopped"] is True and observed["task_count"] == 0:
+-                        result["termination"] = "TERMINAL_TASK0_CONFIRMED"
+-                except BaseException as exc:
+-                    result["cleanup_errors"].append({"stage": "query", "error": repr(exc)})
+-        result["cleanup_seconds"] = time.monotonic()-cleanup_start
+-        result["elapsed_seconds"] = time.monotonic()-started
+-        persist()
+-    return result
+-
+ def install_pins(requirements, absolute_deadline):
+     import json
+     from pathlib import Path
+diff --git a/docs/analysis/A040-outputs/modal-controller-repair1/launcher.py b/docs/analysis/A040-outputs/modal-full-path1-resume3/live_launcher.py
+index d7b3026..ff95109 100644
+--- a/docs/analysis/A040-outputs/modal-controller-repair1/launcher.py
++++ b/docs/analysis/A040-outputs/modal-full-path1-resume3/live_launcher.py
+@@ -1,4 +1,5 @@
+-"""Actual UTF-8 local launcher and hard process deadline. Fake worker only."""
++"""Single live worker, UTF-8 binary logs, bounded own-tree parent watchdog."""
++from datetime import datetime, timezone
+ import json
+ import os
+ from pathlib import Path
+@@ -6,45 +7,33 @@ import subprocess
+ import sys
+ import time
+ 
+-
+-def launch(scenario, output, mode="pipe", timeout=3):
+-    output = Path(output)
+-    output.mkdir()  # Exclusive output directory; no latch overwrite/reuse.
+-    env = os.environ.copy()
+-    env.update(PYTHONUTF8="1", PYTHONIOENCODING="utf-8", PYTHONDONTWRITEBYTECODE="1",
+-               OMP_NUM_THREADS="2", MKL_NUM_THREADS="2")
+-    command = [sys.executable, "-X", "utf8", "-u", str(Path(__file__).with_name("fake_worker.py")),
+-               scenario, str(output)]
+-    started = time.monotonic()
+-    files = []
+-    if mode == "file":
+-        files = [(output / name).open("xb") for name in ("stdout.bin", "stderr.bin")]
+-        destinations = files
+-    else:
+-        destinations = [subprocess.PIPE, subprocess.PIPE]
+-    proc = subprocess.Popen(command, env=env, stdout=destinations[0], stderr=destinations[1],
+-                            creationflags=getattr(subprocess, "CREATE_NO_WINDOW", 0))
++HERE = Path(__file__).resolve().parent
++entry = json.loads((HERE / "entry.json").read_text(encoding="utf-8-sig"))
++deadline = datetime.fromisoformat(entry["whole_deadline_utc"].replace("Z", "+00:00")).timestamp()
++env = os.environ.copy()  # Local normal SDK auth only; never forwarded to science.
++env.update(PYTHONUTF8="1", PYTHONIOENCODING="utf-8", PYTHONDONTWRITEBYTECODE="1")
++started = time.monotonic()
++with (HERE / "launcher-started.json").open("x", encoding="utf-8") as stream:
++    json.dump({"utc": datetime.now(timezone.utc).isoformat(), "pid": os.getpid(), "worker_invocations": 1}, stream)
++with (HERE / "live-stdout.txt").open("xb") as stdout, (HERE / "live-stderr.txt").open("xb") as stderr:
++    child = subprocess.Popen([sys.executable, "-X", "utf8", "-u", str(HERE / "live_worker.py")],
++                             stdout=stdout, stderr=stderr, env=env,
++                             creationflags=getattr(subprocess, "CREATE_NO_WINDOW", 0))
++    (HERE / "owned-local-worker.json").write_text(json.dumps({"pid": child.pid,
++        "parent_pid": os.getpid(), "helpers": "Worker audit denies subprocess spawn; launcher owns venv interpreter tree"}), encoding="utf-8")
+     timed_out = False
+     try:
+-        stdout, stderr = proc.communicate(timeout=timeout)
++        child.wait(timeout=max(1, deadline-time.time()-15))
+     except subprocess.TimeoutExpired:
+         timed_out = True
+-        proc.kill()  # Worker audit guard prohibits grandchildren; own PID only.
+-        stdout, stderr = proc.communicate(timeout=2)
+-    finally:
+-        for stream in files:
+-            stream.close()
+-    if mode == "pipe":
+-        (output / "stdout.bin").write_bytes(stdout)
+-        (output / "stderr.bin").write_bytes(stderr)
+-    receipt = {"pid": proc.pid, "returncode": proc.returncode, "watchdog_timeout": timed_out,
+-               "wall_seconds": time.monotonic()-started, "mode": mode,
+-               "remote_termination_claim": False, "command": command,
+-               "utf8_env": {key: env[key] for key in ("PYTHONUTF8", "PYTHONIOENCODING")}}
+-    if timed_out:
+-        # A partial journal is evidence of intent/known ID only, never termination.
+-        journal = output / "result.json"
+-        receipt["partial_journal"] = json.loads(journal.read_text(encoding="utf-8")) if journal.exists() else None
+-        receipt["termination"] = "UNCONFIRMED_WATCHDOG"
+-    (output / "launcher.json").write_text(json.dumps(receipt, ensure_ascii=False, indent=2), encoding="utf-8")
+-    return receipt
++        # Only the PID returned by this Popen and its descendants; never search/kill others.
++        subprocess.run(["taskkill", "/PID", str(child.pid), "/T", "/F"], timeout=10,
++                       stdout=stderr, stderr=stderr, check=False,
++                       creationflags=getattr(subprocess, "CREATE_NO_WINDOW", 0))
++        child.wait(timeout=5)
++receipt = {"child_pid": child.pid, "returncode": child.returncode, "watchdog_timeout": timed_out,
++           "wall_seconds": time.monotonic()-started, "remote_termination_claim": False,
++           "known_ids": "live-state.json", "cleanup_only_required_if_unconfirmed": True}
++(HERE / "launcher-result.json").write_text(json.dumps(receipt, indent=2), encoding="utf-8")
++print(json.dumps(receipt))
++sys.exit(child.returncode or int(timed_out))
+diff --git a/live_binding.py b/live_binding.py
+new file mode 100644
+--- /dev/null
++++ b/live_binding.py
+@@ -0,0 +1,19 @@
++"""Pinned SDK1.6.0 raw async binding; import alone does not authenticate."""
++from types import SimpleNamespace
++from modal.client import _Client
++from modal._workspace import _Workspace
++from modal.app import _App
++from modal._image import _Image
++from modal.sandbox import _Sandbox
++from modal.output import enable_output
++from modal._utils.async_utils import synchronizer
++from modal_proto import api_pb2
++
++SDK = SimpleNamespace(Client=_Client, Workspace=_Workspace, App=_App, Image=_Image,
++                      Sandbox=_Sandbox, pb=api_pb2, enable_output=enable_output)
++
++
++def image_from_id(image_id, client):
++    # SDK1.6.0 from_id is a synchronous handle constructor returning a public
++    # wrapper, even on _Image. Translate the handle before raw async use.
++    return synchronizer._translate_in(_Image.from_id(image_id, client=client))
+diff --git a/live_worker.py b/live_worker.py
+new file mode 100644
+--- /dev/null
++++ b/live_worker.py
+@@ -0,0 +1,286 @@
++"""One real Modal preparation and conditional fixed target workflow; no retry."""
++import asyncio
++import base64
++import dataclasses
++from datetime import datetime, timezone
++import hashlib
++import json
++import os
++from pathlib import Path
++import sys
++import time
++import traceback
++
++from controller_core import bounded, install_pins
++from live_binding import SDK, image_from_id
++
++HERE = Path(__file__).resolve().parent
++ROOT = HERE.parents[3]
++ENTRY = json.loads((HERE / "entry.json").read_text(encoding="utf-8-sig"))
++PREP_END = datetime.fromisoformat(ENTRY["preparation_deadline_utc"].replace("Z", "+00:00")).timestamp()
++WHOLE_END = datetime.fromisoformat(ENTRY["whole_deadline_utc"].replace("Z", "+00:00")).timestamp()
++APP_NAME = "a040-resume3-20261004-123330"
++BASE = "im-eWgRNij0VH6mzozlOzEyxy"
++STATE = {"execution": "REAL_MODAL_RESUME3", "outcome": "PREPARING", "app_id": None,
++         "app_name": APP_NAME, "sandbox_id": None, "create_attempts": 0, "build_attempts": 0,
++         "scientific_reference": 0, "scientific_candidate": 0, "termination": "UNCONFIRMED"}
++
++
++def save(name, value):
++    target = HERE / name
++    temp = target.with_name(target.name + ".writing")
++    with temp.open("w", encoding="utf-8") as stream:
++        json.dump(value, stream, ensure_ascii=False, indent=2, default=str)
++        stream.flush()
++        os.fsync(stream.fileno())
++    os.replace(temp, target)
++
++
++def event(kind, **values):
++    with (HERE / "events.jsonl").open("a", encoding="utf-8") as stream:
++        stream.write(json.dumps({"utc": datetime.now(timezone.utc).isoformat(), "event": kind,
++                                 **values}, default=str, ensure_ascii=False) + "\n")
++        stream.flush()
++        os.fsync(stream.fileno())
++
++
++def persist():
++    save("live-state.json", STATE)
++
++
++class Context:
++    client = workspace = app = image = sandbox = None
++    build_started = None
++    cumulative_posted = 0.00001152
++    gpu_started = None
++
++    async def bill(self):
++        summary = await bounded(self.workspace.billing.summary(), 10, 2)
++        data = dataclasses.asdict(summary)
++        if float(summary.billed_cost) != 0:
++            raise RuntimeError("Observed cash billing contradiction")
++        components = sum(max(0, float(value)) for value in summary.metered_cost_breakdown.values())
++        self.cumulative_posted = max(self.cumulative_posted, float(summary.metered_cost), components)
++        event("billing", summary=data, cumulative_account_evidence=self.cumulative_posted,
++              attribution="Account observation, not task-attributed final invoice")
++        save("billing-latest.json", data)
++        return data
++
++    def management(self):
++        elapsed = time.monotonic()-self.build_started if self.build_started else 0
++        # Build estimate includes subsequent preparation wait conservatively.
++        estimate = 0.00001152 + .65 + elapsed*(.0000131 + 8*.00000222)
++        if self.gpu_started is not None:
++            estimate += (time.monotonic()-self.gpu_started)*.00123580560546875
++        return max(estimate, self.cumulative_posted)
++
++    def gate(self, next_plan):
++        value = self.management()
++        event("cost_gate", management=value, next_plan=next_plan, sum=value+next_plan,
++              threshold=4, unknown_prior_posting=True, exact_invoice_bound=False)
++        if value+next_plan >= 4:
++            raise RuntimeError("Cumulative planning gate reached; cleanup only")
++
++
++async def base_identity(ctx):
++    expected = json.loads((HERE.parent / "modal-full-path1-resume2/termination-receipt.json").read_text(encoding="utf-8-sig"))
++    observed = None
++    async def read_status():
++        nonlocal observed
++        request = SDK.pb.ImageJoinStreamingRequest(image_id=BASE, timeout=3)
++        async for row in ctx.client._stub.ImageJoinStreaming.unary_stream(request):
++            if row.result.status:
++                observed = row.result
++    await bounded(read_status(), 15, 2)
++    if observed is None or observed.status != SDK.pb.GENERIC_STATUS_SUCCESS:
++        raise RuntimeError("Saved base is not currently SUCCESS")
++    if bytes(observed.data) != base64.b64decode(expected["image_result"]["data"]):
++        raise RuntimeError("Saved base result identity mismatch")
++    response = await bounded(ctx.client._stub.ImageFromId(SDK.pb.ImageFromIdRequest(image_id=BASE)), 10, 2)
++    if response.image_id != BASE:
++        raise RuntimeError("Base image ID mismatch")
++    save("base-identity.json", {"image_id": BASE, "status": "GENERIC_STATUS_SUCCESS",
++        "saved_result_bytes_equal": True, "result_sha256": hashlib.sha256(bytes(observed.data)).hexdigest(),
++        "metadata_sha256": hashlib.sha256(response.metadata.SerializeToString()).hexdigest(),
++        "complete_dependency_image": False})
++
++
++async def cleanup(ctx):
++    start = time.monotonic()
++    # Reserve10s inside the60s cleanup budget for the final normal billing read.
++    deadline = min(start+50, time.monotonic()+max(0, WHOLE_END-time.time()-25))
++    receipt = {"app_id": STATE["app_id"], "sandbox_id": STATE["sandbox_id"], "errors": [],
++               "app_stop_ack": False, "termination": "UNCONFIRMED", "observations": []}
++    async def call(coro):
++        remaining = max(0, deadline-time.monotonic())
++        return await bounded(coro, min(10, remaining), 0)
++    try:
++        if ctx.client is None:
++            receipt["termination"] = "NO_CLIENT_NO_RESOURCE"
++            return
++        if STATE["app_id"] is None and STATE["create_attempts"]:
++            # Read-only lookup of this unique intent; never creates or builds.
++            try:
++                app = await call(SDK.App.lookup(APP_NAME, client=ctx.client, create_if_missing=False,
++                                                environment_name="main"))
++                STATE["app_id"] = app.app_id
++                receipt["app_id"] = app.app_id
++                event("lost_create_id_recovered_read_only", app_id=app.app_id)
++                persist()
++            except BaseException as exc:
++                receipt["errors"].append({"stage": "lookup_own_intent", "error": repr(exc)})
++        if ctx.sandbox is not None:
++            try:
++                await call(ctx.sandbox.terminate())
++                receipt["sandbox_terminate_ack"] = True
++            except BaseException as exc:
++                receipt["errors"].append({"stage": "sandbox_terminate", "error": repr(exc)})
++        app_id = STATE["app_id"]
++        if not app_id:
++            receipt["termination"] = "ID_UNKNOWN" if STATE["create_attempts"] else "NO_CREATE_ATTEMPT"
++            return
++        try:
++            await call(ctx.client._stub.AppStop(SDK.pb.AppStopRequest(app_id=app_id, source=SDK.pb.APP_STOP_SOURCE_CLI)))
++            receipt["app_stop_ack"] = True
++        except BaseException as exc:
++            receipt["errors"].append({"stage": "app_stop", "error": repr(exc)})
++        while time.monotonic() < deadline-1:
++            try:
++                info = await call(ctx.client._stub.AppGetInfo(SDK.pb.AppGetInfoRequest(app_id=app_id)))
++                tasks = await call(ctx.client._stub.TaskList(SDK.pb.TaskListRequest(app_id=app_id)))
++                row = {"app_state": int(info.info.lifecycle.app_state), "task_count": len(tasks.tasks)}
++                if ctx.sandbox is not None:
++                    row["sandbox_returncode"] = await call(ctx.sandbox.poll())
++                receipt["observations"].append(row)
++                save("termination-receipt.json", receipt)
++                if info.info.lifecycle.app_state == SDK.pb.APP_STATE_STOPPED and len(tasks.tasks) == 0 and (
++                        ctx.sandbox is None or row["sandbox_returncode"] is not None):
++                    receipt["termination"] = "TERMINAL_TASK0_CONFIRMED"
++                    break
++            except BaseException as exc:
++                receipt["errors"].append({"stage": "query", "error": repr(exc)})
++            await asyncio.sleep(min(2, max(0, deadline-time.monotonic())))
++    finally:
++        receipt["elapsed_seconds"] = time.monotonic()-start
++        STATE["termination"] = receipt["termination"]
++        save("termination-receipt.json", receipt)
++        persist()
++
++
++async def main():
++    ctx = Context()
++    try:
++        # Exclusive attempt latch before any credentials or RPC.
++        with (HERE / "live-started.json").open("x", encoding="utf-8") as stream:
++            json.dump({"utc": datetime.now(timezone.utc).isoformat(), "pid": os.getpid(), "app_name": APP_NAME}, stream)
++            stream.flush(); os.fsync(stream.fileno())
++        preflight = json.loads((HERE / "preflight-result.json").read_text(encoding="utf-8"))
++        if preflight["outcome"] != "LIVE_BINDING_PREFLIGHT_PASS":
++            raise RuntimeError("New binding preflight missing")
++        async def prepare():
++            ctx.client = await SDK.Client.from_env()
++            if ctx.client._cancellation_context_event_loop is not asyncio.get_running_loop():
++                raise RuntimeError("Raw client event-loop mismatch")
++            ctx.workspace = SDK.Workspace.from_context(client=ctx.client)
++            await ctx.workspace.hydrate()
++            if ctx.workspace.name != "joon56":
++                raise RuntimeError("Workspace mismatch")
++            baseline = await ctx.bill()
++            save("billing-baseline.json", baseline)
++            event("live_binding_confirmed", sdk="1.6.0", raw_client_same_loop=True, workspace="joon56")
++        await bounded(prepare(), 60, 2)
++        await bounded(base_identity(ctx), 30, 2)
++        ctx.gate(.20)
++        if PREP_END-time.time() < 1000:
++            raise TimeoutError("Insufficient full image and cleanup time")
++        STATE["create_attempts"] = 1
++        persist()
++        ctx.app = await bounded(SDK.App.lookup(APP_NAME, client=ctx.client, create_if_missing=True,
++                                               environment_name="main"), 30, 2)
++        STATE["app_id"] = ctx.app.app_id
++        persist(); event("owned_app_id", app_id=ctx.app.app_id)
++        pins_path = ROOT / "docs/analysis/A040-outputs/full-path-resume1/requirements.lock.txt"
++        pin_bytes = pins_path.read_bytes()
++        if hashlib.sha256(pin_bytes).hexdigest() != "6c6f0d0fc5db943eb1cb95ff4610ddea5df724bc50031b883a0dd67656771b70":
++            raise RuntimeError("Pinned lock identity mismatch")
++        ctx.image = image_from_id(BASE, ctx.client).run_function(install_pins,
++            args=(pin_bytes.decode("utf-8-sig"), min(PREP_END-75, time.time()+900)),
++            cpu=(1, 1), memory=(8192, 8192), timeout=600, include_source=False)
++        if not isinstance(ctx.image, SDK.Image):
++            raise TypeError("Image binding is not raw async")
++        # Capture image IDs at the actual SDK join, without extra create/build.
++        import modal._image as image_module
++        original_join = image_module._image_await_build_result
++        async def observed_join(image_id, client):
++            event("image_join", image_id=image_id)
++            return await original_join(image_id, client)
++        image_module._image_await_build_result = observed_join
++        STATE["build_attempts"] = 1
++        persist()
++        ctx.build_started = time.monotonic()
++        with SDK.enable_output():
++            task = asyncio.create_task(ctx.image.build(ctx.app))
++            last_bill = 0
++            try:
++                while not task.done():
++                    now = time.monotonic()
++                    if now-last_bill >= 45:
++                        await ctx.bill()
++                        last_bill = now
++                    ctx.gate(0)
++                    if now-ctx.build_started >= 900 or time.time() >= PREP_END-75:
++                        raise TimeoutError("Image preparation deadline")
++                    await asyncio.wait({task}, timeout=5)
++                await task
++            finally:
++                if not task.done():
++                    task.cancel()
++                    await asyncio.wait({task}, timeout=2)
++        STATE.update(outcome="IMAGE_READY", image_id=ctx.image.object_id)
++        persist(); save("image-result.json", {**STATE, "seconds": time.monotonic()-ctx.build_started})
++        # Port work may finish during build; only explicit frozen gate continues.
++        while not (HERE / "continue-sandbox.json").exists():
++            if time.time() >= PREP_END-75:
++                raise TimeoutError("Port/freeze not ready within preparation deadline")
++            ctx.gate(0)
++            await asyncio.sleep(5)
++        from sandbox_stage import execute
++        await execute(ctx, STATE, save, event, persist)
++        STATE["outcome"] = "H100_FULL_PATH_PASS"
++    except BaseException as exc:
++        STATE.update(outcome="STOP_FIRST_ERROR", error=repr(exc), traceback=traceback.format_exc())
++        persist(); event("first_error", error=repr(exc), stage_state=dict(STATE))
++        print(traceback.format_exc(), file=sys.stderr, flush=True)
++    finally:
++        try:
++            await cleanup(ctx)
++        except BaseException as exc:
++            STATE["cleanup_error"] = repr(exc)
++            persist()
++        if ctx.workspace is not None:
++            try:
++                await bounded(ctx.bill(), 10, 0)
++            except BaseException as exc:
++                event("final_billing_unavailable", error=repr(exc))
++        save("cost-ledger.json", {"prior_ledger": "../modal-full-path1-resume2/cost-ledger.json",
++             "planning_preparation": 1, "planning_total": 5, "cash_authority": 0,
++             "cumulative_account_evidence": ctx.cumulative_posted, "management_estimate": ctx.management(),
++             "final_task_attributed_cost": None, "unposted_retry_transfer_storage_unknown": True,
++             "historical_apps_component": .00001152, "active_prior_seconds": 4477.3871369})
++        save("result.json", STATE)
++    return 0 if STATE["outcome"] == "H100_FULL_PATH_PASS" and STATE["termination"] == "TERMINAL_TASK0_CONFIRMED" else 1
++
++
++if __name__ == "__main__":
++    for stream in (sys.stdout, sys.stderr):
++        stream.reconfigure(encoding="utf-8", errors="strict", line_buffering=True)
++    # No local helpers are needed by this pinned raw SDK workflow. Fail closed.
++    def deny_helpers(name, args):
++        if name in ("subprocess.Popen", "os.system", "os.posix_spawn"):
++            raise PermissionError("Live worker may not spawn unowned local helpers")
++    sys.addaudithook(deny_helpers)
++    loop = asyncio.new_event_loop()
++    asyncio.set_event_loop(loop)
++    code = loop.run_until_complete(main())
++    sys.stdout.flush(); sys.stderr.flush()
++    os._exit(code)  # Parent owns lifetime; no unbounded SDK/asyncio shutdown gather.
+diff --git a/preflight.py b/preflight.py
+new file mode 100644
+--- /dev/null
++++ b/preflight.py
+@@ -0,0 +1,62 @@
++"""New real binding only: imports/signatures/object types, all network blocked."""
++import asyncio
++import inspect
++import json
++from pathlib import Path
++import socket
++import sys
++import time
++from unittest.mock import patch
++
++START = time.monotonic()
++HERE = Path(__file__).resolve().parent
++attempts = []
++def deny(*args, **kwargs):
++    attempts.append("blocked_network_or_auth")
++    raise PermissionError("Preflight: no RPC/auth/network")
++
++# Block network before importing the installed SDK; no credential discovery.
++socket.create_connection = deny
++socket.socket.connect = deny
++socket.socket.connect_ex = deny
++socket.getaddrinfo = deny
++socket.socket.sendto = deny
++
++import modal
++from live_binding import SDK, image_from_id
++from modal_version import __version__
++assert __version__ == "1.6.0"
++checked = {}
++for label, fn in {
++    "Client.from_env": SDK.Client.from_env, "Workspace.hydrate": SDK.Workspace.hydrate,
++    "App.lookup": SDK.App.lookup, "Image.build": SDK.Image.build,
++    "Sandbox.create": SDK.Sandbox.create, "Sandbox.exec": SDK.Sandbox.exec,
++    "Sandbox.terminate": SDK.Sandbox.terminate, "Sandbox.poll": SDK.Sandbox.poll,
++}.items():
++    assert inspect.iscoroutinefunction(fn), label
++    checked[label] = str(inspect.signature(fn))
++
++with patch.object(SDK.Client, "from_env", side_effect=deny):
++    image = image_from_id("im-LOCAL-PREFLIGHT-NOT-QUERIED", None)
++    assert isinstance(image, SDK.Image)
++    assert image.object_id == "im-LOCAL-PREFLIGHT-NOT-QUERIED"
++    workspace = SDK.Workspace.from_context(client=None)
++    assert isinstance(workspace, SDK.Workspace)
++    # Construction only. No hydrate/build/account call.
++    registry = SDK.Image.from_registry("python:3.13.14-slim")
++    assert isinstance(registry, SDK.Image)
++
++# Expected negative: a socket request must fail before network access.
++try:
++    socket.create_connection(("invalid.example", 443))
++except PermissionError:
++    pass
++else:
++    raise AssertionError("Network guard not enforced")
++assert attempts == ["blocked_network_or_auth"]
++result = {"outcome": "LIVE_BINDING_PREFLIGHT_PASS", "sdk": __version__,
++          "elapsed_seconds": time.monotonic()-START, "signatures": checked,
++          "image_handle_translated_to_raw_async_type": True, "expected_negative_blocks": 1,
++          "actual_rpc_calls": 0, "model_imports": 0, "old_suite_repeated": False}
++(HERE / "preflight-result.json").write_text(json.dumps(result, indent=2), encoding="utf-8")
++print(json.dumps({k:v for k,v in result.items() if k != "signatures"}))

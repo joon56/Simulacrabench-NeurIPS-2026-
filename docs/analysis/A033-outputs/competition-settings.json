@@ -1,0 +1,77 @@
+{
+    "checked_utc":  "2026-09-27T11:51:09.2806012+00:00",
+    "source":  "https://www.codabench.org/api/competitions/17822/",
+    "identity":  "SimulacraBench",
+    "id":  17822,
+    "enable_detailed_results":  false,
+    "show_detailed_results_in_submission_panel":  false,
+    "show_detailed_results_in_leaderboard":  false,
+    "can_participants_make_submissions_public":  false,
+    "development":  {
+                        "id":  29772,
+                        "name":  "Development",
+                        "hide_output":  true,
+                        "hide_prediction_output":  true,
+                        "hide_score_output":  true,
+                        "execution_time_limit":  900
+                    },
+    "leaderboards":  [
+                         {
+                             "id":  19827,
+                             "primary_index":  0,
+                             "title":  "SimulacraBench",
+                             "key":  "simulacrabench",
+                             "columns":  [
+                                             {
+                                                 "id":  87969,
+                                                 "computation":  null,
+                                                 "computation_indexes":  null,
+                                                 "title":  "Grand Prize",
+                                                 "key":  "skill",
+                                                 "sorting":  "desc",
+                                                 "index":  0,
+                                                 "hidden":  false,
+                                                 "precision":  2
+                                             },
+                                             {
+                                                 "id":  87970,
+                                                 "computation":  null,
+                                                 "computation_indexes":  null,
+                                                 "title":  "UNICEF",
+                                                 "key":  "skill_unicef",
+                                                 "sorting":  "desc",
+                                                 "index":  1,
+                                                 "hidden":  false,
+                                                 "precision":  2
+                                             },
+                                             {
+                                                 "id":  87971,
+                                                 "computation":  null,
+                                                 "computation_indexes":  null,
+                                                 "title":  "World Bank",
+                                                 "key":  "skill_world_bank",
+                                                 "sorting":  "desc",
+                                                 "index":  2,
+                                                 "hidden":  false,
+                                                 "precision":  2
+                                             },
+                                             {
+                                                 "id":  87972,
+                                                 "computation":  null,
+                                                 "computation_indexes":  null,
+                                                 "title":  "UNHCR",
+                                                 "key":  "skill_unhcr",
+                                                 "sorting":  "desc",
+                                                 "index":  3,
+                                                 "hidden":  false,
+                                                 "precision":  2
+                                             }
+                                         ],
+                             "hidden":  false,
+                             "submission_rule":  "Force_Best"
+                         }
+                     ],
+    "anonymous_usage_counts_not_user_slot_evidence":  true,
+    "upstream_commit":  "6ffd3f48ec3ae13bd6e671d4119f5cfe5fa276a6",
+    "upstream_is_not_verified_deployed_version":  true
+}

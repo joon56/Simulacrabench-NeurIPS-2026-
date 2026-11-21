@@ -1,0 +1,25 @@
+{
+  "python": "3.13.14 (tags/v3.13.14:fd17997, Jun 10 2026, 13:03:48) [MSC v.1944 64 bit (AMD64)]",
+  "executable": "C:\\Users\\USER\\Desktop\\SimulacraBench\\.venv\\Scripts\\python.exe",
+  "packages": {
+    "numpy": "2.5.1",
+    "pandas": "3.0.5",
+    "pyarrow": "25.0.1",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.0",
+    "torch": "2.13.0+cpu"
+  },
+  "additional_current_only": {
+    "PyYAML": "6.0.3",
+    "threadpoolctl": "3.6.0"
+  },
+  "platform_current_only": "Windows-11-10.0.26200-SP0",
+  "historical_threads": 2,
+  "environment_variables": {
+    "OMP_NUM_THREADS": "2",
+    "MKL_NUM_THREADS": "2",
+    "OPENBLAS_NUM_THREADS": "2",
+    "CUDA_VISIBLE_DEVICES": ""
+  },
+  "limitation": "A012 package/source provenance collected post-run. Historical PyYAML, threadpoolctl, OS, native BLAS/build and affinity were not recorded; no values reconstructed. Frozen raw reuse is qualified for exact identities/ordered values, not environment replay or hosted equivalence."
+}

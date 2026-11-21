@@ -1,0 +1,42 @@
+{
+    "task_id":  "S1-WB-CONTRACT-A045",
+    "control_epoch":  "2026-10-26-A045-01",
+    "authority":  "Current user explicitly adopts subagent operation; this assignment is document/source information only, no science execution",
+    "task_path":  "docs/analysis/A045-outputs/wb-contract-task.ko.md",
+    "task_sha256":  "dfd8a2220c3e031f2653d786df3ec9d0895e692673dec475681d080f2cf53308",
+    "workflow_revision":  "2026-10-26-r7",
+    "workflow_sha256":  "cee188bd2e99623aea25204632229a887e29e8bb0e235d85eb513d139453cc63",
+    "head":  "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+    "outgoing_owner":  "S0-A045 /root",
+    "incoming_agent":  "/root/wb_batch_readiness",
+    "exclusive_writer_released":  true,
+    "released_at":  "2026-10-26T22:06:04.2671102+09:00",
+    "owned_running_jobs":  [
+
+                           ],
+    "owned_paths":  [
+                        "docs/analysis/A045-outputs/wb-contract/",
+                        "docs/analysis/A045-outputs/orchestration-state.json",
+                        "docs/status.md",
+                        "docs/log.md"
+                    ],
+    "budget":  {
+                   "gross_minutes":  45,
+                   "cash":  0,
+                   "tests":  0,
+                   "closeout_reserve_minutes":  5,
+                   "model_calls":  0
+               },
+    "inherited_review":  "Completed read-only wb_batch_readiness; source paths/class counts/historical costs available in agent context",
+    "artifacts_before_dispatch":  {
+                                      "AGENTS.md":  "2f18a35660fa78b74bce219949682cda1ddef4b051c78d253ecad38913f97784",
+                                      "CLAUDE.md":  "d6dd9c0be97b48b5ec034cc04cef8ea850960169a98f89938a4ec9d7c4d238b1",
+                                      "docs/workflow.md":  "cee188bd2e99623aea25204632229a887e29e8bb0e235d85eb513d139453cc63",
+                                      "docs/session-prompts.ko.md":  "36f5c404983a9039b343014956b7ba33c3d3cfaf5705193942203288e508eade",
+                                      "docs/analysis/A045-outputs/entry.json":  "584c03819b90077353b695cb6a76fe21cfc40015ade57024a1d483cabcf19baf",
+                                      "docs/analysis/A045-outputs/decision.md":  "6b7375ca3744d03f75a958d50f4abb70e3097be750ec67bf8ceaf7ca036ba9e0",
+                                      "docs/analysis/A045-outputs/wb-contract-task.ko.md":  "dfd8a2220c3e031f2653d786df3ec9d0895e692673dec475681d080f2cf53308",
+                                      "docs/status.md":  "cd51457ff1f75da025e6490e98bcff80730bc13daee1d8ac5b59ae64233aabc7",
+                                      "docs/log.md":  "4a56abeace05192c4be2f21b48136ad5a28d56a0d4b3117c76afb704520ca47e"
+                                  }
+}

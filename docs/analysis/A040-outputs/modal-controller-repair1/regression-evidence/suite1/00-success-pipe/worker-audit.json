@@ -1,0 +1,25 @@
+{
+  "fake_calls": [
+    {
+      "call": "FAKE_Client.from_env"
+    },
+    {
+      "call": "FAKE_Workspace.from_context"
+    },
+    {
+      "call": "hydrate"
+    },
+    {
+      "call": "billing.summary"
+    }
+  ],
+  "blocked_operations": [],
+  "sdk_imported": false,
+  "model_imported": false,
+  "pending_tasks_at_exit": 0,
+  "stdout_encoding": "utf-8",
+  "stderr_encoding": "utf-8",
+  "network_transport": "FAKE_ONLY",
+  "live_rpc_calls": 0,
+  "grandchildren_allowed": false
+}

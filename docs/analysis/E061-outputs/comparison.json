@@ -1,0 +1,149 @@
+{
+  "verdict": "EXPLORATORY_SOURCE_QUALIFIED_PENDING_RESOURCE_REVIEW",
+  "scores": {
+    "candidate-unicef": {
+      "skill": 0.5006484230707156,
+      "log_score": -0.780008047004413,
+      "n_cells": 17856,
+      "uniform_reference": 1.5620418219183347
+    },
+    "E041-unicef": {
+      "skill": 0.5006484230707156,
+      "log_score": -0.780008047004413,
+      "n_cells": 17856,
+      "uniform_reference": 1.5620418219183347
+    },
+    "E025-unicef": {
+      "skill": 0.5006484230707156,
+      "log_score": -0.780008047004413,
+      "n_cells": 17856,
+      "uniform_reference": 1.5620418219183347
+    },
+    "candidate-world_bank": {
+      "skill": 0.45471730736298255,
+      "log_score": -1.1005776279104411,
+      "n_cells": 39520,
+      "uniform_reference": 2.0183615632250977
+    },
+    "E041-world_bank": {
+      "skill": 0.45471730736298255,
+      "log_score": -1.1005776279104411,
+      "n_cells": 39520,
+      "uniform_reference": 2.0183615632250977
+    },
+    "E025-world_bank": {
+      "skill": 0.45471730736298255,
+      "log_score": -1.1005776279104411,
+      "n_cells": 39520,
+      "uniform_reference": 2.0183615632250977
+    },
+    "candidate-unhcr": {
+      "skill": 0.5623918781304167,
+      "log_score": -0.5521530116792147,
+      "n_cells": 132273,
+      "uniform_reference": 1.2617522026791088
+    },
+    "E041-unhcr": {
+      "skill": 0.5624627288576414,
+      "log_score": -0.5520636156180775,
+      "n_cells": 132273,
+      "uniform_reference": 1.2617522026791088
+    },
+    "E025-unhcr": {
+      "skill": 0.5629488737050165,
+      "log_score": -0.5514502212860809,
+      "n_cells": 132273,
+      "uniform_reference": 1.2617522026791088
+    }
+  },
+  "comparison": {
+    "unicef": {
+      "delta_E041": 0.0,
+      "delta_E025": 0.0,
+      "max_absolute_vector_difference_E041": 0.0,
+      "changed_vectors_over_1e_10": 0,
+      "regression_pass": true
+    },
+    "world_bank": {
+      "delta_E041": 0.0,
+      "delta_E025": 0.0,
+      "max_absolute_vector_difference_E041": 0.0,
+      "changed_vectors_over_1e_10": 0,
+      "regression_pass": true
+    },
+    "unhcr": {
+      "delta_E041": -7.085072722468055e-05,
+      "delta_E025": -0.0005569955745997612,
+      "max_absolute_vector_difference_E041": 0.16454842686653137,
+      "changed_vectors_over_1e_10": 132225,
+      "regression_pass": true
+    }
+  },
+  "control_parity": true,
+  "nonidentity": true,
+  "regression_pass": true,
+  "timings": {
+    "candidate-unicef": 36.942984699999215,
+    "candidate-world_bank": 101.52921200000128,
+    "candidate-unhcr": 190.9154621000016,
+    "E041-unicef": 33.76133199999822,
+    "E041-world_bank": 102.19473310000103,
+    "E041-unhcr": 225.11932100000195,
+    "E025-unicef": 32.57700620000105,
+    "E025-world_bank": 100.82542660000036,
+    "E025-unhcr": 240.13254030000098
+  },
+  "full_stack_calls": 9,
+  "neural_train_calls": 27,
+  "target_access_checks": 36,
+  "metric_optimizer_calls": 16,
+  "contracts": {
+    "candidate-unicef": {
+      "vectors": 17856,
+      "max_sum_error": 1.9348226487636566e-07,
+      "official_check": "PASS"
+    },
+    "candidate-world_bank": {
+      "vectors": 39520,
+      "max_sum_error": 2.8615613700821996e-07,
+      "official_check": "PASS"
+    },
+    "candidate-unhcr": {
+      "vectors": 132273,
+      "max_sum_error": 2.414220944269019e-07,
+      "official_check": "PASS"
+    },
+    "E041-unicef": {
+      "vectors": 17856,
+      "max_sum_error": 1.9348226487636566e-07,
+      "official_check": "PASS"
+    },
+    "E041-world_bank": {
+      "vectors": 39520,
+      "max_sum_error": 2.8615613700821996e-07,
+      "official_check": "PASS"
+    },
+    "E041-unhcr": {
+      "vectors": 132273,
+      "max_sum_error": 2.2838357827126288e-07,
+      "official_check": "PASS"
+    },
+    "E025-unicef": {
+      "vectors": 17856,
+      "max_sum_error": 1.9348226487636566e-07,
+      "official_check": "PASS"
+    },
+    "E025-world_bank": {
+      "vectors": 39520,
+      "max_sum_error": 2.8615613700821996e-07,
+      "official_check": "PASS"
+    },
+    "E025-unhcr": {
+      "vectors": 132273,
+      "max_sum_error": 2.3830798445700907e-07,
+      "official_check": "PASS"
+    }
+  },
+  "worker_seconds_to_results": 1082.4010476000003,
+  "scope": "Reused synthetic phase1 engineering; no ERPIS efficacy inference"
+}

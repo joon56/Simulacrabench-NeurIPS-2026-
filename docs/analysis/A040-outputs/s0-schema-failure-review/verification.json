@@ -1,0 +1,1000 @@
+{
+    "role":  "S0",
+    "task":  "A040 full-path input-preparation failure review; official local schema contract",
+    "date_kst":  "2026-10-02",
+    "decision":  "RECOMMEND_SEPARATE_S1_SCHEMA_REPAIR_AND_FULL_PATH_RETRY",
+    "head":  "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+    "workflow_revision":  "2026-09-27-r4",
+    "workflow_sha256":  "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642",
+    "read_evidence":  [
+                          "987e7c ordered AGENTS/CLAUDE/status",
+                          "9c8d23 latest3log/workflow/HEAD/dirty/jobs",
+                          "0d9e8c closeout/failure/source call sites",
+                          "38dc26 official loader/driver, generator/runner; verification/manifest structure",
+                          "66715e full loader validation/options_for, official config/score call chain, resource summaries",
+                          "ea111d pinned PyYAML, normalized schema serialization, clean scoped starter-kit status"
+                      ],
+    "official_local_kit_head":  "ee427a94f6cc6a0d9d653b6be68c835a032e7552",
+    "official_chain":  "make_sandbox.load_config/load_schema/options_for; config.yml sentinel; score.py loads, serializes normalized schema and calls predict",
+    "official_claim_limit":  "Local inspected bytes/clean tracked paths only, no current upstream/hosted deployment claim",
+    "entry":  {
+                  "checks":  [
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/local-technical/active-jobs-at-closeout.json",
+                                     "expected":  "84b1c14e68260082e3e79edff0a78f4ebf1942cfd6c593246044ec2149cbb87d",
+                                     "actual":  "84b1c14e68260082e3e79edff0a78f4ebf1942cfd6c593246044ec2149cbb87d",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/local-technical/approval-pending-closeout.md",
+                                     "expected":  "6982d965fb1f4a2d2a4f3874272bf3bd4c7b9b32c76f7f2049259a1aa08c2e1f",
+                                     "actual":  "6982d965fb1f4a2d2a4f3874272bf3bd4c7b9b32c76f7f2049259a1aa08c2e1f",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/local-technical/approval-pending-exposure-ledger.md",
+                                     "expected":  "72fa523513916de93f5dc69427cc0beab045eb96384623e2bc2a20c75b8128ba",
+                                     "actual":  "72fa523513916de93f5dc69427cc0beab045eb96384623e2bc2a20c75b8128ba",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/local-technical/approval-pending-resources.json",
+                                     "expected":  "eae2dd3d761835d19d8caf339d49f7c1254ece8fc561e656e36a88d02e8b947a",
+                                     "actual":  "eae2dd3d761835d19d8caf339d49f7c1254ece8fc561e656e36a88d02e8b947a",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/local-technical/approval-pending-s0-handoff.ko.md",
+                                     "expected":  "3afb5e12c3f2089cda8dd29aa395008462f19f9d4ca2e7417c55691850d510e7",
+                                     "actual":  "3afb5e12c3f2089cda8dd29aa395008462f19f9d4ca2e7417c55691850d510e7",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/local-technical/approval-pending-verification.json",
+                                     "expected":  "7ce07dc6597ec04883aa7ecc9e3cd56f9a97f7be6f58853bd57057766c1bf327",
+                                     "actual":  "7ce07dc6597ec04883aa7ecc9e3cd56f9a97f7be6f58853bd57057766c1bf327",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/local-technical/approval-review.json",
+                                     "expected":  "98aefcff5b234c8f9d9dcd7652813c66421a418a6f065f609057eff2b0e0167a",
+                                     "actual":  "98aefcff5b234c8f9d9dcd7652813c66421a418a6f065f609057eff2b0e0167a",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/local-technical/artifact-manifest.json",
+                                     "expected":  "a293456c26f8b315e15241243595da2d646ddb4c9cb38105c73601e379657eb0",
+                                     "actual":  "a293456c26f8b315e15241243595da2d646ddb4c9cb38105c73601e379657eb0",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/local-technical/checkpoint-receipt.json",
+                                     "expected":  "40f5eb44a7627424ed90547422ceff806202a67513542c434bc789b11957b709",
+                                     "actual":  "40f5eb44a7627424ed90547422ceff806202a67513542c434bc789b11957b709",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/local-technical/closeout.md",
+                                     "expected":  "5fdb42472bb89396ffb86fe8b16d0d1ade5918d49ac0c1eff5bf3c5e5f0960f3",
+                                     "actual":  "5fdb42472bb89396ffb86fe8b16d0d1ade5918d49ac0c1eff5bf3c5e5f0960f3",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/local-technical/dirty-at-closeout.txt",
+                                     "expected":  "184f0fe5ff15527c15fb34d257489dd2552aa7f718ac2c3259d5032741e8d7e9",
+                                     "actual":  "184f0fe5ff15527c15fb34d257489dd2552aa7f718ac2c3259d5032741e8d7e9",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/local-technical/entry.json",
+                                     "expected":  "a716162dc0edb9add459f595652b46843f1647c83dcc786030b6366bf59d6f13",
+                                     "actual":  "a716162dc0edb9add459f595652b46843f1647c83dcc786030b6366bf59d6f13",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/local-technical/events.jsonl",
+                                     "expected":  "c88d470a977845b411de87d793291114a2355df0b7be2332727a02f79b5e637d",
+                                     "actual":  "c88d470a977845b411de87d793291114a2355df0b7be2332727a02f79b5e637d",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/local-technical/exposure-ledger.md",
+                                     "expected":  "abb9917f07347a546e6f7f4a93952aa7c9c88a10da07fa0ac5f669ea8ef660d2",
+                                     "actual":  "abb9917f07347a546e6f7f4a93952aa7c9c88a10da07fa0ac5f669ea8ef660d2",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/local-technical/frozen-inputs/manifest.json",
+                                     "expected":  "19e02411d082e7f46077a200f01d51c1ed5faab167f4a1eeb12eb413620e276c",
+                                     "actual":  "19e02411d082e7f46077a200f01d51c1ed5faab167f4a1eeb12eb413620e276c",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/local-technical/frozen-inputs/registration.md",
+                                     "expected":  "5553812cdbb5ff47320515fe296eb8380ba8fcc17debc7f59cf94e8952f841a7",
+                                     "actual":  "5553812cdbb5ff47320515fe296eb8380ba8fcc17debc7f59cf94e8952f841a7",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/local-technical/frozen-inputs/run-manifest.json",
+                                     "expected":  "e85e7f4cf466869f21538ec512b00c778d814f5cd4be9c249fae7a1a75cded3b",
+                                     "actual":  "e85e7f4cf466869f21538ec512b00c778d814f5cd4be9c249fae7a1a75cded3b",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/local-technical/log-before.md",
+                                     "expected":  "d2b9d4cb096cd1c9430f38cc495df6bac2632bb30a1a956ea2b20586270aa423",
+                                     "actual":  "d2b9d4cb096cd1c9430f38cc495df6bac2632bb30a1a956ea2b20586270aa423",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/local-technical/preflight.md",
+                                     "expected":  "f15dd0055ad4ed09f1a483a9ea2c4d76d17a57879653f46410a22c742723c84a",
+                                     "actual":  "f15dd0055ad4ed09f1a483a9ea2c4d76d17a57879653f46410a22c742723c84a",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/local-technical/prototype.py",
+                                     "expected":  "411cd174e155038ebeecb130f1e4bafbb44580f9e0cc0898eaac96316af07612",
+                                     "actual":  "411cd174e155038ebeecb130f1e4bafbb44580f9e0cc0898eaac96316af07612",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/local-technical/provenance.md",
+                                     "expected":  "c28ea374e2e83d83c33a2a5762c086e8f7e9fcd1fb72a81eba0d27fe465e2793",
+                                     "actual":  "c28ea374e2e83d83c33a2a5762c086e8f7e9fcd1fb72a81eba0d27fe465e2793",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/local-technical/requirements.lock.txt",
+                                     "expected":  "6c6f0d0fc5db943eb1cb95ff4610ddea5df724bc50031b883a0dd67656771b70",
+                                     "actual":  "6c6f0d0fc5db943eb1cb95ff4610ddea5df724bc50031b883a0dd67656771b70",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/local-technical/resource-samples.jsonl",
+                                     "expected":  "ca79ffc5f7564fe08a883877cb1744c9061f31bcbf528b4c30a58d90d46db2a1",
+                                     "actual":  "ca79ffc5f7564fe08a883877cb1744c9061f31bcbf528b4c30a58d90d46db2a1",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/local-technical/resources.json",
+                                     "expected":  "44de4868cac5383aed3860d425fb8b80badc3753af304ccaa959dac0801836af",
+                                     "actual":  "44de4868cac5383aed3860d425fb8b80badc3753af304ccaa959dac0801836af",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/local-technical/result.json",
+                                     "expected":  "c12df3285e002124a392d9cd7f8bdc362143a6ea4fb27af68f9b4352cf586116",
+                                     "actual":  "c12df3285e002124a392d9cd7f8bdc362143a6ea4fb27af68f9b4352cf586116",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/local-technical/resumption.json",
+                                     "expected":  "390c1587e17522b2b45559ddd135bb6ff9fd720865865d04deec12ee59c987fe",
+                                     "actual":  "390c1587e17522b2b45559ddd135bb6ff9fd720865865d04deec12ee59c987fe",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/local-technical/run-resources.json",
+                                     "expected":  "0e185cafaf2335f1787385c18ce196b4cb2e1f3ba22f0b8e975078fe358ddd0b",
+                                     "actual":  "0e185cafaf2335f1787385c18ce196b4cb2e1f3ba22f0b8e975078fe358ddd0b",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/local-technical/runner.py",
+                                     "expected":  "1db5eea335bdcd8bd30dca007cb37dee6ef9a243cabe6c0e5d8817e83434b0b5",
+                                     "actual":  "1db5eea335bdcd8bd30dca007cb37dee6ef9a243cabe6c0e5d8817e83434b0b5",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/local-technical/s0-handoff.ko.md",
+                                     "expected":  "c922b24b98d8e7ce4de7745ccf067ad7a3618042b0dc3336056797d7aa80944a",
+                                     "actual":  "c922b24b98d8e7ce4de7745ccf067ad7a3618042b0dc3336056797d7aa80944a",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/local-technical/scientific-started.json",
+                                     "expected":  "39bdf9fa8d6a4f686e1a59984b2682d7397293c24cceaa5bea71dfde0edeb9e5",
+                                     "actual":  "39bdf9fa8d6a4f686e1a59984b2682d7397293c24cceaa5bea71dfde0edeb9e5",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/local-technical/source-receipt.json",
+                                     "expected":  "8be776939c17cf2279f0ee9ae5c3541c64bbc573b05ba717fc47d390bec39bf9",
+                                     "actual":  "8be776939c17cf2279f0ee9ae5c3541c64bbc573b05ba717fc47d390bec39bf9",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/local-technical/split.json",
+                                     "expected":  "5b41c77d0dd8cff0fd4aee41cb7ba59e1069b00372cc1e0921d3e94520c63641",
+                                     "actual":  "5b41c77d0dd8cff0fd4aee41cb7ba59e1069b00372cc1e0921d3e94520c63641",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/local-technical/status-before.md",
+                                     "expected":  "04ff645be06d16c313cb87c05c2555b5743920d11824b3efb3e53df011c3f93e",
+                                     "actual":  "04ff645be06d16c313cb87c05c2555b5743920d11824b3efb3e53df011c3f93e",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/local-technical/stderr.txt",
+                                     "expected":  "b4925fd30596373c63250a70221e75b9fe8bdb6be17472fabf8e210792ec43f6",
+                                     "actual":  "b4925fd30596373c63250a70221e75b9fe8bdb6be17472fabf8e210792ec43f6",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/local-technical/stdout.txt",
+                                     "expected":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                                     "actual":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/local-technical/tests_local.py",
+                                     "expected":  "d28f49a59dca21848a31860d2b7838ebff5682760a453a24aa6317f0cc61f4ee",
+                                     "actual":  "d28f49a59dca21848a31860d2b7838ebff5682760a453a24aa6317f0cc61f4ee",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/local-technical/verification.json",
+                                     "expected":  "f856388d189eb6dc6edb23309edaef661fb3f1b4c4fb8f8426541f2eb8fba59c",
+                                     "actual":  "f856388d189eb6dc6edb23309edaef661fb3f1b4c4fb8f8426541f2eb8fba59c",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/local-technical/watchdog.py",
+                                     "expected":  "0a2e71f93db1a0679daef2841f0a22c7c01f90ec54e06f2d1ef5b00838b997ca",
+                                     "actual":  "0a2e71f93db1a0679daef2841f0a22c7c01f90ec54e06f2d1ef5b00838b997ca",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/local-technical-retry1/active-jobs-at-closeout.json",
+                                     "expected":  "84b1c14e68260082e3e79edff0a78f4ebf1942cfd6c593246044ec2149cbb87d",
+                                     "actual":  "84b1c14e68260082e3e79edff0a78f4ebf1942cfd6c593246044ec2149cbb87d",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/local-technical-retry1/active-jobs-at-entry.json",
+                                     "expected":  "84b1c14e68260082e3e79edff0a78f4ebf1942cfd6c593246044ec2149cbb87d",
+                                     "actual":  "84b1c14e68260082e3e79edff0a78f4ebf1942cfd6c593246044ec2149cbb87d",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/local-technical-retry1/artifact-manifest.json",
+                                     "expected":  "d5619db33830e51a5f53f0867d2289884b7ea7ada3002ba216e4e036b472f7e3",
+                                     "actual":  "d5619db33830e51a5f53f0867d2289884b7ea7ada3002ba216e4e036b472f7e3",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/local-technical-retry1/closeout.md",
+                                     "expected":  "c55538d335bb19cf827f845ee4dfbf26279aa451ef60d357270231a77718e62b",
+                                     "actual":  "c55538d335bb19cf827f845ee4dfbf26279aa451ef60d357270231a77718e62b",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/local-technical-retry1/dirty-at-closeout.txt",
+                                     "expected":  "184f0fe5ff15527c15fb34d257489dd2552aa7f718ac2c3259d5032741e8d7e9",
+                                     "actual":  "184f0fe5ff15527c15fb34d257489dd2552aa7f718ac2c3259d5032741e8d7e9",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/local-technical-retry1/dirty-at-entry.txt",
+                                     "expected":  "747e3e2fc2af6f55c2a932d69de89ec2152d16a8285e3905caf099c669ad5287",
+                                     "actual":  "747e3e2fc2af6f55c2a932d69de89ec2152d16a8285e3905caf099c669ad5287",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/local-technical-retry1/entry.json",
+                                     "expected":  "b71b05e5c7826bd7741f04c5c43a59638dbb0c06209fdfb86b273918e19ac485",
+                                     "actual":  "b71b05e5c7826bd7741f04c5c43a59638dbb0c06209fdfb86b273918e19ac485",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/local-technical-retry1/events.jsonl",
+                                     "expected":  "16279cc8668e0f0f7704b6ea7d909c69f97f95fc2782a6c724b4e3e95c6e18e4",
+                                     "actual":  "16279cc8668e0f0f7704b6ea7d909c69f97f95fc2782a6c724b4e3e95c6e18e4",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/local-technical-retry1/exposure-ledger.md",
+                                     "expected":  "b9a0ab0713827015bba97d52ef01e0d9dbb4e5a87b4af1ae8cdf4b2e74a25f3c",
+                                     "actual":  "b9a0ab0713827015bba97d52ef01e0d9dbb4e5a87b4af1ae8cdf4b2e74a25f3c",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/local-technical-retry1/frozen-inputs/registration.md",
+                                     "expected":  "500fbff009839614d8a9ab401a5c3db512bca03746e9265e496f4eaa373fbe72",
+                                     "actual":  "500fbff009839614d8a9ab401a5c3db512bca03746e9265e496f4eaa373fbe72",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/local-technical-retry1/frozen-inputs/run-manifest.json",
+                                     "expected":  "7d6e2d3008a1aa96aeca963c883ad432a1e8f8f04978f55549e1c21f9790145c",
+                                     "actual":  "7d6e2d3008a1aa96aeca963c883ad432a1e8f8f04978f55549e1c21f9790145c",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/local-technical-retry1/gpu-preflight.txt",
+                                     "expected":  "936cdc61da529c1922596d12067b963e2d1801798a6c6073dbdd3debcbe45700",
+                                     "actual":  "936cdc61da529c1922596d12067b963e2d1801798a6c6073dbdd3debcbe45700",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/local-technical-retry1/log-before.md",
+                                     "expected":  "b7b8ec2af65fae9ba0046068f64cb06179a99063d8901158ff1b876100758aa0",
+                                     "actual":  "b7b8ec2af65fae9ba0046068f64cb06179a99063d8901158ff1b876100758aa0",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/local-technical-retry1/logging-regression.json",
+                                     "expected":  "f32932e5571dd2f4081ec2fd9efafeba1a398eafa7ee3a58c2e56bbb9f7ad4a0",
+                                     "actual":  "f32932e5571dd2f4081ec2fd9efafeba1a398eafa7ee3a58c2e56bbb9f7ad4a0",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/local-technical-retry1/logging_regression.py",
+                                     "expected":  "8711690d1dd5ef369bd2900c5ea676291809e15d9a21e47b371ea0bd1f4dd8e3",
+                                     "actual":  "8711690d1dd5ef369bd2900c5ea676291809e15d9a21e47b371ea0bd1f4dd8e3",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/local-technical-retry1/prototype.py",
+                                     "expected":  "411cd174e155038ebeecb130f1e4bafbb44580f9e0cc0898eaac96316af07612",
+                                     "actual":  "411cd174e155038ebeecb130f1e4bafbb44580f9e0cc0898eaac96316af07612",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/local-technical-retry1/provenance.md",
+                                     "expected":  "e4ef1d31cd9110bc07b7146b6fa5f3855748fa3b21114708aca30410dce556c3",
+                                     "actual":  "e4ef1d31cd9110bc07b7146b6fa5f3855748fa3b21114708aca30410dce556c3",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/local-technical-retry1/requirements.lock.txt",
+                                     "expected":  "6c6f0d0fc5db943eb1cb95ff4610ddea5df724bc50031b883a0dd67656771b70",
+                                     "actual":  "6c6f0d0fc5db943eb1cb95ff4610ddea5df724bc50031b883a0dd67656771b70",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/local-technical-retry1/resource-samples.jsonl",
+                                     "expected":  "debe921eabe6072c4b5b3f38c1299e628f1d69b6064e8647dc4e28f8bb7b07db",
+                                     "actual":  "debe921eabe6072c4b5b3f38c1299e628f1d69b6064e8647dc4e28f8bb7b07db",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/local-technical-retry1/resources.json",
+                                     "expected":  "e67bfdf0f54211d99882751c74e035d4da7163465f5c7b8f332ae6882ec42768",
+                                     "actual":  "e67bfdf0f54211d99882751c74e035d4da7163465f5c7b8f332ae6882ec42768",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/local-technical-retry1/result.json",
+                                     "expected":  "6527542b396111b17b553ecb8af1fe11320b69a51a0ae71c0dc650fb66e8966d",
+                                     "actual":  "6527542b396111b17b553ecb8af1fe11320b69a51a0ae71c0dc650fb66e8966d",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/local-technical-retry1/run-resources.json",
+                                     "expected":  "59db5070c4bdfa09f1bd0ed60897fcf673cd249b95ae4723818654905d2e1143",
+                                     "actual":  "59db5070c4bdfa09f1bd0ed60897fcf673cd249b95ae4723818654905d2e1143",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/local-technical-retry1/runner.py",
+                                     "expected":  "b8dd1fd1040277fddcc4c8a218962cef720cfa320209baff940d8067671dc919",
+                                     "actual":  "b8dd1fd1040277fddcc4c8a218962cef720cfa320209baff940d8067671dc919",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/local-technical-retry1/s0-handoff.ko.md",
+                                     "expected":  "584239286f1ff7083ebb83f23e99395058214037fe4e4b20140920070d66e439",
+                                     "actual":  "584239286f1ff7083ebb83f23e99395058214037fe4e4b20140920070d66e439",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/local-technical-retry1/scientific-started.json",
+                                     "expected":  "81960096b3bbb5686e3d4c251205dbd578ac6b466a20f5cef6e710084f0650ef",
+                                     "actual":  "81960096b3bbb5686e3d4c251205dbd578ac6b466a20f5cef6e710084f0650ef",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/local-technical-retry1/source.diff",
+                                     "expected":  "895e4a47c1ae0b17369c015c7f444ecaf73f882901deaa98a37177de6b603cd0",
+                                     "actual":  "895e4a47c1ae0b17369c015c7f444ecaf73f882901deaa98a37177de6b603cd0",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/local-technical-retry1/split.json",
+                                     "expected":  "ccb5056fd3c4110946813ecdb57f785f731426eb90e52edfaca255d7a345552a",
+                                     "actual":  "ccb5056fd3c4110946813ecdb57f785f731426eb90e52edfaca255d7a345552a",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/local-technical-retry1/status-before.md",
+                                     "expected":  "7c1b3f8f776a1a20f689b1bbb62a8f2d24029ac9c0b1bd65cd6d763f788ba1e2",
+                                     "actual":  "7c1b3f8f776a1a20f689b1bbb62a8f2d24029ac9c0b1bd65cd6d763f788ba1e2",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/local-technical-retry1/stderr.txt",
+                                     "expected":  "bb8f69138f4277dea4e7c28862425c9d0a877f57b2f1c0428b74e6d3174848de",
+                                     "actual":  "bb8f69138f4277dea4e7c28862425c9d0a877f57b2f1c0428b74e6d3174848de",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/local-technical-retry1/stdout.txt",
+                                     "expected":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                                     "actual":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/local-technical-retry1/tests_local.py",
+                                     "expected":  "ad0855d36f223d2b18373ae26bef29d70a77590e99662c9ebb81873434be1ace",
+                                     "actual":  "ad0855d36f223d2b18373ae26bef29d70a77590e99662c9ebb81873434be1ace",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/local-technical-retry1/verification.json",
+                                     "expected":  "a069a28125374467575b7b608cfbf8f69cbec43d9a1cc41281724c041fa71a4d",
+                                     "actual":  "a069a28125374467575b7b608cfbf8f69cbec43d9a1cc41281724c041fa71a4d",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/local-technical-retry1/watchdog.py",
+                                     "expected":  "7be9f690e25fa665741b59593a7db139ced28030c8d373f4e49f8170ce102998",
+                                     "actual":  "7be9f690e25fa665741b59593a7db139ced28030c8d373f4e49f8170ce102998",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/s0-retry1-review/decision.md",
+                                     "expected":  "5c9ece711be83bbf83b8be9047efd5512ab8b092dd7cd4378cf1b183aab33197",
+                                     "actual":  "5c9ece711be83bbf83b8be9047efd5512ab8b092dd7cd4378cf1b183aab33197",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/s0-retry1-review/s1-full-path-handoff.ko.md",
+                                     "expected":  "9bbaa389623732fa9d8060a284127331887935dc699deb6ac8ca55eb75d58854",
+                                     "actual":  "9bbaa389623732fa9d8060a284127331887935dc699deb6ac8ca55eb75d58854",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/s0-retry1-review/verification.json",
+                                     "expected":  "c6b8732575a9cc6db9bbcccf00ca7d1bc5c867e221a6ba217a4e3edb158f824e",
+                                     "actual":  "c6b8732575a9cc6db9bbcccf00ca7d1bc5c867e221a6ba217a4e3edb158f824e",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/s0-policy-resolution/decision.md",
+                                     "expected":  "b97eede87c225503090df6dcc2fd9f8dae78327ff28c54c5e9031626f489d225",
+                                     "actual":  "b97eede87c225503090df6dcc2fd9f8dae78327ff28c54c5e9031626f489d225",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/s0-policy-resolution/environment-check.md",
+                                     "expected":  "56049d17a84f5bcc9b9e95eb97e4c457485742b40da5e8f73ee867271ba2a8d8",
+                                     "actual":  "56049d17a84f5bcc9b9e95eb97e4c457485742b40da5e8f73ee867271ba2a8d8",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/s0-policy-resolution/organizer-reply.txt",
+                                     "expected":  "c0cf7a1a6fa488e84748ab44916cfc24d408d53c95952fe0c36c491a1e14531a",
+                                     "actual":  "c0cf7a1a6fa488e84748ab44916cfc24d408d53c95952fe0c36c491a1e14531a",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/s0-policy-resolution/s1-technical-handoff.ko.md",
+                                     "expected":  "6cc2b4eff01fd1c12bcf2ffef2f2ec150f00b127193cc7a1d86587dd661107e7",
+                                     "actual":  "6cc2b4eff01fd1c12bcf2ffef2f2ec150f00b127193cc7a1d86587dd661107e7",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/s0-policy-resolution/verification.json",
+                                     "expected":  "a3c86dd9267b2e69b37a4d1306a270a076351a187fb83f52379bce08979f64fa",
+                                     "actual":  "a3c86dd9267b2e69b37a4d1306a270a076351a187fb83f52379bce08979f64fa",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/s1/base.py.txt",
+                                     "expected":  "7f8f284ca91bf1f5a016179834e508890b3f5368c4a48a7dcb6cb4b83a30051a",
+                                     "actual":  "7f8f284ca91bf1f5a016179834e508890b3f5368c4a48a7dcb6cb4b83a30051a",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/s1/classifier.py.txt",
+                                     "expected":  "64f5ef7ef88a920a3f7a5f6e2d9d8dc08769ec343e931f910acc2d9c4eaa5534",
+                                     "actual":  "64f5ef7ef88a920a3f7a5f6e2d9d8dc08769ec343e931f910acc2d9c4eaa5534",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/s1/closeout.md",
+                                     "expected":  "2faa9b56b91e8d4a87b11810bf511cf9aa34b97ed631001e2f7a231193936dda",
+                                     "actual":  "2faa9b56b91e8d4a87b11810bf511cf9aa34b97ed631001e2f7a231193936dda",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/s1/contract.md",
+                                     "expected":  "8f59764b01f68360a6eef0fee66d82c1316f9b89720abf26eb8e7f72e5b1bb38",
+                                     "actual":  "8f59764b01f68360a6eef0fee66d82c1316f9b89720abf26eb8e7f72e5b1bb38",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/s1/cost-accounting.md",
+                                     "expected":  "684b9e09bac2163266b3117c23cad28341990d57ed9e6b9371aba855515db3ee",
+                                     "actual":  "684b9e09bac2163266b3117c23cad28341990d57ed9e6b9371aba855515db3ee",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/s1/entry.json",
+                                     "expected":  "9a0c05b4e7f744eb8e20124cba4d26e8a4aa7bb7c44d42d8116b45b17c23559b",
+                                     "actual":  "9a0c05b4e7f744eb8e20124cba4d26e8a4aa7bb7c44d42d8116b45b17c23559b",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/s1/exposure-ledger.md",
+                                     "expected":  "3d2cf060d14af4ce8548ffd2e242c4f40e2806a650111b481a7e8677a647648c",
+                                     "actual":  "3d2cf060d14af4ce8548ffd2e242c4f40e2806a650111b481a7e8677a647648c",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/s1/fetch-batch1.json",
+                                     "expected":  "a2b02863720655effc19f65a92ab2ce98c7db72a6c95a396f5af9563c3101d68",
+                                     "actual":  "a2b02863720655effc19f65a92ab2ce98c7db72a6c95a396f5af9563c3101d68",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/s1/github-root.html",
+                                     "expected":  "ab53fd94dc9f42508d44c9c837a401a0c67466b4fbfd525e2fe3f297d278d0d1",
+                                     "actual":  "ab53fd94dc9f42508d44c9c837a401a0c67466b4fbfd525e2fe3f297d278d0d1",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/s1/github-tree.json",
+                                     "expected":  "5df847a259fbb6f7dacea577f64e9a81eda69f6d2eb3486015b5a5384851c36d",
+                                     "actual":  "5df847a259fbb6f7dacea577f64e9a81eda69f6d2eb3486015b5a5384851c36d",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/s1/hf-metadata.json",
+                                     "expected":  "459ec60a645b59a2678b822f0ee4fccef0ed39064135e67ee388a33b3be27274",
+                                     "actual":  "459ec60a645b59a2678b822f0ee4fccef0ed39064135e67ee388a33b3be27274",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/s1/hscc-README.md.txt",
+                                     "expected":  "9495b259621c74a44dbe415ad1784734412c8f42ad6dcc0d8f395648d6ac9d67",
+                                     "actual":  "9495b259621c74a44dbe415ad1784734412c8f42ad6dcc0d8f395648d6ac9d67",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/s1/LICENSE.txt",
+                                     "expected":  "c959a1db8bc4b2f41c315a9b077c822372a4a84e1a83636bdb962715aaae6874",
+                                     "actual":  "c959a1db8bc4b2f41c315a9b077c822372a4a84e1a83636bdb962715aaae6874",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/s1/local-source-hashes.json",
+                                     "expected":  "e94e05a11fad8187aa61713111295ffd9913bc34e1b4db0f310dcf4342f4cf74",
+                                     "actual":  "e94e05a11fad8187aa61713111295ffd9913bc34e1b4db0f310dcf4342f4cf74",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/s1/log-before.md",
+                                     "expected":  "a3f4aae0768a26f1e481ae837c094c659de2d2cff1128294334955663b4f81a8",
+                                     "actual":  "a3f4aae0768a26f1e481ae837c094c659de2d2cff1128294334955663b4f81a8",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/s1/observation-plan.md",
+                                     "expected":  "6278717d462e79a95b17353308877af3e67d586b6c5b5a43334ecf8f45b1ec02",
+                                     "actual":  "6278717d462e79a95b17353308877af3e67d586b6c5b5a43334ecf8f45b1ec02",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/s1/preprocessing.py.txt",
+                                     "expected":  "2163a3bf6754127365a7aedac854d99a6f565545cc1ea7e63c68a596081b2976",
+                                     "actual":  "2163a3bf6754127365a7aedac854d99a6f565545cc1ea7e63c68a596081b2976",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/s1/pyproject.toml.txt",
+                                     "expected":  "2dddcf25d53fef0798457da2bca34ffdffd3de8c0ea98cdfe85cc24c744154af",
+                                     "actual":  "2dddcf25d53fef0798457da2bca34ffdffd3de8c0ea98cdfe85cc24c744154af",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/s1/s0-handoff.ko.md",
+                                     "expected":  "93b5e6f1d1c7c005cdd9ace282a034bf9eb7cd1fb83faedcbf2af41839c5280e",
+                                     "actual":  "93b5e6f1d1c7c005cdd9ace282a034bf9eb7cd1fb83faedcbf2af41839c5280e",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/s1/schema-accounting.json",
+                                     "expected":  "713f42a493024bc114a06d114d9e3f2e890424255d83b2035342a16105245881",
+                                     "actual":  "713f42a493024bc114a06d114d9e3f2e890424255d83b2035342a16105245881",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/s1/source-register.md",
+                                     "expected":  "7ff307439bb4704584260544a35268ed71ec76352841f316e37a9612f88e7bfc",
+                                     "actual":  "7ff307439bb4704584260544a35268ed71ec76352841f316e37a9612f88e7bfc",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/s1/status-before.md",
+                                     "expected":  "d883c40171b08d23c89e03100d9f69eb6c9361e959236d527e039842946cd9e7",
+                                     "actual":  "d883c40171b08d23c89e03100d9f69eb6c9361e959236d527e039842946cd9e7",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/s1/verification.json",
+                                     "expected":  "3a9bc99ef5a6a863e4ae5b0fd82b1aa59e381584cba69d7caa9d036ae2bd72fd",
+                                     "actual":  "3a9bc99ef5a6a863e4ae5b0fd82b1aa59e381584cba69d7caa9d036ae2bd72fd",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "AGENTS.md",
+                                     "expected":  "86394bbf164a2b7df6a309f4564b9dacf3b2799fa0227a703e4ea11d4d842596",
+                                     "actual":  "86394bbf164a2b7df6a309f4564b9dacf3b2799fa0227a703e4ea11d4d842596",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "CLAUDE.md",
+                                     "expected":  "69175e6d741a17042db4852d4961a5c52bd97fe2cd5bfbff762d30d7e5270364",
+                                     "actual":  "69175e6d741a17042db4852d4961a5c52bd97fe2cd5bfbff762d30d7e5270364",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/workflow.md",
+                                     "expected":  "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642",
+                                     "actual":  "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/tree.md",
+                                     "expected":  "eaa884a4194db103335136495205fe5b51297c17db15e9eac62946ced286cc44",
+                                     "actual":  "eaa884a4194db103335136495205fe5b51297c17db15e9eac62946ced286cc44",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  ".gitignore",
+                                     "expected":  "f67ba089f7490b4ba0845848f0b13b55633b5efd058a0be7d64203a1e480c6fd",
+                                     "actual":  "f67ba089f7490b4ba0845848f0b13b55633b5efd058a0be7d64203a1e480c6fd",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "submissions/2026-09-19-E041/main.py",
+                                     "expected":  "22c911806ea91234ae350341adfb9c0df2ce4be41cc88e73be304e4bb1023073",
+                                     "actual":  "22c911806ea91234ae350341adfb9c0df2ce4be41cc88e73be304e4bb1023073",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/local-technical/prototype.py",
+                                     "expected":  "411cd174e155038ebeecb130f1e4bafbb44580f9e0cc0898eaac96316af07612",
+                                     "actual":  "411cd174e155038ebeecb130f1e4bafbb44580f9e0cc0898eaac96316af07612",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/local-technical/tests_local.py",
+                                     "expected":  "d28f49a59dca21848a31860d2b7838ebff5682760a453a24aa6317f0cc61f4ee",
+                                     "actual":  "d28f49a59dca21848a31860d2b7838ebff5682760a453a24aa6317f0cc61f4ee",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/local-technical/runner.py",
+                                     "expected":  "1db5eea335bdcd8bd30dca007cb37dee6ef9a243cabe6c0e5d8817e83434b0b5",
+                                     "actual":  "1db5eea335bdcd8bd30dca007cb37dee6ef9a243cabe6c0e5d8817e83434b0b5",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/local-technical/watchdog.py",
+                                     "expected":  "0a2e71f93db1a0679daef2841f0a22c7c01f90ec54e06f2d1ef5b00838b997ca",
+                                     "actual":  "0a2e71f93db1a0679daef2841f0a22c7c01f90ec54e06f2d1ef5b00838b997ca",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/local-technical/requirements.lock.txt",
+                                     "expected":  "6c6f0d0fc5db943eb1cb95ff4610ddea5df724bc50031b883a0dd67656771b70",
+                                     "actual":  "6c6f0d0fc5db943eb1cb95ff4610ddea5df724bc50031b883a0dd67656771b70",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/local-technical/frozen-inputs/registration.md",
+                                     "expected":  "5553812cdbb5ff47320515fe296eb8380ba8fcc17debc7f59cf94e8952f841a7",
+                                     "actual":  "5553812cdbb5ff47320515fe296eb8380ba8fcc17debc7f59cf94e8952f841a7",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "external/starter-kit/data/unhcr.json",
+                                     "expected":  "b1175b6bdbd96e90a4defd83af20a38d711c6eca9fe3ce880109ff244abe80d9",
+                                     "actual":  "b1175b6bdbd96e90a4defd83af20a38d711c6eca9fe3ce880109ff244abe80d9",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/local-technical-retry1/prototype.py",
+                                     "expected":  "411cd174e155038ebeecb130f1e4bafbb44580f9e0cc0898eaac96316af07612",
+                                     "actual":  "411cd174e155038ebeecb130f1e4bafbb44580f9e0cc0898eaac96316af07612",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/local-technical-retry1/runner.py",
+                                     "expected":  "b8dd1fd1040277fddcc4c8a218962cef720cfa320209baff940d8067671dc919",
+                                     "actual":  "b8dd1fd1040277fddcc4c8a218962cef720cfa320209baff940d8067671dc919",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/local-technical-retry1/tests_local.py",
+                                     "expected":  "ad0855d36f223d2b18373ae26bef29d70a77590e99662c9ebb81873434be1ace",
+                                     "actual":  "ad0855d36f223d2b18373ae26bef29d70a77590e99662c9ebb81873434be1ace",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/local-technical-retry1/watchdog.py",
+                                     "expected":  "7be9f690e25fa665741b59593a7db139ced28030c8d373f4e49f8170ce102998",
+                                     "actual":  "7be9f690e25fa665741b59593a7db139ced28030c8d373f4e49f8170ce102998",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/local-technical-retry1/requirements.lock.txt",
+                                     "expected":  "6c6f0d0fc5db943eb1cb95ff4610ddea5df724bc50031b883a0dd67656771b70",
+                                     "actual":  "6c6f0d0fc5db943eb1cb95ff4610ddea5df724bc50031b883a0dd67656771b70",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/local-technical-retry1/logging_regression.py",
+                                     "expected":  "8711690d1dd5ef369bd2900c5ea676291809e15d9a21e47b371ea0bd1f4dd8e3",
+                                     "actual":  "8711690d1dd5ef369bd2900c5ea676291809e15d9a21e47b371ea0bd1f4dd8e3",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/local-technical-retry1/logging-regression.json",
+                                     "expected":  "f32932e5571dd2f4081ec2fd9efafeba1a398eafa7ee3a58c2e56bbb9f7ad4a0",
+                                     "actual":  "f32932e5571dd2f4081ec2fd9efafeba1a398eafa7ee3a58c2e56bbb9f7ad4a0",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/local-technical-retry1/entry.json",
+                                     "expected":  "b71b05e5c7826bd7741f04c5c43a59638dbb0c06209fdfb86b273918e19ac485",
+                                     "actual":  "b71b05e5c7826bd7741f04c5c43a59638dbb0c06209fdfb86b273918e19ac485",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/local-technical-retry1/source.diff",
+                                     "expected":  "895e4a47c1ae0b17369c015c7f444ecaf73f882901deaa98a37177de6b603cd0",
+                                     "actual":  "895e4a47c1ae0b17369c015c7f444ecaf73f882901deaa98a37177de6b603cd0",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/local-technical-retry1/frozen-inputs/registration.md",
+                                     "expected":  "500fbff009839614d8a9ab401a5c3db512bca03746e9265e496f4eaa373fbe72",
+                                     "actual":  "500fbff009839614d8a9ab401a5c3db512bca03746e9265e496f4eaa373fbe72",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/full-path-local/adapter.py",
+                                     "expected":  "411cd174e155038ebeecb130f1e4bafbb44580f9e0cc0898eaac96316af07612",
+                                     "actual":  "411cd174e155038ebeecb130f1e4bafbb44580f9e0cc0898eaac96316af07612",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/full-path-local/generate_fixture.py",
+                                     "expected":  "7314b70cced7967eb1d465990a20d361c86e77394839453992c2fe2f1e0d7a62",
+                                     "actual":  "7314b70cced7967eb1d465990a20d361c86e77394839453992c2fe2f1e0d7a62",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/full-path-local/observer.py",
+                                     "expected":  "f695447678ba05701034f9908eefe0f551ef8f6c9642a0a9bb6f473b02f196e0",
+                                     "actual":  "f695447678ba05701034f9908eefe0f551ef8f6c9642a0a9bb6f473b02f196e0",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/full-path-local/orchestration.py",
+                                     "expected":  "fceda9e378734ddf86b603c7ad13b21df1f38fea8a3bd277bbd5f2731ce22b1b",
+                                     "actual":  "fceda9e378734ddf86b603c7ad13b21df1f38fea8a3bd277bbd5f2731ce22b1b",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/full-path-local/record_closeout.py",
+                                     "expected":  "c3fd37133d2b0fdf2dd5209d5f7fde5b17c19d81fee7b42c092365564b414d72",
+                                     "actual":  "c3fd37133d2b0fdf2dd5209d5f7fde5b17c19d81fee7b42c092365564b414d72",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/full-path-local/runner.py",
+                                     "expected":  "3417baba19ec2457a46f77d45e1d56a892da826f47fa13bab1fc6d631c911f85",
+                                     "actual":  "3417baba19ec2457a46f77d45e1d56a892da826f47fa13bab1fc6d631c911f85",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/full-path-local/telemetry.py",
+                                     "expected":  "fee9e48d2359e32c7f1c9d9fe537435e2e18c1b56b1d17ff44972a40b9a147f4",
+                                     "actual":  "fee9e48d2359e32c7f1c9d9fe537435e2e18c1b56b1d17ff44972a40b9a147f4",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/full-path-local/tests_model_free.py",
+                                     "expected":  "301197686f461031ca9f5394885c6a4b16009cdd4e4db3b3f74186e8be207194",
+                                     "actual":  "301197686f461031ca9f5394885c6a4b16009cdd4e4db3b3f74186e8be207194",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/full-path-local/watchdog.py",
+                                     "expected":  "946a7c384d4ef74716a00fa0b7777122ea30397569a66a438b08d5cab64dd9fc",
+                                     "actual":  "946a7c384d4ef74716a00fa0b7777122ea30397569a66a438b08d5cab64dd9fc",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/full-path-local/registration.md",
+                                     "expected":  "7e5a141d645969f1424d41de077e60f613506a08c551c25791bb1a5afd9a7ad5",
+                                     "actual":  "7e5a141d645969f1424d41de077e60f613506a08c551c25791bb1a5afd9a7ad5",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/full-path-local/plan.md",
+                                     "expected":  "485010585fb64f21fa052d7f5bd096913c1b6b8c93eaedbdb733c1558d6c2e95",
+                                     "actual":  "485010585fb64f21fa052d7f5bd096913c1b6b8c93eaedbdb733c1558d6c2e95",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/full-path-local/requirements.lock.txt",
+                                     "expected":  "6c6f0d0fc5db943eb1cb95ff4610ddea5df724bc50031b883a0dd67656771b70",
+                                     "actual":  "6c6f0d0fc5db943eb1cb95ff4610ddea5df724bc50031b883a0dd67656771b70",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/full-path-local/entry.json",
+                                     "expected":  "c2f89aaaef3df443482dc42bd424ebc4e32aeac51b16a16009fa9b192e1c9052",
+                                     "actual":  "c2f89aaaef3df443482dc42bd424ebc4e32aeac51b16a16009fa9b192e1c9052",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/full-path-local/roles.json",
+                                     "expected":  "0f61e0364bb4c2fb9465dffa18a71a391175afb2b149f4f730588f86ebdc3447",
+                                     "actual":  "0f61e0364bb4c2fb9465dffa18a71a391175afb2b149f4f730588f86ebdc3447",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "docs/analysis/A040-outputs/full-path-local/model-free-result.json",
+                                     "expected":  "b54838f3e34f8d2cde827a60dd6dfd1987fe9ea371177611900386bf81d1eaff",
+                                     "actual":  "b54838f3e34f8d2cde827a60dd6dfd1987fe9ea371177611900386bf81d1eaff",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "submissions/2026-09-19-E041/main.py",
+                                     "expected":  "22c911806ea91234ae350341adfb9c0df2ce4be41cc88e73be304e4bb1023073",
+                                     "actual":  "22c911806ea91234ae350341adfb9c0df2ce4be41cc88e73be304e4bb1023073",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "external/starter-kit/data/unicef.json",
+                                     "expected":  "0bce08036cc563ee2a369dcee316ff8a5f89045d86991756d72c266927674396",
+                                     "actual":  "0bce08036cc563ee2a369dcee316ff8a5f89045d86991756d72c266927674396",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "external/starter-kit/data/world_bank.json",
+                                     "expected":  "6b3760742c6e864eb8d0bb2f9ec523a19a486b73282d79432dbcca16e3664125",
+                                     "actual":  "6b3760742c6e864eb8d0bb2f9ec523a19a486b73282d79432dbcca16e3664125",
+                                     "match":  true
+                                 },
+                                 {
+                                     "path":  "external/starter-kit/data/unhcr.json",
+                                     "expected":  "b1175b6bdbd96e90a4defd83af20a38d711c6eca9fe3ce880109ff244abe80d9",
+                                     "actual":  "b1175b6bdbd96e90a4defd83af20a38d711c6eca9fe3ce880109ff244abe80d9",
+                                     "match":  true
+                                 }
+                             ],
+                  "allowed_preservation_count":  125,
+                  "post_failure_source_count":  19,
+                  "skipped_protected_count":  154,
+                  "artifacts":  [
+                                    {
+                                        "path":  "docs/analysis/A040-outputs/full-path-local/closeout.md",
+                                        "sha256":  "d33646667794d06377ff0eec2226faf96189226319cc4c1385cc7173aa114938"
+                                    },
+                                    {
+                                        "path":  "docs/analysis/A040-outputs/full-path-local/verification.json",
+                                        "sha256":  "851d7d7571c4c200f070740e57fdc05278c2b9226c53fde23c15ad78c3b10b88"
+                                    },
+                                    {
+                                        "path":  "docs/analysis/A040-outputs/full-path-local/resources.json",
+                                        "sha256":  "1e5edfb620377ec330c047c516a88dc3add0ffd17b89ca176aa1cb965236035d"
+                                    },
+                                    {
+                                        "path":  "docs/analysis/A040-outputs/full-path-local/source-manifest.json",
+                                        "sha256":  "703c34fabe8f34e684a1cfd1d6a7434d1c4923db5b69f458e996f797865c237f"
+                                    },
+                                    {
+                                        "path":  "docs/analysis/A040-outputs/full-path-local/generation-failure.txt",
+                                        "sha256":  "18ee9b2d6dba807bf1ef31f647eba3528b886905e51ad6effb563f83eb02f0d0"
+                                    },
+                                    {
+                                        "path":  "docs/analysis/A040-outputs/full-path-local/artifact-manifest.json",
+                                        "sha256":  "0c6a86ab752b01baabbb58fbeb0d26fc4ebd26fa6eb5d0457fdcb8ddd7bfc8de"
+                                    },
+                                    {
+                                        "path":  "docs/analysis/A040-outputs/full-path-local/s0-handoff.ko.md",
+                                        "sha256":  "7df25769167256fb996d7bc8baeb8d89da240c2897edcb42cd62929878da4d77"
+                                    },
+                                    {
+                                        "path":  "docs/status.md",
+                                        "sha256":  "1739fe7dcb925bdee1dda29f7216e3a0f8b3272bf39980b86b9504e22a4c1d64"
+                                    },
+                                    {
+                                        "path":  "docs/log.md",
+                                        "sha256":  "647a2914c9a74e5a9577bf3d182f461670f6e1f7ab1374a92aad1b9ecb97b6fe"
+                                    },
+                                    {
+                                        "path":  "external/starter-kit/make_sandbox.py",
+                                        "sha256":  "8cf628cbb4771ed6e91ad74ebb4f75b22667af39d8f48e01c956c675b1b1586b"
+                                    },
+                                    {
+                                        "path":  "external/starter-kit/score.py",
+                                        "sha256":  "7049e99a48acef2a74f37cb49bb66b5a9af8d05d2ed8fcf530287b5e81c5042f"
+                                    },
+                                    {
+                                        "path":  "external/starter-kit/config.yml",
+                                        "sha256":  "f22f8e4faa62b6af0ee8e7e887e35980511e4517655479fefeeef4519fc52c15"
+                                    },
+                                    {
+                                        "path":  "external/starter-kit/README.md",
+                                        "sha256":  "e9616b6f832ec554a576fb05c6c62ebd81451b0b63d83e357a413f0df11e6951"
+                                    }
+                                ]
+              },
+    "source_manifest_semantics":  "POST_FAILURE_EVIDENCE_NOT_SCIENTIFIC_FREEZE; no full input hashes or pre-run scientific freeze exist",
+    "actions":  {
+                    "source_repairs":  0,
+                    "entry_tests":  0,
+                    "generations":  0,
+                    "model_calls":  0,
+                    "protected_or_fixture_or_checkpoint_access":  0,
+                    "agents_cloud_contact_zip_upload_commit_push":  0
+                },
+    "scope":  "Read permitted text/source/schema metadata, write S0 decision/handoff/status/log. Only separately user-directed S1 may execute named next task.",
+    "writes":  [
+                   "decision.md",
+                   "s1-schema-repair-handoff.ko.md",
+                   "verification.json",
+                   "docs/status.md",
+                   "docs/log.md"
+               ],
+    "limitations":  [
+                        "125 permitted prior checks and19 post-failure source identities;154 downloaded-source/checkpoint entries not rehashed",
+                        "Limited python/pythonw/uv process-name check, no exhaustive host-wide job assurance",
+                        "Previous spy PASS does not establish actual all3 entry conformity"
+                    ],
+    "final_checks":  {
+                         "originals_unchanged":  true,
+                         "mismatches":  [
+
+                                        ],
+                         "shared":  [
+                                        {
+                                            "path":  "docs/status.md",
+                                            "old_content_preserved":  true,
+                                            "sha256":  "bcebea5fd5f5e9c268cb966f11f5224a16292b267693d7c6db4c3a9403da3e7a"
+                                        },
+                                        {
+                                            "path":  "docs/log.md",
+                                            "old_content_preserved":  true,
+                                            "sha256":  "b6262b0e2098950cf404ed4d4d8d9b0f5bdb8608928b2e2781dcf56711d5b123"
+                                        }
+                                    ],
+                         "artifacts":  [
+                                           {
+                                               "path":  "docs/analysis/A040-outputs/s0-schema-failure-review/decision.md",
+                                               "sha256":  "fe02ca8ebd6ab2bd47ef5430f1c6ea8f5d8cb4a0444606b647a1698d4f07123c"
+                                           },
+                                           {
+                                               "path":  "docs/analysis/A040-outputs/s0-schema-failure-review/s1-schema-repair-handoff.ko.md",
+                                               "sha256":  "83585738961754f3a5e5b48217109c4df30ae267040973618cb80967128c57f4"
+                                           }
+                                       ],
+                         "missing_links":  [
+
+                                           ],
+                         "head_unchanged":  true,
+                         "scope":  "Documentation hashes/preservation only; no runtime schema test"
+                     }
+}

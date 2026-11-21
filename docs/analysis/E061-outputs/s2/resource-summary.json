@@ -1,0 +1,104 @@
+{
+  "status": "PASS",
+  "stages": [
+    {
+      "mode": "assembly",
+      "status": "PASS",
+      "wall_seconds": 402.3484260999994,
+      "peak_owned_tree_bytes": {
+        "rss": 1354153984,
+        "commitment": 1481834496
+      }
+    },
+    {
+      "mode": "official",
+      "status": "PASS",
+      "wall_seconds": 600.9364094000011,
+      "peak_owned_tree_bytes": {
+        "rss": 2440880128,
+        "commitment": 2631708672
+      }
+    },
+    {
+      "mode": "package",
+      "status": "PASS",
+      "wall_seconds": 4.584096799999315,
+      "peak_owned_tree_bytes": {
+        "rss": 388370432,
+        "commitment": 385441792
+      }
+    },
+    {
+      "mode": "preflight",
+      "status": "PASS",
+      "wall_seconds": 17.213753300000462,
+      "peak_owned_tree_bytes": {
+        "rss": 837574656,
+        "commitment": 906702848
+      }
+    },
+    {
+      "mode": "tests-red",
+      "status": "FAIL",
+      "wall_seconds": 5.359143100000438,
+      "peak_owned_tree_bytes": {
+        "rss": 240771072,
+        "commitment": 234889216
+      }
+    },
+    {
+      "mode": "tests",
+      "status": "PASS",
+      "wall_seconds": 22.916175700000167,
+      "peak_owned_tree_bytes": {
+        "rss": 398520320,
+        "commitment": 435937280
+      }
+    }
+  ],
+  "expected_red": "tests-red failed because scripts.assemble_e061 did not yet exist; retained expected test-first failure, not a release failure",
+  "s2_worker_seconds": 1053.358004400001,
+  "s1_historical_worker_seconds": 1098.5227876999961,
+  "combined_worker_seconds": 2151.880792099997,
+  "s2_calls": {
+    "full_stack": 6,
+    "neural": 18,
+    "metric": 16
+  },
+  "s1_historical_calls": {
+    "full_stack": 9,
+    "neural": 27,
+    "metric": 16
+  },
+  "combined_calls": {
+    "full_stack": 15,
+    "neural": 45,
+    "metric": 32
+  },
+  "checker_smoke": {
+    "tiny_generated_predict": 1,
+    "neural": 0,
+    "metric": 0,
+    "counting": "separate from six real all3 full-stack calls"
+  },
+  "peak_owned_tree_bytes": {
+    "rss": 2440880128,
+    "commitment": 2631708672
+  },
+  "cpu_numerical_threads": 2,
+  "gpu": false,
+  "heavy_workers_max": 1,
+  "official_cli_startup_to_exit_sum_seconds": 590.9613171000001,
+  "official_wrapper_overhead_seconds": 9.975092300001052,
+  "limits": {
+    "s2_workers_seconds": 2400,
+    "all3_suite_seconds": 900,
+    "memory_bytes_each": 8589934592,
+    "default_calls": {
+      "full_stack": 6,
+      "neural": 18,
+      "metric": 16
+    }
+  },
+  "notes": "No successful stage rerun, no baseline/source refit, no defect allowance consumed. Observer outside ZIP; .1s owned-tree samples, summed per-process peak RSS/private commitment. CPU measurement is not a hosted H100 guarantee."
+}

@@ -1,0 +1,48 @@
+{
+  "mode": "reproduce",
+  "scope": "LOCAL_OUTPUT_PROTOCOL_FIXTURE",
+  "cases": [
+    {
+      "name": "old_exporter_rejects_canonical_producer",
+      "expected_failure": "Output export manifest mismatch",
+      "envelope": {
+        "outcome": "REFERENCE_PASS",
+        "mode": "reference",
+        "full_path_completed": true,
+        "output_counts": {
+          "unicef": 17856,
+          "world_bank": 39520,
+          "unhcr": 132273
+        },
+        "output_hashes": {
+          "unicef": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "world_bank": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "unhcr": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "actual_effect_evidence": false,
+        "evidence_scope": "SMALL_PROTOCOL_FIXTURE_NOT_PREDICTIONS"
+      },
+      "pass_expected_reproduction": true
+    }
+  ],
+  "producer_counts": {
+    "unicef": 17856,
+    "world_bank": 39520,
+    "unhcr": 132273
+  },
+  "candidate_extra_hashes": [
+    "unhcr-engineering-alpha025",
+    "unhcr-final-e041"
+  ],
+  "producer_metadata_extract_sha256": "0f77640aa495ac6ec66b98ce2a7c933bcb302dfa7345b5b107fe62a2a9b5ec12",
+  "producer_runner_sha256": "82facf9151daa8eadc55c438be99f4c0cf5e331978c18b3a59530ef2af5b680e",
+  "actual_arrays_opened": 0,
+  "actual_rpc": 0,
+  "actual_science": 0,
+  "actual_linux_boundary": 0,
+  "model_imports": 0,
+  "outcome": "EXPECTED_MISMATCH_REPRODUCED",
+  "elapsed_seconds": 0.2519824000009976,
+  "blocked_attempts": [],
+  "cases_completed": 1
+}

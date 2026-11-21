@@ -1,0 +1,12 @@
+{"event": "enter", "kind": "full_stack", "function": "_e061_predict", "totals": {"full_stack": 1, "neural": 0, "metric": 0}, "instrument": "unicef", "pid": 16044}
+{"event": "target_boundary", "rows": 9537, "instrument": "unicef", "pid": 16044}
+{"event": "target_boundary", "rows": 2361, "instrument": "unicef", "pid": 16044}
+{"event": "target_boundary", "rows": 2987, "instrument": "unicef", "pid": 16044}
+{"event": "enter", "kind": "neural", "function": "_train_on", "totals": {"full_stack": 1, "neural": 1, "metric": 0}, "instrument": "unicef", "pid": 16044}
+{"event": "return", "kind": "neural", "function": "_train_on", "seconds": 9.69248349999907, "returned": true, "epochs": 145, "best_epoch": 115, "device": "cpu", "instrument": "unicef", "pid": 16044}
+{"event": "enter", "kind": "neural", "function": "_train_on", "totals": {"full_stack": 1, "neural": 2, "metric": 0}, "instrument": "unicef", "pid": 16044}
+{"event": "return", "kind": "neural", "function": "_train_on", "seconds": 8.077795900000638, "returned": true, "epochs": 120, "best_epoch": 90, "device": "cpu", "instrument": "unicef", "pid": 16044}
+{"event": "target_boundary", "rows": 14885, "instrument": "unicef", "pid": 16044}
+{"event": "enter", "kind": "neural", "function": "_train_on", "totals": {"full_stack": 1, "neural": 3, "metric": 0}, "instrument": "unicef", "pid": 16044}
+{"event": "return", "kind": "neural", "function": "_train_on", "seconds": 4.53772729999946, "returned": true, "epochs": 115, "best_epoch": 0, "device": "cpu", "instrument": "unicef", "pid": 16044}
+{"event": "return", "kind": "full_stack", "function": "_e061_predict", "seconds": 39.60421899999892, "returned": true, "instrument": "unicef", "pid": 16044}

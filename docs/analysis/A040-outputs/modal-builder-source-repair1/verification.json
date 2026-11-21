@@ -1,0 +1,47 @@
+{
+    "source_repair_applied":  false,
+    "cycle2":  "Local checker runs but blocks asyncio loopback socketpair before main/SDK import; exit1",
+    "builder_inventory":  "NOT_OBSERVED",
+    "subagents":  0,
+    "cycle_cap":  2,
+    "FILE_classification":  "NOT_VALIDATED",
+    "gpu":  0,
+    "cycles_used":  2,
+    "source_diff_empty":  true,
+    "outer_seconds_total":  0.4916091,
+    "sdk_import_reached":  false,
+    "placement_diff_empty":  true,
+    "protected_data_access":  0,
+    "commit_push":  0,
+    "outcome":  "STOP_LOCAL_VALIDATION_INCOMPLETE",
+    "reason":  "LOCAL_GUARD_BLOCKS_WINDOWS_ASYNCIO_SOCKETPAIR",
+    "prior_app_termination":  "Existing STOPPED/task0 receipt preserved; no new query",
+    "production_modules_unchanged":  12,
+    "isolated_import":  "NOT_RUN",
+    "rpc":  0,
+    "local_named_jobs":  [
+
+                         ],
+    "scientific_processes":  0,
+    "historical_records_unchanged":  21,
+    "internal_cycle2_seconds":  0.039967199998500291,
+    "remaining":  "Checker must distinguish Windows local event-loop IPC from external RPC; inspect current checker statically and authorize a new bounded local scope. No automatic third cycle.",
+    "installer":  0,
+    "cycle1":  "Sandbox host Python access failure; checker not started; exit code unavailable in wrapper",
+    "authentication":  0,
+    "remote_build":  0,
+    "shared_document_preservation":  [
+                                         {
+                                             "path":  "C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\status.md",
+                                             "insert_index":  321,
+                                             "prior_bytes_preserved":  true,
+                                             "insert_length":  559
+                                         },
+                                         {
+                                             "path":  "C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\log.md",
+                                             "insert_index":  21,
+                                             "prior_bytes_preserved":  true,
+                                             "insert_length":  1883
+                                         }
+                                     ]
+}

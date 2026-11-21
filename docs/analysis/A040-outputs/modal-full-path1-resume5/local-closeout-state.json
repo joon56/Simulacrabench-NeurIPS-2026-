@@ -1,0 +1,15 @@
+{
+    "observed_utc":  "2026-10-05T10:02:30.4027099+00:00",
+    "head":  "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+    "owned_pids_checked":  [
+                               42704,
+                               35180,
+                               18884,
+                               43464
+                           ],
+    "owned_processes_remaining":  [
+
+                                  ],
+    "count":  0,
+    "remote_query_performed":  false
+}

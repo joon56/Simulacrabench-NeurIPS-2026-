@@ -1,0 +1,24 @@
+{
+  "recorded_utc": "2026-10-08T14:22:11.749866+00:00",
+  "status": "POST_RESULT_RECORDED_UNRESOLVED",
+  "manifest_sha256": "54eaa4ac90556c6b6f37253ddd79533bb8abe51475c52b0034390310a2278b6d",
+  "manifest_document_entries_verified": 13,
+  "new_document_links_verified": 30,
+  "head": "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+  "jobs_observation": {
+    "utc": "2026-10-08T14:21:28.6363932+00:00",
+    "named_local_job_count": 0,
+    "jobs": []
+  },
+  "user_JSON_preserved": true,
+  "all_four_released_scores_equal_E041_ID933094": true,
+  "original_reading_arm_applied": "WB and Grand equal: UNRESOLVED",
+  "original_registration_manifests_intact": true,
+  "prior_document_prefixes_and_history_preserved": true,
+  "old_manifest_shared_document_hash_differences_disclosed": "verification.json",
+  "actual_uploaded_byte_identity": null,
+  "best_update_event": null,
+  "model_verification_ZIP_platform_commit_push_S3_TEST_actions": 0,
+  "state": "E041 incumbent/E025 fallback/E062 parked; all other existing boundaries unchanged",
+  "next": "Return S0 via ../post-result-handoff.ko.md for next research priority judgment; stop"
+}

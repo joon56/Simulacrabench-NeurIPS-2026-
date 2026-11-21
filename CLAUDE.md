@@ -11,7 +11,85 @@ authorization persists. Distinguish technical qualification, release performance
 checks, DEV exploration and final TEST selection. These prospective clarifications
 do not rewrite any earlier preregistration, STOP or hosted result.
 
+Codex repository entry is `AGENTS.md`. Regardless of entry route, complete the
+workflow read receipt defined in `docs/workflow.md` before substantive work.
+On resuming after an instruction revision, reread the current files rather than
+assuming an existing chat automatically received the change.
+
+Role clarification adopted 2026-09-27: `docs/workflow.md` is the persistent
+session-role and research-entry contract; prompt templates implement it rather
+than redefine it. The user's current explicit scope overrides repository defaults.
+Every session states its role, task type, permitted operations and stop condition
+before work. S0 owns strategy, records and handoff; it does not automatically run
+S1 experiments or S2 packaging. A request to make progress or work toward a
+submission does not by itself change an established S0 role. Follow an explicit
+user role/scope change without asking again; otherwise prepare the next handoff.
+Information acquisition, technical validation, confirmatory research and bounded
+DEV exploration have different entry requirements; use the workflow's table.
+Do not repeat a HOLD review without new input: define a bounded acquisition task
+if feasible, or record the unavailable input and concrete resumption trigger.
+
+Role enforcement revision 2026-09-27-r4: the operating S0 chat stays S0 until
+the user explicitly directs this chat to execute another role or a named bounded
+exception. "Obtain all resumption inputs", "start work" and "try experiments"
+alone describe pipeline goals, not parent-S0 execution authority. Under r7, hand
+bounded authorized work to the assigned S1/S2 child; separate chats are optional.
+An assistant's role declaration
+or generated prompt cannot authorize itself. Record the actual user instruction
+before a transition; do not retroactively call an inferred transition explicit.
+User-authorized S0 platform/document research and workflow edits stay within that
+named scope; they do not authorize scientific implementation or packaging.
+
+Current workflow revision **2026-10-26-r7** adds user-authorized delegated operation
+under [A045](docs/analysis/A045-outputs/decision.md). S0 assigns bounded child tasks
+and reviews artifacts; the user need not copy handoffs between chats. Delegation
+authorization does not supply undefined scientific/data/budget permission.
+The parent remains document/coordinator-only. Root alone dispatches; children do
+not redelegate. Root and reviewers cannot write while an executor owns this
+checkout. Use the current epoch/task ID and explicit release, not a stale prompt
+or the same old receipt. These records coordinate agents, not an atomic lock.
+No indefinite background/new-day execution is promised. See workflow r7 for the
+active-run, ownership and escalation contract.
+
+The r6 foundation retains user-approved execution batches.
+S0 decides candidate/batch/budget/reading arms and reviews results; it remains
+document-only. An assigned executor child or separate session may perform the named S1 and conditional S2
+stages in order when the user's batch instruction prospectively authorizes the
+transition. Record the gate, source identity and remaining aggregate budget; do
+not require another handoff for that preauthorized transition. Never replay a
+completed successful S1 merely because the session changed. S3 preparation and
+comparison use a separate approved scope; A018's historical selected wording is
+not the user's final TEST decision. Only one checkout writer at a time; explicit
+ownership/job handover is required. New hypotheses, data, budgets or scientific
+criteria outside the batch return to S0. No automatic upload, paid resources or
+commit/push follow from a batch label. Child launch follows the current user's
+delegated-operation authority, not merely the batch label.
+
+Repair autonomy from r5 remains. The owning session diagnoses and repairs ordinary implementation
+errors, verifies the affected boundary, and continues within its existing task and
+aggregate budget. Do not require a new S0 review for each small defect. Preserve
+failed records and scientific/data policy; escalate changed scope, authority,
+exhausted allowance or unresolved remote side effects. See workflow.md for exact
+rules. Existing chats reread current instructions before applying the change.
+
 ## Task summary (per official starter kit README)
+
+**2026-11-08 official refresh (supersedes the 10-22 dates and the 1/day limit below):**
+DEV closes 2026-11-14 12:00 UTC (21:00 KST); Final 2026-11-15 12:00 UTC to 11-20
+12:00 UTC (21:00 KST each); DEV 3 submissions/day, Final 1 successful submission,
+failed submissions do not count; Final scored exact (no noise/rounding); skill now
+normalized by the crowd-marginal reference (kit aa03186, 10-26), so leaderboard values
+before/after 10-26 are on different scales; every team owes a 4-page OpenReview
+writeup plus code URL/license by 11-20 10:59 UTC. Sprint mode A047 is active.
+See [A047 rules snapshot](docs/analysis/A047-sprint/rules-2026-11-08.md).
+
+**2026-10-22 current-rule caution:** the official website and online config now
+list DEV through November 13 and Final November 14–18, replacing the historical
+dates below/in A018. Exact platform timestamps and current Terms were not obtained
+in this S0 web read. Current kit/schema/scorer compatibility is not certified by
+old local passes. See [A044 rules snapshot](docs/analysis/A044-outputs/official-rules-snapshot.md)
+and the separately approved S3 preparation handoff. Do not execute historical
+window-day commands or treat past method/license proposals as current authority.
 
 Three unpublished survey instruments (post-launch schema update 2026-08-19): UNICEF v1.1 "Faith & Immunisation" 19 items / 12 scored / 8 gated (19,846 rows, 10 countries); World Bank "Skills Assessment" 106 / 76 scored / 40 gated (6,927 rows, 3 countries, youth job-seekers); UNHCR ERPIS v1.3 285 / 213 scored / 156 gated (10,349 rows — Syrian refugees in Egypt/Iraq/Jordan/Lebanon, 2 CATI rounds treated as independent cross-sections). Schema `description` fields now carry real instrument metadata — read them, they are modelling input. Visible respondents arrive complete; **held-out respondents show only their `GIVEN` block — every `PREDICT` cell is blank and scored** (cross-respondent generalization; there are no separate Track A/B).
 
@@ -56,7 +134,9 @@ Sandbox has the real shape (same columns/options/skip logic/roles) but invented 
 ## Key dates (2026)
 
 - **Launched (Codabench live 2026-08-19, site says launch Aug 18). Registered — auto-approve.**
-- Phase 1 (dev): now – **Oct 30 (site) / Oct 31 (Codabench phase config)** — treat Oct 30 as the safe deadline. Phase 2: Nov 1–14, single submission.
+- Current public schedule observed 2026-10-22: DEV through **Nov13**, Final **Nov14–18**,
+  single Final submission. Exact platform timestamps/current Terms remain unverified;
+  see A044. The former Oct30/31 DEV and Nov1–14 TEST schedule is historical.
 - Dec: NeurIPS Sydney session. Top-3 = proceedings co-authorship. New: **"Roots of the Data Prize"** for top teams based in the 14 data-collection countries (not us).
 - Codabench leaderboard columns: Grand Prize (mean skill) + per-instrument UNICEF / World Bank / UNHCR.
 
@@ -88,6 +168,9 @@ docs/analysis/   # A-series process records (EDA, domain research): append-only 
 8. **Keep stop decisions scoped.** Use an informative, validly scoped oracle before estimator construction. A failed registered gate stops that study, not all target-domain approaches. If a proxy cannot answer the mechanism, state why and preregister a distinct bounded exploration with all submission checks; never lower a failed study's threshold or search favorable seeds after the result. The user permits qualified, decision-relevant exploratory DEV submissions without local adoption.
 9. **Bound work and preserve continuity.** Name the decision, main task, ready backup and resource cap before costly work. Continue authorized work within that scope, then hand off exact artifacts, evaluation exposure and running-job state. Use one integration owner per checkout; independent subagents may review or own disjoint tasks, but must not race edits, fits or commits. The user controls hosted uploads unless explicitly authorizing one.
 
+Disjoint paths or branch names within this shared checkout do not permit simultaneous
+writers. Root serializes every assigned writer, including its own document changes.
+
 ## Experiment tree (how approaches are recorded)
 
 - **One experiment = one file** in `docs/experiments/E0XX-slug.md` (copy `TEMPLATE.md`): `parent:` header is the tree edge (which model it branches from), `status:` ∈ adopted / rejected / parked / superseded-by:E0YY. `docs/log.md` stays a daily journal and refers to experiments by ID.
@@ -97,11 +180,21 @@ docs/analysis/   # A-series process records (EDA, domain research): append-only 
 - `python scripts/render_tree.py` regenerates `docs/tree.md` (mermaid) from the headers — run it whenever an experiment file is added or its status changes.
 - Leaderboard submissions snapshot into `submissions/` with the experiment ID, preregistered reading arms and actual scores. Include a justified numerical expectation only when available; do not invent one.
 - Submission ZIPs use `submissions/YYYY-MM-DD-E0XX.zip`; matching source and scorecards use `submissions/YYYY-MM-DD-E0XX/`. Keep future deliverables in this established layout, not `output/dev/` (user preference, 2026-09-19).
-- **End of each working day: push to `origin` (private GitHub repo).**
+- **End-of-day commit/push follows the active user's authorization.** Honor any
+  no-commit/no-push scope; neither a session label nor an old template authorizes
+  publishing changes. When authorized, commit task files only and verify origin.
 
 ## Study sessions
 
-Domain study runs as one-paper-per-session via the `paper-session` skill (`.claude/skills/paper-session/`): reading map from the paper's own sections → 3 self-check questions → tier-bound deliverable ([구현] = running code, [설계] = design note, [스킴] = 3-line summary) → ✅ + summary recorded in `docs/domain-study-guide.ko.md` → `study:` commit. Tiers and deliverables are defined per entry in that guide.
+Domain study runs as one-paper-per-session via `paper-session`: Claude entry and
+shared protocol at `.claude/skills/paper-session/SKILL.md`; Codex wrapper at
+`.agents/skills/paper-session/SKILL.md`. Use the paper's own sections, three
+self-check questions and the guide's tier-bound deliverable. Implementation
+checks must stay within the user's permitted execution/data scope; unrun work is
+unvalidated. Record the agreed summary in `docs/domain-study-guide.ko.md`.
+Commit/push only under active user authorization, not automatically after study.
+Windows/Codex environment setup is in `docs/codex-setup.ko.md`; no startup fit or
+blanket test run is needed merely to resume a session.
 
 ## Rules for working here
 

@@ -1,0 +1,30 @@
+﻿{
+    "started_utc":  "2026-10-02T12:59:12Z",
+    "preparation_deadline_utc":  "2026-10-02T13:39:12Z",
+    "task_deadline_utc":  "2026-10-02T14:39:12Z",
+    "build_design_started_utc":  "2026-10-02T13:05:04Z",
+    "build_design_deadline_utc":  "2026-10-02T13:25:04Z",
+    "previous_active_seconds":  1169.2559841,
+    "intersession_gap_since_previous_verification_seconds":  1085.7440159,
+    "role":  "S1 technical preparation and conditional original single verification",
+    "authority":  "Current user explicitly resumes this S1; no extra S0 gate after prerequisites",
+    "head":  "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+    "workflow_revision":  "2026-09-27-r4",
+    "workflow_sha256":  "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642",
+    "read_evidence":  [
+                          "1f2c95 AGENTS/CLAUDE",
+                          "aad37e status/newest3 log",
+                          "1c0aac workflow/S0 review",
+                          "d33758 UTF8 original handoff and prior records",
+                          "4553f5 metadata/skills"
+                      ],
+    "authenticated_profile":  "joon56",
+    "profile_tool":  "f547f0",
+    "boundary_seconds":  0,
+    "scientific_invocations":  0,
+    "remote_resource_requests":  0,
+    "credit_cap":  5,
+    "cash_cap":  0,
+    "preparation_credit_cap":  1,
+    "termination_reserve":  1
+}

@@ -1,0 +1,12 @@
+﻿{
+    "mode":  "isolate-empty",
+    "hidden":  true,
+    "affinity_mask":  3,
+    "owned_pid_remaining":  0,
+    "wall_seconds":  0.1625586,
+    "number":  4,
+    "timeout_seconds":  27,
+    "error":  null,
+    "pid":  17828,
+    "exit_code":  0
+}

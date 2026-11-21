@@ -1,0 +1,72 @@
+{
+    "record":  "E064 S0 release review",
+    "recorded_at":  "2026-10-23T16:08:22.0518679+09:00",
+    "role":  "S0",
+    "scope":  "Document review, fixed-candidate DEV recommendation, records and result handoff",
+    "head":  "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+    "branch":  "work/e050-submission",
+    "workflow_revision":  "2026-10-22-r6",
+    "workflow_sha256":  "69620b7eeaad5a01a6a6b884fbd95dfede3e26b2ee2b09016479846082aec089",
+    "read_evidence":  [
+                          "AGENTS/CLAUDE read fully; status current82lines, newest3complete log entries, workflow read in order in current conversation",
+                          "Truncated workflow middle re-read explicitly before handoff: 1c233c",
+                          "S2 handoff/closeout/verification read: 1c233c",
+                          "Baseline reuse/repair/independent review/release contract: 8a797f",
+                          "SCORES and package-path plus ledger stages: c8a077; truncated ledger/exposure re-read through selected fields/full exposure: cc03b6",
+                          "Official final and parity receipts: cc03b6",
+                          "E064 experiment/A043 rationale and twelve explicit document hash comparisons: d9a2bf"
+                      ],
+    "read_limits":  "Manifest inspected as metadata only. No traversal/access/hash of numerical/ZIP/cache artifacts. Batch-entry selected authority/role fields only, not claimed full receipt audit.",
+    "incoming_owner":  "S0 E064 release review /root",
+    "outgoing_prior_owner":  "EXEC-B01-E064 /root",
+    "prior_release_at":  "2026-10-23T15:54:58.096396+09:00",
+    "accepted_at":  "2026-10-23T16:08:22.0528688+09:00",
+    "owned_write_paths":  [
+                              "docs/analysis/E064-outputs/s0-release-review/",
+                              "docs/status.md current notice",
+                              "docs/log.md new entry"
+                          ],
+    "named_jobs":  [
+
+                   ],
+    "dirty_inventory":  {
+                            "complete":  false,
+                            "reported_paths":  2443,
+                            "limitation":  "Git lacks user global ignore and12 historical official-work directory access. Command-local safe.directory only, no global config. Preserve existing files; no full-byte preservation claim."
+                        },
+    "document_identity":  "S2 artifact-manifest SHA matches verification; twelve explicitly named document/scorecard hashes match manifest",
+    "forbidden":  [
+                      "model implementation/import/fit/predict/score/test",
+                      "protected data/Parquet/NPZ/cache access or rehash",
+                      "ZIP/PDF access/rebuild",
+                      "web/platform/account/upload",
+                      "remote compute/install",
+                      "subagents",
+                      "commit/push",
+                      "TEST selection"
+                  ],
+    "read_only_hashes_before":  {
+                                    "AGENTS.md":  "e3d52f09f32c7e3b8fdb194419119c4f563557103404da0831ffb31fbf2150e8",
+                                    "CLAUDE.md":  "7300b637f3a0ae937b2273a1945892df129eb16ee3ef7bdc6cff707c69ffc1e3",
+                                    "docs/status.md":  "a37224d3f690ce25d1c9d37da7067fdfea704585b9289d0d09978fb765430fb2",
+                                    "docs/log.md":  "9fd753fc7c91d0fd39eaa19be91b623ea916aa28ece62b7e7b08852d43237007",
+                                    "docs/workflow.md":  "69620b7eeaad5a01a6a6b884fbd95dfede3e26b2ee2b09016479846082aec089",
+                                    "docs/analysis/A044-outputs/batch-01-e064-release.ko.md":  "26d4d49238035036426b23ee6b0c7827d55c1143f93a70778dd9ea4c2973b5af",
+                                    "docs/experiments/E064-conditional-gradient.md":  "e7b6e10fc6e01d1eec9015ad837e240baa3965b9c2df2b83f5d56a0d30f287da",
+                                    "docs/analysis/A043-outputs/s0-review/decision.md":  "9470a8a08c5e61f0b096aa1859b9c042b6264bcdff15fa088bfff3b53d244745",
+                                    "docs/analysis/E064-outputs/s2/verification.json":  "ef6959b5325aabe326060e171b451e0f790c16f84a32dffeb681352d3d6af413",
+                                    "docs/analysis/E064-outputs/s2/artifact-manifest.json":  "35db26299f9af3944b9e42b34dbf52b59a7413bcc2a2e84ffd0f793dd4e3e778",
+                                    "docs/analysis/E064-outputs/s2/closeout.md":  "b9a22c7af43f6af9f009d562bd0ce40fbb0c31b68b60d4c49b80bc6d127aaef6",
+                                    "docs/analysis/E064-outputs/s2/s0-handoff.ko.md":  "4244f050ffa800d8ccbf1f4f6a23f68d1ab9d51daa62e68287af09653363a706",
+                                    "docs/analysis/E064-outputs/s2/baseline-reuse.json":  "075d7f61dff43617543d374139e7b3f4ba4d1e4b952732da6f9aa01609d7a70e",
+                                    "docs/analysis/E064-outputs/s2/release-contract.md":  "fa1897a368361669666b33dc752e52ee9812f8d391e8ea9d082f0b967223321a",
+                                    "docs/analysis/E064-outputs/s2/repair-history.md":  "e9b2af6580f1bc6c1cd4722d3e3bf80a097ed27eded8bba2447f4bb3567a3ac4",
+                                    "docs/analysis/E064-outputs/s2/independent-review.md":  "8a311441b773cb7748e2abf580660873a355a25dc051c5c487e575918f1fe01c",
+                                    "docs/analysis/E064-outputs/s2/cost-time-ledger.json":  "be8a1eddec99916fff9e0b39a8457717f889c16fd99513f936b3115446183dca",
+                                    "docs/analysis/E064-outputs/s2/exposure-ledger.md":  "162ab255e0c41fb41530e5c00bb6f2042d30a1776c51a1669b0d5e726338761e",
+                                    "docs/analysis/E064-outputs/s2/package-path.json":  "83dec081ad23c89642697fbe0fad119e70423d503099d87d1c91b51d4911f20a",
+                                    "docs/analysis/E064-outputs/s2/official.json":  "6827991ea9ae9877e90025904648116f82d99dcf8f3edac040e37f517c442cbf",
+                                    "docs/analysis/E064-outputs/s2/official-parity-unhcr.json":  "fceac76c5471766caada40379f9aceab0af6b994cbef3a3a649a5b0ec418c31d",
+                                    "submissions/2026-10-23-E064/SCORES.md":  "da64a3dc13d40374483fb9c83b87ebecbd443fe063f156a741e8ae9c9b5a3767"
+                                }
+}

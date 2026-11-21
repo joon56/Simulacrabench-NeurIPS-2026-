@@ -1,0 +1,81 @@
+{
+  "state": "LOCAL_CONTRACT_FAIL",
+  "entry_preflight": {
+    "vram_mib": 8192,
+    "total_bytes": 34269630464,
+    "method": "GlobalMemoryStatusEx",
+    "utilization_percent": 3,
+    "driver": "591.86",
+    "competing_research_processes": [],
+    "free_vram_mib": 7469,
+    "limits": "Desktop GPU clients present; not an exhaustive activity audit",
+    "available_commit_bytes": 22667329536,
+    "gpu": "RTX3070",
+    "available_bytes": 22028894208
+  },
+  "prelaunch_gpu": {
+    "name": "RTX3070",
+    "capacity_mib": 8192,
+    "free_mib": 7341,
+    "utilization_percent": 20,
+    "caveat": "Desktop clients present; some names inaccessible; no named Python research processes observed"
+  },
+  "scientific_process_count": 1,
+  "scientific_elapsed_seconds": 11.889835100000255,
+  "supervised_elapsed_seconds": 13.26487410000027,
+  "counts": {
+    "fits": 14,
+    "predicts": 15,
+    "loads": 2
+  },
+  "timings": {
+    "fit_seconds": 0.6466824000008273,
+    "predict_seconds": 5.416255300000103,
+    "load_seconds": 0.11460890000034851
+  },
+  "process_tree_peak_rss_bytes": 1592758272,
+  "process_tree_peak_commit_bytes": 2600308736,
+  "gpu": {
+    "allocated_peak": 279770624,
+    "reserved_peak": 308281344,
+    "device_capacity": 8589410304
+  },
+  "monitor": {
+    "outcome": "LOCAL_CONTRACT_FAIL",
+    "reason": null,
+    "child_exit": 1,
+    "elapsed_seconds": 13.26487410000027,
+    "sample_period_seconds": 1,
+    "samples": 13,
+    "rss_peak_sampled": 1592758272,
+    "commitment_peak_sampled": 2600308736,
+    "includes_watchdog": true,
+    "available_before": {
+      "physical": 21524160512,
+      "commitment": 21310939136
+    },
+    "host_cap": 16000000000,
+    "gpu": {
+      "allocated_peak": 279770624,
+      "reserved_peak": 308281344,
+      "device_capacity": 8589410304
+    },
+    "full_path_measured": false,
+    "remaining_children": []
+  },
+  "partial_fallbacks": {
+    "singleton": 1,
+    "empty_arithmetic": 1,
+    "evidence": "Derived from reached code/events, not final count assertion"
+  },
+  "full_path_measured": false,
+  "actual_E041_executed": false,
+  "future_limits": {
+    "scientific_process_wall_seconds": 120,
+    "scientific_processes": 1,
+    "cpu_threads": 2,
+    "gpu_count": 1,
+    "task_wall_seconds": 3600,
+    "host_bytes": 16000000000
+  }
+}

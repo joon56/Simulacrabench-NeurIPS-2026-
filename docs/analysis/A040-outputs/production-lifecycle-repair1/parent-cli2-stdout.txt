@@ -1,0 +1,1 @@
+{"outcome": "REAL_PARENT_CHILD_CLI_GATE_PASS", "exact_owned_child": 1, "fresh_child_import_guard": true, "entry": "main parent -> actual live_launcher.py --child", "stop": "fixed pins gate on new protocol text; old pins/payload not accessed", "real_auth_rpc_model": 0, "unlisted_child_rejected": true}

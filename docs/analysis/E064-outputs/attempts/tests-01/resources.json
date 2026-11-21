@@ -1,0 +1,24 @@
+{
+  "mode": "tests",
+  "attempt": 1,
+  "only": "tests.test_conditional_gradient.GradientTests.test_initial_state_forward_rng_and_denominator",
+  "wall_seconds": 55.36203699999896,
+  "child_seconds": 55.30573690000165,
+  "prior_seconds": 0.1777746,
+  "cumulative_seconds": 55.53981159999896,
+  "focused_cumulative_seconds": 55.53981159999896,
+  "exit_code": 1,
+  "resource_stop": "COMPLETE",
+  "error": null,
+  "peak_owned_tree_bytes": {
+    "rss": 354152448,
+    "commitment": 393412608
+  },
+  "sample_count": 498,
+  "max_observed_sample_gap_seconds": 0.11553180000191787,
+  "sample_interval_seconds": 0.1,
+  "threads": 2,
+  "gpu": 0,
+  "semantics": "Conservative sum of per-process peak RSS/private, controller and descendants; stage wall includes parent source verification and cleanup",
+  "status": "FAIL"
+}

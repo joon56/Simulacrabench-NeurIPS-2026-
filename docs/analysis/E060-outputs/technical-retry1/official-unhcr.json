@@ -1,0 +1,881 @@
+{
+  "data": "C:\\Users\\USER\\Desktop\\SimulacraBench\\external\\starter-kit\\_sandbox\\unhcr",
+  "schema": "C:\\Users\\USER\\Desktop\\SimulacraBench\\external\\starter-kit\\data\\unhcr.json",
+  "phase": 1,
+  "seed": 0,
+  "n_respondents": 8900,
+  "n_held_out": 621,
+  "n_cells": 132273,
+  "status": "PASS",
+  "skill": 0.5624429548505255,
+  "reported_skill": 0.56,
+  "log_score": -0.5520885655151117,
+  "uniform_reference": 1.2617522026791088,
+  "privacy": {
+    "noised": true,
+    "sensitivity": 0.008815993710527326,
+    "scale": 0.0008815993710527325,
+    "epsilon": 10.0,
+    "round_to": 0.01
+  },
+  "std_error": 0.008750206893824759,
+  "item_normalized": -0.5520885655151117,
+  "brier": 0.299278976130877,
+  "baseline_uniform": -1.261752202679109,
+  "baseline_crowd": -0.7177333905212485,
+  "seconds": 209.20098900794983,
+  "by_item": {
+    "s2_10_house_condition_lbl": {
+      "log_score": -0.8010350254263546,
+      "n_cells": 621
+    },
+    "s2_11_house_occupancy_lbl": {
+      "log_score": -0.4090573522630232,
+      "n_cells": 621
+    },
+    "s2_6_return_decision_maker": {
+      "log_score": -0.896550014919963,
+      "n_cells": 621
+    },
+    "s2_7_own_house_syria_lbl": {
+      "log_score": -0.6508319212979315,
+      "n_cells": 621
+    },
+    "s2_8_own_land_syria_lbl": {
+      "log_score": -0.7245677025984656,
+      "n_cells": 621
+    },
+    "s2_9_property_docs_lbl": {
+      "log_score": -0.689759826351728,
+      "n_cells": 621
+    },
+    "s3_10a_returnee_is_head_lbl": {
+      "log_score": -0.046563085135708,
+      "n_cells": 621
+    },
+    "s3_10b_returnee_gender_lbl": {
+      "log_score": -0.04653683075580399,
+      "n_cells": 621
+    },
+    "s3_10c_returnee_age": {
+      "log_score": -0.05059652850684697,
+      "n_cells": 621
+    },
+    "s3_10d_employ_before_return_lbl": {
+      "log_score": -0.04962628466907604,
+      "n_cells": 621
+    },
+    "s3_10g_employ_syria_lbl": {
+      "log_score": -0.04959117470529879,
+      "n_cells": 621
+    },
+    "s3_11_intent_return_12m_lbl": {
+      "log_score": -0.7089509021948928,
+      "n_cells": 621
+    },
+    "s3_12_hope_return_someday_lbl": {
+      "log_score": -1.1657111037560972,
+      "n_cells": 621
+    },
+    "s3_13_hope_return_5yr_lbl": {
+      "log_score": -0.9188380446787133,
+      "n_cells": 621
+    },
+    "s3_14_visit_importance_lbl": {
+      "log_score": -0.580213983290791,
+      "n_cells": 621
+    },
+    "s3_15_friend_return_likely_lbl": {
+      "log_score": -0.5704691556600098,
+      "n_cells": 621
+    },
+    "s3_16_friend_ret_econ_syria_lbl": {
+      "log_score": -0.08431175443178515,
+      "n_cells": 621
+    },
+    "s3_16_friend_ret_family_lbl": {
+      "log_score": -0.08443457153635034,
+      "n_cells": 621
+    },
+    "s3_16_friend_ret_has_property_lbl": {
+      "log_score": -0.08011300741436587,
+      "n_cells": 621
+    },
+    "s3_16_friend_ret_has_resources_lbl": {
+      "log_score": -0.08471637975624902,
+      "n_cells": 621
+    },
+    "s3_16_friend_ret_high_cost_lbl": {
+      "log_score": -0.08434204082006398,
+      "n_cells": 621
+    },
+    "s3_16_friend_ret_homeland_lbl": {
+      "log_score": -0.08590578253092575,
+      "n_cells": 621
+    },
+    "s3_16_friend_ret_no_econ_host_lbl": {
+      "log_score": -0.07989762151626323,
+      "n_cells": 621
+    },
+    "s3_16_friend_ret_no_legal_lbl": {
+      "log_score": -0.08021288618591946,
+      "n_cells": 621
+    },
+    "s3_16_friend_ret_no_services_lbl": {
+      "log_score": -0.08571147134328333,
+      "n_cells": 621
+    },
+    "s3_16_friend_ret_other": {
+      "log_score": -0.0851543670765087,
+      "n_cells": 621
+    },
+    "s3_16_friend_ret_safety_lbl": {
+      "log_score": -0.08609904319029558,
+      "n_cells": 621
+    },
+    "s3_17_friend_no_ret_food_insecurity_lbl": {
+      "log_score": -0.5140801309587811,
+      "n_cells": 621
+    },
+    "s3_17_friend_no_ret_no_econ_lbl": {
+      "log_score": -0.4320820135474785,
+      "n_cells": 621
+    },
+    "s3_17_friend_no_ret_no_education_lbl": {
+      "log_score": -0.4212072757647812,
+      "n_cells": 621
+    },
+    "s3_17_friend_no_ret_no_electricity_lbl": {
+      "log_score": -0.34483581987799145,
+      "n_cells": 621
+    },
+    "s3_17_friend_no_ret_no_health_lbl": {
+      "log_score": -0.5273157688764715,
+      "n_cells": 621
+    },
+    "s3_17_friend_no_ret_no_water_lbl": {
+      "log_score": -0.42697770198969076,
+      "n_cells": 621
+    },
+    "s3_17_friend_no_ret_other": {
+      "log_score": -0.518465704030723,
+      "n_cells": 621
+    },
+    "s3_17_friend_no_ret_safety_lbl": {
+      "log_score": -0.378230410911852,
+      "n_cells": 621
+    },
+    "s3_18_num_network_returned_lbl": {
+      "log_score": -1.6374359388726472,
+      "n_cells": 621
+    },
+    "s3_19_origin_comm_freq_lbl": {
+      "log_score": -1.3234140721824084,
+      "n_cells": 621
+    },
+    "s3_1_has_valid_docs_lbl": {
+      "log_score": -0.60975492692513,
+      "n_cells": 621
+    },
+    "s3_20_origin_employ_rating_lbl": {
+      "log_score": -0.9244146675394839,
+      "n_cells": 621
+    },
+    "s3_21_employ_info_confidence_lbl": {
+      "log_score": -0.9689730906969641,
+      "n_cells": 621
+    },
+    "s3_22_return_safety_feeling_lbl": {
+      "log_score": -0.7299777492160822,
+      "n_cells": 621
+    },
+    "s3_23_safety_active_conflict_lbl": {
+      "log_score": -0.6100321333395726,
+      "n_cells": 621
+    },
+    "s3_23_safety_armed_actors_lbl": {
+      "log_score": -0.533654572922643,
+      "n_cells": 621
+    },
+    "s3_23_safety_explosives_lbl": {
+      "log_score": -0.27417329123978623,
+      "n_cells": 621
+    },
+    "s3_23_safety_kidnapping_lbl": {
+      "log_score": -0.4169044975325025,
+      "n_cells": 621
+    },
+    "s3_23_safety_law_enforcement_lbl": {
+      "log_score": -0.40125734671625846,
+      "n_cells": 621
+    },
+    "s3_23_safety_no_concerns_lbl": {
+      "log_score": -0.6175336498673123,
+      "n_cells": 621
+    },
+    "s3_23_safety_other": {
+      "log_score": -0.31406692044078355,
+      "n_cells": 621
+    },
+    "s3_23_safety_public_spaces_lbl": {
+      "log_score": -0.38295313157249267,
+      "n_cells": 621
+    },
+    "s3_23_safety_theft_lbl": {
+      "log_score": -0.30951035886694145,
+      "n_cells": 621
+    },
+    "s3_23_safety_tribal_conflict_lbl": {
+      "log_score": -0.30777092088157315,
+      "n_cells": 621
+    },
+    "s3_23a_safety_rank1_lbl": {
+      "log_score": -1.3129285467020644,
+      "n_cells": 621
+    },
+    "s3_23b_safety_rank2_lbl": {
+      "log_score": -1.615167512270557,
+      "n_cells": 621
+    },
+    "s3_24_origin_electricity_lbl": {
+      "log_score": -1.2587278255820726,
+      "n_cells": 621
+    },
+    "s3_25_origin_water_lbl": {
+      "log_score": -0.9027723130266614,
+      "n_cells": 621
+    },
+    "s3_2_visited_syria_lbl": {
+      "log_score": -0.9578320993445966,
+      "n_cells": 621
+    },
+    "s3_3_who_visited_lbl": {
+      "log_score": -0.8805878640231127,
+      "n_cells": 621
+    },
+    "s3_4a_visit_year": {
+      "log_score": -1.4313675416114982,
+      "n_cells": 621
+    },
+    "s3_4b_visit_month": {
+      "log_score": -1.593952297202559,
+      "n_cells": 621
+    },
+    "s3_5_family_in_syria_lbl": {
+      "log_score": -0.7833264973661589,
+      "n_cells": 621
+    },
+    "s3_6_permanent_returns_lbl": {
+      "log_score": -0.3342751419635048,
+      "n_cells": 621
+    },
+    "s3_7_num_permanent_returns_lbl": {
+      "log_score": -0.06019402518332995,
+      "n_cells": 621
+    },
+    "s3_8a_return_year": {
+      "log_score": -0.0596512757581672,
+      "n_cells": 621
+    },
+    "s3_8b_return_month": {
+      "log_score": -0.06991329385235204,
+      "n_cells": 621
+    },
+    "s3_9a_recent_returns_count_lbl": {
+      "log_score": -0.05806237179453449,
+      "n_cells": 621
+    },
+    "s3_9b_returned_children": {
+      "log_score": -0.05510265229797154,
+      "n_cells": 621
+    },
+    "s3_9c_returnee_working_lbl": {
+      "log_score": -0.05651052118549578,
+      "n_cells": 621
+    },
+    "s4_0_hh_anyone_working_lbl": {
+      "log_score": -0.4389092186399076,
+      "n_cells": 621
+    },
+    "s4_10_family_biz_lastweek_lbl": {
+      "log_score": -0.4786897982507872,
+      "n_cells": 621
+    },
+    "s4_11_job_but_absent_lbl": {
+      "log_score": -0.12562631819068318,
+      "n_cells": 621
+    },
+    "s4_16_employment_type_lbl": {
+      "log_score": -1.276889539796201,
+      "n_cells": 621
+    },
+    "s4_1_is_main_earner_lbl": {
+      "log_score": -0.5747612913114855,
+      "n_cells": 621
+    },
+    "s4_3_main_earner_gender": {
+      "log_score": -0.9083394690267601,
+      "n_cells": 621
+    },
+    "s4_4_main_earner_age": {
+      "log_score": -1.376510255035674,
+      "n_cells": 621
+    },
+    "s4_5_main_earner_relation_lbl": {
+      "log_score": -1.3452992824686456,
+      "n_cells": 621
+    },
+    "s4_6_main_earner_education_lbl": {
+      "log_score": -1.4254569597099176,
+      "n_cells": 621
+    },
+    "s4_7_has_work_permit_lbl": {
+      "log_score": -1.3639008436980307,
+      "n_cells": 621
+    },
+    "s4_8_worked_pay_lastweek_lbl": {
+      "log_score": -1.055638563838879,
+      "n_cells": 621
+    },
+    "s4_9_business_lastweek_lbl": {
+      "log_score": -0.8859446154436207,
+      "n_cells": 621
+    },
+    "s5_10_community_relations_lbl": {
+      "log_score": -1.254340622829792,
+      "n_cells": 621
+    },
+    "s5_1_unfair_treatment_freq_lbl": {
+      "log_score": -1.1784898527083592,
+      "n_cells": 621
+    },
+    "s5_2_citizen_friends_ratio_lbl": {
+      "log_score": -1.19911011825127,
+      "n_cells": 621
+    },
+    "s5_3_refugee_friends_ratio_lbl": {
+      "log_score": -0.8752495649695649,
+      "n_cells": 621
+    },
+    "s5_4_employ_discrimination_lbl": {
+      "log_score": -0.6817932762244878,
+      "n_cells": 621
+    },
+    "s5_5_shopping_discrimination_lbl": {
+      "log_score": -0.9529280675922149,
+      "n_cells": 621
+    },
+    "s5_6_feel_left_out_lbl": {
+      "log_score": -0.8487910446560659,
+      "n_cells": 621
+    },
+    "s5_7_life_complicated_lbl": {
+      "log_score": -1.3165713823463405,
+      "n_cells": 621
+    },
+    "s5_8_value_not_recognized_lbl": {
+      "log_score": -1.0416693373697,
+      "n_cells": 621
+    },
+    "s5_9_looked_down_on_lbl": {
+      "log_score": -1.1586582576285596,
+      "n_cells": 621
+    },
+    "s6_10_face_challenges_lbl": {
+      "log_score": -0.5801648575345221,
+      "n_cells": 621
+    },
+    "s6_11_challenge_debt_lbl": {
+      "log_score": -0.4793455407865795,
+      "n_cells": 621
+    },
+    "s6_11_challenge_education_access_lbl": {
+      "log_score": -0.43418666946139206,
+      "n_cells": 621
+    },
+    "s6_11_challenge_employment_lbl": {
+      "log_score": -0.5005532268228445,
+      "n_cells": 621
+    },
+    "s6_11_challenge_eviction_lbl": {
+      "log_score": -0.5227242897049138,
+      "n_cells": 621
+    },
+    "s6_11_challenge_forced_return_lbl": {
+      "log_score": -0.42879832656846767,
+      "n_cells": 621
+    },
+    "s6_11_challenge_health_access_lbl": {
+      "log_score": -0.4727199506737232,
+      "n_cells": 621
+    },
+    "s6_11_challenge_legal_lbl": {
+      "log_score": -0.508052080331768,
+      "n_cells": 621
+    },
+    "s6_11_challenge_movement_lbl": {
+      "log_score": -0.443303712700591,
+      "n_cells": 621
+    },
+    "s6_11_challenge_no_assistance_lbl": {
+      "log_score": -0.503024299296958,
+      "n_cells": 621
+    },
+    "s6_11_challenge_other": {
+      "log_score": -0.5013657235708263,
+      "n_cells": 621
+    },
+    "s6_11_challenge_safety_lbl": {
+      "log_score": -0.5065549242437107,
+      "n_cells": 621
+    },
+    "s6_11_challenge_separation_lbl": {
+      "log_score": -0.45825265876529625,
+      "n_cells": 621
+    },
+    "s6_11_challenge_tensions_lbl": {
+      "log_score": -0.5140448033056808,
+      "n_cells": 621
+    },
+    "s6_12_children_schooling_lbl": {
+      "log_score": -0.5920669522843118,
+      "n_cells": 621
+    },
+    "s6_1_income_community_lbl": {
+      "log_score": -0.2289312347778997,
+      "n_cells": 621
+    },
+    "s6_1_income_dont_know_lbl": {
+      "log_score": -0.36528495652895315,
+      "n_cells": 621
+    },
+    "s6_1_income_government_lbl": {
+      "log_score": -0.36222438437553467,
+      "n_cells": 621
+    },
+    "s6_1_income_humanitarian_lbl": {
+      "log_score": -0.5729059029387799,
+      "n_cells": 621
+    },
+    "s6_1_income_loans_lbl": {
+      "log_score": -0.3871364439335462,
+      "n_cells": 621
+    },
+    "s6_1_income_no_answer_lbl": {
+      "log_score": -0.2276811103957523,
+      "n_cells": 621
+    },
+    "s6_1_income_none_lbl": {
+      "log_score": -0.2513058468232152,
+      "n_cells": 621
+    },
+    "s6_1_income_other": {
+      "log_score": -0.6911880716183926,
+      "n_cells": 621
+    },
+    "s6_1_income_remittances_lbl": {
+      "log_score": -0.5404472866936306,
+      "n_cells": 621
+    },
+    "s6_1_income_savings_lbl": {
+      "log_score": -0.21760265705247092,
+      "n_cells": 621
+    },
+    "s6_1_income_selling_assets_lbl": {
+      "log_score": -0.5270550421259601,
+      "n_cells": 621
+    },
+    "s6_1_income_syria_pension_lbl": {
+      "log_score": -0.5835426127540616,
+      "n_cells": 621
+    },
+    "s6_1_income_work_lbl": {
+      "log_score": -0.20130444932019317,
+      "n_cells": 621
+    },
+    "s6_2_income_varies_lbl": {
+      "log_score": -1.1690041567390426,
+      "n_cells": 621
+    },
+    "s6_3_income_adequacy_lbl": {
+      "log_score": -0.8165480583866338,
+      "n_cells": 621
+    },
+    "s6_4_need_commodities_lbl": {
+      "log_score": -0.43051050878341385,
+      "n_cells": 621
+    },
+    "s6_4_need_education_lbl": {
+      "log_score": -0.4361129011345263,
+      "n_cells": 621
+    },
+    "s6_4_need_electricity_lbl": {
+      "log_score": -0.4221936363127875,
+      "n_cells": 621
+    },
+    "s6_4_need_food_lbl": {
+      "log_score": -0.43172769114954984,
+      "n_cells": 621
+    },
+    "s6_4_need_health_lbl": {
+      "log_score": -0.43511329168442336,
+      "n_cells": 621
+    },
+    "s6_4_need_housing_lbl": {
+      "log_score": -0.40860542176247866,
+      "n_cells": 621
+    },
+    "s6_4_need_other": {
+      "log_score": -0.3769108364853802,
+      "n_cells": 621
+    },
+    "s6_4_need_water_lbl": {
+      "log_score": -0.39766360648093646,
+      "n_cells": 621
+    },
+    "s6_5_assistance_received_lbl": {
+      "log_score": -1.132968856814243,
+      "n_cells": 621
+    },
+    "s6_6_assist_government_lbl": {
+      "log_score": -0.4925905801010729,
+      "n_cells": 621
+    },
+    "s6_6_assist_intl_orgs_lbl": {
+      "log_score": -0.555510417851106,
+      "n_cells": 621
+    },
+    "s6_6_assist_ngo_lbl": {
+      "log_score": -0.5513655122082903,
+      "n_cells": 621
+    },
+    "s6_6_assist_other": {
+      "log_score": -0.5367529296218015,
+      "n_cells": 621
+    },
+    "s6_6_assist_religious_lbl": {
+      "log_score": -0.46653327511788223,
+      "n_cells": 621
+    },
+    "s6_6_assist_unhcr_lbl": {
+      "log_score": -0.5132794336828921,
+      "n_cells": 621
+    },
+    "s6_6_assist_wfp_lbl": {
+      "log_score": -0.522070244984182,
+      "n_cells": 621
+    },
+    "s6_7_receive_remittances_lbl": {
+      "log_score": -1.1191992743980266,
+      "n_cells": 621
+    },
+    "s6_8_send_remittances_lbl": {
+      "log_score": -1.2548070825113518,
+      "n_cells": 621
+    },
+    "s6_9a_debt_host_country_lbl": {
+      "log_score": -0.8012886939870456,
+      "n_cells": 621
+    },
+    "s6_9b_debt_syria_lbl": {
+      "log_score": -0.6928972687574267,
+      "n_cells": 621
+    },
+    "s7a_1_return_destination_lbl": {
+      "log_score": -0.49786672010513283,
+      "n_cells": 621
+    },
+    "s7a_2_location_known_lbl": {
+      "log_score": -0.17980929785020777,
+      "n_cells": 621
+    },
+    "s7a_4_return_alone_lbl": {
+      "log_score": -0.4744375909908569,
+      "n_cells": 621
+    },
+    "s7a_5_alone_reason_lbl": {
+      "log_score": -0.23457411483332372,
+      "n_cells": 621
+    },
+    "s7a_6_return_companions_lbl": {
+      "log_score": -0.3436687869097195,
+      "n_cells": 621
+    },
+    "s7a_7_reason_education_opps_lbl": {
+      "log_score": -0.4194263747346571,
+      "n_cells": 621
+    },
+    "s7a_7_reason_family_reunite_lbl": {
+      "log_score": -0.4613577160524836,
+      "n_cells": 621
+    },
+    "s7a_7_reason_high_cost_living_lbl": {
+      "log_score": -0.4679592508734721,
+      "n_cells": 621
+    },
+    "s7a_7_reason_homeland_lbl": {
+      "log_score": -0.45106642991963125,
+      "n_cells": 621
+    },
+    "s7a_7_reason_limited_jobs_lbl": {
+      "log_score": -0.4678459522332266,
+      "n_cells": 621
+    },
+    "s7a_7_reason_livelihood_found_lbl": {
+      "log_score": -0.468745234321895,
+      "n_cells": 621
+    },
+    "s7a_7_reason_movement_freedom_lbl": {
+      "log_score": -0.4595380564724548,
+      "n_cells": 621
+    },
+    "s7a_7_reason_other": {
+      "log_score": -0.47948511254695036,
+      "n_cells": 621
+    },
+    "s7a_7_reason_pna_lbl": {
+      "log_score": -0.40885377266960427,
+      "n_cells": 621
+    },
+    "s7a_7_reason_positive_feedback_lbl": {
+      "log_score": -0.4771816975710751,
+      "n_cells": 621
+    },
+    "s7a_7_reason_problems_host_lbl": {
+      "log_score": -0.4776945454107172,
+      "n_cells": 621
+    },
+    "s7a_7_reason_property_access_lbl": {
+      "log_score": -0.49409834085757426,
+      "n_cells": 621
+    },
+    "s7a_7_reason_residency_delays_lbl": {
+      "log_score": -0.4526120870279596,
+      "n_cells": 621
+    },
+    "s7a_7_reason_residency_other": {
+      "log_score": -0.4468801845106268,
+      "n_cells": 621
+    },
+    "s7a_7_reason_safety_improved_lbl": {
+      "log_score": -0.4528883351868926,
+      "n_cells": 621
+    },
+    "s7a_7_reason_services_adequate_lbl": {
+      "log_score": -0.47255274379767526,
+      "n_cells": 621
+    },
+    "s7a_7_reason_sufficient_info_lbl": {
+      "log_score": -0.48900572605921694,
+      "n_cells": 621
+    },
+    "s7a_7_reason_sufficient_resources_lbl": {
+      "log_score": -0.46419549638723784,
+      "n_cells": 621
+    },
+    "s7a_7_reason_work_permit_lbl": {
+      "log_score": -0.45412966818920464,
+      "n_cells": 621
+    },
+    "s7b_1_no_return_PNA_lbl": {
+      "log_score": -0.46522513206138194,
+      "n_cells": 621
+    },
+    "s7b_1_no_return_adapted_host_lbl": {
+      "log_score": -0.42784177461266615,
+      "n_cells": 621
+    },
+    "s7b_1_no_return_advised_against_lbl": {
+      "log_score": -0.39813813425453376,
+      "n_cells": 621
+    },
+    "s7b_1_no_return_better_assistance_lbl": {
+      "log_score": -0.40483101338163024,
+      "n_cells": 621
+    },
+    "s7b_1_no_return_debt_host_lbl": {
+      "log_score": -0.4131080207402416,
+      "n_cells": 621
+    },
+    "s7b_1_no_return_debt_syria_lbl": {
+      "log_score": -0.3908972675025572,
+      "n_cells": 621
+    },
+    "s7b_1_no_return_dont_know_lbl": {
+      "log_score": -0.4328184849785679,
+      "n_cells": 621
+    },
+    "s7b_1_no_return_economic_syria_lbl": {
+      "log_score": -0.36069172748077477,
+      "n_cells": 621
+    },
+    "s7b_1_no_return_family_needs_lbl": {
+      "log_score": -0.3506565624415951,
+      "n_cells": 621
+    },
+    "s7b_1_no_return_have_citizenship_lbl": {
+      "log_score": -0.38195760926723404,
+      "n_cells": 621
+    },
+    "s7b_1_no_return_health_travel_lbl": {
+      "log_score": -0.4545092433608273,
+      "n_cells": 621
+    },
+    "s7b_1_no_return_home_damaged_lbl": {
+      "log_score": -0.35938978086461026,
+      "n_cells": 621
+    },
+    "s7b_1_no_return_housing_lbl": {
+      "log_score": -0.37114214425846564,
+      "n_cells": 621
+    },
+    "s7b_1_no_return_legal_docs_lbl": {
+      "log_score": -0.3930519544138307,
+      "n_cells": 621
+    },
+    "s7b_1_no_return_livelihood_lbl": {
+      "log_score": -0.4017033188121601,
+      "n_cells": 621
+    },
+    "s7b_1_no_return_no_family_lbl": {
+      "log_score": -0.4071856754357682,
+      "n_cells": 621
+    },
+    "s7b_1_no_return_no_resources_lbl": {
+      "log_score": -0.36171341962918735,
+      "n_cells": 621
+    },
+    "s7b_1_no_return_other": {
+      "log_score": -0.3585502380151961,
+      "n_cells": 621
+    },
+    "s7b_1_no_return_safety_concerns_lbl": {
+      "log_score": -0.3991634925664009,
+      "n_cells": 621
+    },
+    "s7b_1_no_return_services_lbl": {
+      "log_score": -0.3788737635576695,
+      "n_cells": 621
+    },
+    "s7b_1_no_return_social_tensions_lbl": {
+      "log_score": -0.4558180526883879,
+      "n_cells": 621
+    },
+    "s7b_2_recon_PNA_lbl": {
+      "log_score": -0.34841180938809646,
+      "n_cells": 621
+    },
+    "s7b_2_recon_asylum_negative_lbl": {
+      "log_score": -0.43222330845480067,
+      "n_cells": 621
+    },
+    "s7b_2_recon_basic_services_lbl": {
+      "log_score": -0.44209595288778364,
+      "n_cells": 621
+    },
+    "s7b_2_recon_debt_paid_host_lbl": {
+      "log_score": -0.4117817637635476,
+      "n_cells": 621
+    },
+    "s7b_2_recon_debt_paid_syria_lbl": {
+      "log_score": -0.386671428096657,
+      "n_cells": 621
+    },
+    "s7b_2_recon_family_together_lbl": {
+      "log_score": -0.3761981436503611,
+      "n_cells": 621
+    },
+    "s7b_2_recon_host_worse_lbl": {
+      "log_score": -0.35739485253468767,
+      "n_cells": 621
+    },
+    "s7b_2_recon_housing_access_lbl": {
+      "log_score": -0.3697900429682687,
+      "n_cells": 621
+    },
+    "s7b_2_recon_legal_access_lbl": {
+      "log_score": -0.44288641969244674,
+      "n_cells": 621
+    },
+    "s7b_2_recon_livelihood_opps_lbl": {
+      "log_score": -0.46464408539163354,
+      "n_cells": 621
+    },
+    "s7b_2_recon_never_lbl": {
+      "log_score": -0.4167481539770999,
+      "n_cells": 621
+    },
+    "s7b_2_recon_other": {
+      "log_score": -0.4704698678882926,
+      "n_cells": 621
+    },
+    "s7b_2_recon_others_returning_lbl": {
+      "log_score": -0.3731297924207556,
+      "n_cells": 621
+    },
+    "s7b_2_recon_reentry_possible_lbl": {
+      "log_score": -0.4227858103313453,
+      "n_cells": 621
+    },
+    "s7b_2_recon_safety_improved_lbl": {
+      "log_score": -0.36702147010710334,
+      "n_cells": 621
+    },
+    "s7b_2_recon_special_services_lbl": {
+      "log_score": -0.3753263171312802,
+      "n_cells": 621
+    },
+    "s7b_2_recon_sufficient_resources_lbl": {
+      "log_score": -0.4286520248312018,
+      "n_cells": 621
+    },
+    "s7b_2_recon_war_host_lbl": {
+      "log_score": -0.3752207452067246,
+      "n_cells": 621
+    },
+    "s7c_1_cond_basic_services_lbl": {
+      "log_score": -0.8825533234407296,
+      "n_cells": 621
+    },
+    "s7c_1_cond_debt_paid_host_lbl": {
+      "log_score": -0.7584850446929081,
+      "n_cells": 621
+    },
+    "s7c_1_cond_debt_paid_syria_lbl": {
+      "log_score": -0.595329804933468,
+      "n_cells": 621
+    },
+    "s7c_1_cond_host_worse_lbl": {
+      "log_score": -0.7384436496756493,
+      "n_cells": 621
+    },
+    "s7c_1_cond_housing_access_lbl": {
+      "log_score": -0.9630395487541183,
+      "n_cells": 621
+    },
+    "s7c_1_cond_livelihood_opps_lbl": {
+      "log_score": -0.7023213862984538,
+      "n_cells": 621
+    },
+    "s7c_1_cond_other": {
+      "log_score": -0.6063277885922046,
+      "n_cells": 621
+    },
+    "s7c_1_cond_reentry_possible_lbl": {
+      "log_score": -0.8388930501156049,
+      "n_cells": 621
+    },
+    "s7c_1_cond_safety_improved_lbl": {
+      "log_score": -0.7035812628037302,
+      "n_cells": 621
+    },
+    "s7c_1_cond_special_services_lbl": {
+      "log_score": -0.9010635500997193,
+      "n_cells": 621
+    },
+    "s7c_1_cond_sufficient_resources_lbl": {
+      "log_score": -0.8160529004754989,
+      "n_cells": 621
+    }
+  }
+}

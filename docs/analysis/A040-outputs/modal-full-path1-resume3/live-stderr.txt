@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\SimulacraBench\docs\analysis\A040-outputs\modal-full-path1-resume3\live_worker.py", line 192, in main
+    await bounded(base_identity(ctx), 30, 2)
+  File "C:\Users\USER\Desktop\SimulacraBench\docs\analysis\A040-outputs\modal-full-path1-resume3\controller_core.py", line 9, in bounded
+    return task.result()
+           ~~~~~~~~~~~^^
+  File "C:\Users\USER\Desktop\SimulacraBench\docs\analysis\A040-outputs\modal-full-path1-resume3\live_worker.py", line 95, in base_identity
+    if observed is None or observed.status != SDK.pb.GENERIC_STATUS_SUCCESS:
+                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'modal_proto.api_pb2' has no attribute 'GENERIC_STATUS_SUCCESS'
+

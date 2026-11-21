@@ -1,0 +1,7 @@
+{
+    "status_original_sha256":  "bc517b52192ef3143d974827356c64b85c86f0afded91456e3bfa20474512e01",
+    "log_original_sha256":  "8f1664b2db09f1e8f6eae77211c8f3b00645a7344d0a7bb4af8dc3c5dabcbe42",
+    "phase2_original_sha256":  "2f9262c6b6b9a264972d1bfadfa7fd1ec13690404a316e076abea750f8b21a3f",
+    "status_entry_notice":  "Own active notice inserted at entry; remove that exact prefix to reconstruct original S0 bytes",
+    "recorded_at":  "2026-10-23T16:46:50.0471195+09:00"
+}

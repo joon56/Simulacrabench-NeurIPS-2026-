@@ -1,0 +1,21 @@
+{
+  "pid": 15532,
+  "returncode": 2,
+  "watchdog_timeout": false,
+  "wall_seconds": 0.46652389999871957,
+  "mode": "pipe",
+  "remote_termination_claim": false,
+  "command": [
+    "C:\\Users\\USER\\Desktop\\SimulacraBench\\tmp\\a040-modal-full-path1\\sdk-venv\\Scripts\\python.exe",
+    "-X",
+    "utf8",
+    "-u",
+    "C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\modal-controller-repair1\\fake_worker.py",
+    "success",
+    "C:\\Users\\USER\\Desktop\\SimulacraBench\\tmp\\a040-modal-controller-repair1\\suite1\\00-success-pipe"
+  ],
+  "utf8_env": {
+    "PYTHONUTF8": "1",
+    "PYTHONIOENCODING": "utf-8"
+  }
+}

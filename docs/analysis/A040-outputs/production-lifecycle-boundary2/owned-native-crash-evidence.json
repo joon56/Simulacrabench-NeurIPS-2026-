@@ -1,0 +1,72 @@
+﻿[
+    {
+        "time":  "2026-10-05T15:59:26.8545588Z",
+        "application":  "python.exe",
+        "module":  "python313.dll",
+        "exception":  "c0000005",
+        "process_id":  48852
+    },
+    {
+        "time":  "2026-10-05T15:55:58.8497864Z",
+        "application":  "python.exe",
+        "module":  "python313.dll",
+        "exception":  "c0000005",
+        "process_id":  44948
+    },
+    {
+        "time":  "2026-10-05T15:51:55.5744940Z",
+        "application":  "python.exe",
+        "module":  "python313.dll",
+        "exception":  "c0000005",
+        "process_id":  48532
+    },
+    {
+        "time":  "2026-10-05T15:50:49.8526047Z",
+        "application":  "python.exe",
+        "module":  "python313.dll",
+        "exception":  "c0000005",
+        "process_id":  32220
+    },
+    {
+        "time":  "2026-10-05T15:49:13.3454644Z",
+        "application":  "python.exe",
+        "module":  "python313.dll",
+        "exception":  "c0000005",
+        "process_id":  56980
+    },
+    {
+        "time":  "2026-10-05T15:48:06.0493436Z",
+        "application":  "python.exe",
+        "module":  "python313.dll",
+        "exception":  "c0000005",
+        "process_id":  47392
+    },
+    {
+        "time":  "2026-10-05T15:47:03.3506036Z",
+        "application":  "python.exe",
+        "module":  "python313.dll",
+        "exception":  "c0000005",
+        "process_id":  46800
+    },
+    {
+        "time":  "2026-10-05T15:44:44.2105275Z",
+        "application":  "python.exe",
+        "module":  "python313.dll",
+        "exception":  "c0000005",
+        "process_id":  52916
+    },
+    {
+        "time":  "2026-10-05T15:43:19.5189377Z",
+        "application":  "python.exe",
+        "module":  "python313.dll",
+        "exception":  "c0000005",
+        "process_id":  38664
+    },
+    {
+        "time":  "2026-10-05T15:41:16.0080314Z",
+        "application":  "python.exe",
+        "module":  "python313.dll",
+        "exception":  "c0000005",
+        "process_id":  43588
+    }
+]

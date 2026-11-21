@@ -1,0 +1,3 @@
+All three are permitted in both phases. (The governing rule is on the website: "Code can train on the visible rows of the matrix before predicting.”) "Offline" in the README means: 
+ - there is no separate training call or budget, so any runtime fitting is on the clock; and
+ - anything learned from data other than the delivered frame must be finished before submission and bundled or listed in `models.txt`.

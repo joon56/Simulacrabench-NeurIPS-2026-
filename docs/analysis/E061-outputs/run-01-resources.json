@@ -1,0 +1,31 @@
+{
+  "mode": "run",
+  "attempt": 1,
+  "command": [
+    "C:\\Users\\USER\\Desktop\\SimulacraBench\\.venv\\Scripts\\python.exe",
+    "-X",
+    "utf8",
+    "-B",
+    "C:\\Users\\USER\\Desktop\\SimulacraBench\\scripts\\check_e061_tied_heads.py",
+    "_worker",
+    "--attempt",
+    "1"
+  ],
+  "started_utc": "2026-09-27T12:39:50.079126+00:00",
+  "wall_seconds": 1083.5001894999987,
+  "prior_worker_seconds": 15.022598199997446,
+  "cumulative_worker_seconds": 1098.5227876999961,
+  "candidate_stage_seconds_including_interpreter_startup": 340.0930926000001,
+  "resource_stop": "COMPLETE",
+  "error": null,
+  "exit_code": 0,
+  "peak_owned_tree_bytes": {
+    "rss": 2137743360,
+    "commitment": 1625174016
+  },
+  "sample_interval_seconds": 0.1,
+  "counter_semantics": "Sum of per-process RSS/private/page peaks, conservative; controller plus descendants",
+  "memory_limit_bytes_each": 8589934592,
+  "numerical_threads": 2,
+  "status": "PASS"
+}

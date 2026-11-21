@@ -1,3 +1,7 @@
+> **2026-11-15:** the report submitted with the Final (E077f) is written on the organizers'
+> template in [writeup/report.tex](writeup/report.tex). The text below is the earlier E041
+> description of 2026-09-25, kept unchanged.
+
 # Calibrated survey completion with section-specific retrieval
 
 HSCC / SimulacraBench 2026 | E041 TEST selection, 25 September 2026

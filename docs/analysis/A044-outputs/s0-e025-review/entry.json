@@ -1,0 +1,285 @@
+{
+    "task":  "S0-E025-REVIEW-A044",
+    "role":  "S0",
+    "task_type":  "completion review and document-only next handoff",
+    "review_started_at":  "2026-10-23T17:02:34.4269368+09:00",
+    "writer_accepted_at":  "2026-10-23T17:12:04.8900440+09:00",
+    "outgoing_owner":  "S3-E025-PROVENANCE-A044 /root",
+    "outgoing_release_at":  "2026-10-23T17:01:07.378603+09:00",
+    "incoming_owner":  "S0-E025-REVIEW-A044 /root",
+    "head":  "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+    "workflow_revision":  "2026-10-22-r6",
+    "workflow_sha256":  "69620b7eeaad5a01a6a6b884fbd95dfede3e26b2ee2b09016479846082aec089",
+    "read_receipt":  {
+                         "ordered_entry":  [
+                                               "AGENTS.md",
+                                               "CLAUDE.md",
+                                               "docs/status.md",
+                                               "docs/log.md newest three entries",
+                                               "docs/workflow.md",
+                                               "current S3 handoff and linked documentary evidence"
+                                           ],
+                         "newest_log_topics":  [
+                                                   "S3 E025 phase2 provenance completion",
+                                                   "S0 offline priority",
+                                                   "E064 S0 release review"
+                                               ],
+                         "scope":  "Actual document reads; hashes identify versions, not proof of reading",
+                         "read_and_hashed_documents":  [
+                                                           {
+                                                               "path":  "AGENTS.md",
+                                                               "sha256":  "e3d52f09f32c7e3b8fdb194419119c4f563557103404da0831ffb31fbf2150e8"
+                                                           },
+                                                           {
+                                                               "path":  "CLAUDE.md",
+                                                               "sha256":  "7300b637f3a0ae937b2273a1945892df129eb16ee3ef7bdc6cff707c69ffc1e3"
+                                                           },
+                                                           {
+                                                               "path":  "docs/status.md",
+                                                               "sha256":  "dde2267259e04267af5fabac36f558678392721960cf00c2f7b8b0e1dc5f8380"
+                                                           },
+                                                           {
+                                                               "path":  "docs/log.md",
+                                                               "sha256":  "be7afb90b044d146b80dd255767fe44d4a07249241851b670b72d163bd4f8eeb"
+                                                           },
+                                                           {
+                                                               "path":  "docs/workflow.md",
+                                                               "sha256":  "69620b7eeaad5a01a6a6b884fbd95dfede3e26b2ee2b09016479846082aec089"
+                                                           },
+                                                           {
+                                                               "path":  "docs/analysis/A044-outputs/s3-e025-provenance/verification.json",
+                                                               "sha256":  "703a50350b986c248ceb403bb3a45f0522aaceb7c1cca7af635e7a1bca4157e0"
+                                                           },
+                                                           {
+                                                               "path":  "docs/analysis/A044-outputs/s3-prep/method-e041-draft.md",
+                                                               "sha256":  "9809358328376f3ab77ed8fd4eb4982184d4c8336bd7c823b7a189b896de4433"
+                                                           },
+                                                           {
+                                                               "path":  "docs/analysis/A044-outputs/s3-prep/method-e025-notes.md",
+                                                               "sha256":  "4a8f77cb1e197a5cff669579ef982a0d398a77591a5482c32ea28043163a9dd7"
+                                                           },
+                                                           {
+                                                               "path":  "docs/analysis/A044-outputs/s3-prep/revalidation-plan.md",
+                                                               "sha256":  "5dbca47de7423afe593adbed2472a34d7d486306a76b1088ff1658ab957d78e5"
+                                                           },
+                                                           {
+                                                               "path":  "docs/analysis/A044-outputs/s3-prep/license-inventory.md",
+                                                               "sha256":  "f60661f9f01232b351de6c0ff068899cf1d71b710659134408d7192959522c62"
+                                                           },
+                                                           {
+                                                               "path":  "docs/phase2-preparation.md",
+                                                               "sha256":  "919ca7ae8418439837987d58c21f36120a5f8ff74dadf004e7c0a24429c0bf6f"
+                                                           }
+                                                       ]
+                     },
+    "s3_document_identity_checks":  [
+                                        {
+                                            "path":  "docs/analysis/A044-outputs/s3-e025-provenance/closeout.md",
+                                            "sha256":  "d36b20bbfd1fdf723209abc0e6642463714a2bd4a518c6417e2fda52f4f7d409",
+                                            "historical_manifest_match":  true
+                                        },
+                                        {
+                                            "path":  "docs/analysis/A044-outputs/s3-e025-provenance/protocol.md",
+                                            "sha256":  "eff7feb22a3b97bde583865ee0c22ba6b7486765a28e5ad32ee4bce70b050962",
+                                            "historical_manifest_match":  true
+                                        },
+                                        {
+                                            "path":  "docs/analysis/A044-outputs/s3-e025-provenance/s0-handoff.ko.md",
+                                            "sha256":  "cd7fecbc4454761d512a1d8b51f94aeb8d49e18392558d770dbca41aa0eff686",
+                                            "historical_manifest_match":  true
+                                        },
+                                        {
+                                            "path":  "docs/analysis/A044-outputs/s3-e025-provenance/comparison.json",
+                                            "sha256":  "f51126334f3bcea4bca87fba22d6c959c57eba2351f8237a5cd42b4c78bd66f4",
+                                            "historical_manifest_match":  true
+                                        },
+                                        {
+                                            "path":  "docs/analysis/A044-outputs/s3-e025-provenance/baseline-reuse.json",
+                                            "sha256":  "591a0256c57039611a1f98c4f66e693925a42b413e838c0630b0954d421cb530",
+                                            "historical_manifest_match":  true
+                                        },
+                                        {
+                                            "path":  "docs/analysis/A044-outputs/s3-e025-provenance/budget-ledger.json",
+                                            "sha256":  "47b6e0c1d76abe5656d75425df6ba40e371319189a12a2d294ba057bd6a84d83",
+                                            "historical_manifest_match":  true
+                                        },
+                                        {
+                                            "path":  "docs/analysis/A044-outputs/s3-e025-provenance/source-all3-freeze.json",
+                                            "sha256":  "4f7fa2316a8a0dd5b2bab54ebac7aa7b382590abd9001a58948f63d27297070a",
+                                            "historical_manifest_match":  true
+                                        },
+                                        {
+                                            "path":  "docs/analysis/A044-outputs/s3-e025-provenance/official-all3-freeze.json",
+                                            "sha256":  "bccf036fcb4bbf23872dbf1ac96762b027d5ac0f984d1309c2446f2be42c35fe",
+                                            "historical_manifest_match":  true
+                                        },
+                                        {
+                                            "path":  "docs/analysis/A044-outputs/s3-e025-provenance/process-closeout.json",
+                                            "sha256":  "38bedfedf9ed45c9ae5a52bbfed4ab4d2024396eabf306095ade778112b21941",
+                                            "historical_manifest_match":  true
+                                        }
+                                    ],
+    "shared_before":  [
+                          {
+                              "path":  "docs/status.md",
+                              "sha256":  "dde2267259e04267af5fabac36f558678392721960cf00c2f7b8b0e1dc5f8380"
+                          },
+                          {
+                              "path":  "docs/log.md",
+                              "sha256":  "be7afb90b044d146b80dd255767fe44d4a07249241851b670b72d163bd4f8eeb"
+                          },
+                          {
+                              "path":  "docs/phase2-preparation.md",
+                              "sha256":  "919ca7ae8418439837987d58c21f36120a5f8ff74dadf004e7c0a24429c0bf6f"
+                          }
+                      ],
+    "dirty_mode":  "porcelain v1 untracked normal; directory-collapsed metadata, not recursive byte preservation",
+    "dirty_entry":  [
+                        " M .claude/skills/paper-session/SKILL.md",
+                        " M .gitignore",
+                        " M CLAUDE.md",
+                        " M docs/domain-study-guide.ko.md",
+                        " M docs/index.md",
+                        " M docs/log.md",
+                        " M docs/phase2-preparation.md",
+                        " M docs/session-prompts.ko.md",
+                        " M docs/status.md",
+                        " M docs/tree.md",
+                        " M docs/workflow.md",
+                        " M submissions/SCORES.md",
+                        "?? .agents/",
+                        "?? AGENTS.md",
+                        "?? README.md",
+                        "?? docs/analysis/A020-outputs/",
+                        "?? docs/analysis/A020-post-e058-design-review.md",
+                        "?? docs/analysis/A021-outputs/",
+                        "?? docs/analysis/A021-selector-comparison-contract.md",
+                        "?? docs/analysis/A022-outputs/",
+                        "?? docs/analysis/A022-remaining-role-audit.md",
+                        "?? docs/analysis/A023-candidate-boundary-contract.md",
+                        "?? docs/analysis/A023-cost-accounting.md",
+                        "?? docs/analysis/A023-outputs/",
+                        "?? docs/analysis/A024-channel-precision-review.md",
+                        "?? docs/analysis/A024-outputs/",
+                        "?? docs/analysis/A025-submission-oriented-review.md",
+                        "?? docs/analysis/A026-outputs/",
+                        "?? docs/analysis/A026-post-e060-strategy-review.md",
+                        "?? docs/analysis/A027-outputs/",
+                        "?? docs/analysis/A027-workflow-role-revision.md",
+                        "?? docs/analysis/A028-outputs/",
+                        "?? docs/analysis/A028-workflow-entry-audit.md",
+                        "?? docs/analysis/A029-codex-migration-audit.md",
+                        "?? docs/analysis/A029-outputs/",
+                        "?? docs/analysis/A030-outputs/",
+                        "?? docs/analysis/A030-vaf-channel-metadata-review.md",
+                        "?? docs/analysis/A031-outputs/",
+                        "?? docs/analysis/A031-post-a030-handoff-review.md",
+                        "?? docs/analysis/A032-document-acquisition-and-readiness.md",
+                        "?? docs/analysis/A032-outputs/",
+                        "?? docs/analysis/A033-dev-handoff-and-role-repair.md",
+                        "?? docs/analysis/A033-outputs/",
+                        "?? docs/analysis/A034-e061-s0-review.md",
+                        "?? docs/analysis/A034-outputs/",
+                        "?? docs/analysis/A035-e061-dev-submission-review.md",
+                        "?? docs/analysis/A035-outputs/",
+                        "?? docs/analysis/A036-e061-post-result-review.md",
+                        "?? docs/analysis/A036-outputs/",
+                        "?? docs/analysis/A037-outputs/",
+                        "?? docs/analysis/A037-winning-priority-review.md",
+                        "?? docs/analysis/A038-outputs/",
+                        "?? docs/analysis/A038-vaf-local-document-intake.md",
+                        "?? docs/analysis/A039-outputs/",
+                        "?? docs/analysis/A040-outputs/",
+                        "?? docs/analysis/A041-outputs/",
+                        "?? docs/analysis/A041-wb-ordinal-head-review.md",
+                        "?? docs/analysis/A042-outputs/",
+                        "?? docs/analysis/A042-post-e062-priority.md",
+                        "?? docs/analysis/A043-outputs/",
+                        "?? docs/analysis/A043-post-e063-priority.md",
+                        "?? docs/analysis/A044-outputs/",
+                        "?? docs/analysis/E059-outputs/",
+                        "?? docs/analysis/E060-outputs/",
+                        "?? docs/analysis/E061-outputs/",
+                        "?? docs/analysis/E062-outputs/",
+                        "?? docs/analysis/E063-outputs/",
+                        "?? docs/analysis/E064-outputs/",
+                        "?? docs/codex-setup.ko.md",
+                        "?? docs/experiments/E059-leaf-donor-interactions.md",
+                        "?? docs/experiments/E060-content-target-retrieval.md",
+                        "?? docs/experiments/E061-tied-content-heads.md",
+                        "?? docs/experiments/E062-wb-ordinal-heads.md",
+                        "?? docs/experiments/E063-round-conditioned-metric.md",
+                        "?? docs/experiments/E064-conditional-gradient.md",
+                        "?? docs/plans/README.md",
+                        "?? requirements-models.txt",
+                        "?? scripts/assemble_e060.py",
+                        "?? scripts/assemble_e061.py",
+                        "?? scripts/assemble_e062.py",
+                        "?? scripts/assemble_e063.py",
+                        "?? scripts/check_a021_selector_contract.py",
+                        "?? scripts/check_a023_candidate_boundary.py",
+                        "?? scripts/check_a023_resources.py",
+                        "?? scripts/check_e060.py",
+                        "?? scripts/check_e061_release.py",
+                        "?? scripts/check_e061_tied_heads.py",
+                        "?? scripts/check_e062_release.py",
+                        "?? scripts/check_e062_wb_ordinal.py",
+                        "?? scripts/check_e063_release.py",
+                        "?? scripts/check_e063_round_metric.py",
+                        "?? scripts/check_e064_conditional_gradient.py",
+                        "?? scripts/check_workspace.py",
+                        "?? scripts/screen_e059.py",
+                        "?? src/models/conditional_gradient.py",
+                        "?? src/models/content_target_retrieval.py",
+                        "?? src/models/round_metric_retrieval.py",
+                        "?? src/models/tied_content_heads.py",
+                        "?? src/models/wb_ordinal_heads.py",
+                        "?? submissions/2026-09-27-E060.zip",
+                        "?? submissions/2026-09-27-E060/NOTICE.txt",
+                        "?? submissions/2026-09-27-E060/main.py",
+                        "?? submissions/2026-09-27-E060/verification.json",
+                        "?? submissions/2026-09-28-E061.zip",
+                        "?? submissions/2026-09-28-E061/",
+                        "?? submissions/2026-10-08-E062.zip",
+                        "?? submissions/2026-10-08-E062/",
+                        "?? submissions/2026-10-09-E063.zip",
+                        "?? submissions/2026-10-09-E063/",
+                        "?? submissions/2026-10-23-E064.zip",
+                        "?? submissions/2026-10-23-E064/",
+                        "?? tests/test_a021_selector_contract.py",
+                        "?? tests/test_a023_candidate_boundary.py",
+                        "?? tests/test_conditional_gradient.py",
+                        "?? tests/test_content_target_retrieval.py",
+                        "?? tests/test_e059_interactions.py",
+                        "?? tests/test_e060_assembly.py",
+                        "?? tests/test_e061_assembly.py",
+                        "?? tests/test_e062_assembly.py",
+                        "?? tests/test_e063_assembly.py",
+                        "?? tests/test_round_metric_retrieval.py",
+                        "?? tests/test_tied_content_heads.py",
+                        "?? tests/test_wb_ordinal_heads.py",
+                        "?? tests/test_workspace_check.py",
+                        "?? trip/"
+                    ],
+    "local_named_processes":  [
+
+                              ],
+    "process_scope":  "local Python/pythonw/uv only, not all chats or remote",
+    "allowed_writes":  [
+                           "docs/analysis/A044-outputs/s0-e025-review/",
+                           "docs/status.md",
+                           "docs/log.md",
+                           "docs/phase2-preparation.md"
+                       ],
+    "forbidden":  "model/data/cache/ZIP access or rehash; fit/predict/score/tests/checkers; rendering/install/network/subagents/upload/git mutation",
+    "observations":  "9 S3 documents and 3 shared records match recorded hashes; raw/ZIP targets unopened",
+    "renderer_environment_metadata":  {
+                                          "old_e025_method":  true,
+                                          "renderer":  true,
+                                          "old_e041_method":  true,
+                                          "pdf_deps":  true,
+                                          "python":  true
+                                      },
+    "local_record_preparation_note":  "First metadata command stopped before any write because PowerShell promoted existing global Git ignore access warning. Retried document-entry creation with nonfatal stderr handling and required git exit0. No source/data/research action.",
+    "execution_authority_created":  false
+}

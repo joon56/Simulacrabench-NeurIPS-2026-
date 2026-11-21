@@ -1,0 +1,8 @@
+{
+    "process_exited":  true,
+    "cpu_affinity":  3,
+    "pid":  45684,
+    "case":  "billing_fail",
+    "hidden":  true,
+    "wall_seconds":  0.6989149
+}

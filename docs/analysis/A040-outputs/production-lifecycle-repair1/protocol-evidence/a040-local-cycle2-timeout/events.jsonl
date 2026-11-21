@@ -1,0 +1,8 @@
+{"event": "operation", "time": 1791210548.086721, "stage": "connect", "timeout": 60}
+{"event": "operation", "time": 1791210548.0874412, "stage": "billing", "timeout": 1}
+{"event": "operation", "time": 1791210548.0879672, "stage": "base_stream", "timeout": 1}
+{"event": "operation", "time": 1791210548.0884554, "stage": "base_identity", "timeout": 1}
+{"event": "operation", "time": 1791210548.092603, "stage": "app_create", "timeout": 1}
+{"event": "operation", "time": 1791210548.1011398, "stage": "build_billing", "timeout": 1}
+{"event": "operation", "time": 1791210548.1115913, "stage": "sandbox_create", "timeout": 120}
+{"event": "first_error", "time": 1791210548.1226597, "error": "TimeoutError('Protocol create response lost')"}

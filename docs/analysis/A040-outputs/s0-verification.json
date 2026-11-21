@@ -1,0 +1,156 @@
+﻿{
+    "date":  "2026-10-01T19:47:28.7231729+09:00",
+    "role":  "S0",
+    "decision":  "S1_INFORMATION_TASK_SELECTED_NOT_EXECUTED",
+    "head":  "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+    "head_unchanged":  true,
+    "baseline_documents":  [
+                               {
+                                   "path":  "AGENTS.md",
+                                   "before":  "86394bbf164a2b7df6a309f4564b9dacf3b2799fa0227a703e4ea11d4d842596",
+                                   "after":  "86394bbf164a2b7df6a309f4564b9dacf3b2799fa0227a703e4ea11d4d842596",
+                                   "unchanged":  true,
+                                   "expected_change":  false
+                               },
+                               {
+                                   "path":  "CLAUDE.md",
+                                   "before":  "69175e6d741a17042db4852d4961a5c52bd97fe2cd5bfbff762d30d7e5270364",
+                                   "after":  "69175e6d741a17042db4852d4961a5c52bd97fe2cd5bfbff762d30d7e5270364",
+                                   "unchanged":  true,
+                                   "expected_change":  false
+                               },
+                               {
+                                   "path":  "docs/workflow.md",
+                                   "before":  "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642",
+                                   "after":  "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642",
+                                   "unchanged":  true,
+                                   "expected_change":  false
+                               },
+                               {
+                                   "path":  "docs/session-prompts.ko.md",
+                                   "before":  "c68eba8618c6a49caf1b590181ede5d5c03800d4c2305ea0e5efe3cc266e5615",
+                                   "after":  "c68eba8618c6a49caf1b590181ede5d5c03800d4c2305ea0e5efe3cc266e5615",
+                                   "unchanged":  true,
+                                   "expected_change":  false
+                               },
+                               {
+                                   "path":  "docs/status.md",
+                                   "before":  "bba2a040735a02d68e22dbe9ebd3c735c65869878360bcefb74869039af902d4",
+                                   "after":  "d883c40171b08d23c89e03100d9f69eb6c9361e959236d527e039842946cd9e7",
+                                   "unchanged":  false,
+                                   "expected_change":  true
+                               },
+                               {
+                                   "path":  "docs/log.md",
+                                   "before":  "818c9a5fc7d9741815f5fa4f37d679e1d150d124b7328a940036d58a67e94c7a",
+                                   "after":  "a3f4aae0768a26f1e481ae837c094c659de2d2cff1128294334955663b4f81a8",
+                                   "unchanged":  false,
+                                   "expected_change":  true
+                               },
+                               {
+                                   "path":  "docs/tree.md",
+                                   "before":  "eaa884a4194db103335136495205fe5b51297c17db15e9eac62946ced286cc44",
+                                   "after":  "eaa884a4194db103335136495205fe5b51297c17db15e9eac62946ced286cc44",
+                                   "unchanged":  true,
+                                   "expected_change":  false
+                               },
+                               {
+                                   "path":  ".gitignore",
+                                   "before":  "f67ba089f7490b4ba0845848f0b13b55633b5efd058a0be7d64203a1e480c6fd",
+                                   "after":  "f67ba089f7490b4ba0845848f0b13b55633b5efd058a0be7d64203a1e480c6fd",
+                                   "unchanged":  true,
+                                   "expected_change":  false
+                               },
+                               {
+                                   "path":  "docs/analysis/A037-winning-priority-review.md",
+                                   "before":  "87e77d8279f68e52751653f3b6098ec1976e4b53a75faf7206043ec6cf4bf66d",
+                                   "after":  "87e77d8279f68e52751653f3b6098ec1976e4b53a75faf7206043ec6cf4bf66d",
+                                   "unchanged":  true,
+                                   "expected_change":  false
+                               },
+                               {
+                                   "path":  "docs/analysis/A039-outputs/s0-review/closeout.md",
+                                   "before":  "7d9d306f74ed54e256ad9a328d148bd988218e997893632e63bc84051107e1d9",
+                                   "after":  "7d9d306f74ed54e256ad9a328d148bd988218e997893632e63bc84051107e1d9",
+                                   "unchanged":  true,
+                                   "expected_change":  false
+                               },
+                               {
+                                   "path":  "docs/experiments/E041-supervised-retrieval.md",
+                                   "before":  "8a17f3cb2cb54deb19fdbffe597dcba173002a82100250ea4ff8be446d76bafb",
+                                   "after":  "8a17f3cb2cb54deb19fdbffe597dcba173002a82100250ea4ff8be446d76bafb",
+                                   "unchanged":  true,
+                                   "expected_change":  false
+                               },
+                               {
+                                   "path":  "docs/experiments/E043-section-candidate-search.md",
+                                   "before":  "e7d9acac562092596d9bd05921dfab49ac8a2c15854fad8abbba606941ccc4cf",
+                                   "after":  "e7d9acac562092596d9bd05921dfab49ac8a2c15854fad8abbba606941ccc4cf",
+                                   "unchanged":  true,
+                                   "expected_change":  false
+                               },
+                               {
+                                   "path":  "docs/experiments/E045-union-retrieval.md",
+                                   "before":  "d7ad5bf5420a7ac4d87ae6989b6bc0e4be94cb03e88c7c4a6dfd58d3da729a5c",
+                                   "after":  "d7ad5bf5420a7ac4d87ae6989b6bc0e4be94cb03e88c7c4a6dfd58d3da729a5c",
+                                   "unchanged":  true,
+                                   "expected_change":  false
+                               },
+                               {
+                                   "path":  "docs/experiments/E048-tabpfn-gate-parents.md",
+                                   "before":  "60e030be4969bf45fa7db73404db4a1d590c321dc39935ab6c793bcdc77670a0",
+                                   "after":  "60e030be4969bf45fa7db73404db4a1d590c321dc39935ab6c793bcdc77670a0",
+                                   "unchanged":  true,
+                                   "expected_change":  false
+                               },
+                               {
+                                   "path":  "docs/experiments/E049-adaptive-tabpfn-parents.md",
+                                   "before":  "0d6a9f197a5239f2c7a70ed6da3c8e01b8e24a67ba1b4ea7ecf512d9490db046",
+                                   "after":  "0d6a9f197a5239f2c7a70ed6da3c8e01b8e24a67ba1b4ea7ecf512d9490db046",
+                                   "unchanged":  true,
+                                   "expected_change":  false
+                               },
+                               {
+                                   "path":  "docs/experiments/E051-direct-content-tree.md",
+                                   "before":  "7efd35b3e5e85b15be316e3ef9acecc4d898459de832e37213feb4a93afe1b16",
+                                   "after":  "7efd35b3e5e85b15be316e3ef9acecc4d898459de832e37213feb4a93afe1b16",
+                                   "unchanged":  true,
+                                   "expected_change":  false
+                               },
+                               {
+                                   "path":  "submissions/SCORES.md",
+                                   "before":  "1e6d753c24c5c2e42fc4b316ea524a4285b59ef672cc5c3a5a1288768d157dab",
+                                   "after":  "1e6d753c24c5c2e42fc4b316ea524a4285b59ef672cc5c3a5a1288768d157dab",
+                                   "unchanged":  true,
+                                   "expected_change":  false
+                               }
+                           ],
+    "unexpected_changes":  0,
+    "artifacts":  [
+                      {
+                          "path":  "docs/analysis/A040-outputs/s0-entry.json",
+                          "sha256":  "9f8e8614c07afcfb7071328a1b444965e1ab923ffc2cc3cef9d96f8291354773"
+                      },
+                      {
+                          "path":  "docs/analysis/A040-outputs/s0-decision.md",
+                          "sha256":  "f26a97f3ca21856742d2486b84bfdb38b5e6d18bab0a76c2f077c8f5a81f30fa"
+                      },
+                      {
+                          "path":  "docs/analysis/A040-outputs/source-register.md",
+                          "sha256":  "7671d2da5bc3dfb2a06f0426683571c0e9b29eb1499c2bd12232fc2a8923610e"
+                      },
+                      {
+                          "path":  "docs/analysis/A040-outputs/s1-handoff.ko.md",
+                          "sha256":  "a447cb450fa2384f3344e0726b22657808588f5c0ec7e31825ad64d40077bfde"
+                      }
+                  ],
+    "scope_text_present":  true,
+    "verification_limit":  "Document preservation and contract checks only, not TabICLv2 compatibility or whole-workspace audit",
+    "public_research":  "Official paper abstract/repository/model-card source reads only",
+    "new_S1_or_agent_runs":  0,
+    "response_key_cache_reads_or_rehashes":  0,
+    "model_installs_downloads_fit_predict_score_tests":  0,
+    "zip_upload_contact_commit_push":  0,
+    "S3_TEST_actions":  0,
+    "VAF_and_all_previous_STOP_HOLD_preserved":  true
+}

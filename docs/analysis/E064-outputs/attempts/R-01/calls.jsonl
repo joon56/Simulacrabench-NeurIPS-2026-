@@ -1,0 +1,207 @@
+{"event": "attempt", "kind": "pipeline", "cumulative": 1, "arm": "R", "instrument": "unicef", "monotonic": 35515.2954406}
+{"event": "enter", "function": "predict", "arm": "R", "instrument": "unicef", "monotonic": 35515.3057391}
+{"event": "enter", "function": "select_ladder", "arm": "R", "instrument": "unicef", "monotonic": 35515.3061217}
+{"event": "return", "function": "select_ladder", "wall_seconds": 0.8510232999979053, "arm": "R", "instrument": "unicef", "monotonic": 35516.157147}
+{"event": "enter", "function": "tune_and_train", "arm": "R", "instrument": "unicef", "monotonic": 35516.1594949}
+{"event": "targets", "rows": 9537, "roles": ["inner_train"], "index_sha256": "83c529361b7b12b55a09f7b7ad26d3ffec401648afd6158c2ebf11ffce28e5f1", "arm": "R", "instrument": "unicef", "monotonic": 35516.2589737}
+{"event": "targets", "rows": 2361, "roles": ["inner_stop"], "index_sha256": "c38be0ce344444efdfcd182eb0c4589de75e9f4da8558a718244f431a86d638c", "arm": "R", "instrument": "unicef", "monotonic": 35516.3426367}
+{"event": "targets", "rows": 2987, "roles": ["outer_selection"], "index_sha256": "799369e8597cf78d61015a8fa33d3cf370a0206f6dd3ef2d16da0d6db6d86f69", "arm": "R", "instrument": "unicef", "monotonic": 35516.3968672}
+{"event": "enter", "function": "_train", "arm": "R", "instrument": "unicef", "monotonic": 35516.4367777}
+{"event": "attempt", "kind": "neural", "cumulative": 1, "arm": "R", "instrument": "unicef", "monotonic": 35516.4368849}
+{"event": "enter", "function": "_train_on", "arm": "R", "instrument": "unicef", "monotonic": 35516.4369213}
+{"event": "return", "function": "_train_on", "wall_seconds": 8.28204829999595, "epochs_executed": 145, "best_epoch": 115, "config": [64, 2, 0.0], "fit_rows": 9537, "validation_rows": 2361, "device": "cpu", "completed": true, "network_class": "_Net", "arm": "R", "instrument": "unicef", "monotonic": 35524.718997}
+{"event": "return", "function": "_train", "wall_seconds": 8.282441700001073, "arm": "R", "instrument": "unicef", "monotonic": 35524.7192187}
+{"event": "enter", "function": "_train", "arm": "R", "instrument": "unicef", "monotonic": 35524.7240229}
+{"event": "attempt", "kind": "neural", "cumulative": 2, "arm": "R", "instrument": "unicef", "monotonic": 35524.724086}
+{"event": "enter", "function": "_train_on", "arm": "R", "instrument": "unicef", "monotonic": 35524.7241164}
+{"event": "return", "function": "_train_on", "wall_seconds": 9.360320699997828, "epochs_executed": 120, "best_epoch": 90, "config": [128, 2, 0.1], "fit_rows": 9537, "validation_rows": 2361, "device": "cpu", "completed": true, "network_class": "_Net", "arm": "R", "instrument": "unicef", "monotonic": 35534.0844624}
+{"event": "return", "function": "_train", "wall_seconds": 9.360663100000238, "arm": "R", "instrument": "unicef", "monotonic": 35534.0846853}
+{"event": "targets", "rows": 14885, "roles": ["final_refit"], "index_sha256": "2113aa242c52f91e8c1a8356257724be6479069e9f55806bc8ec7c847649c307", "arm": "R", "instrument": "unicef", "monotonic": 35534.4901992}
+{"event": "enter", "function": "_train", "arm": "R", "instrument": "unicef", "monotonic": 35534.5476644}
+{"event": "attempt", "kind": "neural", "cumulative": 3, "arm": "R", "instrument": "unicef", "monotonic": 35534.5478071}
+{"event": "enter", "function": "_train_on", "arm": "R", "instrument": "unicef", "monotonic": 35534.5478551}
+{"event": "return", "function": "_train_on", "wall_seconds": 4.999790000001667, "epochs_executed": 115, "best_epoch": 0, "config": [64, 2, 0.0], "fit_rows": 14885, "validation_rows": 0, "device": "cpu", "completed": true, "network_class": "_Net", "arm": "R", "instrument": "unicef", "monotonic": 35539.5476716}
+{"event": "return", "function": "_train", "wall_seconds": 5.000217499997234, "arm": "R", "instrument": "unicef", "monotonic": 35539.5478803}
+{"event": "return", "function": "tune_and_train", "wall_seconds": 23.388421800002106, "w": 1.0, "selected_config": [64, 2, 0.0], "selected_epoch": 115, "arm": "R", "instrument": "unicef", "monotonic": 35539.5479211}
+{"event": "enter", "function": "conditional_agreement", "arm": "R", "instrument": "unicef", "monotonic": 35539.9631689}
+{"event": "return", "function": "conditional_agreement", "wall_seconds": 0.17064389999723062, "arm": "R", "instrument": "unicef", "monotonic": 35540.1338134}
+{"event": "enter", "function": "hh_sharp_layer", "arm": "R", "instrument": "unicef", "monotonic": 35540.5314035}
+{"event": "enter", "function": "_topk_excl", "arm": "R", "instrument": "unicef", "monotonic": 35540.5690732}
+{"event": "return", "function": "_topk_excl", "wall_seconds": 4.801596999997855, "arm": "R", "instrument": "unicef", "monotonic": 35545.3987102}
+{"event": "enter", "function": "estimate_weights", "arm": "R", "instrument": "unicef", "monotonic": 35545.4004432}
+{"event": "return", "function": "estimate_weights", "wall_seconds": 0.015263699999195524, "arm": "R", "instrument": "unicef", "monotonic": 35545.4157624}
+{"event": "enter", "function": "_topk_excl", "arm": "R", "instrument": "unicef", "monotonic": 35545.4158651}
+{"event": "return", "function": "_topk_excl", "wall_seconds": 5.225511900003767, "arm": "R", "instrument": "unicef", "monotonic": 35550.6697488}
+{"event": "enter", "function": "_evidence", "arm": "R", "instrument": "unicef", "monotonic": 35550.6712619}
+{"event": "return", "function": "_evidence", "wall_seconds": 0.06990360000054352, "arm": "R", "instrument": "unicef", "monotonic": 35550.7428473}
+{"event": "enter", "function": "_max_q", "arm": "R", "instrument": "unicef", "monotonic": 35550.7429442}
+{"event": "return", "function": "_max_q", "wall_seconds": 0.010078499995870516, "arm": "R", "instrument": "unicef", "monotonic": 35550.7690489}
+{"event": "return", "function": "hh_sharp_layer", "wall_seconds": 10.263345100000151, "arm": "R", "instrument": "unicef", "monotonic": 35550.7947534}
+{"event": "return", "function": "predict", "wall_seconds": 36.7558532999974, "arm": "R", "instrument": "unicef", "monotonic": 35552.0730753}
+{"event": "pipeline_complete", "vectors": 17856, "predict_seconds": 36.78419880000001, "arm": "R", "instrument": "unicef", "monotonic": 35552.2835411}
+{"event": "attempt", "kind": "pipeline", "cumulative": 2, "arm": "R", "instrument": "world_bank", "monotonic": 35552.283623}
+{"event": "enter", "function": "predict", "arm": "R", "instrument": "world_bank", "monotonic": 35552.2983067}
+{"event": "enter", "function": "select_ladder", "arm": "R", "instrument": "world_bank", "monotonic": 35552.2987341}
+{"event": "return", "function": "select_ladder", "wall_seconds": 3.0596000000005006, "arm": "R", "instrument": "world_bank", "monotonic": 35555.3583362}
+{"event": "enter", "function": "tune_and_train", "arm": "R", "instrument": "world_bank", "monotonic": 35555.3638227}
+{"event": "targets", "rows": 3280, "roles": ["inner_train"], "index_sha256": "89b362895751cac0764c7c3eae8b63558c69bbbeb62d449497a5587d1182fbd5", "arm": "R", "instrument": "world_bank", "monotonic": 35555.424179}
+{"event": "targets", "rows": 832, "roles": ["inner_stop"], "index_sha256": "155afd869046f0643cfdafa635fb10064f9e374bb3584b6cfd8228c968db22e4", "arm": "R", "instrument": "world_bank", "monotonic": 35555.5897198}
+{"event": "targets", "rows": 1083, "roles": ["outer_selection"], "index_sha256": "5b659342db3e691771931b7546a7d20cb32123bea957c13517e52e3cac461d8b", "arm": "R", "instrument": "world_bank", "monotonic": 35555.7425464}
+{"event": "enter", "function": "_train", "arm": "R", "instrument": "world_bank", "monotonic": 35555.8542811}
+{"event": "attempt", "kind": "neural", "cumulative": 4, "arm": "R", "instrument": "world_bank", "monotonic": 35555.8543827}
+{"event": "enter", "function": "_train_on", "arm": "R", "instrument": "world_bank", "monotonic": 35555.8544149}
+{"event": "return", "function": "_train_on", "wall_seconds": 22.30893769999966, "epochs_executed": 223, "best_epoch": 193, "config": [64, 2, 0.0], "fit_rows": 3280, "validation_rows": 832, "device": "cpu", "completed": true, "network_class": "_Net", "arm": "R", "instrument": "world_bank", "monotonic": 35578.1633802}
+{"event": "return", "function": "_train", "wall_seconds": 22.309808500001964, "arm": "R", "instrument": "world_bank", "monotonic": 35578.1640894}
+{"event": "enter", "function": "_train", "arm": "R", "instrument": "world_bank", "monotonic": 35578.1851987}
+{"event": "attempt", "kind": "neural", "cumulative": 5, "arm": "R", "instrument": "world_bank", "monotonic": 35578.1853227}
+{"event": "enter", "function": "_train_on", "arm": "R", "instrument": "world_bank", "monotonic": 35578.185369}
+{"event": "return", "function": "_train_on", "wall_seconds": 29.37729560000298, "epochs_executed": 223, "best_epoch": 193, "config": [128, 2, 0.1], "fit_rows": 3280, "validation_rows": 832, "device": "cpu", "completed": true, "network_class": "_Net", "arm": "R", "instrument": "world_bank", "monotonic": 35607.5627061}
+{"event": "return", "function": "_train", "wall_seconds": 29.380229399997916, "arm": "R", "instrument": "world_bank", "monotonic": 35607.5654296}
+{"event": "targets", "rows": 5195, "roles": ["final_refit"], "index_sha256": "31723171cab38858ed86b9a2eadb6f5f752872741d6f8cc00c63833a51b79c70", "arm": "R", "instrument": "world_bank", "monotonic": 35609.3200735}
+{"event": "enter", "function": "_train", "arm": "R", "instrument": "world_bank", "monotonic": 35609.4916786}
+{"event": "attempt", "kind": "neural", "cumulative": 6, "arm": "R", "instrument": "world_bank", "monotonic": 35609.4917854}
+{"event": "enter", "function": "_train_on", "arm": "R", "instrument": "world_bank", "monotonic": 35609.4918176}
+{"event": "return", "function": "_train_on", "wall_seconds": 31.821170999995957, "epochs_executed": 193, "best_epoch": 0, "config": [128, 2, 0.1], "fit_rows": 5195, "validation_rows": 0, "device": "cpu", "completed": true, "network_class": "_Net", "arm": "R", "instrument": "world_bank", "monotonic": 35641.313017}
+{"event": "return", "function": "_train", "wall_seconds": 31.824836799998593, "arm": "R", "instrument": "world_bank", "monotonic": 35641.316517}
+{"event": "return", "function": "tune_and_train", "wall_seconds": 85.95278779999353, "w": 1.0, "selected_config": [128, 2, 0.1], "selected_epoch": 193, "arm": "R", "instrument": "world_bank", "monotonic": 35641.3166156}
+{"event": "enter", "function": "conditional_agreement", "arm": "R", "instrument": "world_bank", "monotonic": 35643.0116651}
+{"event": "return", "function": "conditional_agreement", "wall_seconds": 0.5000293999983114, "arm": "R", "instrument": "world_bank", "monotonic": 35643.5116962}
+{"event": "enter", "function": "hh_sharp_layer", "arm": "R", "instrument": "world_bank", "monotonic": 35644.2663199}
+{"event": "enter", "function": "_topk_excl", "arm": "R", "instrument": "world_bank", "monotonic": 35644.3001692}
+{"event": "return", "function": "_topk_excl", "wall_seconds": 1.629967000000761, "arm": "R", "instrument": "world_bank", "monotonic": 35645.9549688}
+{"event": "enter", "function": "estimate_weights", "arm": "R", "instrument": "world_bank", "monotonic": 35645.9554032}
+{"event": "return", "function": "estimate_weights", "wall_seconds": 0.009837699995841831, "arm": "R", "instrument": "world_bank", "monotonic": 35645.9652751}
+{"event": "enter", "function": "_topk_excl", "arm": "R", "instrument": "world_bank", "monotonic": 35645.965371}
+{"event": "return", "function": "_topk_excl", "wall_seconds": 1.6738351999956649, "arm": "R", "instrument": "world_bank", "monotonic": 35647.6639635}
+{"event": "enter", "function": "_evidence", "arm": "R", "instrument": "world_bank", "monotonic": 35647.6644124}
+{"event": "return", "function": "_evidence", "wall_seconds": 0.2226786000028369, "arm": "R", "instrument": "world_bank", "monotonic": 35647.9010843}
+{"event": "enter", "function": "_max_q", "arm": "R", "instrument": "world_bank", "monotonic": 35647.9011995}
+{"event": "return", "function": "_max_q", "wall_seconds": 0.008698899997398257, "arm": "R", "instrument": "world_bank", "monotonic": 35647.9237829}
+{"event": "enter", "function": "_topk_excl", "arm": "R", "instrument": "world_bank", "monotonic": 35648.074095}
+{"event": "return", "function": "_topk_excl", "wall_seconds": 0.17145230000460288, "arm": "R", "instrument": "world_bank", "monotonic": 35648.2482632}
+{"event": "enter", "function": "_evidence", "arm": "R", "instrument": "world_bank", "monotonic": 35648.2484322}
+{"event": "return", "function": "_evidence", "wall_seconds": 0.16029189999972004, "arm": "R", "instrument": "world_bank", "monotonic": 35648.4103169}
+{"event": "enter", "function": "_max_q", "arm": "R", "instrument": "world_bank", "monotonic": 35648.4104099}
+{"event": "return", "function": "_max_q", "wall_seconds": 0.0008948999966378324, "arm": "R", "instrument": "world_bank", "monotonic": 35648.4127737}
+{"event": "return", "function": "hh_sharp_layer", "wall_seconds": 4.156027899996843, "arm": "R", "instrument": "world_bank", "monotonic": 35648.4223593}
+{"event": "return", "function": "predict", "wall_seconds": 98.16263920000347, "arm": "R", "instrument": "world_bank", "monotonic": 35650.5869991}
+{"event": "pipeline_complete", "vectors": 39520, "predict_seconds": 98.32277189999877, "arm": "R", "instrument": "world_bank", "monotonic": 35651.1388164}
+{"event": "attempt", "kind": "pipeline", "cumulative": 3, "arm": "R", "instrument": "unhcr", "monotonic": 35651.1388958}
+{"event": "enter", "function": "predict", "arm": "R", "instrument": "unhcr", "monotonic": 35651.1956686}
+{"event": "enter", "function": "select_ladder", "arm": "R", "instrument": "unhcr", "monotonic": 35651.1962662}
+{"event": "return", "function": "select_ladder", "wall_seconds": 13.614054899997427, "arm": "R", "instrument": "unhcr", "monotonic": 35664.8103226}
+{"event": "enter", "function": "tune_and_train", "arm": "R", "instrument": "unhcr", "monotonic": 35664.8369309}
+{"event": "targets", "rows": 5264, "roles": ["inner_train"], "index_sha256": "ff3eea6ae8f3fe567d85608d8962852c1db68949071a4b49befdcebd44943234", "arm": "R", "instrument": "unhcr", "monotonic": 35665.0157139}
+{"event": "targets", "rows": 1303, "roles": ["inner_stop"], "index_sha256": "7901a6d58cb96f7449ec668c635cdc0a31ff81d09002aef974a92abb5b5307c7", "arm": "R", "instrument": "unhcr", "monotonic": 35665.6832088}
+{"event": "targets", "rows": 1712, "roles": ["outer_selection"], "index_sha256": "54140c53e98f2f0af956a1bb6475038a8c4be4d6f0014c88f36aaee6a37acb0f", "arm": "R", "instrument": "unhcr", "monotonic": 35666.1592594}
+{"event": "enter", "function": "_train", "arm": "R", "instrument": "unhcr", "monotonic": 35666.5805915}
+{"event": "attempt", "kind": "neural", "cumulative": 7, "arm": "R", "instrument": "unhcr", "monotonic": 35666.5807147}
+{"event": "enter", "function": "_train_on", "arm": "R", "instrument": "unhcr", "monotonic": 35666.5807484}
+{"event": "return", "function": "_train_on", "wall_seconds": 43.832102700005635, "epochs_executed": 124, "best_epoch": 94, "config": [64, 2, 0.0], "fit_rows": 5264, "validation_rows": 1303, "device": "cpu", "completed": true, "network_class": "_Net", "arm": "R", "instrument": "unhcr", "monotonic": 35710.4128944}
+{"event": "return", "function": "_train", "wall_seconds": 43.83749810000154, "arm": "R", "instrument": "unhcr", "monotonic": 35710.418092}
+{"event": "enter", "function": "_train", "arm": "R", "instrument": "unhcr", "monotonic": 35710.4808436}
+{"event": "attempt", "kind": "neural", "cumulative": 8, "arm": "R", "instrument": "unhcr", "monotonic": 35710.4809543}
+{"event": "enter", "function": "_train_on", "arm": "R", "instrument": "unhcr", "monotonic": 35710.4809925}
+{"event": "return", "function": "_train_on", "wall_seconds": 62.051572999997006, "epochs_executed": 140, "best_epoch": 110, "config": [128, 2, 0.1], "fit_rows": 5264, "validation_rows": 1303, "device": "cpu", "completed": true, "network_class": "_Net", "arm": "R", "instrument": "unhcr", "monotonic": 35772.5325988}
+{"event": "return", "function": "_train", "wall_seconds": 62.055183000004035, "arm": "R", "instrument": "unhcr", "monotonic": 35772.5360261}
+{"event": "targets", "rows": 8279, "roles": ["final_refit"], "index_sha256": "07863762c02a6317ef1ad940b87532b92647d4b7d728d4d4449927e4f3f8bc4b", "arm": "R", "instrument": "unhcr", "monotonic": 35777.65093}
+{"event": "enter", "function": "_train", "arm": "R", "instrument": "unhcr", "monotonic": 35778.444011}
+{"event": "attempt", "kind": "neural", "cumulative": 9, "arm": "R", "instrument": "unhcr", "monotonic": 35778.4442483}
+{"event": "enter", "function": "_train_on", "arm": "R", "instrument": "unhcr", "monotonic": 35778.444294}
+{"event": "return", "function": "_train_on", "wall_seconds": 60.96289809999871, "epochs_executed": 110, "best_epoch": 0, "config": [128, 2, 0.1], "fit_rows": 8279, "validation_rows": 0, "device": "cpu", "completed": true, "network_class": "_Net", "arm": "R", "instrument": "unhcr", "monotonic": 35839.4072232}
+{"event": "return", "function": "_train", "wall_seconds": 60.96792339999956, "arm": "R", "instrument": "unhcr", "monotonic": 35839.4119372}
+{"event": "return", "function": "tune_and_train", "wall_seconds": 174.5752244999967, "w": 0.9, "selected_config": [128, 2, 0.1], "selected_epoch": 110, "arm": "R", "instrument": "unhcr", "monotonic": 35839.4121596}
+{"event": "enter", "function": "conditional_agreement", "arm": "R", "instrument": "unhcr", "monotonic": 35845.5106188}
+{"event": "return", "function": "conditional_agreement", "wall_seconds": 6.878719200001797, "arm": "R", "instrument": "unhcr", "monotonic": 35852.3893392}
+{"event": "enter", "function": "supervised_layer", "arm": "R", "instrument": "unhcr", "monotonic": 35855.8461064}
+{"event": "enter", "function": "_topk_excl", "arm": "R", "instrument": "unhcr", "monotonic": 35855.9194171}
+{"event": "return", "function": "_topk_excl", "wall_seconds": 4.119044899998698, "arm": "R", "instrument": "unhcr", "monotonic": 35860.070273}
+{"event": "enter", "function": "estimate_weights", "arm": "R", "instrument": "unhcr", "monotonic": 35860.0709933}
+{"event": "return", "function": "estimate_weights", "wall_seconds": 0.012603099996340461, "arm": "R", "instrument": "unhcr", "monotonic": 35860.0836297}
+{"event": "enter", "function": "fit_sections", "arm": "R", "instrument": "unhcr", "monotonic": 35860.5968536}
+{"event": "enter", "function": "candidate_indices", "arm": "R", "instrument": "unhcr", "monotonic": 35860.5983592}
+{"event": "return", "function": "candidate_indices", "wall_seconds": 0.5933721000037622, "arm": "R", "instrument": "unhcr", "monotonic": 35861.1959695}
+{"event": "attempt", "kind": "metric", "cumulative": 1, "arm": "R", "instrument": "unhcr", "monotonic": 35861.2697934}
+{"event": "optimizer_slice", "fit_rows": 1200, "coordinates": 18, "arm": "R", "instrument": "unhcr", "monotonic": 35861.2698904}
+{"event": "enter", "function": "minimize", "arm": "R", "instrument": "unhcr", "monotonic": 35861.2699128}
+{"event": "return", "function": "minimize", "wall_seconds": 0.02972829999634996, "iterations": 16, "evaluations": 19, "success": true, "arm": "R", "instrument": "unhcr", "monotonic": 35861.2996491}
+{"event": "attempt", "kind": "metric", "cumulative": 2, "arm": "R", "instrument": "unhcr", "monotonic": 35861.3712828}
+{"event": "optimizer_slice", "fit_rows": 1200, "coordinates": 18, "arm": "R", "instrument": "unhcr", "monotonic": 35861.3713492}
+{"event": "enter", "function": "minimize", "arm": "R", "instrument": "unhcr", "monotonic": 35861.3713719}
+{"event": "return", "function": "minimize", "wall_seconds": 0.08022580000397284, "iterations": 14, "evaluations": 18, "success": true, "arm": "R", "instrument": "unhcr", "monotonic": 35861.4516051}
+{"event": "attempt", "kind": "metric", "cumulative": 3, "arm": "R", "instrument": "unhcr", "monotonic": 35861.4932557}
+{"event": "optimizer_slice", "fit_rows": 1200, "coordinates": 18, "arm": "R", "instrument": "unhcr", "monotonic": 35861.4933423}
+{"event": "enter", "function": "minimize", "arm": "R", "instrument": "unhcr", "monotonic": 35861.4933655}
+{"event": "return", "function": "minimize", "wall_seconds": 0.05452019999938784, "iterations": 25, "evaluations": 27, "success": true, "arm": "R", "instrument": "unhcr", "monotonic": 35861.5478922}
+{"event": "attempt", "kind": "metric", "cumulative": 4, "arm": "R", "instrument": "unhcr", "monotonic": 35861.5948358}
+{"event": "optimizer_slice", "fit_rows": 1200, "coordinates": 18, "arm": "R", "instrument": "unhcr", "monotonic": 35861.5949229}
+{"event": "enter", "function": "minimize", "arm": "R", "instrument": "unhcr", "monotonic": 35861.5949528}
+{"event": "return", "function": "minimize", "wall_seconds": 0.04912550000153715, "iterations": 17, "evaluations": 18, "success": true, "arm": "R", "instrument": "unhcr", "monotonic": 35861.6440846}
+{"event": "attempt", "kind": "metric", "cumulative": 5, "arm": "R", "instrument": "unhcr", "monotonic": 35861.6770161}
+{"event": "optimizer_slice", "fit_rows": 1200, "coordinates": 18, "arm": "R", "instrument": "unhcr", "monotonic": 35861.6771015}
+{"event": "enter", "function": "minimize", "arm": "R", "instrument": "unhcr", "monotonic": 35861.6771243}
+{"event": "return", "function": "minimize", "wall_seconds": 0.021683600003598258, "iterations": 15, "evaluations": 16, "success": true, "arm": "R", "instrument": "unhcr", "monotonic": 35861.6988129}
+{"event": "attempt", "kind": "metric", "cumulative": 6, "arm": "R", "instrument": "unhcr", "monotonic": 35861.7305484}
+{"event": "optimizer_slice", "fit_rows": 1200, "coordinates": 18, "arm": "R", "instrument": "unhcr", "monotonic": 35861.7306374}
+{"event": "enter", "function": "minimize", "arm": "R", "instrument": "unhcr", "monotonic": 35861.7306599}
+{"event": "return", "function": "minimize", "wall_seconds": 0.01972850000311155, "iterations": 13, "evaluations": 14, "success": true, "arm": "R", "instrument": "unhcr", "monotonic": 35861.7503933}
+{"event": "attempt", "kind": "metric", "cumulative": 7, "arm": "R", "instrument": "unhcr", "monotonic": 35861.7843472}
+{"event": "optimizer_slice", "fit_rows": 1200, "coordinates": 18, "arm": "R", "instrument": "unhcr", "monotonic": 35861.7844361}
+{"event": "enter", "function": "minimize", "arm": "R", "instrument": "unhcr", "monotonic": 35861.7844586}
+{"event": "return", "function": "minimize", "wall_seconds": 0.022095100001024548, "iterations": 14, "evaluations": 18, "success": true, "arm": "R", "instrument": "unhcr", "monotonic": 35861.8065588}
+{"event": "attempt", "kind": "metric", "cumulative": 8, "arm": "R", "instrument": "unhcr", "monotonic": 35861.8575484}
+{"event": "optimizer_slice", "fit_rows": 1200, "coordinates": 18, "arm": "R", "instrument": "unhcr", "monotonic": 35861.8576385}
+{"event": "enter", "function": "minimize", "arm": "R", "instrument": "unhcr", "monotonic": 35861.8576613}
+{"event": "return", "function": "minimize", "wall_seconds": 0.045204599999124184, "iterations": 11, "evaluations": 13, "success": true, "arm": "R", "instrument": "unhcr", "monotonic": 35861.90287}
+{"event": "return", "function": "fit_sections", "wall_seconds": 1.3082720000020345, "arm": "R", "instrument": "unhcr", "monotonic": 35861.9052838}
+{"event": "enter", "function": "_topk_excl", "arm": "R", "instrument": "unhcr", "monotonic": 35861.9077653}
+{"event": "return", "function": "_topk_excl", "wall_seconds": 4.398077400001057, "arm": "R", "instrument": "unhcr", "monotonic": 35866.3490945}
+{"event": "enter", "function": "_evidence", "arm": "R", "instrument": "unhcr", "monotonic": 35866.3498177}
+{"event": "return", "function": "_evidence", "wall_seconds": 0.7714265000031446, "arm": "R", "instrument": "unhcr", "monotonic": 35867.1424288}
+{"event": "enter", "function": "_replace_evidence", "arm": "R", "instrument": "unhcr", "monotonic": 35867.1425586}
+{"event": "enter", "function": "candidate_indices", "arm": "R", "instrument": "unhcr", "monotonic": 35867.1425873}
+{"event": "return", "function": "candidate_indices", "wall_seconds": 3.4001112999976613, "arm": "R", "instrument": "unhcr", "monotonic": 35870.5662909}
+{"event": "enter", "function": "_evidence", "arm": "R", "instrument": "unhcr", "monotonic": 35870.5888907}
+{"event": "return", "function": "_evidence", "wall_seconds": 0.05165169999963837, "arm": "R", "instrument": "unhcr", "monotonic": 35870.6415619}
+{"event": "enter", "function": "_evidence", "arm": "R", "instrument": "unhcr", "monotonic": 35870.6482556}
+{"event": "return", "function": "_evidence", "wall_seconds": 0.44899789999908535, "arm": "R", "instrument": "unhcr", "monotonic": 35871.1051083}
+{"event": "enter", "function": "_evidence", "arm": "R", "instrument": "unhcr", "monotonic": 35871.1112782}
+{"event": "return", "function": "_evidence", "wall_seconds": 0.2865194000041811, "arm": "R", "instrument": "unhcr", "monotonic": 35871.4012088}
+{"event": "enter", "function": "_evidence", "arm": "R", "instrument": "unhcr", "monotonic": 35871.4070633}
+{"event": "return", "function": "_evidence", "wall_seconds": 0.08961740000086138, "arm": "R", "instrument": "unhcr", "monotonic": 35871.4978887}
+{"event": "enter", "function": "_evidence", "arm": "R", "instrument": "unhcr", "monotonic": 35871.5042887}
+{"event": "return", "function": "_evidence", "wall_seconds": 0.09554630000639008, "arm": "R", "instrument": "unhcr", "monotonic": 35871.6018465}
+{"event": "enter", "function": "_evidence", "arm": "R", "instrument": "unhcr", "monotonic": 35871.6080188}
+{"event": "return", "function": "_evidence", "wall_seconds": 0.08228360000066459, "arm": "R", "instrument": "unhcr", "monotonic": 35871.6920816}
+{"event": "enter", "function": "_evidence", "arm": "R", "instrument": "unhcr", "monotonic": 35871.6990234}
+{"event": "return", "function": "_evidence", "wall_seconds": 0.35595760000433074, "arm": "R", "instrument": "unhcr", "monotonic": 35872.0594075}
+{"event": "return", "function": "_replace_evidence", "wall_seconds": 4.917401000006066, "arm": "R", "instrument": "unhcr", "monotonic": 35872.0811396}
+{"event": "enter", "function": "_max_q", "arm": "R", "instrument": "unhcr", "monotonic": 35872.0829505}
+{"event": "return", "function": "_max_q", "wall_seconds": 0.010339100001147017, "arm": "R", "instrument": "unhcr", "monotonic": 35872.109886}
+{"event": "enter", "function": "_topk_excl", "arm": "R", "instrument": "unhcr", "monotonic": 35872.2405007}
+{"event": "return", "function": "_topk_excl", "wall_seconds": 0.46880760000203736, "arm": "R", "instrument": "unhcr", "monotonic": 35872.714918}
+{"event": "enter", "function": "_evidence", "arm": "R", "instrument": "unhcr", "monotonic": 35872.7158127}
+{"event": "return", "function": "_evidence", "wall_seconds": 0.8285295000023325, "arm": "R", "instrument": "unhcr", "monotonic": 35873.5474674}
+{"event": "enter", "function": "_replace_evidence", "arm": "R", "instrument": "unhcr", "monotonic": 35873.5475645}
+{"event": "enter", "function": "candidate_indices", "arm": "R", "instrument": "unhcr", "monotonic": 35873.5476059}
+{"event": "return", "function": "candidate_indices", "wall_seconds": 0.31118810000043595, "arm": "R", "instrument": "unhcr", "monotonic": 35873.8602921}
+{"event": "enter", "function": "_evidence", "arm": "R", "instrument": "unhcr", "monotonic": 35873.8626728}
+{"event": "return", "function": "_evidence", "wall_seconds": 0.021974100003717467, "arm": "R", "instrument": "unhcr", "monotonic": 35873.8848111}
+{"event": "enter", "function": "_evidence", "arm": "R", "instrument": "unhcr", "monotonic": 35873.8855607}
+{"event": "return", "function": "_evidence", "wall_seconds": 0.16291970000020228, "arm": "R", "instrument": "unhcr", "monotonic": 35874.0494292}
+{"event": "enter", "function": "_evidence", "arm": "R", "instrument": "unhcr", "monotonic": 35874.0501279}
+{"event": "return", "function": "_evidence", "wall_seconds": 0.09912569999869447, "arm": "R", "instrument": "unhcr", "monotonic": 35874.1496819}
+{"event": "enter", "function": "_evidence", "arm": "R", "instrument": "unhcr", "monotonic": 35874.1503643}
+{"event": "return", "function": "_evidence", "wall_seconds": 0.02894709999964107, "arm": "R", "instrument": "unhcr", "monotonic": 35874.1794735}
+{"event": "enter", "function": "_evidence", "arm": "R", "instrument": "unhcr", "monotonic": 35874.1801686}
+{"event": "return", "function": "_evidence", "wall_seconds": 0.03532629999972414, "arm": "R", "instrument": "unhcr", "monotonic": 35874.2157593}
+{"event": "enter", "function": "_evidence", "arm": "R", "instrument": "unhcr", "monotonic": 35874.2164227}
+{"event": "return", "function": "_evidence", "wall_seconds": 0.02911859999585431, "arm": "R", "instrument": "unhcr", "monotonic": 35874.2457773}
+{"event": "enter", "function": "_evidence", "arm": "R", "instrument": "unhcr", "monotonic": 35874.2464079}
+{"event": "return", "function": "_evidence", "wall_seconds": 0.13310679999995045, "arm": "R", "instrument": "unhcr", "monotonic": 35874.3800903}
+{"event": "return", "function": "_replace_evidence", "wall_seconds": 0.8326545000018086, "arm": "R", "instrument": "unhcr", "monotonic": 35874.3828254}
+{"event": "enter", "function": "_max_q", "arm": "R", "instrument": "unhcr", "monotonic": 35874.3830348}
+{"event": "return", "function": "_max_q", "wall_seconds": 0.0011002999963238835, "arm": "R", "instrument": "unhcr", "monotonic": 35874.3858284}
+{"event": "return", "function": "supervised_layer", "wall_seconds": 18.57105230000161, "arm": "R", "instrument": "unhcr", "monotonic": 35874.4174504}
+{"event": "return", "function": "predict", "wall_seconds": 231.6263620999962, "arm": "R", "instrument": "unhcr", "monotonic": 35883.2207155}
+{"event": "pipeline_complete", "vectors": 132273, "predict_seconds": 232.1469597999967, "arm": "R", "instrument": "unhcr", "monotonic": 35884.6984974}

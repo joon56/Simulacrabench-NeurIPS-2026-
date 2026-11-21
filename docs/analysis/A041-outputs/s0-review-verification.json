@@ -1,0 +1,537 @@
+{
+  "schema_version": 1,
+  "task": "A041 S0 post-information design review",
+  "decision": "RECOMMEND_BOUNDED_S1_IMPLEMENTATION",
+  "role": "S0",
+  "execution_authorized_here": false,
+  "workflow": {
+    "revision": "2026-10-05-r5",
+    "sha256": "a577942675e16a732339e586c14796104dda704693568439ae28670cc7fb7b23",
+    "ordered_read": [
+      "AGENTS.md",
+      "CLAUDE.md",
+      "docs/status.md",
+      "docs/log.md newest 3",
+      "docs/workflow.md",
+      "docs/analysis/A041-outputs/s1/closeout.md",
+      "docs/analysis/A041-outputs/s1/contract.md",
+      "docs/analysis/A041-outputs/s1/cost-accounting.md",
+      "docs/analysis/A041-outputs/s1/verification.json"
+    ],
+    "additional_read": [
+      "A041 S1 source-register, entry, exposure, preservation metadata",
+      "E041 source: network/loss/config selection/w/refit/dispatch",
+      "E061 frozen-inputs metadata and check_e061_tied_heads.py source",
+      "docs/session-prompts.ko.md",
+      "CORN primary methods"
+    ],
+    "evidence": "Read contents before decision, not hashes alone; ordered entry and source review shown in tool transcript. 121a21 verifies 36 hashes, ac5436/af826e show targeted contract/workflow/cost/harness rereads. No claim about other sessions."
+  },
+  "observations": {
+    "identity_check_at": "2026-10-07T20:48:43.9755051+09:00",
+    "final_state_at": "2026-10-07T20:56:00.0632077+09:00",
+    "head": "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+    "branch": "work/e050-submission",
+    "dirty_before": 91,
+    "dirty_after": 91,
+    "dirty_list_unchanged": true,
+    "named_local_jobs_before": [],
+    "named_local_jobs_after": [],
+    "limits": "Named Python/pythonw/uv process metadata only; not proof of all workloads or remote state."
+  },
+  "intake_hash_checks": [
+    {
+      "path": "docs/analysis/A041-outputs/s1/exposure-ledger.md",
+      "expected": "dc88f4a6e1b4d9dd9411e15c43b242be1abb35f46cb6d654dfe77490627f5b37",
+      "actual": "dc88f4a6e1b4d9dd9411e15c43b242be1abb35f46cb6d654dfe77490627f5b37",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A041-outputs/s1/s0-handoff.ko.md",
+      "expected": "41c53baad4a769e6804f0665e67d1d382c8d3b661ff3f3cc4a14ef5a60c71f51",
+      "actual": "41c53baad4a769e6804f0665e67d1d382c8d3b661ff3f3cc4a14ef5a60c71f51",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A041-outputs/s1/contract.md",
+      "expected": "c65c4eb4eb75a1a15fda8416c5c7988f6ef47464460ac9b195201675cac20ca8",
+      "actual": "c65c4eb4eb75a1a15fda8416c5c7988f6ef47464460ac9b195201675cac20ca8",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A041-outputs/s1/closeout.md",
+      "expected": "2978d1ec464ea87cb9e5e5acabc0ce02a64f93d0dff632f3c598aa0d6eb3a4d6",
+      "actual": "2978d1ec464ea87cb9e5e5acabc0ce02a64f93d0dff632f3c598aa0d6eb3a4d6",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A041-outputs/s1/source-register.md",
+      "expected": "ad7673838f01036c62c550ae3428781ec04065311e79c22dd091db38fd2c19d1",
+      "actual": "ad7673838f01036c62c550ae3428781ec04065311e79c22dd091db38fd2c19d1",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A041-outputs/s1/shared-additions.json",
+      "expected": "be81ab20d18e1e608eb8c19421ef74d6a34d652b26cc619265af8ceec79fd020",
+      "actual": "be81ab20d18e1e608eb8c19421ef74d6a34d652b26cc619265af8ceec79fd020",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A041-outputs/s1/entry.json",
+      "expected": "f00fd06287e2bb9be204a5066e7a66c182b5278670bb6559c96ff8d75af0299e",
+      "actual": "f00fd06287e2bb9be204a5066e7a66c182b5278670bb6559c96ff8d75af0299e",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A041-outputs/s1/preservation-after.json",
+      "expected": "f3b26be61023384f28a78815ff4bf58c9d94d6643b6e569d62ef71fd8f17484b",
+      "actual": "f3b26be61023384f28a78815ff4bf58c9d94d6643b6e569d62ef71fd8f17484b",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A041-outputs/s1/preservation-before.json",
+      "expected": "9526ae0107e19cb99da3e0f724606fb7dc33b2f586aa501fa781b6c8ebfbc104",
+      "actual": "9526ae0107e19cb99da3e0f724606fb7dc33b2f586aa501fa781b6c8ebfbc104",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A041-outputs/s1/cost-accounting.md",
+      "expected": "4b02f6954d640650274194529461ff6a5352c25e9219a4f0ff65a1ffdd1b6d07",
+      "actual": "4b02f6954d640650274194529461ff6a5352c25e9219a4f0ff65a1ffdd1b6d07",
+      "match": true
+    },
+    {
+      "path": "AGENTS.md",
+      "expected": "73b86e5310d6a45d5206efd3b55da47c48748ee7b077e6fcad6be276f1716a3a",
+      "actual": "73b86e5310d6a45d5206efd3b55da47c48748ee7b077e6fcad6be276f1716a3a",
+      "match": true
+    },
+    {
+      "path": "CLAUDE.md",
+      "expected": "0cda5c3385ea3368d0c24a6602e4b1220adc864a205e231f10042b655d031749",
+      "actual": "0cda5c3385ea3368d0c24a6602e4b1220adc864a205e231f10042b655d031749",
+      "match": true
+    },
+    {
+      "path": "docs/workflow.md",
+      "expected": "a577942675e16a732339e586c14796104dda704693568439ae28670cc7fb7b23",
+      "actual": "a577942675e16a732339e586c14796104dda704693568439ae28670cc7fb7b23",
+      "match": true
+    },
+    {
+      "path": "docs/status.md",
+      "expected": "8ddbf092434bad7481be3542e5bda110414251a2f6fb60c41157f8e91aeb6b26",
+      "actual": "8ddbf092434bad7481be3542e5bda110414251a2f6fb60c41157f8e91aeb6b26",
+      "match": true
+    },
+    {
+      "path": "docs/log.md",
+      "expected": "53ec42822b4907dc5c7b0babe8bcfb10f545f27262fbb1d8143fc26a10f6770e",
+      "actual": "53ec42822b4907dc5c7b0babe8bcfb10f545f27262fbb1d8143fc26a10f6770e",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A004-wb-structure.md",
+      "expected": "9ef4313ea4908c149d5fac63bf5a0fbb60a143652a6d80f6a95b552723afd16f",
+      "actual": "9ef4313ea4908c149d5fac63bf5a0fbb60a143652a6d80f6a95b552723afd16f",
+      "match": true
+    },
+    {
+      "path": "docs/experiments/E011-ordinal-smooth.md",
+      "expected": "e8f63d896baa32f4008884aeddaa5e5fcd2e776e25fd50a7611be330844c4940",
+      "actual": "e8f63d896baa32f4008884aeddaa5e5fcd2e776e25fd50a7611be330844c4940",
+      "match": true
+    },
+    {
+      "path": "docs/experiments/E012-shared-trunk.md",
+      "expected": "0c40ac6802f683f5523b8639080f4b0df0fcbe4150e7b40ad8eb2a8f918e6b8a",
+      "actual": "0c40ac6802f683f5523b8639080f4b0df0fcbe4150e7b40ad8eb2a8f918e6b8a",
+      "match": true
+    },
+    {
+      "path": "docs/experiments/E017-capacity-ab.md",
+      "expected": "ad20a4fa677175c06d1d7a6d5710f342898b270c96a5eb38e7e392f6d3c7da68",
+      "actual": "ad20a4fa677175c06d1d7a6d5710f342898b270c96a5eb38e7e392f6d3c7da68",
+      "match": true
+    },
+    {
+      "path": "docs/experiments/E026-hh-cap4.md",
+      "expected": "f4ed0b5520815dcf8e95b6ca9dad0262af9f6814fd5464189fb0108597797866",
+      "actual": "f4ed0b5520815dcf8e95b6ca9dad0262af9f6814fd5464189fb0108597797866",
+      "match": true
+    },
+    {
+      "path": "docs/experiments/E029-seed-temp.md",
+      "expected": "47363f8c6fbb011d8d1e66ac94dceea98ab7dcb8432da27d7406f4a5f2eac666",
+      "actual": "47363f8c6fbb011d8d1e66ac94dceea98ab7dcb8432da27d7406f4a5f2eac666",
+      "match": true
+    },
+    {
+      "path": "docs/experiments/E030-ord-sig.md",
+      "expected": "72ad36f848e9bebdfb2049b2bf2b4d66cc1a70d61863862a5c6d7a5593f7a20b",
+      "actual": "72ad36f848e9bebdfb2049b2bf2b4d66cc1a70d61863862a5c6d7a5593f7a20b",
+      "match": true
+    },
+    {
+      "path": "docs/experiments/E061-tied-content-heads.md",
+      "expected": "a052fc9939b0e2e8a15841cfaa3645fa5c14661766cac829ce1a7ffb3a063dff",
+      "actual": "a052fc9939b0e2e8a15841cfaa3645fa5c14661766cac829ce1a7ffb3a063dff",
+      "match": true
+    },
+    {
+      "path": "src/models/ordinal_smooth.py",
+      "expected": "ddeda3423eecb8c11ddc2217c49884295131320e7bfa08d204a12fae28ac8510",
+      "actual": "ddeda3423eecb8c11ddc2217c49884295131320e7bfa08d204a12fae28ac8510",
+      "match": true
+    },
+    {
+      "path": "src/models/shared_trunk.py",
+      "expected": "df648763c8e0ba5532ebf9e437af95cd10d8527112c1338b8b5db9ad6a212e1f",
+      "actual": "df648763c8e0ba5532ebf9e437af95cd10d8527112c1338b8b5db9ad6a212e1f",
+      "match": true
+    },
+    {
+      "path": "src/models/supervised_retrieval.py",
+      "expected": "2940338c5378de03303befb74e3834fbad631c0eb18f4ecb55d2cc39a471f879",
+      "actual": "2940338c5378de03303befb74e3834fbad631c0eb18f4ecb55d2cc39a471f879",
+      "match": true
+    },
+    {
+      "path": "src/models/hh_cap.py",
+      "expected": "9aad6be04e14ae97dc7aaba5499747c35b255b098680c66eaa8f8af58c940f70",
+      "actual": "9aad6be04e14ae97dc7aaba5499747c35b255b098680c66eaa8f8af58c940f70",
+      "match": true
+    },
+    {
+      "path": "submissions/2026-09-19-E041/main.py",
+      "expected": "22c911806ea91234ae350341adfb9c0df2ce4be41cc88e73be304e4bb1023073",
+      "actual": "22c911806ea91234ae350341adfb9c0df2ce4be41cc88e73be304e4bb1023073",
+      "match": true
+    },
+    {
+      "path": "external/starter-kit/data/world_bank.json",
+      "expected": "6b3760742c6e864eb8d0bb2f9ec523a19a486b73282d79432dbcca16e3664125",
+      "actual": "6b3760742c6e864eb8d0bb2f9ec523a19a486b73282d79432dbcca16e3664125",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A041-wb-ordinal-head-review.md",
+      "expected": "c90d039be216dce7f253da124e8cd20deb67004a01fdaa08cd3d1e7d62aa10f8",
+      "actual": "c90d039be216dce7f253da124e8cd20deb67004a01fdaa08cd3d1e7d62aa10f8",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A041-outputs/inputs.json",
+      "expected": "4060ce971a3cd3211d6011327ee17b4e9ae59d89ceeef2dd2ff9b3e9fecbaa27",
+      "actual": "4060ce971a3cd3211d6011327ee17b4e9ae59d89ceeef2dd2ff9b3e9fecbaa27",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A041-outputs/verification.json",
+      "expected": "909aeeaf105db89d9a175f7489692f17226f79b01fc445bf03534a885a7c7526",
+      "actual": "909aeeaf105db89d9a175f7489692f17226f79b01fc445bf03534a885a7c7526",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A041-outputs/s1-handoff.ko.md",
+      "expected": "2c5e20acb75fd690e14e1d5f378057ba3a37fe2951fa274d33ebc041d3054f31",
+      "actual": "2c5e20acb75fd690e14e1d5f378057ba3a37fe2951fa274d33ebc041d3054f31",
+      "match": true
+    },
+    {
+      "path": "docs/tree.md",
+      "expected": "eaa884a4194db103335136495205fe5b51297c17db15e9eac62946ced286cc44",
+      "actual": "eaa884a4194db103335136495205fe5b51297c17db15e9eac62946ced286cc44",
+      "match": true
+    },
+    {
+      "path": "external/starter-kit/score.py",
+      "expected": "7049e99a48acef2a74f37cb49bb66b5a9af8d05d2ed8fcf530287b5e81c5042f",
+      "actual": "7049e99a48acef2a74f37cb49bb66b5a9af8d05d2ed8fcf530287b5e81c5042f",
+      "match": true
+    },
+    {
+      "path": "src/eval/logloss.py",
+      "expected": "272aae939a2587b7197569ff84733a1d3b51050e4090ed903a7c8f4e1c88ca18",
+      "actual": "272aae939a2587b7197569ff84733a1d3b51050e4090ed903a7c8f4e1c88ca18",
+      "match": true
+    }
+  ],
+  "preservation": {
+    "unchanged_nonshared_checks": [
+      {
+        "path": "docs/analysis/A041-outputs/s1/exposure-ledger.md",
+        "match": true
+      },
+      {
+        "path": "docs/analysis/A041-outputs/s1/s0-handoff.ko.md",
+        "match": true
+      },
+      {
+        "path": "docs/analysis/A041-outputs/s1/contract.md",
+        "match": true
+      },
+      {
+        "path": "docs/analysis/A041-outputs/s1/closeout.md",
+        "match": true
+      },
+      {
+        "path": "docs/analysis/A041-outputs/s1/source-register.md",
+        "match": true
+      },
+      {
+        "path": "docs/analysis/A041-outputs/s1/shared-additions.json",
+        "match": true
+      },
+      {
+        "path": "docs/analysis/A041-outputs/s1/entry.json",
+        "match": true
+      },
+      {
+        "path": "docs/analysis/A041-outputs/s1/preservation-after.json",
+        "match": true
+      },
+      {
+        "path": "docs/analysis/A041-outputs/s1/preservation-before.json",
+        "match": true
+      },
+      {
+        "path": "docs/analysis/A041-outputs/s1/cost-accounting.md",
+        "match": true
+      },
+      {
+        "path": "AGENTS.md",
+        "match": true
+      },
+      {
+        "path": "CLAUDE.md",
+        "match": true
+      },
+      {
+        "path": "docs/workflow.md",
+        "match": true
+      },
+      {
+        "path": "docs/analysis/A004-wb-structure.md",
+        "match": true
+      },
+      {
+        "path": "docs/experiments/E011-ordinal-smooth.md",
+        "match": true
+      },
+      {
+        "path": "docs/experiments/E012-shared-trunk.md",
+        "match": true
+      },
+      {
+        "path": "docs/experiments/E017-capacity-ab.md",
+        "match": true
+      },
+      {
+        "path": "docs/experiments/E026-hh-cap4.md",
+        "match": true
+      },
+      {
+        "path": "docs/experiments/E029-seed-temp.md",
+        "match": true
+      },
+      {
+        "path": "docs/experiments/E030-ord-sig.md",
+        "match": true
+      },
+      {
+        "path": "docs/experiments/E061-tied-content-heads.md",
+        "match": true
+      },
+      {
+        "path": "src/models/ordinal_smooth.py",
+        "match": true
+      },
+      {
+        "path": "src/models/shared_trunk.py",
+        "match": true
+      },
+      {
+        "path": "src/models/supervised_retrieval.py",
+        "match": true
+      },
+      {
+        "path": "src/models/hh_cap.py",
+        "match": true
+      },
+      {
+        "path": "submissions/2026-09-19-E041/main.py",
+        "match": true
+      },
+      {
+        "path": "external/starter-kit/data/world_bank.json",
+        "match": true
+      },
+      {
+        "path": "docs/analysis/A041-wb-ordinal-head-review.md",
+        "match": true
+      },
+      {
+        "path": "docs/analysis/A041-outputs/inputs.json",
+        "match": true
+      },
+      {
+        "path": "docs/analysis/A041-outputs/verification.json",
+        "match": true
+      },
+      {
+        "path": "docs/analysis/A041-outputs/s1-handoff.ko.md",
+        "match": true
+      },
+      {
+        "path": "docs/tree.md",
+        "match": true
+      },
+      {
+        "path": "external/starter-kit/score.py",
+        "match": true
+      },
+      {
+        "path": "src/eval/logloss.py",
+        "match": true
+      }
+    ],
+    "shared": [
+      {
+        "path": "docs/status.md",
+        "before_sha256": "8ddbf092434bad7481be3542e5bda110414251a2f6fb60c41157f8e91aeb6b26",
+        "after_sha256": "b20c93e0d9a29ddee0c4e18ea7c92a4bcc98ff93beb55f24017f87da3e6f45dc",
+        "restored_sha256": "8ddbf092434bad7481be3542e5bda110414251a2f6fb60c41157f8e91aeb6b26",
+        "preserved": true
+      },
+      {
+        "path": "docs/log.md",
+        "before_sha256": "53ec42822b4907dc5c7b0babe8bcfb10f545f27262fbb1d8143fc26a10f6770e",
+        "after_sha256": "decb4ffb32d31f832d1d43c8776892ca4b041a030c3d67283c7817b734f99cf3",
+        "restored_sha256": "53ec42822b4907dc5c7b0babe8bcfb10f545f27262fbb1d8143fc26a10f6770e",
+        "preserved": true
+      }
+    ],
+    "original_shared_bytes_preserved": true,
+    "claim_limit": "Only enumerated allowed text/source/schema files checked; no protected-response/cache hash or whole-repository preservation scan."
+  },
+  "review": {
+    "accepted": "One whole-WB conditional-head/nonresponse/initialization/selection procedure",
+    "evidence_not_established": [
+      "Actual WB benefit",
+      "Fresh oracle/independent validation",
+      "Candidate runtime/memory",
+      "Release qualification",
+      "TEST choice"
+    ],
+    "counterevidence": [
+      "E011 null retained",
+      "Nominal softmax already valid",
+      "Sparse risk sets/initialization bias",
+      "WB60 spillover and selection reuse",
+      "Synthetic channel transfer uncertainty"
+    ],
+    "recommendation": "Separate S1 bounded implementation/engineering comparison; no repeat information task",
+    "backup": "In-scope routine implementation repair within fixed budgets, otherwise exact incomplete/failed closeout",
+    "user_direction": "User delivery of new S1 prompt supplies explicit prospective WB direction in receiving session; file creation alone supplies none",
+    "E_created": false,
+    "E062_status": "No E062 file found during collision filename check; receiving S1 must check again"
+  },
+  "proposed_not_executed": {
+    "CPU_threads": 2,
+    "GPU": 0,
+    "heavy_workers": 1,
+    "RSS_GiB": 8,
+    "private_commitment_GiB": 8,
+    "candidate_all3_seconds": 900,
+    "total_computational_child_seconds": 1800,
+    "gross_session_minutes": 120,
+    "closeout_minutes": 10,
+    "pipeline_attempt_cap": 9,
+    "neural_attempt_cap": 27,
+    "controls": "UNICEF/UNHCR candidate-E041 exact raw equality",
+    "regression": "Per instrument candidate-E025>=-.002 and candidate-E041>=-.002",
+    "no_op": "No final WB raw change => no qualification/forced activation"
+  },
+  "exposure": {
+    "new_actual_response": 0,
+    "new_synthetic_response_read": 0,
+    "protected_read_or_hash": 0,
+    "synthetic_hashes_inherited_only": true,
+    "synthetic_identity_source": "docs/analysis/E061-outputs/frozen-inputs.json",
+    "preserved": "17999/12339; A022 original roles; E059 consumed oracle1918/1124 selection2007/1130; protected audit2074/1177 calibration1866; aggregates"
+  },
+  "operations": {
+    "document_and_allowed_source_read": true,
+    "primary_paper_read_urls": [
+      "https://arxiv.org/html/2111.08851v5"
+    ],
+    "document_writes": [
+      "docs/analysis/A041-outputs/s0-review.md",
+      "docs/analysis/A041-outputs/s1-implementation-handoff.ko.md",
+      "docs/analysis/A041-outputs/s0-review-additions.json",
+      "docs/analysis/A041-outputs/s0-review-verification.json",
+      "docs/status.md",
+      "docs/log.md"
+    ],
+    "model_implementation": 0,
+    "model_import": 0,
+    "fit": 0,
+    "predict": 0,
+    "score": 0,
+    "fixture_test": 0,
+    "remote_resource_or_account": 0,
+    "install": 0,
+    "ZIP": 0,
+    "commit": 0,
+    "push": 0,
+    "subagent": 0,
+    "S2": 0,
+    "S3": 0,
+    "tree_write": 0
+  },
+  "administrative_events": [
+    {
+      "kind": "Shell process creation failed",
+      "detail": "Long shared-doc insertion command failed before child creation with Windows CreateProcessAsUserW error5. Short read confirmed both hashes unchanged (9c3795). Stored exact insertion JSON and shorter command completed; reverse insertion hashes match old bytes (16807d). No research process or authority change."
+    }
+  ],
+  "state_preserved": [
+    "E041 incumbent/E025 fallback",
+    "E057/E060/E061 parked",
+    "E011 and all existing STOP/HOLD",
+    "E058 STOP/E059 STOP_SELECTION",
+    "A039 HOLD/A040 deprioritized",
+    "A_half not promoted/A018 user-unconfirmed/S3 stopped/S2 none"
+  ],
+  "artifact_and_additional_source_hashes": [
+    {
+      "path": "docs/analysis/A041-outputs/s0-review.md",
+      "sha256": "48ed217647ec2fa5f7b6ba807f02dbedc5c7ef3f5b7637061ebe31a5100b46ad"
+    },
+    {
+      "path": "docs/analysis/A041-outputs/s1-implementation-handoff.ko.md",
+      "sha256": "32ca0a905cb2f4bb30f33d07715b368d10bfb561725915c3cf7d4559366b8dad"
+    },
+    {
+      "path": "docs/analysis/A041-outputs/s0-review-additions.json",
+      "sha256": "b4813813945841e793f7c0739c821317c43cb8177ea4dbaa950c72dc196b4cb9"
+    },
+    {
+      "path": "submissions/2026-09-09-E025/main.py",
+      "sha256": "00793cf9d720d6f7511ffd738935206b3a5401f2454255409429db8d55e991b9"
+    },
+    {
+      "path": "docs/analysis/A041-outputs/s1/verification.json",
+      "sha256": "d9a9c5f50df9ec402be44a64564ecf6af1e251068ada1a82efe2b29982fbf65a"
+    },
+    {
+      "path": "docs/analysis/E061-outputs/frozen-inputs.json",
+      "sha256": "f76ac4edcc8cef2b03edd0da46a4cab7a60b4d36eda46fcb6023446397ba7a45"
+    },
+    {
+      "path": "scripts/check_e061_tied_heads.py",
+      "sha256": "de5171c689bda0db6aff7b5cb95ccd8c8bc0165b2904d259af86b1ce2184f0f7"
+    }
+  ]
+}

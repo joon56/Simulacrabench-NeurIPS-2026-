@@ -1,0 +1,16 @@
+﻿{
+    "exit_code":  -1073741819,
+    "pid":  54120,
+    "child_start_utc":  "2026-10-05T15:51:54.3024130Z",
+    "case":  "builder_fail",
+    "child_wall_seconds":  5.6875573999999993,
+    "supervisor_wall_seconds":  5.705197,
+    "aggregate_seconds":  53.5720451999999974,
+    "remaining_owned_pid":  0,
+    "forced":  false,
+    "attempt":  "builder-message4",
+    "cpu_affinity":  3,
+    "child_exit_utc":  "2026-10-05T15:51:59.9899704Z",
+    "within_cap":  true,
+    "cap_seconds":  60
+}

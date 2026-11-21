@@ -1,0 +1,142 @@
+﻿{
+    "status":  "PASS_DOCUMENT_PRESERVATION",
+    "checked_kst":  "2026-09-30T22:45:18.0743323+09:00",
+    "head":  "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+    "document_checks":  [
+                            {
+                                "path":  "AGENTS.md",
+                                "before":  "86394bbf164a2b7df6a309f4564b9dacf3b2799fa0227a703e4ea11d4d842596",
+                                "after":  "86394bbf164a2b7df6a309f4564b9dacf3b2799fa0227a703e4ea11d4d842596",
+                                "changed":  false
+                            },
+                            {
+                                "path":  "CLAUDE.md",
+                                "before":  "69175e6d741a17042db4852d4961a5c52bd97fe2cd5bfbff762d30d7e5270364",
+                                "after":  "69175e6d741a17042db4852d4961a5c52bd97fe2cd5bfbff762d30d7e5270364",
+                                "changed":  false
+                            },
+                            {
+                                "path":  "docs/status.md",
+                                "before":  "0a2cd06201aad22c070456aa99bb3e2c9afac6fe73f1fff0d99da8fc0f0467f1",
+                                "after":  "904681f3a918e63f1ab3038cdd28276cafa6e49b52e11dfaa9d9ae80c2287378",
+                                "changed":  true
+                            },
+                            {
+                                "path":  "docs/log.md",
+                                "before":  "942297aec645a26fd27c769a30716d9d6a07fc3a45c907dce8bc776291cf11a7",
+                                "after":  "c70b4d483d3d4e0efede83e9190b043886770bdc586cfb17d22f707edc345156",
+                                "changed":  true
+                            },
+                            {
+                                "path":  "docs/workflow.md",
+                                "before":  "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642",
+                                "after":  "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642",
+                                "changed":  false
+                            },
+                            {
+                                "path":  "docs/tree.md",
+                                "before":  "eaa884a4194db103335136495205fe5b51297c17db15e9eac62946ced286cc44",
+                                "after":  "eaa884a4194db103335136495205fe5b51297c17db15e9eac62946ced286cc44",
+                                "changed":  false
+                            },
+                            {
+                                "path":  "docs/analysis/A006-dev-validation-audit.md",
+                                "before":  "b566ec46b7cbcc120f94aa94f7c91dc44e8a0798b08e8d36c34bed9599531dfc",
+                                "after":  "b566ec46b7cbcc120f94aa94f7c91dc44e8a0798b08e8d36c34bed9599531dfc",
+                                "changed":  false
+                            },
+                            {
+                                "path":  "docs/analysis/A008-winning-strategy-hypotheses.md",
+                                "before":  "dd40ebbb004e25f9eca0acd677055a09f5ac1f339159a63639b0704dc466b06a",
+                                "after":  "dd40ebbb004e25f9eca0acd677055a09f5ac1f339159a63639b0704dc466b06a",
+                                "changed":  false
+                            },
+                            {
+                                "path":  "docs/analysis/A009-post-E049-strategy-review.md",
+                                "before":  "cee6b83318a09fe87e3a870ee2febffed0861fc7238b97fcfb436d1ed9ee54c4",
+                                "after":  "cee6b83318a09fe87e3a870ee2febffed0861fc7238b97fcfb436d1ed9ee54c4",
+                                "changed":  false
+                            },
+                            {
+                                "path":  "docs/analysis/A011-replay-bias-diagnostics.md",
+                                "before":  "69effd83ee77f3d7666453bafd7d2ec28a2e0ad686fa3767c68352cf755ba61b",
+                                "after":  "69effd83ee77f3d7666453bafd7d2ec28a2e0ad686fa3767c68352cf755ba61b",
+                                "changed":  false
+                            },
+                            {
+                                "path":  "docs/analysis/A021-selector-comparison-contract.md",
+                                "before":  "6d00490b93ad7c986de38735137981bbfd453aacef7d2f627ca7bd60023ec2cc",
+                                "after":  "6d00490b93ad7c986de38735137981bbfd453aacef7d2f627ca7bd60023ec2cc",
+                                "changed":  false
+                            },
+                            {
+                                "path":  "docs/analysis/A023-candidate-boundary-contract.md",
+                                "before":  "0a22d6e17cc5b6d846060ebed5a65107e2de4d8647ec4280688f5d8847fbd444",
+                                "after":  "0a22d6e17cc5b6d846060ebed5a65107e2de4d8647ec4280688f5d8847fbd444",
+                                "changed":  false
+                            },
+                            {
+                                "path":  "docs/analysis/A023-cost-accounting.md",
+                                "before":  "8e5ccbc91669a2bc54dde9cfc87308cca375e422afd076cc175f1509cf657a98",
+                                "after":  "8e5ccbc91669a2bc54dde9cfc87308cca375e422afd076cc175f1509cf657a98",
+                                "changed":  false
+                            },
+                            {
+                                "path":  "docs/analysis/A024-channel-precision-review.md",
+                                "before":  "1a830e20b63965a3f229f2d564f623e7e4965c6495a400e62239d89a30e2985d",
+                                "after":  "1a830e20b63965a3f229f2d564f623e7e4965c6495a400e62239d89a30e2985d",
+                                "changed":  false
+                            },
+                            {
+                                "path":  "docs/analysis/A026-post-e060-strategy-review.md",
+                                "before":  "2657e93a6766a2932fe72581998b81b5d7c116cae8aa6b71dc318931b9f96ccd",
+                                "after":  "2657e93a6766a2932fe72581998b81b5d7c116cae8aa6b71dc318931b9f96ccd",
+                                "changed":  false
+                            },
+                            {
+                                "path":  "docs/analysis/A032-outputs/readiness-contract.ko.md",
+                                "before":  "139d577ab9afa82aa8d64ab8814847af0b953fffdfed6f141de520040a5a512d",
+                                "after":  "139d577ab9afa82aa8d64ab8814847af0b953fffdfed6f141de520040a5a512d",
+                                "changed":  false
+                            },
+                            {
+                                "path":  "docs/analysis/A036-e061-post-result-review.md",
+                                "before":  "df5f2126fc18b9384090f0fe5a1b9d01178ac8629e2dae5409da8b932cedf028",
+                                "after":  "df5f2126fc18b9384090f0fe5a1b9d01178ac8629e2dae5409da8b932cedf028",
+                                "changed":  false
+                            },
+                            {
+                                "path":  "docs/experiments/E050-recursive-evidence-selection.md",
+                                "before":  "f311813e6602b163ca0ef8599a8dd5a39de8e159297fd0580b0249112414678f",
+                                "after":  "f311813e6602b163ca0ef8599a8dd5a39de8e159297fd0580b0249112414678f",
+                                "changed":  false
+                            },
+                            {
+                                "path":  "docs/experiments/E053-uncensored-bucket-replay.md",
+                                "before":  "e1960271c1aeb898797aefae54c4fe59521059ce4774ebdd377f47fcb8597be2",
+                                "after":  "e1960271c1aeb898797aefae54c4fe59521059ce4774ebdd377f47fcb8597be2",
+                                "changed":  false
+                            },
+                            {
+                                "path":  "docs/experiments/E055-coupled-star-replay.md",
+                                "before":  "80e960bdd76a48b9d0cc23aab819d626c23c03b55941f31c774005915c6425d9",
+                                "after":  "80e960bdd76a48b9d0cc23aab819d626c23c03b55941f31c774005915c6425d9",
+                                "changed":  false
+                            },
+                            {
+                                "path":  "submissions/SCORES.md",
+                                "before":  "1e6d753c24c5c2e42fc4b316ea524a4285b59ef672cc5c3a5a1288768d157dab",
+                                "after":  "1e6d753c24c5c2e42fc4b316ea524a4285b59ef672cc5c3a5a1288768d157dab",
+                                "changed":  false
+                            }
+                        ],
+    "unexpected_changes":  [
+
+                           ],
+    "workflow_sha256":  "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642",
+    "decision_hash":  "87e77d8279f68e52751653f3b6098ec1976e4b53a75faf7206043ec6cf4bf66d",
+    "entry_hash":  "d74a890b0027c5e9f9f1029c2f3d5e47b95642f0ee860cb31dd4b870c9c3e6cb",
+    "user_input_after_entry":  "Approval email supplied during review; access approval and listed downloadable items recorded in A037/status/log. Exact release, detailed scope/path/exposure not established.",
+    "operations":  "S0 permitted document reads/hashes/writes only. No scientific code run, data/key/cache/ZIP read or hash, tests, downloads, external messages, agent launch, git mutation, S3/TEST.",
+    "artifact_limit":  "No unchanged-byte claim for unread protected/model artifacts; no operations targeted them."
+}

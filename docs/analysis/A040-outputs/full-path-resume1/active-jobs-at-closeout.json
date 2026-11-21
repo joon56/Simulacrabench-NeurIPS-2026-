@@ -1,0 +1,9 @@
+{
+  "evidence": "4cb531 read-only elevated CIM query",
+  "named_python_jupyter_jobs": [],
+  "watchdogs_remaining_children": [
+    [],
+    []
+  ],
+  "unrelated_processes_killed": 0
+}

@@ -1,0 +1,70 @@
+{"event": "network_guard", "elapsed": 0.030328600000302686, "scope": "Python audit, not OS firewall", "passed": true}
+{"event": "frozen_hashes", "elapsed": 0.14148940000040966, "files": 161, "passed": true}
+{"event": "runtime", "elapsed": 2.844090900000083, "torch": "2.8.0+cu126", "cuda": "12.6", "device": "NVIDIA GeForce RTX 3070", "affinity": [0, 1]}
+{"event": "load", "elapsed": 4.822783600000093, "count": 1, "seconds": 0.06157130000019606}
+{"event": "adapter_import", "elapsed": 5.197128000000248, "checkpoint_loads": 1}
+{"event": "fixture", "elapsed": 5.452870100000382, "sha256": "a532ee2dcd337cc72e278365234e7b55b08aec528a9bc9a1b718d666ee0d5a48", "F": 45, "S": 3, "E": 3, "Q": 3, "seed": 4000}
+{"event": "role_masking", "elapsed": 5.46227590000035, "passed": true}
+{"event": "arithmetic_and_selection", "elapsed": 5.695659400000295, "passed": true, "actual_E041_executed": false}
+{"event": "fit_start", "elapsed": 5.790530300000228, "count": 1, "rows": 45, "features": 17}
+{"event": "load", "elapsed": 5.8449750000004315, "count": 2, "seconds": 0.05303760000015245}
+{"event": "fit_end", "elapsed": 6.146749900000032, "count": 1, "seconds": 0.3562184000002162}
+{"event": "predict_start", "elapsed": 6.146817400000145, "count": 1, "classes": 15}
+{"event": "predict_end", "elapsed": 7.320556800000304, "count": 1, "seconds": 1.1737370999999257}
+{"event": "fit_start", "elapsed": 7.3229332000000795, "count": 2, "rows": 45, "features": 17}
+{"event": "fit_end", "elapsed": 7.34522780000043, "count": 2, "seconds": 0.022294000000329106}
+{"event": "predict_start", "elapsed": 7.3452799000001505, "count": 2, "classes": 15}
+{"event": "predict_end", "elapsed": 7.976251400000365, "count": 2, "seconds": 0.630969499999992}
+{"event": "stock_adapter", "elapsed": 7.97644820000005, "max_abs_diff": 0.0, "exact": true}
+{"event": "fit_start", "elapsed": 7.978851000000304, "count": 3, "rows": 45, "features": 17}
+{"event": "fit_end", "elapsed": 8.000293400000373, "count": 3, "seconds": 0.021441800000047806}
+{"event": "predict_start", "elapsed": 8.000343300000168, "count": 3, "classes": 11}
+{"event": "predict_end", "elapsed": 8.652529200000117, "count": 3, "seconds": 0.6521834000000126}
+{"event": "predict_start", "elapsed": 8.65270989999999, "count": 4, "classes": 15}
+{"event": "predict_end", "elapsed": 9.344034400000055, "count": 4, "seconds": 0.6913207999996303}
+{"event": "fit_start", "elapsed": 9.34657660000039, "count": 4, "rows": 45, "features": 17}
+{"event": "fit_end", "elapsed": 9.375455800000054, "count": 4, "seconds": 0.02887879999980214}
+{"event": "predict_start", "elapsed": 9.375526900000295, "count": 5, "classes": 15}
+{"event": "predict_end", "elapsed": 10.03292780000038, "count": 5, "seconds": 0.6573991000000206}
+{"event": "shared_state_isolation", "elapsed": 10.033117000000402, "passed": true}
+{"event": "fit_start", "elapsed": 10.037321800000427, "count": 5, "rows": 45, "features": 17}
+{"event": "fit_end", "elapsed": 10.058882799999992, "count": 5, "seconds": 0.021561600000040926}
+{"event": "predict_start", "elapsed": 10.058933300000263, "count": 6, "classes": 2}
+{"event": "predict_end", "elapsed": 10.16023800000039, "count": 6, "seconds": 0.10130180000032851}
+{"event": "fit_start", "elapsed": 10.162642000000233, "count": 6, "rows": 45, "features": 17}
+{"event": "fit_end", "elapsed": 10.18441920000032, "count": 6, "seconds": 0.021776499999759835}
+{"event": "predict_start", "elapsed": 10.184478100000433, "count": 7, "classes": 3}
+{"event": "predict_end", "elapsed": 10.28409580000016, "count": 7, "seconds": 0.0996154999997998}
+{"event": "fit_start", "elapsed": 10.286580600000434, "count": 7, "rows": 45, "features": 17}
+{"event": "fit_end", "elapsed": 10.308052100000168, "count": 7, "seconds": 0.021471399999882124}
+{"event": "predict_start", "elapsed": 10.308114500000102, "count": 8, "classes": 5}
+{"event": "predict_end", "elapsed": 10.411433600000237, "count": 8, "seconds": 0.10331650000034642}
+{"event": "fit_start", "elapsed": 10.413743800000248, "count": 8, "rows": 45, "features": 17}
+{"event": "fit_end", "elapsed": 10.43541980000009, "count": 8, "seconds": 0.02167520000011791}
+{"event": "predict_start", "elapsed": 10.43553110000039, "count": 9, "classes": 6}
+{"event": "predict_end", "elapsed": 10.5322656000003, "count": 9, "seconds": 0.09673229999998512}
+{"event": "fit_start", "elapsed": 10.534593800000039, "count": 9, "rows": 45, "features": 17}
+{"event": "fit_end", "elapsed": 10.555619600000227, "count": 9, "seconds": 0.021026200000051176}
+{"event": "predict_start", "elapsed": 10.555664400000296, "count": 10, "classes": 7}
+{"event": "predict_end", "elapsed": 10.657033200000114, "count": 10, "seconds": 0.10136700000020937}
+{"event": "fit_start", "elapsed": 10.659328200000346, "count": 10, "rows": 45, "features": 17}
+{"event": "fit_end", "elapsed": 10.680503900000076, "count": 10, "seconds": 0.021175700000185316}
+{"event": "predict_start", "elapsed": 10.680557600000157, "count": 11, "classes": 3}
+{"event": "predict_end", "elapsed": 10.784455100000287, "count": 11, "seconds": 0.1038949999997385}
+{"event": "fit_start", "elapsed": 10.786883500000386, "count": 11, "rows": 45, "features": 17}
+{"event": "fit_end", "elapsed": 10.81061740000041, "count": 11, "seconds": 0.023733700000320823}
+{"event": "predict_start", "elapsed": 10.810671600000205, "count": 12, "classes": 4}
+{"event": "predict_end", "elapsed": 10.909477600000173, "count": 12, "seconds": 0.09880450000036944}
+{"event": "fit_start", "elapsed": 10.911901000000398, "count": 12, "rows": 45, "features": 17}
+{"event": "fit_end", "elapsed": 10.933198900000207, "count": 12, "seconds": 0.0212984999998298}
+{"event": "predict_start", "elapsed": 10.933247000000392, "count": 13, "classes": 4}
+{"event": "predict_end", "elapsed": 11.030980400000317, "count": 13, "seconds": 0.09773159999986092}
+{"event": "fit_start", "elapsed": 11.033269100000325, "count": 13, "rows": 45, "features": 17}
+{"event": "fit_end", "elapsed": 11.054581900000358, "count": 13, "seconds": 0.02131229999986317}
+{"event": "predict_start", "elapsed": 11.05465120000008, "count": 14, "classes": 10}
+{"event": "predict_end", "elapsed": 11.158652600000096, "count": 14, "seconds": 0.1039997999996558}
+{"event": "fit_start", "elapsed": 11.161034100000052, "count": 14, "rows": 45, "features": 17}
+{"event": "fit_end", "elapsed": 11.183853200000158, "count": 14, "seconds": 0.022818300000380987}
+{"event": "predict_start", "elapsed": 11.18391500000007, "count": 15, "classes": 15}
+{"event": "predict_end", "elapsed": 11.887798600000224, "count": 15, "seconds": 0.7038814000002276}
+{"event": "failure", "elapsed": 11.88906390000011, "error": "TypeError(\"event() got multiple values for argument 'name'\")"}

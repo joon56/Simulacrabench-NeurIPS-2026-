@@ -1,0 +1,11 @@
+{
+    "remote_actions":  0,
+    "head":  "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+    "active_seconds":  2420.7081328,
+    "status_log_only_addition_verified":  true,
+    "recorded_utc":  "2026-10-05T14:48:53.7081328+00:00",
+    "local_named_jobs":  0,
+    "prior_artifact_files_verified":  203,
+    "outcome":  "RECORD_AND_PRESERVATION_VERIFIED",
+    "source_freeze":  "9bed44512e531215e68c4cc0a2dfd5ea99670a44f4125166eb62999684e624f3"
+}

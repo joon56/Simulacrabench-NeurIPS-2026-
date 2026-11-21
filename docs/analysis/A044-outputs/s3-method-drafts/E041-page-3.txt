@@ -1,0 +1,49 @@
+REVIEW DRAFT - NOT FINAL TEST SELECTION
+
+ 3. Refitting, evaluation limits and engineering evidence
+ Disjoint metric-fit/selection/replay queries do not cross-fit the entire pipeline. Base distributions are refitted on all
+  visible rows, including replay labels; donor self-exclusion does not remove that calibration optimism. The selector
+ uses a marginal/evidence proxy and fitted mixture share that differ from deployed recursive base distributions and
+ item lambdas. Repeated DEV feedback also influenced method retention. Legal reuse of DEV for final fitting does
+ not restore independent validation.
+ Phase-2 visible counts become 16,373/5,715/8,900. For UNHCR the reference bank grows from 5,479 to 6,100 while
+ caps 1,200/800/800 remain. No trained state is frozen: adding DEV can change architecture, epochs, ladder/gate
+ choices, rarity/agreement weights, partition membership, active sections and lambdas. Fixed seeds do not remove
+ row-order or numerical-reduction sensitivity. GPU training exceptions can fall back to CPU; an arbitrary failure or
+ timeout does not swap the whole model to E025 or create another TEST attempt. [6]
+ Counterevidence includes historical E041-minus-E025 UNHCR skill of -0.000486 on phase-1 synthetic data and
+ -0.002026 on a household simulation. Adult audit gains +0.000595/+0.000427 had paired intervals including zero;
+ Adult  lacks UNHCR's approximate  gates. A011 replay  contrasts did not  establish recoverable  gain. E053
+ ungated-Adult and E055 exact-gate-SIPP oracle STOPs are scoped bounds, not UNHCR ceilings. E056-E059
+ supplied no deployed component; E059 STOP_SELECTION and the ban on promoting A_half remain. Later
+ E060/E062/E063 released ties leave effects unresolved; E061's adverse reading applies to its complete pipeline.
+ E064 engineering qualification is not a hosted result. [6]
+ New E025 provenance, reused E041 reference. A separate authorized S3 run on 23 October established unchanged
+ modular E025 versus its preserved ZIP: all 442,425 ordered probability vectors were exactly equal, vector validity
+ passed and stock official phase 2 passed all three instruments. Before models, the E041 frozen-raw reuse gate
+ checked exact input/frame/order/source/scorer/completion  identities and recorded Python/six-package versions.
+ E041 was not rerun. [7]
+
+   Instrument / cells                             E025 skill                       Reused E041 skill
+
+  UNICEF / 41,676                               0.490197770701                  0.490197770701
+
+  World Bank / 92,112                             0.462029504790                  0.462029504790
+
+  UNHCR / 308,637                              0.565173813942                  0.564665364947
+
+ E025-minus-E041  is 0/0/+0.000508448996,  within  the  fixed  absolute 0.002  engineering  criterion  for each
+ instrument.  It does not establish E025 TEST superiority or select either model. The new E025 source/official
+ whole-all3 walls were 429.930/450.277 seconds under separate shared 900-second local caps, CPU2/GPU0.
+ Maximum sampled tree RSS/private were 2.035/2.067 decimal GB, with final samples checked and largest sample
+ gap 0.221341 seconds. These are local sampled observations, not instantaneous or hosted guarantees. [7]
+ Historical E041 A018 all3 took 336.554 seconds, with working-set/commitment peaks 1.493/1.605 GB; final
+ archived official scoring took 359.449 seconds (364.340 seconds orchestration). These measurements have different
+ scopes and dates and are not a controlled speed comparison with the new E025 run. A012 provenance was collected
+ post-run; historical environment omissions and older E025 UNICEF/WB drift remain unresolved. [6,7]
+
+
+
+
+
+HSCC 2026 | E041 | REVIEW DRAFT | 23 October 2026                                                                3 / 4

@@ -1,0 +1,39 @@
+﻿{
+    "state":  "NOT_RUN_APPROVAL_BLOCK",
+    "preflight":  {
+                      "vram_mib":  8192,
+                      "total_bytes":  34269630464,
+                      "method":  "GlobalMemoryStatusEx",
+                      "utilization_percent":  3,
+                      "driver":  "591.86",
+                      "competing_research_processes":  [
+
+                                                       ],
+                      "free_vram_mib":  7469,
+                      "limits":  "Desktop GPU clients present; not an exhaustive activity audit",
+                      "available_commit_bytes":  22667329536,
+                      "gpu":  "RTX3070",
+                      "available_bytes":  22028894208
+                  },
+    "scientific_process_count":  0,
+    "scientific_elapsed_seconds":  0,
+    "model_elapsed_seconds":  0,
+    "checkpoint_load_count":  0,
+    "fit_count":  0,
+    "predict_count":  0,
+    "fallback_count":  0,
+    "process_tree_peak_rss_bytes":  null,
+    "process_tree_peak_commit_bytes":  null,
+    "cuda_peak_allocated_bytes":  null,
+    "cuda_peak_reserved_bytes":  null,
+    "future_limits":  {
+                          "scientific_process_wall_seconds":  120,
+                          "scientific_processes":  1,
+                          "cpu_threads":  2,
+                          "gpu_count":  1,
+                          "task_wall_seconds":  3600,
+                          "host_bytes":  16000000000
+                      },
+    "full_path_measured":  false,
+    "caveat":  "Preflight OS memory is not model process measurement; zero elapsed means never launched, not instantaneous execution"
+}

@@ -1,0 +1,132 @@
+﻿{
+    "role":  "S1",
+    "task_type":  "information only",
+    "started_utc":  "2026-10-02T09:12:51Z",
+    "deadline_utc":  "2026-10-02T09:57:51Z",
+    "recorded_utc":  "2026-10-02T09:19:35.0483128Z",
+    "head":  "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+    "workflow_revision":  "2026-09-27-r4",
+    "workflow_sha256":  "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642",
+    "read_order":  [
+                       "AGENTS.md",
+                       "CLAUDE.md",
+                       "docs/status.md",
+                       "docs/log.md newest three",
+                       "docs/workflow.md",
+                       "current user handoff and required A040 records"
+                   ],
+    "read_evidence":  [
+                          "fae344 AGENTS and full CLAUDE",
+                          "a3fc14 status/newest three log/full workflow",
+                          "0b9bfe HEAD",
+                          "2e1bf2 dirty",
+                          "9233ab output absent; initial CIM denied",
+                          "72fadf elevated read-only Python/Jupyter query empty",
+                          "bf0a33 contract/cost/policy/prior resource search",
+                          "e2ce54 resume closeout/resources/partial/diff/verification/manifest metadata only",
+                          "cdda44 runner first115/watchdog/lock; no imports",
+                          "0ce38a provenance and S0 verification"
+                      ],
+    "newest_log_titles":  [
+                              "2026-10-02 - A040 S0 holds local execution after actual candidate timeout",
+                              "2026-10-02 - A040 frozen full-path reference passes; candidate reaches900s cap",
+                              "2026-10-02 - A040 S0 recommends frozen continuation conditional on host capacity"
+                          ],
+    "allowed":  "Read-only docs/source/manifest metadata; max6 new official docs and2 resource options; write new information records and additive status/log",
+    "forbidden":  "Accounts/login/contact/rental/remote/install/acquisition/model import/calls/tests/fixtures/protected or fake inputs/checkpoint/cache access or hashes/code changes/agents/ZIP/commit/push/S2/S3",
+    "output_collision_at_entry":  false,
+    "named_python_jupyter_jobs_at_entry":  [
+
+                                           ],
+    "jobs_scope":  "Named process query only, not exhaustive host-wide absence",
+    "manifest_metadata_only":  true,
+    "allowed_document_source_identities":  [
+                                               {
+                                                   "path":  "AGENTS.md",
+                                                   "sha256":  "86394bbf164a2b7df6a309f4564b9dacf3b2799fa0227a703e4ea11d4d842596"
+                                               },
+                                               {
+                                                   "path":  "CLAUDE.md",
+                                                   "sha256":  "69175e6d741a17042db4852d4961a5c52bd97fe2cd5bfbff762d30d7e5270364"
+                                               },
+                                               {
+                                                   "path":  "docs/workflow.md",
+                                                   "sha256":  "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642"
+                                               },
+                                               {
+                                                   "path":  "docs/status.md",
+                                                   "sha256":  "3b64e97376271b8fe9f7ff41b1cb0a74a1ef994a019a128550d290848352de61"
+                                               },
+                                               {
+                                                   "path":  "docs/log.md",
+                                                   "sha256":  "92956d3af832ef609743677685464b202370675e2045103b46d0448061f9d445"
+                                               },
+                                               {
+                                                   "path":  "docs/analysis/A040-outputs/s0-runtime-limit-review/decision.md",
+                                                   "sha256":  "178f01b2f6244af91f477ca21f2850bebb2fd5fb1ca6aba8d48775111c8f4732"
+                                               },
+                                               {
+                                                   "path":  "docs/analysis/A040-outputs/s0-runtime-limit-review/verification.json",
+                                                   "sha256":  "5da81eb7935e74fddc4c3ce59676784fba102ad83d5fe97acb668e71b4684bec"
+                                               },
+                                               {
+                                                   "path":  "docs/analysis/A040-outputs/full-path-resume1/closeout.md",
+                                                   "sha256":  "d4c4a4f5f04dfed0cfe45015cc7ea2a5d1518fd22b4c1d67cfcb52c63b84ab5b"
+                                               },
+                                               {
+                                                   "path":  "docs/analysis/A040-outputs/full-path-resume1/resources.json",
+                                                   "sha256":  "bde15eaa0d65683da72cde07d387431388fa8a6058524ea456436a3d1507b91f"
+                                               },
+                                               {
+                                                   "path":  "docs/analysis/A040-outputs/full-path-resume1/verification.json",
+                                                   "sha256":  "64a74527b6997f6d16b484abd149683c5231d72a6e593503fa6fe861d1f7d5ba"
+                                               },
+                                               {
+                                                   "path":  "docs/analysis/A040-outputs/full-path-resume1/candidate/partial-observations.json",
+                                                   "sha256":  "aa08d34bd59c58e94dffb1b267d96106c905db78ad271d25dc97fd48a418bd9d"
+                                               },
+                                               {
+                                                   "path":  "docs/analysis/A040-outputs/full-path-resume1/source.diff",
+                                                   "sha256":  "8d4a084eaedce52102d86ae6c63de99c95a68b95fe09e790e19602f7f3c9bc23"
+                                               },
+                                               {
+                                                   "path":  "docs/analysis/A040-outputs/full-path-resume1/frozen-inputs/manifest.json",
+                                                   "sha256":  "b5f7effaa0a9ad427c403dfb2d524b8747c469968bb2cbb86419867911c8cacc"
+                                               },
+                                               {
+                                                   "path":  "docs/analysis/A040-outputs/s0-policy-resolution/decision.md",
+                                                   "sha256":  "b97eede87c225503090df6dcc2fd9f8dae78327ff28c54c5e9031626f489d225"
+                                               },
+                                               {
+                                                   "path":  "docs/analysis/A040-outputs/s0-policy-resolution/environment-check.md",
+                                                   "sha256":  "56049d17a84f5bcc9b9e95eb97e4c457485742b40da5e8f73ee867271ba2a8d8"
+                                               },
+                                               {
+                                                   "path":  "docs/analysis/A040-outputs/s1/contract.md",
+                                                   "sha256":  "8f59764b01f68360a6eef0fee66d82c1316f9b89720abf26eb8e7f72e5b1bb38"
+                                               },
+                                               {
+                                                   "path":  "docs/analysis/A040-outputs/s1/cost-accounting.md",
+                                                   "sha256":  "684b9e09bac2163266b3117c23cad28341990d57ed9e6b9371aba855515db3ee"
+                                               },
+                                               {
+                                                   "path":  "docs/analysis/A040-outputs/full-path-resume1/runner.py",
+                                                   "sha256":  "fc8d12a09bc283675811fb25efa80a7056f9f9077dffac9dfd3510d9dfa5cde5"
+                                               },
+                                               {
+                                                   "path":  "docs/analysis/A040-outputs/full-path-resume1/watchdog.py",
+                                                   "sha256":  "6c9a1647fe93689d2323c16f8245d01b26e79b5813ff14b4d647fd9d5a6d4e56"
+                                               },
+                                               {
+                                                   "path":  "docs/analysis/A040-outputs/local-technical/requirements.lock.txt",
+                                                   "sha256":  "6c6f0d0fc5db943eb1cb95ff4610ddea5df724bc50031b883a0dd67656771b70"
+                                               },
+                                               {
+                                                   "path":  "docs/analysis/A040-outputs/local-technical/provenance.md",
+                                                   "sha256":  "c28ea374e2e83d83c33a2a5762c086e8f7e9fcd1fb72a81eba0d27fe465e2793"
+                                               }
+                                           ],
+    "manifest_driven_target_traversal":  0,
+    "input_model_cache_files_opened_or_hashed":  0,
+    "dirty_snapshot_note":  "dirty-before.txt captured before shared edits, after creation of this output directory; initial listing evidence2e1bf2 predates it."
+}

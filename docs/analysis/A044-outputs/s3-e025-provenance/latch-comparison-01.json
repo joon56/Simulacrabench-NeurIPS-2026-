@@ -1,0 +1,8 @@
+{
+  "action": "evaluate",
+  "token": "comparison-01",
+  "created": "2026-10-23T16:55:23.456886+09:00",
+  "shared_seconds": 120,
+  "charged_before": 1009.136979400002,
+  "administrative_reserve": 120.0
+}

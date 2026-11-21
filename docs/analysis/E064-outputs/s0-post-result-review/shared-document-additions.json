@@ -1,0 +1,18 @@
+[
+    {
+        "path":  "docs/status.md",
+        "position":  318,
+        "text":  "- **2026-10-26 S0 accepts E064 UNRESOLVED.** E041 incumbent/E025 fallback/E064 parked.\r\n  Registered public tie retained; no exact-zero effect or family-refutation claim.\r\n  Fixed E064 retry/tuning priority lowered. B01 is closed; no execution budget renewed.\r\n- **Next proposed S1: A040 unexecuted C6 only**, model-free protobuf graph/parser\r\n  crash sufficiency diagnosis. Fresh gross30min/diagnostic children90s/cash0 proposed;\r\n  no model, remote resume, broad repair or S2. A040 HOLD remains. If the named comparison\r\n  is inconclusive, close with the missing evidence; no automatic C7 or environment swap.\r\n  [Decision](analysis/E064-outputs/s0-post-result-review/decision.md),\r\n  [proposed handoff](analysis/E064-outputs/s0-post-result-review/s1-c6-diagnostic-handoff.ko.md).\r\n- **Writer S0-E064-POST-RESULT /root until explicit review release; none afterward.**\r\n  [Ownership/preservation](analysis/E064-outputs/s0-post-result-review/verification.json).\r\n  User direction in a separate S1 is required; handoff creation is not execution.\r\n  Existing STOP/HOLD/exposure/protected roles/TEST and license choices remain unchanged.\r\n\r\n### Earlier E064 result notice — preserved\r\n\r\n",
+        "before_sha256":  "d07863048f8ef6283c036db793a0893048dd2813dd4f4d90eff7a52757cb66e7",
+        "after_sha256":  "cbc153ec01d6adee815016470ddc6bd9d570060fea59e143b98d6ead91b0aec6",
+        "removing_addition_restores_original":  true
+    },
+    {
+        "path":  "docs/log.md",
+        "position":  20,
+        "text":  "## 2026-10-26 - S0 accepts E064 public tie; proposes one unexecuted A040 C6 diagnosis\r\n\r\n- Workflow r6/current entry and newest3log read. EXEC-B01-E064 result release at\r\n  20:36:06.7059831KST confirmed; S0 sole writer accepted20:59:26.2806507KST.\r\n  Twelve incoming document hashes match. HEADa43f4379/125 dirty entries preserved;\r\n  local named Python/pythonw/uv jobs0 at entry, not a claim about all remote sessions.\r\n- Accepted original UNRESOLVED arm for ID1008932: all four API strings equal E041.\r\n  Source remains user-provided; remote bytes/scorer equality/best event not verified.\r\n  Technical PASS and small synthetic decline remain history, not real-effect evidence.\r\n- Compared nearby variants, VAF/objective-channel work, E054 loss probe and the unused\r\n  A040 C6 diagnostic. No ready new model or automatic batch. Fixed E064 retry priority\r\n  lowered; E062/E063/E064 ties are not independent evidence of zero effect.\r\n- Sole next proposal: C6 protobuf response graph/FunctionInfo parser sufficient-trigger\r\n  test, separate S1 with fresh gross30min/children90s/cash0. Prior C3 identity required;\r\n  no C1-C5 rerun/model/H100/environment change. Outcome ends that diagnostic;\r\n  no automatic C7/repair/remote continuation. Past costs do not justify the choice.\r\n- Only S0 documents and additive status/log written. Existing SCORES, manifests,\r\n  source, failures, ZIPs, tree, method drafts and all STOP/HOLD/exposure unchanged.\r\n  [Decision](analysis/E064-outputs/s0-post-result-review/decision.md),\r\n  [proposal](analysis/E064-outputs/s0-post-result-review/s1-c6-diagnostic-handoff.ko.md),\r\n  [verification/release](analysis/E064-outputs/s0-post-result-review/verification.json).\r\n\r\n",
+        "before_sha256":  "f900387549144d82d9c67ba6e1f7f5cbb04b5413b6c0efb23d9aadb5c3e77b53",
+        "after_sha256":  "6fed4f47a594599ea84ce6dd08f994d90ecdedb0449afc6e1db9d791742285c9",
+        "removing_addition_restores_original":  true
+    }
+]

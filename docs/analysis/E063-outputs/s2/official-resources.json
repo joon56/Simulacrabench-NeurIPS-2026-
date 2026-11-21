@@ -1,0 +1,36 @@
+{
+  "mode": "official",
+  "status": "PASS",
+  "command": [
+    "C:\\Users\\USER\\Desktop\\SimulacraBench\\.venv\\Scripts\\python.exe",
+    "-X",
+    "utf8",
+    "-B",
+    "C:\\Users\\USER\\Desktop\\SimulacraBench\\scripts\\check_e063_release.py",
+    "worker",
+    "official"
+  ],
+  "wall_seconds": 701.724240399999,
+  "cumulative_worker_seconds": 1214.1000889000024,
+  "historical_S1_worker_seconds": 754.5516991000004,
+  "combined_worker_seconds": 1968.6517880000029,
+  "reason": "COMPLETE",
+  "error": null,
+  "exit_code": 0,
+  "peak_owned_tree_bytes": {
+    "rss": 2455371776,
+    "commitment": 2650202112
+  },
+  "sample_interval_seconds": 0.1,
+  "numerical_threads": 2,
+  "gpu": false,
+  "sample_count": 6261,
+  "maximum_monotonic_sample_gap_seconds": 0.12008280000009108,
+  "focused_cumulative_seconds": 4.589180400002078,
+  "memory_semantics": "Owned controller+descendants; sum of per-process peak RSS/private commitment",
+  "cumulative_calls": {
+    "full_stack": 6,
+    "neural": 18,
+    "metric": 16
+  }
+}

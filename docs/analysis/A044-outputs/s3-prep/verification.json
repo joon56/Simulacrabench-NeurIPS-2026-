@@ -1,0 +1,153 @@
+{
+    "record":  "S3-PREP-A044",
+    "verdict":  "DOCUMENT_PREPARATION_COMPLETE",
+    "observed_at":  "2026-10-23T02:04:23.7312132+09:00",
+    "head":  "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+    "branch":  "work/e050-submission",
+    "workflow_revision":  "2026-10-22-r6",
+    "workflow_sha256":  "69620b7eeaad5a01a6a6b884fbd95dfede3e26b2ee2b09016479846082aec089",
+    "authority":  "Current user resumed A044 document-only S3; final selection/upload/commit/push excluded",
+    "budget":  {
+                   "gross_cap_seconds":  5400,
+                   "conservative_accounting_start":  "2026-10-23T01:30:00+09:00",
+                   "elapsed_from_conservative_start_seconds":  2063.7312131999997,
+                   "arrival_time_measured":  false,
+                   "public_unique_urls":  25,
+                   "public_url_cap":  30,
+                   "public_lookup_cap_seconds":  1500,
+                   "public_lookup":  "Completed by2026-10-23T01:52:13.9903975+09:00; started after01:43:33 observation, within25min",
+                   "cash":  0,
+                   "model_compute":  0
+               },
+    "document_checks":  "document-checks.json",
+    "initial_identity_matches":  112,
+    "initial_identity_limit":  "Overbroad A018 src .py hash filter included indirect/nondependency source beyond approved scope; no import/run/change or protected input access; disclosed",
+    "exit_identity_matches":  61,
+    "e064_document_identity":  [
+                                   {
+                                       "path":  "docs/analysis/E064-outputs/verification.json",
+                                       "expected":  "46a3fc310a2e8177f7465bcf23e1d3ddd06eba9aa26ca83a76656ad29376e2e6",
+                                       "current":  "46a3fc310a2e8177f7465bcf23e1d3ddd06eba9aa26ca83a76656ad29376e2e6",
+                                       "match":  true
+                                   },
+                                   {
+                                       "path":  "docs/analysis/E064-outputs/freeze-01.json",
+                                       "expected":  "5e8bd2eb84b73957e10f4ca21de858c8a5743290527364c45b09beeafb42245e",
+                                       "current":  "5e8bd2eb84b73957e10f4ca21de858c8a5743290527364c45b09beeafb42245e",
+                                       "match":  true
+                                   },
+                                   {
+                                       "path":  "docs/analysis/E064-outputs/closeout.md",
+                                       "expected":  "b8a891961d705912c457e97c2a3e4c9eb36bc8a440c670bc0603e3c330234b4e",
+                                       "current":  "b8a891961d705912c457e97c2a3e4c9eb36bc8a440c670bc0603e3c330234b4e",
+                                       "match":  true
+                                   },
+                                   {
+                                       "path":  "docs/analysis/E064-outputs/attempts/score-01/comparison.json",
+                                       "expected":  "2087497cc0f82b2ca3f626cbb2681f7f4252da5064a59f0e97fdf9aefdbbe47d",
+                                       "current":  "2087497cc0f82b2ca3f626cbb2681f7f4252da5064a59f0e97fdf9aefdbbe47d",
+                                       "match":  true
+                                   }
+                               ],
+    "preservation":  {
+                         "status_history":  true,
+                         "phase2_history":  true,
+                         "log_history":  true,
+                         "workflow":  true,
+                         "tree":  true,
+                         "method":  true,
+                         "a018_manifest":  true
+                     },
+    "kit_contract":  "Compatible inspected public contract; localCRLF versus upstreamLF explicitly distinguished; private deployed scorer/image unknown",
+    "phase2":  "Historical evidence inherited; current input/raw/environment identity not checked",
+    "final_test_choice":  "User-unconfirmed; E041 provisional, E025 alternative",
+    "execution_counts":  {
+                             "model_import":  0,
+                             "fit":  0,
+                             "predict":  0,
+                             "score":  0,
+                             "scientific_fixture":  0,
+                             "checker":  0,
+                             "tests":  0,
+                             "packaging":  0,
+                             "pdf_render":  0,
+                             "install":  0,
+                             "protected_response_key_cache_access_or_hash":  0,
+                             "remote_compute":  0,
+                             "subagent_launch":  0,
+                             "login_upload":  0,
+                             "commit_push":  0
+                         },
+    "readonly_zip_identity_count":  2,
+    "owned_write_paths":  [
+                              "docs/analysis/A044-outputs/s3-prep/",
+                              "docs/status.md current notice",
+                              "docs/log.md new entry",
+                              "docs/phase2-preparation.md current notice"
+                          ],
+    "named_jobs":  [
+
+                   ],
+    "owned_running_commands":  [
+
+                               ],
+    "process_scope":  "Local python/pythonw/uv metadata; not remote or all sessions",
+    "outgoing_owner":  "S3-PREP-A044 /root",
+    "incoming_owner":  "none; separately user-approved EXEC-B01-E064 may accept after reading this receipt and original handoff",
+    "exclusive_writer_released":  true,
+    "release_at":  "2026-10-23T02:04:23.7312132+09:00",
+    "remaining":  [
+                      "current Codabench Terms and exact phase timestamps",
+                      "owner final model/license choice and future account/slot confirmation",
+                      "E025 historical official raw provenance",
+                      "current raw/input/environment and native hosted compatibility not certified",
+                      "new method drafts not rendered/visually checked"
+                  ],
+    "artifact_sha256":  {
+                            "docs/analysis/A044-outputs/s3-prep/adult-official.html.txt":  "f1c8c34d5a1c36f734e1cbf0d50fb8ca7efe03048dddf4ff53dd586cb8621214",
+                            "docs/analysis/A044-outputs/s3-prep/archive-identities.json":  "0949088f8f0c213ca91fd3bd7248940a34473a2ca25827df7975938b37116eff",
+                            "docs/analysis/A044-outputs/s3-prep/candidate-comparison.md":  "2ed40abd8e81b22ff06f60b4eabcd41e0bd2f951d559c538e2f76a6180095cc8",
+                            "docs/analysis/A044-outputs/s3-prep/closeout.md":  "524ac824dfd162bc11c6e873c7e342663b131db7be78e730d7a5271beaf1b363",
+                            "docs/analysis/A044-outputs/s3-prep/dirty-inventory.json":  "a5f751d37667a9a20a20ad529d0db595d4a073f5dac5bc59145e8692378fdbfa",
+                            "docs/analysis/A044-outputs/s3-prep/document-checks.json":  "a77df31dca24d516e13f7ae5d8f6546545f8c832dcb0ef76ba487cd34595c249",
+                            "docs/analysis/A044-outputs/s3-prep/entry.json":  "17f344bf60469e54bf6a0668c909d00438ebec6c834fec5ead11d87e06f42112",
+                            "docs/analysis/A044-outputs/s3-prep/exposure-and-preservation.md":  "99be7240b4272802f254d3b83a3130f3b3ab10b026e1e26c7cf55a778c368db2",
+                            "docs/analysis/A044-outputs/s3-prep/identity-checks.json":  "c54755a0cba84a362fcab97f257f8682b85b3f08365a7d43924402faccc8103d",
+                            "docs/analysis/A044-outputs/s3-prep/kit-compatibility.md":  "444d9d0c22554e226d627c917faca4fb410cbaf43e51fb2f60659365875749cf",
+                            "docs/analysis/A044-outputs/s3-prep/kit-hashes.json":  "225555ba01e1ee2944fda65cde7c5e534f972336d208b746d05fec5352055c29",
+                            "docs/analysis/A044-outputs/s3-prep/license-inventory.md":  "f60661f9f01232b351de6c0ff068899cf1d71b710659134408d7192959522c62",
+                            "docs/analysis/A044-outputs/s3-prep/license-numpy.txt":  "1be1df33863f97a7bc1c4d67980bd6c69c9a6fef0a5ee76e6ad6cb91e56e8491",
+                            "docs/analysis/A044-outputs/s3-prep/license-pandas.txt":  "9850f6b5bdef7346503065807b878deb8058b976c5c329f4c4d23bf4796ce9ae",
+                            "docs/analysis/A044-outputs/s3-prep/license-pytorch.txt":  "bd018feef8825e88181c84eb7e3aa4eafb8f08a20d9fd6ef948569610c4a3e43",
+                            "docs/analysis/A044-outputs/s3-prep/license-scikit-learn.txt":  "50d6a9d340f19ab355609917993114daf5f47e3161067bcf34955bbd05cd9cb0",
+                            "docs/analysis/A044-outputs/s3-prep/license-scipy.txt":  "221e59f5e910fd7f94e44f0dac77436a11338c285c6346232e4a850a50da0e94",
+                            "docs/analysis/A044-outputs/s3-prep/license-tabpfn-v2.txt":  "08b1851b4b6136b5fb0cb124d3258e0d91e3e1623f1be5904b77e4d270d112d8",
+                            "docs/analysis/A044-outputs/s3-prep/license-threadpoolctl.txt":  "ecd5f3320c3064582c4ebd53e413d8cd3ee5bb85f039e4137a3e9d3497a43cd4",
+                            "docs/analysis/A044-outputs/s3-prep/method-e025-notes.md":  "4a8f77cb1e197a5cff669579ef982a0d398a77591a5482c32ea28043163a9dd7",
+                            "docs/analysis/A044-outputs/s3-prep/method-e041-draft.md":  "9809358328376f3ab77ed8fd4eb4982184d4c8336bd7c823b7a189b896de4433",
+                            "docs/analysis/A044-outputs/s3-prep/phase2-validity.md":  "64538cae05ea3a4fe8a2aec8fb40a891b9e0230c5004fbf67b25ddcfc80215c6",
+                            "docs/analysis/A044-outputs/s3-prep/preservation-baseline.json":  "38df508af61d82135690c2f65e9f8742ff5d57f951930ed8ff595e806ff8e310",
+                            "docs/analysis/A044-outputs/s3-prep/public-fetch-license-supplement.json":  "453e42b5c836efbc59f367fb1068c9c7f05a6d368099b7ff8af47447af6dd912",
+                            "docs/analysis/A044-outputs/s3-prep/public-fetch-register.json":  "488a9892567ed8621d4663deaa4b757e0e62145b7811e84888877c1cb10b42c8",
+                            "docs/analysis/A044-outputs/s3-prep/public-fetch-supplement.json":  "a1a78c795a727d28af90ffbf38b8d626bb54d76edf057d154f9130c607b6d982",
+                            "docs/analysis/A044-outputs/s3-prep/revalidation-plan.md":  "5dbca47de7423afe593adbed2472a34d7d486306a76b1088ff1658ab957d78e5",
+                            "docs/analysis/A044-outputs/s3-prep/rules-and-schedule.md":  "67c53da1d1ea528f2ac7da7281830496b9b6676847be033f9855baee8ebaf1e3",
+                            "docs/analysis/A044-outputs/s3-prep/upstream-commit.json":  "c1789f2a2bbd32766686b12ddcd08cc443e1bb518b11a12bc0b6786d6d79babc",
+                            "docs/analysis/A044-outputs/s3-prep/upstream-config.yml.txt":  "bcc6aedf979a22512e2fc23bac5d161eda0dd2735e38c9c04b7c76bed5ad97c6",
+                            "docs/analysis/A044-outputs/s3-prep/upstream-data__unhcr.json.txt":  "a44721a8170ca102170a58490470628c81c085210d68a60e3cb774411019a384",
+                            "docs/analysis/A044-outputs/s3-prep/upstream-data__unicef.json.txt":  "29870d75423bbfbebd103834c33ecdd121f7b93d14e3eba882913e08c9b9b3ab",
+                            "docs/analysis/A044-outputs/s3-prep/upstream-data__world_bank.json.txt":  "6a5e736886d6d5092ff9c72a1841114dc287bf368350d7325f36bd8384e6d23d",
+                            "docs/analysis/A044-outputs/s3-prep/upstream-diff.json":  "c0563763ccb2b2ab2b15c5725a13d5b637ddad75a4d4d948b46d4c295dec937a",
+                            "docs/analysis/A044-outputs/s3-prep/upstream-FAQ.md.txt":  "3ec5bfd08d8dff429cdfb0064ed1f5144146162f701800762ca267e4092265d5",
+                            "docs/analysis/A044-outputs/s3-prep/upstream-LICENSE.txt":  "f38d690effe75689378dd6cb4376ac4204e41cac540990fa4a5800d15d4f5663",
+                            "docs/analysis/A044-outputs/s3-prep/upstream-make_sandbox.py.txt":  "0630967fda75aaacbea8e042b3a73e97cc84470a00dace45172c377c474d806d",
+                            "docs/analysis/A044-outputs/s3-prep/upstream-README.md.txt":  "ffa3430f41211ec532d4fc46cbf1f5edb7853bbb45ab041ccd2c30e5884cf2ac",
+                            "docs/analysis/A044-outputs/s3-prep/upstream-requirements.txt.txt":  "fbbf6a1a9209de01a739a46aa4013dae70bed76e4d8a6c076cebac263f3ddb37",
+                            "docs/analysis/A044-outputs/s3-prep/upstream-score.py.txt":  "d1853f2af6630d3cace2a57c94be51e7b317ff697b531b21553aea21c11f8090",
+                            "docs/analysis/A044-outputs/s3-prep/upstream-tools__check_submission_zip.py.txt":  "e1f7316642f440ece2aedd6e149f5f0a47c108fc836c602815fdd026aeee3d8f",
+                            "docs/analysis/A044-outputs/s3-prep/website.html.txt":  "0b2967f63a6cb5652eb08fcb078443630810ae31c88e2abeb3d4f3f17f24eeed",
+                            "docs/status.md":  "b1c88040544dae96adf93652c27eba07faa43e5ad476c642d288bb70360aa6ae",
+                            "docs/log.md":  "e41f8bebad752440142b3d7ab4193f16dfdcbb52be1d97fa4ce36247fb986ecc",
+                            "docs/phase2-preparation.md":  "2f9262c6b6b9a264972d1bfadfa7fd1ec13690404a316e076abea750f8b21a3f"
+                        }
+}

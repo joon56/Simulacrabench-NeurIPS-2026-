@@ -1,0 +1,38 @@
+{
+    "currency":  "USD",
+    "credit_cap":  5,
+    "cash_cap":  0,
+    "preparation_cap":  1,
+    "shutdown_other_reserve":  1,
+    "published_rates":  {
+                            "gpu_per_second":  0.001097,
+                            "sandbox_physical_core_per_second":  3.942E-05,
+                            "sandbox_GiB_per_second":  6.67E-06,
+                            "source":  "https://modal.com/pricing",
+                            "accessed_kst":  "2026-10-02"
+                        },
+    "conditional_plan":  {
+                             "memory_MiB":  15258,
+                             "cpu_physical":  1,
+                             "seconds":  2400,
+                             "rate":  0.00123580560546875,
+                             "container_cost":  2.965933453125,
+                             "including_prep_and_reserve":  4.965933453125,
+                             "whole_preparation_bound_verified":  false
+                         },
+    "actual_actions":  {
+                           "local_sdk_installations":  1,
+                           "remote_builds":  0,
+                           "remote_transfers":  0,
+                           "remote_sandboxes":  0,
+                           "scientific_processes":  0,
+                           "cloud_resource_seconds":  0,
+                           "created_resource_cost_estimate":  0
+                       },
+    "posted_usage":  null,
+    "remaining_credits_verified":  false,
+    "spend_limit_verified":  false,
+    "usage_limit_verified":  false,
+    "user_report":  "Starter joon56 credits30/spend0/usage30",
+    "billing_reconciliation":  "No task resources created. Account totals not queried; not a live zero-bill attestation."
+}

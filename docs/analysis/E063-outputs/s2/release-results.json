@@ -1,0 +1,357 @@
+{
+  "decision": "RELEASE_QUALIFIED_FOR_USER_REVIEW",
+  "observed_kst": "2026-10-10T00:04:45.147246+09:00",
+  "head": "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+  "snapshot": "submissions/2026-10-09-E063",
+  "zip": {
+    "path": "submissions/2026-10-09-E063.zip",
+    "sha256": "5469b5374f6fb3745cabf64071183ed3de5bbe240ea4f18c034049d560d532d9",
+    "bytes": 15720
+  },
+  "main_sha256": "7fe62705e26c45a891b8bbc8a453db4c525384af4a5989112a8c402672f3950e",
+  "prepared_kst": "2026-10-09T23:51:00.484781+09:00",
+  "source_R_clean_E041_exact_vectors": 189649,
+  "source_H_assembly_extracted_exact_vectors": 189649,
+  "controls_exact": true,
+  "assembly": {
+    "status": "PASS",
+    "instruments": {
+      "unicef": {
+        "vectors": 17856,
+        "max_raw_sum_error": 1.9348226487636566e-07,
+        "comparisons": {
+          "H": {
+            "max_abs": 0.0,
+            "changed_vectors": 0
+          },
+          "E041": {
+            "max_abs": 0.0,
+            "changed_vectors": 0
+          },
+          "E025": {
+            "max_abs": 0.0,
+            "changed_vectors": 0
+          }
+        },
+        "flat_sha256": "07bcb9f2d2d0c59339707ee761d6ca129093ba52b59b6c1c9a13ffef98f1e533",
+        "status": "PASS",
+        "output_file": "docs/analysis/E063-outputs/s2/vectors-assembly-unicef.npz",
+        "sha256": "1269a5064ee632708f14bff1e1ba2190e26f81c05caf1d6582bb52c9c821a62c",
+        "prediction_and_check_seconds": 42.057293600002595
+      },
+      "world_bank": {
+        "vectors": 39520,
+        "max_raw_sum_error": 2.8615613700821996e-07,
+        "comparisons": {
+          "H": {
+            "max_abs": 0.0,
+            "changed_vectors": 0
+          },
+          "E041": {
+            "max_abs": 0.0,
+            "changed_vectors": 0
+          },
+          "E025": {
+            "max_abs": 0.0,
+            "changed_vectors": 0
+          }
+        },
+        "flat_sha256": "ed59718bf900604bb69af3833bd5bcb12aab555924f32ae1009b4bcf90eedc2e",
+        "status": "PASS",
+        "output_file": "docs/analysis/E063-outputs/s2/vectors-assembly-world_bank.npz",
+        "sha256": "4a261189acb717dc70e1791e9bf19f754adc29f81a137f546725d3061304af55",
+        "prediction_and_check_seconds": 117.71734700000161
+      },
+      "unhcr": {
+        "vectors": 132273,
+        "max_raw_sum_error": 2.2838357827126288e-07,
+        "comparisons": {
+          "H": {
+            "max_abs": 0.0,
+            "changed_vectors": 0
+          },
+          "E041": {
+            "max_abs": 0.13446233163832838,
+            "changed_vectors": 46405
+          },
+          "E025": {
+            "max_abs": 0.31079199642686395,
+            "changed_vectors": 50121
+          }
+        },
+        "flat_sha256": "99b66264dda6d11face008eb2835b60a12ba3e2b94d8ab501c8f4431820317de",
+        "status": "PASS",
+        "natural_policy": {
+          "status": "PASS",
+          "active_sections": 7,
+          "sections": 8,
+          "weights_sections_support_lambda_exact": true,
+          "inherited_lambda_changed_items": 37
+        },
+        "output_file": "docs/analysis/E063-outputs/s2/vectors-assembly-unhcr.npz",
+        "sha256": "445edba1bb9917b3a6cd85483284f4e171e3a5e0d705cf3a18f7382b7d06b5f0",
+        "prediction_and_check_seconds": 296.60970029999953
+      }
+    },
+    "environment": {
+      "python": "3.13.14 (tags/v3.13.14:fd17997, Jun 10 2026, 13:03:48) [MSC v.1944 64 bit (AMD64)]",
+      "numpy": "2.5.1",
+      "pandas": "3.0.5",
+      "torch": "2.13.0+cpu",
+      "torch_threads": 2,
+      "interop_threads": 2,
+      "cuda_available": false,
+      "threadpools": [
+        {
+          "user_api": "blas",
+          "internal_api": "openblas",
+          "num_threads": 2,
+          "prefix": "libscipy_openblas",
+          "filepath": "C:\\Users\\USER\\Desktop\\SimulacraBench\\.venv\\Lib\\site-packages\\numpy.libs\\libscipy_openblas64_-b788215d9d47792bcba3a2e2a7114320.dll",
+          "version": "0.3.33.112.0",
+          "threading_layer": "pthreads",
+          "architecture": "Haswell"
+        },
+        {
+          "user_api": "openmp",
+          "internal_api": "openmp",
+          "num_threads": 2,
+          "prefix": "libiomp",
+          "filepath": "C:\\Users\\USER\\Desktop\\SimulacraBench\\.venv\\Lib\\site-packages\\torch\\lib\\libiomp5md.dll",
+          "version": null
+        },
+        {
+          "user_api": "openmp",
+          "internal_api": "openmp",
+          "num_threads": 1,
+          "prefix": "libiomp",
+          "filepath": "C:\\Users\\USER\\Desktop\\SimulacraBench\\.venv\\Lib\\site-packages\\torch\\lib\\libiompstubs5md.dll",
+          "version": null
+        },
+        {
+          "user_api": "openmp",
+          "internal_api": "openmp",
+          "num_threads": 2,
+          "prefix": "vcomp",
+          "filepath": "C:\\Users\\USER\\Desktop\\SimulacraBench\\.venv\\Lib\\site-packages\\sklearn\\.libs\\vcomp140.dll",
+          "version": null
+        },
+        {
+          "user_api": "blas",
+          "internal_api": "openblas",
+          "num_threads": 2,
+          "prefix": "libscipy_openblas",
+          "filepath": "C:\\Users\\USER\\Desktop\\SimulacraBench\\.venv\\Lib\\site-packages\\scipy.libs\\libscipy_openblas-197ee2fc9b4d071f7e048078cac74115.dll",
+          "version": "0.3.31.dev",
+          "threading_layer": "pthreads",
+          "architecture": "Haswell"
+        }
+      ],
+      "scipy": "1.18.1",
+      "sklearn": "1.9.0",
+      "pyarrow": "25.0.1",
+      "packages": {
+        "numpy": "2.5.1",
+        "pandas": "3.0.5",
+        "scipy": "1.18.1",
+        "torch": "2.13.0+cpu",
+        "pyarrow": "25.0.1",
+        "scikit-learn": "1.9.0",
+        "threadpoolctl": "3.6.0",
+        "PyYAML": "6.0.3"
+      },
+      "executable_sha256": "b70275ad94210fce7548761143be5e177769721045e287bb6c80aac3f928c65b"
+    },
+    "cumulative_calls": {
+      "full_stack": 3,
+      "neural": 9,
+      "metric": 8
+    }
+  },
+  "official": {
+    "status": "PASS",
+    "instruments": {
+      "unicef": {
+        "vectors": 17856,
+        "max_raw_sum_error": 1.9348226487636566e-07,
+        "comparisons": {
+          "H": {
+            "max_abs": 0.0,
+            "changed_vectors": 0
+          },
+          "E041": {
+            "max_abs": 0.0,
+            "changed_vectors": 0
+          },
+          "E025": {
+            "max_abs": 0.0,
+            "changed_vectors": 0
+          }
+        },
+        "flat_sha256": "07bcb9f2d2d0c59339707ee761d6ca129093ba52b59b6c1c9a13ffef98f1e533",
+        "status": "PASS",
+        "skill": 0.5006484230707156,
+        "delta_E025": 0.0,
+        "delta_E041": 0.0,
+        "release_pass": true,
+        "cli_startup_to_exit_seconds": 73.51217770000221,
+        "scorer_seconds": 71.87745642662048,
+        "official_log": "docs\\analysis\\E063-outputs\\s2\\official-unicef.json",
+        "predictions_sha256": "990977bdd0792b171908ab65988610c60d8f8f1d642da005d001301f1013b664"
+      },
+      "world_bank": {
+        "vectors": 39520,
+        "max_raw_sum_error": 2.8615613700821996e-07,
+        "comparisons": {
+          "H": {
+            "max_abs": 0.0,
+            "changed_vectors": 0
+          },
+          "E041": {
+            "max_abs": 0.0,
+            "changed_vectors": 0
+          },
+          "E025": {
+            "max_abs": 0.0,
+            "changed_vectors": 0
+          }
+        },
+        "flat_sha256": "ed59718bf900604bb69af3833bd5bcb12aab555924f32ae1009b4bcf90eedc2e",
+        "status": "PASS",
+        "skill": 0.45471730736298255,
+        "delta_E025": 0.0,
+        "delta_E041": 0.0,
+        "release_pass": true,
+        "cli_startup_to_exit_seconds": 168.28066709999985,
+        "scorer_seconds": 166.5829553604126,
+        "official_log": "docs\\analysis\\E063-outputs\\s2\\official-world_bank.json",
+        "predictions_sha256": "0e85bb043eb280d6722b1c247c6b2b716f27bbf6d4d9cc23f160ac8ae08ee690"
+      },
+      "unhcr": {
+        "vectors": 132273,
+        "max_raw_sum_error": 2.2838357827126288e-07,
+        "comparisons": {
+          "H": {
+            "max_abs": 0.0,
+            "changed_vectors": 0
+          },
+          "E041": {
+            "max_abs": 0.13446233163832838,
+            "changed_vectors": 46405
+          },
+          "E025": {
+            "max_abs": 0.31079199642686395,
+            "changed_vectors": 50121
+          }
+        },
+        "flat_sha256": "99b66264dda6d11face008eb2835b60a12ba3e2b94d8ab501c8f4431820317de",
+        "status": "PASS",
+        "skill": 0.5624803077254883,
+        "delta_E025": -0.00046856597952815715,
+        "delta_E041": 1.757886784692353e-05,
+        "release_pass": true,
+        "cli_startup_to_exit_seconds": 448.9711657000007,
+        "scorer_seconds": 446.97822403907776,
+        "official_log": "docs\\analysis\\E063-outputs\\s2\\official-unhcr.json",
+        "predictions_sha256": "51b26777099cbc1b7e9bcb5cfc814a3a6e92a2c58717612ed00e2dfcfcc08439",
+        "natural_policy": {
+          "status": "PASS",
+          "active_sections": 7,
+          "sections": 8,
+          "weights_sections_support_lambda_exact": true,
+          "inherited_lambda_changed_items": 37
+        }
+      }
+    },
+    "cli_seconds_sum": 690.7640105000028,
+    "cumulative_calls": {
+      "full_stack": 6,
+      "neural": 18,
+      "metric": 16
+    }
+  },
+  "regression": {
+    "status": "PASS",
+    "instruments": {
+      "unicef": {
+        "skill": 0.5006484230707156,
+        "delta_E025": 0.0,
+        "delta_E041": 0.0,
+        "release_pass": true
+      },
+      "world_bank": {
+        "skill": 0.45471730736298255,
+        "delta_E025": 0.0,
+        "delta_E041": 0.0,
+        "release_pass": true
+      },
+      "unhcr": {
+        "skill": 0.5624803077254883,
+        "delta_E025": -0.00046856597952815715,
+        "delta_E041": 1.757886784692353e-05,
+        "release_pass": true
+      }
+    }
+  },
+  "baseline_reuse": {
+    "status": "PASS",
+    "frozen_before_candidate_calls": true,
+    "R_clean_E041_exact_vectors": 189649,
+    "baseline_evidence": {
+      "E025": {
+        "decision": "REUSE",
+        "fresh_all3": 0,
+        "inputs_schema_roles_order_mask_equal": true,
+        "snapshot_source_hashes_verified": true,
+        "completion_raw_manifest_verified": true,
+        "common_environment_equal": true,
+        "missing_environment": "E062 did not separately record executable SHA or scipy/sklearn/pyarrow package versions; current E063 full versions verified, no invented historical versions.",
+        "import_stage": "Current numeric/scoring dependencies imported before pool check; compare shared recorded Python/numpy/pandas/torch/thread/CUDA fields, not full pool-list JSON.",
+        "historical_wall_seconds": 324.97659750000093
+      },
+      "E041": {
+        "decision": "REUSE",
+        "fresh_all3": 0,
+        "inputs_schema_roles_order_mask_equal": true,
+        "snapshot_source_hashes_verified": true,
+        "completion_raw_manifest_verified": true,
+        "common_environment_equal": true,
+        "missing_environment": "E062 did not separately record executable SHA or scipy/sklearn/pyarrow package versions; current E063 full versions verified, no invented historical versions.",
+        "import_stage": "Current numeric/scoring dependencies imported before pool check; compare shared recorded Python/numpy/pandas/torch/thread/CUDA fields, not full pool-list JSON.",
+        "historical_wall_seconds": 342.9659210000009
+      }
+    },
+    "decision_basis": "Qualified clean outputs reused; no missing required provenance, no conditional fresh branch, not score-dependent."
+  },
+  "identity_supplement": {
+    "status": "PASS",
+    "observed_utc": "2026-10-09T14:46:22.662100+00:00",
+    "path": "submissions/2026-09-09-E025/main.py",
+    "expected": "00793cf9d720d6f7511ffd738935206b3a5401f2454255409429db8d55e991b9",
+    "actual": "00793cf9d720d6f7511ffd738935206b3a5401f2454255409429db8d55e991b9",
+    "original_preflight_omission": "Current E025 snapshot byte hash absent entry hash map; preflight snapshot_source_hashes_verified overstates that particular current-byte check. E062 frozen-inputs snapshot identity and completed raw provenance were already verified. Preserve original records.",
+    "timing": "After assembly launch, before evaluator/ZIP/official; not retroactively before candidate execution.",
+    "repair": "Only affected current snapshot identity checked; no model/policy/input/source changes, no numerical repeat, no baseline fit. E025 snapshot is reference provenance, not a candidate execution dependency.",
+    "freeze_preserved": true
+  },
+  "projection": {
+    "explicit_read_requests": 24,
+    "DEV_truth_requests": 3,
+    "truth_after_three_output_freeze": true,
+    "TEST_requests": 0,
+    "official_cli": "Three separate reads of new TRAIN/DEV-only staging and masked driver JSON; not included in custom projection request count"
+  },
+  "hosted": {
+    "uploaded": false,
+    "ID": null,
+    "timestamp": null,
+    "bytes_verified": false,
+    "account_slot": null,
+    "result": null
+  },
+  "scientific_reading": "Weak exposed synthetic effect only; S1 8/16 negative descriptive groups inherited, no independent audit or actual ERPIS/DEV/TEST effect estimate. E063 parked.",
+  "preserved_state": "E041 incumbent/E025 fallback; E057/E060/E061/E062/E063 parked; all STOP/HOLD/exposure/A_half/A018/S3 boundaries unchanged.",
+  "preservation_hash_check_count": 114,
+  "selected_hash_mismatches": [],
+  "qualification_correction": "Initial preflight omitted current E025 snapshot hash; exact late supplemental identity verified before evaluator/package/official, old claim corrected without rewriting freeze or rerunning successful models."
+}

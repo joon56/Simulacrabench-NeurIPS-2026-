@@ -1,0 +1,21 @@
+{
+    "frozen_at":  "2026-10-23T16:33:03.1576772+09:00",
+    "entry":  "src/models/hh_cap.py",
+    "files":  [
+                  "src/__init__.py",
+                  "src/models/__init__.py",
+                  "src/models/hh_cap.py",
+                  "src/models/link_sharp.py",
+                  "src/models/hh_sharp.py",
+                  "src/models/hier_backoff.py",
+                  "src/models/logit_blend.py",
+                  "src/models/cond_agree.py",
+                  "src/models/shared_trunk.py",
+                  "src/models/prob_link.py",
+                  "src/models/dup_link.py",
+                  "src/models/hh_link.py",
+                  "src/models/cross_link.py"
+              ],
+    "trace":  "hh_cap -\u003e link_sharp,hh_sharp; link_sharp -\u003e hier_backoff,logit_blend,cond_agree,shared_trunk,prob_link,dup_link; hh_sharp -\u003e hier_backoff,prob_link,link_sharp,dup_link,hh_link; prob_link -\u003e cross_link; all remaining local imports stay inside this set. src and src/models markers empty.",
+    "scope":  "Only this explicit traced closure will be hashed; historical entire src tree not authorized"
+}

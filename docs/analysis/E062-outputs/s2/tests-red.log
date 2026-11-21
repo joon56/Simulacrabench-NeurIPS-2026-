@@ -1,0 +1,18 @@
+test_frozen_prefix_and_standalone_import (tests.test_e062_assembly.AssemblyBoundaryTests.test_frozen_prefix_and_standalone_import) ... FAIL
+
+======================================================================
+FAIL: test_frozen_prefix_and_standalone_import (tests.test_e062_assembly.AssemblyBoundaryTests.test_frozen_prefix_and_standalone_import)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\SimulacraBench\tests\test_e062_assembly.py", line 23, in test_frozen_prefix_and_standalone_import
+    base, raw, module = self.assembly()
+                        ~~~~~~~~~~~~~^^
+  File "C:\Users\USER\Desktop\SimulacraBench\tests\test_e062_assembly.py", line 15, in assembly
+    self.fail('E062 assembler not implemented')
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: E062 assembler not implemented
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+FAILED (failures=1)

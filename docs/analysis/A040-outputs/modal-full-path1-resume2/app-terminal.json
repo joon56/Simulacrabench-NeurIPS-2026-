@@ -1,0 +1,16 @@
+﻿{
+  "description": "a040-modal-resume2-20261003",
+  "app_id": "ap-CJkQ7byYW3D872nirY6KRM",
+  "lifecycle": {
+    "state": "stopped",
+    "created_at": "2026-10-03 00:48:37+09:00",
+    "created_by": "joon56",
+    "deployed_at": "2026-10-03 00:48:37+09:00",
+    "deployed_by": "joon56",
+    "version": 1,
+    "stopped_at": "2026-10-03 00:48:40+09:00",
+    "stopped_by": "joon56"
+  },
+  "functions": {},
+  "servers": {}
+}

@@ -1,0 +1,202 @@
+{
+    "created_utc":  "2026-10-05T10:05:38.4468138+00:00",
+    "excludes":  "artifact-manifest.json itself",
+    "scope":  "This resume5 directory only",
+    "files":  [
+                  {
+                      "path":  "builder-evidence.json",
+                      "bytes":  538,
+                      "sha256":  "046ce51e24e8bc336c474c8997159b4dbd424986882f41760c6189ac252bb655"
+                  },
+                  {
+                      "path":  "builder-linux-requirements.lock.txt",
+                      "bytes":  1236,
+                      "sha256":  "2d7798a4209b93728854c4f54477f743ed84769d6d47129f9dd1e9c59cd8f3b5"
+                  },
+                  {
+                      "path":  "builder-stderr.txt",
+                      "bytes":  0,
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                  },
+                  {
+                      "path":  "builder-stdout.txt",
+                      "bytes":  18925,
+                      "sha256":  "7a9dc73e22dc0f725f87708ddab20e841ed7f49842c375d25263428d9965988b"
+                  },
+                  {
+                      "path":  "check_config.py",
+                      "bytes":  2080,
+                      "sha256":  "1300a1e85310c5dde57da5df227d8e8ce0ab4e1bf380323a4fdb3fb0c337cb29"
+                  },
+                  {
+                      "path":  "closeout.md",
+                      "bytes":  2823,
+                      "sha256":  "a8808baa3516b0b50ff77e9d94abb36b43c4caad2c2659c1c0ce7914aec30e76"
+                  },
+                  {
+                      "path":  "config-process.json",
+                      "bytes":  106,
+                      "sha256":  "8e4e3633543925ee76088b074949d37b14a47ad979cf3981be9f8dd10081ff5e"
+                  },
+                  {
+                      "path":  "config-source-input-freeze.json",
+                      "bytes":  8948,
+                      "sha256":  "d3946db0d7c721af9692f0cfd5f4df3c27d969e55fd59244ffb51dbaf09090b9"
+                  },
+                  {
+                      "path":  "config-stderr.txt",
+                      "bytes":  0,
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                  },
+                  {
+                      "path":  "config-stdout.txt",
+                      "bytes":  225,
+                      "sha256":  "5c42bd487ec53f13772ac3b9344a9bbb7cb42577cd5bf9f11d5d126dd196dd28"
+                  },
+                  {
+                      "path":  "dirty-closeout.txt",
+                      "bytes":  3127,
+                      "sha256":  "463d08e2b615d33c4098e40a9391804e645298817ebf91853b6e76439ad3c739"
+                  },
+                  {
+                      "path":  "dirty-entry.txt",
+                      "bytes":  3219,
+                      "sha256":  "184f0fe5ff15527c15fb34d257489dd2552aa7f718ac2c3259d5032741e8d7e9"
+                  },
+                  {
+                      "path":  "entry.json",
+                      "bytes":  2089,
+                      "sha256":  "635ec21618728d45df4662cca5baceb095ac1bb7ea79feea2d6ea43f420b6d10"
+                  },
+                  {
+                      "path":  "exposure-ledger.md",
+                      "bytes":  1834,
+                      "sha256":  "3763d726549ce2685b8a2f67b49cdf9b0700afbb1749288f1673e324a8d736f2"
+                  },
+                  {
+                      "path":  "failure-analysis.md",
+                      "bytes":  3016,
+                      "sha256":  "d7c6ac38c67fca245131966d3c557a2ff040b01be134fc1c8a12a7909872e7c0"
+                  },
+                  {
+                      "path":  "final-record-check.json",
+                      "bytes":  436,
+                      "sha256":  "b48a0ba1577dc8ba7f575a109d3b537014a9ed9fef402b38b3ce56b2d4c11df0"
+                  },
+                  {
+                      "path":  "launch-intent.json",
+                      "bytes":  411,
+                      "sha256":  "716b7045b8fecc4eb74273efce69616ff9b908444370bf034f885413e50ae011"
+                  },
+                  {
+                      "path":  "launcher-exit.json",
+                      "bytes":  16,
+                      "sha256":  "2618b95f1f6be6bfde8537756f85b83845d039001563135b9d59d817446733eb"
+                  },
+                  {
+                      "path":  "launcher-pid.json",
+                      "bytes":  184,
+                      "sha256":  "ad91896a1ff576284ba4636a3c0a9eef9833040fc347b2fe930610b3fc333a58"
+                  },
+                  {
+                      "path":  "live-config.json",
+                      "bytes":  6697,
+                      "sha256":  "3096841f7172920292712c1eec928c8f806b3ffd70b68a70236bfb91b7403511"
+                  },
+                  {
+                      "path":  "local-closeout-state.json",
+                      "bytes":  470,
+                      "sha256":  "fd0d7c39b3c461b0852d0cbefa77e4124d4e58aed9a9a4cd07f65a083d7aeb8c"
+                  },
+                  {
+                      "path":  "local-process-tree.json",
+                      "bytes":  668,
+                      "sha256":  "aa804aeec1a2636e99cfa2c6db12dce0b8a23972f781d0b9efeb8001b6e6eb27"
+                  },
+                  {
+                      "path":  "operational-contract.md",
+                      "bytes":  2773,
+                      "sha256":  "acee765f53ebea90e8e6c75047930cef78fb06326c1c3539ad1af547de333bd5"
+                  },
+                  {
+                      "path":  "phase-evidence.json",
+                      "bytes":  3305,
+                      "sha256":  "119943a2f44d374a5f7c3fcf499ae361997012007b69d8c9e2e15a4114b80577"
+                  },
+                  {
+                      "path":  "preservation-evidence.json",
+                      "bytes":  10619,
+                      "sha256":  "ad28c70c07c1565a6394688d20b15ec84edc3ccc24a6d9541c4220c7cc3d3839"
+                  },
+                  {
+                      "path":  "resources.json",
+                      "bytes":  1880,
+                      "sha256":  "586fc24d63b6d65e34b51394800b5d80ed27dbbdac61714cf2801145afe3187e"
+                  },
+                  {
+                      "path":  "s0-handoff.ko.md",
+                      "bytes":  2226,
+                      "sha256":  "209feefeeff0526a573282eacb9bc27cf0eaf824df6eb437680f05a3d6c1eb19"
+                  },
+                  {
+                      "path":  "session-cost-time-ledger.json",
+                      "bytes":  3124,
+                      "sha256":  "24d4566cb25a2dfc410830d2d7e659977b15c5e5154bb6f62f300f10622b4715"
+                  },
+                  {
+                      "path":  "static-config-verification.json",
+                      "bytes":  253,
+                      "sha256":  "89acf757729e64aabd31c13b762632f00327139c37bc4f3153322adfabb29a3d"
+                  },
+                  {
+                      "path":  "user-authority.ko.md",
+                      "bytes":  10179,
+                      "sha256":  "b67fd5c80175d04433e6307b5301acf67d3fd54b88e0f8d250514328d503fd2e"
+                  },
+                  {
+                      "path":  "verification.json",
+                      "bytes":  2517,
+                      "sha256":  "64603d4f2acf63481632cae6a359e006f7c0405ebe438eb487607b9562cf6cfd"
+                  },
+                  {
+                      "path":  "run/attempt-started.json",
+                      "bytes":  88,
+                      "sha256":  "a77a96bdf81b68892e6ccf34c0ec9077eef42def1c34745b5b274135f0fa9439"
+                  },
+                  {
+                      "path":  "run/cost-ledger.json",
+                      "bytes":  299,
+                      "sha256":  "0b04db605f78a254f5c852a94d434f734af660424aca495e5feebf0afe09d998"
+                  },
+                  {
+                      "path":  "run/events.jsonl",
+                      "bytes":  900,
+                      "sha256":  "b3f02274c003de8efe519d5adf2ecb6e37fd3fff6d109dbd9fba76fb4172bf02"
+                  },
+                  {
+                      "path":  "run/plan.json",
+                      "bytes":  449,
+                      "sha256":  "a9ac74057c15755a09a52d3c2c693bea7fe4009b751616f8e8fc47bbe1090267"
+                  },
+                  {
+                      "path":  "run/result.json",
+                      "bytes":  4306,
+                      "sha256":  "d5baee1658b0ac07726fe22a0f2605bcac881c7fcf27d58825e03ca92fa3a02a"
+                  },
+                  {
+                      "path":  "run/source-gate.json",
+                      "bytes":  135,
+                      "sha256":  "5690330e11ce714551f61ac1228060d805a8a32a397ef5285770a3e75e26b76b"
+                  },
+                  {
+                      "path":  "run/state.json",
+                      "bytes":  4306,
+                      "sha256":  "d5baee1658b0ac07726fe22a0f2605bcac881c7fcf27d58825e03ca92fa3a02a"
+                  },
+                  {
+                      "path":  "run/termination-receipt.json",
+                      "bytes":  2459,
+                      "sha256":  "3d33bddc22ebc138aba1c9ae3975819f398d06e1484054c5787e37a19f0e06b5"
+                  }
+              ]
+}

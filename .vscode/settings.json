@@ -1,0 +1,17 @@
+{
+  "python.analysis.exclude": [
+    "**/node_modules",
+    "**/__pycache__",
+    "**/.*",
+    "tmp",
+    "trip",
+    "external",
+    "submissions/**/build-*",
+    "output"
+  ],
+  "files.watcherExclude": {
+    "**/tmp/**": true,
+    "**/trip/**": true,
+    "**/.venv/**": true
+  }
+}

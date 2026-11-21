@@ -1,0 +1,20 @@
+{
+  "scope": "Static inline Markdown file-link survey; excludes A029 output snapshots and .ua; no target content read",
+  "documents": 206,
+  "issues": [
+    {
+      "path": "docs/analysis/E060-outputs/registration.md",
+      "missing_or_unparsed_targets": [
+        "docs/analysis/E060-outputs/registration.md: ../analysis/A025-submission-oriented-review.md"
+      ]
+    },
+    {
+      "path": "docs/analysis/E060-outputs/technical-retry1/registration.md",
+      "missing_or_unparsed_targets": [
+        "docs/analysis/E060-outputs/technical-retry1/registration.md: ../analysis/A025-submission-oriented-review.md"
+      ]
+    }
+  ],
+  "disposition": "Two frozen E060 registration copies use original-location relative links; preserved. Intended destination docs/analysis/A025-submission-oriented-review.md exists.",
+  "limits": "Not an anchor, wiki-link or general Markdown parser. Historical links require interpretation."
+}

@@ -1,0 +1,11 @@
+﻿{
+    "utc":  "2026-10-23T06:38:22.0726842Z",
+    "launcher_pid":  39600,
+    "original_mask":  65535,
+    "selected_logical_cpus":  [
+                                  0,
+                                  2
+                              ],
+    "applied_mask":  5,
+    "scope":  "Owned official launcher and inherited descendants only; numerical threads2 unchanged; no model parameter change"
+}

@@ -1,0 +1,238 @@
+--- full-path-local/generate_fixture.py
++++ full-path-local-retry1/generate_fixture.py
+@@ -10,9 +10,10 @@
+ 
+ HERE=Path(__file__).resolve().parent
+ ROOT=HERE.parents[3]
+-TEMP=ROOT/'tmp/a040-full-path-local'
++TEMP=ROOT/'tmp/a040-full-path-local-retry1'
+ sys.path.insert(0,str(HERE))
+ from orchestration import layout
++from schema_entry import runtime_entry
+ 
+ 
+ def main():
+@@ -26,7 +27,7 @@
+     records=[]
+     for name,nvisible,nquery in [('unicef',14885,1488),('world_bank',5195,520),('unhcr',8279,621)]:
+         schema_path=ROOT/'external/starter-kit/data'/(name+'.json')
+-        schema=json.loads(schema_path.read_text(encoding='utf-8-sig'))
++        schema,runtime_metadata=runtime_entry(schema_path)
+         given,heads,options=layout(schema);n=nvisible+nquery
+         columns={}
+         blocks=[roles[k] for k in ('fit','selection','evaluation')] if name=='unhcr' else [list(range(nvisible))]
+@@ -54,6 +55,7 @@
+                         'sha256':hashlib.sha256(text.encode()).hexdigest(),'bytes':output.stat().st_size,
+                         'schema_path':schema_path.relative_to(ROOT).as_posix(),
+                         'schema_sha256':hashlib.sha256(schema_path.read_bytes()).hexdigest(),
++                        'runtime_schema':runtime_metadata,
+                         'visible':nvisible,'query':nquery,'given':len(given),'heads':len(heads),
+                         'vectors':nquery*len(heads),'coverage':coverage})
+     result={'seed':4000,'query_truth_generated':False,'old_fixture_read':False,
+--- full-path-local/runner.py
++++ full-path-local-retry1/runner.py
+@@ -13,7 +13,7 @@
+ START=time.perf_counter()
+ HERE=Path(__file__).resolve().parent
+ ROOT=HERE.parents[3]
+-TEMP=ROOT/'tmp/a040-full-path-local'
++TEMP=ROOT/'tmp/a040-full-path-local-retry1'
+ SOURCE=ROOT/'tmp/a040-local-technical/source/tabicl-0dbff3ec8fc68c123c87af77b0ea8b25cd2d23f3/src'
+ CHECKPOINT=ROOT/'tmp/a040-local-technical/acquisition/tabicl-classifier-v2-20260212.ckpt'
+ sys.path[:0]=[str(HERE),str(SOURCE)]
+@@ -74,6 +74,7 @@
+     LOG.emit('runtime',torch=torch.__version__,cuda=torch.version.cuda,device=torch.cuda.get_device_name(0),affinity=current.cpu_affinity())
+     from orchestration import FullPathPredictor,RolePlan,layout,restore,fingerprint
+     from observer import E041Observer
++    from schema_entry import runtime_entry
+     source=ROOT/'submissions/2026-09-19-E041/main.py'
+     spec=importlib.util.spec_from_file_location('e041',source)
+     e041=importlib.util.module_from_spec(spec);sys.modules['e041']=e041;spec.loader.exec_module(e041)
+@@ -165,7 +166,9 @@
+         frame=pd.DataFrame(payload['data'],columns=payload['columns'],index=payload['index'],dtype=object)
+         frame=frame.where(frame.notna(),np.nan)
+         del payload
+-        schema=json.loads((ROOT/row['schema_path']).read_text(encoding='utf-8-sig'))
++        schema,runtime_metadata=runtime_entry(ROOT/row['schema_path'])
++        if runtime_metadata!=row['runtime_schema']:raise AssertionError('Generator/runtime normalized schema mismatch')
++        LOG.emit('runtime_schema_verified',instrument=name,runtime_sha256=runtime_metadata['runtime_sha256'])
+         given,heads,options=layout(schema)
+         if list(frame.index)!=list(range(row['visible']+row['query'])):raise AssertionError('Original row positions lost')
+         if not frame.iloc[row['visible']:][heads].isna().all().all():raise PermissionError('External query truth present')
+--- /dev/null
++++ full-path-local-retry1/schema_entry.py
+@@ -0,0 +1,38 @@
++"""Explicit official runtime-schema entry; no response generation or scoring."""
++from functools import lru_cache
++import hashlib
++import importlib.util
++import json
++from pathlib import Path
++
++ROOT = Path(__file__).resolve().parents[4]
++KIT = ROOT / 'external/starter-kit'
++CONFIG = KIT / 'config.yml'
++
++
++@lru_cache(maxsize=1)
++def official_loader():
++    spec = importlib.util.spec_from_file_location('a040_official_schema', KIT / 'make_sandbox.py')
++    module = importlib.util.module_from_spec(spec)
++    spec.loader.exec_module(module)
++    return module
++
++
++def sha256(path):
++    return hashlib.sha256(Path(path).read_bytes()).hexdigest()
++
++
++def runtime_entry(schema_path, config_path=CONFIG):
++    schema_path, config_path = Path(schema_path), Path(config_path)
++    loader = official_loader()
++    config = loader.load_config(str(config_path))
++    schema = loader.load_schema(str(schema_path), config)
++    canonical = json.dumps(schema, ensure_ascii=False, separators=(',', ':')).encode('utf-8')
++    metadata = dict(raw_sha256=sha256(schema_path), config_sha256=sha256(config_path),
++                    loader_sha256=sha256(KIT / 'make_sandbox.py'),
++                    runtime_sha256=hashlib.sha256(canonical).hexdigest(),
++                    runtime_hash_encoding='UTF-8 JSON ensure_ascii=False,separators=comma/colon,original key order',
++                    item_order=list(schema['items']),
++                    options={n:loader.options_for(schema,n) for n,r in schema['items'].items()
++                             if r['class'] in ('GIVEN','PREDICT')})
++    return schema, metadata
+--- /dev/null
++++ full-path-local-retry1/test_schema_entry.py
+@@ -0,0 +1,122 @@
++"""One bounded all3 official-entry regression plus unchanged role/branch spies."""
++import ast
++import copy
++import json
++import os
++from pathlib import Path
++import sys
++import threading
++import time
++import traceback
++
++START=time.perf_counter()
++HERE=Path(__file__).resolve().parent
++ROOT=HERE.parents[3]
++sys.path.insert(0,str(HERE))
++for variable in ('OMP_NUM_THREADS','MKL_NUM_THREADS','OPENBLAS_NUM_THREADS','NUMEXPR_NUM_THREADS'):
++    os.environ[variable]='2'
++
++
++def main():
++    import psutil
++    process=psutil.Process();process.cpu_affinity(process.cpu_affinity()[:2])
++    from schema_entry import runtime_entry,official_loader,CONFIG,KIT
++    from orchestration import layout
++    import tests_model_free
++    loader=official_loader();config=loader.load_config(str(CONFIG))
++    fixture=ROOT/'tmp/a040-full-path-local-retry1/schema-entry-fixtures'
++    reports=[];negatives=[]
++    expected={'unicef':(7,12,14885,1488),'world_bank':(9,76,5195,520),'unhcr':(17,213,8279,621)}
++    for name,(ng,nh,nf,nq) in expected.items():
++        path=KIT/'data'/(name+'.json')
++        raw=json.loads(path.read_text(encoding='utf-8'))
++        schema,metadata=runtime_entry(path)
++        direct=loader.load_schema(str(path),config)
++        assert json.dumps(schema,ensure_ascii=False)==json.dumps(direct,ensure_ascii=False)
++        assert list(schema['items'])==list(raw['items'])
++        given,heads,options=layout(schema)
++        assert given==[n for n,r in raw['items'].items() if r['class']=='GIVEN']
++        assert heads==[n for n,r in raw['items'].items() if r['class']=='PREDICT']
++        assert (len(given),len(heads),schema['split']['n_train'],schema['split']['n_dev'])==(ng,nh,nf,nq)
++        assert sum(schema['split'][key] for key in ('n_train','n_dev','n_test'))==schema['dataset']['n_rows']
++        assert ('gated_value' in raw)==(name=='unhcr')
++        assert schema['gated_value']==config['gated_value']
++        for item,values in options.items():
++            assert values==loader.options_for(direct,item)==metadata['options'][item]
++            spec=raw['items'][item];gated=bool(spec.get('gate'))
++            assert values[:len(spec['values'])]==spec['values']
++            assert len(values)==len(spec['values'])+int(gated)
++            assert values.count(config['gated_value'])==int(gated)
++            if gated:assert values[-1]==config['gated_value']
++        alternate=copy.deepcopy(raw);alternate['gated_value']='CONTRADICTORY_RAW_METADATA'
++        altered=fixture/(name+'-raw-override.json')
++        with altered.open('x',encoding='utf-8') as stream:json.dump(alternate,stream)
++        changed,changed_metadata=runtime_entry(altered)
++        assert changed==schema and changed_metadata['runtime_sha256']==metadata['runtime_sha256']
++        reports.append(dict(instrument=name,given=len(given),heads=len(heads),visible=nf,query=nq,
++                            vectors=nh*nq,probability_width=sum(len(options[h]) for h in heads),metadata=metadata))
++    assert sum(r['vectors'] for r in reports)==189649
++    assert reports[-1]['probability_width']==834
++    template=json.loads((KIT/'data/unicef.json').read_text(encoding='utf-8'))
++    cases=[]
++    def invalid(label,mutate):
++        data=copy.deepcopy(template);mutate(data);cases.append((label,data))
++    first=next(iter(template['items']))
++    invalid('missing_values',lambda s:s['items'][first].update(values=[]))
++    invalid('null_option',lambda s:s['items'][first].update(values=[None]))
++    invalid('numeric_option',lambda s:s['items'][first].update(values=[123]))
++    invalid('sentinel_in_values',lambda s:s['items'][first].update(values=[config['gated_value']]))
++    invalid('missing_parent',lambda s:s['items'][first].update(gate={'parent':'MISSING'}))
++    invalid('dataset_field',lambda s:s['dataset'].pop('version'))
++    invalid('dataset_rows',lambda s:s['dataset'].update(n_rows=0))
++    invalid('split_missing',lambda s:s['split'].pop('n_train'))
++    invalid('split_type',lambda s:s['split'].update(n_train=True))
++    invalid('split_total',lambda s:s['split'].update(n_train=s['split']['n_train']+1))
++    for label,data in cases:
++        path=fixture/(label+'.json')
++        with path.open('x',encoding='utf-8') as stream:json.dump(data,stream)
++        messages=[]
++        for call in (lambda:loader.load_schema(str(path),config),lambda:runtime_entry(path)):
++            try:call()
++            except ValueError as exc:messages.append(str(exc))
++            else:raise AssertionError('Invalid schema silently accepted: '+label)
++        assert messages[0]==messages[1]
++        negatives.append(dict(case=label,expected_exception='ValueError',message=messages[0]))
++    import yaml
++    bad_config=copy.deepcopy(config);bad_config['phases'][1]['noised']='not_boolean'
++    config_path=fixture/'invalid-config.yml'
++    with config_path.open('x',encoding='utf-8') as stream:yaml.safe_dump(bad_config,stream)
++    try:runtime_entry(KIT/'data/unicef.json',config_path)
++    except ValueError as exc:negatives.append(dict(case='invalid_config',expected_exception='ValueError',message=str(exc)))
++    else:raise AssertionError('Invalid config silently accepted')
++    connections=[]
++    for name in ('generate_fixture.py','runner.py'):
++        tree=ast.parse((HERE/name).read_text(encoding='utf-8-sig'))
++        imported=[n for n in ast.walk(tree) if isinstance(n,ast.ImportFrom) and n.module=='schema_entry'
++                  and any(a.name=='runtime_entry' for a in n.names)]
++        assignments=[n for n in ast.walk(tree) if isinstance(n,ast.Assign) and isinstance(n.value,ast.Call)
++                     and isinstance(n.value.func,ast.Name) and n.value.func.id=='runtime_entry']
++        assert len(imported)==len(assignments)==1
++        assert isinstance(assignments[0].targets[0],ast.Tuple)
++        assert [n.id for n in assignments[0].targets[0].elts]==['schema','runtime_metadata']
++        connections.append(name)
++    spy=tests_model_free.main()
++    assert not any(n in sys.modules for n in ('torch','tabicl','adapter','runner','e041'))
++    return dict(outcome='PASS_MODEL_FREE_ONLY',entry_outcome='ALL3_RUNTIME_ENTRY_PASS',schemas=reports,
++                expected_negative_cases=negatives,actual_connections=connections,spies=spy,
++                model_imports=0,scientific_fits=0)
++
++
++if __name__=='__main__':
++    timer=threading.Timer(60,lambda:os._exit(2));timer.daemon=True;timer.start()
++    result={};code=1
++    try:
++        result=main();code=0
++    except BaseException as exc:
++        result=dict(outcome='LOCAL_FULL_PATH_FAIL',error=repr(exc),traceback=traceback.format_exc())
++    result['elapsed_seconds']=time.perf_counter()-START
++    if result['elapsed_seconds']>=60:result['outcome']='LOCAL_RESOURCE_LIMIT';code=1
++    with (HERE/'model-free-result.json').open('x',encoding='utf-8') as stream:json.dump(result,stream,indent=2)
++    timer.cancel()
++    print(json.dumps({k:v for k,v in result.items() if k not in ('schemas','spies','expected_negative_cases')}))
++    sys.exit(code)
+--- full-path-local/watchdog.py
++++ full-path-local-retry1/watchdog.py
+@@ -13,7 +13,7 @@
+ HERE=Path(__file__).resolve().parent
+ ROOT=HERE.parents[3]
+ CAP=16_000_000_000
+-DEADLINE=datetime(2026,10,2,8,11,30,tzinfo=timezone.utc)
++DEADLINE=datetime(2026,10,2,9,2,0,tzinfo=timezone.utc)
+ PARSER=argparse.ArgumentParser();PARSER.add_argument('mode',choices=['reference','candidate'])
+ MODE=PARSER.parse_args().mode
+ OUT=HERE/MODE

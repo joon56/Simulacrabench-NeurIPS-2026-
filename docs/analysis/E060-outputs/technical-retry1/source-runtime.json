@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "reason": "COMPLETE",
+  "exit_code": 0,
+  "seconds": 342.4691633000002,
+  "total_suite_seconds": 389.0438369000003,
+  "peak_process_tree_bytes": {
+    "rss": 1588727808,
+    "commitment": 1550082048
+  }
+}

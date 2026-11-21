@@ -1,0 +1,35 @@
+﻿{
+    "kill_seconds":  50,
+    "case":  "success",
+    "remaining_seconds":  396.4173761000000008,
+    "start_utc":  "2026-10-05T15:47:01.4464962+00:00",
+    "inputs":  [
+                   {
+                       "sha256":  "41a52d76512eca79c019e0359fbb230faf27f2738c912919d8d23781e583da5d",
+                       "path":  "source-manifest.json"
+                   },
+                   {
+                       "sha256":  "06f6ac7c442d29db515d5ed551dbf38826771d27c3fde1475248e2570dea3012",
+                       "path":  "boundary_transport.py"
+                   },
+                   {
+                       "sha256":  "cab28e9604e3310f28ad8288c11fa87973d8000da6c6839ec4e9f3a4d0203574",
+                       "path":  "fixture_transport.py"
+                   },
+                   {
+                       "sha256":  "555759980ceff510f4900d510c16a9f50706d8d2e969b1231f203cfc84db98a7",
+                       "path":  "local_guard.py"
+                   },
+                   {
+                       "sha256":  "757e14ce9e129d33669c92586f6d9dbfdefeac2667400654f092e463e3f6f4e3",
+                       "path":  "check_boundary.py"
+                   },
+                   {
+                       "sha256":  "6fe6008844170e6c2fd2b554a2e3ef8b9687dad2fdfac866a144cdfbface9a03",
+                       "path":  "run_check.ps1"
+                   }
+               ],
+    "attempt":  "image-observer4",
+    "cap_seconds":  60,
+    "used_seconds":  23.5826238999999992
+}

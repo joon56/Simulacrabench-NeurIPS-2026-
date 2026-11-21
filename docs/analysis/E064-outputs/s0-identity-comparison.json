@@ -1,0 +1,119 @@
+﻿{
+    "comparison":  [
+                       {
+                           "expected":  "73b86e5310d6a45d5206efd3b55da47c48748ee7b077e6fcad6be276f1716a3a",
+                           "path":  "AGENTS.md",
+                           "match":  true,
+                           "current":  "73b86e5310d6a45d5206efd3b55da47c48748ee7b077e6fcad6be276f1716a3a"
+                       },
+                       {
+                           "expected":  "0cda5c3385ea3368d0c24a6602e4b1220adc864a205e231f10042b655d031749",
+                           "path":  "CLAUDE.md",
+                           "match":  true,
+                           "current":  "0cda5c3385ea3368d0c24a6602e4b1220adc864a205e231f10042b655d031749"
+                       },
+                       {
+                           "expected":  "8770a5e05863a625a2f98f175787f4258db19956aa3bf5db7087dbe710c2283e",
+                           "path":  "docs/status.md",
+                           "match":  false,
+                           "current":  "d9a448b9cc64879535ff889f2f451a3b45047555bf9595079a132e47adc8ff33"
+                       },
+                       {
+                           "expected":  "81ff88a0da2dfc941892c401a85f29dad7cc129cff65149b520ef36553de05fd",
+                           "path":  "docs/log.md",
+                           "match":  false,
+                           "current":  "fa3cafd09dbdc63d1bb7a630192167009142923d417a08566bab52a5f240cb77"
+                       },
+                       {
+                           "expected":  "a577942675e16a732339e586c14796104dda704693568439ae28670cc7fb7b23",
+                           "path":  "docs/workflow.md",
+                           "match":  true,
+                           "current":  "a577942675e16a732339e586c14796104dda704693568439ae28670cc7fb7b23"
+                       },
+                       {
+                           "expected":  "eaa884a4194db103335136495205fe5b51297c17db15e9eac62946ced286cc44",
+                           "path":  "docs/tree.md",
+                           "match":  true,
+                           "current":  "eaa884a4194db103335136495205fe5b51297c17db15e9eac62946ced286cc44"
+                       },
+                       {
+                           "expected":  "46d7dd9965c601374d7571141f7f6d2a54008b0e7311aad64dc7a82745a130a6",
+                           "path":  "docs/analysis/A043-post-e063-priority.md",
+                           "match":  true,
+                           "current":  "46d7dd9965c601374d7571141f7f6d2a54008b0e7311aad64dc7a82745a130a6"
+                       },
+                       {
+                           "expected":  "f4ec8f24d394cd94d4baf1a58fe40fe9c6bf3ddc5a6d12865bbe9c2b9d41563e",
+                           "path":  "docs/analysis/A043-outputs/s1/contract.md",
+                           "match":  true,
+                           "current":  "f4ec8f24d394cd94d4baf1a58fe40fe9c6bf3ddc5a6d12865bbe9c2b9d41563e"
+                       },
+                       {
+                           "expected":  "2636b386d4b730c0052584b7e7ca139bfda7f680d5b10530cbab64e464b7af90",
+                           "path":  "docs/analysis/A043-outputs/s1/closeout.md",
+                           "match":  true,
+                           "current":  "2636b386d4b730c0052584b7e7ca139bfda7f680d5b10530cbab64e464b7af90"
+                       },
+                       {
+                           "expected":  "72c6df9af2df7a74fe5bb0a7c9d937c16b3e9e9737e0ca966fa4705b289ac9b6",
+                           "path":  "docs/analysis/A043-outputs/s1/s0-handoff.ko.md",
+                           "match":  true,
+                           "current":  "72c6df9af2df7a74fe5bb0a7c9d937c16b3e9e9737e0ca966fa4705b289ac9b6"
+                       },
+                       {
+                           "expected":  "2ac519225f486c8de24f5dac02fe3310bb1973fc164c64b3a691b10b2d6da225",
+                           "path":  "docs/analysis/A043-outputs/s1/verification.json",
+                           "match":  true,
+                           "current":  "2ac519225f486c8de24f5dac02fe3310bb1973fc164c64b3a691b10b2d6da225"
+                       },
+                       {
+                           "expected":  "df648763c8e0ba5532ebf9e437af95cd10d8527112c1338b8b5db9ad6a212e1f",
+                           "path":  "src/models/shared_trunk.py",
+                           "match":  true,
+                           "current":  "df648763c8e0ba5532ebf9e437af95cd10d8527112c1338b8b5db9ad6a212e1f"
+                       },
+                       {
+                           "expected":  "2940338c5378de03303befb74e3834fbad631c0eb18f4ecb55d2cc39a471f879",
+                           "path":  "src/models/supervised_retrieval.py",
+                           "match":  true,
+                           "current":  "2940338c5378de03303befb74e3834fbad631c0eb18f4ecb55d2cc39a471f879"
+                       },
+                       {
+                           "expected":  "4a7921a00d7758e52a63a3ca7cd5ebf2285cef445b57fd89f15580d6fc108524",
+                           "path":  "src/models/link_sharp.py",
+                           "match":  true,
+                           "current":  "4a7921a00d7758e52a63a3ca7cd5ebf2285cef445b57fd89f15580d6fc108524"
+                       },
+                       {
+                           "expected":  "9aad6be04e14ae97dc7aaba5499747c35b255b098680c66eaa8f8af58c940f70",
+                           "path":  "src/models/hh_cap.py",
+                           "match":  true,
+                           "current":  "9aad6be04e14ae97dc7aaba5499747c35b255b098680c66eaa8f8af58c940f70"
+                       },
+                       {
+                           "expected":  "f9449d41d30041f6e9714c7a25777965ec4d25cfa2563b018fb08c94dde20833",
+                           "path":  "src/models/tied_content_heads.py",
+                           "match":  true,
+                           "current":  "f9449d41d30041f6e9714c7a25777965ec4d25cfa2563b018fb08c94dde20833"
+                       },
+                       {
+                           "expected":  "86662430e7cd0c8cfd09eb6ddf0f08ca43ebd7bda96adbfc4cfe2d40edfebc9a",
+                           "path":  "docs/analysis/E063-outputs/freeze-01.json",
+                           "match":  true,
+                           "current":  "86662430e7cd0c8cfd09eb6ddf0f08ca43ebd7bda96adbfc4cfe2d40edfebc9a"
+                       },
+                       {
+                           "expected":  "8025ec5ddab33bae3675f72616f5c932e18d15f77f6ac3f3fb0c53b98d4369fb",
+                           "path":  "docs/analysis/E063-outputs/s2/post-result/result.ko.md",
+                           "match":  true,
+                           "current":  "8025ec5ddab33bae3675f72616f5c932e18d15f77f6ac3f3fb0c53b98d4369fb"
+                       },
+                       {
+                           "expected":  "c2e32e41f725d4d44515d0bdb84a182394de4d0c7fe3c8773c7888ce280a16b9",
+                           "path":  "docs/experiments/E063-round-conditioned-metric.md",
+                           "match":  true,
+                           "current":  "c2e32e41f725d4d44515d0bdb84a182394de4d0c7fe3c8773c7888ce280a16b9"
+                       }
+                   ],
+    "meaning":  "S0 entry pre-write hashes; status/log expected subsequent S0 append. No rollback."
+}

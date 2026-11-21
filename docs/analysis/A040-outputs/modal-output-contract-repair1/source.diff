@@ -1,0 +1,31 @@
+diff --git a/docs/analysis/A040-outputs/modal-local-integration1/sandbox_stage.py b/docs/analysis/A040-outputs/modal-output-contract-repair1/sandbox_stage.py
+index ef2955e..e2a8b77 100644
+--- a/docs/analysis/A040-outputs/modal-local-integration1/sandbox_stage.py
++++ b/docs/analysis/A040-outputs/modal-output-contract-repair1/sandbox_stage.py
+@@ -4,6 +4,7 @@ import time
+ from contract import CAP_BYTES, GPU_PLAN, REMOTE_DIR, sha
+ 
+ BOUNDARY_COMMAND = ("python", "-I", "-B", "-u", REMOTE_DIR + "/linux_boundary.py")
++EXPECTED_OUTPUT_COUNTS = {"unicef": 17856, "world_bank": 39520, "unhcr": 132273}
+ 
+ 
+ async def command(sandbox, args, timeout, operation):
+@@ -79,7 +80,8 @@ async def execute(context):
+             raise RuntimeError(mode + " named contract not passed")
+         if result["resources"].get("elapsed_seconds", 901) > 900 or not result["result"].get("full_path_completed"):
+             raise RuntimeError(mode + " timing or completeness failed")
+-        if sum(result["result"].get("output_counts", {}).values()) != 189649:
++        counts = result["result"].get("output_counts", {})
++        if counts != EXPECTED_OUTPUT_COUNTS or any(type(value) is not int for value in counts.values()):
+             raise RuntimeError(mode + " canonical vector count failed")
+         state[mode] = "PASS_WITHIN_EXECUTION_SCOPE"
+         context.persist()
+@@ -100,7 +102,7 @@ async def export_mode(context, mode):
+         raise RuntimeError(mode + " result/resources export incomplete")
+     # Export only fixed output names, verifying the runner's byte hashes.
+     hashes = collected["result"].get("output_hashes", {})
+-    required = {"unicef", "wb", "unhcr"}
++    required = {"unicef", "world_bank", "unhcr"}
+     if mode == "candidate":
+         required |= {"unhcr-engineering-alpha025", "unhcr-final-e041"}
+     if collected["result"].get("full_path_completed") and set(hashes) != required:

@@ -1,0 +1,1 @@
+observer active; CPU affinity2 before document imports

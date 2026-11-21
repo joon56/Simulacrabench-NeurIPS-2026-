@@ -1,0 +1,35 @@
+﻿{
+    "kill_seconds":  200,
+    "case":  "stall",
+    "remaining_seconds":  360.9516280000000026,
+    "start_utc":  "2026-10-05T15:57:25.4550727+00:00",
+    "inputs":  [
+                   {
+                       "sha256":  "68d8ac3c23b8ab0f74a41893bd122733e79e54fb6915ee293d921a9a30e1cb50",
+                       "path":  "source-manifest.json"
+                   },
+                   {
+                       "sha256":  "044d127a68021916b86fa677c39a7c68a5510aeeec89523c3d69b5c88b11926a",
+                       "path":  "boundary_transport.py"
+                   },
+                   {
+                       "sha256":  "cab28e9604e3310f28ad8288c11fa87973d8000da6c6839ec4e9f3a4d0203574",
+                       "path":  "fixture_transport.py"
+                   },
+                   {
+                       "sha256":  "555759980ceff510f4900d510c16a9f50706d8d2e969b1231f203cfc84db98a7",
+                       "path":  "local_guard.py"
+                   },
+                   {
+                       "sha256":  "b88349b4fb272938a5a770671e65e937f15ff683ea0df1cad90acc3f4f679f47",
+                       "path":  "check_boundary.py"
+                   },
+                   {
+                       "sha256":  "71c2f2b2f0d47f27258d9176fbb41707715bd390407d44d28a7860863f0aa9b2",
+                       "path":  "run_check.ps1"
+                   }
+               ],
+    "attempt":  "real-stall1",
+    "cap_seconds":  210,
+    "used_seconds":  59.0483719999999974
+}

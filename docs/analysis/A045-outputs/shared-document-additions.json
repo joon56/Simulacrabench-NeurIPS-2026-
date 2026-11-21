@@ -1,0 +1,29 @@
+[
+    {
+        "path":  "docs/status.md",
+        "before_sha256":  "6cce8f31e9389d15eb3590b381fafe06c772d41246e1b610536ae5a03f26bd5e",
+        "position":  318,
+        "text":  "- **2026-10-26 r7 delegated operation adopted.** S0 coordinates named subagents;\r\n  manual copy/paste between S1/S2/S3 chats is optional. Root stays coordinator;\r\n  one checkout writer including root, one heavy job, no recursive delegation.\r\n  [Decision](analysis/A045-outputs/decision.md),\r\n  [current owner/tasks](analysis/A045-outputs/orchestration-state.json).\r\n- **First internal task: S1-WB-CONTRACT-A045**, contract-only45min/model0/cash0.\r\n  Existing read-only findings are reused; WB76/K26/19 many-class heads require a\r\n  new fixed contract and bounded model/release budget. No new E, fit or ZIP authority.\r\n  [Internal task](analysis/A045-outputs/wb-contract-task.ko.md).\r\n- C6 finished NOT_REPRODUCED; writer released21:51:55KST, root accepted21:53:49.\r\n  A040 HOLD retained; no C7/cloud continuation. Previous S0/C6 writer overlap is\r\n  recorded in A045, not erased. Existing STOP/HOLD/exposure/TEST choices unchanged.\r\n- Current writer and pending acceptance are authoritative only in the linked state\r\n  plus dispatch/release receipts. These coordinate agents, not an atomic OS lock.\r\n  New scientific/data/budget scopes and final upload/TEST choices remain user decisions.\r\n\r\n### Earlier strategy notices — historical; r7 operating state above is current\r\n\r\n",
+        "header_replacements":  [
+                                    {
+                                        "old":  "Updated: 2026-10-23.",
+                                        "new":  "Updated: 2026-10-26."
+                                    },
+                                    {
+                                        "old":  "revision **2026-10-22-r6**.",
+                                        "new":  "revision **2026-10-26-r7**."
+                                    }
+                                ],
+        "after_sha256":  "cd51457ff1f75da025e6490e98bcff80730bc13daee1d8ac5b59ae64233aabc7"
+    },
+    {
+        "path":  "docs/log.md",
+        "before_sha256":  "f265683a7ca15b2b80dde898a21b43cf54b6dfad20c606ab95224489f1170148",
+        "position":  20,
+        "text":  "## 2026-10-26 - A045 adopts delegated operation r7; manual transfers optional\r\n\r\n- User explicitly requests S0-controlled S1/S2/S3 subagents for remaining work.\r\n  Two read-only children reviewed workflow and WB asset readiness. Neither ran\r\n  Python/models/data/weights/tests or wrote files; root reviewed their findings.\r\n- Existing external C6 writer detected; this root waited for explicit release\r\n 21:51:55.2818025KST and named jobs0, then accepted21:53:49.9307535KST.\r\n  Earlier C6/S0 overlap21:28-21:32 is an actual coordination failure preserved.\r\n- AGENTS/CLAUDE/workflow/session-prompts now r7: root dispatches exact tasks/epochs;\r\n  one writer including root, heavy1, automatic preauthorized S1-to-S2 gates,\r\n  in-scope repairs, no recursive agents or indefinite unattended campaign promise.\r\n  User final TEST/upload/license/paid/git and new science/data/budget boundaries stay.\r\n- C6 NOT_REPRODUCED/A040 HOLD retained. No broad lifecycle/remote retry.\r\n  Next internal assignment is WB contract-only45min/model0/cash0, reusing prior\r\n  read-only preparation: GIVEN9/PREDICT76/scored gated30/maxK26/K\u003e10 heads19.\r\n  Existing K15/UNHCR prototype cannot certify WB without new scoped checks.\r\n- No model execution budget approved by the mode change. Root will receive the\r\n  contract directly and review one concrete future batch; no user copy/paste.\r\n  [A045 decision](analysis/A045-outputs/decision.md),\r\n  [live ownership/task state](analysis/A045-outputs/orchestration-state.json).\r\n\r\n",
+        "header_replacements":  [
+
+                                ],
+        "after_sha256":  "4a56abeace05192c4be2f21b48136ad5a28d56a0d4b3117c76afb704520ca47e"
+    }
+]

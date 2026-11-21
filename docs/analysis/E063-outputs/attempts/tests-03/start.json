@@ -1,0 +1,10 @@
+{
+  "utc": "2026-10-09T13:30:30.769228+00:00",
+  "mode": "tests",
+  "attempt": 3,
+  "only": "tests.test_round_metric_retrieval.EntryTests.test_forced_active_all213_actual_entry_replay_and_renderer",
+  "freeze": "freeze-01.json",
+  "prior_seconds": 53.51891899999828,
+  "limit_seconds": 60.0,
+  "registration_sha256": "e29a7600c9bd1bca75c6927a092adc706b3c49b7e6ea649d979e58816696a49c"
+}

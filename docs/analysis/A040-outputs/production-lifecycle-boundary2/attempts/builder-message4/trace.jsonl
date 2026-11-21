@@ -1,0 +1,34 @@
+{"event": "child_entry", "utc": "2026-10-05T15:51:55.066696+00:00", "elapsed_seconds": 0.00038779999886173755, "pid": 48532, "case": "builder_fail"}
+{"event": "rpc_response_boundary", "utc": "2026-10-05T15:51:55.139984+00:00", "elapsed_seconds": 0.07367429999430897, "method": "WorkspaceNameLookup"}
+{"event": "rpc_response_boundary", "utc": "2026-10-05T15:51:55.141046+00:00", "elapsed_seconds": 0.07473079999908805, "method": "WorkspaceBillingSummary"}
+{"event": "rpc_response_boundary", "utc": "2026-10-05T15:51:55.142521+00:00", "elapsed_seconds": 0.0762068999974872, "method": "ImageFromId"}
+{"event": "rpc_response_boundary", "utc": "2026-10-05T15:51:55.147388+00:00", "elapsed_seconds": 0.08107429999654414, "method": "AppGetOrCreate"}
+{"event": "default_Endpoint_build_call", "utc": "2026-10-05T15:51:55.158198+00:00", "elapsed_seconds": 0.09188549999817042, "loop_thread": 46992}
+{"event": "actual_Image_build_call", "utc": "2026-10-05T15:51:55.237320+00:00", "elapsed_seconds": 0.17101369999727467, "loop_thread": 46992}
+{"event": "rpc_response_boundary", "utc": "2026-10-05T15:51:55.240991+00:00", "elapsed_seconds": 0.17467949999991106, "method": "WorkspaceBillingSummary"}
+{"event": "rpc_response_boundary", "utc": "2026-10-05T15:51:55.241669+00:00", "elapsed_seconds": 0.17535769999813056, "method": "ImageFromId"}
+{"event": "rpc_response_boundary", "utc": "2026-10-05T15:51:55.243517+00:00", "elapsed_seconds": 0.1772075999979279, "method": "MountGetOrCreate"}
+{"event": "sdk_client_mount_reference", "utc": "2026-10-05T15:51:55.244117+00:00", "elapsed_seconds": 0.1778070000000298, "name": "modal-client-mount-1.6.0"}
+{"event": "rpc_response_boundary", "utc": "2026-10-05T15:51:55.247608+00:00", "elapsed_seconds": 0.1812967000005301, "method": "MountBatchedCheckExistence"}
+{"event": "rpc_response_boundary", "utc": "2026-10-05T15:51:55.248535+00:00", "elapsed_seconds": 0.18222360000072513, "method": "MountPutFile"}
+{"event": "exact_builder_source_bytes", "utc": "2026-10-05T15:51:55.248880+00:00", "elapsed_seconds": 0.18256939999992028, "sha256": "fc561eee08f1eafbbeac2cbcc5fa31890ef719bf603c5c7dd1af7aea5e556bcb", "bytes": 1760}
+{"event": "rpc_response_boundary", "utc": "2026-10-05T15:51:55.249510+00:00", "elapsed_seconds": 0.18319859999610344, "method": "MountGetOrCreate"}
+{"event": "project_mount", "utc": "2026-10-05T15:51:55.249984+00:00", "elapsed_seconds": 0.1836732999945525, "files": [{"filename": "/root/controller_core.py", "sha256": "fc561eee08f1eafbbeac2cbcc5fa31890ef719bf603c5c7dd1af7aea5e556bcb"}]}
+{"event": "rpc_response_boundary", "utc": "2026-10-05T15:51:55.250858+00:00", "elapsed_seconds": 0.18454709999787156, "method": "FunctionCreate"}
+{"event": "builder_function", "utc": "2026-10-05T15:51:55.251263+00:00", "elapsed_seconds": 0.18495139999868115, "module": "controller_core", "function": "install_pins", "mount_ids": ["mo-gggggggggggggggggggggg", "mo-hhhhhhhhhhhhhhhhhhhhhh"], "image_id": "im-fixturebase", "timeout": 600}
+{"event": "rpc_response_boundary", "utc": "2026-10-05T15:51:55.252785+00:00", "elapsed_seconds": 0.18647419999615522, "method": "EnvironmentGetOrCreate"}
+{"event": "rpc_response_boundary", "utc": "2026-10-05T15:51:55.255317+00:00", "elapsed_seconds": 0.18900589999975637, "method": "ImageGetOrCreate"}
+{"event": "image_build_requested", "utc": "2026-10-05T15:51:55.255692+00:00", "elapsed_seconds": 0.18938069999421714, "image_id": "im-dddddddddddddddddddddd", "base_images": ["im-fixturebase"]}
+{"event": "builder_result", "utc": "2026-10-05T15:51:55.256109+00:00", "elapsed_seconds": 0.18979789999866625, "image_id": "im-dddddddddddddddddddddd", "status": "FAILURE"}
+{"event": "production_cleanup_call", "utc": "2026-10-05T15:51:55.260250+00:00", "elapsed_seconds": 0.19393999999738298, "loop_thread": 46992}
+{"event": "rpc_response_boundary", "utc": "2026-10-05T15:51:55.263328+00:00", "elapsed_seconds": 0.19701689999783412, "method": "AppStop"}
+{"event": "rpc_response_boundary", "utc": "2026-10-05T15:51:55.263960+00:00", "elapsed_seconds": 0.1976488000000245, "method": "AppGetInfo"}
+{"event": "rpc_response_boundary", "utc": "2026-10-05T15:51:55.264507+00:00", "elapsed_seconds": 0.19819649999408284, "method": "TaskList"}
+{"event": "rpc_response_boundary", "utc": "2026-10-05T15:51:55.265198+00:00", "elapsed_seconds": 0.19888639999408042, "method": "WorkspaceBillingSummary"}
+{"event": "production_cleanup_return", "utc": "2026-10-05T15:51:55.273360+00:00", "elapsed_seconds": 0.20705479999742238, "loop_thread": 46992}
+{"event": "production_return", "utc": "2026-10-05T15:51:55.284816+00:00", "elapsed_seconds": 0.2185096999965026, "outcome": "STOP_FIRST_ERROR", "termination": "TERMINAL_TASK0_CONFIRMED"}
+{"event": "child_finally", "utc": "2026-10-05T15:51:55.286080+00:00", "elapsed_seconds": 0.2197706999941147, "pid": 48532}
+{"event": "sdk_loop_close_before", "utc": "2026-10-05T15:51:55.286591+00:00", "elapsed_seconds": 0.22028249999857508}
+{"event": "sdk_loop_close_after", "utc": "2026-10-05T15:51:55.288514+00:00", "elapsed_seconds": 0.22220519999973476, "threads": ["MainThread"]}
+{"event": "explicit_gc_before", "utc": "2026-10-05T15:51:55.288967+00:00", "elapsed_seconds": 0.22265739999420475}
+{"event": "explicit_gc_after", "utc": "2026-10-05T15:51:55.301689+00:00", "elapsed_seconds": 0.23539080000045942}

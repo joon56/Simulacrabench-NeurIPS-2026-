@@ -1,0 +1,15 @@
+{
+  "outcome": "BUILD_FAILED",
+  "owned_app_id": null,
+  "stop_ack": false,
+  "termination": "NO_CREATE_ATTEMPT",
+  "create_attempts": 0,
+  "build_attempts": 0,
+  "stop_attempts": 0,
+  "cleanup_errors": [],
+  "execution": "INJECTED_LOCAL_ONLY",
+  "error": "RuntimeError('before create • 한글')",
+  "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\modal-controller-repair1\\controller.py\", line 112, in run_controller\n    await bounded(transport.prepare(), phase)\n  File \"C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\modal-controller-repair1\\controller.py\", line 90, in bounded\n    return task.result()\n           ~~~~~~~~~~~^^\n  File \"C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\modal-controller-repair1\\controller.py\", line 25, in prepare\n    self.client = await self.sdk.Client.from_env()\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\modal-controller-repair1\\fake_worker.py\", line 67, in from_env\n    raise RuntimeError(\"before create • 한글\")\nRuntimeError: before create • 한글\n",
+  "cleanup_seconds": 9.000013960758224e-07,
+  "elapsed_seconds": 0.003995799999756855
+}

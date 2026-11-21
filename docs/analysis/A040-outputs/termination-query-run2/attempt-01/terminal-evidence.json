@@ -1,0 +1,93 @@
+{
+  "app_id": "ap-XiMVzlJgrNrCiFpIN1kB4W",
+  "app_name": "a040-resume5-20261005-094405",
+  "sandbox_name": "a040-resume5-20261005-094405-gpu",
+  "sandbox_id": "sb-svFnVI39hH3DpUIZ4Z9LXK",
+  "terminal": "TERMINAL_CONFIRMED",
+  "calls": [
+    {
+      "method": "Client.from_env",
+      "started_utc": "2026-10-05T12:46:45.556848+00:00",
+      "cap_seconds": 14.5,
+      "outcome": "RETURNED"
+    },
+    {
+      "method": "WorkspaceNameLookup",
+      "started_utc": "2026-10-05T12:46:46.286170+00:00",
+      "cap_seconds": 14.5,
+      "outcome": "RETURNED"
+    },
+    {
+      "method": "AppGetInfo",
+      "started_utc": "2026-10-05T12:46:46.720829+00:00",
+      "cap_seconds": 14.5,
+      "outcome": "RETURNED"
+    },
+    {
+      "method": "AuthTokenManager.get_token",
+      "started_utc": "2026-10-05T12:46:47.181492+00:00",
+      "cap_seconds": 14.5,
+      "outcome": "RETURNED"
+    },
+    {
+      "method": "SandboxListV2",
+      "started_utc": "2026-10-05T12:46:47.621124+00:00",
+      "cap_seconds": 14.5,
+      "outcome": "RETURNED"
+    },
+    {
+      "method": "AuthTokenManager.get_token",
+      "started_utc": "2026-10-05T12:46:48.073048+00:00",
+      "cap_seconds": 14.5,
+      "outcome": "RETURNED"
+    },
+    {
+      "method": "SandboxListV2",
+      "started_utc": "2026-10-05T12:46:48.076133+00:00",
+      "cap_seconds": 14.5,
+      "outcome": "RETURNED"
+    },
+    {
+      "method": "SandboxWait",
+      "started_utc": "2026-10-05T12:46:48.525044+00:00",
+      "cap_seconds": 14.5,
+      "outcome": "RETURNED"
+    }
+  ],
+  "errors": [],
+  "terminate_requests": 0,
+  "new_resources": 0,
+  "remote_commands": 0,
+  "remote_file_operations": 0,
+  "observed_utc": "2026-10-05T12:46:48.981398+00:00",
+  "observed_kst": "2026-10-05T21:46:48.981408+09:00",
+  "elapsed_seconds": 3.4263047999993432,
+  "identity": {
+    "workspace": "joon56",
+    "environment": "main",
+    "app_id": "ap-XiMVzlJgrNrCiFpIN1kB4W",
+    "app_name": "a040-resume5-20261005-094405"
+  },
+  "version": "V1",
+  "listed": {
+    "id": "sb-svFnVI39hH3DpUIZ4Z9LXK",
+    "name": "a040-resume5-20261005-094405-gpu",
+    "app_id": "ap-XiMVzlJgrNrCiFpIN1kB4W",
+    "image_id": "im-XZ95GDfkfa6PwWUeFyciYM",
+    "created_at": 1791193840.931793,
+    "started_at": 0.0,
+    "finished_at": 1791193847.436434,
+    "include_finished": true,
+    "result": {
+      "status": 3,
+      "status_name": "GENERIC_STATUS_TERMINATED",
+      "exitcode": 0
+    }
+  },
+  "sandbox_result": {
+    "status": 3,
+    "status_name": "GENERIC_STATUS_TERMINATED",
+    "exitcode": 0
+  },
+  "terminal_source": "Exact-ID SandboxWait"
+}

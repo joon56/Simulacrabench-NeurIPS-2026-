@@ -1,0 +1,12 @@
+{
+  "prior_ledger": "../modal-full-path1-resume2/cost-ledger.json",
+  "planning_preparation": 1,
+  "planning_total": 5,
+  "cash_authority": 0,
+  "cumulative_account_evidence": 1.152e-05,
+  "management_estimate": 0.6500115200000001,
+  "final_task_attributed_cost": null,
+  "unposted_retry_transfer_storage_unknown": true,
+  "historical_apps_component": 1.152e-05,
+  "active_prior_seconds": 4477.3871369
+}

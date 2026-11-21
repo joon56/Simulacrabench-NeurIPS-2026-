@@ -4,3 +4,16 @@ __pycache__/
 .pytest_cache/
 external/
 docs/.ua/
+
+# trip-pack PDFs (zip only, not tracked)
+trip/papers/
+
+# Local agent permissions and disposable tooling output (not shared policy)
+.claude/settings.local.json
+/tmp/
+
+# Local UNHCR download; metadata and restricted response files
+/UNCHR_data/
+
+# Device-migration backup (archive and chat/session history): never shared
+/trip/

@@ -1,0 +1,50 @@
+﻿[
+    {
+        "path":  "docs/analysis/A040-outputs/modal-controller-repair1/closeout.md",
+        "expected":  "779c4d315f1e8ee85ebdc1d1014446d77a236efef52509a4385e87f7e1daf2ea",
+        "actual":  "779c4d315f1e8ee85ebdc1d1014446d77a236efef52509a4385e87f7e1daf2ea",
+        "match":  true
+    },
+    {
+        "path":  "docs/analysis/A040-outputs/modal-controller-repair1/verification.json",
+        "expected":  "7be5d4ee3efbb01f4d293f4e714fbdeb75061c5421ab4e0f6d72660cf5586d65",
+        "actual":  "7be5d4ee3efbb01f4d293f4e714fbdeb75061c5421ab4e0f6d72660cf5586d65",
+        "match":  true
+    },
+    {
+        "path":  "docs/analysis/A040-outputs/modal-controller-repair1/diagnosis-and-contract.md",
+        "expected":  "b5fabc833206459f1bc739012d955d85caedeb938355e333308561fd884c58ec",
+        "actual":  "b5fabc833206459f1bc739012d955d85caedeb938355e333308561fd884c58ec",
+        "match":  true
+    },
+    {
+        "path":  "docs/analysis/A040-outputs/modal-controller-repair1/controller.py",
+        "expected":  "d830545f9ced6778d51f095fff68fd692e648496ba089ffb47d46db0fd1695de",
+        "actual":  "d830545f9ced6778d51f095fff68fd692e648496ba089ffb47d46db0fd1695de",
+        "match":  true
+    },
+    {
+        "path":  "docs/analysis/A040-outputs/modal-controller-repair1/launcher.py",
+        "expected":  "cf9b61ab363c52a3bd26cacf08fae0b098bdfc8b7215c28ec6ca4e1d64acbda6",
+        "actual":  "cf9b61ab363c52a3bd26cacf08fae0b098bdfc8b7215c28ec6ca4e1d64acbda6",
+        "match":  true
+    },
+    {
+        "path":  "docs/analysis/A040-outputs/modal-controller-repair1/source-hashes.json",
+        "expected":  "c05f0fba522ee7eb0263fc8e0970de5d0e7284595ec96f5a5325e8cc7640db0e",
+        "actual":  "c05f0fba522ee7eb0263fc8e0970de5d0e7284595ec96f5a5325e8cc7640db0e",
+        "match":  true
+    },
+    {
+        "path":  "docs/analysis/A040-outputs/modal-controller-repair1/cleanup-state-table.md",
+        "expected":  "694613b14d28ddba70c1ac86199fb1f09f263007d319ab60d6c9fd44d9706c5a",
+        "actual":  "694613b14d28ddba70c1ac86199fb1f09f263007d319ab60d6c9fd44d9706c5a",
+        "match":  true
+    },
+    {
+        "path":  "docs/analysis/A040-outputs/modal-controller-repair1/sdk-contract-result.json",
+        "expected":  "8d09d2abb8a7dc63e960e497611c31a205a2c7caf7c5954c6f29ad29439abee5",
+        "actual":  "8d09d2abb8a7dc63e960e497611c31a205a2c7caf7c5954c6f29ad29439abee5",
+        "match":  true
+    }
+]

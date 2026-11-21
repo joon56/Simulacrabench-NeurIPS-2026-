@@ -1,0 +1,2282 @@
+{
+  "candidate": "E025",
+  "pages": 4,
+  "page_results": [
+    {
+      "page": 1,
+      "characters": 3274,
+      "text_bounds_pass": true,
+      "links": [],
+      "fonts": [
+        "Courier",
+        "Helvetica",
+        "Helvetica-Bold",
+        "Times-Bold",
+        "Times-Roman"
+      ],
+      "spans": [
+        {
+          "text": "HSCC 2026 | E025 | REVIEW DRAFT | 23 October 2026",
+          "bbox": [
+            48.0,
+            809.289794921875,
+            248.9839630126953,
+            820.2817993164062
+          ],
+          "font": "Helvetica",
+          "size": 8.0
+        },
+        {
+          "text": "1 / 4",
+          "bbox": [
+            531.7075805664062,
+            809.289794921875,
+            547.2755737304688,
+            820.2817993164062
+          ],
+          "font": "Helvetica",
+          "size": 8.0
+        },
+        {
+          "text": "REVIEW DRAFT - NOT FINAL TEST SELECTION",
+          "bbox": [
+            48.0,
+            16.974998474121094,
+            218.01004028320312,
+            27.302499771118164
+          ],
+          "font": "Helvetica-Bold",
+          "size": 7.5
+        },
+        {
+          "text": "Calibrated survey completion with visible-row evidence",
+          "bbox": [
+            54.0,
+            45.295997619628906,
+            433.0880432128906,
+            67.45600128173828
+          ],
+          "font": "Times-Bold",
+          "size": 16.0
+        },
+        {
+          "text": "REVIEW DRAFT \u2014 NOT FINAL TEST SELECTION",
+          "bbox": [
+            54.0,
+            72.0423812866211,
+            301.3223571777344,
+            86.44638061523438
+          ],
+          "font": "Times-Bold",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "HSCC / SimulacraBench 2026 | E025 preserved alternative | 23 October 2026",
+          "bbox": [
+            54.0,
+            90.54875183105469,
+            377.33612060546875,
+            104.42235565185547
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "1. Task, evidence and schema handling",
+          "bbox": [
+            54.0,
+            109.17195129394531,
+            253.03199768066406,
+            125.79195404052734
+          ],
+          "font": "Times-Bold",
+          "size": 12.0
+        },
+        {
+          "text": "We predict categorical survey answers from each held-out respondent's GIVEN block for UNICEF Faith &",
+          "bbox": [
+            54.0,
+            131.14874267578125,
+            541.2758178710938,
+            145.0223388671875
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "Immunisation, World Bank Skills Assessment and UNHCR ERPIS. Every PREDICT cell is blanked and scored;",
+          "bbox": [
+            54.0,
+            143.74874877929688,
+            541.2758178710938,
+            157.62234497070312
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "EXCLUDE items are omitted. One self-contained predictor learns separately per instrument using complete visible",
+          "bbox": [
+            54.0,
+            156.3487548828125,
+            541.2759399414062,
+            170.22235107421875
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "respondents, combining hierarchical smoothing, a shared neural network, approximate skip logic and similar-row",
+          "bbox": [
+            54.0,
+            168.94874572753906,
+            541.27587890625,
+            182.8223419189453
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "donor evidence. No fitted state is bundled.",
+          "bbox": [
+            54.0,
+            181.5487518310547,
+            230.19677734375,
+            195.42234802246094
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "E025 is a preserved alternative to provisional E041, not a user-selected final TEST model. Its historical user-reported",
+          "bbox": [
+            54.0,
+            200.14878845214844,
+            541.2758178710938,
+            214.0223846435547
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "DEV readings were Grand 0.63, UNICEF 0.52, World Bank 0.49 and UNHCR 0.89. E041's later released API record",
+          "bbox": [
+            54.0,
+            212.748779296875,
+            541.2758178710938,
+            226.62237548828125
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "ID933094 reports 0.6433333333/0.52/0.49/0.92 (Grand displayed as 0.64). These retained readings remain subject to",
+          "bbox": [
+            54.0,
+            225.34878540039062,
+            541.27587890625,
+            239.22238159179688
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "phase-1 Laplace noise and 0.01 rounding. Extra serialized decimals do not establish precise effects. They compare",
+          "bbox": [
+            54.0,
+            237.94879150390625,
+            541.2760009765625,
+            251.8223876953125
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "adaptively developed complete pipelines, not independent component trials. No real TEST score exists; E064 is",
+          "bbox": [
+            54.0,
+            250.54879760742188,
+            541.2759399414062,
+            264.4223937988281
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "parked awaiting DEV delivery, with no actual hosted result. [6,7]",
+          "bbox": [
+            54.0,
+            263.1487731933594,
+            326.0848388671875,
+            277.0223693847656
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "Phase 1 shows TRAIN and scores DEV; phase 2 shows TRAIN+DEV and scores TEST. The pinned kit describes",
+          "bbox": [
+            54.0,
+            281.748779296875,
+            541.2758178710938,
+            295.62237548828125
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "shuffled respondent roles, stratified by country for UNICEF and balanced by survey round/country for UNHCR, with",
+          "bbox": [
+            54.0,
+            294.3487854003906,
+            541.2758178710938,
+            308.2223815917969
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "ordinary permutation for World Bank. This is not a chronological or new-country holdout. Same-population split",
+          "bbox": [
+            54.0,
+            306.94879150390625,
+            541.2759399414062,
+            320.8223876953125
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "relevance does not guarantee refit gain or repair adaptive DEV selection. [1,6]",
+          "bbox": [
+            54.0,
+            319.54876708984375,
+            379.478515625,
+            333.42236328125
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "The official metric averages log probabilities over all scored cells within an instrument, then scales by schema-only",
+          "bbox": [
+            54.0,
+            338.1487731933594,
+            541.2760009765625,
+            352.0223693847656
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "uniform surprisal U. Grand is the equally weighted mean of the three instrument skills. K includes the sentinel for",
+          "bbox": [
+            54.0,
+            350.748779296875,
+            541.2758178710938,
+            364.62237548828125
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "gated items. Confident errors are costly.",
+          "bbox": [
+            54.0,
+            363.3487548828125,
+            220.66000366210938,
+            377.22235107421875
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "p'_k = 0.001 + (1 - K*0.001) * p_k / sum_j(p_j)",
+          "bbox": [
+            54.0,
+            383.0575866699219,
+            285.2399597167969,
+            393.29937744140625
+          ],
+          "font": "Courier",
+          "size": 8.199999809265137
+        },
+        {
+          "text": "skill = 1 + mean_cells(log p'_[true answer]) / U",
+          "bbox": [
+            54.0,
+            393.5575866699219,
+            290.1599426269531,
+            403.79937744140625
+          ],
+          "font": "Courier",
+          "size": 8.199999809265137
+        },
+        {
+          "text": "U = mean_scored_items(log K_i)",
+          "bbox": [
+            54.0,
+            404.0575866699219,
+            201.59996032714844,
+            414.29937744140625
+          ],
+          "font": "Courier",
+          "size": 8.199999809265137
+        },
+        {
+          "text": "Vectors follow schema item/option order, adding NA_GATED as the last option for gated items. NaN means predict;",
+          "bbox": [
+            54.0,
+            420.4487609863281,
+            541.2758178710938,
+            434.3223571777344
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "refusal and other non-response categories remain ordinary answers. Decoding passes parents' final beliefs, including",
+          "bbox": [
+            54.0,
+            433.04876708984375,
+            541.2759399414062,
+            446.92236328125
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "donor evidence, to descendants. A visible parent gives a one-hot belief. For gated item i, r_i is parent mass on",
+          "bbox": [
+            54.0,
+            445.6487731933594,
+            541.2759399414062,
+            459.5223693847656
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "observed-if values.",
+          "bbox": [
+            54.0,
+            458.2487487792969,
+            133.13360595703125,
+            472.1223449707031
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "hard_i = [r_i * asked_conditional_i, 1 - r_i]",
+          "bbox": [
+            54.0,
+            477.95758056640625,
+            275.3999328613281,
+            488.1993713378906
+          ],
+          "font": "Courier",
+          "size": 8.199999809265137
+        },
+        {
+          "text": "base_i = a_i(x) * hard_i + (1 - a_i(x)) * full_i",
+          "bbox": [
+            54.0,
+            488.45758056640625,
+            290.1599426269531,
+            498.6993713378906
+          ],
+          "font": "Courier",
+          "size": 8.199999809265137
+        },
+        {
+          "text": "Asked-conditional heads train on asked rows; unrestricted full heads include the sentinel. UNHCR gate agreement is",
+          "bbox": [
+            54.0,
+            504.8487854003906,
+            541.2758178710938,
+            518.722412109375
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "approximate (median 0.83, range 0.29-0.98), so hard coupling can be wrong even with a known parent. Scalar",
+          "bbox": [
+            54.0,
+            517.4487915039062,
+            541.2760009765625,
+            531.3223876953125
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "agreement (k_i+20*m)/(n_i+20) shrinks toward median observed agreement m, not one. For each child, an internal",
+          "bbox": [
+            54.0,
+            530.0487670898438,
+            541.2758178710938,
+            543.92236328125
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "20% split can select one GIVEN column of cardinality at most 12; its value-specific rates shrink toward the scalar.",
+          "bbox": [
+            54.0,
+            542.6488037109375,
+            541.2760009765625,
+            556.5223999023438
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "Without improvement the scalar remains. [1,6]",
+          "bbox": [
+            54.0,
+            555.248779296875,
+            248.96878051757812,
+            569.1223754882812
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "characters": 3435,
+      "text_bounds_pass": true,
+      "links": [],
+      "fonts": [
+        "Courier",
+        "Helvetica",
+        "Helvetica-Bold",
+        "Times-Bold",
+        "Times-Roman"
+      ],
+      "spans": [
+        {
+          "text": "HSCC 2026 | E025 | REVIEW DRAFT | 23 October 2026",
+          "bbox": [
+            48.0,
+            809.289794921875,
+            248.9839630126953,
+            820.2817993164062
+          ],
+          "font": "Helvetica",
+          "size": 8.0
+        },
+        {
+          "text": "2 / 4",
+          "bbox": [
+            531.7075805664062,
+            809.289794921875,
+            547.2755737304688,
+            820.2817993164062
+          ],
+          "font": "Helvetica",
+          "size": 8.0
+        },
+        {
+          "text": "REVIEW DRAFT - NOT FINAL TEST SELECTION",
+          "bbox": [
+            48.0,
+            16.974998474121094,
+            218.01004028320312,
+            27.302499771118164
+          ],
+          "font": "Helvetica-Bold",
+          "size": 7.5
+        },
+        {
+          "text": "2. Runtime prediction, donor matching and replay",
+          "bbox": [
+            54.0,
+            45.47200012207031,
+            312.01202392578125,
+            62.09199905395508
+          ],
+          "font": "Times-Bold",
+          "size": 12.0
+        },
+        {
+          "text": "Hierarchical backoff.",
+          "bbox": [
+            54.0,
+            67.54236602783203,
+            150.26547241210938,
+            81.94636535644531
+          ],
+          "font": "Times-Bold",
+          "size": 10.399999618530273
+        },
+        {
+          "text": " A smoothed global marginal anchors a ladder, with each level adding a GIVEN column.",
+          "bbox": [
+            150.26547241210938,
+            67.44876098632812,
+            541.2758178710938,
+            81.3223648071289
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "Column order, depth up to three and kappa in {1,3,10,30,100} are selected greedily by held-out log score on 20% of",
+          "bbox": [
+            54.0,
+            80.04875946044922,
+            541.2761840820312,
+            93.92236328125
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "complete visible rows. Candidate columns have at most 12 levels. Asked-only distributions use the same ladder;",
+          "bbox": [
+            54.0,
+            92.64875793457031,
+            541.2759399414062,
+            106.5223617553711
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "sparse cells borrow strength and unseen cells back off.",
+          "bbox": [
+            54.0,
+            105.24876403808594,
+            280.7200012207031,
+            119.12236785888672
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "p_L(v | cell) = (n_L(v) + kappa_L*p_(L-1)(v)) / (N_L+kappa_L)",
+          "bbox": [
+            54.0,
+            124.95755767822266,
+            354.1200256347656,
+            135.19935607910156
+          ],
+          "font": "Courier",
+          "size": 8.199999809265137
+        },
+        {
+          "text": "Shared trunk.",
+          "bbox": [
+            54.0,
+            141.44239807128906,
+            116.30082702636719,
+            155.84640502929688
+          ],
+          "font": "Times-Bold",
+          "size": 10.399999618530273
+        },
+        {
+          "text": " One-hot GIVEN inputs feed a Linear-ReLU network with softmax full heads for PREDICT items and",
+          "bbox": [
+            116.30082702636719,
+            141.3488006591797,
+            541.2756958007812,
+            155.22239685058594
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "separate asked-only heads for gated items. Masked cross-entropy pools observed full and conditional targets.",
+          "bbox": [
+            54.0,
+            153.94879150390625,
+            541.2760009765625,
+            167.8223876953125
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "Full-batch Adam uses learning rate 0.003, weight decay 0.0001, at most 500 epochs and patience 30 on an inner split.",
+          "bbox": [
+            54.0,
+            166.54879760742188,
+            541.2760009765625,
+            180.42239379882812
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "An outer split chooses two 64-unit layers/no dropout or two 128-unit layers/dropout 0.1. The selected epoch count is",
+          "bbox": [
+            54.0,
+            179.1488037109375,
+            541.276123046875,
+            193.02239990234375
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "refitted on all complete visible rows. One instrument-level network/ladder mixing weight from {0,0.1,...,1} is",
+          "bbox": [
+            54.0,
+            191.74879455566406,
+            541.2759399414062,
+            205.6223907470703
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "selected on the outer split and shared by full and conditional heads. Fixed split and network seeds are zero.",
+          "bbox": [
+            54.0,
+            204.3488006591797,
+            498.236328125,
+            218.22239685058594
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "Visible-row evidence.",
+          "bbox": [
+            54.0,
+            223.0423583984375,
+            150.27554321289062,
+            237.4463653564453
+          ],
+          "font": "Times-Bold",
+          "size": 10.399999618530273
+        },
+        {
+          "text": " Every complete visible respondent is a potential donor, without a cross-round restriction.",
+          "bbox": [
+            150.27552795410156,
+            222.94876098632812,
+            541.2758178710938,
+            236.82235717773438
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "Matching uses GIVEN values, never respondent identifiers. Initial weights are -log(u_j), where u_j is random",
+          "bbox": [
+            54.0,
+            235.54876708984375,
+            541.2758178710938,
+            249.42236328125
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "agreement estimated from available GIVEN frequencies, including held-out GIVEN covariates. That covariate use",
+          "bbox": [
+            54.0,
+            248.14877319335938,
+            541.2759399414062,
+            262.0223693847656
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "does not include held-out PREDICT responses.",
+          "bbox": [
+            54.0,
+            260.7487487792969,
+            251.0071563720703,
+            274.6223449707031
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "A preliminary match identifies provisional pairs with top posterior mass at least 0.5. With at least 30 such pairs, one",
+          "bbox": [
+            54.0,
+            279.3487548828125,
+            541.2758178710938,
+            293.22235107421875
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "Fellegi-Sunter-style update estimates per-column agreement m_j; otherwise the rarity weights remain. Weighted",
+          "bbox": [
+            54.0,
+            291.9487609863281,
+            541.2758178710938,
+            305.8223571777344
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "GIVEN agreement is normalized with softmax over the top ten donors, whose answer vectors supply item evidence.",
+          "bbox": [
+            54.0,
+            304.5487365722656,
+            536.9347534179688,
+            318.4223327636719
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "weight_j = max(0, log(m_j/u_j) - log((1-m_j)/(1-u_j)))",
+          "bbox": [
+            54.0,
+            324.2575988769531,
+            319.679931640625,
+            334.4993896484375
+          ],
+          "font": "Courier",
+          "size": 8.199999809265137
+        },
+        {
+          "text": "This soft neighborhood can exploit ordinary similarity or near-duplicate structure; it does not establish household",
+          "bbox": [
+            54.0,
+            340.6487731933594,
+            541.2759399414062,
+            354.5223693847656
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "relationships or identities. An organizer ruling retained in the project allows matching within the supplied dataset",
+          "bbox": [
+            54.0,
+            353.248779296875,
+            541.2760009765625,
+            367.12237548828125
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "without external identity linkage. We do not assert newly authenticated organizer correspondence or link to external",
+          "bbox": [
+            54.0,
+            365.8487854003906,
+            541.2759399414062,
+            379.7223815917969
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "records. [6]",
+          "bbox": [
+            54.0,
+            378.4487609863281,
+            101.93360137939453,
+            392.3223571777344
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "Concentration-specific calibration.",
+          "bbox": [
+            54.0,
+            397.1423645019531,
+            208.65151977539062,
+            411.5463562011719
+          ],
+          "font": "Times-Bold",
+          "size": 10.399999618530273
+        },
+        {
+          "text": " Self-excluded replay uses up to 6,000 complete visible queries. For each item,",
+          "bbox": [
+            208.65151977539062,
+            397.04876708984375,
+            541.2760009765625,
+            410.92236328125
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "lambda is chosen from {0,0.1,...,0.9,0.95,0.98}, separately when maximum donor mass is below or at least 0.5. Each",
+          "bbox": [
+            54.0,
+            409.6487731933594,
+            541.2759399414062,
+            423.5223693847656
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "bucket requires 30 valid observations; insufficient support leaves lambda zero. The query is excluded as its own",
+          "bbox": [
+            54.0,
+            422.248779296875,
+            541.2759399414062,
+            436.12237548828125
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "donor. The final update follows gate mixing and precedes descendants' decoding.",
+          "bbox": [
+            54.0,
+            434.8487548828125,
+            392.0729675292969,
+            448.72235107421875
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "final_i = (1-lambda_i) * base_i + lambda_i * evidence_i",
+          "bbox": [
+            54.0,
+            454.5575866699219,
+            324.5999450683594,
+            464.79937744140625
+          ],
+          "font": "Courier",
+          "size": 8.199999809265137
+        },
+        {
+          "text": "No positive learned lambda means base-only prediction. No usable GIVEN signature supplies no evidence. GPU",
+          "bbox": [
+            54.0,
+            470.94879150390625,
+            541.2760009765625,
+            484.8223876953125
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "training exceptions can use CPU fallback; arbitrary whole-run failures and timeouts do not create a new TEST",
+          "bbox": [
+            54.0,
+            483.5487976074219,
+            541.2758178710938,
+            497.4223937988281
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "attempt. ",
+          "bbox": [
+            54.0,
+            496.1488037109375,
+            90.4000015258789,
+            510.02239990234375
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "E025 has no E041 learned section metric, 32-candidate reranking, metric-fit/selection/replay partition",
+          "bbox": [
+            90.4221420288086,
+            496.2424011230469,
+            541.2759399414062,
+            510.6463928222656
+          ],
+          "font": "Times-Bold",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "or section activation gate.",
+          "bbox": [
+            54.0,
+            508.8424072265625,
+            169.42840576171875,
+            523.2463989257812
+          ],
+          "font": "Times-Bold",
+          "size": 10.399999618530273
+        },
+        {
+          "text": " Its two-architecture choice, top-ten donors, replay cap and lambda grid are unchanged.",
+          "bbox": [
+            169.4283905029297,
+            508.7488098144531,
+            541.2760009765625,
+            522.6224365234375
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "[6]",
+          "bbox": [
+            54.0,
+            521.3488159179688,
+            66.12640380859375,
+            535.222412109375
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "characters": 3895,
+      "text_bounds_pass": true,
+      "links": [],
+      "fonts": [
+        "Helvetica",
+        "Helvetica-Bold",
+        "Times-Bold",
+        "Times-Roman"
+      ],
+      "spans": [
+        {
+          "text": "HSCC 2026 | E025 | REVIEW DRAFT | 23 October 2026",
+          "bbox": [
+            48.0,
+            809.289794921875,
+            248.9839630126953,
+            820.2817993164062
+          ],
+          "font": "Helvetica",
+          "size": 8.0
+        },
+        {
+          "text": "3 / 4",
+          "bbox": [
+            531.7075805664062,
+            809.289794921875,
+            547.2755737304688,
+            820.2817993164062
+          ],
+          "font": "Helvetica",
+          "size": 8.0
+        },
+        {
+          "text": "REVIEW DRAFT - NOT FINAL TEST SELECTION",
+          "bbox": [
+            48.0,
+            16.974998474121094,
+            218.01004028320312,
+            27.302499771118164
+          ],
+          "font": "Helvetica-Bold",
+          "size": 7.5
+        },
+        {
+          "text": "3. Calibration limits, development evidence and phase-2 refit",
+          "bbox": [
+            54.0,
+            45.47200012207031,
+            364.99200439453125,
+            62.09199905395508
+          ],
+          "font": "Times-Bold",
+          "size": 12.0
+        },
+        {
+          "text": "Ladder selection, conditional agreement, architecture/epoch choice and network mixing use internal visible-row",
+          "bbox": [
+            54.0,
+            67.44879913330078,
+            541.27587890625,
+            81.32240295410156
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "splits. Donor replay excludes self-matches, but base predictions are refitted on all visible rows, including replay",
+          "bbox": [
+            54.0,
+            80.04879760742188,
+            541.27587890625,
+            93.92240142822266
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "labels. Self-exclusion therefore does not cross-fit calibration, and replay performance is not an unbiased",
+          "bbox": [
+            54.0,
+            92.64879608154297,
+            541.2760009765625,
+            106.52239990234375
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "generalization estimate. No E041 partitioning is implicitly credited to E025, and no repair of this optimism is",
+          "bbox": [
+            54.0,
+            105.24879455566406,
+            541.2760009765625,
+            119.12239837646484
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "claimed.",
+          "bbox": [
+            54.0,
+            117.84880065917969,
+            89.52639770507812,
+            131.72239685058594
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "Algorithm choices and grids were developed through synthetic work, public instrument descriptions and repeated",
+          "bbox": [
+            54.0,
+            136.44876098632812,
+            541.2758178710938,
+            150.32235717773438
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "DEV feedback. Parameters are estimated at runtime, but the retained method was selected adaptively during",
+          "bbox": [
+            54.0,
+            149.04876708984375,
+            541.2760009765625,
+            162.92236328125
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "development. Legal TRAIN+DEV final fitting does not make those DEV observations independent again. Fixed",
+          "bbox": [
+            54.0,
+            161.6487579345703,
+            541.2760620117188,
+            175.52235412597656
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "seeds do not prevent row-order, CPU/GPU or reduction-related numerical variation. [6]",
+          "bbox": [
+            54.0,
+            174.24876403808594,
+            418.4993896484375,
+            188.1223602294922
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "Complete phase-2 visible counts grow to 16,373 UNICEF, 5,715 World Bank and 8,900 UNHCR respondents. Every",
+          "bbox": [
+            54.0,
+            192.8487548828125,
+            541.2760009765625,
+            206.72235107421875
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "fitted component is rebuilt from that frame: adding DEV can change marginals, asked-only heads, ladder",
+          "bbox": [
+            54.0,
+            205.44876098632812,
+            541.27587890625,
+            219.32235717773438
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "order/shrinkage, network architecture/epochs/mixing, gate coefficients, agreement weights and replay lambdas. The",
+          "bbox": [
+            54.0,
+            218.04876708984375,
+            541.2760620117188,
+            231.92236328125
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "larger visible bank may help or hurt; no linear runtime or gain forecast follows. Larger replay caps, ensembles,",
+          "bbox": [
+            54.0,
+            230.6487579345703,
+            541.2759399414062,
+            244.52235412597656
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "identifier signatures, tree blends and relation-specific evidence variants are not part of this predictor.",
+          "bbox": [
+            54.0,
+            243.24876403808594,
+            471.9242858886719,
+            257.12237548828125
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "Development counterevidence.",
+          "bbox": [
+            54.0,
+            261.9423828125,
+            189.95155334472656,
+            276.34637451171875
+          ],
+          "font": "Times-Bold",
+          "size": 10.399999618530273
+        },
+        {
+          "text": " Six later hosted comparisons were flat at displayed resolution: evidence as network",
+          "bbox": [
+            189.95155334472656,
+            261.8487854003906,
+            541.2760620117188,
+            275.7223815917969
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "input (E027), parent-value gate decoding (E028), larger replay (E031b), relation-specific weights (E036), identifier",
+          "bbox": [
+            54.0,
+            274.4487609863281,
+            541.27587890625,
+            288.3223571777344
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "signatures (E038) and a tree blend (E040). Simulation gains under injected assumptions did not establish transfer.",
+          "bbox": [
+            54.0,
+            287.04876708984375,
+            541.27587890625,
+            300.92236328125
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "E037 sentinel recalibration gained about 0.024 in-sample on a heavy-overlap simulation but lost about 0.004 under",
+          "bbox": [
+            54.0,
+            299.6487731933594,
+            541.2760620117188,
+            313.5223693847656
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "cross-fitting and was rejected. These observations neither prove zero possible improvement nor justify another",
+          "bbox": [
+            54.0,
+            312.248779296875,
+            541.2759399414062,
+            326.12237548828125
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "same-policy attempt. [6]",
+          "bbox": [
+            54.0,
+            324.8487548828125,
+            155.9615936279297,
+            338.72235107421875
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "E032-E034 aggregate UNHCR probes describe E025 only: approximate skill 0.79 from the base plus 0.10 from",
+          "bbox": [
+            54.0,
+            343.4487609863281,
+            541.27587890625,
+            357.3223571777344
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "evidence, with remaining loss about 0.079 gated/0.031 ungated. Keeping sentinel mass while flattening asked",
+          "bbox": [
+            54.0,
+            356.04876708984375,
+            541.2760009765625,
+            369.92236328125
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "answers left gated skill near 0.56. These are model-performance summaries, not private response statistics or an",
+          "bbox": [
+            54.0,
+            368.6487731933594,
+            541.2758178710938,
+            382.5223693847656
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "E041 decomposition. Rounded/noised same-phase Grand differences imply coarse practical UNHCR resolution,",
+          "bbox": [
+            54.0,
+            381.248779296875,
+            541.2757568359375,
+            395.12237548828125
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "about 0.015-0.03, not three-decimal precision. E032 initially changed all instruments and used a second account,",
+          "bbox": [
+            54.0,
+            393.8487854003906,
+            541.276123046875,
+            407.7223815917969
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "later retired and flagged as a likely Terms violation. No adjudication, waiver or independent replication is asserted.",
+          "bbox": [
+            54.0,
+            406.4487609863281,
+            541.276123046875,
+            420.3223571777344
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "[6]",
+          "bbox": [
+            54.0,
+            419.04876708984375,
+            66.12640380859375,
+            432.92236328125
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "Separate Adult/SIPP studies address limited proxy channels. E053 and E055 oracle STOPs do not bound",
+          "bbox": [
+            54.0,
+            437.6487731933594,
+            541.27587890625,
+            451.5223693847656
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "approximate UNHCR calibration; later E056-E059 supplied no deployed component. E059 STOP_SELECTION and",
+          "bbox": [
+            54.0,
+            450.248779296875,
+            541.2759399414062,
+            464.12237548828125
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "A_half nonpromotion remain. Later E060/E062/E063 released ties leave effects unresolved; E061's adverse result",
+          "bbox": [
+            54.0,
+            462.8487854003906,
+            541.2759399414062,
+            476.7223815917969
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "applies to that complete pipeline. E064 local qualification supplies no actual hosted score. No result from these",
+          "bbox": [
+            54.0,
+            475.44879150390625,
+            541.2758178710938,
+            489.3223876953125
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "alternatives changes this draft's E025 identity or final-choice status. [6,7]",
+          "bbox": [
+            54.0,
+            488.04876708984375,
+            357.7112731933594,
+            501.92236328125
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "Engineering scope.",
+          "bbox": [
+            54.0,
+            506.74237060546875,
+            138.86351013183594,
+            521.1463623046875
+          ],
+          "font": "Times-Bold",
+          "size": 10.399999618530273
+        },
+        {
+          "text": " Public synthetic phase-2 TEST-role cells were previously exposed development material, not",
+          "bbox": [
+            138.86349487304688,
+            506.6487731933594,
+            541.2758178710938,
+            520.5223999023438
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "newly independent real TEST evidence. The completed E025 provenance task below closes a concrete",
+          "bbox": [
+            54.0,
+            519.248779296875,
+            541.2759399414062,
+            533.1223754882812
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "source/archive/data/scorer connection; it does not validate hidden humanitarian population structure, establish E025",
+          "bbox": [
+            54.0,
+            531.8488159179688,
+            541.2760620117188,
+            545.722412109375
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "superiority or remove selection/calibration uncertainty. No raw response values appear in this document.",
+          "bbox": [
+            54.0,
+            544.4487915039062,
+            489.5627136230469,
+            558.3223876953125
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "characters": 4568,
+      "text_bounds_pass": true,
+      "links": [
+        "https://github.com/SituatedEvals/public/tree/f980ef5059360fcf977ed7971af5c00ee5c1962f",
+        "https://simulacrabench.org/",
+        "https://www.codabench.org/competitions/17822/",
+        "https://archive.ics.uci.edu/dataset/2/adult",
+        "https://www.census.gov/data/datasets/2023/demo/sipp/2023-data.html",
+        "https://huggingface.co/Prior-Labs/TabPFN-v2-clf/blob/main/LICENSE.txt"
+      ],
+      "fonts": [
+        "Helvetica",
+        "Helvetica-Bold",
+        "Times-Bold",
+        "Times-Roman"
+      ],
+      "spans": [
+        {
+          "text": "HSCC 2026 | E025 | REVIEW DRAFT | 23 October 2026",
+          "bbox": [
+            48.0,
+            809.289794921875,
+            248.9839630126953,
+            820.2817993164062
+          ],
+          "font": "Helvetica",
+          "size": 8.0
+        },
+        {
+          "text": "4 / 4",
+          "bbox": [
+            531.7075805664062,
+            809.289794921875,
+            547.2755737304688,
+            820.2817993164062
+          ],
+          "font": "Helvetica",
+          "size": 8.0
+        },
+        {
+          "text": "REVIEW DRAFT - NOT FINAL TEST SELECTION",
+          "bbox": [
+            48.0,
+            16.974998474121094,
+            218.01004028320312,
+            27.302499771118164
+          ],
+          "font": "Helvetica-Bold",
+          "size": 7.5
+        },
+        {
+          "text": "4. New provenance, reproducibility and external-material disclosure",
+          "bbox": [
+            54.0,
+            45.47200012207031,
+            403.3080139160156,
+            62.09199905395508
+          ],
+          "font": "Times-Bold",
+          "size": 12.0
+        },
+        {
+          "text": "On 23 October a separately authorized S3 ran unchanged modular E025 once across all three instruments and the",
+          "bbox": [
+            54.0,
+            67.44879913330078,
+            541.2759399414062,
+            81.32240295410156
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "preserved archive once with the stock official scorer. All 442,425 ordered raw vectors were exactly equal; width,",
+          "bbox": [
+            54.0,
+            80.04879760742188,
+            541.2760009765625,
+            93.92240142822266
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "finite/nonnegative values and positive sums passed, and official phase 2 passed all three schemas. The pre-model",
+          "bbox": [
+            54.0,
+            92.64879608154297,
+            541.2758178710938,
+            106.52239990234375
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "E041 ",
+          "bbox": [
+            54.0,
+            105.24879455566406,
+            78.55439758300781,
+            119.12239837646484
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "reuse ",
+          "bbox": [
+            88.34394836425781,
+            105.24879455566406,
+            112.88794708251953,
+            119.12239837646484
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "gate ",
+          "bbox": [
+            122.67749786376953,
+            105.24879455566406,
+            142.60389709472656,
+            119.12239837646484
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "checked ",
+          "bbox": [
+            152.3934326171875,
+            105.24879455566406,
+            189.0638427734375,
+            119.12239837646484
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "exact ",
+          "bbox": [
+            198.8533935546875,
+            105.24879455566406,
+            223.39739990234375,
+            119.12239837646484
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "input/frame/order/source/scorer/completion ",
+          "bbox": [
+            233.18695068359375,
+            105.24879455566406,
+            417.17352294921875,
+            119.12239837646484
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "identities ",
+          "bbox": [
+            426.96307373046875,
+            105.24879455566406,
+            467.699951171875,
+            119.12239837646484
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "and ",
+          "bbox": [
+            477.489501953125,
+            105.24879455566406,
+            495.1071472167969,
+            119.12239837646484
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "recorded",
+          "bbox": [
+            504.8966979980469,
+            105.24879455566406,
+            541.2759399414062,
+            119.12239837646484
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "Python/six-package versions. E041 was not rerun. [7]",
+          "bbox": [
+            54.0,
+            117.84880065917969,
+            276.98638916015625,
+            131.72239685058594
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "Instrument / cells",
+          "bbox": [
+            59.0,
+            140.5229949951172,
+            121.49600219726562,
+            152.5290069580078
+          ],
+          "font": "Times-Roman",
+          "size": 9.0
+        },
+        {
+          "text": "E025 skill",
+          "bbox": [
+            258.710205078125,
+            140.5229949951172,
+            295.4662170410156,
+            152.5290069580078
+          ],
+          "font": "Times-Roman",
+          "size": 9.0
+        },
+        {
+          "text": "E025 minus reused E041",
+          "bbox": [
+            398.50738525390625,
+            140.5229949951172,
+            488.7503967285156,
+            152.5290069580078
+          ],
+          "font": "Times-Roman",
+          "size": 9.0
+        },
+        {
+          "text": "UNICEF / 41,676",
+          "bbox": [
+            59.0,
+            159.5229949951172,
+            123.25100708007812,
+            171.5290069580078
+          ],
+          "font": "Times-Roman",
+          "size": 9.0
+        },
+        {
+          "text": "0.490197770701",
+          "bbox": [
+            258.710205078125,
+            159.5229949951172,
+            319.460205078125,
+            171.5290069580078
+          ],
+          "font": "Times-Roman",
+          "size": 9.0
+        },
+        {
+          "text": "0",
+          "bbox": [
+            398.50738525390625,
+            159.5229949951172,
+            403.00738525390625,
+            171.5290069580078
+          ],
+          "font": "Times-Roman",
+          "size": 9.0
+        },
+        {
+          "text": "World Bank / 92,112",
+          "bbox": [
+            59.0,
+            178.5229949951172,
+            134.99600219726562,
+            190.5290069580078
+          ],
+          "font": "Times-Roman",
+          "size": 9.0
+        },
+        {
+          "text": "0.462029504790",
+          "bbox": [
+            258.710205078125,
+            178.5229949951172,
+            319.460205078125,
+            190.5290069580078
+          ],
+          "font": "Times-Roman",
+          "size": 9.0
+        },
+        {
+          "text": "0",
+          "bbox": [
+            398.50738525390625,
+            178.5229949951172,
+            403.00738525390625,
+            190.5290069580078
+          ],
+          "font": "Times-Roman",
+          "size": 9.0
+        },
+        {
+          "text": "UNHCR / 308,637",
+          "bbox": [
+            59.0,
+            197.5229949951172,
+            126.75199890136719,
+            209.5290069580078
+          ],
+          "font": "Times-Roman",
+          "size": 9.0
+        },
+        {
+          "text": "0.565173813942",
+          "bbox": [
+            258.710205078125,
+            197.5229949951172,
+            319.460205078125,
+            209.5290069580078
+          ],
+          "font": "Times-Roman",
+          "size": 9.0
+        },
+        {
+          "text": "+0.000508448996",
+          "bbox": [
+            398.50738525390625,
+            197.5229949951172,
+            464.3333740234375,
+            209.5290069580078
+          ],
+          "font": "Times-Roman",
+          "size": 9.0
+        },
+        {
+          "text": "All absolute differences are at most 0.002 under the same truth/order/floor.001 engineering criterion. This is no",
+          "bbox": [
+            54.0,
+            221.4487762451172,
+            541.2759399414062,
+            235.32237243652344
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "TEST-ranking claim. Source/official whole-all3 walls were 429.930/450.277 seconds, each below a shared",
+          "bbox": [
+            54.0,
+            234.04876708984375,
+            541.2760620117188,
+            247.92236328125
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "900-second local cap, CPU2/GPU0. Maximum sampled tree RSS/private across them were 2.035/2.067 decimal GB;",
+          "bbox": [
+            54.0,
+            246.64877319335938,
+            541.2758178710938,
+            260.5223693847656
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "final samples counted, maximum gap 0.221341 seconds. No instantaneous or hosted peak guarantee follows. Source",
+          "bbox": [
+            54.0,
+            259.248779296875,
+            541.2759399414062,
+            273.12237548828125
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "raw was frozen before dedicated truth evaluation; stock official truth sequencing remained unchanged and its",
+          "bbox": [
+            54.0,
+            271.8487854003906,
+            541.2759399414062,
+            285.7223815917969
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "predictor saw only masked frames. The identical ZIP/checker's previous PASS was reused. [7]",
+          "bbox": [
+            54.0,
+            284.4487609863281,
+            447.5257568359375,
+            298.3223571777344
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "Older E025 official-minus-A012 UNICEF/WB drift (+0.000007983303/-0.000012753036) remains unexplained.",
+          "bbox": [
+            54.0,
+            303.04876708984375,
+            541.2760009765625,
+            316.92236328125
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "A012 provenance was collected after fitting, with historical PyYAML/threadpoolctl/OS/native-library/affinity",
+          "bbox": [
+            54.0,
+            315.6487731933594,
+            541.2759399414062,
+            329.5223693847656
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "omissions. A018's assembly-only parity, aborted concurrent work and later guard repairs remain historical. The new",
+          "bbox": [
+            54.0,
+            328.248779296875,
+            541.2760009765625,
+            342.12237548828125
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "modular/archive connection does not rewrite those records. Hidden-data runtime, GPU behavior and private hosted",
+          "bbox": [
+            54.0,
+            340.8487854003906,
+            541.2759399414062,
+            354.7223815917969
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "versions remain unverified. [6,7]",
+          "bbox": [
+            54.0,
+            353.4487609863281,
+            190.6143798828125,
+            367.3223571777344
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "The exact predictor is submissions/2026-09-25-E025/main.py. document-pairing.json links its SHA256, inherited",
+          "bbox": [
+            54.0,
+            372.0487976074219,
+            541.2759399414062,
+            385.9223937988281
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "ZIP identity and new Markdown/PDF hashes; no ZIP was opened or rehashed here. Retained certificates list main.py",
+          "bbox": [
+            54.0,
+            384.6487731933594,
+            541.2759399414062,
+            398.5223693847656
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "and the full starter MIT notice only. Runtime uses hosted NumPy/pandas/PyTorch/scikit-learn. No external rows,",
+          "bbox": [
+            54.0,
+            397.248779296875,
+            541.27587890625,
+            411.12237548828125
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "pretrained weights, fitted artifacts, models.txt or network calls are bundled. Visible-row fitting/internal selection/refit",
+          "bbox": [
+            54.0,
+            409.8487854003906,
+            541.27587890625,
+            423.7223815917969
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "consume the same saved public 3,600-second Final clock; the historical H100/eight-CPU/16-GB contract does not",
+          "bbox": [
+            54.0,
+            422.44879150390625,
+            541.2759399414062,
+            436.3223876953125
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "certify the current private environment. [1,6,7]",
+          "bbox": [
+            54.0,
+            435.04876708984375,
+            248.08477783203125,
+            448.92236328125
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "External development disclosure.",
+          "bbox": [
+            54.0,
+            453.7423095703125,
+            202.04006958007812,
+            468.14630126953125
+          ],
+          "font": "Times-Bold",
+          "size": 10.399999618530273
+        },
+        {
+          "text": " Separate work used recoded/profile-constrained UCI Adult (Becker and Kohavi,",
+          "bbox": [
+            202.04006958007812,
+            453.6487121582031,
+            541.2759399414062,
+            467.5223083496094
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "1996; CC BY 4.0), Census 2023 SIPP public-use observations and Prior Labs TabPFN V2 experiments. A040 used",
+          "bbox": [
+            54.0,
+            466.24871826171875,
+            541.2757568359375,
+            480.122314453125
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "TabICLv2 for fake-data technical work. VAF/HOST document/header intake left empirical linkage/asked-state work",
+          "bbox": [
+            54.0,
+            478.8487243652344,
+            541.2759399414062,
+            492.7223205566406
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "on HOLD. None of those rows, weights, outputs or proxy-fitted artifacts enters E025/E041; their unchanged lineage",
+          "bbox": [
+            54.0,
+            491.44873046875,
+            541.2760620117188,
+            505.32232666015625
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "predates later SIPP/TabICL/VAF work. Survey descriptions informed hypotheses, not fitted response priors. No",
+          "bbox": [
+            54.0,
+            504.0487365722656,
+            541.2759399414062,
+            517.92236328125
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "access approval is treated as redistribution permission. [3-6]",
+          "bbox": [
+            54.0,
+            516.6487426757812,
+            304.13037109375,
+            530.5223388671875
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "Starter MIT and third-party notices remain intact; runtime software retains its own licenses. TabPFN's Prior Labs",
+          "bbox": [
+            54.0,
+            535.2488403320312,
+            541.2758178710938,
+            549.1224365234375
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "License 1.1 has extra attribution conditions and is not team MIT. Team-code rights holders and license scope remain",
+          "bbox": [
+            54.0,
+            547.8488159179688,
+            541.27587890625,
+            561.722412109375
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "undecided. The prior scoped MIT proposal is not effective; this draft grants no rights or whole-repository publication",
+          "bbox": [
+            54.0,
+            560.4488525390625,
+            541.2759399414062,
+            574.3224487304688
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "permission. Retained public dates are DEV through 13 November and Final 14-18 November 2026, with exact",
+          "bbox": [
+            54.0,
+            573.048828125,
+            541.27587890625,
+            586.9224243164062
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "timestamps/timezone and latest Terms unconfirmed. Website winner-only method wording differs from September's",
+          "bbox": [
+            54.0,
+            585.6488037109375,
+            541.2759399414062,
+            599.5223999023438
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "every-TEST-entry clause. Final model, rights, current obligations, account/slot and upload need separate decisions.",
+          "bbox": [
+            54.0,
+            598.2488403320312,
+            541.2760620117188,
+            612.1224365234375
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "[2,6]",
+          "bbox": [
+            54.0,
+            610.8488159179688,
+            73.92639923095703,
+            624.722412109375
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "References and evidence.",
+          "bbox": [
+            54.0,
+            629.5423583984375,
+            165.19680786132812,
+            643.9463500976562
+          ],
+          "font": "Times-Bold",
+          "size": 10.399999618530273
+        },
+        {
+          "text": " [1] ",
+          "bbox": [
+            165.19679260253906,
+            629.4487915039062,
+            182.523193359375,
+            643.3223876953125
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "Pinned public kit f980ef5",
+          "bbox": [
+            182.523193359375,
+            629.4487915039062,
+            288.5408020019531,
+            643.3223876953125
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": ". [2] ",
+          "bbox": [
+            288.540771484375,
+            629.4487915039062,
+            308.4671936035156,
+            643.3223876953125
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "Official site",
+          "bbox": [
+            308.4671936035156,
+            629.4487915039062,
+            357.8568420410156,
+            643.3223876953125
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": " and ",
+          "bbox": [
+            357.8568420410156,
+            629.4487915039062,
+            378.0744934082031,
+            643.3223876953125
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "Codabench",
+          "bbox": [
+            378.0744934082031,
+            629.4487915039062,
+            424.86419677734375,
+            643.3223876953125
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": ", retained snapshots only.",
+          "bbox": [
+            424.86419677734375,
+            629.4487915039062,
+            530.299560546875,
+            643.3223876953125
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "[3] ",
+          "bbox": [
+            54.0,
+            642.0487670898438,
+            68.72639465332031,
+            655.92236328125
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "Adult, UCI",
+          "bbox": [
+            68.72639465332031,
+            642.0487670898438,
+            115.52640533447266,
+            655.92236328125
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": ". [4] ",
+          "bbox": [
+            115.52639770507812,
+            642.0487670898438,
+            135.45281982421875,
+            655.92236328125
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "Census 2023 SIPP",
+          "bbox": [
+            135.4528045654297,
+            642.0487670898438,
+            212.30877685546875,
+            655.92236328125
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": ". [5] ",
+          "bbox": [
+            212.30877685546875,
+            642.0487670898438,
+            232.2351837158203,
+            655.92236328125
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "TabPFN license",
+          "bbox": [
+            232.2351837158203,
+            642.0487670898438,
+            298.96160888671875,
+            655.92236328125
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": ". [6] A018 and A044 s3-prep methods, rules and license",
+          "bbox": [
+            298.9615783691406,
+            642.0487670898438,
+            531.4747314453125,
+            655.92236328125
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "inventory. [7] A044 s3-e025-provenance closeout/comparison and S0 acceptance, 23 October 2026. No new web",
+          "bbox": [
+            54.0,
+            654.6488037109375,
+            524.7771606445312,
+            668.5223999023438
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        },
+        {
+          "text": "fetch; exact documentary sources are in evidence-map.md.",
+          "bbox": [
+            54.0,
+            667.248779296875,
+            298.3271789550781,
+            681.1223754882812
+          ],
+          "font": "Times-Roman",
+          "size": 10.399999618530273
+        }
+      ]
+    }
+  ]
+}

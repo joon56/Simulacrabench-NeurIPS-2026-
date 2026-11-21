@@ -1,0 +1,8 @@
+test_exact_prefix_and_standalone_import (tests.test_e063_assembly.AssemblyBoundaryTests.test_exact_prefix_and_standalone_import) ... ok
+test_original_globals_and_round_helpers_are_isolated (tests.test_e063_assembly.AssemblyBoundaryTests.test_original_globals_and_round_helpers_are_isolated) ... ok
+test_real_control_fallback_and_supported_dispatch_without_fit (tests.test_e063_assembly.AssemblyBoundaryTests.test_real_control_fallback_and_supported_dispatch_without_fit) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 3.872s
+
+OK

@@ -1,0 +1,14 @@
+{
+  "recorded_utc": "2026-10-02T08:06:37.026793+00:00",
+  "outcome": "RESOURCE_ENTRY_PASS",
+  "started": false,
+  "measurement_ok": true,
+  "available": {
+    "physical": 21073350656,
+    "commitment": 20134481920
+  },
+  "threshold_bytes": 16000000000,
+  "definition": "unchanged watchdog MemoryStatus AST; GlobalMemoryStatusEx avail_phys/avail_page",
+  "probe_invocations": 1,
+  "elapsed_seconds": 0.001795799998944858
+}

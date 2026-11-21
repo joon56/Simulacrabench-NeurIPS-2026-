@@ -1,0 +1,68 @@
+{
+    "record":  "A044 S0 S3 completion review",
+    "recorded_at":  "2026-10-23T14:18:06.9364287+09:00",
+    "role":  "S0",
+    "task":  "Existing documentary evidence, decision and ownership handoff only",
+    "workflow_revision":  "2026-10-22-r6",
+    "workflow_sha256":  "69620b7eeaad5a01a6a6b884fbd95dfede3e26b2ee2b09016479846082aec089",
+    "head":  "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+    "branch":  "work/e050-submission",
+    "read_evidence":  [
+                          "AGENTS and CLAUDE full read: exec chunk e2398b",
+                          "status, newest three log entries and workflow read in ordered startup; workflow remaining text and closeout read before verification",
+                          "Verification first120 lines read via Get-Content in current conversation; no invented transcript ID.",
+                          "kit-compatibility and revalidation-plan full: b0693a",
+                          "phase2-validity full: 7bc312",
+                          "B01 and exposure full: 8434aa",
+                          "document-checks first60 lines only: b9bcf6",
+                          "workflow receipt/ownership sections, current status, newest three titles rechecked before ownership"
+                      ],
+    "read_scope_note":  "No claim to have read all entries of the large identity arrays. Document hashes identify bytes, not reading proof.",
+    "newest_log_entries":  [
+                               "2026-10-23 S3-PREP-A044 document preparation",
+                               "2026-10-22 A044 S0 batch operating model",
+                               "2026-10-11 E064 S1 technical pass"
+                           ],
+    "outgoing_owner":  "S3-PREP-A044 /root, released 2026-10-23T02:04:23.7312132+09:00",
+    "incoming_owner":  "S0 A044 S3 review /root",
+    "accepted_at":  "2026-10-23T14:18:06.9376408+09:00",
+    "owned_paths":  [
+                        "docs/analysis/A044-outputs/s0-s3-review/ docs/status.md current notice docs/log.md new entry"
+                    ],
+    "named_jobs":  [
+
+                   ],
+    "inventory":  {
+                      "complete":  false,
+                      "sha256":  "2aec5b8ae53a97e2b26d2a34a98a1d514986e6940a99914d6326d334368351f8",
+                      "reported_paths":  2329,
+                      "reason":  "Git could not traverse nine historical official-work directories or the user global ignore file under sandbox. No protected contents inspected. Initial dubious-owner error corrected with command-local safe.directory; no global config changed."
+                  },
+    "census_note":  "CIM denied; Get-Process name-only census succeeded. No claim of remote resources or other chats absent.",
+    "read_only_hashes_before":  {
+                                    "AGENTS.md":  "e3d52f09f32c7e3b8fdb194419119c4f563557103404da0831ffb31fbf2150e8",
+                                    "CLAUDE.md":  "7300b637f3a0ae937b2273a1945892df129eb16ee3ef7bdc6cff707c69ffc1e3",
+                                    "docs/status.md":  "b1c88040544dae96adf93652c27eba07faa43e5ad476c642d288bb70360aa6ae",
+                                    "docs/log.md":  "e41f8bebad752440142b3d7ab4193f16dfdcbb52be1d97fa4ce36247fb986ecc",
+                                    "docs/workflow.md":  "69620b7eeaad5a01a6a6b884fbd95dfede3e26b2ee2b09016479846082aec089",
+                                    "docs/analysis/A044-outputs/batch-01-e064-release.ko.md":  "26d4d49238035036426b23ee6b0c7827d55c1143f93a70778dd9ea4c2973b5af",
+                                    "docs/analysis/A044-outputs/s3-prep/closeout.md":  "524ac824dfd162bc11c6e873c7e342663b131db7be78e730d7a5271beaf1b363",
+                                    "docs/analysis/A044-outputs/s3-prep/verification.json":  "a7d876449f204da32a90c349efe70de38023486c3cdc31c672028871a3f9d68e",
+                                    "docs/analysis/A044-outputs/s3-prep/kit-compatibility.md":  "444d9d0c22554e226d627c917faca4fb410cbaf43e51fb2f60659365875749cf",
+                                    "docs/analysis/A044-outputs/s3-prep/revalidation-plan.md":  "5dbca47de7423afe593adbed2472a34d7d486306a76b1088ff1658ab957d78e5",
+                                    "docs/analysis/A044-outputs/s3-prep/phase2-validity.md":  "64538cae05ea3a4fe8a2aec8fb40a891b9e0230c5004fbf67b25ddcfc80215c6",
+                                    "docs/analysis/A044-outputs/s3-prep/exposure-and-preservation.md":  "99be7240b4272802f254d3b83a3130f3b3ab10b026e1e26c7cf55a778c368db2",
+                                    "docs/analysis/A044-outputs/s3-prep/document-checks.json":  "a77df31dca24d516e13f7ae5d8f6546545f8c832dcb0ef76ba487cd34595c249"
+                                },
+    "forbidden":  [
+                      "model/code changes",
+                      "model import/fit/predict/score",
+                      "scientific tests or checker",
+                      "arrays/Parquet/NPZ/cache/ZIP/PDF contents or hashes",
+                      "web/platform/remote operations",
+                      "subagents",
+                      "upload",
+                      "commit/push",
+                      "final TEST choice"
+                  ]
+}

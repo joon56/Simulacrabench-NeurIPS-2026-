@@ -1,0 +1,30 @@
+{
+  "mode": "tests",
+  "attempt": 1,
+  "command": [
+    "C:\\Users\\USER\\Desktop\\SimulacraBench\\.venv\\Scripts\\python.exe",
+    "-X",
+    "utf8",
+    "-B",
+    "-m",
+    "unittest",
+    "tests.test_tied_content_heads",
+    "-v"
+  ],
+  "started_utc": "2026-09-27T12:36:11.423923+00:00",
+  "wall_seconds": 5.831835899996804,
+  "prior_worker_seconds": 4.070086100000481,
+  "cumulative_worker_seconds": 9.901921999997285,
+  "resource_stop": "COMPLETE",
+  "error": null,
+  "exit_code": 0,
+  "peak_owned_tree_bytes": {
+    "rss": 357113856,
+    "commitment": 391692288
+  },
+  "sample_interval_seconds": 0.1,
+  "counter_semantics": "Sum of per-process RSS/private/page peaks, conservative; controller plus descendants",
+  "memory_limit_bytes_each": 8589934592,
+  "numerical_threads": 2,
+  "status": "PASS"
+}

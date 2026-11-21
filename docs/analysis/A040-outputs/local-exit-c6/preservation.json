@@ -1,0 +1,497 @@
+{
+    "scope":  "Explicit source/document/environment allowlist only; no protected data/archive access",
+    "attachment_hash":  "af1be6d3cb598da5b5d9e7de429ef51b91d21ad2a129139ec56cd3dcf76862be",
+    "checks":  [
+                   {
+                       "expected":  "bd00766b5d73d6253677e073c28b38ba87337180ae9d3e499597f1eddbaa996c",
+                       "section":  "original_preservation",
+                       "path":  "docs\\analysis\\A040-outputs\\local-exit-diagnosis1\\C6-registration.md",
+                       "actual":  "bd00766b5d73d6253677e073c28b38ba87337180ae9d3e499597f1eddbaa996c",
+                       "match":  true
+                   },
+                   {
+                       "expected":  "70dc89645d2c1a9567fbeea245f91d265295adea9b0394004dcfb3d640b52bbc",
+                       "section":  "original_preservation",
+                       "path":  "docs\\analysis\\A040-outputs\\local-exit-diagnosis1\\c6-blocked-receipt.json",
+                       "actual":  "70dc89645d2c1a9567fbeea245f91d265295adea9b0394004dcfb3d640b52bbc",
+                       "match":  true
+                   },
+                   {
+                       "expected":  "d242e9ae96d194224dea4c56fc6d2d84347d9f60ad55452d2ffb277d49f01498",
+                       "section":  "original_preservation",
+                       "path":  "docs\\analysis\\A040-outputs\\local-exit-diagnosis1\\closeout.md",
+                       "actual":  "d242e9ae96d194224dea4c56fc6d2d84347d9f60ad55452d2ffb277d49f01498",
+                       "match":  true
+                   },
+                   {
+                       "expected":  "af99e5e252acc092cf1a4042e9aa2669744955cd82df8f4ed9ce415e6cc97225",
+                       "section":  "original_preservation",
+                       "path":  "docs\\analysis\\A040-outputs\\local-exit-diagnosis1\\reproduction.md",
+                       "actual":  "af99e5e252acc092cf1a4042e9aa2669744955cd82df8f4ed9ce415e6cc97225",
+                       "match":  true
+                   },
+                   {
+                       "expected":  "901d65d477f971b040735160192cabe2dd6c88af67f06230769a4dfc731ed949",
+                       "section":  "original_preservation",
+                       "path":  "docs\\analysis\\A040-outputs\\local-exit-diagnosis1\\regression-history.md",
+                       "actual":  "901d65d477f971b040735160192cabe2dd6c88af67f06230769a4dfc731ed949",
+                       "match":  true
+                   },
+                   {
+                       "expected":  "7b6b7acaa137f54ae3e9af2aa5f3937de0728e8151d7a61311d63251f23ef673",
+                       "section":  "original_preservation",
+                       "path":  "docs\\analysis\\A040-outputs\\local-exit-diagnosis1\\verification.json",
+                       "actual":  "7b6b7acaa137f54ae3e9af2aa5f3937de0728e8151d7a61311d63251f23ef673",
+                       "match":  true
+                   },
+                   {
+                       "expected":  "08c168fe67206a0c1e14a9559b9b46d03304e3975ca1071fdeb1c2125ac5bd68",
+                       "section":  "original_preservation",
+                       "path":  "docs\\analysis\\A040-outputs\\local-exit-diagnosis1\\source-register.md",
+                       "actual":  "08c168fe67206a0c1e14a9559b9b46d03304e3975ca1071fdeb1c2125ac5bd68",
+                       "match":  true
+                   },
+                   {
+                       "expected":  "8740c8847f7fa763120f461e6c34002759af696e41ce244e9740843a43fbc8f9",
+                       "section":  "original_preservation",
+                       "path":  "docs\\analysis\\A040-outputs\\local-exit-diagnosis1\\source-manifest.json",
+                       "actual":  "8740c8847f7fa763120f461e6c34002759af696e41ce244e9740843a43fbc8f9",
+                       "match":  true
+                   },
+                   {
+                       "expected":  "69fb0ed83c58f1a8d5ae626a5bcfcd21142eb42556f29f76fb0dd6b72a216f31",
+                       "section":  "original_preservation",
+                       "path":  "docs\\analysis\\A040-outputs\\local-exit-diagnosis1\\artifact-manifest.json",
+                       "actual":  "69fb0ed83c58f1a8d5ae626a5bcfcd21142eb42556f29f76fb0dd6b72a216f31",
+                       "match":  true
+                   },
+                   {
+                       "expected":  "291029f6efec5b642c7365829ef1ef9a6b05309eb0e11be1d93f6a09c133c3fe",
+                       "section":  "original_preservation",
+                       "path":  "docs\\analysis\\A040-outputs\\local-exit-diagnosis1\\c3-definition-preflight.json",
+                       "actual":  "291029f6efec5b642c7365829ef1ef9a6b05309eb0e11be1d93f6a09c133c3fe",
+                       "match":  true
+                   },
+                   {
+                       "expected":  "48369b2b3d1618d330345b22cdaef4bce0631a543a336bd3b9ad143c7795bd29",
+                       "section":  "original_preservation",
+                       "path":  "docs\\analysis\\A040-outputs\\local-exit-diagnosis1\\c3-definition-process.json",
+                       "actual":  "48369b2b3d1618d330345b22cdaef4bce0631a543a336bd3b9ad143c7795bd29",
+                       "match":  true
+                   },
+                   {
+                       "expected":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                       "section":  "original_preservation",
+                       "path":  "docs\\analysis\\A040-outputs\\local-exit-diagnosis1\\c3-definition-stderr.txt",
+                       "actual":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                       "match":  true
+                   },
+                   {
+                       "expected":  "f26b4f6b2a32c1bf58a4e3d3a5ebf8d7904ca97734c024d3cbfe38f0232bf84d",
+                       "section":  "original_preservation",
+                       "path":  "docs\\analysis\\A040-outputs\\local-exit-diagnosis1\\c5-no-output-preflight.json",
+                       "actual":  "f26b4f6b2a32c1bf58a4e3d3a5ebf8d7904ca97734c024d3cbfe38f0232bf84d",
+                       "match":  true
+                   },
+                   {
+                       "expected":  "3e21d94ba76f1db302b457a98a36ae32673ac54af1321da57aa1f539e6a6aa63",
+                       "section":  "original_preservation",
+                       "path":  "docs\\analysis\\A040-outputs\\local-exit-diagnosis1\\c5-no-output-process.json",
+                       "actual":  "3e21d94ba76f1db302b457a98a36ae32673ac54af1321da57aa1f539e6a6aa63",
+                       "match":  true
+                   },
+                   {
+                       "expected":  "b22731cb32459d9d12c0beb8d7479a70e3a2f31db44055e1e6dae882a008d4f2",
+                       "section":  "original_preservation",
+                       "path":  "docs\\analysis\\A040-outputs\\local-exit-diagnosis1\\c5-no-output-stderr.txt",
+                       "actual":  "b22731cb32459d9d12c0beb8d7479a70e3a2f31db44055e1e6dae882a008d4f2",
+                       "match":  true
+                   },
+                   {
+                       "expected":  "62bc0b7bbb9d366f709120859b07d043a313800cdd82cdf8155baf178d86fcc7",
+                       "section":  "original_preservation",
+                       "path":  "docs\\analysis\\A040-outputs\\local-exit-diagnosis1\\diagnostic-source.diff",
+                       "actual":  "62bc0b7bbb9d366f709120859b07d043a313800cdd82cdf8155baf178d86fcc7",
+                       "match":  true
+                   },
+                   {
+                       "expected":  "db01026f594e01059782bce37c3d7dc95f448c4a36e6bf785f5445c13130c9ae",
+                       "section":  "original_preservation",
+                       "path":  "docs\\analysis\\A040-outputs\\local-exit-diagnosis1\\check_boundary.py",
+                       "actual":  "db01026f594e01059782bce37c3d7dc95f448c4a36e6bf785f5445c13130c9ae",
+                       "match":  true
+                   },
+                   {
+                       "expected":  "4b4a71239682c625c35cf55a3ac67a8278933f305bd02121b807c3676bb50577",
+                       "section":  "original_preservation",
+                       "path":  "docs\\analysis\\A040-outputs\\local-exit-diagnosis1\\run_check.ps1",
+                       "actual":  "4b4a71239682c625c35cf55a3ac67a8278933f305bd02121b807c3676bb50577",
+                       "match":  true
+                   },
+                   {
+                       "expected":  "044d127a68021916b86fa677c39a7c68a5510aeeec89523c3d69b5c88b11926a",
+                       "section":  "original_preservation",
+                       "path":  "docs\\analysis\\A040-outputs\\local-exit-diagnosis1\\boundary_transport.c4-before.txt",
+                       "actual":  "044d127a68021916b86fa677c39a7c68a5510aeeec89523c3d69b5c88b11926a",
+                       "match":  true
+                   },
+                   {
+                       "expected":  "877117e9aae8a9ddb53096ebc4e23488dc94511b9e52ce430663a03c94ff09cc",
+                       "section":  "original_preservation",
+                       "path":  "docs\\analysis\\A040-outputs\\local-exit-diagnosis1\\sdk_endpoint.c5-before.txt",
+                       "actual":  "877117e9aae8a9ddb53096ebc4e23488dc94511b9e52ce430663a03c94ff09cc",
+                       "match":  true
+                   },
+                   {
+                       "expected":  "c8fa35a0fe8eda5b107fd245d8c8566a7b64a09adacc267f09f60323c88c4bc0",
+                       "section":  "original_preservation",
+                       "path":  "docs\\analysis\\A040-outputs\\local-exit-diagnosis1\\contract.py",
+                       "actual":  "c8fa35a0fe8eda5b107fd245d8c8566a7b64a09adacc267f09f60323c88c4bc0",
+                       "match":  true
+                   },
+                   {
+                       "expected":  "4616f24b44d8b482cf90a560a13e59324f20e497af4090d6e588fe437801ff77",
+                       "section":  "original_preservation",
+                       "path":  "docs\\analysis\\A040-outputs\\local-exit-diagnosis1\\protocol.py",
+                       "actual":  "4616f24b44d8b482cf90a560a13e59324f20e497af4090d6e588fe437801ff77",
+                       "match":  true
+                   },
+                   {
+                       "expected":  "fc561eee08f1eafbbeac2cbcc5fa31890ef719bf603c5c7dd1af7aea5e556bcb",
+                       "section":  "original_preservation",
+                       "path":  "docs\\analysis\\A040-outputs\\local-exit-diagnosis1\\controller_core.py",
+                       "actual":  "fc561eee08f1eafbbeac2cbcc5fa31890ef719bf603c5c7dd1af7aea5e556bcb",
+                       "match":  true
+                   },
+                   {
+                       "expected":  "ca1351a05eea38577632a918b286d5ee7e5c82d423928fd8c2ce1af67de206c8",
+                       "section":  "original_preservation",
+                       "path":  "docs\\analysis\\A040-outputs\\local-exit-diagnosis1\\live_binding.py",
+                       "actual":  "ca1351a05eea38577632a918b286d5ee7e5c82d423928fd8c2ce1af67de206c8",
+                       "match":  true
+                   },
+                   {
+                       "expected":  "1edd25a8e1f72098191bae0da95b8f78811375f4123cc8f40393d3dc0e92dad3",
+                       "section":  "original_preservation",
+                       "path":  "docs\\analysis\\A040-outputs\\local-exit-diagnosis1\\sdk_endpoint.py",
+                       "actual":  "1edd25a8e1f72098191bae0da95b8f78811375f4123cc8f40393d3dc0e92dad3",
+                       "match":  true
+                   },
+                   {
+                       "expected":  "17273bebff6debd9888983ffcb2a7b3e3dbff572dccd203c05f9c8b5c9f60424",
+                       "section":  "original_preservation",
+                       "path":  "docs\\analysis\\A040-outputs\\local-exit-diagnosis1\\payload.py",
+                       "actual":  "17273bebff6debd9888983ffcb2a7b3e3dbff572dccd203c05f9c8b5c9f60424",
+                       "match":  true
+                   },
+                   {
+                       "expected":  "2b0ed4cd332a4e9ca85f335dd3fa3637eecc467a77be7f063b714c051dff0191",
+                       "section":  "original_preservation",
+                       "path":  "docs\\analysis\\A040-outputs\\local-exit-diagnosis1\\sandbox_stage.py",
+                       "actual":  "2b0ed4cd332a4e9ca85f335dd3fa3637eecc467a77be7f063b714c051dff0191",
+                       "match":  true
+                   },
+                   {
+                       "expected":  "1f134b1e5564fd2bddd61613878039af39cab1f10e8adf3e6d8f980a5e601297",
+                       "section":  "original_preservation",
+                       "path":  "docs\\analysis\\A040-outputs\\local-exit-diagnosis1\\live_worker.py",
+                       "actual":  "1f134b1e5564fd2bddd61613878039af39cab1f10e8adf3e6d8f980a5e601297",
+                       "match":  true
+                   },
+                   {
+                       "expected":  "2b49a7cd1d8251fb91d3dda6b6e91c469657026dc683ce5f90b554e980a2e477",
+                       "section":  "original_preservation",
+                       "path":  "docs\\analysis\\A040-outputs\\local-exit-diagnosis1\\live_launcher.py",
+                       "actual":  "2b49a7cd1d8251fb91d3dda6b6e91c469657026dc683ce5f90b554e980a2e477",
+                       "match":  true
+                   },
+                   {
+                       "expected":  "044d127a68021916b86fa677c39a7c68a5510aeeec89523c3d69b5c88b11926a",
+                       "section":  "hashes",
+                       "path":  "docs/analysis/A040-outputs/local-exit-c6/boundary_transport.py",
+                       "actual":  "044d127a68021916b86fa677c39a7c68a5510aeeec89523c3d69b5c88b11926a",
+                       "match":  true
+                   },
+                   {
+                       "expected":  "f09ce4fc1aba93ef91eea5b064f2ad555ca7916ecf2e1836f2410de2762b46d7",
+                       "section":  "hashes",
+                       "path":  "docs/analysis/A040-outputs/local-exit-c6/check_boundary.py",
+                       "actual":  "f09ce4fc1aba93ef91eea5b064f2ad555ca7916ecf2e1836f2410de2762b46d7",
+                       "match":  true
+                   },
+                   {
+                       "expected":  "c8fa35a0fe8eda5b107fd245d8c8566a7b64a09adacc267f09f60323c88c4bc0",
+                       "section":  "hashes",
+                       "path":  "docs/analysis/A040-outputs/local-exit-c6/contract.py",
+                       "actual":  "c8fa35a0fe8eda5b107fd245d8c8566a7b64a09adacc267f09f60323c88c4bc0",
+                       "match":  true
+                   },
+                   {
+                       "expected":  "fc561eee08f1eafbbeac2cbcc5fa31890ef719bf603c5c7dd1af7aea5e556bcb",
+                       "section":  "hashes",
+                       "path":  "docs/analysis/A040-outputs/local-exit-c6/controller_core.py",
+                       "actual":  "fc561eee08f1eafbbeac2cbcc5fa31890ef719bf603c5c7dd1af7aea5e556bcb",
+                       "match":  true
+                   },
+                   {
+                       "expected":  "cab28e9604e3310f28ad8288c11fa87973d8000da6c6839ec4e9f3a4d0203574",
+                       "section":  "hashes",
+                       "path":  "docs/analysis/A040-outputs/local-exit-c6/fixture_transport.py",
+                       "actual":  "cab28e9604e3310f28ad8288c11fa87973d8000da6c6839ec4e9f3a4d0203574",
+                       "match":  true
+                   },
+                   {
+                       "expected":  "ca1351a05eea38577632a918b286d5ee7e5c82d423928fd8c2ce1af67de206c8",
+                       "section":  "hashes",
+                       "path":  "docs/analysis/A040-outputs/local-exit-c6/live_binding.py",
+                       "actual":  "ca1351a05eea38577632a918b286d5ee7e5c82d423928fd8c2ce1af67de206c8",
+                       "match":  true
+                   },
+                   {
+                       "expected":  "2b49a7cd1d8251fb91d3dda6b6e91c469657026dc683ce5f90b554e980a2e477",
+                       "section":  "hashes",
+                       "path":  "docs/analysis/A040-outputs/local-exit-c6/live_launcher.py",
+                       "actual":  "2b49a7cd1d8251fb91d3dda6b6e91c469657026dc683ce5f90b554e980a2e477",
+                       "match":  true
+                   },
+                   {
+                       "expected":  "1f134b1e5564fd2bddd61613878039af39cab1f10e8adf3e6d8f980a5e601297",
+                       "section":  "hashes",
+                       "path":  "docs/analysis/A040-outputs/local-exit-c6/live_worker.py",
+                       "actual":  "1f134b1e5564fd2bddd61613878039af39cab1f10e8adf3e6d8f980a5e601297",
+                       "match":  true
+                   },
+                   {
+                       "expected":  "555759980ceff510f4900d510c16a9f50706d8d2e969b1231f203cfc84db98a7",
+                       "section":  "hashes",
+                       "path":  "docs/analysis/A040-outputs/local-exit-c6/local_guard.py",
+                       "actual":  "555759980ceff510f4900d510c16a9f50706d8d2e969b1231f203cfc84db98a7",
+                       "match":  true
+                   },
+                   {
+                       "expected":  "17273bebff6debd9888983ffcb2a7b3e3dbff572dccd203c05f9c8b5c9f60424",
+                       "section":  "hashes",
+                       "path":  "docs/analysis/A040-outputs/local-exit-c6/payload.py",
+                       "actual":  "17273bebff6debd9888983ffcb2a7b3e3dbff572dccd203c05f9c8b5c9f60424",
+                       "match":  true
+                   },
+                   {
+                       "expected":  "4616f24b44d8b482cf90a560a13e59324f20e497af4090d6e588fe437801ff77",
+                       "section":  "hashes",
+                       "path":  "docs/analysis/A040-outputs/local-exit-c6/protocol.py",
+                       "actual":  "4616f24b44d8b482cf90a560a13e59324f20e497af4090d6e588fe437801ff77",
+                       "match":  true
+                   },
+                   {
+                       "expected":  "8123177067e26572406aa634d3ddfc5074434ca3ad61f7f96578996aebab11c7",
+                       "section":  "hashes",
+                       "path":  "docs/analysis/A040-outputs/local-exit-c6/run_check.ps1",
+                       "actual":  "8123177067e26572406aa634d3ddfc5074434ca3ad61f7f96578996aebab11c7",
+                       "match":  true
+                   },
+                   {
+                       "expected":  "2b0ed4cd332a4e9ca85f335dd3fa3637eecc467a77be7f063b714c051dff0191",
+                       "section":  "hashes",
+                       "path":  "docs/analysis/A040-outputs/local-exit-c6/sandbox_stage.py",
+                       "actual":  "2b0ed4cd332a4e9ca85f335dd3fa3637eecc467a77be7f063b714c051dff0191",
+                       "match":  true
+                   },
+                   {
+                       "expected":  "877117e9aae8a9ddb53096ebc4e23488dc94511b9e52ce430663a03c94ff09cc",
+                       "section":  "hashes",
+                       "path":  "docs/analysis/A040-outputs/local-exit-c6/sdk_endpoint.py",
+                       "actual":  "877117e9aae8a9ddb53096ebc4e23488dc94511b9e52ce430663a03c94ff09cc",
+                       "match":  true
+                   },
+                   {
+                       "expected":  "c5b80a8f5bc630a5cb028ea4b540be1f59f36e5414a32b1798d82277f2099b3f",
+                       "section":  "hashes",
+                       "path":  "tmp/a040-modal-full-path1/sdk-venv/pyvenv.cfg",
+                       "actual":  "c5b80a8f5bc630a5cb028ea4b540be1f59f36e5414a32b1798d82277f2099b3f",
+                       "match":  true
+                   },
+                   {
+                       "expected":  "b70275ad94210fce7548761143be5e177769721045e287bb6c80aac3f928c65b",
+                       "section":  "hashes",
+                       "path":  "tmp/a040-modal-full-path1/sdk-venv/Scripts/python.exe",
+                       "actual":  "b70275ad94210fce7548761143be5e177769721045e287bb6c80aac3f928c65b",
+                       "match":  true
+                   },
+                   {
+                       "section":  "hashes",
+                       "path":  "C:/Users/USER/AppData/Local/Programs/Python/Python313/python.exe",
+                       "verified":  false,
+                       "reason":  "Read permission unavailable at closeout; earlier recorded check retained"
+                   },
+                   {
+                       "section":  "hashes",
+                       "path":  "C:/Users/USER/AppData/Local/Programs/Python/Python313/python313.dll",
+                       "verified":  false,
+                       "reason":  "Read permission unavailable at closeout; earlier recorded check retained"
+                   },
+                   {
+                       "expected":  "eea6f29f26e84acba16215da2315c2db816d4c2fafa7a014c8ed968c0f8f551e",
+                       "section":  "hashes",
+                       "path":  "tmp\\a040-modal-full-path1\\sdk-venv\\Lib\\site-packages\\modal-1.6.0.dist-info\\METADATA",
+                       "actual":  "eea6f29f26e84acba16215da2315c2db816d4c2fafa7a014c8ed968c0f8f551e",
+                       "match":  true
+                   },
+                   {
+                       "expected":  "7e7eae70698a8130c0309ce8734e50406a853964a7011dea3b69ea2c2335ae71",
+                       "section":  "hashes",
+                       "path":  "tmp\\a040-modal-full-path1\\sdk-venv\\Lib\\site-packages\\synchronicity-0.12.5.dist-info\\METADATA",
+                       "actual":  "7e7eae70698a8130c0309ce8734e50406a853964a7011dea3b69ea2c2335ae71",
+                       "match":  true
+                   },
+                   {
+                       "expected":  "6f3b31fd64380f5e60ed10f5a2954699bcc1f6266eb74316f0ba96702d30546f",
+                       "section":  "hashes",
+                       "path":  "tmp\\a040-modal-full-path1\\sdk-venv\\Lib\\site-packages\\protobuf-6.33.6.dist-info\\METADATA",
+                       "actual":  "6f3b31fd64380f5e60ed10f5a2954699bcc1f6266eb74316f0ba96702d30546f",
+                       "match":  true
+                   },
+                   {
+                       "expected":  "d52fbf849bf769f9057e99a409e79e55bab1f69f7eaf86e085a9b8da18dad97e",
+                       "section":  "hashes",
+                       "path":  "tmp\\a040-modal-full-path1\\sdk-venv\\Lib\\site-packages\\grpclib-0.4.9.dist-info\\METADATA",
+                       "actual":  "d52fbf849bf769f9057e99a409e79e55bab1f69f7eaf86e085a9b8da18dad97e",
+                       "match":  true
+                   },
+                   {
+                       "expected":  "e98f8579e899d3841f6e95d275f0ae0ceca696810e721f6ff35b5e0531e85860",
+                       "section":  "hashes",
+                       "path":  "tmp\\a040-modal-full-path1\\sdk-venv\\Lib\\site-packages\\modal\\types.py",
+                       "actual":  "e98f8579e899d3841f6e95d275f0ae0ceca696810e721f6ff35b5e0531e85860",
+                       "match":  true
+                   },
+                   {
+                       "expected":  "501027be53a74f40ac4eda78e23d288435e563e9e2a79d0df962eae72a4d634c",
+                       "section":  "hashes",
+                       "path":  "tmp\\a040-modal-full-path1\\sdk-venv\\Lib\\site-packages\\modal\\_image.py",
+                       "actual":  "501027be53a74f40ac4eda78e23d288435e563e9e2a79d0df962eae72a4d634c",
+                       "match":  true
+                   },
+                   {
+                       "expected":  "7524a3a79a9f270136f81b0034ef9a46b4edd818196284982afcc86363a34000",
+                       "section":  "hashes",
+                       "path":  "tmp\\a040-modal-full-path1\\sdk-venv\\Lib\\site-packages\\modal\\_functions.py",
+                       "actual":  "7524a3a79a9f270136f81b0034ef9a46b4edd818196284982afcc86363a34000",
+                       "match":  true
+                   },
+                   {
+                       "expected":  "7550829e8bdf4a562cb11b908745a8ab9a2a5f82a3fed00ae2f27751214d505c",
+                       "section":  "hashes",
+                       "path":  "tmp\\a040-modal-full-path1\\sdk-venv\\Lib\\site-packages\\modal\\_utils\\function_utils.py",
+                       "actual":  "7550829e8bdf4a562cb11b908745a8ab9a2a5f82a3fed00ae2f27751214d505c",
+                       "match":  true
+                   },
+                   {
+                       "expected":  "da907357f12b307d39e531b14f4adedaccd850dea4f17f784642f0229fc96d9c",
+                       "section":  "hashes",
+                       "path":  "tmp\\a040-modal-full-path1\\sdk-venv\\Lib\\site-packages\\modal\\_utils\\async_utils.py",
+                       "actual":  "da907357f12b307d39e531b14f4adedaccd850dea4f17f784642f0229fc96d9c",
+                       "match":  true
+                   },
+                   {
+                       "expected":  "72cb6b2f4c295c266672f46ced2cb7411c3d573f33919cbc34d934b4f7b7f2c9",
+                       "section":  "hashes",
+                       "path":  "tmp\\a040-modal-full-path1\\sdk-venv\\Lib\\site-packages\\modal\\client.py",
+                       "actual":  "72cb6b2f4c295c266672f46ced2cb7411c3d573f33919cbc34d934b4f7b7f2c9",
+                       "match":  true
+                   },
+                   {
+                       "expected":  "110e1506bb7b42c4d35dbf1fd3f72b7df949c359f5aab2e61d917599f9f1be94",
+                       "section":  "hashes",
+                       "path":  "tmp\\a040-modal-full-path1\\sdk-venv\\Lib\\site-packages\\modal\\config.py",
+                       "actual":  "110e1506bb7b42c4d35dbf1fd3f72b7df949c359f5aab2e61d917599f9f1be94",
+                       "match":  true
+                   },
+                   {
+                       "expected":  "5571f4b4b2d156c03cfb01c3d0a28bf723669de9f392bb6309ce41aa5de84976",
+                       "section":  "hashes",
+                       "path":  "tmp\\a040-modal-full-path1\\sdk-venv\\Lib\\site-packages\\synchronicity\\synchronizer.py",
+                       "actual":  "5571f4b4b2d156c03cfb01c3d0a28bf723669de9f392bb6309ce41aa5de84976",
+                       "match":  true
+                   },
+                   {
+                       "expected":  "5e78a3ddbb27c532f0a1726c6a03970ca21a460a0b273d6ed9948e34074f0d7f",
+                       "section":  "hashes",
+                       "path":  "tmp\\a040-modal-full-path1\\sdk-venv\\Lib\\site-packages\\modal_proto\\api_pb2.py",
+                       "actual":  "5e78a3ddbb27c532f0a1726c6a03970ca21a460a0b273d6ed9948e34074f0d7f",
+                       "match":  true
+                   },
+                   {
+                       "expected":  "110ec42264b12432e2337017a10c2eb83ecad0bcf9d34ef6092d6daedd9bceaa",
+                       "section":  "hashes",
+                       "path":  "tmp\\a040-modal-full-path1\\sdk-venv\\Lib\\site-packages\\google\\protobuf\\internal\\api_implementation.py",
+                       "actual":  "110ec42264b12432e2337017a10c2eb83ecad0bcf9d34ef6092d6daedd9bceaa",
+                       "match":  true
+                   },
+                   {
+                       "expected":  "d82fbb894585901b316c29da4d7da5a4283d859c407705da03753964d4b0d455",
+                       "section":  "hashes",
+                       "path":  "tmp\\a040-modal-full-path1\\sdk-venv\\Lib\\site-packages\\grpclib\\client.py",
+                       "actual":  "d82fbb894585901b316c29da4d7da5a4283d859c407705da03753964d4b0d455",
+                       "match":  true
+                   },
+                   {
+                       "expected":  "72970bb66676a4e34ba5fe6ffd8f853b78ea1ef7e4ad1082bb80287a78d47923",
+                       "section":  "hashes",
+                       "path":  "C:\\Users\\USER\\Desktop\\SimulacraBench\\tmp\\a040-modal-full-path1\\sdk-venv\\Lib\\site-packages\\google\\_upb\\_message.pyd",
+                       "actual":  "72970bb66676a4e34ba5fe6ffd8f853b78ea1ef7e4ad1082bb80287a78d47923",
+                       "match":  true
+                   },
+                   {
+                       "expected":  "e3d52f09f32c7e3b8fdb194419119c4f563557103404da0831ffb31fbf2150e8",
+                       "section":  "entry_readonly",
+                       "path":  "AGENTS.md",
+                       "actual":  "e3d52f09f32c7e3b8fdb194419119c4f563557103404da0831ffb31fbf2150e8",
+                       "match":  true
+                   },
+                   {
+                       "expected":  "7300b637f3a0ae937b2273a1945892df129eb16ee3ef7bdc6cff707c69ffc1e3",
+                       "section":  "entry_readonly",
+                       "path":  "CLAUDE.md",
+                       "actual":  "7300b637f3a0ae937b2273a1945892df129eb16ee3ef7bdc6cff707c69ffc1e3",
+                       "match":  true
+                   },
+                   {
+                       "expected":  "69620b7eeaad5a01a6a6b884fbd95dfede3e26b2ee2b09016479846082aec089",
+                       "section":  "entry_readonly",
+                       "path":  "docs/workflow.md",
+                       "actual":  "69620b7eeaad5a01a6a6b884fbd95dfede3e26b2ee2b09016479846082aec089",
+                       "match":  true
+                   },
+                   {
+                       "expected":  "cb6ea26c9d5d377714c707b00eb771e29ef4ee412d947cc680b3cff2881e4c65",
+                       "section":  "entry_readonly",
+                       "path":  "docs/analysis/E064-outputs/s0-post-result-review/decision.md",
+                       "actual":  "cb6ea26c9d5d377714c707b00eb771e29ef4ee412d947cc680b3cff2881e4c65",
+                       "match":  true
+                   },
+                   {
+                       "expected":  "618d728baea6d978149c1c9ffa981b3dfee8267c9c0fab461b370cd056d5f4f5",
+                       "section":  "entry_readonly",
+                       "path":  "docs/analysis/E064-outputs/s0-post-result-review/entry.json",
+                       "actual":  "618d728baea6d978149c1c9ffa981b3dfee8267c9c0fab461b370cd056d5f4f5",
+                       "match":  true
+                   },
+                   {
+                       "expected":  "d1430966a5cd97746c736163c30c0d6e917738a503192f39d713eb810b13d3c4",
+                       "section":  "entry_readonly",
+                       "path":  "docs/analysis/E064-outputs/s0-post-result-review/verification.json",
+                       "actual":  "d1430966a5cd97746c736163c30c0d6e917738a503192f39d713eb810b13d3c4",
+                       "match":  true
+                   },
+                   {
+                       "expected":  "968fb9d4e2e215f3ba3bed35c8c455648537c2aa29d9632cdafa462488244d20",
+                       "section":  "entry_readonly",
+                       "path":  "docs/analysis/E064-outputs/s0-post-result-review/s1-c6-diagnostic-handoff.ko.md",
+                       "actual":  "968fb9d4e2e215f3ba3bed35c8c455648537c2aa29d9632cdafa462488244d20",
+                       "match":  true
+                   }
+               ],
+    "repository_handoff_hash":  "968fb9d4e2e215f3ba3bed35c8c455648537c2aa29d9632cdafa462488244d20",
+    "historical_native_identity_limit":  "Historical C3 complete native binary hashes absent; current freeze cannot establish prior byte identity",
+    "normalized_document_equal":  true
+}

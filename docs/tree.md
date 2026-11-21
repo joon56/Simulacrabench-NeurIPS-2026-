@@ -119,12 +119,48 @@ flowchart TD
     E056 --> E057
     E058["E058 Fixed-donor GIVEN pair interactions<br/><i>rejected · 2026-09-26</i>"]
     E041 --> E058
+    E059["E059 Fixed-lambda leaf donor interaction comparison<br/><i>rejected · 2026-09-26</i>"]
+    E041 --> E059
+    E060["E060 Content-target retrieval fitting<br/><i>parked · 2026-09-27</i>"]
+    E041 --> E060
+    E061["E061 Tied full and conditional neural heads<br/><i>parked · 2026-09-27</i>"]
+    E041 --> E061
+    E062["E062 WB16 ordinal conditional heads<br/><i>parked · 2026-10-07</i>"]
+    E041 --> E062
+    E063["E063 UNHCR round-conditioned metric<br/><i>parked · 2026-10-09</i>"]
+    E041 --> E063
+    E064["E064 Conditional-head gradient isolation<br/><i>parked · 2026-10-11</i>"]
+    E041 --> E064
+    E065["E065 WB76 TabICLv2 expert mixture<br/><i>parked · 2026-11-08</i>"]
+    E041 --> E065
+    E066["E066 UNHCR wave-coded sentinel transfer<br/><i>parked · 2026-11-08</i>"]
+    E041 --> E066
+    E067["E067 Composable E041 additions (expert per instrument + UNHCR transfer)<br/><i>parked · 2026-11-08</i>"]
+    E065 --> E067
+    E068["E068 UNHCR return-branch re-gating on s3_12<br/><i>parked · 2026-11-08</i>"]
+    E066 --> E068
+    E069["E069 World Bank sentinel from a direct classifier where the gate is approximate<br/><i>parked · 2026-11-08</i>"]
+    E065 --> E069
+    E070["E070 Internally validated composition (Final candidate structure)<br/><i>parked · 2026-11-09</i>"]
+    E067 --> E070
+    E071["E071 Per-head expert weights and temperature inside the internal guard<br/><i>parked · 2026-11-10</i>"]
+    E070 --> E071
+    E073["E073 Boosted-tree experts (GIVEN-only and neighbour-answer features)<br/><i>parked · 2026-11-12</i>"]
+    E072 --> E073
+    E074["E074 Honest copy share from the best-matching labelled rows (`twin`)<br/><i>parked · 2026-11-13</i>"]
+    E073 --> E074
+    E075["E075 Neighbour trees fed by E041's supervised retrieval (expert `r`)<br/><i>parked · 2026-11-13</i>"]
+    E074 --> E075
+    E076["E076 Final composition: guarded pools, pairing-aware retrieval trees (`q`), E-row quantile 1.0<br/><i>parked · 2026-11-13</i>"]
+    E075 --> E076
+    E077["E077 Final revision: r dropped on WB / UNICEF; structural exclusions (`det`) tried and removed<br/><i>adopted · 2026-11-14</i>"]
+    E076 --> E077
     classDef adopted fill:#d4edda,stroke:#28a745
-    class E001,E002,E003,E004,E005,E006,E008,E010,E012,E018,E022,E025,E032,E033,E034,E041 adopted
+    class E001,E002,E003,E004,E005,E006,E008,E010,E012,E018,E022,E025,E032,E033,E034,E041,E077 adopted
     classDef rejected fill:#f8d7da,stroke:#dc3545
-    class E009,E011,E016,E017,E020,E023,E031,E035,E037,E040,E044,E053,E055,E058 rejected
+    class E009,E011,E016,E017,E020,E023,E031,E035,E037,E040,E044,E053,E055,E058,E059 rejected
     classDef parked fill:#fff3cd,stroke:#ffc107
-    class E007,E013,E014,E015,E019,E024,E026,E027,E028,E029,E030,E036,E038,E039,E042,E043,E045,E046,E047,E048,E049,E050,E051,E052,E054,E056,E057 parked
+    class E007,E013,E014,E015,E019,E024,E026,E027,E028,E029,E030,E036,E038,E039,E042,E043,E045,E046,E047,E048,E049,E050,E051,E052,E054,E056,E057,E060,E061,E062,E063,E064,E065,E066,E067,E068,E069,E070,E071,E073,E074,E075,E076 parked
     classDef superseded fill:#e2e3e5,stroke:#6c757d
     class E021 superseded
 ```

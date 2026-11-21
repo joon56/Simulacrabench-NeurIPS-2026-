@@ -1,0 +1,428 @@
+{
+  "candidate": {
+    "neural_calls": 9,
+    "metric_calls": 8,
+    "neural_wall_seconds": 239.58777360000386,
+    "epochs_executed": 1379,
+    "metric_iterations": [
+      16,
+      14,
+      25,
+      17,
+      15,
+      13,
+      14,
+      11
+    ],
+    "neural_by_instrument": {
+      "unicef": [
+        {
+          "config": [
+            64,
+            2,
+            0.0
+          ],
+          "epochs_executed": 145,
+          "best_epoch": 115,
+          "fit_rows": 9537,
+          "validation_rows": 2361,
+          "wall_seconds": 8.630287900003168
+        },
+        {
+          "config": [
+            128,
+            2,
+            0.1
+          ],
+          "epochs_executed": 120,
+          "best_epoch": 90,
+          "fit_rows": 9537,
+          "validation_rows": 2361,
+          "wall_seconds": 9.823631999999634
+        },
+        {
+          "config": [
+            64,
+            2,
+            0.0
+          ],
+          "epochs_executed": 115,
+          "best_epoch": 0,
+          "fit_rows": 14885,
+          "validation_rows": 0,
+          "wall_seconds": 5.306249499997648
+        }
+      ],
+      "world_bank": [
+        {
+          "config": [
+            64,
+            2,
+            0.0
+          ],
+          "epochs_executed": 223,
+          "best_epoch": 193,
+          "fit_rows": 3280,
+          "validation_rows": 832,
+          "wall_seconds": 23.001973300000827
+        },
+        {
+          "config": [
+            128,
+            2,
+            0.1
+          ],
+          "epochs_executed": 223,
+          "best_epoch": 193,
+          "fit_rows": 3280,
+          "validation_rows": 832,
+          "wall_seconds": 30.8241803000019
+        },
+        {
+          "config": [
+            128,
+            2,
+            0.1
+          ],
+          "epochs_executed": 193,
+          "best_epoch": 0,
+          "fit_rows": 5195,
+          "validation_rows": 0,
+          "wall_seconds": 33.57345669999995
+        }
+      ],
+      "unhcr": [
+        {
+          "config": [
+            64,
+            2,
+            0.0
+          ],
+          "epochs_executed": 126,
+          "best_epoch": 96,
+          "fit_rows": 5264,
+          "validation_rows": 1303,
+          "wall_seconds": 39.83798569999999
+        },
+        {
+          "config": [
+            128,
+            2,
+            0.1
+          ],
+          "epochs_executed": 138,
+          "best_epoch": 108,
+          "fit_rows": 5264,
+          "validation_rows": 1303,
+          "wall_seconds": 53.997133799999574
+        },
+        {
+          "config": [
+            64,
+            2,
+            0.0
+          ],
+          "epochs_executed": 96,
+          "best_epoch": 0,
+          "fit_rows": 8279,
+          "validation_rows": 0,
+          "wall_seconds": 34.592874400001165
+        }
+      ]
+    },
+    "retrieval": [
+      {
+        "event": "return",
+        "function": "supervised_layer",
+        "wall_seconds": 17.920359100000496,
+        "active_sections": [
+          0,
+          1,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "nonzero_lambda_items": 91,
+        "model": "candidate",
+        "instrument": "unhcr"
+      }
+    ]
+  },
+  "E041": {
+    "neural_calls": 9,
+    "metric_calls": 8,
+    "neural_wall_seconds": 268.67221579999386,
+    "epochs_executed": 1393,
+    "metric_iterations": [
+      16,
+      14,
+      25,
+      17,
+      15,
+      13,
+      14,
+      11
+    ],
+    "neural_by_instrument": {
+      "unicef": [
+        {
+          "config": [
+            64,
+            2,
+            0.0
+          ],
+          "epochs_executed": 145,
+          "best_epoch": 115,
+          "fit_rows": 9537,
+          "validation_rows": 2361,
+          "wall_seconds": 5.423686499998439
+        },
+        {
+          "config": [
+            128,
+            2,
+            0.1
+          ],
+          "epochs_executed": 120,
+          "best_epoch": 90,
+          "fit_rows": 9537,
+          "validation_rows": 2361,
+          "wall_seconds": 9.740555699998367
+        },
+        {
+          "config": [
+            64,
+            2,
+            0.0
+          ],
+          "epochs_executed": 115,
+          "best_epoch": 0,
+          "fit_rows": 14885,
+          "validation_rows": 0,
+          "wall_seconds": 5.304306400001224
+        }
+      ],
+      "world_bank": [
+        {
+          "config": [
+            64,
+            2,
+            0.0
+          ],
+          "epochs_executed": 223,
+          "best_epoch": 193,
+          "fit_rows": 3280,
+          "validation_rows": 832,
+          "wall_seconds": 23.3436088999988
+        },
+        {
+          "config": [
+            128,
+            2,
+            0.1
+          ],
+          "epochs_executed": 223,
+          "best_epoch": 193,
+          "fit_rows": 3280,
+          "validation_rows": 832,
+          "wall_seconds": 30.846519399998215
+        },
+        {
+          "config": [
+            128,
+            2,
+            0.1
+          ],
+          "epochs_executed": 193,
+          "best_epoch": 0,
+          "fit_rows": 5195,
+          "validation_rows": 0,
+          "wall_seconds": 33.617973399999755
+        }
+      ],
+      "unhcr": [
+        {
+          "config": [
+            64,
+            2,
+            0.0
+          ],
+          "epochs_executed": 124,
+          "best_epoch": 94,
+          "fit_rows": 5264,
+          "validation_rows": 1303,
+          "wall_seconds": 44.93705039999986
+        },
+        {
+          "config": [
+            128,
+            2,
+            0.1
+          ],
+          "epochs_executed": 140,
+          "best_epoch": 110,
+          "fit_rows": 5264,
+          "validation_rows": 1303,
+          "wall_seconds": 55.941134699998656
+        },
+        {
+          "config": [
+            128,
+            2,
+            0.1
+          ],
+          "epochs_executed": 110,
+          "best_epoch": 0,
+          "fit_rows": 8279,
+          "validation_rows": 0,
+          "wall_seconds": 59.51738040000055
+        }
+      ]
+    },
+    "retrieval": [
+      {
+        "event": "return",
+        "function": "supervised_layer",
+        "wall_seconds": 17.46856569999727,
+        "active_sections": [
+          0,
+          1,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "nonzero_lambda_items": 82,
+        "model": "E041",
+        "instrument": "unhcr"
+      }
+    ]
+  },
+  "E025": {
+    "neural_calls": 9,
+    "metric_calls": 0,
+    "neural_wall_seconds": 286.62798009999824,
+    "epochs_executed": 1393,
+    "metric_iterations": [],
+    "neural_by_instrument": {
+      "unicef": [
+        {
+          "config": [
+            64,
+            2,
+            0.0
+          ],
+          "epochs_executed": 145,
+          "best_epoch": 115,
+          "fit_rows": 9537,
+          "validation_rows": 2361,
+          "wall_seconds": 5.212352899998223
+        },
+        {
+          "config": [
+            128,
+            2,
+            0.1
+          ],
+          "epochs_executed": 120,
+          "best_epoch": 90,
+          "fit_rows": 9537,
+          "validation_rows": 2361,
+          "wall_seconds": 9.252391499998339
+        },
+        {
+          "config": [
+            64,
+            2,
+            0.0
+          ],
+          "epochs_executed": 115,
+          "best_epoch": 0,
+          "fit_rows": 14885,
+          "validation_rows": 0,
+          "wall_seconds": 5.072271199998795
+        }
+      ],
+      "world_bank": [
+        {
+          "config": [
+            64,
+            2,
+            0.0
+          ],
+          "epochs_executed": 223,
+          "best_epoch": 193,
+          "fit_rows": 3280,
+          "validation_rows": 832,
+          "wall_seconds": 22.835553400000208
+        },
+        {
+          "config": [
+            128,
+            2,
+            0.1
+          ],
+          "epochs_executed": 223,
+          "best_epoch": 193,
+          "fit_rows": 3280,
+          "validation_rows": 832,
+          "wall_seconds": 30.33561499999996
+        },
+        {
+          "config": [
+            128,
+            2,
+            0.1
+          ],
+          "epochs_executed": 193,
+          "best_epoch": 0,
+          "fit_rows": 5195,
+          "validation_rows": 0,
+          "wall_seconds": 33.068490600002406
+        }
+      ],
+      "unhcr": [
+        {
+          "config": [
+            64,
+            2,
+            0.0
+          ],
+          "epochs_executed": 124,
+          "best_epoch": 94,
+          "fit_rows": 5264,
+          "validation_rows": 1303,
+          "wall_seconds": 46.33380380000017
+        },
+        {
+          "config": [
+            128,
+            2,
+            0.1
+          ],
+          "epochs_executed": 140,
+          "best_epoch": 110,
+          "fit_rows": 5264,
+          "validation_rows": 1303,
+          "wall_seconds": 67.96809500000018
+        },
+        {
+          "config": [
+            128,
+            2,
+            0.1
+          ],
+          "epochs_executed": 110,
+          "best_epoch": 0,
+          "fit_rows": 8279,
+          "validation_rows": 0,
+          "wall_seconds": 66.54940669999996
+        }
+      ]
+    },
+    "retrieval": []
+  }
+}

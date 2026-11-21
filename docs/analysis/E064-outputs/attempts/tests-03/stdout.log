@@ -1,0 +1,7 @@
+test_actual_entry_observer_and_skipped_path_contract (tests.test_conditional_gradient.ObserverTests.test_actual_entry_observer_and_skipped_path_contract) ... ok
+test_original_F_only_metric_slice_and_lambda_zero_minimum (tests.test_conditional_gradient.ObserverTests.test_original_F_only_metric_slice_and_lambda_zero_minimum) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 8.013s
+
+OK

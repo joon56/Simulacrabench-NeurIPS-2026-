@@ -1,0 +1,12 @@
+{
+  "exit_code": 1,
+  "wall_seconds": 4.070086100000481,
+  "peak_owned_tree_bytes": {
+    "rss": 276602880,
+    "commitment": 258293760
+  },
+  "stop": "COMPLETE",
+  "full_stack_calls": 0,
+  "neural_train_calls": 0,
+  "gradient_checks": 0
+}

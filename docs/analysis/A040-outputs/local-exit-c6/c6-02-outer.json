@@ -1,0 +1,7 @@
+{
+    "attempt":  "c6-02",
+    "outer_supervisor_seconds":  2.6392496999999997,
+    "scope":  "Invocation preparation plus child, supervision, cleanup and inner receipt; replaces nested duration for aggregate accounting",
+    "command_error":  null,
+    "ended":  "2026-10-26T21:39:58.0186378+09:00"
+}

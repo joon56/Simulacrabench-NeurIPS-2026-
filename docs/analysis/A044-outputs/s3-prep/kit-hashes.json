@@ -1,0 +1,72 @@
+[
+    {
+        "path":  "README.md",
+        "local_sha256":  "e9616b6f832ec554a576fb05c6c62ebd81451b0b63d83e357a413f0df11e6951",
+        "upstream_saved_sha256":  "ffa3430f41211ec532d4fc46cbf1f5edb7853bbb45ab041ccd2c30e5884cf2ac",
+        "byte_equal":  false,
+        "lf_text_equal":  false
+    },
+    {
+        "path":  "config.yml",
+        "local_sha256":  "f22f8e4faa62b6af0ee8e7e887e35980511e4517655479fefeeef4519fc52c15",
+        "upstream_saved_sha256":  "bcc6aedf979a22512e2fc23bac5d161eda0dd2735e38c9c04b7c76bed5ad97c6",
+        "byte_equal":  false,
+        "lf_text_equal":  false
+    },
+    {
+        "path":  "score.py",
+        "local_sha256":  "7049e99a48acef2a74f37cb49bb66b5a9af8d05d2ed8fcf530287b5e81c5042f",
+        "upstream_saved_sha256":  "d1853f2af6630d3cace2a57c94be51e7b317ff697b531b21553aea21c11f8090",
+        "byte_equal":  false,
+        "lf_text_equal":  true
+    },
+    {
+        "path":  "make_sandbox.py",
+        "local_sha256":  "8cf628cbb4771ed6e91ad74ebb4f75b22667af39d8f48e01c956c675b1b1586b",
+        "upstream_saved_sha256":  "0630967fda75aaacbea8e042b3a73e97cc84470a00dace45172c377c474d806d",
+        "byte_equal":  false,
+        "lf_text_equal":  false
+    },
+    {
+        "path":  "data/unicef.json",
+        "local_sha256":  "0bce08036cc563ee2a369dcee316ff8a5f89045d86991756d72c266927674396",
+        "upstream_saved_sha256":  "29870d75423bbfbebd103834c33ecdd121f7b93d14e3eba882913e08c9b9b3ab",
+        "byte_equal":  false,
+        "lf_text_equal":  true
+    },
+    {
+        "path":  "data/world_bank.json",
+        "local_sha256":  "6b3760742c6e864eb8d0bb2f9ec523a19a486b73282d79432dbcca16e3664125",
+        "upstream_saved_sha256":  "6a5e736886d6d5092ff9c72a1841114dc287bf368350d7325f36bd8384e6d23d",
+        "byte_equal":  false,
+        "lf_text_equal":  true
+    },
+    {
+        "path":  "data/unhcr.json",
+        "local_sha256":  "b1175b6bdbd96e90a4defd83af20a38d711c6eca9fe3ce880109ff244abe80d9",
+        "upstream_saved_sha256":  "a44721a8170ca102170a58490470628c81c085210d68a60e3cb774411019a384",
+        "byte_equal":  false,
+        "lf_text_equal":  true
+    },
+    {
+        "path":  "tools/check_submission_zip.py",
+        "local_sha256":  "0cb9e671b3b19ab62e68b37512ee8717e97d47694276f16e27a77b02d2f37916",
+        "upstream_saved_sha256":  "e1f7316642f440ece2aedd6e149f5f0a47c108fc836c602815fdd026aeee3d8f",
+        "byte_equal":  false,
+        "lf_text_equal":  true
+    },
+    {
+        "path":  "requirements.txt",
+        "local_sha256":  "5b799d00957f47440c214513d911d91605018948387f0f272dbfddc57e2ff866",
+        "upstream_saved_sha256":  "fbbf6a1a9209de01a739a46aa4013dae70bed76e4d8a6c076cebac263f3ddb37",
+        "byte_equal":  false,
+        "lf_text_equal":  true
+    },
+    {
+        "path":  "LICENSE",
+        "local_sha256":  "a81db73b86212de93a3944eea5dfb01126ffe17d5fbdb620a6e4c4d04830b20e",
+        "upstream_saved_sha256":  "f38d690effe75689378dd6cb4376ac4204e41cac540990fa4a5800d15d4f5663",
+        "byte_equal":  false,
+        "lf_text_equal":  true
+    }
+]

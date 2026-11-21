@@ -1,0 +1,321 @@
+{
+    "verdict":  "PASS_PUBLIC_DOCUMENT_EXTRACTION_AND_SCOPED_PRESERVATION",
+    "research_disposition":  "DOCUMENT_INPUTS_ADVANCED / EMPIRICAL_HOLD",
+    "started_utc":  "2026-09-27T10:56:04Z",
+    "finished_utc":  "2026-09-27T11:16:00.0194673+00:00",
+    "elapsed_seconds":  1196,
+    "document_limit":  20,
+    "selected_documentary_resources":  14,
+    "head":  "1d223340d4e1fa3993b411dc5daafab9cb37d0cd",
+    "workflow_sha256":  "987b4549dbb6c701bab48df5969e4aa1ed8bf69cc3a851842f55853ca69a84ba",
+    "baseline_count":  108,
+    "prior_changed":  [
+                          "docs/log.md",
+                          "docs/status.md"
+                      ],
+    "prior_missing":  [
+
+                      ],
+    "unexpected_changes":  [
+
+                           ],
+    "current_permitted_hashes":  {
+                                     "docs/analysis/A026-outputs/verification.json":  "484ccc128f05a76ce04fc7e621a970f62940121d68d23d62415336c45ee9481a",
+                                     "docs/analysis/E060-outputs/check_e060-attempt1.py.txt":  "15577c09e9f606e847d363af4c1d3c986fcd540e10eac49e99d72faadc724046",
+                                     "scripts/assemble_e060.py":  "d607ffd3e79bfe11431fa0773763343f4117082af8255c9d15e1e6041a784613",
+                                     "docs/analysis/A029-outputs/document-links.json":  "794e7c5c9e2372ee595842d68473e412429db6d5eddd3af3caf0c207fb4bc2e0",
+                                     "docs/analysis/A025-submission-oriented-review.md":  "433345cf643dfa20bcb198bdd4a580c53c6db975180291f2f18fb8d968695b00",
+                                     "docs/analysis/E060-outputs/source.log":  "e2adacb05e24ecccf1d0ec55b253a08c6809a76784208af3d0400e58c3c30375",
+                                     "docs/analysis/E060-outputs/technical-retry1/source.log":  "93133e53c2e7cdfb51b0ede43ccb9ab3404e30872997af5776f376605c373405",
+                                     "docs/workflow.md":  "987b4549dbb6c701bab48df5969e4aa1ed8bf69cc3a851842f55853ca69a84ba",
+                                     "docs/analysis/E060-outputs/registration.md":  "8f1c6ce1f0114d7fe0b0b0f765471cd245627797d49505b61e4f6100052af320",
+                                     "docs/analysis/E060-outputs/technical-retry1/assembly-runtime.json":  "a5adc7bdc0218103706d911a7b597cf30165d8de2ba0991fe2f2c79f01783501",
+                                     "docs/analysis/E060-outputs/closeout.md":  "314e61f6d0d51906ba11da9d2f6070085fa621d2cd6fc36a41b87c58a9b57614",
+                                     "docs/plans/README.md":  "823a67fa6e5acf6bf74f5b8f2b3b509eac1e63839d7690709694dfe795415194",
+                                     "CLAUDE.md":  "eda4ec2ee1edec41f26a3f5c8e90c783947e16280e1b6d8bf7684263b87449ca",
+                                     "docs/analysis/E060-outputs/technical-retry1/official-runtime.json":  "bda0c832c358d87590f485cc8f021ba9e5127ccc093f248d26b241218ef26e45",
+                                     "docs/analysis/A029-outputs/workspace-check-initial.json":  "6e1d7c42f2587c728ea3dbc93391364a2538d31199a38aa3b891dd483e3fbddb",
+                                     "docs/analysis/E060-outputs/technical-retry1/official-unicef.log":  "e930556992939f74f3a4737dcff8e01419c0b02cfe0353bfde4214e2cce15d51",
+                                     "docs/analysis/E060-outputs/technical-retry1/official.json":  "429722671a5096dc1fc0f5fb76d27a4b9fefc49b0d472891ead0d337e2611e6d",
+                                     "docs/codex-setup.ko.md":  "804ad28cc886fa2c839940a9bbabdfb0949a4f345812080c1b90585b281afc4d",
+                                     "docs/analysis/E060-outputs/technical-repair.md":  "0d97c2946245c3753483008de4990a6a0342e1d5be4379c153746e2c83ed3f97",
+                                     "docs/analysis/A027-outputs/verification.json":  "428a14545b0094862c6c05364eac36fb620cc49a4900463b6072cbf3ddfdd250",
+                                     ".claude/settings.local.json":  "9a87cfd2ef7d39762a049825706497bc5b29518e55fb223179efb2a58c102630",
+                                     "docs/log.md":  "847e09665e9f02275e7b0aa9750a90a0f35436517850156c11dca5cd5d2e426d",
+                                     "docs/analysis/E060-outputs/technical-retry1/official-unhcr.log":  "4217ca9aacac7ffc8cadbffd812da31365d6007d24184e35dea451acfb6582d0",
+                                     "docs/analysis/E060-outputs/technical-retry1/official-world_bank.log":  "7744d98f18341c38a13f0ad53d5660267c54d6b47753f459f65222f746b73e86",
+                                     ".claude/skills/paper-session/SKILL.md":  "ae38ce4b58cb2b7feeee90694646de2fc0defc646d8250aa58796d1c210a47cf",
+                                     "docs/analysis/A023-candidate-boundary-contract.md":  "0a22d6e17cc5b6d846060ebed5a65107e2de4d8647ec4280688f5d8847fbd444",
+                                     "docs/analysis/E060-outputs/technical-retry1/registration.md":  "8f1c6ce1f0114d7fe0b0b0f765471cd245627797d49505b61e4f6100052af320",
+                                     "docs/analysis/A029-outputs/entry.json":  "82deceb909bc8972131680ae2cbf137a063b88d512cfd59f3e7ba899192de5c6",
+                                     "docs/analysis/E060-outputs/technical-retry1/assembly.json":  "62ceca7e0ee43baff61bbcb6d713249d16accbb838c4b435f55ec9f808a934de",
+                                     "docs/analysis/A027-workflow-role-revision.md":  "accdc13240e460bbb838da25dab8412ac597c4b15787383a3b922e436f43ebb3",
+                                     "docs/analysis/E060-outputs/technical-retry1/official-unhcr.json":  "16a8469bad07447175c60236fbf370d01b4e7c3ea8bb38d840bf0ed99b0a7e44",
+                                     "scripts/check_workspace.py":  "1e81e01ce6deaced9b338ec6c85d17cb3fda1b7b4227dd7d2329a84f3e298789",
+                                     "docs/analysis/E060-outputs/technical-retry1/package.json":  "059c261377529648b9b36293bd9e4fa16b2ce5c6daf01c6878790cddc5bfee12",
+                                     "docs/analysis/A026-outputs/entry.json":  "15ac5a2429bedc769e594dd63311f1bd1c064b14aec264c653a33c419f4b9673",
+                                     "docs/analysis/E060-outputs/preflight.json":  "cd594c12d42c3af404d5b6969092f16423816dfdea6f67e4dd1e191ee861e9f3",
+                                     "docs/analysis/E060-outputs/technical-retry1/official-unicef.json":  "706b7b97ed68a16eed3840fb8455d1aec510de34c8a6c349b22de148add6af3c",
+                                     "docs/analysis/E060-outputs/technical-retry1/source.json":  "47d3b821a41f8cac4155df910565f2cd98a33b3fdac4c89e739cb7993bb75fdd",
+                                     "docs/analysis/E060-outputs/technical-retry1/assembly-world_bank.json":  "2df5aa65405fc3478b84646ae112f0405df14d49c4fc483c51507744a92d0f85",
+                                     "docs/analysis/E060-outputs/technical-retry1/source-runtime.json":  "d8655815bae274aba2bdb7534eb6638d8529f3bc983c166434103d372f7e1d59",
+                                     "docs/analysis/E060-outputs/fixture-results.json":  "78d8f9d16ec006f58cf04a11a9b95b60dbc4c6b595bcb3cafc51dc7890d0a691",
+                                     "docs/analysis/A028-outputs/verification.json":  "2f329c7079a173b6035deca633c015f2a594db971a6132d16cd5ae879239cded",
+                                     "docs/analysis/A008-winning-strategy-hypotheses.md":  "dd40ebbb004e25f9eca0acd677055a09f5ac1f339159a63639b0704dc466b06a",
+                                     "docs/analysis/E060-outputs/s2/post-result-handoff.ko.md":  "e3693e75678cc6c3eb44895f794c5d3a826124fcd4550695ce27403a702af01c",
+                                     "docs/analysis/E060-outputs/technical-retry1/source-unhcr.json":  "c610e52bcc2d3660357ea25571c5298142ae71fe8f10b06d810d335bbd43319d",
+                                     "docs/analysis/A024-channel-precision-review.md":  "1a830e20b63965a3f229f2d564f623e7e4965c6495a400e62239d89a30e2985d",
+                                     "scripts/check_e060.py":  "056cd3f7c0a8e36d5fc3e47f44fd6da848820cc2d703daf94d43d598afdb25f8",
+                                     "docs/tree.md":  "eaa884a4194db103335136495205fe5b51297c17db15e9eac62946ced286cc44",
+                                     ".gitattributes":  "32e509568cd21da6561b2854940b0865a236d7db90acc5ebcfcbf7caf1ebbf5a",
+                                     "submissions/2026-09-27-E060/NOTICE.txt":  "a81db73b86212de93a3944eea5dfb01126ffe17d5fbdb620a6e4c4d04830b20e",
+                                     "docs/analysis/A027-outputs/s1-channel-metadata-handoff.ko.md":  "5b1eae713b48d752c122462eaa4c16fc596c2c10015810028462566f2f3dee47",
+                                     "docs/analysis/A029-outputs/inventory-summary.json":  "c2b7e523bf1721c89cfc82718c1637085553bc0bab5a051bb43adaedd7986c78",
+                                     "tests/test_workspace_check.py":  "1a93f6150bc06a7d10682936f47b999a4bd4d66ea41664ac214308672f5d4b33",
+                                     "docs/analysis/A029-outputs/verification.json":  "f3b5100d18a203d6e0779bd4a8dd116592bbee7f05b2d4f643cf2d8ec3ff05d3",
+                                     "requirements-models.txt":  "29095e4880aa69c9a6b94aef36719276ec3f5ad0617e1839296d5549eb4d6e12",
+                                     "submissions/2026-09-27-E060/SCORES.md":  "a519a4d73fafe14653e41af7c0afadd1c5e3ae6a911459d08f02cd2db5c4a5ed",
+                                     "docs/analysis/E060-outputs/prior-preservation.json":  "b70eb099bf4dcc461881d29f16b5ec25520d90e0de19de6aeff17a9db9334554",
+                                     "docs/domain-study-guide.ko.md":  "c6df8543900b1e43f7ea0358f08dccced17aab48b20fbb7dfd09c6911d94e79f",
+                                     "README.md":  "44899910938a8913df121bf312489696815a257c97d24149abcbd8bab6e0f94d",
+                                     "docs/analysis/E060-outputs/session-manifest.json":  "4381f810197aa8b916505c75a0f193659d6062d512214ba71098d049dca03f4b",
+                                     "docs/analysis/E060-outputs/technical-retry1/official-world_bank.json":  "35d8cbd6c0160f5f3567c022924b97189bb5991d306badddbd9b17753c554116",
+                                     "docs/analysis/A029-outputs/workspace-check.json":  "720526b867ccea7eef7b4f2ac9820527c377890075fbc4814bb002ce39e3f5ad",
+                                     "docs/analysis/E060-outputs/technical-retry1/assembly-unicef.json":  "8ea4a241d29cdccedfc225c9c0d00cdf6dd6ff470c67c2930ecc2c0a1c6ef01d",
+                                     "src/models/content_target_retrieval.py":  "0cce8e6204075e178d247a5027cf016e10f14614e5a9ea6cacc08025dd783481",
+                                     "conftest.py":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                                     "AGENTS.md":  "febc698acbc581de465dba7a0108e97aa4c3c7d7859af035a6b159938c834dfc",
+                                     "docs/experiments/E060-content-target-retrieval.md":  "b1ba67e7d521d181dac1df4a285ea39ba98b5b20244e6d9ce81e52363e3e7bc0",
+                                     "docs/analysis/E060-outputs/technical-retry1/assembly.log":  "4831f6850ce731a000991819d6cae86139aa1adbc5804653cd0de2f40e360dc3",
+                                     "docs/analysis/A029-outputs/inventory-summary-full.json":  "096b8fb1cfd1e08c8fb42da07f05b4e243f50666a675d2f3eb788719a60b8aa3",
+                                     "docs/analysis/E060-outputs/review.md":  "fbf132aaeb602cb458469508412d6ff51ebd026b9fc398f62388fcae3ab53a1a",
+                                     "docs/analysis/E060-outputs/technical-retry1/preflight.json":  "c0232430ba6ba355e85ac72b63f3cbd86903260b139487243ce7fa2eef75ea1b",
+                                     "docs/analysis/E060-outputs/technical-retry1/source-unicef.json":  "13dd288193ecd3b65018f749cc764007536488e31796d38b0407687b0df4db06",
+                                     "docs/analysis/E060-outputs/exposure-ledger.md":  "40a59acc238d60551aca8ba664e2994a1b239e5b44c0ef4c8ce1d7e6c572d88c",
+                                     "docs/analysis/E060-outputs/source-runtime.json":  "d0254140e0725468bbfb9bb13d4523ef069fed0b2dbd321aed1502ff74cfb84b",
+                                     "requirements.txt":  "c57890e5eeaee69fbe973da6e300592e75124df8e323c62ef7b4552e4da958d0",
+                                     "docs/status.md":  "63cd7565b0463bc9ee40390d232bb28204c249a3331be0071e59ed9874f26923",
+                                     "docs/analysis/E060-outputs/technical-retry1/source-world_bank.json":  "2b7114591fca8487da5134fd9598fd752f3e97c8a4f8c8b472468d93ba71d420",
+                                     "docs/analysis/E060-outputs/verification.json":  "33fdea9c93e41bf0361f81a4604137efa66517a1032e2d7a312b4e56531b363d",
+                                     ".agents/skills/paper-session/SKILL.md":  "b444bf486cb54c37200a9c886cc58a3d0dd6139cb0431abbf291e1cba95bb11e",
+                                     "submissions/2026-09-27-E060/verification.json":  "33fdea9c93e41bf0361f81a4604137efa66517a1032e2d7a312b4e56531b363d",
+                                     "submissions/2026-09-27-E060/main.py":  "eb9fd1869c6c2cd7b856d163d5646981d3888197bbd3f27b384e099335ab7bc3",
+                                     "docs/analysis/E060-outputs/s2-handoff.ko.md":  "bf577d68c306d1f25f50e9e1e157877d145cad9e18e6252825b2cf6bde16f183",
+                                     "docs/analysis/A029-codex-migration-audit.md":  "a47366a477628e793fe47ded0fc2c91dced4e5aeeed854c465df94308bf77274",
+                                     "docs/analysis/E060-outputs/technical-retry1/official.log":  "9dd7f06d3d481e5ca7fdb533f9fe0bbef558aa1f6c48ea7638db8ab66fb9975a",
+                                     "docs/analysis/A029-outputs/project-paths.txt":  "020ea0b8c3251e48b515cc9c1b839d9a53c7b26f97591b8ee33aaaad03fcfe2d",
+                                     "docs/analysis/A029-outputs/source-audit.json":  "520dd8f40f018108573ae2aa49ff376ed84aa6e1d56d78a0b6ca7a944a3d7efe",
+                                     ".gitignore":  "ddbfc49388e75ad97664da410f2422c42128c16be0a098fadfc3e3fc5a3508a9",
+                                     "docs/analysis/A029-outputs/status-before-migration.md":  "c213af0106dfc7df2efaa865376c53c997735ac7f41d2999e4af1b186f971c6e",
+                                     "docs/index.md":  "0e8e1ca2d3aa35be4bd523c12554a8286f475ba1d7c47704af1a46ffeb065f34",
+                                     "tests/test_e060_assembly.py":  "c6f4f25b8d7def6d279a25e6326f82d0b46fc1a0d4b0ebec28c4bd00cd7034a7",
+                                     "docs/session-prompts.ko.md":  "0e09504f94ab35de5e724ebc448d484dacbbf7e497678a9f6342034bea9c45d7",
+                                     "docs/analysis/A028-workflow-entry-audit.md":  "cc930947f08bc377beb81879fc047e18030004539da1f8fcf8d5d27f629ff01d",
+                                     "docs/analysis/A028-outputs/entry.json":  "7e8405879827dbf40e4489e8a9dc2881317380683678a5bc9a1868241b02cf10",
+                                     "tests/test_content_target_retrieval.py":  "24fdfc4f3e7cc7a729b5deb40e4ff51a47ff07497feae019c41b40626973f64c",
+                                     "docs/analysis/E060-outputs/technical-retry1/assembly-unhcr.json":  "459ebad054d95dbbc47317c5bfa53764d6c25a8c80e7004c13365c338fd50b9d",
+                                     "docs/analysis/A027-outputs/entry.json":  "58d6ad8053f548d8477c8dc9bd116e9f03d284c0274b0765878ac2c1b4effb9b",
+                                     "docs/analysis/A026-post-e060-strategy-review.md":  "2657e93a6766a2932fe72581998b81b5d7c116cae8aa6b71dc318931b9f96ccd",
+                                     "docs/analysis/A030-vaf-channel-metadata-review.md":  "f9d0c102b86f93c4346f425552b1a12b3d6db93b6a6fed76bcc3e4c59eaa3c03",
+                                     "docs/analysis/A030-outputs/entry.json":  "dd389d95c100d283c8a26e4cdbab487cc6f756fe1acc31a611526923c9539bdc",
+                                     "docs/analysis/A030-outputs/exposure-ledger.md":  "ff146a4a45f1063c3f749ccba0ee1f8d1ece2386172c23fb5b35a486210926a5",
+                                     "docs/analysis/A030-outputs/registration.md":  "97383e94712c5cc10b353b34d1a0549565459db0087d0e9ffbbc33cd2bb09a30",
+                                     "docs/analysis/A030-outputs/report-extracted.txt":  "a4a83b57a94215eff2489a6c002bc41656f22a775cc00244f5f77c0b4270d70e",
+                                     "docs/analysis/A030-outputs/s0-handoff.ko.md":  "21bb04275a7a80a74c62f7b7cc8176c39e588d746b587457280c8dcb3a66f89c",
+                                     "docs/analysis/A030-outputs/source-register.md":  "9e0a48ea6e4235853a70c03afd98820e3383b299ab63cb54e57b162b0b066432",
+                                     "docs/analysis/A030-outputs/vaf-host-2024-report.pdf":  "5785bd893da1f77f9a121671fc6aa788e0446a32355d3a62a056d3c8f4da9565",
+                                     "docs/analysis/A030-outputs/verification.json":  "1c39b0481ec526c98f78ff50798c5040a160f2584b13d37740b2620a8edb3247",
+                                     "docs/analysis/A031-outputs/entry.json":  "c684a16649ac63215dc04bef5cf1d03c5b4d51ba44cfc4eea3140a948f675ed4",
+                                     "docs/analysis/A031-post-a030-handoff-review.md":  "29a577132be6fa5931f1746df25afbef4b8e0e11fa54b6a41a9d04798c2bac30",
+                                     "docs/analysis/A031-outputs/verification.json":  "04e323984b703549ec45dfab2eef353def2d975e80c09ec64accf782c2b22ec0"
+                                 },
+    "artifact_hashes":  {
+                            "docs/analysis/A032-outputs/access-landing.html":  {
+                                                                                   "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                                                                                   "bytes":  0
+                                                                               },
+                            "docs/analysis/A032-outputs/catalog1030-ddi.xml":  {
+                                                                                   "sha256":  "f5ea139f2be32e84d544c612560584487b2cd955bd776f0b4945b792009373e1",
+                                                                                   "bytes":  3285553
+                                                                               },
+                            "docs/analysis/A032-outputs/catalog1030-metadata.json":  {
+                                                                                         "sha256":  "cde92f60722e6c923b3683a253aa374a7b4feb821910b26e529a5269c065db4f",
+                                                                                         "bytes":  3843
+                                                                                     },
+                            "docs/analysis/A032-outputs/catalog1030.html":  {
+                                                                                "sha256":  "88de1a1fa257910a4de02a977dda7b096f99aa9199e67a37a2873fcb22978145",
+                                                                                "bytes":  47932
+                                                                            },
+                            "docs/analysis/A032-outputs/custodian-request.en.md":  {
+                                                                                       "sha256":  "68128d4cf50abafbfdd44fc9f7a0c02454851bb1a30a9df8fc048d7cf2ef5944",
+                                                                                       "bytes":  3196
+                                                                                   },
+                            "docs/analysis/A032-outputs/entry.json":  {
+                                                                          "sha256":  "9acfa4cd11dcbd2e435264edae4a1188bfeb1d3f95289a68a6562793bfb7febb",
+                                                                          "bytes":  19967
+                                                                      },
+                            "docs/analysis/A032-outputs/exposure-ledger.md":  {
+                                                                                  "sha256":  "3e7a414aeaddc5a32e63f6a58f838e110016ad05fea11c46e05deec51666dd3b",
+                                                                                  "bytes":  3462
+                                                                              },
+                            "docs/analysis/A032-outputs/extract_metadata.py":  {
+                                                                                   "sha256":  "fd460bec3c57966809bca7911a2ab74012bd3fb00ecd4477274f7e350c853d8f",
+                                                                                   "bytes":  6868
+                                                                               },
+                            "docs/analysis/A032-outputs/metadata-integrity.json":  {
+                                                                                       "sha256":  "1301907c57a110cae95e05445def1b8cd6ef219db2cc94964d9f17d6e86a9047",
+                                                                                       "bytes":  1314
+                                                                                   },
+                            "docs/analysis/A032-outputs/questionnaire-cells.json":  {
+                                                                                        "sha256":  "5570a260c2a5579fc01ae2cae7d035de8dcf892e60fbc7ef2a94d5e4bbabc34e",
+                                                                                        "bytes":  2364148
+                                                                                    },
+                            "docs/analysis/A032-outputs/questionnaire-source.zip":  {
+                                                                                        "sha256":  "c05354c137139813221f949fa86b26714a8906df1327ef666be213a2db6dd19e",
+                                                                                        "bytes":  439434
+                                                                                    },
+                            "docs/analysis/A032-outputs/readiness-contract.ko.md":  {
+                                                                                        "sha256":  "139d577ab9afa82aa8d64ab8814847af0b953fffdfed6f141de520040a5a512d",
+                                                                                        "bytes":  6297
+                                                                                    },
+                            "docs/analysis/A032-outputs/related-materials.html":  {
+                                                                                      "sha256":  "b643dd3007f3afb9ada56be9fbf013396592083270018a5e4b1f6d8d831ae504",
+                                                                                      "bytes":  52576
+                                                                                  },
+                            "docs/analysis/A032-outputs/researcher-guide.pdf":  {
+                                                                                    "sha256":  "381372b27e64ca48e169d42917fece4342559959053fa46d135015a94076f6d6",
+                                                                                    "bytes":  770228
+                                                                                },
+                            "docs/analysis/A032-outputs/researcher-guide.txt":  {
+                                                                                    "sha256":  "dd2807e0ae8030a028eaad592a83539386022b9e1b017565a39e1730207f70fc",
+                                                                                    "bytes":  33746
+                                                                                },
+                            "docs/analysis/A032-outputs/routing-metadata.json":  {
+                                                                                     "sha256":  "8897d05493dfd3e0fd08557c52b69ac31ab49b1ca4e44af428348a53a45150bf",
+                                                                                     "bytes":  6964672
+                                                                                 },
+                            "docs/analysis/A032-outputs/source-register.md":  {
+                                                                                  "sha256":  "9d5a4f8917cd9bd033e059fb45c350357db83bbc65186765fc419d920a5f179f",
+                                                                                  "bytes":  5264
+                                                                              },
+                            "docs/analysis/A032-outputs/terms-of-use.html":  {
+                                                                                 "sha256":  "baeb420638470691e0ee7db0d2c4cdb10912df922cc4fa200bb07b9b13fc1d19",
+                                                                                 "bytes":  29360
+                                                                             },
+                            "docs/analysis/A032-outputs/VAF_Host_2023_LongXLS_final.xlsx":  {
+                                                                                                "sha256":  "8ebae920a94af0198ce4061f118b797fabc485f60850118e7e2af63fa59fbdc5",
+                                                                                                "bytes":  234101
+                                                                                            },
+                            "docs/analysis/A032-outputs/VAF_Host_2023_ShortXLS_final.xlsx":  {
+                                                                                                 "sha256":  "c2958235b940e47524983e9ff133b408ce78238a476e5a58e0860a2b7cf6880f",
+                                                                                                 "bytes":  222025
+                                                                                             },
+                            "docs/analysis/A032-document-acquisition-and-readiness.md":  {
+                                                                                             "sha256":  "813094ca7cf53dfc787e4b2099eb87455aea7cb81b97a68724c39a555ca49611",
+                                                                                             "bytes":  9412
+                                                                                         }
+                        },
+    "document_integrity":  {
+                               "scope":  "Document extraction integrity only; no model/fixture test",
+                               "checks":  {
+                                              "VAF_Host_2023_LongXLS_final.xlsx_archive_bytes":  true,
+                                              "VAF_Host_2023_LongXLS_final.xlsx_survey_raw_xml_matches":  true,
+                                              "VAF_Host_2023_LongXLS_final.xlsx_choices_raw_xml_matches":  true,
+                                              "VAF_Host_2023_LongXLS_final.xlsx_settings_raw_xml_matches":  true,
+                                              "VAF_Host_2023_ShortXLS_final.xlsx_archive_bytes":  true,
+                                              "VAF_Host_2023_ShortXLS_final.xlsx_survey_raw_xml_matches":  true,
+                                              "VAF_Host_2023_ShortXLS_final.xlsx_choices_raw_xml_matches":  true,
+                                              "VAF_Host_2023_ShortXLS_final.xlsx_settings_raw_xml_matches":  true,
+                                              "ddi_count":  true,
+                                              "VAF_Host_2023_LongXLS_final.xlsx_all_relevance_preserved":  true,
+                                              "VAF_Host_2023_LongXLS_final.xlsx_all_names_preserved":  true,
+                                              "VAF_Host_2023_LongXLS_final.xlsx_unique_names_no_nesting_anomaly":  true,
+                                              "VAF_Host_2023_LongXLS_final.xlsx_all_direct_refs_resolved":  true,
+                                              "VAF_Host_2023_ShortXLS_final.xlsx_all_relevance_preserved":  true,
+                                              "VAF_Host_2023_ShortXLS_final.xlsx_all_names_preserved":  true,
+                                              "VAF_Host_2023_ShortXLS_final.xlsx_unique_names_no_nesting_anomaly":  true,
+                                              "VAF_Host_2023_ShortXLS_final.xlsx_all_direct_refs_resolved":  true
+                                          },
+                               "nonempty_cells_compared":  34266,
+                               "all_pass":  true
+                           },
+    "dirty_exit":  [
+                       " M .claude/skills/paper-session/SKILL.md",
+                       " M .gitignore",
+                       " M CLAUDE.md",
+                       " M docs/domain-study-guide.ko.md",
+                       " M docs/index.md",
+                       " M docs/log.md",
+                       " M docs/session-prompts.ko.md",
+                       " M docs/status.md",
+                       " M docs/tree.md",
+                       " M docs/workflow.md",
+                       "?? .agents/",
+                       "?? AGENTS.md",
+                       "?? README.md",
+                       "?? docs/analysis/A020-outputs/",
+                       "?? docs/analysis/A020-post-e058-design-review.md",
+                       "?? docs/analysis/A021-outputs/",
+                       "?? docs/analysis/A021-selector-comparison-contract.md",
+                       "?? docs/analysis/A022-outputs/",
+                       "?? docs/analysis/A022-remaining-role-audit.md",
+                       "?? docs/analysis/A023-candidate-boundary-contract.md",
+                       "?? docs/analysis/A023-cost-accounting.md",
+                       "?? docs/analysis/A023-outputs/",
+                       "?? docs/analysis/A024-channel-precision-review.md",
+                       "?? docs/analysis/A024-outputs/",
+                       "?? docs/analysis/A025-submission-oriented-review.md",
+                       "?? docs/analysis/A026-outputs/",
+                       "?? docs/analysis/A026-post-e060-strategy-review.md",
+                       "?? docs/analysis/A027-outputs/",
+                       "?? docs/analysis/A027-workflow-role-revision.md",
+                       "?? docs/analysis/A028-outputs/",
+                       "?? docs/analysis/A028-workflow-entry-audit.md",
+                       "?? docs/analysis/A029-codex-migration-audit.md",
+                       "?? docs/analysis/A029-outputs/",
+                       "?? docs/analysis/A030-outputs/",
+                       "?? docs/analysis/A030-vaf-channel-metadata-review.md",
+                       "?? docs/analysis/A031-outputs/",
+                       "?? docs/analysis/A031-post-a030-handoff-review.md",
+                       "?? docs/analysis/A032-document-acquisition-and-readiness.md",
+                       "?? docs/analysis/A032-outputs/",
+                       "?? docs/analysis/E059-outputs/",
+                       "?? docs/analysis/E060-outputs/",
+                       "?? docs/codex-setup.ko.md",
+                       "?? docs/experiments/E059-leaf-donor-interactions.md",
+                       "?? docs/experiments/E060-content-target-retrieval.md",
+                       "?? docs/plans/README.md",
+                       "?? requirements-models.txt",
+                       "?? scripts/assemble_e060.py",
+                       "?? scripts/check_a021_selector_contract.py",
+                       "?? scripts/check_a023_candidate_boundary.py",
+                       "?? scripts/check_a023_resources.py",
+                       "?? scripts/check_e060.py",
+                       "?? scripts/check_workspace.py",
+                       "?? scripts/screen_e059.py",
+                       "?? src/models/content_target_retrieval.py",
+                       "?? submissions/2026-09-27-E060.zip",
+                       "?? submissions/2026-09-27-E060/",
+                       "?? tests/test_a021_selector_contract.py",
+                       "?? tests/test_a023_candidate_boundary.py",
+                       "?? tests/test_content_target_retrieval.py",
+                       "?? tests/test_e059_interactions.py",
+                       "?? tests/test_e060_assembly.py",
+                       "?? tests/test_workspace_check.py",
+                       "?? trip/"
+                   ],
+    "selected_research_processes":  [
+
+                                    ],
+    "process_check_scope":  "Host process-name snapshot only; not proof of every external job",
+    "prohibited_response_hashes_recomputed":  0,
+    "actual_response_reads":  0,
+    "model_calls":  0,
+    "scientific_fixture_test_runs":  0,
+    "submission_zip_operations":  0,
+    "official_questionnaire_archives_downloaded":  1,
+    "contacts_applications_uploads_commits_pushes":  0,
+    "preservation_scope":  "Permitted prior manifest files and recorded write scope; no whole-tree binary rehash",
+    "git_status_limit":  "git status completed with a sandbox warning reading the user global ignore file; HEAD and explicit permitted hashes verified independently",
+    "checked_local_markdown_links":  "A032 Markdown artifacts and status: all local targets exist"
+}

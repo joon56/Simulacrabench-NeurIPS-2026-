@@ -1,0 +1,19 @@
+{
+  "frozen_utc": "2026-10-23T06:35:13.063279+00:00",
+  "outputs": {
+    "unicef": {
+      "file": "docs/analysis/E064-outputs/s2/vectors-assembly-unicef.npz",
+      "sha256": "1269a5064ee632708f14bff1e1ba2190e26f81c05caf1d6582bb52c9c821a62c"
+    },
+    "world_bank": {
+      "file": "docs/analysis/E064-outputs/s2/vectors-assembly-world_bank.npz",
+      "sha256": "4a261189acb717dc70e1791e9bf19f754adc29f81a137f546725d3061304af55"
+    },
+    "unhcr": {
+      "file": "docs/analysis/E064-outputs/s2/vectors-assembly-unhcr.npz",
+      "sha256": "ae9ab8cdfe7eb8c800f11849dccfb49523d0fd71545df74b403c295c36f1dc43"
+    }
+  },
+  "DEV_truth_accessed": false,
+  "source_sha256": "59946da286bd0fb567de65a31370ba1ce286cba1c43baa283ec74656eb8e62e6"
+}

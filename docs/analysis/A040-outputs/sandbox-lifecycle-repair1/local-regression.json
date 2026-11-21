@@ -1,0 +1,12 @@
+{
+    "outcome":  "NOT_RUN",
+    "reason":  "Sandbox terminal prerequisite unconfirmed",
+    "processes":  0,
+    "wall_seconds":  0,
+    "limit_seconds":  180,
+    "original_loop_reproduction":  "NOT_RUN",
+    "hydrate_streams_cancel_recovery_regression":  "NOT_RUN",
+    "source_diff":  "EMPTY_NO_PRODUCTION_COPY_OR_EDIT",
+    "placement_diff":  "EMPTY_NO_PRODUCTION_COPY_OR_EDIT",
+    "remote_simulated_rpc":  0
+}

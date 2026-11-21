@@ -1,0 +1,517 @@
+{
+    "kind":  "A040 S0 handoff/document review; not a model or release test",
+    "role":  "S0",
+    "task_type":  "review of completed S1 information investigation",
+    "decision":  "HOLD_SPECIFIC_INPUT",
+    "reason":  "Current official website and README conflict on visible-TRAIN runtime learning; applicable interpretation unresolved",
+    "workflow_revision":  "2026-09-27-r4",
+    "workflow_sha256":  "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642",
+    "head":  "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+    "read_paths_in_order":  [
+                                "AGENTS.md",
+                                "CLAUDE.md",
+                                "docs/status.md",
+                                "docs/log.md latest three entries",
+                                "docs/workflow.md",
+                                "docs/analysis/A040-outputs/s1/s0-handoff.ko.md and named artifacts"
+                            ],
+    "read_evidence":  [
+                          "572e3f: ordered current entry reads, HEAD/dirty/process check (continuous same r4 session; prior full workflow read retained)",
+                          "f6931a: S1 closeout/contract/source register",
+                          "2dff8b: E060 review, S1 cost/observation/exposure records",
+                          "39e5a6, d980f4, 1aaa29, b9af9b: targeted JSON projections, contract/observation/handoff and shared hashes",
+                          "8d83bf: HEAD/process check and full inherited exposure ledger"
+                      ],
+    "s1_read_evidence_classification":  "Session-reported receipt and artifact identities checked; no claim all other chats loaded rules",
+    "allowed":  "Existing permitted text/source/schema hashes; public official-document review; S0 review and status/log records",
+    "forbidden":  "Model implementation/import/fit/optimizer/predict/score, protected data/key/cache reads/hashes, weights/install, fixtures/tests, agents, communication, accounts/upload, ZIP, commit/push, S2/S3/TEST selection",
+    "before_identity_checks":  {
+                                   "checked_utc":  "2026-10-01T11:31:52.3358031Z",
+                                   "checks":  [
+                                                  {
+                                                      "group":  "protected_baseline_checks",
+                                                      "path":  "AGENTS.md",
+                                                      "expected":  "86394bbf164a2b7df6a309f4564b9dacf3b2799fa0227a703e4ea11d4d842596",
+                                                      "actual":  "86394bbf164a2b7df6a309f4564b9dacf3b2799fa0227a703e4ea11d4d842596",
+                                                      "match":  true
+                                                  },
+                                                  {
+                                                      "group":  "protected_baseline_checks",
+                                                      "path":  "CLAUDE.md",
+                                                      "expected":  "69175e6d741a17042db4852d4961a5c52bd97fe2cd5bfbff762d30d7e5270364",
+                                                      "actual":  "69175e6d741a17042db4852d4961a5c52bd97fe2cd5bfbff762d30d7e5270364",
+                                                      "match":  true
+                                                  },
+                                                  {
+                                                      "group":  "protected_baseline_checks",
+                                                      "path":  "docs/workflow.md",
+                                                      "expected":  "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642",
+                                                      "actual":  "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642",
+                                                      "match":  true
+                                                  },
+                                                  {
+                                                      "group":  "protected_baseline_checks",
+                                                      "path":  "docs/session-prompts.ko.md",
+                                                      "expected":  "c68eba8618c6a49caf1b590181ede5d5c03800d4c2305ea0e5efe3cc266e5615",
+                                                      "actual":  "c68eba8618c6a49caf1b590181ede5d5c03800d4c2305ea0e5efe3cc266e5615",
+                                                      "match":  true
+                                                  },
+                                                  {
+                                                      "group":  "protected_baseline_checks",
+                                                      "path":  "docs/tree.md",
+                                                      "expected":  "eaa884a4194db103335136495205fe5b51297c17db15e9eac62946ced286cc44",
+                                                      "actual":  "eaa884a4194db103335136495205fe5b51297c17db15e9eac62946ced286cc44",
+                                                      "match":  true
+                                                  },
+                                                  {
+                                                      "group":  "protected_baseline_checks",
+                                                      "path":  ".gitignore",
+                                                      "expected":  "f67ba089f7490b4ba0845848f0b13b55633b5efd058a0be7d64203a1e480c6fd",
+                                                      "actual":  "f67ba089f7490b4ba0845848f0b13b55633b5efd058a0be7d64203a1e480c6fd",
+                                                      "match":  true
+                                                  },
+                                                  {
+                                                      "group":  "protected_baseline_checks",
+                                                      "path":  "docs/analysis/A037-winning-priority-review.md",
+                                                      "expected":  "87e77d8279f68e52751653f3b6098ec1976e4b53a75faf7206043ec6cf4bf66d",
+                                                      "actual":  "87e77d8279f68e52751653f3b6098ec1976e4b53a75faf7206043ec6cf4bf66d",
+                                                      "match":  true
+                                                  },
+                                                  {
+                                                      "group":  "protected_baseline_checks",
+                                                      "path":  "docs/analysis/A039-outputs/s0-review/closeout.md",
+                                                      "expected":  "7d9d306f74ed54e256ad9a328d148bd988218e997893632e63bc84051107e1d9",
+                                                      "actual":  "7d9d306f74ed54e256ad9a328d148bd988218e997893632e63bc84051107e1d9",
+                                                      "match":  true
+                                                  },
+                                                  {
+                                                      "group":  "protected_baseline_checks",
+                                                      "path":  "docs/experiments/E041-supervised-retrieval.md",
+                                                      "expected":  "8a17f3cb2cb54deb19fdbffe597dcba173002a82100250ea4ff8be446d76bafb",
+                                                      "actual":  "8a17f3cb2cb54deb19fdbffe597dcba173002a82100250ea4ff8be446d76bafb",
+                                                      "match":  true
+                                                  },
+                                                  {
+                                                      "group":  "protected_baseline_checks",
+                                                      "path":  "docs/experiments/E043-section-candidate-search.md",
+                                                      "expected":  "e7d9acac562092596d9bd05921dfab49ac8a2c15854fad8abbba606941ccc4cf",
+                                                      "actual":  "e7d9acac562092596d9bd05921dfab49ac8a2c15854fad8abbba606941ccc4cf",
+                                                      "match":  true
+                                                  },
+                                                  {
+                                                      "group":  "protected_baseline_checks",
+                                                      "path":  "docs/experiments/E045-union-retrieval.md",
+                                                      "expected":  "d7ad5bf5420a7ac4d87ae6989b6bc0e4be94cb03e88c7c4a6dfd58d3da729a5c",
+                                                      "actual":  "d7ad5bf5420a7ac4d87ae6989b6bc0e4be94cb03e88c7c4a6dfd58d3da729a5c",
+                                                      "match":  true
+                                                  },
+                                                  {
+                                                      "group":  "protected_baseline_checks",
+                                                      "path":  "docs/experiments/E048-tabpfn-gate-parents.md",
+                                                      "expected":  "60e030be4969bf45fa7db73404db4a1d590c321dc39935ab6c793bcdc77670a0",
+                                                      "actual":  "60e030be4969bf45fa7db73404db4a1d590c321dc39935ab6c793bcdc77670a0",
+                                                      "match":  true
+                                                  },
+                                                  {
+                                                      "group":  "protected_baseline_checks",
+                                                      "path":  "docs/experiments/E049-adaptive-tabpfn-parents.md",
+                                                      "expected":  "0d6a9f197a5239f2c7a70ed6da3c8e01b8e24a67ba1b4ea7ecf512d9490db046",
+                                                      "actual":  "0d6a9f197a5239f2c7a70ed6da3c8e01b8e24a67ba1b4ea7ecf512d9490db046",
+                                                      "match":  true
+                                                  },
+                                                  {
+                                                      "group":  "protected_baseline_checks",
+                                                      "path":  "docs/experiments/E051-direct-content-tree.md",
+                                                      "expected":  "7efd35b3e5e85b15be316e3ef9acecc4d898459de832e37213feb4a93afe1b16",
+                                                      "actual":  "7efd35b3e5e85b15be316e3ef9acecc4d898459de832e37213feb4a93afe1b16",
+                                                      "match":  true
+                                                  },
+                                                  {
+                                                      "group":  "protected_baseline_checks",
+                                                      "path":  "submissions/SCORES.md",
+                                                      "expected":  "1e6d753c24c5c2e42fc4b316ea524a4285b59ef672cc5c3a5a1288768d157dab",
+                                                      "actual":  "1e6d753c24c5c2e42fc4b316ea524a4285b59ef672cc5c3a5a1288768d157dab",
+                                                      "match":  true
+                                                  },
+                                                  {
+                                                      "group":  "protected_baseline_checks",
+                                                      "path":  "docs/analysis/A040-outputs/s0-entry.json",
+                                                      "expected":  "9f8e8614c07afcfb7071328a1b444965e1ab923ffc2cc3cef9d96f8291354773",
+                                                      "actual":  "9f8e8614c07afcfb7071328a1b444965e1ab923ffc2cc3cef9d96f8291354773",
+                                                      "match":  true
+                                                  },
+                                                  {
+                                                      "group":  "protected_baseline_checks",
+                                                      "path":  "docs/analysis/A040-outputs/s0-decision.md",
+                                                      "expected":  "f26a97f3ca21856742d2486b84bfdb38b5e6d18bab0a76c2f077c8f5a81f30fa",
+                                                      "actual":  "f26a97f3ca21856742d2486b84bfdb38b5e6d18bab0a76c2f077c8f5a81f30fa",
+                                                      "match":  true
+                                                  },
+                                                  {
+                                                      "group":  "protected_baseline_checks",
+                                                      "path":  "docs/analysis/A040-outputs/source-register.md",
+                                                      "expected":  "7671d2da5bc3dfb2a06f0426683571c0e9b29eb1499c2bd12232fc2a8923610e",
+                                                      "actual":  "7671d2da5bc3dfb2a06f0426683571c0e9b29eb1499c2bd12232fc2a8923610e",
+                                                      "match":  true
+                                                  },
+                                                  {
+                                                      "group":  "protected_baseline_checks",
+                                                      "path":  "docs/analysis/A040-outputs/s1-handoff.ko.md",
+                                                      "expected":  "a447cb450fa2384f3344e0726b22657808588f5c0ec7e31825ad64d40077bfde",
+                                                      "actual":  "a447cb450fa2384f3344e0726b22657808588f5c0ec7e31825ad64d40077bfde",
+                                                      "match":  true
+                                                  },
+                                                  {
+                                                      "group":  "protected_baseline_checks",
+                                                      "path":  "docs/analysis/A040-outputs/s0-verification.json",
+                                                      "expected":  "a0105e74cacf460b0a4c3de786c13b3c4652ad125a8c62c60bd0805f7443b151",
+                                                      "actual":  "a0105e74cacf460b0a4c3de786c13b3c4652ad125a8c62c60bd0805f7443b151",
+                                                      "match":  true
+                                                  },
+                                                  {
+                                                      "group":  "local_source_checks",
+                                                      "path":  "submissions/2026-09-19-E041/main.py",
+                                                      "expected":  "22c911806ea91234ae350341adfb9c0df2ce4be41cc88e73be304e4bb1023073",
+                                                      "actual":  "22c911806ea91234ae350341adfb9c0df2ce4be41cc88e73be304e4bb1023073",
+                                                      "match":  true
+                                                  },
+                                                  {
+                                                      "group":  "local_source_checks",
+                                                      "path":  "src/models/supervised_retrieval.py",
+                                                      "expected":  "2940338c5378de03303befb74e3834fbad631c0eb18f4ecb55d2cc39a471f879",
+                                                      "actual":  "2940338c5378de03303befb74e3834fbad631c0eb18f4ecb55d2cc39a471f879",
+                                                      "match":  true
+                                                  },
+                                                  {
+                                                      "group":  "local_source_checks",
+                                                      "path":  "src/models/shared_trunk.py",
+                                                      "expected":  "df648763c8e0ba5532ebf9e437af95cd10d8527112c1338b8b5db9ad6a212e1f",
+                                                      "actual":  "df648763c8e0ba5532ebf9e437af95cd10d8527112c1338b8b5db9ad6a212e1f",
+                                                      "match":  true
+                                                  },
+                                                  {
+                                                      "group":  "local_source_checks",
+                                                      "path":  "src/models/link_sharp.py",
+                                                      "expected":  "4a7921a00d7758e52a63a3ca7cd5ebf2285cef445b57fd89f15580d6fc108524",
+                                                      "actual":  "4a7921a00d7758e52a63a3ca7cd5ebf2285cef445b57fd89f15580d6fc108524",
+                                                      "match":  true
+                                                  },
+                                                  {
+                                                      "group":  "local_source_checks",
+                                                      "path":  "src/models/hh_cap.py",
+                                                      "expected":  "9aad6be04e14ae97dc7aaba5499747c35b255b098680c66eaa8f8af58c940f70",
+                                                      "actual":  "9aad6be04e14ae97dc7aaba5499747c35b255b098680c66eaa8f8af58c940f70",
+                                                      "match":  true
+                                                  },
+                                                  {
+                                                      "group":  "local_source_checks",
+                                                      "path":  "src/models/hier_backoff.py",
+                                                      "expected":  "e01f2030c191b0b632b274662cbb46537669f3b73e21ab0d5f7f671d28654ccd",
+                                                      "actual":  "e01f2030c191b0b632b274662cbb46537669f3b73e21ab0d5f7f671d28654ccd",
+                                                      "match":  true
+                                                  },
+                                                  {
+                                                      "group":  "local_source_checks",
+                                                      "path":  "src/eval/logloss.py",
+                                                      "expected":  "272aae939a2587b7197569ff84733a1d3b51050e4090ed903a7c8f4e1c88ca18",
+                                                      "actual":  "272aae939a2587b7197569ff84733a1d3b51050e4090ed903a7c8f4e1c88ca18",
+                                                      "match":  true
+                                                  },
+                                                  {
+                                                      "group":  "local_source_checks",
+                                                      "path":  "docs/experiments/E041-supervised-retrieval.md",
+                                                      "expected":  "8a17f3cb2cb54deb19fdbffe597dcba173002a82100250ea4ff8be446d76bafb",
+                                                      "actual":  "8a17f3cb2cb54deb19fdbffe597dcba173002a82100250ea4ff8be446d76bafb",
+                                                      "match":  true
+                                                  },
+                                                  {
+                                                      "group":  "local_source_checks",
+                                                      "path":  "docs/experiments/E048-tabpfn-gate-parents.md",
+                                                      "expected":  "60e030be4969bf45fa7db73404db4a1d590c321dc39935ab6c793bcdc77670a0",
+                                                      "actual":  "60e030be4969bf45fa7db73404db4a1d590c321dc39935ab6c793bcdc77670a0",
+                                                      "match":  true
+                                                  },
+                                                  {
+                                                      "group":  "local_source_checks",
+                                                      "path":  "docs/experiments/E049-adaptive-tabpfn-parents.md",
+                                                      "expected":  "0d6a9f197a5239f2c7a70ed6da3c8e01b8e24a67ba1b4ea7ecf512d9490db046",
+                                                      "actual":  "0d6a9f197a5239f2c7a70ed6da3c8e01b8e24a67ba1b4ea7ecf512d9490db046",
+                                                      "match":  true
+                                                  },
+                                                  {
+                                                      "group":  "local_source_checks",
+                                                      "path":  "docs/experiments/E051-direct-content-tree.md",
+                                                      "expected":  "7efd35b3e5e85b15be316e3ef9acecc4d898459de832e37213feb4a93afe1b16",
+                                                      "actual":  "7efd35b3e5e85b15be316e3ef9acecc4d898459de832e37213feb4a93afe1b16",
+                                                      "match":  true
+                                                  },
+                                                  {
+                                                      "group":  "local_source_checks",
+                                                      "path":  "submissions/SCORES.md",
+                                                      "expected":  "1e6d753c24c5c2e42fc4b316ea524a4285b59ef672cc5c3a5a1288768d157dab",
+                                                      "actual":  "1e6d753c24c5c2e42fc4b316ea524a4285b59ef672cc5c3a5a1288768d157dab",
+                                                      "match":  true
+                                                  },
+                                                  {
+                                                      "group":  "local_source_checks",
+                                                      "path":  "submissions/2026-09-28-E061/SCORES.md",
+                                                      "expected":  "42cff85586e68d4f99e5ff77bf6a082196b35fa867bd29d9ef256e6833974282",
+                                                      "actual":  "42cff85586e68d4f99e5ff77bf6a082196b35fa867bd29d9ef256e6833974282",
+                                                      "match":  true
+                                                  },
+                                                  {
+                                                      "group":  "local_source_checks",
+                                                      "path":  "external/starter-kit/data/unhcr.json",
+                                                      "expected":  "b1175b6bdbd96e90a4defd83af20a38d711c6eca9fe3ce880109ff244abe80d9",
+                                                      "actual":  "b1175b6bdbd96e90a4defd83af20a38d711c6eca9fe3ce880109ff244abe80d9",
+                                                      "match":  true
+                                                  },
+                                                  {
+                                                      "group":  "local_source_checks",
+                                                      "path":  "external/starter-kit/data/unicef.json",
+                                                      "expected":  "0bce08036cc563ee2a369dcee316ff8a5f89045d86991756d72c266927674396",
+                                                      "actual":  "0bce08036cc563ee2a369dcee316ff8a5f89045d86991756d72c266927674396",
+                                                      "match":  true
+                                                  },
+                                                  {
+                                                      "group":  "local_source_checks",
+                                                      "path":  "external/starter-kit/data/world_bank.json",
+                                                      "expected":  "6b3760742c6e864eb8d0bb2f9ec523a19a486b73282d79432dbcca16e3664125",
+                                                      "actual":  "6b3760742c6e864eb8d0bb2f9ec523a19a486b73282d79432dbcca16e3664125",
+                                                      "match":  true
+                                                  },
+                                                  {
+                                                      "group":  "document_artifact_hashes",
+                                                      "path":  "docs/analysis/A040-outputs/s1/base.py.txt",
+                                                      "expected":  "7f8f284ca91bf1f5a016179834e508890b3f5368c4a48a7dcb6cb4b83a30051a",
+                                                      "actual":  "7f8f284ca91bf1f5a016179834e508890b3f5368c4a48a7dcb6cb4b83a30051a",
+                                                      "match":  true
+                                                  },
+                                                  {
+                                                      "group":  "document_artifact_hashes",
+                                                      "path":  "docs/analysis/A040-outputs/s1/classifier.py.txt",
+                                                      "expected":  "64f5ef7ef88a920a3f7a5f6e2d9d8dc08769ec343e931f910acc2d9c4eaa5534",
+                                                      "actual":  "64f5ef7ef88a920a3f7a5f6e2d9d8dc08769ec343e931f910acc2d9c4eaa5534",
+                                                      "match":  true
+                                                  },
+                                                  {
+                                                      "group":  "document_artifact_hashes",
+                                                      "path":  "docs/analysis/A040-outputs/s1/closeout.md",
+                                                      "expected":  "2faa9b56b91e8d4a87b11810bf511cf9aa34b97ed631001e2f7a231193936dda",
+                                                      "actual":  "2faa9b56b91e8d4a87b11810bf511cf9aa34b97ed631001e2f7a231193936dda",
+                                                      "match":  true
+                                                  },
+                                                  {
+                                                      "group":  "document_artifact_hashes",
+                                                      "path":  "docs/analysis/A040-outputs/s1/contract.md",
+                                                      "expected":  "8f59764b01f68360a6eef0fee66d82c1316f9b89720abf26eb8e7f72e5b1bb38",
+                                                      "actual":  "8f59764b01f68360a6eef0fee66d82c1316f9b89720abf26eb8e7f72e5b1bb38",
+                                                      "match":  true
+                                                  },
+                                                  {
+                                                      "group":  "document_artifact_hashes",
+                                                      "path":  "docs/analysis/A040-outputs/s1/cost-accounting.md",
+                                                      "expected":  "684b9e09bac2163266b3117c23cad28341990d57ed9e6b9371aba855515db3ee",
+                                                      "actual":  "684b9e09bac2163266b3117c23cad28341990d57ed9e6b9371aba855515db3ee",
+                                                      "match":  true
+                                                  },
+                                                  {
+                                                      "group":  "document_artifact_hashes",
+                                                      "path":  "docs/analysis/A040-outputs/s1/entry.json",
+                                                      "expected":  "9a0c05b4e7f744eb8e20124cba4d26e8a4aa7bb7c44d42d8116b45b17c23559b",
+                                                      "actual":  "9a0c05b4e7f744eb8e20124cba4d26e8a4aa7bb7c44d42d8116b45b17c23559b",
+                                                      "match":  true
+                                                  },
+                                                  {
+                                                      "group":  "document_artifact_hashes",
+                                                      "path":  "docs/analysis/A040-outputs/s1/exposure-ledger.md",
+                                                      "expected":  "3d2cf060d14af4ce8548ffd2e242c4f40e2806a650111b481a7e8677a647648c",
+                                                      "actual":  "3d2cf060d14af4ce8548ffd2e242c4f40e2806a650111b481a7e8677a647648c",
+                                                      "match":  true
+                                                  },
+                                                  {
+                                                      "group":  "document_artifact_hashes",
+                                                      "path":  "docs/analysis/A040-outputs/s1/fetch-batch1.json",
+                                                      "expected":  "a2b02863720655effc19f65a92ab2ce98c7db72a6c95a396f5af9563c3101d68",
+                                                      "actual":  "a2b02863720655effc19f65a92ab2ce98c7db72a6c95a396f5af9563c3101d68",
+                                                      "match":  true
+                                                  },
+                                                  {
+                                                      "group":  "document_artifact_hashes",
+                                                      "path":  "docs/analysis/A040-outputs/s1/github-root.html",
+                                                      "expected":  "ab53fd94dc9f42508d44c9c837a401a0c67466b4fbfd525e2fe3f297d278d0d1",
+                                                      "actual":  "ab53fd94dc9f42508d44c9c837a401a0c67466b4fbfd525e2fe3f297d278d0d1",
+                                                      "match":  true
+                                                  },
+                                                  {
+                                                      "group":  "document_artifact_hashes",
+                                                      "path":  "docs/analysis/A040-outputs/s1/github-tree.json",
+                                                      "expected":  "5df847a259fbb6f7dacea577f64e9a81eda69f6d2eb3486015b5a5384851c36d",
+                                                      "actual":  "5df847a259fbb6f7dacea577f64e9a81eda69f6d2eb3486015b5a5384851c36d",
+                                                      "match":  true
+                                                  },
+                                                  {
+                                                      "group":  "document_artifact_hashes",
+                                                      "path":  "docs/analysis/A040-outputs/s1/hf-metadata.json",
+                                                      "expected":  "459ec60a645b59a2678b822f0ee4fccef0ed39064135e67ee388a33b3be27274",
+                                                      "actual":  "459ec60a645b59a2678b822f0ee4fccef0ed39064135e67ee388a33b3be27274",
+                                                      "match":  true
+                                                  },
+                                                  {
+                                                      "group":  "document_artifact_hashes",
+                                                      "path":  "docs/analysis/A040-outputs/s1/hscc-README.md.txt",
+                                                      "expected":  "9495b259621c74a44dbe415ad1784734412c8f42ad6dcc0d8f395648d6ac9d67",
+                                                      "actual":  "9495b259621c74a44dbe415ad1784734412c8f42ad6dcc0d8f395648d6ac9d67",
+                                                      "match":  true
+                                                  },
+                                                  {
+                                                      "group":  "document_artifact_hashes",
+                                                      "path":  "docs/analysis/A040-outputs/s1/LICENSE.txt",
+                                                      "expected":  "c959a1db8bc4b2f41c315a9b077c822372a4a84e1a83636bdb962715aaae6874",
+                                                      "actual":  "c959a1db8bc4b2f41c315a9b077c822372a4a84e1a83636bdb962715aaae6874",
+                                                      "match":  true
+                                                  },
+                                                  {
+                                                      "group":  "document_artifact_hashes",
+                                                      "path":  "docs/analysis/A040-outputs/s1/local-source-hashes.json",
+                                                      "expected":  "e94e05a11fad8187aa61713111295ffd9913bc34e1b4db0f310dcf4342f4cf74",
+                                                      "actual":  "e94e05a11fad8187aa61713111295ffd9913bc34e1b4db0f310dcf4342f4cf74",
+                                                      "match":  true
+                                                  },
+                                                  {
+                                                      "group":  "document_artifact_hashes",
+                                                      "path":  "docs/analysis/A040-outputs/s1/log-before.md",
+                                                      "expected":  "a3f4aae0768a26f1e481ae837c094c659de2d2cff1128294334955663b4f81a8",
+                                                      "actual":  "a3f4aae0768a26f1e481ae837c094c659de2d2cff1128294334955663b4f81a8",
+                                                      "match":  true
+                                                  },
+                                                  {
+                                                      "group":  "document_artifact_hashes",
+                                                      "path":  "docs/analysis/A040-outputs/s1/observation-plan.md",
+                                                      "expected":  "6278717d462e79a95b17353308877af3e67d586b6c5b5a43334ecf8f45b1ec02",
+                                                      "actual":  "6278717d462e79a95b17353308877af3e67d586b6c5b5a43334ecf8f45b1ec02",
+                                                      "match":  true
+                                                  },
+                                                  {
+                                                      "group":  "document_artifact_hashes",
+                                                      "path":  "docs/analysis/A040-outputs/s1/preprocessing.py.txt",
+                                                      "expected":  "2163a3bf6754127365a7aedac854d99a6f565545cc1ea7e63c68a596081b2976",
+                                                      "actual":  "2163a3bf6754127365a7aedac854d99a6f565545cc1ea7e63c68a596081b2976",
+                                                      "match":  true
+                                                  },
+                                                  {
+                                                      "group":  "document_artifact_hashes",
+                                                      "path":  "docs/analysis/A040-outputs/s1/pyproject.toml.txt",
+                                                      "expected":  "2dddcf25d53fef0798457da2bca34ffdffd3de8c0ea98cdfe85cc24c744154af",
+                                                      "actual":  "2dddcf25d53fef0798457da2bca34ffdffd3de8c0ea98cdfe85cc24c744154af",
+                                                      "match":  true
+                                                  },
+                                                  {
+                                                      "group":  "document_artifact_hashes",
+                                                      "path":  "docs/analysis/A040-outputs/s1/s0-handoff.ko.md",
+                                                      "expected":  "93b5e6f1d1c7c005cdd9ace282a034bf9eb7cd1fb83faedcbf2af41839c5280e",
+                                                      "actual":  "93b5e6f1d1c7c005cdd9ace282a034bf9eb7cd1fb83faedcbf2af41839c5280e",
+                                                      "match":  true
+                                                  },
+                                                  {
+                                                      "group":  "document_artifact_hashes",
+                                                      "path":  "docs/analysis/A040-outputs/s1/schema-accounting.json",
+                                                      "expected":  "713f42a493024bc114a06d114d9e3f2e890424255d83b2035342a16105245881",
+                                                      "actual":  "713f42a493024bc114a06d114d9e3f2e890424255d83b2035342a16105245881",
+                                                      "match":  true
+                                                  },
+                                                  {
+                                                      "group":  "document_artifact_hashes",
+                                                      "path":  "docs/analysis/A040-outputs/s1/source-register.md",
+                                                      "expected":  "7ff307439bb4704584260544a35268ed71ec76352841f316e37a9612f88e7bfc",
+                                                      "actual":  "7ff307439bb4704584260544a35268ed71ec76352841f316e37a9612f88e7bfc",
+                                                      "match":  true
+                                                  },
+                                                  {
+                                                      "group":  "document_artifact_hashes",
+                                                      "path":  "docs/analysis/A040-outputs/s1/status-before.md",
+                                                      "expected":  "d883c40171b08d23c89e03100d9f69eb6c9361e959236d527e039842946cd9e7",
+                                                      "actual":  "d883c40171b08d23c89e03100d9f69eb6c9361e959236d527e039842946cd9e7",
+                                                      "match":  true
+                                                  }
+                                              ],
+                                   "all_match":  true,
+                                   "shared":  [
+                                                  {
+                                                      "path":  "docs/status.md",
+                                                      "sha256":  "c31b33d4bd8a7f3cf20dd8c83f1d3fbcf1ca13508b150a1e2328b3caf3e66746"
+                                                  },
+                                                  {
+                                                      "path":  "docs/log.md",
+                                                      "sha256":  "c632b65e3b4f3b7bd85fe133fd18a9311a8e4907b4eb681dc7c77fdb64de2ad6"
+                                                  },
+                                                  {
+                                                      "path":  "docs/analysis/A040-outputs/s1/verification.json",
+                                                      "sha256":  "3a9bc99ef5a6a863e4ae5b0fd82b1aa59e381584cba69d7caa9d036ae2bd72fd"
+                                                  }
+                                              ]
+                               },
+    "public_sources":  [
+                           {
+                               "url":  "https://simulacrabench.org/",
+                               "read_evidence":  "turn36view2 lines218-243",
+                               "finding":  "Explicit visible-row training permission; competition contact team@simulacrabench.org"
+                           },
+                           {
+                               "url":  "https://raw.githubusercontent.com/SituatedEvals/public/main/README.md",
+                               "read_evidence":  "turn36view3 lines146-152",
+                               "finding":  "Explicit offline-training requirement, participation Terms reference"
+                           },
+                           {
+                               "url":  "https://raw.githubusercontent.com/SituatedEvals/public/main/config.yml",
+                               "read_evidence":  "turn37view0",
+                               "finding":  "Phase dates and compute settings, not resolution of training wording"
+                           },
+                           {
+                               "url":  "https://www.codabench.org/profiles/organization/4076/",
+                               "read_evidence":  "turn36view1",
+                               "finding":  "Browser inaccessible; no Terms contents established"
+                           },
+                           {
+                               "url":  "https://www.codabench.org/competitions/9859/",
+                               "read_evidence":  "turn37view1",
+                               "finding":  "Attempted page inaccessible; supplied no evidence"
+                           }
+                       ],
+    "source_identity_limit":  "Mutable current public pages accessed 2026-10-01, no pinned remote commit/HTTP-byte snapshot/hosted deployment verification",
+    "scientific_execution_and_protected_access":  0,
+    "contact_agents_upload_commit_push":  0,
+    "jobs_observed":  [
+
+                      ],
+    "jobs_limit":  "Visible python/pythonw/uv process names only, not exhaustive host-wide audit",
+    "writes":  [
+                   "docs/analysis/A040-outputs/s0-review/closeout.md",
+                   "docs/analysis/A040-outputs/s0-review/organizer-question.en.md",
+                   "docs/analysis/A040-outputs/s0-review/verification.json",
+                   "docs/status.md",
+                   "docs/log.md"
+               ],
+    "final_document_checks":  {
+                                  "checked_utc":  "2026-10-01T11:35:23.9412768Z",
+                                  "unchanged_permitted_sources":  true,
+                                  "mismatches":  [
+
+                                                 ],
+                                  "s1_verification_unchanged":  true,
+                                  "shared":  [
+                                                 {
+                                                     "path":  "docs/status.md",
+                                                     "preexisting_text_preserved":  true,
+                                                     "after_sha256":  "8776466b00cbb9e53b7967c127d39686620498bdb55d879020485e00135b8ab8"
+                                                 },
+                                                 {
+                                                     "path":  "docs/log.md",
+                                                     "preexisting_text_preserved":  true,
+                                                     "after_sha256":  "ae17cd43e06400bef35adcfd81461e52bf8eb1abb159163f4c0120c59493c764"
+                                                 }
+                                             ],
+                                  "head_unchanged":  true,
+                                  "checks_kind":  "Text preservation and allowed hashes only; no scientific fixture/test"
+                              }
+}

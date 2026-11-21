@@ -1,0 +1,137 @@
+{
+  "scope": "LIVE",
+  "termination": "UNCONFIRMED",
+  "errors": [
+    {
+      "stage": "sandbox_id_recovery",
+      "error": "AssertionError()"
+    },
+    {
+      "stage": "final_billing",
+      "error": "TimeoutError('Entire cleanup cap')"
+    }
+  ],
+  "observations": [
+    {
+      "state": 5,
+      "tasks": 1,
+      "confirmed": false,
+      "sandbox_returncode": null
+    },
+    {
+      "state": 5,
+      "tasks": 1,
+      "confirmed": false,
+      "sandbox_returncode": null
+    },
+    {
+      "state": 5,
+      "tasks": 0,
+      "confirmed": true,
+      "sandbox_returncode": null
+    },
+    {
+      "state": 5,
+      "tasks": 0,
+      "confirmed": true,
+      "sandbox_returncode": null
+    },
+    {
+      "state": 5,
+      "tasks": 0,
+      "confirmed": true,
+      "sandbox_returncode": null
+    },
+    {
+      "state": 5,
+      "tasks": 0,
+      "confirmed": true,
+      "sandbox_returncode": null
+    },
+    {
+      "state": 5,
+      "tasks": 0,
+      "confirmed": true,
+      "sandbox_returncode": null
+    },
+    {
+      "state": 5,
+      "tasks": 0,
+      "confirmed": true,
+      "sandbox_returncode": null
+    },
+    {
+      "state": 5,
+      "tasks": 0,
+      "confirmed": true,
+      "sandbox_returncode": null
+    },
+    {
+      "state": 5,
+      "tasks": 0,
+      "confirmed": true,
+      "sandbox_returncode": null
+    },
+    {
+      "state": 5,
+      "tasks": 0,
+      "confirmed": true,
+      "sandbox_returncode": null
+    },
+    {
+      "state": 5,
+      "tasks": 0,
+      "confirmed": true,
+      "sandbox_returncode": null
+    },
+    {
+      "state": 5,
+      "tasks": 0,
+      "confirmed": true,
+      "sandbox_returncode": null
+    },
+    {
+      "state": 5,
+      "tasks": 0,
+      "confirmed": true,
+      "sandbox_returncode": null
+    },
+    {
+      "state": 5,
+      "tasks": 0,
+      "confirmed": true,
+      "sandbox_returncode": null
+    },
+    {
+      "state": 5,
+      "tasks": 0,
+      "confirmed": true,
+      "sandbox_returncode": null
+    },
+    {
+      "state": 5,
+      "tasks": 0,
+      "confirmed": true,
+      "sandbox_returncode": null
+    },
+    {
+      "state": 5,
+      "tasks": 0,
+      "confirmed": true,
+      "sandbox_returncode": null
+    },
+    {
+      "state": 5,
+      "tasks": 0,
+      "confirmed": true,
+      "sandbox_returncode": null
+    },
+    {
+      "state": 5,
+      "tasks": 0,
+      "confirmed": true,
+      "sandbox_returncode": null
+    }
+  ],
+  "elapsed_seconds": 60.01003530000162
+}

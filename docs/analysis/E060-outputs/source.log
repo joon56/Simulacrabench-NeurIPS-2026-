@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\SimulacraBench\scripts\check_e060.py", line 260, in <module>
+    else: prediction_worker(args.mode)
+          ~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\SimulacraBench\scripts\check_e060.py", line 115, in prediction_worker
+    for vector, (_, item) in zip(vectors, cells):
+                ^^^^^^^^^
+ValueError: too many values to unpack (expected 2)

@@ -1,0 +1,8 @@
+{
+  "outcome": "BLOCKED_RESOURCE",
+  "started": false,
+  "available": {
+    "physical": 16806551552,
+    "commitment": 13981937664
+  }
+}

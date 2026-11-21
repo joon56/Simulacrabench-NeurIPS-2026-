@@ -1,0 +1,20 @@
+{"event": "child_entry", "utc": "2026-10-06T14:12:11.633525+00:00", "elapsed_seconds": 0.00026479999996809056, "pid": 43232, "case": "minimal_build"}
+{"event": "rpc_response_boundary", "utc": "2026-10-06T14:12:11.636405+00:00", "elapsed_seconds": 0.003143299999919691, "method": "WorkspaceNameLookup"}
+{"event": "rpc_response_boundary", "utc": "2026-10-06T14:12:11.636950+00:00", "elapsed_seconds": 0.0036872000000585103, "method": "AppGetOrCreate"}
+{"event": "rpc_response_boundary", "utc": "2026-10-06T14:12:11.706145+00:00", "elapsed_seconds": 0.07288410000001022, "method": "ImageFromId"}
+{"event": "rpc_response_boundary", "utc": "2026-10-06T14:12:11.707982+00:00", "elapsed_seconds": 0.07472110000026078, "method": "MountGetOrCreate"}
+{"event": "sdk_client_mount_reference", "utc": "2026-10-06T14:12:11.708812+00:00", "elapsed_seconds": 0.07554990000016915, "name": "modal-client-mount-1.6.0"}
+{"event": "rpc_response_boundary", "utc": "2026-10-06T14:12:11.712369+00:00", "elapsed_seconds": 0.07910579999997935, "method": "MountBatchedCheckExistence"}
+{"event": "rpc_response_boundary", "utc": "2026-10-06T14:12:11.713384+00:00", "elapsed_seconds": 0.08012140000028012, "method": "MountPutFile"}
+{"event": "exact_builder_source_bytes", "utc": "2026-10-06T14:12:11.713761+00:00", "elapsed_seconds": 0.08049830000027214, "sha256": "fc561eee08f1eafbbeac2cbcc5fa31890ef719bf603c5c7dd1af7aea5e556bcb", "bytes": 1760}
+{"event": "rpc_response_boundary", "utc": "2026-10-06T14:12:11.714358+00:00", "elapsed_seconds": 0.08109430000013162, "method": "MountGetOrCreate"}
+{"event": "project_mount", "utc": "2026-10-06T14:12:11.714708+00:00", "elapsed_seconds": 0.08144480000009935, "files": [{"filename": "/root/controller_core.py", "sha256": "fc561eee08f1eafbbeac2cbcc5fa31890ef719bf603c5c7dd1af7aea5e556bcb"}]}
+{"event": "rpc_response_boundary", "utc": "2026-10-06T14:12:11.715335+00:00", "elapsed_seconds": 0.08207119999997303, "method": "FunctionCreate"}
+{"event": "builder_function", "utc": "2026-10-06T14:12:11.715680+00:00", "elapsed_seconds": 0.08241660000021511, "module": "controller_core", "function": "install_pins", "mount_ids": ["mo-gggggggggggggggggggggg", "mo-hhhhhhhhhhhhhhhhhhhhhh"], "image_id": "im-fixturebase", "timeout": 600}
+{"event": "rpc_response_boundary", "utc": "2026-10-06T14:12:11.716829+00:00", "elapsed_seconds": 0.08356540000022505, "method": "EnvironmentGetOrCreate"}
+{"event": "rpc_response_boundary", "utc": "2026-10-06T14:12:11.719249+00:00", "elapsed_seconds": 0.08598590000019612, "method": "ImageGetOrCreate"}
+{"event": "image_build_requested", "utc": "2026-10-06T14:12:11.719618+00:00", "elapsed_seconds": 0.08635430000003907, "image_id": "im-dddddddddddddddddddddd", "base_images": ["im-fixturebase"]}
+{"event": "builder_result", "utc": "2026-10-06T14:12:11.720083+00:00", "elapsed_seconds": 0.08681930000011562, "image_id": "im-dddddddddddddddddddddd", "status": "FAILURE"}
+{"event": "expected_builder_failure", "utc": "2026-10-06T14:12:11.720604+00:00", "elapsed_seconds": 0.08734050000020943}
+{"event": "rpc_response_boundary", "utc": "2026-10-06T14:12:11.721003+00:00", "elapsed_seconds": 0.08773980000023585, "method": "AppStop"}
+{"event": "reduced_return", "utc": "2026-10-06T14:12:11.721359+00:00", "elapsed_seconds": 0.08809560000008787, "case": "minimal_build"}

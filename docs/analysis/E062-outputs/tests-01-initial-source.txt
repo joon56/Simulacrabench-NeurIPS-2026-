@@ -1,0 +1,9 @@
+Preserved initial source of src/models/wb_ordinal_heads.py for expected RED check.
+The seven-output assertion failed: (7, 6) != (7, 7). No optimizer fit or data read.
+
+"""E062 contract-first development; not a qualified model yet."""
+
+
+def ordinal_log_probs(logits):
+    """Initial contract stub, replaced after the recorded failing math check."""
+    return logits

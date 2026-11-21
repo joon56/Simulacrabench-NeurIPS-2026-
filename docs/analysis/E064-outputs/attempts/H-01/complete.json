@@ -1,0 +1,1013 @@
+{
+  "outputs": {
+    "unicef": {
+      "file": "attempts/H-01/vectors-unicef.npz",
+      "sha256": "1269a5064ee632708f14bff1e1ba2190e26f81c05caf1d6582bb52c9c821a62c",
+      "contract": {
+        "vectors": 17856,
+        "max_sum_error": 1.9348226487636566e-07,
+        "official_check": "PASS",
+        "zero_entries": 14416
+      }
+    },
+    "world_bank": {
+      "file": "attempts/H-01/vectors-world_bank.npz",
+      "sha256": "4a261189acb717dc70e1791e9bf19f754adc29f81a137f546725d3061304af55",
+      "contract": {
+        "vectors": 39520,
+        "max_sum_error": 2.8615613700821996e-07,
+        "official_check": "PASS",
+        "zero_entries": 44413
+      }
+    },
+    "unhcr": {
+      "file": "attempts/H-01/vectors-unhcr.npz",
+      "sha256": "ae9ab8cdfe7eb8c800f11849dccfb49523d0fd71545df74b403c295c36f1dc43",
+      "contract": {
+        "vectors": 132273,
+        "max_sum_error": 2.0748702811435038e-07,
+        "official_check": "PASS",
+        "zero_entries": 368
+      }
+    }
+  },
+  "timings": {
+    "unicef": 36.0956151000064,
+    "world_bank": 97.26710489999823,
+    "unhcr": 230.65685320000193
+  },
+  "worker_seconds": 375.7513134999972,
+  "calls_this_worker": {
+    "pipeline": 3,
+    "neural": 9,
+    "metric": 8
+  },
+  "calls_cumulative": {
+    "pipeline": 6,
+    "neural": 18,
+    "metric": 16
+  },
+  "target_checks": 12,
+  "retrieval": {
+    "unicef": {
+      "neural_selection": {
+        "w": 1.0,
+        "config": [
+          64,
+          2,
+          0.0
+        ],
+        "epoch": 115
+      },
+      "lambda": {}
+    },
+    "world_bank": {
+      "neural_selection": {
+        "w": 1.0,
+        "config": [
+          128,
+          2,
+          0.1
+        ],
+        "epoch": 193
+      },
+      "lambda": {
+        "sc_nstd_mtpt_quit_1": [
+          0.0,
+          0.1
+        ],
+        "user.reportUsefullness": [
+          0.0,
+          0.1
+        ]
+      }
+    },
+    "unhcr": {
+      "neural_selection": {
+        "w": 0.9,
+        "config": [
+          128,
+          2,
+          0.1
+        ],
+        "epoch": 121
+      },
+      "weights": [
+        [
+          0.8522162117222066,
+          0.5308536974481194,
+          0.7618185901412646,
+          0.5005368335561331,
+          0.7649873489454418,
+          0.20632090270273729,
+          0.48156971270100185,
+          0.3317226498966425,
+          0.4089749055146125,
+          0.6458019792267212,
+          0.0,
+          0.49371445942359743,
+          0.08169537219420568,
+          0.40470066044574005,
+          0.5008987214193767,
+          0.6938500325420008,
+          0.6664528147464849
+        ],
+        [
+          0.5888579347691899,
+          0.4486754594462247,
+          0.5129747616399286,
+          0.3294704413352923,
+          0.46591378677022577,
+          0.5643055610065809,
+          0.18292870492427332,
+          0.41356901028101384,
+          0.6287149994879244,
+          0.507396288023471,
+          0.30468405074096205,
+          0.4091986861180798,
+          0.18934345403599265,
+          0.45253404516089957,
+          0.2910253140785963,
+          0.7018829818242738,
+          0.4162454728960085
+        ],
+        [
+          0.2934583644835703,
+          0.0,
+          0.7798063778309055,
+          1.2320760607638455,
+          1.0980796881579278,
+          1.7108421335534654,
+          0.0,
+          0.9589928222037672,
+          1.921338064075307,
+          0.977357390888288,
+          1.1884701822001382,
+          1.1259285950604505,
+          0.0,
+          0.4954349675349474,
+          0.7342325477766657,
+          0.826646026165992,
+          0.9545450865174196
+        ],
+        [
+          0.0,
+          0.0,
+          0.9447139532713703,
+          0.2505314070498942,
+          0.45611649178789443,
+          1.1292386176620184,
+          0.0,
+          0.8639018121092886,
+          1.0063954162450495,
+          0.32099273742152057,
+          0.0,
+          0.40142432493586877,
+          0.2504306422215703,
+          0.0,
+          0.6029219187101877,
+          1.3090746830533804,
+          2.006160601007979
+        ],
+        [
+          0.559380681147019,
+          0.0,
+          1.568569085228998,
+          0.7184311550487364,
+          0.7324939734614041,
+          0.74893003581503,
+          0.0,
+          0.440090427952872,
+          0.667431335334755,
+          0.565217699957359,
+          0.6013361004668167,
+          0.3411621351946679,
+          0.0,
+          0.7079058759661321,
+          0.21093580214421803,
+          0.33775557799319905,
+          0.8867947258024249
+        ],
+        [
+          0.29848609283532385,
+          0.6090568390824878,
+          0.3144403508825876,
+          0.3211176492411728,
+          0.5663306981548553,
+          0.36661629470898405,
+          0.23891738138893986,
+          0.48253840828091266,
+          0.6944510477281239,
+          0.24449746306534112,
+          0.2711247727433152,
+          0.46241650556553626,
+          0.5895328377607733,
+          0.5184094609572396,
+          0.44415898228211403,
+          0.46235253278263844,
+          0.3712799409435649
+        ],
+        [
+          0.0,
+          0.2578473635654414,
+          0.415297761316504,
+          0.3561170479136365,
+          0.19212913685577482,
+          0.5218596560002863,
+          0.11400056672551159,
+          0.28893645614890395,
+          0.5819691917849595,
+          0.1178601542678489,
+          0.1728730253904052,
+          0.3130168356208056,
+          0.2828595459462485,
+          0.3072707633664087,
+          0.17206763131550337,
+          0.44852212448081563,
+          0.4120911009235638
+        ],
+        [
+          0.5910939017438557,
+          0.47639227198717415,
+          0.7355084182689036,
+          0.5931223290906364,
+          0.5545365470261541,
+          0.5027131034979156,
+          0.34211998706315916,
+          0.2899188933495593,
+          0.5266066288762572,
+          1.1037940551699656,
+          0.19983746569207078,
+          0.4041439302263993,
+          0.3195581013376908,
+          0.5936101629456945,
+          0.3313939155672805,
+          0.7075510027645264,
+          0.7358367153929056
+        ]
+      ],
+      "active": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "sections": [
+        {
+          "selected": true,
+          "gain_log": 0.0854271920867702,
+          "standard_error": 0.00713097572973496,
+          "old_share": 0.5,
+          "new_share": 0.8329203752745584,
+          "iterations": 16
+        },
+        {
+          "selected": true,
+          "gain_log": 0.051959848857493024,
+          "standard_error": 0.002406694917906263,
+          "old_share": 0.5,
+          "new_share": 0.8056829338572193,
+          "iterations": 14
+        },
+        {
+          "selected": false,
+          "gain_log": 0.005206396246154011,
+          "standard_error": 0.004351807603775746,
+          "old_share": 0.0,
+          "new_share": 0.48677039045999015,
+          "iterations": 25
+        },
+        {
+          "selected": true,
+          "gain_log": 0.03820712835936749,
+          "standard_error": 0.008287199336008822,
+          "old_share": 0.5,
+          "new_share": 0.7669381049476066,
+          "iterations": 17
+        },
+        {
+          "selected": true,
+          "gain_log": 0.07657709757662869,
+          "standard_error": 0.010323100691838073,
+          "old_share": 0.5,
+          "new_share": 0.8351129307074066,
+          "iterations": 15
+        },
+        {
+          "selected": true,
+          "gain_log": 0.08557107058810151,
+          "standard_error": 0.007759126361384812,
+          "old_share": 0.5,
+          "new_share": 0.7951362625815863,
+          "iterations": 13
+        },
+        {
+          "selected": true,
+          "gain_log": 0.11584510844590792,
+          "standard_error": 0.0061421993101079255,
+          "old_share": 0.5,
+          "new_share": 0.8185266702135178,
+          "iterations": 14
+        },
+        {
+          "selected": true,
+          "gain_log": 0.04935543780832889,
+          "standard_error": 0.0035391861296247243,
+          "old_share": 0.5,
+          "new_share": 0.8113753078910769,
+          "iterations": 11
+        }
+      ],
+      "lambda": {
+        "s2_6_return_decision_maker": [
+          0.0,
+          0.1
+        ],
+        "s2_8_own_land_syria_lbl": [
+          0.1,
+          0.2
+        ],
+        "s2_9_property_docs_lbl": [
+          0.0,
+          0.1
+        ],
+        "s2_10_house_condition_lbl": [
+          0.0,
+          0.1
+        ],
+        "s3_1_has_valid_docs_lbl": [
+          0.1,
+          0.1
+        ],
+        "s3_4a_visit_year": [
+          0.0,
+          0.2
+        ],
+        "s3_5_family_in_syria_lbl": [
+          0.1,
+          0.2
+        ],
+        "s3_6_permanent_returns_lbl": [
+          0.5,
+          0.2
+        ],
+        "s3_9a_recent_returns_count_lbl": [
+          0.98,
+          0.0
+        ],
+        "s3_8a_return_year": [
+          0.98,
+          0.0
+        ],
+        "s3_8b_return_month": [
+          0.98,
+          0.0
+        ],
+        "s3_9b_returned_children": [
+          0.98,
+          0.0
+        ],
+        "s3_9c_returnee_working_lbl": [
+          0.98,
+          0.0
+        ],
+        "s3_10a_returnee_is_head_lbl": [
+          0.98,
+          0.98
+        ],
+        "s3_10b_returnee_gender_lbl": [
+          0.98,
+          0.98
+        ],
+        "s3_10c_returnee_age": [
+          0.98,
+          0.98
+        ],
+        "s3_10d_employ_before_return_lbl": [
+          0.98,
+          0.98
+        ],
+        "s3_10g_employ_syria_lbl": [
+          0.98,
+          0.98
+        ],
+        "s7b_1_no_return_legal_docs_lbl": [
+          0.0,
+          0.1
+        ],
+        "s7b_1_no_return_services_lbl": [
+          0.1,
+          0.0
+        ],
+        "s7b_1_no_return_social_tensions_lbl": [
+          0.0,
+          0.1
+        ],
+        "s7b_1_no_return_PNA_lbl": [
+          0.0,
+          0.1
+        ],
+        "s7b_2_recon_housing_access_lbl": [
+          0.0,
+          0.1
+        ],
+        "s7b_2_recon_asylum_negative_lbl": [
+          0.1,
+          0.0
+        ],
+        "s7c_1_cond_debt_paid_host_lbl": [
+          0.0,
+          0.2
+        ],
+        "s7c_1_cond_debt_paid_syria_lbl": [
+          0.0,
+          0.2
+        ],
+        "s7c_1_cond_other": [
+          0.0,
+          0.1
+        ],
+        "s3_12_hope_return_someday_lbl": [
+          0.0,
+          0.1
+        ],
+        "s3_14_visit_importance_lbl": [
+          0.0,
+          0.2
+        ],
+        "s3_16_friend_ret_family_lbl": [
+          0.2,
+          0.0
+        ],
+        "s3_16_friend_ret_econ_syria_lbl": [
+          0.2,
+          0.0
+        ],
+        "s3_16_friend_ret_no_legal_lbl": [
+          0.2,
+          0.0
+        ],
+        "s3_16_friend_ret_no_econ_host_lbl": [
+          0.2,
+          0.0
+        ],
+        "s3_16_friend_ret_no_services_lbl": [
+          0.2,
+          0.0
+        ],
+        "s3_16_friend_ret_has_property_lbl": [
+          0.2,
+          0.0
+        ],
+        "s3_16_friend_ret_has_resources_lbl": [
+          0.2,
+          0.0
+        ],
+        "s3_16_friend_ret_other": [
+          0.2,
+          0.0
+        ],
+        "s3_17_friend_no_ret_no_education_lbl": [
+          0.0,
+          0.2
+        ],
+        "s3_17_friend_no_ret_no_health_lbl": [
+          0.0,
+          0.1
+        ],
+        "s3_17_friend_no_ret_food_insecurity_lbl": [
+          0.0,
+          0.2
+        ],
+        "s3_17_friend_no_ret_other": [
+          0.0,
+          0.1
+        ],
+        "s3_20_origin_employ_rating_lbl": [
+          0.1,
+          0.1
+        ],
+        "s3_21_employ_info_confidence_lbl": [
+          0.0,
+          0.1
+        ],
+        "s3_23_safety_law_enforcement_lbl": [
+          0.5,
+          0.0
+        ],
+        "s3_23_safety_tribal_conflict_lbl": [
+          0.0,
+          0.5
+        ],
+        "s3_23_safety_explosives_lbl": [
+          0.5,
+          0.2
+        ],
+        "s3_23_safety_public_spaces_lbl": [
+          0.4,
+          0.6
+        ],
+        "s3_23_safety_no_concerns_lbl": [
+          0.0,
+          0.1
+        ],
+        "s3_23_safety_kidnapping_lbl": [
+          0.2,
+          0.0
+        ],
+        "s3_23_safety_other": [
+          0.0,
+          0.5
+        ],
+        "s3_23b_safety_rank2_lbl": [
+          0.0,
+          0.3
+        ],
+        "s3_25_origin_water_lbl": [
+          0.1,
+          0.0
+        ],
+        "s4_0_hh_anyone_working_lbl": [
+          0.2,
+          0.0
+        ],
+        "s4_1_is_main_earner_lbl": [
+          0.1,
+          0.0
+        ],
+        "s4_3_main_earner_gender": [
+          0.0,
+          0.2
+        ],
+        "s4_4_main_earner_age": [
+          0.1,
+          0.1
+        ],
+        "s4_6_main_earner_education_lbl": [
+          0.0,
+          0.1
+        ],
+        "s4_9_business_lastweek_lbl": [
+          0.1,
+          0.0
+        ],
+        "s5_1_unfair_treatment_freq_lbl": [
+          0.0,
+          0.2
+        ],
+        "s5_3_refugee_friends_ratio_lbl": [
+          0.1,
+          0.0
+        ],
+        "s5_4_employ_discrimination_lbl": [
+          0.1,
+          0.1
+        ],
+        "s5_6_feel_left_out_lbl": [
+          0.1,
+          0.4
+        ],
+        "s5_7_life_complicated_lbl": [
+          0.0,
+          0.4
+        ],
+        "s5_8_value_not_recognized_lbl": [
+          0.1,
+          0.1
+        ],
+        "s5_9_looked_down_on_lbl": [
+          0.1,
+          0.0
+        ],
+        "s5_10_community_relations_lbl": [
+          0.1,
+          0.0
+        ],
+        "s6_1_income_work_lbl": [
+          0.0,
+          0.1
+        ],
+        "s6_1_income_remittances_lbl": [
+          0.5,
+          0.0
+        ],
+        "s6_1_income_humanitarian_lbl": [
+          0.1,
+          0.4
+        ],
+        "s6_1_income_selling_assets_lbl": [
+          0.2,
+          0.0
+        ],
+        "s6_1_income_savings_lbl": [
+          0.1,
+          0.0
+        ],
+        "s6_1_income_loans_lbl": [
+          0.1,
+          0.0
+        ],
+        "s6_1_income_community_lbl": [
+          0.1,
+          0.0
+        ],
+        "s6_1_income_none_lbl": [
+          0.0,
+          0.2
+        ],
+        "s6_1_income_dont_know_lbl": [
+          0.1,
+          0.6
+        ],
+        "s6_2_income_varies_lbl": [
+          0.0,
+          0.1
+        ],
+        "s6_6_assist_unhcr_lbl": [
+          0.1,
+          0.0
+        ],
+        "s6_6_assist_religious_lbl": [
+          0.2,
+          0.0
+        ],
+        "s6_6_assist_other": [
+          0.1,
+          0.0
+        ],
+        "s6_9b_debt_syria_lbl": [
+          0.1,
+          0.0
+        ],
+        "s6_12_children_schooling_lbl": [
+          0.8,
+          0.7
+        ]
+      }
+    }
+  },
+  "invariants": {
+    "unicef": {
+      "_topk_excl:01c54dca4729d943baf9dfa1f1bebdd56578adb90d3d59759e0f7b27182d7566": {
+        "phase": "visible",
+        "hashes": [
+          "225a3c8bfaba79c3c0caacb0a95832eb7b4a99d88673ba06025cfacd9851d23e",
+          "225a3c8bfaba79c3c0caacb0a95832eb7b4a99d88673ba06025cfacd9851d23e"
+        ]
+      },
+      "initial_weights": {
+        "phase": "always",
+        "hashes": [
+          "48b42ab57bb073b4c15e9e3d78c734aeb7977b865b5333d1ad15a7c8eb0ea475"
+        ]
+      },
+      "_evidence:01c54dca4729d943baf9dfa1f1bebdd56578adb90d3d59759e0f7b27182d7566": {
+        "phase": "visible",
+        "hashes": [
+          "83610ea1d734d30bbe048aa04478c2ca6c66e3e7e6b2756637fe9ff96beeda02"
+        ]
+      },
+      "concentration:225a3c8bfaba79c3c0caacb0a95832eb7b4a99d88673ba06025cfacd9851d23e": {
+        "phase": "visible",
+        "hashes": [
+          "398406cb1e5d64bd7ed0c81440c954efb87719fb05e61d8089f555b55ad3fc0e"
+        ]
+      },
+      "ladder_and_agreement": {
+        "phase": "always",
+        "hashes": [
+          "b5d351b316ba4c128d7bee58812fd6a8d2505c4e34e1e55ae00c396a971feb0b"
+        ]
+      }
+    },
+    "world_bank": {
+      "_topk_excl:31723171cab38858ed86b9a2eadb6f5f752872741d6f8cc00c63833a51b79c70": {
+        "phase": "visible",
+        "hashes": [
+          "cd7b6ad317a18623305b47280e5fe079db141461d108be9ae62d7d437927c333",
+          "75e40d2d1ebea99ac639235b86dee6205aaf97300227c434499198bb4963edfa"
+        ]
+      },
+      "initial_weights": {
+        "phase": "always",
+        "hashes": [
+          "b75caf81e9bd799c8b8410c5a2eb4237463788fefe2228c00b8d69c88e453e52"
+        ]
+      },
+      "_evidence:31723171cab38858ed86b9a2eadb6f5f752872741d6f8cc00c63833a51b79c70": {
+        "phase": "visible",
+        "hashes": [
+          "7bd06e02bd71f7c2c26a1b92ab939372481764087eb0ded00ac3fef15373ab5f"
+        ]
+      },
+      "concentration:75e40d2d1ebea99ac639235b86dee6205aaf97300227c434499198bb4963edfa": {
+        "phase": "visible",
+        "hashes": [
+          "6bc52555a6f7a1935bc8e2abe8055c02480100781eb6b9ee4c9f2152f2a5f321"
+        ]
+      },
+      "_topk_excl:f675bab24ae36fef540ca7a5524f2da4298c1da799347ce43f555ca21a298479": {
+        "phase": "held",
+        "hashes": [
+          "63b7855acf2d48406f164cfd6803475e3f9f30692fc2d993cc82b077eddf4af1"
+        ]
+      },
+      "_evidence:f675bab24ae36fef540ca7a5524f2da4298c1da799347ce43f555ca21a298479": {
+        "phase": "held",
+        "hashes": [
+          "d12690ab167c3fa325a0a713bd1df27ea8b6b046bec6a75664ce438a321fbff6"
+        ]
+      },
+      "concentration:63b7855acf2d48406f164cfd6803475e3f9f30692fc2d993cc82b077eddf4af1": {
+        "phase": "held",
+        "hashes": [
+          "76936e38f1a4b88ed9380e5139e20ca226870acf536c0a4e353a2b34e479b611"
+        ]
+      },
+      "ladder_and_agreement": {
+        "phase": "always",
+        "hashes": [
+          "2fc4d2334c3e9d4d40daf246ae81cc0d25ba0e544eff042fb0d5e64d21c91412"
+        ]
+      }
+    },
+    "unhcr": {
+      "_topk_excl:a2b34a982c15e89921e781bdf88012ec629f7158d95cd01ed703974848ece297": {
+        "phase": "visible",
+        "hashes": [
+          "1f88903ca4ca597af26227426a191ebd0494bbec4395f80261a9e2760f67f1c1"
+        ]
+      },
+      "initial_weights": {
+        "phase": "always",
+        "hashes": [
+          "3c1199895361d2f24ef302415f791bcdf1ec2376b8f19532ff46284168dd483f"
+        ]
+      },
+      "candidate_indices:9982502eab0593d2fbba3546045e01495f9ee3f6fe6b6a2c6a95c178352af4c8": {
+        "phase": "visible",
+        "hashes": [
+          "8f58045b10177d5af25f4ecb8ba7cd4dbd61feb32b8c4a06f9c550415d00fa03"
+        ]
+      },
+      "metric_result": {
+        "phase": "always",
+        "hashes": [
+          "1a9829706fdf6ebeb9482a1e3e8da4198570182d8e4214d05f1773dd0338f550"
+        ]
+      },
+      "_topk_excl:200bb1baecb0d81c28e32891f8896c0aac15d27d0ddf3e81f316dbfbe48ef10d": {
+        "phase": "visible",
+        "hashes": [
+          "535d9a40613a67037c7a9ac14043e76d47429ddc3016e00d0ca31d0742f2259b"
+        ]
+      },
+      "_evidence:200bb1baecb0d81c28e32891f8896c0aac15d27d0ddf3e81f316dbfbe48ef10d": {
+        "phase": "visible",
+        "hashes": [
+          "2d31f317d3025ae079b615376a15d488a7522572a2bce0cc5efd082844169832",
+          "0cdbb9e3db5bd033d7a52941b5a0a7828d3b27a436f64a327c2bbf66bf051d8f",
+          "e0b37abfc16faa804c6c522564f6c49f7afe73e320ed824d738e8478e49e01e8",
+          "58a28a018608c1f9f37572c5687a6977cb42e3308efc1b2a5520c6e225c07590",
+          "993bf0c3afe0ee2026a3c984da2e42936814f6657aeaa7facbf44f37eaf5bc76",
+          "c5b2550d71cb02547821f99793c8aac60ed09654fc4e8d45d6892738e2cb809d",
+          "ba8a2d72c3a059cf4f4c4ded8b69f80e594b1392df8237f3cbaf468f1de1f291",
+          "7a1aafc441ea72cb05d3a7645894eefe440057e4d4801be767ad0242c875780b"
+        ]
+      },
+      "candidate_indices:200bb1baecb0d81c28e32891f8896c0aac15d27d0ddf3e81f316dbfbe48ef10d": {
+        "phase": "visible",
+        "hashes": [
+          "8ff23743128746c2fbcf6627c730f20b5c54a14b0dae92f29836e33991a59d73"
+        ]
+      },
+      "_replace_evidence:200bb1baecb0d81c28e32891f8896c0aac15d27d0ddf3e81f316dbfbe48ef10d": {
+        "phase": "visible",
+        "hashes": [
+          "35e1227ef52be784064896179895b1d8a50cdd4067be93fc68c6abd1028d0c38"
+        ]
+      },
+      "concentration:535d9a40613a67037c7a9ac14043e76d47429ddc3016e00d0ca31d0742f2259b": {
+        "phase": "visible",
+        "hashes": [
+          "2b83f9e9c74f60ad69a357aa1d429a980e35d402059c24d137c8ac801d10f96b"
+        ]
+      },
+      "_topk_excl:63d69ea7c039a14618fc0d24e1094aeebcb456336adc732c9c2dd9528ee55dd2": {
+        "phase": "held",
+        "hashes": [
+          "e36fe1946bc134ea0c732d4d9cf67ef41080f65813125e21b5db50f320b97a20"
+        ]
+      },
+      "_evidence:63d69ea7c039a14618fc0d24e1094aeebcb456336adc732c9c2dd9528ee55dd2": {
+        "phase": "held",
+        "hashes": [
+          "c470747c52d4a26793447e6082e847c6dc465d381fe2e5760526852caf7e9133",
+          "c107fcc7297e9e43b15edabe4d78fbf4ae9fa5b163e4c2bc4186f913ab97e477",
+          "d5215cef37d903948a6677c9345d9274bc17f88aa0d2d4b00b71f3c26e113be8",
+          "4b8bd76f0df1ea982292c99914603e005b4170fac77ba6a24094b16c2451dd0b",
+          "7b51957b6fd05cd420e54a0b8efb59b65b2b591a82cf7ac0fa1f5d852efde285",
+          "585d80c2c7aee3c648154558c1c757aae22d5ade6f05fa538846db3f06849c63",
+          "d922fd19c67f16348b59c4f19b514cefb66300b562f61fe5c20cd067f79714ab",
+          "5c0c0de04c4bb91babda546ff1eb970026c5d1dceb78dc5bbc3c483f75200a49"
+        ]
+      },
+      "candidate_indices:63d69ea7c039a14618fc0d24e1094aeebcb456336adc732c9c2dd9528ee55dd2": {
+        "phase": "held",
+        "hashes": [
+          "6652538bbf0f5c548f2ebfc71f75d15b6cfd8f5a42181b39aba3a34fde4ba7ab"
+        ]
+      },
+      "_replace_evidence:63d69ea7c039a14618fc0d24e1094aeebcb456336adc732c9c2dd9528ee55dd2": {
+        "phase": "held",
+        "hashes": [
+          "78b43ac0fd7ed0e2c858aa29fcfe1c09c11ab29636d9b6ee0d1a36fb83007285"
+        ]
+      },
+      "concentration:e36fe1946bc134ea0c732d4d9cf67ef41080f65813125e21b5db50f320b97a20": {
+        "phase": "held",
+        "hashes": [
+          "dad5660537d39e949931ef725162260e7df9f7aca33b2b45dc11006172e2f698"
+        ]
+      },
+      "replay_eligibility": {
+        "phase": "always",
+        "hashes": [
+          "c3070e093f40645a4f1d0862dc50ec5e49bc142577ba01b8f5dbef39cf2b7e6c"
+        ]
+      },
+      "ladder_and_agreement": {
+        "phase": "always",
+        "hashes": [
+          "281046789599543af17e047dfbb20bf542615f8c94a8f3678f24d7f226d03fae"
+        ]
+      }
+    }
+  },
+  "training": {
+    "unicef": [
+      {
+        "event": "return",
+        "function": "_train_on",
+        "wall_seconds": 7.900791099993512,
+        "epochs_executed": 145,
+        "best_epoch": 115,
+        "config": [
+          64,
+          2,
+          0.0
+        ],
+        "fit_rows": 9537,
+        "validation_rows": 2361,
+        "device": "cpu",
+        "completed": true,
+        "network_class": "_Net"
+      },
+      {
+        "event": "return",
+        "function": "_train_on",
+        "wall_seconds": 9.704587300002459,
+        "epochs_executed": 120,
+        "best_epoch": 90,
+        "config": [
+          128,
+          2,
+          0.1
+        ],
+        "fit_rows": 9537,
+        "validation_rows": 2361,
+        "device": "cpu",
+        "completed": true,
+        "network_class": "_Net"
+      },
+      {
+        "event": "return",
+        "function": "_train_on",
+        "wall_seconds": 4.996162199997343,
+        "epochs_executed": 115,
+        "best_epoch": 0,
+        "config": [
+          64,
+          2,
+          0.0
+        ],
+        "fit_rows": 14885,
+        "validation_rows": 0,
+        "device": "cpu",
+        "completed": true,
+        "network_class": "_Net"
+      }
+    ],
+    "world_bank": [
+      {
+        "event": "return",
+        "function": "_train_on",
+        "wall_seconds": 22.14247890000115,
+        "epochs_executed": 223,
+        "best_epoch": 193,
+        "config": [
+          64,
+          2,
+          0.0
+        ],
+        "fit_rows": 3280,
+        "validation_rows": 832,
+        "device": "cpu",
+        "completed": true,
+        "network_class": "_Net"
+      },
+      {
+        "event": "return",
+        "function": "_train_on",
+        "wall_seconds": 28.97489659999701,
+        "epochs_executed": 223,
+        "best_epoch": 193,
+        "config": [
+          128,
+          2,
+          0.1
+        ],
+        "fit_rows": 3280,
+        "validation_rows": 832,
+        "device": "cpu",
+        "completed": true,
+        "network_class": "_Net"
+      },
+      {
+        "event": "return",
+        "function": "_train_on",
+        "wall_seconds": 31.501131500001065,
+        "epochs_executed": 193,
+        "best_epoch": 0,
+        "config": [
+          128,
+          2,
+          0.1
+        ],
+        "fit_rows": 5195,
+        "validation_rows": 0,
+        "device": "cpu",
+        "completed": true,
+        "network_class": "_Net"
+      }
+    ],
+    "unhcr": [
+      {
+        "event": "return",
+        "function": "_train_on",
+        "wall_seconds": 41.11884970000392,
+        "epochs_executed": 122,
+        "best_epoch": 92,
+        "config": [
+          64,
+          2,
+          0.0
+        ],
+        "fit_rows": 5264,
+        "validation_rows": 1303,
+        "device": "cpu",
+        "completed": true,
+        "network_class": "ConditionalGradientNet"
+      },
+      {
+        "event": "return",
+        "function": "_train_on",
+        "wall_seconds": 62.88829370000167,
+        "epochs_executed": 151,
+        "best_epoch": 121,
+        "config": [
+          128,
+          2,
+          0.1
+        ],
+        "fit_rows": 5264,
+        "validation_rows": 1303,
+        "device": "cpu",
+        "completed": true,
+        "network_class": "ConditionalGradientNet"
+      },
+      {
+        "event": "return",
+        "function": "_train_on",
+        "wall_seconds": 61.93813819999923,
+        "epochs_executed": 121,
+        "best_epoch": 0,
+        "config": [
+          128,
+          2,
+          0.1
+        ],
+        "fit_rows": 8279,
+        "validation_rows": 0,
+        "device": "cpu",
+        "completed": true,
+        "network_class": "ConditionalGradientNet"
+      }
+    ]
+  },
+  "DEV_truth_accessed": false,
+  "freeze_sha256": "5e8bd2eb84b73957e10f4ca21de858c8a5743290527364c45b09beeafb42245e"
+}

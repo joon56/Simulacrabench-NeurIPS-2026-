@@ -1,0 +1,27 @@
+{
+  "record_type": "Administrative closeout, not an SDK response or terminal receipt",
+  "outcome": "STOP_TERMINATION_UNCONFIRMED",
+  "reason": "REMOTE_WINDOW_EXHAUSTED_BEFORE_QUERY",
+  "workspace": "joon56",
+  "environment": "main",
+  "app_id": "ap-XiMVzlJgrNrCiFpIN1kB4W",
+  "app_name": "a040-resume5-20261005-094405",
+  "sandbox_name": "a040-resume5-20261005-094405-gpu",
+  "sandbox_id": null,
+  "terminal": "UNCONFIRMED",
+  "fresh_billing": null,
+  "normal_client_initializations": 0,
+  "explicit_live_rpc_calls": 0,
+  "terminate_requests": 0,
+  "basis": "Saved traceback fails in synchronizer.create_blocking before Query.run; parent refuses second child. No packet capture claim.",
+  "first_live_process_exit": {
+    "outer_wall_seconds": 0.7566809999999999,
+    "closed_utc": "2026-10-05T12:14:20.2939184+00:00",
+    "exit_code": 1
+  },
+  "remote_windows_allocated": 1,
+  "effective_outer_deadline_utc": "2026-10-05T12:16:19.5405169+00:00",
+  "continuation": "Pre-launch refusal: Original window cannot continue; tool a37022; no second live process",
+  "historical_app_stopped_task0": "Not refreshed; insufficient to prove Sandbox terminal",
+  "required_evidence": "Exact Sandbox ID and explicit terminal result/time, or exact official resource detail evidence"
+}

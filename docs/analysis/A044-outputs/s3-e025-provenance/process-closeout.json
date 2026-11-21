@@ -1,0 +1,20 @@
+{
+  "observed_at": "2026-10-23T17:01:07.138606+09:00",
+  "processes": [
+    {
+      "ProcessId": 21968,
+      "ParentProcessId": 38000,
+      "Name": "python.exe",
+      "CommandLine": "\"C:\\Users\\USER\\Desktop\\SimulacraBench\\.venv\\Scripts\\python.exe\" -B docs/analysis/A044-outputs/s3-e025-provenance/finalize_record.py"
+    },
+    {
+      "ProcessId": 36296,
+      "ParentProcessId": 21968,
+      "Name": "python.exe",
+      "CommandLine": "\"C:\\Users\\USER\\Desktop\\SimulacraBench\\.venv\\Scripts\\python.exe\" -B docs/analysis/A044-outputs/s3-e025-provenance/finalize_record.py"
+    }
+  ],
+  "only_current_document_closeout_command": true,
+  "model_observer_workers_running": [],
+  "remote_all_chat_census": false
+}

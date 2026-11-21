@@ -1,0 +1,11 @@
+{
+  "outcome": "CONFIG_SOURCE_PASS",
+  "elapsed_seconds": 0.060894900001585484,
+  "source12": true,
+  "pins34": true,
+  "authority_link": true,
+  "new_paths_deadlines": true,
+  "payload_content_reads": 0,
+  "model_sdk_imports": 0,
+  "rpc": 0
+}

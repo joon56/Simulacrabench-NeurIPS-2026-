@@ -1,0 +1,214 @@
+{
+  "mode": "boundary",
+  "checks": [
+    {
+      "name": "SDK1.6.0",
+      "pass": true
+    },
+    {
+      "name": "worker_thread_distinct",
+      "pass": true
+    },
+    {
+      "name": "negative_guards",
+      "pass": true
+    },
+    {
+      "name": "all_owned_ipc_closed",
+      "pass": true
+    },
+    {
+      "name": "no_unexpected_forbidden_attempts",
+      "pass": true
+    }
+  ],
+  "pre_sdk_loop": {
+    "thread": 42544,
+    "loop": "ProactorEventLoop"
+  },
+  "post_sdk_loop": {
+    "thread": 42544,
+    "loop": "_WindowsSelectorEventLoop"
+  },
+  "sync_worker": {
+    "thread": 42200,
+    "loop": "_WindowsSelectorEventLoop"
+  },
+  "synchronicity_runner": {
+    "thread": 42544,
+    "loop": "_WindowsSelectorEventLoop"
+  },
+  "outcome": "PASS",
+  "guard": {
+    "events": [
+      {
+        "ipc": "socket.bind",
+        "pid": 41620,
+        "thread": 42544
+      },
+      {
+        "ipc": "socket.connect",
+        "pid": 41620,
+        "thread": 42544
+      },
+      {
+        "ipc": "socket.bind",
+        "pid": 41620,
+        "thread": 42544
+      },
+      {
+        "ipc": "socket.connect",
+        "pid": 41620,
+        "thread": 42544
+      },
+      {
+        "ipc": "socket.bind",
+        "pid": 41620,
+        "thread": 42200
+      },
+      {
+        "ipc": "socket.connect",
+        "pid": 41620,
+        "thread": 42200
+      },
+      {
+        "blocked": "client_auth",
+        "expected": "client_auth",
+        "thread": 42200
+      },
+      {
+        "ipc": "socket.bind",
+        "pid": 41620,
+        "thread": 42544
+      },
+      {
+        "ipc": "socket.connect",
+        "pid": 41620,
+        "thread": 42544
+      },
+      {
+        "blocked": "client_auth",
+        "expected": "client_auth",
+        "thread": 42544
+      },
+      {
+        "blocked": "rpc",
+        "expected": "rpc",
+        "thread": 42544
+      },
+      {
+        "blocked": "image_build",
+        "expected": "image_build",
+        "thread": 42544
+      },
+      {
+        "blocked": "remote_resolution",
+        "expected": "remote_resolution",
+        "thread": 42544
+      },
+      {
+        "blocked": "external_connect",
+        "expected": "external_connect",
+        "thread": 42544
+      },
+      {
+        "blocked": "external_connect",
+        "expected": "external_connect",
+        "thread": 42544
+      },
+      {
+        "blocked": "dns",
+        "expected": "dns",
+        "thread": 42544
+      },
+      {
+        "blocked": "subprocess",
+        "expected": "subprocess",
+        "thread": 42544
+      },
+      {
+        "blocked": "credentials",
+        "expected": "credentials",
+        "thread": 42544
+      },
+      {
+        "blocked": "installer",
+        "expected": "installer",
+        "thread": 42544
+      }
+    ],
+    "pairs": [
+      {
+        "pid": 41620,
+        "thread": 42544,
+        "loop": "ProactorEventLoop",
+        "started": 16929.7901666,
+        "endpoints": [
+          [
+            "127.0.0.1",
+            57635
+          ],
+          [
+            "127.0.0.1",
+            57636
+          ]
+        ],
+        "closed": true
+      },
+      {
+        "pid": 41620,
+        "thread": 42544,
+        "loop": "_WindowsSelectorEventLoop",
+        "started": 16931.2099262,
+        "endpoints": [
+          [
+            "127.0.0.1",
+            57637
+          ],
+          [
+            "127.0.0.1",
+            57638
+          ]
+        ],
+        "closed": true
+      },
+      {
+        "pid": 41620,
+        "thread": 42200,
+        "loop": "_WindowsSelectorEventLoop",
+        "started": 16931.2117238,
+        "endpoints": [
+          [
+            "127.0.0.1",
+            57639
+          ],
+          [
+            "127.0.0.1",
+            57640
+          ]
+        ],
+        "closed": true
+      },
+      {
+        "pid": 41620,
+        "thread": 42544,
+        "loop": "_WindowsSelectorEventLoop",
+        "started": 16931.2133052,
+        "endpoints": [
+          [
+            "127.0.0.1",
+            57641
+          ],
+          [
+            "127.0.0.1",
+            57642
+          ]
+        ],
+        "closed": true
+      }
+    ],
+    "unexpected": [],
+    "scope": "Python guards only; no native/OS security certification"
+  },
+  "elapsed_seconds": 1.43474619999688
+}

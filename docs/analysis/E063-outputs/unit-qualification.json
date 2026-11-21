@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "code_hashes": {
+    "src/models/round_metric_retrieval.py": "5595bebdcdc697fc9e1eba149e10735cac4ae434b20b0ce3e93c968e8b35106b",
+    "tests/test_round_metric_retrieval.py": "ef6be195048261d8eabe21e2fac63f1d4c8d6a71341b51fe0197b3ee5d08200e",
+    "scripts/check_e063_round_metric.py": "a437183e91834a8e0eb82f94b5c9b0abc3b66a480df0e14009fec1d45afec6f1"
+  },
+  "unique_registered_cases": 10,
+  "evidence": [
+    {
+      "attempt": "tests-01",
+      "result": "Expected RED: implementation absent",
+      "wall_seconds": 13.438657399998192
+    },
+    {
+      "attempt": "tests-02",
+      "result": "9 PASS; forced-active observer argument indexing FAIL",
+      "wall_seconds": 40.080261600000085
+    },
+    {
+      "attempt": "tests-03",
+      "result": "Affected forced-active test PASS; unchanged 9 successes not repeated",
+      "wall_seconds": 5.851079899999604
+    }
+  ],
+  "repair": {
+    "scope": "Test observer only",
+    "cause": "_replace_evidence query/codes/bank/initial positional indices shifted by one",
+    "assertions_tolerances_policy_changed": false,
+    "model_changed_after_tests02": false,
+    "runner_changed_after_tests02": false
+  },
+  "focused_wall_seconds": 59.36999889999788,
+  "scientific_processes": 0,
+  "synthetic_content_accesses": 0,
+  "qualification": "New artificial fixtures and real entry/renderer with fixed neural/base doubles; no empirical efficacy claim"
+}

@@ -1,0 +1,10 @@
+{"event": "operation", "time": 1791193735.8578246, "stage": "connect", "timeout": 60}
+{"event": "operation", "time": 1791193736.989505, "stage": "billing", "timeout": 30}
+{"event": "operation", "time": 1791193737.6078007, "stage": "base_stream", "timeout": 30}
+{"event": "operation", "time": 1791193738.01498, "stage": "base_identity", "timeout": 30}
+{"event": "operation", "time": 1791193738.460861, "stage": "app_create", "timeout": 30}
+{"event": "operation", "time": 1791193739.0285335, "stage": "build_billing", "timeout": 30}
+{"event": "operation", "time": 1791193785.932821, "stage": "build_billing", "timeout": 30}
+{"event": "operation", "time": 1791193832.6808653, "stage": "build_billing", "timeout": 30}
+{"event": "operation", "time": 1791193840.9053864, "stage": "sandbox_create", "timeout": 120}
+{"event": "first_error", "time": 1791193841.9821744, "error": "AssertionError()"}

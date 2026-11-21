@@ -1,0 +1,66 @@
+﻿[
+    {
+        "path":  "submissions/2026-09-19-E041/main.py",
+        "sha256":  "22c911806ea91234ae350341adfb9c0df2ce4be41cc88e73be304e4bb1023073"
+    },
+    {
+        "path":  "src/models/supervised_retrieval.py",
+        "sha256":  "2940338c5378de03303befb74e3834fbad631c0eb18f4ecb55d2cc39a471f879"
+    },
+    {
+        "path":  "src/models/shared_trunk.py",
+        "sha256":  "df648763c8e0ba5532ebf9e437af95cd10d8527112c1338b8b5db9ad6a212e1f"
+    },
+    {
+        "path":  "src/models/link_sharp.py",
+        "sha256":  "4a7921a00d7758e52a63a3ca7cd5ebf2285cef445b57fd89f15580d6fc108524"
+    },
+    {
+        "path":  "src/models/hh_cap.py",
+        "sha256":  "9aad6be04e14ae97dc7aaba5499747c35b255b098680c66eaa8f8af58c940f70"
+    },
+    {
+        "path":  "src/models/hier_backoff.py",
+        "sha256":  "e01f2030c191b0b632b274662cbb46537669f3b73e21ab0d5f7f671d28654ccd"
+    },
+    {
+        "path":  "src/eval/logloss.py",
+        "sha256":  "272aae939a2587b7197569ff84733a1d3b51050e4090ed903a7c8f4e1c88ca18"
+    },
+    {
+        "path":  "docs/experiments/E041-supervised-retrieval.md",
+        "sha256":  "8a17f3cb2cb54deb19fdbffe597dcba173002a82100250ea4ff8be446d76bafb"
+    },
+    {
+        "path":  "docs/experiments/E048-tabpfn-gate-parents.md",
+        "sha256":  "60e030be4969bf45fa7db73404db4a1d590c321dc39935ab6c793bcdc77670a0"
+    },
+    {
+        "path":  "docs/experiments/E049-adaptive-tabpfn-parents.md",
+        "sha256":  "0d6a9f197a5239f2c7a70ed6da3c8e01b8e24a67ba1b4ea7ecf512d9490db046"
+    },
+    {
+        "path":  "docs/experiments/E051-direct-content-tree.md",
+        "sha256":  "7efd35b3e5e85b15be316e3ef9acecc4d898459de832e37213feb4a93afe1b16"
+    },
+    {
+        "path":  "submissions/SCORES.md",
+        "sha256":  "1e6d753c24c5c2e42fc4b316ea524a4285b59ef672cc5c3a5a1288768d157dab"
+    },
+    {
+        "path":  "submissions/2026-09-28-E061/SCORES.md",
+        "sha256":  "42cff85586e68d4f99e5ff77bf6a082196b35fa867bd29d9ef256e6833974282"
+    },
+    {
+        "path":  "external/starter-kit/data/unhcr.json",
+        "sha256":  "b1175b6bdbd96e90a4defd83af20a38d711c6eca9fe3ce880109ff244abe80d9"
+    },
+    {
+        "path":  "external/starter-kit/data/unicef.json",
+        "sha256":  "0bce08036cc563ee2a369dcee316ff8a5f89045d86991756d72c266927674396"
+    },
+    {
+        "path":  "external/starter-kit/data/world_bank.json",
+        "sha256":  "6b3760742c6e864eb8d0bb2f9ec523a19a486b73282d79432dbcca16e3664125"
+    }
+]

@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\SimulacraBench\docs\analysis\A040-outputs\modal-controller-repair1\tests_local.py", line 55, in <module>
+    assert "• 한글 로그 stdout" in stdout and "• 한글 로그 stderr" in stderr
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

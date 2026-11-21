@@ -1,0 +1,285 @@
+{
+  "status": "PASS",
+  "stages": [
+    {
+      "mode": "tests",
+      "status": "PASS",
+      "command": [
+        "C:\\Users\\USER\\Desktop\\SimulacraBench\\.venv\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "-m",
+        "unittest",
+        "tests.test_e063_assembly",
+        "-v"
+      ],
+      "wall_seconds": 4.589180400002078,
+      "cumulative_worker_seconds": 4.589180400002078,
+      "historical_S1_worker_seconds": 754.5516991000004,
+      "combined_worker_seconds": 759.1408795000025,
+      "reason": "COMPLETE",
+      "error": null,
+      "exit_code": 0,
+      "peak_owned_tree_bytes": {
+        "rss": 357437440,
+        "commitment": 367173632
+      },
+      "sample_interval_seconds": 0.1,
+      "numerical_threads": 2,
+      "gpu": false,
+      "sample_count": 43,
+      "maximum_monotonic_sample_gap_seconds": 0.1120374999991327,
+      "focused_cumulative_seconds": 4.589180400002078,
+      "memory_semantics": "Owned controller+descendants; sum of per-process peak RSS/private commitment",
+      "cumulative_calls": {
+        "full_stack": 0,
+        "neural": 0,
+        "metric": 0
+      }
+    },
+    {
+      "mode": "preflight",
+      "status": "PASS",
+      "command": [
+        "C:\\Users\\USER\\Desktop\\SimulacraBench\\.venv\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "C:\\Users\\USER\\Desktop\\SimulacraBench\\scripts\\check_e063_release.py",
+        "worker",
+        "preflight"
+      ],
+      "wall_seconds": 17.22608720000062,
+      "cumulative_worker_seconds": 21.8152676000027,
+      "historical_S1_worker_seconds": 754.5516991000004,
+      "combined_worker_seconds": 776.3669667000031,
+      "reason": "COMPLETE",
+      "error": null,
+      "exit_code": 0,
+      "peak_owned_tree_bytes": {
+        "rss": 849174528,
+        "commitment": 935903232
+      },
+      "sample_interval_seconds": 0.1,
+      "numerical_threads": 2,
+      "gpu": false,
+      "sample_count": 157,
+      "maximum_monotonic_sample_gap_seconds": 0.11271370000031311,
+      "focused_cumulative_seconds": 4.589180400002078,
+      "memory_semantics": "Owned controller+descendants; sum of per-process peak RSS/private commitment",
+      "cumulative_calls": {
+        "full_stack": 0,
+        "neural": 0,
+        "metric": 0
+      }
+    },
+    {
+      "mode": "assembly",
+      "status": "PASS",
+      "command": [
+        "C:\\Users\\USER\\Desktop\\SimulacraBench\\.venv\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "C:\\Users\\USER\\Desktop\\SimulacraBench\\scripts\\check_e063_release.py",
+        "worker",
+        "assembly"
+      ],
+      "wall_seconds": 465.7310139000001,
+      "cumulative_worker_seconds": 487.5462815000028,
+      "historical_S1_worker_seconds": 754.5516991000004,
+      "combined_worker_seconds": 1242.0979806000032,
+      "reason": "COMPLETE",
+      "error": null,
+      "exit_code": 0,
+      "peak_owned_tree_bytes": {
+        "rss": 1386868736,
+        "commitment": 1504919552
+      },
+      "sample_interval_seconds": 0.1,
+      "numerical_threads": 2,
+      "gpu": false,
+      "sample_count": 4206,
+      "maximum_monotonic_sample_gap_seconds": 0.11819029999969644,
+      "focused_cumulative_seconds": 4.589180400002078,
+      "memory_semantics": "Owned controller+descendants; sum of per-process peak RSS/private commitment",
+      "cumulative_calls": {
+        "full_stack": 3,
+        "neural": 9,
+        "metric": 8
+      }
+    },
+    {
+      "mode": "evaluate",
+      "status": "PASS",
+      "command": [
+        "C:\\Users\\USER\\Desktop\\SimulacraBench\\.venv\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "C:\\Users\\USER\\Desktop\\SimulacraBench\\scripts\\check_e063_release.py",
+        "worker",
+        "evaluate"
+      ],
+      "wall_seconds": 19.949819800000114,
+      "cumulative_worker_seconds": 507.4961013000029,
+      "historical_S1_worker_seconds": 754.5516991000004,
+      "combined_worker_seconds": 1262.0478004000033,
+      "reason": "COMPLETE",
+      "error": null,
+      "exit_code": 0,
+      "peak_owned_tree_bytes": {
+        "rss": 1014734848,
+        "commitment": 1101639680
+      },
+      "sample_interval_seconds": 0.1,
+      "numerical_threads": 2,
+      "gpu": false,
+      "sample_count": 181,
+      "maximum_monotonic_sample_gap_seconds": 0.11367369999788934,
+      "focused_cumulative_seconds": 4.589180400002078,
+      "memory_semantics": "Owned controller+descendants; sum of per-process peak RSS/private commitment",
+      "cumulative_calls": {
+        "full_stack": 3,
+        "neural": 9,
+        "metric": 8
+      }
+    },
+    {
+      "mode": "package",
+      "status": "PASS",
+      "command": [
+        "C:\\Users\\USER\\Desktop\\SimulacraBench\\.venv\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "C:\\Users\\USER\\Desktop\\SimulacraBench\\scripts\\check_e063_release.py",
+        "worker",
+        "package"
+      ],
+      "wall_seconds": 4.8797472000005655,
+      "cumulative_worker_seconds": 512.3758485000035,
+      "historical_S1_worker_seconds": 754.5516991000004,
+      "combined_worker_seconds": 1266.927547600004,
+      "reason": "COMPLETE",
+      "error": null,
+      "exit_code": 0,
+      "peak_owned_tree_bytes": {
+        "rss": 391221248,
+        "commitment": 388186112
+      },
+      "sample_interval_seconds": 0.1,
+      "numerical_threads": 2,
+      "gpu": false,
+      "sample_count": 45,
+      "maximum_monotonic_sample_gap_seconds": 0.1151510000017879,
+      "focused_cumulative_seconds": 4.589180400002078,
+      "memory_semantics": "Owned controller+descendants; sum of per-process peak RSS/private commitment",
+      "cumulative_calls": {
+        "full_stack": 3,
+        "neural": 9,
+        "metric": 8
+      }
+    },
+    {
+      "mode": "official",
+      "status": "PASS",
+      "command": [
+        "C:\\Users\\USER\\Desktop\\SimulacraBench\\.venv\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "C:\\Users\\USER\\Desktop\\SimulacraBench\\scripts\\check_e063_release.py",
+        "worker",
+        "official"
+      ],
+      "wall_seconds": 701.724240399999,
+      "cumulative_worker_seconds": 1214.1000889000024,
+      "historical_S1_worker_seconds": 754.5516991000004,
+      "combined_worker_seconds": 1968.6517880000029,
+      "reason": "COMPLETE",
+      "error": null,
+      "exit_code": 0,
+      "peak_owned_tree_bytes": {
+        "rss": 2455371776,
+        "commitment": 2650202112
+      },
+      "sample_interval_seconds": 0.1,
+      "numerical_threads": 2,
+      "gpu": false,
+      "sample_count": 6261,
+      "maximum_monotonic_sample_gap_seconds": 0.12008280000009108,
+      "focused_cumulative_seconds": 4.589180400002078,
+      "memory_semantics": "Owned controller+descendants; sum of per-process peak RSS/private commitment",
+      "cumulative_calls": {
+        "full_stack": 6,
+        "neural": 18,
+        "metric": 16
+      }
+    }
+  ],
+  "additional_nonoverlapping_preparation": {
+    "seconds": 0.4833488,
+    "evidence": "cef799 exec_command wall_seconds, first permitted identity/entry preparation before monitored tests",
+    "memory_observed": false,
+    "notes": "Non-numerical hashing/metadata only; included conservatively. Concurrent later shell/read/check spans overlap monitored all3 or are gross document work, not added twice."
+  },
+  "monitored_stage_seconds": 1214.1000889000024,
+  "total_computational_seconds": 1214.5834377000024,
+  "limit_computational_seconds": 3600,
+  "focused_seconds": 4.589180400002078,
+  "all3_units": 2,
+  "pipeline": 6,
+  "neural": 18,
+  "metric": 16,
+  "conditional_baseline_all3": 0,
+  "repair_reserve_all3": 0,
+  "peak_owned_tree_bytes": {
+    "rss": 2455371776,
+    "commitment": 2650202112
+  },
+  "peak_owned_tree_GiB": {
+    "rss": 2.2867431640625,
+    "commitment": 2.4681930541992188
+  },
+  "maximum_monotonic_sample_gap_seconds": 0.12008280000009108,
+  "nested_components_not_added": {
+    "neural": {
+      "calls": 18,
+      "seconds": 586.9468602999987
+    },
+    "metric": {
+      "calls": 16,
+      "seconds": 1.0000736999936635
+    }
+  },
+  "historical_S1": {
+    "seconds": 754.5516991000004,
+    "pipeline": 6,
+    "neural": 18,
+    "metric": 16
+  },
+  "combined_E063_S1_S2_seconds": 1969.1351368000028,
+  "combined_calls": {
+    "pipeline": 12,
+    "neural": 36,
+    "metric": 32
+  },
+  "cpu_numerical_threads": 2,
+  "gpu": 0,
+  "heavy": 1,
+  "remote_cost_usd": 0,
+  "limits": {
+    "all3_each": 900,
+    "focused_child": 60,
+    "focused_total": 300,
+    "rss_private_each": 8589934592,
+    "absolute_all3": 5,
+    "pipeline": 15,
+    "neural": 45,
+    "metric": 32
+  },
+  "scope": "Stage wall includes owned numerical child import/startup/predict/output/validation/evaluator/exit/cleanup and parent verification from monitor entry; nested subprocess intervals not extra cost. Static reading/authoring recorded in gross session time.",
+  "monitor_limit": "Actual .1s polling/max monotonic gap and conservative sums of process peaks, not continuous bounds proof; historical S1 max gap unrecorded, not retroactively repaired."
+}

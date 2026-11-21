@@ -1,0 +1,29 @@
+{
+    "completed_utc":  "2026-10-07T13:38:40.7424854+00:00",
+    "gross_start_utc":  "2026-10-07T12:39:40Z",
+    "gross_wall_seconds":  3540.7424853999996,
+    "gross_budget_seconds":  7200,
+    "original_deadline_utc":  "2026-10-07T14:39:40Z",
+    "original_computation_cutoff_utc":  "2026-10-07T14:29:40Z",
+    "computational_child_seconds":  1123.1965955000032,
+    "scientific_workers":  3,
+    "evaluator_workers":  1,
+    "pipeline_attempts":  9,
+    "neural_attempts":  27,
+    "verdict":  "EXPLORATORY_SOURCE_QUALIFIED",
+    "head":  "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+    "dirty_count":  96,
+    "named_local_jobs":  [
+
+                         ],
+    "allowed_original_source_preserved":  true,
+    "shared_insertions_reversible_to_original_bytes":  true,
+    "linked_artifact_count":  12,
+    "protected_files_not_rehashed":  true,
+    "final_data_identity_check":  "Already recorded in verification.json after all computations; not repeated in this documentation pass",
+    "next_role":  "S0 review only",
+    "model_effect":  "UNRESOLVED",
+    "S2_release":  "NOT_EXECUTED",
+    "no_commit_push":  true,
+    "no_zip":  true
+}

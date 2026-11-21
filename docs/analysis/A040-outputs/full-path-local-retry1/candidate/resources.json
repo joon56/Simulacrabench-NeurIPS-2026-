@@ -1,0 +1,9 @@
+{
+  "record_kind": "closeout_not_watchdog_result",
+  "outcome": "NOT_RUN",
+  "started": false,
+  "seconds": 0,
+  "rss_peak": null,
+  "commitment_peak": null,
+  "cuda_peak": null
+}

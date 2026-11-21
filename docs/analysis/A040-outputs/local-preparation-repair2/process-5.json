@@ -1,0 +1,12 @@
+﻿{
+    "mode":  "fixed",
+    "hidden":  true,
+    "affinity_mask":  3,
+    "owned_pid_remaining":  0,
+    "wall_seconds":  1.0417813999999999,
+    "number":  5,
+    "timeout_seconds":  27,
+    "error":  null,
+    "pid":  29800,
+    "exit_code":  0
+}

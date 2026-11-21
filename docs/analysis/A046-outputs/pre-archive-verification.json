@@ -1,0 +1,28 @@
+﻿{
+    "task":  "A046 migration",
+    "phase":  "PRE_ARCHIVE_CHECKS_COMPLETE",
+    "role":  "S0 migration-only exception",
+    "workflow_revision":  "2026-10-26-r7",
+    "head":  "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+    "read_only_agents":  2,
+    "destination_os":  "User not yet answered; Windows primary plus macOS/Linux branches",
+    "scope":  "Local byte backup and guide, no scientific access",
+    "history":  "23 project Codex sessions; no local Claude JSONL; four project memories",
+    "inventory_errors_after_authorized_metadata_access":  0,
+    "environment_manifests":  8,
+    "checks":  [
+                   "Small UTF8/empty-file ZIP roundtrip hash PASS",
+                   "Four unsafe/duplicate/reserved archive paths rejected before create",
+                   "History restore relative root, existing file preservation and index-without-final-newline PASS"
+               ],
+    "repairs":  [
+                    "PowerShell file policy blocked direct script invocation; no policy changed; approved utility commands run inline",
+                    "Ordered-hashtable Measure-Object accounting repaired before real archive; initial tiny archive failure preserved",
+                    "Readonly review supplied archive path guards and history restore fixes"
+                ],
+    "no_research_import_fit_predict_score":  true,
+    "protected_files":  "Opaque backup bytes only, not label analysis or new audit",
+    "commit_push_upload":  0,
+    "final_receipt":  "ZIP sidecar .verification.json and final verification.json after archive closes",
+    "created_at":  "2026-10-26T23:12:46.1507493+09:00"
+}

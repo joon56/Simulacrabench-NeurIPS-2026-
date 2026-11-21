@@ -1,0 +1,165 @@
+{
+  "record_kind": "POST_TERMINATION_EVENT_SUMMARY_NOT_RUNNER_RESULT",
+  "outcome": "LOCAL_RESOURCE_LIMIT",
+  "terminal_result_exists": false,
+  "expert_completed": {
+    "expert_shadow": {
+      "fit": {
+        "completed": 213,
+        "completed_call_seconds": 26.98540979999234,
+        "last_completed_head": "s6_12_children_schooling_lbl"
+      },
+      "predict": {
+        "completed": 213,
+        "completed_call_seconds": 307.02560870002344,
+        "last_completed_head": "s6_12_children_schooling_lbl"
+      }
+    },
+    "expert_final": {
+      "fit": {
+        "completed": 199,
+        "completed_call_seconds": 32.25839700000142,
+        "last_completed_head": "s6_10_face_challenges_lbl"
+      },
+      "predict": {
+        "completed": 198,
+        "completed_call_seconds": 334.0617184000075,
+        "last_completed_head": "s6_9b_debt_syria_lbl"
+      }
+    }
+  },
+  "e041_completed_pipeline_events": [
+    {
+      "event": "pipeline_end",
+      "elapsed": 21.19989540000097,
+      "instrument": "unicef",
+      "stage": "control",
+      "fit_rows": 14885,
+      "query_rows": 1488,
+      "vectors": 17856,
+      "seconds": 14.814418699999806,
+      "reference_exact": true
+    },
+    {
+      "event": "pipeline_end",
+      "elapsed": 38.18404090000331,
+      "instrument": "world_bank",
+      "stage": "control",
+      "fit_rows": 5195,
+      "query_rows": 520,
+      "vectors": 39520,
+      "seconds": 16.574704799997562,
+      "reference_exact": true
+    },
+    {
+      "event": "pipeline_end",
+      "elapsed": 114.41984660000162,
+      "instrument": "unhcr",
+      "stage": "unhcr_shadow",
+      "fit_rows": 6279,
+      "query_rows": 2621,
+      "vectors": 558273,
+      "seconds": 74.47580519999974,
+      "reference_exact": null
+    },
+    {
+      "event": "pipeline_end",
+      "elapsed": 528.4728951000034,
+      "instrument": "unhcr",
+      "stage": "unhcr_final",
+      "fit_rows": 8279,
+      "query_rows": 621,
+      "vectors": 132273,
+      "seconds": 74.60056419999819,
+      "reference_exact": true
+    }
+  ],
+  "e041_verbose_starts": {
+    "select_ladder": 4,
+    "tune_and_train": 4,
+    "_train": 12,
+    "_train_on": 12,
+    "conditional_agreement": 4,
+    "hh_sharp_layer": 2,
+    "supervised_layer": 2,
+    "fit_sections": 2,
+    "minimize": 16
+  },
+  "e041_verbose_ends": {
+    "select_ladder": 4,
+    "_train_on": 12,
+    "_train": 12,
+    "tune_and_train": 4,
+    "conditional_agreement": 4,
+    "hh_sharp_layer": 2,
+    "minimize": 16,
+    "fit_sections": 2,
+    "supervised_layer": 2
+  },
+  "cuda_attempt_events": 12,
+  "cpu_attempt_events": 0,
+  "checkpoint_load_events": [
+    {
+      "event": "checkpoint_load",
+      "elapsed": 5.442596100001538,
+      "count": 1,
+      "seconds": 0.06441999999879044
+    }
+  ],
+  "initial_state_event": {
+    "event": "candidate_import_complete",
+    "elapsed": 5.907013000000006,
+    "checkpoint_loads": 1,
+    "state_sha256": "92c6c2f567512ef430085e13062f8d9d0141880ab344a02b73da0471f6b92393",
+    "gpu_allocated_peak": 113372160,
+    "gpu_reserved_peak": 125829120
+  },
+  "alpha_frozen": {
+    "event": "alpha_frozen",
+    "elapsed": 453.32220640000014,
+    "alpha": 0.5
+  },
+  "natural_decision": {
+    "event": "natural_decision",
+    "elapsed": 453.4098733000028,
+    "alpha": 0.5,
+    "accepted": true,
+    "lower": 0.031215568933646617,
+    "efficacy_evidence": false
+  },
+  "engineering_render_reached": false,
+  "expert_shadow_stage": {
+    "event": "expert_stage_end",
+    "elapsed": 453.20994860000064,
+    "stage": "expert_shadow",
+    "heads": 213,
+    "fit_rows": 6279,
+    "query_rows": 2000,
+    "seconds": 338.43039860000135
+  },
+  "final_stage_start": {
+    "event": "expert_stage_start",
+    "elapsed": 528.7167702000006,
+    "stage": "expert_final",
+    "fit_rows": 8279,
+    "query_rows": 621,
+    "heads": 213
+  },
+  "last_event": {
+    "event": "expert_fit_end",
+    "elapsed": 899.5604577000013,
+    "stage": "expert_final",
+    "head_name": "s6_10_face_challenges_lbl",
+    "seconds": 0.17482920000111335,
+    "fit_rows": 8279,
+    "gpu_allocated_peak": 3113411072,
+    "gpu_reserved_peak": 4886364160
+  },
+  "recorded_errors": [],
+  "final_in_memory_state_check_reached": false,
+  "final_inactive_empty_driver_reached": false,
+  "candidate_complete_vectors": false,
+  "candidate_final_network_counters_available": false,
+  "exact_final_attempt_counters_available": false,
+  "unlogged_helper_counts_available": false
+}

@@ -1,0 +1,24 @@
+{
+  "scope": "Document extraction integrity only; no model/fixture test",
+  "checks": {
+    "VAF_Host_2023_LongXLS_final.xlsx_archive_bytes": true,
+    "VAF_Host_2023_LongXLS_final.xlsx_survey_raw_xml_matches": true,
+    "VAF_Host_2023_LongXLS_final.xlsx_choices_raw_xml_matches": true,
+    "VAF_Host_2023_LongXLS_final.xlsx_settings_raw_xml_matches": true,
+    "VAF_Host_2023_ShortXLS_final.xlsx_archive_bytes": true,
+    "VAF_Host_2023_ShortXLS_final.xlsx_survey_raw_xml_matches": true,
+    "VAF_Host_2023_ShortXLS_final.xlsx_choices_raw_xml_matches": true,
+    "VAF_Host_2023_ShortXLS_final.xlsx_settings_raw_xml_matches": true,
+    "ddi_count": true,
+    "VAF_Host_2023_LongXLS_final.xlsx_all_relevance_preserved": true,
+    "VAF_Host_2023_LongXLS_final.xlsx_all_names_preserved": true,
+    "VAF_Host_2023_LongXLS_final.xlsx_unique_names_no_nesting_anomaly": true,
+    "VAF_Host_2023_LongXLS_final.xlsx_all_direct_refs_resolved": true,
+    "VAF_Host_2023_ShortXLS_final.xlsx_all_relevance_preserved": true,
+    "VAF_Host_2023_ShortXLS_final.xlsx_all_names_preserved": true,
+    "VAF_Host_2023_ShortXLS_final.xlsx_unique_names_no_nesting_anomaly": true,
+    "VAF_Host_2023_ShortXLS_final.xlsx_all_direct_refs_resolved": true
+  },
+  "nonempty_cells_compared": 34266,
+  "all_pass": true
+}

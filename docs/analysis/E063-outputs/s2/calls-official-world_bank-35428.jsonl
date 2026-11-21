@@ -1,0 +1,18 @@
+{"event": "environment", "torch_threads": 2, "torch_interop_threads": 2, "cuda": false, "instrument": "world_bank", "pid": 35428}
+{"event": "enter", "kind": "full_stack", "function": "_e063_predict", "totals": {"full_stack": 5, "neural": 12, "metric": 8}, "instrument": "world_bank", "pid": 35428}
+{"event": "target_boundary", "rows": 3280, "instrument": "world_bank", "pid": 35428}
+{"event": "target_role", "rows": 3280, "roles": ["inner_train"], "index_sha256": "89b362895751cac0764c7c3eae8b63558c69bbbeb62d449497a5587d1182fbd5", "instrument": "world_bank", "pid": 35428}
+{"event": "target_boundary", "rows": 832, "instrument": "world_bank", "pid": 35428}
+{"event": "target_role", "rows": 832, "roles": ["inner_stop"], "index_sha256": "155afd869046f0643cfdafa635fb10064f9e374bb3584b6cfd8228c968db22e4", "instrument": "world_bank", "pid": 35428}
+{"event": "target_boundary", "rows": 1083, "instrument": "world_bank", "pid": 35428}
+{"event": "target_role", "rows": 1083, "roles": ["outer_selection"], "index_sha256": "5b659342db3e691771931b7546a7d20cb32123bea957c13517e52e3cac461d8b", "instrument": "world_bank", "pid": 35428}
+{"event": "enter", "kind": "neural", "function": "_train_on", "totals": {"full_stack": 5, "neural": 13, "metric": 8}, "instrument": "world_bank", "pid": 35428}
+{"event": "return", "kind": "neural", "function": "_train_on", "seconds": 30.893943099999888, "returned": true, "epochs": 223, "best_epoch": 193, "device": "cpu", "instrument": "world_bank", "pid": 35428}
+{"event": "enter", "kind": "neural", "function": "_train_on", "totals": {"full_stack": 5, "neural": 14, "metric": 8}, "instrument": "world_bank", "pid": 35428}
+{"event": "return", "kind": "neural", "function": "_train_on", "seconds": 32.111293599999044, "returned": true, "epochs": 223, "best_epoch": 193, "device": "cpu", "instrument": "world_bank", "pid": 35428}
+{"event": "target_boundary", "rows": 5195, "instrument": "world_bank", "pid": 35428}
+{"event": "target_role", "rows": 5195, "roles": ["final_refit"], "index_sha256": "31723171cab38858ed86b9a2eadb6f5f752872741d6f8cc00c63833a51b79c70", "instrument": "world_bank", "pid": 35428}
+{"event": "enter", "kind": "neural", "function": "_train_on", "totals": {"full_stack": 5, "neural": 15, "metric": 8}, "instrument": "world_bank", "pid": 35428}
+{"event": "return", "kind": "neural", "function": "_train_on", "seconds": 27.95173540000178, "returned": true, "epochs": 193, "best_epoch": 0, "device": "cpu", "instrument": "world_bank", "pid": 35428}
+{"event": "round_support", "values": {"eligible": false, "reason": "exact E041 control"}, "instrument": "world_bank", "pid": 35428}
+{"event": "return", "kind": "full_stack", "function": "_e063_predict", "seconds": 121.44426849999945, "returned": true, "instrument": "world_bank", "pid": 35428}

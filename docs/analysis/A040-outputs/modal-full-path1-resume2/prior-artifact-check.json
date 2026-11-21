@@ -1,0 +1,261 @@
+﻿[
+    {
+        "attempt":  "modal-full-path1",
+        "path":  "allowlist.json",
+        "expected":  "f8a52aaabb040593737485a9f860d53ae39600693ab18517128c577d0ac5dcfe",
+        "actual":  "f8a52aaabb040593737485a9f860d53ae39600693ab18517128c577d0ac5dcfe",
+        "match":  true
+    },
+    {
+        "attempt":  "modal-full-path1",
+        "path":  "boundary-result.json",
+        "expected":  "e84a9f68341374d8dff365a0f3796e4bae545d41b201c1b7efffd9ea51c4d37e",
+        "actual":  "e84a9f68341374d8dff365a0f3796e4bae545d41b201c1b7efffd9ea51c4d37e",
+        "match":  true
+    },
+    {
+        "attempt":  "modal-full-path1",
+        "path":  "closeout.md",
+        "expected":  "24b9c04801ad7815f94396d9829413cd407be72ca058a35333f07ffc1945feff",
+        "actual":  "24b9c04801ad7815f94396d9829413cd407be72ca058a35333f07ffc1945feff",
+        "match":  true
+    },
+    {
+        "attempt":  "modal-full-path1",
+        "path":  "cost-ledger.json",
+        "expected":  "475b7d2db5501a817adf0fe4f6b03f43dd1e32f4817035b748221ee27f0ed363",
+        "actual":  "475b7d2db5501a817adf0fe4f6b03f43dd1e32f4817035b748221ee27f0ed363",
+        "match":  true
+    },
+    {
+        "attempt":  "modal-full-path1",
+        "path":  "dirty-entry.txt",
+        "expected":  "184f0fe5ff15527c15fb34d257489dd2552aa7f718ac2c3259d5032741e8d7e9",
+        "actual":  "184f0fe5ff15527c15fb34d257489dd2552aa7f718ac2c3259d5032741e8d7e9",
+        "match":  true
+    },
+    {
+        "attempt":  "modal-full-path1",
+        "path":  "entry.json",
+        "expected":  "c52bbf401c1e0476a755292e7341da8ece2a8b1141ed6c9d15423227b772948c",
+        "actual":  "c52bbf401c1e0476a755292e7341da8ece2a8b1141ed6c9d15423227b772948c",
+        "match":  true
+    },
+    {
+        "attempt":  "modal-full-path1",
+        "path":  "exposure-ledger.md",
+        "expected":  "d059a4db489756e991d0fb8b2c49a71a310c4ceb470c521350f3aee78779dd2a",
+        "actual":  "d059a4db489756e991d0fb8b2c49a71a310c4ceb470c521350f3aee78779dd2a",
+        "match":  true
+    },
+    {
+        "attempt":  "modal-full-path1",
+        "path":  "log-before.md",
+        "expected":  "4407ec8c78d806b89bd67be8ae33750c9e29ae97b41620039637a129f3a792ad",
+        "actual":  "4407ec8c78d806b89bd67be8ae33750c9e29ae97b41620039637a129f3a792ad",
+        "match":  true
+    },
+    {
+        "attempt":  "modal-full-path1",
+        "path":  "platform-contract.md",
+        "expected":  "21ec1d6aa347443b81ad002649a47a11289101678c5366166b6c3a98e6314072",
+        "actual":  "21ec1d6aa347443b81ad002649a47a11289101678c5366166b6c3a98e6314072",
+        "match":  true
+    },
+    {
+        "attempt":  "modal-full-path1",
+        "path":  "prepare_allowlist.py",
+        "expected":  "db5b02061900dd92201ea7f3fb7e2fbf85ee32b7ea2c562d14a5b9fc0c442714",
+        "actual":  "db5b02061900dd92201ea7f3fb7e2fbf85ee32b7ea2c562d14a5b9fc0c442714",
+        "match":  true
+    },
+    {
+        "attempt":  "modal-full-path1",
+        "path":  "registration.md",
+        "expected":  "e1d91e101daa7e64d8707d952c9347247e86ee3e4f3aa9769790bff34d8f48b5",
+        "actual":  "e1d91e101daa7e64d8707d952c9347247e86ee3e4f3aa9769790bff34d8f48b5",
+        "match":  true
+    },
+    {
+        "attempt":  "modal-full-path1",
+        "path":  "s0-handoff.ko.md",
+        "expected":  "83757099adb98edac98c9c291da1b400b6bd4a52b652e1067e36a1dcc415c33d",
+        "actual":  "83757099adb98edac98c9c291da1b400b6bd4a52b652e1067e36a1dcc415c33d",
+        "match":  true
+    },
+    {
+        "attempt":  "modal-full-path1",
+        "path":  "sdk-package-selection.json",
+        "expected":  "24b8d934851039ecb7b7a537a7959c3b26be2bf1a366cce8d1caeafa151ad50f",
+        "actual":  "24b8d934851039ecb7b7a537a7959c3b26be2bf1a366cce8d1caeafa151ad50f",
+        "match":  true
+    },
+    {
+        "attempt":  "modal-full-path1",
+        "path":  "sdk-requirements.lock.txt",
+        "expected":  "f245a99b042968df56b28a747f6122deefc41bdd4650d4d152c3019affd23541",
+        "actual":  "f245a99b042968df56b28a747f6122deefc41bdd4650d4d152c3019affd23541",
+        "match":  true
+    },
+    {
+        "attempt":  "modal-full-path1",
+        "path":  "source-input-image-manifest.json",
+        "expected":  "23f1a78192e9418b67cbfae75cb8043479efbe01e2650a45b0123d44dd7c8f7b",
+        "actual":  "23f1a78192e9418b67cbfae75cb8043479efbe01e2650a45b0123d44dd7c8f7b",
+        "match":  true
+    },
+    {
+        "attempt":  "modal-full-path1",
+        "path":  "source.diff",
+        "expected":  "53f5cfa08aa9ab9a33cf0249a1dd41c5e9f86296f613772fafd1c2413b385a35",
+        "actual":  "53f5cfa08aa9ab9a33cf0249a1dd41c5e9f86296f613772fafd1c2413b385a35",
+        "match":  true
+    },
+    {
+        "attempt":  "modal-full-path1",
+        "path":  "status-before.md",
+        "expected":  "ae0701c4ec2d77d2f7e23e0a1d8d68213c1be227acf73fbee763310295c4fed0",
+        "actual":  "ae0701c4ec2d77d2f7e23e0a1d8d68213c1be227acf73fbee763310295c4fed0",
+        "match":  true
+    },
+    {
+        "attempt":  "modal-full-path1",
+        "path":  "termination-receipt.json",
+        "expected":  "e88a1edbd956f111ac43e6788215733497b79aec3584b65607a86bc79574e430",
+        "actual":  "e88a1edbd956f111ac43e6788215733497b79aec3584b65607a86bc79574e430",
+        "match":  true
+    },
+    {
+        "attempt":  "modal-full-path1",
+        "path":  "verification.json",
+        "expected":  "9639649dbba6d03841aff6a93b259d609ff513e5a3fd270d7befae2bcad419aa",
+        "actual":  "9639649dbba6d03841aff6a93b259d609ff513e5a3fd270d7befae2bcad419aa",
+        "match":  true
+    },
+    {
+        "attempt":  "modal-full-path1-resume1",
+        "path":  "account-read.json",
+        "expected":  "370d2ede8377275e96bd53a2dcf623df2262bd0712589fc282429a13ed5a608a",
+        "actual":  "370d2ede8377275e96bd53a2dcf623df2262bd0712589fc282429a13ed5a608a",
+        "match":  true
+    },
+    {
+        "attempt":  "modal-full-path1-resume1",
+        "path":  "boundary-result.json",
+        "expected":  "65f428bf67c9ffe44b33214b604ad1234997ff77fe08432b1528cd1f45cdf6b7",
+        "actual":  "65f428bf67c9ffe44b33214b604ad1234997ff77fe08432b1528cd1f45cdf6b7",
+        "match":  true
+    },
+    {
+        "attempt":  "modal-full-path1-resume1",
+        "path":  "build-control.md",
+        "expected":  "503d589756806689df9224170a935b37b46d52e99dd1cf02f99ef1739ea50cba",
+        "actual":  "503d589756806689df9224170a935b37b46d52e99dd1cf02f99ef1739ea50cba",
+        "match":  true
+    },
+    {
+        "attempt":  "modal-full-path1-resume1",
+        "path":  "closeout.md",
+        "expected":  "b0f213982e78a7e2713ba60a13555105acfe0e996abf84acaf88923d3b70050d",
+        "actual":  "b0f213982e78a7e2713ba60a13555105acfe0e996abf84acaf88923d3b70050d",
+        "match":  true
+    },
+    {
+        "attempt":  "modal-full-path1-resume1",
+        "path":  "cost-ledger.json",
+        "expected":  "90a92e588ade1f5d475eaa07532176a3ab8adda09a9b0fff972283da0e3bf99c",
+        "actual":  "90a92e588ade1f5d475eaa07532176a3ab8adda09a9b0fff972283da0e3bf99c",
+        "match":  true
+    },
+    {
+        "attempt":  "modal-full-path1-resume1",
+        "path":  "dirty-entry.txt",
+        "expected":  "184f0fe5ff15527c15fb34d257489dd2552aa7f718ac2c3259d5032741e8d7e9",
+        "actual":  "184f0fe5ff15527c15fb34d257489dd2552aa7f718ac2c3259d5032741e8d7e9",
+        "match":  true
+    },
+    {
+        "attempt":  "modal-full-path1-resume1",
+        "path":  "entry.json",
+        "expected":  "9eb9fb7ec68075aa00ee49898b25fb66bd1f10b5ed3b6b183ed175d8858b3d8c",
+        "actual":  "9eb9fb7ec68075aa00ee49898b25fb66bd1f10b5ed3b6b183ed175d8858b3d8c",
+        "match":  true
+    },
+    {
+        "attempt":  "modal-full-path1-resume1",
+        "path":  "exposure-ledger.md",
+        "expected":  "ff6bb95f11e483cad64e42c11082c0066041d9382e5a3a353397bc8e43a5fd15",
+        "actual":  "ff6bb95f11e483cad64e42c11082c0066041d9382e5a3a353397bc8e43a5fd15",
+        "match":  true
+    },
+    {
+        "attempt":  "modal-full-path1-resume1",
+        "path":  "inspect_sdk_metadata.py",
+        "expected":  "3348c4181e381ebefd2975f37543b08ebacfa79740dc44e0aa9daf96eb946757",
+        "actual":  "3348c4181e381ebefd2975f37543b08ebacfa79740dc44e0aa9daf96eb946757",
+        "match":  true
+    },
+    {
+        "attempt":  "modal-full-path1-resume1",
+        "path":  "log-before.md",
+        "expected":  "211a2a8aede470647525ca24c54dd150054aaf973fa5addaac6915e213621973",
+        "actual":  "211a2a8aede470647525ca24c54dd150054aaf973fa5addaac6915e213621973",
+        "match":  true
+    },
+    {
+        "attempt":  "modal-full-path1-resume1",
+        "path":  "prior-artifact-check.json",
+        "expected":  "235768f86dd796b1df469713d992c03e55489cf6953d5eaa1a5bc8e246a366cc",
+        "actual":  "235768f86dd796b1df469713d992c03e55489cf6953d5eaa1a5bc8e246a366cc",
+        "match":  true
+    },
+    {
+        "attempt":  "modal-full-path1-resume1",
+        "path":  "read_account.py",
+        "expected":  "a0a6738667361a0c963cd2d925ff73a4a9987cb571342660ee176058fe67c818",
+        "actual":  "a0a6738667361a0c963cd2d925ff73a4a9987cb571342660ee176058fe67c818",
+        "match":  true
+    },
+    {
+        "attempt":  "modal-full-path1-resume1",
+        "path":  "s0-handoff.ko.md",
+        "expected":  "00d5687285c8fe811940efc2bc91fd09c6275c638a1e423b039c64d93019e367",
+        "actual":  "00d5687285c8fe811940efc2bc91fd09c6275c638a1e423b039c64d93019e367",
+        "match":  true
+    },
+    {
+        "attempt":  "modal-full-path1-resume1",
+        "path":  "source-evidence.json",
+        "expected":  "80c96398a465fe2d39827facb4fb08a9ac3baeee44c0dc9fe72f15a881ada029",
+        "actual":  "80c96398a465fe2d39827facb4fb08a9ac3baeee44c0dc9fe72f15a881ada029",
+        "match":  true
+    },
+    {
+        "attempt":  "modal-full-path1-resume1",
+        "path":  "source-register.md",
+        "expected":  "04f60786a17dcccf2aab6ddbdbb38b0dc982671bbe9a1b0b948dd080ed0b9bbc",
+        "actual":  "04f60786a17dcccf2aab6ddbdbb38b0dc982671bbe9a1b0b948dd080ed0b9bbc",
+        "match":  true
+    },
+    {
+        "attempt":  "modal-full-path1-resume1",
+        "path":  "status-before.md",
+        "expected":  "1558819028fcbd5e6b49c857a42bb10a31742a809397b64c9ed1b33ef3fd440f",
+        "actual":  "1558819028fcbd5e6b49c857a42bb10a31742a809397b64c9ed1b33ef3fd440f",
+        "match":  true
+    },
+    {
+        "attempt":  "modal-full-path1-resume1",
+        "path":  "termination-receipt.json",
+        "expected":  "f5c42b348cf24b49ac026e22b079caaad365f5d6985913c6fb3618dd03ee9b78",
+        "actual":  "f5c42b348cf24b49ac026e22b079caaad365f5d6985913c6fb3618dd03ee9b78",
+        "match":  true
+    },
+    {
+        "attempt":  "modal-full-path1-resume1",
+        "path":  "verification.json",
+        "expected":  "8644adbcc79209ff23cb6907ab49ac696c04397f53fc155f985cbac6e7884789",
+        "actual":  "8644adbcc79209ff23cb6907ab49ac696c04397f53fc155f985cbac6e7884789",
+        "match":  true
+    }
+]

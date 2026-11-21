@@ -1,0 +1,124 @@
+{
+    "task":  "S3-METHOD-DRAFTS-A044",
+    "new_budget":  true,
+    "prior_budget_used":  0,
+    "gross_start":  "2026-10-23T17:26:00+09:00",
+    "closeout_only_from":  "2026-10-23T18:16:00+09:00",
+    "hard_deadline":  "2026-10-23T18:26:00+09:00",
+    "document_limit_seconds":  300,
+    "measured_supervised_seconds":  5.5812167000040063,
+    "conservative_other_charge_seconds":  120,
+    "charge_note":  "120s conservative allowance for all uninstrumented document-shell edits/checks, launcher overhead, artifact marker and closeout; not a measured duration. Runner reserved30s initially; final accounting conservatively raises that charge without changing the300s limit.",
+    "accounted_seconds":  125.581216700004,
+    "remaining_accounted_seconds":  174.418783299996,
+    "runs":  [
+                 {
+                     "token":  "e025-inspect-1",
+                     "script":  "pdf_inspect.py",
+                     "arguments":  [
+                                       "E025"
+                                   ],
+                     "seconds":  0.9027503000033903,
+                     "exit_code":  0,
+                     "passed":  true,
+                     "peak_tree_rss":  94552064,
+                     "peak_tree_private":  83054592,
+                     "max_sample_gap_seconds":  0.10985219999929541,
+                     "remnant_pids":  [
+
+                                      ]
+                 },
+                 {
+                     "token":  "e025-render-1",
+                     "script":  "render_method.py",
+                     "arguments":  [
+                                       "E025",
+                                       "1"
+                                   ],
+                     "seconds":  0.6767485999989731,
+                     "exit_code":  0,
+                     "passed":  true,
+                     "peak_tree_rss":  62582784,
+                     "peak_tree_private":  40501248,
+                     "max_sample_gap_seconds":  0.10962469999867608,
+                     "remnant_pids":  [
+
+                                      ]
+                 },
+                 {
+                     "token":  "e041-inspect-1",
+                     "script":  "pdf_inspect.py",
+                     "arguments":  [
+                                       "E041"
+                                   ],
+                     "seconds":  0.9019398000018555,
+                     "exit_code":  0,
+                     "passed":  true,
+                     "peak_tree_rss":  96382976,
+                     "peak_tree_private":  84705280,
+                     "max_sample_gap_seconds":  0.10959720000028028,
+                     "remnant_pids":  [
+
+                                      ]
+                 },
+                 {
+                     "token":  "e041-render-1",
+                     "script":  "render_method.py",
+                     "arguments":  [
+                                       "E041",
+                                       "1"
+                                   ],
+                     "seconds":  0.7920804999994289,
+                     "exit_code":  0,
+                     "passed":  true,
+                     "peak_tree_rss":  62685184,
+                     "peak_tree_private":  40546304,
+                     "max_sample_gap_seconds":  0.109574000001885,
+                     "remnant_pids":  [
+
+                                      ]
+                 },
+                 {
+                     "token":  "originals-1",
+                     "script":  "pdf_inspect.py",
+                     "arguments":  [
+                                       "originals"
+                                   ],
+                     "seconds":  2.3076975000003586,
+                     "exit_code":  0,
+                     "passed":  true,
+                     "peak_tree_rss":  82022400,
+                     "peak_tree_private":  67641344,
+                     "max_sample_gap_seconds":  0.10965940000096452,
+                     "remnant_pids":  [
+
+                                      ]
+                 }
+             ],
+    "peak_sampled_tree_rss":  96382976,
+    "peak_sampled_tree_private":  84705280,
+    "memory_limit_each_bytes":  2147483648,
+    "pdf_attempts":  {
+                         "E041":  1,
+                         "E025":  1,
+                         "total":  2,
+                         "per_candidate_limit":  3,
+                         "total_limit":  6
+                     },
+    "failures":  0,
+    "child_affinity_mask":  3,
+    "child_cpu_limit":  2,
+    "gpu":  0,
+    "concurrent_heavy_max":  1,
+    "cash":  0,
+    "credits":  0,
+    "model_runs":  0,
+    "checker_runs":  0,
+    "research_tests":  0,
+    "zip_work":  0,
+    "installs":  0,
+    "network":  0,
+    "subagents":  0,
+    "commit_push":  0,
+    "upload":  0
+}

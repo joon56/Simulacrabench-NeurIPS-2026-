@@ -1,0 +1,18 @@
+{
+    "status":  "NO_RESOURCE_CREATED",
+    "sandbox_ids":  [
+
+                    ],
+    "app_ids":  [
+
+                ],
+    "image_build_requests":  0,
+    "sandbox_create_requests":  0,
+    "reference_exec_requests":  0,
+    "candidate_exec_requests":  0,
+    "termination_requests":  0,
+    "remaining_task_remote_resources":  [
+
+                                        ],
+    "account_wide_workloads_queried":  false
+}

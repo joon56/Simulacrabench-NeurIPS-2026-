@@ -1,0 +1,6 @@
+{
+  "record_kind": "closeout_not_runner_output",
+  "outcome": "NOT_RUN",
+  "scientific_invocations": 0,
+  "reason": "First input generation failed before scientific freeze; reference gate never opened"
+}

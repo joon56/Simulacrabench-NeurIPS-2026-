@@ -1,0 +1,92 @@
+{
+    "entry_utc":  "2026-10-05T14:08:33Z",
+    "recorded_utc":  "2026-10-05T14:48:53.7081328+00:00",
+    "active_seconds":  2420.7081328,
+    "whole_limit_seconds":  3600,
+    "work_cutoff_utc":  "2026-10-05T14:58:33Z",
+    "closeout_reserved_seconds":  600,
+    "preparation_prior_seconds":  14777.0797748,
+    "preparation_cumulative_seconds":  17197.7879076,
+    "science_processes_unchanged":  4,
+    "science_seconds_unchanged":  1077.3504532,
+    "checks_supervisor_wall_sum_seconds":  42.8578314,
+    "checks_limit_seconds":  180,
+    "check_processes":  [
+                            {
+                                "name":  "loop-red",
+                                "pid":  26880,
+                                "wall_seconds":  0.83244,
+                                "exit_code":  0
+                            },
+                            {
+                                "name":  "cycle1",
+                                "pid":  33912,
+                                "cpu_affinity":  3,
+                                "wall_seconds":  1.36134,
+                                "exit_code":  1
+                            },
+                            {
+                                "name":  "cycle2",
+                                "pid":  47400,
+                                "cpu_affinity":  3,
+                                "wall_seconds":  4.8910217,
+                                "exit_code":  0
+                            },
+                            {
+                                "name":  "cycle3",
+                                "pid":  26976,
+                                "cpu_affinity":  3,
+                                "wall_seconds":  30.0874074,
+                                "exit_code":  -1
+                            },
+                            {
+                                "name":  "cycle4",
+                                "pid":  18632,
+                                "kill_after_ms":  29000,
+                                "cpu_affinity":  3,
+                                "wall_seconds":  1.7624807,
+                                "exit_code":  0
+                            },
+                            {
+                                "name":  "cli",
+                                "pid":  9448,
+                                "kill_after_ms":  29000,
+                                "cpu_affinity":  3,
+                                "wall_seconds":  1.6177232,
+                                "exit_code":  0
+                            },
+                            {
+                                "name":  "parent-cli",
+                                "kill_after_ms":  29000,
+                                "exit_code":  1,
+                                "cpu_affinity":  3,
+                                "pid":  464,
+                                "owned_cli_child":  1,
+                                "wall_seconds":  0.770632
+                            },
+                            {
+                                "name":  "parent-cli2",
+                                "kill_after_ms":  29000,
+                                "exit_code":  0,
+                                "cpu_affinity":  3,
+                                "pid":  43212,
+                                "owned_cli_child":  1,
+                                "wall_seconds":  1.5347864
+                            }
+                        ],
+    "overlap_policy":  "CLI child included in parent wall once; no double charge",
+    "per_check_cap_caveat":  "cycle3 killed at WaitForExit(30000); supervisor/reap wall 30.0874074. Strict \u003c=30s child lifetime not independently established. Subsequent checks used 29s termination.",
+    "real_auth_rpc_build_science":  0,
+    "this_task_remote_cost_actions":  0,
+    "this_task_cash_actions":  0,
+    "prior_workspace_metered_usd":  0.01009897,
+    "prior_workspace_billed_usd":  0,
+    "historical_gpu_seconds":  null,
+    "final_a040_attributed_cost":  null,
+    "prior_component_usd":  1.152E-05,
+    "prior_management_value_not_invoice":  0.6550409048674121,
+    "reservation_2400s_usd":  2.965933453125,
+    "preparation_plan_usd":  1,
+    "total_plan_usd":  5,
+    "cash_authority_usd":  0
+}

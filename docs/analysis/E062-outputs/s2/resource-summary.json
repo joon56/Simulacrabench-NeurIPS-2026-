@@ -1,0 +1,252 @@
+{
+  "recorded_utc": "2026-10-08T10:15:29.723667+00:00",
+  "status": "PASS",
+  "computational_children": 6,
+  "cumulative_worker_seconds": 1257.2889890000006,
+  "worker_budget_seconds": 2400,
+  "assembly_seconds": 482.8513698000006,
+  "assembly_budget_seconds": 900,
+  "official_all3_seconds": 695.6310575999996,
+  "official_all3_budget_seconds": 900,
+  "official_cli_seconds_sum": 684.8485837999979,
+  "official_wrapper_overhead_seconds": 10.782473800001753,
+  "span_rule": "Six top-level computational children counted once, including expected RED, preparation and checker; nested prediction/CLI spans not added again. Shell and record work remains in gross time.",
+  "resources": [
+    {
+      "mode": "tests-red",
+      "status": "FAIL",
+      "command": [
+        "C:\\Users\\USER\\Desktop\\SimulacraBench\\.venv\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "-m",
+        "unittest",
+        "tests.test_e062_assembly.AssemblyBoundaryTests.test_frozen_prefix_and_standalone_import",
+        "-v"
+      ],
+      "wall_seconds": 45.309151600000405,
+      "cumulative_worker_seconds": 45.309151600000405,
+      "historical_S1_worker_seconds": 1123.1965955,
+      "combined_worker_seconds": 1168.5057471000005,
+      "reason": "COMPLETE",
+      "error": null,
+      "exit_code": 1,
+      "peak_owned_tree_bytes": {
+        "rss": 353087488,
+        "commitment": 359284736
+      },
+      "sample_interval_seconds": 0.1,
+      "numerical_threads": 2,
+      "gpu": false,
+      "memory_semantics": "Owned controller+descendants; sum of per-process peak RSS/private commitment",
+      "cumulative_calls": {
+        "full_stack": 0,
+        "neural": 0,
+        "metric": 0
+      }
+    },
+    {
+      "mode": "tests",
+      "status": "PASS",
+      "command": [
+        "C:\\Users\\USER\\Desktop\\SimulacraBench\\.venv\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "-m",
+        "unittest",
+        "tests.test_e062_assembly",
+        "-v"
+      ],
+      "wall_seconds": 6.782855900000868,
+      "cumulative_worker_seconds": 52.09200750000127,
+      "historical_S1_worker_seconds": 1123.1965955,
+      "combined_worker_seconds": 1175.2886030000013,
+      "reason": "COMPLETE",
+      "error": null,
+      "exit_code": 0,
+      "peak_owned_tree_bytes": {
+        "rss": 410472448,
+        "commitment": 447463424
+      },
+      "sample_interval_seconds": 0.1,
+      "numerical_threads": 2,
+      "gpu": false,
+      "memory_semantics": "Owned controller+descendants; sum of per-process peak RSS/private commitment",
+      "cumulative_calls": {
+        "full_stack": 0,
+        "neural": 0,
+        "metric": 0
+      }
+    },
+    {
+      "mode": "preflight",
+      "status": "PASS",
+      "command": [
+        "C:\\Users\\USER\\Desktop\\SimulacraBench\\.venv\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "C:\\Users\\USER\\Desktop\\SimulacraBench\\scripts\\check_e062_release.py",
+        "worker",
+        "preflight"
+      ],
+      "wall_seconds": 21.87142959999983,
+      "cumulative_worker_seconds": 73.9634371000011,
+      "historical_S1_worker_seconds": 1123.1965955,
+      "combined_worker_seconds": 1197.1600326000012,
+      "reason": "COMPLETE",
+      "error": null,
+      "exit_code": 0,
+      "peak_owned_tree_bytes": {
+        "rss": 860655616,
+        "commitment": 922787840
+      },
+      "sample_interval_seconds": 0.1,
+      "numerical_threads": 2,
+      "gpu": false,
+      "memory_semantics": "Owned controller+descendants; sum of per-process peak RSS/private commitment",
+      "cumulative_calls": {
+        "full_stack": 0,
+        "neural": 0,
+        "metric": 0
+      }
+    },
+    {
+      "mode": "assembly",
+      "status": "PASS",
+      "command": [
+        "C:\\Users\\USER\\Desktop\\SimulacraBench\\.venv\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "C:\\Users\\USER\\Desktop\\SimulacraBench\\scripts\\check_e062_release.py",
+        "worker",
+        "assembly"
+      ],
+      "wall_seconds": 482.8513698000006,
+      "cumulative_worker_seconds": 556.8148069000017,
+      "historical_S1_worker_seconds": 1123.1965955,
+      "combined_worker_seconds": 1680.0114024000018,
+      "reason": "COMPLETE",
+      "error": null,
+      "exit_code": 0,
+      "peak_owned_tree_bytes": {
+        "rss": 1375547392,
+        "commitment": 1496342528
+      },
+      "sample_interval_seconds": 0.1,
+      "numerical_threads": 2,
+      "gpu": false,
+      "memory_semantics": "Owned controller+descendants; sum of per-process peak RSS/private commitment",
+      "cumulative_calls": {
+        "full_stack": 3,
+        "neural": 9,
+        "metric": 8
+      }
+    },
+    {
+      "mode": "package",
+      "status": "PASS",
+      "command": [
+        "C:\\Users\\USER\\Desktop\\SimulacraBench\\.venv\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "C:\\Users\\USER\\Desktop\\SimulacraBench\\scripts\\check_e062_release.py",
+        "worker",
+        "package"
+      ],
+      "wall_seconds": 4.843124499999249,
+      "cumulative_worker_seconds": 561.657931400001,
+      "historical_S1_worker_seconds": 1123.1965955,
+      "combined_worker_seconds": 1684.854526900001,
+      "reason": "COMPLETE",
+      "error": null,
+      "exit_code": 0,
+      "peak_owned_tree_bytes": {
+        "rss": 389296128,
+        "commitment": 386519040
+      },
+      "sample_interval_seconds": 0.1,
+      "numerical_threads": 2,
+      "gpu": false,
+      "memory_semantics": "Owned controller+descendants; sum of per-process peak RSS/private commitment",
+      "cumulative_calls": {
+        "full_stack": 3,
+        "neural": 9,
+        "metric": 8
+      }
+    },
+    {
+      "mode": "official",
+      "status": "PASS",
+      "command": [
+        "C:\\Users\\USER\\Desktop\\SimulacraBench\\.venv\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "C:\\Users\\USER\\Desktop\\SimulacraBench\\scripts\\check_e062_release.py",
+        "worker",
+        "official"
+      ],
+      "wall_seconds": 695.6310575999996,
+      "cumulative_worker_seconds": 1257.2889890000006,
+      "historical_S1_worker_seconds": 1123.1965955,
+      "combined_worker_seconds": 2380.4855845000006,
+      "reason": "COMPLETE",
+      "error": null,
+      "exit_code": 0,
+      "peak_owned_tree_bytes": {
+        "rss": 2452852736,
+        "commitment": 2638278656
+      },
+      "sample_interval_seconds": 0.1,
+      "numerical_threads": 2,
+      "gpu": false,
+      "memory_semantics": "Owned controller+descendants; sum of per-process peak RSS/private commitment",
+      "cumulative_calls": {
+        "full_stack": 6,
+        "neural": 18,
+        "metric": 16
+      }
+    }
+  ],
+  "calls": {
+    "full_stack": 6,
+    "neural": 18,
+    "metric": 16
+  },
+  "checker_tiny_predict_calls": 1,
+  "peak_owned_tree_bytes": {
+    "rss": 2452852736,
+    "commitment": 2638278656
+  },
+  "peak_owned_tree_gib": {
+    "rss": 2.2843971252441406,
+    "commitment": 2.4570884704589844
+  },
+  "memory_semantics": "Conservative sum of per-process peak RSS/private commitment for owned controller and active descendants; 0.1s samples.",
+  "cpu_numerical_threads": 2,
+  "gpu": 0,
+  "heavy_workers": 1,
+  "historical_S1": {
+    "worker_seconds": 1123.1965955000032,
+    "pipeline": 9,
+    "neural": 27,
+    "metric": 16
+  },
+  "combined_S1_S2": {
+    "worker_seconds": 2380.485584500004,
+    "pipeline": 15,
+    "neural": 45,
+    "metric": 32
+  },
+  "historical_precision_note": "Entry/worker receipts retained their rounded historical1123.1965955; final combined uses unchanged original S1 full precision.",
+  "gross_start_utc": "2026-10-08T09:37:00Z",
+  "deadline_utc": "2026-10-08T11:37:00Z",
+  "computation_cutoff_utc": "2026-10-08T11:27:00Z",
+  "repair_reserve_used": false,
+  "forced_stop": false
+}

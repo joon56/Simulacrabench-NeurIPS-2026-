@@ -1,0 +1,7 @@
+{
+    "attempt":  "c6-01",
+    "outer_supervisor_seconds":  0.67515399999999992,
+    "scope":  "Includes invocation preparation, diagnostic child/supervision/reaping and inner receipt writing; not double-added to inner timer",
+    "command_error":  null,
+    "ended":  "2026-10-26T21:37:27.0512857+09:00"
+}

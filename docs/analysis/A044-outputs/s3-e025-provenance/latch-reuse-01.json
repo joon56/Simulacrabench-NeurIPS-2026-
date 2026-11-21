@@ -1,0 +1,8 @@
+{
+  "action": "gate",
+  "token": "reuse-01",
+  "created": "2026-10-23T16:38:59.904218+09:00",
+  "shared_seconds": 120,
+  "charged_before": 121.30145229999835,
+  "administrative_reserve": 120.0
+}

@@ -1,0 +1,52 @@
+﻿[
+    {
+        "path":  "tmp/a040-modal-full-path1/sdk-venv/Lib/site-packages/modal/_image.py",
+        "sha256":  "501027be53a74f40ac4eda78e23d288435e563e9e2a79d0df962eae72a4d634c",
+        "bytes":  132397
+    },
+    {
+        "path":  "tmp/a040-modal-full-path1/sdk-venv/Lib/site-packages/modal/_functions.py",
+        "sha256":  "7524a3a79a9f270136f81b0034ef9a46b4edd818196284982afcc86363a34000",
+        "bytes":  112488
+    },
+    {
+        "path":  "tmp/a040-modal-full-path1/sdk-venv/Lib/site-packages/modal/_resources.py",
+        "sha256":  "7b89041123e1cf8dc8ba4429c1add75783e889a384fcca8f87b1f39707a348f5",
+        "bytes":  1727
+    },
+    {
+        "path":  "tmp/a040-modal-full-path1/sdk-venv/Lib/site-packages/modal/runner.py",
+        "sha256":  "49268198bbc2fec6093215cb54930e4a715bb8a5e96ce68e8a877c5783c659e2",
+        "bytes":  31817
+    },
+    {
+        "path":  "tmp/a040-modal-full-path1/sdk-venv/Lib/site-packages/modal/cli/app.py",
+        "sha256":  "14605b8190bb7389f200cd283d3b799d1eb6e930c50f6f6090c66e53b266863f",
+        "bytes":  28462
+    },
+    {
+        "path":  "tmp/a040-modal-full-path1/sdk-venv/Lib/site-packages/modal/_workspace.py",
+        "sha256":  "3bec38195fbe62afc131202ce2821fa7beb4f528d9331e299688c618c3ac1f18",
+        "bytes":  21821
+    },
+    {
+        "path":  "tmp/a040-modal-full-path1/sdk-venv/Lib/site-packages/modal/_environments.py",
+        "sha256":  "d51188a1a70bb7d675bde8e3d7c171cafc457c4c6da7d94fd630ead5ecbe9b76",
+        "bytes":  27482
+    },
+    {
+        "path":  "tmp/a040-modal-full-path1/sdk-venv/Lib/site-packages/modal/sandbox.py",
+        "sha256":  "247a8ea555b4069c82c63da068675618d1203a7338a6f94d61a00505914d5e9a",
+        "bytes":  147376
+    },
+    {
+        "path":  "tmp/a040-modal-full-path1/sdk-venv/Lib/site-packages/modal_proto/api_pb2.py",
+        "sha256":  "5e78a3ddbb27c532f0a1726c6a03970ca21a460a0b273d6ed9948e34074f0d7f",
+        "bytes":  567729
+    },
+    {
+        "path":  "tmp/a040-modal-full-path1/sdk-venv/Lib/site-packages/modal_proto/api_grpc.py",
+        "sha256":  "2b12c409957b65a1975b8f726185b44e8a119202772b28a36ed9d15e555f841d",
+        "bytes":  199086
+    }
+]

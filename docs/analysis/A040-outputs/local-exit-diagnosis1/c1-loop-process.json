@@ -1,0 +1,25 @@
+﻿{
+    "exit_code":  0,
+    "pid":  31216,
+    "child_start_utc":  "2026-10-06T14:09:56.1198347Z",
+    "case":  "import_loop",
+    "actual_python":  {
+                          "exit_code":  0,
+                          "start_utc":  "2026-10-06T14:09:56.1757310Z",
+                          "has_exited":  true,
+                          "pid":  37760,
+                          "affinity":  3,
+                          "wall_seconds":  0.7083138,
+                          "exit_utc":  "2026-10-06T14:09:56.8840448Z"
+                      },
+    "child_wall_seconds":  0.7693135,
+    "supervisor_wall_seconds":  0.78531449999999992,
+    "aggregate_seconds":  9.1303476,
+    "remaining_owned_pid":  0,
+    "forced":  false,
+    "attempt":  "c1-loop",
+    "cpu_affinity":  3,
+    "child_exit_utc":  "2026-10-06T14:09:56.8891482Z",
+    "within_cap":  true,
+    "cap_seconds":  30
+}

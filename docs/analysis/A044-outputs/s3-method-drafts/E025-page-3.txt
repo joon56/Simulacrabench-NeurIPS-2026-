@@ -1,0 +1,45 @@
+REVIEW DRAFT - NOT FINAL TEST SELECTION
+
+ 3. Calibration limits, development evidence and phase-2 refit
+ Ladder selection, conditional agreement, architecture/epoch choice and network mixing use internal visible-row
+  splits. Donor replay excludes self-matches, but base predictions are refitted on all visible rows, including replay
+  labels.  Self-exclusion  therefore does  not  cross-fit  calibration, and  replay performance  is  not an unbiased
+ generalization estimate. No E041 partitioning is implicitly credited to E025, and no repair of this optimism is
+ claimed.
+ Algorithm choices and grids were developed through synthetic work, public instrument descriptions and repeated
+ DEV feedback. Parameters are estimated at runtime, but the retained method was selected adaptively during
+ development. Legal TRAIN+DEV final fitting does not make those DEV observations independent again. Fixed
+ seeds do not prevent row-order, CPU/GPU or reduction-related numerical variation. [6]
+ Complete phase-2 visible counts grow to 16,373 UNICEF, 5,715 World Bank and 8,900 UNHCR respondents. Every
+  fitted component  is  rebuilt from  that frame: adding DEV can change marginals, asked-only heads, ladder
+ order/shrinkage, network architecture/epochs/mixing, gate coefficients, agreement weights and replay lambdas. The
+ larger visible bank may help or hurt; no linear runtime or gain forecast follows. Larger replay caps, ensembles,
+  identifier signatures, tree blends and relation-specific evidence variants are not part of this predictor.
+ Development counterevidence. Six later hosted comparisons were flat at displayed resolution: evidence as network
+ input (E027), parent-value gate decoding (E028), larger replay (E031b), relation-specific weights (E036), identifier
+ signatures (E038) and a tree blend (E040). Simulation gains under injected assumptions did not establish transfer.
+ E037 sentinel recalibration gained about 0.024 in-sample on a heavy-overlap simulation but lost about 0.004 under
+  cross-fitting and was rejected. These observations neither prove zero possible improvement nor justify another
+ same-policy attempt. [6]
+ E032-E034 aggregate UNHCR probes describe E025 only: approximate skill 0.79 from the base plus 0.10 from
+ evidence, with remaining loss about 0.079 gated/0.031 ungated. Keeping sentinel mass while flattening asked
+ answers left gated skill near 0.56. These are model-performance summaries, not private response statistics or an
+ E041 decomposition. Rounded/noised same-phase Grand differences imply coarse practical UNHCR resolution,
+ about 0.015-0.03, not three-decimal precision. E032 initially changed all instruments and used a second account,
+  later retired and flagged as a likely Terms violation. No adjudication, waiver or independent replication is asserted.
+ [6]
+ Separate Adult/SIPP  studies address limited proxy channels. E053 and E055 oracle STOPs do not bound
+ approximate UNHCR calibration; later E056-E059 supplied no deployed component. E059 STOP_SELECTION and
+ A_half nonpromotion remain. Later E060/E062/E063 released ties leave effects unresolved; E061's adverse result
+ applies to that complete pipeline. E064 local qualification supplies no actual hosted score. No result from these
+  alternatives changes this draft's E025 identity or final-choice status. [6,7]
+ Engineering scope. Public synthetic phase-2 TEST-role cells were previously exposed development material, not
+ newly  independent  real TEST  evidence. The  completed E025  provenance  task below  closes  a  concrete
+ source/archive/data/scorer connection; it does not validate hidden humanitarian population structure, establish E025
+ superiority or remove selection/calibration uncertainty. No raw response values appear in this document.
+
+
+
+
+
+HSCC 2026 | E025 | REVIEW DRAFT | 23 October 2026                                                                3 / 4

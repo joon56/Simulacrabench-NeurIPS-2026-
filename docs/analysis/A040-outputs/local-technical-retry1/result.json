@@ -1,0 +1,46 @@
+{
+  "outcome": "LOCAL_CONTRACT_PASS",
+  "scientific_invocations": 1,
+  "tests": {
+    "heads": 213,
+    "query_rows": 9,
+    "output_vectors": 1917,
+    "fixture_sha256": "a532ee2dcd337cc72e278365234e7b55b08aec528a9bc9a1b718d666ee0d5a48",
+    "stock_adapter_max_abs_diff": 0.0,
+    "frozen_state_sha256": "92c6c2f567512ef430085e13062f8d9d0141880ab344a02b73da0471f6b92393",
+    "actual_E041_control_parity": false,
+    "arithmetic_control_parity": true,
+    "counts": {
+      "fits": 216,
+      "predicts": 217,
+      "loads": 2
+    },
+    "prototype_counts": {
+      "adapter_injections": 215,
+      "singleton": 1,
+      "empty": 1
+    }
+  },
+  "elapsed_seconds": 39.42617599999994,
+  "counters": {
+    "fits": 216,
+    "predicts": 217,
+    "loads": 2
+  },
+  "timings": {
+    "fit_seconds": 5.192174999995586,
+    "predict_seconds": 28.034364900000583,
+    "load_seconds": 0.11799189999965165
+  },
+  "network": {
+    "deliberate_blocked": 1,
+    "package_attempts": 0,
+    "subprocess_attempts": 0
+  },
+  "full_path_measured": false,
+  "gpu": {
+    "allocated_peak": 279770624,
+    "reserved_peak": 308281344,
+    "device_capacity": 8589410304
+  }
+}

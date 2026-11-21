@@ -1,0 +1,95 @@
+{"event": "manifest_verified", "elapsed": 0.17944189999980154, "files": 202, "mode": "reference"}
+{"event": "runtime", "elapsed": 7.93910219999816, "torch": "2.8.0+cu126", "cuda": "12.6", "device": "NVIDIA GeForce RTX 3070", "affinity": [0, 1]}
+{"event": "runtime_schema_verified", "elapsed": 11.987316599999758, "instrument": "unicef", "runtime_sha256": "4deb5160563d18a5bd21a3e6df6bcbdcd30973649bfce1f726cc61479f819b17"}
+{"event": "instrument_start", "elapsed": 12.023852099999203, "instrument": "unicef", "visible": 14885, "query": 1488}
+{"event": "pipeline_start", "elapsed": 12.070686899998691, "instrument": "unicef", "stage": "reference", "fit_rows": 14885, "query_rows": 1488}
+{"event": "e041_call_start", "elapsed": 12.09028219999891, "instrument": "unicef", "stage": "reference", "function": "select_ladder"}
+{"event": "e041_call_end", "elapsed": 12.34321859999909, "instrument": "unicef", "stage": "reference", "function": "select_ladder", "seconds": 0.2528641000026255}
+{"event": "e041_call_start", "elapsed": 12.347988299999997, "instrument": "unicef", "stage": "reference", "function": "tune_and_train"}
+{"event": "e041_call_start", "elapsed": 12.453541099999711, "instrument": "unicef", "stage": "reference", "function": "_train", "fit_rows": 9537}
+{"event": "e041_call_start", "elapsed": 12.453639600000315, "instrument": "unicef", "stage": "reference", "function": "_train_on", "device": "cuda"}
+{"event": "e041_call_end", "elapsed": 16.739804699998786, "instrument": "unicef", "stage": "reference", "function": "_train_on", "seconds": 4.286133300000074, "device": "cuda"}
+{"event": "e041_call_end", "elapsed": 16.739879900000233, "instrument": "unicef", "stage": "reference", "function": "_train", "seconds": 4.2862697999989905, "fit_rows": 9537}
+{"event": "e041_call_start", "elapsed": 16.746378699997877, "instrument": "unicef", "stage": "reference", "function": "_train", "fit_rows": 9537}
+{"event": "e041_call_start", "elapsed": 16.74644239999907, "instrument": "unicef", "stage": "reference", "function": "_train_on", "device": "cuda"}
+{"event": "e041_call_end", "elapsed": 17.64435819999926, "instrument": "unicef", "stage": "reference", "function": "_train_on", "seconds": 0.8978873000014573, "device": "cuda"}
+{"event": "e041_call_end", "elapsed": 17.644434300000285, "instrument": "unicef", "stage": "reference", "function": "_train", "seconds": 0.8980129999981727, "fit_rows": 9537}
+{"event": "e041_call_start", "elapsed": 17.77344059999814, "instrument": "unicef", "stage": "reference", "function": "_train", "fit_rows": 14885}
+{"event": "e041_call_start", "elapsed": 17.77353629999925, "instrument": "unicef", "stage": "reference", "function": "_train_on", "device": "cuda"}
+{"event": "e041_call_end", "elapsed": 17.88293319999866, "instrument": "unicef", "stage": "reference", "function": "_train_on", "seconds": 0.10936969999966095, "device": "cuda"}
+{"event": "e041_call_end", "elapsed": 17.882989099998667, "instrument": "unicef", "stage": "reference", "function": "_train", "seconds": 0.10947930000111228, "fit_rows": 14885}
+{"event": "e041_call_end", "elapsed": 17.889883799998643, "instrument": "unicef", "stage": "reference", "function": "tune_and_train", "seconds": 5.541831200000161}
+{"event": "e041_call_start", "elapsed": 18.0201315000013, "instrument": "unicef", "stage": "reference", "function": "conditional_agreement"}
+{"event": "e041_call_end", "elapsed": 18.262521100001322, "instrument": "unicef", "stage": "reference", "function": "conditional_agreement", "seconds": 0.24230479999823729}
+{"event": "e041_call_start", "elapsed": 18.371777199998178, "instrument": "unicef", "stage": "reference", "function": "hh_sharp_layer"}
+{"event": "e041_call_end", "elapsed": 27.21461790000103, "instrument": "unicef", "stage": "reference", "function": "hh_sharp_layer", "seconds": 8.842777400001069}
+{"event": "pipeline_end", "elapsed": 27.700580000000627, "instrument": "unicef", "stage": "reference", "fit_rows": 14885, "query_rows": 1488, "vectors": 17856, "seconds": 15.629891799999314, "reference_exact": null}
+{"event": "instrument_end", "elapsed": 27.8398864999981, "instrument": "unicef", "vectors": 17856}
+{"event": "runtime_schema_verified", "elapsed": 27.937338399999135, "instrument": "world_bank", "runtime_sha256": "7cfa62f854f51306cede481263eb52f1b3af6a222caf22bd122e92441b440c20"}
+{"event": "instrument_start", "elapsed": 27.99330099999861, "instrument": "world_bank", "visible": 5195, "query": 520}
+{"event": "pipeline_start", "elapsed": 28.07595080000101, "instrument": "world_bank", "stage": "reference", "fit_rows": 5195, "query_rows": 520}
+{"event": "e041_call_start", "elapsed": 28.100786700000754, "instrument": "world_bank", "stage": "reference", "function": "select_ladder"}
+{"event": "e041_call_end", "elapsed": 28.591620399998646, "instrument": "world_bank", "stage": "reference", "function": "select_ladder", "seconds": 0.49074990000008256}
+{"event": "e041_call_start", "elapsed": 28.602506999999605, "instrument": "world_bank", "stage": "reference", "function": "tune_and_train"}
+{"event": "e041_call_start", "elapsed": 28.782929299999523, "instrument": "world_bank", "stage": "reference", "function": "_train", "fit_rows": 3280}
+{"event": "e041_call_start", "elapsed": 28.783028300000296, "instrument": "world_bank", "stage": "reference", "function": "_train_on", "device": "cuda"}
+{"event": "e041_call_end", "elapsed": 33.604962599998544, "instrument": "world_bank", "stage": "reference", "function": "_train_on", "seconds": 4.821905000000697, "device": "cuda"}
+{"event": "e041_call_end", "elapsed": 33.60502859999906, "instrument": "world_bank", "stage": "reference", "function": "_train", "seconds": 4.822027700000035, "fit_rows": 3280}
+{"event": "e041_call_start", "elapsed": 33.63610880000124, "instrument": "world_bank", "stage": "reference", "function": "_train", "fit_rows": 3280}
+{"event": "e041_call_start", "elapsed": 33.63618860000133, "instrument": "world_bank", "stage": "reference", "function": "_train_on", "device": "cuda"}
+{"event": "e041_call_end", "elapsed": 37.97912390000056, "instrument": "world_bank", "stage": "reference", "function": "_train_on", "seconds": 4.342907099999138, "device": "cuda"}
+{"event": "e041_call_end", "elapsed": 37.97929839999779, "instrument": "world_bank", "stage": "reference", "function": "_train", "seconds": 4.343135499999335, "fit_rows": 3280}
+{"event": "e041_call_start", "elapsed": 38.294067599999835, "instrument": "world_bank", "stage": "reference", "function": "_train", "fit_rows": 5195}
+{"event": "e041_call_start", "elapsed": 38.294168299999, "instrument": "world_bank", "stage": "reference", "function": "_train_on", "device": "cuda"}
+{"event": "e041_call_end", "elapsed": 38.60474279999835, "instrument": "world_bank", "stage": "reference", "function": "_train_on", "seconds": 0.3105458999998518, "device": "cuda"}
+{"event": "e041_call_end", "elapsed": 38.60481269999946, "instrument": "world_bank", "stage": "reference", "function": "_train", "seconds": 0.3106712000007974, "fit_rows": 5195}
+{"event": "e041_call_end", "elapsed": 38.6154475000003, "instrument": "world_bank", "stage": "reference", "function": "tune_and_train", "seconds": 10.012855500001024}
+{"event": "e041_call_start", "elapsed": 38.86581959999967, "instrument": "world_bank", "stage": "reference", "function": "conditional_agreement"}
+{"event": "e041_call_end", "elapsed": 39.51828639999803, "instrument": "world_bank", "stage": "reference", "function": "conditional_agreement", "seconds": 0.6523789999992005}
+{"event": "e041_call_start", "elapsed": 39.778703699998005, "instrument": "world_bank", "stage": "reference", "function": "hh_sharp_layer"}
+{"event": "e041_call_end", "elapsed": 43.508634099998744, "instrument": "world_bank", "stage": "reference", "function": "hh_sharp_layer", "seconds": 3.72984759999963}
+{"event": "pipeline_end", "elapsed": 44.37228889999824, "instrument": "world_bank", "stage": "reference", "fit_rows": 5195, "query_rows": 520, "vectors": 39520, "seconds": 16.29633660000036, "reference_exact": null}
+{"event": "instrument_end", "elapsed": 44.80916580000121, "instrument": "world_bank", "vectors": 39520}
+{"event": "runtime_schema_verified", "elapsed": 45.1754535, "instrument": "unhcr", "runtime_sha256": "ef734cec5bcc931bcc9eaa49694310e924f024ff7cf58a047b4c2cb60394c8ae"}
+{"event": "instrument_start", "elapsed": 45.37137939999957, "instrument": "unhcr", "visible": 8279, "query": 621}
+{"event": "pipeline_start", "elapsed": 45.71160600000076, "instrument": "unhcr", "stage": "reference", "fit_rows": 8279, "query_rows": 621}
+{"event": "e041_call_start", "elapsed": 45.810350600000675, "instrument": "unhcr", "stage": "reference", "function": "select_ladder"}
+{"event": "e041_call_end", "elapsed": 47.98624809999819, "instrument": "unhcr", "stage": "reference", "function": "select_ladder", "seconds": 2.175829800002248}
+{"event": "e041_call_start", "elapsed": 48.02533779999794, "instrument": "unhcr", "stage": "reference", "function": "tune_and_train"}
+{"event": "e041_call_start", "elapsed": 48.715259000000515, "instrument": "unhcr", "stage": "reference", "function": "_train", "fit_rows": 5264}
+{"event": "e041_call_start", "elapsed": 48.71535270000095, "instrument": "unhcr", "stage": "reference", "function": "_train_on", "device": "cuda"}
+{"event": "e041_call_end", "elapsed": 71.08039869999993, "instrument": "unhcr", "stage": "reference", "function": "_train_on", "seconds": 22.36501419999695, "device": "cuda"}
+{"event": "e041_call_end", "elapsed": 71.08048390000113, "instrument": "unhcr", "stage": "reference", "function": "_train", "seconds": 22.365161499998067, "fit_rows": 5264}
+{"event": "e041_call_start", "elapsed": 71.21284580000065, "instrument": "unhcr", "stage": "reference", "function": "_train", "fit_rows": 5264}
+{"event": "e041_call_start", "elapsed": 71.21294249999846, "instrument": "unhcr", "stage": "reference", "function": "_train_on", "device": "cuda"}
+{"event": "e041_call_end", "elapsed": 88.5379924000008, "instrument": "unhcr", "stage": "reference", "function": "_train_on", "seconds": 17.32501179999963, "device": "cuda"}
+{"event": "e041_call_end", "elapsed": 88.53809940000065, "instrument": "unhcr", "stage": "reference", "function": "_train", "seconds": 17.32518539999728, "fit_rows": 5264}
+{"event": "e041_call_start", "elapsed": 89.67085399999996, "instrument": "unhcr", "stage": "reference", "function": "_train", "fit_rows": 8279}
+{"event": "e041_call_start", "elapsed": 89.67095490000065, "instrument": "unhcr", "stage": "reference", "function": "_train_on", "device": "cuda"}
+{"event": "e041_call_end", "elapsed": 92.68637930000114, "instrument": "unhcr", "stage": "reference", "function": "_train_on", "seconds": 3.0153945999991265, "device": "cuda"}
+{"event": "e041_call_end", "elapsed": 92.6864405999986, "instrument": "unhcr", "stage": "reference", "function": "_train", "seconds": 3.0155162000010023, "fit_rows": 8279}
+{"event": "e041_call_end", "elapsed": 92.7285527999993, "instrument": "unhcr", "stage": "reference", "function": "tune_and_train", "seconds": 44.703109800000675}
+{"event": "e041_call_start", "elapsed": 93.73478890000115, "instrument": "unhcr", "stage": "reference", "function": "conditional_agreement"}
+{"event": "e041_call_end", "elapsed": 105.00007529999857, "instrument": "unhcr", "stage": "reference", "function": "conditional_agreement", "seconds": 11.265203499999188}
+{"event": "e041_call_start", "elapsed": 105.97210310000082, "instrument": "unhcr", "stage": "reference", "function": "supervised_layer"}
+{"event": "e041_call_start", "elapsed": 110.35728739999831, "instrument": "unhcr", "stage": "reference", "function": "fit_sections"}
+{"event": "e041_call_start", "elapsed": 111.12539969999852, "instrument": "unhcr", "stage": "reference", "function": "minimize"}
+{"event": "e041_call_end", "elapsed": 111.14741839999988, "instrument": "unhcr", "stage": "reference", "function": "minimize", "seconds": 0.021956100001261802}
+{"event": "e041_call_start", "elapsed": 111.1994909999994, "instrument": "unhcr", "stage": "reference", "function": "minimize"}
+{"event": "e041_call_end", "elapsed": 111.24291919999814, "instrument": "unhcr", "stage": "reference", "function": "minimize", "seconds": 0.04336010000042734}
+{"event": "e041_call_start", "elapsed": 111.28076019999935, "instrument": "unhcr", "stage": "reference", "function": "minimize"}
+{"event": "e041_call_end", "elapsed": 111.30092169999989, "instrument": "unhcr", "stage": "reference", "function": "minimize", "seconds": 0.020075000000360887}
+{"event": "e041_call_start", "elapsed": 111.34284389999812, "instrument": "unhcr", "stage": "reference", "function": "minimize"}
+{"event": "e041_call_end", "elapsed": 111.36982989999888, "instrument": "unhcr", "stage": "reference", "function": "minimize", "seconds": 0.02691190000041388}
+{"event": "e041_call_start", "elapsed": 111.4018544999999, "instrument": "unhcr", "stage": "reference", "function": "minimize"}
+{"event": "e041_call_end", "elapsed": 111.41738609999811, "instrument": "unhcr", "stage": "reference", "function": "minimize", "seconds": 0.015456400000402937}
+{"event": "e041_call_start", "elapsed": 111.44598739999856, "instrument": "unhcr", "stage": "reference", "function": "minimize"}
+{"event": "e041_call_end", "elapsed": 111.4618029000012, "instrument": "unhcr", "stage": "reference", "function": "minimize", "seconds": 0.015735899996798253}
+{"event": "e041_call_start", "elapsed": 111.48952640000061, "instrument": "unhcr", "stage": "reference", "function": "minimize"}
+{"event": "e041_call_end", "elapsed": 111.51153279999926, "instrument": "unhcr", "stage": "reference", "function": "minimize", "seconds": 0.02192780000041239}
+{"event": "e041_call_start", "elapsed": 111.55906429999959, "instrument": "unhcr", "stage": "reference", "function": "minimize"}
+{"event": "e041_call_end", "elapsed": 111.59895099999994, "instrument": "unhcr", "stage": "reference", "function": "minimize", "seconds": 0.039813700001104735}
+{"event": "e041_call_end", "elapsed": 111.6027682999993, "instrument": "unhcr", "stage": "reference", "function": "fit_sections", "seconds": 1.2453905000002123}
+{"event": "e041_call_end", "elapsed": 117.07412299999851, "instrument": "unhcr", "stage": "reference", "function": "supervised_layer", "seconds": 11.101932099998521}
+{"event": "pipeline_end", "elapsed": 121.0201851999991, "instrument": "unhcr", "stage": "reference", "fit_rows": 8279, "query_rows": 621, "vectors": 132273, "seconds": 75.30857580000156, "reference_exact": null}
+{"event": "instrument_end", "elapsed": 121.9366955000005, "instrument": "unhcr", "vectors": 132273}

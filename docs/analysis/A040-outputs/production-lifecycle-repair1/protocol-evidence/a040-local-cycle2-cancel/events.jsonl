@@ -1,0 +1,8 @@
+{"event": "operation", "time": 1791210548.469774, "stage": "connect", "timeout": 60}
+{"event": "operation", "time": 1791210548.4705763, "stage": "billing", "timeout": 1}
+{"event": "operation", "time": 1791210548.4713032, "stage": "base_stream", "timeout": 1}
+{"event": "operation", "time": 1791210548.4719274, "stage": "base_identity", "timeout": 1}
+{"event": "operation", "time": 1791210548.4763477, "stage": "app_create", "timeout": 1}
+{"event": "operation", "time": 1791210548.4845884, "stage": "build_billing", "timeout": 1}
+{"event": "operation", "time": 1791210548.4955626, "stage": "sandbox_create", "timeout": 120}
+{"event": "first_error", "time": 1791210548.5068285, "error": "CancelledError('Protocol cancellation after create')"}

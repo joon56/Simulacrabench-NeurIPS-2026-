@@ -1,0 +1,8 @@
+{
+  "worker_seconds": 5.368756800002302,
+  "fit_seconds": 0.0,
+  "peak_bytes": {
+    "rss": 476196864,
+    "commitment": 515936256
+  }
+}

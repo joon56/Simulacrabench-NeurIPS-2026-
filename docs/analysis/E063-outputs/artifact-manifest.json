@@ -1,0 +1,452 @@
+{
+    "recorded_utc":  "2026-10-09T13:53:46.5294983Z",
+    "scope":  "New E063 artifacts only, including new raw NPZ bytes; not protected inputs or old cache",
+    "self_exclusion":  "artifact-manifest.json and later final-receipt.json",
+    "files":  [
+                  {
+                      "path":  "docs/analysis/E063-outputs/attempts/H-01/calls.jsonl",
+                      "bytes":  182073,
+                      "sha256":  "27d44774975e12c9843fe7cf8e313ffeaed003dc8debae5b9916b532305746a2"
+                  },
+                  {
+                      "path":  "docs/analysis/E063-outputs/attempts/H-01/complete.json",
+                      "bytes":  23582,
+                      "sha256":  "333fb8fa2760b0bd8e0375abc6f6c8c5988e2c28fb54b4b7115d68407fd8438b"
+                  },
+                  {
+                      "path":  "docs/analysis/E063-outputs/attempts/H-01/environment.json",
+                      "bytes":  1482,
+                      "sha256":  "c23462ada40f788cd07ad1311831ce2ecd3c1b6d508827a5a475fdec0e14be04"
+                  },
+                  {
+                      "path":  "docs/analysis/E063-outputs/attempts/H-01/projection.jsonl",
+                      "bytes":  10824,
+                      "sha256":  "4b1fe507d66c42982669d32d908883cd76bd5e39736e2ba43ecb8e3279fc86e4"
+                  },
+                  {
+                      "path":  "docs/analysis/E063-outputs/attempts/H-01/resources.json",
+                      "bytes":  696,
+                      "sha256":  "1dd25c5753e003dce09f8566e53e511458c85067b218644200b9b5a661e88f68"
+                  },
+                  {
+                      "path":  "docs/analysis/E063-outputs/attempts/H-01/source.json",
+                      "bytes":  336,
+                      "sha256":  "73c022522aee52f96a3dc53f2f195a8211fbbcf3f2c34310d1ec71004b4fd648"
+                  },
+                  {
+                      "path":  "docs/analysis/E063-outputs/attempts/H-01/source/check_e063_round_metric.py",
+                      "bytes":  31679,
+                      "sha256":  "a437183e91834a8e0eb82f94b5c9b0abc3b66a480df0e14009fec1d45afec6f1"
+                  },
+                  {
+                      "path":  "docs/analysis/E063-outputs/attempts/H-01/source/round_metric_retrieval.py",
+                      "bytes":  12849,
+                      "sha256":  "5595bebdcdc697fc9e1eba149e10735cac4ae434b20b0ce3e93c968e8b35106b"
+                  },
+                  {
+                      "path":  "docs/analysis/E063-outputs/attempts/H-01/source/test_round_metric_retrieval.py",
+                      "bytes":  14823,
+                      "sha256":  "ef6be195048261d8eabe21e2fac63f1d4c8d6a71341b51fe0197b3ee5d08200e"
+                  },
+                  {
+                      "path":  "docs/analysis/E063-outputs/attempts/H-01/start.json",
+                      "bytes":  293,
+                      "sha256":  "2d1336b2163cbe23eb2e32a3d483b01f43fff420c29a086c2209e0ea11576072"
+                  },
+                  {
+                      "path":  "docs/analysis/E063-outputs/attempts/H-01/stdout.log",
+                      "bytes":  44471,
+                      "sha256":  "7068ce8f41c4e7224166a9df65245b2937f3d15bdb2d1dd7f5c15bf6f9bfd86f"
+                  },
+                  {
+                      "path":  "docs/analysis/E063-outputs/attempts/H-01/vectors-unhcr.npz",
+                      "bytes":  3661213,
+                      "sha256":  "445edba1bb9917b3a6cd85483284f4e171e3a5e0d705cf3a18f7382b7d06b5f0"
+                  },
+                  {
+                      "path":  "docs/analysis/E063-outputs/attempts/H-01/vectors-unicef.npz",
+                      "bytes":  344613,
+                      "sha256":  "1269a5064ee632708f14bff1e1ba2190e26f81c05caf1d6582bb52c9c821a62c"
+                  },
+                  {
+                      "path":  "docs/analysis/E063-outputs/attempts/H-01/vectors-world_bank.npz",
+                      "bytes":  1402673,
+                      "sha256":  "4a261189acb717dc70e1791e9bf19f754adc29f81a137f546725d3061304af55"
+                  },
+                  {
+                      "path":  "docs/analysis/E063-outputs/attempts/prepare-01/environment.json",
+                      "bytes":  1482,
+                      "sha256":  "c23462ada40f788cd07ad1311831ce2ecd3c1b6d508827a5a475fdec0e14be04"
+                  },
+                  {
+                      "path":  "docs/analysis/E063-outputs/attempts/prepare-01/projection.jsonl",
+                      "bytes":  10860,
+                      "sha256":  "41f66df153cea3bd41760d00d862a56ece255808c2bd5f1a20134ef7c38456ad"
+                  },
+                  {
+                      "path":  "docs/analysis/E063-outputs/attempts/prepare-01/resources.json",
+                      "bytes":  697,
+                      "sha256":  "e14faac95b2abadb6c38dca63b05cf515dfce3fc62f51f37bb7ba1781c3abb7f"
+                  },
+                  {
+                      "path":  "docs/analysis/E063-outputs/attempts/prepare-01/source.json",
+                      "bytes":  336,
+                      "sha256":  "73c022522aee52f96a3dc53f2f195a8211fbbcf3f2c34310d1ec71004b4fd648"
+                  },
+                  {
+                      "path":  "docs/analysis/E063-outputs/attempts/prepare-01/source/check_e063_round_metric.py",
+                      "bytes":  31679,
+                      "sha256":  "a437183e91834a8e0eb82f94b5c9b0abc3b66a480df0e14009fec1d45afec6f1"
+                  },
+                  {
+                      "path":  "docs/analysis/E063-outputs/attempts/prepare-01/source/round_metric_retrieval.py",
+                      "bytes":  12849,
+                      "sha256":  "5595bebdcdc697fc9e1eba149e10735cac4ae434b20b0ce3e93c968e8b35106b"
+                  },
+                  {
+                      "path":  "docs/analysis/E063-outputs/attempts/prepare-01/source/test_round_metric_retrieval.py",
+                      "bytes":  14823,
+                      "sha256":  "ef6be195048261d8eabe21e2fac63f1d4c8d6a71341b51fe0197b3ee5d08200e"
+                  },
+                  {
+                      "path":  "docs/analysis/E063-outputs/attempts/prepare-01/start.json",
+                      "bytes":  297,
+                      "sha256":  "8c1019355fd49e278358528ddae4c7819ea6e6962653025bd1b1f1662df4c5ee"
+                  },
+                  {
+                      "path":  "docs/analysis/E063-outputs/attempts/prepare-01/stdout.log",
+                      "bytes":  44388,
+                      "sha256":  "b816eb824d08641f2e63281d78581ea89d1dcd80c24c1b9cbc84a445e4ee4085"
+                  },
+                  {
+                      "path":  "docs/analysis/E063-outputs/attempts/R-01/calls.jsonl",
+                      "bytes":  182086,
+                      "sha256":  "5cbf2b3ea13da3ec1383836f81c0ee72f5258a3f88c8f3adc3047b3189a86e78"
+                  },
+                  {
+                      "path":  "docs/analysis/E063-outputs/attempts/R-01/complete.json",
+                      "bytes":  15160,
+                      "sha256":  "ed3c05c925fb88480f2813822cf784c48fdb3618904e3602e3afaa49297323af"
+                  },
+                  {
+                      "path":  "docs/analysis/E063-outputs/attempts/R-01/environment.json",
+                      "bytes":  1482,
+                      "sha256":  "c23462ada40f788cd07ad1311831ce2ecd3c1b6d508827a5a475fdec0e14be04"
+                  },
+                  {
+                      "path":  "docs/analysis/E063-outputs/attempts/R-01/projection.jsonl",
+                      "bytes":  10824,
+                      "sha256":  "450771a9764db71f2636239109cb3d1d878dd6c2e810625f35903bd8c182e9f0"
+                  },
+                  {
+                      "path":  "docs/analysis/E063-outputs/attempts/R-01/resources.json",
+                      "bytes":  694,
+                      "sha256":  "62f4ce062af14ff6c452f7781ebdd201a88eb92a973069f8307d9e28d0e4f056"
+                  },
+                  {
+                      "path":  "docs/analysis/E063-outputs/attempts/R-01/source.json",
+                      "bytes":  336,
+                      "sha256":  "73c022522aee52f96a3dc53f2f195a8211fbbcf3f2c34310d1ec71004b4fd648"
+                  },
+                  {
+                      "path":  "docs/analysis/E063-outputs/attempts/R-01/source/check_e063_round_metric.py",
+                      "bytes":  31679,
+                      "sha256":  "a437183e91834a8e0eb82f94b5c9b0abc3b66a480df0e14009fec1d45afec6f1"
+                  },
+                  {
+                      "path":  "docs/analysis/E063-outputs/attempts/R-01/source/round_metric_retrieval.py",
+                      "bytes":  12849,
+                      "sha256":  "5595bebdcdc697fc9e1eba149e10735cac4ae434b20b0ce3e93c968e8b35106b"
+                  },
+                  {
+                      "path":  "docs/analysis/E063-outputs/attempts/R-01/source/test_round_metric_retrieval.py",
+                      "bytes":  14823,
+                      "sha256":  "ef6be195048261d8eabe21e2fac63f1d4c8d6a71341b51fe0197b3ee5d08200e"
+                  },
+                  {
+                      "path":  "docs/analysis/E063-outputs/attempts/R-01/start.json",
+                      "bytes":  291,
+                      "sha256":  "a35ef9bcf712d7060770eef7e963b5cd5eb64b3237ac6ba655e9f27673e584e4"
+                  },
+                  {
+                      "path":  "docs/analysis/E063-outputs/attempts/R-01/stdout.log",
+                      "bytes":  44473,
+                      "sha256":  "8b65740e2e68a2b65f744325fb7bfc98d26a606fce8ff08ef18ad8cfb029509b"
+                  },
+                  {
+                      "path":  "docs/analysis/E063-outputs/attempts/R-01/vectors-unhcr.npz",
+                      "bytes":  3656416,
+                      "sha256":  "262ec003947b96a2b3bdad76866fc68b3763db148e061c5d5bc9a1c3ac416e3d"
+                  },
+                  {
+                      "path":  "docs/analysis/E063-outputs/attempts/R-01/vectors-unicef.npz",
+                      "bytes":  344613,
+                      "sha256":  "1269a5064ee632708f14bff1e1ba2190e26f81c05caf1d6582bb52c9c821a62c"
+                  },
+                  {
+                      "path":  "docs/analysis/E063-outputs/attempts/R-01/vectors-world_bank.npz",
+                      "bytes":  1402673,
+                      "sha256":  "4a261189acb717dc70e1791e9bf19f754adc29f81a137f546725d3061304af55"
+                  },
+                  {
+                      "path":  "docs/analysis/E063-outputs/attempts/score-01/comparison.json",
+                      "bytes":  6589,
+                      "sha256":  "19f65babcb6aacc6508863c59ba32ab96ecc09087b3dd3d7556ce4962f468039"
+                  },
+                  {
+                      "path":  "docs/analysis/E063-outputs/attempts/score-01/environment.json",
+                      "bytes":  1482,
+                      "sha256":  "c23462ada40f788cd07ad1311831ce2ecd3c1b6d508827a5a475fdec0e14be04"
+                  },
+                  {
+                      "path":  "docs/analysis/E063-outputs/attempts/score-01/frozen-predictions.json",
+                      "bytes":  2209,
+                      "sha256":  "6ceff16808f14079198690afbc0aa7a147187935266af56e6e12239ff1e1b200"
+                  },
+                  {
+                      "path":  "docs/analysis/E063-outputs/attempts/score-01/projection.jsonl",
+                      "bytes":  19454,
+                      "sha256":  "62067b38c5f6457ea03156f009e845f01f2a5735e42a36f6e58ee725b515ec6e"
+                  },
+                  {
+                      "path":  "docs/analysis/E063-outputs/attempts/score-01/resources.json",
+                      "bytes":  696,
+                      "sha256":  "cd41a68126e1f35292694f0d60100297300878f0f641a765bfafbcee3eb47109"
+                  },
+                  {
+                      "path":  "docs/analysis/E063-outputs/attempts/score-01/source.json",
+                      "bytes":  336,
+                      "sha256":  "73c022522aee52f96a3dc53f2f195a8211fbbcf3f2c34310d1ec71004b4fd648"
+                  },
+                  {
+                      "path":  "docs/analysis/E063-outputs/attempts/score-01/source/check_e063_round_metric.py",
+                      "bytes":  31679,
+                      "sha256":  "a437183e91834a8e0eb82f94b5c9b0abc3b66a480df0e14009fec1d45afec6f1"
+                  },
+                  {
+                      "path":  "docs/analysis/E063-outputs/attempts/score-01/source/round_metric_retrieval.py",
+                      "bytes":  12849,
+                      "sha256":  "5595bebdcdc697fc9e1eba149e10735cac4ae434b20b0ce3e93c968e8b35106b"
+                  },
+                  {
+                      "path":  "docs/analysis/E063-outputs/attempts/score-01/source/test_round_metric_retrieval.py",
+                      "bytes":  14823,
+                      "sha256":  "ef6be195048261d8eabe21e2fac63f1d4c8d6a71341b51fe0197b3ee5d08200e"
+                  },
+                  {
+                      "path":  "docs/analysis/E063-outputs/attempts/score-01/start.json",
+                      "bytes":  295,
+                      "sha256":  "9261b819744ea02b2aa40e96e80b44d21e5071cc7d2983919d4d0711776d960c"
+                  },
+                  {
+                      "path":  "docs/analysis/E063-outputs/attempts/score-01/stdout.log",
+                      "bytes":  45055,
+                      "sha256":  "020f2a17dc4aa5f4d44599a17a63236708e5ab8a4890043120be282bded86597"
+                  },
+                  {
+                      "path":  "docs/analysis/E063-outputs/attempts/tests-01/resources.json",
+                      "bytes":  746,
+                      "sha256":  "353b4e51f05f59dff6f5fb2a33f8f57633fbfeb32b596a4279ef0124db522af3"
+                  },
+                  {
+                      "path":  "docs/analysis/E063-outputs/attempts/tests-01/source.json",
+                      "bytes":  225,
+                      "sha256":  "86380559ee306c1476398c8329be88de6e504aed357427becd11894bd6bb9238"
+                  },
+                  {
+                      "path":  "docs/analysis/E063-outputs/attempts/tests-01/source/check_e063_round_metric.py",
+                      "bytes":  31679,
+                      "sha256":  "a437183e91834a8e0eb82f94b5c9b0abc3b66a480df0e14009fec1d45afec6f1"
+                  },
+                  {
+                      "path":  "docs/analysis/E063-outputs/attempts/tests-01/source/test_round_metric_retrieval.py",
+                      "bytes":  14823,
+                      "sha256":  "61942e577250dc669357d571429ad467cee420651e0378dbc65055c5b1a7c01a"
+                  },
+                  {
+                      "path":  "docs/analysis/E063-outputs/attempts/tests-01/start.json",
+                      "bytes":  344,
+                      "sha256":  "b4c900d05c5cf53216a1ae2c35e5f937c02a83a0cbf1942e6fc30a7cac6c8862"
+                  },
+                  {
+                      "path":  "docs/analysis/E063-outputs/attempts/tests-01/stdout.log",
+                      "bytes":  1111,
+                      "sha256":  "b644a618587b3fd3eeea189b9afe4aedc38b3d28c443e8411c24540c8881c6b9"
+                  },
+                  {
+                      "path":  "docs/analysis/E063-outputs/attempts/tests-02/resources.json",
+                      "bytes":  697,
+                      "sha256":  "891d33cb52cc838ea6cabca4548996491efc4dbdb55d2e9d601274618f21430a"
+                  },
+                  {
+                      "path":  "docs/analysis/E063-outputs/attempts/tests-02/source.json",
+                      "bytes":  336,
+                      "sha256":  "7de891190aeb57a68f9ff5f624fe86661a223ccdbc1277e67b00310fae4cbbb0"
+                  },
+                  {
+                      "path":  "docs/analysis/E063-outputs/attempts/tests-02/source/check_e063_round_metric.py",
+                      "bytes":  31679,
+                      "sha256":  "a437183e91834a8e0eb82f94b5c9b0abc3b66a480df0e14009fec1d45afec6f1"
+                  },
+                  {
+                      "path":  "docs/analysis/E063-outputs/attempts/tests-02/source/round_metric_retrieval.py",
+                      "bytes":  12849,
+                      "sha256":  "5595bebdcdc697fc9e1eba149e10735cac4ae434b20b0ce3e93c968e8b35106b"
+                  },
+                  {
+                      "path":  "docs/analysis/E063-outputs/attempts/tests-02/source/test_round_metric_retrieval.py",
+                      "bytes":  14823,
+                      "sha256":  "61942e577250dc669357d571429ad467cee420651e0378dbc65055c5b1a7c01a"
+                  },
+                  {
+                      "path":  "docs/analysis/E063-outputs/attempts/tests-02/start.json",
+                      "bytes":  296,
+                      "sha256":  "fbb15e24fa85f9bbc04a9f6f1be904f42bfc0fd30c3ef398253643e7bda215ca"
+                  },
+                  {
+                      "path":  "docs/analysis/E063-outputs/attempts/tests-02/stdout.log",
+                      "bytes":  46547,
+                      "sha256":  "56eb8cff3f24f2b39dd5cda0fec92d5b6bf06ef5556e66ba756f13a952e37514"
+                  },
+                  {
+                      "path":  "docs/analysis/E063-outputs/attempts/tests-03/resources.json",
+                      "bytes":  795,
+                      "sha256":  "c8ca47d200ac617a31da21025c77a8d54476b94403f4e457f43cbe7e308fade8"
+                  },
+                  {
+                      "path":  "docs/analysis/E063-outputs/attempts/tests-03/source.json",
+                      "bytes":  336,
+                      "sha256":  "73c022522aee52f96a3dc53f2f195a8211fbbcf3f2c34310d1ec71004b4fd648"
+                  },
+                  {
+                      "path":  "docs/analysis/E063-outputs/attempts/tests-03/source/check_e063_round_metric.py",
+                      "bytes":  31679,
+                      "sha256":  "a437183e91834a8e0eb82f94b5c9b0abc3b66a480df0e14009fec1d45afec6f1"
+                  },
+                  {
+                      "path":  "docs/analysis/E063-outputs/attempts/tests-03/source/round_metric_retrieval.py",
+                      "bytes":  12849,
+                      "sha256":  "5595bebdcdc697fc9e1eba149e10735cac4ae434b20b0ce3e93c968e8b35106b"
+                  },
+                  {
+                      "path":  "docs/analysis/E063-outputs/attempts/tests-03/source/test_round_metric_retrieval.py",
+                      "bytes":  14823,
+                      "sha256":  "ef6be195048261d8eabe21e2fac63f1d4c8d6a71341b51fe0197b3ee5d08200e"
+                  },
+                  {
+                      "path":  "docs/analysis/E063-outputs/attempts/tests-03/start.json",
+                      "bytes":  396,
+                      "sha256":  "d796523789f03af77ca9f8366a1e3fecd79fb78d52cb9c83cfbe748d643bd351"
+                  },
+                  {
+                      "path":  "docs/analysis/E063-outputs/attempts/tests-03/stdout.log",
+                      "bytes":  275,
+                      "sha256":  "c8e47de4431cb8b92f0c0e8f1b264130e2488530689c37470ae6c246062d0a0f"
+                  },
+                  {
+                      "path":  "docs/analysis/E063-outputs/closeout.md",
+                      "bytes":  6624,
+                      "sha256":  "ea8081573f81cbe4688199dc23f782cc13619ec4cb2f5ab1756bd2d18c3a94b4"
+                  },
+                  {
+                      "path":  "docs/analysis/E063-outputs/cost-time-ledger.json",
+                      "bytes":  8026,
+                      "sha256":  "21c2bba2aad87dee6888e557659731e5c4267e8adc856087444fd907671e7c34"
+                  },
+                  {
+                      "path":  "docs/analysis/E063-outputs/entry.json",
+                      "bytes":  14977,
+                      "sha256":  "a99e1d6ec3a95d745fa42a2657c28e5ea9f8309277203e3a7e778ce20c97ee7d"
+                  },
+                  {
+                      "path":  "docs/analysis/E063-outputs/exposure-ledger.md",
+                      "bytes":  3252,
+                      "sha256":  "ecc7f9b80f199b12a877e1f25b5c910f598cef06fe0b3dd1eba527a837eafd3b"
+                  },
+                  {
+                      "path":  "docs/analysis/E063-outputs/freeze-01.json",
+                      "bytes":  17797,
+                      "sha256":  "86662430e7cd0c8cfd09eb6ddf0f08ca43ebd7bda96adbfc4cfe2d40edfebc9a"
+                  },
+                  {
+                      "path":  "docs/analysis/E063-outputs/implementation-contract.md",
+                      "bytes":  7121,
+                      "sha256":  "d3451701d55ed98e52de3ee44d53b460c92f2ef2b518002f5cb6e16e68d36449"
+                  },
+                  {
+                      "path":  "docs/analysis/E063-outputs/metric-observations.json",
+                      "bytes":  4236,
+                      "sha256":  "03105aec8370963f10f0625493932fdfcfc2c2d1d298b77d65cd6b9ff65b7d05"
+                  },
+                  {
+                      "path":  "docs/analysis/E063-outputs/package-marker-identity.json",
+                      "bytes":  1113,
+                      "sha256":  "5493a164e31b0bd31c4c1976398fa1cf4ba378f226a4eb7cf31032d43514d779"
+                  },
+                  {
+                      "path":  "docs/analysis/E063-outputs/preservation-before-shared-update.json",
+                      "bytes":  21355,
+                      "sha256":  "aeb4b2ddcc2f822b7a6e7df34a253a46e9a43319fd002701c63e8b0b69f0fcb2"
+                  },
+                  {
+                      "path":  "docs/analysis/E063-outputs/registration.md",
+                      "bytes":  7213,
+                      "sha256":  "e29a7600c9bd1bca75c6927a092adc706b3c49b7e6ea649d979e58816696a49c"
+                  },
+                  {
+                      "path":  "docs/analysis/E063-outputs/s0-handoff.ko.md",
+                      "bytes":  2905,
+                      "sha256":  "f835542d83a6308db4579cd341cdfc401ac4c16d5695c0508f5452192748b384"
+                  },
+                  {
+                      "path":  "docs/analysis/E063-outputs/shared-additions.json",
+                      "bytes":  3345,
+                      "sha256":  "4d552520f99e0fd273f9e108d5c5c35c66bee2ee03be3fd112b1a6e46ac05813"
+                  },
+                  {
+                      "path":  "docs/analysis/E063-outputs/shared-preservation.json",
+                      "bytes":  802,
+                      "sha256":  "5dd57a3c8a05fcd8355f97021bcd05c62474d5df171c07ab5235a165f2e00860"
+                  },
+                  {
+                      "path":  "docs/analysis/E063-outputs/test-observer-repair.diff",
+                      "bytes":  1563,
+                      "sha256":  "2ce5a3ef327a71884d6939b308997b6ad65c0994fba0bb8284f966f99ce14467"
+                  },
+                  {
+                      "path":  "docs/analysis/E063-outputs/unit-qualification.json",
+                      "bytes":  1418,
+                      "sha256":  "2db124faa45b1ad679957d648062270f0801788468c6953ca3c6b097dca86b22"
+                  },
+                  {
+                      "path":  "docs/analysis/E063-outputs/user-protocol.ko.md",
+                      "bytes":  13696,
+                      "sha256":  "279a72defb1438f4d3ce68685d197d92da2dcdd7b76270fc7a49162304489b20"
+                  },
+                  {
+                      "path":  "docs/analysis/E063-outputs/verification.json",
+                      "bytes":  28527,
+                      "sha256":  "fc30eeb8110bbbcdd4e98a9479f07fc66c3d0ad9e21932255942a3d2313cb2e0"
+                  },
+                  {
+                      "path":  "docs/experiments/E063-round-conditioned-metric.md",
+                      "bytes":  8266,
+                      "sha256":  "c2e32e41f725d4d44515d0bdb84a182394de4d0c7fe3c8773c7888ce280a16b9"
+                  },
+                  {
+                      "path":  "scripts/check_e063_round_metric.py",
+                      "bytes":  31679,
+                      "sha256":  "a437183e91834a8e0eb82f94b5c9b0abc3b66a480df0e14009fec1d45afec6f1"
+                  },
+                  {
+                      "path":  "src/models/round_metric_retrieval.py",
+                      "bytes":  12849,
+                      "sha256":  "5595bebdcdc697fc9e1eba149e10735cac4ae434b20b0ce3e93c968e8b35106b"
+                  },
+                  {
+                      "path":  "tests/test_round_metric_retrieval.py",
+                      "bytes":  14823,
+                      "sha256":  "ef6be195048261d8eabe21e2fac63f1d4c8d6a71341b51fe0197b3ee5d08200e"
+                  }
+              ]
+}

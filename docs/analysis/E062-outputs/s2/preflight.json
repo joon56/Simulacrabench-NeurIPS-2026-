@@ -1,0 +1,98 @@
+{
+  "status": "PASS",
+  "environment": {
+    "python": "3.13.14 (tags/v3.13.14:fd17997, Jun 10 2026, 13:03:48) [MSC v.1944 64 bit (AMD64)]",
+    "numpy": "2.5.1",
+    "pandas": "3.0.5",
+    "torch": "2.13.0+cpu",
+    "torch_threads": 2,
+    "interop_threads": 2,
+    "cuda_available": false,
+    "threadpools": [
+      {
+        "user_api": "blas",
+        "internal_api": "openblas",
+        "num_threads": 2,
+        "prefix": "libscipy_openblas",
+        "filepath": "C:\\Users\\USER\\Desktop\\SimulacraBench\\.venv\\Lib\\site-packages\\numpy.libs\\libscipy_openblas64_-b788215d9d47792bcba3a2e2a7114320.dll",
+        "version": "0.3.33.112.0",
+        "threading_layer": "pthreads",
+        "architecture": "Haswell"
+      },
+      {
+        "user_api": "openmp",
+        "internal_api": "openmp",
+        "num_threads": 2,
+        "prefix": "libiomp",
+        "filepath": "C:\\Users\\USER\\Desktop\\SimulacraBench\\.venv\\Lib\\site-packages\\torch\\lib\\libiomp5md.dll",
+        "version": null
+      },
+      {
+        "user_api": "openmp",
+        "internal_api": "openmp",
+        "num_threads": 1,
+        "prefix": "libiomp",
+        "filepath": "C:\\Users\\USER\\Desktop\\SimulacraBench\\.venv\\Lib\\site-packages\\torch\\lib\\libiompstubs5md.dll",
+        "version": null
+      },
+      {
+        "user_api": "openmp",
+        "internal_api": "openmp",
+        "num_threads": 2,
+        "prefix": "vcomp",
+        "filepath": "C:\\Users\\USER\\Desktop\\SimulacraBench\\.venv\\Lib\\site-packages\\sklearn\\.libs\\vcomp140.dll",
+        "version": null
+      },
+      {
+        "user_api": "blas",
+        "internal_api": "openblas",
+        "num_threads": 2,
+        "prefix": "libscipy_openblas",
+        "filepath": "C:\\Users\\USER\\Desktop\\SimulacraBench\\.venv\\Lib\\site-packages\\scipy.libs\\libscipy_openblas-197ee2fc9b4d071f7e048078cac74115.dll",
+        "version": "0.3.31.dev",
+        "threading_layer": "pthreads",
+        "architecture": "Haswell"
+      }
+    ],
+    "scipy": "1.18.1",
+    "sklearn": "1.9.0",
+    "pyarrow": "25.0.1"
+  },
+  "inputs": {
+    "unicef": {
+      "rows": 16373,
+      "train": 14885,
+      "dev": 1488,
+      "cells": 17856,
+      "role_hash": "95027ea6046d4a127205639d7e55ea3492996e438a0a0bd54cae7b80cd66f716",
+      "masked_frame_hash": "27ab85ce44e94b13f292ecb4d47d1056ecc642b5da35b90b06f079b2f2a5f8fb",
+      "schema_runtime_sha256": "4deb5160563d18a5bd21a3e6df6bcbdcd30973649bfce1f726cc61479f819b17"
+    },
+    "world_bank": {
+      "rows": 5715,
+      "train": 5195,
+      "dev": 520,
+      "cells": 39520,
+      "role_hash": "97a92c36758bb70edb5e000338251de0d2b4e24a8f00c3de96dde6c568f86af4",
+      "masked_frame_hash": "8125f21c0ba62e20301b9bf77d4c34f04631a842278680b1a99a5ba040ec2efb",
+      "schema_runtime_sha256": "7cfa62f854f51306cede481263eb52f1b3af6a222caf22bd122e92441b440c20"
+    },
+    "unhcr": {
+      "rows": 8900,
+      "train": 8279,
+      "dev": 621,
+      "cells": 132273,
+      "role_hash": "a6880aa95c90143a27ca32355a2494ced7fca715b757904ab5c2ebf8e4d87761",
+      "masked_frame_hash": "31ab56525be0431eed185cc82ecd819f8270f1aca64767f10d651ae4f1bbac20",
+      "schema_runtime_sha256": "ef734cec5bcc931bcc9eaa49694310e924f024ff7cf58a047b4c2cb60394c8ae"
+    }
+  },
+  "references": 9,
+  "reference_policy": "allow_pickle=False, numeric flat/offsets only",
+  "staging_hashes": {
+    "docs/analysis/E062-outputs/s2/phase1/unicef/respondents.parquet": "5287baf2c5cc301740b7478001a095fc1d608c92c2dc2a6963e349a0500fbd8c",
+    "docs/analysis/E062-outputs/s2/phase1/world_bank/respondents.parquet": "1fe8dab61f6dc9774e6d155fffb8dbd0179ee4c39ce49f809f05369e0cac2ed5",
+    "docs/analysis/E062-outputs/s2/phase1/unhcr/respondents.parquet": "e8bc82257f666283f9f4d2b6ce7ac2656cd10e3fddc7e2e35b2f25429a44bcfb"
+  },
+  "main_sha256": "6d602380d8cfde1039faa758e43bc0be48834e41ae1c5f01873567833e3501f5"
+}

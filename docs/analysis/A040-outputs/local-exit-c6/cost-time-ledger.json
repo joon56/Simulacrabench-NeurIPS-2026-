@@ -1,0 +1,34 @@
+{
+    "outcome":  "NOT_REPRODUCED",
+    "supervisor_attempts":  2,
+    "valid_C6_measurements":  1,
+    "Python_launch_invocations":  1,
+    "Python_OS_processes":  2,
+    "historical_C1_C5_repeated":  0,
+    "outer_supervision_seconds":  3.31440369999999962,
+    "tool_observed_command_seconds":  3.6323635999999997,
+    "charged_diagnostic_seconds":  3.6323635999999997,
+    "charge_basis":  "Conservative tool command wall exceeds measured outer stopwatches; use one total, not their sum",
+    "diagnostic_cap_seconds":  90,
+    "per_attempt_tool_seconds":  [
+                                     0.8349515,
+                                     2.7974121
+                                 ],
+    "per_attempt_cap":  30,
+    "Python_forced_terminations":  0,
+    "own_console_helpers_killed":  2,
+    "console_scope":  "Two supervisor-owned conhost helpers; C6 Python/launcher both normal exit0. No other-session job stopped.",
+    "sampled_peak_rss_bytes":  237060096,
+    "sampled_peak_private_bytes":  175984640,
+    "sample_count":  7,
+    "max_sample_gap_seconds":  0.2967709999999999,
+    "cpu_affinity":  3,
+    "gpu":  0,
+    "cash":  0,
+    "remote":  0,
+    "model":  0,
+    "remaining_owned_pids":  [
+
+                             ],
+    "history_not_added":  "Old diagnostic27.3473137s and old A040/S1/model budgets remain separate history, not renewed or double-counted."
+}

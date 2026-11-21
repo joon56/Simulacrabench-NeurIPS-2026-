@@ -1,0 +1,1062 @@
+{
+  "action": "gate",
+  "token": "reuse-01",
+  "created": "2026-10-23T16:38:59.904218+09:00",
+  "shared_seconds": 120,
+  "charged_before": 121.30145229999835,
+  "administrative_reserve": 120.0,
+  "elapsed_seconds": 7.628557800002454,
+  "exit_code": 0,
+  "failure": null,
+  "passed": true,
+  "owned_pids": [
+    19248,
+    32020
+  ],
+  "remnant_pids": [],
+  "final_sample_enforced": true,
+  "cpu_affinity_mask": 3,
+  "sample_count": 37,
+  "max_sample_gap_seconds": 0.21269089999987045,
+  "peak_sampled_tree_rss": 550895616,
+  "peak_sampled_tree_private": 601419776,
+  "peak_semantics": "Concurrent sampled process-tree sums include supervisor; .2s requested cadence. Observed maximum gap reported. Not an unsampled instantaneous or hosted-memory guarantee.",
+  "samples": [
+    {
+      "seconds": 0.030772100002650404,
+      "processes": [
+        {
+          "pid": 19248,
+          "rss": 4743168,
+          "private": 839680,
+          "peak_rss": 4743168,
+          "peak_pagefile": 839680
+        },
+        {
+          "pid": 28536,
+          "rss": 24731648,
+          "private": 14688256,
+          "peak_rss": 25600000,
+          "peak_pagefile": 15400960
+        },
+        {
+          "pid": 32020,
+          "rss": 2555904,
+          "private": 372736,
+          "peak_rss": 2555904,
+          "peak_pagefile": 372736
+        }
+      ],
+      "rss": 32030720,
+      "private": 15900672
+    },
+    {
+      "seconds": 0.24172100000214414,
+      "processes": [
+        {
+          "pid": 19248,
+          "rss": 4870144,
+          "private": 839680,
+          "peak_rss": 4870144,
+          "peak_pagefile": 839680
+        },
+        {
+          "pid": 28536,
+          "rss": 24760320,
+          "private": 14688256,
+          "peak_rss": 25636864,
+          "peak_pagefile": 15400960
+        },
+        {
+          "pid": 32020,
+          "rss": 24752128,
+          "private": 15228928,
+          "peak_rss": 24752128,
+          "peak_pagefile": 15228928
+        }
+      ],
+      "rss": 54382592,
+      "private": 30756864
+    },
+    {
+      "seconds": 0.4515651000001526,
+      "processes": [
+        {
+          "pid": 19248,
+          "rss": 4870144,
+          "private": 839680,
+          "peak_rss": 4870144,
+          "peak_pagefile": 839680
+        },
+        {
+          "pid": 28536,
+          "rss": 24768512,
+          "private": 14688256,
+          "peak_rss": 25657344,
+          "peak_pagefile": 15400960
+        },
+        {
+          "pid": 32020,
+          "rss": 32727040,
+          "private": 18452480,
+          "peak_rss": 33402880,
+          "peak_pagefile": 18546688
+        }
+      ],
+      "rss": 62365696,
+      "private": 33980416
+    },
+    {
+      "seconds": 0.6620366999995895,
+      "processes": [
+        {
+          "pid": 19248,
+          "rss": 4870144,
+          "private": 839680,
+          "peak_rss": 4870144,
+          "peak_pagefile": 839680
+        },
+        {
+          "pid": 28536,
+          "rss": 24772608,
+          "private": 14688256,
+          "peak_rss": 25665536,
+          "peak_pagefile": 15400960
+        },
+        {
+          "pid": 32020,
+          "rss": 52572160,
+          "private": 65560576,
+          "peak_rss": 52572160,
+          "peak_pagefile": 65560576
+        }
+      ],
+      "rss": 82214912,
+      "private": 81088512
+    },
+    {
+      "seconds": 0.872274200002721,
+      "processes": [
+        {
+          "pid": 19248,
+          "rss": 4870144,
+          "private": 839680,
+          "peak_rss": 4870144,
+          "peak_pagefile": 839680
+        },
+        {
+          "pid": 28536,
+          "rss": 24772608,
+          "private": 14688256,
+          "peak_rss": 25669632,
+          "peak_pagefile": 15400960
+        },
+        {
+          "pid": 32020,
+          "rss": 70119424,
+          "private": 77557760,
+          "peak_rss": 70119424,
+          "peak_pagefile": 77557760
+        }
+      ],
+      "rss": 99762176,
+      "private": 93085696
+    },
+    {
+      "seconds": 1.0816212999998243,
+      "processes": [
+        {
+          "pid": 19248,
+          "rss": 4870144,
+          "private": 839680,
+          "peak_rss": 4870144,
+          "peak_pagefile": 839680
+        },
+        {
+          "pid": 28536,
+          "rss": 24772608,
+          "private": 14688256,
+          "peak_rss": 25669632,
+          "peak_pagefile": 15400960
+        },
+        {
+          "pid": 32020,
+          "rss": 84520960,
+          "private": 90550272,
+          "peak_rss": 84520960,
+          "peak_pagefile": 90550272
+        }
+      ],
+      "rss": 114163712,
+      "private": 106078208
+    },
+    {
+      "seconds": 1.2939741000009235,
+      "processes": [
+        {
+          "pid": 19248,
+          "rss": 4870144,
+          "private": 839680,
+          "peak_rss": 4870144,
+          "peak_pagefile": 839680
+        },
+        {
+          "pid": 28536,
+          "rss": 24776704,
+          "private": 14688256,
+          "peak_rss": 25681920,
+          "peak_pagefile": 15409152
+        },
+        {
+          "pid": 32020,
+          "rss": 171180032,
+          "private": 231739392,
+          "peak_rss": 174845952,
+          "peak_pagefile": 235814912
+        }
+      ],
+      "rss": 200826880,
+      "private": 247267328
+    },
+    {
+      "seconds": 1.504081999999471,
+      "processes": [
+        {
+          "pid": 19248,
+          "rss": 4870144,
+          "private": 839680,
+          "peak_rss": 4870144,
+          "peak_pagefile": 839680
+        },
+        {
+          "pid": 28536,
+          "rss": 24776704,
+          "private": 14688256,
+          "peak_rss": 25681920,
+          "peak_pagefile": 15409152
+        },
+        {
+          "pid": 32020,
+          "rss": 179466240,
+          "private": 239169536,
+          "peak_rss": 191127552,
+          "peak_pagefile": 252416000
+        }
+      ],
+      "rss": 209113088,
+      "private": 254697472
+    },
+    {
+      "seconds": 1.7150383000007423,
+      "processes": [
+        {
+          "pid": 19248,
+          "rss": 4870144,
+          "private": 839680,
+          "peak_rss": 4870144,
+          "peak_pagefile": 839680
+        },
+        {
+          "pid": 28536,
+          "rss": 24776704,
+          "private": 14688256,
+          "peak_rss": 25681920,
+          "peak_pagefile": 15409152
+        },
+        {
+          "pid": 32020,
+          "rss": 223473664,
+          "private": 286179328,
+          "peak_rss": 223473664,
+          "peak_pagefile": 286179328
+        }
+      ],
+      "rss": 253120512,
+      "private": 301707264
+    },
+    {
+      "seconds": 1.9254284000016924,
+      "processes": [
+        {
+          "pid": 19248,
+          "rss": 4870144,
+          "private": 839680,
+          "peak_rss": 4870144,
+          "peak_pagefile": 839680
+        },
+        {
+          "pid": 28536,
+          "rss": 24776704,
+          "private": 14688256,
+          "peak_rss": 25681920,
+          "peak_pagefile": 15409152
+        },
+        {
+          "pid": 32020,
+          "rss": 238821376,
+          "private": 301510656,
+          "peak_rss": 241344512,
+          "peak_pagefile": 304357376
+        }
+      ],
+      "rss": 268468224,
+      "private": 317038592
+    },
+    {
+      "seconds": 2.135750100002042,
+      "processes": [
+        {
+          "pid": 19248,
+          "rss": 4870144,
+          "private": 839680,
+          "peak_rss": 4870144,
+          "peak_pagefile": 839680
+        },
+        {
+          "pid": 28536,
+          "rss": 24776704,
+          "private": 14688256,
+          "peak_rss": 25681920,
+          "peak_pagefile": 15409152
+        },
+        {
+          "pid": 32020,
+          "rss": 244060160,
+          "private": 307986432,
+          "peak_rss": 257843200,
+          "peak_pagefile": 322457600
+        }
+      ],
+      "rss": 273707008,
+      "private": 323514368
+    },
+    {
+      "seconds": 2.3458611000023666,
+      "processes": [
+        {
+          "pid": 19248,
+          "rss": 4870144,
+          "private": 839680,
+          "peak_rss": 4870144,
+          "peak_pagefile": 839680
+        },
+        {
+          "pid": 28536,
+          "rss": 24780800,
+          "private": 14688256,
+          "peak_rss": 25681920,
+          "peak_pagefile": 15409152
+        },
+        {
+          "pid": 32020,
+          "rss": 271036416,
+          "private": 334794752,
+          "peak_rss": 271036416,
+          "peak_pagefile": 334794752
+        }
+      ],
+      "rss": 300687360,
+      "private": 350322688
+    },
+    {
+      "seconds": 2.555489400001534,
+      "processes": [
+        {
+          "pid": 19248,
+          "rss": 4870144,
+          "private": 839680,
+          "peak_rss": 4870144,
+          "peak_pagefile": 839680
+        },
+        {
+          "pid": 28536,
+          "rss": 24780800,
+          "private": 14688256,
+          "peak_rss": 25681920,
+          "peak_pagefile": 15409152
+        },
+        {
+          "pid": 32020,
+          "rss": 262168576,
+          "private": 324677632,
+          "peak_rss": 286957568,
+          "peak_pagefile": 349499392
+        }
+      ],
+      "rss": 291819520,
+      "private": 340205568
+    },
+    {
+      "seconds": 2.7657141000017873,
+      "processes": [
+        {
+          "pid": 19248,
+          "rss": 4870144,
+          "private": 839680,
+          "peak_rss": 4870144,
+          "peak_pagefile": 839680
+        },
+        {
+          "pid": 28536,
+          "rss": 24780800,
+          "private": 14688256,
+          "peak_rss": 25681920,
+          "peak_pagefile": 15409152
+        },
+        {
+          "pid": 32020,
+          "rss": 262168576,
+          "private": 324677632,
+          "peak_rss": 286957568,
+          "peak_pagefile": 349499392
+        }
+      ],
+      "rss": 291819520,
+      "private": 340205568
+    },
+    {
+      "seconds": 2.977051300000312,
+      "processes": [
+        {
+          "pid": 19248,
+          "rss": 4870144,
+          "private": 839680,
+          "peak_rss": 4870144,
+          "peak_pagefile": 839680
+        },
+        {
+          "pid": 28536,
+          "rss": 24780800,
+          "private": 14688256,
+          "peak_rss": 25681920,
+          "peak_pagefile": 15409152
+        },
+        {
+          "pid": 32020,
+          "rss": 306016256,
+          "private": 379457536,
+          "peak_rss": 307937280,
+          "peak_pagefile": 380592128
+        }
+      ],
+      "rss": 335667200,
+      "private": 394985472
+    },
+    {
+      "seconds": 3.1882893000001786,
+      "processes": [
+        {
+          "pid": 19248,
+          "rss": 4870144,
+          "private": 839680,
+          "peak_rss": 4870144,
+          "peak_pagefile": 839680
+        },
+        {
+          "pid": 28536,
+          "rss": 24780800,
+          "private": 14688256,
+          "peak_rss": 25681920,
+          "peak_pagefile": 15409152
+        },
+        {
+          "pid": 32020,
+          "rss": 479965184,
+          "private": 551399424,
+          "peak_rss": 479965184,
+          "peak_pagefile": 551399424
+        }
+      ],
+      "rss": 509616128,
+      "private": 566927360
+    },
+    {
+      "seconds": 3.4003795999997237,
+      "processes": [
+        {
+          "pid": 19248,
+          "rss": 4870144,
+          "private": 839680,
+          "peak_rss": 4870144,
+          "peak_pagefile": 839680
+        },
+        {
+          "pid": 28536,
+          "rss": 24780800,
+          "private": 14688256,
+          "peak_rss": 25681920,
+          "peak_pagefile": 15409152
+        },
+        {
+          "pid": 32020,
+          "rss": 486547456,
+          "private": 558452736,
+          "peak_rss": 486547456,
+          "peak_pagefile": 558452736
+        }
+      ],
+      "rss": 516198400,
+      "private": 573980672
+    },
+    {
+      "seconds": 3.610524499999883,
+      "processes": [
+        {
+          "pid": 19248,
+          "rss": 4870144,
+          "private": 839680,
+          "peak_rss": 4870144,
+          "peak_pagefile": 839680
+        },
+        {
+          "pid": 28536,
+          "rss": 24780800,
+          "private": 14688256,
+          "peak_rss": 25681920,
+          "peak_pagefile": 15409152
+        },
+        {
+          "pid": 32020,
+          "rss": 495050752,
+          "private": 566558720,
+          "peak_rss": 495050752,
+          "peak_pagefile": 566607872
+        }
+      ],
+      "rss": 524701696,
+      "private": 582086656
+    },
+    {
+      "seconds": 3.82136520000131,
+      "processes": [
+        {
+          "pid": 19248,
+          "rss": 4870144,
+          "private": 839680,
+          "peak_rss": 4870144,
+          "peak_pagefile": 839680
+        },
+        {
+          "pid": 28536,
+          "rss": 24780800,
+          "private": 14688256,
+          "peak_rss": 25681920,
+          "peak_pagefile": 15409152
+        },
+        {
+          "pid": 32020,
+          "rss": 501432320,
+          "private": 573349888,
+          "peak_rss": 501846016,
+          "peak_pagefile": 573808640
+        }
+      ],
+      "rss": 531083264,
+      "private": 588877824
+    },
+    {
+      "seconds": 4.033593600001041,
+      "processes": [
+        {
+          "pid": 19248,
+          "rss": 4870144,
+          "private": 839680,
+          "peak_rss": 4870144,
+          "peak_pagefile": 839680
+        },
+        {
+          "pid": 28536,
+          "rss": 24784896,
+          "private": 14688256,
+          "peak_rss": 25681920,
+          "peak_pagefile": 15409152
+        },
+        {
+          "pid": 32020,
+          "rss": 507256832,
+          "private": 579035136,
+          "peak_rss": 507256832,
+          "peak_pagefile": 579866624
+        }
+      ],
+      "rss": 536911872,
+      "private": 594563072
+    },
+    {
+      "seconds": 4.2434303000009095,
+      "processes": [
+        {
+          "pid": 19248,
+          "rss": 4870144,
+          "private": 839680,
+          "peak_rss": 4870144,
+          "peak_pagefile": 839680
+        },
+        {
+          "pid": 28536,
+          "rss": 24788992,
+          "private": 14688256,
+          "peak_rss": 25686016,
+          "peak_pagefile": 15409152
+        },
+        {
+          "pid": 32020,
+          "rss": 513425408,
+          "private": 585891840,
+          "peak_rss": 514007040,
+          "peak_pagefile": 586145792
+        }
+      ],
+      "rss": 543084544,
+      "private": 601419776
+    },
+    {
+      "seconds": 4.455091400002857,
+      "processes": [
+        {
+          "pid": 19248,
+          "rss": 4870144,
+          "private": 839680,
+          "peak_rss": 4870144,
+          "peak_pagefile": 839680
+        },
+        {
+          "pid": 28536,
+          "rss": 24788992,
+          "private": 14688256,
+          "peak_rss": 25686016,
+          "peak_pagefile": 15409152
+        },
+        {
+          "pid": 32020,
+          "rss": 461824000,
+          "private": 524111872,
+          "peak_rss": 514007040,
+          "peak_pagefile": 586145792
+        }
+      ],
+      "rss": 491483136,
+      "private": 539639808
+    },
+    {
+      "seconds": 4.665363200001593,
+      "processes": [
+        {
+          "pid": 19248,
+          "rss": 4870144,
+          "private": 839680,
+          "peak_rss": 4870144,
+          "peak_pagefile": 839680
+        },
+        {
+          "pid": 28536,
+          "rss": 24793088,
+          "private": 14688256,
+          "peak_rss": 25686016,
+          "peak_pagefile": 15409152
+        },
+        {
+          "pid": 32020,
+          "rss": 521232384,
+          "private": 584306688,
+          "peak_rss": 546795520,
+          "peak_pagefile": 616017920
+        }
+      ],
+      "rss": 550895616,
+      "private": 599834624
+    },
+    {
+      "seconds": 4.8753893000030075,
+      "processes": [
+        {
+          "pid": 19248,
+          "rss": 4870144,
+          "private": 839680,
+          "peak_rss": 4870144,
+          "peak_pagefile": 839680
+        },
+        {
+          "pid": 28536,
+          "rss": 24793088,
+          "private": 14688256,
+          "peak_rss": 25690112,
+          "peak_pagefile": 15409152
+        },
+        {
+          "pid": 32020,
+          "rss": 434298880,
+          "private": 497078272,
+          "peak_rss": 546795520,
+          "peak_pagefile": 616017920
+        }
+      ],
+      "rss": 463962112,
+      "private": 512606208
+    },
+    {
+      "seconds": 5.0851079000021855,
+      "processes": [
+        {
+          "pid": 19248,
+          "rss": 4870144,
+          "private": 839680,
+          "peak_rss": 4870144,
+          "peak_pagefile": 839680
+        },
+        {
+          "pid": 28536,
+          "rss": 24793088,
+          "private": 14688256,
+          "peak_rss": 25690112,
+          "peak_pagefile": 15409152
+        },
+        {
+          "pid": 32020,
+          "rss": 461135872,
+          "private": 524079104,
+          "peak_rss": 546795520,
+          "peak_pagefile": 616017920
+        }
+      ],
+      "rss": 490799104,
+      "private": 539607040
+    },
+    {
+      "seconds": 5.294852800001536,
+      "processes": [
+        {
+          "pid": 19248,
+          "rss": 4870144,
+          "private": 839680,
+          "peak_rss": 4870144,
+          "peak_pagefile": 839680
+        },
+        {
+          "pid": 28536,
+          "rss": 24793088,
+          "private": 14688256,
+          "peak_rss": 25690112,
+          "peak_pagefile": 15409152
+        },
+        {
+          "pid": 32020,
+          "rss": 467906560,
+          "private": 530055168,
+          "peak_rss": 546795520,
+          "peak_pagefile": 616017920
+        }
+      ],
+      "rss": 497569792,
+      "private": 545583104
+    },
+    {
+      "seconds": 5.506915199999639,
+      "processes": [
+        {
+          "pid": 19248,
+          "rss": 4870144,
+          "private": 839680,
+          "peak_rss": 4870144,
+          "peak_pagefile": 839680
+        },
+        {
+          "pid": 28536,
+          "rss": 24793088,
+          "private": 14688256,
+          "peak_rss": 25690112,
+          "peak_pagefile": 15409152
+        },
+        {
+          "pid": 32020,
+          "rss": 485511168,
+          "private": 547250176,
+          "peak_rss": 546795520,
+          "peak_pagefile": 616017920
+        }
+      ],
+      "rss": 515174400,
+      "private": 562778112
+    },
+    {
+      "seconds": 5.719133400001738,
+      "processes": [
+        {
+          "pid": 19248,
+          "rss": 4870144,
+          "private": 839680,
+          "peak_rss": 4870144,
+          "peak_pagefile": 839680
+        },
+        {
+          "pid": 28536,
+          "rss": 24797184,
+          "private": 14688256,
+          "peak_rss": 25690112,
+          "peak_pagefile": 15409152
+        },
+        {
+          "pid": 32020,
+          "rss": 454389760,
+          "private": 516050944,
+          "peak_rss": 546795520,
+          "peak_pagefile": 616017920
+        }
+      ],
+      "rss": 484057088,
+      "private": 531578880
+    },
+    {
+      "seconds": 5.9293868000022485,
+      "processes": [
+        {
+          "pid": 19248,
+          "rss": 4870144,
+          "private": 839680,
+          "peak_rss": 4870144,
+          "peak_pagefile": 839680
+        },
+        {
+          "pid": 28536,
+          "rss": 24797184,
+          "private": 14688256,
+          "peak_rss": 25694208,
+          "peak_pagefile": 15409152
+        },
+        {
+          "pid": 32020,
+          "rss": 454389760,
+          "private": 516050944,
+          "peak_rss": 546795520,
+          "peak_pagefile": 616017920
+        }
+      ],
+      "rss": 484057088,
+      "private": 531578880
+    },
+    {
+      "seconds": 6.140087700001459,
+      "processes": [
+        {
+          "pid": 19248,
+          "rss": 4870144,
+          "private": 839680,
+          "peak_rss": 4870144,
+          "peak_pagefile": 839680
+        },
+        {
+          "pid": 28536,
+          "rss": 24797184,
+          "private": 14688256,
+          "peak_rss": 25694208,
+          "peak_pagefile": 15409152
+        },
+        {
+          "pid": 32020,
+          "rss": 454389760,
+          "private": 516050944,
+          "peak_rss": 546795520,
+          "peak_pagefile": 616017920
+        }
+      ],
+      "rss": 484057088,
+      "private": 531578880
+    },
+    {
+      "seconds": 6.352693600001658,
+      "processes": [
+        {
+          "pid": 19248,
+          "rss": 4870144,
+          "private": 839680,
+          "peak_rss": 4870144,
+          "peak_pagefile": 839680
+        },
+        {
+          "pid": 28536,
+          "rss": 24801280,
+          "private": 14688256,
+          "peak_rss": 25694208,
+          "peak_pagefile": 15409152
+        },
+        {
+          "pid": 32020,
+          "rss": 454389760,
+          "private": 516050944,
+          "peak_rss": 546795520,
+          "peak_pagefile": 616017920
+        }
+      ],
+      "rss": 484061184,
+      "private": 531578880
+    },
+    {
+      "seconds": 6.563593800001399,
+      "processes": [
+        {
+          "pid": 19248,
+          "rss": 4870144,
+          "private": 839680,
+          "peak_rss": 4870144,
+          "peak_pagefile": 839680
+        },
+        {
+          "pid": 28536,
+          "rss": 24801280,
+          "private": 14688256,
+          "peak_rss": 25698304,
+          "peak_pagefile": 15409152
+        },
+        {
+          "pid": 32020,
+          "rss": 454389760,
+          "private": 516050944,
+          "peak_rss": 546795520,
+          "peak_pagefile": 616017920
+        }
+      ],
+      "rss": 484061184,
+      "private": 531578880
+    },
+    {
+      "seconds": 6.77628470000127,
+      "processes": [
+        {
+          "pid": 19248,
+          "rss": 4870144,
+          "private": 839680,
+          "peak_rss": 4870144,
+          "peak_pagefile": 839680
+        },
+        {
+          "pid": 28536,
+          "rss": 24801280,
+          "private": 14688256,
+          "peak_rss": 25698304,
+          "peak_pagefile": 15409152
+        },
+        {
+          "pid": 32020,
+          "rss": 454389760,
+          "private": 516050944,
+          "peak_rss": 546795520,
+          "peak_pagefile": 616017920
+        }
+      ],
+      "rss": 484061184,
+      "private": 531578880
+    },
+    {
+      "seconds": 6.9874565999998595,
+      "processes": [
+        {
+          "pid": 19248,
+          "rss": 4870144,
+          "private": 839680,
+          "peak_rss": 4870144,
+          "peak_pagefile": 839680
+        },
+        {
+          "pid": 28536,
+          "rss": 24805376,
+          "private": 14688256,
+          "peak_rss": 25702400,
+          "peak_pagefile": 15409152
+        },
+        {
+          "pid": 32020,
+          "rss": 454389760,
+          "private": 516050944,
+          "peak_rss": 546795520,
+          "peak_pagefile": 616017920
+        }
+      ],
+      "rss": 484065280,
+      "private": 531578880
+    },
+    {
+      "seconds": 7.199586400001863,
+      "processes": [
+        {
+          "pid": 19248,
+          "rss": 4870144,
+          "private": 839680,
+          "peak_rss": 4870144,
+          "peak_pagefile": 839680
+        },
+        {
+          "pid": 28536,
+          "rss": 24805376,
+          "private": 14688256,
+          "peak_rss": 25702400,
+          "peak_pagefile": 15409152
+        },
+        {
+          "pid": 32020,
+          "rss": 465637376,
+          "private": 528547840,
+          "peak_rss": 546795520,
+          "peak_pagefile": 616017920
+        }
+      ],
+      "rss": 495312896,
+      "private": 544075776
+    },
+    {
+      "seconds": 7.409122600001865,
+      "processes": [
+        {
+          "pid": 19248,
+          "rss": 4870144,
+          "private": 839680,
+          "peak_rss": 4870144,
+          "peak_pagefile": 839680
+        },
+        {
+          "pid": 28536,
+          "rss": 24809472,
+          "private": 14688256,
+          "peak_rss": 25702400,
+          "peak_pagefile": 15409152
+        },
+        {
+          "pid": 32020,
+          "rss": 166932480,
+          "private": 227430400,
+          "peak_rss": 546795520,
+          "peak_pagefile": 616017920
+        }
+      ],
+      "rss": 196612096,
+      "private": 242958336
+    },
+    {
+      "seconds": 7.619297900000674,
+      "processes": [
+        {
+          "pid": 19248,
+          "rss": 32768,
+          "private": 77824,
+          "peak_rss": 5345280,
+          "peak_pagefile": 929792
+        },
+        {
+          "pid": 28536,
+          "rss": 24809472,
+          "private": 14688256,
+          "peak_rss": 25706496,
+          "peak_pagefile": 15409152
+        },
+        {
+          "pid": 32020,
+          "rss": 32768,
+          "private": 77824,
+          "peak_rss": 546795520,
+          "peak_pagefile": 616017920
+        }
+      ],
+      "rss": 24875008,
+      "private": 14843904
+    }
+  ]
+}

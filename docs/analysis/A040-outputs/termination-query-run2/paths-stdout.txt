@@ -1,0 +1,1 @@
+{"outcome": "WINDOWS_HASH_KEY_PASS", "original_failure_reproduced": true, "new_keys": ["original/confirm_terminal.py", "runtime.py", "attempt.py"], "sdk_auth_rpc": 0}

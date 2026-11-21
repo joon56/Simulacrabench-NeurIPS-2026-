@@ -1,0 +1,150 @@
+{
+    "files":  [
+                  {
+                      "path":  "builder-stderr.txt",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "builder-stdout.txt",
+                      "sha256":  "579dd9cbba1d02747f53417db226a675726de4e7709bd1eb5c156276f1973234",
+                      "bytes":  1212
+                  },
+                  {
+                      "path":  "closeout.md",
+                      "sha256":  "b12e70c49293dae7c31751db676c5b2a80d06c15e4a73623e26db19e7e8be401",
+                      "bytes":  2320
+                  },
+                  {
+                      "path":  "config-source-input-freeze.json",
+                      "sha256":  "e1df5fb540e08e96bec471faba3baaeeb03fd535918ed0e0cbacefd157a60d63",
+                      "bytes":  9110
+                  },
+                  {
+                      "path":  "dirty-entry.txt",
+                      "sha256":  "747e3e2fc2af6f55c2a932d69de89ec2152d16a8285e3905caf099c669ad5287",
+                      "bytes":  3216
+                  },
+                  {
+                      "path":  "entry.json",
+                      "sha256":  "2572e8fd67d212249347c3f4b4d4b08892e9eef896466dcefb5d2f62003c2e77",
+                      "bytes":  1865
+                  },
+                  {
+                      "path":  "exposure-ledger.md",
+                      "sha256":  "4f52e32ce06c7521f65886015bb86bdcafa4381a74a6048520136fa3081d92f1",
+                      "bytes":  2636
+                  },
+                  {
+                      "path":  "failure-analysis.md",
+                      "sha256":  "4e5c9a5db12b9c03961b5eeaf15a06a4fb2c2c3e24b294a8994d87a4f21ba93f",
+                      "bytes":  2085
+                  },
+                  {
+                      "path":  "launch-intent.json",
+                      "sha256":  "5907eb86fa6f1903ac4f23cd5ef6f12d1c697a43e5e95c1a09225ad975fd4838",
+                      "bytes":  472
+                  },
+                  {
+                      "path":  "launcher-exit.json",
+                      "sha256":  "2618b95f1f6be6bfde8537756f85b83845d039001563135b9d59d817446733eb",
+                      "bytes":  16
+                  },
+                  {
+                      "path":  "launcher-pid.json",
+                      "sha256":  "9ce97e0572b70e1457894da0e182ff5cd88790fe2b07e2af3e14c15b05d0ff31",
+                      "bytes":  338
+                  },
+                  {
+                      "path":  "live-config.json",
+                      "sha256":  "b0b896643357932b8f8e60295a5b681886efa36494a5a7a95e924935b8aee590",
+                      "bytes":  6808
+                  },
+                  {
+                      "path":  "operational-contract.md",
+                      "sha256":  "a543ad76d4c900b61105ffa03f6115b9490c41c78c2b946211b0da359e76956d",
+                      "bytes":  3267
+                  },
+                  {
+                      "path":  "s0-handoff.ko.md",
+                      "sha256":  "305a23ef120fbf0ccacb4dda8ed324dbe2613bf1ed9a8c6ce404d10c611c41d2",
+                      "bytes":  2508
+                  },
+                  {
+                      "path":  "session-cost-time-ledger.json",
+                      "sha256":  "8f8338dfd1b3b9a5b02f54b83deba9b449cc39fe11abf7907766581dadd1fa1d",
+                      "bytes":  2228
+                  },
+                  {
+                      "path":  "source-preservation.json",
+                      "sha256":  "14180c74f9cf6818760443880a1614639f9e421153c4322e8df44be748456a64",
+                      "bytes":  3730
+                  },
+                  {
+                      "path":  "stage-outcomes.json",
+                      "sha256":  "18de588759b165c264de56dfd59c93d0e949026af7d78ec67e7a573ed4c570ad",
+                      "bytes":  1015
+                  },
+                  {
+                      "path":  "static-config-verification.json",
+                      "sha256":  "84fffdbefae7766fec9a7eee1378e777b9986d817780499791a5657607469934",
+                      "bytes":  338
+                  },
+                  {
+                      "path":  "termination-receipt.json",
+                      "sha256":  "9dbfdeb4fa2a68b9425a474a5781feb5cfb4a9d9f24208e421ea3a1a883f3327",
+                      "bytes":  336
+                  },
+                  {
+                      "path":  "user-authority.ko.md",
+                      "sha256":  "a0793270ce672359768b182cabaca86e5c8509b16abdc2bab26b3552e3db790f",
+                      "bytes":  9560
+                  },
+                  {
+                      "path":  "verification.json",
+                      "sha256":  "7d758e43036a7f1168219afd6676a8a16feae63b037cdc3f428cb77754d64bb2",
+                      "bytes":  3061
+                  },
+                  {
+                      "path":  "run/attempt-started.json",
+                      "sha256":  "926c97bf4a32f02652ccaec2d6815fe374ea29d873153b88a39b538eddf8f981",
+                      "bytes":  89
+                  },
+                  {
+                      "path":  "run/cost-ledger.json",
+                      "sha256":  "1941d3d06e9a6c74fc9afadf8ea3084d46feeffd47ea9c7c0a8a058672679538",
+                      "bytes":  298
+                  },
+                  {
+                      "path":  "run/events.jsonl",
+                      "sha256":  "f235e397b6e08fd50b413b6fd7d20d6feff1e78a751d5426c81b606fff440810",
+                      "bytes":  745
+                  },
+                  {
+                      "path":  "run/plan.json",
+                      "sha256":  "0c3e9ca828bc4f240b811796f44cee5fd1f835eaa3ff17976f3d95306ceebdc2",
+                      "bytes":  449
+                  },
+                  {
+                      "path":  "run/result.json",
+                      "sha256":  "4a9cd2d1a38227e1dd0c0e704723bb3d99ef64b4689698bfcfb2066b86e7d4d1",
+                      "bytes":  2204
+                  },
+                  {
+                      "path":  "run/source-gate.json",
+                      "sha256":  "8671eda411b304b82806b24b3d506766c56702deed8327460b7b3c5c2e9ef86d",
+                      "bytes":  135
+                  },
+                  {
+                      "path":  "run/state.json",
+                      "sha256":  "4a9cd2d1a38227e1dd0c0e704723bb3d99ef64b4689698bfcfb2066b86e7d4d1",
+                      "bytes":  2204
+                  },
+                  {
+                      "path":  "run/termination-receipt.json",
+                      "sha256":  "9dbfdeb4fa2a68b9425a474a5781feb5cfb4a9d9f24208e421ea3a1a883f3327",
+                      "bytes":  336
+                  }
+              ],
+    "scope":  "New resume4 evidence only; excludes this manifest"
+}

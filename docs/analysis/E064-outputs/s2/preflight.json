@@ -1,0 +1,110 @@
+{
+  "status": "PASS",
+  "environment": {
+    "python": "3.13.14 (tags/v3.13.14:fd17997, Jun 10 2026, 13:03:48) [MSC v.1944 64 bit (AMD64)]",
+    "numpy": "2.5.1",
+    "pandas": "3.0.5",
+    "torch": "2.13.0+cpu",
+    "torch_threads": 2,
+    "interop_threads": 2,
+    "cuda_available": false,
+    "threadpools": [
+      {
+        "user_api": "blas",
+        "internal_api": "openblas",
+        "num_threads": 2,
+        "prefix": "libscipy_openblas",
+        "filepath": "C:\\Users\\USER\\Desktop\\SimulacraBench\\.venv\\Lib\\site-packages\\numpy.libs\\libscipy_openblas64_-b788215d9d47792bcba3a2e2a7114320.dll",
+        "version": "0.3.33.112.0",
+        "threading_layer": "pthreads",
+        "architecture": "Haswell"
+      },
+      {
+        "user_api": "openmp",
+        "internal_api": "openmp",
+        "num_threads": 2,
+        "prefix": "libiomp",
+        "filepath": "C:\\Users\\USER\\Desktop\\SimulacraBench\\.venv\\Lib\\site-packages\\torch\\lib\\libiomp5md.dll",
+        "version": null
+      },
+      {
+        "user_api": "openmp",
+        "internal_api": "openmp",
+        "num_threads": 1,
+        "prefix": "libiomp",
+        "filepath": "C:\\Users\\USER\\Desktop\\SimulacraBench\\.venv\\Lib\\site-packages\\torch\\lib\\libiompstubs5md.dll",
+        "version": null
+      },
+      {
+        "user_api": "openmp",
+        "internal_api": "openmp",
+        "num_threads": 2,
+        "prefix": "vcomp",
+        "filepath": "C:\\Users\\USER\\Desktop\\SimulacraBench\\.venv\\Lib\\site-packages\\sklearn\\.libs\\vcomp140.dll",
+        "version": null
+      },
+      {
+        "user_api": "blas",
+        "internal_api": "openblas",
+        "num_threads": 2,
+        "prefix": "libscipy_openblas",
+        "filepath": "C:\\Users\\USER\\Desktop\\SimulacraBench\\.venv\\Lib\\site-packages\\scipy.libs\\libscipy_openblas-197ee2fc9b4d071f7e048078cac74115.dll",
+        "version": "0.3.31.dev",
+        "threading_layer": "pthreads",
+        "architecture": "Haswell"
+      }
+    ],
+    "scipy": "1.18.1",
+    "sklearn": "1.9.0",
+    "pyarrow": "25.0.1",
+    "packages": {
+      "numpy": "2.5.1",
+      "pandas": "3.0.5",
+      "scipy": "1.18.1",
+      "torch": "2.13.0+cpu",
+      "pyarrow": "25.0.1",
+      "scikit-learn": "1.9.0",
+      "threadpoolctl": "3.6.0",
+      "PyYAML": "6.0.3"
+    },
+    "executable_sha256": "b70275ad94210fce7548761143be5e177769721045e287bb6c80aac3f928c65b",
+    "base_executable_sha256": "ef8f51028ac5329641985112f8efb1c2d4c47c86b8011ddf7e6fae21e2b4e5a1"
+  },
+  "inputs": {
+    "unicef": {
+      "rows": 16373,
+      "train": 14885,
+      "dev": 1488,
+      "cells": 17856,
+      "role_hash": "95027ea6046d4a127205639d7e55ea3492996e438a0a0bd54cae7b80cd66f716",
+      "masked_frame_hash": "27ab85ce44e94b13f292ecb4d47d1056ecc642b5da35b90b06f079b2f2a5f8fb",
+      "schema_runtime_sha256": "4deb5160563d18a5bd21a3e6df6bcbdcd30973649bfce1f726cc61479f819b17"
+    },
+    "world_bank": {
+      "rows": 5715,
+      "train": 5195,
+      "dev": 520,
+      "cells": 39520,
+      "role_hash": "97a92c36758bb70edb5e000338251de0d2b4e24a8f00c3de96dde6c568f86af4",
+      "masked_frame_hash": "8125f21c0ba62e20301b9bf77d4c34f04631a842278680b1a99a5ba040ec2efb",
+      "schema_runtime_sha256": "7cfa62f854f51306cede481263eb52f1b3af6a222caf22bd122e92441b440c20"
+    },
+    "unhcr": {
+      "rows": 8900,
+      "train": 8279,
+      "dev": 621,
+      "cells": 132273,
+      "role_hash": "a6880aa95c90143a27ca32355a2494ced7fca715b757904ab5c2ebf8e4d87761",
+      "masked_frame_hash": "31ab56525be0431eed185cc82ecd819f8270f1aca64767f10d651ae4f1bbac20",
+      "schema_runtime_sha256": "ef734cec5bcc931bcc9eaa49694310e924f024ff7cf58a047b4c2cb60394c8ae"
+    }
+  },
+  "references": 12,
+  "reference_policy": "allow_pickle=False, numeric flat/offsets only",
+  "staging_hashes": {
+    "docs/analysis/E064-outputs/s2/phase1-masked/unicef/respondents.parquet": "611347fb8efb307e7641e411f959bd976720a257494f7879efa653e558e9fa81",
+    "docs/analysis/E064-outputs/s2/phase1-masked/world_bank/respondents.parquet": "0ef441661b0b0369b758f5dd799d6bd3af66fc9d477c5553b2b58842f9d959bf",
+    "docs/analysis/E064-outputs/s2/phase1-masked/unhcr/respondents.parquet": "8791fc630b75295b3ce536802138577819a7d158c7f34a57ae786a6f0f9ad5cb"
+  },
+  "main_sha256": "59946da286bd0fb567de65a31370ba1ce286cba1c43baa283ec74656eb8e62e6"
+}

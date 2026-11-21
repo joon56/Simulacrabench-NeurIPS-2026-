@@ -1,0 +1,12 @@
+{
+    "recorded_utc":  "2026-10-05T10:05:38.3385111+00:00",
+    "type":  "Artifact integrity review only; no SDK/model/test execution",
+    "json_parsed":  23,
+    "required_links_exist":  true,
+    "scientific_latches_absent":  true,
+    "raw_worker_records_match":  true,
+    "classification":  "REMOTE_PREPARATION_FAIL",
+    "sandbox_terminal":  "UNCONFIRMED",
+    "final_record_check":  "PASS",
+    "remote_queries":  0
+}

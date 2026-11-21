@@ -1,0 +1,46 @@
+REVIEW DRAFT - NOT FINAL TEST SELECTION
+
+ Calibrated survey completion with visible-row evidence
+ REVIEW DRAFT — NOT FINAL TEST SELECTION
+ HSCC / SimulacraBench 2026 | E025 preserved alternative | 23 October 2026
+ 1. Task, evidence and schema handling
+ We predict categorical survey answers from each held-out respondent's GIVEN block for UNICEF Faith &
+ Immunisation, World Bank Skills Assessment and UNHCR ERPIS. Every PREDICT cell is blanked and scored;
+ EXCLUDE items are omitted. One self-contained predictor learns separately per instrument using complete visible
+ respondents, combining hierarchical smoothing, a shared neural network, approximate skip logic and similar-row
+ donor evidence. No fitted state is bundled.
+ E025 is a preserved alternative to provisional E041, not a user-selected final TEST model. Its historical user-reported
+ DEV readings were Grand 0.63, UNICEF 0.52, World Bank 0.49 and UNHCR 0.89. E041's later released API record
+ ID933094 reports 0.6433333333/0.52/0.49/0.92 (Grand displayed as 0.64). These retained readings remain subject to
+ phase-1 Laplace noise and 0.01 rounding. Extra serialized decimals do not establish precise effects. They compare
+ adaptively developed complete pipelines, not independent component trials. No real TEST score exists; E064 is
+ parked awaiting DEV delivery, with no actual hosted result. [6,7]
+ Phase 1 shows TRAIN and scores DEV; phase 2 shows TRAIN+DEV and scores TEST. The pinned kit describes
+ shuffled respondent roles, stratified by country for UNICEF and balanced by survey round/country for UNHCR, with
+ ordinary permutation for World Bank. This is not a chronological or new-country holdout. Same-population split
+ relevance does not guarantee refit gain or repair adaptive DEV selection. [1,6]
+ The official metric averages log probabilities over all scored cells within an instrument, then scales by schema-only
+ uniform surprisal U. Grand is the equally weighted mean of the three instrument skills. K includes the sentinel for
+ gated items. Confident errors are costly.
+
+ p'_k = 0.001 + (1 - K*0.001) * p_k / sum_j(p_j)
+ skill = 1 + mean_cells(log p'_[true answer]) / U
+ U = mean_scored_items(log K_i)
+ Vectors follow schema item/option order, adding NA_GATED as the last option for gated items. NaN means predict;
+ refusal and other non-response categories remain ordinary answers. Decoding passes parents' final beliefs, including
+ donor evidence, to descendants. A visible parent gives a one-hot belief. For gated item  i, r_i is parent mass on
+ observed-if values.
+
+ hard_i = [r_i * asked_conditional_i, 1 - r_i]
+ base_i = a_i(x) * hard_i + (1 - a_i(x)) * full_i
+ Asked-conditional heads train on asked rows; unrestricted full heads include the sentinel. UNHCR gate agreement is
+ approximate (median 0.83, range 0.29-0.98), so hard coupling can be wrong even with a known parent. Scalar
+ agreement (k_i+20*m)/(n_i+20) shrinks toward median observed agreement m, not one. For each child, an internal
+ 20% split can select one GIVEN column of cardinality at most 12; its value-specific rates shrink toward the scalar.
+ Without improvement the scalar remains. [1,6]
+
+
+
+
+
+HSCC 2026 | E025 | REVIEW DRAFT | 23 October 2026                                                                1 / 4

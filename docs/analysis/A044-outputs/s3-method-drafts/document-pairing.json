@@ -1,0 +1,82 @@
+{
+    "task":  "S3-METHOD-DRAFTS-A044",
+    "recorded_at":  "2026-10-23T17:43:54.3548588+09:00",
+    "head":  "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+    "scope":  "local review document pairing only; no TEST freeze or upload",
+    "pairs":  [
+                  {
+                      "candidate":  "E041",
+                      "status":  "provisional reference; user final selection open",
+                      "main":  {
+                                   "path":  "submissions/2026-09-25-E041/main.py",
+                                   "sha256":  "22c911806ea91234ae350341adfb9c0df2ce4be41cc88e73be304e4bb1023073",
+                                   "identity_source":  "current static source bytes, also matches preservation entry"
+                               },
+                      "archive":  {
+                                      "path":  "submissions/2026-09-25-E041.zip",
+                                      "bytes":  14314,
+                                      "sha256":  "bd5d2b7df3c39338f68cb08f125f85695073f37c9f4be3f6adcb8961941cd132",
+                                      "identity_source":  "inherited completed phase2-validity / E025 provenance records",
+                                      "opened_in_this_task":  false,
+                                      "rehashed_in_this_task":  false,
+                                      "remote_identity_verified":  false
+                                  },
+                      "documents":  [
+                                        {
+                                            "path":  "docs/analysis/A044-outputs/s3-method-drafts/E041-review.md",
+                                            "absolute_path":  "C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A044-outputs\\s3-method-drafts\\E041-review.md",
+                                            "bytes":  14636,
+                                            "sha256":  "208182a7409ac8544e3e734c641d87bb92b79bbce656e8943fe19661857de104",
+                                            "identity_source":  "current document-task bytes"
+                                        },
+                                        {
+                                            "path":  "docs/analysis/A044-outputs/s3-method-drafts/E041-review.pdf",
+                                            "absolute_path":  "C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A044-outputs\\s3-method-drafts\\E041-review.pdf",
+                                            "bytes":  17391,
+                                            "sha256":  "27ea6a6fd554e2b5035f96506876a748ab4c7a5b7c949e9f385912d1bed4cef2",
+                                            "identity_source":  "current document-task bytes"
+                                        }
+                                    ],
+                      "pages":  4,
+                      "render_attempts":  1,
+                      "final_delivery_approved":  false
+                  },
+                  {
+                      "candidate":  "E025",
+                      "status":  "preserved alternative; user final selection open",
+                      "main":  {
+                                   "path":  "submissions/2026-09-25-E025/main.py",
+                                   "sha256":  "00793cf9d720d6f7511ffd738935206b3a5401f2454255409429db8d55e991b9",
+                                   "identity_source":  "current static source bytes, also matches preservation entry"
+                               },
+                      "archive":  {
+                                      "path":  "submissions/2026-09-25-E025.zip",
+                                      "bytes":  11240,
+                                      "sha256":  "142921c3ea843c653821cf06a8b3fab89e8e6c96592581590f7e970064d90c6f",
+                                      "identity_source":  "inherited completed phase2-validity / E025 provenance records",
+                                      "opened_in_this_task":  false,
+                                      "rehashed_in_this_task":  false,
+                                      "remote_identity_verified":  false
+                                  },
+                      "documents":  [
+                                        {
+                                            "path":  "docs/analysis/A044-outputs/s3-method-drafts/E025-review.md",
+                                            "absolute_path":  "C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A044-outputs\\s3-method-drafts\\E025-review.md",
+                                            "bytes":  14701,
+                                            "sha256":  "c0f921941067f467810cc2e7d6dc22f33f82207e7c41b3a5423daee3e75ccecf",
+                                            "identity_source":  "current document-task bytes"
+                                        },
+                                        {
+                                            "path":  "docs/analysis/A044-outputs/s3-method-drafts/E025-review.pdf",
+                                            "absolute_path":  "C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A044-outputs\\s3-method-drafts\\E025-review.pdf",
+                                            "bytes":  17547,
+                                            "sha256":  "e44e87b2abb0eceb6d35cfdd15964b73b5098cb241998a91d828b5f63d3f9ef3",
+                                            "identity_source":  "current document-task bytes"
+                                        }
+                                    ],
+                      "pages":  4,
+                      "render_attempts":  1,
+                      "final_delivery_approved":  false
+                  }
+              ]
+}

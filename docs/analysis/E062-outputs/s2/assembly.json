@@ -1,0 +1,143 @@
+{
+  "status": "PASS",
+  "instruments": {
+    "unicef": {
+      "vectors": 17856,
+      "max_raw_sum_error": 1.9348226487636566e-07,
+      "comparisons": {
+        "candidate": {
+          "max_abs": 0.0,
+          "changed_vectors": 0
+        },
+        "E041": {
+          "max_abs": 0.0,
+          "changed_vectors": 0
+        },
+        "E025": {
+          "max_abs": 0.0,
+          "changed_vectors": 0
+        }
+      },
+      "flat_sha256": "07bcb9f2d2d0c59339707ee761d6ca129093ba52b59b6c1c9a13ffef98f1e533",
+      "status": "PASS",
+      "skill": 0.5006484230707156,
+      "delta_E025": 0.0,
+      "delta_E041": 0.0,
+      "release_pass": true,
+      "prediction_and_check_seconds": 43.3067362999991
+    },
+    "world_bank": {
+      "vectors": 39520,
+      "max_raw_sum_error": 2.7508940547704697e-07,
+      "comparisons": {
+        "candidate": {
+          "max_abs": 0.0,
+          "changed_vectors": 0
+        },
+        "E041": {
+          "max_abs": 0.16004160046577454,
+          "changed_vectors": 35613
+        },
+        "E025": {
+          "max_abs": 0.16004160046577454,
+          "changed_vectors": 35613
+        }
+      },
+      "flat_sha256": "f73d34739bb66c0256ec6533260979ce502d3807969d4dbc006c2c3d23e166a2",
+      "status": "PASS",
+      "skill": 0.4549896845143664,
+      "delta_E025": 0.0002723771513838402,
+      "delta_E041": 0.0002723771513838402,
+      "release_pass": true,
+      "prediction_and_check_seconds": 133.91978589999962
+    },
+    "unhcr": {
+      "vectors": 132273,
+      "max_raw_sum_error": 2.2838357827126288e-07,
+      "comparisons": {
+        "candidate": {
+          "max_abs": 0.0,
+          "changed_vectors": 0
+        },
+        "E041": {
+          "max_abs": 0.0,
+          "changed_vectors": 0
+        },
+        "E025": {
+          "max_abs": 0.3597398473795115,
+          "changed_vectors": 49219
+        }
+      },
+      "flat_sha256": "d5e0102759c983d42355f57592dbb7560253685a40cc854f600b98e46306f02b",
+      "status": "PASS",
+      "skill": 0.5624627288576414,
+      "delta_E025": -0.0004861448473750807,
+      "delta_E041": 0.0,
+      "release_pass": true,
+      "prediction_and_check_seconds": 296.48147620000054
+    }
+  },
+  "environment": {
+    "python": "3.13.14 (tags/v3.13.14:fd17997, Jun 10 2026, 13:03:48) [MSC v.1944 64 bit (AMD64)]",
+    "numpy": "2.5.1",
+    "pandas": "3.0.5",
+    "torch": "2.13.0+cpu",
+    "torch_threads": 2,
+    "interop_threads": 2,
+    "cuda_available": false,
+    "threadpools": [
+      {
+        "user_api": "blas",
+        "internal_api": "openblas",
+        "num_threads": 2,
+        "prefix": "libscipy_openblas",
+        "filepath": "C:\\Users\\USER\\Desktop\\SimulacraBench\\.venv\\Lib\\site-packages\\numpy.libs\\libscipy_openblas64_-b788215d9d47792bcba3a2e2a7114320.dll",
+        "version": "0.3.33.112.0",
+        "threading_layer": "pthreads",
+        "architecture": "Haswell"
+      },
+      {
+        "user_api": "openmp",
+        "internal_api": "openmp",
+        "num_threads": 2,
+        "prefix": "libiomp",
+        "filepath": "C:\\Users\\USER\\Desktop\\SimulacraBench\\.venv\\Lib\\site-packages\\torch\\lib\\libiomp5md.dll",
+        "version": null
+      },
+      {
+        "user_api": "openmp",
+        "internal_api": "openmp",
+        "num_threads": 1,
+        "prefix": "libiomp",
+        "filepath": "C:\\Users\\USER\\Desktop\\SimulacraBench\\.venv\\Lib\\site-packages\\torch\\lib\\libiompstubs5md.dll",
+        "version": null
+      },
+      {
+        "user_api": "openmp",
+        "internal_api": "openmp",
+        "num_threads": 2,
+        "prefix": "vcomp",
+        "filepath": "C:\\Users\\USER\\Desktop\\SimulacraBench\\.venv\\Lib\\site-packages\\sklearn\\.libs\\vcomp140.dll",
+        "version": null
+      },
+      {
+        "user_api": "blas",
+        "internal_api": "openblas",
+        "num_threads": 2,
+        "prefix": "libscipy_openblas",
+        "filepath": "C:\\Users\\USER\\Desktop\\SimulacraBench\\.venv\\Lib\\site-packages\\scipy.libs\\libscipy_openblas-197ee2fc9b4d071f7e048078cac74115.dll",
+        "version": "0.3.31.dev",
+        "threading_layer": "pthreads",
+        "architecture": "Haswell"
+      }
+    ],
+    "scipy": "1.18.1",
+    "sklearn": "1.9.0",
+    "pyarrow": "25.0.1"
+  },
+  "cumulative_calls": {
+    "full_stack": 3,
+    "neural": 9,
+    "metric": 8
+  }
+}

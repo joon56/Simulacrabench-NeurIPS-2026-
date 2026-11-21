@@ -1,0 +1,375 @@
+{
+  "role": "S0",
+  "task_type": "Technical-result document review and bounded handoff",
+  "date_kst": "2026-10-02",
+  "decision": "CONDITIONAL_CONTINUATION_RECOMMENDED",
+  "execution_state": "BLOCKED_RESOURCE until existing gate passes in separately directed S1",
+  "head": "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+  "workflow_revision": "2026-09-27-r4",
+  "workflow_sha256": "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642",
+  "read_receipt": {
+    "ordered": [
+      "AGENTS.md",
+      "CLAUDE.md",
+      "docs/status.md",
+      "docs/log.md newest three entries",
+      "docs/workflow.md",
+      "docs/analysis/A040-outputs/full-path-local-retry1/ artifacts"
+    ],
+    "newest_log_entries_at_entry": [
+      "2026-10-02 - A040 schema repair passes entry; resource preflight blocks full path",
+      "2026-10-02 - A040 S0 resolves runtime-schema contract from official local source",
+      "2026-10-02 - A040 full-path input preparation fails before scientific execution"
+    ],
+    "read_evidence": [
+      "c7fe10 AGENTS/CLAUDE/status",
+      "1ebb81 newest3/workflow/HEAD/dirty/jobs",
+      "84ec6b closeout/official-contract/verification; Korean handoff reread explicitly UTF8 at a092cf",
+      "0529c5 resources/frozen manifest fields/prior S1 scope/workflow remainder",
+      "a092cf watchdog/runner/exposure/freeze identity/UTF8 handoff",
+      "98ed01 invocation wiring/registration/dirty/workflow hash",
+      "1d4c35 final HEAD/named jobs/link check"
+    ],
+    "scope": "Existing allowed documents/source/metadata hashes, new S0 decision/handoff/verification, additive status/log only"
+  },
+  "original_manifest_selected_comparisons": [
+    {
+      "path": "docs/analysis/A040-outputs/full-path-local-retry1/registration.md",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/full-path-local-retry1/runner.py",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/full-path-local-retry1/watchdog.py",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/full-path-local-retry1/adapter.py",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/full-path-local-retry1/orchestration.py",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/full-path-local-retry1/observer.py",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/full-path-local-retry1/schema_entry.py",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/full-path-local-retry1/telemetry.py",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/full-path-local-retry1/generate_fixture.py",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/full-path-local-retry1/test_schema_entry.py",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/full-path-local-retry1/tests_model_free.py",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/full-path-local-retry1/requirements.lock.txt",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/full-path-local-retry1/dependency-identity.json",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/full-path-local-retry1/fixture-manifest.json",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/full-path-local-retry1/model-free-result.json",
+      "match": true
+    },
+    {
+      "path": "submissions/2026-09-19-E041/main.py",
+      "match": true
+    }
+  ],
+  "original_manifest_total_reported": 182,
+  "all_182_independently_reverified": false,
+  "s1_reported_preservation307_and_dependencies34_rerun": false,
+  "before_after": [
+    {
+      "path": "docs/analysis/A040-outputs/full-path-local-retry1/closeout.md",
+      "before_sha256": "28684376f68b2863b5c07efede90510124c774238980487894a80eaa112d4193",
+      "after_sha256": "28684376f68b2863b5c07efede90510124c774238980487894a80eaa112d4193",
+      "unchanged": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/full-path-local-retry1/verification.json",
+      "before_sha256": "50df2ebaa1e2661ae684fd198edda08a96a2fc6fb672f882b8c15cf606f1f887",
+      "after_sha256": "50df2ebaa1e2661ae684fd198edda08a96a2fc6fb672f882b8c15cf606f1f887",
+      "unchanged": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/full-path-local-retry1/resources.json",
+      "before_sha256": "14e3960915ea2d3d098643d090371749758beb595341b819a4e2b7d605fc9eb3",
+      "after_sha256": "14e3960915ea2d3d098643d090371749758beb595341b819a4e2b7d605fc9eb3",
+      "unchanged": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/full-path-local-retry1/official-contract.md",
+      "before_sha256": "4fc54f14e4c588257f9dd4b82ea0f164671e696bbc66a10ac5603ad52df4cb65",
+      "after_sha256": "4fc54f14e4c588257f9dd4b82ea0f164671e696bbc66a10ac5603ad52df4cb65",
+      "unchanged": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/full-path-local-retry1/frozen-inputs/manifest.json",
+      "before_sha256": "18f207699c53d47a9f6e5cbbdc82ec976d0803ba2353cd34642a634eeff80b2d",
+      "after_sha256": "18f207699c53d47a9f6e5cbbdc82ec976d0803ba2353cd34642a634eeff80b2d",
+      "unchanged": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/full-path-local-retry1/reference/resources.json",
+      "before_sha256": "36b65ebb9653d512b53a1bc259c8d05c67dede56429d8ba883252ebcc3220219",
+      "after_sha256": "36b65ebb9653d512b53a1bc259c8d05c67dede56429d8ba883252ebcc3220219",
+      "unchanged": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/full-path-local-retry1/s0-handoff.ko.md",
+      "before_sha256": "eb90dc8cd9bcab43efa56ef9e1b6db54accead9bc8ae38b67c6050394cdc520c",
+      "after_sha256": "eb90dc8cd9bcab43efa56ef9e1b6db54accead9bc8ae38b67c6050394cdc520c",
+      "unchanged": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/full-path-local-retry1/registration.md",
+      "before_sha256": "127c2755f9477b2825badbe3287576128acfb038a1e59ca1d0e57b118efbb00d",
+      "after_sha256": "127c2755f9477b2825badbe3287576128acfb038a1e59ca1d0e57b118efbb00d",
+      "unchanged": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/full-path-local-retry1/exposure-ledger.md",
+      "before_sha256": "cbdc75fab0c17a622fdc4de39f8d69861bc63e0437490994398cb2542b947eb8",
+      "after_sha256": "cbdc75fab0c17a622fdc4de39f8d69861bc63e0437490994398cb2542b947eb8",
+      "unchanged": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/full-path-local-retry1/runner.py",
+      "before_sha256": "2cc7de72fb425f2ee8c8b08b395da52b3abba197e7336364ecef3102d85ad87e",
+      "after_sha256": "2cc7de72fb425f2ee8c8b08b395da52b3abba197e7336364ecef3102d85ad87e",
+      "unchanged": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/full-path-local-retry1/watchdog.py",
+      "before_sha256": "fcf209bde92ebfe0884236da57950763273bc36a461d25ddb29fc18c34d40b77",
+      "after_sha256": "fcf209bde92ebfe0884236da57950763273bc36a461d25ddb29fc18c34d40b77",
+      "unchanged": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/full-path-local-retry1/adapter.py",
+      "before_sha256": "411cd174e155038ebeecb130f1e4bafbb44580f9e0cc0898eaac96316af07612",
+      "after_sha256": "411cd174e155038ebeecb130f1e4bafbb44580f9e0cc0898eaac96316af07612",
+      "unchanged": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/full-path-local-retry1/orchestration.py",
+      "before_sha256": "fceda9e378734ddf86b603c7ad13b21df1f38fea8a3bd277bbd5f2731ce22b1b",
+      "after_sha256": "fceda9e378734ddf86b603c7ad13b21df1f38fea8a3bd277bbd5f2731ce22b1b",
+      "unchanged": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/full-path-local-retry1/observer.py",
+      "before_sha256": "f695447678ba05701034f9908eefe0f551ef8f6c9642a0a9bb6f473b02f196e0",
+      "after_sha256": "f695447678ba05701034f9908eefe0f551ef8f6c9642a0a9bb6f473b02f196e0",
+      "unchanged": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/full-path-local-retry1/schema_entry.py",
+      "before_sha256": "ba586843be8e703035a237926efe973c48b889c6cc200af4d74673e0b8d0535f",
+      "after_sha256": "ba586843be8e703035a237926efe973c48b889c6cc200af4d74673e0b8d0535f",
+      "unchanged": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/full-path-local-retry1/telemetry.py",
+      "before_sha256": "fee9e48d2359e32c7f1c9d9fe537435e2e18c1b56b1d17ff44972a40b9a147f4",
+      "after_sha256": "fee9e48d2359e32c7f1c9d9fe537435e2e18c1b56b1d17ff44972a40b9a147f4",
+      "unchanged": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/full-path-local-retry1/generate_fixture.py",
+      "before_sha256": "8960ae72e4aa1fc5970db96a386787be77a55625e22c6558fe94c4988ea90852",
+      "after_sha256": "8960ae72e4aa1fc5970db96a386787be77a55625e22c6558fe94c4988ea90852",
+      "unchanged": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/full-path-local-retry1/test_schema_entry.py",
+      "before_sha256": "55dd37f0cd05b57ecdfd31cf2b26fa95a76936078e18ef6da3df507fa0411119",
+      "after_sha256": "55dd37f0cd05b57ecdfd31cf2b26fa95a76936078e18ef6da3df507fa0411119",
+      "unchanged": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/full-path-local-retry1/tests_model_free.py",
+      "before_sha256": "301197686f461031ca9f5394885c6a4b16009cdd4e4db3b3f74186e8be207194",
+      "after_sha256": "301197686f461031ca9f5394885c6a4b16009cdd4e4db3b3f74186e8be207194",
+      "unchanged": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/full-path-local-retry1/requirements.lock.txt",
+      "before_sha256": "6c6f0d0fc5db943eb1cb95ff4610ddea5df724bc50031b883a0dd67656771b70",
+      "after_sha256": "6c6f0d0fc5db943eb1cb95ff4610ddea5df724bc50031b883a0dd67656771b70",
+      "unchanged": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/full-path-local-retry1/dependency-identity.json",
+      "before_sha256": "18a42b3792f8d7acead356caf4fe6fab2a1fc4c526ba60970459fad8442f2c34",
+      "after_sha256": "18a42b3792f8d7acead356caf4fe6fab2a1fc4c526ba60970459fad8442f2c34",
+      "unchanged": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/full-path-local-retry1/fixture-manifest.json",
+      "before_sha256": "43c8d6594b9667b7a09fad1d2349aadce082ee15ce7c35a1739a6a10e2f1ae98",
+      "after_sha256": "43c8d6594b9667b7a09fad1d2349aadce082ee15ce7c35a1739a6a10e2f1ae98",
+      "unchanged": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/full-path-local-retry1/schema-manifest.json",
+      "before_sha256": "4ff990054934115609181b65f3a55ec9d36304b172faa88adac8ad3906a9f8f4",
+      "after_sha256": "4ff990054934115609181b65f3a55ec9d36304b172faa88adac8ad3906a9f8f4",
+      "unchanged": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/full-path-local-retry1/model-free-result.json",
+      "before_sha256": "c3d9c7b4a807b28ce7b7165d3ca48dcf28634560635923e8f92df0458b8626c4",
+      "after_sha256": "c3d9c7b4a807b28ce7b7165d3ca48dcf28634560635923e8f92df0458b8626c4",
+      "unchanged": true
+    },
+    {
+      "path": "AGENTS.md",
+      "before_sha256": "86394bbf164a2b7df6a309f4564b9dacf3b2799fa0227a703e4ea11d4d842596",
+      "after_sha256": "86394bbf164a2b7df6a309f4564b9dacf3b2799fa0227a703e4ea11d4d842596",
+      "unchanged": true
+    },
+    {
+      "path": "CLAUDE.md",
+      "before_sha256": "69175e6d741a17042db4852d4961a5c52bd97fe2cd5bfbff762d30d7e5270364",
+      "after_sha256": "69175e6d741a17042db4852d4961a5c52bd97fe2cd5bfbff762d30d7e5270364",
+      "unchanged": true
+    },
+    {
+      "path": "docs/status.md",
+      "before_sha256": "6cd4decfcf9de0e098d0cd52d3dd8c9f8612902590a2e8b245bc04f071744cbf",
+      "after_sha256": "0a0c3727ab8244744a6898a0b7cf65cc02e48095e4ea3a1624c0e5d22e6a5e3b",
+      "unchanged": false
+    },
+    {
+      "path": "docs/log.md",
+      "before_sha256": "bdbe7a0b965f023d79a25179cfb75111ac10c375f6bf8de9afc7f1b469e17833",
+      "after_sha256": "9ed8fa0d9c416fa91ede938ce31e13541af14af139de190d5b598189b3bb1f74",
+      "unchanged": false
+    },
+    {
+      "path": "docs/workflow.md",
+      "before_sha256": "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642",
+      "after_sha256": "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642",
+      "unchanged": true
+    },
+    {
+      "path": "docs/tree.md",
+      "before_sha256": "eaa884a4194db103335136495205fe5b51297c17db15e9eac62946ced286cc44",
+      "after_sha256": "eaa884a4194db103335136495205fe5b51297c17db15e9eac62946ced286cc44",
+      "unchanged": true
+    },
+    {
+      "path": "submissions/2026-09-19-E041/main.py",
+      "before_sha256": "22c911806ea91234ae350341adfb9c0df2ce4be41cc88e73be304e4bb1023073",
+      "after_sha256": "22c911806ea91234ae350341adfb9c0df2ce4be41cc88e73be304e4bb1023073",
+      "unchanged": true
+    }
+  ],
+  "shared_record_preservation": [
+    {
+      "path": "docs/status.md",
+      "prior_body_reconstructed_matches_original_hash": true
+    },
+    {
+      "path": "docs/log.md",
+      "prior_body_reconstructed_matches_original_hash": true
+    }
+  ],
+  "new_document_hashes": [
+    {
+      "path": "docs/analysis/A040-outputs/s0-resource-review/decision.md",
+      "sha256": "3b9467fff29d1315ef11f22bca53e261cd0429a86b4d9027e524ba90893d5629"
+    },
+    {
+      "path": "docs/analysis/A040-outputs/s0-resource-review/s1-resource-continuation.ko.md",
+      "sha256": "8de2bf184c75f64bf15aafcbcf0cc60051e81a53026bbd7c04bf8cb9d8469724"
+    }
+  ],
+  "end_check": {
+    "head": "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+    "jobs": [],
+    "links": [
+      {
+        "from": "docs/analysis/A040-outputs/s0-resource-review/decision.md",
+        "target": "docs\\analysis\\A040-outputs\\s0-resource-review\\s1-resource-continuation.ko.md",
+        "exists": true
+      }
+    ],
+    "new_execution_doc_path_exists": false,
+    "new_execution_tmp_path_exists": false
+  },
+  "s0_execution": {
+    "model_import": 0,
+    "generator": 0,
+    "tests_or_fixtures": 0,
+    "fit": 0,
+    "predict": 0,
+    "score": 0,
+    "scientific_children": 0,
+    "checkpoint_or_fake_response_read_hash": 0,
+    "protected_response_key_cache_access": 0,
+    "host_resource_availability_measurements": 0,
+    "unrelated_process_termination": 0,
+    "system_changes": 0,
+    "web_install_acquisition": 0,
+    "subagents": 0,
+    "zip_upload": 0,
+    "commit_push": 0,
+    "s2_s3": 0
+  },
+  "preserved": {
+    "incumbent": "E041",
+    "fallback": "E025",
+    "parked": [
+      "E057",
+      "E060",
+      "E061"
+    ],
+    "all_prior_stop_holds": true,
+    "real_exposure_people": 17999,
+    "real_exposure_ssuid": 12339,
+    "a022_original_roles": true,
+    "e059_consumed_oracle": "1918/1124",
+    "e059_consumed_selection": "2007/1130",
+    "protected_audit": "2074/1177",
+    "protected_calibration": 1866,
+    "a039_hold": true,
+    "a_half_promoted": false,
+    "a018_user_confirmed": false,
+    "s3": "stopped",
+    "s2_candidate": false
+  },
+  "limitations": [
+    "Historical resource snapshot only; current capacity unknown.",
+    "Sixteen selected permitted source/document identities verified, not complete182 input freeze.",
+    "Named process list is not exhaustive host-job attestation.",
+    "Schema PASS accepted without rerun; full-path/runtime/parity/refit remain unverified.",
+    "Handoff drafting does not authorize execution in S0 or release/TEST."
+  ],
+  "verification_kind": "Document/hash/preservation checks only; no research or release validation",
+  "self_hash_included": false
+}

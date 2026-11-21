@@ -1,0 +1,30 @@
+{
+    "status":  "PASS_DOCUMENT_PRESERVATION",
+    "checked_at_utc":  "2026-09-27T08:35:56.2058629Z",
+    "head":  "1d223340d4e1fa3993b411dc5daafab9cb37d0cd",
+    "entry_hashes_preserved":  55,
+    "intentional_existing_updates":  [
+                                         "docs/log.md",
+                                         "docs/status.md"
+                                     ],
+    "artifacts":  {
+                      "docs/analysis/A026-post-e060-strategy-review.md":  "2657e93a6766a2932fe72581998b81b5d7c116cae8aa6b71dc318931b9f96ccd",
+                      "docs/analysis/A026-outputs/entry.json":  "15ac5a2429bedc769e594dd63311f1bd1c064b14aec264c653a33c419f4b9673",
+                      "docs/status.md":  "b84ae06725465d8ed9c770bac916cd4cc48082658ebc06204a61ad89457e084a",
+                      "docs/log.md":  "482f076bf3cd8026e0aeeb4981855d20830645816c78e9d721f147bea508f510"
+                  },
+    "local_links_checked":  11,
+    "jobs":  [
+
+             ],
+    "decision":  "NO_NEW_S1_EXECUTION_HANDOFF",
+    "model_tests_rerun":  false,
+    "scientific_execution":  false,
+    "protected_data_cache_access":  false,
+    "zip_access":  false,
+    "tree_modified":  false,
+    "commit_push":  false,
+    "network":  false,
+    "test_selected":  false,
+    "scope":  "Only document/preservation checks; historical model PASS not rerun"
+}

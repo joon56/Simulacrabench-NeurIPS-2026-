@@ -1,0 +1,136 @@
+﻿{
+    "date":  "2026-10-01T00:24:45.7757796+09:00",
+    "scope":  "S0 follow-up document consistency only",
+    "head":  "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+    "head_unchanged":  true,
+    "baseline_checks":  [
+                            {
+                                "path":  "AGENTS.md",
+                                "before":  "86394bbf164a2b7df6a309f4564b9dacf3b2799fa0227a703e4ea11d4d842596",
+                                "after":  "86394bbf164a2b7df6a309f4564b9dacf3b2799fa0227a703e4ea11d4d842596",
+                                "unchanged":  true,
+                                "allowed_change":  false
+                            },
+                            {
+                                "path":  "CLAUDE.md",
+                                "before":  "69175e6d741a17042db4852d4961a5c52bd97fe2cd5bfbff762d30d7e5270364",
+                                "after":  "69175e6d741a17042db4852d4961a5c52bd97fe2cd5bfbff762d30d7e5270364",
+                                "unchanged":  true,
+                                "allowed_change":  false
+                            },
+                            {
+                                "path":  "docs/workflow.md",
+                                "before":  "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642",
+                                "after":  "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642",
+                                "unchanged":  true,
+                                "allowed_change":  false
+                            },
+                            {
+                                "path":  "docs/session-prompts.ko.md",
+                                "before":  "c68eba8618c6a49caf1b590181ede5d5c03800d4c2305ea0e5efe3cc266e5615",
+                                "after":  "c68eba8618c6a49caf1b590181ede5d5c03800d4c2305ea0e5efe3cc266e5615",
+                                "unchanged":  true,
+                                "allowed_change":  false
+                            },
+                            {
+                                "path":  "docs/status.md",
+                                "before":  "ca4506dc6b24680f14cc2308b45df811aac7c75b50facf0a8e44a7444bc08730",
+                                "after":  "d73694c8e635983ef661c9bca046ddbf4da9a5283b01ec75e41e6d0cbfd5c70a",
+                                "unchanged":  false,
+                                "allowed_change":  true
+                            },
+                            {
+                                "path":  "docs/log.md",
+                                "before":  "44938d560ba6075bf4749aa00e6e2653c8479e43210a7d375fcf13f1fc0dae94",
+                                "after":  "3fc78d5e9fbbb9a4cb12c36278e2d7bda8caaa9007f0141580e5e7531b14f819",
+                                "unchanged":  false,
+                                "allowed_change":  true
+                            },
+                            {
+                                "path":  "docs/tree.md",
+                                "before":  "eaa884a4194db103335136495205fe5b51297c17db15e9eac62946ced286cc44",
+                                "after":  "eaa884a4194db103335136495205fe5b51297c17db15e9eac62946ced286cc44",
+                                "unchanged":  true,
+                                "allowed_change":  false
+                            },
+                            {
+                                "path":  ".gitignore",
+                                "before":  "f67ba089f7490b4ba0845848f0b13b55633b5efd058a0be7d64203a1e480c6fd",
+                                "after":  "f67ba089f7490b4ba0845848f0b13b55633b5efd058a0be7d64203a1e480c6fd",
+                                "unchanged":  true,
+                                "allowed_change":  false
+                            },
+                            {
+                                "path":  "docs/analysis/A038-vaf-local-document-intake.md",
+                                "before":  "6aaac47c03e420fffed87fe8f5a942c29e82714c88e968702ec3eb1402eaad0e",
+                                "after":  "6aaac47c03e420fffed87fe8f5a942c29e82714c88e968702ec3eb1402eaad0e",
+                                "unchanged":  true,
+                                "allowed_change":  false
+                            },
+                            {
+                                "path":  "docs/analysis/A038-outputs/entry.json",
+                                "before":  "88d66110cc9ecb887b6eb984b4f1d53a1b50e38e043889b6a7433dbdc8103686",
+                                "after":  "88d66110cc9ecb887b6eb984b4f1d53a1b50e38e043889b6a7433dbdc8103686",
+                                "unchanged":  true,
+                                "allowed_change":  false
+                            },
+                            {
+                                "path":  "docs/analysis/A038-outputs/verification.json",
+                                "before":  "62a2f07b44a079c8b1832ce5f1f0e786f3b5043979497ea5c334aad8b6ba2f18",
+                                "after":  "62a2f07b44a079c8b1832ce5f1f0e786f3b5043979497ea5c334aad8b6ba2f18",
+                                "unchanged":  true,
+                                "allowed_change":  false
+                            },
+                            {
+                                "path":  "docs/analysis/A038-outputs/document-comparison.json",
+                                "before":  "44f44bb5f82e85db91e08a22303ca7522e0dba0852b5cb85d346494063bc244f",
+                                "after":  "44f44bb5f82e85db91e08a22303ca7522e0dba0852b5cb85d346494063bc244f",
+                                "unchanged":  true,
+                                "allowed_change":  false
+                            },
+                            {
+                                "path":  "docs/analysis/A038-outputs/inventory.json",
+                                "before":  "b5ee9712dbfe36178cdae88cc5904cd784e6c5e3a7c73f4a8eda581b8a19d029",
+                                "after":  "b5ee9712dbfe36178cdae88cc5904cd784e6c5e3a7c73f4a8eda581b8a19d029",
+                                "unchanged":  true,
+                                "allowed_change":  false
+                            },
+                            {
+                                "path":  "docs/analysis/A032-outputs/custodian-request.en.md",
+                                "before":  "68128d4cf50abafbfdd44fc9f7a0c02454851bb1a30a9df8fc048d7cf2ef5944",
+                                "after":  "68128d4cf50abafbfdd44fc9f7a0c02454851bb1a30a9df8fc048d7cf2ef5944",
+                                "unchanged":  true,
+                                "allowed_change":  false
+                            }
+                        ],
+    "status_only_expected_date_and_followup_changes":  true,
+    "log_only_new_followup_entry":  true,
+    "text_comparison":  "Normalized line endings/BOM; not byte-prefix claim",
+    "artifacts":  [
+                      {
+                          "path":  "docs/analysis/A038-outputs/custodian-followup.en.md",
+                          "sha256":  "4f8e7066e25022514459cb4b9290aa541cf53b23982b11f36a35a7a97ac4d020"
+                      },
+                      {
+                          "path":  "docs/analysis/A038-outputs/next-actions.ko.md",
+                          "sha256":  "e33f69b0b46a253c80342f01245acacfe87cebebdb45de4dd252e7f4715ed59c"
+                      },
+                      {
+                          "path":  "docs/analysis/A038-outputs/followup-entry.json",
+                          "sha256":  "bedfd9d5a72f1bc680949bdde3a8b2ba5df532eccb949bc439272abdc34f2cc5"
+                      }
+                  ],
+    "inventory_path_size_changes":  0,
+    "response_key_cache_access_or_rehash":  0,
+    "scientific_tests_fit_predict_score":  0,
+    "web_download_email_agent_zip_commit_push":  0,
+    "user_exposure":  "User reported download/unzip only; prior public aggregates and metadata exposure retained",
+    "pending":  "Release-specific linkage/crosswalk and missing/edit documentation; detailed downstream terms unverified",
+    "read_evidence":  [
+                          "e829f0",
+                          "4e01b7",
+                          "f99619",
+                          "f3543b"
+                      ],
+    "no_new_analysis_id":  true
+}

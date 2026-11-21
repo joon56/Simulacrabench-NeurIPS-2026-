@@ -25,8 +25,13 @@
 **진행 방식: 세션당 논문 1편, `/paper-session` 스킬로.** 새 세션에서
 "/paper-session 3.2" 또는 "Guo 2017 시작"이라고 하면: ① 읽을/스킵할 논문 내부
 섹션 지도 + 자가확인 질문 3개 제시 → ② 읽는 동안 질문 응답 → ③ 티어별 산출물
-공동 제작 → ④ 이 문서에 ✅+3줄 요약 기록, `study:` 커밋. 완료 항목은 첫 줄에
+공동 제작 → ④ 이 문서에 ✅+3줄 요약 기록. 완료 항목은 첫 줄에
 `✅ (날짜)` 표시.
+
+Codex에서는 `$paper-session 3.2` 또는 같은 자연어 요청을 사용한다.
+진입 스킬은 `.agents/skills/paper-session/SKILL.md`, 공유 본문은
+`.claude/skills/paper-session/SKILL.md`다. 구현·검증은 현재 허용된 범위에서만
+수행하며, `study:` commit/push는 사용자 허가가 있을 때만 한다.
 
 ---
 

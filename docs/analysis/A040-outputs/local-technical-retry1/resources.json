@@ -1,0 +1,92 @@
+{
+  "decision": "LOCAL_CONTRACT_PASS",
+  "current": {
+    "scientific_processes": 1,
+    "child_elapsed_seconds": 39.42617599999994,
+    "parent_elapsed_seconds": 40.831311599999935,
+    "model_free_seconds": 0.042492399999900954,
+    "counts": {
+      "fits": 216,
+      "predicts": 217,
+      "loads": 2
+    },
+    "timings": {
+      "fit_seconds": 5.192174999995586,
+      "predict_seconds": 28.034364900000583,
+      "load_seconds": 0.11799189999965165
+    },
+    "watchdog": {
+      "outcome": "LOCAL_CONTRACT_PASS",
+      "reason": null,
+      "child_exit": 0,
+      "elapsed_seconds": 40.831311599999935,
+      "sample_period_seconds": 1,
+      "samples": 40,
+      "rss_peak_sampled": 1576665088,
+      "commitment_peak_sampled": 2573598720,
+      "includes_watchdog": true,
+      "available_before": {
+        "physical": 21184589824,
+        "commitment": 20975104000
+      },
+      "host_cap": 16000000000,
+      "gpu": {
+        "allocated_peak": 279770624,
+        "reserved_peak": 308281344,
+        "device_capacity": 8589410304
+      },
+      "full_path_measured": false,
+      "remaining_children": []
+    }
+  },
+  "original": {
+    "verdict": "LOCAL_CONTRACT_FAIL",
+    "scientific_processes": 1,
+    "child_elapsed_seconds": 11.889835100000255,
+    "parent_elapsed_seconds": 13.26487410000027,
+    "counts": {
+      "fits": 14,
+      "predicts": 15,
+      "loads": 2
+    },
+    "timings": {
+      "fit_seconds": 0.6466824000008273,
+      "predict_seconds": 5.416255300000103,
+      "load_seconds": 0.11460890000034851
+    },
+    "rss_peak_sampled": 1592758272,
+    "commitment_peak_sampled": 2600308736,
+    "gpu": {
+      "allocated_peak": 279770624,
+      "reserved_peak": 308281344,
+      "device_capacity": 8589410304
+    }
+  },
+  "cumulative": {
+    "scientific_processes": 2,
+    "child_elapsed_seconds": 51.316011100000196,
+    "parent_elapsed_seconds": 54.096185700000206,
+    "counts": {
+      "fits": 230,
+      "predicts": 232,
+      "loads": 4
+    },
+    "timings": {
+      "fit_seconds": 5.838857399996414,
+      "predict_seconds": 33.450620200000685,
+      "load_seconds": 0.23260080000000016
+    },
+    "rss_max_across_sequential_runs": 1592758272,
+    "commitment_max_across_sequential_runs": 2600308736
+  },
+  "accounting_limits": "Load wrapper overlaps stock fit; phase times are not additive. Memory peaks are maxima across sequential attempts, not sums. 1s samples can miss transient peaks. No full-path measurement.",
+  "full_E041_all3_context_refit_H100_measured": false,
+  "task_wall": {
+    "start": "2026-10-02T04:01:30Z",
+    "through_final_record": "2026-10-02T04:15:03.805389+00:00",
+    "seconds": 813.805389,
+    "limit_seconds": 3600,
+    "original_task_recorded_seconds": 2894.850795,
+    "caveat": "Task records are recorded checkpoints; scientific cumulative costs are exact captured child/parent elapsed measurements."
+  }
+}

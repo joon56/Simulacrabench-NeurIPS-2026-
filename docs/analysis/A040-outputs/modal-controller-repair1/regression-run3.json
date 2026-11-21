@@ -1,0 +1,7 @@
+{
+    "exit_code":  0,
+    "pid":  41020,
+    "watchdog_expired":  false,
+    "wall_seconds":  5.1149452,
+    "kind":  "focused regression suite2"
+}

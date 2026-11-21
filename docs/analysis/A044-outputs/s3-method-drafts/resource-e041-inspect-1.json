@@ -1,0 +1,221 @@
+{
+  "token": "e041-inspect-1",
+  "script": "pdf_inspect.py",
+  "arguments": [
+    "E041"
+  ],
+  "seconds": 0.9019398000018555,
+  "exit_code": 0,
+  "failure": null,
+  "passed": true,
+  "owned_pids": [
+    5552,
+    36276
+  ],
+  "remnant_pids": [],
+  "final_sample_checked": true,
+  "peak_tree_rss": 96382976,
+  "peak_tree_private": 84705280,
+  "max_sample_gap_seconds": 0.10959720000028028,
+  "memory_semantics": "sampled concurrent process-tree sums including supervisor, not unsampled instantaneous peak",
+  "samples": [
+    {
+      "seconds": 0.02794970000104513,
+      "rss": 25853952,
+      "private": 11468800,
+      "processes": [
+        {
+          "pid": 5552,
+          "rss": 4734976,
+          "private": 843776
+        },
+        {
+          "pid": 28148,
+          "rss": 18567168,
+          "private": 10244096
+        },
+        {
+          "pid": 36276,
+          "rss": 2551808,
+          "private": 380928
+        }
+      ]
+    },
+    {
+      "seconds": 0.13718580000204383,
+      "rss": 41611264,
+      "private": 21389312,
+      "processes": [
+        {
+          "pid": 5552,
+          "rss": 4861952,
+          "private": 843776
+        },
+        {
+          "pid": 28148,
+          "rss": 18612224,
+          "private": 10244096
+        },
+        {
+          "pid": 36276,
+          "rss": 18137088,
+          "private": 10301440
+        }
+      ]
+    },
+    {
+      "seconds": 0.24620890000005602,
+      "rss": 70393856,
+      "private": 57991168,
+      "processes": [
+        {
+          "pid": 5552,
+          "rss": 4861952,
+          "private": 843776
+        },
+        {
+          "pid": 28148,
+          "rss": 18612224,
+          "private": 10244096
+        },
+        {
+          "pid": 36276,
+          "rss": 46919680,
+          "private": 46903296
+        }
+      ]
+    },
+    {
+      "seconds": 0.3554844000027515,
+      "rss": 77307904,
+      "private": 63844352,
+      "processes": [
+        {
+          "pid": 5552,
+          "rss": 4861952,
+          "private": 843776
+        },
+        {
+          "pid": 28148,
+          "rss": 18612224,
+          "private": 10244096
+        },
+        {
+          "pid": 36276,
+          "rss": 53833728,
+          "private": 52756480
+        }
+      ]
+    },
+    {
+      "seconds": 0.46484480000071926,
+      "rss": 84029440,
+      "private": 68227072,
+      "processes": [
+        {
+          "pid": 5552,
+          "rss": 4861952,
+          "private": 843776
+        },
+        {
+          "pid": 28148,
+          "rss": 18612224,
+          "private": 10244096
+        },
+        {
+          "pid": 36276,
+          "rss": 60555264,
+          "private": 57139200
+        }
+      ]
+    },
+    {
+      "seconds": 0.5732344000025478,
+      "rss": 85716992,
+      "private": 69533696,
+      "processes": [
+        {
+          "pid": 5552,
+          "rss": 4861952,
+          "private": 843776
+        },
+        {
+          "pid": 28148,
+          "rss": 18612224,
+          "private": 10244096
+        },
+        {
+          "pid": 36276,
+          "rss": 62242816,
+          "private": 58445824
+        }
+      ]
+    },
+    {
+      "seconds": 0.6825405000017781,
+      "rss": 96382976,
+      "private": 84705280,
+      "processes": [
+        {
+          "pid": 5552,
+          "rss": 4861952,
+          "private": 843776
+        },
+        {
+          "pid": 28148,
+          "rss": 18620416,
+          "private": 10244096
+        },
+        {
+          "pid": 36276,
+          "rss": 72900608,
+          "private": 73617408
+        }
+      ]
+    },
+    {
+      "seconds": 0.7915904000001319,
+      "rss": 85458944,
+      "private": 69304320,
+      "processes": [
+        {
+          "pid": 5552,
+          "rss": 4861952,
+          "private": 843776
+        },
+        {
+          "pid": 28148,
+          "rss": 18620416,
+          "private": 10244096
+        },
+        {
+          "pid": 36276,
+          "rss": 61976576,
+          "private": 58216448
+        }
+      ]
+    },
+    {
+      "seconds": 0.9011876000004122,
+      "rss": 18685952,
+      "private": 10399744,
+      "processes": [
+        {
+          "pid": 5552,
+          "rss": 32768,
+          "private": 77824
+        },
+        {
+          "pid": 28148,
+          "rss": 18620416,
+          "private": 10244096
+        },
+        {
+          "pid": 36276,
+          "rss": 32768,
+          "private": 77824
+        }
+      ]
+    }
+  ]
+}

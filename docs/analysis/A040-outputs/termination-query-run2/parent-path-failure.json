@@ -1,0 +1,9 @@
+﻿{
+    "runtime_budget_used":  0,
+    "actual_auth_rpc":  0,
+    "stage":  "parent source identity",
+    "error":  "KeyError: original/confirm_terminal.py",
+    "cause":  "Windows Path string used backslash while frozen contract uses slash",
+    "helper_children_started":  0,
+    "tool":  "4ef2ed"
+}

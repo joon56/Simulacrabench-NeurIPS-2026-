@@ -1,0 +1,120 @@
+{
+    "verdict":  "UNRESOLVED",
+    "observed_at":  "2026-10-26T20:32:50.9223804+09:00",
+    "source":  "Current user async reply API-form fragment; no live fetch/authentication/HTTP-byte attestation",
+    "source_text_sha256":  "799354cb9b51363cb410c4bda5b422e5d44702b31299e518e6a0ec370b31204b",
+    "normalized_json_sha256":  "a34a6bf598a13f1d6bb139dbaf141858e907eb52793ad59a18728a16b11afecf",
+    "normalization":  "Preserve supplied text including terminal comma, add file-final newline; remove one terminal comma for JSON parsing; pretty-print with all fields/values and score strings retained.",
+    "candidate":  {
+                      "on_leaderboard":  false,
+                      "id":  1008932,
+                      "task_id":  35494,
+                      "pk":  1008932,
+                      "filename":  "2026-10-23-E064.zip",
+                      "leaderboard":  null,
+                      "status":  "Finished",
+                      "ingestion_program":  "71372c7e-a051-4a39-aea6-62da1d0bb021",
+                      "created_when_kst":  "2026-10-26 20:07:15.519457 +09:00",
+                      "phase":  29772,
+                      "created_when":  "2026-10-26T11:07:15.519457Z",
+                      "phase_name":  "Development",
+                      "scoring_program":  "f3015fb3-26ec-44c2-97fa-6b5fd501f596"
+                  },
+    "comparator":  {
+                       "id":  933094,
+                       "filename":  "E041.zip",
+                       "created_when_utc":  "2026-09-19T08:10:46.209685Z",
+                       "created_when_kst":  "2026-09-19 17:10:46.209685 +09:00",
+                       "phase":  29772,
+                       "phase_name":  "Development",
+                       "status":  "Finished",
+                       "on_leaderboard":  true,
+                       "leaderboard":  19827,
+                       "scorecard":  "submissions/2026-09-19-E041/SCORES.md",
+                       "scores":  [
+                                      {
+                                          "column_key":  "skill",
+                                          "score":  "0.6433333333",
+                                          "precision":  2,
+                                          "is_primary":  true
+                                      },
+                                      {
+                                          "column_key":  "skill_unicef",
+                                          "score":  "0.5200000000",
+                                          "precision":  2,
+                                          "is_primary":  false
+                                      },
+                                      {
+                                          "column_key":  "skill_world_bank",
+                                          "score":  "0.4900000000",
+                                          "precision":  2,
+                                          "is_primary":  false
+                                      },
+                                      {
+                                          "column_key":  "skill_unhcr",
+                                          "score":  "0.9200000000",
+                                          "precision":  2,
+                                          "is_primary":  false
+                                      }
+                                  ]
+                   },
+    "comparator_source":  "submissions/hosted-scores/2026-09-27.json",
+    "comparisons":  [
+                        {
+                            "key":  "skill",
+                            "candidate_string":  "0.6433333333",
+                            "comparator_string":  "0.6433333333",
+                            "exact_string_equal":  true,
+                            "released_decimal_difference":  "0.0000000000",
+                            "candidate_precision":  2,
+                            "comparator_precision":  2,
+                            "candidate_index":  0,
+                            "primary":  true
+                        },
+                        {
+                            "key":  "skill_unicef",
+                            "candidate_string":  "0.5200000000",
+                            "comparator_string":  "0.5200000000",
+                            "exact_string_equal":  true,
+                            "released_decimal_difference":  "0.0000000000",
+                            "candidate_precision":  2,
+                            "comparator_precision":  2,
+                            "candidate_index":  1,
+                            "primary":  false
+                        },
+                        {
+                            "key":  "skill_world_bank",
+                            "candidate_string":  "0.4900000000",
+                            "comparator_string":  "0.4900000000",
+                            "exact_string_equal":  true,
+                            "released_decimal_difference":  "0.0000000000",
+                            "candidate_precision":  2,
+                            "comparator_precision":  2,
+                            "candidate_index":  2,
+                            "primary":  false
+                        },
+                        {
+                            "key":  "skill_unhcr",
+                            "candidate_string":  "0.9200000000",
+                            "comparator_string":  "0.9200000000",
+                            "exact_string_equal":  true,
+                            "released_decimal_difference":  "0.0000000000",
+                            "candidate_precision":  2,
+                            "comparator_precision":  2,
+                            "candidate_index":  3,
+                            "primary":  false
+                        }
+                    ],
+    "all_four_exact_string_ties":  true,
+    "preregistered_arm":  "UNHCR and Grand both tie; unchanged released UNICEF/WB controls; UNRESOLVED",
+    "action":  "Retain E041 incumbent/E025 fallback/E064 parked; no identical resubmission; S0 priority review",
+    "independent_audit":  false,
+    "latent_effect_identified":  false,
+    "prediction_activation_equality_inferred":  false,
+    "uploaded_bytes_verified":  false,
+    "upload_timestamp_independently_verified":  false,
+    "scorer_version_equality_verified":  false,
+    "best_update_event_verified":  false,
+    "account_slot_verified":  false,
+    "normalized_object_roundtrip_equal":  true
+}

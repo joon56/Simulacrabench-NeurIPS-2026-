@@ -1,0 +1,7 @@
+{
+    "hidden":  true,
+    "pid":  40164,
+    "parent_wait_cap_seconds":  120,
+    "cpu_affinity":  3,
+    "started_utc":  "2026-10-05T11:09:17.1338546+00:00"
+}

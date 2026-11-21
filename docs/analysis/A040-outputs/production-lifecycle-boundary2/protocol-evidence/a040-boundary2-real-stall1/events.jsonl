@@ -1,0 +1,10 @@
+{"event": "operation", "time": 1791215846.206075, "stage": "connect", "timeout": 60}
+{"event": "operation", "time": 1791215846.2072923, "stage": "billing", "timeout": 30}
+{"event": "operation", "time": 1791215846.2081394, "stage": "base_stream", "timeout": 30}
+{"event": "operation", "time": 1791215846.208721, "stage": "base_identity", "timeout": 30}
+{"event": "operation", "time": 1791215846.212846, "stage": "app_create", "timeout": 30}
+{"event": "operation", "time": 1791215846.2208114, "stage": "build_billing", "timeout": 30}
+{"event": "operation", "time": 1791215846.313942, "stage": "sandbox_create", "timeout": 120}
+{"event": "first_error", "time": 1791215966.3303103, "error": "TimeoutError('Operation deadline; cancellation completion not assumed')"}
+{"event": "cleanup_enter", "time": 1791215966.3337824}
+{"event": "exact_terminal_saved", "time": 1791215966.537786, "sandbox_id": "sb-aaaaaaaaaaaaaaaaaaaaaa"}

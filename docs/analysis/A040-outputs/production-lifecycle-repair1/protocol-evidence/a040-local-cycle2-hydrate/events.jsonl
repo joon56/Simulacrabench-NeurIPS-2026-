@@ -1,0 +1,8 @@
+{"event": "operation", "time": 1791210547.1969695, "stage": "connect", "timeout": 60}
+{"event": "operation", "time": 1791210547.1979985, "stage": "billing", "timeout": 1}
+{"event": "operation", "time": 1791210547.1985397, "stage": "base_stream", "timeout": 1}
+{"event": "operation", "time": 1791210547.199067, "stage": "base_identity", "timeout": 1}
+{"event": "operation", "time": 1791210547.203287, "stage": "app_create", "timeout": 1}
+{"event": "operation", "time": 1791210547.262717, "stage": "build_billing", "timeout": 1}
+{"event": "operation", "time": 1791210547.2777548, "stage": "sandbox_create", "timeout": 120}
+{"event": "first_error", "time": 1791210547.293956, "error": "ExecutionError(\"Can not hydrate <class 'modal.sandbox._Sandbox'>:  it has type prefix sb but the object_id starts with bad. This usually means the object name was previously used for a different type. Rename the object/app or stop the previous deployment and redeploy.\")"}

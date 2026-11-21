@@ -1,0 +1,100 @@
+{
+  "mode": "baseline",
+  "checks": [
+    {
+      "name": "SDK1.6.0",
+      "pass": true
+    },
+    {
+      "name": "one_real_builder",
+      "pass": true
+    },
+    {
+      "name": "FILE_only",
+      "pass": true
+    },
+    {
+      "name": "module_function",
+      "pass": true
+    },
+    {
+      "name": "defining_file",
+      "pass": true
+    },
+    {
+      "name": "spec_deps_equal",
+      "pass": true
+    },
+    {
+      "name": "default_client_separate",
+      "pass": true
+    },
+    {
+      "name": "original_project_source_omitted",
+      "pass": true
+    },
+    {
+      "name": "all_owned_ipc_closed",
+      "pass": true
+    },
+    {
+      "name": "no_unexpected_forbidden_attempts",
+      "pass": true
+    }
+  ],
+  "builder": {
+    "type": "file",
+    "module": "controller_core",
+    "function": "install_pins",
+    "implementation": "install_pins",
+    "defining_file": "C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\local-preparation-repair2\\controller_core.py",
+    "mount_count": 1,
+    "client_mount": "Mount()",
+    "project_files": [],
+    "image_dependencies": [
+      "_Image",
+      "_Function"
+    ],
+    "builder_dependencies": [
+      "_Mount",
+      "_Image"
+    ]
+  },
+  "outcome": "PASS",
+  "guard": {
+    "events": [
+      {
+        "ipc": "socket.bind",
+        "pid": 39508,
+        "thread": 38032
+      },
+      {
+        "ipc": "socket.connect",
+        "pid": 39508,
+        "thread": 38032
+      }
+    ],
+    "pairs": [
+      {
+        "pid": 39508,
+        "thread": 38032,
+        "loop": "_WindowsSelectorEventLoop",
+        "started": 16947.3826323,
+        "endpoints": [
+          [
+            "127.0.0.1",
+            57687
+          ],
+          [
+            "127.0.0.1",
+            57688
+          ]
+        ],
+        "closed": true
+      }
+    ],
+    "unexpected": [],
+    "scope": "Python guards only; no native/OS security certification"
+  },
+  "elapsed_seconds": 0.7445234000006167
+}

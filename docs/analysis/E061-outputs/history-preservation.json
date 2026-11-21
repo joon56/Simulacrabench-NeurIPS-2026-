@@ -1,0 +1,7 @@
+{
+  "checks": {
+    "docs/log.md": true,
+    "docs/status.md": true
+  },
+  "method": "Reverse only the exact new E061 current-status changes and log insertion in memory; compare reconstructed UTF8 bytes to entry SHA256. No rollback or file replacement."
+}

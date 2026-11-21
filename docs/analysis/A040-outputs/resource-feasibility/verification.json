@@ -1,0 +1,198 @@
+﻿{
+    "role":  "S1",
+    "task_type":  "resource feasibility information only",
+    "outcome":  "HOLD_SPECIFIC_INPUT",
+    "documentation":  "RESOURCE_OPTION_DOCUMENTED",
+    "execution":  "EXECUTION_NOT_AUTHORIZED",
+    "record_checks":  "PASS_DOCUMENT_METADATA_ONLY",
+    "recorded_utc":  "2026-10-02T09:27:15.6999150+00:00",
+    "task_wall_seconds_at_record":  864.69991499999992,
+    "limit_seconds":  2700,
+    "head":  "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+    "workflow_revision":  "2026-09-27-r4",
+    "workflow_sha256":  "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642",
+    "read_evidence_reference":  "entry.json",
+    "official_documents":  6,
+    "resource_options":  2,
+    "provider_count":  1,
+    "authenticated_inventory_or_quote_checked":  false,
+    "full_non_mig_exclusive_allocation_verified":  false,
+    "user_resource_selection":  null,
+    "user_total_spend_cap":  null,
+    "exact_target_image_driver_cuda_pins_verified":  false,
+    "linux_private_commitment_contract_validated":  false,
+    "native_offline_target_verified":  false,
+    "h100_time_memory_measured":  false,
+    "document_source_preservation":  [
+                                         {
+                                             "path":  "AGENTS.md",
+                                             "before":  "86394bbf164a2b7df6a309f4564b9dacf3b2799fa0227a703e4ea11d4d842596",
+                                             "after":  "86394bbf164a2b7df6a309f4564b9dacf3b2799fa0227a703e4ea11d4d842596",
+                                             "unchanged":  true
+                                         },
+                                         {
+                                             "path":  "CLAUDE.md",
+                                             "before":  "69175e6d741a17042db4852d4961a5c52bd97fe2cd5bfbff762d30d7e5270364",
+                                             "after":  "69175e6d741a17042db4852d4961a5c52bd97fe2cd5bfbff762d30d7e5270364",
+                                             "unchanged":  true
+                                         },
+                                         {
+                                             "path":  "docs/workflow.md",
+                                             "before":  "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642",
+                                             "after":  "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642",
+                                             "unchanged":  true
+                                         },
+                                         {
+                                             "path":  "docs/analysis/A040-outputs/s0-runtime-limit-review/decision.md",
+                                             "before":  "178f01b2f6244af91f477ca21f2850bebb2fd5fb1ca6aba8d48775111c8f4732",
+                                             "after":  "178f01b2f6244af91f477ca21f2850bebb2fd5fb1ca6aba8d48775111c8f4732",
+                                             "unchanged":  true
+                                         },
+                                         {
+                                             "path":  "docs/analysis/A040-outputs/s0-runtime-limit-review/verification.json",
+                                             "before":  "5da81eb7935e74fddc4c3ce59676784fba102ad83d5fe97acb668e71b4684bec",
+                                             "after":  "5da81eb7935e74fddc4c3ce59676784fba102ad83d5fe97acb668e71b4684bec",
+                                             "unchanged":  true
+                                         },
+                                         {
+                                             "path":  "docs/analysis/A040-outputs/full-path-resume1/closeout.md",
+                                             "before":  "d4c4a4f5f04dfed0cfe45015cc7ea2a5d1518fd22b4c1d67cfcb52c63b84ab5b",
+                                             "after":  "d4c4a4f5f04dfed0cfe45015cc7ea2a5d1518fd22b4c1d67cfcb52c63b84ab5b",
+                                             "unchanged":  true
+                                         },
+                                         {
+                                             "path":  "docs/analysis/A040-outputs/full-path-resume1/resources.json",
+                                             "before":  "bde15eaa0d65683da72cde07d387431388fa8a6058524ea456436a3d1507b91f",
+                                             "after":  "bde15eaa0d65683da72cde07d387431388fa8a6058524ea456436a3d1507b91f",
+                                             "unchanged":  true
+                                         },
+                                         {
+                                             "path":  "docs/analysis/A040-outputs/full-path-resume1/verification.json",
+                                             "before":  "64a74527b6997f6d16b484abd149683c5231d72a6e593503fa6fe861d1f7d5ba",
+                                             "after":  "64a74527b6997f6d16b484abd149683c5231d72a6e593503fa6fe861d1f7d5ba",
+                                             "unchanged":  true
+                                         },
+                                         {
+                                             "path":  "docs/analysis/A040-outputs/full-path-resume1/candidate/partial-observations.json",
+                                             "before":  "aa08d34bd59c58e94dffb1b267d96106c905db78ad271d25dc97fd48a418bd9d",
+                                             "after":  "aa08d34bd59c58e94dffb1b267d96106c905db78ad271d25dc97fd48a418bd9d",
+                                             "unchanged":  true
+                                         },
+                                         {
+                                             "path":  "docs/analysis/A040-outputs/full-path-resume1/source.diff",
+                                             "before":  "8d4a084eaedce52102d86ae6c63de99c95a68b95fe09e790e19602f7f3c9bc23",
+                                             "after":  "8d4a084eaedce52102d86ae6c63de99c95a68b95fe09e790e19602f7f3c9bc23",
+                                             "unchanged":  true
+                                         },
+                                         {
+                                             "path":  "docs/analysis/A040-outputs/full-path-resume1/frozen-inputs/manifest.json",
+                                             "before":  "b5f7effaa0a9ad427c403dfb2d524b8747c469968bb2cbb86419867911c8cacc",
+                                             "after":  "b5f7effaa0a9ad427c403dfb2d524b8747c469968bb2cbb86419867911c8cacc",
+                                             "unchanged":  true
+                                         },
+                                         {
+                                             "path":  "docs/analysis/A040-outputs/s0-policy-resolution/decision.md",
+                                             "before":  "b97eede87c225503090df6dcc2fd9f8dae78327ff28c54c5e9031626f489d225",
+                                             "after":  "b97eede87c225503090df6dcc2fd9f8dae78327ff28c54c5e9031626f489d225",
+                                             "unchanged":  true
+                                         },
+                                         {
+                                             "path":  "docs/analysis/A040-outputs/s0-policy-resolution/environment-check.md",
+                                             "before":  "56049d17a84f5bcc9b9e95eb97e4c457485742b40da5e8f73ee867271ba2a8d8",
+                                             "after":  "56049d17a84f5bcc9b9e95eb97e4c457485742b40da5e8f73ee867271ba2a8d8",
+                                             "unchanged":  true
+                                         },
+                                         {
+                                             "path":  "docs/analysis/A040-outputs/s1/contract.md",
+                                             "before":  "8f59764b01f68360a6eef0fee66d82c1316f9b89720abf26eb8e7f72e5b1bb38",
+                                             "after":  "8f59764b01f68360a6eef0fee66d82c1316f9b89720abf26eb8e7f72e5b1bb38",
+                                             "unchanged":  true
+                                         },
+                                         {
+                                             "path":  "docs/analysis/A040-outputs/s1/cost-accounting.md",
+                                             "before":  "684b9e09bac2163266b3117c23cad28341990d57ed9e6b9371aba855515db3ee",
+                                             "after":  "684b9e09bac2163266b3117c23cad28341990d57ed9e6b9371aba855515db3ee",
+                                             "unchanged":  true
+                                         },
+                                         {
+                                             "path":  "docs/analysis/A040-outputs/full-path-resume1/runner.py",
+                                             "before":  "fc8d12a09bc283675811fb25efa80a7056f9f9077dffac9dfd3510d9dfa5cde5",
+                                             "after":  "fc8d12a09bc283675811fb25efa80a7056f9f9077dffac9dfd3510d9dfa5cde5",
+                                             "unchanged":  true
+                                         },
+                                         {
+                                             "path":  "docs/analysis/A040-outputs/full-path-resume1/watchdog.py",
+                                             "before":  "6c9a1647fe93689d2323c16f8245d01b26e79b5813ff14b4d647fd9d5a6d4e56",
+                                             "after":  "6c9a1647fe93689d2323c16f8245d01b26e79b5813ff14b4d647fd9d5a6d4e56",
+                                             "unchanged":  true
+                                         },
+                                         {
+                                             "path":  "docs/analysis/A040-outputs/local-technical/requirements.lock.txt",
+                                             "before":  "6c6f0d0fc5db943eb1cb95ff4610ddea5df724bc50031b883a0dd67656771b70",
+                                             "after":  "6c6f0d0fc5db943eb1cb95ff4610ddea5df724bc50031b883a0dd67656771b70",
+                                             "unchanged":  true
+                                         },
+                                         {
+                                             "path":  "docs/analysis/A040-outputs/local-technical/provenance.md",
+                                             "before":  "c28ea374e2e83d83c33a2a5762c086e8f7e9fcd1fb72a81eba0d27fe465e2793",
+                                             "after":  "c28ea374e2e83d83c33a2a5762c086e8f7e9fcd1fb72a81eba0d27fe465e2793",
+                                             "unchanged":  true
+                                         }
+                                     ],
+    "status_prior_body_preserved":  true,
+    "log_prior_body_preserved":  true,
+    "shared_preservation_comparison":  "Text exact after removal of this insertion; CRLF/LF normalized",
+    "actions":  {
+                    "public_document_research":  6,
+                    "document_metadata_hashing":  true,
+                    "manifest_driven_target_traversal":  0,
+                    "input_response_key_parquet_npz_checkpoint_cache_VAF_read_or_hash":  0,
+                    "model_import_fit_predict_score":  0,
+                    "fixture_tests":  0,
+                    "install_model_acquisition":  0,
+                    "account_login_contact_rental_remote":  0,
+                    "subagents":  0,
+                    "model_code_or_latch_changes":  0,
+                    "zip_upload_commit_push":  0,
+                    "s2_s3":  0
+                },
+    "historical_scientific":  {
+                                  "processes":  4,
+                                  "parent_seconds":  1077.3504532,
+                                  "added_processes":  0,
+                                  "added_seconds":  0,
+                                  "peaks_summed":  false,
+                                  "historical_local_resource_limit_preserved":  true,
+                                  "completed_predict_seconds_not_pure_gpu":  641.08732710003085
+                              },
+    "preserved_state":  {
+                            "incumbent":  "E041",
+                            "fallback":  "E025",
+                            "parked":  [
+                                           "E057",
+                                           "E060",
+                                           "E061"
+                                       ],
+                            "all_stop_holds":  true,
+                            "exposure_people":  17999,
+                            "exposure_ssuid":  12339,
+                            "a022_roles_aggregate_history_preserved":  true,
+                            "e059_consumed_oracle":  "1918/1124",
+                            "e059_consumed_selection":  "2007/1130",
+                            "protected_audit":  "2074/1177",
+                            "protected_calibration":  1866,
+                            "a039_hold":  true,
+                            "a_half_promoted":  false,
+                            "a018_user_confirmed":  false,
+                            "s3":  "stopped",
+                            "s2_candidate":  false
+                        },
+    "remaining_inputs_reference":  "closeout.md",
+    "self_hash_included":  false,
+    "new_record_relative_links_checked":  14,
+    "missing_record_links":  [
+
+                             ],
+    "dirty_status_paths_unchanged":  true,
+    "preservation_limitation":  "19 explicitly allowed docs/source hashes; additive shared bodies; Git status path comparison. Not a whole-workspace/protected-file integrity scan."
+}

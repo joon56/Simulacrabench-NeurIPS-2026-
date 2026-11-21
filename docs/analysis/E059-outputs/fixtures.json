@@ -1,0 +1,10 @@
+﻿{
+    "seconds":  4.87,
+    "passed":  10,
+    "real_fits":  0,
+    "source_sha256":  "31ee84558932e3ef45871c6b53919ec59882044f8fec57ba4635e2242712c5f2",
+    "test_command":  ".venv/Scripts/python.exe -m pytest tests/test_e059_interactions.py -q",
+    "expected_red":  "test_implementation_exists failed before module creation",
+    "cache_decodes":  0,
+    "tests_sha256":  "746d52ed0de056d5789441c2df6f9bf0c70767638c2b9e765f019bc29e82e65c"
+}

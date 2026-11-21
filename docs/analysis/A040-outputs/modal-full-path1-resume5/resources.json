@@ -1,0 +1,42 @@
+{
+    "kind":  "PARTIAL_PREPARATION_OBSERVATIONS_NOT_SCIENTIFIC_RESULT",
+    "entry_utc":  "2026-10-05T09:44:05.0000000+00:00",
+    "worker_wall_seconds":  166.16904200000135,
+    "cleanup_wall_seconds":  60.01003530000162,
+    "cleanup_budget_seconds":  60,
+    "cleanup_cap_exhausted":  true,
+    "config_internal_seconds":  0.060894900001585484,
+    "config_outer_seconds":  0.2634149,
+    "local_owned_processes_remaining":  0,
+    "image":  "BUILD_COMPLETED",
+    "sandbox_requested":  {
+                              "memory_bytes":  15999172608,
+                              "gpu":  "H100!",
+                              "memory_mib":  15258,
+                              "count":  1,
+                              "timeout_seconds":  2400,
+                              "cpu":  [
+                                          1,
+                                          1
+                                      ]
+                          },
+    "sandbox_actual":  {
+                           "id":  null,
+                           "elapsed_seconds":  null,
+                           "offline_verified":  false,
+                           "cgroup_verified":  false,
+                           "cuda_reserved_bytes":  null,
+                           "cuda_allocated_bytes":  null,
+                           "driver":  null,
+                           "peak_private_bytes":  null,
+                           "gpu_model":  null,
+                           "peak_rss_bytes":  null,
+                           "cpu_affinity":  null,
+                           "gpu_allocation":  null,
+                           "swap_verified":  false
+                       },
+    "boundary":  "NOT_RUN",
+    "reference":  "NOT_RUN",
+    "candidate":  "NOT_RUN",
+    "scope":  "No inference of runtime compliance from request/image construction"
+}

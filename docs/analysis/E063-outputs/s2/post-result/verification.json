@@ -1,0 +1,461 @@
+{
+  "status": "COMPLETE_RESULT_ONLY_DOCUMENTATION",
+  "recorded_kst": "2026-10-10T00:54:20.062320+09:00",
+  "role": "E063 S2 post-result documents only",
+  "workflow_revision": "2026-10-05-r5",
+  "workflow_sha256": "a577942675e16a732339e586c14796104dda704693568439ae28670cc7fb7b23",
+  "read_receipt": "read-receipt.md",
+  "entry": "entry.json",
+  "head": "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+  "head_unchanged": true,
+  "branch": "work/e050-submission",
+  "decision": "UNRESOLVED; E041 incumbent/E025 fallback/E063 parked",
+  "score_source": "User-supplied API-form fragment, no authenticated/live platform check",
+  "normalized_json_matches_archived_result_fragment": true,
+  "all_four_full_API_strings_equal_E041": true,
+  "time_conversion_checked": true,
+  "created_when_kst": "2026-10-10T00:29:35.752090+09:00",
+  "comparability": {
+    "finished_development_phase_match": true,
+    "required_score_keys_present_unique": true,
+    "all_precision_match": true,
+    "filename_matches_prepared_record_name": true,
+    "provenance_or_phase_contradiction_observed": false,
+    "baseline_task_metadata_present": false,
+    "same_remote_scorer_version_proven": false,
+    "note": "E041 sanitized extract omits task/ingestion/scoring_program fields; E063 supplies IDs, not scorer content/version proof. Absence is not a contradiction. Compare published values within Finished Development phase29772 scope only."
+  },
+  "best_update_event_provided": false,
+  "actual_uploaded_bytes_path_hash_verified": false,
+  "prepared_zip_record_only": {
+    "path": "submissions/2026-10-09-E063.zip",
+    "bytes": 15720,
+    "sha256": "5469b5374f6fb3745cabf64071183ed3de5bbe240ea4f18c034049d560d532d9",
+    "prepared_kst": "2026-10-09T23:51:00.484781+09:00",
+    "accessed_or_rehashed_this_task": false
+  },
+  "document_changes": [
+    {
+      "path": "submissions/2026-10-09-E063/SCORES.md",
+      "before_sha256": "98cfc9bff6aa17bfe62dca9e1b0bfd2a64885129ae0f51c3338ad9f4b8346d40",
+      "after_sha256": "c66bfce12940d8086511a0479c61ef7e14c7103805e977c205991f0b7c4216e7",
+      "before_bytes": 4793,
+      "after_bytes": 7312,
+      "addition_file": "scorecard-addition.md",
+      "addition_bytes": 2519,
+      "addition_sha256": "ccb5538b7b216f6187b08317e738036fb85cd0e6feec4c20221c44dcd309251c",
+      "insertion_byte_offset": 4793,
+      "mode": "suffix_only",
+      "removal_restores_before_exact_bytes": true,
+      "current_hash_matches": true,
+      "addition_bytes_match": true,
+      "original_bytes_restored_exactly": true
+    },
+    {
+      "path": "submissions/SCORES.md",
+      "before_sha256": "672e50c16a1b066e03b1fb02d41ab1cab13e991594afe5e7988f138865453c49",
+      "after_sha256": "94d36f5af0254dec1d92e1aeb7d443c0517282817881f4e244af41fcd0735469",
+      "before_bytes": 11866,
+      "after_bytes": 13980,
+      "addition_file": "global-scores-addition.md",
+      "addition_bytes": 2114,
+      "addition_sha256": "aa6834666a594aa2c3d6ef9883d4fdd64de714f10c8790274a4f8f4dd450b581",
+      "insertion_byte_offset": 11866,
+      "mode": "suffix_only",
+      "removal_restores_before_exact_bytes": true,
+      "current_hash_matches": true,
+      "addition_bytes_match": true,
+      "original_bytes_restored_exactly": true
+    },
+    {
+      "path": "docs/status.md",
+      "before_sha256": "c10f72f371e997a3402189c2d5babd35bd34b06b1c1101c80c60a8418e6e143a",
+      "after_sha256": "b380285a72bee94da61cdb5abfaba7035f75553cc7e0dc59c552491ad91124df",
+      "before_bytes": 77284,
+      "after_bytes": 78565,
+      "addition_file": "status-addition.md",
+      "addition_bytes": 1281,
+      "addition_sha256": "9f6c9b1226a7fd560061d4ca2d75b55d9d65c3b7910041455da97be0e827fbc7",
+      "insertion_byte_offset": 325,
+      "mode": "insert_only",
+      "removal_restores_before_exact_bytes": true,
+      "current_hash_matches": true,
+      "addition_bytes_match": true,
+      "original_bytes_restored_exactly": true
+    },
+    {
+      "path": "docs/log.md",
+      "before_sha256": "44c39bc1d530b81ef9e59307b54728bf45468d489daf53b4badf169b68e267ea",
+      "after_sha256": "6e44fc3105a8d865178ff03eb8e8b86a2b8a28eb22f6c1286d00145113c971ee",
+      "before_bytes": 342809,
+      "after_bytes": 346188,
+      "addition_file": "log-addition.md",
+      "addition_bytes": 3379,
+      "addition_sha256": "d6d1a94370334f7a172eaca8a6c574f2d345af0b115ca8b7efe49d223fa0fba6",
+      "insertion_byte_offset": 23,
+      "mode": "insert_only",
+      "removal_restores_before_exact_bytes": true,
+      "current_hash_matches": true,
+      "addition_bytes_match": true,
+      "original_bytes_restored_exactly": true
+    }
+  ],
+  "immutable_document_checks": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "73b86e5310d6a45d5206efd3b55da47c48748ee7b077e6fcad6be276f1716a3a",
+      "unchanged": true
+    },
+    {
+      "path": "CLAUDE.md",
+      "sha256": "0cda5c3385ea3368d0c24a6602e4b1220adc864a205e231f10042b655d031749",
+      "unchanged": true
+    },
+    {
+      "path": "docs/workflow.md",
+      "sha256": "a577942675e16a732339e586c14796104dda704693568439ae28670cc7fb7b23",
+      "unchanged": true
+    },
+    {
+      "path": "docs/tree.md",
+      "sha256": "eaa884a4194db103335136495205fe5b51297c17db15e9eac62946ced286cc44",
+      "unchanged": true
+    },
+    {
+      "path": "docs/experiments/E063-round-conditioned-metric.md",
+      "sha256": "c2e32e41f725d4d44515d0bdb84a182394de4d0c7fe3c8773c7888ce280a16b9",
+      "unchanged": true
+    },
+    {
+      "path": "docs/analysis/E063-outputs/registration.md",
+      "sha256": "e29a7600c9bd1bca75c6927a092adc706b3c49b7e6ea649d979e58816696a49c",
+      "unchanged": true
+    },
+    {
+      "path": "docs/analysis/E063-outputs/artifact-manifest.json",
+      "sha256": "5dcee0cbeaaae2fa4ee5bae8feaf75b623ffaf0c25aef8656d757e3af5665776",
+      "unchanged": true
+    },
+    {
+      "path": "docs/analysis/E063-outputs/verification.json",
+      "sha256": "fc30eeb8110bbbcdd4e98a9479f07fc66c3d0ad9e21932255942a3d2313cb2e0",
+      "unchanged": true
+    },
+    {
+      "path": "docs/analysis/E063-outputs/exposure-ledger.md",
+      "sha256": "ecc7f9b80f199b12a877e1f25b5c910f598cef06fe0b3dd1eba527a837eafd3b",
+      "unchanged": true
+    },
+    {
+      "path": "docs/analysis/E063-outputs/s0-release-review/decision.md",
+      "sha256": "f73c245384976210a4aaf24289fb7f5cc8ffc2f810e3d50b661f3f20d71a989d",
+      "unchanged": true
+    },
+    {
+      "path": "docs/analysis/E063-outputs/s0-release-review/s2-result-handoff.ko.md",
+      "sha256": "b353953df0dfa90d349dd8900338323dcf52a9547d58b50c8fb5c62721ade81b",
+      "unchanged": true
+    },
+    {
+      "path": "docs/analysis/E063-outputs/s2/s0-handoff.ko.md",
+      "sha256": "042f8b633427c29356d4c76a422330aa0d5de039365ffd3f0de2c3820ee81f44",
+      "unchanged": true
+    },
+    {
+      "path": "docs/analysis/E063-outputs/s2/closeout.md",
+      "sha256": "832ad3e9531e036b888dba914c152ccdb17419ce2d6fc3848779a809a984ed47",
+      "unchanged": true
+    },
+    {
+      "path": "docs/analysis/E063-outputs/s2/repair-record.md",
+      "sha256": "a9ee887d01df45c1a44ecba523522940ece87a3d8628a90b1b45b30269b411bf",
+      "unchanged": true
+    },
+    {
+      "path": "docs/analysis/E063-outputs/s2/verification.json",
+      "sha256": "f042012d926d2e31f71b2d8efdb3f418db24c2050503fed7f8fe7ca029c3069f",
+      "unchanged": true
+    },
+    {
+      "path": "docs/analysis/E063-outputs/s2/final-receipt.json",
+      "sha256": "8a38bac07fa05a89db721a8e797330410d57f56ddf3e22d333f9e0a597b6ced1",
+      "unchanged": true
+    },
+    {
+      "path": "docs/analysis/E063-outputs/s2/exposure-ledger.md",
+      "sha256": "1e52d3397d199cd56eac6282569ab25720c5724ee79605bcaa97f77e51d66ff4",
+      "unchanged": true
+    },
+    {
+      "path": "docs/analysis/E063-outputs/s2/artifact-manifest.json",
+      "sha256": "1ac029ae4499066b82fb7b68c9fd0c917ce0e89a0d7040bb7a8fe45d1570774a",
+      "unchanged": true
+    },
+    {
+      "path": "docs/analysis/E063-outputs/s2/SCORES.md",
+      "sha256": "34f3aa32766f636987bfbab151064833def5909eeec98c0bde445d7ec4140ff8",
+      "unchanged": true
+    },
+    {
+      "path": "submissions/2026-10-09-E063/manifest.json",
+      "sha256": "ca8d49956623d276eff7bab0cee9a17aa5d75b453f82f0d0cbf91268bf261189",
+      "unchanged": true
+    },
+    {
+      "path": "submissions/hosted-scores/2026-09-27.json",
+      "sha256": "dfe719bec68faf60c7dfec86c6034ba35fe1a6ba7a9437b88813dbc1ea567ce8",
+      "unchanged": true
+    }
+  ],
+  "original_preregistration_prefix_preserved": true,
+  "old_manifest_scorecard_reference": {
+    "path": "submissions/2026-10-09-E063/SCORES.md",
+    "bytes": 4793,
+    "sha256": "98cfc9bff6aa17bfe62dca9e1b0bfd2a64885129ae0f51c3338ad9f4b8346d40"
+  },
+  "expected_manifest_difference": "Candidate SCORES now has an authorized post-result suffix. Old S1/S2/snapshot manifests and release results remain unchanged; never restore new result text to an old manifest hash.",
+  "new_document_manifest": "document-manifest.json",
+  "markdown_link_checks": [
+    {
+      "file": "submissions/2026-10-09-E063/SCORES.md",
+      "target": "../../docs/analysis/E063-outputs/s2/post-result/user-message.txt",
+      "exists": true
+    },
+    {
+      "file": "submissions/2026-10-09-E063/SCORES.md",
+      "target": "../../docs/analysis/E063-outputs/s2/post-result/user-supplied-api.json",
+      "exists": true
+    },
+    {
+      "file": "submissions/2026-10-09-E063/SCORES.md",
+      "target": "../../docs/analysis/E063-outputs/s2/post-result/result.ko.md",
+      "exists": true
+    },
+    {
+      "file": "submissions/2026-10-09-E063/SCORES.md",
+      "target": "../../docs/analysis/E063-outputs/s2/post-result/post-result-handoff.ko.md",
+      "exists": true
+    },
+    {
+      "file": "submissions/SCORES.md",
+      "target": "2026-10-09-E063/SCORES.md",
+      "exists": true
+    },
+    {
+      "file": "submissions/SCORES.md",
+      "target": "../docs/analysis/E063-outputs/s2/post-result/user-message.txt",
+      "exists": true
+    },
+    {
+      "file": "submissions/SCORES.md",
+      "target": "../docs/analysis/E063-outputs/s2/post-result/user-supplied-api.json",
+      "exists": true
+    },
+    {
+      "file": "submissions/SCORES.md",
+      "target": "../docs/analysis/E063-outputs/s2/post-result/result.ko.md",
+      "exists": true
+    },
+    {
+      "file": "submissions/SCORES.md",
+      "target": "../docs/analysis/E063-outputs/s2/post-result/post-result-handoff.ko.md",
+      "exists": true
+    },
+    {
+      "file": "docs/status.md",
+      "target": "analysis/E063-outputs/s2/post-result/result.ko.md",
+      "exists": true
+    },
+    {
+      "file": "docs/status.md",
+      "target": "analysis/E063-outputs/s2/post-result/post-result-handoff.ko.md",
+      "exists": true
+    },
+    {
+      "file": "docs/status.md",
+      "target": "../submissions/2026-10-09-E063/SCORES.md",
+      "exists": true
+    },
+    {
+      "file": "docs/log.md",
+      "target": "analysis/E063-outputs/s2/post-result/result.ko.md",
+      "exists": true
+    },
+    {
+      "file": "docs/log.md",
+      "target": "analysis/E063-outputs/s2/post-result/post-result-handoff.ko.md",
+      "exists": true
+    },
+    {
+      "file": "docs/log.md",
+      "target": "analysis/E063-outputs/s2/post-result/verification.json",
+      "exists": true
+    },
+    {
+      "file": "docs/log.md",
+      "target": "../submissions/2026-10-09-E063/SCORES.md",
+      "exists": true
+    },
+    {
+      "file": "docs/analysis/E063-outputs/s2/post-result/read-receipt.md",
+      "target": "entry.json",
+      "exists": true
+    },
+    {
+      "file": "docs/analysis/E063-outputs/s2/post-result/result.ko.md",
+      "target": "user-message.txt",
+      "exists": true
+    },
+    {
+      "file": "docs/analysis/E063-outputs/s2/post-result/result.ko.md",
+      "target": "user-supplied-api.json",
+      "exists": true
+    },
+    {
+      "file": "docs/analysis/E063-outputs/s2/post-result/result.ko.md",
+      "target": "normalization.json",
+      "exists": true
+    },
+    {
+      "file": "docs/analysis/E063-outputs/s2/post-result/result.ko.md",
+      "target": "comparison.json",
+      "exists": true
+    },
+    {
+      "file": "docs/analysis/E063-outputs/s2/post-result/result.ko.md",
+      "target": "../../../../../submissions/hosted-scores/2026-09-27.json",
+      "exists": true
+    },
+    {
+      "file": "docs/analysis/E063-outputs/s2/post-result/result.ko.md",
+      "target": "../../../../../submissions/SCORES.md",
+      "exists": true
+    },
+    {
+      "file": "docs/analysis/E063-outputs/s2/post-result/result.ko.md",
+      "target": "../../../../../submissions/2026-10-09-E063/SCORES.md",
+      "exists": true
+    },
+    {
+      "file": "docs/analysis/E063-outputs/s2/post-result/result.ko.md",
+      "target": "verification.json",
+      "exists": true
+    },
+    {
+      "file": "docs/analysis/E063-outputs/s2/post-result/result.ko.md",
+      "target": "document-manifest.json",
+      "exists": true
+    },
+    {
+      "file": "docs/analysis/E063-outputs/s2/post-result/result.ko.md",
+      "target": "post-result-handoff.ko.md",
+      "exists": true
+    },
+    {
+      "file": "docs/analysis/E063-outputs/s2/post-result/result.ko.md",
+      "target": "exposure-ledger.md",
+      "exists": true
+    },
+    {
+      "file": "docs/analysis/E063-outputs/s2/post-result/post-result-handoff.ko.md",
+      "target": "user-message.txt",
+      "exists": true
+    },
+    {
+      "file": "docs/analysis/E063-outputs/s2/post-result/post-result-handoff.ko.md",
+      "target": "user-supplied-api.json",
+      "exists": true
+    },
+    {
+      "file": "docs/analysis/E063-outputs/s2/post-result/post-result-handoff.ko.md",
+      "target": "normalization.json",
+      "exists": true
+    },
+    {
+      "file": "docs/analysis/E063-outputs/s2/post-result/post-result-handoff.ko.md",
+      "target": "result.ko.md",
+      "exists": true
+    },
+    {
+      "file": "docs/analysis/E063-outputs/s2/post-result/post-result-handoff.ko.md",
+      "target": "comparison.json",
+      "exists": true
+    },
+    {
+      "file": "docs/analysis/E063-outputs/s2/post-result/post-result-handoff.ko.md",
+      "target": "verification.json",
+      "exists": true
+    },
+    {
+      "file": "docs/analysis/E063-outputs/s2/post-result/exposure-ledger.md",
+      "target": "result.ko.md",
+      "exists": true
+    },
+    {
+      "file": "docs/analysis/E063-outputs/s2/post-result/exposure-ledger.md",
+      "target": "post-result-handoff.ko.md",
+      "exists": true
+    }
+  ],
+  "dirty_entry_count_before_grouped": 114,
+  "dirty_entry_count_before_expanded": 2175,
+  "dirty_entry_count_after_expanded": 2193,
+  "old_dirty_entries_removed": [],
+  "new_dirty_entries": [
+    "?? docs/analysis/E063-outputs/s2/post-result/before/01-SCORES.md",
+    "?? docs/analysis/E063-outputs/s2/post-result/before/02-SCORES.md",
+    "?? docs/analysis/E063-outputs/s2/post-result/before/03-status.md",
+    "?? docs/analysis/E063-outputs/s2/post-result/before/04-log.md",
+    "?? docs/analysis/E063-outputs/s2/post-result/comparison.json",
+    "?? docs/analysis/E063-outputs/s2/post-result/document-changes.json",
+    "?? docs/analysis/E063-outputs/s2/post-result/entry.json",
+    "?? docs/analysis/E063-outputs/s2/post-result/exposure-ledger.md",
+    "?? docs/analysis/E063-outputs/s2/post-result/global-scores-addition.md",
+    "?? docs/analysis/E063-outputs/s2/post-result/log-addition.md",
+    "?? docs/analysis/E063-outputs/s2/post-result/normalization.json",
+    "?? docs/analysis/E063-outputs/s2/post-result/post-result-handoff.ko.md",
+    "?? docs/analysis/E063-outputs/s2/post-result/read-receipt.md",
+    "?? docs/analysis/E063-outputs/s2/post-result/result.ko.md",
+    "?? docs/analysis/E063-outputs/s2/post-result/scorecard-addition.md",
+    "?? docs/analysis/E063-outputs/s2/post-result/status-addition.md",
+    "?? docs/analysis/E063-outputs/s2/post-result/user-message.txt",
+    "?? docs/analysis/E063-outputs/s2/post-result/user-supplied-api.json"
+  ],
+  "all_new_dirty_paths_in_post_result": true,
+  "final_named_local_jobs": [],
+  "job_observed_kst": "2026-10-10T00:54:19.6446104+09:00",
+  "job_scope": "Named local Python/pythonw/uv repository command paths, observed before this document helper; no remote audit.",
+  "document_diff_check": {
+    "exit_code": 0,
+    "output": "warning: in the working copy of 'submissions/SCORES.md', LF will be replaced by CRLF the next time Git touches it\n",
+    "scope": "Only four changed destination documents, no generic tests or source/raw access."
+  },
+  "document_helper_failure": {
+    "failed_chunk": "12ff7b",
+    "reason": "Job query retained Windows venv launcher after excluding helper child PID; no files created.",
+    "diagnostic_chunk": "44d9ba",
+    "repair_chunk": "21c674",
+    "repair": "Observe jobs outside helper before launching it, preserving prohibition on killing jobs or running scientific checks."
+  },
+  "forbidden_actions_performed": {
+    "fit_optimizer_predict_score": 0,
+    "fixture_checker_successful_validation_rerun": 0,
+    "data_Parquet_NPZ_key_cache_ZIP_access_or_rehash": 0,
+    "model_source_seed_head_threshold_changes": 0,
+    "platform_login_query_upload": 0,
+    "install_remote_subagents": 0,
+    "commit_push": 0,
+    "S3_TEST_selection": 0
+  },
+  "preserved_state": "E041 incumbent/E025 fallback; E057/E060/E061/E062/E063 parked; E062 UNRESOLVED; E058 STOP/E059 STOP_SELECTION/A023/A024 empirical HOLD/A039/A040/all STOP/HOLD;17999people/12339SSUID/aggregates/A022 original roles;E059 consumed oracle1918/1124/selection2007/1130;protected audit2074/1177/calibration1866;A_half unpromoted/A018 user-unconfirmed/S3 stopped.",
+  "limits": [
+    "Archival UTF-8/LF visible message, not original HTTP bytes",
+    "No independent platform authentication or scorer-version proof",
+    "Created metadata not observed upload-start/completion/Finished time",
+    "Membership/owner not best-update event, slot or authorization evidence",
+    "No exact effect, prediction equality, whole-family refutation or hidden activation inference",
+    "Only selected document integrity and git metadata checked; forbidden model/raw/ZIP bytes not audited",
+    "Local named jobs observation does not prove all jobs or remote absence"
+  ],
+  "next_action": "Return S0 for priority judgment only, no automatic experiment/retry/adoption/TEST."
+}

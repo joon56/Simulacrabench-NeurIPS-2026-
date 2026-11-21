@@ -1,0 +1,40 @@
+{
+  "decision": "TERMINAL_CONFIRMED",
+  "workspace": "joon56",
+  "environment": "main",
+  "app_id": "ap-XiMVzlJgrNrCiFpIN1kB4W",
+  "sandbox_name": "a040-resume5-20261005-094405-gpu",
+  "sandbox_id": "sb-svFnVI39hH3DpUIZ4Z9LXK",
+  "version": "V1",
+  "terminal_source": "Exact-ID SandboxWait",
+  "result": {
+    "status": 3,
+    "status_name": "GENERIC_STATUS_TERMINATED",
+    "exitcode": 0
+  },
+  "terminal_observed_utc": "2026-10-05T12:46:48.981398+00:00",
+  "terminal_observed_kst": "2026-10-05T21:46:48.981408+09:00",
+  "platform_reported_finished_utc": "2026-10-05T09:50:47.436434+00:00",
+  "finished_time_source": "SandboxListV2 task_info.finished_at; terminal proof is exact-ID SandboxWait",
+  "termination_requested_this_task": false,
+  "app": {
+    "state": 5,
+    "tasks": 0,
+    "stopped_task0": true
+  },
+  "billing_observed_utc": "2026-10-05T12:46:50.547249+00:00",
+  "billing": {
+    "metered_cost": "0.01009897",
+    "billed_cost": "0.00000000",
+    "metered_breakdown": {
+      "LLM Tokens": "0.00000000",
+      "Deployed Apps": "0.00543862",
+      "Volumes": "0.00000000"
+    },
+    "attribution": "WORKSPACE_AGGREGATE_NOT_TASK_INVOICE",
+    "posting_delay_unknown": true
+  },
+  "attributed_final_cost": null,
+  "gpu_runtime": null,
+  "limits": "Workspace aggregate, posting delay and attribution unresolved. Not a task invoice; zero billed is not zero final cost."
+}

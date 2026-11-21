@@ -1,0 +1,39 @@
+{
+  "started_utc": "2026-09-26T17:13:36.657681+00:00",
+  "command": [
+    "C:\\Users\\USER\\Desktop\\SimulacraBench\\.venv\\Scripts\\python.exe",
+    "-B",
+    "-m",
+    "pytest",
+    "tests/test_a023_candidate_boundary.py",
+    "-q",
+    "-p",
+    "no:cacheprovider"
+  ],
+  "real_fits": 0,
+  "real_optimizer_calls": 0,
+  "response_reads": 0,
+  "parquet_reads": 0,
+  "cache_decodes": 0,
+  "real_predictions": 0,
+  "real_scores": 0,
+  "scope": "Owned tiny-fixture worker plus monitor, not real model runtime",
+  "cpu_threads_limit": 2,
+  "memory_limit_bytes": 2147483648,
+  "sample_seconds": 0.1,
+  "worker_wall_limit_seconds": 60,
+  "resource_stop": "COMPLETE",
+  "peak_tree_bytes": {
+    "rss": 73527296,
+    "commitment": 44376064
+  },
+  "seconds_including_worker_imports": 1.1747910999984015,
+  "test_output": "\r\n=================================== ERRORS ====================================\r\n___________ ERROR collecting tests/test_a023_candidate_boundary.py ____________\r\nImportError while importing test module 'C:\\Users\\USER\\Desktop\\SimulacraBench\\tests\\test_a023_candidate_boundary.py'.\r\nHint: make sure your test modules/packages have valid Python names.\r\nTraceback:\r\n..\\..\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\importlib\\__init__.py:88: in import_module\r\n    return _bootstrap._gcd_import(name[level:], package, level)\r\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\ntests\\test_a023_candidate_boundary.py:8: in <module>\r\n    from scripts.check_a023_candidate_boundary import (\r\nE   ModuleNotFoundError: No module named 'scripts.check_a023_candidate_boundary'\r\n=========================== short test summary info ===========================\r\nERROR tests/test_a023_candidate_boundary.py\r\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\r\n1 error in 0.42s\r\n",
+  "exit_code": 2,
+  "status": "EXPECTED_RED",
+  "empirical_disposition": "HOLD",
+  "code_hashes": {
+    "scripts/check_a023_resources.py": "b2d5a837e2d0d9f55448c084ca1c3cfbe97db2987f6bf0b7b55d5718fa2a8d76",
+    "tests/test_a023_candidate_boundary.py": "b6742f729e49708c4b6c6dfcb39f7a1f64de001bf2b658164dba9835afb54962"
+  }
+}

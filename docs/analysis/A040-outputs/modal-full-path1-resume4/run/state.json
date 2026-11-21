@@ -1,0 +1,22 @@
+{
+  "scope": "LIVE",
+  "outcome": "STOP_FIRST_ERROR",
+  "app_name": "a040-resume4-20261004-144620",
+  "create_intent": true,
+  "build_intent": true,
+  "sandbox_intent": false,
+  "app_id": "ap-zr5WBi06SAuzc6om241Y32",
+  "sandbox_id": null,
+  "image_id": null,
+  "actual_remote_facts": "PENDING",
+  "workspace": "joon56",
+  "base": {
+    "status": 1,
+    "result_sha256": "942058f1cdfeb21505e29639b06bcda9238c372c9673c1f1ded1d0058284b612"
+  },
+  "base_metadata_sha256": "8ca4c36acfeaae00204c83c3cff694c3f40562a64c01bec4b9764bbc981f910e",
+  "error": "ImageBuildError('Image build for im-LEPHgU6tpUAuu3H17E5rr5 failed.\\nView the build logs:\\n  modal image logs im-LEPHgU6tpUAuu3H17E5rr5')",
+  "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\modal-output-contract-repair1\\live_worker.py\", line 186, in run\n    await build(context)\n  File \"C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\modal-output-contract-repair1\\live_worker.py\", line 94, in build\n    context.state[\"image_id\"] = await task\n                                ^^^^^^^^^^\n  File \"C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\modal-output-contract-repair1\\sdk_endpoint.py\", line 53, in build\n    await self.image_builder(self.image, self.app)\n  File \"C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\modal-output-contract-repair1\\sdk_endpoint.py\", line 46, in _build\n    return await image.build(app)\n           ^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\USER\\Desktop\\SimulacraBench\\tmp\\a040-modal-full-path1\\sdk-venv\\Lib\\site-packages\\modal\\_image.py\", line 1104, in build\n    await resolver.load(self, load_context)\n  File \"C:\\Users\\USER\\Desktop\\SimulacraBench\\tmp\\a040-modal-full-path1\\sdk-venv\\Lib\\site-packages\\modal\\_image.py\", line 792, in _load\n    raise ImageBuildError(msg, image_id)\nmodal.exception.ImageBuildError: Image build for im-LEPHgU6tpUAuu3H17E5rr5 failed.\nView the build logs:\n  modal image logs im-LEPHgU6tpUAuu3H17E5rr5\n",
+  "termination": "TERMINAL_TASK0_CONFIRMED",
+  "elapsed_seconds": 12.610930399998324
+}

@@ -1,6 +1,90 @@
 # Phase-2 preparation: E041 candidate and E025 fallback
 
-## Current A018 frozen delivery — 2026-09-25
+## Current S0 method review — 2026-10-23
+
+Both E041/E025 review drafts accepted; final delivery remains unapproved.
+[S0 decision](analysis/A044-outputs/s0-method-review/decision.md).
+No model/rerender repetition needed. E025's old Grand-derived .015-.03 wording
+should be scoped to its historical observation channel at eventual finalization.
+User confirms sole rights holder for team-original code; actual license scope/text
+remain undecided, and third-party rights/notices are not waived. Final model,
+current Terms/exact times/account/slot/upload remain separate. E064 DEV pending.
+This notice starts no new execution; ownership release is in the S0 verification.
+
+### Earlier S3 draft completion — preserved
+
+## Current S0 review — 2026-10-23
+
+## Current S3 document completion - 2026-10-23
+
+**REVIEW_DRAFTS_COMPLETE / FINAL_DELIVERY_NOT_APPROVED.**
+New E041/E025 English review methods each passed actual4-page, text/link/bounds
+checks and all8 PNG visual reviews. [S0 return](analysis/A044-outputs/s3-method-drafts/s0-handoff.ko.md),
+[document hashes](analysis/A044-outputs/s3-method-drafts/document-pairing.json),
+[open decisions](analysis/A044-outputs/s3-method-drafts/open-decisions.md).
+No model/scorer/checker/ZIP work here. New E025 provenance is incorporated from
+completed evidence; E041 was not rerun. E041 provisional/E025 alternative/E064
+DEV waiting remain. Rights/license/current Terms/exact Final times/final choice/
+account/slot/upload remain open. No TEST freeze, license grant or delivery approval.
+S3 writer release and final jobs/budget are in the linked verification receipt.
+
+### Earlier phase2 notices - retained historical planning
+
+S0 accepted the specific E025 local phase2 provenance completion. No repeat model,
+checker or archive work is needed without a newly identified invalidation.
+E041 remains provisional; E025 remains an alternative. The synthetic E025 UNHCR
++.000508448996 does not decide final TEST choice. E064 waits for DEV delivery.
+[Decision](analysis/A044-outputs/s0-e025-review/decision.md).
+
+Next proposal: prepare separate E041/E0254-page **review drafts** with updated E025
+engineering evidence. Existing drafts and PDFs stay historical. Unknown owner
+license/current Terms/exact Final times stay explicit; review drafting may proceed
+under separate user approval without pretending final delivery is approved.
+[S3 document-only handoff](analysis/A044-outputs/s0-e025-review/s3-method-review-drafts.ko.md).
+No execution starts from this notice. S0 release is in its linked verification.
+
+### Earlier S3 completion notice — preserved
+
+## Current status — 2026-10-23, S3-E025-PROVENANCE-A044
+
+E025 local phase2 provenance complete for S0: unchanged modular source/preserved
+archive442425 vectors raw-exact, official3 PASS, absolute E041 difference.002 gate
+all3 PASS. Source429.930s and official450.277s each below shared900s; observed tree
+memory below8GiB. [Closeout](analysis/A044-outputs/s3-e025-provenance/closeout.md),
+[release](analysis/A044-outputs/s3-e025-provenance/verification.json).
+
+E041 remains provisional, E025 fallback; final TEST choice is not user-confirmed.
+No new ZIP/upload/commit/push. A012 historical environment omissions, private hosted
+equivalence and TEST efficacy remain unverified. Method/license/current Terms/exact
+Final timestamps remain separate work. Writer released to S0 review; no automatic
+continuation. The S3-PREP notice below is historical; its E025 provenance gap is
+superseded only within the exact local scope above.
+
+### Earlier S3 preparation notice — historical
+
+## Current status — 2026-10-23, S3-PREP-A044
+
+E041 is a **provisional reference**, E025 an alternative. Final TEST choice is
+not user-confirmed. S3 document preparation is complete; no model/checker/package/
+PDF render/upload/commit/push occurred. [Closeout](analysis/A044-outputs/s3-prep/closeout.md).
+
+Current public dates: DEV through Nov13, Final Nov14–18. Exact platform times/
+latest Terms remain unavailable; website winner-only method wording differs from
+historical Terms. New internal cutoff dates are proposals only.
+[Rules and schedule](analysis/A044-outputs/s3-prep/rules-and-schedule.md).
+
+Public kit f980ef5 preserves inspected scorer/schema/mask/normalization contracts
+relative to local ee427a9. Existing ZIP/main/PDF identities match A018; protected
+inputs/raw arrays and current environment were not rechecked. E025 historical
+raw/scorer/data provenance remains weaker. No current complete phase2 PASS.
+[Validity](analysis/A044-outputs/s3-prep/phase2-validity.md),
+[conditional revalidation proposal](analysis/A044-outputs/s3-prep/revalidation-plan.md).
+
+New method drafts and license inventory live in s3-prep. Original methods/PDFs,
+A012/A018 manifests, model sources and both ZIPs are preserved. No new PDF was
+rendered; the team code license awaits owner choice. Old selected/date/cutoff/
+window-day commands below are historical, not current execution instructions.
+## Historical A018 frozen delivery — 2026-09-25
 
 This section supersedes the historical candidate choice and window-day commands
 below. [A018](analysis/A018-test-selection.md) fixes comparison and selection:

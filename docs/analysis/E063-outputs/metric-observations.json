@@ -1,0 +1,179 @@
+{
+  "schema_group_order": [
+    "2",
+    "3",
+    "7a",
+    "7b",
+    "7c",
+    "4",
+    "5",
+    "6"
+  ],
+  "weight_differences": [
+    {
+      "section": "2",
+      "max_abs_round_difference": 1.0512460473673393,
+      "l2_round_difference": 2.2281384048004056,
+      "max_abs_Hmean_R": 0.4024592030919585
+    },
+    {
+      "section": "3",
+      "max_abs_round_difference": 0.670205749737602,
+      "l2_round_difference": 1.0842478215475817,
+      "max_abs_Hmean_R": 0.1466418593838565
+    },
+    {
+      "section": "7a",
+      "max_abs_round_difference": 2.367700343969996,
+      "l2_round_difference": 4.678236483974545,
+      "max_abs_Hmean_R": 1.2569762552856472
+    },
+    {
+      "section": "7b",
+      "max_abs_round_difference": 3.305440259600737,
+      "l2_round_difference": 5.5913192091284,
+      "max_abs_Hmean_R": 1.3280501789596886
+    },
+    {
+      "section": "7c",
+      "max_abs_round_difference": 1.5014740250754615,
+      "l2_round_difference": 2.988180287948054,
+      "max_abs_Hmean_R": 0.7507370125377307
+    },
+    {
+      "section": "4",
+      "max_abs_round_difference": 0.9586031721635111,
+      "l2_round_difference": 1.7727205293426935,
+      "max_abs_Hmean_R": 0.1952978044553062
+    },
+    {
+      "section": "5",
+      "max_abs_round_difference": 0.31255581778903874,
+      "l2_round_difference": 0.7095884106394996,
+      "max_abs_Hmean_R": 0.11439849252228809
+    },
+    {
+      "section": "6",
+      "max_abs_round_difference": 1.0277148236879843,
+      "l2_round_difference": 1.7020361194169078,
+      "max_abs_Hmean_R": 0.2068755799152836
+    }
+  ],
+  "R_active": [
+    0,
+    1,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "H_active": [
+    0,
+    1,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "active_set_changed": false,
+  "lambda_items_changed": 37,
+  "H_support": {
+    "eligible": true,
+    "visible": 8279,
+    "held": 621,
+    "wave_support": {
+      "fit": [
+        465,
+        735
+      ],
+      "select": [
+        323,
+        477
+      ]
+    },
+    "fit_donor_width": 32,
+    "reason": "supported",
+    "sections": [
+      {
+        "selected": true,
+        "gain_log": 0.08397332244797404,
+        "standard_error": 0.00735726574987738,
+        "old_share": 0.5,
+        "new_share": 0.8320154703252908,
+        "iterations": 20
+      },
+      {
+        "selected": true,
+        "gain_log": 0.05205419041602496,
+        "standard_error": 0.002417053743723343,
+        "old_share": 0.5,
+        "new_share": 0.8075509035162558,
+        "iterations": 17
+      },
+      {
+        "selected": false,
+        "gain_log": -0.0004676074592761138,
+        "standard_error": 0.005249504212606395,
+        "old_share": 0,
+        "new_share": 0.5164627586352406,
+        "iterations": 29
+      },
+      {
+        "selected": true,
+        "gain_log": 0.04048450798793469,
+        "standard_error": 0.00859823965861751,
+        "old_share": 0.5,
+        "new_share": 0.7720913586937949,
+        "iterations": 36
+      },
+      {
+        "selected": true,
+        "gain_log": 0.07142862607019518,
+        "standard_error": 0.010554392815198488,
+        "old_share": 0.5,
+        "new_share": 0.8353426557089092,
+        "iterations": 22
+      },
+      {
+        "selected": true,
+        "gain_log": 0.08651656858406405,
+        "standard_error": 0.007816278891986623,
+        "old_share": 0.5,
+        "new_share": 0.7965386403270661,
+        "iterations": 22
+      },
+      {
+        "selected": true,
+        "gain_log": 0.11538562920506129,
+        "standard_error": 0.006156200332339622,
+        "old_share": 0.5,
+        "new_share": 0.8187798384128337,
+        "iterations": 17
+      },
+      {
+        "selected": true,
+        "gain_log": 0.04931564498170846,
+        "standard_error": 0.0036098527380675543,
+        "old_share": 0.5,
+        "new_share": 0.8151366559654084,
+        "iterations": 17
+      }
+    ],
+    "active": [
+      0,
+      1,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "fit_rows": 1200,
+    "selection_rows": 800,
+    "reference_rows": 5479,
+    "replay_rows": 800
+  },
+  "interpretation": "Fixed descriptive observations only; not a new selector, no retrospective head/round choices. The inactive 7a fitted weights are recorded but not promoted."
+}

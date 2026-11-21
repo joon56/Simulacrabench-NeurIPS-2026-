@@ -1,5 +1,16 @@
 # SimulacraBench knowledge base — index
 
+## Start here
+
+- [Current status](status.md) — incumbent, holds, next task and current handoff.
+- [Workflow](workflow.md) — S0/S1/S2/S3 boundaries and read receipts.
+- [Session prompts](session-prompts.ko.md) — Korean task templates.
+- [Codex/Windows setup](codex-setup.ko.md) — environment, skills and folder map.
+- [Analysis template](analysis/TEMPLATE.md) / [Experiment template](experiments/TEMPLATE.md).
+- [Submission history](../submissions/README.md) — historical readings; consult
+  status and the candidate's scorecard for current interpretation.
+- Agent entries: [AGENTS.md](../AGENTS.md), [CLAUDE.md](../CLAUDE.md).
+
 ## Domain literature
 
 - [[domain]] — reading list across the six literatures underlying the competition: IRT, low-rank matrix completion, proper scoring rules and calibration, deep generative tabular imputation, survey methodology, LLM survey simulation.

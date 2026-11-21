@@ -1,0 +1,404 @@
+diff --git a/src/models/shared_trunk.py b/src/models/wb_ordinal_heads.py
+index a5c5817..003cec6 100644
+--- a/src/models/shared_trunk.py
++++ b/src/models/wb_ordinal_heads.py
+@@ -1,132 +1,93 @@
+-"""E012 — shared-trunk multi-head network replacing the per-item logistic.
+-
+-One network per instrument: one-hot GIVEN block -> Linear-ReLU-Linear-ReLU
+-trunk -> per-item softmax heads (full distributions incl. the gate
+-sentinel) + asked-only conditional heads for gated items (masked CE).
+-Marginalizing a latent respondent factor makes P(item | GIVEN) nonlinear
+-in the one-hots, and the shared trunk pools information across all items
+-— both things the independent main-effects logistics cannot do.
+-
+-Training: pooled cross-entropy (sum over heads / total cells), Adam,
+-full-batch, early stopping on an inner validation split; the final net
+-retrains on all complete rows for the selected epoch count. The blend
+-weight w per instrument (same grid, same holdout) stays as the
+-calibration guard. Ladder, gate recursion, and E010's conditional
+-agreement are unchanged.
+-"""
+-
++"""E062: one WB16 conditional-logit head, retaining E041 pipeline policies."""
+ import numpy as np
+-import pandas as pd
+ import torch
+ from torch import nn
++from torch.nn import functional as F
+ 
++from src.models import shared_trunk, hh_cap, link_sharp, supervised_retrieval
++from src.models.hh_sharp import hh_sharp_layer
+ from src.models.hier_backoff import (
+     _layout, _complete_rows, _codes, build_ladder, ladder_lookup,
+-    select_ladder, HOLDOUT_SEED, HOLDOUT_FRAC,
++    HOLDOUT_SEED, HOLDOUT_FRAC,
+ )
+ from src.models.logit_blend import _given_matrix, _floored, W_GRID
+-from src.models.cond_agree import conditional_agreement
+-
+-HIDDEN = 64
+-LR = 3e-3
+-WEIGHT_DECAY = 1e-4
+-MAX_EPOCHS = 500
+-PATIENCE = 30
+-TORCH_SEED = 0
+-
++from src.models.shared_trunk import (
++    _targets, _pooled_ce, _device, _net_device, _proba_maps, _tensor,
++    DEFAULT_CONFIG, LR, WEIGHT_DECAY, MAX_EPOCHS, PATIENCE, TORCH_SEED,
++)
+ 
+-DEFAULT_CONFIG = (HIDDEN, 2, 0.0)  # (width, depth, dropout) == E012
++TARGETS=tuple('sc_nstd_'+suffix for suffix in (
++    'extra','agree','consc','stability','open','gm','pp','s_aware',
++    's_manage','soc_aware','realistic','invest','artistic','social','enterp','convent'))
++LABELS=('<2.5','2.5-3.0','3.0-3.5','3.5-4.0','4.0-4.5','4.5-5.0','Not answered')
+ 
+ 
+-class _Net(nn.Module):
+-    def __init__(self, d_in, full_dims, cond_dims, config=DEFAULT_CONFIG):
+-        super().__init__()
+-        width, depth, dropout = config
+-        layers, d = [], d_in
+-        for _ in range(depth):
+-            layers += [nn.Linear(d, width), nn.ReLU()]
+-            if dropout > 0:
+-                layers.append(nn.Dropout(dropout))
+-            d = width
+-        self.trunk = nn.Sequential(*layers)
+-        self.full_heads = nn.ModuleList(
+-            [nn.Linear(width, k) for k in full_dims])
+-        self.cond_heads = nn.ModuleList(
+-            [nn.Linear(width, k) for k in cond_dims])
++def ordinal_log_probs(logits):
++    """Return six substantive log probabilities and separate nonresponse logp."""
++    t, g=logits[..., :5], logits[..., 5:6]
++    log_continue=F.logsigmoid(t)
++    cumulative=log_continue.cumsum(dim=-1)
++    prefix=torch.cat((torch.zeros_like(g), cumulative[..., :-1]), dim=-1)
++    content=torch.cat((prefix+F.logsigmoid(-t), cumulative[..., -1:]), dim=-1)
++    return torch.cat((F.logsigmoid(-g)+content, F.logsigmoid(g)), dim=-1)
+ 
+-    def forward(self, x):
+-        z = self.trunk(x)
+-        return ([h(z) for h in self.full_heads],
+-                [h(z) for h in self.cond_heads])
+ 
++def ordinal_indices(predict_items, records, options):
++    """Reject any partial or altered WB16 contract before a model fit."""
++    for item in TARGETS:
++        rec=records.get(item)
++        if (rec is None or rec.get('class')!='PREDICT' or rec.get('gate') is not None
++                or tuple(rec.get('values',()))!=LABELS or tuple(options.get(item,()))!=LABELS
++                or item not in predict_items):
++            raise ValueError('WB16 ordinal schema contract mismatch: '+item)
++    return tuple(i for i,item in enumerate(predict_items) if item in TARGETS)
+ 
+-def _targets(rows, predict_items, options, records, gated_value):
+-    """(full targets [n, I], cond targets [n, G] with -1 = not asked)."""
+-    full, cond = [], []
+-    for item in predict_items:
+-        opt_index = {o: i for i, o in enumerate(options[item])}
+-        full.append(rows[item].map(opt_index).to_numpy(dtype=np.int64))
+-        if records[item].get("gate"):
+-            values = {o: i for i, o in
+-                      enumerate(records[item]["values"])}
+-            cond.append(rows[item].map(values).fillna(-1)
+-                        .to_numpy(dtype=np.int64))
+-    full = np.stack(full, axis=1)
+-    cond = (np.stack(cond, axis=1) if cond
+-            else np.zeros((len(rows), 0), dtype=np.int64))
+-    return full, cond
+ 
++class OrdinalHead(nn.Module):
++    def __init__(self, nominal):
++        super().__init__()
++        if nominal.out_features!=7:
++            raise ValueError('Ordinal head requires seven original classes')
++        rows=[0,1,2,3,4,6]
++        self.weight=nn.Parameter(nominal.weight.detach()[rows].clone())
++        self.bias=nn.Parameter(nominal.bias.detach()[rows].clone())
+ 
+-def _pooled_ce(full_logits, cond_logits, full_t, cond_t):
+-    loss, count = 0.0, 0
+-    for j, logits in enumerate(full_logits):
+-        t = full_t[:, j]
+-        loss = loss + nn.functional.cross_entropy(logits, t,
+-                                                  reduction="sum")
+-        count += len(t)
+-    for j, logits in enumerate(cond_logits):
+-        t = cond_t[:, j]
+-        mask = t >= 0
+-        if mask.any():
+-            loss = loss + nn.functional.cross_entropy(
+-                logits[mask], t[mask], reduction="sum")
+-            count += int(mask.sum())
+-    return loss / max(count, 1)
++    def forward(self, z):
++        return ordinal_log_probs(F.linear(z,self.weight,self.bias))
+ 
+ 
+-def _device():
+-    """Hosted runner has an H100; locally this is the CPU. The CPU path is
+-    unchanged bit-for-bit (all .to() calls are no-ops there)."""
+-    return torch.device("cuda" if torch.cuda.is_available() else "cpu")
++class OrdinalNet(shared_trunk._Net):
++    def __init__(self,d_in,full_dims,cond_dims,config,ordinal_map):
++        # Construct all nominal parameters first, preserving every original draw.
++        super().__init__(d_in,full_dims,cond_dims,config)
++        for index in ordinal_map:
++            self.full_heads[index]=OrdinalHead(self.full_heads[index])
+ 
+ 
+ def _train(X_fit, full_fit, cond_fit, X_val, full_val, cond_val,
+            full_dims, cond_dims, max_epochs=MAX_EPOCHS,
+-           config=DEFAULT_CONFIG):
++           config=DEFAULT_CONFIG, ordinal_map=()):
+     dev = _device()
+     try:
+         return _train_on(dev, X_fit, full_fit, cond_fit, X_val, full_val,
+-                         cond_val, full_dims, cond_dims, max_epochs, config)
++                         cond_val, full_dims, cond_dims, max_epochs, config,
++                         ordinal_map)
+     except Exception:
+-        if dev.type != "cuda":
++        if dev.type != 'cuda':
+             raise
+-        # any GPU-side trouble (driver, memory, dtype) -> retrain on CPU
+-        return _train_on(torch.device("cpu"), X_fit, full_fit, cond_fit,
++        return _train_on(torch.device('cpu'), X_fit, full_fit, cond_fit,
+                          X_val, full_val, cond_val, full_dims, cond_dims,
+-                         max_epochs, config)
++                         max_epochs, config, ordinal_map)
+ 
+ 
+ def _train_on(dev, X_fit, full_fit, cond_fit, X_val, full_val, cond_val,
+-              full_dims, cond_dims, max_epochs, config):
++              full_dims, cond_dims, max_epochs, config, ordinal_map):
+     torch.manual_seed(TORCH_SEED)
+-    net = _Net(X_fit.shape[1], full_dims, cond_dims, config).to(dev)
+-    X_fit, full_fit, cond_fit = (X_fit.to(dev), full_fit.to(dev),
+-                                 cond_fit.to(dev))
++    net = OrdinalNet(X_fit.shape[1], full_dims, cond_dims, config, ordinal_map).to(dev)
++    X_fit, full_fit, cond_fit = (X_fit.to(dev), full_fit.to(dev), cond_fit.to(dev))
+     if X_val is not None:
+-        X_val, full_val, cond_val = (X_val.to(dev), full_val.to(dev),
+-                                     cond_val.to(dev))
+-    opt = torch.optim.Adam(net.parameters(), lr=LR,
+-                           weight_decay=WEIGHT_DECAY)
++        X_val, full_val, cond_val = (X_val.to(dev), full_val.to(dev), cond_val.to(dev))
++    opt = torch.optim.Adam(net.parameters(), lr=LR, weight_decay=WEIGHT_DECAY)
+     best_val, best_epoch, best_state = np.inf, 0, None
+     for epoch in range(1, max_epochs + 1):
+         net.train()
+@@ -143,8 +104,7 @@ def _train_on(dev, X_fit, full_fit, cond_fit, X_val, full_val, cond_val,
+             val = float(_pooled_ce(fl, cl, full_val, cond_val))
+         if val < best_val - 1e-5:
+             best_val, best_epoch = val, epoch
+-            best_state = {k: v.clone()
+-                          for k, v in net.state_dict().items()}
++            best_state = {k: v.clone() for k, v in net.state_dict().items()}
+         elif epoch - best_epoch >= PATIENCE:
+             break
+     if best_state is not None:
+@@ -153,56 +113,30 @@ def _train_on(dev, X_fit, full_fit, cond_fit, X_val, full_val, cond_val,
+     return net, (best_epoch if X_val is not None else max_epochs)
+ 
+ 
+-def _net_device(net):
+-    return next(net.parameters()).device
+-
+-
+-def _proba_maps(net, X_all, predict_items, gated_items):
+-    with torch.no_grad():
+-        fl, cl = net(X_all.to(_net_device(net)))
+-    full = {item: torch.softmax(logits, dim=1).cpu().numpy()
+-            for item, logits in zip(predict_items, fl)}
+-    cond = {item: torch.softmax(logits, dim=1).cpu().numpy()
+-            for item, logits in zip(gated_items, cl)}
+-    return full, cond
+-
+-
+-def _tensor(X):
+-    return torch.from_numpy(np.asarray(X.todense(), dtype=np.float32))
+-
+-
+ def tune_and_train(frame, schema, cols, kappas, configs=None, extra=None):
+-    """Returns (w, net trained on all complete rows, layout helpers).
+-
+-    configs: optional tuple of (width, depth, dropout) architectures —
+-    each is trained on the inner split and the one with the best pooled
+-    CE on the OUTER eval split wins before w tuning. None keeps the
+-    single DEFAULT_CONFIG (bit-identical to E012)."""
++    """Original shared-trunk selection/refit; only the network factory differs."""
+     records, items, options = _layout(frame, schema)
+-    predict_items = [n for n in items if records[n]["class"] == "PREDICT"]
+-    gated_items = [n for n in predict_items if records[n].get("gate")]
++    predict_items = [n for n in items if records[n]['class'] == 'PREDICT']
++    gated_items = [n for n in predict_items if records[n].get('gate')]
+     full_dims = [len(options[n]) for n in predict_items]
+-    cond_dims = [len(records[n]["values"]) for n in gated_items]
+-    gated_value = schema["gated_value"]
+-
++    cond_dims = [len(records[n]['values']) for n in gated_items]
++    gated_value = schema['gated_value']
++    mapping = ordinal_indices(predict_items, records, options)
+     complete = _complete_rows(frame, items)
+     rng = np.random.default_rng(HOLDOUT_SEED)
+     mask = rng.random(len(complete)) < HOLDOUT_FRAC
+     fit_rows, eval_rows = complete[~mask], complete[mask]
+     if len(fit_rows) < 10 or len(eval_rows) == 0:
+         return 0.0, None, (predict_items, gated_items)
+-
+-    # inner early-stop split inside the fit portion
+     rng2 = np.random.default_rng(HOLDOUT_SEED + 1)
+     inner = rng2.random(len(fit_rows)) < 0.2
+     train_rows, val_rows = fit_rows[~inner], fit_rows[inner]
+ 
+     def prep(rows):
+         X = _tensor(_given_matrix(rows, records, items, options))
+-        if extra is not None:  # extra: [len(frame), D] aligned to frame
++        if extra is not None:
+             pos = frame.index.get_indexer(rows.index)
+-            X = torch.cat([X, torch.from_numpy(
+-                np.asarray(extra[pos], dtype=np.float32))], dim=1)
++            X = torch.cat([X, torch.from_numpy(np.asarray(extra[pos], dtype=np.float32))], dim=1)
+         f, c = _targets(rows, predict_items, options, records, gated_value)
+         return X, torch.from_numpy(f), torch.from_numpy(c)
+ 
+@@ -214,18 +148,14 @@ def tune_and_train(frame, schema, cols, kappas, configs=None, extra=None):
+     net, best_epoch, config = None, 0, DEFAULT_CONFIG
+     best_ce = np.inf
+     for cand in configs:
+-        cand_net, cand_epoch = _train(X_tr, f_tr, c_tr, X_va, f_va,
+-                                      c_va, full_dims, cond_dims,
+-                                      config=cand)
++        cand_net, cand_epoch = _train(X_tr, f_tr, c_tr, X_va, f_va, c_va,
++                                      full_dims, cond_dims, config=cand, ordinal_map=mapping)
+         with torch.no_grad():
+             dev = _net_device(cand_net)
+             fl, cl = cand_net(X_ev.to(dev))
+             ce = float(_pooled_ce(fl, cl, f_ev.to(dev), c_ev.to(dev)))
+         if ce < best_ce:
+-            best_ce, net, best_epoch, config = ce, cand_net, \
+-                cand_epoch, cand
+-
+-    # blend weight on the outer eval split, net fit on the fit portion
++            best_ce, net, best_epoch, config = ce, cand_net, cand_epoch, cand
+     nn_full, _ = _proba_maps(net, X_ev, predict_items, gated_items)
+     totals = {w: 0.0 for w in W_GRID}
+     cells = 0
+@@ -236,8 +166,7 @@ def tune_and_train(frame, schema, cols, kappas, configs=None, extra=None):
+             continue
+         proba = nn_full[item][np.asarray(valid)]
+         p0, levels = build_ladder(fit_rows, item, opts, cols, kappas)
+-        keys = list(map(tuple, eval_rows.loc[valid, cols].to_numpy())) \
+-            if cols else [() for _ in codes_eval]
++        keys = list(map(tuple, eval_rows.loc[valid, cols].to_numpy())) if cols else [() for _ in codes_eval]
+         ladder = np.stack([ladder_lookup(p0, levels, key) for key in keys])
+         rows_idx = np.arange(len(codes_eval))
+         cells += len(codes_eval)
+@@ -247,92 +176,18 @@ def tune_and_train(frame, schema, cols, kappas, configs=None, extra=None):
+     if cells == 0:
+         return 0.0, None, (predict_items, gated_items)
+     w = max(totals, key=lambda x: totals[x] / cells)
+-
+-    # final net: all complete rows, the selected epoch budget, no val
+     X_all_fit, f_all, c_all = prep(complete)
+     final_net, _ = _train(X_all_fit, f_all, c_all, None, None, None,
+-                          full_dims, cond_dims,
+-                          max_epochs=max(best_epoch, 1), config=config)
++                          full_dims, cond_dims, max_epochs=max(best_epoch, 1),
++                          config=config, ordinal_map=mapping)
+     return w, final_net, (predict_items, gated_items)
+ 
+ 
+-def predict(frame, schema, cols=None, kappas=None, configs=None):
+-    records, items, options = _layout(frame, schema)
+-    if cols is None:
+-        cols, kappas, _ = select_ladder(frame, schema)
+-    w, net, (predict_items, gated_items) = tune_and_train(
+-        frame, schema, cols, kappas, configs=configs)
+-
+-    complete = _complete_rows(frame, items)
+-    if net is not None and w > 0:
+-        X_all = _tensor(_given_matrix(frame, records, items, options))
+-        full_proba, cond_proba = _proba_maps(net, X_all, predict_items,
+-                                             gated_items)
+-    else:
+-        w = 0.0
+-        full_proba = {n: np.zeros((len(frame), len(options[n])))
+-                      for n in predict_items}
+-        cond_proba = {n: np.zeros((len(frame),
+-                                   len(records[n]["values"])))
+-                      for n in gated_items}
+-
+-    full_tables, cond_tables = {}, {}
+-    for item in predict_items:
+-        full_tables[item] = build_ladder(complete, item, options[item],
+-                                         cols, kappas)
+-        if records[item].get("gate"):
+-            cond_tables[item] = build_ladder(
+-                complete, item, list(records[item]["values"]),
+-                cols, kappas)
+-
+-    agreement = conditional_agreement(frame, schema)
+-    item_index = {item: i for i, item in enumerate(items)}
+-
+-    def blended(tables, probas, item, key, row):
+-        p0, levels = tables[item]
+-        ladder = ladder_lookup(p0, levels, key)
+-        logit = probas[item][row]
+-        if logit.sum() <= 0:
+-            return ladder
+-        return w * logit + (1.0 - w) * ladder
+-
+-    out = []
+-    values = frame[items].to_numpy(dtype=object)
+-    col_idx = [items.index(c) for c in cols]
+-    for row in range(values.shape[0]):
+-        key = tuple(values[row, i] for i in col_idx)
+-        belief = {}
+-        for col, item in enumerate(items):
+-            v = values[row, col]
+-            if not pd.isna(v):
+-                vec = np.zeros(len(options[item]))
+-                vec[options[item].index(v)] = 1.0
+-                belief[item] = vec
+-                continue
+-            gate = records[item].get("gate")
+-            if gate is None:
+-                belief[item] = blended(full_tables, full_proba,
+-                                       item, key, row)
+-            else:
+-                parent_belief = belief[gate["parent"]]
+-                asked_idx = [options[gate["parent"]].index(o)
+-                             for o in gate["observed_if"]]
+-                p_asked = float(parent_belief[asked_idx].sum())
+-                hard = np.append(
+-                    p_asked * blended(cond_tables, cond_proba,
+-                                      item, key, row),
+-                    1.0 - p_asked)
+-                soft = blended(full_tables, full_proba, item, key, row)
+-                entry = agreement.get(item)
+-                if entry is None:
+-                    a = 1.0
+-                else:
+-                    scalar, sel_col, table = entry
+-                    if sel_col is None:
+-                        a = scalar
+-                    else:
+-                        a = table.get(values[row, item_index[sel_col]],
+-                                      scalar)
+-                belief[item] = a * hard + (1.0 - a) * soft
+-            out.append(belief[item])
+-    return out
++def predict(frame, schema, cols=None, kappas=None):
++    items=schema['items']
++    is_wb=('participant_id' in items and 'group' in items) or any(name in items for name in TARGETS)
++    if not is_wb:
++        return supervised_retrieval.predict(frame,schema,cols=cols,kappas=kappas)
++    return link_sharp.predict(frame,schema,cols=cols,kappas=kappas,
++                              layer_fn=hh_sharp_layer,configs=hh_cap.CONFIGS,
++                              tune_fn=tune_and_train)

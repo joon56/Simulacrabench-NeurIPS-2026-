@@ -1,0 +1,24 @@
+{
+    "utc":  "2026-10-07T13:37:18.9275863+00:00",
+    "shared":  [
+                   {
+                       "path":  "docs/status.md",
+                       "before_sha256":  "b20c93e0d9a29ddee0c4e18ea7c92a4bcc98ff93beb55f24017f87da3e6f45dc",
+                       "after_sha256":  "5edd7ee6b14c0624d6291402fd81900cbfbc5efc2dff658e6b94f5d329254067",
+                       "insertion_index_char":  321,
+                       "insertion_text":  "- **2026-10-07 E062 S1: EXPLORATORY_SOURCE_QUALIFIED; return to S0.**\r\n  One fixed WB16 conditional-head source implemented. New affected tests13 PASS;\r\n  clean E025/E041/candidate all3 once, pipeline9/neural27, nine outputs frozen before score.\r\n  UNICEF/UNHCR raw controls exact E041. WB skill+.0002723772; all per-instrument\r\n  E025/E041 -.002 gates pass, including UNHCR-E025 -.0004861448.\r\n  Target16 mean log score declined-.0007987550; other60 rose+.0009093584.\r\n  Synthetic engineering only; no ordinal-effect or real-WB benefit claim.\r\n  Candidate357.522443s/900s; computational children1123.196596s/1800s; CPU2/GPU0,\r\n  owned RSS1.3085GiB/private1.4520GiB\u003c8GiB. No additional fit allowance remains.\r\n  [Closeout](analysis/E062-outputs/closeout.md),\r\n  [S0 handoff](analysis/E062-outputs/s0-handoff.ko.md),\r\n  [Verification](analysis/E062-outputs/verification.json).\r\n  E062 remains parked pending S0 review; no automatic S2/release/TEST qualification.\r\n  E041/E025, prior parked/STOP/HOLD/exposure/A018/S3 states preserved; no ZIP,\r\n  original snapshot/tree edit, commit/push or S2/S3. A040 remains deferred.\r\n\r\n",
+                       "removal_restores_original_bytes":  true
+                   },
+                   {
+                       "path":  "docs/log.md",
+                       "before_sha256":  "decb4ffb32d31f832d1d43c8776892ca4b041a030c3d67283c7817b734f99cf3",
+                       "after_sha256":  "720b3127976efebb44f114d323392eb1fca517d0485f58d237e7130ec16942ec",
+                       "insertion_index_char":  21,
+                       "insertion_text":  "## 2026-10-07 - E062 S1 qualifies one WB16 source on exposed synthetic engineering; returns to S0\r\n\r\n- Explicit user-delivered WB implementation scope; workflow r5 receipt and preregistration\r\n  precede implementation/scoring. Initial registration preserved separately from run freeze.\r\n  Existing E041/E025/source/schema identities match; only authorized synthetic TRAIN/DEV.\r\n- New ordinal conditional logits plus separate Not answered; unchanged original pooled NLL,\r\n  configs/seeds/selection/refit/donor/lambda. Exact initial non-target parameters/RNG for\r\n  both configs. New affected tests10+3 PASS; initial expected RED retained and costed.\r\n- Clean E025/E041/candidate all3 each once in fresh processes; pipeline9/neural27/metric16,\r\n  target-role checks36. All nine raw outputs frozen before evaluator-only DEV label access.\r\n  UNICEF17856/WB39520/UNHCR132273 vectors each. Controls exact E041; WB35613 changed,\r\n  max raw difference.1600416005. Per-instrument candidate-E025/E041 \u003e=-.002 passes.\r\n- Whole WB skill+.0002723772 against both baselines; target16 log score-.0007987550,\r\n  other60+.0009093584, target Not answered-.0044084735. Small whole-procedure rise\r\n  does not establish ordinal-head efficacy. UNHCR versus E025-.0004861448, exact E041.\r\n  No new head/seed/threshold/diagnostic search. No fresh WB oracle or significance claim.\r\n- Candidate complete local wall357.522443s/900s; all computational children1123.196596s/\r\n  1800s including failures/preparation/scoring. E025324.976598s/E041342.965921s. CPU2/GPU0,\r\n  one heavy worker; owned RSS1.3085GiB/private1.4520GiB\u003c8GiB. No forced stop or scientific\r\n  failure. E062 EXPLORATORY_SOURCE_QUALIFIED, parked pending S0 review, not adopted.\r\n- [Experiment](experiments/E062-wb-ordinal-heads.md), [Closeout](analysis/E062-outputs/closeout.md),\r\n  [S0 handoff](analysis/E062-outputs/s0-handoff.ko.md), [Verification](analysis/E062-outputs/verification.json).\r\n  Remaining S2 conditions: source/assembly parity, ZIP checker, official all3 runtime/memory,\r\n  clean release E025/E041 comparison and SCORES interpretation. No S2 work authorized here.\r\n  HEADa43f4379 unchanged; existing dirty preserved. No protected/TEST/cache/remote/GPU/install/\r\n  ZIP/snapshot/tree/commit/push/subagent/S2/S3. E041/E025/parked/all STOP/HOLD/A039/A040,\r\n  17999/12339/A022/E059 consumed/protected roles/A_half/A018/S3 boundaries unchanged.\r\n\r\n",
+                       "removal_restores_original_bytes":  true
+                   }
+               ],
+    "experiment_initial_sha256":  "c6b7d587dcc928a761f65b510f8c6018b6c26f7c6b2e59d11a28a4cf0c6389d9",
+    "experiment_final_sha256":  "f54406766b8ab175a88575a0d7d9509f3e5ee60066367993935102261e4a4421",
+    "initial_registration_copy_unchanged":  true
+}

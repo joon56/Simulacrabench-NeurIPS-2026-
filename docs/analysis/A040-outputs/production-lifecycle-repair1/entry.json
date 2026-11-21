@@ -1,0 +1,46 @@
+﻿{
+    "read_evidence":  [
+                          "cf8661",
+                          "142cd5",
+                          "d9a306",
+                          "40ec59"
+                      ],
+    "deadline_utc":  "2026-10-05T15:08:33Z",
+    "authority":  "Current user explicitly directs this S1 to execute terminal-accepted-next-task scope",
+    "head":  "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+    "reads":  [
+                  "AGENTS.md",
+                  "CLAUDE.md",
+                  "docs/status.md",
+                  "docs/log.md newest3",
+                  "docs/workflow.md",
+                  "terminal-accepted-next-task.ko.md",
+                  "named terminal records",
+                  "production12 metadata/source",
+                  "installed SDK source"
+              ],
+    "limits":  {
+                   "check_each":  30,
+                   "actual_rpc":  0,
+                   "closeout":  600,
+                   "checks":  180,
+                   "overall":  3600,
+                   "gpu":  0,
+                   "cpu":  2
+               },
+    "prior_preparation_seconds":  14777.0797748,
+    "work_cutoff_utc":  "2026-10-05T14:58:33Z",
+    "local_jobs":  0,
+    "workflow_sha256":  "a577942675e16a732339e586c14796104dda704693568439ae28670cc7fb7b23",
+    "jobs_evidence":  "3138de",
+    "workflow_revision":  "2026-10-05-r5",
+    "main":  "Actual SDK lifecycle/CLI integration; metadata-only cleanup and pre-create accounting",
+    "backup":  "Exact bounded remaining-defect closeout",
+    "source_manifest_sha256":  "c782c99e29cfceeaba132018d48f2be2a844e7f8b51ba8840157f9ebfa845765",
+    "forbidden":  "Real auth/RPC/build/H100/model/data/payload/pins access/commit/push/S2/S3/subagents",
+    "role":  "S1 technical production lifecycle local repair",
+    "helper_sha256":  "0e68a80ce1237aaa0f95d42777a24154b5cee110858e0bf0a692c17a2d75939a",
+    "science_seconds":  1077.3504532,
+    "entry_utc":  "2026-10-05T14:08:33Z",
+    "science_processes":  4
+}

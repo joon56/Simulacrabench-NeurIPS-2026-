@@ -1,0 +1,34 @@
+{
+  "mode": "tests",
+  "status": "PASS",
+  "command": [
+    "C:\\Users\\USER\\Desktop\\SimulacraBench\\.venv\\Scripts\\python.exe",
+    "-X",
+    "utf8",
+    "-B",
+    "-m",
+    "unittest",
+    "tests.test_e062_assembly",
+    "-v"
+  ],
+  "wall_seconds": 6.782855900000868,
+  "cumulative_worker_seconds": 52.09200750000127,
+  "historical_S1_worker_seconds": 1123.1965955,
+  "combined_worker_seconds": 1175.2886030000013,
+  "reason": "COMPLETE",
+  "error": null,
+  "exit_code": 0,
+  "peak_owned_tree_bytes": {
+    "rss": 410472448,
+    "commitment": 447463424
+  },
+  "sample_interval_seconds": 0.1,
+  "numerical_threads": 2,
+  "gpu": false,
+  "memory_semantics": "Owned controller+descendants; sum of per-process peak RSS/private commitment",
+  "cumulative_calls": {
+    "full_stack": 0,
+    "neural": 0,
+    "metric": 0
+  }
+}

@@ -1,0 +1,42 @@
+[
+    {
+        "candidate":  "E041",
+        "path":  "submissions/2026-09-25-E041.zip",
+        "bytes":  14314,
+        "sha256":  "bd5d2b7df3c39338f68cb08f125f85695073f37c9f4be3f6adcb8961941cd132",
+        "members":  [
+                        {
+                            "name":  "main.py",
+                            "bytes":  48320,
+                            "sha256":  "22c911806ea91234ae350341adfb9c0df2ce4be41cc88e73be304e4bb1023073"
+                        },
+                        {
+                            "name":  "LICENSE-starter-kit.txt",
+                            "bytes":  1153,
+                            "sha256":  "a81db73b86212de93a3944eea5dfb01126ffe17d5fbdb620a6e4c4d04830b20e"
+                        }
+                    ],
+        "main_matches_snapshot":  true,
+        "mode":  "read-only, no extraction/import/checker/recompression"
+    },
+    {
+        "candidate":  "E025",
+        "path":  "submissions/2026-09-25-E025.zip",
+        "bytes":  11240,
+        "sha256":  "142921c3ea843c653821cf06a8b3fab89e8e6c96592581590f7e970064d90c6f",
+        "members":  [
+                        {
+                            "name":  "main.py",
+                            "bytes":  38090,
+                            "sha256":  "00793cf9d720d6f7511ffd738935206b3a5401f2454255409429db8d55e991b9"
+                        },
+                        {
+                            "name":  "LICENSE-starter-kit.txt",
+                            "bytes":  1153,
+                            "sha256":  "a81db73b86212de93a3944eea5dfb01126ffe17d5fbdb620a6e4c4d04830b20e"
+                        }
+                    ],
+        "main_matches_snapshot":  true,
+        "mode":  "read-only, no extraction/import/checker/recompression"
+    }
+]

@@ -1,0 +1,31 @@
+{
+  "paired_log_means": [
+    0.000417438208276457,
+    9.704420437813178e-06
+  ],
+  "cluster_se": [
+    0.0001652818661658023,
+    1.2167985061429043e-05
+  ],
+  "gate": "STOP_SELECTION",
+  "role": "selection",
+  "persons": 2007,
+  "ssuids": 1130,
+  "comparison_order": [
+    "B_half-R",
+    "B_half-A_half"
+  ],
+  "arm_order": [
+    "R",
+    "A_half",
+    "B_half"
+  ],
+  "arm_skills": [
+    0.6408743526951555,
+    0.6412661449641934,
+    0.6412754699625538
+  ],
+  "uniform_reference": 1.0406887017955149,
+  "library_sha256": "56748de6d0ad5a0323476a0b19aed87f79d7d4aabbc227888efc7196ad70a187",
+  "scores_sha256": "c08b6a00ee98c3a5e2162bf9c34f8200a0f232d6b000d3843824668821930112"
+}

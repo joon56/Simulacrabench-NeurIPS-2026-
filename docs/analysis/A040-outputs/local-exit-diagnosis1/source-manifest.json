@@ -1,0 +1,72 @@
+{
+    "scope":  "LOCAL_EXIT_DIAGNOSIS",
+    "remote_authorized":  false,
+    "sdk":  "1.6.0",
+    "files":  [
+                  {
+                      "path":  "contract.py",
+                      "sha256":  "c8fa35a0fe8eda5b107fd245d8c8566a7b64a09adacc267f09f60323c88c4bc0",
+                      "bytes":  5089
+                  },
+                  {
+                      "path":  "protocol.py",
+                      "sha256":  "4616f24b44d8b482cf90a560a13e59324f20e497af4090d6e588fe437801ff77",
+                      "bytes":  1678
+                  },
+                  {
+                      "path":  "controller_core.py",
+                      "sha256":  "fc561eee08f1eafbbeac2cbcc5fa31890ef719bf603c5c7dd1af7aea5e556bcb",
+                      "bytes":  1760
+                  },
+                  {
+                      "path":  "live_binding.py",
+                      "sha256":  "ca1351a05eea38577632a918b286d5ee7e5c82d423928fd8c2ce1af67de206c8",
+                      "bytes":  835
+                  },
+                  {
+                      "path":  "sdk_endpoint.py",
+                      "sha256":  "1edd25a8e1f72098191bae0da95b8f78811375f4123cc8f40393d3dc0e92dad3",
+                      "bytes":  4891
+                  },
+                  {
+                      "path":  "payload.py",
+                      "sha256":  "17273bebff6debd9888983ffcb2a7b3e3dbff572dccd203c05f9c8b5c9f60424",
+                      "bytes":  2663
+                  },
+                  {
+                      "path":  "sandbox_stage.py",
+                      "sha256":  "2b0ed4cd332a4e9ca85f335dd3fa3637eecc467a77be7f063b714c051dff0191",
+                      "bytes":  7237
+                  },
+                  {
+                      "path":  "linux_boundary.py",
+                      "sha256":  "4c2aad23c52813693249a6d104c50f208ed33928086b466e46e853ad074712ff",
+                      "bytes":  5213
+                  },
+                  {
+                      "path":  "linux_watchdog.py",
+                      "sha256":  "9b08538d3b5990389e103ef2d391d58fec6ec63795bf0dc5ebcec08bc1991d34",
+                      "bytes":  5583
+                  },
+                  {
+                      "path":  "linux_runner.py",
+                      "sha256":  "82facf9151daa8eadc55c438be99f4c0cf5e331978c18b3a59530ef2af5b680e",
+                      "bytes":  14813
+                  },
+                  {
+                      "path":  "live_worker.py",
+                      "sha256":  "1f134b1e5564fd2bddd61613878039af39cab1f10e8adf3e6d8f980a5e601297",
+                      "bytes":  12465
+                  },
+                  {
+                      "path":  "live_launcher.py",
+                      "sha256":  "2b49a7cd1d8251fb91d3dda6b6e91c469657026dc683ce5f90b554e980a2e477",
+                      "bytes":  5469
+                  },
+                  {
+                      "path":  "cleanup_query.py",
+                      "sha256":  "f3311c40e088b4adb07b12919376d6490016da24d2a00652fb95e5b2d86fbe93",
+                      "bytes":  10928
+                  }
+              ]
+}

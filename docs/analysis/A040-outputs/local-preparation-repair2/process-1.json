@@ -1,0 +1,12 @@
+﻿{
+    "mode":  "probe",
+    "hidden":  true,
+    "affinity_mask":  3,
+    "owned_pid_remaining":  0,
+    "wall_seconds":  0.1766202,
+    "number":  1,
+    "timeout_seconds":  27,
+    "error":  null,
+    "pid":  34436,
+    "exit_code":  0
+}

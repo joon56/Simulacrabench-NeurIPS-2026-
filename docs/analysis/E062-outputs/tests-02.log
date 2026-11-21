@@ -1,0 +1,15 @@
+test_dispatch_and_inactive_tune_path (tests.test_wb_ordinal_heads.OrdinalTests.test_dispatch_and_inactive_tune_path) ... ok
+test_extremes_finite_without_floor (tests.test_wb_ordinal_heads.OrdinalTests.test_extremes_finite_without_floor) ... ok
+test_full_query_mask_and_exclude (tests.test_wb_ordinal_heads.OrdinalTests.test_full_query_mask_and_exclude) ... ok
+test_initial_parameters_and_rng_both_configs (tests.test_wb_ordinal_heads.OrdinalTests.test_initial_parameters_and_rng_both_configs) ... ok
+test_nonresponse_and_empty_risk_gradients (tests.test_wb_ordinal_heads.OrdinalTests.test_nonresponse_and_empty_risk_gradients) ... ok
+test_original_pooled_count (tests.test_wb_ordinal_heads.OrdinalTests.test_original_pooled_count) ... ok
+test_probability_and_nll (tests.test_wb_ordinal_heads.OrdinalTests.test_probability_and_nll) ... ok
+test_schema_exact_and_no_partial_rescue (tests.test_wb_ordinal_heads.OrdinalTests.test_schema_exact_and_no_partial_rescue) ... ok
+test_small_fit_fallback_without_optimizer (tests.test_wb_ordinal_heads.OrdinalTests.test_small_fit_fallback_without_optimizer) ... ok
+test_zero_weight_still_refits_with_frozen_config_epoch (tests.test_wb_ordinal_heads.OrdinalTests.test_zero_weight_still_refits_with_frozen_config_epoch) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 2.586s
+
+OK

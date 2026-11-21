@@ -1,0 +1,109 @@
+{
+  "verdict": "EXPLORATORY_SOURCE_QUALIFIED_PENDING_FINAL_RESOURCE_RECEIPT",
+  "scores": {
+    "E025-unicef": {
+      "skill": 0.5006484230707156,
+      "log_score": -0.780008047004413,
+      "n_cells": 17856,
+      "uniform_reference": 1.5620418219183347
+    },
+    "E041-unicef": {
+      "skill": 0.5006484230707156,
+      "log_score": -0.780008047004413,
+      "n_cells": 17856,
+      "uniform_reference": 1.5620418219183347
+    },
+    "candidate-unicef": {
+      "skill": 0.5006484230707156,
+      "log_score": -0.780008047004413,
+      "n_cells": 17856,
+      "uniform_reference": 1.5620418219183347
+    },
+    "E025-world_bank": {
+      "skill": 0.45471730736298255,
+      "log_score": -1.1005776279104411,
+      "n_cells": 39520,
+      "uniform_reference": 2.0183615632250977
+    },
+    "E041-world_bank": {
+      "skill": 0.45471730736298255,
+      "log_score": -1.1005776279104411,
+      "n_cells": 39520,
+      "uniform_reference": 2.0183615632250977
+    },
+    "candidate-world_bank": {
+      "skill": 0.4549896845143664,
+      "log_score": -1.100027872337387,
+      "n_cells": 39520,
+      "uniform_reference": 2.0183615632250977
+    },
+    "E025-unhcr": {
+      "skill": 0.5629488737050165,
+      "log_score": -0.5514502212860809,
+      "n_cells": 132273,
+      "uniform_reference": 1.2617522026791088
+    },
+    "E041-unhcr": {
+      "skill": 0.5624627288576414,
+      "log_score": -0.5520636156180775,
+      "n_cells": 132273,
+      "uniform_reference": 1.2617522026791088
+    },
+    "candidate-unhcr": {
+      "skill": 0.5624627288576414,
+      "log_score": -0.5520636156180775,
+      "n_cells": 132273,
+      "uniform_reference": 1.2617522026791088
+    }
+  },
+  "comparison": {
+    "unicef": {
+      "delta_E041": 0.0,
+      "delta_E025": 0.0,
+      "max_raw_difference_E041": 0.0,
+      "changed_vectors_exact": 0,
+      "regression_pass": true
+    },
+    "world_bank": {
+      "delta_E041": 0.0002723771513838402,
+      "delta_E025": 0.0002723771513838402,
+      "max_raw_difference_E041": 0.16004160046577454,
+      "changed_vectors_exact": 35613,
+      "regression_pass": true
+    },
+    "unhcr": {
+      "delta_E041": 0.0,
+      "delta_E025": -0.0004861448473750807,
+      "max_raw_difference_E041": 0.0,
+      "changed_vectors_exact": 0,
+      "regression_pass": true
+    }
+  },
+  "WB_descriptive_breakdown": {
+    "target16": {
+      "cells": 8320,
+      "mean_log_score_difference_E041": -0.0007987550486939816,
+      "changed_vectors_exact": 8320
+    },
+    "other60": {
+      "cells": 31200,
+      "mean_log_score_difference_E041": 0.0009093584055200603,
+      "changed_vectors_exact": 27293
+    },
+    "target16_Not_answered": {
+      "cells": 831,
+      "mean_log_score_difference_E041": -0.004408473492304696,
+      "changed_vectors_exact": 831
+    },
+    "target16_substantive": {
+      "cells": 7489,
+      "mean_log_score_difference_E041": -0.00039821078021481184,
+      "changed_vectors_exact": 7489
+    }
+  },
+  "control_parity": true,
+  "WB_changed": true,
+  "regression_pass": true,
+  "channel": "Previously exposed synthetic TRAIN/DEV engineering, not independent WB efficacy",
+  "scoring_worker_seconds": 21.02160609999919
+}

@@ -1,0 +1,7 @@
+{"event": "operation", "time": 1791125477.1976857, "stage": "connect", "timeout": 60}
+{"event": "operation", "time": 1791125478.5871522, "stage": "billing", "timeout": 30}
+{"event": "operation", "time": 1791125479.2068858, "stage": "base_stream", "timeout": 30}
+{"event": "operation", "time": 1791125479.6436214, "stage": "base_identity", "timeout": 30}
+{"event": "operation", "time": 1791125480.1372979, "stage": "app_create", "timeout": 30}
+{"event": "operation", "time": 1791125480.741495, "stage": "build_billing", "timeout": 30}
+{"event": "first_error", "time": 1791125487.6112454, "error": "ImageBuildError('Image build for im-LEPHgU6tpUAuu3H17E5rr5 failed.\\nView the build logs:\\n  modal image logs im-LEPHgU6tpUAuu3H17E5rr5')"}

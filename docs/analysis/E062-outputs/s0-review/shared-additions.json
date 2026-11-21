@@ -1,0 +1,18 @@
+[
+  {
+    "path": "docs/status.md",
+    "before_sha256": "5edd7ee6b14c0624d6291402fd81900cbfbc5efc2dff658e6b94f5d329254067",
+    "anchor": "## Current position\r\n\r\n",
+    "insertion": "- **2026-10-08 E062 S0: RECOMMEND_S2_RELEASE_VALIDATION.**\r\n  Accept S1 source qualification; target16 decline weakens the motivating effect\r\n  claim. Recommend one fixed whole-WB package for bounded release verification.\r\n  Reuse identified fresh S1 clean references only with identical source/input/roles/\r\n  environment and exact new assembly/extracted parity; no automatic baseline refit.\r\n  Normal S2 all3 twice;2400s computational budget,900s each suite,CPU2/GPU0/8GiB.\r\n  [S0 decision](analysis/E062-outputs/s0-review/decision.md),\r\n  [Complete separate-S2 prompt](analysis/E062-outputs/s0-review/s2-handoff.ko.md).\r\n  User delivery authorizes that S2 scope; S0 wrote documents only. No ZIP/release\r\n  qualification/upload yet. E062 parked; E041/E025/all STOP/HOLD/exposure preserved.\r\n\r\n",
+    "replacement": {
+      "from": "Updated: 2026-10-07.",
+      "to": "Updated: 2026-10-08."
+    }
+  },
+  {
+    "path": "docs/log.md",
+    "before_sha256": "720b3127976efebb44f114d323392eb1fca517d0485f58d237e7130ec16942ec",
+    "anchor": "# Experiment log\r\n\r\n",
+    "insertion": "## 2026-10-08 - E062 S0 accepts source qualification and recommends fixed release validation\r\n\r\n- Ordered r5 entry and E062 records/source reviewed. HEADa43f4379, dirty96, named\r\n  local Python/pythonw/uv jobs0 observed. Source35/document metadata37/experiment1\r\n  hashes match S1 records; Parquet3 and probability NPZ9 deliberately not rehashed.\r\n- Registration, comparison, final resource/closeout receipts support\r\n  EXPLORATORY_SOURCE_QUALIFIED. Intermediate comparison pending-resource wording\r\n  is historical and resolved by final receipts, not rewritten. S1 entry read\r\n  evidence is session-reported, not independent proof of every chat's compliance.\r\n- Target16 log score declined-.0007987550; other60 rose+.0009093584. Whole-WB\r\n  skill+.0002723772 does not establish ordinal-head improvement. All source\r\n  controls/regression/cost gates pass; real WB effect and release remain unknown.\r\n- Recommend one fixed S2 release task, preserving policy and parked status.\r\n  Identified S1 fresh clean E025/E041/candidate outputs may support exact release\r\n  comparisons if all source/data/schema/role/environment identities match. New\r\n  assembly and extracted official all3 once each; no unchanged baseline refits.\r\n  S2 proposed CPU2/GPU0/8GiB, shared900s each, children2400s/gross120min; narrowly\r\n  bounded assembly-defect repair reserve under r5. No score/seed/head rescue.\r\n- [Decision](analysis/E062-outputs/s0-review/decision.md),\r\n  [S2 prompt](analysis/E062-outputs/s0-review/s2-handoff.ko.md),\r\n  [Verification](analysis/E062-outputs/s0-review/verification.json).\r\n  S0 document work only. No response/array/cache/model/test/fit/score/remote/ZIP/\r\n  commit/push/tree/subagents/S2/S3. E041/E025; E057/E060/E061/E062 parked;\r\n  all STOP/HOLD/exposure/protected roles/A_half/A018 preserved. Upload remains\r\n  user-controlled after qualification; no live slot/account/hosted claim.\r\n\r\n"
+  }
+]

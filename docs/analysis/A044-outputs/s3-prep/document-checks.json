@@ -1,0 +1,385 @@
+{
+    "checked_at":  "2026-10-23T02:03:16.7349793+09:00",
+    "preserved":  {
+                      "status_history":  true,
+                      "phase2_history":  true,
+                      "log_history":  true,
+                      "workflow":  true,
+                      "tree":  true,
+                      "method":  true,
+                      "a018_manifest":  true
+                  },
+    "broken_links_or_whitespace":  [
+
+                                   ],
+    "json_parsed":  11,
+    "scoped_diff_check_exit":  0,
+    "historical_exit_checks":  [
+                                   {
+                                       "path":  "docs/analysis/A018-outputs/archives.json",
+                                       "expected":  "bd4a7ab3afc3a9e68a2cc34dc354c3295444cbd97d5f2b7d2c1a6affe2732c4a",
+                                       "actual":  "bd4a7ab3afc3a9e68a2cc34dc354c3295444cbd97d5f2b7d2c1a6affe2732c4a",
+                                       "match":  true
+                                   },
+                                   {
+                                       "path":  "docs/analysis/A018-outputs/code-review.md",
+                                       "expected":  "9c56e5a48e9379c6d34d86f4714df5766e62d73ae18e378db9dd85711babba19",
+                                       "actual":  "9c56e5a48e9379c6d34d86f4714df5766e62d73ae18e378db9dd85711babba19",
+                                       "match":  true
+                                   },
+                                   {
+                                       "path":  "docs/analysis/A018-outputs/E025-aborted-concurrent.log",
+                                       "expected":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                                       "actual":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                                       "match":  true
+                                   },
+                                   {
+                                       "path":  "docs/analysis/A018-outputs/E025-shared.json",
+                                       "expected":  "666c11aaddb6978c0bd00fb073538d3474231fc9442caa86a8c9ce72c4cd4fc0",
+                                       "actual":  "666c11aaddb6978c0bd00fb073538d3474231fc9442caa86a8c9ce72c4cd4fc0",
+                                       "match":  true
+                                   },
+                                   {
+                                       "path":  "docs/analysis/A018-outputs/E025-shared.log",
+                                       "expected":  "2a546ca9051f9e3a8f2fad5cbab9600807d5fb5d0f03d36c8ba2d96ec753da18",
+                                       "actual":  "2a546ca9051f9e3a8f2fad5cbab9600807d5fb5d0f03d36c8ba2d96ec753da18",
+                                       "match":  true
+                                   },
+                                   {
+                                       "path":  "docs/analysis/A018-outputs/E025-unhcr-shared.json",
+                                       "expected":  "59da6ac604e4cda71c0bd396564d969777c0f59b7c95404ce5bd99d7982c734e",
+                                       "actual":  "59da6ac604e4cda71c0bd396564d969777c0f59b7c95404ce5bd99d7982c734e",
+                                       "match":  true
+                                   },
+                                   {
+                                       "path":  "docs/analysis/A018-outputs/E025-unicef-shared.json",
+                                       "expected":  "8532fcbb6a41ecdd3edc949ab4b1b2c345d6b01a2f1fcd190f6636ca05fcbb08",
+                                       "actual":  "8532fcbb6a41ecdd3edc949ab4b1b2c345d6b01a2f1fcd190f6636ca05fcbb08",
+                                       "match":  true
+                                   },
+                                   {
+                                       "path":  "docs/analysis/A018-outputs/E025-world_bank-shared.json",
+                                       "expected":  "b9b18b1e11859b73b5d0265591e2e9f9f099234514e05a3ddf08e656babb8fe7",
+                                       "actual":  "b9b18b1e11859b73b5d0265591e2e9f9f099234514e05a3ddf08e656babb8fe7",
+                                       "match":  true
+                                   },
+                                   {
+                                       "path":  "docs/analysis/A018-outputs/E041-extracted/LICENSE-starter-kit.txt",
+                                       "expected":  "a81db73b86212de93a3944eea5dfb01126ffe17d5fbdb620a6e4c4d04830b20e",
+                                       "actual":  "a81db73b86212de93a3944eea5dfb01126ffe17d5fbdb620a6e4c4d04830b20e",
+                                       "match":  true
+                                   },
+                                   {
+                                       "path":  "docs/analysis/A018-outputs/E041-extracted/main.py",
+                                       "expected":  "22c911806ea91234ae350341adfb9c0df2ce4be41cc88e73be304e4bb1023073",
+                                       "actual":  "22c911806ea91234ae350341adfb9c0df2ce4be41cc88e73be304e4bb1023073",
+                                       "match":  true
+                                   },
+                                   {
+                                       "path":  "docs/analysis/A018-outputs/E041-shared.json",
+                                       "expected":  "40e00bed008ae0812f8dd9cbee62813fa300314d8ac803b3c097f5e9de2c6aef",
+                                       "actual":  "40e00bed008ae0812f8dd9cbee62813fa300314d8ac803b3c097f5e9de2c6aef",
+                                       "match":  true
+                                   },
+                                   {
+                                       "path":  "docs/analysis/A018-outputs/E041-shared.log",
+                                       "expected":  "2e3da8346ba1d8ee5e6bf5fdd4b625284ef4ba84a4f87a1012d834c5afb17fbb",
+                                       "actual":  "2e3da8346ba1d8ee5e6bf5fdd4b625284ef4ba84a4f87a1012d834c5afb17fbb",
+                                       "match":  true
+                                   },
+                                   {
+                                       "path":  "docs/analysis/A018-outputs/E041-unhcr-official.json",
+                                       "expected":  "6cbc1fbc112f9e0b33b2c0e5269f4e55c710554a82b7b0a06ab2711ca8580e41",
+                                       "actual":  "6cbc1fbc112f9e0b33b2c0e5269f4e55c710554a82b7b0a06ab2711ca8580e41",
+                                       "match":  true
+                                   },
+                                   {
+                                       "path":  "docs/analysis/A018-outputs/E041-unhcr-official.log",
+                                       "expected":  "404ae3f404ff29a7a04efb0db860b8787c7a3d150c0019d8a60e6ed8f50ebfa9",
+                                       "actual":  "404ae3f404ff29a7a04efb0db860b8787c7a3d150c0019d8a60e6ed8f50ebfa9",
+                                       "match":  true
+                                   },
+                                   {
+                                       "path":  "docs/analysis/A018-outputs/E041-unhcr-shared.json",
+                                       "expected":  "98ce96592224dd6e2ac10aa4337c647945299595d102101637ae75522c9c9350",
+                                       "actual":  "98ce96592224dd6e2ac10aa4337c647945299595d102101637ae75522c9c9350",
+                                       "match":  true
+                                   },
+                                   {
+                                       "path":  "docs/analysis/A018-outputs/E041-unicef-official.json",
+                                       "expected":  "15b820d2117d65e3e931b6d20960ef0637810a33458ce076f88c9571b1ec6a38",
+                                       "actual":  "15b820d2117d65e3e931b6d20960ef0637810a33458ce076f88c9571b1ec6a38",
+                                       "match":  true
+                                   },
+                                   {
+                                       "path":  "docs/analysis/A018-outputs/E041-unicef-official.log",
+                                       "expected":  "3b2541543502fdd2b7c49e3dc99ff85402743d97171138eb99fe5d1a3a07733c",
+                                       "actual":  "3b2541543502fdd2b7c49e3dc99ff85402743d97171138eb99fe5d1a3a07733c",
+                                       "match":  true
+                                   },
+                                   {
+                                       "path":  "docs/analysis/A018-outputs/E041-unicef-shared.json",
+                                       "expected":  "1c6bf38e2317338cc585c2186ba6568bf8a5ffd8c64d82ad14df1ff0f492c585",
+                                       "actual":  "1c6bf38e2317338cc585c2186ba6568bf8a5ffd8c64d82ad14df1ff0f492c585",
+                                       "match":  true
+                                   },
+                                   {
+                                       "path":  "docs/analysis/A018-outputs/E041-world_bank-official.json",
+                                       "expected":  "99b7cb689c6711846c4a2585924798cfbc8799ce39451eb0640d6ee6ebe7452e",
+                                       "actual":  "99b7cb689c6711846c4a2585924798cfbc8799ce39451eb0640d6ee6ebe7452e",
+                                       "match":  true
+                                   },
+                                   {
+                                       "path":  "docs/analysis/A018-outputs/E041-world_bank-official.log",
+                                       "expected":  "85a4e7968e9ee8be7b87fba4ec1c1e3906e15af1f1165ac5e22ab670847588a2",
+                                       "actual":  "85a4e7968e9ee8be7b87fba4ec1c1e3906e15af1f1165ac5e22ab670847588a2",
+                                       "match":  true
+                                   },
+                                   {
+                                       "path":  "docs/analysis/A018-outputs/E041-world_bank-shared.json",
+                                       "expected":  "a6f97f920ccf622094043e36ca719ffd430d67beadefaa33272397ee7713cd8e",
+                                       "actual":  "a6f97f920ccf622094043e36ca719ffd430d67beadefaa33272397ee7713cd8e",
+                                       "match":  true
+                                   },
+                                   {
+                                       "path":  "docs/analysis/A018-outputs/finalize_manifest.py",
+                                       "expected":  "f30c762e726b819a17989d5f813e4585b3a1efb9ef72e0529fb108ca6ecb9a8c",
+                                       "actual":  "f30c762e726b819a17989d5f813e4585b3a1efb9ef72e0529fb108ca6ecb9a8c",
+                                       "match":  true
+                                   },
+                                   {
+                                       "path":  "docs/analysis/A018-outputs/LICENSE-MIT-PROPOSED.txt",
+                                       "expected":  "1d1ed131e9601814b16cf102737a5c5bb5f763010e42000f9d0ab4553e601d24",
+                                       "actual":  "1d1ed131e9601814b16cf102737a5c5bb5f763010e42000f9d0ab4553e601d24",
+                                       "match":  true
+                                   },
+                                   {
+                                       "path":  "docs/analysis/A018-outputs/method-layout.json",
+                                       "expected":  "efd70f83b22650a89c490a968aa85bf64d6465e8239a5212a6825cfef16f56a3",
+                                       "actual":  "efd70f83b22650a89c490a968aa85bf64d6465e8239a5212a6825cfef16f56a3",
+                                       "match":  true
+                                   },
+                                   {
+                                       "path":  "docs/analysis/A018-outputs/method_renderer.py",
+                                       "expected":  "f87b284818cc61b770117c6b78bfb889b80be0944dce73f38b2fe1451d9f976f",
+                                       "actual":  "f87b284818cc61b770117c6b78bfb889b80be0944dce73f38b2fe1451d9f976f",
+                                       "match":  true
+                                   },
+                                   {
+                                       "path":  "docs/analysis/A018-outputs/official-rules-final.json",
+                                       "expected":  "4473249b5790f657ee35cf81484fbea8e2f1c2a9bf8b60a35d7e73c5eb8205e2",
+                                       "actual":  "4473249b5790f657ee35cf81484fbea8e2f1c2a9bf8b60a35d7e73c5eb8205e2",
+                                       "match":  true
+                                   },
+                                   {
+                                       "path":  "docs/analysis/A018-outputs/official-rules.json",
+                                       "expected":  "3a801e47e756cc1b32c3a1d5570483b3966904f8911ea8c4c2e4fed2f6ddaf83",
+                                       "actual":  "3a801e47e756cc1b32c3a1d5570483b3966904f8911ea8c4c2e4fed2f6ddaf83",
+                                       "match":  true
+                                   },
+                                   {
+                                       "path":  "docs/analysis/A018-outputs/official-summary.json",
+                                       "expected":  "981714ffe145ebc643dc0d93c178281b88a9d3152626e09040284f6c1454e7a2",
+                                       "actual":  "981714ffe145ebc643dc0d93c178281b88a9d3152626e09040284f6c1454e7a2",
+                                       "match":  true
+                                   },
+                                   {
+                                       "path":  "docs/analysis/A018-outputs/official_release.executed.py",
+                                       "expected":  "be3d978490b0df246f3f93e1d620676d6421da8385a5bd5ec172b4d349d914b1",
+                                       "actual":  "be3d978490b0df246f3f93e1d620676d6421da8385a5bd5ec172b4d349d914b1",
+                                       "match":  true
+                                   },
+                                   {
+                                       "path":  "docs/analysis/A018-outputs/official_release.py",
+                                       "expected":  "7b621b963610a73c58ef7e76db6f5fbc90b9a98943e1628cc07f98926c74550b",
+                                       "actual":  "7b621b963610a73c58ef7e76db6f5fbc90b9a98943e1628cc07f98926c74550b",
+                                       "match":  true
+                                   },
+                                   {
+                                       "path":  "docs/analysis/A018-outputs/package_release.py",
+                                       "expected":  "f2ce4ca0dca386a3d3396c742de3d382c9d7f3754d3da9fbf83f79eccde6dec3",
+                                       "actual":  "f2ce4ca0dca386a3d3396c742de3d382c9d7f3754d3da9fbf83f79eccde6dec3",
+                                       "match":  true
+                                   },
+                                   {
+                                       "path":  "docs/analysis/A018-outputs/preflight.json",
+                                       "expected":  "664a6a35d9e1ac0bea964a2e89a3870aecaa3f6ead2597257bdd1b9d2143356b",
+                                       "actual":  "664a6a35d9e1ac0bea964a2e89a3870aecaa3f6ead2597257bdd1b9d2143356b",
+                                       "match":  true
+                                   },
+                                   {
+                                       "path":  "docs/analysis/A018-outputs/release-notes.md",
+                                       "expected":  "a86c89966f7174579be6301235ac8abc2b2c7b5528ef203f49e62091b0b070d9",
+                                       "actual":  "a86c89966f7174579be6301235ac8abc2b2c7b5528ef203f49e62091b0b070d9",
+                                       "match":  true
+                                   },
+                                   {
+                                       "path":  "docs/analysis/A018-outputs/render_methods.py",
+                                       "expected":  "f24969316f2194002eda3cbe3de8c25b34670b026af6b823a263a213cc0bd3f6",
+                                       "actual":  "f24969316f2194002eda3cbe3de8c25b34670b026af6b823a263a213cc0bd3f6",
+                                       "match":  true
+                                   },
+                                   {
+                                       "path":  "docs/analysis/A018-outputs/selection-registration.md",
+                                       "expected":  "df627f4d2965c8219bcaab1b3f61c0b4f993059827d5117e6a1064099e93d890",
+                                       "actual":  "df627f4d2965c8219bcaab1b3f61c0b4f993059827d5117e6a1064099e93d890",
+                                       "match":  true
+                                   },
+                                   {
+                                       "path":  "docs/analysis/A018-outputs/test_resource_guards.py",
+                                       "expected":  "11cf7233efed49b837765c8353891da1a2d7392506e1e0f00660a442ea667214",
+                                       "actual":  "11cf7233efed49b837765c8353891da1a2d7392506e1e0f00660a442ea667214",
+                                       "match":  true
+                                   },
+                                   {
+                                       "path":  "docs/analysis/A018-outputs/verification-checks.txt",
+                                       "expected":  "a6b988a19de208800ef708731d08c716b43596639fff7f845b2062a02b3d787a",
+                                       "actual":  "a6b988a19de208800ef708731d08c716b43596639fff7f845b2062a02b3d787a",
+                                       "match":  true
+                                   },
+                                   {
+                                       "path":  "docs/analysis/A018-outputs/verify_release.executed.py",
+                                       "expected":  "aef8369f0e498bdba63bdc03edb15328d3dd9a8bbf10814062855b31e775ac13",
+                                       "actual":  "aef8369f0e498bdba63bdc03edb15328d3dd9a8bbf10814062855b31e775ac13",
+                                       "match":  true
+                                   },
+                                   {
+                                       "path":  "docs/analysis/A018-outputs/verify_release.py",
+                                       "expected":  "54905ca1219482350ca2334fa779a7f9f733ccd97b43ce7f0ef27270eb35539b",
+                                       "actual":  "54905ca1219482350ca2334fa779a7f9f733ccd97b43ce7f0ef27270eb35539b",
+                                       "match":  true
+                                   },
+                                   {
+                                       "path":  "docs/analysis/A018-test-selection.md",
+                                       "expected":  "5ed8ed9608170b52d8cc6a9ea89b4188033518487a264da6f6a3244164cb57ec",
+                                       "actual":  "5ed8ed9608170b52d8cc6a9ea89b4188033518487a264da6f6a3244164cb57ec",
+                                       "match":  true
+                                   },
+                                   {
+                                       "path":  "docs/method-4p.md",
+                                       "expected":  "ca5c32a66bbd950bd8e09a85c70c8fa12fa4808b688028cbf489b4d6ae50cfca",
+                                       "actual":  "ca5c32a66bbd950bd8e09a85c70c8fa12fa4808b688028cbf489b4d6ae50cfca",
+                                       "match":  true
+                                   },
+                                   {
+                                       "path":  "submissions/2026-09-25-E025/LICENSE-starter-kit.txt",
+                                       "expected":  "a81db73b86212de93a3944eea5dfb01126ffe17d5fbdb620a6e4c4d04830b20e",
+                                       "actual":  "a81db73b86212de93a3944eea5dfb01126ffe17d5fbdb620a6e4c4d04830b20e",
+                                       "match":  true
+                                   },
+                                   {
+                                       "path":  "submissions/2026-09-25-E025/main.py",
+                                       "expected":  "00793cf9d720d6f7511ffd738935206b3a5401f2454255409429db8d55e991b9",
+                                       "actual":  "00793cf9d720d6f7511ffd738935206b3a5401f2454255409429db8d55e991b9",
+                                       "match":  true
+                                   },
+                                   {
+                                       "path":  "submissions/2026-09-25-E025/method-4p.md",
+                                       "expected":  "f28499ee71e272c026e0afe54e4e79482fb09c1252fb5fd9a837cda43feb5ca3",
+                                       "actual":  "f28499ee71e272c026e0afe54e4e79482fb09c1252fb5fd9a837cda43feb5ca3",
+                                       "match":  true
+                                   },
+                                   {
+                                       "path":  "submissions/2026-09-25-E025/method-4p.pdf",
+                                       "expected":  "24f042a7def50b11d73914236a3c57ce9675359a96ba20ae2a22b0e01a69e3fd",
+                                       "actual":  "24f042a7def50b11d73914236a3c57ce9675359a96ba20ae2a22b0e01a69e3fd",
+                                       "match":  true
+                                   },
+                                   {
+                                       "path":  "submissions/2026-09-25-E025/SCORES.md",
+                                       "expected":  "058b34b8aebcc8c03eeb351fcd98b3ee53f8376ec34705c772174b77800ad9f8",
+                                       "actual":  "058b34b8aebcc8c03eeb351fcd98b3ee53f8376ec34705c772174b77800ad9f8",
+                                       "match":  true
+                                   },
+                                   {
+                                       "path":  "submissions/2026-09-25-E025.zip",
+                                       "expected":  "142921c3ea843c653821cf06a8b3fab89e8e6c96592581590f7e970064d90c6f",
+                                       "actual":  "142921c3ea843c653821cf06a8b3fab89e8e6c96592581590f7e970064d90c6f",
+                                       "match":  true
+                                   },
+                                   {
+                                       "path":  "submissions/2026-09-25-E041/LICENSE-starter-kit.txt",
+                                       "expected":  "a81db73b86212de93a3944eea5dfb01126ffe17d5fbdb620a6e4c4d04830b20e",
+                                       "actual":  "a81db73b86212de93a3944eea5dfb01126ffe17d5fbdb620a6e4c4d04830b20e",
+                                       "match":  true
+                                   },
+                                   {
+                                       "path":  "submissions/2026-09-25-E041/main.py",
+                                       "expected":  "22c911806ea91234ae350341adfb9c0df2ce4be41cc88e73be304e4bb1023073",
+                                       "actual":  "22c911806ea91234ae350341adfb9c0df2ce4be41cc88e73be304e4bb1023073",
+                                       "match":  true
+                                   },
+                                   {
+                                       "path":  "submissions/2026-09-25-E041/method-4p.md",
+                                       "expected":  "ca5c32a66bbd950bd8e09a85c70c8fa12fa4808b688028cbf489b4d6ae50cfca",
+                                       "actual":  "ca5c32a66bbd950bd8e09a85c70c8fa12fa4808b688028cbf489b4d6ae50cfca",
+                                       "match":  true
+                                   },
+                                   {
+                                       "path":  "submissions/2026-09-25-E041/method-4p.pdf",
+                                       "expected":  "13713a04c57d9efda5b4c9aef7d20b4a7c05e9589e8c00f8a4389e1a1cf2e8a2",
+                                       "actual":  "13713a04c57d9efda5b4c9aef7d20b4a7c05e9589e8c00f8a4389e1a1cf2e8a2",
+                                       "match":  true
+                                   },
+                                   {
+                                       "path":  "submissions/2026-09-25-E041/SCORES.md",
+                                       "expected":  "d5930bea0de75dbcd29d26f708d27d952212dc4aa75dd1a6b126a0ba5689f44a",
+                                       "actual":  "d5930bea0de75dbcd29d26f708d27d952212dc4aa75dd1a6b126a0ba5689f44a",
+                                       "match":  true
+                                   },
+                                   {
+                                       "path":  "submissions/2026-09-25-E041.zip",
+                                       "expected":  "bd5d2b7df3c39338f68cb08f125f85695073f37c9f4be3f6adcb8961941cd132",
+                                       "actual":  "bd5d2b7df3c39338f68cb08f125f85695073f37c9f4be3f6adcb8961941cd132",
+                                       "match":  true
+                                   },
+                                   {
+                                       "path":  "submissions/phase2-E025-preparation/verification.json",
+                                       "expected":  "b073989b3c66265c03ac7ce595906200f5ca98833b7cb2532fbbd0f5a50acf2b",
+                                       "actual":  "b073989b3c66265c03ac7ce595906200f5ca98833b7cb2532fbbd0f5a50acf2b",
+                                       "match":  true
+                                   },
+                                   {
+                                       "path":  "external/starter-kit/config.yml",
+                                       "expected":  "f22f8e4faa62b6af0ee8e7e887e35980511e4517655479fefeeef4519fc52c15",
+                                       "actual":  "f22f8e4faa62b6af0ee8e7e887e35980511e4517655479fefeeef4519fc52c15",
+                                       "match":  true
+                                   },
+                                   {
+                                       "path":  "external/starter-kit/make_sandbox.py",
+                                       "expected":  "8cf628cbb4771ed6e91ad74ebb4f75b22667af39d8f48e01c956c675b1b1586b",
+                                       "actual":  "8cf628cbb4771ed6e91ad74ebb4f75b22667af39d8f48e01c956c675b1b1586b",
+                                       "match":  true
+                                   },
+                                   {
+                                       "path":  "external/starter-kit/score.py",
+                                       "expected":  "7049e99a48acef2a74f37cb49bb66b5a9af8d05d2ed8fcf530287b5e81c5042f",
+                                       "actual":  "7049e99a48acef2a74f37cb49bb66b5a9af8d05d2ed8fcf530287b5e81c5042f",
+                                       "match":  true
+                                   },
+                                   {
+                                       "path":  "external/starter-kit/tools/check_submission_zip.py",
+                                       "expected":  "0cb9e671b3b19ab62e68b37512ee8717e97d47694276f16e27a77b02d2f37916",
+                                       "actual":  "0cb9e671b3b19ab62e68b37512ee8717e97d47694276f16e27a77b02d2f37916",
+                                       "match":  true
+                                   },
+                                   {
+                                       "path":  "external/starter-kit/data/unicef.json",
+                                       "expected":  "0bce08036cc563ee2a369dcee316ff8a5f89045d86991756d72c266927674396",
+                                       "actual":  "0bce08036cc563ee2a369dcee316ff8a5f89045d86991756d72c266927674396",
+                                       "match":  true
+                                   },
+                                   {
+                                       "path":  "external/starter-kit/data/world_bank.json",
+                                       "expected":  "6b3760742c6e864eb8d0bb2f9ec523a19a486b73282d79432dbcca16e3664125",
+                                       "actual":  "6b3760742c6e864eb8d0bb2f9ec523a19a486b73282d79432dbcca16e3664125",
+                                       "match":  true
+                                   },
+                                   {
+                                       "path":  "external/starter-kit/data/unhcr.json",
+                                       "expected":  "b1175b6bdbd96e90a4defd83af20a38d711c6eca9fe3ce880109ff244abe80d9",
+                                       "actual":  "b1175b6bdbd96e90a4defd83af20a38d711c6eca9fe3ce880109ff244abe80d9",
+                                       "match":  true
+                                   }
+                               ]
+}

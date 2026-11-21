@@ -1,0 +1,9 @@
+{
+  "script": "pdf_inspect.py",
+  "arguments": [
+    "originals"
+  ],
+  "charged_before": 30,
+  "limit_remaining_seconds": 270,
+  "at": "2026-10-23T17:38:39.799936+09:00"
+}

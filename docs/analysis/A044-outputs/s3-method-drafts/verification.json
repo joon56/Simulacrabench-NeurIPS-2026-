@@ -1,0 +1,213 @@
+{
+    "task":  "S3-METHOD-DRAFTS-A044",
+    "verdict":  "REVIEW_DRAFTS_COMPLETE",
+    "final_delivery":  "FINAL_DELIVERY_NOT_APPROVED",
+    "completed_at":  "2026-10-23T17:50:01.1875590+09:00",
+    "head":  "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+    "branch":  "work/e050-submission",
+    "workflow_revision":  "2026-10-22-r6",
+    "workflow_sha256":  "69620b7eeaad5a01a6a6b884fbd95dfede3e26b2ee2b09016479846082aec089",
+    "read_receipt":  "entry.json actual_read_order/read_evidence plus evidence-map.md and retained original PDF extraction",
+    "page_checks":  [
+                        {
+                            "candidate":  "E041",
+                            "actual_pages":  4,
+                            "uri_links":  6,
+                            "all_text_bounds":  true,
+                            "all_four_pngs":  true,
+                            "exact_banner":  true,
+                            "final_matches_attempt1":  true
+                        },
+                        {
+                            "candidate":  "E025",
+                            "actual_pages":  4,
+                            "uri_links":  6,
+                            "all_text_bounds":  true,
+                            "all_four_pngs":  true,
+                            "exact_banner":  true,
+                            "final_matches_attempt1":  true
+                        }
+                    ],
+    "visual_pages_reviewed":  8,
+    "pdf_attempts":  {
+                         "E041":  1,
+                         "E025":  1,
+                         "total":  2,
+                         "per_candidate_limit":  3,
+                         "total_limit":  6
+                     },
+    "original_identity_checks":  [
+                                     {
+                                         "path":  "scripts/render_method.py",
+                                         "sha256":  "c866d395c30738a946148e9b5b5896a611189bbe0dee9cb556b44b14b45a2a6d",
+                                         "matches_entry":  true
+                                     },
+                                     {
+                                         "path":  "submissions/2026-09-25-E041/main.py",
+                                         "sha256":  "22c911806ea91234ae350341adfb9c0df2ce4be41cc88e73be304e4bb1023073",
+                                         "matches_entry":  true
+                                     },
+                                     {
+                                         "path":  "submissions/2026-09-25-E041/method-4p.md",
+                                         "sha256":  "ca5c32a66bbd950bd8e09a85c70c8fa12fa4808b688028cbf489b4d6ae50cfca",
+                                         "matches_entry":  true
+                                     },
+                                     {
+                                         "path":  "submissions/2026-09-25-E041/method-4p.pdf",
+                                         "sha256":  "13713a04c57d9efda5b4c9aef7d20b4a7c05e9589e8c00f8a4389e1a1cf2e8a2",
+                                         "matches_entry":  true
+                                     },
+                                     {
+                                         "path":  "submissions/2026-09-25-E025/main.py",
+                                         "sha256":  "00793cf9d720d6f7511ffd738935206b3a5401f2454255409429db8d55e991b9",
+                                         "matches_entry":  true
+                                     },
+                                     {
+                                         "path":  "submissions/2026-09-25-E025/method-4p.md",
+                                         "sha256":  "f28499ee71e272c026e0afe54e4e79482fb09c1252fb5fd9a837cda43feb5ca3",
+                                         "matches_entry":  true
+                                     },
+                                     {
+                                         "path":  "submissions/2026-09-25-E025/method-4p.pdf",
+                                         "sha256":  "24f042a7def50b11d73914236a3c57ce9675359a96ba20ae2a22b0e01a69e3fd",
+                                         "matches_entry":  true
+                                     }
+                                 ],
+    "shared_prior_content_sha256":  {
+                                        "status":  "d147d903c724957a718e20cde087086f42b0a1b1b48596b6d1919aacd7311623",
+                                        "log":  "7313a6769e548428d566270899bfd35e13c92f11184ae5f5e88c6f43575d7b65",
+                                        "phase2":  "7e54a555dcf57d253816cd318ef4216d19bf0ee298de06301600ae3c13d6dc19"
+                                    },
+    "shared_prior_content_preserved":  true,
+    "archive_open_or_rehash":  false,
+    "pairing_checked":  true,
+    "artifact_sha256":  {
+                            "docs/analysis/A044-outputs/s3-method-drafts/artifact-operation.json":  "d623b90c29c570eba8a869760ed6b8f5367f5ba99c5fd6694b03d2395bbae007",
+                            "docs/analysis/A044-outputs/s3-method-drafts/budget-ledger.json":  "25ee6d0bcf72355a4864a7622ed6cdb6f8435846a5e689f2b5632f83bf0ff44b",
+                            "docs/analysis/A044-outputs/s3-method-drafts/closeout.md":  "6b6628c3e20c84cf571b358175931460530c80719634f4117b5b6ef73ba5897f",
+                            "docs/analysis/A044-outputs/s3-method-drafts/dirty-entry.txt":  "017def56a7bdb0a5e2fc21993c4401815abd651518969d46d5951512b9e24ff9",
+                            "docs/analysis/A044-outputs/s3-method-drafts/dirty-final.txt":  "1f3835632a2f385a35c09cf607d5f6c33bff86072bf71e2094b6b50c9f499581",
+                            "docs/analysis/A044-outputs/s3-method-drafts/document_run.py":  "2d0fc39675a93a7b1b5da54a1edaa52ed3e9645a5643e45c52adb322b28639e1",
+                            "docs/analysis/A044-outputs/s3-method-drafts/document-pairing.json":  "55575f40dbfc91ee430ef022415c68ecba4060768f96ea02fd530084618580f6",
+                            "docs/analysis/A044-outputs/s3-method-drafts/e025-inspect-1.ack":  "41b60d218e65bd255d6fa694d4882ee94512b67108c14c8d2311de7c17c14938",
+                            "docs/analysis/A044-outputs/s3-method-drafts/e025-inspect-1.done":  "a411b2ba6d7601dbdc27853a2df540a7fcb87b568dc6b054930ccf2d551b4f43",
+                            "docs/analysis/A044-outputs/s3-method-drafts/e025-inspect-1.go":  "978870abfaa713a75e367348f0f4d5bc986b190adb2f9dec67612decf05f33f2",
+                            "docs/analysis/A044-outputs/s3-method-drafts/E025-original-extracted.txt":  "7c99465caadd1827486868cc79631600783373c1b286349a59c531e2958dce35",
+                            "docs/analysis/A044-outputs/s3-method-drafts/E025-page-1.png":  "1664fb63fd3292b5d87f477352ffa4db81d6af3efa9d5d3ffaab7c9ef433e5a1",
+                            "docs/analysis/A044-outputs/s3-method-drafts/E025-page-1.txt":  "4a765943a0c5d34a147e991655d89890c33cba72708691b54042b5ce17309952",
+                            "docs/analysis/A044-outputs/s3-method-drafts/E025-page-2.png":  "b602b96876cf96f3e9017a37ba17f576bed456e2ae9fab90e1a1c53084756329",
+                            "docs/analysis/A044-outputs/s3-method-drafts/E025-page-2.txt":  "21ec2d584c597ca505a66bbd23472bd76479d0d8689e1b0e9b8682c308814d27",
+                            "docs/analysis/A044-outputs/s3-method-drafts/E025-page-3.png":  "44dc44296aa11b44ac98efbf50fe81818fa998b8bedd91477ddb1cb95057f853",
+                            "docs/analysis/A044-outputs/s3-method-drafts/E025-page-3.txt":  "d0ea08ed0f1392b292bb0843f8b6d621a87f0ffcb1b658aa222774264861bf45",
+                            "docs/analysis/A044-outputs/s3-method-drafts/E025-page-4.png":  "7efa6ad7d272db3340a72cbb39611b6540bfb7becb8f8407ca6a89cc3b5224b1",
+                            "docs/analysis/A044-outputs/s3-method-drafts/E025-page-4.txt":  "108fde6b6458a0354fdf0475a48bc9d7ccdb8e471a386d23e7b9b813ff1e34b5",
+                            "docs/analysis/A044-outputs/s3-method-drafts/E025-pdf-inspection.json":  "5111536a186c9c128ada487d45a8787261c24c931c484f071485a66e4a52172a",
+                            "docs/analysis/A044-outputs/s3-method-drafts/e025-render-1.ack":  "41b60d218e65bd255d6fa694d4882ee94512b67108c14c8d2311de7c17c14938",
+                            "docs/analysis/A044-outputs/s3-method-drafts/e025-render-1.done":  "a411b2ba6d7601dbdc27853a2df540a7fcb87b568dc6b054930ccf2d551b4f43",
+                            "docs/analysis/A044-outputs/s3-method-drafts/e025-render-1.go":  "978870abfaa713a75e367348f0f4d5bc986b190adb2f9dec67612decf05f33f2",
+                            "docs/analysis/A044-outputs/s3-method-drafts/E025-review.md":  "c0f921941067f467810cc2e7d6dc22f33f82207e7c41b3a5423daee3e75ccecf",
+                            "docs/analysis/A044-outputs/s3-method-drafts/E025-review.pdf":  "e44e87b2abb0eceb6d35cfdd15964b73b5098cb241998a91d828b5f63d3f9ef3",
+                            "docs/analysis/A044-outputs/s3-method-drafts/E025-review-attempt1.pdf":  "e44e87b2abb0eceb6d35cfdd15964b73b5098cb241998a91d828b5f63d3f9ef3",
+                            "docs/analysis/A044-outputs/s3-method-drafts/e041-inspect-1.ack":  "41b60d218e65bd255d6fa694d4882ee94512b67108c14c8d2311de7c17c14938",
+                            "docs/analysis/A044-outputs/s3-method-drafts/e041-inspect-1.done":  "a411b2ba6d7601dbdc27853a2df540a7fcb87b568dc6b054930ccf2d551b4f43",
+                            "docs/analysis/A044-outputs/s3-method-drafts/e041-inspect-1.go":  "978870abfaa713a75e367348f0f4d5bc986b190adb2f9dec67612decf05f33f2",
+                            "docs/analysis/A044-outputs/s3-method-drafts/E041-original-extracted.txt":  "b39c5cc90e4a18a0b50b6e2739d1a3fc7658e38b725a4675819c4ede80f57054",
+                            "docs/analysis/A044-outputs/s3-method-drafts/E041-page-1.png":  "19a6e1cb055958986f460571ec1536bb01d26117fd439db0cc07f6e60e617ccb",
+                            "docs/analysis/A044-outputs/s3-method-drafts/E041-page-1.txt":  "1ab2a06e2e4e4f58094a4816e1fe425518ac17ad248469d38930f6d65201521f",
+                            "docs/analysis/A044-outputs/s3-method-drafts/E041-page-2.png":  "b0ad45a958392a13d61f5a96506664c50aee5f981ac8dd2e39ada0f64dc72980",
+                            "docs/analysis/A044-outputs/s3-method-drafts/E041-page-2.txt":  "9e16f0dcd2c94e87d88d0c2d9bf49b4048e1df01d077173b918adf1ddd9f8916",
+                            "docs/analysis/A044-outputs/s3-method-drafts/E041-page-3.png":  "4855acd212cd9620d3074c65a77401c839ea28717ab8918f05f430d3831ab765",
+                            "docs/analysis/A044-outputs/s3-method-drafts/E041-page-3.txt":  "30a156a3453a00e2403c2f1ce2a27973e7749fc3e880240b93db06d1d20b99ec",
+                            "docs/analysis/A044-outputs/s3-method-drafts/E041-page-4.png":  "76d0c6f0715f07802b96645948442a26fcdd9dc1d92831efc9ef71a48de56150",
+                            "docs/analysis/A044-outputs/s3-method-drafts/E041-page-4.txt":  "acc71327b5cc6de5838f8010aaf3b54112b8c0bd3bd4e87ac83fc1f16f3c9e2e",
+                            "docs/analysis/A044-outputs/s3-method-drafts/E041-pdf-inspection.json":  "eb5fdad375722fc593ad57863e4ea252e40d37cde7d499b5770163607915cedb",
+                            "docs/analysis/A044-outputs/s3-method-drafts/e041-render-1.ack":  "41b60d218e65bd255d6fa694d4882ee94512b67108c14c8d2311de7c17c14938",
+                            "docs/analysis/A044-outputs/s3-method-drafts/e041-render-1.done":  "a411b2ba6d7601dbdc27853a2df540a7fcb87b568dc6b054930ccf2d551b4f43",
+                            "docs/analysis/A044-outputs/s3-method-drafts/e041-render-1.go":  "978870abfaa713a75e367348f0f4d5bc986b190adb2f9dec67612decf05f33f2",
+                            "docs/analysis/A044-outputs/s3-method-drafts/E041-review.md":  "208182a7409ac8544e3e734c641d87bb92b79bbce656e8943fe19661857de104",
+                            "docs/analysis/A044-outputs/s3-method-drafts/E041-review.pdf":  "27ea6a6fd554e2b5035f96506876a748ab4c7a5b7c949e9f385912d1bed4cef2",
+                            "docs/analysis/A044-outputs/s3-method-drafts/E041-review-attempt1.pdf":  "27ea6a6fd554e2b5035f96506876a748ab4c7a5b7c949e9f385912d1bed4cef2",
+                            "docs/analysis/A044-outputs/s3-method-drafts/entry.json":  "2c535187ae7f7c21ae613b82de3407e78ef38d64d58f7ff8d0fbc2998f92d654",
+                            "docs/analysis/A044-outputs/s3-method-drafts/evidence-map.md":  "8bcec1082fa16964f274b29b709b30ce2a78b3b60711712a25d5ccd8c9035d21",
+                            "docs/analysis/A044-outputs/s3-method-drafts/finalize_documents.ps1":  "bd0d2bd34d5330c75330843e783ae65c5123128a95e25426bd494de2f780022a",
+                            "docs/analysis/A044-outputs/s3-method-drafts/latch-e025-inspect-1.json":  "45ad7801b8431539d60cdc2dbcf47f2f204bc5897b10de80065aa9495a1756c2",
+                            "docs/analysis/A044-outputs/s3-method-drafts/latch-e025-render-1.json":  "7df637bdb2d5fc4e369d87866e686f7272032991c7818ea2345d0568b9875910",
+                            "docs/analysis/A044-outputs/s3-method-drafts/latch-e041-inspect-1.json":  "7be0d63f3d98033f8759d88ab603c581735a3d8babe66995da36dada3d01bd34",
+                            "docs/analysis/A044-outputs/s3-method-drafts/latch-e041-render-1.json":  "2289b53b180d1d9d9ff0d3718ae16fbc8f6cb7244a22d1eb9a6c9f41235b4a19",
+                            "docs/analysis/A044-outputs/s3-method-drafts/latch-originals-1.json":  "d7d6139e1e082845e315c925c7e8983487921df28cf45c6f083d977770819057",
+                            "docs/analysis/A044-outputs/s3-method-drafts/open-decisions.md":  "9b34c25e8400ab39f25c88345e73662c8b72b709703fffe7266de2d24e9f3222",
+                            "docs/analysis/A044-outputs/s3-method-drafts/original-pdf-inspection.json":  "02710209e8d5f91e2bc35b116f43d50051ae8f0a051ef92d5db98eb50e28faaf",
+                            "docs/analysis/A044-outputs/s3-method-drafts/originals-1.ack":  "41b60d218e65bd255d6fa694d4882ee94512b67108c14c8d2311de7c17c14938",
+                            "docs/analysis/A044-outputs/s3-method-drafts/originals-1.done":  "a411b2ba6d7601dbdc27853a2df540a7fcb87b568dc6b054930ccf2d551b4f43",
+                            "docs/analysis/A044-outputs/s3-method-drafts/originals-1.go":  "978870abfaa713a75e367348f0f4d5bc986b190adb2f9dec67612decf05f33f2",
+                            "docs/analysis/A044-outputs/s3-method-drafts/pdf_inspect.py":  "9cffae96666649bbf33d5c71bc0c40566cff2456a723f940a317376014b8450a",
+                            "docs/analysis/A044-outputs/s3-method-drafts/preservation-entry.json":  "28d24b2760652aef0894a7f27168aa2bbf660ee5f3d8d4cfc7d443bb580ef0d2",
+                            "docs/analysis/A044-outputs/s3-method-drafts/render_method.py":  "5111d5b4d04daf8d3f2ab36f05db819b4fbd3e41f1233302cbd9457f934cc46b",
+                            "docs/analysis/A044-outputs/s3-method-drafts/resource-e025-inspect-1.json":  "bf99b7c951629256ade3c0509a65a10e21ba7f4d07713e4f149ccc29e880ae5d",
+                            "docs/analysis/A044-outputs/s3-method-drafts/resource-e025-render-1.json":  "c0c5032c35bb285a1f7127241e65457def8d0f5366b05e67c1f1a75a5ba3a906",
+                            "docs/analysis/A044-outputs/s3-method-drafts/resource-e041-inspect-1.json":  "09e06f193a0c90833b39577ae0c4e78ad63a1b5fd2d0a15d389c2c66db1213e7",
+                            "docs/analysis/A044-outputs/s3-method-drafts/resource-e041-render-1.json":  "68dae9eddd7b5b3cf2b56134a80bee596986d68a52b3236054a1c7892e44eb15",
+                            "docs/analysis/A044-outputs/s3-method-drafts/resource-originals-1.json":  "7fb809b95efcab5f4fdc1ccbf154d13a3c51b5a3b73cce639f5f59214041c655",
+                            "docs/analysis/A044-outputs/s3-method-drafts/run-e025-inspect-1.log":  "67cc8f381f4f0a5670a20ebaa9db71df5be9beb2daf76650b8996bac90d9fb90",
+                            "docs/analysis/A044-outputs/s3-method-drafts/run-e025-render-1.log":  "1fa470c98b06fb092c7f5f0dfb1e2acb500942b785da14ad27bad7f801d718f6",
+                            "docs/analysis/A044-outputs/s3-method-drafts/run-e041-inspect-1.log":  "cd91344f621fecfb3bbfb85d60fcafa32ea1dffc7ce1ddf2880ee44cc13380ae",
+                            "docs/analysis/A044-outputs/s3-method-drafts/run-e041-render-1.log":  "07ce4eecb482c1cfa5cc84d5a62e447ea02e4760c5439330e8a1c2a4e84eec5e",
+                            "docs/analysis/A044-outputs/s3-method-drafts/run-originals-1.log":  "1ce88126c2957e8a3e0f6630f910fd572e61787a15e223347d6856bd75aea139",
+                            "docs/analysis/A044-outputs/s3-method-drafts/s0-handoff.ko.md":  "02456e30182494f5dcb8b7c6dd0d8600dbea30a495f7f29d4c11a0d8fc72666f",
+                            "docs/analysis/A044-outputs/s3-method-drafts/visual-review.json":  "f443cdc6b5a2474b31ab341791295ca7cd5041d633fed4195524bacc96cd2522"
+                        },
+    "shared_document_sha256":  {
+                                   "docs/status.md":  "3e9dfe04bf39cebd4854ed0f3bb16b9cc7edc601f9751e16e0a49349fe153b8f",
+                                   "docs/log.md":  "330172f6da249e50feccedf6cba3c505db2d6b0becd212056c35d2f0446c7b22",
+                                   "docs/phase2-preparation.md":  "c8e4d34b5f7427b851ecb4ad560f54f48473e9eab9013ff2e088835b1351c437"
+                               },
+    "dirty_entry_count":  2557,
+    "dirty_final_count":  2631,
+    "added_dirty_count":  74,
+    "prior_dirty_paths_removed":  [
+
+                                  ],
+    "unexpected_new_paths":  [
+
+                             ],
+    "preservation_limit":  "Enumerated original identities and prior shared text, plus dirty-path inventory; not a whole-tree rehash or all-chat attestation",
+    "gross_seconds":  1441.187559,
+    "gross_limit_seconds":  3600,
+    "measured_document_seconds":  5.5812167000040063,
+    "accounted_document_seconds":  125.581216700004,
+    "document_limit_seconds":  300,
+    "sampled_peak_tree_rss":  96382976,
+    "sampled_peak_tree_private":  84705280,
+    "cpu_document_child":  2,
+    "gpu":  0,
+    "heavy":  1,
+    "cash":  0,
+    "credits":  0,
+    "process_census_method":  "Get-Process python/pythonw plus five supervised owned-tree exit receipts; CIM denied, safer local fallback used",
+    "local_python_processes":  [
+
+                               ],
+    "owned_jobs":  [
+
+                   ],
+    "owned_descendants_remaining":  [
+
+                                    ],
+    "model_runs":  0,
+    "research_tests":  0,
+    "checker_runs":  0,
+    "packaging":  0,
+    "network":  0,
+    "installs":  0,
+    "subagents":  0,
+    "final_test_selection":  false,
+    "license_grant":  false,
+    "upload":  0,
+    "commits":  0,
+    "pushes":  0,
+    "outgoing_writer":  "S3-METHOD-DRAFTS-A044 /root",
+    "incoming_owner":  "S0 review pending explicit acceptance",
+    "exclusive_writer_released":  true,
+    "released_at":  "2026-10-23T17:50:01.1875590+09:00",
+    "no_automatic_continuation":  true
+}

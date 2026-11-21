@@ -1,0 +1,1248 @@
+{
+    "checked_utc":  "2026-09-27T12:06:10.4280726+00:00",
+    "verdict":  "PASS_SCOPED_S0_DOCUMENTS",
+    "disposition":  "S1_HANDOFF_READY_NOT_EXECUTED",
+    "role":  "S0",
+    "head":  "1d223340d4e1fa3993b411dc5daafab9cb37d0cd",
+    "head_unchanged":  true,
+    "workflow_read_at_entry":  {
+                                   "revision":  "2026-09-27-r3",
+                                   "sha256":  "987b4549dbb6c701bab48df5969e4aa1ed8bf69cc3a851842f55853ca69a84ba",
+                                   "receipts":  [
+                                                    "1c4853: AGENTS and CLAUDE",
+                                                    "9df0cb: status then latest A032/A031/A030 log entries then workflow and prompts",
+                                                    "3098de: workflow routing/evidence sections targeted reread"
+                                                ]
+                               },
+    "workflow_at_exit":  {
+                             "revision":  "2026-09-27-r4",
+                             "sha256":  "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642",
+                             "read_receipts":  [
+                                                   "a8affa",
+                                                   "cbf1b9"
+                                               ]
+                         },
+    "baseline_count":  126,
+    "baseline_unchanged_count":  120,
+    "authorized_existing_changes":  [
+                                        {
+                                            "path":  "docs/workflow.md",
+                                            "before":  "987b4549dbb6c701bab48df5969e4aa1ed8bf69cc3a851842f55853ca69a84ba",
+                                            "after":  "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642",
+                                            "unchanged":  false,
+                                            "authorized_edit":  true
+                                        },
+                                        {
+                                            "path":  "CLAUDE.md",
+                                            "before":  "eda4ec2ee1edec41f26a3f5c8e90c783947e16280e1b6d8bf7684263b87449ca",
+                                            "after":  "69175e6d741a17042db4852d4961a5c52bd97fe2cd5bfbff762d30d7e5270364",
+                                            "unchanged":  false,
+                                            "authorized_edit":  true
+                                        },
+                                        {
+                                            "path":  "docs/log.md",
+                                            "before":  "847e09665e9f02275e7b0aa9750a90a0f35436517850156c11dca5cd5d2e426d",
+                                            "after":  "cc2739faab3b2fd60e98a9beadd6d085803119725f465a67cf1db73ae8c8e8aa",
+                                            "unchanged":  false,
+                                            "authorized_edit":  true
+                                        },
+                                        {
+                                            "path":  "AGENTS.md",
+                                            "before":  "febc698acbc581de465dba7a0108e97aa4c3c7d7859af035a6b159938c834dfc",
+                                            "after":  "86394bbf164a2b7df6a309f4564b9dacf3b2799fa0227a703e4ea11d4d842596",
+                                            "unchanged":  false,
+                                            "authorized_edit":  true
+                                        },
+                                        {
+                                            "path":  "docs/status.md",
+                                            "before":  "63cd7565b0463bc9ee40390d232bb28204c249a3331be0071e59ed9874f26923",
+                                            "after":  "fc0028f4ccead5198c6be02f981174dbbb975489862d7efd7b22888517fc23a5",
+                                            "unchanged":  false,
+                                            "authorized_edit":  true
+                                        },
+                                        {
+                                            "path":  "docs/session-prompts.ko.md",
+                                            "before":  "0e09504f94ab35de5e724ebc448d484dacbbf7e497678a9f6342034bea9c45d7",
+                                            "after":  "c68eba8618c6a49caf1b590181ede5d5c03800d4c2305ea0e5efe3cc266e5615",
+                                            "unchanged":  false,
+                                            "authorized_edit":  true
+                                        }
+                                    ],
+    "unexpected_changes":  [
+
+                           ],
+    "preserved_baseline_checks":  [
+                                      {
+                                          "path":  "docs/analysis/A026-outputs/verification.json",
+                                          "before":  "484ccc128f05a76ce04fc7e621a970f62940121d68d23d62415336c45ee9481a",
+                                          "after":  "484ccc128f05a76ce04fc7e621a970f62940121d68d23d62415336c45ee9481a",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "docs/analysis/E060-outputs/check_e060-attempt1.py.txt",
+                                          "before":  "15577c09e9f606e847d363af4c1d3c986fcd540e10eac49e99d72faadc724046",
+                                          "after":  "15577c09e9f606e847d363af4c1d3c986fcd540e10eac49e99d72faadc724046",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "scripts/assemble_e060.py",
+                                          "before":  "d607ffd3e79bfe11431fa0773763343f4117082af8255c9d15e1e6041a784613",
+                                          "after":  "d607ffd3e79bfe11431fa0773763343f4117082af8255c9d15e1e6041a784613",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "docs/analysis/A029-outputs/document-links.json",
+                                          "before":  "794e7c5c9e2372ee595842d68473e412429db6d5eddd3af3caf0c207fb4bc2e0",
+                                          "after":  "794e7c5c9e2372ee595842d68473e412429db6d5eddd3af3caf0c207fb4bc2e0",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "docs/analysis/A025-submission-oriented-review.md",
+                                          "before":  "433345cf643dfa20bcb198bdd4a580c53c6db975180291f2f18fb8d968695b00",
+                                          "after":  "433345cf643dfa20bcb198bdd4a580c53c6db975180291f2f18fb8d968695b00",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "docs/analysis/E060-outputs/source.log",
+                                          "before":  "e2adacb05e24ecccf1d0ec55b253a08c6809a76784208af3d0400e58c3c30375",
+                                          "after":  "e2adacb05e24ecccf1d0ec55b253a08c6809a76784208af3d0400e58c3c30375",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "docs/analysis/E060-outputs/technical-retry1/source.log",
+                                          "before":  "93133e53c2e7cdfb51b0ede43ccb9ab3404e30872997af5776f376605c373405",
+                                          "after":  "93133e53c2e7cdfb51b0ede43ccb9ab3404e30872997af5776f376605c373405",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "docs/workflow.md",
+                                          "before":  "987b4549dbb6c701bab48df5969e4aa1ed8bf69cc3a851842f55853ca69a84ba",
+                                          "after":  "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642",
+                                          "unchanged":  false,
+                                          "authorized_edit":  true
+                                      },
+                                      {
+                                          "path":  "docs/analysis/E060-outputs/registration.md",
+                                          "before":  "8f1c6ce1f0114d7fe0b0b0f765471cd245627797d49505b61e4f6100052af320",
+                                          "after":  "8f1c6ce1f0114d7fe0b0b0f765471cd245627797d49505b61e4f6100052af320",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "docs/analysis/E060-outputs/technical-retry1/assembly-runtime.json",
+                                          "before":  "a5adc7bdc0218103706d911a7b597cf30165d8de2ba0991fe2f2c79f01783501",
+                                          "after":  "a5adc7bdc0218103706d911a7b597cf30165d8de2ba0991fe2f2c79f01783501",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "docs/analysis/E060-outputs/closeout.md",
+                                          "before":  "314e61f6d0d51906ba11da9d2f6070085fa621d2cd6fc36a41b87c58a9b57614",
+                                          "after":  "314e61f6d0d51906ba11da9d2f6070085fa621d2cd6fc36a41b87c58a9b57614",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "docs/plans/README.md",
+                                          "before":  "823a67fa6e5acf6bf74f5b8f2b3b509eac1e63839d7690709694dfe795415194",
+                                          "after":  "823a67fa6e5acf6bf74f5b8f2b3b509eac1e63839d7690709694dfe795415194",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "CLAUDE.md",
+                                          "before":  "eda4ec2ee1edec41f26a3f5c8e90c783947e16280e1b6d8bf7684263b87449ca",
+                                          "after":  "69175e6d741a17042db4852d4961a5c52bd97fe2cd5bfbff762d30d7e5270364",
+                                          "unchanged":  false,
+                                          "authorized_edit":  true
+                                      },
+                                      {
+                                          "path":  "docs/analysis/E060-outputs/technical-retry1/official-runtime.json",
+                                          "before":  "bda0c832c358d87590f485cc8f021ba9e5127ccc093f248d26b241218ef26e45",
+                                          "after":  "bda0c832c358d87590f485cc8f021ba9e5127ccc093f248d26b241218ef26e45",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "docs/analysis/A029-outputs/workspace-check-initial.json",
+                                          "before":  "6e1d7c42f2587c728ea3dbc93391364a2538d31199a38aa3b891dd483e3fbddb",
+                                          "after":  "6e1d7c42f2587c728ea3dbc93391364a2538d31199a38aa3b891dd483e3fbddb",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "docs/analysis/E060-outputs/technical-retry1/official-unicef.log",
+                                          "before":  "e930556992939f74f3a4737dcff8e01419c0b02cfe0353bfde4214e2cce15d51",
+                                          "after":  "e930556992939f74f3a4737dcff8e01419c0b02cfe0353bfde4214e2cce15d51",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "docs/analysis/E060-outputs/technical-retry1/official.json",
+                                          "before":  "429722671a5096dc1fc0f5fb76d27a4b9fefc49b0d472891ead0d337e2611e6d",
+                                          "after":  "429722671a5096dc1fc0f5fb76d27a4b9fefc49b0d472891ead0d337e2611e6d",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "docs/codex-setup.ko.md",
+                                          "before":  "804ad28cc886fa2c839940a9bbabdfb0949a4f345812080c1b90585b281afc4d",
+                                          "after":  "804ad28cc886fa2c839940a9bbabdfb0949a4f345812080c1b90585b281afc4d",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "docs/analysis/E060-outputs/technical-repair.md",
+                                          "before":  "0d97c2946245c3753483008de4990a6a0342e1d5be4379c153746e2c83ed3f97",
+                                          "after":  "0d97c2946245c3753483008de4990a6a0342e1d5be4379c153746e2c83ed3f97",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "docs/analysis/A027-outputs/verification.json",
+                                          "before":  "428a14545b0094862c6c05364eac36fb620cc49a4900463b6072cbf3ddfdd250",
+                                          "after":  "428a14545b0094862c6c05364eac36fb620cc49a4900463b6072cbf3ddfdd250",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  ".claude/settings.local.json",
+                                          "before":  "9a87cfd2ef7d39762a049825706497bc5b29518e55fb223179efb2a58c102630",
+                                          "after":  "9a87cfd2ef7d39762a049825706497bc5b29518e55fb223179efb2a58c102630",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "docs/log.md",
+                                          "before":  "847e09665e9f02275e7b0aa9750a90a0f35436517850156c11dca5cd5d2e426d",
+                                          "after":  "cc2739faab3b2fd60e98a9beadd6d085803119725f465a67cf1db73ae8c8e8aa",
+                                          "unchanged":  false,
+                                          "authorized_edit":  true
+                                      },
+                                      {
+                                          "path":  "docs/analysis/E060-outputs/technical-retry1/official-unhcr.log",
+                                          "before":  "4217ca9aacac7ffc8cadbffd812da31365d6007d24184e35dea451acfb6582d0",
+                                          "after":  "4217ca9aacac7ffc8cadbffd812da31365d6007d24184e35dea451acfb6582d0",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "docs/analysis/E060-outputs/technical-retry1/official-world_bank.log",
+                                          "before":  "7744d98f18341c38a13f0ad53d5660267c54d6b47753f459f65222f746b73e86",
+                                          "after":  "7744d98f18341c38a13f0ad53d5660267c54d6b47753f459f65222f746b73e86",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  ".claude/skills/paper-session/SKILL.md",
+                                          "before":  "ae38ce4b58cb2b7feeee90694646de2fc0defc646d8250aa58796d1c210a47cf",
+                                          "after":  "ae38ce4b58cb2b7feeee90694646de2fc0defc646d8250aa58796d1c210a47cf",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "docs/analysis/A023-candidate-boundary-contract.md",
+                                          "before":  "0a22d6e17cc5b6d846060ebed5a65107e2de4d8647ec4280688f5d8847fbd444",
+                                          "after":  "0a22d6e17cc5b6d846060ebed5a65107e2de4d8647ec4280688f5d8847fbd444",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "docs/analysis/E060-outputs/technical-retry1/registration.md",
+                                          "before":  "8f1c6ce1f0114d7fe0b0b0f765471cd245627797d49505b61e4f6100052af320",
+                                          "after":  "8f1c6ce1f0114d7fe0b0b0f765471cd245627797d49505b61e4f6100052af320",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "docs/analysis/A029-outputs/entry.json",
+                                          "before":  "82deceb909bc8972131680ae2cbf137a063b88d512cfd59f3e7ba899192de5c6",
+                                          "after":  "82deceb909bc8972131680ae2cbf137a063b88d512cfd59f3e7ba899192de5c6",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "docs/analysis/E060-outputs/technical-retry1/assembly.json",
+                                          "before":  "62ceca7e0ee43baff61bbcb6d713249d16accbb838c4b435f55ec9f808a934de",
+                                          "after":  "62ceca7e0ee43baff61bbcb6d713249d16accbb838c4b435f55ec9f808a934de",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "docs/analysis/A027-workflow-role-revision.md",
+                                          "before":  "accdc13240e460bbb838da25dab8412ac597c4b15787383a3b922e436f43ebb3",
+                                          "after":  "accdc13240e460bbb838da25dab8412ac597c4b15787383a3b922e436f43ebb3",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "docs/analysis/E060-outputs/technical-retry1/official-unhcr.json",
+                                          "before":  "16a8469bad07447175c60236fbf370d01b4e7c3ea8bb38d840bf0ed99b0a7e44",
+                                          "after":  "16a8469bad07447175c60236fbf370d01b4e7c3ea8bb38d840bf0ed99b0a7e44",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "scripts/check_workspace.py",
+                                          "before":  "1e81e01ce6deaced9b338ec6c85d17cb3fda1b7b4227dd7d2329a84f3e298789",
+                                          "after":  "1e81e01ce6deaced9b338ec6c85d17cb3fda1b7b4227dd7d2329a84f3e298789",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "docs/analysis/E060-outputs/technical-retry1/package.json",
+                                          "before":  "059c261377529648b9b36293bd9e4fa16b2ce5c6daf01c6878790cddc5bfee12",
+                                          "after":  "059c261377529648b9b36293bd9e4fa16b2ce5c6daf01c6878790cddc5bfee12",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "docs/analysis/A026-outputs/entry.json",
+                                          "before":  "15ac5a2429bedc769e594dd63311f1bd1c064b14aec264c653a33c419f4b9673",
+                                          "after":  "15ac5a2429bedc769e594dd63311f1bd1c064b14aec264c653a33c419f4b9673",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "docs/analysis/E060-outputs/preflight.json",
+                                          "before":  "cd594c12d42c3af404d5b6969092f16423816dfdea6f67e4dd1e191ee861e9f3",
+                                          "after":  "cd594c12d42c3af404d5b6969092f16423816dfdea6f67e4dd1e191ee861e9f3",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "docs/analysis/E060-outputs/technical-retry1/official-unicef.json",
+                                          "before":  "706b7b97ed68a16eed3840fb8455d1aec510de34c8a6c349b22de148add6af3c",
+                                          "after":  "706b7b97ed68a16eed3840fb8455d1aec510de34c8a6c349b22de148add6af3c",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "docs/analysis/E060-outputs/technical-retry1/source.json",
+                                          "before":  "47d3b821a41f8cac4155df910565f2cd98a33b3fdac4c89e739cb7993bb75fdd",
+                                          "after":  "47d3b821a41f8cac4155df910565f2cd98a33b3fdac4c89e739cb7993bb75fdd",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "docs/analysis/E060-outputs/technical-retry1/assembly-world_bank.json",
+                                          "before":  "2df5aa65405fc3478b84646ae112f0405df14d49c4fc483c51507744a92d0f85",
+                                          "after":  "2df5aa65405fc3478b84646ae112f0405df14d49c4fc483c51507744a92d0f85",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "docs/analysis/E060-outputs/technical-retry1/source-runtime.json",
+                                          "before":  "d8655815bae274aba2bdb7534eb6638d8529f3bc983c166434103d372f7e1d59",
+                                          "after":  "d8655815bae274aba2bdb7534eb6638d8529f3bc983c166434103d372f7e1d59",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "docs/analysis/E060-outputs/fixture-results.json",
+                                          "before":  "78d8f9d16ec006f58cf04a11a9b95b60dbc4c6b595bcb3cafc51dc7890d0a691",
+                                          "after":  "78d8f9d16ec006f58cf04a11a9b95b60dbc4c6b595bcb3cafc51dc7890d0a691",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "docs/analysis/A028-outputs/verification.json",
+                                          "before":  "2f329c7079a173b6035deca633c015f2a594db971a6132d16cd5ae879239cded",
+                                          "after":  "2f329c7079a173b6035deca633c015f2a594db971a6132d16cd5ae879239cded",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "docs/analysis/A008-winning-strategy-hypotheses.md",
+                                          "before":  "dd40ebbb004e25f9eca0acd677055a09f5ac1f339159a63639b0704dc466b06a",
+                                          "after":  "dd40ebbb004e25f9eca0acd677055a09f5ac1f339159a63639b0704dc466b06a",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "docs/analysis/E060-outputs/s2/post-result-handoff.ko.md",
+                                          "before":  "e3693e75678cc6c3eb44895f794c5d3a826124fcd4550695ce27403a702af01c",
+                                          "after":  "e3693e75678cc6c3eb44895f794c5d3a826124fcd4550695ce27403a702af01c",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "docs/analysis/E060-outputs/technical-retry1/source-unhcr.json",
+                                          "before":  "c610e52bcc2d3660357ea25571c5298142ae71fe8f10b06d810d335bbd43319d",
+                                          "after":  "c610e52bcc2d3660357ea25571c5298142ae71fe8f10b06d810d335bbd43319d",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "docs/analysis/A024-channel-precision-review.md",
+                                          "before":  "1a830e20b63965a3f229f2d564f623e7e4965c6495a400e62239d89a30e2985d",
+                                          "after":  "1a830e20b63965a3f229f2d564f623e7e4965c6495a400e62239d89a30e2985d",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "scripts/check_e060.py",
+                                          "before":  "056cd3f7c0a8e36d5fc3e47f44fd6da848820cc2d703daf94d43d598afdb25f8",
+                                          "after":  "056cd3f7c0a8e36d5fc3e47f44fd6da848820cc2d703daf94d43d598afdb25f8",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "docs/tree.md",
+                                          "before":  "eaa884a4194db103335136495205fe5b51297c17db15e9eac62946ced286cc44",
+                                          "after":  "eaa884a4194db103335136495205fe5b51297c17db15e9eac62946ced286cc44",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  ".gitattributes",
+                                          "before":  "32e509568cd21da6561b2854940b0865a236d7db90acc5ebcfcbf7caf1ebbf5a",
+                                          "after":  "32e509568cd21da6561b2854940b0865a236d7db90acc5ebcfcbf7caf1ebbf5a",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "submissions/2026-09-27-E060/NOTICE.txt",
+                                          "before":  "a81db73b86212de93a3944eea5dfb01126ffe17d5fbdb620a6e4c4d04830b20e",
+                                          "after":  "a81db73b86212de93a3944eea5dfb01126ffe17d5fbdb620a6e4c4d04830b20e",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "docs/analysis/A027-outputs/s1-channel-metadata-handoff.ko.md",
+                                          "before":  "5b1eae713b48d752c122462eaa4c16fc596c2c10015810028462566f2f3dee47",
+                                          "after":  "5b1eae713b48d752c122462eaa4c16fc596c2c10015810028462566f2f3dee47",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "docs/analysis/A029-outputs/inventory-summary.json",
+                                          "before":  "c2b7e523bf1721c89cfc82718c1637085553bc0bab5a051bb43adaedd7986c78",
+                                          "after":  "c2b7e523bf1721c89cfc82718c1637085553bc0bab5a051bb43adaedd7986c78",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "tests/test_workspace_check.py",
+                                          "before":  "1a93f6150bc06a7d10682936f47b999a4bd4d66ea41664ac214308672f5d4b33",
+                                          "after":  "1a93f6150bc06a7d10682936f47b999a4bd4d66ea41664ac214308672f5d4b33",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "docs/analysis/A029-outputs/verification.json",
+                                          "before":  "f3b5100d18a203d6e0779bd4a8dd116592bbee7f05b2d4f643cf2d8ec3ff05d3",
+                                          "after":  "f3b5100d18a203d6e0779bd4a8dd116592bbee7f05b2d4f643cf2d8ec3ff05d3",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "requirements-models.txt",
+                                          "before":  "29095e4880aa69c9a6b94aef36719276ec3f5ad0617e1839296d5549eb4d6e12",
+                                          "after":  "29095e4880aa69c9a6b94aef36719276ec3f5ad0617e1839296d5549eb4d6e12",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "submissions/2026-09-27-E060/SCORES.md",
+                                          "before":  "a519a4d73fafe14653e41af7c0afadd1c5e3ae6a911459d08f02cd2db5c4a5ed",
+                                          "after":  "a519a4d73fafe14653e41af7c0afadd1c5e3ae6a911459d08f02cd2db5c4a5ed",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "docs/analysis/E060-outputs/prior-preservation.json",
+                                          "before":  "b70eb099bf4dcc461881d29f16b5ec25520d90e0de19de6aeff17a9db9334554",
+                                          "after":  "b70eb099bf4dcc461881d29f16b5ec25520d90e0de19de6aeff17a9db9334554",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "docs/domain-study-guide.ko.md",
+                                          "before":  "c6df8543900b1e43f7ea0358f08dccced17aab48b20fbb7dfd09c6911d94e79f",
+                                          "after":  "c6df8543900b1e43f7ea0358f08dccced17aab48b20fbb7dfd09c6911d94e79f",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "README.md",
+                                          "before":  "44899910938a8913df121bf312489696815a257c97d24149abcbd8bab6e0f94d",
+                                          "after":  "44899910938a8913df121bf312489696815a257c97d24149abcbd8bab6e0f94d",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "docs/analysis/E060-outputs/session-manifest.json",
+                                          "before":  "4381f810197aa8b916505c75a0f193659d6062d512214ba71098d049dca03f4b",
+                                          "after":  "4381f810197aa8b916505c75a0f193659d6062d512214ba71098d049dca03f4b",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "docs/analysis/E060-outputs/technical-retry1/official-world_bank.json",
+                                          "before":  "35d8cbd6c0160f5f3567c022924b97189bb5991d306badddbd9b17753c554116",
+                                          "after":  "35d8cbd6c0160f5f3567c022924b97189bb5991d306badddbd9b17753c554116",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "docs/analysis/A029-outputs/workspace-check.json",
+                                          "before":  "720526b867ccea7eef7b4f2ac9820527c377890075fbc4814bb002ce39e3f5ad",
+                                          "after":  "720526b867ccea7eef7b4f2ac9820527c377890075fbc4814bb002ce39e3f5ad",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "docs/analysis/E060-outputs/technical-retry1/assembly-unicef.json",
+                                          "before":  "8ea4a241d29cdccedfc225c9c0d00cdf6dd6ff470c67c2930ecc2c0a1c6ef01d",
+                                          "after":  "8ea4a241d29cdccedfc225c9c0d00cdf6dd6ff470c67c2930ecc2c0a1c6ef01d",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "src/models/content_target_retrieval.py",
+                                          "before":  "0cce8e6204075e178d247a5027cf016e10f14614e5a9ea6cacc08025dd783481",
+                                          "after":  "0cce8e6204075e178d247a5027cf016e10f14614e5a9ea6cacc08025dd783481",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "conftest.py",
+                                          "before":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                                          "after":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "AGENTS.md",
+                                          "before":  "febc698acbc581de465dba7a0108e97aa4c3c7d7859af035a6b159938c834dfc",
+                                          "after":  "86394bbf164a2b7df6a309f4564b9dacf3b2799fa0227a703e4ea11d4d842596",
+                                          "unchanged":  false,
+                                          "authorized_edit":  true
+                                      },
+                                      {
+                                          "path":  "docs/experiments/E060-content-target-retrieval.md",
+                                          "before":  "b1ba67e7d521d181dac1df4a285ea39ba98b5b20244e6d9ce81e52363e3e7bc0",
+                                          "after":  "b1ba67e7d521d181dac1df4a285ea39ba98b5b20244e6d9ce81e52363e3e7bc0",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "docs/analysis/E060-outputs/technical-retry1/assembly.log",
+                                          "before":  "4831f6850ce731a000991819d6cae86139aa1adbc5804653cd0de2f40e360dc3",
+                                          "after":  "4831f6850ce731a000991819d6cae86139aa1adbc5804653cd0de2f40e360dc3",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "docs/analysis/A029-outputs/inventory-summary-full.json",
+                                          "before":  "096b8fb1cfd1e08c8fb42da07f05b4e243f50666a675d2f3eb788719a60b8aa3",
+                                          "after":  "096b8fb1cfd1e08c8fb42da07f05b4e243f50666a675d2f3eb788719a60b8aa3",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "docs/analysis/E060-outputs/review.md",
+                                          "before":  "fbf132aaeb602cb458469508412d6ff51ebd026b9fc398f62388fcae3ab53a1a",
+                                          "after":  "fbf132aaeb602cb458469508412d6ff51ebd026b9fc398f62388fcae3ab53a1a",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "docs/analysis/E060-outputs/technical-retry1/preflight.json",
+                                          "before":  "c0232430ba6ba355e85ac72b63f3cbd86903260b139487243ce7fa2eef75ea1b",
+                                          "after":  "c0232430ba6ba355e85ac72b63f3cbd86903260b139487243ce7fa2eef75ea1b",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "docs/analysis/E060-outputs/technical-retry1/source-unicef.json",
+                                          "before":  "13dd288193ecd3b65018f749cc764007536488e31796d38b0407687b0df4db06",
+                                          "after":  "13dd288193ecd3b65018f749cc764007536488e31796d38b0407687b0df4db06",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "docs/analysis/E060-outputs/exposure-ledger.md",
+                                          "before":  "40a59acc238d60551aca8ba664e2994a1b239e5b44c0ef4c8ce1d7e6c572d88c",
+                                          "after":  "40a59acc238d60551aca8ba664e2994a1b239e5b44c0ef4c8ce1d7e6c572d88c",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "docs/analysis/E060-outputs/source-runtime.json",
+                                          "before":  "d0254140e0725468bbfb9bb13d4523ef069fed0b2dbd321aed1502ff74cfb84b",
+                                          "after":  "d0254140e0725468bbfb9bb13d4523ef069fed0b2dbd321aed1502ff74cfb84b",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "requirements.txt",
+                                          "before":  "c57890e5eeaee69fbe973da6e300592e75124df8e323c62ef7b4552e4da958d0",
+                                          "after":  "c57890e5eeaee69fbe973da6e300592e75124df8e323c62ef7b4552e4da958d0",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "docs/status.md",
+                                          "before":  "63cd7565b0463bc9ee40390d232bb28204c249a3331be0071e59ed9874f26923",
+                                          "after":  "fc0028f4ccead5198c6be02f981174dbbb975489862d7efd7b22888517fc23a5",
+                                          "unchanged":  false,
+                                          "authorized_edit":  true
+                                      },
+                                      {
+                                          "path":  "docs/analysis/E060-outputs/technical-retry1/source-world_bank.json",
+                                          "before":  "2b7114591fca8487da5134fd9598fd752f3e97c8a4f8c8b472468d93ba71d420",
+                                          "after":  "2b7114591fca8487da5134fd9598fd752f3e97c8a4f8c8b472468d93ba71d420",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "docs/analysis/E060-outputs/verification.json",
+                                          "before":  "33fdea9c93e41bf0361f81a4604137efa66517a1032e2d7a312b4e56531b363d",
+                                          "after":  "33fdea9c93e41bf0361f81a4604137efa66517a1032e2d7a312b4e56531b363d",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  ".agents/skills/paper-session/SKILL.md",
+                                          "before":  "b444bf486cb54c37200a9c886cc58a3d0dd6139cb0431abbf291e1cba95bb11e",
+                                          "after":  "b444bf486cb54c37200a9c886cc58a3d0dd6139cb0431abbf291e1cba95bb11e",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "submissions/2026-09-27-E060/verification.json",
+                                          "before":  "33fdea9c93e41bf0361f81a4604137efa66517a1032e2d7a312b4e56531b363d",
+                                          "after":  "33fdea9c93e41bf0361f81a4604137efa66517a1032e2d7a312b4e56531b363d",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "submissions/2026-09-27-E060/main.py",
+                                          "before":  "eb9fd1869c6c2cd7b856d163d5646981d3888197bbd3f27b384e099335ab7bc3",
+                                          "after":  "eb9fd1869c6c2cd7b856d163d5646981d3888197bbd3f27b384e099335ab7bc3",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "docs/analysis/E060-outputs/s2-handoff.ko.md",
+                                          "before":  "bf577d68c306d1f25f50e9e1e157877d145cad9e18e6252825b2cf6bde16f183",
+                                          "after":  "bf577d68c306d1f25f50e9e1e157877d145cad9e18e6252825b2cf6bde16f183",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "docs/analysis/A029-codex-migration-audit.md",
+                                          "before":  "a47366a477628e793fe47ded0fc2c91dced4e5aeeed854c465df94308bf77274",
+                                          "after":  "a47366a477628e793fe47ded0fc2c91dced4e5aeeed854c465df94308bf77274",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "docs/analysis/E060-outputs/technical-retry1/official.log",
+                                          "before":  "9dd7f06d3d481e5ca7fdb533f9fe0bbef558aa1f6c48ea7638db8ab66fb9975a",
+                                          "after":  "9dd7f06d3d481e5ca7fdb533f9fe0bbef558aa1f6c48ea7638db8ab66fb9975a",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "docs/analysis/A029-outputs/project-paths.txt",
+                                          "before":  "020ea0b8c3251e48b515cc9c1b839d9a53c7b26f97591b8ee33aaaad03fcfe2d",
+                                          "after":  "020ea0b8c3251e48b515cc9c1b839d9a53c7b26f97591b8ee33aaaad03fcfe2d",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "docs/analysis/A029-outputs/source-audit.json",
+                                          "before":  "520dd8f40f018108573ae2aa49ff376ed84aa6e1d56d78a0b6ca7a944a3d7efe",
+                                          "after":  "520dd8f40f018108573ae2aa49ff376ed84aa6e1d56d78a0b6ca7a944a3d7efe",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  ".gitignore",
+                                          "before":  "ddbfc49388e75ad97664da410f2422c42128c16be0a098fadfc3e3fc5a3508a9",
+                                          "after":  "ddbfc49388e75ad97664da410f2422c42128c16be0a098fadfc3e3fc5a3508a9",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "docs/analysis/A029-outputs/status-before-migration.md",
+                                          "before":  "c213af0106dfc7df2efaa865376c53c997735ac7f41d2999e4af1b186f971c6e",
+                                          "after":  "c213af0106dfc7df2efaa865376c53c997735ac7f41d2999e4af1b186f971c6e",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "docs/index.md",
+                                          "before":  "0e8e1ca2d3aa35be4bd523c12554a8286f475ba1d7c47704af1a46ffeb065f34",
+                                          "after":  "0e8e1ca2d3aa35be4bd523c12554a8286f475ba1d7c47704af1a46ffeb065f34",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "tests/test_e060_assembly.py",
+                                          "before":  "c6f4f25b8d7def6d279a25e6326f82d0b46fc1a0d4b0ebec28c4bd00cd7034a7",
+                                          "after":  "c6f4f25b8d7def6d279a25e6326f82d0b46fc1a0d4b0ebec28c4bd00cd7034a7",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "docs/session-prompts.ko.md",
+                                          "before":  "0e09504f94ab35de5e724ebc448d484dacbbf7e497678a9f6342034bea9c45d7",
+                                          "after":  "c68eba8618c6a49caf1b590181ede5d5c03800d4c2305ea0e5efe3cc266e5615",
+                                          "unchanged":  false,
+                                          "authorized_edit":  true
+                                      },
+                                      {
+                                          "path":  "docs/analysis/A028-workflow-entry-audit.md",
+                                          "before":  "cc930947f08bc377beb81879fc047e18030004539da1f8fcf8d5d27f629ff01d",
+                                          "after":  "cc930947f08bc377beb81879fc047e18030004539da1f8fcf8d5d27f629ff01d",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "docs/analysis/A028-outputs/entry.json",
+                                          "before":  "7e8405879827dbf40e4489e8a9dc2881317380683678a5bc9a1868241b02cf10",
+                                          "after":  "7e8405879827dbf40e4489e8a9dc2881317380683678a5bc9a1868241b02cf10",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "tests/test_content_target_retrieval.py",
+                                          "before":  "24fdfc4f3e7cc7a729b5deb40e4ff51a47ff07497feae019c41b40626973f64c",
+                                          "after":  "24fdfc4f3e7cc7a729b5deb40e4ff51a47ff07497feae019c41b40626973f64c",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "docs/analysis/E060-outputs/technical-retry1/assembly-unhcr.json",
+                                          "before":  "459ebad054d95dbbc47317c5bfa53764d6c25a8c80e7004c13365c338fd50b9d",
+                                          "after":  "459ebad054d95dbbc47317c5bfa53764d6c25a8c80e7004c13365c338fd50b9d",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "docs/analysis/A027-outputs/entry.json",
+                                          "before":  "58d6ad8053f548d8477c8dc9bd116e9f03d284c0274b0765878ac2c1b4effb9b",
+                                          "after":  "58d6ad8053f548d8477c8dc9bd116e9f03d284c0274b0765878ac2c1b4effb9b",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "docs/analysis/A026-post-e060-strategy-review.md",
+                                          "before":  "2657e93a6766a2932fe72581998b81b5d7c116cae8aa6b71dc318931b9f96ccd",
+                                          "after":  "2657e93a6766a2932fe72581998b81b5d7c116cae8aa6b71dc318931b9f96ccd",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "docs/analysis/A030-vaf-channel-metadata-review.md",
+                                          "before":  "f9d0c102b86f93c4346f425552b1a12b3d6db93b6a6fed76bcc3e4c59eaa3c03",
+                                          "after":  "f9d0c102b86f93c4346f425552b1a12b3d6db93b6a6fed76bcc3e4c59eaa3c03",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "docs/analysis/A030-outputs/entry.json",
+                                          "before":  "dd389d95c100d283c8a26e4cdbab487cc6f756fe1acc31a611526923c9539bdc",
+                                          "after":  "dd389d95c100d283c8a26e4cdbab487cc6f756fe1acc31a611526923c9539bdc",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "docs/analysis/A030-outputs/exposure-ledger.md",
+                                          "before":  "ff146a4a45f1063c3f749ccba0ee1f8d1ece2386172c23fb5b35a486210926a5",
+                                          "after":  "ff146a4a45f1063c3f749ccba0ee1f8d1ece2386172c23fb5b35a486210926a5",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "docs/analysis/A030-outputs/registration.md",
+                                          "before":  "97383e94712c5cc10b353b34d1a0549565459db0087d0e9ffbbc33cd2bb09a30",
+                                          "after":  "97383e94712c5cc10b353b34d1a0549565459db0087d0e9ffbbc33cd2bb09a30",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "docs/analysis/A030-outputs/report-extracted.txt",
+                                          "before":  "a4a83b57a94215eff2489a6c002bc41656f22a775cc00244f5f77c0b4270d70e",
+                                          "after":  "a4a83b57a94215eff2489a6c002bc41656f22a775cc00244f5f77c0b4270d70e",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "docs/analysis/A030-outputs/s0-handoff.ko.md",
+                                          "before":  "21bb04275a7a80a74c62f7b7cc8176c39e588d746b587457280c8dcb3a66f89c",
+                                          "after":  "21bb04275a7a80a74c62f7b7cc8176c39e588d746b587457280c8dcb3a66f89c",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "docs/analysis/A030-outputs/source-register.md",
+                                          "before":  "9e0a48ea6e4235853a70c03afd98820e3383b299ab63cb54e57b162b0b066432",
+                                          "after":  "9e0a48ea6e4235853a70c03afd98820e3383b299ab63cb54e57b162b0b066432",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "docs/analysis/A030-outputs/vaf-host-2024-report.pdf",
+                                          "before":  "5785bd893da1f77f9a121671fc6aa788e0446a32355d3a62a056d3c8f4da9565",
+                                          "after":  "5785bd893da1f77f9a121671fc6aa788e0446a32355d3a62a056d3c8f4da9565",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "docs/analysis/A030-outputs/verification.json",
+                                          "before":  "1c39b0481ec526c98f78ff50798c5040a160f2584b13d37740b2620a8edb3247",
+                                          "after":  "1c39b0481ec526c98f78ff50798c5040a160f2584b13d37740b2620a8edb3247",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "docs/analysis/A031-outputs/entry.json",
+                                          "before":  "c684a16649ac63215dc04bef5cf1d03c5b4d51ba44cfc4eea3140a948f675ed4",
+                                          "after":  "c684a16649ac63215dc04bef5cf1d03c5b4d51ba44cfc4eea3140a948f675ed4",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "docs/analysis/A031-post-a030-handoff-review.md",
+                                          "before":  "29a577132be6fa5931f1746df25afbef4b8e0e11fa54b6a41a9d04798c2bac30",
+                                          "after":  "29a577132be6fa5931f1746df25afbef4b8e0e11fa54b6a41a9d04798c2bac30",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "docs/analysis/A031-outputs/verification.json",
+                                          "before":  "04e323984b703549ec45dfab2eef353def2d975e80c09ec64accf782c2b22ec0",
+                                          "after":  "04e323984b703549ec45dfab2eef353def2d975e80c09ec64accf782c2b22ec0",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "docs/analysis/A032-outputs/access-landing.html",
+                                          "before":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                                          "after":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "docs/analysis/A032-outputs/catalog1030-ddi.xml",
+                                          "before":  "f5ea139f2be32e84d544c612560584487b2cd955bd776f0b4945b792009373e1",
+                                          "after":  "f5ea139f2be32e84d544c612560584487b2cd955bd776f0b4945b792009373e1",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "docs/analysis/A032-outputs/catalog1030-metadata.json",
+                                          "before":  "cde92f60722e6c923b3683a253aa374a7b4feb821910b26e529a5269c065db4f",
+                                          "after":  "cde92f60722e6c923b3683a253aa374a7b4feb821910b26e529a5269c065db4f",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "docs/analysis/A032-outputs/catalog1030.html",
+                                          "before":  "88de1a1fa257910a4de02a977dda7b096f99aa9199e67a37a2873fcb22978145",
+                                          "after":  "88de1a1fa257910a4de02a977dda7b096f99aa9199e67a37a2873fcb22978145",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "docs/analysis/A032-outputs/custodian-request.en.md",
+                                          "before":  "68128d4cf50abafbfdd44fc9f7a0c02454851bb1a30a9df8fc048d7cf2ef5944",
+                                          "after":  "68128d4cf50abafbfdd44fc9f7a0c02454851bb1a30a9df8fc048d7cf2ef5944",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "docs/analysis/A032-outputs/entry.json",
+                                          "before":  "9acfa4cd11dcbd2e435264edae4a1188bfeb1d3f95289a68a6562793bfb7febb",
+                                          "after":  "9acfa4cd11dcbd2e435264edae4a1188bfeb1d3f95289a68a6562793bfb7febb",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "docs/analysis/A032-outputs/exposure-ledger.md",
+                                          "before":  "3e7a414aeaddc5a32e63f6a58f838e110016ad05fea11c46e05deec51666dd3b",
+                                          "after":  "3e7a414aeaddc5a32e63f6a58f838e110016ad05fea11c46e05deec51666dd3b",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "docs/analysis/A032-outputs/extract_metadata.py",
+                                          "before":  "fd460bec3c57966809bca7911a2ab74012bd3fb00ecd4477274f7e350c853d8f",
+                                          "after":  "fd460bec3c57966809bca7911a2ab74012bd3fb00ecd4477274f7e350c853d8f",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "docs/analysis/A032-outputs/metadata-integrity.json",
+                                          "before":  "1301907c57a110cae95e05445def1b8cd6ef219db2cc94964d9f17d6e86a9047",
+                                          "after":  "1301907c57a110cae95e05445def1b8cd6ef219db2cc94964d9f17d6e86a9047",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "docs/analysis/A032-outputs/questionnaire-cells.json",
+                                          "before":  "5570a260c2a5579fc01ae2cae7d035de8dcf892e60fbc7ef2a94d5e4bbabc34e",
+                                          "after":  "5570a260c2a5579fc01ae2cae7d035de8dcf892e60fbc7ef2a94d5e4bbabc34e",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "docs/analysis/A032-outputs/readiness-contract.ko.md",
+                                          "before":  "139d577ab9afa82aa8d64ab8814847af0b953fffdfed6f141de520040a5a512d",
+                                          "after":  "139d577ab9afa82aa8d64ab8814847af0b953fffdfed6f141de520040a5a512d",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "docs/analysis/A032-outputs/related-materials.html",
+                                          "before":  "b643dd3007f3afb9ada56be9fbf013396592083270018a5e4b1f6d8d831ae504",
+                                          "after":  "b643dd3007f3afb9ada56be9fbf013396592083270018a5e4b1f6d8d831ae504",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "docs/analysis/A032-outputs/researcher-guide.txt",
+                                          "before":  "dd2807e0ae8030a028eaad592a83539386022b9e1b017565a39e1730207f70fc",
+                                          "after":  "dd2807e0ae8030a028eaad592a83539386022b9e1b017565a39e1730207f70fc",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "docs/analysis/A032-outputs/routing-metadata.json",
+                                          "before":  "8897d05493dfd3e0fd08557c52b69ac31ab49b1ca4e44af428348a53a45150bf",
+                                          "after":  "8897d05493dfd3e0fd08557c52b69ac31ab49b1ca4e44af428348a53a45150bf",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "docs/analysis/A032-outputs/source-register.md",
+                                          "before":  "9d5a4f8917cd9bd033e059fb45c350357db83bbc65186765fc419d920a5f179f",
+                                          "after":  "9d5a4f8917cd9bd033e059fb45c350357db83bbc65186765fc419d920a5f179f",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "docs/analysis/A032-outputs/terms-of-use.html",
+                                          "before":  "baeb420638470691e0ee7db0d2c4cdb10912df922cc4fa200bb07b9b13fc1d19",
+                                          "after":  "baeb420638470691e0ee7db0d2c4cdb10912df922cc4fa200bb07b9b13fc1d19",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "docs/analysis/A032-document-acquisition-and-readiness.md",
+                                          "before":  "813094ca7cf53dfc787e4b2099eb87455aea7cb81b97a68724c39a555ca49611",
+                                          "after":  "813094ca7cf53dfc787e4b2099eb87455aea7cb81b97a68724c39a555ca49611",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      },
+                                      {
+                                          "path":  "docs/analysis/A032-outputs/verification.json",
+                                          "before":  "f3fd688fd3a1c226fe14e80dcb1a2d11e836069e558a7a846421b26ab96c568a",
+                                          "after":  "f3fd688fd3a1c226fe14e80dcb1a2d11e836069e558a7a846421b26ab96c568a",
+                                          "unchanged":  true,
+                                          "authorized_edit":  false
+                                      }
+                                  ],
+    "candidate_input_checks":  [
+                                   {
+                                       "path":  "src/models/shared_trunk.py",
+                                       "sha256":  "df648763c8e0ba5532ebf9e437af95cd10d8527112c1338b8b5db9ad6a212e1f",
+                                       "unchanged":  true
+                                   },
+                                   {
+                                       "path":  "src/models/supervised_retrieval.py",
+                                       "sha256":  "2940338c5378de03303befb74e3834fbad631c0eb18f4ecb55d2cc39a471f879",
+                                       "unchanged":  true
+                                   },
+                                   {
+                                       "path":  "src/models/link_sharp.py",
+                                       "sha256":  "4a7921a00d7758e52a63a3ca7cd5ebf2285cef445b57fd89f15580d6fc108524",
+                                       "unchanged":  true
+                                   },
+                                   {
+                                       "path":  "src/models/hh_cap.py",
+                                       "sha256":  "9aad6be04e14ae97dc7aaba5499747c35b255b098680c66eaa8f8af58c940f70",
+                                       "unchanged":  true
+                                   },
+                                   {
+                                       "path":  "src/models/hier_backoff.py",
+                                       "sha256":  "e01f2030c191b0b632b274662cbb46537669f3b73e21ab0d5f7f671d28654ccd",
+                                       "unchanged":  true
+                                   },
+                                   {
+                                       "path":  "src/models/logit_blend.py",
+                                       "sha256":  "c25e91e648d5eb8a11afca1c8b02accad1a585540b6ed7d4ca363730a535705f",
+                                       "unchanged":  true
+                                   },
+                                   {
+                                       "path":  "src/models/cond_agree.py",
+                                       "sha256":  "aecad17990cc106199f96648ad02716eee43cc60f995b25125473a0b0bd5e197",
+                                       "unchanged":  true
+                                   },
+                                   {
+                                       "path":  "src/models/hh_sharp.py",
+                                       "sha256":  "31acb4639894411320062f196050425ee1c143a456c9e0dac40ba6dd376ad5e0",
+                                       "unchanged":  true
+                                   },
+                                   {
+                                       "path":  "src/models/hh_link.py",
+                                       "sha256":  "fb34d8dc575a0edd644287ec9387ee32db7866083b53b907376f464837f0c1f6",
+                                       "unchanged":  true
+                                   },
+                                   {
+                                       "path":  "src/models/dup_link.py",
+                                       "sha256":  "e1ce093d927eed6db0553776b74f8ddfca5d159bf035b6cd7b4df9e7bc6b168f",
+                                       "unchanged":  true
+                                   },
+                                   {
+                                       "path":  "src/models/prob_link.py",
+                                       "sha256":  "6b03f700821b6d74c8ef0dfe834737ac4c9755d7fcf9a7c2f96b5b67e905d96d",
+                                       "unchanged":  true
+                                   },
+                                   {
+                                       "path":  "src/eval/retrieval_oracle.py",
+                                       "sha256":  "b6c3487a01f5174e02e7691ec455a8e72cfab7533f68026b9010665a60b23ca4",
+                                       "unchanged":  true
+                                   },
+                                   {
+                                       "path":  "src/eval/runner.py",
+                                       "sha256":  "498a93a89d5a13a5bbcec62e351e029140a062e93680ab38ae280d2fddd7ae9d",
+                                       "unchanged":  true
+                                   },
+                                   {
+                                       "path":  "external/starter-kit/score.py",
+                                       "sha256":  "7049e99a48acef2a74f37cb49bb66b5a9af8d05d2ed8fcf530287b5e81c5042f",
+                                       "unchanged":  true
+                                   },
+                                   {
+                                       "path":  "external/starter-kit/make_sandbox.py",
+                                       "sha256":  "8cf628cbb4771ed6e91ad74ebb4f75b22667af39d8f48e01c956c675b1b1586b",
+                                       "unchanged":  true
+                                   },
+                                   {
+                                       "path":  "external/starter-kit/config.yml",
+                                       "sha256":  "f22f8e4faa62b6af0ee8e7e887e35980511e4517655479fefeeef4519fc52c15",
+                                       "unchanged":  true
+                                   },
+                                   {
+                                       "path":  "external/starter-kit/data/unicef.json",
+                                       "sha256":  "0bce08036cc563ee2a369dcee316ff8a5f89045d86991756d72c266927674396",
+                                       "unchanged":  true
+                                   },
+                                   {
+                                       "path":  "external/starter-kit/data/world_bank.json",
+                                       "sha256":  "6b3760742c6e864eb8d0bb2f9ec523a19a486b73282d79432dbcca16e3664125",
+                                       "unchanged":  true
+                                   },
+                                   {
+                                       "path":  "external/starter-kit/data/unhcr.json",
+                                       "sha256":  "b1175b6bdbd96e90a4defd83af20a38d711c6eca9fe3ce880109ff244abe80d9",
+                                       "unchanged":  true
+                                   },
+                                   {
+                                       "path":  "submissions/2026-09-19-E041/main.py",
+                                       "sha256":  "22c911806ea91234ae350341adfb9c0df2ce4be41cc88e73be304e4bb1023073",
+                                       "unchanged":  true
+                                   },
+                                   {
+                                       "path":  "submissions/2026-09-09-E025/main.py",
+                                       "sha256":  "00793cf9d720d6f7511ffd738935206b3a5401f2454255409429db8d55e991b9",
+                                       "unchanged":  true
+                                   },
+                                   {
+                                       "path":  "docs/experiments/E012-shared-trunk.md",
+                                       "sha256":  "0c40ac6802f683f5523b8639080f4b0df0fcbe4150e7b40ad8eb2a8f918e6b8a",
+                                       "unchanged":  true
+                                   },
+                                   {
+                                       "path":  "docs/experiments/E015-trunk-capacity.md",
+                                       "sha256":  "8a88d53d6a69ced34c994f3795f47aeb38f315d9c026f8b9d038acd9c8262c00",
+                                       "unchanged":  true
+                                   },
+                                   {
+                                       "path":  "docs/experiments/E029-seed-temp.md",
+                                       "sha256":  "47363f8c6fbb011d8d1e66ac94dceea98ab7dcb8432da27d7406f4a5f2eac666",
+                                       "unchanged":  true
+                                   },
+                                   {
+                                       "path":  "docs/experiments/E056-conditional-leaf-content.md",
+                                       "sha256":  "bcbee2f8ef4d5beee5740940ad3d1fc40b77bceaca0d155faa0e6046e297005c",
+                                       "unchanged":  true
+                                   },
+                                   {
+                                       "path":  "docs/experiments/E060-content-target-retrieval.md",
+                                       "sha256":  "b1ba67e7d521d181dac1df4a285ea39ba98b5b20244e6d9ce81e52363e3e7bc0",
+                                       "unchanged":  true
+                                   }
+                               ],
+    "candidate_inputs_unchanged":  true,
+    "new_document_link_checks":  [
+                                     {
+                                         "source":  "docs/analysis/A033-dev-handoff-and-role-repair.md",
+                                         "target":  "A033-outputs/entry.json",
+                                         "exists":  true
+                                     },
+                                     {
+                                         "source":  "docs/analysis/A033-dev-handoff-and-role-repair.md",
+                                         "target":  "A033-outputs/candidate-inputs.json",
+                                         "exists":  true
+                                     },
+                                     {
+                                         "source":  "docs/analysis/A033-dev-handoff-and-role-repair.md",
+                                         "target":  "A033-outputs/s1-tied-heads-handoff.ko.md",
+                                         "exists":  true
+                                     },
+                                     {
+                                         "source":  "docs/analysis/A033-dev-handoff-and-role-repair.md",
+                                         "target":  "A033-outputs/codabench-score-access.ko.md",
+                                         "exists":  true
+                                     },
+                                     {
+                                         "source":  "docs/analysis/A033-dev-handoff-and-role-repair.md",
+                                         "target":  "../session-prompts.ko.md",
+                                         "exists":  true
+                                     },
+                                     {
+                                         "source":  "docs/analysis/A033-dev-handoff-and-role-repair.md",
+                                         "target":  "A033-outputs/verification.json",
+                                         "exists":  true
+                                     },
+                                     {
+                                         "source":  "docs/analysis/A033-outputs/codabench-score-access.ko.md",
+                                         "target":  "competition-settings.json",
+                                         "exists":  true
+                                     },
+                                     {
+                                         "source":  "docs/analysis/A033-outputs/codabench-score-access.ko.md",
+                                         "target":  "competition-public.json",
+                                         "exists":  true
+                                     }
+                                 ],
+    "selected_jobs_at_exit":  [
+
+                              ],
+    "process_check_limit":  "Selected process names only; not a global lock or proof of absence of every possible job",
+    "dirty_exit":  [
+                       " M .claude/skills/paper-session/SKILL.md",
+                       " M .gitignore",
+                       " M CLAUDE.md",
+                       " M docs/domain-study-guide.ko.md",
+                       " M docs/index.md",
+                       " M docs/log.md",
+                       " M docs/session-prompts.ko.md",
+                       " M docs/status.md",
+                       " M docs/tree.md",
+                       " M docs/workflow.md",
+                       "?? .agents/",
+                       "?? AGENTS.md",
+                       "?? README.md",
+                       "?? docs/analysis/A020-outputs/",
+                       "?? docs/analysis/A020-post-e058-design-review.md",
+                       "?? docs/analysis/A021-outputs/",
+                       "?? docs/analysis/A021-selector-comparison-contract.md",
+                       "?? docs/analysis/A022-outputs/",
+                       "?? docs/analysis/A022-remaining-role-audit.md",
+                       "?? docs/analysis/A023-candidate-boundary-contract.md",
+                       "?? docs/analysis/A023-cost-accounting.md",
+                       "?? docs/analysis/A023-outputs/",
+                       "?? docs/analysis/A024-channel-precision-review.md",
+                       "?? docs/analysis/A024-outputs/",
+                       "?? docs/analysis/A025-submission-oriented-review.md",
+                       "?? docs/analysis/A026-outputs/",
+                       "?? docs/analysis/A026-post-e060-strategy-review.md",
+                       "?? docs/analysis/A027-outputs/",
+                       "?? docs/analysis/A027-workflow-role-revision.md",
+                       "?? docs/analysis/A028-outputs/",
+                       "?? docs/analysis/A028-workflow-entry-audit.md",
+                       "?? docs/analysis/A029-codex-migration-audit.md",
+                       "?? docs/analysis/A029-outputs/",
+                       "?? docs/analysis/A030-outputs/",
+                       "?? docs/analysis/A030-vaf-channel-metadata-review.md",
+                       "?? docs/analysis/A031-outputs/",
+                       "?? docs/analysis/A031-post-a030-handoff-review.md",
+                       "?? docs/analysis/A032-document-acquisition-and-readiness.md",
+                       "?? docs/analysis/A032-outputs/",
+                       "?? docs/analysis/A033-dev-handoff-and-role-repair.md",
+                       "?? docs/analysis/A033-outputs/",
+                       "?? docs/analysis/E059-outputs/",
+                       "?? docs/analysis/E060-outputs/",
+                       "?? docs/codex-setup.ko.md",
+                       "?? docs/experiments/E059-leaf-donor-interactions.md",
+                       "?? docs/experiments/E060-content-target-retrieval.md",
+                       "?? docs/plans/README.md",
+                       "?? requirements-models.txt",
+                       "?? scripts/assemble_e060.py",
+                       "?? scripts/check_a021_selector_contract.py",
+                       "?? scripts/check_a023_candidate_boundary.py",
+                       "?? scripts/check_a023_resources.py",
+                       "?? scripts/check_e060.py",
+                       "?? scripts/check_workspace.py",
+                       "?? scripts/screen_e059.py",
+                       "?? src/models/content_target_retrieval.py",
+                       "?? submissions/2026-09-27-E060.zip",
+                       "?? submissions/2026-09-27-E060/",
+                       "?? tests/test_a021_selector_contract.py",
+                       "?? tests/test_a023_candidate_boundary.py",
+                       "?? tests/test_content_target_retrieval.py",
+                       "?? tests/test_e059_interactions.py",
+                       "?? tests/test_e060_assembly.py",
+                       "?? tests/test_workspace_check.py",
+                       "?? trip/"
+                   ],
+    "scientific_execution":  {
+                                 "predict":  0,
+                                 "fit":  0,
+                                 "parquet_reads_or_hashes":  0,
+                                 "commit_push":  0,
+                                 "experiment_records_created":  0,
+                                 "zip_or_submission_actions":  0,
+                                 "TEST_selection":  0,
+                                 "fixture_or_tests":  0,
+                                 "S2_S3_execution":  0,
+                                 "optimizer":  0,
+                                 "score":  0,
+                                 "cache_deserialization":  0,
+                                 "protected_response_reads":  0,
+                                 "model_changes":  0
+                             },
+    "web_scope":  "Official anonymous competition API and pinned public Codabench source; no account/private submission score access, protected output download, contact or VAF response access",
+    "platform_conclusion":  "Owner-page scores-array inspection may expose already-delivered instrument scores; actual deployed version and user account response not verified",
+    "preserved_state":  "E041 incumbent; E025 fallback; E057/E060 parked; all STOP/HOLD; A018 unconfirmed; S3 stopped; no S2 candidate; prior exposure and original roles unchanged",
+    "artifact_sha256":  {
+                            "docs/analysis/A033-dev-handoff-and-role-repair.md":  "a48aefa0ca0b5151616b51c6489d607f300b82fbe543b663ff9c1b63693402c8",
+                            "docs/analysis/A033-outputs/candidate-inputs.json":  "bf58fafa307f65358ff35e2a82f9005177d272e20893ea98fd6864be83b0e03f",
+                            "docs/analysis/A033-outputs/codabench-client.js.txt":  "af915f5991e5aca03d85e8f4b5d9a0dc47cefbf99353392b3c58f9534d3ba4aa",
+                            "docs/analysis/A033-outputs/codabench-score-access.ko.md":  "9ccfc1296b41a8877e6ffe7196db628bcdb484af7b7ffd384d48a36f10f46c62",
+                            "docs/analysis/A033-outputs/codabench-src__apps__api__serializers__submissions.py.txt":  "9fd9d62159402d4da217f5d6b0c2923863eb4cb43bfe6c8a85d7b82d5fd754d4",
+                            "docs/analysis/A033-outputs/codabench-src__apps__api__serializers__submission_leaderboard.py.txt":  "4faf23066f17f90d665442d2f5b6d77722dc5d88e000499f48b2f96d01075b85",
+                            "docs/analysis/A033-outputs/codabench-src__apps__api__views__submissions.py.txt":  "63f66f4cf13fb890336745125e868cbf3155947d1d444fd16c40442ffc066aed",
+                            "docs/analysis/A033-outputs/codabench-src__static__riot__competitions__detail__submission_manager.tag":  "fc5476df0cc976708b2c437a84b413f89dc5cd45231b6a4b2eb88820eee58c62",
+                            "docs/analysis/A033-outputs/codabench-src__static__riot__competitions__detail__submission_modal.tag":  "5f492745da754c42cdfed4b10d8b25766c69804ad69a4358a24d2d8234cd6779",
+                            "docs/analysis/A033-outputs/codabench-src__static__riot__submissions__resource_submissions.tag":  "dc1ba058c4576ea5d5b3726ac90bb0aa71a4b6de61d2395ecc543599577fa9a3",
+                            "docs/analysis/A033-outputs/codabench-tree.json":  "62dbb073e8244f791d68f70193a6463c89a9d40d5b8c1a1cddb2a1002e273669",
+                            "docs/analysis/A033-outputs/competition-public.json":  "f23c4dc8533b88664adc9abf9e1b0f57041907fbb92ea4869b2f4c52ee8890d8",
+                            "docs/analysis/A033-outputs/competition-settings.json":  "c6a59af460fd6ee3a46ce89b34387892b0198e58bf36a08ab90758f3cf233eaf",
+                            "docs/analysis/A033-outputs/entry.json":  "c0fe12034f905bb82eda4010885c9065a0506987c5a4a24536ded503808b8434",
+                            "docs/analysis/A033-outputs/hscc-tree.json":  "8a2caf522c1688eee943aeb52535bf564fee25d97dc08b03bb05986635113c55",
+                            "docs/analysis/A033-outputs/s1-tied-heads-handoff.ko.md":  "b6668d226d982af65dad0770f241b22906e0898dfe34c05b482323ece0bb4c6b"
+                        },
+    "verification_self_hash":  "Excluded to avoid recursive hash",
+    "limits":  [
+                   "No model or fixture execution was authorized or performed",
+                   "Documentation checks do not prove future model quality or hosted score availability",
+                   "Other live sessions must actually read r4; editing instructions is not a technical execution lock",
+                   "Git global ignore read warning remains; explicitly permitted file hashes verified independently"
+               ]
+}

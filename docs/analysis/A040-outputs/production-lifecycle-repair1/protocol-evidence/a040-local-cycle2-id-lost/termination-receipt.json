@@ -1,0 +1,23 @@
+{
+  "scope": "LOCAL_PROTOCOL_FIXTURE",
+  "termination": "UNCONFIRMED",
+  "errors": [
+    {
+      "type": "ValueError",
+      "message": "Exact-name listing is empty or ambiguous",
+      "stage": "SandboxListV2"
+    }
+  ],
+  "observations": [
+    {
+      "state": 5,
+      "tasks": 0,
+      "confirmed": true
+    }
+  ],
+  "billing_final": {
+    "metered": "0.01009897",
+    "billed": "0"
+  },
+  "elapsed_seconds": 0.07588489999761805
+}

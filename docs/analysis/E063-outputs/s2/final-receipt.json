@@ -1,0 +1,33 @@
+{
+  "status": "COMPLETE_WITHIN_AUTHORIZED_S2_SCOPE",
+  "qualification": "RELEASE_QUALIFIED_FOR_USER_REVIEW",
+  "observed_utc": "2026-10-09T15:14:54.806435+00:00",
+  "head": "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+  "gross_seconds": 2874.806435,
+  "gross_cap_seconds": 7200,
+  "computational_seconds": 1214.5834377000024,
+  "final_artifact_files_verified": 110,
+  "artifact_hash_mismatches": [],
+  "S2_manifest_sha256": "1ac029ae4499066b82fb7b68c9fd0c917ce0e89a0d7040bb7a8fe45d1570774a",
+  "snapshot_manifest_sha256": "ca8d49956623d276eff7bab0cee9a17aa5d75b453f82f0d0cbf91268bf261189",
+  "verification_sha256": "f042012d926d2e31f71b2d8efdb3f418db24c2050503fed7f8fe7ca029c3069f",
+  "zip": {
+    "path": "submissions/2026-10-09-E063.zip",
+    "sha256": "5469b5374f6fb3745cabf64071183ed3de5bbe240ea4f18c034049d560d532d9",
+    "bytes": 15720
+  },
+  "named_local_jobs": [],
+  "job_observed_kst": "2026-10-10T00:14:54.4579230+09:00",
+  "job_scope": "Named local repository command paths only, no remote query",
+  "late_E025_identity_correction": "Preserved original preflight; see repair-record and supplemental freeze. No source/policy/model rerun.",
+  "records": "SCORES arms preserved, release addition, status/log additive, S0 handoff complete; original selected identities/dirty entries retained",
+  "forbidden_actions": {
+    "upload": 0,
+    "commit_push": 0,
+    "remote_install": 0,
+    "subagents": 0,
+    "S3_TEST_selection": 0
+  },
+  "next_action": "Stop S2; return S0 for user DEV decision. No automatic new work.",
+  "self_excluded_from_manifest": true
+}

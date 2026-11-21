@@ -1,0 +1,36 @@
+{
+  "outcome": "BOUNDARY_PASS",
+  "case": "builder_fail",
+  "protocol_only": true,
+  "sdk_default_build": true,
+  "image_id": "im-dddddddddddddddddddddd",
+  "creates": 0,
+  "terminates": 0,
+  "commands": [],
+  "terminal": {
+    "scope": "LOCAL_PROTOCOL_FIXTURE",
+    "termination": "TERMINAL_TASK0_CONFIRMED",
+    "errors": [],
+    "observations": [
+      {
+        "state": 5,
+        "tasks": 0,
+        "confirmed": true
+      }
+    ],
+    "billing_final": {
+      "metered": "0.01009897",
+      "billed": "0"
+    },
+    "elapsed_seconds": 0.002510500002244953
+  },
+  "source_files": [
+    {
+      "filename": "/root/controller_core.py",
+      "sha256": "fc561eee08f1eafbbeac2cbcc5fa31890ef719bf603c5c7dd1af7aea5e556bcb"
+    }
+  ],
+  "child_work_seconds": 0.2533770000009099,
+  "actual_auth_rpc_model": 0,
+  "protected_access": 0
+}

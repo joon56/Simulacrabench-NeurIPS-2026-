@@ -1,0 +1,23 @@
+{
+  "vectors": 17856,
+  "max_raw_sum_error": 1.9348226487636566e-07,
+  "comparisons": {
+    "H": {
+      "max_abs": 0.0,
+      "changed_vectors": 0
+    },
+    "E041": {
+      "max_abs": 0.0,
+      "changed_vectors": 0
+    },
+    "E025": {
+      "max_abs": 0.0,
+      "changed_vectors": 0
+    }
+  },
+  "flat_sha256": "07bcb9f2d2d0c59339707ee761d6ca129093ba52b59b6c1c9a13ffef98f1e533",
+  "status": "PASS",
+  "output_file": "docs/analysis/E063-outputs/s2/vectors-assembly-unicef.npz",
+  "sha256": "1269a5064ee632708f14bff1e1ba2190e26f81c05caf1d6582bb52c9c821a62c",
+  "prediction_and_check_seconds": 42.057293600002595
+}

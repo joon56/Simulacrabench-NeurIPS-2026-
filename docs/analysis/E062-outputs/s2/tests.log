@@ -1,0 +1,9 @@
+test_frozen_prefix_and_standalone_import (tests.test_e062_assembly.AssemblyBoundaryTests.test_frozen_prefix_and_standalone_import) ... ok
+test_no_fit_source_assembly_forward_and_rng_exact (tests.test_e062_assembly.AssemblyBoundaryTests.test_no_fit_source_assembly_forward_and_rng_exact) ... ok
+test_original_and_ordinal_bindings_are_distinct (tests.test_e062_assembly.AssemblyBoundaryTests.test_original_and_ordinal_bindings_are_distinct) ... ok
+test_three_dispatches_and_wb_factory (tests.test_e062_assembly.AssemblyBoundaryTests.test_three_dispatches_and_wb_factory) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 2.541s
+
+OK

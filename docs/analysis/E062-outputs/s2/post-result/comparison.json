@@ -1,0 +1,73 @@
+{
+  "recorded_utc": "2026-10-08T14:17:24.802966+00:00",
+  "decision": "UNRESOLVED",
+  "preregistered_arm": "WB and Grand equal",
+  "source": "Current user's pasted JSON fragment; preserved verbatim chat text copy and valid object wrapper; not platform-authenticated",
+  "E062": {
+    "id": 969351,
+    "phase": 29772,
+    "phase_name": "Development",
+    "status": "Finished",
+    "filename": "2026-10-08-E062.zip",
+    "created_when_utc": "2026-10-08T13:37:12.926748Z",
+    "created_when_kst": "2026-10-08T22:37:12.926748+09:00",
+    "scores": {
+      "skill": "0.6433333333",
+      "skill_unicef": "0.5200000000",
+      "skill_world_bank": "0.4900000000",
+      "skill_unhcr": "0.9200000000"
+    },
+    "on_leaderboard": false,
+    "task_id": 35494,
+    "scoring_program": "f3015fb3-26ec-44c2-97fa-6b5fd501f596"
+  },
+  "E041": {
+    "id": 933094,
+    "filename": "E041.zip",
+    "phase": 29772,
+    "phase_name": "Development",
+    "status": "Finished",
+    "created_when_utc": "2026-09-19T08:10:46.209685Z",
+    "scores": {
+      "skill": "0.6433333333",
+      "skill_unicef": "0.5200000000",
+      "skill_world_bank": "0.4900000000",
+      "skill_unhcr": "0.9200000000"
+    },
+    "source": "submissions/hosted-scores/2026-09-27.json; earlier user-supplied API extract, not live verification"
+  },
+  "all_four_released_score_strings_equal": true,
+  "comparison_scope": "Comparable supplied Finished Development/phase29772 released API observations under the registered comparator; filenames consistent with experiment identities; no recorded source contradiction",
+  "comparison_limits": [
+    "No independently authenticated platform query",
+    "Historical E041 extract omits task/scoring_program, so equality of exact remote scorer/version is not independently checked",
+    "precision2/phase1 privacy-rounded-noised released values; Grand trailing decimals do not recover hidden precision"
+  ],
+  "created_when_semantics": "Platform creation metadata, not independently verified upload-start, completion or local ZIP preparation time",
+  "best_update": {
+    "readable_new_best": false,
+    "independent_best_update_event": null,
+    "note": "on_leaderboard:false and leaderboard:null describe supplied snapshot membership, not historical best-update event proof"
+  },
+  "artifact_identity": {
+    "local_release_path": "submissions/2026-10-08-E062.zip",
+    "local_release_sha256_inherited": "83087eaa081e3973cf4c5b4ae48923f61d33a440c989c7d2a6652c069e90eee4",
+    "local_release_bytes_inherited": 16879,
+    "local_ZIP_opened_or_rehashed_this_task": false,
+    "filename_matches_prepared_basename": true,
+    "actual_uploaded_bytes_sha256": null,
+    "actual_upload_selection_path": null,
+    "remote_byte_equality": null
+  },
+  "interpretation": "No readable better released result than E041; effect/activation/raw prediction differences remain unresolved",
+  "not_inferred": [
+    "exact zero effect",
+    "identical predictions",
+    "hypothesis-family refutation",
+    "hidden instrument/target16/raw values",
+    "same hosted runtime",
+    "historical best-update event from membership"
+  ],
+  "state": "E041 incumbent/E025 fallback; E062 parked; DEV disposition unchanged, TEST selection not authorized",
+  "next": "Return S0 for next research priority document judgment; no identical-policy resubmission or seed/head/threshold rescue"
+}

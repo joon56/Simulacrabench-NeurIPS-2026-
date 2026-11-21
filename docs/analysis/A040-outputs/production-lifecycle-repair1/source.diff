@@ -1,0 +1,315 @@
+--- placed/contract.py
++++ new/contract.py
+@@ -8,7 +8,7 @@
+ 
+ MODULES = ("contract.py", "protocol.py", "controller_core.py", "live_binding.py",
+            "sdk_endpoint.py", "payload.py", "sandbox_stage.py", "linux_boundary.py",
+-           "linux_watchdog.py", "linux_runner.py", "live_worker.py", "live_launcher.py")
++           "linux_watchdog.py", "linux_runner.py", "live_worker.py", "live_launcher.py", "cleanup_query.py")
+ REMOTE_DIR = "/work/docs/analysis/A040-outputs/production-lifecycle-repair1"
+ CAP_BYTES = 15258 * 1024 * 1024
+ GPU_PLAN = 2.965933453125
+@@ -83,7 +83,9 @@
+ 
+ class Costs:
+     def __init__(self):
+-        self.posted = .00001152
++        self.posted = .01009897
++        self.prior_management = .6550409048674121
++        self.gpu_reservation = 0.
+         self.prepare_started = None
+         self.gpu_started = None
+     def observe(self, summary):
+@@ -94,7 +96,8 @@
+     def value(self):
+         prep = max(0, time.monotonic()-self.prepare_started) if self.prepare_started else 0
+         gpu = max(0, time.monotonic()-self.gpu_started) if self.gpu_started else 0
+-        return max(self.posted, .00001152+.65+prep*(.0000131+8*.00000222)+gpu*.00123580560546875)
++        return max(self.posted, self.prior_management + prep*(.0000131+8*.00000222)
++                   + max(self.gpu_reservation, gpu*.00123580560546875))
+     def gate(self, next_plan=0):
+         value = self.value()
+         if value+next_plan >= 4:
+--- placed/sdk_endpoint.py
++++ new/sdk_endpoint.py
+@@ -13,12 +13,27 @@
+         self.image_builder = image_builder or self._build
+         self.sandbox_factory = sandbox_factory or SDK.Sandbox.create
+         self.client = self.app = self.image = self.sandbox = None
++        self.journal = None
++        self.mutations = set()
+ 
+     async def connect(self):
+         self.client = await self.client_factory()
+         if self.client._cancellation_context_event_loop is not asyncio.get_running_loop():
+             raise RuntimeError("SDK event-loop mismatch")
+-        response = await self.client._stub.WorkspaceNameLookup(Empty())
++        for name in ("SandboxCreate", "SandboxTerminate", "SandboxTerminateV2"):
++            original = getattr(self.client._stub, name)
++            async def guarded(request, _name=name, _original=original, **kwargs):
++                kind = "create" if _name == "SandboxCreate" else "terminate"
++                if kind in self.mutations:
++                    raise RuntimeError("Duplicate Sandbox mutation blocked: " + kind)
++                if self.journal is None:
++                    raise RuntimeError("Missing durable mutation journal")
++                self.journal(kind, request)
++                self.mutations.add(kind)
++                kwargs["retry"] = None
++                return await _original(request, **kwargs)
++            setattr(self.client._stub, name, guarded)
++        response = await self.client._stub.WorkspaceNameLookup(Empty(), retry=None, timeout=14.5)
+         if not isinstance(response, pb.WorkspaceNameLookupResponse) or response.username != "joon56":
+             raise RuntimeError("Workspace mismatch")
+         return response.username
+--- placed/sandbox_stage.py
++++ new/sandbox_stage.py
+@@ -31,13 +31,19 @@
+         raise TimeoutError("No whole GPU/closeout window")
+     context.costs.gate(GPU_PLAN)
+     state["payload"] = payload.verify()
++    context.latch("sandbox-create")
+     state["sandbox_intent"] = True
++    state["sandbox_name"] = plan.app_name + "-gpu"
++    state["sandbox_resource_possible"] = True
++    state["sandbox_reservation_usd"] = GPU_PLAN
++    state["gpu_actual_seconds"] = None
++    context.gpu_deadline = min(plan.gpu_latest_end, time.time()+2400)
++    context.costs.gpu_started = time.monotonic()
++    context.costs.gpu_reservation = GPU_PLAN
+     context.persist()
+     state["sandbox_id"] = await context.op(endpoint.sandbox_create(plan.app_name + "-gpu"), "sandbox_create", 120)
+     if not state["sandbox_id"]:
+         raise RuntimeError("Sandbox ID missing")
+-    context.gpu_deadline = min(plan.gpu_latest_end, time.time()+2400)
+-    context.costs.gpu_started = time.monotonic()
+     context.persist()
+     state["transfer"] = await payload.transfer(endpoint.sandbox.filesystem, context.op)
+     # Immutable per-attempt target config; credentials never appear in it.
+--- placed/live_worker.py
++++ new/live_worker.py
+@@ -18,11 +18,19 @@
+         self.directory = Path(directory)
+         self.plan, self.endpoint, self.payload, self.pins = plan, endpoint, payload, pins
+         self.costs = Costs()
++        self.endpoint.journal = self.mutation_intent
+         self.gpu_deadline = None
+         self.state = {"scope": plan.scope, "outcome": "NOT_STARTED", "app_name": plan.app_name,
+                       "create_intent": False, "build_intent": False, "sandbox_intent": False,
+                       "app_id": None, "sandbox_id": None, "image_id": None,
+                       "actual_remote_facts": "UNVERIFIED" if plan.scope != "LIVE" else "PENDING"}
++
++    def mutation_intent(self, kind, request):
++        self.latch("sandbox-" + kind + "-rpc")
++        self.state["sandbox_" + kind + "_rpc_intent"] = True
++        if kind == "terminate":
++            self.state["terminate_sandbox_id"] = request.sandbox_id
++        self.persist()
+ 
+     def save_bytes(self, name, raw):
+         from contract import safe_relative
+@@ -106,63 +114,76 @@
+ 
+ 
+ async def cleanup(context):
++    from cleanup_query import CleanupQuery
+     started = time.monotonic()
+-    deadline = started + min(context.plan.cleanup_timeout, max(0, context.plan.whole_deadline - time.time()))
++    total = min(context.plan.cleanup_timeout, max(0, context.plan.whole_deadline-time.time()))
++    deadline = started + total
++    endpoint, state = context.endpoint, context.state
+     receipt = {"scope": context.plan.scope, "termination": "UNCONFIRMED", "errors": [], "observations": []}
+-
+-    async def call(awaitable):
+-        remaining = deadline - time.monotonic()
+-        if remaining <= 0:
+-            if hasattr(awaitable, "close"):
+-                awaitable.close()
+-            raise TimeoutError("Entire cleanup cap")
+-        return await bounded(awaitable, min(10, remaining), min(context.plan.cancel_grace, max(0, remaining-10)))
+ 
+     async def attempt(name, awaitable):
+         try:
+-            return await call(awaitable)
++            left = deadline-time.monotonic()
++            if left <= 0:
++                if hasattr(awaitable, "close"):
++                    awaitable.close()
++                raise TimeoutError("Entire cleanup cap")
++            return await bounded(awaitable, min(14.5, left), min(.1, left))
+         except BaseException as exc:
+             receipt["errors"].append({"stage": name, "error": repr(exc)})
+             return None
+ 
++    def save_query(value):
++        if value.get("sandbox_id"):
++            state["sandbox_id"] = value["sandbox_id"]
++        context.save("sandbox-query-receipt.json", value)
++        if value["terminal"] == "TERMINAL_CONFIRMED" and "sandbox_terminal" not in receipt:
++            receipt["sandbox_terminal"] = value["sandbox_result"]
++            receipt["sandbox_id"] = value["sandbox_id"]
++            receipt["terminal_source"] = value["terminal_source"]
++            receipt["terminal_observed_utc"] = value["observed_utc"]
++            context.save("sandbox-terminal-evidence.json", receipt)
++        context.persist()
++
+     try:
+-        endpoint, state = context.endpoint, context.state
+         if state["create_intent"] and not state["app_id"]:
+             state["app_id"] = await attempt("app_id_recovery", endpoint.app_lookup(context.plan.app_name, False))
+             context.persist()
+-        if state["sandbox_intent"] and not state["sandbox_id"] and state["app_id"]:
+-            state["sandbox_id"] = await attempt("sandbox_id_recovery", endpoint.sandbox_recover(context.plan.app_name + "-gpu"))
+-            context.persist()
+-        if endpoint.sandbox is not None:
+-            await attempt("sandbox_terminate", endpoint.sandbox.terminate())
++        if state["sandbox_intent"] and state["app_id"] and endpoint.client is not None:
++            query = CleanupQuery(save_query, state["app_id"], context.plan.app_name,
++                total=max(0, deadline-time.monotonic()), reserve=min(15, total/3), call_cap=14.5)
++            # SDK create may itself attempt termination on scheduling failure.
++            # The mutation-boundary journal covers both that path and this query.
++            query.receipt["terminate_requests"] = int(bool(state.get("sandbox_terminate_rpc_intent")))
++            async def existing_client():
++                return endpoint.client
++            result = await query.run(existing_client)
++            receipt["errors"].extend(result["errors"])
++            if result.get("billing") is not None:
++                receipt["billing_final"] = result["billing"]
++                context.costs.posted = max(context.costs.posted, float(result["billing"]["metered_cost"]))
++                if float(result["billing"]["billed_cost"]) != 0:
++                    receipt["errors"].append({"stage": "final_billing", "error": "Cash billing contradiction"})
+         if not state["create_intent"]:
+             receipt["termination"] = "NO_CREATE_ATTEMPT"
+         elif state["app_id"]:
+             await attempt("app_stop", endpoint.stop_app(state["app_id"]))
+-            while time.monotonic() < deadline - .001:
+-                try:
+-                    info = await call(endpoint.app_info(state["app_id"]))
+-                    tasks = await call(endpoint.tasks(state["app_id"]))
+-                    observation = termination_observation(info, tasks)
+-                    sandbox_known = not state["sandbox_intent"] or endpoint.sandbox is not None
+-                    observation["sandbox_returncode"] = await call(endpoint.sandbox.poll()) if endpoint.sandbox is not None else None
+-                    receipt["observations"].append(observation)
+-                    context.save("termination-receipt.json", receipt)
+-                    sandbox_stopped = not state["sandbox_intent"] or (sandbox_known and observation["sandbox_returncode"] is not None)
+-                    if observation["confirmed"] and sandbox_stopped and not state.get("unsettled_build_task"):
+-                        receipt["termination"] = "TERMINAL_TASK0_CONFIRMED"
+-                        break
+-                except BaseException as exc:
+-                    receipt["errors"].append({"stage": "termination_query", "error": repr(exc)})
+-                await asyncio.sleep(min(context.plan.poll_seconds, max(0, deadline - time.monotonic())))
+-        if endpoint.client is not None:
++            info = await attempt("app_info", endpoint.app_info(state["app_id"]))
++            tasks = await attempt("tasks", endpoint.tasks(state["app_id"]))
++            if info is not None and tasks is not None:
++                observation = termination_observation(info, tasks)
++                receipt["observations"].append(observation)
++                sandbox_proved = not state["sandbox_intent"] or "sandbox_terminal" in receipt
++                if observation["confirmed"] and sandbox_proved and not state.get("unsettled_build_task"):
++                    receipt["termination"] = "TERMINAL_TASK0_CONFIRMED"
++        if endpoint.client is not None and "billing_final" not in receipt:
+             summary = await attempt("final_billing", endpoint.billing())
+             if summary is not None:
+                 context.costs.observe(summary)
+                 receipt["billing_final"] = {"metered": summary.metered_cost, "billed": summary.billed_cost}
+     finally:
+-        receipt["elapsed_seconds"] = time.monotonic() - started
+-        context.state["termination"] = receipt["termination"]
++        receipt["elapsed_seconds"] = time.monotonic()-started
++        state["termination"] = receipt["termination"]
+         context.save("termination-receipt.json", receipt)
+         context.persist()
+     return receipt
+@@ -206,7 +227,10 @@
+         context.save("cost-ledger.json", {"scope": context.plan.scope, "management_estimate": context.costs.value(),
+             "posted_evidence": context.costs.posted, "actual_cost_this_local_fixture": 0 if context.plan.scope != "LIVE" else None,
+             "prior_component": .00001152, "cash_authority": 0, "total_plan": 5,
+-            "invoice_attribution": "UNVERIFIED", "historical_active_seconds": 5504.7268216})
++            "invoice_attribution": "UNVERIFIED", "historical_active_seconds": 14777.0797748,
++            "gpu_request_reservation": context.costs.gpu_reservation, "gpu_actual_seconds": None,
++            "reservation_is_invoice": False, "historical_workspace_metered": .01009897,
++            "historical_2400s_reservation": 2.965933453125})
+         context.persist()
+         context.save("result.json", context.state)
+     return context.state
+--- placed/live_launcher.py
++++ new/live_launcher.py
+@@ -13,11 +13,11 @@
+ from contract import Plan, MODULES, verify_sources, sha
+ 
+ 
+-def load_contract(path):
++def load_contract(path, allow_fixture=False):
+     config = json.loads(Path(path).read_text(encoding="utf-8"))
+     plan = Plan(**config["plan"])
+     plan.check()
+-    if plan.scope != "LIVE":
++    if plan.scope != "LIVE" and not (allow_fixture and plan.scope == "LOCAL_PROTOCOL_FIXTURE"):
+         raise PermissionError("CLI is reserved for a fresh authorized LIVE session")
+     manifest = json.loads((HERE / "source-manifest.json").read_text(encoding="utf-8"))
+     if sha((HERE / "source-manifest.json").read_bytes()) != config["source_manifest_sha256"]:
+@@ -34,13 +34,17 @@
+     return config, plan, manifest
+ 
+ 
+-def child(config_path):
++def child(config_path, context_factory=None):
+     # SDK import alone is permitted, authentication only after all local gates.
+-    config, plan, manifest = load_contract(config_path)
++    config, plan, manifest = load_contract(config_path, allow_fixture=context_factory is not None)
+     from payload import Payload, FileReader
+     from sdk_endpoint import Endpoint
+     from live_worker import Context, run, cleanup
+-    import asyncio
++    if context_factory is not None:
++        if plan.scope != "LOCAL_PROTOCOL_FIXTURE":
++            raise PermissionError("Fixture inputs cannot enter LIVE scope")
++        context = context_factory(config, plan)
++        return dispatch(context, manifest, HERE)
+     allow_bytes = Path(config["allowlist_path"]).read_bytes()
+     if sha(allow_bytes) != config["allowlist_sha256"]:
+         raise ValueError("Original allowlist identity mismatch")
+@@ -53,21 +57,25 @@
+         FileReader(config["staging_root"], [r["path"] for r in original], plan),
+         FileReader(config["extra_root"], [r["path"] for r in extra], plan), plan.scope)
+     context = Context(config["output_directory"], plan, Endpoint(), payload, pins.decode("utf-8-sig"))
+-    loop = asyncio.new_event_loop()
+-    asyncio.set_event_loop(loop)
+-    result = loop.run_until_complete(run(context, manifest, HERE))
+-    sys.stdout.flush()
+-    sys.stderr.flush()
+-    os._exit(0 if result["outcome"] == "H100_FULL_PATH_PASS" else 1)
++    return dispatch(context, manifest, HERE)
+ 
+ 
+-def main():
++def dispatch(context, manifest, source_directory):
++    from live_binding import synchronizer
++    from live_worker import run
++    async def invoke():
++        return await run(context, manifest, source_directory)
++    return synchronizer.create_blocking(invoke)()
++
++
++def main(argv=None, context_factory=None):
+     parser = argparse.ArgumentParser()
+     parser.add_argument("contract")
+     parser.add_argument("--child", action="store_true")
+-    args = parser.parse_args()
++    args = parser.parse_args(argv)
+     if args.child:
+-        child(args.contract)
++        result = child(args.contract, context_factory=context_factory)
++        return 0 if result["outcome"] in ("H100_FULL_PATH_PASS", "LOCAL_PROTOCOL_PATH_PASS") else 1
+     config, plan, _ = load_contract(args.contract)
+     # Parent never extends the contract. Exact child ownership, bounded wait.
+     receipt_dir = Path(config["launcher_directory"])
+@@ -78,7 +86,8 @@
+         os.fsync(stream.fileno())
+     with (receipt_dir / "stdout.txt").open("xb") as stdout, (receipt_dir / "stderr.txt").open("xb") as stderr:
+         process = subprocess.Popen([sys.executable, "-X", "utf8", "-B", str(HERE / "live_launcher.py"), args.contract, "--child"],
+-                                   stdout=stdout, stderr=stderr, cwd=HERE)
++                                   stdout=stdout, stderr=stderr, cwd=HERE,
++                                   creationflags=subprocess.CREATE_NO_WINDOW if os.name == "nt" else 0)
+         try:
+             code = process.wait(timeout=max(1, plan.whole_deadline-time.time()+15))
+         except subprocess.TimeoutExpired:

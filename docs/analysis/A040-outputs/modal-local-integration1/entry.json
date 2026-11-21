@@ -1,0 +1,26 @@
+{
+    "read_evidence":  [
+                          "8b4d65 attachment AGENTS CLAUDE",
+                          "483e37 CLAUDE remainder status latest logs",
+                          "77233f latest3 recovery workflow recovery HEAD dirty jobs hashes",
+                          "06a80f prior failure/verification/termination/contracts"
+                      ],
+    "regression_cap_seconds":  180,
+    "path_collision":  false,
+    "model_imports_authorized":  false,
+    "prior_scientific_seconds":  1077.3504532,
+    "subagents_authorized":  false,
+    "authority":  "User attachment2c919bf7 explicitly directs local integration only",
+    "remote_authorized":  false,
+    "started_utc":  "2026-10-04T12:59:20Z",
+    "role":  "S1 local technical integration; RPC blocked",
+    "prior_scientific_processes":  4,
+    "head":  "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+    "payload_reads_authorized":  false,
+    "workflow_revision":  "2026-09-27-r4",
+    "workflow_sha256":  "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642",
+    "deadline_utc":  "2026-10-04T14:29:20Z",
+    "task_cap_seconds":  5400,
+    "prior_active_seconds":  5504.7268216,
+    "regression_cycle_cap":  3
+}

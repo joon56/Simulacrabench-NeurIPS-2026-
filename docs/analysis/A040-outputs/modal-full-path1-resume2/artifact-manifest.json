@@ -1,0 +1,144 @@
+﻿{
+    "kind":  "Post-failure artifacts; not a pre-run scientific freeze",
+    "files":  [
+                  {
+                      "path":  "app-terminal.json",
+                      "bytes":  437,
+                      "sha256":  "f2cea92d38afa26882c4773be21c4c5e1057b3961073f77bcfb96b3b0428f5eb"
+                  },
+                  {
+                      "path":  "billing-baseline.json",
+                      "bytes":  410,
+                      "sha256":  "481e2f1f8b7d91b321bc9e1a5adc11cf58826963c1ba7ac6e1c07e321593ee98"
+                  },
+                  {
+                      "path":  "billing-close.json",
+                      "bytes":  371,
+                      "sha256":  "382e4a736ec2790863c1ecd4f05948966cd47eaafd376aacea2586705125b88d"
+                  },
+                  {
+                      "path":  "billing-samples.jsonl",
+                      "bytes":  435,
+                      "sha256":  "320070413bd84dd6ccbb56ca4868daccd25fe30370aba05c488378be56b7abd0"
+                  },
+                  {
+                      "path":  "boundary-result.json",
+                      "bytes":  262,
+                      "sha256":  "a6d0ff61cf750253fb4fc8f4bf8ceab8262ff234bed3734b230241e17261f261"
+                  },
+                  {
+                      "path":  "build-intent.json",
+                      "bytes":  82,
+                      "sha256":  "35273fa78283405fcbc948270b150c4f30042259d2aca5bfcb607b21a72b1016"
+                  },
+                  {
+                      "path":  "build-result.json",
+                      "bytes":  2430,
+                      "sha256":  "a37da982e58b1f2103bfe4f296638861ca7e4fa72ef8c673d20833fa283b94fe"
+                  },
+                  {
+                      "path":  "build_once.py",
+                      "bytes":  6127,
+                      "sha256":  "9ddccf2fd52c0f93d02d0b5299151bdcf234f911654f5c8342efbb485014b3b0"
+                  },
+                  {
+                      "path":  "closeout.md",
+                      "bytes":  4765,
+                      "sha256":  "d82c63419668440f218beb3bd75daf92419d645ff06bce6049a650ecd7b5da41"
+                  },
+                  {
+                      "path":  "cost-ledger.json",
+                      "bytes":  4494,
+                      "sha256":  "8fcb1580f941e08f3b329475a28dd6916b6d448eac353d2c9add268eda5cbf99"
+                  },
+                  {
+                      "path":  "cost-policy.md",
+                      "bytes":  2069,
+                      "sha256":  "663c2219bb001c5e62a97fec860054820590272818e4a5a084256938ef5c1d12"
+                  },
+                  {
+                      "path":  "cost-samples.jsonl",
+                      "bytes":  193,
+                      "sha256":  "3153fd8d938f31c816d02da1c5cdb1facbc0af21a389c3168542adc804de9a31"
+                  },
+                  {
+                      "path":  "dirty-entry.txt",
+                      "bytes":  3219,
+                      "sha256":  "184f0fe5ff15527c15fb34d257489dd2552aa7f718ac2c3259d5032741e8d7e9"
+                  },
+                  {
+                      "path":  "entry.json",
+                      "bytes":  1290,
+                      "sha256":  "6e30bf05dd980a368065610085389dc9c71f1aa58c2a96ba5105c7a9afe2fa12"
+                  },
+                  {
+                      "path":  "exposure-ledger.md",
+                      "bytes":  1607,
+                      "sha256":  "a026594c42001eceaf0cc1a4898cd232f0c32dc37821b8fdc6bb98fdc487fb7b"
+                  },
+                  {
+                      "path":  "inspect_termination.py",
+                      "bytes":  2375,
+                      "sha256":  "0fe2acf4a50a2c9e3b2c953ec5041c84320923c969a4d1411ba5a41095f3a4a1"
+                  },
+                  {
+                      "path":  "local-controller-stop.json",
+                      "bytes":  232,
+                      "sha256":  "4d2ded049497cd1cec30f46a3c9f4ab54f09d97a9a5af8c777bce1a140ee8e94"
+                  },
+                  {
+                      "path":  "log-before.md",
+                      "bytes":  254364,
+                      "sha256":  "e65c929042128ed4494cef8c88ee4edd899abafb7b9325989c860d818b51313f"
+                  },
+                  {
+                      "path":  "prior-artifact-check.json",
+                      "bytes":  11161,
+                      "sha256":  "6dad1c6b466788a35c662e4f3f7945d9b44cc98b85796aefca5fa7e92c5c8ff4"
+                  },
+                  {
+                      "path":  "remote-app.json",
+                      "bytes":  85,
+                      "sha256":  "81feaa3d15e5bc93ab40fa79ac04798a6823ecab9719b0798207a3cad918b479"
+                  },
+                  {
+                      "path":  "remote-ids.jsonl",
+                      "bytes":  192,
+                      "sha256":  "cf46634848d2310fc79b49fad618104ee767258d206b8b38d172ac444016e911"
+                  },
+                  {
+                      "path":  "s0-handoff.ko.md",
+                      "bytes":  2626,
+                      "sha256":  "05dd36a2fdf6822305743b613f0436bc9cf08485aa511cfca1f3de6631a60df7"
+                  },
+                  {
+                      "path":  "source-input-image-manifest.json",
+                      "bytes":  1165,
+                      "sha256":  "9bb3da8eea3c4bc871d26566adb3bdd4a45b67acee301cf611c43e3e5f2dc93d"
+                  },
+                  {
+                      "path":  "source.diff",
+                      "bytes":  8942,
+                      "sha256":  "0b2100b716c6462efe2dcea26c70f5280894a84af4530db02abae4e9ecb84469"
+                  },
+                  {
+                      "path":  "status-before.md",
+                      "bytes":  36464,
+                      "sha256":  "17362ce4265e9a65041365877bf0fee44a09ffe8bcd63d973c9975423257e1fb"
+                  },
+                  {
+                      "path":  "termination-receipt.json",
+                      "bytes":  1671,
+                      "sha256":  "de7b9a6f902a5fcc2f85a3f9b179c6d46fc7f271b6346f694dc3c02e4e974021"
+                  },
+                  {
+                      "path":  "verification.json",
+                      "bytes":  3581,
+                      "sha256":  "fb9317f6ca49cd9120cdaa62a660d16f56b40c4b82a2163a37d6cbe0bd4b897c"
+                  }
+              ],
+    "external_console":  {
+                             "sha256":  "e6a491b0c8292e058d13d1841bea6c7abc37f5a70e1e1de79184f9eef908ee94",
+                             "path":  "tmp/a040-modal-full-path1-resume2/build-console.txt"
+                         }
+}

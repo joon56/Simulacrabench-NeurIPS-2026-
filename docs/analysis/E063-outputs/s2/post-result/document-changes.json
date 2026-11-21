@@ -1,0 +1,60 @@
+{
+  "scope": "Exactly four shared-document additions; no original bytes replaced. New fragments use destination newline convention.",
+  "changes": [
+    {
+      "path": "submissions/2026-10-09-E063/SCORES.md",
+      "before_sha256": "98cfc9bff6aa17bfe62dca9e1b0bfd2a64885129ae0f51c3338ad9f4b8346d40",
+      "after_sha256": "c66bfce12940d8086511a0479c61ef7e14c7103805e977c205991f0b7c4216e7",
+      "before_bytes": 4793,
+      "after_bytes": 7312,
+      "addition_file": "scorecard-addition.md",
+      "addition_bytes": 2519,
+      "addition_sha256": "ccb5538b7b216f6187b08317e738036fb85cd0e6feec4c20221c44dcd309251c",
+      "insertion_byte_offset": 4793,
+      "mode": "suffix_only",
+      "removal_restores_before_exact_bytes": true
+    },
+    {
+      "path": "submissions/SCORES.md",
+      "before_sha256": "672e50c16a1b066e03b1fb02d41ab1cab13e991594afe5e7988f138865453c49",
+      "after_sha256": "94d36f5af0254dec1d92e1aeb7d443c0517282817881f4e244af41fcd0735469",
+      "before_bytes": 11866,
+      "after_bytes": 13980,
+      "addition_file": "global-scores-addition.md",
+      "addition_bytes": 2114,
+      "addition_sha256": "aa6834666a594aa2c3d6ef9883d4fdd64de714f10c8790274a4f8f4dd450b581",
+      "insertion_byte_offset": 11866,
+      "mode": "suffix_only",
+      "removal_restores_before_exact_bytes": true
+    },
+    {
+      "path": "docs/status.md",
+      "before_sha256": "c10f72f371e997a3402189c2d5babd35bd34b06b1c1101c80c60a8418e6e143a",
+      "after_sha256": "b380285a72bee94da61cdb5abfaba7035f75553cc7e0dc59c552491ad91124df",
+      "before_bytes": 77284,
+      "after_bytes": 78565,
+      "addition_file": "status-addition.md",
+      "addition_bytes": 1281,
+      "addition_sha256": "9f6c9b1226a7fd560061d4ca2d75b55d9d65c3b7910041455da97be0e827fbc7",
+      "insertion_byte_offset": 325,
+      "mode": "insert_only",
+      "removal_restores_before_exact_bytes": true
+    },
+    {
+      "path": "docs/log.md",
+      "before_sha256": "44c39bc1d530b81ef9e59307b54728bf45468d489daf53b4badf169b68e267ea",
+      "after_sha256": "6e44fc3105a8d865178ff03eb8e8b86a2b8a28eb22f6c1286d00145113c971ee",
+      "before_bytes": 342809,
+      "after_bytes": 346188,
+      "addition_file": "log-addition.md",
+      "addition_bytes": 3379,
+      "addition_sha256": "d6d1a94370334f7a172eaca8a6c574f2d345af0b115ca8b7efe49d223fa0fba6",
+      "insertion_byte_offset": 23,
+      "mode": "insert_only",
+      "removal_restores_before_exact_bytes": true
+    }
+  ],
+  "original_preregistered_SCORES_prefix_preserved": true,
+  "historical_manifest_scorecard_sha256": "98cfc9bff6aa17bfe62dca9e1b0bfd2a64885129ae0f51c3338ad9f4b8346d40",
+  "manifest_difference": "Original release/S1/S2 manifests remain unchanged. Snapshot SCORES after hash differs solely because of actual-result suffix; do not restore it to the old hash. No source/model/ZIP byte audit performed."
+}

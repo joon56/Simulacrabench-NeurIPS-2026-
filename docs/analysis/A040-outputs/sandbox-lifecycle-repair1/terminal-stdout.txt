@@ -1,0 +1,1 @@
+{"terminal": "UNCONFIRMED", "sandbox_id": null, "terminate_requests": 0, "app": null, "billing": null, "errors": [{"type": "InvalidError", "stage": "WorkspaceNameLookup"}], "elapsed_seconds": 1.2158656999999948}

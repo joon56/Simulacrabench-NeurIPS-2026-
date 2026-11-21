@@ -1,0 +1,35 @@
+{
+    "total_vectors":  189649,
+    "path_only_changed":  [
+                              "contract.py",
+                              "live_launcher.py"
+                          ],
+    "test_prior_result_direct_access":  false,
+    "test_sha256":  "08560aaeeb7c9c0ac294ce4eb46e2c4c94ac1c7c3891c8c4e0e0af3ca6863b51",
+    "producer_extract_sha256":  "0f77640aa495ac6ec66b98ce2a7c933bcb302dfa7345b5b107fe62a2a9b5ec12",
+    "execution_authorized":  false,
+    "role":  "LOCAL_OUTPUT_CONTRACT",
+    "candidate_extra_count_keys":  [
+
+                                   ],
+    "candidate_extra_hash_files":  [
+                                       "unhcr-engineering-alpha025",
+                                       "unhcr-final-e041"
+                                   ],
+    "runner_byte_identical":  true,
+    "test_metadata_extract_only":  true,
+    "remote_facts":  "UNVERIFIED",
+    "runner_sha256":  "82facf9151daa8eadc55c438be99f4c0cf5e331978c18b3a59530ef2af5b680e",
+    "source_manifest_sha256":  "0060ed98fc7e3c9ecc5625bd24f5c276971b026817dbb06c92fc2744dec83815",
+    "remote_document_path":  "/work/docs/analysis/A040-outputs/modal-output-contract-repair1",
+    "original_output_temp_path_preserved":  "/work/tmp/a040-modal-local-integration1",
+    "producer_counts":  {
+                            "unhcr":  132273,
+                            "unicef":  17856,
+                            "world_bank":  39520
+                        },
+    "semantic_changed":  [
+                             "sandbox_stage.py"
+                         ],
+    "prior_manifest_sha256":  "8377129e94e8457aebd64156d1599efd8bf7b4a49f2c1b99b2dc00104218451d"
+}

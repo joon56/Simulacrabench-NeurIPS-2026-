@@ -1,0 +1,235 @@
+{
+  "classification": "LOCAL_TECHNICAL_PASS_FOR_S0",
+  "units": "seconds and bytes",
+  "entry_utc": "2026-10-09T13:10:30Z",
+  "deadline_utc": "2026-10-09T15:10:30Z",
+  "computation_cutoff_utc": "2026-10-09T15:00:30Z",
+  "stages": [
+    {
+      "mode": "H",
+      "attempt": 1,
+      "only": null,
+      "wall_seconds": 327.63319030000275,
+      "child_seconds": 327.57891599999857,
+      "prior_seconds": 406.13304559999597,
+      "cumulative_seconds": 733.7662358999987,
+      "focused_cumulative_seconds": 59.36999889999788,
+      "exit_code": 0,
+      "resource_stop": "COMPLETE",
+      "error": null,
+      "peak_owned_tree_bytes": {
+        "rss": 1395822592,
+        "commitment": 1528102912
+      },
+      "sample_count": 2974,
+      "sample_interval_seconds": 0.1,
+      "threads": 2,
+      "gpu": 0,
+      "semantics": "Conservative sum of per-process peak RSS/private, controller and descendants; stage wall includes parent source verification and cleanup",
+      "status": "PASS"
+    },
+    {
+      "mode": "prepare",
+      "attempt": 1,
+      "only": null,
+      "wall_seconds": 14.815140200000315,
+      "child_seconds": 14.765936599997076,
+      "prior_seconds": 59.36999889999788,
+      "cumulative_seconds": 74.1851390999982,
+      "focused_cumulative_seconds": 59.36999889999788,
+      "exit_code": 0,
+      "resource_stop": "COMPLETE",
+      "error": null,
+      "peak_owned_tree_bytes": {
+        "rss": 661663744,
+        "commitment": 719507456
+      },
+      "sample_count": 136,
+      "sample_interval_seconds": 0.1,
+      "threads": 2,
+      "gpu": 0,
+      "semantics": "Conservative sum of per-process peak RSS/private, controller and descendants; stage wall includes parent source verification and cleanup",
+      "status": "PASS"
+    },
+    {
+      "mode": "R",
+      "attempt": 1,
+      "only": null,
+      "wall_seconds": 331.94790649999777,
+      "child_seconds": 331.8969173000005,
+      "prior_seconds": 74.1851390999982,
+      "cumulative_seconds": 406.13304559999597,
+      "focused_cumulative_seconds": 59.36999889999788,
+      "exit_code": 0,
+      "resource_stop": "COMPLETE",
+      "error": null,
+      "peak_owned_tree_bytes": {
+        "rss": 1379385344,
+        "commitment": 1498320896
+      },
+      "sample_count": 3016,
+      "sample_interval_seconds": 0.1,
+      "threads": 2,
+      "gpu": 0,
+      "semantics": "Conservative sum of per-process peak RSS/private, controller and descendants; stage wall includes parent source verification and cleanup",
+      "status": "PASS"
+    },
+    {
+      "mode": "score",
+      "attempt": 1,
+      "only": null,
+      "wall_seconds": 20.785463200001686,
+      "child_seconds": 20.733970299999783,
+      "prior_seconds": 733.7662358999987,
+      "cumulative_seconds": 754.5516991000004,
+      "focused_cumulative_seconds": 59.36999889999788,
+      "exit_code": 0,
+      "resource_stop": "COMPLETE",
+      "error": null,
+      "peak_owned_tree_bytes": {
+        "rss": 696643584,
+        "commitment": 748982272
+      },
+      "sample_count": 189,
+      "sample_interval_seconds": 0.1,
+      "threads": 2,
+      "gpu": 0,
+      "semantics": "Conservative sum of per-process peak RSS/private, controller and descendants; stage wall includes parent source verification and cleanup",
+      "status": "PASS"
+    },
+    {
+      "mode": "tests",
+      "attempt": 1,
+      "only": "tests.test_round_metric_retrieval.MetricTests.test_common_reduction",
+      "wall_seconds": 13.438657399998192,
+      "child_seconds": 13.38505509999959,
+      "prior_seconds": 0,
+      "cumulative_seconds": 13.438657399998192,
+      "focused_cumulative_seconds": 13.438657399998192,
+      "exit_code": 1,
+      "resource_stop": "COMPLETE",
+      "error": null,
+      "peak_owned_tree_bytes": {
+        "rss": 139206656,
+        "commitment": 155561984
+      },
+      "sample_count": 124,
+      "sample_interval_seconds": 0.1,
+      "threads": 2,
+      "gpu": 0,
+      "semantics": "Conservative sum of per-process peak RSS/private, controller and descendants; stage wall includes parent source verification and cleanup",
+      "status": "FAIL"
+    },
+    {
+      "mode": "tests",
+      "attempt": 2,
+      "only": null,
+      "wall_seconds": 40.080261600000085,
+      "child_seconds": 40.031859200000326,
+      "prior_seconds": 13.438657399998192,
+      "cumulative_seconds": 53.51891899999828,
+      "focused_cumulative_seconds": 53.51891899999828,
+      "exit_code": 1,
+      "resource_stop": "COMPLETE",
+      "error": null,
+      "peak_owned_tree_bytes": {
+        "rss": 407699456,
+        "commitment": 422580224
+      },
+      "sample_count": 368,
+      "sample_interval_seconds": 0.1,
+      "threads": 2,
+      "gpu": 0,
+      "semantics": "Conservative sum of per-process peak RSS/private, controller and descendants; stage wall includes parent source verification and cleanup",
+      "status": "FAIL"
+    },
+    {
+      "mode": "tests",
+      "attempt": 3,
+      "only": "tests.test_round_metric_retrieval.EntryTests.test_forced_active_all213_actual_entry_replay_and_renderer",
+      "wall_seconds": 5.851079899999604,
+      "child_seconds": 5.8006423999977414,
+      "prior_seconds": 53.51891899999828,
+      "cumulative_seconds": 59.36999889999788,
+      "focused_cumulative_seconds": 59.36999889999788,
+      "exit_code": 0,
+      "resource_stop": "COMPLETE",
+      "error": null,
+      "peak_owned_tree_bytes": {
+        "rss": 406777856,
+        "commitment": 421523456
+      },
+      "sample_count": 53,
+      "sample_interval_seconds": 0.1,
+      "threads": 2,
+      "gpu": 0,
+      "semantics": "Conservative sum of per-process peak RSS/private, controller and descendants; stage wall includes parent source verification and cleanup",
+      "status": "PASS"
+    }
+  ],
+  "total_computational_stage_seconds": 754.5516991000004,
+  "scientific_all3_seconds": 659.5810968000005,
+  "focused_seconds": 59.36999889999788,
+  "peak_owned_tree_bytes": {
+    "rss": 1395822592,
+    "private": 1528102912
+  },
+  "calls": [
+    {
+      "kind": "pipeline",
+      "count": 6
+    },
+    {
+      "kind": "neural",
+      "count": 18
+    },
+    {
+      "kind": "metric",
+      "count": 16
+    }
+  ],
+  "components_nested_in_stage_totals": [
+    {
+      "function": "_train_on",
+      "count": 18,
+      "seconds": 473.35097639999003
+    },
+    {
+      "function": "minimize",
+      "count": 16,
+      "seconds": 0.6838264999969397
+    }
+  ],
+  "scientific_processes": 2,
+  "scientific_restart": 0,
+  "focused_processes": 3,
+  "prepare_processes": 1,
+  "evaluator_processes": 1,
+  "artificial_calls": {
+    "fake_optimizer_invocations": 2,
+    "neural_training": 0,
+    "real_scipy_minimize": 0,
+    "small_render_base_entries_training_disabled": 2,
+    "forced_active_entry_invocations": 2,
+    "qualification": "10 unique cases: 9 PASS in tests-02, remaining affected case PASS in tests-03; tests-01 intentional missing-module RED"
+  },
+  "limits": {
+    "gross": 7200,
+    "computational": 1800,
+    "focused": 300,
+    "all3_each": 900,
+    "small_each": 60,
+    "rss_and_private_each": 8589934592,
+    "cpu_numerical_threads": 2,
+    "gpu": 0,
+    "heavy": 1
+  },
+  "remote_cost_usd": 0,
+  "notes": [
+    "Stage wall conservatively exceeds scientific worker lifetime; includes parent source checks, import/startup, monitoring, input loading, output checking/serialization and cleanup.",
+    "Observed sample loop uses .1s sleep; logs sample count and configured interval, not maximum scheduler gap. Peak is conservative sum of per-process peak RSS/private, not GPU or machine-wide memory.",
+    "Neural/minimize components are already contained in all3/stage times and must not be added twice.",
+    "Ordinary fixture observer repair consumed focused budget; no variant/seed/tolerance/policy change and no scientific restart.",
+    "Shell/document metadata reads and authoring are session gross work, not scientific worker time. One PowerShell empty-pipe parser error and two truncated tool-output JSON parse errors caused no experiment or source changes."
+  ]
+}

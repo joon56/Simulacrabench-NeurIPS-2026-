@@ -1,0 +1,41 @@
+{
+  "utc": "2026-10-02T15:51:45.595475+00:00",
+  "app_id": "ap-CJkQ7byYW3D872nirY6KRM",
+  "image_id": "im-eWgRNij0VH6mzozlOzEyxy",
+  "new_resource_requests": 0,
+  "scientific_requests": 0,
+  "app_lifecycle": {
+    "app_state": "APP_STATE_STOPPED",
+    "created_at": 1790956117.074276,
+    "created_by": "joon56",
+    "deployed_at": 1790956117.180923,
+    "deployed_by": "joon56",
+    "version": 1,
+    "stopped_at": 1790956120.212,
+    "stopped_by": "joon56"
+  },
+  "owned_tasks": [],
+  "image_result": {
+    "status": "GENERIC_STATUS_SUCCESS",
+    "data": "CkAxMmUzZWFmNGM1N2JjNzFlMmI4MTQzMzQxOTkzYmZiMTJjMjMzY2M2ZGM4MWU0YTM1ZTI5NDQ0ODRiNDIwMzc1EkBmYzNjZDg0M2IzZTBjNGQyNDliODFkOTk4MGM0M2VlMGFiODM2YjdjMzE3ODNhNjIxYjEwNDAzYTlmNGMzZGYxIgcvYmluL3NoIgItYzJvCjlQeXRob24gMy4xMy4xNCAobWFpbiwgQXVnICA1IDIwMjYsIDAxOjA5OjM4KSBbR0NDIDE0LjIuMF0SJlt7Im5hbWUiOiAicGlwIiwgInZlcnNpb24iOiAiMjYuMS4yIn1dIgpnbGliYyAyLjQxOgdweXRob24zQgcyMDI1LjA2SooBCiwSAPn29gC0whXBYAuZBs3SgR0S6cHVSSqlGqrJmhnrdXj3jEujCStkdaE+NRIsKjcGN3SzkVEN84HJz2EWdkWmb4Ze3ixaLEbPM7Xnbo+FByTLzX+cwWz6nDMaLDSVVS5nbYRuHD2FTB8tINv3HaM9JjOx7OHl/yyJEf2MowY/Zx22X3uv0xs3UAE="
+  },
+  "image_logs": [],
+  "billing_summary": {
+    "start": "2026-10-01 00:00:00+00:00",
+    "end": "2026-11-01 00:00:00+00:00",
+    "metered_cost": "0E-8",
+    "metered_cost_breakdown": {
+      "LLM Tokens": "0E-8",
+      "Deployed Apps": "0.00001152",
+      "Volumes": "0E-8"
+    },
+    "adjustments": {
+      "Plan Cost": "0E-8",
+      "Credits": "-0E-8",
+      "Reservation Adjustment": "-0E-8",
+      "Network Egress Allowance": "0E-8",
+      "Free Storage": "-0E-8"
+    },
+    "billed_cost": "0E-8"
+  }
+}

@@ -1,0 +1,20 @@
+diff --git a/docs/analysis/E063-outputs/attempts/tests-02/source/test_round_metric_retrieval.py b/docs/analysis/E063-outputs/attempts/tests-03/source/test_round_metric_retrieval.py
+index fc3f9d5..80d6315 100644
+--- a/docs/analysis/E063-outputs/attempts/tests-02/source/test_round_metric_retrieval.py
++++ b/docs/analysis/E063-outputs/attempts/tests-03/source/test_round_metric_retrieval.py
+@@ -169,12 +169,12 @@ class EntryTests(MetricTests):
+             self.assertTrue((labels[600:] == -1).all())
+             return [weights.copy() for _ in groups], list(range(len(groups))), [{'selected': True} for _ in groups]
+         def replace(*args):
+-            query = args[7]; events.append('cal' if len(query) > 2 else 'Q')
++            query = args[6]; events.append('cal' if len(query) > 2 else 'Q')
+             output = actual_replace(*args)
+             if len(query) == 2:
+                 observed['ev'] = output
+-                codes, initial, waves = args[6], args[9], args[-1]
+-                donors = h.candidate_indices(codes, initial, query, args[8])
++                codes, initial, waves = args[5], args[8], args[-1]
++                donors = h.candidate_indices(codes, initial, query, args[7])
+                 x = (codes[query, None, :] == codes[donors]).astype(float)
+                 pi = softmax(np.stack([x[i] @ weights[int(frame.wave.iloc[row]) - 1] for i, row in enumerate(query)]), axis=1)
+                 direct = r._evidence(frame, pred, schema['items'], {n: official.options_for(schema, n) for n in official.generated_items(schema)},

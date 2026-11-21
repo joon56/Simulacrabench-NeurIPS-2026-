@@ -1,0 +1,877 @@
+{
+  "status": "RECOMMEND_BOUNDED_S1_TECHNICAL_IMPLEMENTATION",
+  "role": "S0",
+  "task_type": "A042 S1 contract review; documents/strategy/handoff only",
+  "workspace": "C:\\Users\\USER\\Desktop\\SimulacraBench",
+  "authority": "Current user supplied A042 S1 return for S0 decision. No same-chat implementation/fit/data/release authority. Future prompt executes only when delivered by user as a separate S1 instruction.",
+  "workflow_revision": "2026-10-05-r5",
+  "workflow_sha256": "a577942675e16a732339e586c14796104dda704693568439ae28670cc7fb7b23",
+  "entry": {
+    "at": "2026-10-09T21:02:43.8533144+09:00",
+    "head": "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+    "branch": "work/e050-submission",
+    "dirty": [
+      " M .claude/skills/paper-session/SKILL.md",
+      " M .gitignore",
+      " M CLAUDE.md",
+      " M docs/domain-study-guide.ko.md",
+      " M docs/index.md",
+      " M docs/log.md",
+      " M docs/session-prompts.ko.md",
+      " M docs/status.md",
+      " M docs/tree.md",
+      " M docs/workflow.md",
+      " M submissions/SCORES.md",
+      "?? .agents/",
+      "?? AGENTS.md",
+      "?? README.md",
+      "?? docs/analysis/A020-outputs/",
+      "?? docs/analysis/A020-post-e058-design-review.md",
+      "?? docs/analysis/A021-outputs/",
+      "?? docs/analysis/A021-selector-comparison-contract.md",
+      "?? docs/analysis/A022-outputs/",
+      "?? docs/analysis/A022-remaining-role-audit.md",
+      "?? docs/analysis/A023-candidate-boundary-contract.md",
+      "?? docs/analysis/A023-cost-accounting.md",
+      "?? docs/analysis/A023-outputs/",
+      "?? docs/analysis/A024-channel-precision-review.md",
+      "?? docs/analysis/A024-outputs/",
+      "?? docs/analysis/A025-submission-oriented-review.md",
+      "?? docs/analysis/A026-outputs/",
+      "?? docs/analysis/A026-post-e060-strategy-review.md",
+      "?? docs/analysis/A027-outputs/",
+      "?? docs/analysis/A027-workflow-role-revision.md",
+      "?? docs/analysis/A028-outputs/",
+      "?? docs/analysis/A028-workflow-entry-audit.md",
+      "?? docs/analysis/A029-codex-migration-audit.md",
+      "?? docs/analysis/A029-outputs/",
+      "?? docs/analysis/A030-outputs/",
+      "?? docs/analysis/A030-vaf-channel-metadata-review.md",
+      "?? docs/analysis/A031-outputs/",
+      "?? docs/analysis/A031-post-a030-handoff-review.md",
+      "?? docs/analysis/A032-document-acquisition-and-readiness.md",
+      "?? docs/analysis/A032-outputs/",
+      "?? docs/analysis/A033-dev-handoff-and-role-repair.md",
+      "?? docs/analysis/A033-outputs/",
+      "?? docs/analysis/A034-e061-s0-review.md",
+      "?? docs/analysis/A034-outputs/",
+      "?? docs/analysis/A035-e061-dev-submission-review.md",
+      "?? docs/analysis/A035-outputs/",
+      "?? docs/analysis/A036-e061-post-result-review.md",
+      "?? docs/analysis/A036-outputs/",
+      "?? docs/analysis/A037-outputs/",
+      "?? docs/analysis/A037-winning-priority-review.md",
+      "?? docs/analysis/A038-outputs/",
+      "?? docs/analysis/A038-vaf-local-document-intake.md",
+      "?? docs/analysis/A039-outputs/",
+      "?? docs/analysis/A040-outputs/",
+      "?? docs/analysis/A041-outputs/",
+      "?? docs/analysis/A041-wb-ordinal-head-review.md",
+      "?? docs/analysis/A042-outputs/",
+      "?? docs/analysis/A042-post-e062-priority.md",
+      "?? docs/analysis/E059-outputs/",
+      "?? docs/analysis/E060-outputs/",
+      "?? docs/analysis/E061-outputs/",
+      "?? docs/analysis/E062-outputs/",
+      "?? docs/codex-setup.ko.md",
+      "?? docs/experiments/E059-leaf-donor-interactions.md",
+      "?? docs/experiments/E060-content-target-retrieval.md",
+      "?? docs/experiments/E061-tied-content-heads.md",
+      "?? docs/experiments/E062-wb-ordinal-heads.md",
+      "?? docs/plans/README.md",
+      "?? requirements-models.txt",
+      "?? scripts/assemble_e060.py",
+      "?? scripts/assemble_e061.py",
+      "?? scripts/assemble_e062.py",
+      "?? scripts/check_a021_selector_contract.py",
+      "?? scripts/check_a023_candidate_boundary.py",
+      "?? scripts/check_a023_resources.py",
+      "?? scripts/check_e060.py",
+      "?? scripts/check_e061_release.py",
+      "?? scripts/check_e061_tied_heads.py",
+      "?? scripts/check_e062_release.py",
+      "?? scripts/check_e062_wb_ordinal.py",
+      "?? scripts/check_workspace.py",
+      "?? scripts/screen_e059.py",
+      "?? src/models/content_target_retrieval.py",
+      "?? src/models/tied_content_heads.py",
+      "?? src/models/wb_ordinal_heads.py",
+      "?? submissions/2026-09-27-E060.zip",
+      "?? submissions/2026-09-27-E060/NOTICE.txt",
+      "?? submissions/2026-09-27-E060/main.py",
+      "?? submissions/2026-09-27-E060/verification.json",
+      "?? submissions/2026-09-28-E061.zip",
+      "?? submissions/2026-09-28-E061/",
+      "?? submissions/2026-10-08-E062.zip",
+      "?? submissions/2026-10-08-E062/",
+      "?? tests/test_a021_selector_contract.py",
+      "?? tests/test_a023_candidate_boundary.py",
+      "?? tests/test_content_target_retrieval.py",
+      "?? tests/test_e059_interactions.py",
+      "?? tests/test_e060_assembly.py",
+      "?? tests/test_e061_assembly.py",
+      "?? tests/test_e062_assembly.py",
+      "?? tests/test_tied_content_heads.py",
+      "?? tests/test_wb_ordinal_heads.py",
+      "?? tests/test_workspace_check.py",
+      "?? trip/"
+    ],
+    "jobs": [],
+    "files": [
+      {
+        "path": "AGENTS.md",
+        "bytes": 3264,
+        "sha256": "73b86e5310d6a45d5206efd3b55da47c48748ee7b077e6fcad6be276f1716a3a"
+      },
+      {
+        "path": "CLAUDE.md",
+        "bytes": 20362,
+        "sha256": "0cda5c3385ea3368d0c24a6602e4b1220adc864a205e231f10042b655d031749"
+      },
+      {
+        "path": "docs/status.md",
+        "bytes": 72308,
+        "sha256": "c71fc520772000a6916fce2de297dc53db9aabeba12b3d59bea3737719135e2f"
+      },
+      {
+        "path": "docs/log.md",
+        "bytes": 329533,
+        "sha256": "7f8196115a207fd05a5d5ee44362bb90acc39a83615a76a790c5341b9b2b4a24"
+      },
+      {
+        "path": "docs/workflow.md",
+        "bytes": 24637,
+        "sha256": "a577942675e16a732339e586c14796104dda704693568439ae28670cc7fb7b23"
+      }
+    ]
+  },
+  "entry_read_evidence": [
+    {
+      "path": "AGENTS.md",
+      "chunks": [
+        "1c5c3e"
+      ],
+      "scope": "current repository entry; before CLAUDE"
+    },
+    {
+      "path": "CLAUDE.md",
+      "chunks": [
+        "1c5c3e",
+        "289883"
+      ],
+      "scope": "full ordered entry; later narrow rule reread"
+    },
+    {
+      "path": "docs/status.md",
+      "chunks": [
+        "51f4b9"
+      ],
+      "scope": "current first115 lines, A042/E062 state"
+    },
+    {
+      "path": "docs/log.md",
+      "chunks": [
+        "28a170"
+      ],
+      "scope": "newest3 complete entries"
+    },
+    {
+      "path": "docs/workflow.md",
+      "chunks": [
+        "02cc8b"
+      ],
+      "scope": "full r5"
+    },
+    {
+      "path": "docs/analysis/A042-outputs/s1/s0-handoff.ko.md",
+      "chunks": [
+        "c8f5c8"
+      ],
+      "scope": "full after workflow"
+    },
+    {
+      "path": "docs/analysis/A042-outputs/s1/contract.md",
+      "chunks": [
+        "c8f5c8"
+      ],
+      "scope": "full"
+    },
+    {
+      "path": "docs/analysis/A042-outputs/s1/closeout.md",
+      "chunks": [
+        "c8f5c8"
+      ],
+      "scope": "full"
+    },
+    {
+      "path": "docs/analysis/A042-outputs/s1/verification.json",
+      "chunks": [
+        "69d9b1"
+      ],
+      "scope": "full tool result stored; initial displayed truncation filled by parsed field output"
+    },
+    {
+      "path": "docs/session-prompts.ko.md",
+      "chunks": [
+        "ffd242"
+      ],
+      "scope": "entry/S0/S1 templates first165 lines"
+    },
+    {
+      "path": "src/models/supervised_retrieval.py",
+      "chunks": [
+        "8bcf3a"
+      ],
+      "scope": "full static source"
+    },
+    {
+      "path": "src/eval/retrieval_oracle.py",
+      "chunks": [
+        "b2ddeb"
+      ],
+      "scope": "candidate_indices and first100 lines, no import/call"
+    },
+    {
+      "path": "src/models/link_sharp.py",
+      "chunks": [
+        "b2ddeb"
+      ],
+      "scope": "targeted caller/selection anchors"
+    },
+    {
+      "path": "external/starter-kit/data/unhcr.json",
+      "chunks": [
+        "b2ddeb"
+      ],
+      "scope": "public description/wave first48 lines; no response rows"
+    },
+    {
+      "path": "docs/analysis/A042-post-e062-priority.md",
+      "chunks": [
+        "8e0f4b"
+      ],
+      "scope": "full prior S0 decision"
+    },
+    {
+      "path": "docs/analysis/E062-outputs/registration.md",
+      "chunks": [
+        "8e0f4b",
+        "b6879a"
+      ],
+      "scope": "allowed inputs, gates and cost excerpts"
+    },
+    {
+      "path": "docs/analysis/E062-outputs/implementation-contract.md",
+      "chunks": [
+        "8e0f4b"
+      ],
+      "scope": "input/environment/command anchors only; historical commands not executed"
+    },
+    {
+      "path": "docs/analysis/E062-outputs/frozen-inputs.json",
+      "chunks": [
+        "8e0f4b"
+      ],
+      "scope": "named input/path/hash metadata anchors; embedded files not followed"
+    },
+    {
+      "path": "scripts/check_e062_wb_ordinal.py",
+      "chunks": [
+        "8e0f4b",
+        "b6879a"
+      ],
+      "scope": "static projection/budget/entry helpers; no import/run"
+    }
+  ],
+  "read_time_evidence": "Ordered entry occurred before metadata snapshot at entry.at; chunk references identify actual reads. Individual file read timestamps were not separately persisted.",
+  "incoming_receipt": "S1 verification includes source hashes, ordered read chunks and preservation receipts. Classify its historical reads/zero operations as session-reported; current 41 matching allowed hashes and direct current reads were observed by S0. No claim that all other chats loaded workflow.",
+  "skills": "caveman full; karpathy-guidelines for static source review; brainstorming for bounded strategy; verification-before-completion confined to document checks. Previously read in conversation; no new implementation/agent/commit workflow.",
+  "s1_identity_checks": [
+    {
+      "path": "AGENTS.md",
+      "expected": "73b86e5310d6a45d5206efd3b55da47c48748ee7b077e6fcad6be276f1716a3a",
+      "actual": "73b86e5310d6a45d5206efd3b55da47c48748ee7b077e6fcad6be276f1716a3a",
+      "match": true
+    },
+    {
+      "path": "CLAUDE.md",
+      "expected": "0cda5c3385ea3368d0c24a6602e4b1220adc864a205e231f10042b655d031749",
+      "actual": "0cda5c3385ea3368d0c24a6602e4b1220adc864a205e231f10042b655d031749",
+      "match": true
+    },
+    {
+      "path": "docs/workflow.md",
+      "expected": "a577942675e16a732339e586c14796104dda704693568439ae28670cc7fb7b23",
+      "actual": "a577942675e16a732339e586c14796104dda704693568439ae28670cc7fb7b23",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A042-post-e062-priority.md",
+      "expected": "9d478646da798409b8999988584ab5d7df827e1a5f8fcb30f3cee6e8c5c311bb",
+      "actual": "9d478646da798409b8999988584ab5d7df827e1a5f8fcb30f3cee6e8c5c311bb",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A042-outputs/verification.json",
+      "expected": "55923ddab0265b9bcc954b5d148014c8bffd5efd7c45a74d8a0c1f52aa6b16c5",
+      "actual": "55923ddab0265b9bcc954b5d148014c8bffd5efd7c45a74d8a0c1f52aa6b16c5",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A042-outputs/s1-handoff.ko.md",
+      "expected": "d22fd902e8c61fcd8278450ee01cb822af5d72dd8d82fceb36bea06a6a8db9ef",
+      "actual": "d22fd902e8c61fcd8278450ee01cb822af5d72dd8d82fceb36bea06a6a8db9ef",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/E062-outputs/s2/post-result/result.ko.md",
+      "expected": "ef7df564e5280f7ccc328d4e0f28ca1ec60d375a8d5b21a864d3802852412bf4",
+      "actual": "ef7df564e5280f7ccc328d4e0f28ca1ec60d375a8d5b21a864d3802852412bf4",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/E062-outputs/s2/post-result/comparison.json",
+      "expected": "c59e0386f635959d3d0e28bb0b93474d84cdf705634cfb9a73d3c870b06b33ab",
+      "actual": "c59e0386f635959d3d0e28bb0b93474d84cdf705634cfb9a73d3c870b06b33ab",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/E062-outputs/s2/post-result/verification.json",
+      "expected": "a06d92b35461d693d54f354ce46f6dc8904a64e2a8c0e76e32937c7a368a5bbf",
+      "actual": "a06d92b35461d693d54f354ce46f6dc8904a64e2a8c0e76e32937c7a368a5bbf",
+      "match": true
+    },
+    {
+      "path": "docs/experiments/E036-wave-lam.md",
+      "expected": "5a32d978878d6854d51b43881817326ddf5b08aa63c1c116b1cd2172726d633a",
+      "actual": "5a32d978878d6854d51b43881817326ddf5b08aa63c1c116b1cd2172726d633a",
+      "match": true
+    },
+    {
+      "path": "docs/experiments/E041-supervised-retrieval.md",
+      "expected": "8a17f3cb2cb54deb19fdbffe597dcba173002a82100250ea4ff8be446d76bafb",
+      "actual": "8a17f3cb2cb54deb19fdbffe597dcba173002a82100250ea4ff8be446d76bafb",
+      "match": true
+    },
+    {
+      "path": "docs/experiments/E043-section-candidate-search.md",
+      "expected": "e7d9acac562092596d9bd05921dfab49ac8a2c15854fad8abbba606941ccc4cf",
+      "actual": "e7d9acac562092596d9bd05921dfab49ac8a2c15854fad8abbba606941ccc4cf",
+      "match": true
+    },
+    {
+      "path": "docs/experiments/E045-union-retrieval.md",
+      "expected": "d7ad5bf5420a7ac4d87ae6989b6bc0e4be94cb03e88c7c4a6dfd58d3da729a5c",
+      "actual": "d7ad5bf5420a7ac4d87ae6989b6bc0e4be94cb03e88c7c4a6dfd58d3da729a5c",
+      "match": true
+    },
+    {
+      "path": "docs/experiments/E047-adaptive-final-evidence.md",
+      "expected": "925274f5f5df964e120242f35430a96beee23cf046e6101cc32b5cb80251b436",
+      "actual": "925274f5f5df964e120242f35430a96beee23cf046e6101cc32b5cb80251b436",
+      "match": true
+    },
+    {
+      "path": "docs/experiments/E058-donor-pair-interactions.md",
+      "expected": "540c0c42c4cb172fd3796c8c7853740bbbe2a023a3536d9f201698d0d61ec97c",
+      "actual": "540c0c42c4cb172fd3796c8c7853740bbbe2a023a3536d9f201698d0d61ec97c",
+      "match": true
+    },
+    {
+      "path": "docs/experiments/E059-leaf-donor-interactions.md",
+      "expected": "bfbe26a10727bc2b703e7bceb674b344461053357dcc6c5a0a9f217a4738626c",
+      "actual": "bfbe26a10727bc2b703e7bceb674b344461053357dcc6c5a0a9f217a4738626c",
+      "match": true
+    },
+    {
+      "path": "docs/experiments/E060-content-target-retrieval.md",
+      "expected": "b1ba67e7d521d181dac1df4a285ea39ba98b5b20244e6d9ce81e52363e3e7bc0",
+      "actual": "b1ba67e7d521d181dac1df4a285ea39ba98b5b20244e6d9ce81e52363e3e7bc0",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A006-dev-validation-audit.md",
+      "expected": "b566ec46b7cbcc120f94aa94f7c91dc44e8a0798b08e8d36c34bed9599531dfc",
+      "actual": "b566ec46b7cbcc120f94aa94f7c91dc44e8a0798b08e8d36c34bed9599531dfc",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A021-selector-comparison-contract.md",
+      "expected": "6d00490b93ad7c986de38735137981bbfd453aacef7d2f627ca7bd60023ec2cc",
+      "actual": "6d00490b93ad7c986de38735137981bbfd453aacef7d2f627ca7bd60023ec2cc",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A023-candidate-boundary-contract.md",
+      "expected": "0a22d6e17cc5b6d846060ebed5a65107e2de4d8647ec4280688f5d8847fbd444",
+      "actual": "0a22d6e17cc5b6d846060ebed5a65107e2de4d8647ec4280688f5d8847fbd444",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A024-channel-precision-review.md",
+      "expected": "1a830e20b63965a3f229f2d564f623e7e4965c6495a400e62239d89a30e2985d",
+      "actual": "1a830e20b63965a3f229f2d564f623e7e4965c6495a400e62239d89a30e2985d",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A037-winning-priority-review.md",
+      "expected": "87e77d8279f68e52751653f3b6098ec1976e4b53a75faf7206043ec6cf4bf66d",
+      "actual": "87e77d8279f68e52751653f3b6098ec1976e4b53a75faf7206043ec6cf4bf66d",
+      "match": true
+    },
+    {
+      "path": "src/models/supervised_retrieval.py",
+      "expected": "2940338c5378de03303befb74e3834fbad631c0eb18f4ecb55d2cc39a471f879",
+      "actual": "2940338c5378de03303befb74e3834fbad631c0eb18f4ecb55d2cc39a471f879",
+      "match": true
+    },
+    {
+      "path": "src/models/dup_link.py",
+      "expected": "e1ce093d927eed6db0553776b74f8ddfca5d159bf035b6cd7b4df9e7bc6b168f",
+      "actual": "e1ce093d927eed6db0553776b74f8ddfca5d159bf035b6cd7b4df9e7bc6b168f",
+      "match": true
+    },
+    {
+      "path": "src/models/hh_cap.py",
+      "expected": "9aad6be04e14ae97dc7aaba5499747c35b255b098680c66eaa8f8af58c940f70",
+      "actual": "9aad6be04e14ae97dc7aaba5499747c35b255b098680c66eaa8f8af58c940f70",
+      "match": true
+    },
+    {
+      "path": "src/models/link_sharp.py",
+      "expected": "4a7921a00d7758e52a63a3ca7cd5ebf2285cef445b57fd89f15580d6fc108524",
+      "actual": "4a7921a00d7758e52a63a3ca7cd5ebf2285cef445b57fd89f15580d6fc108524",
+      "match": true
+    },
+    {
+      "path": "src/models/prob_link.py",
+      "expected": "6b03f700821b6d74c8ef0dfe834737ac4c9755d7fcf9a7c2f96b5b67e905d96d",
+      "actual": "6b03f700821b6d74c8ef0dfe834737ac4c9755d7fcf9a7c2f96b5b67e905d96d",
+      "match": true
+    },
+    {
+      "path": "src/models/shared_trunk.py",
+      "expected": "df648763c8e0ba5532ebf9e437af95cd10d8527112c1338b8b5db9ad6a212e1f",
+      "actual": "df648763c8e0ba5532ebf9e437af95cd10d8527112c1338b8b5db9ad6a212e1f",
+      "match": true
+    },
+    {
+      "path": "src/models/hh_link.py",
+      "expected": "fb34d8dc575a0edd644287ec9387ee32db7866083b53b907376f464837f0c1f6",
+      "actual": "fb34d8dc575a0edd644287ec9387ee32db7866083b53b907376f464837f0c1f6",
+      "match": true
+    },
+    {
+      "path": "src/models/hh_sharp.py",
+      "expected": "31acb4639894411320062f196050425ee1c143a456c9e0dac40ba6dd376ad5e0",
+      "actual": "31acb4639894411320062f196050425ee1c143a456c9e0dac40ba6dd376ad5e0",
+      "match": true
+    },
+    {
+      "path": "src/eval/retrieval_oracle.py",
+      "expected": "b6c3487a01f5174e02e7691ec455a8e72cfab7533f68026b9010665a60b23ca4",
+      "actual": "b6c3487a01f5174e02e7691ec455a8e72cfab7533f68026b9010665a60b23ca4",
+      "match": true
+    },
+    {
+      "path": "external/starter-kit/data/unhcr.json",
+      "expected": "b1175b6bdbd96e90a4defd83af20a38d711c6eca9fe3ce880109ff244abe80d9",
+      "actual": "b1175b6bdbd96e90a4defd83af20a38d711c6eca9fe3ce880109ff244abe80d9",
+      "match": true
+    },
+    {
+      "path": "src/models/hier_backoff.py",
+      "expected": "e01f2030c191b0b632b274662cbb46537669f3b73e21ab0d5f7f671d28654ccd",
+      "actual": "e01f2030c191b0b632b274662cbb46537669f3b73e21ab0d5f7f671d28654ccd",
+      "match": true
+    },
+    {
+      "path": "src/models/logit_blend.py",
+      "expected": "c25e91e648d5eb8a11afca1c8b02accad1a585540b6ed7d4ca363730a535705f",
+      "actual": "c25e91e648d5eb8a11afca1c8b02accad1a585540b6ed7d4ca363730a535705f",
+      "match": true
+    },
+    {
+      "path": "src/models/cond_agree.py",
+      "expected": "aecad17990cc106199f96648ad02716eee43cc60f995b25125473a0b0bd5e197",
+      "actual": "aecad17990cc106199f96648ad02716eee43cc60f995b25125473a0b0bd5e197",
+      "match": true
+    },
+    {
+      "path": "src/eval/logloss.py",
+      "expected": "272aae939a2587b7197569ff84733a1d3b51050e4090ed903a7c8f4e1c88ca18",
+      "actual": "272aae939a2587b7197569ff84733a1d3b51050e4090ed903a7c8f4e1c88ca18",
+      "match": true
+    },
+    {
+      "path": "submissions/2026-09-19-E041/main.py",
+      "expected": "22c911806ea91234ae350341adfb9c0df2ce4be41cc88e73be304e4bb1023073",
+      "actual": "22c911806ea91234ae350341adfb9c0df2ce4be41cc88e73be304e4bb1023073",
+      "match": true
+    },
+    {
+      "path": "docs/tree.md",
+      "expected": "eaa884a4194db103335136495205fe5b51297c17db15e9eac62946ced286cc44",
+      "actual": "eaa884a4194db103335136495205fe5b51297c17db15e9eac62946ced286cc44",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A042-outputs/s1/closeout.md",
+      "expected": "b79f0c50cbf7918b0de02fa2bb274a762079ca318d992992d90fc366d5b576b6",
+      "actual": "b79f0c50cbf7918b0de02fa2bb274a762079ca318d992992d90fc366d5b576b6",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A042-outputs/s1/contract.md",
+      "expected": "d1ce78f2708569bda47bd2896e3dd5d88ed29ef01c90c846941c54bf8daff5bd",
+      "actual": "d1ce78f2708569bda47bd2896e3dd5d88ed29ef01c90c846941c54bf8daff5bd",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A042-outputs/s1/s0-handoff.ko.md",
+      "expected": "569e93a78213f153d44ec4c418ac7f1293a850dcd1ca127df349061b26909e6e",
+      "actual": "569e93a78213f153d44ec4c418ac7f1293a850dcd1ca127df349061b26909e6e",
+      "match": true
+    }
+  ],
+  "additional_permitted_baseline": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "73b86e5310d6a45d5206efd3b55da47c48748ee7b077e6fcad6be276f1716a3a"
+    },
+    {
+      "path": "CLAUDE.md",
+      "sha256": "0cda5c3385ea3368d0c24a6602e4b1220adc864a205e231f10042b655d031749"
+    },
+    {
+      "path": "docs/workflow.md",
+      "sha256": "a577942675e16a732339e586c14796104dda704693568439ae28670cc7fb7b23"
+    },
+    {
+      "path": "docs/analysis/A042-post-e062-priority.md",
+      "sha256": "9d478646da798409b8999988584ab5d7df827e1a5f8fcb30f3cee6e8c5c311bb"
+    },
+    {
+      "path": "docs/analysis/A042-outputs/verification.json",
+      "sha256": "55923ddab0265b9bcc954b5d148014c8bffd5efd7c45a74d8a0c1f52aa6b16c5"
+    },
+    {
+      "path": "docs/analysis/A042-outputs/s1-handoff.ko.md",
+      "sha256": "d22fd902e8c61fcd8278450ee01cb822af5d72dd8d82fceb36bea06a6a8db9ef"
+    },
+    {
+      "path": "docs/analysis/E062-outputs/s2/post-result/result.ko.md",
+      "sha256": "ef7df564e5280f7ccc328d4e0f28ca1ec60d375a8d5b21a864d3802852412bf4"
+    },
+    {
+      "path": "docs/analysis/E062-outputs/s2/post-result/comparison.json",
+      "sha256": "c59e0386f635959d3d0e28bb0b93474d84cdf705634cfb9a73d3c870b06b33ab"
+    },
+    {
+      "path": "docs/analysis/E062-outputs/s2/post-result/verification.json",
+      "sha256": "a06d92b35461d693d54f354ce46f6dc8904a64e2a8c0e76e32937c7a368a5bbf"
+    },
+    {
+      "path": "docs/experiments/E036-wave-lam.md",
+      "sha256": "5a32d978878d6854d51b43881817326ddf5b08aa63c1c116b1cd2172726d633a"
+    },
+    {
+      "path": "docs/experiments/E041-supervised-retrieval.md",
+      "sha256": "8a17f3cb2cb54deb19fdbffe597dcba173002a82100250ea4ff8be446d76bafb"
+    },
+    {
+      "path": "docs/experiments/E043-section-candidate-search.md",
+      "sha256": "e7d9acac562092596d9bd05921dfab49ac8a2c15854fad8abbba606941ccc4cf"
+    },
+    {
+      "path": "docs/experiments/E045-union-retrieval.md",
+      "sha256": "d7ad5bf5420a7ac4d87ae6989b6bc0e4be94cb03e88c7c4a6dfd58d3da729a5c"
+    },
+    {
+      "path": "docs/experiments/E047-adaptive-final-evidence.md",
+      "sha256": "925274f5f5df964e120242f35430a96beee23cf046e6101cc32b5cb80251b436"
+    },
+    {
+      "path": "docs/experiments/E058-donor-pair-interactions.md",
+      "sha256": "540c0c42c4cb172fd3796c8c7853740bbbe2a023a3536d9f201698d0d61ec97c"
+    },
+    {
+      "path": "docs/experiments/E059-leaf-donor-interactions.md",
+      "sha256": "bfbe26a10727bc2b703e7bceb674b344461053357dcc6c5a0a9f217a4738626c"
+    },
+    {
+      "path": "docs/experiments/E060-content-target-retrieval.md",
+      "sha256": "b1ba67e7d521d181dac1df4a285ea39ba98b5b20244e6d9ce81e52363e3e7bc0"
+    },
+    {
+      "path": "docs/analysis/A006-dev-validation-audit.md",
+      "sha256": "b566ec46b7cbcc120f94aa94f7c91dc44e8a0798b08e8d36c34bed9599531dfc"
+    },
+    {
+      "path": "docs/analysis/A021-selector-comparison-contract.md",
+      "sha256": "6d00490b93ad7c986de38735137981bbfd453aacef7d2f627ca7bd60023ec2cc"
+    },
+    {
+      "path": "docs/analysis/A023-candidate-boundary-contract.md",
+      "sha256": "0a22d6e17cc5b6d846060ebed5a65107e2de4d8647ec4280688f5d8847fbd444"
+    },
+    {
+      "path": "docs/analysis/A024-channel-precision-review.md",
+      "sha256": "1a830e20b63965a3f229f2d564f623e7e4965c6495a400e62239d89a30e2985d"
+    },
+    {
+      "path": "docs/analysis/A037-winning-priority-review.md",
+      "sha256": "87e77d8279f68e52751653f3b6098ec1976e4b53a75faf7206043ec6cf4bf66d"
+    },
+    {
+      "path": "src/models/supervised_retrieval.py",
+      "sha256": "2940338c5378de03303befb74e3834fbad631c0eb18f4ecb55d2cc39a471f879"
+    },
+    {
+      "path": "src/models/dup_link.py",
+      "sha256": "e1ce093d927eed6db0553776b74f8ddfca5d159bf035b6cd7b4df9e7bc6b168f"
+    },
+    {
+      "path": "src/models/hh_cap.py",
+      "sha256": "9aad6be04e14ae97dc7aaba5499747c35b255b098680c66eaa8f8af58c940f70"
+    },
+    {
+      "path": "src/models/link_sharp.py",
+      "sha256": "4a7921a00d7758e52a63a3ca7cd5ebf2285cef445b57fd89f15580d6fc108524"
+    },
+    {
+      "path": "src/models/prob_link.py",
+      "sha256": "6b03f700821b6d74c8ef0dfe834737ac4c9755d7fcf9a7c2f96b5b67e905d96d"
+    },
+    {
+      "path": "src/models/shared_trunk.py",
+      "sha256": "df648763c8e0ba5532ebf9e437af95cd10d8527112c1338b8b5db9ad6a212e1f"
+    },
+    {
+      "path": "src/models/hh_link.py",
+      "sha256": "fb34d8dc575a0edd644287ec9387ee32db7866083b53b907376f464837f0c1f6"
+    },
+    {
+      "path": "src/models/hh_sharp.py",
+      "sha256": "31acb4639894411320062f196050425ee1c143a456c9e0dac40ba6dd376ad5e0"
+    },
+    {
+      "path": "src/eval/retrieval_oracle.py",
+      "sha256": "b6c3487a01f5174e02e7691ec455a8e72cfab7533f68026b9010665a60b23ca4"
+    },
+    {
+      "path": "external/starter-kit/data/unhcr.json",
+      "sha256": "b1175b6bdbd96e90a4defd83af20a38d711c6eca9fe3ce880109ff244abe80d9"
+    },
+    {
+      "path": "src/models/hier_backoff.py",
+      "sha256": "e01f2030c191b0b632b274662cbb46537669f3b73e21ab0d5f7f671d28654ccd"
+    },
+    {
+      "path": "src/models/logit_blend.py",
+      "sha256": "c25e91e648d5eb8a11afca1c8b02accad1a585540b6ed7d4ca363730a535705f"
+    },
+    {
+      "path": "src/models/cond_agree.py",
+      "sha256": "aecad17990cc106199f96648ad02716eee43cc60f995b25125473a0b0bd5e197"
+    },
+    {
+      "path": "src/eval/logloss.py",
+      "sha256": "272aae939a2587b7197569ff84733a1d3b51050e4090ed903a7c8f4e1c88ca18"
+    },
+    {
+      "path": "submissions/2026-09-19-E041/main.py",
+      "sha256": "22c911806ea91234ae350341adfb9c0df2ce4be41cc88e73be304e4bb1023073"
+    },
+    {
+      "path": "docs/tree.md",
+      "sha256": "eaa884a4194db103335136495205fe5b51297c17db15e9eac62946ced286cc44"
+    },
+    {
+      "path": "docs/analysis/A042-outputs/s1/closeout.md",
+      "sha256": "b79f0c50cbf7918b0de02fa2bb274a762079ca318d992992d90fc366d5b576b6"
+    },
+    {
+      "path": "docs/analysis/A042-outputs/s1/contract.md",
+      "sha256": "d1ce78f2708569bda47bd2896e3dd5d88ed29ef01c90c846941c54bf8daff5bd"
+    },
+    {
+      "path": "docs/analysis/A042-outputs/s1/s0-handoff.ko.md",
+      "sha256": "569e93a78213f153d44ec4c418ac7f1293a850dcd1ca127df349061b26909e6e"
+    },
+    {
+      "path": "docs/analysis/A042-outputs/s1/verification.json",
+      "sha256": "9111813910bb9acb4021a3564d7be6bedf17739057342ae2097e9f23950d6833"
+    },
+    {
+      "path": "docs/session-prompts.ko.md",
+      "sha256": "c9ca921ba62e29520294530f4ace429550cfc6ed515bacbe065468675ab24219"
+    },
+    {
+      "path": "docs/analysis/E062-outputs/registration.md",
+      "sha256": "c6b7d587dcc928a761f65b510f8c6018b6c26f7c6b2e59d11a28a4cf0c6389d9"
+    },
+    {
+      "path": "docs/analysis/E062-outputs/implementation-contract.md",
+      "sha256": "00bebf95df88dac579744fa70d029df540a106dd2e905fd9fb2d6ddbbd776123"
+    },
+    {
+      "path": "docs/analysis/E062-outputs/frozen-inputs.json",
+      "sha256": "7a7333b5660488eeb7c3e1685348028fd4a412486cb2c9b64d98afd308068bfd"
+    },
+    {
+      "path": "scripts/check_e062_wb_ordinal.py",
+      "sha256": "e37a013a086ba8f8f666747b5c96d8d8b0388ab8cbcfba750fa0344269a7c90d"
+    },
+    {
+      "path": "docs/experiments/TEMPLATE.md",
+      "sha256": "b8708c498d5677581a80367944f34cc83a1952530f4d6107c5091b3f21a3886a"
+    }
+  ],
+  "decision": {
+    "accept_information_contract": true,
+    "effect_proven": false,
+    "mathematical_consistency": "Static loss reduction/penalty-gradient review only; numerical gradient/parity not run",
+    "new_model_created": false,
+    "reserved_id": "E063",
+    "reservation_evidence": "rg in docs/src/scripts/tests plus five exact prospective paths: no matches/collisions; E063 file remains absent",
+    "recommended_scope": "One original-K32 query-wave metric implementation + exposed-synthetic technical validation in separate user-directed S1",
+    "R_equals_C": true,
+    "no_H_C_winner_selector": true,
+    "no_new_numeric_oracle": true,
+    "prospective_additions": "Natural H section activation and changed UNHCR raw output for technical PASS; inactive/support fallback or no-op closes this engineering candidate. Not changes to prior S1/historical STOPs.",
+    "future_budget": {
+      "gross_seconds": 7200,
+      "record_reserve_seconds": 600,
+      "computational_child_seconds": 1800,
+      "per_all3_seconds": 900,
+      "small_checks_total_seconds": 300,
+      "small_check_child_seconds": 60,
+      "cpu_threads": 2,
+      "gpu": 0,
+      "heavy_workers": 1,
+      "owned_RSS_GiB": 8,
+      "owned_private_GiB": 8,
+      "normal": {
+        "processes": 2,
+        "pipelines": 6,
+        "neural": 18,
+        "metric": 16
+      },
+      "including_one_ordinary_repair_restart": {
+        "processes": 3,
+        "pipelines": 9,
+        "neural": 27,
+        "metric": 24
+      }
+    },
+    "future_qualification": "LOCAL_TECHNICAL_PASS_FOR_S0 only; H-R >=-.002/instrument, exact controls, natural activity+changed output+technical/resource PASS. No positive-gain/+.005 mandate. E025 release tests remain later S2.",
+    "backup": "Failure/inactive/resource/missing-input closeout only",
+    "future_execution_authorized_by_this_S0": false,
+    "S2_candidate": false
+  },
+  "exposure": {
+    "new_real_response": 0,
+    "inherited_people": 17999,
+    "inherited_SSUID": 12339,
+    "synthetic": "Only prior input hash strings read in E062 documents; no synthetic Parquet opened/hashed by this S0. Proposed future S1 authority is explicit and limited.",
+    "A022": "Original roles preserved",
+    "E059_consumed": "oracle1918/1124; selection2007/1130",
+    "protected": "audit2074/1177 and calibration1866",
+    "aggregate_history": "preserved"
+  },
+  "operations": {
+    "allowed_document_source_schema_reads": true,
+    "allowed_text_hashes": true,
+    "new_S0_documents": true,
+    "status_log_additions": true,
+    "model_code_edits": 0,
+    "model_import_fit_predict_score": 0,
+    "tests_fixtures_checkers": 0,
+    "response_keys_Parquet_NPZ_cache_ZIP_access_or_hash": 0,
+    "web_platform_remote_install": 0,
+    "commit_push": 0,
+    "subagents": 0,
+    "S2_S3_TEST": 0
+  },
+  "preserved_state": "E041 incumbent/E025 fallback; E057/E060/E061/E062 parked/E062 UNRESOLVED; E058 STOP/E059 STOP_SELECTION; A023/A024 empirical HOLD/A039/A040/all STOP/HOLD; A_half unpromoted/A018 user-unconfirmed/S3 stopped.",
+  "shared_document_receipts": [
+    {
+      "path": "docs/status.md",
+      "before_sha256": "c71fc520772000a6916fce2de297dc53db9aabeba12b3d59bea3737719135e2f",
+      "after_sha256": "3973c658ccbc36e366b0bb997e5f6456e737b8a453a00b74d9a3620c06d82663",
+      "restored_sha256": "c71fc520772000a6916fce2de297dc53db9aabeba12b3d59bea3737719135e2f",
+      "prior_bytes_preserved": true
+    },
+    {
+      "path": "docs/log.md",
+      "before_sha256": "7f8196115a207fd05a5d5ee44362bb90acc39a83615a76a790c5341b9b2b4a24",
+      "after_sha256": "c61162811ec1b62a61c47ff216b08828646e1140ecd8c83e610fef873ffb666b",
+      "restored_sha256": "7f8196115a207fd05a5d5ee44362bb90acc39a83615a76a790c5341b9b2b4a24",
+      "prior_bytes_preserved": true
+    }
+  ],
+  "administrative_notes": [
+    "Long combined read output exceeded display budget; full results stored and missing verification/entry fields separately displayed.",
+    "One document-hash PowerShell command had a parser error (EmptyPipeElement) before execution; fixed local foreach pipeline syntax and retried. No scientific operation/permission/budget changed.",
+    "Scoped elevated shell used because workspace shell setup failed earlier in this continuous conversation; no auto-review rejection this turn.",
+    "Preservation limited to listed text/source/schema hashes and exact shared-byte insertion reversal, plus dirty path continuity; not all dirty asset bytes or remote jobs."
+  ],
+  "final_verification": {
+    "status": "DOCUMENT_REVIEW_COMPLETE",
+    "at": "2026-10-09T21:11:36.1639347+09:00",
+    "baseline_checked": 48,
+    "mismatches": [],
+    "shared": [
+      {
+        "path": "docs/status.md",
+        "current_sha256": "3973c658ccbc36e366b0bb997e5f6456e737b8a453a00b74d9a3620c06d82663",
+        "restored_sha256": "c71fc520772000a6916fce2de297dc53db9aabeba12b3d59bea3737719135e2f",
+        "match": true
+      },
+      {
+        "path": "docs/log.md",
+        "current_sha256": "c61162811ec1b62a61c47ff216b08828646e1140ecd8c83e610fef873ffb666b",
+        "restored_sha256": "7f8196115a207fd05a5d5ee44362bb90acc39a83615a76a790c5341b9b2b4a24",
+        "match": true
+      }
+    ],
+    "links_checked": 2,
+    "broken_links": [],
+    "head": "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+    "dirty_count": 104,
+    "missing_entry_dirty": [],
+    "new_dirty": [],
+    "jobs": [],
+    "hashes": [
+      {
+        "path": "docs/analysis/A042-outputs/s0-review/decision.md",
+        "bytes": 7167,
+        "sha256": "8f8d68c737930642a739b1071c11a361e4646cfecb1217c96f0e17c59ebff3c5"
+      },
+      {
+        "path": "docs/analysis/A042-outputs/s0-review/s1-implementation-handoff.ko.md",
+        "bytes": 13696,
+        "sha256": "279a72defb1438f4d3ce68685d197d92da2dcdd7b76270fc7a49162304489b20"
+      },
+      {
+        "path": "docs/analysis/A042-outputs/s0-review/shared-additions.json",
+        "bytes": 4056,
+        "sha256": "147d7a5820287563eef6e3215c7ee4c5e9be75b8a70b16c8554a0745b854d054"
+      }
+    ],
+    "git_diff_check_exit": 0,
+    "E063_record_exists": false,
+    "E063_source_exists": false,
+    "scope": "48 selected allowed immutable text/source/public-schema hashes; exact inserted-text removal restores shared baseline bytes; dirty path continuity. No protected asset hashes or scientific tests.",
+    "dirty_note": "New files are within already-untracked A042-outputs; porcelain remains104.",
+    "output_files": [
+      "decision.md",
+      "s1-implementation-handoff.ko.md",
+      "shared-additions.json",
+      "verification.json"
+    ],
+    "new_model_or_E_created": false,
+    "remote_or_scientific_execution": 0
+  }
+}

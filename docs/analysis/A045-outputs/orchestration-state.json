@@ -1,0 +1,53 @@
+﻿{
+    "control_epoch":  "2026-10-26-A045-01",
+    "controller":  "/root",
+    "mode":  "DELEGATED_BOUNDED_TASKS",
+    "workflow_revision":  "2026-10-26-r7",
+    "workflow_sha256":  "cee188bd2e99623aea25204632229a887e29e8bb0e235d85eb513d139453cc63",
+    "status":  "IDLE_AFTER_MIGRATION",
+    "active_writer_task_id":  null,
+    "writer":  null,
+    "next_task":  null,
+    "next_agent":  null,
+    "delegation_authorized":  true,
+    "model_execution_authorized":  false,
+    "heavy_jobs_limit":  1,
+    "shared_checkout_writers_limit":  1,
+    "tasks":  [
+                  {
+                      "status":  "COMPLETE",
+                      "agent":  "/root/workflow_review",
+                      "id":  "workflow_review",
+                      "type":  "READ_ONLY"
+                  },
+                  {
+                      "status":  "COMPLETE",
+                      "agent":  "/root/wb_batch_readiness",
+                      "id":  "wb_batch_readiness",
+                      "type":  "READ_ONLY"
+                  },
+                  {
+                      "id":  "S1-WB-CONTRACT-A045",
+                      "scope":  "wb-contract-task.ko.md",
+                      "agent":  "/root/wb_batch_readiness",
+                      "model_calls":  0,
+                      "type":  "INFORMATION_CONTRACT_ONLY",
+                      "status":  "COMPLETE_WITH_GAP",
+                      "outcome":  "MODEL_BATCH_NOT_EXECUTION_READY / DEPLOYMENT_SPECIFIC_INPUT"
+                  }
+              ],
+    "historical_cutover_release":  "docs/analysis/A040-outputs/local-exit-c6/verification.json",
+    "coordination_limit":  "Not an atomic lock. Other writers suspend new writes/dispatch.",
+    "updated_at":  "2026-10-26T23:25:46.3375255+09:00",
+    "dispatch_receipt":  "docs/analysis/A045-outputs/dispatch-wb-contract.json",
+    "acceptance_receipt":  "docs/analysis/A045-outputs/wb-contract/verification.json",
+    "latest_release_receipt":  "docs/analysis/A046-outputs/verification.json",
+    "released_at":  "2026-10-26T23:25:46.3375255+09:00",
+    "latest_artifacts":  {
+                             "docs/analysis/A045-outputs/wb-contract/proposed-batch.ko.md":  "eee17e655a96bfe30796173c4af1d180316ed047b907f1390154f058752f59d2",
+                             "docs/analysis/A045-outputs/wb-contract/closeout.md":  "96e679c91fe48fbdb74df378f1ae8747bc56741230f238d4811b744eab75dd0d",
+                             "docs/analysis/A045-outputs/wb-contract/contract.md":  "199d4f19b9338f55bb17d8ad2ff75b759f8acdb7368d1558a74ce7c28576369c"
+                         },
+    "root_accepted_at":  "2026-10-26T22:30:47.2116287+09:00",
+    "next_decision":  "Exact offline dependency route or finite isolated deployment scope; no model execution approved"
+}

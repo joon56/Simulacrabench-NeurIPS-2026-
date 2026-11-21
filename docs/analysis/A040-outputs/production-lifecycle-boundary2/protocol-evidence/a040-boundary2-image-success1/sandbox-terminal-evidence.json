@@ -1,0 +1,14 @@
+{
+  "scope": "LOCAL_PROTOCOL_FIXTURE",
+  "termination": "UNCONFIRMED",
+  "errors": [],
+  "observations": [],
+  "sandbox_terminal": {
+    "status": 3,
+    "status_name": "GENERIC_STATUS_TERMINATED",
+    "exitcode": 0
+  },
+  "sandbox_id": "sb-aaaaaaaaaaaaaaaaaaaaaa",
+  "terminal_source": "Exact-ID SandboxWait",
+  "terminal_observed_utc": "2026-10-05T15:41:15.526855+00:00"
+}

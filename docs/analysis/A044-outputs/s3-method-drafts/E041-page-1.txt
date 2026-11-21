@@ -1,0 +1,45 @@
+REVIEW DRAFT - NOT FINAL TEST SELECTION
+
+ Calibrated survey completion with section-specific retrieval
+ REVIEW DRAFT — NOT FINAL TEST SELECTION
+ HSCC / SimulacraBench 2026 | E041 provisional reference | 23 October 2026
+ 1. Task, evidence and approximate gates
+ We predict categorical PREDICT answers from held-out respondents' GIVEN blocks  in UNICEF Faith &
+ Immunisation, World Bank Skills Assessment and UNHCR ERPIS. EXCLUDE items are omitted; every hidden
+ PREDICT cell  is scored, including gated sentinels. Phase 1 shows TRAIN and scores DEV; phase 2 shows
+ TRAIN+DEV and scores TEST. The pinned public kit describes seeded respondent shuffling, stratified by country
+ for UNICEF and balanced by survey round/country for UNHCR, with plain permutation for World Bank. This is not
+ an unseen-country or chronological holdout. [1,6]
+ One self-contained predictor fits separately per instrument at runtime. E041 adds supervised section retrieval for
+ UNHCR; UNICEF and World Bank use E025 unchanged. It bundles no fitted weights or external response data.
+ E041 is a DEV incumbent and provisional TEST reference. The user has not confirmed a final TEST model. E025
+ remains a separately preserved alternative, and E064 is parked pending a user-controlled DEV submission, with no
+ actual hosted result yet. [6,7]
+ The user-provided released E041 API record ID933094 reports Grand 0.6433333333, UNICEF 0.52, World Bank
+ 0.49 and UNHCR 0.92; the interface displays Grand 0.64. E025 historically read 0.63/0.52/0.49/0.89. These values
+ come from retained development records, not a new platform query. Phase-1 Laplace noising and 0.01 rounding still
+ apply: serialized decimals do not provide ten-decimal measurement accuracy. This adaptively developed pipeline
+ comparison is neither an isolated retrieval-metric effect nor independent replication. No real TEST score is available.
+ [6]
+ The grader normalizes each raw vector, then enforces floor f=0.001 by mixing uniform mass. The metric pools cells
+ within an instrument; Grand gives the three instrument skills equal weight.
+
+ p'_k = f + (1 - K*f) * p_k / sum_j(p_j)
+ skill = 1 + mean_cells(log p'_[true answer]) / U
+ U = mean_scored_items(log K_i), including the gate sentinel
+ Vectors follow schema item and option order, with NA_GATED last for gated items. NaN marks a target; refusal
+ remains an ordinary answer. Parents decode before descendants, and visible parents give one-hot beliefs. For a gated
+ item i, r_i is parent mass on observed-if values; asked-only and unrestricted full heads are mixed as follows.
+
+ hard_i = [r_i * asked_conditional_i, 1 - r_i]
+ base_i = a_i(x) * hard_i + (1 - a_i(x)) * full_i
+ UNHCR  schema  agreement   is  approximate  (median  0.83,  range  0.29-0.98).  The  scalar  coefficient
+ (k_i+20*m)/(n_i+20) shrinks toward median observed agreement m, not one. At most one GIVEN column of
+ cardinality at most 12 is selected per child on an internal 20% split; value-specific rates shrink toward that scalar.
+ This avoids treating an approximate survey gate as deterministic. [1,6]
+
+
+
+
+
+HSCC 2026 | E041 | REVIEW DRAFT | 23 October 2026                                                                1 / 4

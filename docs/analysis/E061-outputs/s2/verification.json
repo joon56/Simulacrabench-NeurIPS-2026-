@@ -1,0 +1,252 @@
+{
+  "status": "RELEASE_QUALIFIED_FOR_USER_REVIEW",
+  "prepared_date": "2026-09-28",
+  "head": "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+  "workflow_revision": "2026-09-27-r4",
+  "workflow_sha256": "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642",
+  "source_sha256": "f9449d41d30041f6e9714c7a25777965ec4d25cfa2563b018fb08c94dde20833",
+  "zip": {
+    "path": "submissions/2026-09-28-E061.zip",
+    "sha256": "4b89e619987d568034bf8a70a7ffda190af483c083ad5921eec9f5a8d843f8c6",
+    "bytes": 16508,
+    "members": [
+      "main.py",
+      "NOTICE.txt"
+    ],
+    "main_sha256": "d1363c7c38d0754d29bb11acdf40a6e14013220b289e4d711196d1271299d0c0",
+    "checker": "PASS",
+    "assembled_snapshot_archive_extracted_bytes": "EXACT"
+  },
+  "assembly_fixture_tests": 4,
+  "official_all3": {
+    "status": "PASS",
+    "instruments": {
+      "unicef": {
+        "vectors": 17856,
+        "max_raw_sum_error": 1.9348226487636566e-7,
+        "comparisons": {
+          "candidate": {
+            "max_abs": 0,
+            "changed_vectors": 0
+          },
+          "E041": {
+            "max_abs": 0,
+            "changed_vectors": 0
+          },
+          "E025": {
+            "max_abs": 0,
+            "changed_vectors": 0
+          }
+        },
+        "flat_sha256": "07bcb9f2d2d0c59339707ee761d6ca129093ba52b59b6c1c9a13ffef98f1e533",
+        "status": "PASS",
+        "skill": 0.5006484230707156,
+        "delta_E025": 0,
+        "delta_E041": 0,
+        "release_pass": true,
+        "cli_startup_to_exit_seconds": 64.91755139999987,
+        "scorer_seconds": 63.32677698135376,
+        "official_log": "docs\\analysis\\E061-outputs\\s2\\official-unicef.json",
+        "predictions_sha256": "990977bdd0792b171908ab65988610c60d8f8f1d642da005d001301f1013b664"
+      },
+      "world_bank": {
+        "vectors": 39520,
+        "max_raw_sum_error": 2.8615613700821996e-7,
+        "comparisons": {
+          "candidate": {
+            "max_abs": 0,
+            "changed_vectors": 0
+          },
+          "E041": {
+            "max_abs": 0,
+            "changed_vectors": 0
+          },
+          "E025": {
+            "max_abs": 0,
+            "changed_vectors": 0
+          }
+        },
+        "flat_sha256": "ed59718bf900604bb69af3833bd5bcb12aab555924f32ae1009b4bcf90eedc2e",
+        "status": "PASS",
+        "skill": 0.45471730736298255,
+        "delta_E025": 0,
+        "delta_E041": 0,
+        "release_pass": true,
+        "cli_startup_to_exit_seconds": 150.76025850000042,
+        "scorer_seconds": 149.08108258247375,
+        "official_log": "docs\\analysis\\E061-outputs\\s2\\official-world_bank.json",
+        "predictions_sha256": "0e85bb043eb280d6722b1c247c6b2b716f27bbf6d4d9cc23f160ac8ae08ee690"
+      },
+      "unhcr": {
+        "vectors": 132273,
+        "max_raw_sum_error": 2.414220944269019e-7,
+        "comparisons": {
+          "candidate": {
+            "max_abs": 0,
+            "changed_vectors": 0
+          },
+          "E041": {
+            "max_abs": 0.16454842686653137,
+            "changed_vectors": 132225
+          },
+          "E025": {
+            "max_abs": 0.3597398473795115,
+            "changed_vectors": 132273
+          }
+        },
+        "flat_sha256": "115feea24ec4ddc781d764e05a1d59fd347b5653d5557d7ac9d1cfd0f6b082eb",
+        "status": "PASS",
+        "skill": 0.5623918781304167,
+        "delta_E025": -0.0005569955745997612,
+        "delta_E041": -0.00007085072722468055,
+        "release_pass": true,
+        "cli_startup_to_exit_seconds": 375.2835071999998,
+        "scorer_seconds": 373.5707895755768,
+        "official_log": "docs\\analysis\\E061-outputs\\s2\\official-unhcr.json",
+        "predictions_sha256": "a9049cde6ae457d16ac7bf5938b06da8d2a4e27251bb4baea00593ced2d46ba1"
+      }
+    },
+    "cli_seconds_sum": 590.9613171000001,
+    "cumulative_calls": {
+      "full_stack": 6,
+      "neural": 18,
+      "metric": 16
+    }
+  },
+  "raw_source_assembly_official": {
+    "vectors": 189649,
+    "max_abs": 0,
+    "max_raw_sum_error": 2.8615613700821996e-7,
+    "threshold": 1e-10,
+    "sum_error_limit": 0.000001
+  },
+  "release_gates": "All instruments abs(skill-E025)<=.002 and candidate>=E041-.002; controls exact; UNHCR 132225 changed vectors versus E041. No positive gain requirement added.",
+  "resources": {
+    "status": "PASS",
+    "stages": [
+      {
+        "mode": "assembly",
+        "status": "PASS",
+        "wall_seconds": 402.3484260999994,
+        "peak_owned_tree_bytes": {
+          "rss": 1354153984,
+          "commitment": 1481834496
+        }
+      },
+      {
+        "mode": "official",
+        "status": "PASS",
+        "wall_seconds": 600.9364094000011,
+        "peak_owned_tree_bytes": {
+          "rss": 2440880128,
+          "commitment": 2631708672
+        }
+      },
+      {
+        "mode": "package",
+        "status": "PASS",
+        "wall_seconds": 4.584096799999315,
+        "peak_owned_tree_bytes": {
+          "rss": 388370432,
+          "commitment": 385441792
+        }
+      },
+      {
+        "mode": "preflight",
+        "status": "PASS",
+        "wall_seconds": 17.213753300000462,
+        "peak_owned_tree_bytes": {
+          "rss": 837574656,
+          "commitment": 906702848
+        }
+      },
+      {
+        "mode": "tests-red",
+        "status": "FAIL",
+        "wall_seconds": 5.359143100000438,
+        "peak_owned_tree_bytes": {
+          "rss": 240771072,
+          "commitment": 234889216
+        }
+      },
+      {
+        "mode": "tests",
+        "status": "PASS",
+        "wall_seconds": 22.916175700000167,
+        "peak_owned_tree_bytes": {
+          "rss": 398520320,
+          "commitment": 435937280
+        }
+      }
+    ],
+    "expected_red": "tests-red failed because scripts.assemble_e061 did not yet exist; retained expected test-first failure, not a release failure",
+    "s2_worker_seconds": 1053.358004400001,
+    "s1_historical_worker_seconds": 1098.5227876999961,
+    "combined_worker_seconds": 2151.880792099997,
+    "s2_calls": {
+      "full_stack": 6,
+      "neural": 18,
+      "metric": 16
+    },
+    "s1_historical_calls": {
+      "full_stack": 9,
+      "neural": 27,
+      "metric": 16
+    },
+    "combined_calls": {
+      "full_stack": 15,
+      "neural": 45,
+      "metric": 32
+    },
+    "checker_smoke": {
+      "tiny_generated_predict": 1,
+      "neural": 0,
+      "metric": 0,
+      "counting": "separate from six real all3 full-stack calls"
+    },
+    "peak_owned_tree_bytes": {
+      "rss": 2440880128,
+      "commitment": 2631708672
+    },
+    "cpu_numerical_threads": 2,
+    "gpu": false,
+    "heavy_workers_max": 1,
+    "official_cli_startup_to_exit_sum_seconds": 590.9613171000001,
+    "official_wrapper_overhead_seconds": 9.975092300001052,
+    "limits": {
+      "s2_workers_seconds": 2400,
+      "all3_suite_seconds": 900,
+      "memory_bytes_each": 8589934592,
+      "default_calls": {
+        "full_stack": 6,
+        "neural": 18,
+        "metric": 16
+      }
+    },
+    "notes": "No successful stage rerun, no baseline/source refit, no defect allowance consumed. Observer outside ZIP; .1s owned-tree samples, summed per-process peak RSS/private commitment. CPU measurement is not a hosted H100 guarantee."
+  },
+  "scientific_interpretation": "Exposed synthetic engineering PASS only; no independent audit, ERPIS benefit estimate, Grand forecast or hosted runtime guarantee.",
+  "hosted": {
+    "uploaded": false,
+    "upload_time": null,
+    "submission_id": null,
+    "uploaded_bytes_confirmed": false,
+    "grand": null,
+    "best_update": null,
+    "instrument_scores": null,
+    "account_slot": null
+  },
+  "decision": {
+    "incumbent": "E041",
+    "fallback": "E025",
+    "parked": [
+      "E057",
+      "E060",
+      "E061"
+    ],
+    "next": "S0 document-only review; user-controlled upload decision, no automatic execution",
+    "S3": "STOPPED",
+    "A018": "USER_UNCONFIRMED"
+  },
+  "preservation": "See final-preservation.json and source-archive-manifest.json. Original S1 registration/results/manifest/source/snapshots and tree retained. SCORES original frozen bytes are scorecard-prerun.md; final results append is separately identified."
+}

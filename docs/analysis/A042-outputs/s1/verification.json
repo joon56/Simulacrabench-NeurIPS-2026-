@@ -1,0 +1,695 @@
+{
+  "status": "CONTRACT_READY_FOR_S0_REVIEW",
+  "role": "S1",
+  "task_type": "A042 information/design; static local document/source/schema review",
+  "task_authority": "Current user supplied A042 S1 handoff in IDE selection and attachment; execute that information-only scope in this S1. Older scopes are historical.",
+  "workspace": "C:\\Users\\USER\\Desktop\\SimulacraBench",
+  "workflow_revision": "2026-10-05-r5",
+  "workflow_sha256": "a577942675e16a732339e586c14796104dda704693568439ae28670cc7fb7b23",
+  "entry": {
+    "conservative_start_utc": "2026-10-09T11:02:50Z",
+    "first_clock_utc": "2026-10-09T11:02:55Z",
+    "gross_deadline_utc": "2026-10-09T11:42:50Z",
+    "research_cutoff_utc": "2026-10-09T11:32:50Z",
+    "gross_cap_seconds": 2400,
+    "record_reserve_seconds": 600,
+    "source_hash_capture_utc": "2026-10-09T11:11:49.1883994Z",
+    "head": "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+    "dirty_lines": [
+      " M .claude/skills/paper-session/SKILL.md",
+      " M .gitignore",
+      " M CLAUDE.md",
+      " M docs/domain-study-guide.ko.md",
+      " M docs/index.md",
+      " M docs/log.md",
+      " M docs/session-prompts.ko.md",
+      " M docs/status.md",
+      " M docs/tree.md",
+      " M docs/workflow.md",
+      " M submissions/SCORES.md",
+      "?? .agents/",
+      "?? AGENTS.md",
+      "?? README.md",
+      "?? docs/analysis/A020-outputs/",
+      "?? docs/analysis/A020-post-e058-design-review.md",
+      "?? docs/analysis/A021-outputs/",
+      "?? docs/analysis/A021-selector-comparison-contract.md",
+      "?? docs/analysis/A022-outputs/",
+      "?? docs/analysis/A022-remaining-role-audit.md",
+      "?? docs/analysis/A023-candidate-boundary-contract.md",
+      "?? docs/analysis/A023-cost-accounting.md",
+      "?? docs/analysis/A023-outputs/",
+      "?? docs/analysis/A024-channel-precision-review.md",
+      "?? docs/analysis/A024-outputs/",
+      "?? docs/analysis/A025-submission-oriented-review.md",
+      "?? docs/analysis/A026-outputs/",
+      "?? docs/analysis/A026-post-e060-strategy-review.md",
+      "?? docs/analysis/A027-outputs/",
+      "?? docs/analysis/A027-workflow-role-revision.md",
+      "?? docs/analysis/A028-outputs/",
+      "?? docs/analysis/A028-workflow-entry-audit.md",
+      "?? docs/analysis/A029-codex-migration-audit.md",
+      "?? docs/analysis/A029-outputs/",
+      "?? docs/analysis/A030-outputs/",
+      "?? docs/analysis/A030-vaf-channel-metadata-review.md",
+      "?? docs/analysis/A031-outputs/",
+      "?? docs/analysis/A031-post-a030-handoff-review.md",
+      "?? docs/analysis/A032-document-acquisition-and-readiness.md",
+      "?? docs/analysis/A032-outputs/",
+      "?? docs/analysis/A033-dev-handoff-and-role-repair.md",
+      "?? docs/analysis/A033-outputs/",
+      "?? docs/analysis/A034-e061-s0-review.md",
+      "?? docs/analysis/A034-outputs/",
+      "?? docs/analysis/A035-e061-dev-submission-review.md",
+      "?? docs/analysis/A035-outputs/",
+      "?? docs/analysis/A036-e061-post-result-review.md",
+      "?? docs/analysis/A036-outputs/",
+      "?? docs/analysis/A037-outputs/",
+      "?? docs/analysis/A037-winning-priority-review.md",
+      "?? docs/analysis/A038-outputs/",
+      "?? docs/analysis/A038-vaf-local-document-intake.md",
+      "?? docs/analysis/A039-outputs/",
+      "?? docs/analysis/A040-outputs/",
+      "?? docs/analysis/A041-outputs/",
+      "?? docs/analysis/A041-wb-ordinal-head-review.md",
+      "?? docs/analysis/A042-outputs/",
+      "?? docs/analysis/A042-post-e062-priority.md",
+      "?? docs/analysis/E059-outputs/",
+      "?? docs/analysis/E060-outputs/",
+      "?? docs/analysis/E061-outputs/",
+      "?? docs/analysis/E062-outputs/",
+      "?? docs/codex-setup.ko.md",
+      "?? docs/experiments/E059-leaf-donor-interactions.md",
+      "?? docs/experiments/E060-content-target-retrieval.md",
+      "?? docs/experiments/E061-tied-content-heads.md",
+      "?? docs/experiments/E062-wb-ordinal-heads.md",
+      "?? docs/plans/README.md",
+      "?? requirements-models.txt",
+      "?? scripts/assemble_e060.py",
+      "?? scripts/assemble_e061.py",
+      "?? scripts/assemble_e062.py",
+      "?? scripts/check_a021_selector_contract.py",
+      "?? scripts/check_a023_candidate_boundary.py",
+      "?? scripts/check_a023_resources.py",
+      "?? scripts/check_e060.py",
+      "?? scripts/check_e061_release.py",
+      "?? scripts/check_e061_tied_heads.py",
+      "?? scripts/check_e062_release.py",
+      "?? scripts/check_e062_wb_ordinal.py",
+      "?? scripts/check_workspace.py",
+      "?? scripts/screen_e059.py",
+      "?? src/models/content_target_retrieval.py",
+      "?? src/models/tied_content_heads.py",
+      "?? src/models/wb_ordinal_heads.py",
+      "?? submissions/2026-09-27-E060.zip",
+      "?? submissions/2026-09-27-E060/NOTICE.txt",
+      "?? submissions/2026-09-27-E060/main.py",
+      "?? submissions/2026-09-27-E060/verification.json",
+      "?? submissions/2026-09-28-E061.zip",
+      "?? submissions/2026-09-28-E061/",
+      "?? submissions/2026-10-08-E062.zip",
+      "?? submissions/2026-10-08-E062/",
+      "?? tests/test_a021_selector_contract.py",
+      "?? tests/test_a023_candidate_boundary.py",
+      "?? tests/test_content_target_retrieval.py",
+      "?? tests/test_e059_interactions.py",
+      "?? tests/test_e060_assembly.py",
+      "?? tests/test_e061_assembly.py",
+      "?? tests/test_e062_assembly.py",
+      "?? tests/test_tied_content_heads.py",
+      "?? tests/test_wb_ordinal_heads.py",
+      "?? tests/test_workspace_check.py",
+      "?? trip/"
+    ],
+    "named_local_jobs": [],
+    "output_directory_existed": false,
+    "job_observation_scope": "Local python/pythonw/uv process names/IDs only, not all other writers or remote-job absence. No processes stopped.",
+    "read_receipt_before_substantive_work": true,
+    "ordered_entry_reads": [
+      {
+        "path": "AGENTS.md",
+        "tool_chunks": [
+          "f9d4f7"
+        ],
+        "scope": "entry instructions"
+      },
+      {
+        "path": "CLAUDE.md",
+        "tool_chunks": [
+          "f9d4f7"
+        ],
+        "scope": "project instructions"
+      },
+      {
+        "path": "docs/status.md",
+        "tool_chunks": [
+          "43e5d3",
+          "33e1d4",
+          "053ba9",
+          "42ade7",
+          "0293d8"
+        ],
+        "scope": "current status, split reads; truncated segments reread"
+      },
+      {
+        "path": "docs/log.md",
+        "tool_chunks": [
+          "42ade7"
+        ],
+        "scope": "newest three complete entries: A042 S0, E062 result, E062 S0 submission decision"
+      },
+      {
+        "path": "docs/workflow.md",
+        "tool_chunks": [
+          "053ba9",
+          "42ade7"
+        ],
+        "scope": "r5 workflow and explicit receipt/routing"
+      },
+      {
+        "path": "docs/analysis/A042-post-e062-priority.md",
+        "tool_chunks": [
+          "42ade7"
+        ],
+        "scope": "current task after workflow"
+      },
+      {
+        "path": "docs/analysis/A042-outputs/s1-handoff.ko.md",
+        "tool_chunks": [
+          "42ade7"
+        ],
+        "scope": "full current handoff"
+      }
+    ],
+    "entry_read_time_evidence": "Entry read sequence occurred after the conservative start and before the 11:09:40Z continuation clock; exact per-file timestamps not independently persisted. Tool chunk IDs identify transcript reads, hashes identify bytes.",
+    "skills": "caveman full; karpathy-guidelines for static source review; brainstorming scoped to one document design; verification-before-completion scoped to documents. No implementation/commit/agent workflow overrides user restrictions."
+  },
+  "allowed": "Specified existing documents, public schema, source and permitted text hashes; mathematical derivation; four new A042-outputs/s1 documents and additive status/log.",
+  "forbidden": "Response/GIVEN-row/PREDICT/key/Parquet/NPZ/cache/checkpoint/VAF access or hash; model import/fit/optimizer/predict/score; fixture/test/checker code or execution; web/download/install/remote; production/model/E/ZIP/tree edits; commit/push/subagents/S2/S3/TEST.",
+  "source_identity": [
+    {
+      "path": "src/models/supervised_retrieval.py",
+      "expected": "2940338c5378de03303befb74e3834fbad631c0eb18f4ecb55d2cc39a471f879",
+      "actual": "2940338c5378de03303befb74e3834fbad631c0eb18f4ecb55d2cc39a471f879",
+      "match": true
+    },
+    {
+      "path": "external/starter-kit/data/unhcr.json",
+      "expected": "b1175b6bdbd96e90a4defd83af20a38d711c6eca9fe3ce880109ff244abe80d9",
+      "actual": "b1175b6bdbd96e90a4defd83af20a38d711c6eca9fe3ce880109ff244abe80d9",
+      "match": true
+    },
+    {
+      "path": "submissions/2026-09-19-E041/main.py",
+      "expected": "22c911806ea91234ae350341adfb9c0df2ce4be41cc88e73be304e4bb1023073",
+      "actual": "22c911806ea91234ae350341adfb9c0df2ce4be41cc88e73be304e4bb1023073",
+      "match": true
+    }
+  ],
+  "before_hashes": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "73b86e5310d6a45d5206efd3b55da47c48748ee7b077e6fcad6be276f1716a3a"
+    },
+    {
+      "path": "CLAUDE.md",
+      "sha256": "0cda5c3385ea3368d0c24a6602e4b1220adc864a205e231f10042b655d031749"
+    },
+    {
+      "path": "docs/status.md",
+      "sha256": "0dcfcbc092c2418c45cf4ba735c9192c84ca73f0294aa3c594de5c9a7f58f617"
+    },
+    {
+      "path": "docs/log.md",
+      "sha256": "e37ec6f91e5e1441e0343217fecf684ebbeabd7df2212d2ae9cff33dfc3d6d7f"
+    },
+    {
+      "path": "docs/workflow.md",
+      "sha256": "a577942675e16a732339e586c14796104dda704693568439ae28670cc7fb7b23"
+    },
+    {
+      "path": "docs/analysis/A042-post-e062-priority.md",
+      "sha256": "9d478646da798409b8999988584ab5d7df827e1a5f8fcb30f3cee6e8c5c311bb"
+    },
+    {
+      "path": "docs/analysis/A042-outputs/verification.json",
+      "sha256": "55923ddab0265b9bcc954b5d148014c8bffd5efd7c45a74d8a0c1f52aa6b16c5"
+    },
+    {
+      "path": "docs/analysis/A042-outputs/s1-handoff.ko.md",
+      "sha256": "d22fd902e8c61fcd8278450ee01cb822af5d72dd8d82fceb36bea06a6a8db9ef"
+    },
+    {
+      "path": "docs/analysis/E062-outputs/s2/post-result/result.ko.md",
+      "sha256": "ef7df564e5280f7ccc328d4e0f28ca1ec60d375a8d5b21a864d3802852412bf4"
+    },
+    {
+      "path": "docs/analysis/E062-outputs/s2/post-result/comparison.json",
+      "sha256": "c59e0386f635959d3d0e28bb0b93474d84cdf705634cfb9a73d3c870b06b33ab"
+    },
+    {
+      "path": "docs/analysis/E062-outputs/s2/post-result/verification.json",
+      "sha256": "a06d92b35461d693d54f354ce46f6dc8904a64e2a8c0e76e32937c7a368a5bbf"
+    },
+    {
+      "path": "docs/experiments/E036-wave-lam.md",
+      "sha256": "5a32d978878d6854d51b43881817326ddf5b08aa63c1c116b1cd2172726d633a"
+    },
+    {
+      "path": "docs/experiments/E041-supervised-retrieval.md",
+      "sha256": "8a17f3cb2cb54deb19fdbffe597dcba173002a82100250ea4ff8be446d76bafb"
+    },
+    {
+      "path": "docs/experiments/E043-section-candidate-search.md",
+      "sha256": "e7d9acac562092596d9bd05921dfab49ac8a2c15854fad8abbba606941ccc4cf"
+    },
+    {
+      "path": "docs/experiments/E045-union-retrieval.md",
+      "sha256": "d7ad5bf5420a7ac4d87ae6989b6bc0e4be94cb03e88c7c4a6dfd58d3da729a5c"
+    },
+    {
+      "path": "docs/experiments/E047-adaptive-final-evidence.md",
+      "sha256": "925274f5f5df964e120242f35430a96beee23cf046e6101cc32b5cb80251b436"
+    },
+    {
+      "path": "docs/experiments/E058-donor-pair-interactions.md",
+      "sha256": "540c0c42c4cb172fd3796c8c7853740bbbe2a023a3536d9f201698d0d61ec97c"
+    },
+    {
+      "path": "docs/experiments/E059-leaf-donor-interactions.md",
+      "sha256": "bfbe26a10727bc2b703e7bceb674b344461053357dcc6c5a0a9f217a4738626c"
+    },
+    {
+      "path": "docs/experiments/E060-content-target-retrieval.md",
+      "sha256": "b1ba67e7d521d181dac1df4a285ea39ba98b5b20244e6d9ce81e52363e3e7bc0"
+    },
+    {
+      "path": "docs/analysis/A006-dev-validation-audit.md",
+      "sha256": "b566ec46b7cbcc120f94aa94f7c91dc44e8a0798b08e8d36c34bed9599531dfc"
+    },
+    {
+      "path": "docs/analysis/A021-selector-comparison-contract.md",
+      "sha256": "6d00490b93ad7c986de38735137981bbfd453aacef7d2f627ca7bd60023ec2cc"
+    },
+    {
+      "path": "docs/analysis/A023-candidate-boundary-contract.md",
+      "sha256": "0a22d6e17cc5b6d846060ebed5a65107e2de4d8647ec4280688f5d8847fbd444"
+    },
+    {
+      "path": "docs/analysis/A024-channel-precision-review.md",
+      "sha256": "1a830e20b63965a3f229f2d564f623e7e4965c6495a400e62239d89a30e2985d"
+    },
+    {
+      "path": "docs/analysis/A037-winning-priority-review.md",
+      "sha256": "87e77d8279f68e52751653f3b6098ec1976e4b53a75faf7206043ec6cf4bf66d"
+    },
+    {
+      "path": "src/models/supervised_retrieval.py",
+      "sha256": "2940338c5378de03303befb74e3834fbad631c0eb18f4ecb55d2cc39a471f879"
+    },
+    {
+      "path": "src/models/dup_link.py",
+      "sha256": "e1ce093d927eed6db0553776b74f8ddfca5d159bf035b6cd7b4df9e7bc6b168f"
+    },
+    {
+      "path": "src/models/hh_cap.py",
+      "sha256": "9aad6be04e14ae97dc7aaba5499747c35b255b098680c66eaa8f8af58c940f70"
+    },
+    {
+      "path": "src/models/link_sharp.py",
+      "sha256": "4a7921a00d7758e52a63a3ca7cd5ebf2285cef445b57fd89f15580d6fc108524"
+    },
+    {
+      "path": "src/models/prob_link.py",
+      "sha256": "6b03f700821b6d74c8ef0dfe834737ac4c9755d7fcf9a7c2f96b5b67e905d96d"
+    },
+    {
+      "path": "src/models/shared_trunk.py",
+      "sha256": "df648763c8e0ba5532ebf9e437af95cd10d8527112c1338b8b5db9ad6a212e1f"
+    },
+    {
+      "path": "src/models/hh_link.py",
+      "sha256": "fb34d8dc575a0edd644287ec9387ee32db7866083b53b907376f464837f0c1f6"
+    },
+    {
+      "path": "src/models/hh_sharp.py",
+      "sha256": "31acb4639894411320062f196050425ee1c143a456c9e0dac40ba6dd376ad5e0"
+    },
+    {
+      "path": "src/eval/retrieval_oracle.py",
+      "sha256": "b6c3487a01f5174e02e7691ec455a8e72cfab7533f68026b9010665a60b23ca4"
+    },
+    {
+      "path": "external/starter-kit/data/unhcr.json",
+      "sha256": "b1175b6bdbd96e90a4defd83af20a38d711c6eca9fe3ce880109ff244abe80d9"
+    },
+    {
+      "path": "src/models/hier_backoff.py",
+      "sha256": "e01f2030c191b0b632b274662cbb46537669f3b73e21ab0d5f7f671d28654ccd"
+    },
+    {
+      "path": "src/models/logit_blend.py",
+      "sha256": "c25e91e648d5eb8a11afca1c8b02accad1a585540b6ed7d4ca363730a535705f"
+    },
+    {
+      "path": "src/models/cond_agree.py",
+      "sha256": "aecad17990cc106199f96648ad02716eee43cc60f995b25125473a0b0bd5e197"
+    },
+    {
+      "path": "src/eval/logloss.py",
+      "sha256": "272aae939a2587b7197569ff84733a1d3b51050e4090ed903a7c8f4e1c88ca18"
+    },
+    {
+      "path": "submissions/2026-09-19-E041/main.py",
+      "sha256": "22c911806ea91234ae350341adfb9c0df2ce4be41cc88e73be304e4bb1023073"
+    },
+    {
+      "path": "docs/tree.md",
+      "sha256": "eaa884a4194db103335136495205fe5b51297c17db15e9eac62946ced286cc44"
+    }
+  ],
+  "read_evidence": [
+    {
+      "chunks": [
+        "75dfa8",
+        "96e23b",
+        "a425d3"
+      ],
+      "paths": [
+        "docs/analysis/A042-outputs/verification.json"
+      ],
+      "scope": "JSON metadata, post-result/priority/source/operation/final-preservation fields; no traversal of embedded data paths"
+    },
+    {
+      "chunks": [
+        "0293d8",
+        "75dfa8",
+        "a425d3"
+      ],
+      "paths": [
+        "docs/analysis/E062-outputs/s2/post-result/result.ko.md",
+        "docs/analysis/E062-outputs/s2/post-result/comparison.json",
+        "docs/analysis/E062-outputs/s2/post-result/verification.json"
+      ],
+      "scope": "Recorded score/provenance/comparison/operation metadata; no platform or ZIP verification"
+    },
+    {
+      "chunks": [
+        "2868ce",
+        "cde478",
+        "a11d76",
+        "ae2077",
+        "9815fb",
+        "b27027"
+      ],
+      "paths": [
+        "docs/experiments/E036-wave-lam.md",
+        "docs/experiments/E041-supervised-retrieval.md",
+        "docs/experiments/E043-section-candidate-search.md",
+        "docs/experiments/E045-union-retrieval.md",
+        "docs/experiments/E047-adaptive-final-evidence.md",
+        "docs/experiments/E058-donor-pair-interactions.md",
+        "docs/experiments/E059-leaf-donor-interactions.md",
+        "docs/experiments/E060-content-target-retrieval.md"
+      ],
+      "scope": "Required historical experiment text; bounded rereads filled truncated portions"
+    },
+    {
+      "chunks": [
+        "a11d76",
+        "2949e1",
+        "ae2077",
+        "4e5b89",
+        "b27027"
+      ],
+      "paths": [
+        "docs/analysis/A006-dev-validation-audit.md",
+        "docs/analysis/A021-selector-comparison-contract.md",
+        "docs/analysis/A023-candidate-boundary-contract.md",
+        "docs/analysis/A024-channel-precision-review.md",
+        "docs/analysis/A037-winning-priority-review.md"
+      ],
+      "scope": "Required existing analysis contracts and exposure/channel/cost limits"
+    },
+    {
+      "chunks": [
+        "7b5d76",
+        "96506a",
+        "2868ce",
+        "4e5b89",
+        "20ef07",
+        "81743f",
+        "19cf91"
+      ],
+      "paths": [
+        "src/models/supervised_retrieval.py",
+        "src/models/dup_link.py",
+        "src/models/hh_cap.py",
+        "src/models/link_sharp.py",
+        "src/models/prob_link.py",
+        "src/models/shared_trunk.py",
+        "src/models/hh_link.py",
+        "src/models/hh_sharp.py",
+        "src/eval/retrieval_oracle.py"
+      ],
+      "scope": "Required production source static reads; no module import or call"
+    },
+    {
+      "chunks": [
+        "96e23b",
+        "a425d3",
+        "81743f"
+      ],
+      "paths": [
+        "external/starter-kit/data/unhcr.json"
+      ],
+      "scope": "Public description/GIVEN wave and schema-only classes/group/option dimensions; no respondent rows"
+    },
+    {
+      "chunks": [
+        "a65708"
+      ],
+      "paths": [
+        "src/models/hier_backoff.py",
+        "src/models/logit_blend.py",
+        "src/models/cond_agree.py",
+        "src/eval/logloss.py"
+      ],
+      "scope": "Direct connected source, filenames/purposes announced before access: split/ladder, GIVEN encoding, gate fitting, final floor"
+    }
+  ],
+  "hash_only_preservation": [
+    "docs/tree.md",
+    "submissions/2026-09-19-E041/main.py"
+  ],
+  "schema_observations": {
+    "version": "1.3",
+    "public_total_rows": 10349,
+    "given": 17,
+    "wave_declared_values": [
+      "1",
+      "2"
+    ],
+    "predict": 213,
+    "gated_predict": 156,
+    "substantive_option_columns": 678,
+    "full_columns_with_sentinel": 834,
+    "conditional_columns": 456,
+    "max_full_classes": 15,
+    "given_onehot_width": 159,
+    "ladder_eligible_given": 15,
+    "groups": [
+      [
+        "2",
+        6
+      ],
+      [
+        "3",
+        61
+      ],
+      [
+        "7a",
+        24
+      ],
+      [
+        "7b",
+        39
+      ],
+      [
+        "7c",
+        11
+      ],
+      [
+        "4",
+        12
+      ],
+      [
+        "5",
+        10
+      ],
+      [
+        "6",
+        50
+      ]
+    ],
+    "actual_visible_wave_support": "unknown; no response row access"
+  },
+  "design": {
+    "candidate_count": 1,
+    "metric_coordinates_original": 18,
+    "metric_coordinates_candidate": 35,
+    "common_arm": "C=exact original E041 R; same invocation, no second independent claim",
+    "shrinkage": "0.001*mean((mu-v0)^2) + 0.001*mean((w1-w2)^2); mu=(w1+w2)/2",
+    "support": "Before candidate optimization: supported wave for all supplied rows, F and S each >=30 per wave, original donor width32; otherwise original E041 instrument path. Not a new score guard.",
+    "preserved": "original K32 identities/order, initial search, all-cell objective, .003/2SE selector vs original first10-of32 proxy, seeds/splits, lambda buckets/minimum30/grid/zero fallback, existing base refit and recursive rendering",
+    "no_common_candidate_winner_selector": true,
+    "normal_all3": {
+      "pipelines": 3,
+      "neural_train_calls": 9,
+      "metric_optimizer_calls": 8
+    },
+    "fresh_R_H_all3": {
+      "pipelines": 6,
+      "neural_train_calls": 18,
+      "metric_optimizer_calls": 16
+    },
+    "actual_runtime_memory_effect": "unmeasured",
+    "current_numeric_oracle": false,
+    "independent_audit": false,
+    "technical_model_pass": false,
+    "release_qualification": false,
+    "future_execution_authorized": false
+  },
+  "operations": {
+    "static_document_schema_source_reads": true,
+    "allowed_text_hashes": true,
+    "schema_metadata_arithmetic": true,
+    "document_writes": true,
+    "new_model_source": 0,
+    "model_import": 0,
+    "fit": 0,
+    "optimizer": 0,
+    "predict": 0,
+    "score": 0,
+    "fixtures_tests": 0,
+    "new_checker_tools": 0,
+    "response_key_Parquet_NPZ_cache_checkpoint_VAF_reads_hashes": 0,
+    "web_remote": 0,
+    "install_download": 0,
+    "E_records": 0,
+    "ZIP_checker_upload": 0,
+    "tree_edits": 0,
+    "commit_push": 0,
+    "subagents": 0,
+    "S2_S3_TEST": 0
+  },
+  "exposure": {
+    "new_response_or_prediction_exposure": false,
+    "inherited_people": 17999,
+    "inherited_SSUID": 12339,
+    "aggregate_exposure": "preserved",
+    "A022_roles": "unchanged/unassigned",
+    "E059_consumed": {
+      "oracle_people": 1918,
+      "oracle_SSUID": 1124,
+      "selection_people": 2007,
+      "selection_SSUID": 1130
+    },
+    "protected": {
+      "audit_people": 2074,
+      "audit_SSUID": 1177,
+      "calibration_people": 1866
+    },
+    "inherited_scores": "E062 ID969351 public tie UNRESOLVED; user-supplied published strings, not raw scores or authenticated upload identity",
+    "synthetic": "already-exposed engineering channel; no synthetic file opened or regenerated"
+  },
+  "preserved_state": "E041 incumbent/E025 fallback; E057/E060/E061/E062 parked; E058 STOP/E059 STOP_SELECTION; A023/A024 empirical HOLD; A039/A040/all STOP/HOLD; A_half not promoted; A018 user-unconfirmed/S3 stopped/no new S2 candidate",
+  "administrative_notes": [
+    "Initial workspace sandbox launch failed with helper_unknown_error before command execution; scoped read-only elevated execution succeeded. No automatic approval rejection occurred.",
+    "Some long tool outputs were truncated; bounded text excerpts/JSON fields were reread. Initially requested nonexistent JSON summary field names returned null; actual field names/values were then read. No scientific operation or policy changed.",
+    "No recursive workspace/protected-asset hash. Preservation claim is limited to selected allowed text hashes, additive shared-byte restoration and tracked dirty-name continuity."
+  ],
+  "shared_document_receipts": [
+    {
+      "path": "docs/status.md",
+      "before_sha256": "0dcfcbc092c2418c45cf4ba735c9192c84ca73f0294aa3c594de5c9a7f58f617",
+      "after_sha256": "c71fc520772000a6916fce2de297dc53db9aabeba12b3d59bea3737719135e2f",
+      "restored_sha256": "0dcfcbc092c2418c45cf4ba735c9192c84ca73f0294aa3c594de5c9a7f58f617",
+      "prior_bytes_preserved": true,
+      "insertion": "- **2026-10-09 A042 S1: CONTRACT_READY_FOR_S0_REVIEW (information/design only).**\r\n  One UNHCR query-wave metric contract: two bounded17-weight vectors, fixed\r\n  common/difference shrinkage; original K32, all-cell .003/2SE selector and\r\n  lambda minimum30/zero fallback retained. Common arm C is exact R/E041, not\r\n  a new S selector. GIVEN-only support fallback fixed before any scores.\r\n  Normal all3:3 pipelines/9 neural calls/8 metric fits,18->35 metric coordinates.\r\n  Actual activation/effect/time/memory unmeasured; proxy/in-sample replay limits\r\n  remain. No model/data/cache/test/remote/E/ZIP/commit/push or S2/S3 work.\r\n  [Contract](analysis/A042-outputs/s1/contract.md),\r\n  [S0 handoff](analysis/A042-outputs/s1/s0-handoff.ko.md),\r\n  [Verification](analysis/A042-outputs/s1/verification.json).\r\n  Return to S0 for a separate bounded technical-scope decision only.\r\n  E062 tie UNRESOLVED; E041/E025, parked variants, all STOP/HOLD and exposures intact.\r\n\r\n"
+    },
+    {
+      "path": "docs/log.md",
+      "before_sha256": "e37ec6f91e5e1441e0343217fecf684ebbeabd7df2212d2ae9cff33dfc3d6d7f",
+      "after_sha256": "7f8196115a207fd05a5d5ee44362bb90acc39a83615a76a790c5341b9b2b4a24",
+      "restored_sha256": "e37ec6f91e5e1441e0343217fecf684ebbeabd7df2212d2ae9cff33dfc3d6d7f",
+      "prior_bytes_preserved": true,
+      "insertion": "## 2026-10-09 - A042 S1 fixes one query-round metric contract; returns to S0\r\n\r\n- Ordered entry/workflow2026-10-05-r5 read; HEADa43f4379, existing dirty104,\r\n  named local python/pythonw/uv jobs0. Three supplied source/schema identities match.\r\n- CONTRACT_READY_FOR_S0_REVIEW: one35-coordinate round-conditioned metric,\r\n  original K32 and common E041 endpoint, .001 common/difference penalty, fixed\r\n  GIVEN-only support fallback. No new H-versus-C selector or lambda partition.\r\n- C=R intentionally; reused S/section selection is not independent audit.\r\n  Original base refit/in-sample replay and proxy/final-output mismatch retained.\r\n  H can change activity, replay eligibility, lambda and downstream recursion.\r\n- Source normal all3 count3 pipelines/9 neural/8 metric; fresh R+H6/18/16.\r\n  Complete runtime/memory/effect unmeasured. Static arrays are not RSS evidence.\r\n- New [contract](analysis/A042-outputs/s1/contract.md),\r\n  [closeout](analysis/A042-outputs/s1/closeout.md),\r\n  [S0 handoff](analysis/A042-outputs/s1/s0-handoff.ko.md) and\r\n  [verification](analysis/A042-outputs/s1/verification.json); only status/log additions.\r\n  No model/import/fit/optimizer/predict/score/test, response/key/cache access,\r\n  web/remote/install, E/ZIP/tree change, commit/push, subagent or S2/S3/TEST.\r\n- S0 decides separate implementation authority. E062 tie/parked, E041 incumbent,\r\n  E025 fallback, E057/E060/E061 parked, all STOP/HOLD/A039/A040/A023/A024,\r\n  17999/12339SSUID/exposure/A022 roles/E059 protected and consumed roles,\r\n  A_half/A018/S3 preserved; no new S2 candidate.\r\n\r\n"
+    }
+  ],
+  "final_verification": {
+    "status": "DOCUMENT_ONLY_COMPLETE",
+    "observed_utc": "2026-10-09T11:24:35.8994335Z",
+    "immutable_checked": 38,
+    "immutable_mismatches": [],
+    "HEAD_unchanged": true,
+    "head": "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+    "entry_dirty_count": 104,
+    "final_dirty_count": 104,
+    "missing_entry_dirty_lines": [],
+    "new_dirty_lines": [],
+    "dirty_count_note": "Git porcelain rolls the new four documents into the already-untracked A042-outputs/ directory. Unchanged104 does not mean no files were written.",
+    "named_local_jobs": [],
+    "new_output_files": [
+      "closeout.md",
+      "contract.md",
+      "s0-handoff.ko.md",
+      "verification.json"
+    ],
+    "links_checked": 19,
+    "broken_links": [],
+    "verification_json_parse_before_final_fields": true,
+    "git_diff_check_exit": 0,
+    "shared_reverse_edit_rechecked": [
+      {
+        "path": "docs/status.md",
+        "current_sha256": "c71fc520772000a6916fce2de297dc53db9aabeba12b3d59bea3737719135e2f",
+        "restored_sha256": "0dcfcbc092c2418c45cf4ba735c9192c84ca73f0294aa3c594de5c9a7f58f617",
+        "match": true
+      },
+      {
+        "path": "docs/log.md",
+        "current_sha256": "7f8196115a207fd05a5d5ee44362bb90acc39a83615a76a790c5341b9b2b4a24",
+        "restored_sha256": "e37ec6f91e5e1441e0343217fecf684ebbeabd7df2212d2ae9cff33dfc3d6d7f",
+        "match": true
+      }
+    ],
+    "output_hashes_excluding_self": [
+      {
+        "path": "docs/analysis/A042-outputs/s1/closeout.md",
+        "sha256": "b79f0c50cbf7918b0de02fa2bb274a762079ca318d992992d90fc366d5b576b6"
+      },
+      {
+        "path": "docs/analysis/A042-outputs/s1/contract.md",
+        "sha256": "d1ce78f2708569bda47bd2896e3dd5d88ed29ef01c90c846941c54bf8daff5bd"
+      },
+      {
+        "path": "docs/analysis/A042-outputs/s1/s0-handoff.ko.md",
+        "sha256": "569e93a78213f153d44ec4c418ac7f1293a850dcd1ca127df349061b26909e6e"
+      }
+    ],
+    "preservation_scope": "38 selected permitted immutable text/schema/source hashes; exact shared-byte restoration; all104 entry git-status lines retained. Not every dirty file byte or remote job independently audited.",
+    "source_review_corrections": "During document review, clarified that S-label isolation applies to metric optimization, not the already in-sample base/replay; made CPU selection enforcement explicit. No policy, implementation or experiment executed."
+  },
+  "timing": {
+    "research_end_utc": "2026-10-09T11:19:00Z",
+    "recording_end_utc": "2026-10-09T11:24:35.8994335Z",
+    "gross_seconds": 1305.899,
+    "model_seconds": 0,
+    "remote_cost_USD": 0,
+    "actual_peak_RSS_commitment": "not measured; no model/fixture worker",
+    "cpu_observation": "No numerical/model worker; static shell reads only, at most two concurrent read commands. No claim of system-wide CPU utilization measurement.",
+    "within_40min": true,
+    "last10min_reserved": true
+  }
+}

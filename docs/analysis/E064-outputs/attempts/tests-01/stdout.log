@@ -1,0 +1,22 @@
+test_initial_state_forward_rng_and_denominator (tests.test_conditional_gradient.GradientTests.test_initial_state_forward_rng_and_denominator) ... FAIL
+
+======================================================================
+FAIL: test_initial_state_forward_rng_and_denominator (tests.test_conditional_gradient.GradientTests.test_initial_state_forward_rng_and_denominator)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\SimulacraBench\tests\test_conditional_gradient.py", line 43, in test_initial_state_forward_rng_and_denominator
+    a, b = self.nets(config)
+           ~~~~~~~~~^^^^^^^^
+  File "C:\Users\USER\Desktop\SimulacraBench\tests\test_conditional_gradient.py", line 28, in nets
+    h = self.module()
+  File "C:\Users\USER\Desktop\SimulacraBench\tests\test_conditional_gradient.py", line 23, in module
+    self.assertIsNotNone(importlib.util.find_spec('src.models.conditional_gradient'),
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                         'E064 implementation absent: expected pre-implementation RED')
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: unexpectedly None : E064 implementation absent: expected pre-implementation RED
+
+----------------------------------------------------------------------
+Ran 1 test in 0.008s
+
+FAILED (failures=1)

@@ -1,0 +1,45 @@
+REVIEW DRAFT - NOT FINAL TEST SELECTION
+
+ 2. Base predictor and section-specific evidence
+ Hierarchical backoff. A smoothed global marginal anchors a ladder adding GIVEN columns. On a 20% visible
+  split, greedy held-out log score selects column order, depth up to three and shrinkage kappa in {1,3,10,30,100}.
+ Candidate columns have at most 12 levels. Asked-only heads use the same ladder; unseen cells fall back to broader
+  cells.
+
+ p_L(v | cell) = (n_L(v) + kappa_L*p_(L-1)(v)) / (N_L+kappa_L)
+ Shared neural trunk. One-hot GIVEN inputs feed a Linear-ReLU trunk and separate softmax full heads, plus
+ asked-only heads for gated items. Full-batch Adam uses learning rate 0.003, weight decay 0.0001, at most 500
+ epochs and inner-validation patience 30. An outer split selects two 64-unit layers/no dropout or two 128-unit
+ layers/dropout  0.1. The selected epoch count  is  refitted on  all complete visible rows. One instrument-level
+ network/ladder mixture weight from {0,0.1,...,1} is selected on the outer split and applies to both head types. Base
+  split and network seeds are zero.
+ E025 donor evidence. All complete visible respondents are potential donors. GIVEN agreement  starts with
+ negative-log random-agreement weights, using available GIVEN frequencies including held-out covariates. At least
+ 30 provisional pairs with top posterior mass at least 0.5 permit one Fellegi-Sunter-style agreement-weight update;
+ otherwise  rarity weights remain. Softmax over the top ten donor candidates averages  their answer vectors.
+ Respondent IDs are not features; this is not external identity linkage or proof of household relationships.
+ Self-excluded replay over at most 6,000 visible queries chooses item-specific lambda from {0,0.1,...,0.9,0.95,0.98},
+ separately below/above maximum donor mass 0.5. A bucket requires 30 observations; insufficient support leaves
+ lambda zero. The  final  belief (1-lambda)*base + lambda*evidence  is applied  after gate mixing and before
+ descendants decode. No positive lambdas means base-only prediction.
+ E041's additional UNHCR layer. PREDICT items are grouped by section-name prefix. Each section learns
+ nonnegative diagonal weights on GIVEN equality features and reranks 32 candidates retrieved under the initial E025
+ metric. Seed 4101 partitions complete visible rows into metric-fit (up to 1,200), selection (up to 800), new-metric
+ replay (up to 800), and a disjoint reference bank. Query labels fit the metric; reference-bank labels supply donor
+ evidence. No hidden PREDICT labels enter these roles.
+ Metric  fitting optimizes officially floored log loss plus squared-distance regularization toward  initial weights
+ (penalty 0.001), using L-BFGS-B for at most 50 iterations. Weight bounds are [0,12]; a sigmoid parameter controls a
+  fitted proxy mixture share. Selection compares learned 32-candidate evidence with initial-metric top-ten evidence. A
+ section  activates  only   if mean  log  gain  exceeds  max(0.003,2*estimated  SE).  This  heuristic  is  not  a
+ multiple-testing-adjusted population guarantee.
+ Active sections replace evidence and choose their item/bucket lambdas on new-metric replay rows; inactive items
+  retain legacy replay. Deployment uses the full visible donor bank. Concentration buckets still use initial top-ten
+ posterior mass. Dispatch requires the exact schema key s3_11_intent_return_12m_lbl; fewer than 500 complete rows
+ or no held-out rows invokes legacy evidence, and no usable GIVEN signature returns no evidence. Historical
+ synthetic phase 2 activated seven of eight sections; hosted activity is unknown. [6]
+
+
+
+
+
+HSCC 2026 | E041 | REVIEW DRAFT | 23 October 2026                                                                2 / 4

@@ -1,0 +1,6 @@
+{
+  "src/models/conditional_gradient.py": "19cd35b7d0069e3244a6a89b9baec6a61e702cc80b6e3f91f1a5689926e40927",
+  "tests/test_conditional_gradient.py": "c78bb8e334cf858d5909247a0da4f9b6151d02d7b9ebd8152b3d48f4b2ec12f8",
+  "scripts/check_e064_conditional_gradient.py": "6a52ac7f22f1df1b5c4708cebbba16f6a7ad99eab6d4b5abc153beedd35a9cb5",
+  "docs/analysis/E064-outputs/memory_tree.py": "35a0f6e4529a7e21856554f3e978c7f35cbbcb660fe228c3052a7eedf3f8fd4b"
+}

@@ -1,0 +1,266 @@
+﻿{
+    "document_pairs":  [
+                           {
+                               "local_path":  "UNCHR_data/UNHCR_JOR_2023_VAF_HOST_v2.1.xml",
+                               "prior_path":  "docs/analysis/A032-outputs/catalog1030-ddi.xml",
+                               "local_sha256":  "f5ea139f2be32e84d544c612560584487b2cd955bd776f0b4945b792009373e1",
+                               "prior_sha256":  "f5ea139f2be32e84d544c612560584487b2cd955bd776f0b4945b792009373e1",
+                               "equal":  true
+                           },
+                           {
+                               "local_path":  "UNCHR_data/microdata/VAF researcher guide.pdf",
+                               "prior_path":  "docs/analysis/A032-outputs/researcher-guide.pdf",
+                               "local_sha256":  "381372b27e64ca48e169d42917fece4342559959053fa46d135015a94076f6d6",
+                               "prior_sha256":  "381372b27e64ca48e169d42917fece4342559959053fa46d135015a94076f6d6",
+                               "equal":  true
+                           },
+                           {
+                               "local_path":  "UNCHR_data/microdata/VAF_Host_KOBO/VAF_Host_2023_LongXLS_final.xlsx",
+                               "prior_path":  "docs/analysis/A032-outputs/VAF_Host_2023_LongXLS_final.xlsx",
+                               "local_sha256":  "8ebae920a94af0198ce4061f118b797fabc485f60850118e7e2af63fa59fbdc5",
+                               "prior_sha256":  "8ebae920a94af0198ce4061f118b797fabc485f60850118e7e2af63fa59fbdc5",
+                               "equal":  true
+                           },
+                           {
+                               "local_path":  "UNCHR_data/microdata/VAF_Host_KOBO/VAF_Host_2023_ShortXLS_final.xlsx",
+                               "prior_path":  "docs/analysis/A032-outputs/VAF_Host_2023_ShortXLS_final.xlsx",
+                               "local_sha256":  "c2958235b940e47524983e9ff133b408ce78238a476e5a58e0860a2b7cf6880f",
+                               "prior_sha256":  "c2958235b940e47524983e9ff133b408ce78238a476e5a58e0860a2b7cf6880f",
+                               "equal":  true
+                           }
+                       ],
+    "labels_vs_ddi":  [
+                          {
+                              "table":  "case",
+                              "ddi_file":  "f3",
+                              "labels_path":  "UNCHR_data/microdata/UNHCR_JOR_2023_VAF_HOST_data_v2_1/UNHCR_JOR_2023_VAF_HOST_labels_case_v2.1.csv",
+                              "ddi_count":  80,
+                              "label_count":  74,
+                              "differences":  [
+                                                  {
+                                                      "InputObject":  "ID_main",
+                                                      "SideIndicator":  "=\u003e"
+                                                  },
+                                                  {
+                                                      "InputObject":  "householdindex",
+                                                      "SideIndicator":  "\u003c="
+                                                  },
+                                                  {
+                                                      "InputObject":  "sharingindex",
+                                                      "SideIndicator":  "\u003c="
+                                                  },
+                                                  {
+                                                      "InputObject":  "familyindex",
+                                                      "SideIndicator":  "\u003c="
+                                                  },
+                                                  {
+                                                      "InputObject":  "caseindex",
+                                                      "SideIndicator":  "\u003c="
+                                                  },
+                                                  {
+                                                      "InputObject":  "CaseCalculatedIndexLoop",
+                                                      "SideIndicator":  "\u003c="
+                                                  },
+                                                  {
+                                                      "InputObject":  "index",
+                                                      "SideIndicator":  "\u003c="
+                                                  },
+                                                  {
+                                                      "InputObject":  "parent_index",
+                                                      "SideIndicator":  "\u003c="
+                                                  }
+                                              ],
+                              "labels_sha256":  "5df2872375329f307e87274f504f8f9d91a2b066936c51de373cd954247b4470"
+                          },
+                          {
+                              "table":  "family",
+                              "ddi_file":  "f4",
+                              "labels_path":  "UNCHR_data/microdata/UNHCR_JOR_2023_VAF_HOST_data_v2_1/UNHCR_JOR_2023_VAF_HOST_labels_family_v2.1.csv",
+                              "ddi_count":  27,
+                              "label_count":  22,
+                              "differences":  [
+                                                  {
+                                                      "InputObject":  "ID_main",
+                                                      "SideIndicator":  "=\u003e"
+                                                  },
+                                                  {
+                                                      "InputObject":  "householdindex",
+                                                      "SideIndicator":  "\u003c="
+                                                  },
+                                                  {
+                                                      "InputObject":  "sharingindex",
+                                                      "SideIndicator":  "\u003c="
+                                                  },
+                                                  {
+                                                      "InputObject":  "familyindex",
+                                                      "SideIndicator":  "\u003c="
+                                                  },
+                                                  {
+                                                      "InputObject":  "FamilyCalculatedIndexLoop",
+                                                      "SideIndicator":  "\u003c="
+                                                  },
+                                                  {
+                                                      "InputObject":  "index",
+                                                      "SideIndicator":  "\u003c="
+                                                  },
+                                                  {
+                                                      "InputObject":  "parent_index",
+                                                      "SideIndicator":  "\u003c="
+                                                  }
+                                              ],
+                              "labels_sha256":  "a7ccbe550fdec8c07692e369bc2458ea65bfa4244e170bf6802eddd3da9efcf4"
+                          },
+                          {
+                              "table":  "main",
+                              "ddi_file":  "file_id",
+                              "labels_path":  "UNCHR_data/microdata/UNHCR_JOR_2023_VAF_HOST_data_v2_1/UNHCR_JOR_2023_VAF_HOST_labels_main_v2.1.csv",
+                              "ddi_count":  197,
+                              "label_count":  196,
+                              "differences":  [
+                                                  {
+                                                      "InputObject":  "ID_main",
+                                                      "SideIndicator":  "=\u003e"
+                                                  },
+                                                  {
+                                                      "InputObject":  "householdindex",
+                                                      "SideIndicator":  "\u003c="
+                                                  },
+                                                  {
+                                                      "InputObject":  "index",
+                                                      "SideIndicator":  "\u003c="
+                                                  }
+                                              ],
+                              "labels_sha256":  "d65b486d150cf3bcac02f2821935a03103214bea02760f339806af53ae102f32"
+                          },
+                          {
+                              "table":  "member",
+                              "ddi_file":  "f2",
+                              "labels_path":  "UNCHR_data/microdata/UNHCR_JOR_2023_VAF_HOST_data_v2_1/UNHCR_JOR_2023_VAF_HOST_labels_member_v2.1.csv",
+                              "ddi_count":  189,
+                              "label_count":  183,
+                              "differences":  [
+                                                  {
+                                                      "InputObject":  "ID_main",
+                                                      "SideIndicator":  "=\u003e"
+                                                  },
+                                                  {
+                                                      "InputObject":  "ID_ind",
+                                                      "SideIndicator":  "=\u003e"
+                                                  },
+                                                  {
+                                                      "InputObject":  "householdindex",
+                                                      "SideIndicator":  "\u003c="
+                                                  },
+                                                  {
+                                                      "InputObject":  "sharingindex",
+                                                      "SideIndicator":  "\u003c="
+                                                  },
+                                                  {
+                                                      "InputObject":  "familyindex",
+                                                      "SideIndicator":  "\u003c="
+                                                  },
+                                                  {
+                                                      "InputObject":  "caseindex",
+                                                      "SideIndicator":  "\u003c="
+                                                  },
+                                                  {
+                                                      "InputObject":  "individualindex",
+                                                      "SideIndicator":  "\u003c="
+                                                  },
+                                                  {
+                                                      "InputObject":  "individualCalculatedIndexLoop",
+                                                      "SideIndicator":  "\u003c="
+                                                  },
+                                                  {
+                                                      "InputObject":  "index",
+                                                      "SideIndicator":  "\u003c="
+                                                  },
+                                                  {
+                                                      "InputObject":  "parent_index",
+                                                      "SideIndicator":  "\u003c="
+                                                  }
+                                              ],
+                              "labels_sha256":  "2e346a3af66d05d026fe7e68efc64ea9f0d2f143c6e546750aef2d4f6f35a1ee"
+                          },
+                          {
+                              "table":  "sharing_group_long",
+                              "ddi_file":  "f5",
+                              "labels_path":  "UNCHR_data/microdata/UNHCR_JOR_2023_VAF_HOST_data_v2_1/UNHCR_JOR_2023_VAF_HOST_labels_sharing_group_long_v2.1.csv",
+                              "ddi_count":  591,
+                              "label_count":  586,
+                              "differences":  [
+                                                  {
+                                                      "InputObject":  "ID_main",
+                                                      "SideIndicator":  "=\u003e"
+                                                  },
+                                                  {
+                                                      "InputObject":  "householdindex",
+                                                      "SideIndicator":  "\u003c="
+                                                  },
+                                                  {
+                                                      "InputObject":  "sharingindex",
+                                                      "SideIndicator":  "\u003c="
+                                                  },
+                                                  {
+                                                      "InputObject":  "SharingGroupIndex",
+                                                      "SideIndicator":  "\u003c="
+                                                  },
+                                                  {
+                                                      "InputObject":  "RestaurantInKindExternalOrders",
+                                                      "SideIndicator":  "\u003c="
+                                                  },
+                                                  {
+                                                      "InputObject":  "index",
+                                                      "SideIndicator":  "\u003c="
+                                                  },
+                                                  {
+                                                      "InputObject":  "parent_index",
+                                                      "SideIndicator":  "\u003c="
+                                                  }
+                                              ],
+                              "labels_sha256":  "242608334ae9186fcbff08fab7c3df8ad4d1df6d6c4a5fff4f1b99c78e327dea"
+                          },
+                          {
+                              "table":  "sharing_group_short",
+                              "ddi_file":  "f6",
+                              "labels_path":  "UNCHR_data/microdata/UNHCR_JOR_2023_VAF_HOST_data_v2_1/UNHCR_JOR_2023_VAF_HOST_labels_sharing_group_short_v2.1.csv",
+                              "ddi_count":  435,
+                              "label_count":  430,
+                              "differences":  [
+                                                  {
+                                                      "InputObject":  "ID_main",
+                                                      "SideIndicator":  "=\u003e"
+                                                  },
+                                                  {
+                                                      "InputObject":  "householdindex",
+                                                      "SideIndicator":  "\u003c="
+                                                  },
+                                                  {
+                                                      "InputObject":  "sharingindex",
+                                                      "SideIndicator":  "\u003c="
+                                                  },
+                                                  {
+                                                      "InputObject":  "SharingGroupIndex",
+                                                      "SideIndicator":  "\u003c="
+                                                  },
+                                                  {
+                                                      "InputObject":  "RestaurantInKindExternalOrders",
+                                                      "SideIndicator":  "\u003c="
+                                                  },
+                                                  {
+                                                      "InputObject":  "index",
+                                                      "SideIndicator":  "\u003c="
+                                                  },
+                                                  {
+                                                      "InputObject":  "parent_index",
+                                                      "SideIndicator":  "\u003c="
+                                                  }
+                                              ],
+                              "labels_sha256":  "3dd8bcd781658880761351e6497c749cf6062d0575497fe90c4bec507df3a6c0"
+                          }
+                      ],
+    "difference_legend":  "\u003c= DDI only; =\u003e label table only",
+    "response_files_read_or_hashed":  0,
+    "callback_content_read_or_hashed":  0,
+    "key_values_read":  0
+}

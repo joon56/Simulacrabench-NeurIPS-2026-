@@ -1,0 +1,135 @@
+{"event": "full_stack_enter", "function": "predict", "full_stack_call_count": 1, "model": "candidate", "instrument": "unicef"}
+{"event": "enter", "function": "select_ladder", "neural_call_count": 0, "model": "candidate", "instrument": "unicef"}
+{"event": "return", "function": "select_ladder", "wall_seconds": 0.8585290000009991, "model": "candidate", "instrument": "unicef"}
+{"event": "enter", "function": "tune_and_train", "neural_call_count": 0, "model": "candidate", "instrument": "unicef"}
+{"event": "enter", "function": "_train_on", "neural_call_count": 1, "model": "candidate", "instrument": "unicef"}
+{"event": "return", "function": "_train_on", "wall_seconds": 8.630287900003168, "epochs_executed": 145, "best_epoch": 115, "fit_rows": 9537, "validation_rows": 2361, "config": [64, 2, 0.0], "device": "cpu", "returned": true, "model": "candidate", "instrument": "unicef"}
+{"event": "enter", "function": "_train_on", "neural_call_count": 2, "model": "candidate", "instrument": "unicef"}
+{"event": "return", "function": "_train_on", "wall_seconds": 9.823631999999634, "epochs_executed": 120, "best_epoch": 90, "fit_rows": 9537, "validation_rows": 2361, "config": [128, 2, 0.1], "device": "cpu", "returned": true, "model": "candidate", "instrument": "unicef"}
+{"event": "enter", "function": "_train_on", "neural_call_count": 3, "model": "candidate", "instrument": "unicef"}
+{"event": "return", "function": "_train_on", "wall_seconds": 5.306249499997648, "epochs_executed": 115, "best_epoch": 0, "fit_rows": 14885, "validation_rows": 0, "config": [64, 2, 0.0], "device": "cpu", "returned": true, "model": "candidate", "instrument": "unicef"}
+{"event": "return", "function": "tune_and_train", "wall_seconds": 24.511631100001978, "blend_weight": 1.0, "model": "candidate", "instrument": "unicef"}
+{"event": "full_stack_enter", "function": "predict", "full_stack_call_count": 2, "model": "candidate", "instrument": "world_bank"}
+{"event": "enter", "function": "select_ladder", "neural_call_count": 3, "model": "candidate", "instrument": "world_bank"}
+{"event": "return", "function": "select_ladder", "wall_seconds": 2.9898155000009865, "model": "candidate", "instrument": "world_bank"}
+{"event": "enter", "function": "tune_and_train", "neural_call_count": 3, "model": "candidate", "instrument": "world_bank"}
+{"event": "enter", "function": "_train_on", "neural_call_count": 4, "model": "candidate", "instrument": "world_bank"}
+{"event": "return", "function": "_train_on", "wall_seconds": 23.001973300000827, "epochs_executed": 223, "best_epoch": 193, "fit_rows": 3280, "validation_rows": 832, "config": [64, 2, 0.0], "device": "cpu", "returned": true, "model": "candidate", "instrument": "world_bank"}
+{"event": "enter", "function": "_train_on", "neural_call_count": 5, "model": "candidate", "instrument": "world_bank"}
+{"event": "return", "function": "_train_on", "wall_seconds": 30.8241803000019, "epochs_executed": 223, "best_epoch": 193, "fit_rows": 3280, "validation_rows": 832, "config": [128, 2, 0.1], "device": "cpu", "returned": true, "model": "candidate", "instrument": "world_bank"}
+{"event": "enter", "function": "_train_on", "neural_call_count": 6, "model": "candidate", "instrument": "world_bank"}
+{"event": "return", "function": "_train_on", "wall_seconds": 33.57345669999995, "epochs_executed": 193, "best_epoch": 0, "fit_rows": 5195, "validation_rows": 0, "config": [128, 2, 0.1], "device": "cpu", "returned": true, "model": "candidate", "instrument": "world_bank"}
+{"event": "return", "function": "tune_and_train", "wall_seconds": 89.64882520000174, "blend_weight": 1.0, "model": "candidate", "instrument": "world_bank"}
+{"event": "full_stack_enter", "function": "predict", "full_stack_call_count": 3, "model": "candidate", "instrument": "unhcr"}
+{"event": "enter", "function": "select_ladder", "neural_call_count": 6, "model": "candidate", "instrument": "unhcr"}
+{"event": "return", "function": "select_ladder", "wall_seconds": 13.313688500002172, "model": "candidate", "instrument": "unhcr"}
+{"event": "enter", "function": "tune_and_train", "neural_call_count": 6, "model": "candidate", "instrument": "unhcr"}
+{"event": "enter", "function": "_train_on", "neural_call_count": 7, "model": "candidate", "instrument": "unhcr"}
+{"event": "return", "function": "_train_on", "wall_seconds": 39.83798569999999, "epochs_executed": 126, "best_epoch": 96, "fit_rows": 5264, "validation_rows": 1303, "config": [64, 2, 0.0], "device": "cpu", "returned": true, "model": "candidate", "instrument": "unhcr"}
+{"event": "enter", "function": "_train_on", "neural_call_count": 8, "model": "candidate", "instrument": "unhcr"}
+{"event": "return", "function": "_train_on", "wall_seconds": 53.997133799999574, "epochs_executed": 138, "best_epoch": 108, "fit_rows": 5264, "validation_rows": 1303, "config": [128, 2, 0.1], "device": "cpu", "returned": true, "model": "candidate", "instrument": "unhcr"}
+{"event": "enter", "function": "_train_on", "neural_call_count": 9, "model": "candidate", "instrument": "unhcr"}
+{"event": "return", "function": "_train_on", "wall_seconds": 34.592874400001165, "epochs_executed": 96, "best_epoch": 0, "fit_rows": 8279, "validation_rows": 0, "config": [64, 2, 0.0], "device": "cpu", "returned": true, "model": "candidate", "instrument": "unhcr"}
+{"event": "return", "function": "tune_and_train", "wall_seconds": 135.870913499999, "blend_weight": 0.9, "model": "candidate", "instrument": "unhcr"}
+{"event": "enter", "function": "supervised_layer", "neural_call_count": 9, "model": "candidate", "instrument": "unhcr"}
+{"event": "enter", "function": "minimize", "neural_call_count": 9, "model": "candidate", "instrument": "unhcr"}
+{"event": "return", "function": "minimize", "wall_seconds": 0.02166130000114208, "iterations": 16, "success": true, "model": "candidate", "instrument": "unhcr"}
+{"event": "enter", "function": "minimize", "neural_call_count": 9, "model": "candidate", "instrument": "unhcr"}
+{"event": "return", "function": "minimize", "wall_seconds": 0.07318220000161091, "iterations": 14, "success": true, "model": "candidate", "instrument": "unhcr"}
+{"event": "enter", "function": "minimize", "neural_call_count": 9, "model": "candidate", "instrument": "unhcr"}
+{"event": "return", "function": "minimize", "wall_seconds": 0.052453399999649264, "iterations": 25, "success": true, "model": "candidate", "instrument": "unhcr"}
+{"event": "enter", "function": "minimize", "neural_call_count": 9, "model": "candidate", "instrument": "unhcr"}
+{"event": "return", "function": "minimize", "wall_seconds": 0.049075599999923725, "iterations": 17, "success": true, "model": "candidate", "instrument": "unhcr"}
+{"event": "enter", "function": "minimize", "neural_call_count": 9, "model": "candidate", "instrument": "unhcr"}
+{"event": "return", "function": "minimize", "wall_seconds": 0.025519700000586454, "iterations": 15, "success": true, "model": "candidate", "instrument": "unhcr"}
+{"event": "enter", "function": "minimize", "neural_call_count": 9, "model": "candidate", "instrument": "unhcr"}
+{"event": "return", "function": "minimize", "wall_seconds": 0.01805419999800506, "iterations": 13, "success": true, "model": "candidate", "instrument": "unhcr"}
+{"event": "enter", "function": "minimize", "neural_call_count": 9, "model": "candidate", "instrument": "unhcr"}
+{"event": "return", "function": "minimize", "wall_seconds": 0.027599600001849467, "iterations": 14, "success": true, "model": "candidate", "instrument": "unhcr"}
+{"event": "enter", "function": "minimize", "neural_call_count": 9, "model": "candidate", "instrument": "unhcr"}
+{"event": "return", "function": "minimize", "wall_seconds": 0.04561149999790359, "iterations": 11, "success": true, "model": "candidate", "instrument": "unhcr"}
+{"event": "return", "function": "supervised_layer", "wall_seconds": 17.920359100000496, "active_sections": [0, 1, 3, 4, 5, 6, 7], "nonzero_lambda_items": 91, "model": "candidate", "instrument": "unhcr"}
+{"event": "full_stack_enter", "function": "predict", "full_stack_call_count": 4, "model": "E041", "instrument": "unicef"}
+{"event": "enter", "function": "select_ladder", "neural_call_count": 9, "model": "E041", "instrument": "unicef"}
+{"event": "return", "function": "select_ladder", "wall_seconds": 0.8636854999967909, "model": "E041", "instrument": "unicef"}
+{"event": "enter", "function": "tune_and_train", "neural_call_count": 9, "model": "E041", "instrument": "unicef"}
+{"event": "enter", "function": "_train_on", "neural_call_count": 10, "model": "E041", "instrument": "unicef"}
+{"event": "return", "function": "_train_on", "wall_seconds": 5.423686499998439, "epochs_executed": 145, "best_epoch": 115, "fit_rows": 9537, "validation_rows": 2361, "config": [64, 2, 0.0], "device": "cpu", "returned": true, "model": "E041", "instrument": "unicef"}
+{"event": "enter", "function": "_train_on", "neural_call_count": 11, "model": "E041", "instrument": "unicef"}
+{"event": "return", "function": "_train_on", "wall_seconds": 9.740555699998367, "epochs_executed": 120, "best_epoch": 90, "fit_rows": 9537, "validation_rows": 2361, "config": [128, 2, 0.1], "device": "cpu", "returned": true, "model": "E041", "instrument": "unicef"}
+{"event": "enter", "function": "_train_on", "neural_call_count": 12, "model": "E041", "instrument": "unicef"}
+{"event": "return", "function": "_train_on", "wall_seconds": 5.304306400001224, "epochs_executed": 115, "best_epoch": 0, "fit_rows": 14885, "validation_rows": 0, "config": [64, 2, 0.0], "device": "cpu", "returned": true, "model": "E041", "instrument": "unicef"}
+{"event": "return", "function": "tune_and_train", "wall_seconds": 21.161195299999235, "blend_weight": 1.0, "model": "E041", "instrument": "unicef"}
+{"event": "full_stack_enter", "function": "predict", "full_stack_call_count": 5, "model": "E041", "instrument": "world_bank"}
+{"event": "enter", "function": "select_ladder", "neural_call_count": 12, "model": "E041", "instrument": "world_bank"}
+{"event": "return", "function": "select_ladder", "wall_seconds": 2.9233129999993253, "model": "E041", "instrument": "world_bank"}
+{"event": "enter", "function": "tune_and_train", "neural_call_count": 12, "model": "E041", "instrument": "world_bank"}
+{"event": "enter", "function": "_train_on", "neural_call_count": 13, "model": "E041", "instrument": "world_bank"}
+{"event": "return", "function": "_train_on", "wall_seconds": 23.3436088999988, "epochs_executed": 223, "best_epoch": 193, "fit_rows": 3280, "validation_rows": 832, "config": [64, 2, 0.0], "device": "cpu", "returned": true, "model": "E041", "instrument": "world_bank"}
+{"event": "enter", "function": "_train_on", "neural_call_count": 14, "model": "E041", "instrument": "world_bank"}
+{"event": "return", "function": "_train_on", "wall_seconds": 30.846519399998215, "epochs_executed": 223, "best_epoch": 193, "fit_rows": 3280, "validation_rows": 832, "config": [128, 2, 0.1], "device": "cpu", "returned": true, "model": "E041", "instrument": "world_bank"}
+{"event": "enter", "function": "_train_on", "neural_call_count": 15, "model": "E041", "instrument": "world_bank"}
+{"event": "return", "function": "_train_on", "wall_seconds": 33.617973399999755, "epochs_executed": 193, "best_epoch": 0, "fit_rows": 5195, "validation_rows": 0, "config": [128, 2, 0.1], "device": "cpu", "returned": true, "model": "E041", "instrument": "world_bank"}
+{"event": "return", "function": "tune_and_train", "wall_seconds": 90.05876889999854, "blend_weight": 1.0, "model": "E041", "instrument": "world_bank"}
+{"event": "full_stack_enter", "function": "predict", "full_stack_call_count": 6, "model": "E041", "instrument": "unhcr"}
+{"event": "enter", "function": "select_ladder", "neural_call_count": 15, "model": "E041", "instrument": "unhcr"}
+{"event": "return", "function": "select_ladder", "wall_seconds": 14.09667360000094, "model": "E041", "instrument": "unhcr"}
+{"event": "enter", "function": "tune_and_train", "neural_call_count": 15, "model": "E041", "instrument": "unhcr"}
+{"event": "enter", "function": "_train_on", "neural_call_count": 16, "model": "E041", "instrument": "unhcr"}
+{"event": "return", "function": "_train_on", "wall_seconds": 44.93705039999986, "epochs_executed": 124, "best_epoch": 94, "fit_rows": 5264, "validation_rows": 1303, "config": [64, 2, 0.0], "device": "cpu", "returned": true, "model": "E041", "instrument": "unhcr"}
+{"event": "enter", "function": "_train_on", "neural_call_count": 17, "model": "E041", "instrument": "unhcr"}
+{"event": "return", "function": "_train_on", "wall_seconds": 55.941134699998656, "epochs_executed": 140, "best_epoch": 110, "fit_rows": 5264, "validation_rows": 1303, "config": [128, 2, 0.1], "device": "cpu", "returned": true, "model": "E041", "instrument": "unhcr"}
+{"event": "enter", "function": "_train_on", "neural_call_count": 18, "model": "E041", "instrument": "unhcr"}
+{"event": "return", "function": "_train_on", "wall_seconds": 59.51738040000055, "epochs_executed": 110, "best_epoch": 0, "fit_rows": 8279, "validation_rows": 0, "config": [128, 2, 0.1], "device": "cpu", "returned": true, "model": "E041", "instrument": "unhcr"}
+{"event": "return", "function": "tune_and_train", "wall_seconds": 167.71381309999924, "blend_weight": 0.9, "model": "E041", "instrument": "unhcr"}
+{"event": "enter", "function": "supervised_layer", "neural_call_count": 18, "model": "E041", "instrument": "unhcr"}
+{"event": "enter", "function": "minimize", "neural_call_count": 18, "model": "E041", "instrument": "unhcr"}
+{"event": "return", "function": "minimize", "wall_seconds": 0.02206609999848297, "iterations": 16, "success": true, "model": "E041", "instrument": "unhcr"}
+{"event": "enter", "function": "minimize", "neural_call_count": 18, "model": "E041", "instrument": "unhcr"}
+{"event": "return", "function": "minimize", "wall_seconds": 0.0704050999993342, "iterations": 14, "success": true, "model": "E041", "instrument": "unhcr"}
+{"event": "enter", "function": "minimize", "neural_call_count": 18, "model": "E041", "instrument": "unhcr"}
+{"event": "return", "function": "minimize", "wall_seconds": 0.04768519999925047, "iterations": 25, "success": true, "model": "E041", "instrument": "unhcr"}
+{"event": "enter", "function": "minimize", "neural_call_count": 18, "model": "E041", "instrument": "unhcr"}
+{"event": "return", "function": "minimize", "wall_seconds": 0.056529900000896305, "iterations": 17, "success": true, "model": "E041", "instrument": "unhcr"}
+{"event": "enter", "function": "minimize", "neural_call_count": 18, "model": "E041", "instrument": "unhcr"}
+{"event": "return", "function": "minimize", "wall_seconds": 0.04107619999922463, "iterations": 15, "success": true, "model": "E041", "instrument": "unhcr"}
+{"event": "enter", "function": "minimize", "neural_call_count": 18, "model": "E041", "instrument": "unhcr"}
+{"event": "return", "function": "minimize", "wall_seconds": 0.020912199997837888, "iterations": 13, "success": true, "model": "E041", "instrument": "unhcr"}
+{"event": "enter", "function": "minimize", "neural_call_count": 18, "model": "E041", "instrument": "unhcr"}
+{"event": "return", "function": "minimize", "wall_seconds": 0.03341979999822797, "iterations": 14, "success": true, "model": "E041", "instrument": "unhcr"}
+{"event": "enter", "function": "minimize", "neural_call_count": 18, "model": "E041", "instrument": "unhcr"}
+{"event": "return", "function": "minimize", "wall_seconds": 0.04536100000041188, "iterations": 11, "success": true, "model": "E041", "instrument": "unhcr"}
+{"event": "return", "function": "supervised_layer", "wall_seconds": 17.46856569999727, "active_sections": [0, 1, 3, 4, 5, 6, 7], "nonzero_lambda_items": 82, "model": "E041", "instrument": "unhcr"}
+{"event": "full_stack_enter", "function": "predict", "full_stack_call_count": 7, "model": "E025", "instrument": "unicef"}
+{"event": "enter", "function": "select_ladder", "neural_call_count": 18, "model": "E025", "instrument": "unicef"}
+{"event": "return", "function": "select_ladder", "wall_seconds": 0.9470074999990175, "model": "E025", "instrument": "unicef"}
+{"event": "enter", "function": "tune_and_train", "neural_call_count": 18, "model": "E025", "instrument": "unicef"}
+{"event": "enter", "function": "_train_on", "neural_call_count": 19, "model": "E025", "instrument": "unicef"}
+{"event": "return", "function": "_train_on", "wall_seconds": 5.212352899998223, "epochs_executed": 145, "best_epoch": 115, "fit_rows": 9537, "validation_rows": 2361, "config": [64, 2, 0.0], "device": "cpu", "returned": true, "model": "E025", "instrument": "unicef"}
+{"event": "enter", "function": "_train_on", "neural_call_count": 20, "model": "E025", "instrument": "unicef"}
+{"event": "return", "function": "_train_on", "wall_seconds": 9.252391499998339, "epochs_executed": 120, "best_epoch": 90, "fit_rows": 9537, "validation_rows": 2361, "config": [128, 2, 0.1], "device": "cpu", "returned": true, "model": "E025", "instrument": "unicef"}
+{"event": "enter", "function": "_train_on", "neural_call_count": 21, "model": "E025", "instrument": "unicef"}
+{"event": "return", "function": "_train_on", "wall_seconds": 5.072271199998795, "epochs_executed": 115, "best_epoch": 0, "fit_rows": 14885, "validation_rows": 0, "config": [64, 2, 0.0], "device": "cpu", "returned": true, "model": "E025", "instrument": "unicef"}
+{"event": "return", "function": "tune_and_train", "wall_seconds": 20.218044700002793, "blend_weight": 1.0, "model": "E025", "instrument": "unicef"}
+{"event": "full_stack_enter", "function": "predict", "full_stack_call_count": 8, "model": "E025", "instrument": "world_bank"}
+{"event": "enter", "function": "select_ladder", "neural_call_count": 21, "model": "E025", "instrument": "world_bank"}
+{"event": "return", "function": "select_ladder", "wall_seconds": 2.924513499998284, "model": "E025", "instrument": "world_bank"}
+{"event": "enter", "function": "tune_and_train", "neural_call_count": 21, "model": "E025", "instrument": "world_bank"}
+{"event": "enter", "function": "_train_on", "neural_call_count": 22, "model": "E025", "instrument": "world_bank"}
+{"event": "return", "function": "_train_on", "wall_seconds": 22.835553400000208, "epochs_executed": 223, "best_epoch": 193, "fit_rows": 3280, "validation_rows": 832, "config": [64, 2, 0.0], "device": "cpu", "returned": true, "model": "E025", "instrument": "world_bank"}
+{"event": "enter", "function": "_train_on", "neural_call_count": 23, "model": "E025", "instrument": "world_bank"}
+{"event": "return", "function": "_train_on", "wall_seconds": 30.33561499999996, "epochs_executed": 223, "best_epoch": 193, "fit_rows": 3280, "validation_rows": 832, "config": [128, 2, 0.1], "device": "cpu", "returned": true, "model": "E025", "instrument": "world_bank"}
+{"event": "enter", "function": "_train_on", "neural_call_count": 24, "model": "E025", "instrument": "world_bank"}
+{"event": "return", "function": "_train_on", "wall_seconds": 33.068490600002406, "epochs_executed": 193, "best_epoch": 0, "fit_rows": 5195, "validation_rows": 0, "config": [128, 2, 0.1], "device": "cpu", "returned": true, "model": "E025", "instrument": "world_bank"}
+{"event": "return", "function": "tune_and_train", "wall_seconds": 88.48269750000327, "blend_weight": 1.0, "model": "E025", "instrument": "world_bank"}
+{"event": "full_stack_enter", "function": "predict", "full_stack_call_count": 9, "model": "E025", "instrument": "unhcr"}
+{"event": "enter", "function": "select_ladder", "neural_call_count": 24, "model": "E025", "instrument": "unhcr"}
+{"event": "return", "function": "select_ladder", "wall_seconds": 14.467700199998944, "model": "E025", "instrument": "unhcr"}
+{"event": "enter", "function": "tune_and_train", "neural_call_count": 24, "model": "E025", "instrument": "unhcr"}
+{"event": "enter", "function": "_train_on", "neural_call_count": 25, "model": "E025", "instrument": "unhcr"}
+{"event": "return", "function": "_train_on", "wall_seconds": 46.33380380000017, "epochs_executed": 124, "best_epoch": 94, "fit_rows": 5264, "validation_rows": 1303, "config": [64, 2, 0.0], "device": "cpu", "returned": true, "model": "E025", "instrument": "unhcr"}
+{"event": "enter", "function": "_train_on", "neural_call_count": 26, "model": "E025", "instrument": "unhcr"}
+{"event": "return", "function": "_train_on", "wall_seconds": 67.96809500000018, "epochs_executed": 140, "best_epoch": 110, "fit_rows": 5264, "validation_rows": 1303, "config": [128, 2, 0.1], "device": "cpu", "returned": true, "model": "E025", "instrument": "unhcr"}
+{"event": "enter", "function": "_train_on", "neural_call_count": 27, "model": "E025", "instrument": "unhcr"}
+{"event": "return", "function": "_train_on", "wall_seconds": 66.54940669999996, "epochs_executed": 110, "best_epoch": 0, "fit_rows": 8279, "validation_rows": 0, "config": [128, 2, 0.1], "device": "cpu", "returned": true, "model": "E025", "instrument": "unhcr"}
+{"event": "return", "function": "tune_and_train", "wall_seconds": 188.82007079999676, "blend_weight": 0.9, "model": "E025", "instrument": "unhcr"}

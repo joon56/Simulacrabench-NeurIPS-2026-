@@ -1,0 +1,62 @@
+[
+    {
+        "equal":  true,
+        "path":  "contract.py",
+        "sha256":  "8627e5b454e68f130078483f9c24e7ee2514046af8bdc1512021582d519bff05"
+    },
+    {
+        "equal":  true,
+        "path":  "protocol.py",
+        "sha256":  "4616f24b44d8b482cf90a560a13e59324f20e497af4090d6e588fe437801ff77"
+    },
+    {
+        "equal":  true,
+        "path":  "controller_core.py",
+        "sha256":  "fc561eee08f1eafbbeac2cbcc5fa31890ef719bf603c5c7dd1af7aea5e556bcb"
+    },
+    {
+        "equal":  true,
+        "path":  "live_binding.py",
+        "sha256":  "ca1351a05eea38577632a918b286d5ee7e5c82d423928fd8c2ce1af67de206c8"
+    },
+    {
+        "equal":  true,
+        "path":  "sdk_endpoint.py",
+        "sha256":  "94606de56ba23e65e3dcacc57009cb0e60b5506648a2b276cb3165696af4251f"
+    },
+    {
+        "equal":  true,
+        "path":  "payload.py",
+        "sha256":  "17273bebff6debd9888983ffcb2a7b3e3dbff572dccd203c05f9c8b5c9f60424"
+    },
+    {
+        "equal":  true,
+        "path":  "sandbox_stage.py",
+        "sha256":  "8e0cfd474416aa586af9f7ec936c20c7d4fbf0c1888d2d770cc10c4d038027d0"
+    },
+    {
+        "equal":  true,
+        "path":  "linux_boundary.py",
+        "sha256":  "4c2aad23c52813693249a6d104c50f208ed33928086b466e46e853ad074712ff"
+    },
+    {
+        "equal":  true,
+        "path":  "linux_watchdog.py",
+        "sha256":  "9b08538d3b5990389e103ef2d391d58fec6ec63795bf0dc5ebcec08bc1991d34"
+    },
+    {
+        "equal":  true,
+        "path":  "linux_runner.py",
+        "sha256":  "82facf9151daa8eadc55c438be99f4c0cf5e331978c18b3a59530ef2af5b680e"
+    },
+    {
+        "equal":  true,
+        "path":  "live_worker.py",
+        "sha256":  "5f9b934e435bc62259944f47f97a81f29cf9559b183d7a0b9e87736156b18902"
+    },
+    {
+        "equal":  true,
+        "path":  "live_launcher.py",
+        "sha256":  "49345a91d5627fd66a99aea31131d787cc0c4214399decca3837a78bced5e4e0"
+    }
+]

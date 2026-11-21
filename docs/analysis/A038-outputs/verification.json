@@ -1,0 +1,101 @@
+﻿{
+    "date":  "2026-09-30T23:02:55.1369759+09:00",
+    "scope":  "Document-only consistency/preservation check, not scientific tests or empirical qualification",
+    "head":  "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+    "head_unchanged":  true,
+    "baseline_documents":  [
+                               {
+                                   "path":  "AGENTS.md",
+                                   "before":  "86394bbf164a2b7df6a309f4564b9dacf3b2799fa0227a703e4ea11d4d842596",
+                                   "after":  "86394bbf164a2b7df6a309f4564b9dacf3b2799fa0227a703e4ea11d4d842596",
+                                   "unchanged":  true,
+                                   "allowed_change":  false
+                               },
+                               {
+                                   "path":  "CLAUDE.md",
+                                   "before":  "69175e6d741a17042db4852d4961a5c52bd97fe2cd5bfbff762d30d7e5270364",
+                                   "after":  "69175e6d741a17042db4852d4961a5c52bd97fe2cd5bfbff762d30d7e5270364",
+                                   "unchanged":  true,
+                                   "allowed_change":  false
+                               },
+                               {
+                                   "path":  "docs/status.md",
+                                   "before":  "904681f3a918e63f1ab3038cdd28276cafa6e49b52e11dfaa9d9ae80c2287378",
+                                   "after":  "ca4506dc6b24680f14cc2308b45df811aac7c75b50facf0a8e44a7444bc08730",
+                                   "unchanged":  false,
+                                   "allowed_change":  true
+                               },
+                               {
+                                   "path":  "docs/log.md",
+                                   "before":  "c70b4d483d3d4e0efede83e9190b043886770bdc586cfb17d22f707edc345156",
+                                   "after":  "44938d560ba6075bf4749aa00e6e2653c8479e43210a7d375fcf13f1fc0dae94",
+                                   "unchanged":  false,
+                                   "allowed_change":  true
+                               },
+                               {
+                                   "path":  "docs/workflow.md",
+                                   "before":  "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642",
+                                   "after":  "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642",
+                                   "unchanged":  true,
+                                   "allowed_change":  false
+                               },
+                               {
+                                   "path":  "docs/tree.md",
+                                   "before":  "eaa884a4194db103335136495205fe5b51297c17db15e9eac62946ced286cc44",
+                                   "after":  "eaa884a4194db103335136495205fe5b51297c17db15e9eac62946ced286cc44",
+                                   "unchanged":  true,
+                                   "allowed_change":  false
+                               },
+                               {
+                                   "path":  ".gitignore",
+                                   "before":  "ddbfc49388e75ad97664da410f2422c42128c16be0a098fadfc3e3fc5a3508a9",
+                                   "after":  "f67ba089f7490b4ba0845848f0b13b55633b5efd058a0be7d64203a1e480c6fd",
+                                   "unchanged":  false,
+                                   "allowed_change":  true
+                               },
+                               {
+                                   "path":  "docs/analysis/A037-winning-priority-review.md",
+                                   "before":  "87e77d8279f68e52751653f3b6098ec1976e4b53a75faf7206043ec6cf4bf66d",
+                                   "after":  "87e77d8279f68e52751653f3b6098ec1976e4b53a75faf7206043ec6cf4bf66d",
+                                   "unchanged":  true,
+                                   "allowed_change":  false
+                               },
+                               {
+                                   "path":  "docs/analysis/A032-outputs/readiness-contract.ko.md",
+                                   "before":  "139d577ab9afa82aa8d64ab8814847af0b953fffdfed6f141de520040a5a512d",
+                                   "after":  "139d577ab9afa82aa8d64ab8814847af0b953fffdfed6f141de520040a5a512d",
+                                   "unchanged":  true,
+                                   "allowed_change":  false
+                               }
+                           ],
+    "unexpected_changes":  0,
+    "gitignore_original_bytes_prefix":  true,
+    "gitignore_added_rule":  "/UNCHR_data/",
+    "git_check_ignore_evidence":  "69a622: XML and data CSV paths ignored; git ls-files UNCHR_data returned no tracked paths",
+    "inventory_count":  24,
+    "identical_document_pairs":  4,
+    "response_or_key_value_access":  0,
+    "response_or_callback_hashes":  0,
+    "fit_predict_score_tests":  0,
+    "web_agents_zip_commit_push":  0,
+    "user_prior_response_exposure":  "Unknown; question pending",
+    "source_read_evidence":  "2ccac1,69a622 metadata comparison; no response file opened",
+    "artifacts":  [
+                      {
+                          "path":  "docs/analysis/A038-vaf-local-document-intake.md",
+                          "sha256":  "6aaac47c03e420fffed87fe8f5a942c29e82714c88e968702ec3eb1402eaad0e"
+                      },
+                      {
+                          "path":  "docs/analysis/A038-outputs/entry.json",
+                          "sha256":  "88d66110cc9ecb887b6eb984b4f1d53a1b50e38e043889b6a7433dbdc8103686"
+                      },
+                      {
+                          "path":  "docs/analysis/A038-outputs/inventory.json",
+                          "sha256":  "b5ee9712dbfe36178cdae88cc5904cd784e6c5e3a7c73f4a8eda581b8a19d029"
+                      },
+                      {
+                          "path":  "docs/analysis/A038-outputs/document-comparison.json",
+                          "sha256":  "44f44bb5f82e85db91e08a22303ca7522e0dba0852b5cb85d346494063bc244f"
+                      }
+                  ]
+}

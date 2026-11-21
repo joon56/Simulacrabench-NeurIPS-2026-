@@ -1,0 +1,14 @@
+diff --git "a/C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\local-exit-diagnosis1/sdk_endpoint.c5-before.txt" "b/C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\local-exit-diagnosis1/sdk_endpoint.py"
+index b516e12..4061ed9 100644
+--- "a/C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\local-exit-diagnosis1/sdk_endpoint.c5-before.txt"
++++ "b/C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\local-exit-diagnosis1/sdk_endpoint.py"
+@@ -57,8 +57,7 @@ class Endpoint:
+         return self.app.app_id
+ 
+     async def _build(self, image, app):
+-        with SDK.enable_output():
+-            return await image.build(app)
++        return await image.build(app)
+ 
+     async def build(self, base_id, pins, deadline):
+         self.image = image_from_id(base_id, self.client).run_function(install_pins,

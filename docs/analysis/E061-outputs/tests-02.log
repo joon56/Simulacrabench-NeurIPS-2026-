@@ -1,0 +1,14 @@
+test_asked_mask_and_pooled_denominator_unchanged (tests.test_tied_content_heads.TiedHeadsTests.test_asked_mask_and_pooled_denominator_unchanged) ... ok
+test_conditional_probability_identity_and_no_extra_parameters (tests.test_tied_content_heads.TiedHeadsTests.test_conditional_probability_identity_and_no_extra_parameters) ... ok
+test_control_dispatch_is_original_e041_and_unhcr_uses_fixed_hook (tests.test_tied_content_heads.TiedHeadsTests.test_control_dispatch_is_original_e041_and_unhcr_uses_fixed_hook) ... ok
+test_extreme_sentinel_logit_is_stable (tests.test_tied_content_heads.TiedHeadsTests.test_extreme_sentinel_logit_is_stable) ... ok
+test_full_and_conditional_losses_share_parameter_gradients (tests.test_tied_content_heads.TiedHeadsTests.test_full_and_conditional_losses_share_parameter_gradients) ... ok
+test_heldout_predict_block_never_reaches_training_targets (tests.test_tied_content_heads.TiedHeadsTests.test_heldout_predict_block_never_reaches_training_targets) ... ok
+test_invalid_schema_mapping_fails (tests.test_tied_content_heads.TiedHeadsTests.test_invalid_schema_mapping_fails) ... ok
+test_runtime_audit_rejects_heldout_training_target_access (tests.test_tied_content_heads.TiedHeadsTests.test_runtime_audit_rejects_heldout_training_target_access) ... ok
+test_schema_mapping_does_not_assume_sentinel_position (tests.test_tied_content_heads.TiedHeadsTests.test_schema_mapping_does_not_assume_sentinel_position) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 1.314s
+
+OK

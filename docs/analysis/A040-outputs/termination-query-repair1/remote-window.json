@@ -1,0 +1,9 @@
+{
+  "started_utc": "2026-10-05T12:14:20.240515+00:00",
+  "deadline_utc": "2026-10-05T12:16:20.240515+00:00",
+  "discovery_cutoff_utc": "2026-10-05T12:15:50.240515+00:00",
+  "call_cap_seconds": 15,
+  "final_reserve_seconds": 30,
+  "terminate_max": 1,
+  "new_resources": 0
+}

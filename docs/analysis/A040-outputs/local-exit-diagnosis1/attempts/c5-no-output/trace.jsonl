@@ -1,0 +1,20 @@
+{"event": "child_entry", "utc": "2026-10-06T14:15:03.372931+00:00", "elapsed_seconds": 0.00027840000029755174, "pid": 2696, "case": "minimal_build"}
+{"event": "rpc_response_boundary", "utc": "2026-10-06T14:15:03.376218+00:00", "elapsed_seconds": 0.003565600000001723, "method": "WorkspaceNameLookup"}
+{"event": "rpc_response_boundary", "utc": "2026-10-06T14:15:03.377102+00:00", "elapsed_seconds": 0.004449700000350276, "method": "AppGetOrCreate"}
+{"event": "rpc_response_boundary", "utc": "2026-10-06T14:15:03.380653+00:00", "elapsed_seconds": 0.008000000000265572, "method": "ImageFromId"}
+{"event": "rpc_response_boundary", "utc": "2026-10-06T14:15:03.382482+00:00", "elapsed_seconds": 0.009828800000377669, "method": "MountGetOrCreate"}
+{"event": "sdk_client_mount_reference", "utc": "2026-10-06T14:15:03.383323+00:00", "elapsed_seconds": 0.010668100000202685, "name": "modal-client-mount-1.6.0"}
+{"event": "rpc_response_boundary", "utc": "2026-10-06T14:15:03.386675+00:00", "elapsed_seconds": 0.014020000000073196, "method": "MountBatchedCheckExistence"}
+{"event": "rpc_response_boundary", "utc": "2026-10-06T14:15:03.387625+00:00", "elapsed_seconds": 0.014969900000323833, "method": "MountPutFile"}
+{"event": "exact_builder_source_bytes", "utc": "2026-10-06T14:15:03.387989+00:00", "elapsed_seconds": 0.015334300000176881, "sha256": "fc561eee08f1eafbbeac2cbcc5fa31890ef719bf603c5c7dd1af7aea5e556bcb", "bytes": 1760}
+{"event": "rpc_response_boundary", "utc": "2026-10-06T14:15:03.388634+00:00", "elapsed_seconds": 0.01597859999992579, "method": "MountGetOrCreate"}
+{"event": "project_mount", "utc": "2026-10-06T14:15:03.388990+00:00", "elapsed_seconds": 0.016334500000084518, "files": [{"filename": "/root/controller_core.py", "sha256": "fc561eee08f1eafbbeac2cbcc5fa31890ef719bf603c5c7dd1af7aea5e556bcb"}]}
+{"event": "rpc_response_boundary", "utc": "2026-10-06T14:15:03.389656+00:00", "elapsed_seconds": 0.01700040000014269, "method": "FunctionCreate"}
+{"event": "builder_function", "utc": "2026-10-06T14:15:03.390013+00:00", "elapsed_seconds": 0.01735720000033325, "module": "controller_core", "function": "install_pins", "mount_ids": ["mo-hhhhhhhhhhhhhhhhhhhhhh", "mo-gggggggggggggggggggggg"], "image_id": "im-fixturebase", "timeout": 600}
+{"event": "rpc_response_boundary", "utc": "2026-10-06T14:15:03.391263+00:00", "elapsed_seconds": 0.018608100000164995, "method": "EnvironmentGetOrCreate"}
+{"event": "rpc_response_boundary", "utc": "2026-10-06T14:15:03.393990+00:00", "elapsed_seconds": 0.02133589999994001, "method": "ImageGetOrCreate"}
+{"event": "image_build_requested", "utc": "2026-10-06T14:15:03.394439+00:00", "elapsed_seconds": 0.021785400000226218, "image_id": "im-dddddddddddddddddddddd", "base_images": ["im-fixturebase"]}
+{"event": "builder_result", "utc": "2026-10-06T14:15:03.395354+00:00", "elapsed_seconds": 0.022698900000250433, "image_id": "im-dddddddddddddddddddddd", "status": "FAILURE"}
+{"event": "expected_builder_failure", "utc": "2026-10-06T14:15:03.396018+00:00", "elapsed_seconds": 0.023363400000107504}
+{"event": "rpc_response_boundary", "utc": "2026-10-06T14:15:03.396480+00:00", "elapsed_seconds": 0.023824600000352802, "method": "AppStop"}
+{"event": "reduced_return", "utc": "2026-10-06T14:15:03.396888+00:00", "elapsed_seconds": 0.02423320000025342, "case": "minimal_build"}

@@ -1,0 +1,13 @@
+{
+    "outcome":  "STATIC_CONFIG_PASS",
+    "elapsed_seconds":  0.1361746000002313,
+    "source_modules":  12,
+    "allowlist_files":  112,
+    "allowlist_bytes":  145542095,
+    "sdk":  "1.6.0",
+    "payload_content_reads":  0,
+    "rpc":  0,
+    "model_imports":  0,
+    "source_edits":  0,
+    "outer_seconds":  0.4316955
+}

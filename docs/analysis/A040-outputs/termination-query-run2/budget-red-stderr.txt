@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\SimulacraBench\docs\analysis\A040-outputs\termination-query-run2/test_budget.py", line 10, in <module>
+    assert (here / 'runtime.py').exists(), 'Cumulative runtime boundary not implemented yet'
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+AssertionError: Cumulative runtime boundary not implemented yet

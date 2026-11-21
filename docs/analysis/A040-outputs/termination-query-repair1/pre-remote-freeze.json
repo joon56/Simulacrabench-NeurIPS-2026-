@@ -1,0 +1,43 @@
+{
+    "frozen_utc":  "2026-10-05T12:13:42.6320374+00:00",
+    "allowed":  [
+                    "Client.from_env normal auth",
+                    "WorkspaceNameLookup",
+                    "AppGetInfo",
+                    "AuthTokenManager.get_token normal auth",
+                    "SandboxListV2 app-scoped finished-inclusive",
+                    "SandboxWait/V2 exact-ID",
+                    "SandboxTerminate/V2 max1 only independently running",
+                    "TaskList exact-App",
+                    "WorkspaceBillingSummary after terminal"
+                ],
+    "per_call_seconds":  15,
+    "remote_window_seconds":  120,
+    "files":  [
+                  {
+                      "sha256":  "56da54defd86b966040b3dbc4644586982c710d9513ab2b685ca3eb553abc044",
+                      "path":  "confirm_terminal.py"
+                  },
+                  {
+                      "sha256":  "69fb596bf74cfb0b27808fcc52502cc2ced7d09ca0e69bdd8dfcf102c903be04",
+                      "path":  "tests_query.py"
+                  },
+                  {
+                      "sha256":  "3e4a8301322595b8a7ad7704880cd9c65b912f6b62cf7f9df92b3c342e89679b",
+                      "path":  "reproduce_wrapper.py"
+                  },
+                  {
+                      "sha256":  "0c7689cc89e0667f3f60a4a67eadb0d3038c72b2b344628b80cde3bd7151b875",
+                      "path":  "local_guard.py"
+                  }
+              ],
+    "local_check_outer_sum_seconds":  2.30174339999999991,
+    "authority":  "Current user r5 resumption + status repair-autonomy amendment and cleanup-only scope",
+    "actual_local_rpc":  0,
+    "cycle2":  "Only affected billing-failure case repeated and passed, plus independent auth/network guard negatives",
+    "actual_local_auth":  0,
+    "new_resource":  0,
+    "cycle1":  "19 prior cases completed assertions before last billing fixture defect; no structured per-case stdout from failed cycle",
+    "gate":  "LOCAL_QUERY_CONTRACT_PASS",
+    "reserve_seconds":  30
+}

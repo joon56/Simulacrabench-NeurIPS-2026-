@@ -1,0 +1,19 @@
+{"event": "enter", "kind": "full_stack", "function": "_e064_predict", "totals": {"full_stack": 1, "neural": 0, "metric": 0}, "instrument": "unicef", "pid": 39676}
+{"event": "target_role", "roles": ["inner_train"], "rows": 9537, "index_sha256": "83c529361b7b12b55a09f7b7ad26d3ffec401648afd6158c2ebf11ffce28e5f1", "instrument": "unicef", "pid": 39676}
+{"event": "target_role", "roles": ["inner_stop"], "rows": 2361, "index_sha256": "c38be0ce344444efdfcd182eb0c4589de75e9f4da8558a718244f431a86d638c", "instrument": "unicef", "pid": 39676}
+{"event": "target_role", "roles": ["outer_selection"], "rows": 2987, "index_sha256": "799369e8597cf78d61015a8fa33d3cf370a0206f6dd3ef2d16da0d6db6d86f69", "instrument": "unicef", "pid": 39676}
+{"event": "enter", "kind": "neural", "function": "_train_on", "totals": {"full_stack": 1, "neural": 1, "metric": 0}, "instrument": "unicef", "pid": 39676}
+{"event": "return", "kind": "neural", "function": "_train_on", "returned": true, "seconds": 13.454426100001001, "epochs": 145, "best_epoch": 115, "network_class": "_Net", "device": "cpu", "instrument": "unicef", "pid": 39676}
+{"event": "enter", "kind": "neural", "function": "_train_on", "totals": {"full_stack": 1, "neural": 2, "metric": 0}, "instrument": "unicef", "pid": 39676}
+{"event": "return", "kind": "neural", "function": "_train_on", "returned": true, "seconds": 10.635984300000928, "epochs": 120, "best_epoch": 90, "network_class": "_Net", "device": "cpu", "instrument": "unicef", "pid": 39676}
+{"event": "target_role", "roles": ["final_refit"], "rows": 14885, "index_sha256": "2113aa242c52f91e8c1a8356257724be6479069e9f55806bc8ec7c847649c307", "instrument": "unicef", "pid": 39676}
+{"event": "enter", "kind": "neural", "function": "_train_on", "totals": {"full_stack": 1, "neural": 3, "metric": 0}, "instrument": "unicef", "pid": 39676}
+{"event": "return", "kind": "neural", "function": "_train_on", "returned": true, "seconds": 5.9476823000004515, "epochs": 115, "best_epoch": 0, "network_class": "_Net", "device": "cpu", "instrument": "unicef", "pid": 39676}
+{"event": "invariant", "key": "_topk_excl:01c54dca4729d943baf9dfa1f1bebdd56578adb90d3d59759e0f7b27182d7566", "phase": "visible", "sha256": "225a3c8bfaba79c3c0caacb0a95832eb7b4a99d88673ba06025cfacd9851d23e", "instrument": "unicef", "pid": 39676}
+{"event": "invariant", "key": "initial_weights", "phase": "always", "sha256": "48b42ab57bb073b4c15e9e3d78c734aeb7977b865b5333d1ad15a7c8eb0ea475", "instrument": "unicef", "pid": 39676}
+{"event": "invariant", "key": "_topk_excl:01c54dca4729d943baf9dfa1f1bebdd56578adb90d3d59759e0f7b27182d7566", "phase": "visible", "sha256": "225a3c8bfaba79c3c0caacb0a95832eb7b4a99d88673ba06025cfacd9851d23e", "instrument": "unicef", "pid": 39676}
+{"event": "invariant", "key": "_evidence:01c54dca4729d943baf9dfa1f1bebdd56578adb90d3d59759e0f7b27182d7566", "phase": "visible", "sha256": "83610ea1d734d30bbe048aa04478c2ca6c66e3e7e6b2756637fe9ff96beeda02", "instrument": "unicef", "pid": 39676}
+{"event": "invariant", "key": "concentration:225a3c8bfaba79c3c0caacb0a95832eb7b4a99d88673ba06025cfacd9851d23e", "phase": "visible", "sha256": "398406cb1e5d64bd7ed0c81440c954efb87719fb05e61d8089f555b55ad3fc0e", "instrument": "unicef", "pid": 39676}
+{"event": "lambda", "values": {}, "instrument": "unicef", "pid": 39676}
+{"event": "invariant", "key": "ladder_and_agreement", "phase": "always", "sha256": "b5d351b316ba4c128d7bee58812fd6a8d2505c4e34e1e55ae00c396a971feb0b", "instrument": "unicef", "pid": 39676}
+{"event": "return", "kind": "full_stack", "function": "_e064_predict", "returned": true, "seconds": 52.18914969999969, "instrument": "unicef", "pid": 39676}

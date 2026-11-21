@@ -1,0 +1,2101 @@
+{
+  "scope": "AST parse and import extraction only; no module imports or execution",
+  "file_count": 168,
+  "syntax_errors": [],
+  "folder_counts": {
+    "src": 54,
+    "scripts": 55,
+    "tests": 58,
+    "notebooks": 1
+  },
+  "files": [
+    {
+      "path": "src/__init__.py",
+      "syntax": "PASS",
+      "import_roots": []
+    },
+    {
+      "path": "src/eval/__init__.py",
+      "syntax": "PASS",
+      "import_roots": []
+    },
+    {
+      "path": "src/eval/evidence_routing.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "copy",
+        "numpy",
+        "src"
+      ]
+    },
+    {
+      "path": "src/eval/logloss.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "numpy"
+      ]
+    },
+    {
+      "path": "src/eval/masking.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "numpy",
+        "pandas"
+      ]
+    },
+    {
+      "path": "src/eval/oracle.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "make_sandbox",
+        "numpy",
+        "pandas",
+        "src",
+        "sys"
+      ]
+    },
+    {
+      "path": "src/eval/recursive_candidates.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "copy",
+        "numpy",
+        "sklearn",
+        "src",
+        "threadpoolctl",
+        "types"
+      ]
+    },
+    {
+      "path": "src/eval/retrieval_oracle.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "numpy"
+      ]
+    },
+    {
+      "path": "src/eval/runner.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "importlib",
+        "make_sandbox",
+        "pathlib",
+        "score",
+        "sys",
+        "time"
+      ]
+    },
+    {
+      "path": "src/eval/split.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "numpy",
+        "pandas"
+      ]
+    },
+    {
+      "path": "src/eval/synthetic.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "numpy",
+        "pandas"
+      ]
+    },
+    {
+      "path": "src/models/__init__.py",
+      "syntax": "PASS",
+      "import_roots": []
+    },
+    {
+      "path": "src/models/adaptive_final_evidence.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "numpy",
+        "scipy",
+        "src"
+      ]
+    },
+    {
+      "path": "src/models/adaptive_tabpfn_parents.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "hashlib",
+        "importlib",
+        "numpy",
+        "os",
+        "pathlib",
+        "src",
+        "tabpfn",
+        "types"
+      ]
+    },
+    {
+      "path": "src/models/cond_agree.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "numpy",
+        "pandas",
+        "src"
+      ]
+    },
+    {
+      "path": "src/models/conditional_leaf_content.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "numpy",
+        "sklearn",
+        "src",
+        "threadpoolctl",
+        "time"
+      ]
+    },
+    {
+      "path": "src/models/content_target_retrieval.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "numpy",
+        "re",
+        "scipy",
+        "src",
+        "threadpoolctl"
+      ]
+    },
+    {
+      "path": "src/models/cross_link.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "numpy",
+        "pandas",
+        "src"
+      ]
+    },
+    {
+      "path": "src/models/dup_link.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "numpy",
+        "pandas",
+        "src"
+      ]
+    },
+    {
+      "path": "src/models/e041_gated_probe.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "numpy",
+        "src"
+      ]
+    },
+    {
+      "path": "src/models/ev_base.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "numpy",
+        "src"
+      ]
+    },
+    {
+      "path": "src/models/ev_conc.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "numpy",
+        "src"
+      ]
+    },
+    {
+      "path": "src/models/ev_net.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "numpy",
+        "pandas",
+        "src",
+        "torch"
+      ]
+    },
+    {
+      "path": "src/models/evidence_after_gates.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "copy",
+        "src"
+      ]
+    },
+    {
+      "path": "src/models/gated_marginal.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "numpy",
+        "pandas"
+      ]
+    },
+    {
+      "path": "src/models/hh_cap.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "src"
+      ]
+    },
+    {
+      "path": "src/models/hh_cap4.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "src"
+      ]
+    },
+    {
+      "path": "src/models/hh_link.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "numpy",
+        "src"
+      ]
+    },
+    {
+      "path": "src/models/hh_sharp.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "numpy",
+        "src"
+      ]
+    },
+    {
+      "path": "src/models/hh_stack.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "numpy",
+        "src"
+      ]
+    },
+    {
+      "path": "src/models/hier_backoff.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "numpy",
+        "pandas"
+      ]
+    },
+    {
+      "path": "src/models/id_sig.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "numpy",
+        "pandas",
+        "re",
+        "src"
+      ]
+    },
+    {
+      "path": "src/models/item_blend.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "numpy",
+        "pandas",
+        "sklearn",
+        "src"
+      ]
+    },
+    {
+      "path": "src/models/link_sharp.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "numpy",
+        "pandas",
+        "src",
+        "torch"
+      ]
+    },
+    {
+      "path": "src/models/logit_blend.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "numpy",
+        "pandas",
+        "sklearn",
+        "src"
+      ]
+    },
+    {
+      "path": "src/models/marginal.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "numpy"
+      ]
+    },
+    {
+      "path": "src/models/ord_sig.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "numpy",
+        "re",
+        "src"
+      ]
+    },
+    {
+      "path": "src/models/ordinal_smooth.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "numpy",
+        "pandas",
+        "src"
+      ]
+    },
+    {
+      "path": "src/models/prob_link.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "numpy",
+        "pandas",
+        "src"
+      ]
+    },
+    {
+      "path": "src/models/probes.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "numpy",
+        "score",
+        "src"
+      ]
+    },
+    {
+      "path": "src/models/pvc_gate.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "numpy",
+        "pandas",
+        "src"
+      ]
+    },
+    {
+      "path": "src/models/retrieval_weight_control.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "src",
+        "types"
+      ]
+    },
+    {
+      "path": "src/models/seed_temp.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "numpy",
+        "src",
+        "torch"
+      ]
+    },
+    {
+      "path": "src/models/shared_trunk.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "numpy",
+        "pandas",
+        "src",
+        "torch"
+      ]
+    },
+    {
+      "path": "src/models/soft_gated_marginal.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "numpy",
+        "pandas"
+      ]
+    },
+    {
+      "path": "src/models/soft_stratum.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "numpy",
+        "pandas",
+        "src"
+      ]
+    },
+    {
+      "path": "src/models/stratum_backoff.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "numpy",
+        "pandas"
+      ]
+    },
+    {
+      "path": "src/models/supervised_retrieval.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "numpy",
+        "re",
+        "scipy",
+        "src",
+        "threadpoolctl"
+      ]
+    },
+    {
+      "path": "src/models/tree_blend.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "numpy",
+        "pandas",
+        "sklearn",
+        "src",
+        "torch"
+      ]
+    },
+    {
+      "path": "src/models/trunk_select.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "src"
+      ]
+    },
+    {
+      "path": "src/models/union_retrieval.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "numpy",
+        "scipy",
+        "src",
+        "threadpoolctl",
+        "types"
+      ]
+    },
+    {
+      "path": "src/models/wave_lam.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "numpy",
+        "src"
+      ]
+    },
+    {
+      "path": "src/models/wide_ladder.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "src"
+      ]
+    },
+    {
+      "path": "src/preprocess/__init__.py",
+      "syntax": "PASS",
+      "import_roots": []
+    },
+    {
+      "path": "scripts/analyze_e054_resolution.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "hashlib",
+        "importlib",
+        "itertools",
+        "json",
+        "make_sandbox",
+        "numpy",
+        "pathlib",
+        "scipy",
+        "sys"
+      ]
+    },
+    {
+      "path": "scripts/assemble_e041.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "argparse",
+        "ast",
+        "hashlib",
+        "pathlib",
+        "zipfile"
+      ]
+    },
+    {
+      "path": "scripts/assemble_e044.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "ast",
+        "hashlib",
+        "pathlib",
+        "zipfile"
+      ]
+    },
+    {
+      "path": "scripts/assemble_e045.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "assemble_e044",
+        "ast",
+        "hashlib",
+        "zipfile"
+      ]
+    },
+    {
+      "path": "scripts/assemble_e047.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "assemble_e044",
+        "ast",
+        "hashlib",
+        "zipfile"
+      ]
+    },
+    {
+      "path": "scripts/assemble_e049.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "assemble_e044",
+        "ast",
+        "hashlib",
+        "pathlib",
+        "zipfile"
+      ]
+    },
+    {
+      "path": "scripts/assemble_e052.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "ast",
+        "hashlib",
+        "pathlib",
+        "zipfile"
+      ]
+    },
+    {
+      "path": "scripts/assemble_e057.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "ast",
+        "hashlib",
+        "pathlib",
+        "zipfile"
+      ]
+    },
+    {
+      "path": "scripts/assemble_e060.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "ast",
+        "hashlib",
+        "pathlib",
+        "zipfile"
+      ]
+    },
+    {
+      "path": "scripts/audit_a014_sipp.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "__future__",
+        "collections",
+        "hashlib",
+        "json",
+        "pandas",
+        "pathlib",
+        "shutil",
+        "zipfile"
+      ]
+    },
+    {
+      "path": "scripts/audit_a019_exposure.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "hashlib",
+        "json",
+        "os",
+        "pandas",
+        "pathlib",
+        "time"
+      ]
+    },
+    {
+      "path": "scripts/audit_e052_uncertainty.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "check_daily_retrieval",
+        "json",
+        "numpy",
+        "pathlib",
+        "pickle",
+        "src"
+      ]
+    },
+    {
+      "path": "scripts/audit_replay_bias.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "argparse",
+        "copy",
+        "gzip",
+        "hashlib",
+        "importlib",
+        "json",
+        "numpy",
+        "os",
+        "pathlib",
+        "pickle",
+        "scripts",
+        "src",
+        "sys",
+        "tests",
+        "time",
+        "torch"
+      ]
+    },
+    {
+      "path": "scripts/check_a021_selector_contract.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "dataclasses",
+        "datetime",
+        "hashlib",
+        "json",
+        "math",
+        "os",
+        "pathlib",
+        "re",
+        "scripts",
+        "subprocess",
+        "sys",
+        "time"
+      ]
+    },
+    {
+      "path": "scripts/check_a023_candidate_boundary.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "ast",
+        "dataclasses",
+        "hashlib",
+        "json",
+        "pathlib",
+        "pytest",
+        "re",
+        "sys",
+        "types"
+      ]
+    },
+    {
+      "path": "scripts/check_a023_resources.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "argparse",
+        "datetime",
+        "hashlib",
+        "json",
+        "os",
+        "pathlib",
+        "scripts",
+        "subprocess",
+        "sys",
+        "time"
+      ]
+    },
+    {
+      "path": "scripts/check_daily_retrieval.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "argparse",
+        "hashlib",
+        "importlib",
+        "json",
+        "make_sandbox",
+        "numpy",
+        "os",
+        "pathlib",
+        "pickle",
+        "score",
+        "src",
+        "sys",
+        "tests",
+        "time",
+        "torch"
+      ]
+    },
+    {
+      "path": "scripts/check_e041.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "argparse",
+        "hashlib",
+        "json",
+        "make_sandbox",
+        "numpy",
+        "os",
+        "pathlib",
+        "pickle",
+        "score",
+        "src",
+        "sys",
+        "tests",
+        "time",
+        "torch"
+      ]
+    },
+    {
+      "path": "scripts/check_e047_active_parity.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "check_daily_retrieval",
+        "json",
+        "pickle"
+      ]
+    },
+    {
+      "path": "scripts/check_e049_active_parity.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "hashlib",
+        "importlib",
+        "json",
+        "numpy",
+        "os",
+        "pathlib",
+        "src",
+        "sys",
+        "tempfile",
+        "tests",
+        "time",
+        "torch",
+        "zipfile"
+      ]
+    },
+    {
+      "path": "scripts/check_e052_active_parity.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "check_daily_retrieval",
+        "json",
+        "numpy",
+        "pathlib",
+        "pickle",
+        "re",
+        "zipfile"
+      ]
+    },
+    {
+      "path": "scripts/check_e057.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "argparse",
+        "ctypes",
+        "hashlib",
+        "importlib",
+        "json",
+        "make_sandbox",
+        "numpy",
+        "os",
+        "pandas",
+        "pathlib",
+        "pickle",
+        "score",
+        "sklearn",
+        "src",
+        "subprocess",
+        "sys",
+        "threading",
+        "time",
+        "torch"
+      ]
+    },
+    {
+      "path": "scripts/check_e060.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "argparse",
+        "datetime",
+        "hashlib",
+        "importlib",
+        "json",
+        "numpy",
+        "os",
+        "pandas",
+        "pathlib",
+        "pickle",
+        "re",
+        "score",
+        "scripts",
+        "sklearn",
+        "src",
+        "subprocess",
+        "sys",
+        "time",
+        "torch",
+        "zipfile"
+      ]
+    },
+    {
+      "path": "scripts/check_workspace.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "argparse",
+        "hashlib",
+        "importlib",
+        "json",
+        "pathlib",
+        "re",
+        "sys",
+        "urllib"
+      ]
+    },
+    {
+      "path": "scripts/evaluate_e045_observed.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "e041_external",
+        "e041_external_learned",
+        "hashlib",
+        "json",
+        "numpy",
+        "os",
+        "pathlib",
+        "src",
+        "sys",
+        "threadpoolctl",
+        "time"
+      ]
+    },
+    {
+      "path": "scripts/evaluate_e047_observed.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "e041_external",
+        "e041_external_learned",
+        "hashlib",
+        "json",
+        "numpy",
+        "os",
+        "pathlib",
+        "src",
+        "sys"
+      ]
+    },
+    {
+      "path": "scripts/oracle_e041.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "json",
+        "make_sandbox",
+        "numpy",
+        "os",
+        "pathlib",
+        "pickle",
+        "re",
+        "score",
+        "src",
+        "sys",
+        "time",
+        "torch"
+      ]
+    },
+    {
+      "path": "scripts/oracle_e042.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "json",
+        "make_sandbox",
+        "numpy",
+        "os",
+        "pathlib",
+        "pickle",
+        "score",
+        "src",
+        "sys",
+        "tests",
+        "time"
+      ]
+    },
+    {
+      "path": "scripts/oracle_e043.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "e041_external",
+        "hashlib",
+        "json",
+        "numpy",
+        "os",
+        "pathlib",
+        "src",
+        "sys",
+        "threadpoolctl",
+        "time"
+      ]
+    },
+    {
+      "path": "scripts/oracle_e045.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "e041_external",
+        "hashlib",
+        "json",
+        "numpy",
+        "oracle_e043",
+        "os",
+        "pathlib",
+        "src",
+        "sys",
+        "threadpoolctl",
+        "time"
+      ]
+    },
+    {
+      "path": "scripts/oracle_e046.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "e041_external",
+        "hashlib",
+        "json",
+        "numpy",
+        "os",
+        "pathlib",
+        "sklearn",
+        "sys",
+        "threadpoolctl",
+        "time"
+      ]
+    },
+    {
+      "path": "scripts/oracle_e047.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "argparse",
+        "e041_external",
+        "e041_external_learned",
+        "hashlib",
+        "json",
+        "numpy",
+        "os",
+        "pathlib",
+        "src",
+        "sys",
+        "threadpoolctl",
+        "time"
+      ]
+    },
+    {
+      "path": "scripts/oracle_e048.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "e041_external",
+        "hashlib",
+        "importlib",
+        "json",
+        "numpy",
+        "os",
+        "pathlib",
+        "scripts",
+        "sklearn",
+        "sys",
+        "tabpfn",
+        "threadpoolctl",
+        "time",
+        "torch"
+      ]
+    },
+    {
+      "path": "scripts/oracle_e049.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "e041_external",
+        "hashlib",
+        "json",
+        "numpy",
+        "pathlib",
+        "scripts",
+        "src",
+        "sys"
+      ]
+    },
+    {
+      "path": "scripts/prepare_e049_validation.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "importlib",
+        "json",
+        "pathlib"
+      ]
+    },
+    {
+      "path": "scripts/prepare_e054.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "argparse",
+        "gzip",
+        "hashlib",
+        "inspect",
+        "json",
+        "os",
+        "pathlib",
+        "pickle",
+        "re",
+        "score",
+        "scripts",
+        "src",
+        "subprocess",
+        "sys",
+        "time",
+        "torch",
+        "unittest",
+        "zipfile"
+      ]
+    },
+    {
+      "path": "scripts/profile_e049_active.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "check_daily_retrieval",
+        "copy",
+        "hashlib",
+        "importlib",
+        "json",
+        "numpy",
+        "os",
+        "pathlib",
+        "pickle",
+        "score",
+        "sys",
+        "time",
+        "torch",
+        "zipfile"
+      ]
+    },
+    {
+      "path": "scripts/profile_e051_budget.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "check_daily_retrieval",
+        "json",
+        "numpy",
+        "os",
+        "pathlib",
+        "sklearn",
+        "src",
+        "sys",
+        "threadpoolctl",
+        "time"
+      ]
+    },
+    {
+      "path": "scripts/release_e057.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "argparse",
+        "gzip",
+        "hashlib",
+        "importlib",
+        "json",
+        "numpy",
+        "os",
+        "pandas",
+        "pathlib",
+        "pickle",
+        "re",
+        "score",
+        "scripts",
+        "sklearn",
+        "src",
+        "subprocess",
+        "sys",
+        "time",
+        "torch",
+        "zipfile"
+      ]
+    },
+    {
+      "path": "scripts/render_method.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "html",
+        "pathlib",
+        "pypdf",
+        "re",
+        "reportlab"
+      ]
+    },
+    {
+      "path": "scripts/render_tree.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "pathlib",
+        "re"
+      ]
+    },
+    {
+      "path": "scripts/screen_e050_e051.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "argparse",
+        "hashlib",
+        "importlib",
+        "json",
+        "numpy",
+        "os",
+        "pathlib",
+        "pickle",
+        "scripts",
+        "src",
+        "sys",
+        "tests",
+        "time",
+        "torch"
+      ]
+    },
+    {
+      "path": "scripts/screen_e052.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "argparse",
+        "json",
+        "numpy",
+        "os",
+        "pathlib",
+        "pickle",
+        "scripts",
+        "src",
+        "sys",
+        "time",
+        "torch"
+      ]
+    },
+    {
+      "path": "scripts/screen_e053.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "argparse",
+        "copy",
+        "gzip",
+        "hashlib",
+        "importlib",
+        "json",
+        "numpy",
+        "os",
+        "pathlib",
+        "pickle",
+        "scripts",
+        "src",
+        "sys",
+        "tests",
+        "time",
+        "torch",
+        "types"
+      ]
+    },
+    {
+      "path": "scripts/screen_e055.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "__future__",
+        "argparse",
+        "gzip",
+        "hashlib",
+        "itertools",
+        "json",
+        "numpy",
+        "os",
+        "pandas",
+        "pathlib",
+        "pickle",
+        "scripts",
+        "src",
+        "sys",
+        "time"
+      ]
+    },
+    {
+      "path": "scripts/screen_e056.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "__future__",
+        "argparse",
+        "ctypes",
+        "gzip",
+        "hashlib",
+        "json",
+        "numpy",
+        "os",
+        "pandas",
+        "pathlib",
+        "pickle",
+        "scripts",
+        "sklearn",
+        "src",
+        "sys",
+        "threading",
+        "threadpoolctl",
+        "time"
+      ]
+    },
+    {
+      "path": "scripts/screen_e058.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "argparse",
+        "copy",
+        "datetime",
+        "hashlib",
+        "json",
+        "numpy",
+        "os",
+        "pandas",
+        "pathlib",
+        "pickle",
+        "pyarrow",
+        "scipy",
+        "scripts",
+        "src",
+        "subprocess",
+        "sys",
+        "threading",
+        "time",
+        "torch",
+        "types"
+      ]
+    },
+    {
+      "path": "scripts/screen_e059.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "argparse",
+        "datetime",
+        "hashlib",
+        "json",
+        "numpy",
+        "os",
+        "pandas",
+        "pathlib",
+        "pickle",
+        "scipy",
+        "scripts",
+        "src",
+        "subprocess",
+        "sys",
+        "threading",
+        "time"
+      ]
+    },
+    {
+      "path": "scripts/time_official_score.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "hashlib",
+        "json",
+        "pathlib",
+        "runpy",
+        "sys",
+        "time"
+      ]
+    },
+    {
+      "path": "scripts/verify_daily_retrieval.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "argparse",
+        "check_daily_retrieval",
+        "json",
+        "os",
+        "pathlib",
+        "pickle",
+        "re",
+        "subprocess",
+        "sys",
+        "time",
+        "zipfile"
+      ]
+    },
+    {
+      "path": "scripts/verify_e041_archive.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "hashlib",
+        "json",
+        "numpy",
+        "os",
+        "pathlib",
+        "pickle",
+        "re",
+        "subprocess",
+        "sys",
+        "time",
+        "zipfile"
+      ]
+    },
+    {
+      "path": "scripts/verify_e041_phase2.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "argparse",
+        "hashlib",
+        "importlib",
+        "json",
+        "make_sandbox",
+        "os",
+        "pathlib",
+        "pickle",
+        "re",
+        "score",
+        "shutil",
+        "src",
+        "subprocess",
+        "sys",
+        "time",
+        "torch",
+        "zipfile"
+      ]
+    },
+    {
+      "path": "scripts/verify_e049.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "argparse",
+        "check_daily_retrieval",
+        "json",
+        "os",
+        "pathlib",
+        "pickle",
+        "re",
+        "subprocess",
+        "sys",
+        "time",
+        "zipfile"
+      ]
+    },
+    {
+      "path": "scripts/verify_e057.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "check_e057",
+        "numpy",
+        "pickle",
+        "src",
+        "subprocess"
+      ]
+    },
+    {
+      "path": "scripts/verify_e058_identity.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "hashlib",
+        "json",
+        "numpy",
+        "os",
+        "pandas",
+        "pathlib",
+        "pickle",
+        "sys",
+        "time"
+      ]
+    },
+    {
+      "path": "tests/e041_external.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "argparse",
+        "hashlib",
+        "json",
+        "numpy",
+        "os",
+        "pandas",
+        "pathlib",
+        "sklearn",
+        "src",
+        "sys",
+        "threadpoolctl",
+        "time"
+      ]
+    },
+    {
+      "path": "tests/e041_external_learned.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "e041_external",
+        "hashlib",
+        "json",
+        "numpy",
+        "os",
+        "scipy",
+        "src",
+        "threadpoolctl",
+        "time"
+      ]
+    },
+    {
+      "path": "tests/test_a014_sipp.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "pandas",
+        "pytest",
+        "scripts"
+      ]
+    },
+    {
+      "path": "tests/test_a021_selector_contract.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "dataclasses",
+        "importlib",
+        "json",
+        "math",
+        "pytest",
+        "scripts"
+      ]
+    },
+    {
+      "path": "tests/test_a023_candidate_boundary.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "dataclasses",
+        "json",
+        "pytest",
+        "scripts",
+        "sys"
+      ]
+    },
+    {
+      "path": "tests/test_adaptive_final_evidence.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "json",
+        "numpy",
+        "pandas",
+        "pytest",
+        "scipy",
+        "src"
+      ]
+    },
+    {
+      "path": "tests/test_cond_agree.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "make_sandbox",
+        "numpy",
+        "pytest",
+        "score",
+        "src",
+        "tests"
+      ]
+    },
+    {
+      "path": "tests/test_content_target_retrieval.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "numpy",
+        "pytest",
+        "scipy",
+        "src"
+      ]
+    },
+    {
+      "path": "tests/test_cross_link.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "make_sandbox",
+        "numpy",
+        "pandas",
+        "pytest",
+        "score",
+        "src",
+        "tests"
+      ]
+    },
+    {
+      "path": "tests/test_dup_link.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "make_sandbox",
+        "numpy",
+        "pandas",
+        "pytest",
+        "score",
+        "src",
+        "tests"
+      ]
+    },
+    {
+      "path": "tests/test_e041_phase2.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "importlib",
+        "pathlib",
+        "tempfile",
+        "unittest"
+      ]
+    },
+    {
+      "path": "tests/test_e047_assembly.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "assemble_e047",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "src",
+        "sys",
+        "types"
+      ]
+    },
+    {
+      "path": "tests/test_e049_tabpfn_parents.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "collections",
+        "importlib",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "pytest",
+        "src"
+      ]
+    },
+    {
+      "path": "tests/test_e052_submission.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "ast",
+        "hashlib",
+        "importlib",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "pytest",
+        "src",
+        "types",
+        "zipfile"
+      ]
+    },
+    {
+      "path": "tests/test_e053_oracle.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "json",
+        "numpy",
+        "pandas",
+        "pytest",
+        "scripts",
+        "src"
+      ]
+    },
+    {
+      "path": "tests/test_e054_probe.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "numpy",
+        "pandas",
+        "src",
+        "unittest"
+      ]
+    },
+    {
+      "path": "tests/test_e054_resolution.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "numpy",
+        "scripts",
+        "unittest"
+      ]
+    },
+    {
+      "path": "tests/test_e055_star.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "itertools",
+        "numpy",
+        "pandas",
+        "scripts",
+        "src"
+      ]
+    },
+    {
+      "path": "tests/test_e056_conditional_content.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "ast",
+        "itertools",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "pytest",
+        "scripts"
+      ]
+    },
+    {
+      "path": "tests/test_e057_conditional_content.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "ast",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "pytest",
+        "src"
+      ]
+    },
+    {
+      "path": "tests/test_e057_release.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "ast",
+        "hashlib",
+        "importlib",
+        "json",
+        "numpy",
+        "pathlib",
+        "pytest",
+        "scripts",
+        "src",
+        "tests"
+      ]
+    },
+    {
+      "path": "tests/test_e058_interactions.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "ast",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "pyarrow",
+        "pytest",
+        "scipy",
+        "scripts",
+        "src"
+      ]
+    },
+    {
+      "path": "tests/test_e059_interactions.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "ast",
+        "importlib",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "pyarrow",
+        "pytest",
+        "scipy",
+        "scripts"
+      ]
+    },
+    {
+      "path": "tests/test_e060_assembly.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "ast",
+        "importlib",
+        "numpy",
+        "pytest",
+        "scripts",
+        "src",
+        "tests"
+      ]
+    },
+    {
+      "path": "tests/test_ev_base.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "make_sandbox",
+        "pytest",
+        "score",
+        "src",
+        "tests"
+      ]
+    },
+    {
+      "path": "tests/test_ev_conc.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "make_sandbox",
+        "numpy",
+        "score",
+        "src",
+        "tests"
+      ]
+    },
+    {
+      "path": "tests/test_ev_net.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "make_sandbox",
+        "numpy",
+        "pytest",
+        "score",
+        "src",
+        "tests"
+      ]
+    },
+    {
+      "path": "tests/test_evidence_routing.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "ast",
+        "collections",
+        "hashlib",
+        "importlib",
+        "inspect",
+        "json",
+        "numpy",
+        "pandas",
+        "pickle",
+        "pytest",
+        "src"
+      ]
+    },
+    {
+      "path": "tests/test_harness.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "numpy",
+        "pandas",
+        "pytest",
+        "src"
+      ]
+    },
+    {
+      "path": "tests/test_hh_link.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "make_sandbox",
+        "numpy",
+        "pandas",
+        "pytest",
+        "score",
+        "src",
+        "tests"
+      ]
+    },
+    {
+      "path": "tests/test_hh_sharp.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "make_sandbox",
+        "numpy",
+        "pandas",
+        "pytest",
+        "score",
+        "src",
+        "tests"
+      ]
+    },
+    {
+      "path": "tests/test_hh_stack.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "functools",
+        "make_sandbox",
+        "pytest",
+        "score",
+        "src",
+        "tests"
+      ]
+    },
+    {
+      "path": "tests/test_hier_backoff.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "numpy",
+        "pytest",
+        "src",
+        "tests"
+      ]
+    },
+    {
+      "path": "tests/test_id_sig.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "make_sandbox",
+        "numpy",
+        "pytest",
+        "score",
+        "src",
+        "tests"
+      ]
+    },
+    {
+      "path": "tests/test_item_blend.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "numpy",
+        "pytest",
+        "src",
+        "tests"
+      ]
+    },
+    {
+      "path": "tests/test_link_sharp.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "make_sandbox",
+        "numpy",
+        "pytest",
+        "score",
+        "src",
+        "tests"
+      ]
+    },
+    {
+      "path": "tests/test_logit_blend.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "numpy",
+        "pytest",
+        "src",
+        "tests"
+      ]
+    },
+    {
+      "path": "tests/test_oracle.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "make_sandbox",
+        "score",
+        "src",
+        "tests"
+      ]
+    },
+    {
+      "path": "tests/test_ord_sig.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "make_sandbox",
+        "numpy",
+        "pandas",
+        "pytest",
+        "score",
+        "src",
+        "tests"
+      ]
+    },
+    {
+      "path": "tests/test_ordinal_smooth.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "make_sandbox",
+        "numpy",
+        "pytest",
+        "score",
+        "src",
+        "tests"
+      ]
+    },
+    {
+      "path": "tests/test_phase2.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "make_sandbox",
+        "numpy",
+        "pandas",
+        "pytest",
+        "score",
+        "src",
+        "tests"
+      ]
+    },
+    {
+      "path": "tests/test_prob_link.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "make_sandbox",
+        "numpy",
+        "pytest",
+        "score",
+        "src",
+        "tests"
+      ]
+    },
+    {
+      "path": "tests/test_probes.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "make_sandbox",
+        "numpy",
+        "score",
+        "src",
+        "tests"
+      ]
+    },
+    {
+      "path": "tests/test_pvc_gate.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "make_sandbox",
+        "numpy",
+        "pandas",
+        "pytest",
+        "score",
+        "src",
+        "tests"
+      ]
+    },
+    {
+      "path": "tests/test_recursive_candidates.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "collections",
+        "hashlib",
+        "importlib",
+        "json",
+        "numpy",
+        "pandas",
+        "pickle",
+        "pytest",
+        "src",
+        "tests"
+      ]
+    },
+    {
+      "path": "tests/test_replay_bias.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "gzip",
+        "importlib",
+        "json",
+        "numpy",
+        "pandas",
+        "pickle",
+        "pytest",
+        "src"
+      ]
+    },
+    {
+      "path": "tests/test_retrieval_oracle.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "numpy",
+        "src"
+      ]
+    },
+    {
+      "path": "tests/test_retrieval_weight_control.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "numpy",
+        "pandas",
+        "src"
+      ]
+    },
+    {
+      "path": "tests/test_seed_temp.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "make_sandbox",
+        "numpy",
+        "pytest",
+        "score",
+        "src",
+        "tests",
+        "torch"
+      ]
+    },
+    {
+      "path": "tests/test_sentinel_ceiling.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "make_sandbox",
+        "numpy",
+        "pytest",
+        "score",
+        "sklearn",
+        "src",
+        "tests"
+      ]
+    },
+    {
+      "path": "tests/test_shared_trunk.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "numpy",
+        "pytest",
+        "score",
+        "src",
+        "tests"
+      ]
+    },
+    {
+      "path": "tests/test_soft_gating.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "json",
+        "make_sandbox",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "pytest",
+        "score",
+        "src",
+        "sys"
+      ]
+    },
+    {
+      "path": "tests/test_stratum_backoff.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "pytest",
+        "src"
+      ]
+    },
+    {
+      "path": "tests/test_supervised_retrieval.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "numpy",
+        "pandas",
+        "pytest",
+        "scipy",
+        "src"
+      ]
+    },
+    {
+      "path": "tests/test_transition_ceiling.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "make_sandbox",
+        "numpy",
+        "pandas",
+        "pytest",
+        "score",
+        "src",
+        "tests"
+      ]
+    },
+    {
+      "path": "tests/test_union_retrieval.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "numpy",
+        "pandas",
+        "scipy",
+        "src"
+      ]
+    },
+    {
+      "path": "tests/test_wave_lam.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "make_sandbox",
+        "numpy",
+        "pandas",
+        "pytest",
+        "score",
+        "src",
+        "tests"
+      ]
+    },
+    {
+      "path": "tests/test_workspace_check.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "importlib",
+        "pathlib",
+        "tempfile",
+        "unittest"
+      ]
+    },
+    {
+      "path": "notebooks/a002_schema_eda.py",
+      "syntax": "PASS",
+      "import_roots": [
+        "collections",
+        "json",
+        "math",
+        "pathlib",
+        "sys"
+      ]
+    }
+  ]
+}

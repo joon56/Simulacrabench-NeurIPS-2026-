@@ -1,0 +1,130 @@
+{
+  "status": "PASS_KEYS_EMPIRICAL_HOLD",
+  "date": "2026-09-27",
+  "input_head": "1d223340d4e1fa3993b411dc5daafab9cb37d0cd",
+  "source_projection": [
+    "SSUID",
+    "PNUM",
+    "MONTHCODE",
+    "THHLDSTATUS",
+    "TAGE_EHC"
+  ],
+  "existing_key_projection": {
+    "historical": [
+      "SSUID",
+      "PNUM",
+      "person_role",
+      "group_role"
+    ],
+    "query": [
+      "SSUID",
+      "PNUM",
+      "role"
+    ],
+    "fit": [
+      "SSUID",
+      "PNUM"
+    ]
+  },
+  "eligible": {
+    "persons": 39131,
+    "ssuids": 17314
+  },
+  "historical_use": {
+    "persons": 12000,
+    "ssuids": 8908
+  },
+  "query_use": {
+    "persons": 5999,
+    "ssuids": 3431
+  },
+  "model_use_union": {
+    "persons": 17999,
+    "ssuids": 12339
+  },
+  "excluded_eligible_persons_by_used_ssuid": 30431,
+  "remaining": {
+    "persons": 8700,
+    "ssuids": 4975
+  },
+  "remaining_keys_sha256": "9e6953db73bb9ba471e5882aa82081f32ba94e4b7caaabe08b71c9b8b854d993",
+  "key_digest_format": "SHA256 UTF-8 of lexically sorted SSUID,PNUM pairs; NUL between fields, LF after each pair",
+  "remaining_original_group_roles": {
+    "fit": {
+      "persons": 4275,
+      "ssuids": 2453
+    },
+    "calibration": {
+      "persons": 1368,
+      "ssuids": 779
+    },
+    "oracle": {
+      "persons": 1333,
+      "ssuids": 764
+    },
+    "selection": {
+      "persons": 842,
+      "ssuids": 478
+    },
+    "audit": {
+      "persons": 882,
+      "ssuids": 501
+    }
+  },
+  "remaining_original_person_role_counts": {
+    "fit": 4391,
+    "oracle": 1335,
+    "calibration": 1274,
+    "selection": 853,
+    "audit": 847
+  },
+  "original_fit": {
+    "persons": 5922,
+    "ssuids": 4418
+  },
+  "protected_old_calibration": {
+    "persons": 1866,
+    "ssuids": 1354
+  },
+  "protected_e059_audit": {
+    "persons": 2074,
+    "ssuids": 1177
+  },
+  "protected_ssuid_overlap": 0,
+  "remaining_groups_complete": true,
+  "new_role_assignments": 0,
+  "new_samples": 0,
+  "remaining_key_file_created": false,
+  "protected_hashes": {
+    "external/sipp-2023/a014-month12-restricted.parquet": "92aa1bc010bb85cf46750b1560e1a96e5f150b8f418296b560d52883064e3ede",
+    "external/sipp-2023/a014-partitions.json": "251753b4483b76b429e299e8ca90cd9d03c019cd4a1ec3b717dc7450ee5eaa8a",
+    "external/a019/evaluation-keys.parquet": "0d33a219a5f17a59d338715aead99060d381ef58a01981667b995da7e8e38bbc",
+    "external/a019/fit-keys.parquet": "d997c85a9152df9da81e0146c38f0a99467bab5d27ffeb0d763496dbc5e2e9ac",
+    "external/a019/historical-keys.parquet": "11000e55e5f76d4ce7d9804595fc8e3573ef1c09977edb8c56906d9ebd9fe0d7",
+    "external/e058/library-started.json": "38b97b4495ad706ac6ca0d15b98fc02d6e41caa60f988b4daf8694bc3f2dacb8",
+    "external/e059/beta-started.json": "96f056da9918732616f3fe9190ab901db17467ffeb04fe2d519e5fa060dd840e",
+    "external/e059/fit-started.json": "ec2484e38bacc211484c0225189bc302ce604c7cfa5820816eb02f12a5e17f27",
+    "external/e059/oracle-opened.json": "ba6388f2c896f62077e73dcd23270358bb694fb1bb91def5f6594f6f9293337b",
+    "external/e059/oracle-started.json": "bf416e64c5ae48ab60ce6d0aefb0f3a3763cb01100698b03a69523e138ef7f7a",
+    "external/e059/preflight-started.json": "a0c1217524aa4980450569b25958d7d7e28afea514c556849f334a842056ef8e",
+    "external/e059/selection-opened.json": "9a16abc8c1aa1acb909f861d0938f1ff80e2dfa964de8092cc0d91874e65e363",
+    "external/e059/selection-started.json": "fee4f06eb1e3103a527da1201342228b9df88808ee46657917f84426a4de733e"
+  },
+  "protected_after_match": true,
+  "audit_script_sha256": "659c12d7a91a9f5db8fc35edd2dc6120cfc45e17a5b0ea7ddb31f8d26c320454",
+  "registration_sha256": "fde18d85cb207dd255c0c62add995dfa9c5549686d2a71942d9dff4e5148a883",
+  "technical_retry_record_sha256": "a393f4ff57b81f159006e7478a38b4fe1ee08949ce29d781c1fc5e1339e645c6",
+  "source_projection_runs": 2,
+  "predict_response_columns_read": [],
+  "model_given_columns_read": [],
+  "eligibility_fields_read": [
+    "THHLDSTATUS",
+    "TAGE_EHC"
+  ],
+  "fits": 0,
+  "predictions": 0,
+  "scores": 0,
+  "cache_deserializations": 0,
+  "wall_seconds_including_imports": 1.8208958000031998,
+  "limits": "Group-disjoint remaining keys under recorded repository history, not new independent source or a power/transfer guarantee. Roles are inventoried, not reassigned."
+}

@@ -1,0 +1,307 @@
+{
+  "task": "A040 S0 query-helper failure review",
+  "role": "S0",
+  "date_kst": "2026-10-05",
+  "decision": "ACCEPT_QUERY_ARGUMENT_CONTRACT_FAIL / TERMINATION_UNCONFIRMED",
+  "next_scope": "Separate S1 cleanup-only, helper local validation then one existing-resource window; not activated by S0",
+  "entry": {
+    "at": "2026-10-05T20:32:21.0962215+09:00",
+    "head": "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+    "dirty_count": 89,
+    "named_local_jobs": [],
+    "output_collision": false,
+    "remote_absence_claim": false
+  },
+  "workflow": {
+    "revision": "2026-09-27-r4",
+    "sha256": "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642",
+    "read_order": [
+      "AGENTS.md",
+      "CLAUDE.md",
+      "docs/status.md",
+      "docs/log.md latest3",
+      "docs/workflow.md"
+    ],
+    "observations": [
+      "Persistent S0: document/source review and handoff only",
+      "Latest3: S1 helper argument failure; S0 resume5 review; S1 resume5 Sandbox handle failure",
+      "r4 separates user delivery from S0 authoring; obtain agent-owned missing inputs through scoped tasks"
+    ],
+    "tool_read_evidence": [
+      "24a27c",
+      "d674de",
+      "ae841a",
+      "01c2e4",
+      "5afeb4"
+    ],
+    "allowed": "Existing permitted documents/SDK and helper source/hash; S0 decision/prompt/status/log",
+    "forbidden": "Helper or production implementation/import/tests, remote RPC, resource creation/termination, model/data/cache/ZIP/commit/push/subagents/S2/S3"
+  },
+  "evidence": {
+    "receipt": "docs/analysis/A040-outputs/sandbox-lifecycle-repair1/termination-billing-receipt.json",
+    "helper_sha256": "28019d3b2543e1f53d667b63af302b806e49b70e19bbe19aa25b2aaa735abd57",
+    "wrapper": "modal/_grpc_client.py:125-126",
+    "runtime_error_type": "InvalidError",
+    "runtime_error_message_captured": false,
+    "source_error_text": "Retry must be None when timeout is set",
+    "local_guard_precedes_transport": true,
+    "normal_client_initialization_wire_count": "UNKNOWN",
+    "repeated_helper_argument_pattern": true,
+    "installed_version_metadata": "modal-1.6.0.dist-info",
+    "version_routing_review": "SDK distinguishes V1/V2; target version unknown; helper hardcodes V1 methods; no claim of a second actual remote failure"
+  },
+  "historical_state": {
+    "sandbox": "a040-resume5-20261005-094405-gpu",
+    "app_id": "ap-XiMVzlJgrNrCiFpIN1kB4W",
+    "sandbox_id": null,
+    "terminal": "UNCONFIRMED",
+    "app_state": "Prior STOPPED/task0 only",
+    "latest_s1_preparation_seconds": 12587.4312918,
+    "latest_s1_active_seconds": 712.9984114,
+    "receipt_seconds_included": 1.2158657,
+    "scientific_processes": 4,
+    "scientific_seconds": 1077.3504532,
+    "metered_aggregate_usd": 0.00178978,
+    "reservation_usd": 2.965933453125,
+    "reservation_is_charge": false,
+    "final_attributed_charge": null,
+    "cash_authority_usd": 0,
+    "planning_caps_usd": [
+      1,
+      5
+    ]
+  },
+  "s0_actions": {
+    "local_document_and_source_reads": true,
+    "helper_or_production_edits": 0,
+    "sdk_import": 0,
+    "tests": 0,
+    "remote_rpc": 0,
+    "new_resources": 0,
+    "termination_requests": 0,
+    "model_data_payload_access": 0,
+    "fit_predict_score": 0,
+    "zip": 0,
+    "commit_push": 0,
+    "subagents": 0
+  },
+  "allowed_original_hashes": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "86394bbf164a2b7df6a309f4564b9dacf3b2799fa0227a703e4ea11d4d842596"
+    },
+    {
+      "path": "CLAUDE.md",
+      "sha256": "69175e6d741a17042db4852d4961a5c52bd97fe2cd5bfbff762d30d7e5270364"
+    },
+    {
+      "path": "docs/workflow.md",
+      "sha256": "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642"
+    },
+    {
+      "path": "docs/status.md",
+      "sha256": "d447d244ffdfebd62c043f18c36ad9ca14450b7148d219f0647ab99c3c3ed6a2"
+    },
+    {
+      "path": "docs/log.md",
+      "sha256": "1b33e396d567e0c7beb034c5076a45c63a3719db436cca0bb72cecc26aed4102"
+    },
+    {
+      "path": "docs/tree.md",
+      "sha256": "eaa884a4194db103335136495205fe5b51297c17db15e9eac62946ced286cc44"
+    },
+    {
+      "path": "docs/analysis/A040-outputs/sandbox-lifecycle-repair1/closeout.md",
+      "sha256": "1f45a40c1a63be013ef00ce63cd55518936fa30129a85a3668e2bbc25a78f19b"
+    },
+    {
+      "path": "docs/analysis/A040-outputs/sandbox-lifecycle-repair1/verification.json",
+      "sha256": "3761c022cec62322c0fdfb41440852afd9ee24d015a2ccc2ca04b118d17c954a"
+    },
+    {
+      "path": "docs/analysis/A040-outputs/sandbox-lifecycle-repair1/termination-billing-receipt.json",
+      "sha256": "5be484f47ea5c1c086127dcbb734ef02c5233e4bac90f1de42437a8aa4a83301"
+    },
+    {
+      "path": "docs/analysis/A040-outputs/sandbox-lifecycle-repair1/cost-time-ledger.json",
+      "sha256": "3a6e913bbe2d1d98894327852a3935505f35f0e16e7a4dd1198f7e943570b9ba"
+    },
+    {
+      "path": "docs/analysis/A040-outputs/sandbox-lifecycle-repair1/confirm_terminal.py",
+      "sha256": "28019d3b2543e1f53d667b63af302b806e49b70e19bbe19aa25b2aaa735abd57"
+    },
+    {
+      "path": "docs/analysis/A040-outputs/sandbox-lifecycle-repair1/source-manifest.json",
+      "sha256": "cd57ca189a98839e7a1396f70896d79db39ac9c6cbb38e9cfcf044f4a6ed3189"
+    },
+    {
+      "path": "docs/analysis/A040-outputs/sandbox-lifecycle-repair1/artifact-manifest.json",
+      "sha256": "396b9bf94739ffd76abc42baa1bb08bf8f703341c39eca979409d13b8b609ec7"
+    },
+    {
+      "path": "docs/analysis/A040-outputs/local-preparation-repair2/source-manifest.json",
+      "sha256": "c782c99e29cfceeaba132018d48f2be2a844e7f8b51ba8840157f9ebfa845765"
+    },
+    {
+      "path": "tmp/a040-modal-full-path1/sdk-venv/Lib/site-packages/modal/_grpc_client.py",
+      "sha256": "6a30b14ea84393eae95ae6265127115f060c3d59afba3a3c724befbf89747339"
+    },
+    {
+      "path": "tmp/a040-modal-full-path1/sdk-venv/Lib/site-packages/modal_proto/api_pb2.pyi",
+      "sha256": "ffc3d5c07503cf5d886aef59864dfd1cd7c681c26e30038e73b55f9c17c2cf4a"
+    },
+    {
+      "path": "tmp/a040-modal-full-path1/sdk-venv/Lib/site-packages/modal/sandbox.py",
+      "sha256": "247a8ea555b4069c82c63da068675618d1203a7338a6f94d61a00505914d5e9a"
+    }
+  ],
+  "artifact_manifest_comparison": [
+    {
+      "path": "docs/analysis/A040-outputs/sandbox-lifecycle-repair1/closeout.md",
+      "listed": true,
+      "matches": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/sandbox-lifecycle-repair1/verification.json",
+      "listed": true,
+      "matches": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/sandbox-lifecycle-repair1/termination-billing-receipt.json",
+      "listed": true,
+      "matches": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/sandbox-lifecycle-repair1/cost-time-ledger.json",
+      "listed": true,
+      "matches": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/sandbox-lifecycle-repair1/confirm_terminal.py",
+      "listed": true,
+      "matches": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/sandbox-lifecycle-repair1/source-manifest.json",
+      "listed": true,
+      "matches": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/sandbox-lifecycle-repair1/artifact-manifest.json",
+      "listed": false,
+      "matches": false
+    }
+  ],
+  "preservation": [
+    {
+      "path": "AGENTS.md",
+      "unchanged_or_prior_text_preserved": true
+    },
+    {
+      "path": "CLAUDE.md",
+      "unchanged_or_prior_text_preserved": true
+    },
+    {
+      "path": "docs/workflow.md",
+      "unchanged_or_prior_text_preserved": true
+    },
+    {
+      "path": "docs/status.md",
+      "unchanged_or_prior_text_preserved": true
+    },
+    {
+      "path": "docs/log.md",
+      "unchanged_or_prior_text_preserved": true
+    },
+    {
+      "path": "docs/tree.md",
+      "unchanged_or_prior_text_preserved": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/sandbox-lifecycle-repair1/closeout.md",
+      "unchanged_or_prior_text_preserved": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/sandbox-lifecycle-repair1/verification.json",
+      "unchanged_or_prior_text_preserved": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/sandbox-lifecycle-repair1/termination-billing-receipt.json",
+      "unchanged_or_prior_text_preserved": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/sandbox-lifecycle-repair1/cost-time-ledger.json",
+      "unchanged_or_prior_text_preserved": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/sandbox-lifecycle-repair1/confirm_terminal.py",
+      "unchanged_or_prior_text_preserved": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/sandbox-lifecycle-repair1/source-manifest.json",
+      "unchanged_or_prior_text_preserved": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/sandbox-lifecycle-repair1/artifact-manifest.json",
+      "unchanged_or_prior_text_preserved": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/local-preparation-repair2/source-manifest.json",
+      "unchanged_or_prior_text_preserved": true
+    },
+    {
+      "path": "tmp/a040-modal-full-path1/sdk-venv/Lib/site-packages/modal/_grpc_client.py",
+      "unchanged_or_prior_text_preserved": true
+    },
+    {
+      "path": "tmp/a040-modal-full-path1/sdk-venv/Lib/site-packages/modal_proto/api_pb2.pyi",
+      "unchanged_or_prior_text_preserved": true
+    },
+    {
+      "path": "tmp/a040-modal-full-path1/sdk-venv/Lib/site-packages/modal/sandbox.py",
+      "unchanged_or_prior_text_preserved": true
+    }
+  ],
+  "new_and_updated_document_hashes": [
+    {
+      "path": "docs/status.md",
+      "sha256": "c2bca7e741533dd6b5054a51290865f187337af5d117514067912cda2855d802"
+    },
+    {
+      "path": "docs/log.md",
+      "sha256": "7527755ae404b64a5bbc9c63a221386fa8bbb7df1e55a8b99587bc6446da1d70"
+    },
+    {
+      "path": "docs/analysis/A040-outputs/s0-query-contract-review/decision.md",
+      "sha256": "34a8843dcddc0f0a1897671f575dd95378aac857946dfba95666f21b8b4f8849"
+    },
+    {
+      "path": "docs/analysis/A040-outputs/s0-query-contract-review/s1-cleanup-only.ko.md",
+      "sha256": "9cb70b42cf35838b60e4ec6845d3e42cb91ad4426247a012d3795ed19dae4b0a"
+    }
+  ],
+  "verification": {
+    "all_selected_originals_or_status_log_prior_bytes_preserved": true,
+    "method": "Remove only new status/log blocks and reconstruct original CRLF UTF8 BOM; compare pre-turn SHA256. Other allowed files hash equal.",
+    "source_manifest_unchanged": true,
+    "production12_fresh_byte_hash_claim": false,
+    "production12_preservation": "S1 report retained; S0 did not edit or execute production sources",
+    "self_hash_excluded": true,
+    "at": "2026-10-05T20:38:15.5093479+09:00"
+  },
+  "preserved": [
+    "E041 incumbent/E025 fallback",
+    "E057/E060/E061 parked",
+    "E058 STOP/E059 STOP_SELECTION/A039 HOLD/all scientific STOP/HOLD",
+    "17999people/12339SSUID, aggregate exposure/A022 original roles",
+    "E059 consumed oracle1918/1124 selection2007/1130, protected audit2074/1177 calibration1866",
+    "A_half nonpromotion/A018 unconfirmed/S3 stopped/S2 none"
+  ],
+  "write_scope": [
+    "docs/analysis/A040-outputs/s0-query-contract-review/decision.md",
+    "docs/analysis/A040-outputs/s0-query-contract-review/s1-cleanup-only.ko.md",
+    "docs/analysis/A040-outputs/s0-query-contract-review/verification.json",
+    "docs/status.md",
+    "docs/log.md"
+  ]
+}

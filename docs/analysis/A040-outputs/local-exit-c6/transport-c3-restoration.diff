@@ -1,0 +1,22 @@
+diff --git a/docs/analysis/A040-outputs/local-exit-diagnosis1/boundary_transport.py b/docs/analysis/A040-outputs/local-exit-c6/boundary_transport.py
+index dc46c73..7512698 100644
+--- a/docs/analysis/A040-outputs/local-exit-diagnosis1/boundary_transport.py
++++ b/docs/analysis/A040-outputs/local-exit-c6/boundary_transport.py
+@@ -75,6 +75,17 @@ class Backend(wire.Backend):
+         if name=='ImageGetOrCreate':
+             assert request.build_function_id==FUNCTION and self.function_definition is not None
+             assert self.source_files
++            chains=[]
++            for task in asyncio.all_tasks():
++                current=task.get_coro(); names=[]
++                while current is not None:
++                    code=getattr(current,'cr_code',getattr(current,'gi_code',None))
++                    if code is not None: names.append({'file':code.co_filename.replace('\\','/'),'function':code.co_name})
++                    current=getattr(current,'cr_await',getattr(current,'gi_yieldfrom',None))
++                if any(r['file'].endswith('/modal/_image.py') and r['function']=='build' for r in names): chains.append(names)
++            assert chains,'Actual Image.build missing from live SDK await chain'
++            assert any(any(r['file'].endswith('/sdk_endpoint.py') and r['function']=='_build' for r in c) for c in chains)
++            self.record('sdk_image_build_chain',chains=chains)
+             self.record('image_build_requested',image_id=BUILT,base_images=[r.image_id for r in request.image.base_images])
+             return pb.ImageGetOrCreateResponse(image_id=BUILT)
+         if name=='SandboxCreate':

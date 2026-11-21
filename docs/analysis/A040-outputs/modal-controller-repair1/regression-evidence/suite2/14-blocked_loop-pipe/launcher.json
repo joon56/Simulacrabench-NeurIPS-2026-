@@ -1,0 +1,33 @@
+{
+  "pid": 17880,
+  "returncode": 1,
+  "watchdog_timeout": true,
+  "wall_seconds": 1.0330568999997922,
+  "mode": "pipe",
+  "remote_termination_claim": false,
+  "command": [
+    "C:\\Users\\USER\\Desktop\\SimulacraBench\\tmp\\a040-modal-full-path1\\sdk-venv\\Scripts\\python.exe",
+    "-X",
+    "utf8",
+    "-u",
+    "C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\modal-controller-repair1\\fake_worker.py",
+    "blocked_loop",
+    "C:\\Users\\USER\\Desktop\\SimulacraBench\\tmp\\a040-modal-controller-repair1\\suite2\\14-blocked_loop-pipe"
+  ],
+  "utf8_env": {
+    "PYTHONUTF8": "1",
+    "PYTHONIOENCODING": "utf-8"
+  },
+  "partial_journal": {
+    "outcome": "NOT_STARTED",
+    "owned_app_id": "ap-FAKE-OWNED",
+    "stop_ack": false,
+    "termination": "UNCONFIRMED",
+    "create_attempts": 1,
+    "build_attempts": 1,
+    "stop_attempts": 0,
+    "cleanup_errors": [],
+    "execution": "INJECTED_LOCAL_ONLY"
+  },
+  "termination": "UNCONFIRMED_WATCHDOG"
+}

@@ -1,0 +1,44 @@
+﻿[
+    {
+        "path":  "live_binding.py",
+        "frozen":  "ca1351a05eea38577632a918b286d5ee7e5c82d423928fd8c2ce1af67de206c8",
+        "current":  "ca1351a05eea38577632a918b286d5ee7e5c82d423928fd8c2ce1af67de206c8",
+        "equal":  true
+    },
+    {
+        "path":  "controller_core.py",
+        "frozen":  "69045525d5cdac7fe4b61297f2672325bd652bc7ef87f5d1eaf7cfdab24c5d59",
+        "current":  "69045525d5cdac7fe4b61297f2672325bd652bc7ef87f5d1eaf7cfdab24c5d59",
+        "equal":  true
+    },
+    {
+        "path":  "live_worker.py",
+        "frozen":  "bbc5fc6e2835f6bddf516a3eeade73b18c2546f826db990a5bddf806da1fc6dc",
+        "current":  "bbc5fc6e2835f6bddf516a3eeade73b18c2546f826db990a5bddf806da1fc6dc",
+        "equal":  true
+    },
+    {
+        "path":  "live_launcher.py",
+        "frozen":  "563dc236092021162cd62d6a12e2cb2f6dec9edbbcbb95a644ad1bcae9648cfa",
+        "current":  "563dc236092021162cd62d6a12e2cb2f6dec9edbbcbb95a644ad1bcae9648cfa",
+        "equal":  true
+    },
+    {
+        "path":  "preflight.py",
+        "frozen":  "7123a721678bba95ff82dd282e1aab24937302bced2363ccb4b90c5cf6ab07b6",
+        "current":  "7123a721678bba95ff82dd282e1aab24937302bced2363ccb4b90c5cf6ab07b6",
+        "equal":  true
+    },
+    {
+        "path":  "operational-contract.md",
+        "frozen":  "e7342a842bcb97ef2e21c573da398bb9392892320bfe9169f7a6daa2f1945fb9",
+        "current":  "e7342a842bcb97ef2e21c573da398bb9392892320bfe9169f7a6daa2f1945fb9",
+        "equal":  true
+    },
+    {
+        "path":  "entry.json",
+        "frozen":  "d30b24b510433929c38384f186e22010e28c29dfa8945a5514242a9235d93e1c",
+        "current":  "d30b24b510433929c38384f186e22010e28c29dfa8945a5514242a9235d93e1c",
+        "equal":  true
+    }
+]

@@ -1,0 +1,14 @@
+{
+  "execution": "REAL_MODAL_RESUME3",
+  "outcome": "STOP_FIRST_ERROR",
+  "app_id": null,
+  "app_name": "a040-resume3-20261004-123330",
+  "sandbox_id": null,
+  "create_attempts": 0,
+  "build_attempts": 0,
+  "scientific_reference": 0,
+  "scientific_candidate": 0,
+  "termination": "NO_CREATE_ATTEMPT",
+  "error": "AttributeError(\"module 'modal_proto.api_pb2' has no attribute 'GENERIC_STATUS_SUCCESS'\")",
+  "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\modal-full-path1-resume3\\live_worker.py\", line 192, in main\n    await bounded(base_identity(ctx), 30, 2)\n  File \"C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\modal-full-path1-resume3\\controller_core.py\", line 9, in bounded\n    return task.result()\n           ~~~~~~~~~~~^^\n  File \"C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\modal-full-path1-resume3\\live_worker.py\", line 95, in base_identity\n    if observed is None or observed.status != SDK.pb.GENERIC_STATUS_SUCCESS:\n                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: module 'modal_proto.api_pb2' has no attribute 'GENERIC_STATUS_SUCCESS'\n"
+}

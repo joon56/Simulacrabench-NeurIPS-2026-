@@ -1,0 +1,45 @@
+{
+    "prior_science_processes":  4,
+    "task":  "Remote technical measurement",
+    "prior_science_seconds":  1077.3504532,
+    "reads":  [
+                  "AGENTS.md",
+                  "CLAUDE.md entry",
+                  "docs/status.md",
+                  "docs/log.md latest3",
+                  "docs/workflow.md routing",
+                  "s0-builder-pass-review/decision.md",
+                  "local-preparation-repair2 named evidence and source12",
+                  "resume4 named metadata/config",
+                  "allowlist metadata",
+                  "requirements.lock.txt",
+                  "modal-local-integration1/phase-evidence.md"
+              ],
+    "workflow_revision":  "2026-09-27-r4",
+    "head":  "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+    "main":  "Fixed single remote complete path",
+    "workflow_sha256":  "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642",
+    "role":  "S1",
+    "authority":  "Current user attachment activates new single remote attempt; exact text saved",
+    "forbidden":  "Source repair/retry/unlisted protected data/new model/ZIP/S2/S3/commit/push/subagents",
+    "read_evidence":  [
+                          "a47281",
+                          "89ccc7",
+                          "27c6f7",
+                          "d013ca",
+                          "36ad32",
+                          "99e54b",
+                          "af6344",
+                          "1b9fd0"
+                      ],
+    "entry_utc":  "2026-10-05T09:44:05.0000000+00:00",
+    "prepare_deadline_utc":  "2026-10-05T10:44:05.0000000+00:00",
+    "local_named_jobs":  [
+
+                         ],
+    "gpu_latest_end_utc":  "2026-10-05T11:24:05.0000000+00:00",
+    "backup":  "Diagnostics/owned cleanup/closeout",
+    "allowed":  "Fixed launcher/source; one image recipe, conditional one Sandbox/boundary/reference/candidate; exact allowlist at transfer; owned cleanup",
+    "whole_deadline_utc":  "2026-10-05T11:44:05.0000000+00:00",
+    "prior_preparation_seconds":  10581.0943693
+}

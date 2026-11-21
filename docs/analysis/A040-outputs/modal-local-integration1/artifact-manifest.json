@@ -1,0 +1,201 @@
+{
+    "self_excluded":  true,
+    "files":  [
+                  {
+                      "path":  "docs/analysis/A040-outputs/modal-local-integration1/closeout.md",
+                      "sha256":  "6f72a4c3ff2561b3866d125fce535b8c674f90cffdedd2e49a02bad17ae4e51e",
+                      "bytes":  3163
+                  },
+                  {
+                      "path":  "docs/analysis/A040-outputs/modal-local-integration1/contract-manifest.json",
+                      "sha256":  "27e0b5d35b4c162a54abb3f9b02afb639682f089a3dcc110ea718df093002acf",
+                      "bytes":  3971
+                  },
+                  {
+                      "path":  "docs/analysis/A040-outputs/modal-local-integration1/contract.py",
+                      "sha256":  "8627e5b454e68f130078483f9c24e7ee2514046af8bdc1512021582d519bff05",
+                      "bytes":  4824
+                  },
+                  {
+                      "path":  "docs/analysis/A040-outputs/modal-local-integration1/controller_core.py",
+                      "sha256":  "fc561eee08f1eafbbeac2cbcc5fa31890ef719bf603c5c7dd1af7aea5e556bcb",
+                      "bytes":  1760
+                  },
+                  {
+                      "path":  "docs/analysis/A040-outputs/modal-local-integration1/cost-time-ledger.json",
+                      "sha256":  "24d1ddfa83b5dc4c6877d76f799a379a51a2491144f0d0f9a52e78a5d64389a3",
+                      "bytes":  1123
+                  },
+                  {
+                      "path":  "docs/analysis/A040-outputs/modal-local-integration1/dirty-entry.txt",
+                      "sha256":  "184f0fe5ff15527c15fb34d257489dd2552aa7f718ac2c3259d5032741e8d7e9",
+                      "bytes":  3219
+                  },
+                  {
+                      "path":  "docs/analysis/A040-outputs/modal-local-integration1/entry.json",
+                      "sha256":  "171d48e3801627a67d14de7ef207e58d48d8169e4616ac541aa5698f63dcc35b",
+                      "bytes":  1221
+                  },
+                  {
+                      "path":  "docs/analysis/A040-outputs/modal-local-integration1/exposure-ledger.md",
+                      "sha256":  "12de21a13aa379f4c5f9bfe6d3a749632e38d90316452e609fcd754935a3efd9",
+                      "bytes":  1761
+                  },
+                  {
+                      "path":  "docs/analysis/A040-outputs/modal-local-integration1/linux_boundary.py",
+                      "sha256":  "4c2aad23c52813693249a6d104c50f208ed33928086b466e46e853ad074712ff",
+                      "bytes":  5213
+                  },
+                  {
+                      "path":  "docs/analysis/A040-outputs/modal-local-integration1/linux_runner.py",
+                      "sha256":  "82facf9151daa8eadc55c438be99f4c0cf5e331978c18b3a59530ef2af5b680e",
+                      "bytes":  14813
+                  },
+                  {
+                      "path":  "docs/analysis/A040-outputs/modal-local-integration1/linux_watchdog.py",
+                      "sha256":  "9b08538d3b5990389e103ef2d391d58fec6ec63795bf0dc5ebcec08bc1991d34",
+                      "bytes":  5583
+                  },
+                  {
+                      "path":  "docs/analysis/A040-outputs/modal-local-integration1/live_binding.py",
+                      "sha256":  "ca1351a05eea38577632a918b286d5ee7e5c82d423928fd8c2ce1af67de206c8",
+                      "bytes":  835
+                  },
+                  {
+                      "path":  "docs/analysis/A040-outputs/modal-local-integration1/live_launcher.py",
+                      "sha256":  "49345a91d5627fd66a99aea31131d787cc0c4214399decca3837a78bced5e4e0",
+                      "bytes":  4633
+                  },
+                  {
+                      "path":  "docs/analysis/A040-outputs/modal-local-integration1/live_worker.py",
+                      "sha256":  "5f9b934e435bc62259944f47f97a81f29cf9559b183d7a0b9e87736156b18902",
+                      "bytes":  10822
+                  },
+                  {
+                      "path":  "docs/analysis/A040-outputs/modal-local-integration1/original-freeze-verification.json",
+                      "sha256":  "2573e410ec46f73b054551849aecf02a4787b478139ce2efda24b29a2e2d33eb",
+                      "bytes":  2176
+                  },
+                  {
+                      "path":  "docs/analysis/A040-outputs/modal-local-integration1/payload.py",
+                      "sha256":  "17273bebff6debd9888983ffcb2a7b3e3dbff572dccd203c05f9c8b5c9f60424",
+                      "bytes":  2663
+                  },
+                  {
+                      "path":  "docs/analysis/A040-outputs/modal-local-integration1/phase-evidence.md",
+                      "sha256":  "4abb5d627a8d30b9dc49a754debabfa1fc8fe5563d4d21f20500b7f7708c0f40",
+                      "bytes":  5770
+                  },
+                  {
+                      "path":  "docs/analysis/A040-outputs/modal-local-integration1/preservation.json",
+                      "sha256":  "68f22cd6c56e7e6911e79ad63bd1764f62e494e2fd15a056327d4ce011677e14",
+                      "bytes":  4160
+                  },
+                  {
+                      "path":  "docs/analysis/A040-outputs/modal-local-integration1/prior-identity.json",
+                      "sha256":  "deafab8639aa978e4e252449a2e4df0ee61273e0c8283f9569d40ede4db6acef",
+                      "bytes":  4009
+                  },
+                  {
+                      "path":  "docs/analysis/A040-outputs/modal-local-integration1/protocol.py",
+                      "sha256":  "4616f24b44d8b482cf90a560a13e59324f20e497af4090d6e588fe437801ff77",
+                      "bytes":  1678
+                  },
+                  {
+                      "path":  "docs/analysis/A040-outputs/modal-local-integration1/registration.md",
+                      "sha256":  "a87146b847e75295174bfedf53e73f8ea52fa9e817e0d16de7cab0f8b8c4e899",
+                      "bytes":  2303
+                  },
+                  {
+                      "path":  "docs/analysis/A040-outputs/modal-local-integration1/regression-history.md",
+                      "sha256":  "53079437ba52f72f47af51c9a46ab3d18ed4a8c28b8f3aa44543c5a036716b43",
+                      "bytes":  2498
+                  },
+                  {
+                      "path":  "docs/analysis/A040-outputs/modal-local-integration1/s0-handoff.ko.md",
+                      "sha256":  "d1d5584b86964f111c8d1590aeef73949e94beaa215692af9a0721fe934ed165",
+                      "bytes":  2637
+                  },
+                  {
+                      "path":  "docs/analysis/A040-outputs/modal-local-integration1/sandbox_stage.py",
+                      "sha256":  "8e0cfd474416aa586af9f7ec936c20c7d4fbf0c1888d2d770cc10c4d038027d0",
+                      "bytes":  6673
+                  },
+                  {
+                      "path":  "docs/analysis/A040-outputs/modal-local-integration1/sdk_endpoint.py",
+                      "sha256":  "94606de56ba23e65e3dcacc57009cb0e60b5506648a2b276cb3165696af4251f",
+                      "bytes":  3976
+                  },
+                  {
+                      "path":  "docs/analysis/A040-outputs/modal-local-integration1/source-identity-verification.json",
+                      "sha256":  "712807e82ae21dd5ce5855862a8f0cd7959f6754fe7ae184c6ca855e926c3573",
+                      "bytes":  1966
+                  },
+                  {
+                      "path":  "docs/analysis/A040-outputs/modal-local-integration1/source-manifest.json",
+                      "sha256":  "8377129e94e8457aebd64156d1599efd8bf7b4a49f2c1b99b2dc00104218451d",
+                      "bytes":  3040
+                  },
+                  {
+                      "path":  "docs/analysis/A040-outputs/modal-local-integration1/source.diff",
+                      "sha256":  "0c21c34c58fbed0e87f1a7f1d819207e0320e765cd79854d2630a8f4b3708c61",
+                      "bytes":  93758
+                  },
+                  {
+                      "path":  "docs/analysis/A040-outputs/modal-local-integration1/tests_integration.py",
+                      "sha256":  "e7caa0e6996860d0d8a89b56cec754182d9be8fd2d4e74b5f5a53a13a0bae0a1",
+                      "bytes":  23979
+                  },
+                  {
+                      "path":  "docs/analysis/A040-outputs/modal-local-integration1/tmp-artifact-manifest.json",
+                      "sha256":  "78dc737a7c726906fc3ebfb07fd5541433512e98df70b89aa3b58627aff0d8ae",
+                      "bytes":  209872
+                  },
+                  {
+                      "path":  "docs/analysis/A040-outputs/modal-local-integration1/verification.json",
+                      "sha256":  "56ad144bb01dfa46af2b2da64a8abc75a4fac4184219d6c8d998cb684e011924",
+                      "bytes":  2030
+                  },
+                  {
+                      "path":  "docs/analysis/A040-outputs/modal-local-integration1/regression/cycle1-process.json",
+                      "sha256":  "6a009d93ba5c3c0073be453840638b9d14b86c9f1e992fc4b950a406e277a6b2",
+                      "bytes":  164
+                  },
+                  {
+                      "path":  "docs/analysis/A040-outputs/modal-local-integration1/regression/cycle1-result.json",
+                      "sha256":  "5bca8ba78b752f86998b0e869ec66e51471a1a861f868c6f78eaa6e08d639db0",
+                      "bytes":  9453
+                  },
+                  {
+                      "path":  "docs/analysis/A040-outputs/modal-local-integration1/regression/cycle1-stderr.txt",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "docs/analysis/A040-outputs/modal-local-integration1/regression/cycle1-stdout.txt",
+                      "sha256":  "1698346e7ca7d2aaeefca569ea0c73589719bdc1c4d0f9154aaa861e5ba1e832",
+                      "bytes":  1590
+                  },
+                  {
+                      "path":  "docs/analysis/A040-outputs/modal-local-integration1/regression/cycle2-process.json",
+                      "sha256":  "83109acce9bb230c178a851b2e5765a77590248c714c7635c485049039e18307",
+                      "bytes":  163
+                  },
+                  {
+                      "path":  "docs/analysis/A040-outputs/modal-local-integration1/regression/cycle2-result.json",
+                      "sha256":  "430a634db0c061bfe88c59317cc32f2b58418a61b6b94bc4db5f9e7b7a7abb4e",
+                      "bytes":  11985
+                  },
+                  {
+                      "path":  "docs/analysis/A040-outputs/modal-local-integration1/regression/cycle2-stderr.txt",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "docs/analysis/A040-outputs/modal-local-integration1/regression/cycle2-stdout.txt",
+                      "sha256":  "982c219159d41f3533e12e9db9c74a4e7f83682a948d3435c4678e7aa54ce148",
+                      "bytes":  413
+                  }
+              ],
+    "created_utc":  "2026-10-04T13:33:30.2632445+00:00"
+}

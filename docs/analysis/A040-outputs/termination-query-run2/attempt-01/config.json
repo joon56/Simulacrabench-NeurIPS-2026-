@@ -1,0 +1,14 @@
+{
+  "source_hashes": {
+    "original/confirm_terminal.py": "0e68a80ce1237aaa0f95d42777a24154b5cee110858e0bf0a692c17a2d75939a",
+    "runtime.py": "15098ecdcafac77e0f679cfd220b123978dccad1cf018f45b4073e542acda6cc",
+    "attempt.py": "76ab5b2d9e968a8417feadfe6bd8e5334a7351014d8526f4433d4fd066a5b418"
+  },
+  "available_seconds": 120.0,
+  "deadline_monotonic": 29963.965321,
+  "deadline_utc": "2026-10-05T12:48:43.855074+00:00",
+  "read_only": false,
+  "prior": null,
+  "call_cap_seconds": 14.5,
+  "cumulative_used_before": 0.0
+}

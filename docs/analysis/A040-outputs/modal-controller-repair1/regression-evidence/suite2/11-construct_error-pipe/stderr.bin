@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\SimulacraBench\docs\analysis\A040-outputs\modal-controller-repair1\controller.py", line 120, in run_controller
+    transport.construct()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\USER\Desktop\SimulacraBench\docs\analysis\A040-outputs\modal-controller-repair1\controller.py", line 40, in construct
+    self.image = self.sdk.Image.from_registry('python:3.13.14-slim').run_function(
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\SimulacraBench\docs\analysis\A040-outputs\modal-controller-repair1\fake_worker.py", line 102, in from_registry
+    raise RuntimeError("construction before old try • 한글")
+RuntimeError: construction before old try • 한글
+

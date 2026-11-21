@@ -1,0 +1,1 @@
+{"original_cp949_reproduced": true, "error": "UnicodeEncodeError('cp949', '   \u2022 unpacking rootfs ... \ud55c\uae00', 3, 4, 'illegal multibyte sequence')", "seconds": 0.0013497999989340315}

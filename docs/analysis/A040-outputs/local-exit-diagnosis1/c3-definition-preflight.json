@@ -1,0 +1,35 @@
+﻿{
+    "kill_seconds":  20,
+    "case":  "definition",
+    "remaining_seconds":  225.04855190000000008,
+    "start_utc":  "2026-10-06T14:11:21.4975088+00:00",
+    "inputs":  [
+                   {
+                       "sha256":  "07a5e5076625f59b69d89a91dfc4a27cfbc5b68abf7adf11efb25721328c8d50",
+                       "path":  "source-manifest.json"
+                   },
+                   {
+                       "sha256":  "044d127a68021916b86fa677c39a7c68a5510aeeec89523c3d69b5c88b11926a",
+                       "path":  "boundary_transport.py"
+                   },
+                   {
+                       "sha256":  "cab28e9604e3310f28ad8288c11fa87973d8000da6c6839ec4e9f3a4d0203574",
+                       "path":  "fixture_transport.py"
+                   },
+                   {
+                       "sha256":  "555759980ceff510f4900d510c16a9f50706d8d2e969b1231f203cfc84db98a7",
+                       "path":  "local_guard.py"
+                   },
+                   {
+                       "sha256":  "ad09dfec45b528a069849aa37e1748ec5987e891f7ba77fccc4b6d9e358ca196",
+                       "path":  "check_boundary.py"
+                   },
+                   {
+                       "sha256":  "e0ba8c462dfab042eb5a3261da9bec64480459f6cbccc6a9618c5504cbd1c5de",
+                       "path":  "run_check.ps1"
+                   }
+               ],
+    "attempt":  "c3-definition",
+    "cap_seconds":  30,
+    "used_seconds":  14.95144809999999992
+}

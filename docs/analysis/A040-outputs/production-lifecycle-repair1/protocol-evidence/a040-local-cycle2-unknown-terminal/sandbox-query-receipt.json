@@ -1,0 +1,98 @@
+{
+  "app_id": "ap-bbbbbbbbbbbbbbbbbbbbbb",
+  "app_name": "a040-local-cycle2-unknown-terminal",
+  "sandbox_name": "a040-local-cycle2-unknown-terminal-gpu",
+  "sandbox_id": "sb-aaaaaaaaaaaaaaaaaaaaaa",
+  "terminal": "UNCONFIRMED",
+  "calls": [
+    {
+      "method": "Client.from_env",
+      "started_utc": "2026-10-05T14:29:09.564910+00:00",
+      "cap_seconds": 1.333322833335842,
+      "outcome": "RETURNED"
+    },
+    {
+      "method": "WorkspaceNameLookup",
+      "started_utc": "2026-10-05T14:29:09.577874+00:00",
+      "cap_seconds": 1.3203583333379356,
+      "outcome": "RETURNED"
+    },
+    {
+      "method": "AppGetInfo",
+      "started_utc": "2026-10-05T14:29:09.590111+00:00",
+      "cap_seconds": 1.3081217333383393,
+      "outcome": "RETURNED"
+    },
+    {
+      "method": "AuthTokenManager.get_token",
+      "started_utc": "2026-10-05T14:29:09.604196+00:00",
+      "cap_seconds": 1.2940335333405528,
+      "outcome": "RETURNED"
+    },
+    {
+      "method": "SandboxListV2",
+      "started_utc": "2026-10-05T14:29:09.618006+00:00",
+      "cap_seconds": 1.2802219333389075,
+      "outcome": "RETURNED"
+    },
+    {
+      "method": "AuthTokenManager.get_token",
+      "started_utc": "2026-10-05T14:29:09.631555+00:00",
+      "cap_seconds": 1.2666702333372086,
+      "outcome": "RETURNED"
+    },
+    {
+      "method": "SandboxListV2",
+      "started_utc": "2026-10-05T14:29:09.645635+00:00",
+      "cap_seconds": 1.252599633335194,
+      "outcome": "RETURNED"
+    },
+    {
+      "method": "SandboxWait",
+      "started_utc": "2026-10-05T14:29:09.667733+00:00",
+      "cap_seconds": 1.3971563000013703,
+      "outcome": "RETURNED"
+    }
+  ],
+  "errors": [
+    {
+      "type": "ValueError",
+      "message": "No named terminal result",
+      "stage": "SandboxWait"
+    }
+  ],
+  "terminate_requests": 0,
+  "new_resources": 0,
+  "remote_commands": 0,
+  "remote_file_operations": 0,
+  "observed_utc": "2026-10-05T14:29:09.680789+00:00",
+  "observed_kst": "2026-10-05T23:29:09.680800+09:00",
+  "elapsed_seconds": 0.1159131999957026,
+  "identity": {
+    "workspace": "joon56",
+    "environment": "main",
+    "app_id": "ap-bbbbbbbbbbbbbbbbbbbbbb",
+    "app_name": "a040-local-cycle2-unknown-terminal"
+  },
+  "version": "V1",
+  "listed": {
+    "id": "sb-aaaaaaaaaaaaaaaaaaaaaa",
+    "name": "a040-local-cycle2-unknown-terminal-gpu",
+    "app_id": "ap-bbbbbbbbbbbbbbbbbbbbbb",
+    "image_id": "im-fixture",
+    "created_at": 100.0,
+    "started_at": 101.0,
+    "finished_at": 0.0,
+    "include_finished": true,
+    "result": {
+      "status": 0,
+      "status_name": "GENERIC_STATUS_UNSPECIFIED",
+      "exitcode": 0
+    }
+  },
+  "sandbox_result": {
+    "status": 99,
+    "status_name": "UNKNOWN",
+    "exitcode": 0
+  }
+}

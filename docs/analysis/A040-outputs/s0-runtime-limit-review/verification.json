@@ -1,0 +1,336 @@
+{
+  "role": "S0",
+  "task_type": "Technical-result review and next-scope decision",
+  "date_kst": "2026-10-02",
+  "decision": "HOLD_CURRENT_LOCAL_EXECUTION",
+  "historical_verdict_preserved": "LOCAL_RESOURCE_LIMIT",
+  "next_recommendation": "Separate bounded H100 resource/access/cost information task only; not commissioned in S0",
+  "head": "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+  "workflow_revision": "2026-09-27-r4",
+  "workflow_sha256": "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642",
+  "read_receipt": {
+    "paths_in_order": [
+      "AGENTS.md",
+      "CLAUDE.md",
+      "docs/status.md",
+      "docs/log.md newest three",
+      "docs/workflow.md",
+      "docs/analysis/A040-outputs/full-path-resume1/"
+    ],
+    "evidence": [
+      "b64c39 entry/HEAD/dirty/jobs; output partly truncated",
+      "5a94ae latest3 reread/closeout/verification/source.diff/workflow hash",
+      "4aeb09 resources/partial observations/both resources/frozen manifest fields/exposure",
+      "8532f4 both original event logs recounted/runner timing source/freeze metadata"
+    ],
+    "role_boundary": "S0 document/source/metadata review and records only; no scientific or resource execution"
+  },
+  "selected_frozen_hash_matches": [
+    {
+      "path": "docs/analysis/A040-outputs/full-path-resume1/source.diff",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/full-path-resume1/runner.py",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/full-path-resume1/watchdog.py",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/full-path-resume1/adapter.py",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/full-path-resume1/orchestration.py",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/full-path-resume1/observer.py",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/full-path-resume1/schema_entry.py",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/full-path-resume1/telemetry.py",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/full-path-resume1/fixture-manifest.json",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/full-path-resume1/roles.json",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/full-path-resume1/dependency-identity.json",
+      "match": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/full-path-local-retry1/frozen-inputs/manifest.json",
+      "match": true
+    }
+  ],
+  "full182_and202_or_dependency34_checks_repeated": false,
+  "events_checked": {
+    "reference": 95,
+    "candidate": 1377,
+    "shadow_fit_completed": 213,
+    "shadow_predict_completed": 213,
+    "final_fit_completed": 199,
+    "final_predict_completed": 198,
+    "completed_expert_predict_seconds": 641.0873271000308,
+    "not_isolated_gpu_time": true,
+    "terminal_candidate_result_available": false
+  },
+  "preservation": [
+    {
+      "path": "docs/analysis/A040-outputs/full-path-resume1/closeout.md",
+      "before_sha256": "d4c4a4f5f04dfed0cfe45015cc7ea2a5d1518fd22b4c1d67cfcb52c63b84ab5b",
+      "after_sha256": "d4c4a4f5f04dfed0cfe45015cc7ea2a5d1518fd22b4c1d67cfcb52c63b84ab5b",
+      "unchanged": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/full-path-resume1/resources.json",
+      "before_sha256": "bde15eaa0d65683da72cde07d387431388fa8a6058524ea456436a3d1507b91f",
+      "after_sha256": "bde15eaa0d65683da72cde07d387431388fa8a6058524ea456436a3d1507b91f",
+      "unchanged": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/full-path-resume1/verification.json",
+      "before_sha256": "64a74527b6997f6d16b484abd149683c5231d72a6e593503fa6fe861d1f7d5ba",
+      "after_sha256": "64a74527b6997f6d16b484abd149683c5231d72a6e593503fa6fe861d1f7d5ba",
+      "unchanged": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/full-path-resume1/source.diff",
+      "before_sha256": "8d4a084eaedce52102d86ae6c63de99c95a68b95fe09e790e19602f7f3c9bc23",
+      "after_sha256": "8d4a084eaedce52102d86ae6c63de99c95a68b95fe09e790e19602f7f3c9bc23",
+      "unchanged": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/full-path-resume1/frozen-inputs/manifest.json",
+      "before_sha256": "b5f7effaa0a9ad427c403dfb2d524b8747c469968bb2cbb86419867911c8cacc",
+      "after_sha256": "b5f7effaa0a9ad427c403dfb2d524b8747c469968bb2cbb86419867911c8cacc",
+      "unchanged": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/full-path-resume1/candidate/partial-observations.json",
+      "before_sha256": "aa08d34bd59c58e94dffb1b267d96106c905db78ad271d25dc97fd48a418bd9d",
+      "after_sha256": "aa08d34bd59c58e94dffb1b267d96106c905db78ad271d25dc97fd48a418bd9d",
+      "unchanged": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/full-path-resume1/candidate/resources.json",
+      "before_sha256": "d274d897a960b3ca88af64e8765c1f2b394754d2f4233dcaf7faf1b7b55cf1ca",
+      "after_sha256": "d274d897a960b3ca88af64e8765c1f2b394754d2f4233dcaf7faf1b7b55cf1ca",
+      "unchanged": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/full-path-resume1/candidate/events.jsonl",
+      "before_sha256": "52f0fcd60a9407a6f77dd1ee765b488f9bacff9ff7d0bcd48c96309402e0d328",
+      "after_sha256": "52f0fcd60a9407a6f77dd1ee765b488f9bacff9ff7d0bcd48c96309402e0d328",
+      "unchanged": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/full-path-resume1/reference/resources.json",
+      "before_sha256": "8ec7e12b1c2a35007b89e2701ed22acc05cc06f950423c98a010032c6c24b8b3",
+      "after_sha256": "8ec7e12b1c2a35007b89e2701ed22acc05cc06f950423c98a010032c6c24b8b3",
+      "unchanged": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/full-path-resume1/reference/events.jsonl",
+      "before_sha256": "851da7b731e7b6b6a75e2575b1497c3023f7f1b9f1ee0d0269be25749838839a",
+      "after_sha256": "851da7b731e7b6b6a75e2575b1497c3023f7f1b9f1ee0d0269be25749838839a",
+      "unchanged": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/full-path-resume1/runner.py",
+      "before_sha256": "fc8d12a09bc283675811fb25efa80a7056f9f9077dffac9dfd3510d9dfa5cde5",
+      "after_sha256": "fc8d12a09bc283675811fb25efa80a7056f9f9077dffac9dfd3510d9dfa5cde5",
+      "unchanged": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/full-path-resume1/watchdog.py",
+      "before_sha256": "6c9a1647fe93689d2323c16f8245d01b26e79b5813ff14b4d647fd9d5a6d4e56",
+      "after_sha256": "6c9a1647fe93689d2323c16f8245d01b26e79b5813ff14b4d647fd9d5a6d4e56",
+      "unchanged": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/full-path-resume1/adapter.py",
+      "before_sha256": "411cd174e155038ebeecb130f1e4bafbb44580f9e0cc0898eaac96316af07612",
+      "after_sha256": "411cd174e155038ebeecb130f1e4bafbb44580f9e0cc0898eaac96316af07612",
+      "unchanged": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/full-path-resume1/orchestration.py",
+      "before_sha256": "fceda9e378734ddf86b603c7ad13b21df1f38fea8a3bd277bbd5f2731ce22b1b",
+      "after_sha256": "fceda9e378734ddf86b603c7ad13b21df1f38fea8a3bd277bbd5f2731ce22b1b",
+      "unchanged": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/full-path-resume1/observer.py",
+      "before_sha256": "f695447678ba05701034f9908eefe0f551ef8f6c9642a0a9bb6f473b02f196e0",
+      "after_sha256": "f695447678ba05701034f9908eefe0f551ef8f6c9642a0a9bb6f473b02f196e0",
+      "unchanged": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/full-path-resume1/schema_entry.py",
+      "before_sha256": "ba586843be8e703035a237926efe973c48b889c6cc200af4d74673e0b8d0535f",
+      "after_sha256": "ba586843be8e703035a237926efe973c48b889c6cc200af4d74673e0b8d0535f",
+      "unchanged": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/full-path-resume1/telemetry.py",
+      "before_sha256": "fee9e48d2359e32c7f1c9d9fe537435e2e18c1b56b1d17ff44972a40b9a147f4",
+      "after_sha256": "fee9e48d2359e32c7f1c9d9fe537435e2e18c1b56b1d17ff44972a40b9a147f4",
+      "unchanged": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/full-path-resume1/fixture-manifest.json",
+      "before_sha256": "43c8d6594b9667b7a09fad1d2349aadce082ee15ce7c35a1739a6a10e2f1ae98",
+      "after_sha256": "43c8d6594b9667b7a09fad1d2349aadce082ee15ce7c35a1739a6a10e2f1ae98",
+      "unchanged": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/full-path-resume1/roles.json",
+      "before_sha256": "0f61e0364bb4c2fb9465dffa18a71a391175afb2b149f4f730588f86ebdc3447",
+      "after_sha256": "0f61e0364bb4c2fb9465dffa18a71a391175afb2b149f4f730588f86ebdc3447",
+      "unchanged": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/full-path-resume1/dependency-identity.json",
+      "before_sha256": "18a42b3792f8d7acead356caf4fe6fab2a1fc4c526ba60970459fad8442f2c34",
+      "after_sha256": "18a42b3792f8d7acead356caf4fe6fab2a1fc4c526ba60970459fad8442f2c34",
+      "unchanged": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/full-path-resume1/exposure-ledger.md",
+      "before_sha256": "1e3c8f559b8a13248545527cce2ee37c4cb9b441889928746b79511c1e52d34d",
+      "after_sha256": "1e3c8f559b8a13248545527cce2ee37c4cb9b441889928746b79511c1e52d34d",
+      "unchanged": true
+    },
+    {
+      "path": "docs/analysis/A040-outputs/full-path-resume1/s0-handoff.ko.md",
+      "before_sha256": "dfb4b631b876f02c592eb9d3649b1f73a096f1890d35721fb39218179fc24d0b",
+      "after_sha256": "dfb4b631b876f02c592eb9d3649b1f73a096f1890d35721fb39218179fc24d0b",
+      "unchanged": true
+    },
+    {
+      "path": "AGENTS.md",
+      "before_sha256": "86394bbf164a2b7df6a309f4564b9dacf3b2799fa0227a703e4ea11d4d842596",
+      "after_sha256": "86394bbf164a2b7df6a309f4564b9dacf3b2799fa0227a703e4ea11d4d842596",
+      "unchanged": true
+    },
+    {
+      "path": "CLAUDE.md",
+      "before_sha256": "69175e6d741a17042db4852d4961a5c52bd97fe2cd5bfbff762d30d7e5270364",
+      "after_sha256": "69175e6d741a17042db4852d4961a5c52bd97fe2cd5bfbff762d30d7e5270364",
+      "unchanged": true
+    },
+    {
+      "path": "docs/workflow.md",
+      "before_sha256": "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642",
+      "after_sha256": "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642",
+      "unchanged": true
+    },
+    {
+      "path": "docs/tree.md",
+      "before_sha256": "eaa884a4194db103335136495205fe5b51297c17db15e9eac62946ced286cc44",
+      "after_sha256": "eaa884a4194db103335136495205fe5b51297c17db15e9eac62946ced286cc44",
+      "unchanged": true
+    },
+    {
+      "path": "docs/status.md",
+      "before_sha256": "17cb226e1ac7f7d1fe82a95f16b7b0cd973b2e6fca444599146ce7732578b299",
+      "after_sha256": "3b64e97376271b8fe9f7ff41b1cb0a74a1ef994a019a128550d290848352de61",
+      "unchanged": false
+    },
+    {
+      "path": "docs/log.md",
+      "before_sha256": "9ed4b62499f5f41b9c6c73f384b095620bac77fa073ed9edd4f837f8b0cdec9a",
+      "after_sha256": "92956d3af832ef609743677685464b202370675e2045103b46d0448061f9d445",
+      "unchanged": false
+    },
+    {
+      "path": "docs/analysis/A040-outputs/full-path-local-retry1/frozen-inputs/manifest.json",
+      "before_sha256": "18f207699c53d47a9f6e5cbbdc82ec976d0803ba2353cd34642a634eeff80b2d",
+      "after_sha256": "18f207699c53d47a9f6e5cbbdc82ec976d0803ba2353cd34642a634eeff80b2d",
+      "unchanged": true
+    }
+  ],
+  "shared_body_preserved": {
+    "status": true,
+    "log": true
+  },
+  "new_document_hashes": [
+    {
+      "path": "docs/analysis/A040-outputs/s0-runtime-limit-review/decision.md",
+      "sha256": "178f01b2f6244af91f477ca21f2850bebb2fd5fb1ca6aba8d48775111c8f4732"
+    },
+    {
+      "path": "docs/analysis/A040-outputs/s0-runtime-limit-review/s1-resource-feasibility.ko.md",
+      "sha256": "466ff1d7abfef2874955c3dda539bf6275c7eca178573f79d841c4b929227dcb"
+    }
+  ],
+  "named_jobs_at_close": [],
+  "actions": {
+    "event_metadata_read_and_arithmetic": true,
+    "protected_response_key_parquet_npz_cache_access": 0,
+    "synthetic_input_output_vectors_or_checkpoint_read_hash": 0,
+    "model_import": 0,
+    "fit_predict_score": 0,
+    "tests_generator": 0,
+    "resource_probe": 0,
+    "web_research": 0,
+    "code_changes": 0,
+    "install_acquisition": 0,
+    "app_system_changes": 0,
+    "remote_paid": 0,
+    "subagents": 0,
+    "zip_upload": 0,
+    "commit_push": 0,
+    "s2_s3": 0
+  },
+  "scientific_history": {
+    "processes": 4,
+    "parent_seconds": 1077.3504532000006,
+    "added_this_s0": 0,
+    "memory_peaks_summed": false
+  },
+  "preserved_state": {
+    "incumbent": "E041",
+    "fallback": "E025",
+    "parked": [
+      "E057",
+      "E060",
+      "E061"
+    ],
+    "all_stop_holds": true,
+    "real_exposure_people": 17999,
+    "real_exposure_ssuid": 12339,
+    "a022_original_roles_and_aggregate_history": true,
+    "e059_consumed_oracle": "1918/1124",
+    "e059_consumed_selection": "2007/1130",
+    "protected_audit": "2074/1177",
+    "protected_calibration": 1866,
+    "a039_hold": true,
+    "a_half_promoted": false,
+    "a018_user_confirmed": false,
+    "s3": "stopped",
+    "s2_candidate": false
+  },
+  "limitations": [
+    "Completion-event sums omit interrupted work.",
+    "No remaining-head extrapolation or H100 runtime forecast.",
+    "No independent complete input/environment verification.",
+    "No ERPIS efficacy evidence or full candidate/release qualification.",
+    "Next handoff requires separate user direction; no resource access or spending authorized."
+  ],
+  "verification_kind": "Document preservation/hash and existing event-log consistency only",
+  "self_hash_included": false
+}

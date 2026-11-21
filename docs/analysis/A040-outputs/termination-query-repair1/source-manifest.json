@@ -1,0 +1,203 @@
+{
+  "created_utc": "2026-10-05T12:23:30.710555+00:00",
+  "files": [
+    {
+      "path": "closeout-terminal-status.json",
+      "sha256": "0ea7371a6c886802812bdd8803dbc29add19b66a33e96559151a6d2e44a05d70",
+      "bytes": 1298
+    },
+    {
+      "path": "closeout.md",
+      "sha256": "5e0650a18e043e0e4dbe5af6cb911c09713e6519972d4f8a2857623e49089991",
+      "bytes": 3018
+    },
+    {
+      "path": "confirm_terminal.pre-entry-fix.py",
+      "sha256": "2c3c3968368cdd775312cc092ee9422369ba39b7d26fd30d4179f56a6244888a",
+      "bytes": 11797
+    },
+    {
+      "path": "confirm_terminal.py",
+      "sha256": "0e68a80ce1237aaa0f95d42777a24154b5cee110858e0bf0a692c17a2d75939a",
+      "bytes": 12216
+    },
+    {
+      "path": "cost-time-ledger.json",
+      "sha256": "8e76c9bb326ad66c613d8dd42e49391728a06f13fb34ba04a5211da0e5f0f347",
+      "bytes": 1451
+    },
+    {
+      "path": "cycle1-process.json",
+      "sha256": "5d96e5bb59e1fb3af7194e6dd7a1f65a7f793d7ad3aff4575841dfa0cb182561",
+      "bytes": 128
+    },
+    {
+      "path": "cycle1-stderr.txt",
+      "sha256": "2982fd469ebe02b1e2aba686045f77a9d3d783871245eeedd7eebcd42fea0a85",
+      "bytes": 905
+    },
+    {
+      "path": "cycle1-stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "cycle2-process.json",
+      "sha256": "92521c675d265cc25247b957b60d29c6eea73447fe7c729d4fe5b77c1d855d26",
+      "bytes": 163
+    },
+    {
+      "path": "cycle2-stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "cycle2-stdout.txt",
+      "sha256": "e98b16680531e8c307d465f78b2c3b3308e9f7ac181754e5cb471c9d1e18b995",
+      "bytes": 473
+    },
+    {
+      "path": "dirty-entry.txt",
+      "sha256": "955a127ca4f204a6bdbefd565c3c5296e3d4e09078c8d579e49450941d394a59",
+      "bytes": 3126
+    },
+    {
+      "path": "entry-check-process.json",
+      "sha256": "90bc3baf0c1492dd3cbd3f5dd93d4481a87859f0174e933dea809884427fdd8a",
+      "bytes": 103
+    },
+    {
+      "path": "entry-check-stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "entry-check-stdout.txt",
+      "sha256": "93f255230afbd40d5f2bcbfca4c5f8ad289a2ad40198ba625333f4a1fb9668ea",
+      "bytes": 87
+    },
+    {
+      "path": "entry-repair.diff",
+      "sha256": "480a292f91865becf140e532924aae5938c4d2c8097901d628bbb7897e9c1682",
+      "bytes": 2003
+    },
+    {
+      "path": "entry.json",
+      "sha256": "8eed6a5efa830a91e07d48dc777f693f60504487ddd0c970921caed95624cc67",
+      "bytes": 2022
+    },
+    {
+      "path": "exposure-ledger.md",
+      "sha256": "2efd5f7b2df879c27d268504f69393bdb3004cc18cde2c01e9ddc19f2544da55",
+      "bytes": 1446
+    },
+    {
+      "path": "live-exit.json",
+      "sha256": "c2206b05af9849b403c9da8c9929e7d380288b5f33a743b3135762662091c33c",
+      "bytes": 131
+    },
+    {
+      "path": "live-intent.json",
+      "sha256": "b661013eaa9112e9903223492114d6142c1495acbd5596c3ff55436fbe2ebd84",
+      "bytes": 346
+    },
+    {
+      "path": "live-process.json",
+      "sha256": "a24540249e83ced7cc4531746575f59153e2b019aa908ea1af96de74dbe210df",
+      "bytes": 128
+    },
+    {
+      "path": "live-stderr.txt",
+      "sha256": "1f14b5dbd0bf56ef096bdb5314b2507c7ce8205881458946bd63e0e545da7a3b",
+      "bytes": 1326
+    },
+    {
+      "path": "live-stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "live1-preauth-exit.json",
+      "sha256": "c2206b05af9849b403c9da8c9929e7d380288b5f33a743b3135762662091c33c",
+      "bytes": 131
+    },
+    {
+      "path": "live1-preauth-stderr.txt",
+      "sha256": "1f14b5dbd0bf56ef096bdb5314b2507c7ce8205881458946bd63e0e545da7a3b",
+      "bytes": 1326
+    },
+    {
+      "path": "local_guard.py",
+      "sha256": "0c7689cc89e0667f3f60a4a67eadb0d3038c72b2b344628b80cde3bd7151b875",
+      "bytes": 2378
+    },
+    {
+      "path": "pre-remote-freeze.json",
+      "sha256": "79cb70bc54991fdea5a6ab5079332755e7ba392693b81ea801fd2f3dbae3e90b",
+      "bytes": 2060
+    },
+    {
+      "path": "regression-history.md",
+      "sha256": "fe3cab13e636db07047f4c282a3486e42d0b6eda2e97a9f3f7f5eed31db8713e",
+      "bytes": 3034
+    },
+    {
+      "path": "remote-window.json",
+      "sha256": "dbfa531e2be9d33f59991484ac245668cb81be8ebdfef68b299de3e44fec2321",
+      "bytes": 280
+    },
+    {
+      "path": "reproduce_wrapper.py",
+      "sha256": "3e4a8301322595b8a7ad7704880cd9c65b912f6b62cf7f9df92b3c342e89679b",
+      "bytes": 1858
+    },
+    {
+      "path": "reproduction-process.json",
+      "sha256": "2ec7ca4e88560179811602d301c3df0d8a3fd159eddf863273ad87ea7db5ff10",
+      "bytes": 138
+    },
+    {
+      "path": "reproduction-stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "reproduction-stdout.txt",
+      "sha256": "0fbe8cbbcf13ad6afdc7e2453188ef6a6ca49a0b16c51559b378d2a6442bff11",
+      "bytes": 197
+    },
+    {
+      "path": "s0-handoff.ko.md",
+      "sha256": "3b94123044d795faa0bcfee45395b9e9543aa787ff2e860b21c073f58364e317",
+      "bytes": 1784
+    },
+    {
+      "path": "source.diff",
+      "sha256": "048ef54f4e515d6c932dbfe4b14067ce461610668ae16eed4a360d957f262321",
+      "bytes": 19511
+    },
+    {
+      "path": "test_entry.py",
+      "sha256": "023f8ef59d456dcdf10f52e9d09e15fd5190a1f1d000b0739089cca9dd6fdc85",
+      "bytes": 862
+    },
+    {
+      "path": "tests_query.cycle1.py",
+      "sha256": "5c524e0f1702bb482c67e324827ba94547fc6a920d0e0d6fd5c996352d3627da",
+      "bytes": 8911
+    },
+    {
+      "path": "tests_query.py",
+      "sha256": "69fb596bf74cfb0b27808fcc52502cc2ced7d09ca0e69bdd8dfcf102c903be04",
+      "bytes": 9067
+    },
+    {
+      "path": "verification.json",
+      "sha256": "48037dd6e2f665c0aef81229b9afb135b19b2d4d6d1ce96652ef2a8bb22633a0",
+      "bytes": 2382
+    }
+  ],
+  "boundary": "New cleanup artifacts only; no protected payload/pins/model rehash",
+  "historical_freeze_preserved": true,
+  "finalized_utc": "2026-10-05T12:25:08.306796+00:00"
+}

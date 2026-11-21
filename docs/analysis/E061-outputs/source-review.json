@@ -1,0 +1,10 @@
+{
+  "normalized_AST_equal": {
+    "_train": true,
+    "_train_on": true,
+    "tune_and_train": true
+  },
+  "normalization": "Strip docstrings, schema-mapping assignment and conditional_map plumbing; map TiedNet constructor back to _Net",
+  "scope": "Only known tying wiring removed; rest of train/tune AST exactly unchanged",
+  "scientific_execution": 0
+}

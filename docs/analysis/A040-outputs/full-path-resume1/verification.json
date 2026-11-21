@@ -1,0 +1,54 @@
+{
+  "outcome": "LOCAL_RESOURCE_LIMIT",
+  "record_checks": "PASS",
+  "head": "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+  "workflow_revision": "2026-09-27-r4",
+  "workflow_sha256": "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642",
+  "read_evidence": [
+    "b10ae1 current handoff/AGENTS/CLAUDE",
+    "642505 CLAUDE/status/log",
+    "44a728 full newest3 logs/HEAD/dirty",
+    "710c82 prior closeout/official contract/exposure/runner/watchdog",
+    "c42beb required metadata/schema helper",
+    "561905 active jobs empty",
+    "48c6ff one resource entry PASS"
+  ],
+  "original182_verified": true,
+  "protected_identity_matches": 209,
+  "new_frozen_identity_matches": 202,
+  "protected_reference": "entry.json",
+  "frozen_reference": "frozen-inputs/manifest.json",
+  "shared_record_checks": {
+    "status": {
+      "prior_body_preserved": true,
+      "sha256": "17cb226e1ac7f7d1fe82a95f16b7b0cd973b2e6fca444599146ce7732578b299"
+    },
+    "log": {
+      "prior_body_preserved": true,
+      "sha256": "9ed4b62499f5f41b9c6c73f384b095620bac77fa073ed9edd4f837f8b0cdec9a"
+    }
+  },
+  "scientific_latches": 2,
+  "reference_pass": true,
+  "reference_canonical_vectors": 189649,
+  "control_and_final_R_stage_parity": true,
+  "candidate_policy_mixture_all3_pass": false,
+  "forced_engineering_output_pass": false,
+  "final_state_check_pass": false,
+  "candidate_phase_evidence": "candidate/partial-observations.json",
+  "candidate_time_cap_enforced": true,
+  "candidate_retry": false,
+  "source_edits_after_freeze": false,
+  "no_recorded_host_memory_breach": true,
+  "gpu_final_peak_complete": false,
+  "candidate_terminal_network_audit_complete": false,
+  "native_egress_verified": false,
+  "checkpoint_on_disk_hash_unchanged": true,
+  "final_in_memory_checkpoint_hash_verified": false,
+  "historical_schema_pass_reused_not_rerun": true,
+  "input_generation": 0,
+  "protected_response_key_other_fake_cache_VAF_access": false,
+  "install_download_agents_paid_system_change_zip_upload_commit_push": 0,
+  "s2_candidate": false,
+  "s0_review_required": true
+}

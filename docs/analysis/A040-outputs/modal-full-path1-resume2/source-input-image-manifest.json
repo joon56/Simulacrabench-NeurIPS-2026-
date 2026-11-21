@@ -1,0 +1,24 @@
+﻿{
+    "state":  "INCOMPLETE_NO_SCIENTIFIC_FREEZE",
+    "identity_time":  "POST_FAILURE",
+    "source_files":  [
+                         {
+                             "path":  "build_once.py",
+                             "bytes":  6127,
+                             "sha256":  "9ddccf2fd52c0f93d02d0b5299151bdcf234f911654f5c8342efbb485014b3b0"
+                         },
+                         {
+                             "path":  "inspect_termination.py",
+                             "bytes":  2375,
+                             "sha256":  "0fe2acf4a50a2c9e3b2c953ec5041c84320923c969a4d1411ba5a41095f3a4a1"
+                         }
+                     ],
+    "original_allowlist":  "../modal-full-path1/allowlist.json",
+    "original_allowlist_sha256":  "f8a52aaabb040593737485a9f860d53ae39600693ab18517128c577d0ac5dcfe",
+    "allowlist112_rehashed_this_attempt":  false,
+    "staged_payload_transfer_started":  false,
+    "image_base_id":  "im-eWgRNij0VH6mzozlOzEyxy",
+    "image_base_result":  "GENERIC_STATUS_SUCCESS",
+    "complete_dependency_image_id":  null,
+    "scientific_execution_authorized_by_manifest":  false
+}

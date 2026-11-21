@@ -1,0 +1,12 @@
+Exception ignored in: <function BaseEventLoop.__del__ at 0x000001CF4700D260>
+Traceback (most recent call last):
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python313\Lib\asyncio\base_events.py", line 766, in __del__
+    self.close()
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python313\Lib\asyncio\proactor_events.py", line 696, in close
+    self._close_self_pipe()
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python313\Lib\asyncio\proactor_events.py", line 777, in _close_self_pipe
+    self._ssock.close()
+AttributeError: 'ProactorEventLoop' object has no attribute '_ssock'
+C:\Users\USER\Desktop\SimulacraBench\docs\analysis\A040-outputs\modal-builder-source-repair1/check_builder_source.py:220: RuntimeWarning: coroutine 'main' was never awaited
+  RESULT["error"] = traceback.format_exc()
+RuntimeWarning: Enable tracemalloc to get the object allocation traceback

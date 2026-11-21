@@ -1,0 +1,81 @@
+{
+  "sha256": {
+    "external/starter-kit/config.yml": "f22f8e4faa62b6af0ee8e7e887e35980511e4517655479fefeeef4519fc52c15",
+    "external/starter-kit/tools/check_submission_zip.py": "0cb9e671b3b19ab62e68b37512ee8717e97d47694276f16e27a77b02d2f37916",
+    "submissions/2026-09-25-E025/main.py": "00793cf9d720d6f7511ffd738935206b3a5401f2454255409429db8d55e991b9",
+    "submissions/2026-09-25-E025.zip": "142921c3ea843c653821cf06a8b3fab89e8e6c96592581590f7e970064d90c6f",
+    "submissions/2026-09-25-E041/main.py": "22c911806ea91234ae350341adfb9c0df2ce4be41cc88e73be304e4bb1023073"
+  },
+  "imports": {
+    "src/__init__.py": [],
+    "src/models/__init__.py": [],
+    "src/models/hh_cap.py": [
+      "src/models/hh_sharp.py",
+      "src/models/link_sharp.py"
+    ],
+    "src/models/link_sharp.py": [
+      "src/models/cond_agree.py",
+      "src/models/dup_link.py",
+      "src/models/hier_backoff.py",
+      "src/models/logit_blend.py",
+      "src/models/prob_link.py",
+      "src/models/shared_trunk.py"
+    ],
+    "src/models/hh_sharp.py": [
+      "src/models/dup_link.py",
+      "src/models/hh_link.py",
+      "src/models/hier_backoff.py",
+      "src/models/link_sharp.py",
+      "src/models/prob_link.py"
+    ],
+    "src/models/hier_backoff.py": [],
+    "src/models/logit_blend.py": [
+      "src/models/hier_backoff.py"
+    ],
+    "src/models/cond_agree.py": [
+      "src/models/hier_backoff.py",
+      "src/models/logit_blend.py"
+    ],
+    "src/models/shared_trunk.py": [
+      "src/models/cond_agree.py",
+      "src/models/hier_backoff.py",
+      "src/models/logit_blend.py"
+    ],
+    "src/models/prob_link.py": [
+      "src/models/cond_agree.py",
+      "src/models/cross_link.py",
+      "src/models/hier_backoff.py",
+      "src/models/logit_blend.py",
+      "src/models/shared_trunk.py"
+    ],
+    "src/models/dup_link.py": [
+      "src/models/cond_agree.py",
+      "src/models/hier_backoff.py",
+      "src/models/logit_blend.py",
+      "src/models/prob_link.py",
+      "src/models/shared_trunk.py"
+    ],
+    "src/models/hh_link.py": [
+      "src/models/dup_link.py",
+      "src/models/hier_backoff.py",
+      "src/models/prob_link.py"
+    ],
+    "src/models/cross_link.py": [
+      "src/models/cond_agree.py",
+      "src/models/hier_backoff.py",
+      "src/models/logit_blend.py",
+      "src/models/shared_trunk.py"
+    ]
+  },
+  "archive_members": {
+    "main.py": "00793cf9d720d6f7511ffd738935206b3a5401f2454255409429db8d55e991b9",
+    "LICENSE-starter-kit.txt": "a81db73b86212de93a3944eea5dfb01126ffe17d5fbdb620a6e4c4d04830b20e"
+  },
+  "checker": {
+    "decision": "REUSE_NO_RERUN",
+    "prior_pass": "OK: C:\\Users\\USER\\Desktop\\SimulacraBench\\submissions\\2026-09-25-E025.zip looks like a valid submission ZIP.",
+    "checker_sha256": "0cb9e671b3b19ab62e68b37512ee8717e97d47694276f16e27a77b02d2f37916",
+    "basis": "A018 freeze manifest same ZIP plus A012 historical and pinned kit checker identity"
+  },
+  "kit_compatibility": "Reuse s3-prep pinned ee427a9/f980ef5 comparison; no network query"
+}

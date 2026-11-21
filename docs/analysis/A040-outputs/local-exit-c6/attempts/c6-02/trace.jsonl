@@ -1,0 +1,7 @@
+{"event": "child_entry", "utc": "2026-10-26T12:39:57.730399+00:00", "elapsed_seconds": 0.0003467999995336868, "pid": 40428, "case": "protobuf_graph"}
+{"event": "rpc_response_boundary", "utc": "2026-10-26T12:39:57.734336+00:00", "elapsed_seconds": 0.0042831000027945265, "method": "WorkspaceNameLookup"}
+{"event": "rpc_response_boundary", "utc": "2026-10-26T12:39:57.735203+00:00", "elapsed_seconds": 0.005148700001882389, "method": "AppGetOrCreate"}
+{"event": "protobuf_parser_enter", "utc": "2026-10-26T12:39:57.736309+00:00", "elapsed_seconds": 0.006254100000660401, "parser": "modal.types.FunctionInfo._from_function_proto"}
+{"event": "protobuf_graph_constructed_and_parsed", "utc": "2026-10-26T12:39:57.736928+00:00", "elapsed_seconds": 0.006873099999211263}
+{"event": "rpc_response_boundary", "utc": "2026-10-26T12:39:57.737411+00:00", "elapsed_seconds": 0.007356000001891516, "method": "AppStop"}
+{"event": "reduced_return", "utc": "2026-10-26T12:39:57.737876+00:00", "elapsed_seconds": 0.007821100000001024, "case": "protobuf_graph"}

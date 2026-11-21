@@ -1,0 +1,200 @@
+{
+  "token": "e041-render-1",
+  "script": "render_method.py",
+  "arguments": [
+    "E041",
+    "1"
+  ],
+  "seconds": 0.7920804999994289,
+  "exit_code": 0,
+  "failure": null,
+  "passed": true,
+  "owned_pids": [
+    28224,
+    33072
+  ],
+  "remnant_pids": [],
+  "final_sample_checked": true,
+  "peak_tree_rss": 62685184,
+  "peak_tree_private": 40546304,
+  "max_sample_gap_seconds": 0.109574000001885,
+  "memory_semantics": "sampled concurrent process-tree sums including supervisor, not unsampled instantaneous peak",
+  "samples": [
+    {
+      "seconds": 0.02760429999761982,
+      "rss": 25595904,
+      "private": 11165696,
+      "processes": [
+        {
+          "pid": 28224,
+          "rss": 4734976,
+          "private": 839680
+        },
+        {
+          "pid": 33072,
+          "rss": 2551808,
+          "private": 376832
+        },
+        {
+          "pid": 35048,
+          "rss": 18309120,
+          "private": 9949184
+        }
+      ]
+    },
+    {
+      "seconds": 0.1370333999984723,
+      "rss": 41402368,
+      "private": 20930560,
+      "processes": [
+        {
+          "pid": 28224,
+          "rss": 4861952,
+          "private": 839680
+        },
+        {
+          "pid": 33072,
+          "rss": 18186240,
+          "private": 10141696
+        },
+        {
+          "pid": 35048,
+          "rss": 18354176,
+          "private": 9949184
+        }
+      ]
+    },
+    {
+      "seconds": 0.24600739999732468,
+      "rss": 48123904,
+      "private": 26763264,
+      "processes": [
+        {
+          "pid": 28224,
+          "rss": 4861952,
+          "private": 839680
+        },
+        {
+          "pid": 33072,
+          "rss": 24903680,
+          "private": 15974400
+        },
+        {
+          "pid": 35048,
+          "rss": 18358272,
+          "private": 9949184
+        }
+      ]
+    },
+    {
+      "seconds": 0.35529879999739933,
+      "rss": 55197696,
+      "private": 33357824,
+      "processes": [
+        {
+          "pid": 28224,
+          "rss": 4861952,
+          "private": 839680
+        },
+        {
+          "pid": 33072,
+          "rss": 31977472,
+          "private": 22568960
+        },
+        {
+          "pid": 35048,
+          "rss": 18358272,
+          "private": 9949184
+        }
+      ]
+    },
+    {
+      "seconds": 0.46408339999834425,
+      "rss": 59117568,
+      "private": 37171200,
+      "processes": [
+        {
+          "pid": 28224,
+          "rss": 4861952,
+          "private": 839680
+        },
+        {
+          "pid": 33072,
+          "rss": 35897344,
+          "private": 26382336
+        },
+        {
+          "pid": 35048,
+          "rss": 18358272,
+          "private": 9949184
+        }
+      ]
+    },
+    {
+      "seconds": 0.5733239999972284,
+      "rss": 61243392,
+      "private": 38940672,
+      "processes": [
+        {
+          "pid": 28224,
+          "rss": 4861952,
+          "private": 839680
+        },
+        {
+          "pid": 33072,
+          "rss": 38019072,
+          "private": 28151808
+        },
+        {
+          "pid": 35048,
+          "rss": 18362368,
+          "private": 9949184
+        }
+      ]
+    },
+    {
+      "seconds": 0.681730599997536,
+      "rss": 62685184,
+      "private": 40546304,
+      "processes": [
+        {
+          "pid": 28224,
+          "rss": 4861952,
+          "private": 839680
+        },
+        {
+          "pid": 33072,
+          "rss": 39460864,
+          "private": 29757440
+        },
+        {
+          "pid": 35048,
+          "rss": 18362368,
+          "private": 9949184
+        }
+      ]
+    },
+    {
+      "seconds": 0.791304599999421,
+      "rss": 18427904,
+      "private": 10104832,
+      "processes": [
+        {
+          "pid": 28224,
+          "rss": 32768,
+          "private": 77824
+        },
+        {
+          "pid": 33072,
+          "rss": 32768,
+          "private": 77824
+        },
+        {
+          "pid": 35048,
+          "rss": 18362368,
+          "private": 9949184
+        }
+      ]
+    }
+  ]
+}

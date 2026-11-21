@@ -1,0 +1,9 @@
+C:\Users\USER\AppData\Local\Programs\Python\Python313\Lib\asyncio\events.py:89: DeprecationError: 2025-12-09: Modal will stop propagating the `grpclib.GRPCError` type in the future. Update your code so that it catches `modal.exception.ServiceError` directly to avoid changes to error handling behavior in the future.
+  self._context.run(self._callback, *self._args)
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\SimulacraBench\docs\analysis\A040-outputs\termination-query-repair1\tests_query.py", line 176, in <module>
+    result = synchronizer.create_blocking(suite)()
+  File "C:\Users\USER\Desktop\SimulacraBench\docs\analysis\A040-outputs\termination-query-repair1\tests_query.py", line 140, in suite
+    assert result['errors'] and '[REDACTED]' in result['errors'][0]['message']
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

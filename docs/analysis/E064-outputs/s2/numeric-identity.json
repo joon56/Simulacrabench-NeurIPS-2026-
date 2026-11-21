@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "hashes": {
+    "docs/analysis/E064-outputs/attempts/R-01/vectors-unicef.npz": "1269a5064ee632708f14bff1e1ba2190e26f81c05caf1d6582bb52c9c821a62c",
+    "docs/analysis/E064-outputs/attempts/R-01/vectors-world_bank.npz": "4a261189acb717dc70e1791e9bf19f754adc29f81a137f546725d3061304af55",
+    "docs/analysis/E064-outputs/attempts/R-01/vectors-unhcr.npz": "262ec003947b96a2b3bdad76866fc68b3763db148e061c5d5bc9a1c3ac416e3d",
+    "docs/analysis/E064-outputs/attempts/H-01/vectors-unicef.npz": "1269a5064ee632708f14bff1e1ba2190e26f81c05caf1d6582bb52c9c821a62c",
+    "docs/analysis/E064-outputs/attempts/H-01/vectors-world_bank.npz": "4a261189acb717dc70e1791e9bf19f754adc29f81a137f546725d3061304af55",
+    "docs/analysis/E064-outputs/attempts/H-01/vectors-unhcr.npz": "ae9ab8cdfe7eb8c800f11849dccfb49523d0fd71545df74b403c295c36f1dc43",
+    "docs/analysis/E062-outputs/vectors-E025-unicef.npz": "1269a5064ee632708f14bff1e1ba2190e26f81c05caf1d6582bb52c9c821a62c",
+    "docs/analysis/E062-outputs/vectors-E025-world_bank.npz": "4a261189acb717dc70e1791e9bf19f754adc29f81a137f546725d3061304af55",
+    "docs/analysis/E062-outputs/vectors-E025-unhcr.npz": "9255a4f334e0bdda4bb3835e81931b54f6e5f5515a00f140a8bdea6e851d6bb1",
+    "docs/analysis/E062-outputs/vectors-E041-unicef.npz": "1269a5064ee632708f14bff1e1ba2190e26f81c05caf1d6582bb52c9c821a62c",
+    "docs/analysis/E062-outputs/vectors-E041-world_bank.npz": "4a261189acb717dc70e1791e9bf19f754adc29f81a137f546725d3061304af55",
+    "docs/analysis/E062-outputs/vectors-E041-unhcr.npz": "262ec003947b96a2b3bdad76866fc68b3763db148e061c5d5bc9a1c3ac416e3d",
+    "external/starter-kit/_sandbox/world_bank/respondents.parquet": "4592bed873410c5248edf1205e5cab41dd30494926e3b49f8da598e266758c8a",
+    "external/starter-kit/_sandbox/unicef/respondents.parquet": "8e7c659d277c5145c7a8a6d055ac59a7dd3c35699317741239b6b1969bce1488",
+    "external/starter-kit/_sandbox/unhcr/respondents.parquet": "5d00075706e0a7beafdc8a70acfe07cde1f489048741eb2f3ae1fababdb72774"
+  }
+}

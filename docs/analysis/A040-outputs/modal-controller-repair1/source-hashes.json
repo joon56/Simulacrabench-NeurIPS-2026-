@@ -1,0 +1,77 @@
+[
+    {
+        "path":  "docs/analysis/A040-outputs/modal-full-path1-resume2/build_once.py",
+        "bytes":  6127,
+        "sha256":  "9ddccf2fd52c0f93d02d0b5299151bdcf234f911654f5c8342efbb485014b3b0"
+    },
+    {
+        "path":  "docs/analysis/A040-outputs/modal-full-path1-resume2/inspect_termination.py",
+        "bytes":  2375,
+        "sha256":  "0fe2acf4a50a2c9e3b2c953ec5041c84320923c969a4d1411ba5a41095f3a4a1"
+    },
+    {
+        "path":  "docs/analysis/A040-outputs/modal-full-path1-resume2/artifact-manifest.json",
+        "bytes":  6758,
+        "sha256":  "910e08f6213399f3cf14c0dfe9f9e650f3cc4d97d1dc9aa11405e75c847e524d"
+    },
+    {
+        "path":  "docs/analysis/A040-outputs/s0-modal-logging-review/decision.md",
+        "bytes":  4240,
+        "sha256":  "b38269cb6f6acb6d9568ed9dc4dad0b8a2b2bd82f704fdef792d0332acd98e7a"
+    },
+    {
+        "path":  "docs/analysis/A040-outputs/s0-modal-logging-review/s1-local-controller-repair.ko.md",
+        "bytes":  5325,
+        "sha256":  "5d59a26b46908dfbfd3c40cbc1624cc4f86674c2c773a33ba6edfc0e810c2fe3"
+    },
+    {
+        "path":  "tmp/a040-modal-full-path1/sdk-venv/Lib/site-packages/modal/client.py",
+        "bytes":  22852,
+        "sha256":  "72cb6b2f4c295c266672f46ced2cb7411c3d573f33919cbc34d934b4f7b7f2c9"
+    },
+    {
+        "path":  "tmp/a040-modal-full-path1/sdk-venv/Lib/site-packages/modal/app.py",
+        "bytes":  74703,
+        "sha256":  "b4020b5e2deb93e7762a074b28632c07b6b04a188f05c3df11f88f2e7d5f1906"
+    },
+    {
+        "path":  "tmp/a040-modal-full-path1/sdk-venv/Lib/site-packages/modal/_image.py",
+        "bytes":  132397,
+        "sha256":  "501027be53a74f40ac4eda78e23d288435e563e9e2a79d0df962eae72a4d634c"
+    },
+    {
+        "path":  "docs/analysis/A040-outputs/modal-controller-repair1/controller.py",
+        "bytes":  8423,
+        "sha256":  "d830545f9ced6778d51f095fff68fd692e648496ba089ffb47d46db0fd1695de"
+    },
+    {
+        "path":  "docs/analysis/A040-outputs/modal-controller-repair1/launcher.py",
+        "bytes":  2318,
+        "sha256":  "cf9b61ab363c52a3bd26cacf08fae0b098bdfc8b7215c28ec6ca4e1d64acbda6"
+    },
+    {
+        "path":  "docs/analysis/A040-outputs/modal-controller-repair1/fake_worker.py",
+        "bytes":  7879,
+        "sha256":  "65497ffb0875e9fa24cc4a3a15621b5c4233d019d9110e5d10ec07c75c0bd9eb"
+    },
+    {
+        "path":  "docs/analysis/A040-outputs/modal-controller-repair1/tests_local.py",
+        "bytes":  4421,
+        "sha256":  "1de5be173a96cf18868caa74fdde7f2ba90547eacc8704fdd04e818d213ffb2c"
+    },
+    {
+        "path":  "docs/analysis/A040-outputs/modal-controller-repair1/reproduce.py",
+        "bytes":  581,
+        "sha256":  "6316b80b1cbef3dd9e204bf629b1fb78fa378653f7a098855e3527d126705fda"
+    },
+    {
+        "path":  "docs/analysis/A040-outputs/modal-controller-repair1/check_sdk_contract.py",
+        "bytes":  2500,
+        "sha256":  "7a026cbda22bb92fc65510198e629ca94a2161064106f85cfdfc50a926b314ca"
+    },
+    {
+        "path":  "docs/workflow.md",
+        "bytes":  21956,
+        "sha256":  "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642"
+    }
+]

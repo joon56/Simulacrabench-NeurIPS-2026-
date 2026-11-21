@@ -1,0 +1,451 @@
+﻿{
+    "head":  "1d223340d4e1fa3993b411dc5daafab9cb37d0cd",
+    "real_predictions":  0,
+    "start_utc":  "2026-09-26T12:56:00Z",
+    "commit_push":  false,
+    "real_fits":  0,
+    "real_scores":  0,
+    "source_manifest_checks":  59,
+    "status":  "TECHNICAL_PASS",
+    "protected_entry_hashes":  {
+                                   "docs/analysis/E059-outputs/exposure-ledger.md":  "852a81056fa61bd458402db19273f16d9d56e2ba72855494de2e064167cfae03",
+                                   "docs/analysis/A020-outputs/s1-handoff.ko.md":  "f8f65ed742e310016fea83bb9913d4cc64361c5471e5effdd957e92a0468ffd8",
+                                   "docs/analysis/E059-outputs/preflight-runtime.json":  "1187f55017e49a055b25627442b2a3cb9a38e422cf04df885e62966902f86a8f",
+                                   "scripts/screen_e059.py":  "31ee84558932e3ef45871c6b53919ec59882044f8fec57ba4635e2242712c5f2",
+                                   ".gitignore":  "91c9586029f1b92aca8e35e3b1e1fd84f2256bec8b5b61bf6df3650b33e5d233",
+                                   "docs/analysis/E059-outputs/fit-run.log":  "f1bb83f4e989ddeb1a71835c91532cbbf80e0694a525d209965dccb8c30467ea",
+                                   "docs/analysis/E059-outputs/oracle-resources.json":  "7de02338eb92f8b94733f3e2e9bcec82208c3c3f516b436afb7b9002211bb01a",
+                                   "docs/analysis/E059-outputs/closeout.md":  "ff90c349bc582bae81f317ef2e0c925f182518cdbe60867ea05b54426e9f96cf",
+                                   "docs/analysis/E059-outputs/fit.json":  "f1d73c260c00e1129441d1745bd5e0179310932bf4e00531b5026c0a26db0321",
+                                   "docs/analysis/E059-outputs/s0-handoff.ko.md":  "94c39f8505ce7697ebfc401f3710327d0d21f7a8217b9113de51f61988809cbd",
+                                   "docs/analysis/E058-outputs/oracle-identity-certificate.json":  "0174a0c59627a1df52bab9d2e7e03ef63bc6513cab1d3638127b1f6da6edc863",
+                                   "docs/analysis/E059-outputs/oracle-runtime.json":  "16725ab0e8dec4e5c2dfbcfc15539cd3be1385e289af6ad74e6914eff62ec731",
+                                   "docs/analysis/E059-outputs/selection.json":  "79fdc0c8d9d319b425084e95ed7094548f6b63902325057361e09243f1916921",
+                                   "docs/analysis/E059-outputs/selection-run.log":  "badd85500514fc485ac1113191d2daa823e152b5bbe9ad5ac75df57fac8811ec",
+                                   "docs/analysis/E059-outputs/selection-runtime.json":  "1cfa7a63eba2e7e180aadc56009ba9266c25854e64b6255d84b40da94127775a",
+                                   "docs/analysis/E059-outputs/oracle.json":  "a30828ef96d0d1fbed9b6cf78084528df68eb553175e5f341168d0438c03de43",
+                                   "docs/analysis/E058-outputs/library-runtime.json":  "1485ee48b8bb8c8e92e883a1b22ef23ca41cde26001544ae52ab61bb7767b8a0",
+                                   "docs/analysis/E058-outputs/preflight.json":  "1d606f92d4043887871c28c6c10644b9544712900d5e1f11d3fc93c4e553ad56",
+                                   "docs/analysis/E059-outputs/entry.json":  "4c726cee1d9609a3ab9341e37c573e6873bd802ec372d0551d81b032bfed9914",
+                                   "docs/analysis/A020-outputs/verification.json":  "e6531f62fb07df498e22bec2e744c28e64e9b9170f518e779efc1f5564e64096",
+                                   "docs/analysis/E059-outputs/fit-resources.json":  "6c632c95c31f6368e8b4e454f128815e35db066469155dddfcb52dd5f7452171",
+                                   "docs/analysis/E058-outputs/library-run.log":  "f7d09f021f2590ef3dc143ca2bcb8791ba6fb7acdc36d00446df96a64311a22a",
+                                   "docs/analysis/E059-outputs/selection-resources.json":  "b5fb4bca4769ed71c2cf5bcfd8b3fd8723c6a56439d443104d930580c66f0ae0",
+                                   "docs/analysis/E059-outputs/preflight.json":  "407ef47f38aa021b5441f7d41e10092e598e0a54bb54e3d9ffddbaa3dc3f81e5",
+                                   "docs/analysis/E059-outputs/user-protocol.txt":  "49d1454de2fdfb87c91f67a097357cb5521cfb68a49ec11a55bee151c86872c5",
+                                   "docs/analysis/E058-outputs/library-resources.json":  "1796dadb52de83e8657412b70ef7d17c800121fbcde01c9c188ce30cbc1f05a4",
+                                   "docs/analysis/E058-outputs/library.json":  "299200c176fbe4ede55a410d8b4316cfaabc3fd39661f4c12e6504e4bd01af20",
+                                   "docs/analysis/E059-outputs/session-close.json":  "8283654fe547928395f2b34e07290180abc58e474e754e7fc04f9ecb8ea37009",
+                                   "docs/tree.md":  "eaa884a4194db103335136495205fe5b51297c17db15e9eac62946ced286cc44",
+                                   ".claude/settings.local.json":  "9a87cfd2ef7d39762a049825706497bc5b29518e55fb223179efb2a58c102630",
+                                   "docs/analysis/E059-outputs/registration.md":  "0de9835b3053a5410e98ec5a1327c60aabfc0587071efb52725c4c7d44d8dc9a",
+                                   "docs/analysis/E059-outputs/preflight-run.log":  "4d8195fa8b011f10c93e2a919653e04c2904d927df7a7432f1a4a19f12416be0",
+                                   "docs/analysis/E059-outputs/preflight-resources.json":  "3f5de4d90a79b13117d1445cbf56f7ba78032ac6d5657259abe621ceb63cff29",
+                                   ".claude/skills/paper-session/SKILL.md":  "8eca41ad29a87b4687d80d5c4ddb93d7a6bd60c461e0bd9afc94e5ce17d74abd",
+                                   "tests/test_e059_interactions.py":  "746d52ed0de056d5789441c2df6f9bf0c70767638c2b9e765f019bc29e82e65c",
+                                   "docs/analysis/A020-post-e058-design-review.md":  "2b4ae3884beba170741a057f152847e0c871b601d2f927530599eeb1ad3d4429",
+                                   "docs/analysis/E059-outputs/fit-runtime.json":  "5816f3f85c9024f0a959618aa5a4be361ca97fb38baaf6b362721dcf927d3272",
+                                   "docs/analysis/E058-outputs/closeout.md":  "e1ef352c4aa11da227d9e27d2deb51ad4aa5481d50c54c6639d1a112a4eb0891",
+                                   "docs/analysis/E059-outputs/oracle-run.log":  "708ffcf69cd3bbd8a239f9cfb9ecba02b647711bac94f5322c1dbbec62457970",
+                                   "docs/analysis/E058-outputs/registration.md":  "9804049fdcd97d3ff9884a7e4416b578529bf9cc9ef7067380bdef680ee658f4",
+                                   "docs/analysis/E059-outputs/fixtures.json":  "0b5fd972bd72fe9d941fbc6a699d43c648dcfb08917b4bcae0deb2d243ac8099",
+                                   "docs/experiments/E059-leaf-donor-interactions.md":  "bfbe26a10727bc2b703e7bceb674b344461053357dcc6c5a0a9f217a4738626c",
+                                   "docs/analysis/E059-outputs/verification.json":  "53e560d669b6e3f8be2b50f9785bef074fbc5ab35a520a59877c0a788fc2af18",
+                                   "docs/analysis/E058-outputs/exposure-ledger.md":  "c42c4d768d93eddbf7478781ac77548fbe194e3e9b0fd6e9db45bdcef88aa027"
+                               },
+    "response_reads":  0,
+    "cache_deserializations":  0,
+    "uncommitted_e059_code_checks":  2,
+    "deadline_utc":  "2026-09-26T13:56:00Z",
+    "input_hashes":  {
+                         "src/eval/logloss.py":  "272aae939a2587b7197569ff84733a1d3b51050e4090ed903a7c8f4e1c88ca18",
+                         "src/models/dup_link.py":  "e1ce093d927eed6db0553776b74f8ddfca5d159bf035b6cd7b4df9e7bc6b168f",
+                         "scripts/screen_e059.py":  "31ee84558932e3ef45871c6b53919ec59882044f8fec57ba4635e2242712c5f2",
+                         "src/models/link_sharp.py":  "4a7921a00d7758e52a63a3ca7cd5ebf2285cef445b57fd89f15580d6fc108524",
+                         "external/starter-kit/score.py":  "7049e99a48acef2a74f37cb49bb66b5a9af8d05d2ed8fcf530287b5e81c5042f",
+                         "src/models/supervised_retrieval.py":  "2940338c5378de03303befb74e3834fbad631c0eb18f4ecb55d2cc39a471f879",
+                         "src/eval/retrieval_oracle.py":  "b6c3487a01f5174e02e7691ec455a8e72cfab7533f68026b9010665a60b23ca4",
+                         "external/starter-kit/data/unhcr.json":  "b1175b6bdbd96e90a4defd83af20a38d711c6eca9fe3ce880109ff244abe80d9",
+                         "src/models/prob_link.py":  "6b03f700821b6d74c8ef0dfe834737ac4c9755d7fcf9a7c2f96b5b67e905d96d"
+                     },
+    "attempts":  [
+                     {
+                         "command":  ".venv/Scripts/python.exe scripts/check_a021_selector_contract.py",
+                         "child_command":  "C:\\Users\\USER\\Desktop\\SimulacraBench\\.venv\\Scripts\\python.exe -m pytest tests/test_a021_selector_contract.py -q -p no:cacheprovider",
+                         "test_output":  ".............                                                            [100%]\r\n13 passed in 0.09s\r\n",
+                         "test_exit_code":  0,
+                         "resource_stop":  "COMPLETE",
+                         "seconds":  0.6111158000021533,
+                         "peak_tree_bytes":  {
+                                                 "rss":  72802304,
+                                                 "commitment":  42692608
+                                             },
+                         "script_sha256":  "855b3c165eacb289693706bbe820899c2a4c2c586aec35cb72da67264ad97456",
+                         "test_sha256":  "38c55742e6da09a3bc7a0b87321ae5977f522440b586e476884045df9ac4dc3c"
+                     }
+                 ],
+    "empirical_disposition":  "HOLD",
+    "schema_sha256":  "b1175b6bdbd96e90a4defd83af20a38d711c6eca9fe3ce880109ff244abe80d9",
+    "schema":  {
+                   "predict_parent_edges":  155,
+                   "cross_section_edges":  71,
+                   "given_parent_edges":  1,
+                   "cross_section_counts":  {
+                                                "3 -\u003e 7a":  21,
+                                                "3 -\u003e 7b":  39,
+                                                "3 -\u003e 7c":  11
+                                            },
+                   "cross_section_item_edges":  [
+                                                    [
+                                                        "s3_11_intent_return_12m_lbl",
+                                                        "s7a_1_return_destination_lbl"
+                                                    ],
+                                                    [
+                                                        "s3_11_intent_return_12m_lbl",
+                                                        "s7a_4_return_alone_lbl"
+                                                    ],
+                                                    [
+                                                        "s3_11_intent_return_12m_lbl",
+                                                        "s7a_7_reason_safety_improved_lbl"
+                                                    ],
+                                                    [
+                                                        "s3_11_intent_return_12m_lbl",
+                                                        "s7a_7_reason_family_reunite_lbl"
+                                                    ],
+                                                    [
+                                                        "s3_11_intent_return_12m_lbl",
+                                                        "s7a_7_reason_sufficient_resources_lbl"
+                                                    ],
+                                                    [
+                                                        "s3_11_intent_return_12m_lbl",
+                                                        "s7a_7_reason_livelihood_found_lbl"
+                                                    ],
+                                                    [
+                                                        "s3_11_intent_return_12m_lbl",
+                                                        "s7a_7_reason_services_adequate_lbl"
+                                                    ],
+                                                    [
+                                                        "s3_11_intent_return_12m_lbl",
+                                                        "s7a_7_reason_property_access_lbl"
+                                                    ],
+                                                    [
+                                                        "s3_11_intent_return_12m_lbl",
+                                                        "s7a_7_reason_movement_freedom_lbl"
+                                                    ],
+                                                    [
+                                                        "s3_11_intent_return_12m_lbl",
+                                                        "s7a_7_reason_sufficient_info_lbl"
+                                                    ],
+                                                    [
+                                                        "s3_11_intent_return_12m_lbl",
+                                                        "s7a_7_reason_positive_feedback_lbl"
+                                                    ],
+                                                    [
+                                                        "s3_11_intent_return_12m_lbl",
+                                                        "s7a_7_reason_problems_host_lbl"
+                                                    ],
+                                                    [
+                                                        "s3_11_intent_return_12m_lbl",
+                                                        "s7a_7_reason_residency_delays_lbl"
+                                                    ],
+                                                    [
+                                                        "s3_11_intent_return_12m_lbl",
+                                                        "s7a_7_reason_residency_other"
+                                                    ],
+                                                    [
+                                                        "s3_11_intent_return_12m_lbl",
+                                                        "s7a_7_reason_high_cost_living_lbl"
+                                                    ],
+                                                    [
+                                                        "s3_11_intent_return_12m_lbl",
+                                                        "s7a_7_reason_limited_jobs_lbl"
+                                                    ],
+                                                    [
+                                                        "s3_11_intent_return_12m_lbl",
+                                                        "s7a_7_reason_work_permit_lbl"
+                                                    ],
+                                                    [
+                                                        "s3_11_intent_return_12m_lbl",
+                                                        "s7a_7_reason_homeland_lbl"
+                                                    ],
+                                                    [
+                                                        "s3_11_intent_return_12m_lbl",
+                                                        "s7a_7_reason_education_opps_lbl"
+                                                    ],
+                                                    [
+                                                        "s3_11_intent_return_12m_lbl",
+                                                        "s7a_7_reason_other"
+                                                    ],
+                                                    [
+                                                        "s3_11_intent_return_12m_lbl",
+                                                        "s7a_7_reason_pna_lbl"
+                                                    ],
+                                                    [
+                                                        "s3_11_intent_return_12m_lbl",
+                                                        "s7b_1_no_return_safety_concerns_lbl"
+                                                    ],
+                                                    [
+                                                        "s3_11_intent_return_12m_lbl",
+                                                        "s7b_1_no_return_economic_syria_lbl"
+                                                    ],
+                                                    [
+                                                        "s3_11_intent_return_12m_lbl",
+                                                        "s7b_1_no_return_legal_docs_lbl"
+                                                    ],
+                                                    [
+                                                        "s3_11_intent_return_12m_lbl",
+                                                        "s7b_1_no_return_debt_host_lbl"
+                                                    ],
+                                                    [
+                                                        "s3_11_intent_return_12m_lbl",
+                                                        "s7b_1_no_return_livelihood_lbl"
+                                                    ],
+                                                    [
+                                                        "s3_11_intent_return_12m_lbl",
+                                                        "s7b_1_no_return_services_lbl"
+                                                    ],
+                                                    [
+                                                        "s3_11_intent_return_12m_lbl",
+                                                        "s7b_1_no_return_family_needs_lbl"
+                                                    ],
+                                                    [
+                                                        "s3_11_intent_return_12m_lbl",
+                                                        "s7b_1_no_return_housing_lbl"
+                                                    ],
+                                                    [
+                                                        "s3_11_intent_return_12m_lbl",
+                                                        "s7b_1_no_return_social_tensions_lbl"
+                                                    ],
+                                                    [
+                                                        "s3_11_intent_return_12m_lbl",
+                                                        "s7b_1_no_return_debt_syria_lbl"
+                                                    ],
+                                                    [
+                                                        "s3_11_intent_return_12m_lbl",
+                                                        "s7b_1_no_return_advised_against_lbl"
+                                                    ],
+                                                    [
+                                                        "s3_11_intent_return_12m_lbl",
+                                                        "s7b_1_no_return_better_assistance_lbl"
+                                                    ],
+                                                    [
+                                                        "s3_11_intent_return_12m_lbl",
+                                                        "s7b_1_no_return_no_family_lbl"
+                                                    ],
+                                                    [
+                                                        "s3_11_intent_return_12m_lbl",
+                                                        "s7b_1_no_return_no_resources_lbl"
+                                                    ],
+                                                    [
+                                                        "s3_11_intent_return_12m_lbl",
+                                                        "s7b_1_no_return_adapted_host_lbl"
+                                                    ],
+                                                    [
+                                                        "s3_11_intent_return_12m_lbl",
+                                                        "s7b_1_no_return_home_damaged_lbl"
+                                                    ],
+                                                    [
+                                                        "s3_11_intent_return_12m_lbl",
+                                                        "s7b_1_no_return_have_citizenship_lbl"
+                                                    ],
+                                                    [
+                                                        "s3_11_intent_return_12m_lbl",
+                                                        "s7b_1_no_return_health_travel_lbl"
+                                                    ],
+                                                    [
+                                                        "s3_11_intent_return_12m_lbl",
+                                                        "s7b_1_no_return_other"
+                                                    ],
+                                                    [
+                                                        "s3_11_intent_return_12m_lbl",
+                                                        "s7b_1_no_return_dont_know_lbl"
+                                                    ],
+                                                    [
+                                                        "s3_11_intent_return_12m_lbl",
+                                                        "s7b_1_no_return_PNA_lbl"
+                                                    ],
+                                                    [
+                                                        "s3_11_intent_return_12m_lbl",
+                                                        "s7b_2_recon_safety_improved_lbl"
+                                                    ],
+                                                    [
+                                                        "s3_11_intent_return_12m_lbl",
+                                                        "s7b_2_recon_legal_access_lbl"
+                                                    ],
+                                                    [
+                                                        "s3_11_intent_return_12m_lbl",
+                                                        "s7b_2_recon_sufficient_resources_lbl"
+                                                    ],
+                                                    [
+                                                        "s3_11_intent_return_12m_lbl",
+                                                        "s7b_2_recon_livelihood_opps_lbl"
+                                                    ],
+                                                    [
+                                                        "s3_11_intent_return_12m_lbl",
+                                                        "s7b_2_recon_basic_services_lbl"
+                                                    ],
+                                                    [
+                                                        "s3_11_intent_return_12m_lbl",
+                                                        "s7b_2_recon_special_services_lbl"
+                                                    ],
+                                                    [
+                                                        "s3_11_intent_return_12m_lbl",
+                                                        "s7b_2_recon_housing_access_lbl"
+                                                    ],
+                                                    [
+                                                        "s3_11_intent_return_12m_lbl",
+                                                        "s7b_2_recon_debt_paid_host_lbl"
+                                                    ],
+                                                    [
+                                                        "s3_11_intent_return_12m_lbl",
+                                                        "s7b_2_recon_family_together_lbl"
+                                                    ],
+                                                    [
+                                                        "s3_11_intent_return_12m_lbl",
+                                                        "s7b_2_recon_reentry_possible_lbl"
+                                                    ],
+                                                    [
+                                                        "s3_11_intent_return_12m_lbl",
+                                                        "s7b_2_recon_asylum_negative_lbl"
+                                                    ],
+                                                    [
+                                                        "s3_11_intent_return_12m_lbl",
+                                                        "s7b_2_recon_debt_paid_syria_lbl"
+                                                    ],
+                                                    [
+                                                        "s3_11_intent_return_12m_lbl",
+                                                        "s7b_2_recon_others_returning_lbl"
+                                                    ],
+                                                    [
+                                                        "s3_11_intent_return_12m_lbl",
+                                                        "s7b_2_recon_host_worse_lbl"
+                                                    ],
+                                                    [
+                                                        "s3_11_intent_return_12m_lbl",
+                                                        "s7b_2_recon_war_host_lbl"
+                                                    ],
+                                                    [
+                                                        "s3_11_intent_return_12m_lbl",
+                                                        "s7b_2_recon_never_lbl"
+                                                    ],
+                                                    [
+                                                        "s3_11_intent_return_12m_lbl",
+                                                        "s7b_2_recon_other"
+                                                    ],
+                                                    [
+                                                        "s3_11_intent_return_12m_lbl",
+                                                        "s7b_2_recon_PNA_lbl"
+                                                    ],
+                                                    [
+                                                        "s3_11_intent_return_12m_lbl",
+                                                        "s7c_1_cond_safety_improved_lbl"
+                                                    ],
+                                                    [
+                                                        "s3_11_intent_return_12m_lbl",
+                                                        "s7c_1_cond_sufficient_resources_lbl"
+                                                    ],
+                                                    [
+                                                        "s3_11_intent_return_12m_lbl",
+                                                        "s7c_1_cond_livelihood_opps_lbl"
+                                                    ],
+                                                    [
+                                                        "s3_11_intent_return_12m_lbl",
+                                                        "s7c_1_cond_basic_services_lbl"
+                                                    ],
+                                                    [
+                                                        "s3_11_intent_return_12m_lbl",
+                                                        "s7c_1_cond_special_services_lbl"
+                                                    ],
+                                                    [
+                                                        "s3_11_intent_return_12m_lbl",
+                                                        "s7c_1_cond_housing_access_lbl"
+                                                    ],
+                                                    [
+                                                        "s3_11_intent_return_12m_lbl",
+                                                        "s7c_1_cond_reentry_possible_lbl"
+                                                    ],
+                                                    [
+                                                        "s3_11_intent_return_12m_lbl",
+                                                        "s7c_1_cond_debt_paid_host_lbl"
+                                                    ],
+                                                    [
+                                                        "s3_11_intent_return_12m_lbl",
+                                                        "s7c_1_cond_debt_paid_syria_lbl"
+                                                    ],
+                                                    [
+                                                        "s3_11_intent_return_12m_lbl",
+                                                        "s7c_1_cond_host_worse_lbl"
+                                                    ],
+                                                    [
+                                                        "s3_11_intent_return_12m_lbl",
+                                                        "s7c_1_cond_other"
+                                                    ]
+                                                ],
+                   "definition":  "PREDICT child with PREDICT parent; section regex s(\\d+[a-z]?)_; no response data"
+               },
+    "fixture_library_sha256":  "01044baafd6d668ad3ae4471160a0e8283eae98a91b579d863ecc56a7f800e67",
+    "mechanical_choices":  [
+                               {
+                                   "candidate":  "C1",
+                                   "objective":  "proxy",
+                                   "library_digest":  "01044baafd6d668ad3ae4471160a0e8283eae98a91b579d863ecc56a7f800e67"
+                               },
+                               {
+                                   "candidate":  "C0",
+                                   "objective":  "deployed",
+                                   "library_digest":  "01044baafd6d668ad3ae4471160a0e8283eae98a91b579d863ecc56a7f800e67"
+                               }
+                           ],
+    "scope":  "Handwritten fixture and public-schema mechanics only; no efficacy or frequency claim",
+    "close":  {
+                  "production_diff_empty":  true,
+                  "verification_self_hash_excluded":  true,
+                  "closed_utc":  "2026-09-26T13:10:06.5999922Z",
+                  "all_59_sources_rechecked":  true,
+                  "active_python_wsl":  [
+
+                                        ],
+                  "commands":  [
+                                   ".venv/Scripts/python.exe -m pytest tests/test_a021_selector_contract.py::test_module_exists -q",
+                                   ".venv/Scripts/python.exe scripts/check_a021_selector_contract.py",
+                                   "git -c safe.directory=C:/Users/USER/Desktop/SimulacraBench diff --check -- docs/status.md docs/log.md",
+                                   "Get-FileHash \u003cregistered input/protected/output files\u003e -Algorithm SHA256"
+                               ],
+                  "push":  false,
+                  "tree_unchanged":  true,
+                  "file_hashes":  {
+                                      "docs/analysis/A021-selector-comparison-contract.md":  "6d00490b93ad7c986de38735137981bbfd453aacef7d2f627ca7bd60023ec2cc",
+                                      "docs/status.md":  "68b67737f51b05d347acfab1f6eadbde85ef1825663e86a17fcd3c8052a56dd1",
+                                      "docs/log.md":  "13aea9e0dd9daf1dd2afdc5f92aadc722e4e61a8f4dd1d4b8b383dfaafaa983f",
+                                      "docs/analysis/A021-outputs/s0-handoff.ko.md":  "d080da0b1754b6e7001e917c38f1367f10fde8ccd44adc8ff1b727971971ab25",
+                                      "tests/test_a021_selector_contract.py":  "38c55742e6da09a3bc7a0b87321ae5977f522440b586e476884045df9ac4dc3c",
+                                      "scripts/check_a021_selector_contract.py":  "855b3c165eacb289693706bbe820899c2a4c2c586aec35cb72da67264ad97456"
+                                  },
+                  "commit":  false,
+                  "audit_unopened":  true,
+                  "uncommitted":  true,
+                  "protected_hashes_preserved":  44,
+                  "head":  "1d223340d4e1fa3993b411dc5daafab9cb37d0cd",
+                  "checker_test_hashes_match_run":  true,
+                  "git_status":  [
+                                     " M .claude/skills/paper-session/SKILL.md",
+                                     " M .gitignore",
+                                     " M docs/log.md",
+                                     " M docs/status.md",
+                                     " M docs/tree.md",
+                                     "?? .claude/settings.local.json",
+                                     "?? docs/analysis/A020-outputs/",
+                                     "?? docs/analysis/A020-post-e058-design-review.md",
+                                     "?? docs/analysis/A021-outputs/",
+                                     "?? docs/analysis/A021-selector-comparison-contract.md",
+                                     "?? docs/analysis/E059-outputs/",
+                                     "?? docs/experiments/E059-leaf-donor-interactions.md",
+                                     "?? scripts/check_a021_selector_contract.py",
+                                     "?? scripts/screen_e059.py",
+                                     "?? tests/test_a021_selector_contract.py",
+                                     "?? tests/test_e059_interactions.py",
+                                     "?? trip/"
+                                 ],
+                  "session_elapsed_upper_seconds":  846.5999922
+              }
+}

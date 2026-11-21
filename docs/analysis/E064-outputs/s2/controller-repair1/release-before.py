@@ -1,0 +1,807 @@
+"""Bounded E064 S2 qualification; only named synthetic inputs/references."""
+import argparse
+from datetime import datetime, timezone, timedelta
+import hashlib
+import importlib.util
+import inspect
+import json
+import os
+from pathlib import Path
+import re
+import subprocess
+import sys
+import time
+import zipfile
+
+ROOT = Path(__file__).resolve().parents[4]
+S1 = ROOT / 'docs/analysis/E064-outputs'
+OUT = S1 / 's2'
+KIT = ROOT / 'external/starter-kit'
+BASELINES = ROOT / 'docs/analysis/E062-outputs'
+
+def snapshot():
+    return ROOT / read(OUT / 'package-path.json')['snapshot']
+NAMES = ('unicef', 'world_bank', 'unhcr')
+
+
+def read(path):
+    return json.loads(Path(path).read_text(encoding='utf-8-sig'))
+
+
+def sha(path):
+    return hashlib.sha256(Path(path).read_bytes()).hexdigest()
+
+
+def save(path, value):
+    with Path(path).open('x', encoding='utf-8', newline='\n') as stream:
+        json.dump(value, stream, indent=2, allow_nan=False)
+        stream.write('\n')
+
+
+def load_module(name, path):
+    spec = importlib.util.spec_from_file_location(name, path)
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return module
+
+
+def verify():
+    entry = read(OUT / 'batch-entry.json')
+    for path, expected in entry['hashes'].items():
+        if path in ('docs/status.md', 'docs/log.md'):
+            continue
+        if sha(ROOT / path) != expected:
+            raise RuntimeError('Frozen input changed: ' + path)
+    frozen = OUT / 'release-freeze.json'
+    if frozen.exists():
+        for path, expected in read(frozen)['hashes'].items():
+            if sha(ROOT / path) != expected:
+                raise RuntimeError('S2 freeze changed: ' + path)
+
+
+def counts():
+    totals = dict(full_stack=0, neural=0, metric=0)
+    for path in OUT.glob('calls-*.jsonl'):
+        for line in path.read_text(encoding='utf-8').splitlines():
+            event = json.loads(line)
+            kind = event.get('kind')
+            if event.get('event') == 'enter' and kind in totals:
+                totals[kind] += 1
+    return totals
+
+
+def caps():
+    if (OUT / 'technical-retry.json').exists():
+        return dict(full_stack=12, neural=36, metric=24)
+    return dict(full_stack=6, neural=18, metric=16)
+
+
+def structured_digest(value):
+    """Hash only this fresh run's internal engineering state; never deserialize caches."""
+    import numpy as np
+    digest = hashlib.sha256()
+
+    def visit(v):
+        if isinstance(v, np.ndarray):
+            digest.update(str((v.dtype.str, v.shape)).encode())
+            if v.dtype.hasobject:
+                for x in v.flat:
+                    visit(x)
+            else:
+                digest.update(np.ascontiguousarray(v).tobytes())
+        elif isinstance(v, dict):
+            digest.update(b'dict')
+            for key in sorted(v, key=repr):
+                visit(key)
+                visit(v[key])
+        elif isinstance(v, (list, tuple)):
+            digest.update(str((type(v).__name__, len(v))).encode())
+            for x in v:
+                visit(x)
+        elif isinstance(v, set):
+            visit(sorted(v, key=repr))
+        else:
+            digest.update((type(v).__name__ + ':' + repr(v) + ';').encode())
+    visit(value)
+    return digest.hexdigest()
+
+class Audit:
+    """Observe the actual standalone functions; never alter model values."""
+    def __init__(self, main_path, log_path, previous, limits, ntrain, instrument):
+        self.main_path = os.path.normcase(os.path.abspath(main_path))
+        self.stream = open(log_path, 'x', encoding='utf-8')
+        self.totals, self.limits = dict(previous), limits
+        self.ntrain, self.instrument = ntrain, instrument
+        self.started = {}
+        self.roles = json.loads(os.environ.get('E064_ROLES', '{}'))
+        self.metric_roles = json.loads(os.environ.get('E064_METRIC_ROLES', '{}'))
+
+    def emit(self, row):
+        row.update(instrument=self.instrument, pid=os.getpid())
+        self.stream.write(json.dumps(row, allow_nan=False)+'\n'); self.stream.flush()
+
+    def invariant(self, key, value, phase='always'):
+        self.emit(dict(event='invariant', key=key, phase=phase, sha256=structured_digest(value)))
+
+    def profile(self, frame, event, arg):
+        if event not in ('call','return'): return
+        rawname = frame.f_code.co_name
+        filename = os.path.normcase(os.path.abspath(frame.f_code.co_filename))
+        model = filename == self.main_path
+        name = {'_e064_train_on':'_train_on','_e064_render_predict':'predict',
+                '_e064_tune_and_train':'tune_and_train'}.get(rawname, rawname)
+        loc = frame.f_locals
+        def index_hash(x):
+            return hashlib.sha256(__import__('numpy').asarray(x,dtype='<i8').tobytes()).hexdigest()
+        if model and rawname == '<module>' and event == 'return':
+            torch=sys.modules['torch']
+            torch.set_num_threads(2); torch.set_num_interop_threads(2)
+            if torch.cuda.is_available(): raise RuntimeError('GPU not allowed')
+            self.emit(dict(event='environment',torch_threads=torch.get_num_threads(),
+                           torch_interop_threads=torch.get_num_interop_threads(),cuda=False))
+        if model and name == '_targets' and event == 'call':
+            rows, predicted = loc['rows'], loc['predict_items']
+            digest = index_hash(rows.index)
+            roles=[k for k,v in self.roles.items() if v['index_sha256']==digest]
+            if not roles or (len(rows) and (min(rows.index)<0 or max(rows.index)>=self.ntrain)) or rows[predicted].isna().any().any():
+                raise RuntimeError('Neural target role/mask boundary')
+            self.emit(dict(event='target_role',roles=roles,rows=len(rows),index_sha256=digest))
+        if model and name == 'fit_sections' and event == 'call':
+            for role in ('fit','select','bank'):
+                if index_hash(loc[role]) != self.metric_roles[role]['index_sha256']:
+                    raise RuntimeError('Metric role mismatch')
+            self.emit(dict(event='metric_roles',status='PASS'))
+        if model and event == 'return' and arg is not None:
+            if name == 'fit_sections': self.invariant('metric_result',arg)
+            if name == 'estimate_weights': self.invariant('initial_weights',arg)
+            if name in ('candidate_indices','_topk_excl','_evidence','_replace_evidence'):
+                query=loc.get('query',loc.get('query_pos'))
+                if query is not None:
+                    phase='held' if len(query) and min(query)>=self.ntrain else 'visible'
+                    self.invariant(name+':'+index_hash(query),arg,phase)
+                    if name in ('candidate_indices','_topk_excl'):
+                        donors=arg if name=='candidate_indices' else [p[0] for p in arg]
+                        if any(int(q) in d for q,d in zip(query,donors)): raise RuntimeError('Donor self exclusion')
+            if name == '_max_q':
+                outer=frame.f_back.f_locals if frame.f_back else {}
+                phase='held' if loc.get('posteriors') is outer.get('post') else 'visible'
+                self.invariant('concentration:'+structured_digest(loc['posteriors']),arg>=.5,phase)
+            if name in ('supervised_layer','hh_sharp_layer'):
+                self.emit(dict(event='lambda',values={k:list(v) for k,v in loc.get('lam',{}).items()}))
+            if name=='supervised_layer' and 'active_items' in loc:
+                self.invariant('replay_eligibility',{k:loc[k] for k in ('cal','original_cal','replay','active_items','conc_cal')})
+            if name=='predict' and all(k in loc for k in ('full_tables','cond_tables','agreement')):
+                self.invariant('ladder_and_agreement',{k:loc[k] for k in ('cols','kappas','full_tables','cond_tables','agreement')})
+        kind=('full_stack' if model and rawname=='_e064_predict' else
+              'neural' if model and name=='_train_on' else
+              'metric' if name=='minimize' and filename.replace('\\','/').endswith('/scipy/optimize/_minimize.py') else None)
+        if kind is None: return
+        if event=='call':
+            if kind=='neural' and str(loc['dev'])!='cpu': raise RuntimeError('Non-CPU training')
+            if kind=='metric':
+                args=loc['args']; nf=self.metric_roles['fit']['rows']
+                if any(args[i].shape[0]!=nf for i in (0,1,2)): raise RuntimeError('Non-F optimizer input')
+                self.emit(dict(event='optimizer_slice',fit_rows=nf,coordinates=len(loc['x0'])))
+            self.totals[kind]+=1
+            self.emit(dict(event='enter',kind=kind,function=rawname,totals=dict(self.totals)))
+            if self.totals[kind]>self.limits[kind]: raise RuntimeError('Call cap '+kind)
+            self.started[id(frame)]=time.perf_counter()
+        else:
+            row=dict(event='return',kind=kind,function=rawname,returned=arg is not None,
+                     seconds=time.perf_counter()-self.started.pop(id(frame),time.perf_counter()))
+            if kind=='neural':
+                row.update(epochs=int(loc.get('epoch',0)),best_epoch=int(loc.get('best_epoch',0)),
+                           network_class=type(arg[0]).__name__ if arg else None,device=str(loc['dev']))
+            if kind=='metric' and arg is not None: row.update(iterations=int(arg.nit),success=bool(arg.success))
+            self.emit(row)
+
+
+def environment():
+    import numpy as np
+    import pandas as pd
+    import torch
+    import scipy
+    import sklearn
+    import pyarrow
+    from threadpoolctl import threadpool_info
+    torch.set_num_threads(2)
+    torch.set_num_interop_threads(2)
+    actual = dict(python=sys.version, numpy=np.__version__, pandas=pd.__version__,
+                  torch=torch.__version__, torch_threads=torch.get_num_threads(),
+                  interop_threads=torch.get_num_interop_threads(),
+                  cuda_available=torch.cuda.is_available(), threadpools=threadpool_info(),
+                  scipy=scipy.__version__, sklearn=sklearn.__version__, pyarrow=pyarrow.__version__)
+    import importlib.metadata as metadata
+    actual['packages'] = {p: metadata.version(p) for p in
+                          ('numpy','pandas','scipy','torch','pyarrow','scikit-learn','threadpoolctl','PyYAML')}
+    actual['executable_sha256'] = sha(Path(sys.executable))
+    actual['base_executable_sha256'] = sha(Path(sys._base_executable))
+    old_h = read(S1 / 'freeze-01.json')['environment']
+    for key in ('python','packages','executable_sha256','base_executable_sha256','torch_threads','interop_threads','cuda_available'):
+        if actual[key] != old_h[key]:
+            raise RuntimeError('E064 fixed environment mismatch: ' + key)
+    for model in ('E025', 'E041'):
+        old = read(BASELINES / f'environment-{model}-01.json')
+        for key in ('python', 'numpy', 'pandas', 'torch', 'torch_threads', 'interop_threads', 'cuda_available'):
+            if actual[key] != old[key]:
+                raise RuntimeError('Baseline common environment mismatch: ' + model + '/' + key)
+    if any(p['num_threads'] > 2 for p in actual['threadpools']):
+        raise RuntimeError('Numerical thread cap')
+    return actual
+
+
+def official_module():
+    sys.path.insert(0, str(KIT))
+    return load_module('e064_s2_official', KIT / 'score.py')
+
+
+def phase1_case(official, name, with_truth=False):
+    import pandas as pd
+    config = official.load_config(str(KIT / 'config.yml'))
+    schema = official.load_schema(str(KIT / f'data/{name}.json'), config)
+    items = official.generated_items(schema)
+    path = KIT / f'_sandbox/{name}/respondents.parquet'
+    train = pd.read_parquet(path, columns=['respondent_id', 'role'] + items,
+                            filters=[('role', '==', 'TRAIN')]).astype(object)
+    given = [n for n in items if schema['items'][n]['class'] == 'GIVEN']
+    with (OUT / 'projection.jsonl').open('a', encoding='utf-8') as log:
+        for role, columns in [('TRAIN', ['respondent_id','role']+items),
+                              ('DEV', ['respondent_id','role']+(items if with_truth else given))]:
+            log.write(json.dumps(dict(stage=os.environ.get('E064_STAGE'), instrument=name,
+                       role=role, columns=columns, filters=[['role','==',role]],
+                       path=str(path.relative_to(ROOT)), evaluator_truth=with_truth,
+                       utc=datetime.now(timezone.utc).isoformat()))+'\n')
+    dev = pd.read_parquet(path, columns=['respondent_id', 'role'] + (items if with_truth else given),
+                          filters=[('role', '==', 'DEV')]).astype(object)
+    if not with_truth:
+        dev = dev.reindex(columns=['respondent_id', 'role'] + items)
+    respondents = pd.concat((train, dev), ignore_index=True).astype(object)
+    counts_by_role = respondents.role.value_counts().to_dict()
+    if counts_by_role != {'TRAIN': schema['split']['n_train'], 'DEV': schema['split']['n_dev']}:
+        raise RuntimeError('Phase1 role mismatch')
+    if respondents.respondent_id.duplicated().any():
+        raise RuntimeError('Duplicate synthetic ID')
+    for item in items:
+        if not set(respondents[item].dropna()).issubset(set(official.options_for(schema, item))):
+            raise RuntimeError('Synthetic option mismatch')
+    frame, cells, truth = official.sample_rows(schema, respondents, 1)
+    ntrain = schema['split']['n_train']
+    if not frame.loc[ntrain:, official.scored_items(schema)].isna().all().all():
+        raise RuntimeError('DEV PREDICT masking')
+    actual = dict(rows=len(frame), train=ntrain, dev=schema['split']['n_dev'],
+                  cells=len(cells), role_hash=hashlib.sha256(pd.util.hash_pandas_object(
+                      respondents[['respondent_id', 'role']], index=True).values.tobytes()).hexdigest(),
+                  masked_frame_hash=hashlib.sha256(pd.util.hash_pandas_object(frame, index=True).values.tobytes()).hexdigest())
+    if any(schema['items'].get(c,{}).get('class') == 'EXCLUDE' for c in frame):
+        raise RuntimeError('EXCLUDE reached model frame')
+    previous = read(S1 / 'freeze-01.json')['phase1'][name]
+    baseline_previous = read(BASELINES / 'frozen-inputs.json')['phase1'][name]
+    actual['schema_runtime_sha256'] = hashlib.sha256(json.dumps(schema, ensure_ascii=False, separators=(',', ':')).encode()).hexdigest()
+    if any(actual[k] != previous[k] or actual[k] != baseline_previous[k] for k in actual):
+        raise RuntimeError('S1 split/frame identity mismatch: ' + name)
+    return config, schema, respondents, frame, cells, truth, actual
+
+
+def reference(model, name):
+    import numpy as np
+    if model in ('R','H'):
+        record = read(S1 / 'attempts/score-01/frozen-predictions.json')['outputs'][f'{model}-{name}']
+        path = S1 / record['file']
+        manifest = read(S1 / 'artifact-manifest.json')['hashes']
+        if manifest[path.relative_to(ROOT).as_posix()] != record['sha256']:
+            raise RuntimeError('E064 manifest/raw discrepancy')
+    elif model in ('E025','E041'):
+        record = read(BASELINES / 'frozen-predictions.json')['outputs'][f'{model}-{name}']
+        path = BASELINES / record['file']
+        if read(BASELINES / 'artifact-manifest.json')['entries'][record['file']] != record['sha256']:
+            raise RuntimeError('Baseline manifest/raw discrepancy')
+    else:
+        raise ValueError('Not an allowed raw reference')
+    expected = record['sha256']
+    allowed = read(OUT/'batch-entry.json')['numeric_allowlist_expected']
+    if allowed.get(path.relative_to(ROOT).as_posix()) != expected:
+        raise RuntimeError('Raw path outside exact B01 allowlist')
+    if sha(path) != expected:
+        raise RuntimeError('Reference changed: ' + str(path))
+    with np.load(path, allow_pickle=False) as arrays:
+        if set(arrays.files) != {'flat', 'offsets'}:
+            raise RuntimeError('Unexpected reference arrays')
+        flat, offsets = arrays['flat'].copy(), arrays['offsets'].copy()
+    if flat.dtype != np.float64 or offsets.dtype.kind not in 'iu' or offsets[0] != 0 or offsets[-1] != len(flat):
+        raise RuntimeError('Invalid numeric reference')
+    if not np.all(np.diff(offsets) > 0):
+        raise RuntimeError('Reference offsets')
+    return flat, offsets
+
+
+def compare_vectors(official, name, vectors, schema, cells):
+    import numpy as np
+    official.check(schema, vectors, cells)
+    offsets = np.r_[0, np.cumsum([len(v) for v in vectors])]
+    flat = np.concatenate(vectors).astype(np.float64)
+    maxsum = max(abs(float(np.asarray(v).sum()) - 1.) for v in vectors)
+    if maxsum > 1e-6:
+        raise RuntimeError('Raw sum contract')
+    differences = {}
+    for model in ('H', 'E041', 'E025'):
+        frozen, frozen_offsets = reference(model, name)
+        if not np.array_equal(offsets, frozen_offsets):
+            raise RuntimeError('Reference shape mismatch')
+        delta = np.abs(flat - frozen)
+        per_vector = np.maximum.reduceat(delta, offsets[:-1])
+        differences[model] = dict(max_abs=float(delta.max()), changed_vectors=int((per_vector != 0).sum()))
+    if differences['H']['max_abs'] != 0:
+        raise RuntimeError('Frozen source parity failed')
+    if name != 'unhcr' and differences['E041']['max_abs'] != 0:
+        raise RuntimeError('Control drift')
+    if name == 'unhcr' and differences['E041']['changed_vectors'] != 132225:
+        raise RuntimeError('STOP_IDENTITY')
+    return dict(vectors=len(vectors), max_raw_sum_error=maxsum, comparisons=differences,
+                flat_sha256=hashlib.sha256(flat.tobytes()).hexdigest(), status='PASS')
+
+
+def score_gates(name, skill):
+    previous = read(OUT / 'baseline-evaluation.json')['scores']
+    delta025 = skill - previous[f'E025-{name}']['skill']
+    delta041 = skill - previous[f'E041-{name}']['skill']
+    if abs(delta025) > .002 or delta041 < -.002:
+        raise RuntimeError('STOP_RELEASE')
+    inherited = read(S1 / 'attempts/score-01/comparison.json')['scores']
+    if abs(skill - inherited[f'H-{name}']['skill']) > 1e-12:
+        raise RuntimeError('Frozen score mismatch')
+    return dict(skill=skill, delta_E025=delta025, delta_E041=delta041, release_pass=True)
+
+
+def check_observations(events, name):
+    expected = read(S1/'attempts/H-01/complete.json')
+    observed = {}
+    for e in events:
+        if e.get('event') == 'invariant':
+            row = observed.setdefault(e['key'], {'phase':e['phase'], 'hashes':[]})
+            if row['phase'] != e['phase']: raise RuntimeError('Invariant phase changed')
+            row['hashes'].append(e['sha256'])
+    if observed != expected['invariants'][name]:
+        save(OUT/('invariant-mismatch-'+os.environ.get('E064_STAGE','unknown')+'-'+name+'.json'),
+             {'observed':observed, 'expected':expected['invariants'][name]})
+        raise RuntimeError('Source/assembly metric/donor/replay invariant mismatch')
+    lambdas = [e['values'] for e in events if e.get('event') == 'lambda']
+    if not lambdas or lambdas[-1] != expected['retrieval'][name]['lambda']:
+        raise RuntimeError('Source/assembly lambda mismatch')
+    neural = [e for e in events if e.get('event') == 'return' and e.get('kind') == 'neural']
+    if len(neural) != 3: raise RuntimeError('Three neural fits expected')
+    if name == 'unhcr' and any(e['network_class'] != '_e064_ConditionalGradientNet' for e in neural):
+        raise RuntimeError('Candidate local factory disconnected')
+    return {'status':'PASS', 'invariant_keys':len(observed), 'lambda_exact':True, 'neural_calls':len(neural)}
+
+
+def preflight():
+    verify()
+    # Validate the permitted completion receipts before opening their arrays.
+    s1_manifest = read(S1/'artifact-manifest.json')['hashes']
+    baseline_manifest = read(BASELINES/'artifact-manifest.json')['entries']
+    provenance = {}
+    for arm in ('R','H'):
+        for leaf in ('complete.json','resources.json','source.json','environment.json'):
+            path = S1/f'attempts/{arm}-01/{leaf}'
+            expected = s1_manifest[path.relative_to(ROOT).as_posix()]
+            if sha(path) != expected: raise RuntimeError('S1 receipt changed')
+            provenance[path.relative_to(ROOT).as_posix()] = expected
+        receipt = read(S1/f'attempts/{arm}-01/resources.json')
+        if receipt['status'] != 'PASS' or receipt['exit_code'] != 0:
+            raise RuntimeError('S1 arm not complete')
+        source = read(S1/f'attempts/{arm}-01/source.json')
+        if any(sha(ROOT/p) != h for p,h in source.items()):
+            raise RuntimeError('S1 arm code identity changed')
+        frozen = read(S1/'attempts/score-01/frozen-predictions.json')
+        if frozen['freeze_sha256'] != sha(S1/'freeze-01.json') or not frozen['six_complete']:
+            raise RuntimeError('S1 six-output freeze incomplete')
+        complete = read(S1/f'attempts/{arm}-01/complete.json')
+        for name in NAMES:
+            if complete['outputs'][name] != frozen['outputs'][arm+'-'+name]:
+                raise RuntimeError('S1 completion/raw mismatch')
+    baseline_inputs = read(BASELINES/'frozen-inputs.json')['input_hashes']
+    for model,date in (('E025','2026-09-09'),('E041','2026-09-19')):
+        snapshot_path = f'submissions/{date}-{model}/main.py'
+        if sha(ROOT/snapshot_path) != baseline_inputs[snapshot_path]:
+            raise RuntimeError('Baseline snapshot changed')
+        for leaf in (f'{model}-complete.json',f'{model}-01-resources.json',f'environment-{model}-01.json'):
+            if sha(BASELINES/leaf) != baseline_manifest[leaf]:
+                raise RuntimeError('Baseline receipt changed')
+            provenance[(BASELINES/leaf).relative_to(ROOT).as_posix()] = baseline_manifest[leaf]
+    save(OUT/'reuse-receipt-identities.json', {'status':'PASS','hashes':provenance})
+    env = environment()
+    numeric = read(OUT/'batch-entry.json')
+    for field in ('numeric_allowlist_expected','synthetic_allowlist_expected'):
+        for p,h in numeric[field].items():
+            if sha(ROOT/p) != h: raise RuntimeError('Allowed numerical identity mismatch: '+p)
+    save(OUT/'numeric-identity.json', {'status':'PASS', 'hashes':dict(numeric['numeric_allowlist_expected'], **numeric['synthetic_allowlist_expected'])})
+    official = official_module()
+    inputs = {}
+    staging_hashes = {}
+    for name in NAMES:
+        config, schema, respondents, frame, cells, truth, identity = phase1_case(official, name)
+        arrays = {}
+        for model in ('R', 'H', 'E041', 'E025'):
+            flat, offsets = reference(model, name)
+            vectors = [flat[a:b] for a, b in zip(offsets[:-1], offsets[1:])]
+            official.check(schema, vectors, cells)
+            if max(abs(float(v.sum())-1) for v in vectors) > 1e-6:
+                raise RuntimeError('Reference raw normalization')
+            arrays[model] = flat, offsets
+        import numpy as np
+        if not all(np.array_equal(a,b) for a,b in zip(arrays['R'], arrays['E041'])):
+            raise RuntimeError('HOLD: E064 R differs from clean E041')
+        directory = OUT / 'phase1-masked' / name
+        directory.mkdir(parents=True, exist_ok=False)
+        path = directory / 'respondents.parquet'
+        respondents.to_parquet(path, index=False)
+        # Verify the official CLI's delivery path without predicting/scoring.
+        restored = official.load_frames(str(directory), schema)
+        restored_frame, restored_cells, _ = official.sample_rows(schema, restored, 1)
+        if not restored.equals(respondents) or not restored_frame.equals(frame) or restored_cells != cells:
+            raise RuntimeError('Official phase1 staging mismatch')
+        inputs[name] = identity
+        staging_hashes[str(path.relative_to(ROOT)).replace('\\', '/')] = sha(path)
+    sys.path.insert(0, str(ROOT))
+    from assemble import build_source
+    raw = build_source()
+    with (OUT / 'main.py').open('xb') as stream:
+        stream.write(raw)
+    observer = OUT / 'observer'
+    observer.mkdir()
+    text = ('import hashlib, json, os, sys, time\n' + inspect.getsource(structured_digest) + '\n' + inspect.getsource(Audit) + '\n'
+            "if os.environ.get('E064_AUDIT_MAIN'):\n"
+            "    _audit = Audit(os.environ['E064_AUDIT_MAIN'], os.environ['E064_AUDIT_LOG'] + '-' + str(os.getpid()) + '.jsonl', json.loads(os.environ['E064_PRIOR']), json.loads(os.environ['E064_CAPS']), int(os.environ['E064_NTRAIN']), os.environ['E064_INSTRUMENT'])\n"
+            "    sys.setprofile(_audit.profile)\n")
+    (observer / 'sitecustomize.py').write_text(text, encoding='utf-8')
+    baseline_evidence = {}
+    for model in ('E025','E041'):
+        complete = read(BASELINES / f'{model}-complete.json')
+        resource = read(BASELINES / f'{model}-01-resources.json')
+        if resource['status'] != 'PASS' or resource['exit_code'] != 0 or resource['resource_stop'] != 'COMPLETE':
+            raise RuntimeError('Baseline completion qualification missing')
+        frozen = read(BASELINES / 'frozen-predictions.json')
+        if frozen['frozen_source_manifest_sha256'] != sha(BASELINES / 'frozen-inputs.json'):
+            raise RuntimeError('Baseline source freeze provenance mismatch')
+        for name in NAMES:
+            if complete['outputs'][name] != frozen['outputs'][model+'-'+name]:
+                raise RuntimeError('Baseline completion/raw identity mismatch')
+        baseline_evidence[model] = dict(decision='REUSE', fresh_all3=0,
+            inputs_schema_roles_order_mask_equal=True, snapshot_source_hashes_verified=True,
+            completion_raw_manifest_verified=True, common_environment_equal=True,
+            missing_environment='E062 did not separately record executable SHA or scipy/sklearn/pyarrow package versions; current E064 full versions verified, no invented historical versions.',
+            import_stage='Current numeric/scoring dependencies imported before pool check; compare shared recorded Python/numpy/pandas/torch/thread/CUDA fields, not full pool-list JSON.',
+            historical_wall_seconds=resource['wall_seconds'])
+    save(OUT / 'baseline-reuse.json', dict(status='PASS', frozen_before_candidate_calls=True,
+        R_clean_E041_exact_vectors=189649, baseline_evidence=baseline_evidence,
+        decision_basis='Qualified clean outputs reused; no missing required provenance, no conditional fresh branch, not score-dependent.'))
+    save(OUT / 'preflight.json', dict(status='PASS', environment=env, inputs=inputs,
+                                     references=12, reference_policy='allow_pickle=False, numeric flat/offsets only',
+                                     staging_hashes=staging_hashes, main_sha256=sha(OUT / 'main.py')))
+    paths = [str((OUT/'assemble.py').relative_to(ROOT)), str((OUT/'release.py').relative_to(ROOT)),
+             str((OUT/'tests_assembly.py').relative_to(ROOT)), str((OUT/'memory_tree.py').relative_to(ROOT)), str((OUT / 'main.py').relative_to(ROOT)),
+             str((OUT / 'observer/sitecustomize.py').relative_to(ROOT)),
+             str((OUT / 'release-contract.md').relative_to(ROOT)),
+             str((OUT / 'batch-entry.json').relative_to(ROOT)),
+             str((OUT / 'SCORES.md').relative_to(ROOT)),
+             str((OUT / 'baseline-reuse.json').relative_to(ROOT)),
+             'external/starter-kit/tools/check_submission_zip.py',
+             'external/starter-kit/LICENSE']
+    hashes = {p.replace('\\', '/'): sha(ROOT / p) for p in paths}
+    hashes.update(staging_hashes)
+    hashes.update(read(OUT/'numeric-identity.json')['hashes'])
+    hashes.update(provenance)
+    save(OUT / 'release-freeze.json', dict(frozen_utc=datetime.now(timezone.utc).isoformat(),
+                                          hashes=hashes, model_calls=0, source='entry.json/S1 manifests'))
+    print('PREFLIGHT PASS; source/scorecard/input freeze before S2 model calls', flush=True)
+
+
+def assembly():
+    verify()
+    env = environment()
+    official = official_module()
+    module = load_module('e064_assembled', OUT / 'main.py')
+    results = {}
+    for name in NAMES:
+        config, schema, _, frame, cells, truth, identity = phase1_case(official, name)
+        audit = Audit(str(OUT / 'main.py'), str(OUT / f'calls-assembly-{name}.jsonl'),
+                      counts(), caps(), identity['train'], name)
+        meta = read(S1 / 'freeze-01.json')['phase1'][name]
+        audit.roles = meta['neural_roles']
+        audit.metric_roles = meta.get('metric_roles', {})
+        print('START assembly', name, flush=True)
+        sys.setprofile(audit.profile)
+        started = time.perf_counter()
+        try:
+            vectors = module.predict(frame.copy(deep=True), schema)
+        finally:
+            sys.setprofile(None)
+            audit.stream.close()
+        row = compare_vectors(official, name, vectors, schema, cells)
+        if True:
+            events = [json.loads(s) for s in (OUT/f'calls-assembly-{name}.jsonl').read_text().splitlines()]
+            row['natural_policy'] = check_observations(events, name)
+        import numpy as np
+        path = OUT / f'vectors-assembly-{name}.npz'
+        np.savez_compressed(path, flat=np.concatenate(vectors).astype(np.float64),
+                            offsets=np.r_[0,np.cumsum([len(v) for v in vectors])])
+        row.update(output_file=path.relative_to(ROOT).as_posix(), sha256=sha(path))
+        row['prediction_and_check_seconds'] = time.perf_counter() - started
+        save(OUT / f'assembly-{name}.json', row)
+        results[name] = row
+        print('DONE assembly', name, row, flush=True)
+    save(OUT / 'assembly.json', dict(status='PASS', instruments=results, environment=env, cumulative_calls=counts()))
+    save(OUT / 'assembly-output-freeze.json', dict(frozen_utc=datetime.now(timezone.utc).isoformat(),
+         outputs={n:dict(file=r['output_file'],sha256=r['sha256']) for n,r in results.items()},
+         DEV_truth_accessed=False, source_sha256=sha(OUT/'main.py')))
+
+
+def evaluate():
+    verify()
+    frozen = read(OUT / 'assembly-output-freeze.json')
+    import numpy as np
+    environment()
+    official = official_module()
+    for row in frozen['outputs'].values():
+        if sha(ROOT / row['file']) != row['sha256']:
+            raise RuntimeError('Assembly output freeze changed')
+    scores, staging_hashes = {}, {}
+    for name in NAMES:
+        config, schema, respondents, frame, cells, truth, identity = phase1_case(official,name,with_truth=True)
+        if config['scoring']['floor'] != .001:
+            raise RuntimeError('Unexpected official floor')
+        for model in ('E025','E041','H'):
+            flat, offsets = reference(model,name)
+            vectors = [flat[a:b] for a,b in zip(offsets[:-1],offsets[1:])]
+            measured = official.score(schema,config,official.floored(vectors,schema,cells,.001),truth,cells,seed=0)
+            scores[model+'-'+name] = {k:measured[k] for k in ('skill','log_score','n_cells','uniform_reference')}
+        directory = OUT/'phase1'/name
+        directory.mkdir(parents=True,exist_ok=False)
+        path = directory/'respondents.parquet'
+        respondents.to_parquet(path,index=False)
+        restored = official.load_frames(str(directory),schema)
+        rf,rc,rt = official.sample_rows(schema,restored,1)
+        if not restored.equals(respondents) or not rf.equals(frame) or rc != cells or rt != truth:
+            raise RuntimeError('Truth staging canonical roundtrip mismatch')
+        official.stage(schema,rf,str(directory))
+        payload = read(directory/'data.json')
+        import pandas as pd
+        delivered = pd.DataFrame(payload['data'],columns=payload['columns'])
+        if not delivered.astype(object).equals(frame.astype(object)) or read(directory/'schema.json') != schema:
+            raise RuntimeError('Driver JSON schema/order/mask roundtrip mismatch')
+        staging_hashes[path.relative_to(ROOT).as_posix()] = sha(path)
+    save(OUT/'baseline-evaluation.json',dict(status='PASS',scores=scores,
+         comparison='Current release official evaluator/truth/order/floor .001, fixed raw references only; no baseline fit',
+         assembly_outputs_frozen_before_truth=True))
+    gates = {n:score_gates(n,scores['H-'+n]['skill']) for n in NAMES}
+    save(OUT/'regression.json',dict(status='PASS',instruments=gates))
+    save(OUT/'truth-stage-freeze.json',dict(frozen_utc=datetime.now(timezone.utc).isoformat(),hashes=staging_hashes))
+    print('EVALUATOR/DUAL BASELINE/DRIVER ROUNDTRIP PASS',gates,flush=True)
+
+
+def package():
+    verify()
+    if read(OUT / 'assembly-resources.json')['status'] != 'PASS':
+        raise RuntimeError('Assembly resource qualification required')
+    if read(OUT / 'assembly.json')['status'] != 'PASS':
+        raise RuntimeError('Assembly required')
+    if read(OUT / 'evaluate-resources.json')['status'] != 'PASS' or read(OUT/'regression.json')['status'] != 'PASS':
+        raise RuntimeError('Dual baseline evaluator qualification required')
+    now = datetime.now(timezone(timedelta(hours=9)))
+    SNAP = ROOT / ('submissions/'+now.strftime('%Y-%m-%d')+'-E064')
+    if SNAP.exists() or SNAP.with_suffix('.zip').exists():
+        raise FileExistsError('Package date path collision; never overwrite')
+    SNAP.mkdir()
+    with (SNAP/'SCORES.md').open('xb') as stream:
+        stream.write((OUT/'SCORES.md').read_bytes())
+    save(OUT/'package-path.json',dict(snapshot=SNAP.relative_to(ROOT).as_posix(),created_kst=now.isoformat(),upload=False))
+    sys.path.insert(0, str(ROOT))
+    from assemble import package as build_package
+    files = build_package(SNAP, OUT / 'main.py')
+    extracted = OUT / 'extracted'
+    extracted.mkdir()
+    with zipfile.ZipFile(SNAP.with_suffix('.zip')) as archive:
+        if archive.namelist() != ['main.py', 'NOTICE.txt']:
+            raise RuntimeError('Unexpected ZIP content')
+        for name in archive.namelist():
+            value = archive.read(name)
+            if value != (SNAP / name).read_bytes():
+                raise RuntimeError('Archive byte mismatch')
+            with (extracted / name).open('xb') as stream:
+                stream.write(value)
+    if (extracted / 'main.py').read_bytes() != (OUT / 'main.py').read_bytes():
+        raise RuntimeError('Extracted assembly bytes differ')
+    command = [sys.executable, '-X', 'utf8', '-B', str(KIT / 'tools/check_submission_zip.py'), str(SNAP.with_suffix('.zip'))]
+    done = subprocess.run(command, cwd=extracted, capture_output=True, text=True, encoding='utf-8', timeout=90)
+    output = done.stdout + done.stderr
+    (OUT / 'zip-check.log').write_text(output, encoding='utf-8')
+    if done.returncode != 0 or 'OK:' not in output:
+        raise RuntimeError('ZIP checker: ' + output[-1500:])
+    save(OUT / 'package.json', dict(status='PASS_CHECKER_PENDING_OFFICIAL', files=files,
+                                   extracted_main_sha256=sha(extracted / 'main.py'),
+                                   zip_bytes=SNAP.with_suffix('.zip').stat().st_size,
+                                   checker=output.strip(), checker_smoke='one tiny generated-frame predict; no neural or metric fit'))
+    print('PACKAGE/CHECKER PASS', files, flush=True)
+
+
+def official_run():
+    verify()
+    package_report = read(OUT / 'package.json')
+    SNAP = snapshot()
+    for path, expected in read(OUT/'truth-stage-freeze.json')['hashes'].items():
+        if sha(ROOT/path) != expected:
+            raise RuntimeError('Official truth stage bytes changed')
+    for name, expected in package_report['files'].items():
+        path = SNAP.with_suffix('.zip') if name.endswith('.zip') else SNAP / name
+        if sha(path) != expected:
+            raise RuntimeError('Package changed')
+    extracted = OUT / 'extracted'
+    if sha(extracted / 'main.py') != package_report['extracted_main_sha256']:
+        raise RuntimeError('Extracted main changed')
+    environment()
+    official = official_module()
+    results = {}
+    workroot = OUT / 'official-work'
+    workroot.mkdir()
+    for name in NAMES:
+        config, schema, _, frame, cells, truth, identity = phase1_case(official, name)
+        logfile = OUT / f'official-{name}.json'
+        if logfile.exists():
+            raise FileExistsError(logfile)
+        env = dict(os.environ, PYTHONPATH=str(OUT / 'observer'),
+                   TEMP=str(workroot), TMP=str(workroot),
+                   E064_AUDIT_MAIN=str(extracted / 'main.py'),
+                   E064_AUDIT_LOG=str(OUT / f'calls-official-{name}'),
+                   E064_PRIOR=json.dumps(counts()), E064_CAPS=json.dumps(caps()),
+                   E064_NTRAIN=str(identity['train']), E064_INSTRUMENT=name,
+                   E064_ROLES=json.dumps(read(S1 / 'freeze-01.json')['phase1'][name]['neural_roles']),
+                   E064_METRIC_ROLES=json.dumps(read(S1 / 'freeze-01.json')['phase1'][name].get('metric_roles',{})))
+        command = [sys.executable, '-X', 'utf8', '-B', str(KIT / 'score.py'),
+                   '--submission', str(extracted), '--data', str(OUT / 'phase1' / name),
+                   '--schema', str(KIT / f'data/{name}.json'), '--config', str(KIT / 'config.yml'),
+                   '--phase', '1', '--seed', '0', '--keep', '--log', str(logfile)]
+        print('START official', name, flush=True)
+        started = time.perf_counter()
+        done = subprocess.run(command, cwd=extracted, env=env, capture_output=True,
+                              text=True, encoding='utf-8', errors='replace')
+        cli_seconds = time.perf_counter() - started
+        output = done.stdout + done.stderr
+        (OUT / f'official-{name}.log').write_text(output, encoding='utf-8')
+        if done.returncode != 0:
+            raise RuntimeError('Official CLI failed: ' + output[-2000:])
+        report = read(logfile)
+        if report['status'] != 'PASS' or report['phase'] != 1:
+            raise RuntimeError('Official status/phase')
+        match = re.search(r'^\[work\] (.+)$', output, re.MULTILINE)
+        if match is None:
+            raise RuntimeError('Official prediction location missing')
+        work = Path(match.group(1).strip()).resolve()
+        if not work.is_relative_to(workroot.resolve()):
+            raise RuntimeError('Unexpected official work directory')
+        vectors = read(work / 'predictions.json')
+        row = compare_vectors(official, name, vectors, schema, cells)
+        row.update(score_gates(name, report['skill']))
+        row.update(cli_startup_to_exit_seconds=cli_seconds, scorer_seconds=report['seconds'],
+                   official_log=str(logfile.relative_to(ROOT)), predictions_sha256=sha(work / 'predictions.json'))
+        # Observer must actually have run in the model process, not only CLI parent.
+        events = [json.loads(line) for p in OUT.glob(f'calls-official-{name}-*.jsonl')
+                  for line in p.read_text(encoding='utf-8').splitlines()]
+        if sum(e.get('event') == 'environment' for e in events) != 1:
+            raise RuntimeError('Official model observer missing')
+        entered = [e for e in events if e.get('event') == 'enter']
+        if sum(e.get('kind') == 'full_stack' for e in entered) != 1:
+            raise RuntimeError('Official call count missing')
+        if True:
+            row['natural_policy'] = check_observations(events, name)
+        results[name] = row
+        save(OUT / f'official-parity-{name}.json', row)
+        print('DONE official', name, row, flush=True)
+    save(OUT / 'official.json', dict(status='PASS', instruments=results,
+                                    cli_seconds_sum=sum(r['cli_startup_to_exit_seconds'] for r in results.values()),
+                                    cumulative_calls=counts()))
+
+
+def monitor(mode):
+    start = time.perf_counter()
+    sys.path.insert(0, str(ROOT))
+    from memory_tree import MemoryTree
+    entry = read(OUT / 'batch-entry.json')
+    deadline = datetime.fromisoformat(entry['computation_cutoff_utc'].replace('Z', '+00:00')).timestamp()
+    prior = entry['administrative_compute_reserve_seconds'] + sum(read(p)['wall_seconds'] for p in OUT.glob('*-resources.json'))
+    report_path, log_path = OUT / f'{mode}-resources.json', OUT / f'{mode}.log'
+    if report_path.exists() or log_path.exists():
+        raise FileExistsError('Never overwrite an attempt')
+    verify()
+    if mode in ('assembly','official'):
+        starts=list(OUT.glob('all3-start-*.json'))
+        if len(starts)>=4: raise RuntimeError('All3 start cap')
+        save(OUT/('all3-start-'+str(len(starts)+1)+'.json'), {'stage':mode, 'utc':datetime.now(timezone.utc).isoformat()})
+    if mode == 'assembly' and read(OUT / 'preflight2-resources.json')['status'] != 'PASS':
+        raise RuntimeError('Preflight resources required')
+    if mode == 'official' and read(OUT / 'package-resources.json')['status'] != 'PASS':
+        raise RuntimeError('Package resources required')
+    if mode in ('assembly', 'official'):
+        current = counts()
+        if any(current[k] + v > caps()[k] for k, v in dict(full_stack=3, neural=9, metric=8).items()):
+            raise RuntimeError('Insufficient remaining call budget')
+    focused = sum(read(p)['wall_seconds'] for p in OUT.glob('tests*-resources.json'))
+    if mode.startswith('tests') and focused >= 300:
+        raise RuntimeError('Focused test budget exhausted')
+    env = dict(os.environ, OMP_NUM_THREADS='2', MKL_NUM_THREADS='2', OPENBLAS_NUM_THREADS='2',
+               NUMEXPR_NUM_THREADS='2', CUDA_VISIBLE_DEVICES='', PYTHONDONTWRITEBYTECODE='1',
+               PYTHONIOENCODING='utf-8', PYTHONPATH=str(ROOT), PYTEST_DISABLE_PLUGIN_AUTOLOAD='1',
+               E064_STAGE=mode)
+    command = ([sys.executable, '-X', 'utf8', '-B',
+                str(OUT/'tests_assembly.py'), '-v']
+               if mode.startswith('tests') else [sys.executable, '-X', 'utf8', '-B', __file__, 'worker', mode])
+    memory = MemoryTree(os.getpid())
+    peak = memory.sample()
+    if max(peak.values()) >= 8 * 1024**3 or prior >= 3600 or time.time() >= deadline:
+        raise RuntimeError('Prelaunch cap')
+    last_sample = time.perf_counter()
+    maximum_gap = 0.; sample_count = 1
+    process = None
+    reason, error = 'COMPLETE', None
+    limit = 900 if mode in ('assembly', 'official') else (min(60,300-focused) if mode.startswith('tests') else 120)
+    if prior + limit > 3600 or time.time()+limit > deadline:
+        raise RuntimeError('Insufficient remaining full-stage budget')
+    if mode.startswith('tests') and len(list(OUT.glob('tests*-resources.json'))) >= 3:
+        raise RuntimeError('Focused cycle cap')
+    with log_path.open('x', encoding='utf-8') as log:
+        try:
+            process = subprocess.Popen(command, cwd=ROOT, env=env, stdout=log, stderr=subprocess.STDOUT,
+                                       creationflags=subprocess.CREATE_NO_WINDOW)
+            while process.poll() is None:
+                sample = memory.sample()
+                sampled_at = time.perf_counter()
+                maximum_gap = max(maximum_gap, sampled_at-last_sample)
+                last_sample = sampled_at
+                sample_count += 1
+                peak = {k: max(peak[k], sample[k]) for k in peak}
+                elapsed = time.perf_counter() - start
+                if max(peak.values()) >= 8 * 1024**3:
+                    reason = 'MEMORY_CAP'; break
+                if elapsed >= limit-2 or prior + elapsed >= 3600-2 or time.time() >= deadline-2:
+                    reason = 'TIME_CAP'; break
+                time.sleep(.1)
+        except Exception as exc:
+            reason, error = 'MONITOR_OR_LAUNCH_FAILURE', repr(exc)
+        finally:
+            if process is not None:
+                if process.poll() is None:
+                    subprocess.run(['taskkill', '/PID', str(process.pid), '/T', '/F'], capture_output=True)
+                process.wait(timeout=10)
+            try:
+                sample = memory.sample()
+                sampled_at = time.perf_counter()
+                maximum_gap = max(maximum_gap,sampled_at-last_sample)
+                sample_count += 1
+                peak = {k:max(peak[k],sample[k]) for k in peak}
+            except Exception as exc:
+                reason,error = 'MONITOR_FAILURE',repr(exc)
+    elapsed = time.perf_counter() - start
+    code = None if process is None else process.returncode
+    okay = code == 0 and reason == 'COMPLETE' and elapsed <= limit and prior + elapsed <= 3600
+    report = dict(mode=mode, status='PASS' if okay else 'FAIL', command=command,
+                  wall_seconds=elapsed, cumulative_worker_seconds=prior + elapsed,
+                  historical_S1_worker_seconds=entry['historical_s1']['seconds'],
+                  combined_worker_seconds=prior + elapsed + entry['historical_s1']['seconds'],
+                  reason=reason, error=error, exit_code=code, peak_owned_tree_bytes=peak,
+                  sample_interval_seconds=.1, numerical_threads=2, gpu=False,
+                  sample_count=sample_count, maximum_monotonic_sample_gap_seconds=maximum_gap,
+                  focused_cumulative_seconds=focused+(elapsed if mode.startswith('tests') else 0),
+                  memory_semantics='Owned controller+descendants; sum of per-process peak RSS/private commitment',
+                  cumulative_calls=counts())
+    save(report_path, report)
+    print(json.dumps(report, indent=2), flush=True)
+    return 0 if okay else 1
+
+
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser()
+    parser.add_argument('action', choices=['run', 'worker'])
+    parser.add_argument('mode', choices=['tests-red', 'tests', 'preflight', 'preflight2', 'assembly', 'evaluate', 'package', 'official'])
+    args = parser.parse_args()
+    if args.action == 'run':
+        raise SystemExit(monitor(args.mode))
+    {'preflight': preflight, 'preflight2': preflight, 'assembly': assembly, 'evaluate': evaluate, 'package': package, 'official': official_run}[args.mode]()

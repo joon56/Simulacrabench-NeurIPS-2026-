@@ -1,0 +1,18 @@
+[
+    {
+        "path":  "docs/status.md",
+        "before":  "3973c658ccbc36e366b0bb997e5f6456e737b8a453a00b74d9a3620c06d82663",
+        "after":  "28b816ae10e879a0e4d238dc07b1383f3f725dd5dae295ddd5a66e3734f3f8ab",
+        "original_recovered_sha256":  "3973c658ccbc36e366b0bb997e5f6456e737b8a453a00b74d9a3620c06d82663",
+        "insertion_characters":  966,
+        "preserved":  true
+    },
+    {
+        "path":  "docs/log.md",
+        "before":  "c61162811ec1b62a61c47ff216b08828646e1140ecd8c83e610fef873ffb666b",
+        "after":  "dbd992b7bc32ca1b87aae70c8ec74cb5421ec98f8dfa7ae3564bb530c7b5f417",
+        "original_recovered_sha256":  "c61162811ec1b62a61c47ff216b08828646e1140ecd8c83e610fef873ffb666b",
+        "insertion_characters":  2347,
+        "preserved":  true
+    }
+]

@@ -1,0 +1,189 @@
+{
+  "recorded_utc": "2026-10-08T14:20:59.806106+00:00",
+  "status": "POST_RESULT_RECORDED_UNRESOLVED",
+  "role": "S2",
+  "task_type": "E062 actual hosted result intake; documents only",
+  "workflow_revision": "2026-10-05-r5",
+  "workflow_sha256": "a577942675e16a732339e586c14796104dda704693568439ae28670cc7fb7b23",
+  "read_receipt": "entry.json",
+  "head": "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+  "HEAD_unchanged": true,
+  "entry_dirty_lines": 101,
+  "final_dirty_lines": 102,
+  "missing_entry_dirty_lines": [],
+  "supplied_fragment_sha256": "af63ecada9ec137e4ff39c4afab122ebba71b3018fbf3c62691ac4725162aa4b",
+  "normalized_full_JSON_sha256": "a2928c4b6fd9c348fc6a25fb65bc65a2cc1d9e24703a06b9b31319eb7a11b557",
+  "source_semantics": "User chat JSON text copy preserved, wrapping outer braces for parser; all fields equal. No API transport/authentication or uploaded-byte claim",
+  "comparison": "comparison.json; all four released strings exactly equal E041 ID933094, registered WB/Grand tie UNRESOLVED",
+  "no_platform_or_model_execution": true,
+  "protected_or_other_data_cache_access_or_rehash": false,
+  "research_invocations": {
+    "fit": 0,
+    "predict": 0,
+    "score": 0,
+    "tests": 0,
+    "checker": 0,
+    "ZIP_open_rehash_change": 0,
+    "platform_query_resubmit": 0
+  },
+  "existing_immutable_documents_checked": {
+    "AGENTS.md": "73b86e5310d6a45d5206efd3b55da47c48748ee7b077e6fcad6be276f1716a3a",
+    "CLAUDE.md": "0cda5c3385ea3368d0c24a6602e4b1220adc864a205e231f10042b655d031749",
+    "docs/workflow.md": "a577942675e16a732339e586c14796104dda704693568439ae28670cc7fb7b23",
+    "docs/codex-setup.ko.md": "804ad28cc886fa2c839940a9bbabdfb0949a4f345812080c1b90585b281afc4d",
+    "submissions/2026-09-19-E041/SCORES.md": "452de89434093225c755639e711b567bfd1160dc38eab74d6b603fda65c2351c",
+    "submissions/hosted-scores/2026-09-27.json": "dfe719bec68faf60c7dfec86c6034ba35fe1a6ba7a9437b88813dbc1ea567ce8",
+    "docs/analysis/E062-outputs/s2/s0-handoff.ko.md": "0872cc13ea90b2877a064e592de755afd6b4850cb1f05bc1c3715a5501120ea9",
+    "docs/analysis/E062-outputs/s2/closeout.md": "806b091263a5942d352ad27e5f78e0f8074506bd7a13ab337d24b59f3765d777",
+    "docs/analysis/E062-outputs/s2/verification.json": "b82170820c005909c0610e5dca69115f772b024e3ffd0d36469a10482dbc80f4",
+    "docs/analysis/E062-outputs/s2/source-archive-manifest.json": "8005f80b8d063065c8ec53a01ed808dd72711284affe2fac08e21d03b66961dd",
+    "docs/analysis/E062-outputs/s2/final-preservation.json": "8f7a1de76a25f72fd83e2ee45d05afe07cb2f16c23d06f2148fbd214df007ad1",
+    "docs/analysis/E062-outputs/s2/release-freeze.json": "d416d6a20f58dd5cb616aeb7feb21a1fbd68285261b866ed70d5cf38ead41777",
+    "docs/analysis/E062-outputs/s2/scorecard-prerun.md": "11d13920be8e5fa386cbf1d7a6155504f3f4d9e459ba00ba46a3044fdb1b2d6a",
+    "docs/analysis/E062-outputs/s2/scorecard-finalization.json": "9ffa6b090c02ec5344abe49878c448f5e226c086b1d00490de06aa9055c30733",
+    "docs/analysis/E062-outputs/s2/closeout-receipt.json": "26750b094def213aacd2052b1ee3f89450a2e6515c1a06e5dee761326f7a8237",
+    "docs/analysis/E062-outputs/s2/resource-summary.json": "0881ba59914609a48526c99e1beb707b6044a63cf14b330034d9098c35bebee5",
+    "docs/analysis/E062-outputs/s2/exposure-ledger.md": "6c57bd7d6263e92ced0a34b811d0ce76c1ea73ada8c4c095ffaa8e874ca5b1cc",
+    "docs/analysis/E062-outputs/artifact-manifest.json": "bb6d5187d06abfe8c3a705cc8b373f3978c56d80411d89c4127ef8646302fbcf",
+    "docs/analysis/E062-outputs/registration.md": "c6b7d587dcc928a761f65b510f8c6018b6c26f7c6b2e59d11a28a4cf0c6389d9",
+    "docs/analysis/E062-outputs/verification.json": "7e212f3e45e1dbf70227068909af0a020c27662567cdfea2e0f67a0c02ed2daf",
+    "docs/experiments/E062-wb-ordinal-heads.md": "f54406766b8ab175a88575a0d7d9509f3e5ee60066367993935102261e4a4421",
+    "docs/analysis/E062-outputs/s0-release-review/decision.md": "8d700cd541b54e9b832a3ff6c5eb670afa773325d3f1a8936c6d08cedf3be37a",
+    "docs/analysis/E062-outputs/s0-release-review/verification.json": "278b513304e89f4eb12caef4bae7aa8c901db6e4f85ff53b33e95a477c39866e"
+  },
+  "original_registrations_manifests_release_records_unchanged": true,
+  "SCORES_full_entry_prefix_and_prerun_unchanged": true,
+  "shared_insertions_restore_entry_bytes": true,
+  "document_changes": [
+    {
+      "path": "submissions/2026-10-08-E062/SCORES.md",
+      "change": "append hosted result only",
+      "before_bytes": 6654,
+      "before_sha256": "216927ac8482252ea483dbad3b760160c384d4b9a5ef3f2359c0f2aaf5c4d121",
+      "after_sha256": "034b56c66b24c9d3f68cf810074e09b2cb24523c6aa04c9df81e6dca356bed3f",
+      "original_prefix_unchanged": true,
+      "addition_utf8": "\n## Actual hosted result - 2026-10-08, ID969351: UNRESOLVED\n\nSource: current user-supplied JSON, not an independently queried/authenticated\nplatform response. [Preserved fragment](../../docs/analysis/E062-outputs/s2/post-result/user-supplied-api-fragment.txt),\n[full-field JSON wrapper](../../docs/analysis/E062-outputs/s2/post-result/user-supplied-api.json),\n[post-result scorecard](../../docs/analysis/E062-outputs/s2/post-result/result.ko.md).\n\nFinished, Development/phase29772, filename2026-10-08-E062.zip, ID/pk969351.\ncreated_when2026-10-08T13:37:12.926748Z =\n2026-10-08 22:37:12.926748 +09:00. Platform creation metadata, not independently\nverified upload-start or completion time; prepared date remains a separate fact.\n\n| Supplied observation | Grand API | UNICEF API | WB API | UNHCR API |\n| --- | --- | --- | --- | --- |\n| E041 ID933094, historical user API | 0.6433333333 | 0.5200000000 | 0.4900000000 | 0.9200000000 |\n| E062 ID969351, current user JSON | 0.6433333333 | 0.5200000000 | 0.4900000000 | 0.9200000000 |\n\nAll four released score strings equal. Apply original WB/Grand tie arm:\nUNRESOLVED; E041 incumbent/E025 fallback, E062 parked. No readable better\nreleased result. Exact effect, activation and raw prediction change unresolved.\nNo exact-zero/identical-prediction/hypothesis-family refutation claim, hidden\ninstrument/target16 inference or Grand .64 display-only comparison.\n\nE041 source is hosted-scores/2026-09-27.json: Finished, same Development\nphase29772, ID933094. Comparable supplied registered observations, no recorded\nphase/filename/ID/score contradiction. Neither source independently authenticated;\nhistorical E041 extract omits task/scoring_program, so remote scorer version\nidentity was not newly checked. API precision2 and privacy/noise/rounding remain.\nE062 supplied scoring_program f3015fb3-26ec-44c2-97fa-6b5fd501f596 retained.\non_leaderboard:false/leaderboard:null are snapshot membership, not event history.\nIndependent best-update event, upload-selection path, remote ZIP bytes/hash,\ncompletion timestamp and hosted runtime not supplied.\n\nLocal release identification inherited, not opened/rehashed this result task:\nZIP16879 bytes, SHA256\n83087eaa081e3973cf4c5b4ae48923f61d33a440c989c7d2a6652c069e90eee4.\nFilename equality is not proof of actual uploaded byte identity.\n\nPrior registration/hosted arms/local qualification and entire prior scorecard\nprefix unchanged. Append-only result, old manifest not regenerated; document\nhash differences disclosed in post-result verification. Local technical and\nsynthetic PASS retained as history, no hosted improvement proof.\n\nNext: [S0 post-result handoff](../../docs/analysis/E062-outputs/s2/post-result-handoff.ko.md)\nfor research priority judgment only. DEV incumbent/TEST decisions separate.\nNo identical-policy resubmission or seed/head/threshold rescue; no model,\nverification/score/ZIP/platform/commit/push/subagents/S3/TEST action in this task.\nAll historical parked/STOP/HOLD/exposure/protected-role/A_half/A018 states kept.\n"
+    },
+    {
+      "path": "submissions/SCORES.md",
+      "change": "append hosted result only",
+      "before_bytes": 10159,
+      "before_sha256": "1e6d753c24c5c2e42fc4b316ea524a4285b59ef672cc5c3a5a1288768d157dab",
+      "after_sha256": "672e50c16a1b066e03b1fb02d41ab1cab13e991594afe5e7988f138865453c49",
+      "original_prefix_unchanged": true,
+      "addition_utf8": "\n## 2026-10-08 supplement - E062 ID969351, UNRESOLVED\n\nCurrent user-supplied full JSON; not live platform retrieval/authentication.\nThe33-record2026-09-27 inventory above remains its historical response scope.\n\n| ID | Filename / scorecard | Created (KST, metadata) | Status / phase | Grand API | UNICEF API | WB API | UNHCR API | LB snapshot |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| 969351 | [2026-10-08-E062.zip](2026-10-08-E062/SCORES.md) | 2026-10-08 22:37:12.926748 +09:00 | Finished / Development29772 | 0.6433333333 | 0.5200000000 | 0.4900000000 | 0.9200000000 | false |\n\nSame four released score strings as E041 ID933094. Original WB/Grand tie arm\nUNRESOLVED: no readable new best, effect unresolved, E041 incumbent/E025 fallback,\nE062 parked. Exact-zero effect/prediction equality/family refutation not inferred.\nBest-update event not independently provided; membership is not an event log.\nCreated metadata is not independently verified upload-start/completion time.\nActual uploaded bytes/hash and selected local path unknown. Historical local\nZIP hash inherited only; no ZIP read/rehash or platform query this task.\nPrior technical/synthetic release PASS is not hosted improvement evidence.\nNo same-policy retry/seed-head-threshold rescue, automatic adoption/S3/TEST.\n\n[Full provided JSON](../docs/analysis/E062-outputs/s2/post-result/user-supplied-api.json),\n[provenance/comparison](../docs/analysis/E062-outputs/s2/post-result/result.ko.md),\n[S0 handoff](../docs/analysis/E062-outputs/s2/post-result-handoff.ko.md).\nThis result task appends documents only; no commit/push or model/release rerun.\nAll earlier record bytes, criteria/manifests and existing boundaries preserved.\n"
+    },
+    {
+      "path": "docs/status.md",
+      "change": "insert current result above historical entries",
+      "insertion_index_byte": 325,
+      "before_sha256": "7df10eccd655545dd3494016fc433fe744f53f5eef71705f25503cbd502b47fe",
+      "after_sha256": "6f4fa0e7c7c5597a86399c5277ed235c66ff1efc2aa81aaf9284fe3d6bd2ae75",
+      "removal_restores_entry_bytes": true,
+      "addition_utf8": "- **2026-10-08 E062 actual DEV: UNRESOLVED; result-only S2 returns to S0.**\r\n  User JSON ID969351, Finished, Development/phase29772. Grand API.6433333333 /\r\n  UNICEF.52/WB.49/UNHCR.92 all equal E041 ID933094 released values.\r\n  Original WB/Grand tie arm; no readable better result, exact effect/prediction/\r\n  activation unresolved. E041 incumbent/E025 fallback; E062 parked.\r\n  Platform created2026-10-08 22:37:12.926748 KST; upload-start/completion and\r\n  actual remote ZIP bytes/hash unknown. Best-update event not supplied;\r\n  on_leaderboard:false is membership, not historical event proof.\r\n  [Post-result scorecard](analysis/E062-outputs/s2/post-result/result.ko.md),\r\n  [S0 handoff](analysis/E062-outputs/s2/post-result-handoff.ko.md),\r\n  [SCORES](../submissions/2026-10-08-E062/SCORES.md).\r\n  Prior registrations/manifests/local PASS/source/ZIP/tree intact; SCORES append\r\n  only. Next S0 priority document judgment, no new S2 candidate/work.\r\n  No models/verification/score/data/cache/ZIP/platform/commit/push/subagents/\r\n  S3/TEST. All parked/STOP/HOLD/A039/A040/A023/A024/exposure/A022/E059/A_half/\r\n  A018/S3 boundaries preserved.\r\n\r\n"
+    },
+    {
+      "path": "docs/log.md",
+      "change": "insert current result above historical entries",
+      "insertion_index_byte": 23,
+      "before_sha256": "8585349fde4737473a80bdcb18f8f1855d475bb955bdd6b41f9b0307c6073c52",
+      "after_sha256": "e90428d9d9bb9e4c12b32d8efbec2fe25d1d2a21a44ea6d040f149dc5e85d0d7",
+      "removal_restores_entry_bytes": true,
+      "addition_utf8": "## 2026-10-08 - E062 actual DEV public tie: UNRESOLVED; return to S0\r\n\r\n- Result-only user instruction; ordered AGENTS/CLAUDE/current status/newest3log/\r\n  workflow r5 reads and bounded documentation receipt. HEADa43f4379, dirty101,\r\n  observed named local jobs0. Preserved supplied JSON fragment/full-field wrapper.\r\n- E062 ID/pk969351, Finished, Development/phase29772, filename2026-10-08-E062.zip,\r\n  created_when2026-10-08T13:37:12.926748Z =22:37:12.926748 KST. Platform creation\r\n  metadata, not independently verified upload-start or completion timestamp.\r\n- Grand API.6433333333/UNICEF.5200000000/WB.4900000000/UNHCR.9200000000 equal\r\n  E041 ID933094 strings in existing2026-09-27 user API ledger/scorecard supplement.\r\n  Comparable registered supplied Finished phase29772 observations; sources not\r\n  independently authenticated, E041 scorer metadata omitted so version equality\r\n  not newly certified. No recorded provenance contradiction. All precision2.\r\n- Original WB/Grand tie arm UNRESOLVED. No readable new best; exact effect,\r\n  activation/raw predictions remain unresolved. No exact-zero/prediction equality/\r\n  full-family refutation, no hidden instrument/target16 inference from Grand.\r\n  on_leaderboard:false/leaderboard:null is supplied membership, not best-update\r\n  event proof. Independent event/hosted runtime/upload-selection bytes not given.\r\n- Local16879-byte ZIP SHA83087eaa081e3973cf4c5b4ae48923f61d33a440c989c7d2a6652c069e90eee4\r\n  inherited from prior release record only; no ZIP open/rehash/change. Filename\r\n  match does not certify actual remote bytes. Original technical/synthetic PASS\r\n  and target16/Not answered decline remain distinct historical evidence.\r\n- Append candidate and central SCORES; new result/provenance/comparison/S0 handoff,\r\n  status/log additions only. Original prior records/manifests/registration/source/\r\n  experiment/snapshots/tree unchanged; changed shared document hashes disclosed.\r\n  No model/release/score/tests/data/cache/remote/platform/commit/push/subagents.\r\n- E041 incumbent/E025 fallback, E057/E060/E061/E062 parked; all STOP/HOLD,\r\n  E058 STOP/E059 STOP_SELECTION/A023/A024 empirical HOLD/A039/A040 preserved.\r\n  17999/12339/aggregate/A022/E059 consumed/protected roles/A_half/A018/S3 intact.\r\n  TEST decision separate, S3 remains stopped. No same-policy resubmit or seed/\r\n  head/threshold rescue. S0 next research-priority document judgment only.\r\n- [Result](analysis/E062-outputs/s2/post-result/result.ko.md),\r\n  [S0 post-result handoff](analysis/E062-outputs/s2/post-result-handoff.ko.md),\r\n  [SCORES](../submissions/2026-10-08-E062/SCORES.md).\r\n\r\n"
+    }
+  ],
+  "original_manifest_shared_document_hash_differences": [
+    {
+      "path": "docs/status.md",
+      "original_release_manifest_sha256": "935f6ce440cd0f584cb4bf84ae080179764cf5320db0e3bf27ca664752355cd0",
+      "result_entry_after_S0_sha256": "7df10eccd655545dd3494016fc433fe744f53f5eef71705f25503cbd502b47fe",
+      "post_result_sha256": "6f4fa0e7c7c5597a86399c5277ed235c66ff1efc2aa81aaf9284fe3d6bd2ae75",
+      "note": "Old manifest immutable; prior S0/shared additions and new result-only insertion/append separate from code/artifact identity"
+    },
+    {
+      "path": "docs/log.md",
+      "original_release_manifest_sha256": "6e6ef47f4d9fd7a2757dfe8cb3d96e6b06aab6728eb78012e5d1ced917eb0a92",
+      "result_entry_after_S0_sha256": "8585349fde4737473a80bdcb18f8f1855d475bb955bdd6b41f9b0307c6073c52",
+      "post_result_sha256": "e90428d9d9bb9e4c12b32d8efbec2fe25d1d2a21a44ea6d040f149dc5e85d0d7",
+      "note": "Old manifest immutable; prior S0/shared additions and new result-only insertion/append separate from code/artifact identity"
+    },
+    {
+      "path": "submissions/2026-10-08-E062/SCORES.md",
+      "original_release_manifest_sha256": "216927ac8482252ea483dbad3b760160c384d4b9a5ef3f2359c0f2aaf5c4d121",
+      "result_entry_after_S0_sha256": "216927ac8482252ea483dbad3b760160c384d4b9a5ef3f2359c0f2aaf5c4d121",
+      "post_result_sha256": "034b56c66b24c9d3f68cf810074e09b2cb24523c6aa04c9df81e6dca356bed3f",
+      "note": "Old manifest immutable; prior S0/shared additions and new result-only insertion/append separate from code/artifact identity"
+    }
+  ],
+  "other_unrelated_source_data_ZIP_preservation": "No write/access operations in this result task; no independent rehash of forbidden/unrelated bytes",
+  "git_diff_whitespace": "PASS",
+  "document_links_checked": [
+    {
+      "file": "docs/analysis/E062-outputs/s2/post-result/result.ko.md",
+      "target": "user-supplied-api-fragment.txt"
+    },
+    {
+      "file": "docs/analysis/E062-outputs/s2/post-result/result.ko.md",
+      "target": "user-supplied-api.json"
+    },
+    {
+      "file": "docs/analysis/E062-outputs/s2/post-result/result.ko.md",
+      "target": "../../../../../submissions/hosted-scores/2026-09-27.json"
+    },
+    {
+      "file": "docs/analysis/E062-outputs/s2/post-result/result.ko.md",
+      "target": "../../../../../submissions/2026-09-19-E041/SCORES.md"
+    },
+    {
+      "file": "docs/analysis/E062-outputs/s2/post-result/result.ko.md",
+      "target": "../../../../../submissions/2026-10-08-E062/SCORES.md"
+    },
+    {
+      "file": "docs/analysis/E062-outputs/s2/post-result/result.ko.md",
+      "target": "comparison.json"
+    },
+    {
+      "file": "docs/analysis/E062-outputs/s2/post-result/result.ko.md",
+      "target": "../post-result-handoff.ko.md"
+    },
+    {
+      "file": "docs/analysis/E062-outputs/s2/post-result-handoff.ko.md",
+      "target": "post-result/result.ko.md"
+    },
+    {
+      "file": "docs/analysis/E062-outputs/s2/post-result-handoff.ko.md",
+      "target": "post-result/user-supplied-api-fragment.txt"
+    },
+    {
+      "file": "docs/analysis/E062-outputs/s2/post-result-handoff.ko.md",
+      "target": "post-result/user-supplied-api.json"
+    },
+    {
+      "file": "docs/analysis/E062-outputs/s2/post-result-handoff.ko.md",
+      "target": "post-result/comparison.json"
+    },
+    {
+      "file": "docs/analysis/E062-outputs/s2/post-result-handoff.ko.md",
+      "target": "../../../../submissions/2026-10-08-E062/SCORES.md"
+    },
+    {
+      "file": "docs/analysis/E062-outputs/s2/post-result-handoff.ko.md",
+      "target": "../../../../submissions/SCORES.md"
+    },
+    {
+      "file": "docs/analysis/E062-outputs/s2/post-result-handoff.ko.md",
+      "target": "closeout.md"
+    },
+    {
+      "file": "docs/analysis/E062-outputs/s2/post-result-handoff.ko.md",
+      "target": "../s0-release-review/decision.md"
+    }
+  ],
+  "actual_uploaded_bytes_sha256": null,
+  "local_archive_hash_semantics": "Inherited original S2 manifest, no current ZIP read/rehash",
+  "best_update_event": null,
+  "created_when_semantics": "Supplied platform creation metadata; upload-start/completion not independently verified",
+  "state": "E041 incumbent/E025 fallback; E057/E060/E061/E062 parked; all STOP/HOLD/A_half/A018/S3/exposure/protected roles unchanged",
+  "next_action": "S0 document review for next research priority only; no automatic experiment/retry/TEST",
+  "commit_push_performed": false
+}

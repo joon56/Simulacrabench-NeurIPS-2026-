@@ -1,0 +1,28 @@
+{
+    "frozen_at":  "2026-10-23T16:40:14.8064353+09:00",
+    "before_any_model":  true,
+    "input_count":  9,
+    "source_closure_count":  13,
+    "sha256":  {
+                   "task.py":  "805a939a67dc30450ccbcf47f4dc54fb2e799d381ac754cd3fe12265ab8033b0",
+                   "supervise.py":  "cd47a38f6017f7736a0f6a47b30792df1dba220d9fdb932519ae8eb4c3827ef8",
+                   "check_boundaries.py":  "3686e992b4dc07c8817b76236a538b08c3e5cfd4dbf99c25ba6feb690c4b1bd6",
+                   "source-closure.json":  "906a509a61d0e5bd5c6f57a8502c9c1386231aed07d5fd692c319c9e6f78b099",
+                   "input-allowlist.json":  "1a6f87f2652967cfd9e1842ada9a08fcccc89180866c1a2a9ec10921a263e609",
+                   "identity-gate.json":  "b1c986068cdfe59703e3fc110b1ca9978784e4550014c14a46ab43a455bb53bc",
+                   "static-freeze.json":  "28b236a2c2caf19394ced95ee09b57b1afb894eaadf275400a4767728c069219",
+                   "environment.json":  "943843a571b46b0c38fd2f387ea6760f5d8fb60d76b3ca14da777099626b7bc3",
+                   "baseline-reuse.json":  "591a0256c57039611a1f98c4f66e693925a42b413e838c0630b0954d421cb530",
+                   "resource-boundary-01.json":  "013ef4035c58bac1acccb6f5e528a47aeebe5a21d563b0a6a553776fd7034665",
+                   "resource-reuse-01.json":  "590bc3a30ba74e9b786d368e28c79a1c90f3f361a2e7558de6a255f060e3c22b"
+               },
+    "checker_a018_preflight_match":  true,
+    "checker_sha256":  "0cb9e671b3b19ab62e68b37512ee8717e97d47694276f16e27a77b02d2f37916",
+    "candidate":  "unchanged E025 hh_cap CONFIGS((64,2,0.0),(128,2,0.1)); no policy/seed/refit/lambda changes",
+    "baseline":  "exact qualified frozen A012 E041 all3 raw; not environment replay",
+    "success":  "442425 ordered vectors, per-cell widths/finite/nonnegative/positive sum, exact modular/archive raw, official3 PASS, absolute E025-E041 skill\u003c=.002 per instrument with original .001 floor, resource limits",
+    "failure":  "INCOMPLETE for missing provenance; technical/parity/resource failure blocks certificate; no retry of valid unfavorable result",
+    "limits":  "gross120min, computation2700s incl preparation/checks/failures/evaluation; shared900s each all3; normal2+invalid reserve1; check cycles\u003c=3/120s; CPU2/GPU0/heavy1/tree RSS and private\u003c8GiB/cash0",
+    "truth":  "Source reads TRAIN+DEV PREDICT, TEST GIVEN/order only. All3 source freeze precedes dedicated evaluator. Stock official truth sequencing unchanged.",
+    "held_status":  "E041 provisional TEST reference, E025 fallback, E064 parked. No final choice/upload/commit/push."
+}

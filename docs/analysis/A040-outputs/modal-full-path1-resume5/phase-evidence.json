@@ -1,0 +1,72 @@
+{
+    "outcome":  "REMOTE_PREPARATION_FAIL",
+    "failure":  "SANDBOX_HANDLE_LOOP_MISMATCH",
+    "raw_outcome":  "STOP_FIRST_ERROR",
+    "launcher_invocations":  1,
+    "new_local_config_checks":  1,
+    "old_suite_repetitions":  0,
+    "workspace":  "joon56",
+    "environment_requested":  "main",
+    "app_id":  "ap-XiMVzlJgrNrCiFpIN1kB4W",
+    "image_id":  "im-XZ95GDfkfa6PwWUeFyciYM",
+    "image_recipe_invocations":  1,
+    "image_builder":  "COMPLETED",
+    "payload_local_verification":  {
+                                       "files":  124,
+                                       "bytes":  145605744,
+                                       "verified_at_endpoint":  true
+                                   },
+    "sandbox_create_logical_invocations":  1,
+    "sandbox_create_response":  "Reached SDK hydration; server response not exported",
+    "sandbox_id":  null,
+    "sandbox_name":  "a040-resume5-20261005-094405-gpu",
+    "sandbox_allocated":  null,
+    "sandbox_payload_transfers":  0,
+    "boundary_invocations":  0,
+    "reference_invocations":  0,
+    "candidate_invocations":  0,
+    "downstream_events":  0,
+    "reference":  "NOT_RUN",
+    "candidate":  "NOT_RUN",
+    "output_vectors_generated":  0,
+    "output_validation":  "NOT_RUN",
+    "sandbox_recovery_invocations":  1,
+    "app_stopped_task0_observations":  18,
+    "sandbox_terminal":  "UNCONFIRMED",
+    "final_billing":  "NOT_OBSERVED_CLEANUP_CAP",
+    "post_cap_remote_actions":  0,
+    "raw_evidence_preservation":  [
+                                      {
+                                          "match":  true,
+                                          "path":  "run/attempt-started.json"
+                                      },
+                                      {
+                                          "match":  true,
+                                          "path":  "run/cost-ledger.json"
+                                      },
+                                      {
+                                          "match":  true,
+                                          "path":  "run/events.jsonl"
+                                      },
+                                      {
+                                          "match":  true,
+                                          "path":  "run/plan.json"
+                                      },
+                                      {
+                                          "match":  true,
+                                          "path":  "run/result.json"
+                                      },
+                                      {
+                                          "match":  true,
+                                          "path":  "run/source-gate.json"
+                                      },
+                                      {
+                                          "match":  true,
+                                          "path":  "run/state.json"
+                                      },
+                                      {
+                                          "match":  true,
+                                          "path":  "run/termination-receipt.json"
+                                      }
+                                  ]
+}

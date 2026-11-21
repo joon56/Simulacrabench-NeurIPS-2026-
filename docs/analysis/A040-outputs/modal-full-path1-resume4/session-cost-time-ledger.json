@@ -1,0 +1,41 @@
+{
+    "entry_utc":  "2026-10-04T14:46:20.0000000+00:00",
+    "accounting_cutoff_utc":  "2026-10-04T14:59:01.6978949+00:00",
+    "time_scope":  "Conservative entry-to-closeout wall; includes tool waits and writing; final serialization and chat after cutoff excluded",
+    "current_preparation_controller_seconds":  761.69789489999994,
+    "prior_preparation_controller_seconds":  8319.0316208,
+    "cumulative_preparation_controller_seconds":  9080.7295157,
+    "current_scientific_processes":  0,
+    "current_scientific_seconds":  0,
+    "cumulative_scientific_processes":  4,
+    "cumulative_scientific_seconds":  1077.3504532,
+    "config_check_outer_seconds":  0.4316955,
+    "worker_seconds":  12.610930399998324,
+    "cleanup_seconds":  2.1232256000002963,
+    "timing_overlap":  "Config/worker are within session wall; cleanup is within worker. Do not sum these again.",
+    "image_attempts":  1,
+    "sandbox":  0,
+    "h100_seconds":  0,
+    "reference":  0,
+    "candidate":  0,
+    "preparation_plan_usd":  1,
+    "cumulative_plan_usd":  5,
+    "cash_authority_usd":  0,
+    "normal_final_billing":  {
+                                 "billed":  "0.00000000",
+                                 "metered":  "0.00000000"
+                             },
+    "historical_component_lower_bound_usd":  1.152E-05,
+    "worker_management_estimate_usd":  0.65029008218755013,
+    "management_included_allowance_usd":  0.65,
+    "cost_limitations":  "Management estimate is not invoice. Historical lower bound retained, not newly attributed component. Final per-task and unposted costs UNKNOWN. No guarantee of cash-zero invoice.",
+    "reported_account_conditions":  {
+                                        "usage_limit_usd":  30,
+                                        "independently_reverified":  false,
+                                        "credits_usd":  30,
+                                        "spend_limit_usd":  0
+                                    },
+    "raw_worker_history_warning":  "5504.7268216 is obsolete carry field; preserved raw; authoritative current prior is8319.0316208",
+    "first_error_stop":  true,
+    "additional_remote_requests_after_cleanup":  0
+}

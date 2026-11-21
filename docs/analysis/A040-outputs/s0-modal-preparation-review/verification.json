@@ -1,0 +1,154 @@
+{
+    "role":  "S0",
+    "outcome":  "BLOCKED_SPECIFIC_INPUT_ACCEPTED_CONDITIONAL_HANDOFF",
+    "workflow_revision":  "2026-09-27-r4",
+    "workflow_sha256":  "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642",
+    "head":  "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+    "read_evidence":  [
+                          "bcd964",
+                          "e81477",
+                          "839921",
+                          "dd1832"
+                      ],
+    "s1_claims_not_reexecuted":  {
+                                     "sdk_version":  "1.6.0",
+                                     "staged_files":  112,
+                                     "staged_bytes":  145542095,
+                                     "remote_actions":  0,
+                                     "scientific_invocations":  0,
+                                     "task_wall_seconds":  1169.2559841
+                                 },
+    "s0_operations":  {
+                          "documents_and_selected_document_hashes":  true,
+                          "model_fixture_checkpoint_access":  false,
+                          "authentication_or_sdk_execution":  false,
+                          "remote_actions":  false,
+                          "tests_fit_predict_score":  false,
+                          "subagents_zip_commit_push":  false
+                      },
+    "before_hashes":  [
+                          {
+                              "path":  "docs/status.md",
+                              "sha256":  "6a906c0080f089bd339cd1d6975c5405ee8cc3aab5e88f78ecf9939dbe75f640"
+                          },
+                          {
+                              "path":  "docs/log.md",
+                              "sha256":  "d6977144535c45b200d03cf5b77fb64a64100b0b957e7b09412053a1f71ebe2e"
+                          },
+                          {
+                              "path":  "docs/workflow.md",
+                              "sha256":  "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642"
+                          },
+                          {
+                              "path":  "docs/tree.md",
+                              "sha256":  "eaa884a4194db103335136495205fe5b51297c17db15e9eac62946ced286cc44"
+                          },
+                          {
+                              "path":  "docs/analysis/A040-outputs/modal-full-path1/closeout.md",
+                              "sha256":  "24b9c04801ad7815f94396d9829413cd407be72ca058a35333f07ffc1945feff"
+                          },
+                          {
+                              "path":  "docs/analysis/A040-outputs/modal-full-path1/verification.json",
+                              "sha256":  "9639649dbba6d03841aff6a93b259d609ff513e5a3fd270d7befae2bcad419aa"
+                          },
+                          {
+                              "path":  "docs/analysis/A040-outputs/modal-full-path1/platform-contract.md",
+                              "sha256":  "21ec1d6aa347443b81ad002649a47a11289101678c5366166b6c3a98e6314072"
+                          },
+                          {
+                              "path":  "docs/analysis/A040-outputs/modal-full-path1/cost-ledger.json",
+                              "sha256":  "475b7d2db5501a817adf0fe4f6b03f43dd1e32f4817035b748221ee27f0ed363"
+                          },
+                          {
+                              "path":  "docs/analysis/A040-outputs/s0-modal-plan/s1-modal-full-path.ko.md",
+                              "sha256":  "d07b2176c6e3f8c5e626e7b65d675127685bad04197a3fae50a9d14eed65a912"
+                          }
+                      ],
+    "prior_status_log_bytes_preserved":  true,
+    "final_checks":  "PASS_DOCUMENT_REVIEW_ONLY",
+    "recorded_kst":  "2026-10-02T21:53:54.8044578+09:00",
+    "preservation":  [
+                         {
+                             "path":  "docs/status.md",
+                             "after":  "1558819028fcbd5e6b49c857a42bb10a31742a809397b64c9ed1b33ef3fd440f",
+                             "unchanged":  false,
+                             "intended_addition":  true
+                         },
+                         {
+                             "path":  "docs/log.md",
+                             "after":  "211a2a8aede470647525ca24c54dd150054aaf973fa5addaac6915e213621973",
+                             "unchanged":  false,
+                             "intended_addition":  true
+                         },
+                         {
+                             "path":  "docs/workflow.md",
+                             "after":  "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642",
+                             "unchanged":  true,
+                             "intended_addition":  false
+                         },
+                         {
+                             "path":  "docs/tree.md",
+                             "after":  "eaa884a4194db103335136495205fe5b51297c17db15e9eac62946ced286cc44",
+                             "unchanged":  true,
+                             "intended_addition":  false
+                         },
+                         {
+                             "path":  "docs/analysis/A040-outputs/modal-full-path1/closeout.md",
+                             "after":  "24b9c04801ad7815f94396d9829413cd407be72ca058a35333f07ffc1945feff",
+                             "unchanged":  true,
+                             "intended_addition":  false
+                         },
+                         {
+                             "path":  "docs/analysis/A040-outputs/modal-full-path1/verification.json",
+                             "after":  "9639649dbba6d03841aff6a93b259d609ff513e5a3fd270d7befae2bcad419aa",
+                             "unchanged":  true,
+                             "intended_addition":  false
+                         },
+                         {
+                             "path":  "docs/analysis/A040-outputs/modal-full-path1/platform-contract.md",
+                             "after":  "21ec1d6aa347443b81ad002649a47a11289101678c5366166b6c3a98e6314072",
+                             "unchanged":  true,
+                             "intended_addition":  false
+                         },
+                         {
+                             "path":  "docs/analysis/A040-outputs/modal-full-path1/cost-ledger.json",
+                             "after":  "475b7d2db5501a817adf0fe4f6b03f43dd1e32f4817035b748221ee27f0ed363",
+                             "unchanged":  true,
+                             "intended_addition":  false
+                         },
+                         {
+                             "path":  "docs/analysis/A040-outputs/s0-modal-plan/s1-modal-full-path.ko.md",
+                             "after":  "d07b2176c6e3f8c5e626e7b65d675127685bad04197a3fae50a9d14eed65a912",
+                             "unchanged":  true,
+                             "intended_addition":  false
+                         }
+                     ],
+    "selected_s1_artifact_matches":  [
+                                         {
+                                             "path":  "closeout.md",
+                                             "matches":  true
+                                         },
+                                         {
+                                             "path":  "verification.json",
+                                             "matches":  true
+                                         },
+                                         {
+                                             "path":  "platform-contract.md",
+                                             "matches":  true
+                                         },
+                                         {
+                                             "path":  "cost-ledger.json",
+                                             "matches":  true
+                                         }
+                                     ],
+    "output_documents":  [
+                             {
+                                 "path":  "decision.md",
+                                 "sha256":  "5eeac1db8fd693052acd2f01589fba9dd40da4b1b3f726d907cb601b165fed6d"
+                             },
+                             {
+                                 "path":  "s1-resume.ko.md",
+                                 "sha256":  "82e7516e8d9b64715dbf407ea2437eb6ba36aa838569b3523dce7ab9bb1b0e81"
+                             }
+                         ]
+}

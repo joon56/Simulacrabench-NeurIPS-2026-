@@ -1,0 +1,645 @@
+{
+    "checked_utc":  "2026-09-28T12:19:20.7022766+00:00",
+    "verdict":  "PASS_S0_REVIEW_AND_DOCUMENT_PRESERVATION",
+    "decision":  "ROUTE_TO_S2_VALIDATION",
+    "accepted_scope":  "EXPLORATORY_SOURCE_QUALIFIED, not release qualification or target improvement",
+    "role":  "S0",
+    "head":  "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+    "head_unchanged":  true,
+    "workflow_revision":  "2026-09-27-r4",
+    "workflow_sha256":  "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642",
+    "manifest_text_source_entries_checked":  76,
+    "manifest_itself_additionally_hashed":  true,
+    "total_preservation_paths":  77,
+    "unchanged_paths":  75,
+    "intentional_changes":  [
+                                {
+                                    "path":  "docs/status.md",
+                                    "before":  "fe1d8397f5a11104ca98802d7312200ac702aa9d8486badf73f57518a1ae5798",
+                                    "after":  "73fff3f7fc81b4a4c076229be80b5a00b5d77af3abba9a791e699b552db01bc9",
+                                    "unchanged":  false,
+                                    "expected_operating_edit":  true
+                                },
+                                {
+                                    "path":  "docs/log.md",
+                                    "before":  "6f5e67d37db2fc4fee5b825879fb800874ffb89beda38c5c9060e402b3e08a74",
+                                    "after":  "2ef1824ef423162d77484f97acb8daefb159012d51f2ec87e9213b1f29c08705",
+                                    "unchanged":  false,
+                                    "expected_operating_edit":  true
+                                }
+                            ],
+    "preservation_checks":  [
+                                {
+                                    "path":  "src/models/shared_trunk.py",
+                                    "before":  "df648763c8e0ba5532ebf9e437af95cd10d8527112c1338b8b5db9ad6a212e1f",
+                                    "after":  "df648763c8e0ba5532ebf9e437af95cd10d8527112c1338b8b5db9ad6a212e1f",
+                                    "unchanged":  true,
+                                    "expected_operating_edit":  false
+                                },
+                                {
+                                    "path":  "src/models/supervised_retrieval.py",
+                                    "before":  "2940338c5378de03303befb74e3834fbad631c0eb18f4ecb55d2cc39a471f879",
+                                    "after":  "2940338c5378de03303befb74e3834fbad631c0eb18f4ecb55d2cc39a471f879",
+                                    "unchanged":  true,
+                                    "expected_operating_edit":  false
+                                },
+                                {
+                                    "path":  "src/models/link_sharp.py",
+                                    "before":  "4a7921a00d7758e52a63a3ca7cd5ebf2285cef445b57fd89f15580d6fc108524",
+                                    "after":  "4a7921a00d7758e52a63a3ca7cd5ebf2285cef445b57fd89f15580d6fc108524",
+                                    "unchanged":  true,
+                                    "expected_operating_edit":  false
+                                },
+                                {
+                                    "path":  "src/models/hh_cap.py",
+                                    "before":  "9aad6be04e14ae97dc7aaba5499747c35b255b098680c66eaa8f8af58c940f70",
+                                    "after":  "9aad6be04e14ae97dc7aaba5499747c35b255b098680c66eaa8f8af58c940f70",
+                                    "unchanged":  true,
+                                    "expected_operating_edit":  false
+                                },
+                                {
+                                    "path":  "src/models/hier_backoff.py",
+                                    "before":  "e01f2030c191b0b632b274662cbb46537669f3b73e21ab0d5f7f671d28654ccd",
+                                    "after":  "e01f2030c191b0b632b274662cbb46537669f3b73e21ab0d5f7f671d28654ccd",
+                                    "unchanged":  true,
+                                    "expected_operating_edit":  false
+                                },
+                                {
+                                    "path":  "src/models/logit_blend.py",
+                                    "before":  "c25e91e648d5eb8a11afca1c8b02accad1a585540b6ed7d4ca363730a535705f",
+                                    "after":  "c25e91e648d5eb8a11afca1c8b02accad1a585540b6ed7d4ca363730a535705f",
+                                    "unchanged":  true,
+                                    "expected_operating_edit":  false
+                                },
+                                {
+                                    "path":  "src/models/cond_agree.py",
+                                    "before":  "aecad17990cc106199f96648ad02716eee43cc60f995b25125473a0b0bd5e197",
+                                    "after":  "aecad17990cc106199f96648ad02716eee43cc60f995b25125473a0b0bd5e197",
+                                    "unchanged":  true,
+                                    "expected_operating_edit":  false
+                                },
+                                {
+                                    "path":  "src/models/hh_sharp.py",
+                                    "before":  "31acb4639894411320062f196050425ee1c143a456c9e0dac40ba6dd376ad5e0",
+                                    "after":  "31acb4639894411320062f196050425ee1c143a456c9e0dac40ba6dd376ad5e0",
+                                    "unchanged":  true,
+                                    "expected_operating_edit":  false
+                                },
+                                {
+                                    "path":  "src/models/hh_link.py",
+                                    "before":  "fb34d8dc575a0edd644287ec9387ee32db7866083b53b907376f464837f0c1f6",
+                                    "after":  "fb34d8dc575a0edd644287ec9387ee32db7866083b53b907376f464837f0c1f6",
+                                    "unchanged":  true,
+                                    "expected_operating_edit":  false
+                                },
+                                {
+                                    "path":  "src/models/dup_link.py",
+                                    "before":  "e1ce093d927eed6db0553776b74f8ddfca5d159bf035b6cd7b4df9e7bc6b168f",
+                                    "after":  "e1ce093d927eed6db0553776b74f8ddfca5d159bf035b6cd7b4df9e7bc6b168f",
+                                    "unchanged":  true,
+                                    "expected_operating_edit":  false
+                                },
+                                {
+                                    "path":  "src/models/prob_link.py",
+                                    "before":  "6b03f700821b6d74c8ef0dfe834737ac4c9755d7fcf9a7c2f96b5b67e905d96d",
+                                    "after":  "6b03f700821b6d74c8ef0dfe834737ac4c9755d7fcf9a7c2f96b5b67e905d96d",
+                                    "unchanged":  true,
+                                    "expected_operating_edit":  false
+                                },
+                                {
+                                    "path":  "src/eval/retrieval_oracle.py",
+                                    "before":  "b6c3487a01f5174e02e7691ec455a8e72cfab7533f68026b9010665a60b23ca4",
+                                    "after":  "b6c3487a01f5174e02e7691ec455a8e72cfab7533f68026b9010665a60b23ca4",
+                                    "unchanged":  true,
+                                    "expected_operating_edit":  false
+                                },
+                                {
+                                    "path":  "src/eval/runner.py",
+                                    "before":  "498a93a89d5a13a5bbcec62e351e029140a062e93680ab38ae280d2fddd7ae9d",
+                                    "after":  "498a93a89d5a13a5bbcec62e351e029140a062e93680ab38ae280d2fddd7ae9d",
+                                    "unchanged":  true,
+                                    "expected_operating_edit":  false
+                                },
+                                {
+                                    "path":  "external/starter-kit/score.py",
+                                    "before":  "7049e99a48acef2a74f37cb49bb66b5a9af8d05d2ed8fcf530287b5e81c5042f",
+                                    "after":  "7049e99a48acef2a74f37cb49bb66b5a9af8d05d2ed8fcf530287b5e81c5042f",
+                                    "unchanged":  true,
+                                    "expected_operating_edit":  false
+                                },
+                                {
+                                    "path":  "external/starter-kit/make_sandbox.py",
+                                    "before":  "8cf628cbb4771ed6e91ad74ebb4f75b22667af39d8f48e01c956c675b1b1586b",
+                                    "after":  "8cf628cbb4771ed6e91ad74ebb4f75b22667af39d8f48e01c956c675b1b1586b",
+                                    "unchanged":  true,
+                                    "expected_operating_edit":  false
+                                },
+                                {
+                                    "path":  "external/starter-kit/config.yml",
+                                    "before":  "f22f8e4faa62b6af0ee8e7e887e35980511e4517655479fefeeef4519fc52c15",
+                                    "after":  "f22f8e4faa62b6af0ee8e7e887e35980511e4517655479fefeeef4519fc52c15",
+                                    "unchanged":  true,
+                                    "expected_operating_edit":  false
+                                },
+                                {
+                                    "path":  "external/starter-kit/data/unicef.json",
+                                    "before":  "0bce08036cc563ee2a369dcee316ff8a5f89045d86991756d72c266927674396",
+                                    "after":  "0bce08036cc563ee2a369dcee316ff8a5f89045d86991756d72c266927674396",
+                                    "unchanged":  true,
+                                    "expected_operating_edit":  false
+                                },
+                                {
+                                    "path":  "external/starter-kit/data/world_bank.json",
+                                    "before":  "6b3760742c6e864eb8d0bb2f9ec523a19a486b73282d79432dbcca16e3664125",
+                                    "after":  "6b3760742c6e864eb8d0bb2f9ec523a19a486b73282d79432dbcca16e3664125",
+                                    "unchanged":  true,
+                                    "expected_operating_edit":  false
+                                },
+                                {
+                                    "path":  "external/starter-kit/data/unhcr.json",
+                                    "before":  "b1175b6bdbd96e90a4defd83af20a38d711c6eca9fe3ce880109ff244abe80d9",
+                                    "after":  "b1175b6bdbd96e90a4defd83af20a38d711c6eca9fe3ce880109ff244abe80d9",
+                                    "unchanged":  true,
+                                    "expected_operating_edit":  false
+                                },
+                                {
+                                    "path":  "submissions/2026-09-19-E041/main.py",
+                                    "before":  "22c911806ea91234ae350341adfb9c0df2ce4be41cc88e73be304e4bb1023073",
+                                    "after":  "22c911806ea91234ae350341adfb9c0df2ce4be41cc88e73be304e4bb1023073",
+                                    "unchanged":  true,
+                                    "expected_operating_edit":  false
+                                },
+                                {
+                                    "path":  "submissions/2026-09-09-E025/main.py",
+                                    "before":  "00793cf9d720d6f7511ffd738935206b3a5401f2454255409429db8d55e991b9",
+                                    "after":  "00793cf9d720d6f7511ffd738935206b3a5401f2454255409429db8d55e991b9",
+                                    "unchanged":  true,
+                                    "expected_operating_edit":  false
+                                },
+                                {
+                                    "path":  "docs/experiments/E012-shared-trunk.md",
+                                    "before":  "0c40ac6802f683f5523b8639080f4b0df0fcbe4150e7b40ad8eb2a8f918e6b8a",
+                                    "after":  "0c40ac6802f683f5523b8639080f4b0df0fcbe4150e7b40ad8eb2a8f918e6b8a",
+                                    "unchanged":  true,
+                                    "expected_operating_edit":  false
+                                },
+                                {
+                                    "path":  "docs/experiments/E015-trunk-capacity.md",
+                                    "before":  "8a88d53d6a69ced34c994f3795f47aeb38f315d9c026f8b9d038acd9c8262c00",
+                                    "after":  "8a88d53d6a69ced34c994f3795f47aeb38f315d9c026f8b9d038acd9c8262c00",
+                                    "unchanged":  true,
+                                    "expected_operating_edit":  false
+                                },
+                                {
+                                    "path":  "docs/experiments/E029-seed-temp.md",
+                                    "before":  "47363f8c6fbb011d8d1e66ac94dceea98ab7dcb8432da27d7406f4a5f2eac666",
+                                    "after":  "47363f8c6fbb011d8d1e66ac94dceea98ab7dcb8432da27d7406f4a5f2eac666",
+                                    "unchanged":  true,
+                                    "expected_operating_edit":  false
+                                },
+                                {
+                                    "path":  "docs/experiments/E056-conditional-leaf-content.md",
+                                    "before":  "bcbee2f8ef4d5beee5740940ad3d1fc40b77bceaca0d155faa0e6046e297005c",
+                                    "after":  "bcbee2f8ef4d5beee5740940ad3d1fc40b77bceaca0d155faa0e6046e297005c",
+                                    "unchanged":  true,
+                                    "expected_operating_edit":  false
+                                },
+                                {
+                                    "path":  "docs/experiments/E060-content-target-retrieval.md",
+                                    "before":  "b1ba67e7d521d181dac1df4a285ea39ba98b5b20244e6d9ce81e52363e3e7bc0",
+                                    "after":  "b1ba67e7d521d181dac1df4a285ea39ba98b5b20244e6d9ce81e52363e3e7bc0",
+                                    "unchanged":  true,
+                                    "expected_operating_edit":  false
+                                },
+                                {
+                                    "path":  "AGENTS.md",
+                                    "before":  "86394bbf164a2b7df6a309f4564b9dacf3b2799fa0227a703e4ea11d4d842596",
+                                    "after":  "86394bbf164a2b7df6a309f4564b9dacf3b2799fa0227a703e4ea11d4d842596",
+                                    "unchanged":  true,
+                                    "expected_operating_edit":  false
+                                },
+                                {
+                                    "path":  "CLAUDE.md",
+                                    "before":  "69175e6d741a17042db4852d4961a5c52bd97fe2cd5bfbff762d30d7e5270364",
+                                    "after":  "69175e6d741a17042db4852d4961a5c52bd97fe2cd5bfbff762d30d7e5270364",
+                                    "unchanged":  true,
+                                    "expected_operating_edit":  false
+                                },
+                                {
+                                    "path":  "docs/workflow.md",
+                                    "before":  "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642",
+                                    "after":  "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642",
+                                    "unchanged":  true,
+                                    "expected_operating_edit":  false
+                                },
+                                {
+                                    "path":  "docs/tree.md",
+                                    "before":  "eaa884a4194db103335136495205fe5b51297c17db15e9eac62946ced286cc44",
+                                    "after":  "eaa884a4194db103335136495205fe5b51297c17db15e9eac62946ced286cc44",
+                                    "unchanged":  true,
+                                    "expected_operating_edit":  false
+                                },
+                                {
+                                    "path":  "docs/analysis/A033-outputs/candidate-inputs.json",
+                                    "before":  "bf58fafa307f65358ff35e2a82f9005177d272e20893ea98fd6864be83b0e03f",
+                                    "after":  "bf58fafa307f65358ff35e2a82f9005177d272e20893ea98fd6864be83b0e03f",
+                                    "unchanged":  true,
+                                    "expected_operating_edit":  false
+                                },
+                                {
+                                    "path":  "docs/analysis/A033-outputs/verification.json",
+                                    "before":  "e06212dcbc30fc2e87e4240f105c7b1a95abc7cac1ae3b69df5d53cfec8131bf",
+                                    "after":  "e06212dcbc30fc2e87e4240f105c7b1a95abc7cac1ae3b69df5d53cfec8131bf",
+                                    "unchanged":  true,
+                                    "expected_operating_edit":  false
+                                },
+                                {
+                                    "path":  "docs/analysis/A033-dev-handoff-and-role-repair.md",
+                                    "before":  "a48aefa0ca0b5151616b51c6489d607f300b82fbe543b663ff9c1b63693402c8",
+                                    "after":  "a48aefa0ca0b5151616b51c6489d607f300b82fbe543b663ff9c1b63693402c8",
+                                    "unchanged":  true,
+                                    "expected_operating_edit":  false
+                                },
+                                {
+                                    "path":  "docs/analysis/A033-outputs/codabench-score-access.ko.md",
+                                    "before":  "9ccfc1296b41a8877e6ffe7196db628bcdb484af7b7ffd384d48a36f10f46c62",
+                                    "after":  "9ccfc1296b41a8877e6ffe7196db628bcdb484af7b7ffd384d48a36f10f46c62",
+                                    "unchanged":  true,
+                                    "expected_operating_edit":  false
+                                },
+                                {
+                                    "path":  "docs/analysis/A033-outputs/s1-tied-heads-handoff.ko.md",
+                                    "before":  "b6668d226d982af65dad0770f241b22906e0898dfe34c05b482323ece0bb4c6b",
+                                    "after":  "b6668d226d982af65dad0770f241b22906e0898dfe34c05b482323ece0bb4c6b",
+                                    "unchanged":  true,
+                                    "expected_operating_edit":  false
+                                },
+                                {
+                                    "path":  "scripts/check_e057.py",
+                                    "before":  "a7b711c2a82f1f706540d425ee0caba8cfe7350519fcb08342c2e5492f88252c",
+                                    "after":  "a7b711c2a82f1f706540d425ee0caba8cfe7350519fcb08342c2e5492f88252c",
+                                    "unchanged":  true,
+                                    "expected_operating_edit":  false
+                                },
+                                {
+                                    "path":  "docs/analysis/E057-outputs/preflight.json",
+                                    "before":  "5f1c639a7a5ca9678c2a8233b10aac4b464887140926921260149751e108f44d",
+                                    "after":  "5f1c639a7a5ca9678c2a8233b10aac4b464887140926921260149751e108f44d",
+                                    "unchanged":  true,
+                                    "expected_operating_edit":  false
+                                },
+                                {
+                                    "path":  "docs/experiments/E041-supervised-retrieval.md",
+                                    "before":  "8a17f3cb2cb54deb19fdbffe597dcba173002a82100250ea4ff8be446d76bafb",
+                                    "after":  "8a17f3cb2cb54deb19fdbffe597dcba173002a82100250ea4ff8be446d76bafb",
+                                    "unchanged":  true,
+                                    "expected_operating_edit":  false
+                                },
+                                {
+                                    "path":  "src/models/tied_content_heads.py",
+                                    "before":  "f9449d41d30041f6e9714c7a25777965ec4d25cfa2563b018fb08c94dde20833",
+                                    "after":  "f9449d41d30041f6e9714c7a25777965ec4d25cfa2563b018fb08c94dde20833",
+                                    "unchanged":  true,
+                                    "expected_operating_edit":  false
+                                },
+                                {
+                                    "path":  "tests/test_tied_content_heads.py",
+                                    "before":  "c638c75d98586e831c03c21594025b1c347f6acdb9d6ec156a042350290ff109",
+                                    "after":  "c638c75d98586e831c03c21594025b1c347f6acdb9d6ec156a042350290ff109",
+                                    "unchanged":  true,
+                                    "expected_operating_edit":  false
+                                },
+                                {
+                                    "path":  "scripts/check_e061_tied_heads.py",
+                                    "before":  "de5171c689bda0db6aff7b5cb95ccd8c8bc0165b2904d259af86b1ce2184f0f7",
+                                    "after":  "de5171c689bda0db6aff7b5cb95ccd8c8bc0165b2904d259af86b1ce2184f0f7",
+                                    "unchanged":  true,
+                                    "expected_operating_edit":  false
+                                },
+                                {
+                                    "path":  "submissions/SCORES.md",
+                                    "before":  "1e6d753c24c5c2e42fc4b316ea524a4285b59ef672cc5c3a5a1288768d157dab",
+                                    "after":  "1e6d753c24c5c2e42fc4b316ea524a4285b59ef672cc5c3a5a1288768d157dab",
+                                    "unchanged":  true,
+                                    "expected_operating_edit":  false
+                                },
+                                {
+                                    "path":  "submissions/hosted-scores/2026-09-27.json",
+                                    "before":  "dfe719bec68faf60c7dfec86c6034ba35fe1a6ba7a9437b88813dbc1ea567ce8",
+                                    "after":  "dfe719bec68faf60c7dfec86c6034ba35fe1a6ba7a9437b88813dbc1ea567ce8",
+                                    "unchanged":  true,
+                                    "expected_operating_edit":  false
+                                },
+                                {
+                                    "path":  "submissions/hosted-scores/2026-09-27-verification.json",
+                                    "before":  "ad0cfe753caccba5114896e6fffd626fbe594482fd646d98999fe9f029be8fb5",
+                                    "after":  "ad0cfe753caccba5114896e6fffd626fbe594482fd646d98999fe9f029be8fb5",
+                                    "unchanged":  true,
+                                    "expected_operating_edit":  false
+                                },
+                                {
+                                    "path":  "docs/analysis/E061-outputs/calls-01.jsonl",
+                                    "before":  "6b1a1abaf582273e7ee21084bac4655850611b8798e4cfb38a179bca6e3612fb",
+                                    "after":  "6b1a1abaf582273e7ee21084bac4655850611b8798e4cfb38a179bca6e3612fb",
+                                    "unchanged":  true,
+                                    "expected_operating_edit":  false
+                                },
+                                {
+                                    "path":  "docs/analysis/E061-outputs/call-summary.json",
+                                    "before":  "098318ea68bda7697b58109599c014c7684478efe0ebbdf6cce5a3400c661c6c",
+                                    "after":  "098318ea68bda7697b58109599c014c7684478efe0ebbdf6cce5a3400c661c6c",
+                                    "unchanged":  true,
+                                    "expected_operating_edit":  false
+                                },
+                                {
+                                    "path":  "docs/analysis/E061-outputs/candidate-01-timing.json",
+                                    "before":  "f1a6121cdc7f8cae09bc42088d84db203e18979ab8e4cd29dd15208dd8f6bdd2",
+                                    "after":  "f1a6121cdc7f8cae09bc42088d84db203e18979ab8e4cd29dd15208dd8f6bdd2",
+                                    "unchanged":  true,
+                                    "expected_operating_edit":  false
+                                },
+                                {
+                                    "path":  "docs/analysis/E061-outputs/check_e061_tied_heads.py.txt",
+                                    "before":  "de5171c689bda0db6aff7b5cb95ccd8c8bc0165b2904d259af86b1ce2184f0f7",
+                                    "after":  "de5171c689bda0db6aff7b5cb95ccd8c8bc0165b2904d259af86b1ce2184f0f7",
+                                    "unchanged":  true,
+                                    "expected_operating_edit":  false
+                                },
+                                {
+                                    "path":  "docs/analysis/E061-outputs/comparison.json",
+                                    "before":  "6074e9c8cef6dfb6e784be25c81720a10115bd38a19cc70ece9e335be280d7e2",
+                                    "after":  "6074e9c8cef6dfb6e784be25c81720a10115bd38a19cc70ece9e335be280d7e2",
+                                    "unchanged":  true,
+                                    "expected_operating_edit":  false
+                                },
+                                {
+                                    "path":  "docs/analysis/E061-outputs/entry.json",
+                                    "before":  "460a57698c015df5da031a0b010f7e0e814e38cbae1e3fe4bdb3e95c545607cd",
+                                    "after":  "460a57698c015df5da031a0b010f7e0e814e38cbae1e3fe4bdb3e95c545607cd",
+                                    "unchanged":  true,
+                                    "expected_operating_edit":  false
+                                },
+                                {
+                                    "path":  "docs/analysis/E061-outputs/environment-01.json",
+                                    "before":  "2e847ec40de1a25e104d36230246e3c32ef035f8997454b5cfea9925391922ef",
+                                    "after":  "2e847ec40de1a25e104d36230246e3c32ef035f8997454b5cfea9925391922ef",
+                                    "unchanged":  true,
+                                    "expected_operating_edit":  false
+                                },
+                                {
+                                    "path":  "docs/analysis/E061-outputs/exposure-ledger.md",
+                                    "before":  "d5a9c19637e996e51c29b88ee7e2ceba8691546cc51f1257d609b3b4afcf0abc",
+                                    "after":  "d5a9c19637e996e51c29b88ee7e2ceba8691546cc51f1257d609b3b4afcf0abc",
+                                    "unchanged":  true,
+                                    "expected_operating_edit":  false
+                                },
+                                {
+                                    "path":  "docs/analysis/E061-outputs/frozen-inputs.json",
+                                    "before":  "f76ac4edcc8cef2b03edd0da46a4cab7a60b4d36eda46fcb6023446397ba7a45",
+                                    "after":  "f76ac4edcc8cef2b03edd0da46a4cab7a60b4d36eda46fcb6023446397ba7a45",
+                                    "unchanged":  true,
+                                    "expected_operating_edit":  false
+                                },
+                                {
+                                    "path":  "docs/analysis/E061-outputs/frozen-predictions-01.json",
+                                    "before":  "cfae266a8e63c86c67fe9886b78b95f0492a4aaa87fccad71b41fa0cf5639664",
+                                    "after":  "cfae266a8e63c86c67fe9886b78b95f0492a4aaa87fccad71b41fa0cf5639664",
+                                    "unchanged":  true,
+                                    "expected_operating_edit":  false
+                                },
+                                {
+                                    "path":  "docs/analysis/E061-outputs/history-preservation.json",
+                                    "before":  "db8a311c3b3d0a94c9c892d97ad0f2f4f177bf1aa3bd8a15cdac4a920ca438dc",
+                                    "after":  "db8a311c3b3d0a94c9c892d97ad0f2f4f177bf1aa3bd8a15cdac4a920ca438dc",
+                                    "unchanged":  true,
+                                    "expected_operating_edit":  false
+                                },
+                                {
+                                    "path":  "docs/analysis/E061-outputs/phase1-inputs-01.json",
+                                    "before":  "01ec213417a0b01d934818001e8304d0487a5073bea94272a85a95167ef12b10",
+                                    "after":  "01ec213417a0b01d934818001e8304d0487a5073bea94272a85a95167ef12b10",
+                                    "unchanged":  true,
+                                    "expected_operating_edit":  false
+                                },
+                                {
+                                    "path":  "docs/analysis/E061-outputs/registration.md",
+                                    "before":  "99f4e2497bc1dcbc71f82ad529abfd368092070ce4bf6eed5e298ac9b8dd6af8",
+                                    "after":  "99f4e2497bc1dcbc71f82ad529abfd368092070ce4bf6eed5e298ac9b8dd6af8",
+                                    "unchanged":  true,
+                                    "expected_operating_edit":  false
+                                },
+                                {
+                                    "path":  "docs/analysis/E061-outputs/review.md",
+                                    "before":  "88ecf736df55dd37b5028da6c122c9931a499048b8307a03f40cb6ffa87a0577",
+                                    "after":  "88ecf736df55dd37b5028da6c122c9931a499048b8307a03f40cb6ffa87a0577",
+                                    "unchanged":  true,
+                                    "expected_operating_edit":  false
+                                },
+                                {
+                                    "path":  "docs/analysis/E061-outputs/run-01.log",
+                                    "before":  "29c7f71ffb48f0ab99a61fae39ef67fdc4f45854b83a7fe425502f12ad9429d6",
+                                    "after":  "29c7f71ffb48f0ab99a61fae39ef67fdc4f45854b83a7fe425502f12ad9429d6",
+                                    "unchanged":  true,
+                                    "expected_operating_edit":  false
+                                },
+                                {
+                                    "path":  "docs/analysis/E061-outputs/run-01-resources.json",
+                                    "before":  "9d683ba482716c1836dc7d10346f320b20cc6bbf0c8be2eb546c85e365bfc409",
+                                    "after":  "9d683ba482716c1836dc7d10346f320b20cc6bbf0c8be2eb546c85e365bfc409",
+                                    "unchanged":  true,
+                                    "expected_operating_edit":  false
+                                },
+                                {
+                                    "path":  "docs/analysis/E061-outputs/source-review.json",
+                                    "before":  "0f3cde1e87c4352fb4ccc4e827a109e8583a493da1794163fd531212a3f54f5e",
+                                    "after":  "0f3cde1e87c4352fb4ccc4e827a109e8583a493da1794163fd531212a3f54f5e",
+                                    "unchanged":  true,
+                                    "expected_operating_edit":  false
+                                },
+                                {
+                                    "path":  "docs/analysis/E061-outputs/test_tied_content_heads.py.txt",
+                                    "before":  "c638c75d98586e831c03c21594025b1c347f6acdb9d6ec156a042350290ff109",
+                                    "after":  "c638c75d98586e831c03c21594025b1c347f6acdb9d6ec156a042350290ff109",
+                                    "unchanged":  true,
+                                    "expected_operating_edit":  false
+                                },
+                                {
+                                    "path":  "docs/analysis/E061-outputs/tests-01.log",
+                                    "before":  "caa87d28985386981e8611034128b397a0cfce15b6a5fc9f627de426eca4d95b",
+                                    "after":  "caa87d28985386981e8611034128b397a0cfce15b6a5fc9f627de426eca4d95b",
+                                    "unchanged":  true,
+                                    "expected_operating_edit":  false
+                                },
+                                {
+                                    "path":  "docs/analysis/E061-outputs/tests-01-resources.json",
+                                    "before":  "fdfb4933e00dbdc05588d1006f8c6d4d8012a2f889b8fe9a23131c3d23412058",
+                                    "after":  "fdfb4933e00dbdc05588d1006f8c6d4d8012a2f889b8fe9a23131c3d23412058",
+                                    "unchanged":  true,
+                                    "expected_operating_edit":  false
+                                },
+                                {
+                                    "path":  "docs/analysis/E061-outputs/tests-02.log",
+                                    "before":  "594f2e68abe71ff3e36d45083a9516f9061457c85f97631ecb764d3fba32f6f8",
+                                    "after":  "594f2e68abe71ff3e36d45083a9516f9061457c85f97631ecb764d3fba32f6f8",
+                                    "unchanged":  true,
+                                    "expected_operating_edit":  false
+                                },
+                                {
+                                    "path":  "docs/analysis/E061-outputs/tests-02-resources.json",
+                                    "before":  "7016590f0e5661ef5748d5cf4ab9dfeaa04f0fc1bafb71dada9f4a9f3530b370",
+                                    "after":  "7016590f0e5661ef5748d5cf4ab9dfeaa04f0fc1bafb71dada9f4a9f3530b370",
+                                    "unchanged":  true,
+                                    "expected_operating_edit":  false
+                                },
+                                {
+                                    "path":  "docs/analysis/E061-outputs/tests-red.log",
+                                    "before":  "432f195a1c78833ba6883e1ae144f0e0030c360442c048d2b1c46b8218767509",
+                                    "after":  "432f195a1c78833ba6883e1ae144f0e0030c360442c048d2b1c46b8218767509",
+                                    "unchanged":  true,
+                                    "expected_operating_edit":  false
+                                },
+                                {
+                                    "path":  "docs/analysis/E061-outputs/tests-red-resources.json",
+                                    "before":  "c20b747354ae9efb2b9a6b3cf8baaa9b46daf405e7ddea5574dd1ba2bb6f434a",
+                                    "after":  "c20b747354ae9efb2b9a6b3cf8baaa9b46daf405e7ddea5574dd1ba2bb6f434a",
+                                    "unchanged":  true,
+                                    "expected_operating_edit":  false
+                                },
+                                {
+                                    "path":  "docs/analysis/E061-outputs/tied_content_heads.py.txt",
+                                    "before":  "f9449d41d30041f6e9714c7a25777965ec4d25cfa2563b018fb08c94dde20833",
+                                    "after":  "f9449d41d30041f6e9714c7a25777965ec4d25cfa2563b018fb08c94dde20833",
+                                    "unchanged":  true,
+                                    "expected_operating_edit":  false
+                                },
+                                {
+                                    "path":  "docs/experiments/E061-tied-content-heads.md",
+                                    "before":  "9e78a640daf8ff037ce877c01b6106d48328442450d120532ea24cd05da01f69",
+                                    "after":  "9e78a640daf8ff037ce877c01b6106d48328442450d120532ea24cd05da01f69",
+                                    "unchanged":  true,
+                                    "expected_operating_edit":  false
+                                },
+                                {
+                                    "path":  "docs/analysis/E061-outputs/closeout.md",
+                                    "before":  "fff9503516c2581672926393a505e87cf06b4bf43d8e064d455e55c2682a7cbc",
+                                    "after":  "fff9503516c2581672926393a505e87cf06b4bf43d8e064d455e55c2682a7cbc",
+                                    "unchanged":  true,
+                                    "expected_operating_edit":  false
+                                },
+                                {
+                                    "path":  "docs/analysis/E061-outputs/s2-handoff.ko.md",
+                                    "before":  "5b82c01cefa60a75512fb114d7bc6b68dcfacedb5e6372110a2b44b42613a738",
+                                    "after":  "5b82c01cefa60a75512fb114d7bc6b68dcfacedb5e6372110a2b44b42613a738",
+                                    "unchanged":  true,
+                                    "expected_operating_edit":  false
+                                },
+                                {
+                                    "path":  "docs/analysis/E061-outputs/s0-handoff.ko.md",
+                                    "before":  "9b1447167e189f5692eefc7873951cc020aebbba702dfcc8efb842a1866ab7d0",
+                                    "after":  "9b1447167e189f5692eefc7873951cc020aebbba702dfcc8efb842a1866ab7d0",
+                                    "unchanged":  true,
+                                    "expected_operating_edit":  false
+                                },
+                                {
+                                    "path":  "docs/status.md",
+                                    "before":  "fe1d8397f5a11104ca98802d7312200ac702aa9d8486badf73f57518a1ae5798",
+                                    "after":  "73fff3f7fc81b4a4c076229be80b5a00b5d77af3abba9a791e699b552db01bc9",
+                                    "unchanged":  false,
+                                    "expected_operating_edit":  true
+                                },
+                                {
+                                    "path":  "docs/log.md",
+                                    "before":  "6f5e67d37db2fc4fee5b825879fb800874ffb89beda38c5c9060e402b3e08a74",
+                                    "after":  "2ef1824ef423162d77484f97acb8daefb159012d51f2ec87e9213b1f29c08705",
+                                    "unchanged":  false,
+                                    "expected_operating_edit":  true
+                                },
+                                {
+                                    "path":  "docs/analysis/E061-outputs/manifest-before-s0-routing.json",
+                                    "before":  "d98c44292d86663583a65b240fbfeaceb9694dfd486797398697a5deb03114f4",
+                                    "after":  "d98c44292d86663583a65b240fbfeaceb9694dfd486797398697a5deb03114f4",
+                                    "unchanged":  true,
+                                    "expected_operating_edit":  false
+                                },
+                                {
+                                    "path":  "docs/analysis/E061-outputs/manifest.json",
+                                    "before":  "c1a84f0d484fd30b3eccd87ba2e23d39fa7c788eb11b14a3892dbb329576919a",
+                                    "after":  "c1a84f0d484fd30b3eccd87ba2e23d39fa7c788eb11b14a3892dbb329576919a",
+                                    "unchanged":  true,
+                                    "expected_operating_edit":  false
+                                }
+                            ],
+    "evidence_gate_checks":  {
+                                 "final_s1_verdict":  true,
+                                 "recorded_control_parity":  true,
+                                 "recorded_nonidentity":  true,
+                                 "recorded_regression_pass":  true,
+                                 "deltas_above_registered_lower_bound":  true,
+                                 "candidate_wall_below900":  true,
+                                 "cumulative_worker_below1800":  true,
+                                 "rss_below8GiB":  true,
+                                 "commitment_below8GiB":  true,
+                                 "resource_exit_success":  true,
+                                 "recorded_calls_within_caps":  true,
+                                 "frozen_registration_match":  true,
+                                 "frozen_test_resource_report_match":  true
+                             },
+    "check_limit":  "Reviewed existing reports and source/ordering, compared allowed hashes; no scientific tests/AST rerun, raw vector comparison or scorer execution",
+    "excluded_binary_artifacts_not_read_or_hashed":  [
+                                                         "docs/analysis/E061-outputs/vectors-01-candidate-unhcr.npz",
+                                                         "docs/analysis/E061-outputs/vectors-01-candidate-unicef.npz",
+                                                         "docs/analysis/E061-outputs/vectors-01-candidate-world_bank.npz",
+                                                         "docs/analysis/E061-outputs/vectors-01-E025-unhcr.npz",
+                                                         "docs/analysis/E061-outputs/vectors-01-E025-unicef.npz",
+                                                         "docs/analysis/E061-outputs/vectors-01-E025-world_bank.npz",
+                                                         "docs/analysis/E061-outputs/vectors-01-E041-unhcr.npz",
+                                                         "docs/analysis/E061-outputs/vectors-01-E041-unicef.npz",
+                                                         "docs/analysis/E061-outputs/vectors-01-E041-world_bank.npz"
+                                                     ],
+    "parquet_identity":  "Inherited from S1 only, not reverified",
+    "S1_manifest_and_original_draft":  "Unchanged; source qualification and historical routing preserved",
+    "new_link_checks":  [
+                            {
+                                "path":  "docs/analysis/A034-e061-s0-review.md",
+                                "target":  "A034-outputs/entry.json",
+                                "exists":  true
+                            },
+                            {
+                                "path":  "docs/analysis/A034-e061-s0-review.md",
+                                "target":  "A034-outputs/s2-e061-release-handoff.ko.md",
+                                "exists":  true
+                            },
+                            {
+                                "path":  "docs/analysis/A034-e061-s0-review.md",
+                                "target":  "A034-outputs/verification.json",
+                                "exists":  true
+                            }
+                        ],
+    "selected_jobs":  [
+
+                      ],
+    "process_check_limit":  "Selected names only, not global lock",
+    "outputs":  {
+                    "docs/analysis/A034-e061-s0-review.md":  "b3bf6927946e08536d1fde85d727c18095b0eb1d6f5a1c70d820282c7502b7b3",
+                    "docs/analysis/A034-outputs/entry.json":  "97db424d24e03df5ac7693f9440e9da5fc5b071a99e7fa95e4bc1d16e806407d",
+                    "docs/analysis/A034-outputs/s2-e061-release-handoff.ko.md":  "38c7911a77b914135ba9cb9eac6b150b099bee9e981506d011142a19bef6fedf",
+                    "docs/status.md":  "73fff3f7fc81b4a4c076229be80b5a00b5d77af3abba9a791e699b552db01bc9",
+                    "docs/log.md":  "2ef1824ef423162d77484f97acb8daefb159012d51f2ec87e9213b1f29c08705"
+                },
+    "scientific_execution":  {
+                                 "commit_push":  0,
+                                 "ZIP_actions":  0,
+                                 "fit":  0,
+                                 "S2_S3_execution":  0,
+                                 "model_import":  0,
+                                 "tests":  0,
+                                 "parquet_or_npz_hashes":  0,
+                                 "score":  0,
+                                 "predict":  0,
+                                 "upload":  0,
+                                 "TEST_selection":  0,
+                                 "response_cache_or_npz_reads":  0
+                             },
+    "next":  "User supplies final handoff to separate S2; this S0 does not execute it",
+    "self_hash":  "Excluded"
+}

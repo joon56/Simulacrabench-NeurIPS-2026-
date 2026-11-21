@@ -1,0 +1,9 @@
+﻿{
+    "status":  "NOT_RUN",
+    "reason":  "Whole-preparation budget prerequisite unresolved",
+    "attempt_seconds":  0,
+    "previous_Modal_attempt_seconds":  0,
+    "scientific_reference":  "NOT_RUN",
+    "scientific_candidate":  "NOT_RUN",
+    "no_result_files_fabricated":  true
+}

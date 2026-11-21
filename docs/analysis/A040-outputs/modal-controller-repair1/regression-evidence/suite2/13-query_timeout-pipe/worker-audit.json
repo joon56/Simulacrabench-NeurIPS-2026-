@@ -1,0 +1,64 @@
+{
+  "fake_calls": [
+    {
+      "call": "FAKE_Client.from_env"
+    },
+    {
+      "call": "FAKE_Workspace.from_context"
+    },
+    {
+      "call": "hydrate"
+    },
+    {
+      "call": "billing.summary"
+    },
+    {
+      "call": "App.lookup",
+      "app_name": "a040-LOCAL-FAKE",
+      "create_if_missing": true,
+      "environment": "main"
+    },
+    {
+      "call": "Image.from_registry",
+      "tag": "python:3.13.14-slim"
+    },
+    {
+      "call": "run_function_recipe",
+      "cpu": [
+        1,
+        1
+      ],
+      "memory": [
+        8192,
+        8192
+      ],
+      "timeout": 600,
+      "include_source": false
+    },
+    {
+      "call": "Image.build",
+      "app_id": "ap-FAKE-OWNED"
+    },
+    {
+      "call": "billing.summary"
+    },
+    {
+      "call": "AppStop",
+      "app_id": "ap-FAKE-OWNED"
+    },
+    {
+      "call": "AppGetInfo",
+      "app_id": "ap-FAKE-OWNED"
+    }
+  ],
+  "blocked_operations": [],
+  "sdk_imported": false,
+  "model_imported": false,
+  "pending_tasks_at_exit": 1,
+  "stdout_encoding": "utf-8",
+  "stderr_encoding": "utf-8",
+  "network_transport": "FAKE_ONLY",
+  "live_rpc_calls": 0,
+  "grandchildren_allowed": false,
+  "synthetic_network_guard_probe_blocked": 1
+}

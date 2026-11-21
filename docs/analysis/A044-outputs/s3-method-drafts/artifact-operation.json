@@ -1,0 +1,8 @@
+﻿{
+    "operation":  "create",
+    "expected_outputs":  2,
+    "format":  "pdf",
+    "exit_code":  0,
+    "elapsed_seconds":  0.0856135,
+    "at":  "2026-10-23T17:30:11.1780291+09:00"
+}

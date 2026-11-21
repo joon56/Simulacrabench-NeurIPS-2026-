@@ -1,0 +1,22 @@
+--- full-path-local-retry1/runner.py
++++ full-path-resume1/runner.py
+@@ -13,7 +13,7 @@
+ START=time.perf_counter()
+ HERE=Path(__file__).resolve().parent
+ ROOT=HERE.parents[3]
+-TEMP=ROOT/'tmp/a040-full-path-local-retry1'
++TEMP=ROOT/'tmp/a040-full-path-resume1'
+ SOURCE=ROOT/'tmp/a040-local-technical/source/tabicl-0dbff3ec8fc68c123c87af77b0ea8b25cd2d23f3/src'
+ CHECKPOINT=ROOT/'tmp/a040-local-technical/acquisition/tabicl-classifier-v2-20260212.ckpt'
+ sys.path[:0]=[str(HERE),str(SOURCE)]
+--- full-path-local-retry1/watchdog.py
++++ full-path-resume1/watchdog.py
+@@ -13,7 +13,7 @@
+ HERE=Path(__file__).resolve().parent
+ ROOT=HERE.parents[3]
+ CAP=16_000_000_000
+-DEADLINE=datetime(2026,10,2,9,2,0,tzinfo=timezone.utc)
++DEADLINE=datetime(2026,10,2,10,5,10,tzinfo=timezone.utc)
+ PARSER=argparse.ArgumentParser();PARSER.add_argument('mode',choices=['reference','candidate'])
+ MODE=PARSER.parse_args().mode
+ OUT=HERE/MODE

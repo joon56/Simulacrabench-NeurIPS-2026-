@@ -1,0 +1,5 @@
+Windows fatal exception: access violation
+
+Current thread 0x000084fc (most recent call first):
+  Garbage-collecting
+  <no Python frame>

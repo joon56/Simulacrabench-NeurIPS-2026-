@@ -1,0 +1,48 @@
+{
+    "task":  "S3-E025-PROVENANCE-A044",
+    "owner":  "/root S3",
+    "accepted_at":  "2026-10-23T16:31:31.9716037+09:00",
+    "gross_start_conservative":  "2026-10-23T16:25:00+09:00",
+    "closeout_only_from":  "2026-10-23T18:10:00+09:00",
+    "gross_deadline":  "2026-10-23T18:25:00+09:00",
+    "authority":  "User explicitly approved offline-followup/s3-e025-provenance.ko.md scope and new budget in this conversation",
+    "outgoing_owner":  "S0 A044 offline follow-up /root",
+    "outgoing_release":  "2026-10-23T16:24:35.3821640+09:00",
+    "head":  "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+    "branch":  "work/e050-submission",
+    "dirty_count":  2500,
+    "dirty_paths":  "dirty-entry.txt",
+    "workflow_revision":  "2026-10-22-r6",
+    "workflow_sha256":  "69620b7eeaad5a01a6a6b884fbd95dfede3e26b2ee2b09016479846082aec089",
+    "read_order":  [
+                       "AGENTS.md",
+                       "CLAUDE.md",
+                       "docs/status.md current110lines",
+                       "docs/log.md newest3 entries",
+                       "docs/workflow.md full in2 chunks",
+                       "docs/analysis/A044-outputs/offline-followup/s3-e025-provenance.ko.md"
+                   ],
+    "read_evidence":  "Current tool transcript: task routing/sole-writer/aggregate budgets/ordinary repair/phase2 truth boundary read; handoff fixes modular E025 versus preserved archive and E041 pre-model reuse gate. Historical selected wording is not current user TEST choice.",
+    "allowed":  "exact9 inputs; traced E025 dependency closure; preserved E025 archive read/extract; new scoped driver/checks/source+official all3 only after reuse gate; records",
+    "forbidden":  "E041 fit, final TEST selection, upload, new ZIP, source edits, new research, other data/cache/keys, network, install, remote compute, subagents, commit/push",
+    "limits":  {
+                   "compute_seconds":  2700,
+                   "check_seconds":  120,
+                   "check_cycles":  3,
+                   "cpu":  2,
+                   "tree_rss_private_each_bytes":  8589934592,
+                   "normal_all3":  2,
+                   "cash":  0,
+                   "invalid_arm_repair_all3":  1,
+                   "gpu":  0,
+                   "all3_seconds_each":  900
+               },
+    "named_jobs":  [
+
+                   ],
+    "python_processes":  [
+
+                         ],
+    "remote_all_chat_census":  false,
+    "exclusive_writer_released":  false
+}

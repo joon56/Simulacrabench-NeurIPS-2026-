@@ -1,0 +1,19 @@
+{
+  "outcome": "BLOCKED_RESOURCE",
+  "schema_entry": "ALL3_RUNTIME_ENTRY_PASS",
+  "full_fake_inputs_created_once": true,
+  "scientific_freeze_reached": true,
+  "reference": "NOT_RUN_PREFLIGHT_BLOCKED",
+  "candidate": "NOT_RUN_REFERENCE_GATE",
+  "scientific_children": 0,
+  "actual_e041_calls": 0,
+  "expert_calls": 0,
+  "natural_alpha": null,
+  "natural_guard": null,
+  "engineering_output": null,
+  "actual_full_vector_count": null,
+  "full_parity": null,
+  "resource_reason": "Available host commitment below unchanged watchdog startup threshold; no model allocation attempted",
+  "s2_candidate": false,
+  "next_owner": "S0"
+}

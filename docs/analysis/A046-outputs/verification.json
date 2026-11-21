@@ -1,0 +1,63 @@
+﻿{
+    "status":  "MIGRATION_ARCHIVE_COMPLETE",
+    "task":  "A046",
+    "role":  "S0 migration-only exception",
+    "head":  "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+    "workflow_revision":  "2026-10-26-r7",
+    "workflow_sha256":  "cee188bd2e99623aea25204632229a887e29e8bb0e235d85eb513d139453cc63",
+    "archive":  {
+                    "status":  "ARCHIVE_HASH_VERIFIED",
+                    "zip":  "C:\\Users\\USER\\Desktop\\SimulacraBench\\trip\\SimulacraBench-transfer-2026-10-26.zip",
+                    "zip_bytes":  2332776129,
+                    "zip_sha256":  "1c06b709671a96b421b7a16ab9347cbdcb40a83fb836f27a708717fa50b6cca5",
+                    "files_verified":  14426,
+                    "payload_bytes":  3785822210,
+                    "elapsed_seconds":  170.943026,
+                    "models_executed":  0,
+                    "encryption":  "none; private transfer only",
+                    "ended_at":  "2026-10-26T23:23:02.3654920+09:00"
+                },
+    "embedded_manifest_matches_sidecar":  true,
+    "zip_entries":  14427,
+    "project_codex_sessions":  23,
+    "claude_project_memories":  4,
+    "history_snapshot_cutoff_utc":  "2026-10-26T14:14:16.915Z",
+    "history_export_errors":  0,
+    "destination_os":  "Not supplied; Windows guide plus macOS/Linux limitations",
+    "environment_records":  8,
+    "authentication_copied":  false,
+    "venvs_copied":  false,
+    "new_device_runtime_or_UI_restore_verified":  false,
+    "research_import_fit_predict_score":  0,
+    "new_protected_response_analysis":  0,
+    "scientific_exposure_changed":  false,
+    "remote_compute_upload_commit_push":  0,
+    "archive_worker_exit":  0,
+    "owned_active_jobs":  0,
+    "read_only_children_completed":  2,
+    "other_process_census":  "python/pythonw/uv not observed;24 node processes observed, ownership not inferred or terminated",
+    "dirty_entries_end":  127,
+    "writer":  null,
+    "outgoing_owner":  "S0-A046-MIGRATION /root",
+    "exclusive_writer_released":  true,
+    "released_at":  "2026-10-26T23:25:46.3375255+09:00",
+    "snapshot_caveat":  "ZIP is immutable pre-completion snapshot. Its writer/PID state is historical. This final receipt and final chat establish source release; new host accepts a fresh epoch. No new model task or budget granted.",
+    "post_snapshot_completion_updates":  [
+                                             "docs/status.md",
+                                             "docs/log.md",
+                                             "docs/analysis/A045-outputs/orchestration-state.json",
+                                             "docs/analysis/A046-outputs/verification.json"
+                                         ],
+    "ancillary_errors":  [
+                             "Final metadata-only git census first hit inherited ignore-file permission warning under Stop; rerun with ordinary warning handling completed. No archive or scientific retry."
+                         ],
+    "checks":  "Full archive entry SHA256/length checks; embedded manifest identity;required guide,prompt,Git,workflow,history,restore and verifier files present",
+    "limitations":  [
+                        "Private unencrypted bundle includes licensed/private research inputs and conversations; no public distribution.",
+                        "History is security-filtered complete-line snapshot; no guarantee of native sidebar import or cross-version resume.",
+                        "Package lists come from metadata, not portable executable environments or ABI equivalence.",
+                        "Python alternative verifier statically reviewed, not executed here.",
+                        "Archive bytes/checksum do not authorize protected-data research use."
+                    ],
+    "completed_at":  "2026-10-26T23:25:46.3375255+09:00"
+}

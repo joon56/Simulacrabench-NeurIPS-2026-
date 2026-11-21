@@ -1,0 +1,26 @@
+﻿{
+    "started_utc":  "2026-10-02T12:21:37Z",
+    "preparation_deadline_utc":  "2026-10-02T13:21:37Z",
+    "task_deadline_utc":  "2026-10-02T14:21:37Z",
+    "role":  "S1 technical",
+    "authority":  "Current user attached prompt: this S1 is directed to prepare, port and perform bounded remote execution",
+    "workflow_revision":  "2026-09-27-r4",
+    "workflow_sha256":  "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642",
+    "head":  "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+    "read_evidence":  [
+                          "9d2215 user handoff",
+                          "8329bb AGENTS/CLAUDE",
+                          "b1be80 status/latest3/workflow",
+                          "715ce5 S0 plan and verification/identity",
+                          "980928 registration/input reuse/classification summary"
+                      ],
+    "credits_cap_usd":  5,
+    "cash_cap_usd":  0,
+    "prepare_cap_usd":  1,
+    "shutdown_other_reserve_usd":  1,
+    "account_workspace_expected":  "joon56",
+    "account_evidence":  "User reported $30 credits, spend0, usage30; not yet authenticated",
+    "scientific_processes":  0,
+    "remote_resources_created":  0,
+    "output_collision":  false
+}

@@ -1,0 +1,680 @@
+{
+  "date_kst": "2026-10-05",
+  "role": "S0",
+  "task": "Builder source contract result review and fresh remote scope",
+  "verdict": "ACCEPT_LOCAL_BUILDER_SOURCE_CONTRACT / RECOMMEND_ONE_BOUNDED_REMOTE_MEASUREMENT",
+  "head": "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+  "workflow_revision": "2026-09-27-r4",
+  "workflow_sha256": "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642",
+  "read_evidence": [
+    {
+      "chunk": "a2bcc8",
+      "description": "Ordered AGENTS, CLAUDE entry, status, newest3log, workflow routing."
+    },
+    {
+      "chunk": "f3b99f",
+      "description": "Closeout/verification/diffs/source manifest/ledger; combined output partly truncated, affected evidence inspected separately."
+    },
+    {
+      "chunk": "c109c3",
+      "description": "HEAD/dirty/named local process check, old remote scope and new path collision check."
+    },
+    {
+      "chunk": "948815",
+      "description": "Complete semantic/placement diffs, boundary design, results2-5 and result6 selected metadata."
+    },
+    {
+      "chunk": "abe27d",
+      "description": "Actual guard/checker/isolated-import sources."
+    },
+    {
+      "chunk": "480fdc",
+      "description": "S1 entry, source contract and launcher, selected preservation fields."
+    },
+    {
+      "chunk": "969186",
+      "description": "Six launch receipts, result6 transitive origins, s0-handoff."
+    },
+    {
+      "chunk": "034cba",
+      "description": "Launcher/probe source and probe stdout; affinity-setting scope."
+    },
+    {
+      "chunk": "139b1c",
+      "description": "Saved launcher versus worker PIDs and stdout/result consistency."
+    }
+  ],
+  "baseline_at": "2026-10-05T18:36:29.1746761+09:00",
+  "final_checked_at": "2026-10-05T18:42:13.7428578+09:00",
+  "source_identity": [
+    {
+      "path": "docs\\analysis\\A040-outputs\\local-preparation-repair2\\contract.py",
+      "name": "contract.py",
+      "expected": "08aaff6cf44696e1197679a2f428a95c60f50fa186e32042bf6d21f3bced6dfe",
+      "current": "08aaff6cf44696e1197679a2f428a95c60f50fa186e32042bf6d21f3bced6dfe",
+      "matches": true,
+      "old": "docs\\analysis\\A040-outputs\\modal-builder-source-repair1\\contract.py",
+      "old_hash": "647c5a467183edc512893158ce6eb41d72677c90af38f04ed02888f4dc3b3526",
+      "unchanged": false
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\local-preparation-repair2\\protocol.py",
+      "name": "protocol.py",
+      "expected": "4616f24b44d8b482cf90a560a13e59324f20e497af4090d6e588fe437801ff77",
+      "current": "4616f24b44d8b482cf90a560a13e59324f20e497af4090d6e588fe437801ff77",
+      "matches": true,
+      "old": "docs\\analysis\\A040-outputs\\modal-builder-source-repair1\\protocol.py",
+      "old_hash": "4616f24b44d8b482cf90a560a13e59324f20e497af4090d6e588fe437801ff77",
+      "unchanged": true
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\local-preparation-repair2\\controller_core.py",
+      "name": "controller_core.py",
+      "expected": "fc561eee08f1eafbbeac2cbcc5fa31890ef719bf603c5c7dd1af7aea5e556bcb",
+      "current": "fc561eee08f1eafbbeac2cbcc5fa31890ef719bf603c5c7dd1af7aea5e556bcb",
+      "matches": true,
+      "old": "docs\\analysis\\A040-outputs\\modal-builder-source-repair1\\controller_core.py",
+      "old_hash": "fc561eee08f1eafbbeac2cbcc5fa31890ef719bf603c5c7dd1af7aea5e556bcb",
+      "unchanged": true
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\local-preparation-repair2\\live_binding.py",
+      "name": "live_binding.py",
+      "expected": "ca1351a05eea38577632a918b286d5ee7e5c82d423928fd8c2ce1af67de206c8",
+      "current": "ca1351a05eea38577632a918b286d5ee7e5c82d423928fd8c2ce1af67de206c8",
+      "matches": true,
+      "old": "docs\\analysis\\A040-outputs\\modal-builder-source-repair1\\live_binding.py",
+      "old_hash": "ca1351a05eea38577632a918b286d5ee7e5c82d423928fd8c2ce1af67de206c8",
+      "unchanged": true
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\local-preparation-repair2\\sdk_endpoint.py",
+      "name": "sdk_endpoint.py",
+      "expected": "b5073417ab5d2ae3b857e8e0fdef2d5bb1df1a5a7cc28aff36fea6f4c4c4a93e",
+      "current": "b5073417ab5d2ae3b857e8e0fdef2d5bb1df1a5a7cc28aff36fea6f4c4c4a93e",
+      "matches": true,
+      "old": "docs\\analysis\\A040-outputs\\modal-builder-source-repair1\\sdk_endpoint.py",
+      "old_hash": "94606de56ba23e65e3dcacc57009cb0e60b5506648a2b276cb3165696af4251f",
+      "unchanged": false
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\local-preparation-repair2\\payload.py",
+      "name": "payload.py",
+      "expected": "17273bebff6debd9888983ffcb2a7b3e3dbff572dccd203c05f9c8b5c9f60424",
+      "current": "17273bebff6debd9888983ffcb2a7b3e3dbff572dccd203c05f9c8b5c9f60424",
+      "matches": true,
+      "old": "docs\\analysis\\A040-outputs\\modal-builder-source-repair1\\payload.py",
+      "old_hash": "17273bebff6debd9888983ffcb2a7b3e3dbff572dccd203c05f9c8b5c9f60424",
+      "unchanged": true
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\local-preparation-repair2\\sandbox_stage.py",
+      "name": "sandbox_stage.py",
+      "expected": "723f80623c0b400a7c68d1a8bfd4e6d4b6e9fa4d67060a418db156c8c88621b9",
+      "current": "723f80623c0b400a7c68d1a8bfd4e6d4b6e9fa4d67060a418db156c8c88621b9",
+      "matches": true,
+      "old": "docs\\analysis\\A040-outputs\\modal-builder-source-repair1\\sandbox_stage.py",
+      "old_hash": "723f80623c0b400a7c68d1a8bfd4e6d4b6e9fa4d67060a418db156c8c88621b9",
+      "unchanged": true
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\local-preparation-repair2\\linux_boundary.py",
+      "name": "linux_boundary.py",
+      "expected": "4c2aad23c52813693249a6d104c50f208ed33928086b466e46e853ad074712ff",
+      "current": "4c2aad23c52813693249a6d104c50f208ed33928086b466e46e853ad074712ff",
+      "matches": true,
+      "old": "docs\\analysis\\A040-outputs\\modal-builder-source-repair1\\linux_boundary.py",
+      "old_hash": "4c2aad23c52813693249a6d104c50f208ed33928086b466e46e853ad074712ff",
+      "unchanged": true
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\local-preparation-repair2\\linux_watchdog.py",
+      "name": "linux_watchdog.py",
+      "expected": "9b08538d3b5990389e103ef2d391d58fec6ec63795bf0dc5ebcec08bc1991d34",
+      "current": "9b08538d3b5990389e103ef2d391d58fec6ec63795bf0dc5ebcec08bc1991d34",
+      "matches": true,
+      "old": "docs\\analysis\\A040-outputs\\modal-builder-source-repair1\\linux_watchdog.py",
+      "old_hash": "9b08538d3b5990389e103ef2d391d58fec6ec63795bf0dc5ebcec08bc1991d34",
+      "unchanged": true
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\local-preparation-repair2\\linux_runner.py",
+      "name": "linux_runner.py",
+      "expected": "82facf9151daa8eadc55c438be99f4c0cf5e331978c18b3a59530ef2af5b680e",
+      "current": "82facf9151daa8eadc55c438be99f4c0cf5e331978c18b3a59530ef2af5b680e",
+      "matches": true,
+      "old": "docs\\analysis\\A040-outputs\\modal-builder-source-repair1\\linux_runner.py",
+      "old_hash": "82facf9151daa8eadc55c438be99f4c0cf5e331978c18b3a59530ef2af5b680e",
+      "unchanged": true
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\local-preparation-repair2\\live_worker.py",
+      "name": "live_worker.py",
+      "expected": "5f9b934e435bc62259944f47f97a81f29cf9559b183d7a0b9e87736156b18902",
+      "current": "5f9b934e435bc62259944f47f97a81f29cf9559b183d7a0b9e87736156b18902",
+      "matches": true,
+      "old": "docs\\analysis\\A040-outputs\\modal-builder-source-repair1\\live_worker.py",
+      "old_hash": "5f9b934e435bc62259944f47f97a81f29cf9559b183d7a0b9e87736156b18902",
+      "unchanged": true
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\local-preparation-repair2\\live_launcher.py",
+      "name": "live_launcher.py",
+      "expected": "e6592b15ce83816fb4487ccb2ca7326f91b40fc984349e7fd22352d6ba9e1e98",
+      "current": "e6592b15ce83816fb4487ccb2ca7326f91b40fc984349e7fd22352d6ba9e1e98",
+      "matches": true,
+      "old": "docs\\analysis\\A040-outputs\\modal-builder-source-repair1\\live_launcher.py",
+      "old_hash": "965f893be21113ee25114d4bebf8cd6a13aa75f88e7907963661daf66153e01b",
+      "unchanged": false
+    }
+  ],
+  "checker_identity": [
+    {
+      "path": "probe.py",
+      "actual": "fc6d46649de0fbebbb4fb008cb6268546cf7fb717a711a7f8032d76d5c36fc69",
+      "matches": true
+    },
+    {
+      "path": "check_local.py",
+      "actual": "9a56ca3dcef5a89b4c59068fa66960547e6d796d3dd3437ceb800a96511b7fd7",
+      "matches": true
+    },
+    {
+      "path": "local_guard.py",
+      "actual": "ea4be0c28aaf52380dc56a4f4503aeecc5a6ad0b95bc3f22425f9971bcd0912e",
+      "matches": true
+    },
+    {
+      "path": "isolate.py",
+      "actual": "70754d40b7bff9e9c6c05efb567fc5514d6f264a2204dba37e72cf84af040269",
+      "matches": true
+    },
+    {
+      "path": "run_check.ps1",
+      "actual": "8298c62a6830f26b70a2d8fee05c5a588293d22b56b248ef471450c51e19a8e0",
+      "matches": true
+    },
+    {
+      "path": "boundary-design.md",
+      "actual": "dd1d649addb363664fbff25777984a1366c0162fde8319cc036d3f1cb9dfd77e",
+      "matches": true
+    }
+  ],
+  "baseline_hashes": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "86394bbf164a2b7df6a309f4564b9dacf3b2799fa0227a703e4ea11d4d842596"
+    },
+    {
+      "path": "CLAUDE.md",
+      "sha256": "69175e6d741a17042db4852d4961a5c52bd97fe2cd5bfbff762d30d7e5270364"
+    },
+    {
+      "path": "docs/status.md",
+      "sha256": "1a60b1945d6b628c4ab55099b358c71d2412a576d7f088fbf0a9dfe85c7dfc82"
+    },
+    {
+      "path": "docs/log.md",
+      "sha256": "5cc8c956bd57701dcaaba97230fba8a826da714d6600ed6940c5af274efeacd3"
+    },
+    {
+      "path": "docs/workflow.md",
+      "sha256": "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642"
+    },
+    {
+      "path": "docs/tree.md",
+      "sha256": "eaa884a4194db103335136495205fe5b51297c17db15e9eac62946ced286cc44"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\local-preparation-repair2\\closeout.md",
+      "sha256": "99f8c0aa52b886dbfb566884a3a780bf3c59c89d85b8b5a7a1160b00cc762c55"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\local-preparation-repair2\\verification.json",
+      "sha256": "26959ec7108897f735a0a9f669b0a7453549dc4a04c3bcdeba2c7f413fda1c86"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\local-preparation-repair2\\source.diff",
+      "sha256": "0a9230b7e8e37432e256669d73a5de9b086645ef69344d3326c4052bfedee982"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\local-preparation-repair2\\placement.diff",
+      "sha256": "d05284557d53fd0509dd8c61ac62743ffdc1a107fd6cfb054bef439593e8aa65"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\local-preparation-repair2\\source-manifest.json",
+      "sha256": "c782c99e29cfceeaba132018d48f2be2a844e7f8b51ba8840157f9ebfa845765"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\local-preparation-repair2\\cost-time-ledger.json",
+      "sha256": "7715da1b446f66aa8c81709d186ff9d2938ba6835e59b361e84799a613b7cee6"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\local-preparation-repair2\\boundary-design.md",
+      "sha256": "dd1d649addb363664fbff25777984a1366c0162fde8319cc036d3f1cb9dfd77e"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\local-preparation-repair2\\local_guard.py",
+      "sha256": "ea4be0c28aaf52380dc56a4f4503aeecc5a6ad0b95bc3f22425f9971bcd0912e"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\local-preparation-repair2\\check_local.py",
+      "sha256": "9a56ca3dcef5a89b4c59068fa66960547e6d796d3dd3437ceb800a96511b7fd7"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\local-preparation-repair2\\isolate.py",
+      "sha256": "70754d40b7bff9e9c6c05efb567fc5514d6f264a2204dba37e72cf84af040269"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\local-preparation-repair2\\entry.json",
+      "sha256": "845a7edbeea78a9370b6f51179a81134583c365bb2258fb189ee855fc1ec6ac2"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\local-preparation-repair2\\s0-handoff.ko.md",
+      "sha256": "2a39ba8b76549ee64ffce1c17cb2245dbb8a4af531288a97690a22b97b333d2b"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\local-preparation-repair2\\result-2.json",
+      "sha256": "e4901af47e4c33e450d45137170ff8cc2a6bdca8244cc033d0d6968cbe2c74c7"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\local-preparation-repair2\\result-3.json",
+      "sha256": "8dc79f870f2b03a1ca3ce1dfb0081df57a35472aeb8979158dd166d43833184f"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\local-preparation-repair2\\result-4.json",
+      "sha256": "f42699cf993e7019ee149d81abcefbc3d0cc594f11fb2404f674d77a9161f91f"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\local-preparation-repair2\\result-5.json",
+      "sha256": "b4f450c18de51c0f3e25e818a159cb1f8bcedb89da7f3e98f1a48020239afdbf"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\local-preparation-repair2\\result-6.json",
+      "sha256": "c19aeaba138a7a9476e46d164b40b2de7ccc3f23c2cda32cdd76a606ddc8f74c"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\local-preparation-repair2\\contract.py",
+      "sha256": "08aaff6cf44696e1197679a2f428a95c60f50fa186e32042bf6d21f3bced6dfe"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\local-preparation-repair2\\protocol.py",
+      "sha256": "4616f24b44d8b482cf90a560a13e59324f20e497af4090d6e588fe437801ff77"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\local-preparation-repair2\\controller_core.py",
+      "sha256": "fc561eee08f1eafbbeac2cbcc5fa31890ef719bf603c5c7dd1af7aea5e556bcb"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\local-preparation-repair2\\live_binding.py",
+      "sha256": "ca1351a05eea38577632a918b286d5ee7e5c82d423928fd8c2ce1af67de206c8"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\local-preparation-repair2\\sdk_endpoint.py",
+      "sha256": "b5073417ab5d2ae3b857e8e0fdef2d5bb1df1a5a7cc28aff36fea6f4c4c4a93e"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\local-preparation-repair2\\payload.py",
+      "sha256": "17273bebff6debd9888983ffcb2a7b3e3dbff572dccd203c05f9c8b5c9f60424"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\local-preparation-repair2\\sandbox_stage.py",
+      "sha256": "723f80623c0b400a7c68d1a8bfd4e6d4b6e9fa4d67060a418db156c8c88621b9"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\local-preparation-repair2\\linux_boundary.py",
+      "sha256": "4c2aad23c52813693249a6d104c50f208ed33928086b466e46e853ad074712ff"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\local-preparation-repair2\\linux_watchdog.py",
+      "sha256": "9b08538d3b5990389e103ef2d391d58fec6ec63795bf0dc5ebcec08bc1991d34"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\local-preparation-repair2\\linux_runner.py",
+      "sha256": "82facf9151daa8eadc55c438be99f4c0cf5e331978c18b3a59530ef2af5b680e"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\local-preparation-repair2\\live_worker.py",
+      "sha256": "5f9b934e435bc62259944f47f97a81f29cf9559b183d7a0b9e87736156b18902"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\local-preparation-repair2\\live_launcher.py",
+      "sha256": "e6592b15ce83816fb4487ccb2ca7326f91b40fc984349e7fd22352d6ba9e1e98"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-builder-source-repair1\\contract.py",
+      "sha256": "647c5a467183edc512893158ce6eb41d72677c90af38f04ed02888f4dc3b3526"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-builder-source-repair1\\protocol.py",
+      "sha256": "4616f24b44d8b482cf90a560a13e59324f20e497af4090d6e588fe437801ff77"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-builder-source-repair1\\controller_core.py",
+      "sha256": "fc561eee08f1eafbbeac2cbcc5fa31890ef719bf603c5c7dd1af7aea5e556bcb"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-builder-source-repair1\\live_binding.py",
+      "sha256": "ca1351a05eea38577632a918b286d5ee7e5c82d423928fd8c2ce1af67de206c8"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-builder-source-repair1\\sdk_endpoint.py",
+      "sha256": "94606de56ba23e65e3dcacc57009cb0e60b5506648a2b276cb3165696af4251f"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-builder-source-repair1\\payload.py",
+      "sha256": "17273bebff6debd9888983ffcb2a7b3e3dbff572dccd203c05f9c8b5c9f60424"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-builder-source-repair1\\sandbox_stage.py",
+      "sha256": "723f80623c0b400a7c68d1a8bfd4e6d4b6e9fa4d67060a418db156c8c88621b9"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-builder-source-repair1\\linux_boundary.py",
+      "sha256": "4c2aad23c52813693249a6d104c50f208ed33928086b466e46e853ad074712ff"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-builder-source-repair1\\linux_watchdog.py",
+      "sha256": "9b08538d3b5990389e103ef2d391d58fec6ec63795bf0dc5ebcec08bc1991d34"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-builder-source-repair1\\linux_runner.py",
+      "sha256": "82facf9151daa8eadc55c438be99f4c0cf5e331978c18b3a59530ef2af5b680e"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-builder-source-repair1\\live_worker.py",
+      "sha256": "5f9b934e435bc62259944f47f97a81f29cf9559b183d7a0b9e87736156b18902"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-builder-source-repair1\\live_launcher.py",
+      "sha256": "965f893be21113ee25114d4bebf8cd6a13aa75f88e7907963661daf66153e01b"
+    }
+  ],
+  "post_hashes": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "86394bbf164a2b7df6a309f4564b9dacf3b2799fa0227a703e4ea11d4d842596"
+    },
+    {
+      "path": "CLAUDE.md",
+      "sha256": "69175e6d741a17042db4852d4961a5c52bd97fe2cd5bfbff762d30d7e5270364"
+    },
+    {
+      "path": "docs/status.md",
+      "sha256": "13b43f79e77845cb406bf8e5d79dd3843045393f51fa5b94514015295de65e21"
+    },
+    {
+      "path": "docs/log.md",
+      "sha256": "4f13b503b55a9b36e393a3567bf6f59d036818aef505a8bcbbc7c4292d8fcd04"
+    },
+    {
+      "path": "docs/workflow.md",
+      "sha256": "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642"
+    },
+    {
+      "path": "docs/tree.md",
+      "sha256": "eaa884a4194db103335136495205fe5b51297c17db15e9eac62946ced286cc44"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\local-preparation-repair2\\closeout.md",
+      "sha256": "99f8c0aa52b886dbfb566884a3a780bf3c59c89d85b8b5a7a1160b00cc762c55"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\local-preparation-repair2\\verification.json",
+      "sha256": "26959ec7108897f735a0a9f669b0a7453549dc4a04c3bcdeba2c7f413fda1c86"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\local-preparation-repair2\\source.diff",
+      "sha256": "0a9230b7e8e37432e256669d73a5de9b086645ef69344d3326c4052bfedee982"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\local-preparation-repair2\\placement.diff",
+      "sha256": "d05284557d53fd0509dd8c61ac62743ffdc1a107fd6cfb054bef439593e8aa65"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\local-preparation-repair2\\source-manifest.json",
+      "sha256": "c782c99e29cfceeaba132018d48f2be2a844e7f8b51ba8840157f9ebfa845765"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\local-preparation-repair2\\cost-time-ledger.json",
+      "sha256": "7715da1b446f66aa8c81709d186ff9d2938ba6835e59b361e84799a613b7cee6"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\local-preparation-repair2\\boundary-design.md",
+      "sha256": "dd1d649addb363664fbff25777984a1366c0162fde8319cc036d3f1cb9dfd77e"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\local-preparation-repair2\\local_guard.py",
+      "sha256": "ea4be0c28aaf52380dc56a4f4503aeecc5a6ad0b95bc3f22425f9971bcd0912e"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\local-preparation-repair2\\check_local.py",
+      "sha256": "9a56ca3dcef5a89b4c59068fa66960547e6d796d3dd3437ceb800a96511b7fd7"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\local-preparation-repair2\\isolate.py",
+      "sha256": "70754d40b7bff9e9c6c05efb567fc5514d6f264a2204dba37e72cf84af040269"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\local-preparation-repair2\\entry.json",
+      "sha256": "845a7edbeea78a9370b6f51179a81134583c365bb2258fb189ee855fc1ec6ac2"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\local-preparation-repair2\\s0-handoff.ko.md",
+      "sha256": "2a39ba8b76549ee64ffce1c17cb2245dbb8a4af531288a97690a22b97b333d2b"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\local-preparation-repair2\\result-2.json",
+      "sha256": "e4901af47e4c33e450d45137170ff8cc2a6bdca8244cc033d0d6968cbe2c74c7"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\local-preparation-repair2\\result-3.json",
+      "sha256": "8dc79f870f2b03a1ca3ce1dfb0081df57a35472aeb8979158dd166d43833184f"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\local-preparation-repair2\\result-4.json",
+      "sha256": "f42699cf993e7019ee149d81abcefbc3d0cc594f11fb2404f674d77a9161f91f"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\local-preparation-repair2\\result-5.json",
+      "sha256": "b4f450c18de51c0f3e25e818a159cb1f8bcedb89da7f3e98f1a48020239afdbf"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\local-preparation-repair2\\result-6.json",
+      "sha256": "c19aeaba138a7a9476e46d164b40b2de7ccc3f23c2cda32cdd76a606ddc8f74c"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\local-preparation-repair2\\contract.py",
+      "sha256": "08aaff6cf44696e1197679a2f428a95c60f50fa186e32042bf6d21f3bced6dfe"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\local-preparation-repair2\\protocol.py",
+      "sha256": "4616f24b44d8b482cf90a560a13e59324f20e497af4090d6e588fe437801ff77"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\local-preparation-repair2\\controller_core.py",
+      "sha256": "fc561eee08f1eafbbeac2cbcc5fa31890ef719bf603c5c7dd1af7aea5e556bcb"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\local-preparation-repair2\\live_binding.py",
+      "sha256": "ca1351a05eea38577632a918b286d5ee7e5c82d423928fd8c2ce1af67de206c8"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\local-preparation-repair2\\sdk_endpoint.py",
+      "sha256": "b5073417ab5d2ae3b857e8e0fdef2d5bb1df1a5a7cc28aff36fea6f4c4c4a93e"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\local-preparation-repair2\\payload.py",
+      "sha256": "17273bebff6debd9888983ffcb2a7b3e3dbff572dccd203c05f9c8b5c9f60424"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\local-preparation-repair2\\sandbox_stage.py",
+      "sha256": "723f80623c0b400a7c68d1a8bfd4e6d4b6e9fa4d67060a418db156c8c88621b9"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\local-preparation-repair2\\linux_boundary.py",
+      "sha256": "4c2aad23c52813693249a6d104c50f208ed33928086b466e46e853ad074712ff"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\local-preparation-repair2\\linux_watchdog.py",
+      "sha256": "9b08538d3b5990389e103ef2d391d58fec6ec63795bf0dc5ebcec08bc1991d34"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\local-preparation-repair2\\linux_runner.py",
+      "sha256": "82facf9151daa8eadc55c438be99f4c0cf5e331978c18b3a59530ef2af5b680e"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\local-preparation-repair2\\live_worker.py",
+      "sha256": "5f9b934e435bc62259944f47f97a81f29cf9559b183d7a0b9e87736156b18902"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\local-preparation-repair2\\live_launcher.py",
+      "sha256": "e6592b15ce83816fb4487ccb2ca7326f91b40fc984349e7fd22352d6ba9e1e98"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-builder-source-repair1\\contract.py",
+      "sha256": "647c5a467183edc512893158ce6eb41d72677c90af38f04ed02888f4dc3b3526"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-builder-source-repair1\\protocol.py",
+      "sha256": "4616f24b44d8b482cf90a560a13e59324f20e497af4090d6e588fe437801ff77"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-builder-source-repair1\\controller_core.py",
+      "sha256": "fc561eee08f1eafbbeac2cbcc5fa31890ef719bf603c5c7dd1af7aea5e556bcb"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-builder-source-repair1\\live_binding.py",
+      "sha256": "ca1351a05eea38577632a918b286d5ee7e5c82d423928fd8c2ce1af67de206c8"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-builder-source-repair1\\sdk_endpoint.py",
+      "sha256": "94606de56ba23e65e3dcacc57009cb0e60b5506648a2b276cb3165696af4251f"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-builder-source-repair1\\payload.py",
+      "sha256": "17273bebff6debd9888983ffcb2a7b3e3dbff572dccd203c05f9c8b5c9f60424"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-builder-source-repair1\\sandbox_stage.py",
+      "sha256": "723f80623c0b400a7c68d1a8bfd4e6d4b6e9fa4d67060a418db156c8c88621b9"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-builder-source-repair1\\linux_boundary.py",
+      "sha256": "4c2aad23c52813693249a6d104c50f208ed33928086b466e46e853ad074712ff"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-builder-source-repair1\\linux_watchdog.py",
+      "sha256": "9b08538d3b5990389e103ef2d391d58fec6ec63795bf0dc5ebcec08bc1991d34"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-builder-source-repair1\\linux_runner.py",
+      "sha256": "82facf9151daa8eadc55c438be99f4c0cf5e331978c18b3a59530ef2af5b680e"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-builder-source-repair1\\live_worker.py",
+      "sha256": "5f9b934e435bc62259944f47f97a81f29cf9559b183d7a0b9e87736156b18902"
+    },
+    {
+      "path": "docs\\analysis\\A040-outputs\\modal-builder-source-repair1\\live_launcher.py",
+      "sha256": "965f893be21113ee25114d4bebf8cd6a13aa75f88e7907963661daf66153e01b"
+    }
+  ],
+  "unchanged_except_status_log": true,
+  "prior_shared_bytes": [
+    {
+      "path": "docs/status.md",
+      "reconstructed_sha256": "1a60b1945d6b628c4ab55099b358c71d2412a576d7f088fbf0a9dfe85c7dfc82",
+      "matches": true
+    },
+    {
+      "path": "docs/log.md",
+      "reconstructed_sha256": "5cc8c956bd57701dcaaba97230fba8a826da714d6600ed6940c5af274efeacd3",
+      "matches": true
+    }
+  ],
+  "local_named_process_check": {
+    "names": [
+      "python",
+      "pythonw",
+      "uv"
+    ],
+    "rows": [],
+    "scope": "Not exhaustive local/remote audit"
+  },
+  "resource_limitation": {
+    "launch_count": 6,
+    "launcher_wall_seconds": 4.5988881,
+    "affinity_observed": "Mask3 on launcher; worker inheritance NOT independently verified",
+    "pid_pairs": [
+      {
+        "mode": "boundary",
+        "launcher": 35724,
+        "worker": 41620
+      },
+      {
+        "mode": "baseline",
+        "launcher": 50976,
+        "worker": 39508
+      },
+      {
+        "mode": "fixed",
+        "launcher": 29800,
+        "worker": 38168
+      }
+    ],
+    "stdout_result_pids_agree": true,
+    "effect_on_verdict": "Does not negate source/mount/import contract; require actual model-worker resource boundaries for future remote measurement."
+  },
+  "s0_execution": {
+    "source_edits": 0,
+    "imports_tests": 0,
+    "model_fit_predict_score": 0,
+    "payload_or_pins_byte_access": 0,
+    "account_rpc": 0,
+    "build_gpu": 0,
+    "zip": 0,
+    "commit_push": 0,
+    "subagents": 0
+  },
+  "writes": {
+    "new": [
+      "decision.md",
+      "s1-remote-measurement.ko.md",
+      "verification.json"
+    ],
+    "shared": [
+      "docs/status.md",
+      "docs/log.md"
+    ]
+  },
+  "future_scope": {
+    "activated_in_s0": false,
+    "user_delivery_to_s1_required": true,
+    "source_manifest_sha256": "c782c99e29cfceeaba132018d48f2be2a844e7f8b51ba8840157f9ebfa845765",
+    "fresh_attempts": 1,
+    "image_builds_max": 1,
+    "sandbox_max": 1,
+    "boundary_max": 1,
+    "reference_max": 1,
+    "candidate_max": 1,
+    "reference_candidate_seconds_each": 900,
+    "gpu_lifetime_seconds": 2400,
+    "total_minutes": 120,
+    "cost": "Existing USD1 preparation/USD5 cumulative monitored plans, cash0; no account-setting changes."
+  },
+  "historical_ledger": {
+    "preparation_seconds": 10581.0943693,
+    "science_processes": 4,
+    "science_seconds": 1077.3504532,
+    "h100_results": 0,
+    "notes": "S0 review time separate; check wall included in S1 preparation. Historical billing/attribution uncertainty retained."
+  },
+  "preserved": "E041 incumbent/E025 fallback; parked E057/E060/E061; all scientific STOP/HOLD incl E058/E059/A039; exposure17999/12339 and A022 roles; protected audit/calibration; A_half nonpromotion; A018 user unconfirmed; S3 stopped; S2 none.",
+  "limitations": [
+    "S0 accepts saved local evidence, did not rerun checks.",
+    "Local guards do not certify OS/native egress.",
+    "Pins/payload/account/image current identities remain future S1 gates; no source-manifest membership used as payload-read permission.",
+    "No efficacy/release/TEST inference."
+  ]
+}

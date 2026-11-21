@@ -1,0 +1,133 @@
+{
+  "outcome": "LOCAL_PRODUCTION_LIFECYCLE_HOLD",
+  "implementation": "LOCAL_REPAIR_IMPLEMENTED",
+  "remote": "REMOTE_MEASUREMENT_NOT_AUTHORIZED",
+  "named_lifecycle_cases_pass": [
+    {
+      "case": "normal",
+      "pass": true,
+      "fake_creates": 1,
+      "fake_terminates": 1,
+      "outcome": "LOCAL_PROTOCOL_PATH_PASS",
+      "termination": "TERMINAL_TASK0_CONFIRMED",
+      "stream_reads": 52,
+      "stream_writes": 2
+    },
+    {
+      "case": "hydrate",
+      "pass": true,
+      "fake_creates": 1,
+      "fake_terminates": 1,
+      "outcome": "STOP_FIRST_ERROR",
+      "termination": "TERMINAL_TASK0_CONFIRMED",
+      "stream_reads": 0,
+      "stream_writes": 0
+    },
+    {
+      "case": "id_lost",
+      "pass": true,
+      "fake_creates": 1,
+      "fake_terminates": 0,
+      "outcome": "STOP_CLEANUP_UNCONFIRMED",
+      "termination": "UNCONFIRMED",
+      "stream_reads": 52,
+      "stream_writes": 2
+    },
+    {
+      "case": "timeout",
+      "pass": true,
+      "fake_creates": 1,
+      "fake_terminates": 1,
+      "outcome": "STOP_FIRST_ERROR",
+      "termination": "TERMINAL_TASK0_CONFIRMED",
+      "stream_reads": 0,
+      "stream_writes": 0
+    },
+    {
+      "case": "cancel",
+      "pass": true,
+      "fake_creates": 1,
+      "fake_terminates": 1,
+      "outcome": "STOP_FIRST_ERROR",
+      "termination": "TERMINAL_TASK0_CONFIRMED",
+      "stream_reads": 0,
+      "stream_writes": 0
+    },
+    {
+      "case": "reference_fail",
+      "pass": true,
+      "fake_creates": 1,
+      "fake_terminates": 1,
+      "outcome": "STOP_FIRST_ERROR",
+      "termination": "TERMINAL_TASK0_CONFIRMED",
+      "stream_reads": 28,
+      "stream_writes": 2
+    },
+    {
+      "case": "unknown_terminal",
+      "pass": true,
+      "fake_creates": 1,
+      "fake_terminates": 0,
+      "outcome": "STOP_CLEANUP_UNCONFIRMED",
+      "termination": "UNCONFIRMED",
+      "stream_reads": 52,
+      "stream_writes": 2
+    },
+    {
+      "case": "billing_fail",
+      "pass": true,
+      "fake_creates": 1,
+      "fake_terminates": 1,
+      "outcome": "STOP_CLEANUP_UNCONFIRMED",
+      "termination": "TERMINAL_TASK0_CONFIRMED",
+      "stream_reads": 52,
+      "stream_writes": 2
+    },
+    {
+      "case": "schedule_fail",
+      "pass": true,
+      "fake_creates": 1,
+      "fake_terminates": 1,
+      "outcome": "STOP_FIRST_ERROR",
+      "termination": "TERMINAL_TASK0_CONFIRMED",
+      "stream_reads": 0,
+      "stream_writes": 0
+    },
+    {
+      "case": "stream_fail",
+      "pass": true,
+      "fake_creates": 1,
+      "fake_terminates": 1,
+      "outcome": "STOP_FIRST_ERROR",
+      "termination": "TERMINAL_TASK0_CONFIRMED",
+      "stream_reads": 1,
+      "stream_writes": 1
+    },
+    {
+      "case": "billing_cash",
+      "pass": true,
+      "fake_creates": 1,
+      "fake_terminates": 1,
+      "outcome": "STOP_CLEANUP_UNCONFIRMED",
+      "termination": "TERMINAL_TASK0_CONFIRMED",
+      "stream_reads": 52,
+      "stream_writes": 2
+    }
+  ],
+  "expected_original_loop_rejection": true,
+  "actual_script_entry_negative_cases": 2,
+  "actual_parent_child_cli_gate_pass": true,
+  "positive_input_injected_main_child_dispatch_pass": true,
+  "original_pass_suites_or_science_or_terminal_query_rerun": false,
+  "unresolved": [
+    "Extra actual 120-second create-stall validation could not complete inside 30-second check cap; supervisor/reap wall30.0874074, strict per-child compliance unproved.",
+    "Positive orchestration uses input Context factory and image_builder completed-image provider. Actual Sandbox/FS/process/streams are retained, but SDK Image.build itself is not executed in this suite; external-RPC-only replacement for the entire build-to-CLI chain is therefore not claimed.",
+    "Actual Linux/native offline/memory/watchdog, H100900s, full pinned input path and model/release remain unmeasured."
+  ],
+  "original_source_and_workflow_preserved": true,
+  "source_manifest_sha256": "9bed44512e531215e68c4cc0a2dfd5ea99670a44f4125166eb62999684e624f3",
+  "checks_supervisor_wall_seconds": 42.8578314,
+  "current_test_suite_all_passed": false,
+  "real_auth_rpc_model_gpu": 0,
+  "evidence_basis": "local source, audit guards and fixture traces; not packet capture"
+}

@@ -1,0 +1,25 @@
+{
+  "vectors": 39520,
+  "max_raw_sum_error": 2.8615613700821996e-07,
+  "comparisons": {
+    "candidate": {
+      "max_abs": 0.0,
+      "changed_vectors": 0
+    },
+    "E041": {
+      "max_abs": 0.0,
+      "changed_vectors": 0
+    },
+    "E025": {
+      "max_abs": 0.0,
+      "changed_vectors": 0
+    }
+  },
+  "flat_sha256": "ed59718bf900604bb69af3833bd5bcb12aab555924f32ae1009b4bcf90eedc2e",
+  "status": "PASS",
+  "skill": 0.45471730736298255,
+  "delta_E025": 0.0,
+  "delta_E041": 0.0,
+  "release_pass": true,
+  "prediction_and_check_seconds": 122.34326479999982
+}

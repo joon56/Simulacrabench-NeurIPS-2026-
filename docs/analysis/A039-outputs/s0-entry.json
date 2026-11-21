@@ -1,0 +1,185 @@
+﻿{
+    "date":  "2026-10-01T02:03:22.4025072+09:00",
+    "role":  "S0",
+    "task":  "Prepare one separate S1 header-only export metadata audit",
+    "status":  "HANDOFF_PREPARED_NOT_EXECUTED",
+    "head":  "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+    "branch":  "work/e050-submission",
+    "workflow_revision":  "2026-09-27-r4",
+    "workflow_sha256":  "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642",
+    "read_evidence":  [
+                          "Continuous unchanged r4 S0: ordered entry e829f0 plus remaining workflow f99619",
+                          "f9a3c8 current A038/status/log/HEAD/dirty/jobs and A039 collision check",
+                          "2ab700 A038 inventory/A032 contract/workflow revision",
+                          "e61bd8,89bdcb cached A032 terms/source-register reads"
+                      ],
+    "authorization":  "User requested proceed after separate-S1 scope clarification. S0 prepares handoff only; no same-chat role transition.",
+    "allowed":  "Existing documents, document hashes, S0 planning records",
+    "jobs":  "No visible python/uv in name check, not global-idleness proof",
+    "baseline":  [
+                     {
+                         "path":  "AGENTS.md",
+                         "sha256":  "86394bbf164a2b7df6a309f4564b9dacf3b2799fa0227a703e4ea11d4d842596"
+                     },
+                     {
+                         "path":  "CLAUDE.md",
+                         "sha256":  "69175e6d741a17042db4852d4961a5c52bd97fe2cd5bfbff762d30d7e5270364"
+                     },
+                     {
+                         "path":  "docs/workflow.md",
+                         "sha256":  "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642"
+                     },
+                     {
+                         "path":  "docs/session-prompts.ko.md",
+                         "sha256":  "c68eba8618c6a49caf1b590181ede5d5c03800d4c2305ea0e5efe3cc266e5615"
+                     },
+                     {
+                         "path":  "docs/status.md",
+                         "sha256":  "181862b031b5e88156c605803b50e4daec2f54c3ae06723b048d0bcb8ee03792"
+                     },
+                     {
+                         "path":  "docs/log.md",
+                         "sha256":  "7cbd60c213eee2f169fb309d1acebba1cd33770169c2152ad9336b4654b9cfc6"
+                     },
+                     {
+                         "path":  "docs/tree.md",
+                         "sha256":  "eaa884a4194db103335136495205fe5b51297c17db15e9eac62946ced286cc44"
+                     },
+                     {
+                         "path":  ".gitignore",
+                         "sha256":  "f67ba089f7490b4ba0845848f0b13b55633b5efd058a0be7d64203a1e480c6fd"
+                     },
+                     {
+                         "path":  "docs/analysis/A037-winning-priority-review.md",
+                         "sha256":  "87e77d8279f68e52751653f3b6098ec1976e4b53a75faf7206043ec6cf4bf66d"
+                     },
+                     {
+                         "path":  "docs/analysis/A038-vaf-local-document-intake.md",
+                         "sha256":  "6aaac47c03e420fffed87fe8f5a942c29e82714c88e968702ec3eb1402eaad0e"
+                     },
+                     {
+                         "path":  "docs/analysis/A038-outputs/next-actions.ko.md",
+                         "sha256":  "fd04c57f653e8c8c697b700df73b04b49b17464f82de62acc1593ed8c96c3a39"
+                     },
+                     {
+                         "path":  "docs/analysis/A038-outputs/inventory.json",
+                         "sha256":  "b5ee9712dbfe36178cdae88cc5904cd784e6c5e3a7c73f4a8eda581b8a19d029"
+                     },
+                     {
+                         "path":  "docs/analysis/A038-outputs/document-comparison.json",
+                         "sha256":  "44f44bb5f82e85db91e08a22303ca7522e0dba0852b5cb85d346494063bc244f"
+                     },
+                     {
+                         "path":  "docs/analysis/A032-outputs/readiness-contract.ko.md",
+                         "sha256":  "139d577ab9afa82aa8d64ab8814847af0b953fffdfed6f141de520040a5a512d"
+                     },
+                     {
+                         "path":  "docs/analysis/A032-outputs/researcher-guide.txt",
+                         "sha256":  "dd2807e0ae8030a028eaad592a83539386022b9e1b017565a39e1730207f70fc"
+                     },
+                     {
+                         "path":  "docs/analysis/A032-outputs/routing-metadata.json",
+                         "sha256":  "8897d05493dfd3e0fd08557c52b69ac31ab49b1ca4e44af428348a53a45150bf"
+                     },
+                     {
+                         "path":  "docs/analysis/A032-outputs/terms-of-use.html",
+                         "sha256":  "baeb420638470691e0ee7db0d2c4cdb10912df922cc4fa200bb07b9b13fc1d19"
+                     },
+                     {
+                         "path":  "docs/analysis/A032-outputs/source-register.md",
+                         "sha256":  "9d5a4f8917cd9bd033e059fb45c350357db83bbc65186765fc419d920a5f179f"
+                     }
+                 ],
+    "source_limits":  "No response file/header/key or hash read. A032 terms is a dated common-page snapshot, not approved application or current legal determination.",
+    "user_exposure":  "User reports download/unzip only; public aggregates and A038 metadata already exposed",
+    "protected_boundaries":  "All prior STOP/HOLD and exposure boundaries preserved",
+    "prior_dirty":  [
+                        " M .claude/skills/paper-session/SKILL.md",
+                        " M .gitignore",
+                        " M CLAUDE.md",
+                        " M docs/domain-study-guide.ko.md",
+                        " M docs/index.md",
+                        " M docs/log.md",
+                        " M docs/session-prompts.ko.md",
+                        " M docs/status.md",
+                        " M docs/tree.md",
+                        " M docs/workflow.md",
+                        "?? .agents/",
+                        "?? AGENTS.md",
+                        "?? README.md",
+                        "?? docs/analysis/A020-outputs/",
+                        "?? docs/analysis/A020-post-e058-design-review.md",
+                        "?? docs/analysis/A021-outputs/",
+                        "?? docs/analysis/A021-selector-comparison-contract.md",
+                        "?? docs/analysis/A022-outputs/",
+                        "?? docs/analysis/A022-remaining-role-audit.md",
+                        "?? docs/analysis/A023-candidate-boundary-contract.md",
+                        "?? docs/analysis/A023-cost-accounting.md",
+                        "?? docs/analysis/A023-outputs/",
+                        "?? docs/analysis/A024-channel-precision-review.md",
+                        "?? docs/analysis/A024-outputs/",
+                        "?? docs/analysis/A025-submission-oriented-review.md",
+                        "?? docs/analysis/A026-outputs/",
+                        "?? docs/analysis/A026-post-e060-strategy-review.md",
+                        "?? docs/analysis/A027-outputs/",
+                        "?? docs/analysis/A027-workflow-role-revision.md",
+                        "?? docs/analysis/A028-outputs/",
+                        "?? docs/analysis/A028-workflow-entry-audit.md",
+                        "?? docs/analysis/A029-codex-migration-audit.md",
+                        "?? docs/analysis/A029-outputs/",
+                        "?? docs/analysis/A030-outputs/",
+                        "?? docs/analysis/A030-vaf-channel-metadata-review.md",
+                        "?? docs/analysis/A031-outputs/",
+                        "?? docs/analysis/A031-post-a030-handoff-review.md",
+                        "?? docs/analysis/A032-document-acquisition-and-readiness.md",
+                        "?? docs/analysis/A032-outputs/",
+                        "?? docs/analysis/A033-dev-handoff-and-role-repair.md",
+                        "?? docs/analysis/A033-outputs/",
+                        "?? docs/analysis/A034-e061-s0-review.md",
+                        "?? docs/analysis/A034-outputs/",
+                        "?? docs/analysis/A035-e061-dev-submission-review.md",
+                        "?? docs/analysis/A035-outputs/",
+                        "?? docs/analysis/A036-e061-post-result-review.md",
+                        "?? docs/analysis/A036-outputs/",
+                        "?? docs/analysis/A037-outputs/",
+                        "?? docs/analysis/A037-winning-priority-review.md",
+                        "?? docs/analysis/A038-outputs/",
+                        "?? docs/analysis/A038-vaf-local-document-intake.md",
+                        "?? docs/analysis/E059-outputs/",
+                        "?? docs/analysis/E060-outputs/",
+                        "?? docs/analysis/E061-outputs/",
+                        "?? docs/codex-setup.ko.md",
+                        "?? docs/experiments/E059-leaf-donor-interactions.md",
+                        "?? docs/experiments/E060-content-target-retrieval.md",
+                        "?? docs/experiments/E061-tied-content-heads.md",
+                        "?? docs/plans/README.md",
+                        "?? requirements-models.txt",
+                        "?? scripts/assemble_e060.py",
+                        "?? scripts/assemble_e061.py",
+                        "?? scripts/check_a021_selector_contract.py",
+                        "?? scripts/check_a023_candidate_boundary.py",
+                        "?? scripts/check_a023_resources.py",
+                        "?? scripts/check_e060.py",
+                        "?? scripts/check_e061_release.py",
+                        "?? scripts/check_e061_tied_heads.py",
+                        "?? scripts/check_workspace.py",
+                        "?? scripts/screen_e059.py",
+                        "?? src/models/content_target_retrieval.py",
+                        "?? src/models/tied_content_heads.py",
+                        "?? submissions/2026-09-27-E060.zip",
+                        "?? submissions/2026-09-27-E060/NOTICE.txt",
+                        "?? submissions/2026-09-27-E060/main.py",
+                        "?? submissions/2026-09-27-E060/verification.json",
+                        "?? submissions/2026-09-28-E061.zip",
+                        "?? submissions/2026-09-28-E061/",
+                        "?? tests/test_a021_selector_contract.py",
+                        "?? tests/test_a023_candidate_boundary.py",
+                        "?? tests/test_content_target_retrieval.py",
+                        "?? tests/test_e059_interactions.py",
+                        "?? tests/test_e060_assembly.py",
+                        "?? tests/test_e061_assembly.py",
+                        "?? tests/test_tied_content_heads.py",
+                        "?? tests/test_workspace_check.py",
+                        "?? trip/"
+                    ]
+}

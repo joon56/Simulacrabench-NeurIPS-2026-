@@ -1,0 +1,39 @@
+{
+  "decision": "TERMINAL_CONFIRMED",
+  "head": "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+  "workflow_revision": "2026-10-05-r5",
+  "workflow_sha256": "a577942675e16a732339e586c14796104dda704693568439ae28670cc7fb7b23",
+  "terminal_identity_and_explicit_result_match": true,
+  "terminal_source": "Exact-ID SandboxWait",
+  "terminal_observed_utc": "2026-10-05T12:46:48.981398+00:00",
+  "terminal_saved_before_billing": true,
+  "already_terminal_no_mutation": true,
+  "helper_body_byte_identity": "0e68a80ce1237aaa0f95d42777a24154b5cee110858e0bf0a692c17a2d75939a",
+  "actual_launch_source_hashes_match": true,
+  "original_named8_inputs_unchanged": true,
+  "historical_failed_parent_record_preserved": true,
+  "local_checks_seconds": 1.1279815,
+  "actual_child_seconds": 5.739575800002058,
+  "child_exited": true,
+  "runtime_ledger_active_attempt": null,
+  "related_local_jobs": 0,
+  "jobs_evidence": "tool83f9ec",
+  "receipt_read_evidence": "tool8431c3",
+  "shared_document_preservation": {
+    "docs/status.md": {
+      "before_sha256": "efc30a838a946b9e18893c99381be7f059466c1408a08ba2835634ff901f794b",
+      "after_sha256": "6a4eeb77baf6e47d104594090a02753ce333856ec921fbf9633bd039969c9bdc",
+      "exact_original_bytes_restored_by_removing_own_addition": true
+    },
+    "docs/log.md": {
+      "before_sha256": "fa6e9959812e083047c126d61c32fa69954e22b0d7334c5abc347c30397411a0",
+      "after_sha256": "ed2853471838bd47528160d0e04ffb55c81e72ac94f6684867e2956b87786752",
+      "exact_original_bytes_restored_by_removing_own_addition": true
+    }
+  },
+  "billing_is_workspace_aggregate": true,
+  "final_task_cost_resolved": false,
+  "unused_read_only_branch_live_validated": false,
+  "no_new_resource_science_controller_commit_push_S2_S3": true,
+  "scope_limit": "Cleanup evidence only; no H100/runtime900/effect/release pass; no production repair authorization"
+}

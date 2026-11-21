@@ -1,0 +1,30 @@
+{
+    "scope":  "Local crash reduction; same environment; no remote/model/protected inputs",
+    "read_evidence":  [
+                          "8b6bb7 AGENTS/CLAUDE/attachment",
+                          "04937b status",
+                          "4308f8 status continuation",
+                          "c8ff05 newest log3",
+                          "6ee89d workflow receipt/hash; command-local git ownership repair",
+                          "6f004a complete handoff",
+                          "11027e permitted prior failures/source/metadata"
+                      ],
+    "deadline_utc":  "2026-10-06T14:42:43Z",
+    "head":  "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+    "named_jobs_at_entry":  0,
+    "backup":  "Exact missing-input closeout only",
+    "entry_utc":  "2026-10-06T14:02:43Z",
+    "caps":  {
+                 "cpu":  2,
+                 "process_seconds":  30,
+                 "checks_seconds":  240,
+                 "kill_seconds":  20,
+                 "gpu":  0,
+                 "comparisons":  6
+             },
+    "workflow_sha256":  "a577942675e16a732339e586c14796104dda704693568439ae28670cc7fb7b23",
+    "workflow_revision":  "2026-10-05-r5",
+    "role":  "S1 technical",
+    "dirty_count":  89,
+    "work_cutoff_utc":  "2026-10-06T14:32:43Z"
+}

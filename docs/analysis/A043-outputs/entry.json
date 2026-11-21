@@ -1,0 +1,532 @@
+{
+  "task": "A043 / S0 post-E063 priority review, documents and static source only",
+  "workflow": {
+    "revision": "2026-10-05-r5",
+    "sha256": "a577942675e16a732339e586c14796104dda704693568439ae28670cc7fb7b23"
+  },
+  "initial_observation": {
+    "at": "2026-10-11T21:11:33.6706078+09:00",
+    "head": "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+    "branch": "work/e050-submission",
+    "dirty": [
+      " M .claude/skills/paper-session/SKILL.md",
+      " M .gitignore",
+      " M CLAUDE.md",
+      " M docs/domain-study-guide.ko.md",
+      " M docs/index.md",
+      " M docs/log.md",
+      " M docs/session-prompts.ko.md",
+      " M docs/status.md",
+      " M docs/tree.md",
+      " M docs/workflow.md",
+      " M submissions/SCORES.md",
+      "?? .agents/",
+      "?? AGENTS.md",
+      "?? README.md",
+      "?? docs/analysis/A020-outputs/",
+      "?? docs/analysis/A020-post-e058-design-review.md",
+      "?? docs/analysis/A021-outputs/",
+      "?? docs/analysis/A021-selector-comparison-contract.md",
+      "?? docs/analysis/A022-outputs/",
+      "?? docs/analysis/A022-remaining-role-audit.md",
+      "?? docs/analysis/A023-candidate-boundary-contract.md",
+      "?? docs/analysis/A023-cost-accounting.md",
+      "?? docs/analysis/A023-outputs/",
+      "?? docs/analysis/A024-channel-precision-review.md",
+      "?? docs/analysis/A024-outputs/",
+      "?? docs/analysis/A025-submission-oriented-review.md",
+      "?? docs/analysis/A026-outputs/",
+      "?? docs/analysis/A026-post-e060-strategy-review.md",
+      "?? docs/analysis/A027-outputs/",
+      "?? docs/analysis/A027-workflow-role-revision.md",
+      "?? docs/analysis/A028-outputs/",
+      "?? docs/analysis/A028-workflow-entry-audit.md",
+      "?? docs/analysis/A029-codex-migration-audit.md",
+      "?? docs/analysis/A029-outputs/",
+      "?? docs/analysis/A030-outputs/",
+      "?? docs/analysis/A030-vaf-channel-metadata-review.md",
+      "?? docs/analysis/A031-outputs/",
+      "?? docs/analysis/A031-post-a030-handoff-review.md",
+      "?? docs/analysis/A032-document-acquisition-and-readiness.md",
+      "?? docs/analysis/A032-outputs/",
+      "?? docs/analysis/A033-dev-handoff-and-role-repair.md",
+      "?? docs/analysis/A033-outputs/",
+      "?? docs/analysis/A034-e061-s0-review.md",
+      "?? docs/analysis/A034-outputs/",
+      "?? docs/analysis/A035-e061-dev-submission-review.md",
+      "?? docs/analysis/A035-outputs/",
+      "?? docs/analysis/A036-e061-post-result-review.md",
+      "?? docs/analysis/A036-outputs/",
+      "?? docs/analysis/A037-outputs/",
+      "?? docs/analysis/A037-winning-priority-review.md",
+      "?? docs/analysis/A038-outputs/",
+      "?? docs/analysis/A038-vaf-local-document-intake.md",
+      "?? docs/analysis/A039-outputs/",
+      "?? docs/analysis/A040-outputs/",
+      "?? docs/analysis/A041-outputs/",
+      "?? docs/analysis/A041-wb-ordinal-head-review.md",
+      "?? docs/analysis/A042-outputs/",
+      "?? docs/analysis/A042-post-e062-priority.md",
+      "?? docs/analysis/E059-outputs/",
+      "?? docs/analysis/E060-outputs/",
+      "?? docs/analysis/E061-outputs/",
+      "?? docs/analysis/E062-outputs/",
+      "?? docs/analysis/E063-outputs/",
+      "?? docs/codex-setup.ko.md",
+      "?? docs/experiments/E059-leaf-donor-interactions.md",
+      "?? docs/experiments/E060-content-target-retrieval.md",
+      "?? docs/experiments/E061-tied-content-heads.md",
+      "?? docs/experiments/E062-wb-ordinal-heads.md",
+      "?? docs/experiments/E063-round-conditioned-metric.md",
+      "?? docs/plans/README.md",
+      "?? requirements-models.txt",
+      "?? scripts/assemble_e060.py",
+      "?? scripts/assemble_e061.py",
+      "?? scripts/assemble_e062.py",
+      "?? scripts/assemble_e063.py",
+      "?? scripts/check_a021_selector_contract.py",
+      "?? scripts/check_a023_candidate_boundary.py",
+      "?? scripts/check_a023_resources.py",
+      "?? scripts/check_e060.py",
+      "?? scripts/check_e061_release.py",
+      "?? scripts/check_e061_tied_heads.py",
+      "?? scripts/check_e062_release.py",
+      "?? scripts/check_e062_wb_ordinal.py",
+      "?? scripts/check_e063_release.py",
+      "?? scripts/check_e063_round_metric.py",
+      "?? scripts/check_workspace.py",
+      "?? scripts/screen_e059.py",
+      "?? src/models/content_target_retrieval.py",
+      "?? src/models/round_metric_retrieval.py",
+      "?? src/models/tied_content_heads.py",
+      "?? src/models/wb_ordinal_heads.py",
+      "?? submissions/2026-09-27-E060.zip",
+      "?? submissions/2026-09-27-E060/NOTICE.txt",
+      "?? submissions/2026-09-27-E060/main.py",
+      "?? submissions/2026-09-27-E060/verification.json",
+      "?? submissions/2026-09-28-E061.zip",
+      "?? submissions/2026-09-28-E061/",
+      "?? submissions/2026-10-08-E062.zip",
+      "?? submissions/2026-10-08-E062/",
+      "?? submissions/2026-10-09-E063.zip",
+      "?? submissions/2026-10-09-E063/",
+      "?? tests/test_a021_selector_contract.py",
+      "?? tests/test_a023_candidate_boundary.py",
+      "?? tests/test_content_target_retrieval.py",
+      "?? tests/test_e059_interactions.py",
+      "?? tests/test_e060_assembly.py",
+      "?? tests/test_e061_assembly.py",
+      "?? tests/test_e062_assembly.py",
+      "?? tests/test_e063_assembly.py",
+      "?? tests/test_round_metric_retrieval.py",
+      "?? tests/test_tied_content_heads.py",
+      "?? tests/test_wb_ordinal_heads.py",
+      "?? tests/test_workspace_check.py",
+      "?? trip/"
+    ],
+    "jobs": [],
+    "hashes": [
+      {
+        "path": "AGENTS.md",
+        "sha256": "73b86e5310d6a45d5206efd3b55da47c48748ee7b077e6fcad6be276f1716a3a"
+      },
+      {
+        "path": "CLAUDE.md",
+        "sha256": "0cda5c3385ea3368d0c24a6602e4b1220adc864a205e231f10042b655d031749"
+      },
+      {
+        "path": "docs/status.md",
+        "sha256": "b380285a72bee94da61cdb5abfaba7035f75553cc7e0dc59c552491ad91124df"
+      },
+      {
+        "path": "docs/log.md",
+        "sha256": "6e44fc3105a8d865178ff03eb8e8b86a2b8a28eb22f6c1286d00145113c971ee"
+      },
+      {
+        "path": "docs/workflow.md",
+        "sha256": "a577942675e16a732339e586c14796104dda704693568439ae28670cc7fb7b23"
+      }
+    ]
+  },
+  "before_document_writes": {
+    "at": "2026-10-11T21:18:36.1373422+09:00",
+    "hashes": [
+      {
+        "path": "AGENTS.md",
+        "sha256": "73b86e5310d6a45d5206efd3b55da47c48748ee7b077e6fcad6be276f1716a3a",
+        "post_manifest_sha256": null,
+        "match": null
+      },
+      {
+        "path": "CLAUDE.md",
+        "sha256": "0cda5c3385ea3368d0c24a6602e4b1220adc864a205e231f10042b655d031749",
+        "post_manifest_sha256": null,
+        "match": null
+      },
+      {
+        "path": "docs/status.md",
+        "sha256": "b380285a72bee94da61cdb5abfaba7035f75553cc7e0dc59c552491ad91124df",
+        "post_manifest_sha256": null,
+        "match": null
+      },
+      {
+        "path": "docs/log.md",
+        "sha256": "6e44fc3105a8d865178ff03eb8e8b86a2b8a28eb22f6c1286d00145113c971ee",
+        "post_manifest_sha256": null,
+        "match": null
+      },
+      {
+        "path": "docs/workflow.md",
+        "sha256": "a577942675e16a732339e586c14796104dda704693568439ae28670cc7fb7b23",
+        "post_manifest_sha256": null,
+        "match": null
+      },
+      {
+        "path": "docs/tree.md",
+        "sha256": "eaa884a4194db103335136495205fe5b51297c17db15e9eac62946ced286cc44",
+        "post_manifest_sha256": null,
+        "match": null
+      },
+      {
+        "path": "src/models/shared_trunk.py",
+        "sha256": "df648763c8e0ba5532ebf9e437af95cd10d8527112c1338b8b5db9ad6a212e1f",
+        "post_manifest_sha256": null,
+        "match": null
+      },
+      {
+        "path": "src/models/link_sharp.py",
+        "sha256": "4a7921a00d7758e52a63a3ca7cd5ebf2285cef445b57fd89f15580d6fc108524",
+        "post_manifest_sha256": null,
+        "match": null
+      },
+      {
+        "path": "src/models/hh_cap.py",
+        "sha256": "9aad6be04e14ae97dc7aaba5499747c35b255b098680c66eaa8f8af58c940f70",
+        "post_manifest_sha256": null,
+        "match": null
+      },
+      {
+        "path": "src/models/supervised_retrieval.py",
+        "sha256": "2940338c5378de03303befb74e3834fbad631c0eb18f4ecb55d2cc39a471f879",
+        "post_manifest_sha256": null,
+        "match": null
+      },
+      {
+        "path": "src/models/tied_content_heads.py",
+        "sha256": "f9449d41d30041f6e9714c7a25777965ec4d25cfa2563b018fb08c94dde20833",
+        "post_manifest_sha256": null,
+        "match": null
+      },
+      {
+        "path": "src/models/logit_blend.py",
+        "sha256": "c25e91e648d5eb8a11afca1c8b02accad1a585540b6ed7d4ca363730a535705f",
+        "post_manifest_sha256": null,
+        "match": null
+      },
+      {
+        "path": "src/models/round_metric_retrieval.py",
+        "sha256": "5595bebdcdc697fc9e1eba149e10735cac4ae434b20b0ce3e93c968e8b35106b",
+        "post_manifest_sha256": null,
+        "match": null
+      },
+      {
+        "path": "docs/experiments/E012-shared-trunk.md",
+        "sha256": "0c40ac6802f683f5523b8639080f4b0df0fcbe4150e7b40ad8eb2a8f918e6b8a",
+        "post_manifest_sha256": null,
+        "match": null
+      },
+      {
+        "path": "docs/experiments/E061-tied-content-heads.md",
+        "sha256": "a052fc9939b0e2e8a15841cfaa3645fa5c14661766cac829ce1a7ffb3a063dff",
+        "post_manifest_sha256": null,
+        "match": null
+      },
+      {
+        "path": "docs/experiments/E063-round-conditioned-metric.md",
+        "sha256": "c2e32e41f725d4d44515d0bdb84a182394de4d0c7fe3c8773c7888ce280a16b9",
+        "post_manifest_sha256": null,
+        "match": null
+      },
+      {
+        "path": "docs/analysis/A033-dev-handoff-and-role-repair.md",
+        "sha256": "a48aefa0ca0b5151616b51c6489d607f300b82fbe543b663ff9c1b63693402c8",
+        "post_manifest_sha256": null,
+        "match": null
+      },
+      {
+        "path": "docs/analysis/A037-winning-priority-review.md",
+        "sha256": "87e77d8279f68e52751653f3b6098ec1976e4b53a75faf7206043ec6cf4bf66d",
+        "post_manifest_sha256": null,
+        "match": null
+      },
+      {
+        "path": "docs/analysis/A042-post-e062-priority.md",
+        "sha256": "9d478646da798409b8999988584ab5d7df827e1a5f8fcb30f3cee6e8c5c311bb",
+        "post_manifest_sha256": null,
+        "match": null
+      },
+      {
+        "path": "submissions/SCORES.md",
+        "sha256": "94d36f5af0254dec1d92e1aeb7d443c0517282817881f4e244af41fcd0735469",
+        "post_manifest_sha256": null,
+        "match": null
+      },
+      {
+        "path": "submissions/2026-10-09-E063/SCORES.md",
+        "sha256": "c66bfce12940d8086511a0479c61ef7e14c7103805e977c205991f0b7c4216e7",
+        "post_manifest_sha256": null,
+        "match": null
+      },
+      {
+        "path": "submissions/hosted-scores/2026-09-27.json",
+        "sha256": "dfe719bec68faf60c7dfec86c6034ba35fe1a6ba7a9437b88813dbc1ea567ce8",
+        "post_manifest_sha256": null,
+        "match": null
+      },
+      {
+        "path": "docs/analysis/E063-outputs/s2/post-result/post-result-handoff.ko.md",
+        "sha256": "bfb041674bcf500789a6b67aa4c9853bd4dc26b90f7f21b5413e8eb97029f232",
+        "post_manifest_sha256": "bfb041674bcf500789a6b67aa4c9853bd4dc26b90f7f21b5413e8eb97029f232",
+        "match": true
+      },
+      {
+        "path": "docs/analysis/E063-outputs/s2/post-result/user-message.txt",
+        "sha256": "edb78c96c41419fa8d8b1f8159874055afea1e3ddd740a46a3b8621a11b43e14",
+        "post_manifest_sha256": "edb78c96c41419fa8d8b1f8159874055afea1e3ddd740a46a3b8621a11b43e14",
+        "match": true
+      },
+      {
+        "path": "docs/analysis/E063-outputs/s2/post-result/user-supplied-api.json",
+        "sha256": "0532bb9b512ac9c01aa7371b02e88ef9be75b1670d1d4870bb0664b0c9843ab3",
+        "post_manifest_sha256": "0532bb9b512ac9c01aa7371b02e88ef9be75b1670d1d4870bb0664b0c9843ab3",
+        "match": true
+      },
+      {
+        "path": "docs/analysis/E063-outputs/s2/post-result/normalization.json",
+        "sha256": "d43c29f22e419e71b37e4bc6c72d98ec2e86bb90eb7c904e970803588145777f",
+        "post_manifest_sha256": "d43c29f22e419e71b37e4bc6c72d98ec2e86bb90eb7c904e970803588145777f",
+        "match": true
+      },
+      {
+        "path": "docs/analysis/E063-outputs/s2/post-result/result.ko.md",
+        "sha256": "8025ec5ddab33bae3675f72616f5c932e18d15f77f6ac3f3fb0c53b98d4369fb",
+        "post_manifest_sha256": "8025ec5ddab33bae3675f72616f5c932e18d15f77f6ac3f3fb0c53b98d4369fb",
+        "match": true
+      },
+      {
+        "path": "docs/analysis/E063-outputs/s2/post-result/comparison.json",
+        "sha256": "19c9ffedc1386e4732206fd033cdd5b19fa5cdd339dcccd93dabff0a5aa061f5",
+        "post_manifest_sha256": "19c9ffedc1386e4732206fd033cdd5b19fa5cdd339dcccd93dabff0a5aa061f5",
+        "match": true
+      },
+      {
+        "path": "docs/analysis/E063-outputs/s2/post-result/verification.json",
+        "sha256": "fc5f7868734dbff5ff817e8a8fc486b363896264c62ad6813e22fe4c5f8bbdf2",
+        "post_manifest_sha256": "fc5f7868734dbff5ff817e8a8fc486b363896264c62ad6813e22fe4c5f8bbdf2",
+        "match": true
+      },
+      {
+        "path": "docs/analysis/E063-outputs/s2/post-result/document-manifest.json",
+        "sha256": "b1438c86aba739729a37bb0df30f92a9daff655f3bae02bdffff7cffafba581a",
+        "post_manifest_sha256": null,
+        "match": null
+      },
+      {
+        "path": "docs/analysis/E063-outputs/s2/post-result/read-receipt.md",
+        "sha256": "1df5b10520ac89f5bed0f2963e213f244341bfb5a02d8384829f1e988771a744",
+        "post_manifest_sha256": "1df5b10520ac89f5bed0f2963e213f244341bfb5a02d8384829f1e988771a744",
+        "match": true
+      },
+      {
+        "path": "docs/analysis/E063-outputs/s2/post-result/exposure-ledger.md",
+        "sha256": "17a65538c71f04ca30065dbca2738dfcbc3ec9fbc5ac0158342c7b41332c0fdd",
+        "post_manifest_sha256": "17a65538c71f04ca30065dbca2738dfcbc3ec9fbc5ac0158342c7b41332c0fdd",
+        "match": true
+      }
+    ],
+    "head": "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+    "dirty": [
+      " M .claude/skills/paper-session/SKILL.md",
+      " M .gitignore",
+      " M CLAUDE.md",
+      " M docs/domain-study-guide.ko.md",
+      " M docs/index.md",
+      " M docs/log.md",
+      " M docs/session-prompts.ko.md",
+      " M docs/status.md",
+      " M docs/tree.md",
+      " M docs/workflow.md",
+      " M submissions/SCORES.md",
+      "?? .agents/",
+      "?? AGENTS.md",
+      "?? README.md",
+      "?? docs/analysis/A020-outputs/",
+      "?? docs/analysis/A020-post-e058-design-review.md",
+      "?? docs/analysis/A021-outputs/",
+      "?? docs/analysis/A021-selector-comparison-contract.md",
+      "?? docs/analysis/A022-outputs/",
+      "?? docs/analysis/A022-remaining-role-audit.md",
+      "?? docs/analysis/A023-candidate-boundary-contract.md",
+      "?? docs/analysis/A023-cost-accounting.md",
+      "?? docs/analysis/A023-outputs/",
+      "?? docs/analysis/A024-channel-precision-review.md",
+      "?? docs/analysis/A024-outputs/",
+      "?? docs/analysis/A025-submission-oriented-review.md",
+      "?? docs/analysis/A026-outputs/",
+      "?? docs/analysis/A026-post-e060-strategy-review.md",
+      "?? docs/analysis/A027-outputs/",
+      "?? docs/analysis/A027-workflow-role-revision.md",
+      "?? docs/analysis/A028-outputs/",
+      "?? docs/analysis/A028-workflow-entry-audit.md",
+      "?? docs/analysis/A029-codex-migration-audit.md",
+      "?? docs/analysis/A029-outputs/",
+      "?? docs/analysis/A030-outputs/",
+      "?? docs/analysis/A030-vaf-channel-metadata-review.md",
+      "?? docs/analysis/A031-outputs/",
+      "?? docs/analysis/A031-post-a030-handoff-review.md",
+      "?? docs/analysis/A032-document-acquisition-and-readiness.md",
+      "?? docs/analysis/A032-outputs/",
+      "?? docs/analysis/A033-dev-handoff-and-role-repair.md",
+      "?? docs/analysis/A033-outputs/",
+      "?? docs/analysis/A034-e061-s0-review.md",
+      "?? docs/analysis/A034-outputs/",
+      "?? docs/analysis/A035-e061-dev-submission-review.md",
+      "?? docs/analysis/A035-outputs/",
+      "?? docs/analysis/A036-e061-post-result-review.md",
+      "?? docs/analysis/A036-outputs/",
+      "?? docs/analysis/A037-outputs/",
+      "?? docs/analysis/A037-winning-priority-review.md",
+      "?? docs/analysis/A038-outputs/",
+      "?? docs/analysis/A038-vaf-local-document-intake.md",
+      "?? docs/analysis/A039-outputs/",
+      "?? docs/analysis/A040-outputs/",
+      "?? docs/analysis/A041-outputs/",
+      "?? docs/analysis/A041-wb-ordinal-head-review.md",
+      "?? docs/analysis/A042-outputs/",
+      "?? docs/analysis/A042-post-e062-priority.md",
+      "?? docs/analysis/E059-outputs/",
+      "?? docs/analysis/E060-outputs/",
+      "?? docs/analysis/E061-outputs/",
+      "?? docs/analysis/E062-outputs/",
+      "?? docs/analysis/E063-outputs/",
+      "?? docs/codex-setup.ko.md",
+      "?? docs/experiments/E059-leaf-donor-interactions.md",
+      "?? docs/experiments/E060-content-target-retrieval.md",
+      "?? docs/experiments/E061-tied-content-heads.md",
+      "?? docs/experiments/E062-wb-ordinal-heads.md",
+      "?? docs/experiments/E063-round-conditioned-metric.md",
+      "?? docs/plans/README.md",
+      "?? requirements-models.txt",
+      "?? scripts/assemble_e060.py",
+      "?? scripts/assemble_e061.py",
+      "?? scripts/assemble_e062.py",
+      "?? scripts/assemble_e063.py",
+      "?? scripts/check_a021_selector_contract.py",
+      "?? scripts/check_a023_candidate_boundary.py",
+      "?? scripts/check_a023_resources.py",
+      "?? scripts/check_e060.py",
+      "?? scripts/check_e061_release.py",
+      "?? scripts/check_e061_tied_heads.py",
+      "?? scripts/check_e062_release.py",
+      "?? scripts/check_e062_wb_ordinal.py",
+      "?? scripts/check_e063_release.py",
+      "?? scripts/check_e063_round_metric.py",
+      "?? scripts/check_workspace.py",
+      "?? scripts/screen_e059.py",
+      "?? src/models/content_target_retrieval.py",
+      "?? src/models/round_metric_retrieval.py",
+      "?? src/models/tied_content_heads.py",
+      "?? src/models/wb_ordinal_heads.py",
+      "?? submissions/2026-09-27-E060.zip",
+      "?? submissions/2026-09-27-E060/NOTICE.txt",
+      "?? submissions/2026-09-27-E060/main.py",
+      "?? submissions/2026-09-27-E060/verification.json",
+      "?? submissions/2026-09-28-E061.zip",
+      "?? submissions/2026-09-28-E061/",
+      "?? submissions/2026-10-08-E062.zip",
+      "?? submissions/2026-10-08-E062/",
+      "?? submissions/2026-10-09-E063.zip",
+      "?? submissions/2026-10-09-E063/",
+      "?? tests/test_a021_selector_contract.py",
+      "?? tests/test_a023_candidate_boundary.py",
+      "?? tests/test_content_target_retrieval.py",
+      "?? tests/test_e059_interactions.py",
+      "?? tests/test_e060_assembly.py",
+      "?? tests/test_e061_assembly.py",
+      "?? tests/test_e062_assembly.py",
+      "?? tests/test_e063_assembly.py",
+      "?? tests/test_round_metric_retrieval.py",
+      "?? tests/test_tied_content_heads.py",
+      "?? tests/test_wb_ordinal_heads.py",
+      "?? tests/test_workspace_check.py",
+      "?? trip/"
+    ],
+    "jobs": []
+  },
+  "actual_read_evidence": [
+    {
+      "chunk": "381eda",
+      "scope": "AGENTS.md and CLAUDE.md"
+    },
+    {
+      "chunk": "2d7df2",
+      "scope": "current status opening115 lines and newest three complete log entries"
+    },
+    {
+      "chunk": "0324ab",
+      "scope": "workflow full and E063 S2 post-result handoff"
+    },
+    {
+      "chunk": "1b7365",
+      "scope": "E063 result/comparison/normalization and A042 priority/handoff; combined output partial, not all history read"
+    },
+    {
+      "chunk": "070462",
+      "scope": "E029/E039/E040/E046 and A037"
+    },
+    {
+      "chunk": "f2cb23",
+      "scope": "shared_trunk first205 lines; following malformed Windows rg glob did not search A documents"
+    },
+    {
+      "chunk": "0eb870",
+      "scope": "E061 registration/source and E056/E057 partial; output truncated, no full-read claim"
+    },
+    {
+      "chunk": "4fc963",
+      "scope": "E063 post-result verification keys, manifest opening and supplied API JSON"
+    },
+    {
+      "chunk": "c8b54d",
+      "scope": "source call-site anchors, A033 opening and logit_blend opening; A-doc wildcard search failed"
+    },
+    {
+      "chunk": "b900c2",
+      "scope": "post-result verification selected fields; A043/A044 filename search no matches"
+    },
+    {
+      "chunk": "d2c1d5",
+      "scope": "corrected directory+glob prior-mechanism search and E012 full"
+    },
+    {
+      "chunk": "0fe6c7",
+      "scope": "post-result exposure/read-receipt, current shared document openings; A043/A044 filename search no matches"
+    },
+    {
+      "chunk": "0c2ed7",
+      "scope": "shared_trunk full, E061 first100, corrected A043/gradient search"
+    },
+    {
+      "tool": "functions.exec",
+      "scope": "workflow reread after context compaction; named 32 document/source SHA256 observations at before_document_writes.at"
+    }
+  ],
+  "historical_receipt": "S2 read-receipt reviewed as session-reported actions with cited chunks; does not authenticate other chats",
+  "number_collision_check": "A043/A044 filenames and A043 content searches returned no prior reservation before creation; rg exit1 here means no match",
+  "minor_read_errors": "Two literal Windows wildcard paths were invalid. Corrected with directory plus -g searches; no document/source mutation or scientific execution.",
+  "allowed": "document/source reads and hashes, S0 judgment, new A043 records/handoff and additive status/log",
+  "forbidden": "raw responses/keys/Parquet/NPZ/cache/ZIP access or rehash, model import or fit/predict/score/tests, platform/network/remote, subagents, commit/push,S3/TEST",
+  "source_read_only": true,
+  "prior_historical_data_files_not_rehashed": true,
+  "new_response_exposure": 0
+}

@@ -1,0 +1,49 @@
+REVIEW DRAFT - NOT FINAL TEST SELECTION
+
+ 4. Reproducibility, disclosure and pending delivery decisions
+ This method describes unchanged submissions/2026-09-25-E041/main.py. The companion document-pairing.json
+ records its full SHA256 and links this draft's Markdown/PDF to the inherited preserved ZIP identity. ZIP bytes were
+ not opened or rehashed for this document task. The package contains main.py and the complete starter-kit MIT
+ notice, according to retained certificates. No requirements.txt, models.txt, fitted artifact, external dataset, pretrained
+ weight or network call is bundled. Runtime imports use NumPy, pandas, PyTorch and scikit-learn, plus SciPy and
+ threadpoolctl for E041. Exact private hosted versions and native GPU behavior remain unverified. [6,7]
+ The retained public rules and user-supplied organizer clarification permit visible-row fitting, internal selection and
+  refit within the same execution clock. The saved public Final contract is 3,600 seconds shared across imports and all
+ three instruments, with eight CPUs, one H100 and 16 GB RAM. Local CPU measurements do not certify the private
+ image, hidden-data activation or execution time. This review session performed no model import, fitting, scoring,
+ raw/data/cache access or new ZIP work.
+ External work used during development. Recoded, profile-constrained UCI Adult observations (Becker and
+ Kohavi, 1996; CC BY 4.0) and Census 2023 SIPP public-use observations supported separate proxy studies. Prior
+ Labs TabPFN V2 weights were used in separate experiments. A040 used TabICLv2 for separate fake-data technical
+ work. VAF/HOST document and approved-header intake did not resolve empirical linkage/asked-state HOLD. None
+ of those rows, weights, outputs or proxy-fitted artifacts enters E041 or E025; the unchanged predictors predate later
+ SIPP/TabICL/VAF work. Public survey descriptions informed hypotheses, not fitted response priors. No access
+ approval is treated as redistribution permission. [3-6]
+ Development exposure and failures. Internal split selection and repeated DEV feedback influenced the retained
+ pipeline; not every development choice was prospectively fixed. E032-E034 aggregate component probes describe
+ E025 only, not an E041 loss decomposition. E032's initial reading used a second account, later retired and recorded
+ as a likely Terms violation; no organizer adjudication, waiver or independent replication is asserted. A012 scored
+ before some raw saves, and its supplementary provenance followed fitting. A018 retains an aborted concurrent run
+ and post-run guard repairs. The new E025 source outputs were frozen before dedicated truth evaluation; its stock
+  official scorer retained the original truth-handling sequence and gave only masked frames to the predictor. Historical
+  failures are not erased. [6,7]
+ Rights and delivery remain open. The starter-kit MIT notice stays intact; third-party runtime software retains its
+ own licenses. Prior Labs License 1.1 includes additional attribution conditions and  is not team MIT. Actual
+ team-code copyright holders and a scoped grant remain owner decisions. The earlier MIT proposal is not effective;
+  this draft grants no license or whole-repository publication permission.
+ The retained October public snapshot lists DEV through 13 November and Final 14-18 November 2026, as dates
+ only. Current platform timestamps/timezone and  latest Terms are unconfirmed. Website winner-only method
+ wording differs from September Terms requiring a method for every TEST entry; this task does not resolve that
+  conflict. Final model, source-license scope, current obligations, account/slot and upload remain separate decisions.
+ The old November 14 00:00 UTC closing claim is not reused. [2,6]
+ References and evidence. [1] Public kit, pinned f980ef5. [2] Official site and Codabench, retained snapshots only.
+ [3] Adult, UCI. [4] Census 2023 SIPP. [5] TabPFN weight license. [6] Repository A018 and A044 s3-prep records:
+ prior methods, rules, license inventory and limitations. [7] A044 s3-e025-provenance closeout/comparison and S0
+ acceptance, 23 October 2026. Web links are cited from retained records, not freshly fetched. The companion
+ evidence-map.md locates exact documentary sources.
+
+
+
+
+
+HSCC 2026 | E041 | REVIEW DRAFT | 23 October 2026                                                                4 / 4

@@ -1,0 +1,28 @@
+{
+  "scope": "LOCAL_PROTOCOL_FIXTURE",
+  "outcome": "NOT_STARTED",
+  "app_name": "a040-local-cycle3-create-stall",
+  "create_intent": true,
+  "build_intent": true,
+  "sandbox_intent": true,
+  "app_id": "ap-bbbbbbbbbbbbbbbbbbbbbb",
+  "sandbox_id": null,
+  "image_id": "im-dddddddddddddddddddddd",
+  "actual_remote_facts": "UNVERIFIED",
+  "workspace": "joon56",
+  "base": {
+    "status": 1,
+    "result_sha256": "05bda966fe2fe8e6a11e34e23fb41926197bd16c84277350bad26928e43e1746"
+  },
+  "base_metadata_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "payload": {
+    "files": 1,
+    "bytes": 22,
+    "verified_at_endpoint": true
+  },
+  "sandbox_name": "a040-local-cycle3-create-stall-gpu",
+  "sandbox_resource_possible": true,
+  "sandbox_reservation_usd": 2.965933453125,
+  "gpu_actual_seconds": null,
+  "sandbox_create_rpc_intent": true
+}

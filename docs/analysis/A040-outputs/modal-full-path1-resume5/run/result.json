@@ -1,0 +1,28 @@
+{
+  "scope": "LIVE",
+  "outcome": "STOP_FIRST_ERROR",
+  "app_name": "a040-resume5-20261005-094405",
+  "create_intent": true,
+  "build_intent": true,
+  "sandbox_intent": true,
+  "app_id": "ap-XiMVzlJgrNrCiFpIN1kB4W",
+  "sandbox_id": null,
+  "image_id": "im-XZ95GDfkfa6PwWUeFyciYM",
+  "actual_remote_facts": "PENDING",
+  "workspace": "joon56",
+  "base": {
+    "status": 1,
+    "result_sha256": "942058f1cdfeb21505e29639b06bcda9238c372c9673c1f1ded1d0058284b612"
+  },
+  "base_metadata_sha256": "8ca4c36acfeaae00204c83c3cff694c3f40562a64c01bec4b9764bbc981f910e",
+  "payload": {
+    "files": 124,
+    "bytes": 145605744,
+    "verified_at_endpoint": true
+  },
+  "error": "AssertionError()",
+  "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\local-preparation-repair2\\live_worker.py\", line 187, in run\n    await execute(context)\n  File \"C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\local-preparation-repair2\\sandbox_stage.py\", line 36, in execute\n    state[\"sandbox_id\"] = await context.op(endpoint.sandbox_create(plan.app_name + \"-gpu\"), \"sandbox_create\", 120)\n                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\local-preparation-repair2\\live_worker.py\", line 67, in op\n    return await bounded(awaitable, timeout, self.plan.cancel_grace)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\local-preparation-repair2\\controller_core.py\", line 9, in bounded\n    return task.result()\n           ~~~~~~~~~~~^^\n  File \"C:\\Users\\USER\\Desktop\\SimulacraBench\\docs\\analysis\\A040-outputs\\local-preparation-repair2\\sdk_endpoint.py\", line 57, in sandbox_create\n    self.sandbox = await self.sandbox_factory(\"sleep\", \"2400\", app=self.app,\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    ...<5 lines>...\n            \"TRANSFORMERS_OFFLINE\": \"1\"}, client=self.client)\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\USER\\Desktop\\SimulacraBench\\tmp\\a040-modal-full-path1\\sdk-venv\\Lib\\site-packages\\modal\\sandbox.py\", line 766, in create\n    return await _Sandbox._create(\n           ^^^^^^^^^^^^^^^^^^^^^^^\n    ...<36 lines>...\n    )\n    ^\n  File \"C:\\Users\\USER\\Desktop\\SimulacraBench\\tmp\\a040-modal-full-path1\\sdk-venv\\Lib\\site-packages\\modal\\sandbox.py\", line 947, in _create\n    await resolver.load(obj, load_context)\n  File \"C:\\Users\\USER\\Desktop\\SimulacraBench\\tmp\\a040-modal-full-path1\\sdk-venv\\Lib\\site-packages\\modal\\sandbox.py\", line 602, in _load\n    self._hydrate(sandbox_id, load_context.client, create_resp.metadata)\n    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\USER\\Desktop\\SimulacraBench\\tmp\\a040-modal-full-path1\\sdk-venv\\Lib\\site-packages\\modal\\_object.py\", line 180, in _hydrate\n    self._hydrate_metadata(metadata)\n    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^\n  File \"C:\\Users\\USER\\Desktop\\SimulacraBench\\tmp\\a040-modal-full-path1\\sdk-venv\\Lib\\site-packages\\modal\\sandbox.py\", line 1227, in _hydrate_metadata\n    self._stdout = StreamReader(\n                   ~~~~~~~~~~~~^\n        _StreamReaderThroughServerParams(\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    ...<4 lines>...\n        by_line=True,\n        ^^^^^^^^^^^^^\n    )\n    ^\n  File \"C:\\Users\\USER\\Desktop\\SimulacraBench\\tmp\\a040-modal-full-path1\\sdk-venv\\Lib\\site-packages\\synchronicity\\synchronizer.py\", line 872, in my_init\n    instance = cls(*args, **kwargs)\n  File \"C:\\Users\\USER\\Desktop\\SimulacraBench\\tmp\\a040-modal-full-path1\\sdk-venv\\Lib\\site-packages\\modal\\io_streams.py\", line 573, in __init__\n    assert asyncio.get_running_loop() == synchronizer._get_loop(start=False)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+  "termination": "UNCONFIRMED",
+  "cleanup_error": "Cleanup stage errors retained in termination receipt",
+  "elapsed_seconds": 166.16904200000135
+}

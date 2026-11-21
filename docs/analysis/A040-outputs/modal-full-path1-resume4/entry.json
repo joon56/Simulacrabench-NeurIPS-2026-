@@ -1,0 +1,36 @@
+{
+    "cash_authority_usd":  0,
+    "read_evidence":  [
+                          "af081b current user attachment AGENTS CLAUDE routing; unchanged remainder retained from preceding read",
+                          "9d2d48 current status latest3 log workflow routing S0 decision; unchanged remainder retained",
+                          "0a332f fixed contract/diffs/launcher/SDK endpoint/prior termination/ledger",
+                          "4dcc3a fixed contract worker payload pins verification",
+                          "fe1053 fixed boundary/watchdog/protocol/binding/source manifest"
+                      ],
+    "new_execution_modules":  0,
+    "head":  "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+    "read_receipt_utc":  "2026-10-04T14:49:20.4032983+00:00",
+    "source_modules_verified":  12,
+    "started_utc":  "2026-10-04T14:46:20Z",
+    "subagents_authorized":  false,
+    "prior_active_seconds":  8319.0316208,
+    "authority":  "Current user attachment d4ccd1fc explicitly directs one new bounded remote attempt",
+    "named_jobs":  [
+
+                   ],
+    "source_edits_authorized":  false,
+    "planning_prepare_usd":  1,
+    "old_payload_arrays_opened":  0,
+    "fixed_source_directory":  "docs/analysis/A040-outputs/modal-output-contract-repair1",
+    "gpu_latest_end_utc":  "2026-10-04T16:26:20Z",
+    "planning_total_usd":  5,
+    "workflow_revision":  "2026-09-27-r4",
+    "stop":  "First actual error; cleanup and closeout only",
+    "collision":  false,
+    "prior_scientific_processes":  4,
+    "workflow_sha256":  "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642",
+    "preparation_deadline_utc":  "2026-10-04T15:46:20Z",
+    "prior_scientific_seconds":  1077.3504532,
+    "role":  "S1 fixed-source remote technical measurement",
+    "whole_deadline_utc":  "2026-10-04T16:46:20Z"
+}

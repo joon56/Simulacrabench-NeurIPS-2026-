@@ -1,0 +1,8 @@
+﻿{
+    "prior_allowlist_files":  112,
+    "prior_allowlist_bytes":  145542095,
+    "current_payload_hashes_checked":  0,
+    "payload_transferred":  0,
+    "reason":  "STOP before create/build/transfer; metadata only",
+    "frozen_source_manifest_sha256":  "b5f7effaa0a9ad427c403dfb2d524b8747c469968bb2cbb86419867911c8cacc"
+}

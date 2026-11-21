@@ -1,0 +1,28 @@
+{
+    "verdict":  "R7_OPERATING_DOCUMENTS_UPDATED",
+    "workflow_sha256":  "cee188bd2e99623aea25204632229a887e29e8bb0e235d85eb513d139453cc63",
+    "read_only_review":  "workflow_review reviewed r7; three wording issues corrected; wb_batch_readiness static information reused",
+    "known_document_repairs":  "First combined apply_patch context mismatch changed no files; smaller patches applied. Initial ordered-hashtable summary printed null properties; saved entry verified correct.",
+    "hashes_before_child":  {
+                                "AGENTS.md":  "2f18a35660fa78b74bce219949682cda1ddef4b051c78d253ecad38913f97784",
+                                "CLAUDE.md":  "d6dd9c0be97b48b5ec034cc04cef8ea850960169a98f89938a4ec9d7c4d238b1",
+                                "docs/workflow.md":  "cee188bd2e99623aea25204632229a887e29e8bb0e235d85eb513d139453cc63",
+                                "docs/session-prompts.ko.md":  "36f5c404983a9039b343014956b7ba33c3d3cfaf5705193942203288e508eade",
+                                "docs/analysis/A045-outputs/entry.json":  "584c03819b90077353b695cb6a76fe21cfc40015ade57024a1d483cabcf19baf",
+                                "docs/analysis/A045-outputs/decision.md":  "6b7375ca3744d03f75a958d50f4abb70e3097be750ec67bf8ceaf7ca036ba9e0",
+                                "docs/analysis/A045-outputs/wb-contract-task.ko.md":  "dfd8a2220c3e031f2653d786df3ec9d0895e692673dec475681d080f2cf53308",
+                                "docs/status.md":  "cd51457ff1f75da025e6490e98bcff80730bc13daee1d8ac5b59ae64233aabc7",
+                                "docs/log.md":  "4a56abeace05192c4be2f21b48136ad5a28d56a0d4b3117c76afb704520ca47e"
+                            },
+    "historical_selected_docs_preserved":  true,
+    "scope":  "Operating docs+A045+status/log only",
+    "models_tests_zip_data_remote_commit":  0,
+    "subagents_read_only_completed":  2,
+    "outgoing_owner":  "S0-A045 /root",
+    "exclusive_writer_released":  true,
+    "released_at":  "2026-10-26T22:06:04.2671102+09:00",
+    "owned_jobs":  [
+
+                   ],
+    "next":  "Only assigned contract child may accept writes. Root/reviewer read-only until child release."
+}

@@ -1,0 +1,184 @@
+{
+    "recorded_utc":  "2026-10-07T13:32:19.1534953+00:00",
+    "computational_children":  8,
+    "cumulative_worker_seconds":  1123.196595500003249,
+    "worker_budget_seconds":  1800,
+    "candidate_seconds":  357.52244299999984,
+    "candidate_budget_seconds":  900,
+    "pipeline_attempts":  9,
+    "neural_attempts":  27,
+    "target_role_checks":  36,
+    "metric_optimizer_calls":  16,
+    "metric_optimizer_success_count":  16,
+    "resources":  [
+                      {
+                          "mode":  "tests",
+                          "attempt":  1,
+                          "started_utc":  "2026-10-07T12:52:38.268196+00:00",
+                          "wall_seconds":  50.035517100001016,
+                          "prior_worker_seconds":  0,
+                          "cumulative_worker_seconds":  50.035517100001016,
+                          "exit_code":  1,
+                          "resource_stop":  "COMPLETE",
+                          "error":  null,
+                          "peak_owned_tree_bytes":  {
+                                                        "rss":  347947008,
+                                                        "commitment":  386572288
+                                                    },
+                          "sample_count":  463,
+                          "sample_interval_seconds":  0.1,
+                          "counter_semantics":  "Conservative sum of per-process peak RSS/private commitment, owned controller and descendants",
+                          "numerical_threads":  2,
+                          "gpu":  0,
+                          "status":  "FAIL"
+                      },
+                      {
+                          "mode":  "tests",
+                          "attempt":  2,
+                          "started_utc":  "2026-10-07T12:57:46.391902+00:00",
+                          "wall_seconds":  7.238965000000462,
+                          "prior_worker_seconds":  50.035517100001016,
+                          "cumulative_worker_seconds":  57.27448210000148,
+                          "exit_code":  0,
+                          "resource_stop":  "COMPLETE",
+                          "error":  null,
+                          "peak_owned_tree_bytes":  {
+                                                        "rss":  400203776,
+                                                        "commitment":  432517120
+                                                    },
+                          "sample_count":  66,
+                          "sample_interval_seconds":  0.1,
+                          "counter_semantics":  "Conservative sum of per-process peak RSS/private commitment, owned controller and descendants",
+                          "numerical_threads":  2,
+                          "gpu":  0,
+                          "status":  "PASS"
+                      },
+                      {
+                          "mode":  "tests",
+                          "attempt":  3,
+                          "started_utc":  "2026-10-07T13:04:31.298124+00:00",
+                          "wall_seconds":  4.335434099999475,
+                          "prior_worker_seconds":  57.27448210000148,
+                          "cumulative_worker_seconds":  61.60991620000095,
+                          "exit_code":  0,
+                          "resource_stop":  "COMPLETE",
+                          "error":  null,
+                          "peak_owned_tree_bytes":  {
+                                                        "rss":  352530432,
+                                                        "commitment":  360411136
+                                                    },
+                          "sample_count":  40,
+                          "sample_interval_seconds":  0.1,
+                          "counter_semantics":  "Conservative sum of per-process peak RSS/private commitment, owned controller and descendants",
+                          "numerical_threads":  2,
+                          "gpu":  0,
+                          "status":  "PASS"
+                      },
+                      {
+                          "mode":  "prepare",
+                          "attempt":  1,
+                          "started_utc":  "2026-10-07T13:09:54.707524+00:00",
+                          "wall_seconds":  14.584359100001166,
+                          "prior_worker_seconds":  61.60991620000095,
+                          "cumulative_worker_seconds":  76.19427530000212,
+                          "exit_code":  0,
+                          "resource_stop":  "COMPLETE",
+                          "error":  null,
+                          "peak_owned_tree_bytes":  {
+                                                        "rss":  655130624,
+                                                        "commitment":  710074368
+                                                    },
+                          "sample_count":  135,
+                          "sample_interval_seconds":  0.1,
+                          "counter_semantics":  "Conservative sum of per-process peak RSS/private commitment, owned controller and descendants",
+                          "numerical_threads":  2,
+                          "gpu":  0,
+                          "status":  "PASS"
+                      },
+                      {
+                          "mode":  "E025",
+                          "attempt":  1,
+                          "started_utc":  "2026-10-07T13:10:33.350802+00:00",
+                          "wall_seconds":  324.97659750000093,
+                          "prior_worker_seconds":  76.19427530000212,
+                          "cumulative_worker_seconds":  401.17087280000305,
+                          "exit_code":  0,
+                          "resource_stop":  "COMPLETE",
+                          "error":  null,
+                          "peak_owned_tree_bytes":  {
+                                                        "rss":  1353572352,
+                                                        "commitment":  1473900544
+                                                    },
+                          "sample_count":  2971,
+                          "sample_interval_seconds":  0.1,
+                          "counter_semantics":  "Conservative sum of per-process peak RSS/private commitment, owned controller and descendants",
+                          "numerical_threads":  2,
+                          "gpu":  0,
+                          "status":  "PASS"
+                      },
+                      {
+                          "mode":  "E041",
+                          "attempt":  1,
+                          "started_utc":  "2026-10-07T13:16:20.504838+00:00",
+                          "wall_seconds":  342.9659210000009,
+                          "prior_worker_seconds":  401.17087280000305,
+                          "cumulative_worker_seconds":  744.1367938000039,
+                          "exit_code":  0,
+                          "resource_stop":  "COMPLETE",
+                          "error":  null,
+                          "peak_owned_tree_bytes":  {
+                                                        "rss":  1397698560,
+                                                        "commitment":  1532755968
+                                                    },
+                          "sample_count":  3114,
+                          "sample_interval_seconds":  0.1,
+                          "counter_semantics":  "Conservative sum of per-process peak RSS/private commitment, owned controller and descendants",
+                          "numerical_threads":  2,
+                          "gpu":  0,
+                          "status":  "PASS"
+                      },
+                      {
+                          "mode":  "candidate",
+                          "attempt":  1,
+                          "started_utc":  "2026-10-07T13:22:18.897904+00:00",
+                          "wall_seconds":  357.52244299999984,
+                          "prior_worker_seconds":  744.1367938000039,
+                          "cumulative_worker_seconds":  1101.6592368000038,
+                          "exit_code":  0,
+                          "resource_stop":  "COMPLETE",
+                          "error":  null,
+                          "peak_owned_tree_bytes":  {
+                                                        "rss":  1404985344,
+                                                        "commitment":  1559068672
+                                                    },
+                          "sample_count":  3241,
+                          "sample_interval_seconds":  0.1,
+                          "counter_semantics":  "Conservative sum of per-process peak RSS/private commitment, owned controller and descendants",
+                          "numerical_threads":  2,
+                          "gpu":  0,
+                          "status":  "PASS"
+                      },
+                      {
+                          "mode":  "score",
+                          "attempt":  1,
+                          "started_utc":  "2026-10-07T13:28:35.186308+00:00",
+                          "wall_seconds":  21.53735869999946,
+                          "prior_worker_seconds":  1101.6592368000038,
+                          "cumulative_worker_seconds":  1123.1965955000032,
+                          "exit_code":  0,
+                          "resource_stop":  "COMPLETE",
+                          "error":  null,
+                          "peak_owned_tree_bytes":  {
+                                                        "rss":  791457792,
+                                                        "commitment":  855130112
+                                                    },
+                          "sample_count":  196,
+                          "sample_interval_seconds":  0.1,
+                          "counter_semantics":  "Conservative sum of per-process peak RSS/private commitment, owned controller and descendants",
+                          "numerical_threads":  2,
+                          "gpu":  0,
+                          "status":  "PASS"
+                      }
+                  ],
+    "accounting":  "Per-child wall summed once. Stage spans nested, not added. Documentation time belongs to gross session wall."
+}

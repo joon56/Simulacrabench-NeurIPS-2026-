@@ -1,0 +1,219 @@
+{
+    "date_kst":  "2026-10-03",
+    "role":  "S0",
+    "decision":  "LOCAL_ONLY_CONTROLLER_REPAIR_RECOMMENDED",
+    "head":  "a43f4379ec78dbc2de260463eef67bb1d567d7e1",
+    "workflow_revision":  "2026-09-27-r4",
+    "workflow_sha256":  "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642",
+    "read_evidence":  [
+                          "a2a211 ordered entry",
+                          "f95e65 HEAD/dirty/jobs",
+                          "e92d66 required records",
+                          "362fc7 source review",
+                          "a050b4 debugging/minimal-change guidance"
+                      ],
+    "scope":  "S0 source/document review; no implementation/execution",
+    "diagnosis":  {
+                      "encoding":  "Observed cp949 UnicodeEncodeError on U+2022",
+                      "cleanup":  "Unbounded awaits seen in source; exact runtime warning/hang cause unproven",
+                      "h100":  "NOT_RUN",
+                      "remote_termination":  "Saved S1 records only; not freshly queried"
+                  },
+    "s0_execution":  {
+                         "network_account_calls":  0,
+                         "remote_resources":  0,
+                         "tests":  0,
+                         "model":  0,
+                         "input_checkpoint_access_hash":  0,
+                         "subagents":  0,
+                         "zip_commit_push":  0
+                     },
+    "before_hashes":  [
+                          {
+                              "path":  "docs/status.md",
+                              "sha256":  "c1e0652521eb1efc0a6456e7904d4825a350b5bcf1d6d2561a7c4ee1e3c90bb7"
+                          },
+                          {
+                              "path":  "docs/log.md",
+                              "sha256":  "08ffc7cef53218bda03ad6352028df8affab79b0e6d3c8789a02f2354d50e10a"
+                          },
+                          {
+                              "path":  "docs/workflow.md",
+                              "sha256":  "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642"
+                          },
+                          {
+                              "path":  "docs/tree.md",
+                              "sha256":  "eaa884a4194db103335136495205fe5b51297c17db15e9eac62946ced286cc44"
+                          },
+                          {
+                              "path":  "docs/analysis/A040-outputs/modal-full-path1-resume2/closeout.md",
+                              "sha256":  "d82c63419668440f218beb3bd75daf92419d645ff06bce6049a650ecd7b5da41"
+                          },
+                          {
+                              "path":  "docs/analysis/A040-outputs/modal-full-path1-resume2/build-result.json",
+                              "sha256":  "a37da982e58b1f2103bfe4f296638861ca7e4fa72ef8c673d20833fa283b94fe"
+                          },
+                          {
+                              "path":  "docs/analysis/A040-outputs/modal-full-path1-resume2/cost-policy.md",
+                              "sha256":  "663c2219bb001c5e62a97fec860054820590272818e4a5a084256938ef5c1d12"
+                          },
+                          {
+                              "path":  "docs/analysis/A040-outputs/modal-full-path1-resume2/cost-ledger.json",
+                              "sha256":  "8fcb1580f941e08f3b329475a28dd6916b6d448eac353d2c9add268eda5cbf99"
+                          },
+                          {
+                              "path":  "docs/analysis/A040-outputs/modal-full-path1-resume2/app-terminal.json",
+                              "sha256":  "f2cea92d38afa26882c4773be21c4c5e1057b3961073f77bcfb96b3b0428f5eb"
+                          },
+                          {
+                              "path":  "docs/analysis/A040-outputs/modal-full-path1-resume2/termination-receipt.json",
+                              "sha256":  "de7b9a6f902a5fcc2f85a3f9b179c6d46fc7f271b6346f694dc3c02e4e974021"
+                          },
+                          {
+                              "path":  "docs/analysis/A040-outputs/modal-full-path1-resume2/verification.json",
+                              "sha256":  "fb9317f6ca49cd9120cdaa62a660d16f56b40c4b82a2163a37d6cbe0bd4b897c"
+                          },
+                          {
+                              "path":  "docs/analysis/A040-outputs/modal-full-path1-resume2/entry.json",
+                              "sha256":  "6e30bf05dd980a368065610085389dc9c71f1aa58c2a96ba5105c7a9afe2fa12"
+                          },
+                          {
+                              "path":  "docs/analysis/A040-outputs/modal-full-path1-resume2/build_once.py",
+                              "sha256":  "9ddccf2fd52c0f93d02d0b5299151bdcf234f911654f5c8342efbb485014b3b0"
+                          },
+                          {
+                              "path":  "docs/analysis/A040-outputs/modal-full-path1-resume2/inspect_termination.py",
+                              "sha256":  "0fe2acf4a50a2c9e3b2c953ec5041c84320923c969a4d1411ba5a41095f3a4a1"
+                          }
+                      ],
+    "prior_status_log_bytes_preserved":  true,
+    "final_checks":  "PASS_DOCUMENT_SOURCE_REVIEW_ONLY",
+    "preservation":  [
+                         {
+                             "path":  "docs/status.md",
+                             "after":  "cab890873659ecdf307d933d8051514f3489c89950c66de76d32d7a9ea05f8ef",
+                             "unchanged":  false,
+                             "authorized_edit":  true
+                         },
+                         {
+                             "path":  "docs/log.md",
+                             "after":  "f3788b6f04640ddb477d1873cf0e2e48f4ec4ce01e361a21c94bbaaee77e4348",
+                             "unchanged":  false,
+                             "authorized_edit":  true
+                         },
+                         {
+                             "path":  "docs/workflow.md",
+                             "after":  "a83c6f4102f50d0b8919f0f2010acfd19954901e8e2a08e7771ef87831741642",
+                             "unchanged":  true,
+                             "authorized_edit":  false
+                         },
+                         {
+                             "path":  "docs/tree.md",
+                             "after":  "eaa884a4194db103335136495205fe5b51297c17db15e9eac62946ced286cc44",
+                             "unchanged":  true,
+                             "authorized_edit":  false
+                         },
+                         {
+                             "path":  "docs/analysis/A040-outputs/modal-full-path1-resume2/closeout.md",
+                             "after":  "d82c63419668440f218beb3bd75daf92419d645ff06bce6049a650ecd7b5da41",
+                             "unchanged":  true,
+                             "authorized_edit":  false
+                         },
+                         {
+                             "path":  "docs/analysis/A040-outputs/modal-full-path1-resume2/build-result.json",
+                             "after":  "a37da982e58b1f2103bfe4f296638861ca7e4fa72ef8c673d20833fa283b94fe",
+                             "unchanged":  true,
+                             "authorized_edit":  false
+                         },
+                         {
+                             "path":  "docs/analysis/A040-outputs/modal-full-path1-resume2/cost-policy.md",
+                             "after":  "663c2219bb001c5e62a97fec860054820590272818e4a5a084256938ef5c1d12",
+                             "unchanged":  true,
+                             "authorized_edit":  false
+                         },
+                         {
+                             "path":  "docs/analysis/A040-outputs/modal-full-path1-resume2/cost-ledger.json",
+                             "after":  "8fcb1580f941e08f3b329475a28dd6916b6d448eac353d2c9add268eda5cbf99",
+                             "unchanged":  true,
+                             "authorized_edit":  false
+                         },
+                         {
+                             "path":  "docs/analysis/A040-outputs/modal-full-path1-resume2/app-terminal.json",
+                             "after":  "f2cea92d38afa26882c4773be21c4c5e1057b3961073f77bcfb96b3b0428f5eb",
+                             "unchanged":  true,
+                             "authorized_edit":  false
+                         },
+                         {
+                             "path":  "docs/analysis/A040-outputs/modal-full-path1-resume2/termination-receipt.json",
+                             "after":  "de7b9a6f902a5fcc2f85a3f9b179c6d46fc7f271b6346f694dc3c02e4e974021",
+                             "unchanged":  true,
+                             "authorized_edit":  false
+                         },
+                         {
+                             "path":  "docs/analysis/A040-outputs/modal-full-path1-resume2/verification.json",
+                             "after":  "fb9317f6ca49cd9120cdaa62a660d16f56b40c4b82a2163a37d6cbe0bd4b897c",
+                             "unchanged":  true,
+                             "authorized_edit":  false
+                         },
+                         {
+                             "path":  "docs/analysis/A040-outputs/modal-full-path1-resume2/entry.json",
+                             "after":  "6e30bf05dd980a368065610085389dc9c71f1aa58c2a96ba5105c7a9afe2fa12",
+                             "unchanged":  true,
+                             "authorized_edit":  false
+                         },
+                         {
+                             "path":  "docs/analysis/A040-outputs/modal-full-path1-resume2/build_once.py",
+                             "after":  "9ddccf2fd52c0f93d02d0b5299151bdcf234f911654f5c8342efbb485014b3b0",
+                             "unchanged":  true,
+                             "authorized_edit":  false
+                         },
+                         {
+                             "path":  "docs/analysis/A040-outputs/modal-full-path1-resume2/inspect_termination.py",
+                             "after":  "0fe2acf4a50a2c9e3b2c953ec5041c84320923c969a4d1411ba5a41095f3a4a1",
+                             "unchanged":  true,
+                             "authorized_edit":  false
+                         }
+                     ],
+    "selected_s1_manifest_matches":  [
+                                         {
+                                             "name":  "closeout.md",
+                                             "matches":  true
+                                         },
+                                         {
+                                             "name":  "build-result.json",
+                                             "matches":  true
+                                         },
+                                         {
+                                             "name":  "cost-policy.md",
+                                             "matches":  true
+                                         },
+                                         {
+                                             "name":  "cost-ledger.json",
+                                             "matches":  true
+                                         },
+                                         {
+                                             "name":  "app-terminal.json",
+                                             "matches":  true
+                                         },
+                                         {
+                                             "name":  "termination-receipt.json",
+                                             "matches":  true
+                                         },
+                                         {
+                                             "name":  "verification.json",
+                                             "matches":  true
+                                         },
+                                         {
+                                             "name":  "entry.json",
+                                             "matches":  true
+                                         },
+                                         {
+                                             "name":  "build_once.py",
+                                             "matches":  true
+                                         },
+                                         {
+                                             "name":  "inspect_termination.py",
+                                             "matches":  true
+                                         }
+                                     ]
+}

@@ -1,0 +1,172 @@
+{
+    "at":  "2026-10-23T16:33:03.6048902+09:00",
+    "input":  [
+                  {
+                      "path":  "docs/analysis/A012-outputs/E041-unicef-source.json",
+                      "expected":  "5b7ffed4d3df848d78ee0933b7384965499980d3c124542bd61e6e5556751d21",
+                      "actual":  "5b7ffed4d3df848d78ee0933b7384965499980d3c124542bd61e6e5556751d21",
+                      "match":  true
+                  },
+                  {
+                      "path":  "docs/analysis/A012-outputs/E041-unicef-official-predictions.json",
+                      "expected":  "d895e2c7bd86258a96ea775866a83a1f7ad5741ca480360b5bef893af4499fce",
+                      "actual":  "d895e2c7bd86258a96ea775866a83a1f7ad5741ca480360b5bef893af4499fce",
+                      "match":  true
+                  },
+                  {
+                      "path":  "external/starter-kit/_sandbox/unicef/respondents.parquet",
+                      "expected":  "8e7c659d277c5145c7a8a6d055ac59a7dd3c35699317741239b6b1969bce1488",
+                      "actual":  "8e7c659d277c5145c7a8a6d055ac59a7dd3c35699317741239b6b1969bce1488",
+                      "match":  true
+                  },
+                  {
+                      "path":  "docs/analysis/A012-outputs/E041-world_bank-source.json",
+                      "expected":  "137335794fa0e96bd19173796b3c7d275dd1fbfbbf1a130bd04331591170e3f8",
+                      "actual":  "137335794fa0e96bd19173796b3c7d275dd1fbfbbf1a130bd04331591170e3f8",
+                      "match":  true
+                  },
+                  {
+                      "path":  "docs/analysis/A012-outputs/E041-world_bank-official-predictions.json",
+                      "expected":  "8ff6d023bfe34ca87232a98fb38657f49e0889dd70b864ae2fa2b9477ce5e402",
+                      "actual":  "8ff6d023bfe34ca87232a98fb38657f49e0889dd70b864ae2fa2b9477ce5e402",
+                      "match":  true
+                  },
+                  {
+                      "path":  "external/starter-kit/_sandbox/world_bank/respondents.parquet",
+                      "expected":  "4592bed873410c5248edf1205e5cab41dd30494926e3b49f8da598e266758c8a",
+                      "actual":  "4592bed873410c5248edf1205e5cab41dd30494926e3b49f8da598e266758c8a",
+                      "match":  true
+                  },
+                  {
+                      "path":  "docs/analysis/A012-outputs/E041-unhcr-source.json",
+                      "expected":  "891c9315ff08391d0ad6a832dfd4a4ba0d8186028c1405898ba845ccc77d79ff",
+                      "actual":  "891c9315ff08391d0ad6a832dfd4a4ba0d8186028c1405898ba845ccc77d79ff",
+                      "match":  true
+                  },
+                  {
+                      "path":  "docs/analysis/A012-outputs/E041-unhcr-official-predictions.json",
+                      "expected":  "2c39c68bb163faaee19582b533b329c1f4f496add152ae12bc2206c8eb5217f0",
+                      "actual":  "2c39c68bb163faaee19582b533b329c1f4f496add152ae12bc2206c8eb5217f0",
+                      "match":  true
+                  },
+                  {
+                      "path":  "external/starter-kit/_sandbox/unhcr/respondents.parquet",
+                      "expected":  "5d00075706e0a7beafdc8a70acfe07cde1f489048741eb2f3ae1fababdb72774",
+                      "actual":  "5d00075706e0a7beafdc8a70acfe07cde1f489048741eb2f3ae1fababdb72774",
+                      "match":  true
+                  }
+              ],
+    "source":  [
+                   {
+                       "path":  "src/__init__.py",
+                       "historical":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                       "actual":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                       "match":  true
+                   },
+                   {
+                       "path":  "src/models/__init__.py",
+                       "historical":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                       "actual":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                       "match":  true
+                   },
+                   {
+                       "path":  "src/models/hh_cap.py",
+                       "historical":  "9aad6be04e14ae97dc7aaba5499747c35b255b098680c66eaa8f8af58c940f70",
+                       "actual":  "9aad6be04e14ae97dc7aaba5499747c35b255b098680c66eaa8f8af58c940f70",
+                       "match":  true
+                   },
+                   {
+                       "path":  "src/models/link_sharp.py",
+                       "historical":  "4a7921a00d7758e52a63a3ca7cd5ebf2285cef445b57fd89f15580d6fc108524",
+                       "actual":  "4a7921a00d7758e52a63a3ca7cd5ebf2285cef445b57fd89f15580d6fc108524",
+                       "match":  true
+                   },
+                   {
+                       "path":  "src/models/hh_sharp.py",
+                       "historical":  "31acb4639894411320062f196050425ee1c143a456c9e0dac40ba6dd376ad5e0",
+                       "actual":  "31acb4639894411320062f196050425ee1c143a456c9e0dac40ba6dd376ad5e0",
+                       "match":  true
+                   },
+                   {
+                       "path":  "src/models/hier_backoff.py",
+                       "historical":  "e01f2030c191b0b632b274662cbb46537669f3b73e21ab0d5f7f671d28654ccd",
+                       "actual":  "e01f2030c191b0b632b274662cbb46537669f3b73e21ab0d5f7f671d28654ccd",
+                       "match":  true
+                   },
+                   {
+                       "path":  "src/models/logit_blend.py",
+                       "historical":  "c25e91e648d5eb8a11afca1c8b02accad1a585540b6ed7d4ca363730a535705f",
+                       "actual":  "c25e91e648d5eb8a11afca1c8b02accad1a585540b6ed7d4ca363730a535705f",
+                       "match":  true
+                   },
+                   {
+                       "path":  "src/models/cond_agree.py",
+                       "historical":  "aecad17990cc106199f96648ad02716eee43cc60f995b25125473a0b0bd5e197",
+                       "actual":  "aecad17990cc106199f96648ad02716eee43cc60f995b25125473a0b0bd5e197",
+                       "match":  true
+                   },
+                   {
+                       "path":  "src/models/shared_trunk.py",
+                       "historical":  "df648763c8e0ba5532ebf9e437af95cd10d8527112c1338b8b5db9ad6a212e1f",
+                       "actual":  "df648763c8e0ba5532ebf9e437af95cd10d8527112c1338b8b5db9ad6a212e1f",
+                       "match":  true
+                   },
+                   {
+                       "path":  "src/models/prob_link.py",
+                       "historical":  "6b03f700821b6d74c8ef0dfe834737ac4c9755d7fcf9a7c2f96b5b67e905d96d",
+                       "actual":  "6b03f700821b6d74c8ef0dfe834737ac4c9755d7fcf9a7c2f96b5b67e905d96d",
+                       "match":  true
+                   },
+                   {
+                       "path":  "src/models/dup_link.py",
+                       "historical":  "e1ce093d927eed6db0553776b74f8ddfca5d159bf035b6cd7b4df9e7bc6b168f",
+                       "actual":  "e1ce093d927eed6db0553776b74f8ddfca5d159bf035b6cd7b4df9e7bc6b168f",
+                       "match":  true
+                   },
+                   {
+                       "path":  "src/models/hh_link.py",
+                       "historical":  "fb34d8dc575a0edd644287ec9387ee32db7866083b53b907376f464837f0c1f6",
+                       "actual":  "fb34d8dc575a0edd644287ec9387ee32db7866083b53b907376f464837f0c1f6",
+                       "match":  true
+                   },
+                   {
+                       "path":  "src/models/cross_link.py",
+                       "historical":  "0f5a28a6fea27215e0697b94558bc226b24a24a9811a59c3fd71e0d5b5283b17",
+                       "actual":  "0f5a28a6fea27215e0697b94558bc226b24a24a9811a59c3fd71e0d5b5283b17",
+                       "match":  true
+                   }
+               ],
+    "kit":  [
+                {
+                    "path":  "external/starter-kit/make_sandbox.py",
+                    "historical":  "8cf628cbb4771ed6e91ad74ebb4f75b22667af39d8f48e01c956c675b1b1586b",
+                    "actual":  "8cf628cbb4771ed6e91ad74ebb4f75b22667af39d8f48e01c956c675b1b1586b",
+                    "match":  true
+                },
+                {
+                    "path":  "external/starter-kit/score.py",
+                    "historical":  "7049e99a48acef2a74f37cb49bb66b5a9af8d05d2ed8fcf530287b5e81c5042f",
+                    "actual":  "7049e99a48acef2a74f37cb49bb66b5a9af8d05d2ed8fcf530287b5e81c5042f",
+                    "match":  true
+                },
+                {
+                    "path":  "external/starter-kit/data/unicef.json",
+                    "historical":  "0bce08036cc563ee2a369dcee316ff8a5f89045d86991756d72c266927674396",
+                    "actual":  "0bce08036cc563ee2a369dcee316ff8a5f89045d86991756d72c266927674396",
+                    "match":  true
+                },
+                {
+                    "path":  "external/starter-kit/data/world_bank.json",
+                    "historical":  "6b3760742c6e864eb8d0bb2f9ec523a19a486b73282d79432dbcca16e3664125",
+                    "actual":  "6b3760742c6e864eb8d0bb2f9ec523a19a486b73282d79432dbcca16e3664125",
+                    "match":  true
+                },
+                {
+                    "path":  "external/starter-kit/data/unhcr.json",
+                    "historical":  "b1175b6bdbd96e90a4defd83af20a38d711c6eca9fe3ce880109ff244abe80d9",
+                    "actual":  "b1175b6bdbd96e90a4defd83af20a38d711c6eca9fe3ce880109ff244abe80d9",
+                    "match":  true
+                }
+            ],
+    "elapsed_seconds":  0.3420621
+}
